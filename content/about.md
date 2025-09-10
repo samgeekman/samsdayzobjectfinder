@@ -4,7 +4,7 @@ type: "page"
 draft: false
 ---
 
-<img src=“/images/logo-icon.png" alt="Icon" style="float:right; width:250px; margin-left:10px;"/>
+![Icon](/images/logo-icon.png){: style="float:right; width:250px; margin-left:10px;" }
 
 **A tool made by SamGeekMan to help DayZ modders and server owners find the objects they need.** 
 
