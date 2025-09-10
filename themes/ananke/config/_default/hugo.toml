@@ -1,0 +1,23 @@
+[module.hugoVersion]
+min = "0.128.0"
+
+
+[menu]
+
+[[menu.main]]
+    name = "Finder"
+    url  = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url  = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Discord"
+    url  = "https://discord.gg/YE7PenhZ8G"
+    weight = 3
+
+    [params]
+  site_logo = "images/logo.png"

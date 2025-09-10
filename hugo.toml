@@ -1,0 +1,14 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Sams DayZ Object Finder'
+theme = 'ananke'
+
+relativeURLs = true
+canonifyURLs = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[markup.goldmark.renderer]
+unsafe = true

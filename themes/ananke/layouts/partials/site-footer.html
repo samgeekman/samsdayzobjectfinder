@@ -1,0 +1,11 @@
+<footer class="{{ .Site.Params.background_color_class | compare.Default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex flex-column items-center justify-center">
+    <a href="{{ .Site.Home.Permalink }}" class="mb3">
+      {{ with .Site.Params.site_logo }}
+        <img src="{{ urls.RelURL . }}" alt="{{ $.Site.Title }}" class="h3" />
+      {{ else }}
+        <span class="f4 fw4 white-70 no-underline">{{ .Site.Title }}</span>
+      {{ end }}
+    </a>
+  </div>
+</footer>
