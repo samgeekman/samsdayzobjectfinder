@@ -1,6 +1,7 @@
 {{ with partials.IncludeCached "func/style/GetMainCSS.html" "style/GetMainCSS" }}
-<link rel="stylesheet" href="{{ .RelPermalink }}" >
+<link rel="stylesheet" href="{{ .Permalink }}" >
 {{ end }}
+
 
 {{ range site.Params.custom_css }}
   {{ with partials.IncludeCached "func/style/GetResource.html" . . }}{{ else }}
