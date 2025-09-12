@@ -5,19 +5,24 @@ min = "0.128.0"
 [menu]
 
 [[menu.main]]
+    name = "Beta! | "
+    url  = ""
+    weight = 1
+
+[[menu.main]]
     name = "Finder"
     url  = "/"
-    weight = 1
+    weight = 2
 
   [[menu.main]]
     name = "About"
     url  = "/about/"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
-    name = "Discord"
+    name = "Get updates - Discord"
     url  = "https://discord.gg/YE7PenhZ8G"
-    weight = 3
+    weight = 4
 
     [params]
   site_logo = "images/logo.png"
