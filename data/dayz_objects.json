@@ -10037,6 +10037,239 @@
   "usableOnConsole": true,
   "searchTags": "light, pistol",
   "image": "images/weapons/attachments/light/TLRLight.jpeg"
-}
+}, 
+
+{
+    "objectName": "AK_Bayonet",
+    "inGameName": "KA Bayonet",
+    "category": "muzzle",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": true,
+    "searchTags": "KA, knife, ak47, ak74",
+    "image": "images/weapons/attachments/muzzle/AK_Bayonet.jpeg"
+  },
+  {
+    "objectName": "AK_Suppressor",
+    "inGameName": "Normalized Suppressor",
+    "category": "muzzle",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": true,
+    "searchTags": "silenced, AK, ak47, ak74, 5.56x39, 7.62x39, 7.62x54",
+    "image": "images/weapons/attachments/muzzle/AK_Suppressor.jpeg"
+  },
+  {
+    "objectName": "Aug_Barrel",
+    "inGameName": "$UNT$Aug Steyr Barrel",
+    "category": "muzzle",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": true,
+    "searchTags": "not_used_in_game, AUG, AUR_AX, AUR_A1",
+    "image": "images/weapons/attachments/muzzle/Aug_Barrel.jpeg"
+  },
+  {
+    "objectName": "ImprovisedSuppressor",
+    "inGameName": "Plastic Bottle Suppressor",
+    "category": "muzzle",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": true,
+    "searchTags": "silenced, water_bottle, plastic_bottle, improvised, duct tape",
+    "image": "images/weapons/attachments/muzzle/ImprovisedSuppressor.jpeg"
+  },
+  {
+    "objectName": "M4_Suppressor",
+    "inGameName": "Standardized Suppressor",
+    "category": "muzzle",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": true,
+    "searchTags": "silenced, m4, m16, aug, aur_ax, aur_a1, pioneer, 5.56x45",
+    "image": "images/weapons/attachments/muzzle/M4_Suppressor.jpeg"
+  },
+  {
+    "objectName": "M9A1_Bayonet",
+    "inGameName": "M4-A1 Bayonet",
+    "category": "muzzle",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": true,
+    "searchTags": "m4, knife",
+    "image": "images/weapons/attachments/muzzle/M9A1_Bayonet.jpeg"
+  },
+  {
+    "objectName": "MakarovPBSuppressor",
+    "inGameName": "$UNT$Makarov PB6P9 Suppressor",
+    "category": "muzzle",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": true,
+    "searchTags": "not_used_in_game, silenced, makarov, pistol, .380acp",
+    "image": "images/weapons/attachments/muzzle/MakarovPBSuppressor.jpeg"
+  },
+  {
+    "objectName": "Mosin_Bayonet",
+    "inGameName": "Mosin 91/30 Bayonet",
+    "category": "muzzle",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": true,
+    "searchTags": "mosin, knife",
+    "image": "images/weapons/attachments/muzzle/Mosin_Bayonet.jpeg"
+  },
+  {
+    "objectName": "Mosin_Compensator",
+    "inGameName": "Mosin 91/30 Compensator",
+    "category": "muzzle",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": true,
+    "searchTags": "mosin, compensator, 7.62x54",
+    "image": "images/weapons/attachments/muzzle/Mosin_Compensator.jpeg"
+  },
+  {
+    "objectName": "MP5_Compensator",
+    "inGameName": "SG5-K Compensator",
+    "category": "muzzle",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": true,
+    "searchTags": "compensator, 9x19",
+    "image": "images/weapons/attachments/muzzle/MP5_Compensator.jpeg"
+  },
+  {
+    "objectName": "PistolSuppressor",
+    "inGameName": "Pistol Suppressor",
+    "category": "muzzle",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": true,
+    "searchTags": "silenced, ij-70, cr-75, p1, mlock-91, fx-45, kolt 1911, deagle, cr-61 skorpion, bizon, sg5-k, usg-45",
+    "image": "images/weapons/attachments/muzzle/PistolSuppressor.jpeg"
+  },
+  {
+    "objectName": "SKS_Bayonet",
+    "inGameName": "SK 59/66 Bayonet",
+    "category": "muzzle",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": true,
+    "searchTags": "sks, knife",
+    "image": "images/weapons/attachments/muzzle/SKS_Bayonet.jpeg"
+  },
+
+  {
+    "objectName": "bayonet_ak",
+    "inGameName": "KA Bayonet",
+    "category": "muzzle",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": false,
+    "searchTags": "KA, knife, ak47, ak74",
+    "image": "images/weapons/attachments/muzzle/AK_Bayonet.jpeg"
+  },
+  {
+    "objectName": "bayonet_m9a1",
+    "inGameName": "M4-A1 Bayonet",
+    "category": "muzzle",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": false,
+    "searchTags": "m4, knife",
+    "image": "images/weapons/attachments/muzzle/M9A1_Bayonet.jpeg"
+  },
+  {
+    "objectName": "bayonet_mosin",
+    "inGameName": "Mosin 91/30 Bayonet",
+    "category": "muzzle",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": false,
+    "searchTags": "mosin, knife",
+    "image": "images/weapons/attachments/muzzle/Mosin_Bayonet.jpeg"
+  },
+  {
+    "objectName": "bayonet_sks",
+    "inGameName": "SK 59/66 Bayonet",
+    "category": "muzzle",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": false,
+    "searchTags": "sks, knife",
+    "image": "images/weapons/attachments/muzzle/SKS_Bayonet.jpeg"
+  },
+  {
+    "objectName": "mosin_compensator",
+    "inGameName": "Mosin 91/30 Compensator",
+    "category": "muzzle",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": false,
+    "searchTags": "mosin, compensator, 7.62x54",
+    "image": "images/weapons/attachments/muzzle/Mosin_Compensator.jpeg"
+  },
+  {
+    "objectName": "mp5k_compensator",
+    "inGameName": "SG5-K Compensator",
+    "category": "muzzle",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": false,
+    "searchTags": "compensator, 9x19",
+    "image": "images/weapons/attachments/muzzle/MP5_Compensator.jpeg"
+  },
+  {
+    "objectName": "bottle_suppressor",
+    "inGameName": "Plastic Bottle Suppressor",
+    "category": "muzzle",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": false,
+    "searchTags": "silenced, m4, m16, aug, aur_ax, aur_a1, pioneer, 5.56x45",
+    "image": "images/weapons/attachments/muzzle/ImprovisedSuppressor.jpeg"
+  },
+  {
+    "objectName": "suppressor_556",
+    "inGameName": "Standardized Suppressor",
+    "category": "muzzle",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": false,
+    "searchTags": "silenced, water_bottle, plastic_bottle, improvised, duct tape",
+    "image": "images/weapons/attachments/muzzle/M4_Suppressor.jpeg"
+  },
+  {
+    "objectName": "suppressor_545",
+    "inGameName": "Normalized Suppressor",
+    "category": "muzzle",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": false,
+    "searchTags": "silenced, AK, ak47, ak74, 5.56x39, 7.62x39, 7.62x54",
+    "image": "images/weapons/attachments/muzzle/AK_Suppressor.jpeg"
+  },
+  {
+    "objectName": "suppressor_45acp",
+    "inGameName": "Pistol Suppressor",
+    "category": "muzzle",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": false,
+    "searchTags": "silenced, ij-70, cr-75, p1, mlock-91, fx-45, kolt 1911, deagle, cr-61 skorpion, bizon, sg5-k, usg-45",
+    "image": "images/weapons/attachments/muzzle/PistolSuppressor.jpeg"
+  },
+  {
+    "objectName": "suppressor_pb6p9",
+    "inGameName": "$UNT$Makarov PB6P9 Suppressor",
+    "category": "muzzle",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/muzzle",
+    "usableOnConsole": false,
+    "searchTags": "not_used_in_game, silenced, makarov, pistol, .380acp",
+    "image": "images/weapons/attachments/muzzle/MakarovPBSuppressor.jpeg"
+  }
 
 ]
+
