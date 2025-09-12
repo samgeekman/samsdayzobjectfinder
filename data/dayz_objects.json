@@ -8614,6 +8614,1429 @@
     "usableOnConsole": true,
     "searchTags": "vines, green, livonia",
     "image": "images/plants_bliss/building/dzplants_blissbuildingpoison_ivy.p3d.jpeg"
-  }
-  
+  },
+
+  {
+    "objectName": "Mag_12gaSnaploader_2Rnd",
+    "inGameName": "$UNT$12ga Snap Loader",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "Not_used_in_game, shotgun, bk-43, b-12, buckshot, slugs",
+    "image": "images/weapons/attachments/magazine/Mag_12gaSnaploader_2Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_308WinSnaploader_2Rnd",
+    "inGameName": "$UNT$B95 Snaploader",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "Not_used_in_game, m70_tundra, winchester, rifle, .308",
+    "image": "images/weapons/attachments/magazine/Mag_308WinSnaploader_2Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_357Speedloader_6Rnd",
+    "inGameName": "$UNT$.357 Speedloader",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "Not_used_in_game, deagle, magnum, pistol, colt, .357",
+    "image": "images/weapons/attachments/magazine/Mag_357Speedloader_6Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_762x54Snaploader_2Rnd",
+    "inGameName": "$UNT$Snaploader",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "Not_used_in_game, mosin, rifle, 7.62x54",
+    "image": "images/weapons/attachments/magazine/Mag_762x54Snaploader_2Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_1911_7Rnd",
+    "inGameName": "7rd Kolt 1911 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "Kolt 1911, pistol, .45 ACP",
+    "image": "images/weapons/attachments/magazine/Mag_1911_7Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_AK74_30Rnd_Black",
+    "inGameName": "30rd KA-74 Mag - Black",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.56x39",
+    "image": "images/weapons/attachments/magazine/Mag_AK74_30Rnd_Black.jpeg"
+  },
+  {
+    "objectName": "Mag_AK74_30Rnd_Green",
+    "inGameName": "30rd KA-74 Mag - Green",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.56x39",
+    "image": "images/weapons/attachments/magazine/Mag_AK74_30Rnd_Green.jpeg"
+  },
+  {
+    "objectName": "Mag_AK74_30Rnd",
+    "inGameName": "30rd KA-74 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.56x39",
+    "image": "images/weapons/attachments/magazine/Mag_AK74_30Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_AK74_45Rnd",
+    "inGameName": "45rd KA-74 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.56x39",
+    "image": "images/weapons/attachments/magazine/Mag_AK74_45Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_AK101_30Rnd_Black",
+    "inGameName": "30rd KA-101 Mag - Black",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.56x54",
+    "image": "images/weapons/attachments/magazine/Mag_AK101_30Rnd_Black.jpeg"
+  },
+  {
+    "objectName": "Mag_AK101_30Rnd_Green",
+    "inGameName": "30rd KA-101 Mag - Green",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.56x54",
+    "image": "images/weapons/attachments/magazine/Mag_AK101_30Rnd_Green.jpeg"
+  },
+  {
+    "objectName": "Mag_AK101_30Rnd",
+    "inGameName": "30rd KA-101 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.56x54",
+    "image": "images/weapons/attachments/magazine/Mag_AK101_30Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_AKM_30Rnd",
+    "inGameName": "30rd KA-M Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_AKM_30Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_AKM_Drum_TEST",
+    "inGameName": "Tracer testing mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "Not_used_in_game, akm, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_AKM_Drum_TEST.jpeg"
+  },
+  {
+    "objectName": "Mag_AKM_Drum75Rnd_Black",
+    "inGameName": "75rd KA-M Drum Mag - Black",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_AKM_Drum75Rnd_Black.jpeg"
+  },
+  {
+    "objectName": "Mag_AKM_Drum75Rnd_Green",
+    "inGameName": "75rd KA-M Drum Mag - Green",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_AKM_Drum75Rnd_Green.jpeg"
+  },
+  {
+    "objectName": "Mag_AKM_Drum75Rnd",
+    "inGameName": "75rd KA-M Drum Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_AKM_Drum75Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_AKM_Palm30Rnd_Black",
+    "inGameName": "30rd KA-M Polymer Mag - Black",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_AKM_Palm30Rnd_Black.jpeg"
+  },
+  {
+    "objectName": "Mag_AKM_Palm30Rnd_Green",
+    "inGameName": "30rd KA-M Polymer Mag - Green",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_AKM_Palm30Rnd_Green.jpeg"
+  },
+  {
+    "objectName": "Mag_AKM_Palm30Rnd",
+    "inGameName": "30rd KA-M Polymer Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_AKM_Palm30Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_Arrows_Quiver",
+    "inGameName": "$UNT$Arrows Quiver",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "Not_used_in_game",
+    "image": "images/weapons/attachments/magazine/Mag_Arrows_Quiver.jpeg"
+  },
+  {
+    "objectName": "Mag_Aug_30Rnd",
+    "inGameName": "30rd AUR Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "AUR_AX, AUR_A1, machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/attachments/magazine/Mag_Aug_30Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_Bolts_Quiver",
+    "inGameName": "$UNT$Bolts Quiver",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "Not_used_in_game",
+    "image": "images/weapons/attachments/magazine/Mag_Bolts_Quiver.jpeg"
+  },
+  {
+    "objectName": "Mag_CLIP9x19_10Rnd",
+    "inGameName": "$UNT$10 Round Clip",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "Not_used_in_game",
+    "image": "images/weapons/attachments/magazine/Mag_CLIP9x19_10Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_CLIP762x39_10Rnd",
+    "inGameName": "10rd SK 59/66 Clip",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "not_used_in_game, sks, rifle, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_CLIP762x39_10Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_CLIP762x54_5Rnd",
+    "inGameName": "5rd Mosin 91/30 Clip",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "Not_used_in_game, miosin, rifle, 7.62x54",
+    "image": "images/weapons/attachments/magazine/Mag_CLIP762x54_5Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_CMAG_10Rnd_Black",
+    "inGameName": "10rd Mag-C Mag - Black",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_10Rnd_Black.jpeg"
+  },
+  {
+    "objectName": "Mag_CMAG_10Rnd_Green",
+    "inGameName": "10rd Mag-C Mag - Green",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_10Rnd_Green.jpeg"
+  },
+  {
+    "objectName": "Mag_CMAG_10Rnd",
+    "inGameName": "10rd Mag-C Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_10Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_CMAG_20Rnd_Black",
+    "inGameName": "20rd Mag-C Mag - Black",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_20Rnd_Black.jpeg"
+  },
+  {
+    "objectName": "Mag_CMAG_20Rnd_Green",
+    "inGameName": "20rd Mag-C Mag - Green",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_20Rnd_Green.jpeg"
+  },
+  {
+    "objectName": "Mag_CMAG_20Rnd",
+    "inGameName": "20rd Mag-C Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_20Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_CMAG_30Rnd_Black",
+    "inGameName": "30rd Mag-C Mag - Black",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_30Rnd_Black.jpeg"
+  },
+  {
+    "objectName": "Mag_CMAG_30Rnd_Green",
+    "inGameName": "30rd Mag-C Mag - Green",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag-c, 5.56x45, m4, m16, ",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_30Rnd_Green.jpeg"
+  },
+  {
+    "objectName": "Mag_CMAG_30Rnd",
+    "inGameName": "30rd Mag-C Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_30Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_CMAG_40Rnd_Black",
+    "inGameName": "40rd Mag-C Mag - Black",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_40Rnd_Black.jpeg"
+  },
+  {
+    "objectName": "Mag_CMAG_40Rnd_Green",
+    "inGameName": "40rd Mag-C Mag - Green",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_40Rnd_Green.jpeg"
+  },
+  {
+    "objectName": "Mag_CMAG_40Rnd",
+    "inGameName": "40rd Mag-C Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_40Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_CZ61_20Rnd",
+    "inGameName": "20rd CR-61 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "cr-61, skorpion, submachine_gun, automatic, .380acp",
+    "image": "images/weapons/attachments/magazine/Mag_CZ61_20Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_CZ75_15Rnd",
+    "inGameName": "15rd CR-75 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": ", cr-75, pistol, 9x19",
+    "image": "images/weapons/attachments/magazine/Mag_CZ75_15Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_CZ527_5rnd",
+    "inGameName": "5rd CR-527 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "cr-527, rifle, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_CZ527_5rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_CZ550_4rnd",
+    "inGameName": "STR_Cfg_Magazines_Mag_CZ550_4rnd1",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "Not_used_in_game, savanna, cr-550, rifle, .308",
+    "image": "images/weapons/attachments/magazine/Mag_CZ550_4rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_CZ550_10rnd",
+    "inGameName": "10rd CR-550 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "savanna, cr-550, rifle, .308",
+    "image": "images/weapons/attachments/magazine/Mag_CZ550_10rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_Dartgun_CO2",
+    "inGameName": "$UNT$CO2",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "not_used_in_game",
+    "image": "images/weapons/attachments/magazine/Mag_Dartgun_CO2.jpeg"
+  },
+  {
+    "objectName": "Mag_Deagle_9rnd",
+    "inGameName": "9rd Deagle Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "deagle, desert_eagle, pistol, magnum, .357,",
+    "image": "images/weapons/attachments/magazine/Mag_Deagle_9rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_FAL_20Rnd",
+    "inGameName": "20rd LAR Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "LAR, machine_gun, automatic, .308",
+    "image": "images/weapons/attachments/magazine/Mag_FAL_20Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_FAMAS_25Rnd",
+    "inGameName": "25rd LE-MAS Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "le-mas, machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/attachments/magazine/Mag_FAMAS_25Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_FNX45_15Rnd",
+    "inGameName": "15rd FX-45 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "fx-45, pistol, .45acp",
+    "image": "images/weapons/attachments/magazine/Mag_FNX45_15Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_Glock_15Rnd",
+    "inGameName": "15rd Mlock-91 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "9x19, pistol",
+    "image": "images/weapons/attachments/magazine/Mag_Glock_15Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_Groza_20Rnd",
+    "inGameName": "$UNT$20Rnd Groza-4 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "not_used_in_game, groza-4, machine_gun, automatic, 9x39",
+    "image": "images/weapons/attachments/magazine/Mag_Groza_20Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_IJ70_12Rnd",
+    "inGameName": "12rd IJ-70 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "makarov, pistol, .380acp",
+    "image": "images/weapons/attachments/magazine/Mag_IJ70_8Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_M14_10Rnd",
+    "inGameName": "10rd DMR Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "dmr, rifle, .308",
+    "image": "images/weapons/attachments/magazine/Mag_M14_10Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_M14_20Rnd",
+    "inGameName": "20rd DMR Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "dmr, rifle, .308",
+    "image": "images/weapons/attachments/magazine/Mag_M14_20Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_M249_Box200Rnd",
+    "inGameName": "$UNT$200Rnd M249 box",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "not_used_in_game, machine_gun, automatic",
+    "image": "images/weapons/attachments/magazine/Mag_M249_Box200Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_MakarovPB_8Rnd",
+    "inGameName": "$UNT$Makarov PB6P9 magazine",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "not_used_in_game, makarov, pistol, .380acp",
+    "image": "images/weapons/attachments/magazine/Mag_MakarovPB_8Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_MKII_10Rnd",
+    "inGameName": "10rd MK II Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "pistol, .22, silenced",
+    "image": "images/weapons/attachments/magazine/Mag_MKII_10Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_MP5_15Rnd",
+    "inGameName": "15rd SG5-K Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, automatic, 9x19",
+    "image": "images/weapons/attachments/magazine/Mag_MP5_15Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_MP5_30Rnd",
+    "inGameName": "30rd SG5-K Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, automatic, 9x19",
+    "image": "images/weapons/attachments/magazine/Mag_MP5_30Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_P1_8Rnd",
+    "inGameName": "8rd P1 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "pistol, 9x19",
+    "image": "images/weapons/attachments/magazine/Mag_P1_8Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_PM73Rak_15Rnd",
+    "inGameName": "15rd RAK-37 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, automatic, .380acp",
+    "image": "images/weapons/attachments/magazine/Mag_PM73_15Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_PM73_25Rnd",
+    "inGameName": "25rd RAK-37 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, automatic, .380acp",
+    "image": "images/weapons/attachments/magazine/Mag_PM73_25Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_PP19_64Rnd",
+    "inGameName": "64rd Bizon Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, automatic, .380acp",
+    "image": "images/weapons/attachments/magazine/Mag_PP19_64Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_Ruger1022_10Rnd",
+    "inGameName": "10rd Sporter 22 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "rifle, .22",
+    "image": "images/weapons/attachments/magazine/Mag_Ruger1022_10Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_Ruger1022_15Rnd",
+    "inGameName": "15rd Sporter 22 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "rifle, .22",
+    "image": "images/weapons/attachments/magazine/Mag_Ruger1022_15Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_Ruger1022_30Rnd",
+    "inGameName": "30rd Sporter 22 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "rifle, .22",
+    "image": "images/weapons/attachments/magazine/Mag_Ruger1022_30Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_Saiga_5Rnd",
+    "inGameName": "5rd Vaiga Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "shotgun, buckshot, slugs",
+    "image": "images/weapons/attachments/magazine/Mag_Saiga_5Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_Saiga_8Rnd",
+    "inGameName": "8rd Vaiga Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "shotgun, buckshot, slugs",
+    "image": "images/weapons/attachments/magazine/Mag_Saiga_8Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_Saiga_Drum20Rnd",
+    "inGameName": "20rd Drum Vaiga Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "shotgun, buckshot, slugs",
+    "image": "images/weapons/attachments/magazine/Mag_Saiga_Drum20Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_Scout_5Rnd",
+    "inGameName": "5rd Pioneer Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 5.56x45",
+    "image": "images/weapons/attachments/magazine/Mag_Scout_5Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_ShockCartridge",
+    "inGameName": "$UNT$Shock Pistol Cartridge",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "not_used_in_game",
+    "image": "images/weapons/attachments/magazine/Mag_ShockCartridge.jpeg"
+  },
+  {
+    "objectName": "Mag_SSG82_5rnd",
+    "inGameName": "5rd SSG 82 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 5.56x45",
+    "image": "images/weapons/attachments/magazine/Mag_SSG82_5rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_STANAG_30Rnd",
+    "inGameName": "30rd Standardized Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 5.56x45, m4, m16",
+    "image": "images/weapons/attachments/magazine/Mag_STANAG_30Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_STANAG_60Rnd",
+    "inGameName": "60rd Standardized Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 5.56x45, m4, m16",
+    "image": "images/weapons/attachments/magazine/Mag_STANAG_60Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_STANAGCoupled_30Rnd",
+    "inGameName": "30rd Coupled Standardized Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 5.56x45, m4, m16",
+    "image": "images/weapons/attachments/magazine/Mag_STANAGCoupled_30Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_SV98_10Rnd",
+    "inGameName": "10rnd VS-89 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 762x54",
+    "image": "images/weapons/attachments/magazine/Mag_SV98_10Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_SVD_10Rnd",
+    "inGameName": "10rd VSD Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x54, dragunov",
+    "image": "images/weapons/attachments/magazine/Mag_SVD_10Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_UMP_25Rnd",
+    "inGameName": "25rd USG-45 Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, automatic, .45acp",
+    "image": "images/weapons/attachments/magazine/Mag_UMP_25Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_VAL_20Rnd",
+    "inGameName": "20rd SVAL Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 9x39, silenced",
+    "image": "images/weapons/attachments/magazine/Mag_VAL_20Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_Vikhr_30Rnd",
+    "inGameName": "30rd Vikhr Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 9x39",
+    "image": "images/weapons/attachments/magazine/Mag_Vikhr_30Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_VSS_10Rnd",
+    "inGameName": "10rd VSS Mag",
+    "category": "magazine",
+    "modelType": "Config",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, 9x39, silenced",
+    "image": "images/weapons/attachments/magazine/Mag_VSS_10Rnd.jpeg"
+  },
+
+   {
+    "objectName": "magazine_fnp45.p3d",
+    "inGameName": "15rd FX-45 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "pistol, .45acp",
+    "image": ""
+  },
+  {
+    "objectName": "357_speedloader.p3d",
+    "inGameName": "$UNT$.357 Speedloader",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "Not_used_in_game, deagle, magnum, pistol, colt, .357",
+    "image": "images/weapons/attachments/magazine/Mag_357Speedloader_6Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_de.p3d",
+    "inGameName": "9rd Deagle Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "deagle, desert_eagle, pistol, magnum, colt, .357,",
+    "image": "images/weapons/attachments/magazine/Mag_Deagle_9rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_1911.p3d",
+    "inGameName": "7rd Kolt 1911 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "Kolt 1911, pistol, .45 ACP",
+    "image": "images/weapons/attachments/magazine/Mag_1911_7Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_cz75.p3d",
+    "inGameName": "15rd CR-75 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": ", cr-75, pistol, 9x19",
+    "image": "images/weapons/attachments/magazine/Mag_CZ75_15Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_glock19.p3d",
+    "inGameName": "15rd Mlock-91 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "9x19, pistol",
+    "image": "images/weapons/attachments/magazine/Mag_Glock_15Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_p1.p3d",
+    "inGameName": "8rd P1 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "pistol, 9x19",
+    "image": "images/weapons/attachments/magazine/Mag_P1_8Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_ij70.p3d",
+    "inGameName": "12rd IJ-70 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "makarov, pistol, .380acp",
+    "image": "images/weapons/attachments/magazine/Mag_IJ70_8Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_mp5_15rnd.p3d",
+    "inGameName": "15rd SG5-K Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "submachine_gun, automatic, 9x19",
+    "image": "images/weapons/attachments/magazine/Mag_MP5_15Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_mp5_30rnd.p3d",
+    "inGameName": "30rd SG5-K Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "submachine_gun, automatic, 9x19",
+    "image": "images/weapons/attachments/magazine/Mag_MP5_30Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_pm73_15rnd.p3d",
+    "inGameName": "15rd RAK-37 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "submachine_gun, automatic, .380acp",
+    "image": "images/weapons/attachments/magazine/Mag_PM73_15Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_pm73_25rnd.p3d",
+    "inGameName": "25rd RAK-37 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "submachine_gun, automatic, .380acp",
+    "image": "images/weapons/attachments/magazine/Mag_PM73_25Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_cz61.p3d",
+    "inGameName": "20rd CR-61 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "cr-61, skorpion, submachine_gun, automatic, .380acp",
+    "image": "images/weapons/attachments/magazine/Mag_CZ61_20Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_famas.p3d",
+    "inGameName": "25rd LE-MAS Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "le-mas, machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/attachments/magazine/Mag_FAMAS_25Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_mk2.p3d",
+    "inGameName": "10rd MK II Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "pistol, .22, silenced",
+    "image": "images/weapons/attachments/magazine/Mag_MKII_10Rnd.jpeg"
+  },
+  {
+    "objectName": "shockpistol_cartridge.p3d",
+    "inGameName": "$UNT$Shock Pistol Cartridge",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "not_used_in_game",
+    "image": "images/weapons/attachments/magazine/Mag_ShockCartridge.jpeg"
+  },
+  {
+    "objectName": "magazine_ruger1022_10.p3d",
+    "inGameName": "10rd Sporter 22 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "rifle, .22",
+    "image": "images/weapons/attachments/magazine/Mag_Ruger1022_10Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_ruger1022_15.p3d",
+    "inGameName": "15rd Sporter 22 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "rifle, .22",
+    "image": "images/weapons/attachments/magazine/Mag_Ruger1022_15Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_ruger1022_30.p3d",
+    "inGameName": "30rd Sporter 22 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "rifle, .22",
+    "image": "images/weapons/attachments/magazine/Mag_Ruger1022_30Rnd.jpeg"
+  },
+  {
+    "objectName": "clip_762_5rnd.p3d",
+    "inGameName": "5rd Mosin 91/30 Clip",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/magazine/Mag_CLIP762x54_5Rnd.jpeg"
+  },
+  {
+    "objectName": "snaploader_762.p3d",
+    "inGameName": "$UNT$Snaploader",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "Not_used_in_game, mosin, rifle, 7.62x54",
+    "image": "images/weapons/attachments/magazine/Mag_762x54Snaploader_2Rnd.jpeg"
+  },
+  {
+    "objectName": "clip_762x39_10rnd.p3d",
+    "inGameName": "10rd SK 59/66 Clip",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "not_used_in_game, sks, rifle, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_CLIP762x39_10Rnd.jpeg"
+  },
+  {
+    "objectName": "clip_9mm_10rnd.p3d",
+    "inGameName": "$UNT$10 Round Clip",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "Not_used_in_game",
+    "image": "images/weapons/attachments/magazine/Mag_CLIP9x19_10Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_akm_30rnd.p3d",
+    "inGameName": "30rd KA-M Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "AK, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_AKM_30Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_akm_drum.p3d",
+    "inGameName": "75rd KA-M Drum Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "AK, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_AKM_Drum75Rnd_Black.jpeg"
+  },
+  {
+    "objectName": "magazine_akm_palm30.p3d",
+    "inGameName": "30rd KA-M Polymer Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "AK, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_AKM_Palm30Rnd_Black.jpeg"
+  },
+  {
+    "objectName": "magazine_cz527.p3d",
+    "inGameName": "5rd CR-527 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "cr-527, rifle, 7.62x39",
+    "image": "images/weapons/attachments/magazine/Mag_CZ527_5rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_stanag30.p3d",
+    "inGameName": "30rd Standardized Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, 5.56x45, m4, m16",
+    "image": "images/weapons/attachments/magazine/Mag_STANAG_30Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_stanag30_coupled.p3d",
+    "inGameName": "30rd Coupled Standardized Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, 5.56x45, m4, m16",
+    "image": "images/weapons/attachments/magazine/Mag_STANAGCoupled_30Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_stanag60.p3d",
+    "inGameName": "60rd Standardized Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, 5.56x45, m4, m16",
+    "image": "images/weapons/attachments/magazine/Mag_STANAG_60Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_pmag_10.p3d",
+    "inGameName": "10rd Mag-C Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_20Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_pmag_20.p3d",
+    "inGameName": "20rd Mag-C Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_20Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_pmag_30.p3d",
+    "inGameName": "30rd Mag-C Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_30Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_pmag_40.p3d",
+    "inGameName": "40rd Mag-C Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "mag-c, 5.56x45, m4, m16, automatic, machine_gun",
+    "image": "images/weapons/attachments/magazine/Mag_CMAG_40Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_ak101_30rnd.p3d",
+    "inGameName": "30rd KA-101 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "AK, machine_gun, automatic, 5.56x54",
+    "image": "images/weapons/attachments/magazine/Mag_AK101_30Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_aug30.p3d",
+    "inGameName": "30rd AUR Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "AUR_AX, AUR_A1, machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/attachments/magazine/Mag_Aug_30Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_ak74_30rnd.p3d",
+    "inGameName": "30rd KA-74 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "AK, machine_gun, automatic, 5.56x39",
+    "image": "images/weapons/attachments/magazine/Mag_AK74_30Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_ak74_45rnd.p3d",
+    "inGameName": "45rd KA-74 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "AK, machine_gun, automatic, 5.56x39",
+    "image": "images/weapons/attachments/magazine/Mag_AK74_45Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_svd.p3d",
+    "inGameName": "10rd VSD Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "rifle, 7.62x54, dragunov",
+    "image": "images/weapons/attachments/magazine/Mag_SVD_10Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_fal.p3d",
+    "inGameName": "5rd Pioneer Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "rifle, 5.56x45",
+    "image": "images/weapons/attachments/magazine/Mag_Scout_5Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_scout.p3d",
+    "inGameName": "",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": ""
+  },
+  {
+    "objectName": "magazine_ump45_25rnd.p3d",
+    "inGameName": "25rd USG-45 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "submachine_gun, automatic, .45acp",
+    "image": "images/weapons/attachments/magazine/Mag_UMP_25Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_vss.p3d",
+    "inGameName": "10rd VSS Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, 9x39, silenced",
+    "image": "images/weapons/attachments/magazine/Mag_VSS_10Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_val.p3d",
+    "inGameName": "20rd SVAL Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, 9x39, silenced",
+    "image": "images/weapons/attachments/magazine/Mag_VAL_20Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_vikhr_30rnd.p3d",
+    "inGameName": "30rd Vikhr Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, 9x39",
+    "image": "images/weapons/attachments/magazine/Mag_Vikhr_30Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_m249_ammobox.p3d",
+    "inGameName": "$UNT$200Rnd M249 box",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "not_used_in_game, machine_gun, automatic",
+    "image": "images/weapons/attachments/magazine/Mag_M249_Box200Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_pp19.p3d",
+    "inGameName": "64rd Bizon Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "submachine_gun, automatic, .380acp",
+    "image": "images/weapons/attachments/magazine/Mag_PP19_64Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_cz550_4rnd.p3d",
+    "inGameName": "STR_Cfg_Magazines_Mag_CZ550_4rnd1",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "Not_used_in_game, savanna, cr-550, rifle, .308",
+    "image": "images/weapons/attachments/magazine/Mag_CZ550_4rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_cz550_10rnd.p3d",
+    "inGameName": "10rd CR-550 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "savanna, cr-550, rifle, .308",
+    "image": "images/weapons/attachments/magazine/Mag_CZ550_10rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_ssg82.p3d",
+    "inGameName": "5rd SSG 82 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "rifle, 5.56x45",
+    "image": "images/weapons/attachments/magazine/Mag_SSG82_5rnd.jpeg"
+  },
+  {
+    "objectName": "snaploader.p3d",
+    "inGameName": "$UNT$12ga Snap Loader",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "Not_used_in_game, shotgun, bk-43, b-12, buckshot, slugs",
+    "image": "images/weapons/attachments/magazine/Mag_12gaSnaploader_2Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_saiga_mag5.p3d",
+    "inGameName": "5rd Vaiga Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "shotgun, buckshot, slugs",
+    "image": "images/weapons/attachments/magazine/Mag_Saiga_5Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_saiga_mag8.p3d",
+    "inGameName": "8rd Vaiga Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "shotgun, buckshot, slugs",
+    "image": "images/weapons/attachments/magazine/Mag_Saiga_5Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_saiga_drum.p3d",
+    "inGameName": "",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "shotgun, buckshot, slugs",
+    "image": "images/weapons/attachments/magazine/Mag_Saiga_8Rnd.jpeg"
+  },
+  {
+    "objectName": "Mag_Dartgun_CO2",
+    "inGameName": "$UNT$CO2",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "not_used_in_game",
+    "image": "images/weapons/attachments/magazine/Mag_Dartgun_CO2.jpeg"
+  },
+  {
+    "objectName": "magazine_ots14.p3d",
+    "inGameName": "$UNT$CO2",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "not_used_in_game",
+    "image": "images/weapons/attachments/magazine/Mag_Dartgun_CO2.jpeg"
+  },
+  {
+    "objectName": "magazine_pb6p9.p3d",
+    "inGameName": "$UNT$Makarov PB6P9 magazine",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "not_used_in_game, makarov, pistol, .380acp",
+    "image": "images/weapons/attachments/magazine/Mag_MakarovPB_8Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_m14_10rnd.p3d",
+    "inGameName": "10rd DMR Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "dmr, rifle, .308",
+    "image": "images/weapons/attachments/magazine/Mag_M14_10Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_m14_20rnd.p3d",
+    "inGameName": "20rd DMR Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "dmr, rifle, .308",
+    "image": "images/weapons/attachments/magazine/Mag_M14_20Rnd.jpeg"
+  },
+  {
+    "objectName": "magazine_sv98_10rnd.p3d",
+    "inGameName": "10rnd VS-89 Mag",
+    "category": "magazines",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "rifle, 762x54",
+    "image": "images/weapons/attachments/magazine/Mag_SV98_10Rnd.jpeg"
+  },
+{
+  "objectName": "UniversalLight",
+  "inGameName": "Universal Flashlight",
+  "category": "lights",
+  "modelType": "Config",
+  "path": "/dz/weapons/attachments/light",
+  "usableOnConsole": true,
+  "searchTags": "light, tactical_helmet, mich2001helmet",
+  "image": "images/weapons/attachments/light/UniversalLight.jpeg"
+}
+
+{
+  "objectName": "TLRLight",
+  "inGameName": "Pistol Flashlight",
+  "category": "lights",
+  "modelType": "Config",
+  "path": "/dz/weapons/attachments/light",
+  "usableOnConsole": true,
+  "searchTags": "light, pistol",
+  "image": "/images/weapons/attachments/light/TLRLight.jpeg"
+},
+
 ]
