@@ -6,9 +6,11 @@ draft: false
 
 <img src="/images/logo-icon.png" alt="Icon" style="float:right; width:250px; margin-left:10px;"/>
 
-**A tool made by SamGeekMan to help DayZ modders and server owners find the objects they need - without having to remember obscure object names...** 
+**Sam's DayZ Object Finder** is work in progress tool by SamGeekMan to help DayZ modders, map makers, and server owners find the objects they need. 
 
-Designed to be used with Terrain Builder, [DayZ Editor](https://steamcommunity.com/workshop/filedetails/?id=2250764298) and other modding tools.
+Designed to be used with Terrain Builder, DayZ Editor and other modding tools, once complete it will have **every object in the game**, searchable by common names, size, colour, type and more - all with image previews. 
+
+No more having to remember obscure object names, and the ability to browse by category, and search for items like 'large snow rocks'. 
 
 > ⚠️ This tool is very much still a work in progress! Functionality will change, and many more objects still need to be added. See progress in the [Discord](https://discord.com/channels/1414751279548203008/1414751374394261534).
 
@@ -27,7 +29,7 @@ Many items feature search tags and allow you to combine them to create useful se
 > `small yellow birch`
 
 
-> ‘akm mag'
+> `akm mag`
 
 You can also filter for console compatible objects.
 

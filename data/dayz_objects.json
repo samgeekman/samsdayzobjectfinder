@@ -8649,7 +8649,7 @@
     "modelType": "Config",
     "path": "/dz/weapons/attachments/magazine",
     "usableOnConsole": true,
-    "searchTags": "not_enabled, mosin, rifle, 7.62x54",
+    "searchTags": "not_enabled, mosin, rifle, 7.62x54mmr",
     "image": "images/weapons/attachments/magazine/Mag_762x54Snaploader_2Rnd.jpeg"
   },
   {
@@ -8669,7 +8669,7 @@
     "modelType": "Config",
     "path": "/dz/weapons/attachments/magazine",
     "usableOnConsole": true,
-    "searchTags": "AK, machine_gun, automatic, 5.56x39",
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
     "image": "images/weapons/attachments/magazine/Mag_AK74_30Rnd_Black.jpeg"
   },
   {
@@ -8679,7 +8679,7 @@
     "modelType": "Config",
     "path": "/dz/weapons/attachments/magazine",
     "usableOnConsole": true,
-    "searchTags": "AK, machine_gun, automatic, 5.56x39",
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
     "image": "images/weapons/attachments/magazine/Mag_AK74_30Rnd_Green.jpeg"
   },
   {
@@ -8689,7 +8689,7 @@
     "modelType": "Config",
     "path": "/dz/weapons/attachments/magazine",
     "usableOnConsole": true,
-    "searchTags": "AK, machine_gun, automatic, 5.56x39",
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
     "image": "images/weapons/attachments/magazine/Mag_AK74_30Rnd.jpeg"
   },
   {
@@ -8699,7 +8699,7 @@
     "modelType": "Config",
     "path": "/dz/weapons/attachments/magazine",
     "usableOnConsole": true,
-    "searchTags": "AK, machine_gun, automatic, 5.56x39",
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
     "image": "images/weapons/attachments/magazine/Mag_AK74_45Rnd.jpeg"
   },
   {
@@ -8869,7 +8869,7 @@
     "modelType": "Config",
     "path": "/dz/weapons/attachments/magazine",
     "usableOnConsole": true,
-    "searchTags": "not_enabled, miosin, rifle, 7.62x54",
+    "searchTags": "not_enabled, miosin, rifle, 7.62x54mmr",
     "image": "images/weapons/attachments/magazine/Mag_CLIP762x54_5Rnd.jpeg"
   },
   {
@@ -9359,7 +9359,7 @@
     "modelType": "Config",
     "path": "/dz/weapons/attachments/magazine",
     "usableOnConsole": true,
-    "searchTags": "rifle, 762x54",
+    "searchTags": "rifle, 7.62x54",
     "image": "images/weapons/attachments/magazine/Mag_SV98_10Rnd.jpeg"
   },
   {
@@ -9369,7 +9369,7 @@
     "modelType": "Config",
     "path": "/dz/weapons/attachments/magazine",
     "usableOnConsole": true,
-    "searchTags": "rifle, 7.62x54, dragunov",
+    "searchTags": "rifle, 7.62x54mmr, dragunov",
     "image": "images/weapons/attachments/magazine/Mag_SVD_10Rnd.jpeg"
   },
   {
@@ -9620,7 +9620,7 @@
     "modelType": "Raw P3D",
     "path": "/dz/weapons/attachments/magazine",
     "usableOnConsole": false,
-    "searchTags": "not_enabled, mosin, rifle, 7.62x54",
+    "searchTags": "not_enabled, mosin, rifle, 7.62x54mmr",
     "image": "images/weapons/attachments/magazine/Mag_762x54Snaploader_2Rnd.jpeg"
   },
   {
@@ -9780,7 +9780,7 @@
     "modelType": "Raw P3D",
     "path": "/dz/weapons/attachments/magazine",
     "usableOnConsole": false,
-    "searchTags": "AK, machine_gun, automatic, 5.56x39",
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
     "image": "images/weapons/attachments/magazine/Mag_AK74_30Rnd.jpeg"
   },
   {
@@ -9790,7 +9790,7 @@
     "modelType": "Raw P3D",
     "path": "/dz/weapons/attachments/magazine",
     "usableOnConsole": false,
-    "searchTags": "AK, machine_gun, automatic, 5.56x39",
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
     "image": "images/weapons/attachments/magazine/Mag_AK74_45Rnd.jpeg"
   },
   {
@@ -9800,7 +9800,7 @@
     "modelType": "Raw P3D",
     "path": "/dz/weapons/attachments/magazine",
     "usableOnConsole": false,
-    "searchTags": "rifle, 7.62x54, dragunov",
+    "searchTags": "rifle, 7.62x54mmr, dragunov",
     "image": "images/weapons/attachments/magazine/Mag_SVD_10Rnd.jpeg"
   },
   {
@@ -10010,7 +10010,7 @@
     "modelType": "Raw P3D",
     "path": "/dz/weapons/attachments/magazine",
     "usableOnConsole": false,
-    "searchTags": "rifle, 762x54",
+    "searchTags": "rifle, 7.62x54",
     "image": "images/weapons/attachments/magazine/Mag_SV98_10Rnd.jpeg"
   },
 {
@@ -10052,7 +10052,7 @@
     "modelType": "Config",
     "path": "/dz/weapons/attachments/muzzle",
     "usableOnConsole": true,
-    "searchTags": "silenced, AK, ak47, ak74, 5.56x39, 7.62x39, 7.62x54",
+    "searchTags": "silenced, AK, ak47, ak74, 5.45x39, 7.62x39, 7.62x54mmr",
     "image": "images/weapons/attachments/muzzle/AK_Suppressor.jpeg"
   },
   {
@@ -10122,7 +10122,7 @@
     "modelType": "Config",
     "path": "/dz/weapons/attachments/muzzle",
     "usableOnConsole": true,
-    "searchTags": "mosin, compensator, 7.62x54",
+    "searchTags": "mosin, compensator, 7.62x54mmr",
     "image": "images/weapons/attachments/muzzle/Mosin_Compensator.jpeg"
   },
   {
@@ -10203,7 +10203,7 @@
     "modelType": "Raw P3D",
     "path": "/dz/weapons/attachments/muzzle",
     "usableOnConsole": false,
-    "searchTags": "mosin, compensator, 7.62x54",
+    "searchTags": "mosin, compensator, 7.62x54mmr",
     "image": "images/weapons/attachments/muzzle/Mosin_Compensator.jpeg"
   },
   {
@@ -10243,7 +10243,7 @@
     "modelType": "Raw P3D",
     "path": "/dz/weapons/attachments/muzzle",
     "usableOnConsole": false,
-    "searchTags": "silenced, AK, ak47, ak74, 5.56x39, 7.62x39, 7.62x54",
+    "searchTags": "silenced, AK, ak47, ak74, 5.45x39, 7.62x39, 7.62x54mmr",
     "image": "images/weapons/attachments/muzzle/AK_Suppressor.jpeg"
   },
   {
@@ -11303,6 +11303,997 @@
     "usableOnConsole": true,
     "searchTags": "not_enabled",
     "image": "images/weapons/attachments/support/Red9Bttstck.jpeg"
+  },
+
+  {
+    "objectName": "AKS74U_Black",
+    "inGameName": "KAS-74U - Black",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
+    "image": "images/weapons/firearms/AKS74U_Black.jpeg"
+  },
+  {
+    "objectName": "AKS74U_Green",
+    "inGameName": "KAS-74U - Green",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
+    "image": "images/weapons/firearms/AKS74U_Green.jpeg"
+  },
+  {
+    "objectName": "AKS74U",
+    "inGameName": "KAS-74U",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
+    "image": "images/weapons/firearms/AKS74U.jpeg"
+  },
+  {
+    "objectName": "AK74_Black",
+    "inGameName": "KA-74 - Black",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
+    "image": "images/weapons/firearms/AK74_Black.jpeg"
+  },
+  {
+    "objectName": "AK74_Green",
+    "inGameName": "kA-74 - Green",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
+    "image": "images/weapons/firearms/AK74_Green.jpeg"
+  },
+  {
+    "objectName": "AK74",
+    "inGameName": "KA-74",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
+    "image": "images/weapons/firearms/AK74.jpeg"
+  },
+  {
+    "objectName": "AK101_Black",
+    "inGameName": "KA-101",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/AK101_Black.jpeg"
+  },
+  {
+    "objectName": "AK101_Green",
+    "inGameName": "KA-101",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/AK101_Green.jpeg"
+  },
+  {
+    "objectName": "AK101",
+    "inGameName": "KA-101",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/AK101.jpeg"
+  },
+  {
+    "objectName": "AKM",
+    "inGameName": "KA-M",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/firearms/AKM.jpeg"
+  },
+  {
+    "objectName": "Aug",
+    "inGameName": "AUR AX",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/Aug.jpeg"
+  },
+  {
+    "objectName": "AugShort",
+    "inGameName": "AUR A1",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/AugShort.jpeg"
+  },
+  {
+    "objectName": "B95_Black",
+    "inGameName": "Blaze - Black",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, .308",
+    "image": "images/weapons/firearms/B95_Black.jpeg"
+  },
+  {
+    "objectName": "B95_Green",
+    "inGameName": "Blaze - Green",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, .308",
+    "image": "images/weapons/firearms/B95_Green.jpeg"
+  },
+  {
+    "objectName": "B95",
+    "inGameName": "Blaze",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, .308",
+    "image": "images/weapons/firearms/B95.jpeg"
+  },
+  {
+    "objectName": "SawedoffB95",
+    "inGameName": "Sawed-ff Blaze",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, .308",
+    "image": "images/weapons/firearms/SawedoffB95.jpeg"
+  },
+  {
+    "objectName": "CZ61",
+    "inGameName": "CR-61 Skorpion",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, skorpion automatic, .380acp",
+    "image": "images/weapons/firearms/CZ61.jpeg"
+  },
+  {
+    "objectName": "CZ527_Black",
+    "inGameName": "CR-527 - Black",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x39",
+    "image": "images/weapons/firearms/CZ527_Black.jpeg"
+  },
+  {
+    "objectName": "CZ527_Camo",
+    "inGameName": "CR-527 - Camo",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x39",
+    "image": "images/weapons/firearms/CZ527_Camo.jpeg"
+  },
+  {
+    "objectName": "CZ527_Green",
+    "inGameName": "CR-527 - Green",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x39",
+    "image": "images/weapons/firearms/CZ527_Green.jpeg"
+  },
+  {
+    "objectName": "CZ527",
+    "inGameName": "CR-527",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x39",
+    "image": "images/weapons/firearms/CZ527.jpeg"
+  },
+  {
+    "objectName": "CZ550",
+    "inGameName": "CR-550",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, .308, savannah",
+    "image": "images/weapons/firearms/CZ550.jpeg"
+  },
+  {
+    "objectName": "FAL",
+    "inGameName": "LAR",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, .308",
+    "image": "images/weapons/firearms/FAL.jpeg"
+  },
+  {
+    "objectName": "FAMAS",
+    "inGameName": "LE-MAS",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/FAMAS.jpeg"
+  },
+  {
+    "objectName": "SawedoffFAMAS",
+    "inGameName": "Sawed-off LE-MAS",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "inGameName": "Sawed-off LE-MAS",
+    "image": "images/weapons/firearms/SawedoffFAMAS.jpeg"
+  },
+  {
+    "objectName": "Izh18",
+    "inGameName": "BK-12",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x39",
+    "image": "images/weapons/firearms/Izh18.jpeg"
+  },
+  {
+    "inGameName": "Sawed-off LE-MAS",
+    "inGameName": "BK-12",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x39",
+    "image": "images/weapons/firearms/SawedoffIzh18.jpeg"
+  },
+  {
+    "objectName": "M4A1_Black",
+    "inGameName": "M4-A1",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/M4A1_Black.jpeg"
+  },
+  {
+    "objectName": "M4A1_Green",
+    "inGameName": "M4-A1",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/M4A1_Green.jpeg"
+  },
+  {
+    "objectName": "M4A1",
+    "inGameName": "M4-A1",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/M4A1.jpeg"
+  },
+  {
+    "objectName": "M14",
+    "inGameName": "DMR",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, .308",
+    "image": "images/weapons/firearms/M14.jpeg"
+  },
+  {
+    "objectName": "M16A2",
+    "inGameName": "M16-A2",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/M16A2.jpeg"
+  },
+  {
+    "objectName": "M249",
+    "inGameName": "$UNT$M249 SAW",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "unreleased",
+    "image": "images/weapons/firearms/M249.jpeg"
+  },
+  {
+    "objectName": "Mosin9130_Camo",
+    "inGameName": "Mosin 91/30 - Camo",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/firearms/Mosin9130_Camo.jpeg"
+  },
+  {
+    "objectName": "Mosin9130_Green",
+    "inGameName": "Mosin 91/30 - Camo",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x54mmr",
+    "image": "images/weapons/firearms/Mosin9130_Green.jpeg"
+  },
+  {
+    "objectName": "Mosin9130",
+    "inGameName": "Mosin 91/30",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x54mmr",
+    "image": "images/weapons/firearms/Mosin9130.jpeg"
+  },
+  {
+    "objectName": "SawedoffMosin9130_Black",
+    "inGameName": "Sawed-off Mosin 91/30 - Black",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x54mmr",
+    "image": "images/weapons/firearms/SawedoffMosin9130_Black.jpeg"
+  },
+  {
+    "objectName": "SawedoffMosin9130_Camo",
+    "inGameName": "Sawed-off Mosin 91/30 - Camo",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x54mmr",
+    "image": "images/weapons/firearms/SawedoffMosin9130_Camo.jpeg"
+  },
+  {
+    "objectName": "SawedoffMosin9130_Green",
+    "inGameName": "Sawed-off Mosin 91/30 - Green",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x54mmr",
+    "image": "images/weapons/firearms/SawedoffMosin9130_Green.jpeg"
+  },
+  {
+    "objectName": "SawedoffMosin9130",
+    "inGameName": "Sawed-off Mosin 91/30",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/firearms/SawedoffMosin9130.jpeg"
+  },
+  {
+    "objectName": "MP5K",
+    "inGameName": "SG5-K",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "submachine gun, automatic, 9x19",
+    "image": "images/weapons/firearms/MP5K.jpeg"
+  },
+  {
+    "objectName": "PP19",
+    "inGameName": "Bizon",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, automatic, .380acp",
+    "image": "images/weapons/firearms/PP19.jpeg"
+  },
+  {
+    "objectName": "Repeater",
+    "inGameName": "Repeater Carbine",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, .357",
+    "image": "images/weapons/firearms/Repeater.jpeg"
+  },
+  {
+    "objectName": "Ruger1022",
+    "inGameName": "Sporter 22",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, .22",
+    "image": "images/weapons/firearms/Ruger1022.jpeg"
+  },
+  {
+    "objectName": "Scout_Chernarus",
+    "inGameName": "Pioneer - Livonia",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/firearms/Scout_Chernarus.jpeg"
+  },
+  {
+    "objectName": "Scout_Livonia",
+    "inGameName": "Pioneer - Livonia",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 5.56x45",
+    "image": "images/weapons/firearms/Scout_Livonia.jpeg"
+  },
+  {
+    "objectName": "Scout",
+    "inGameName": "Pioneer",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 5.56x45",
+    "image": "images/weapons/firearms/Scout.jpeg"
+  },
+  {
+    "objectName": "SKS_Black",
+    "inGameName": "SK 59/66 - Camo",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x39",
+    "image": "images/weapons/firearms/SKS_Black.jpeg"
+  },
+  {
+    "objectName": "SKS_Green",
+    "inGameName": "SK 59/66 - Camo",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x39",
+    "image": "images/weapons/firearms/SKS_Green.jpeg"
+  },
+  {
+    "objectName": "SKS",
+    "inGameName": "SK 59/66",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x39",
+    "image": "images/weapons/firearms/SKS.jpeg"
+  },
+  {
+    "objectName": "SSG82",
+    "inGameName": "SSG 82",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 5.56x45",
+    "image": "images/weapons/firearms/SSG82.jpeg"
+  },
+  {
+    "objectName": "SV98",
+    "inGameName": "SV-89",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x54mmr",
+    "image": "images/weapons/firearms/SV98.jpeg"
+  },
+  {
+    "objectName": "SVD_Wooden",
+    "inGameName": "VSD - Wooden",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x54mmr, dragunov",
+    "image": "images/weapons/firearms/SVD_Wooden.jpeg"
+  },
+  {
+    "objectName": "SVD",
+    "inGameName": "VSD",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, 7.62x54mmr, dragunov",
+    "image": "images/weapons/firearms/SVD.jpeg"
+  },
+  {
+    "objectName": "TrumpetParts",
+    "inGameName": "",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "unreleased, a trumpet?!",
+    "image": "images/weapons/firearms/TrumpetParts.jpeg"
+  },
+  {
+    "objectName": "UMP45",
+    "inGameName": "USG-45",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, automatic, .45acp",
+    "image": "images/weapons/firearms/UMP45.jpeg"
+  },
+  {
+    "objectName": "ASVAL",
+    "inGameName": "SVAL",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 9x39, silenced",
+    "image": "images/weapons/firearms/ASVAL.jpeg"
+  },
+  {
+    "objectName": "Vikhr",
+    "inGameName": "Vikhr",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 9x39",
+    "image": "images/weapons/firearms/Vikhr.jpeg"
+  },
+  {
+    "objectName": "VSS",
+    "inGameName": "VSS",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, 9x39, silenced",
+    "image": "images/weapons/firearms/VSS.jpeg"
+  },
+  {
+    "objectName": "Winchester70_Black",
+    "inGameName": "M70 Tundra - Black",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, .308",
+    "image": "images/weapons/firearms/Winchester70_Black.jpeg"
+  },
+  {
+    "objectName": "Winchester70_Green",
+    "inGameName": "M70 Tundra",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, .308",
+    "image": "images/weapons/firearms/Winchester70_Green.jpeg"
+  },
+  {
+    "objectName": "Winchester70",
+    "inGameName": "M70 Tundra",
+    "category": "firearms",
+    "modelType": "Config",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": true,
+    "searchTags": "rifle, .308",
+    "image": "images/weapons/firearms/Winchester70.jpeg"
+  },
+  {
+    "objectName": "aks74u.p3d",
+    "inGameName": "KAS-74U",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
+    "image": "images/weapons/firearms/dzweaponsfirearmsak74aks74u.p3d.jpeg"
+  },
+  {
+    "objectName": "ak101.p3d",
+    "inGameName": "KA-101",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "AK, machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/dzweaponsfirearmsak101ak101.p3d.jpeg"
+  },
+  {
+    "objectName": "akm.p3d",
+    "inGameName": "KA-M",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "AK, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/firearms/dzweaponsfirearmsakmakm.p3d.jpeg"
+  },
+  {
+    "objectName": "aug_short.p3d",
+    "inGameName": "AUR A1",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/firearms/dzweaponsfirearmsaugaug_short.p3d.jpeg"
+  },
+  {
+    "objectName": "aug.p3d",
+    "inGameName": "AUR AX",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/dzweaponsfirearmsaugaug.p3d.jpeg"
+  },
+  {
+    "objectName": "b95_sawn.p3d",
+    "inGameName": "Sawed-off Blaze",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, .308",
+    "image": "images/weapons/firearms/dzweaponsfirearmsb95b95_sawn.p3d.jpeg"
+  },
+  {
+    "objectName": "b95.p3d",
+    "inGameName": "Blaze",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, .308",
+    "image": "images/weapons/firearms/dzweaponsfirearmsb95b95.p3d.jpeg"
+  },
+  {
+    "objectName": "cz61.p3d",
+    "inGameName": "CR-61 Skorpion",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "submachine_gun, skorpion automatic, .380acp",
+    "image": "images/weapons/firearms/dzweaponsfirearmscz61cz61.p3d.jpeg"
+  },
+  {
+    "objectName": "cz527.p3d",
+    "inGameName": "CR-527",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, 7.62x39",
+    "image": "images/weapons/firearms/dzweaponsfirearmscz527cz527.p3d.jpeg"
+  },
+  {
+    "objectName": "cz550.p3d",
+    "objectName": "CZ550 Savannah",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, .308, savannah",
+    "image": "images/weapons/firearms/dzweaponsfirearmscz550cz550.p3d.jpeg"
+  },
+  {
+    "objectName": "fal.p3d",
+    "inGameName": "LAR",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, .308",
+    "image": "images/weapons/firearms/dzweaponsfirearmsfalfal.p3d.jpeg"
+  },
+  {
+    "objectName": "famas.p3d",
+    "inGameName": "LE-MAS",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/dzweaponsfirearmsfamasfamas.p3d.jpeg"
+  },
+  {
+    "objectName": "sawedofffamas.p3d",
+    "inGameName": "Sawed-off LE-MAS",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "inGameName": "Sawed-off LE-MAS",
+    "image": "images/weapons/firearms/dzweaponsfirearmsfamassawedofffamas.p3d.jpeg"
+  },
+  {
+    "objectName": "izh18_sawedoff.p3d",
+    "inGameName": "Sawed-off BK-18",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/firearms/dzweaponsfirearmsizh18izh18_sawedoff.p3d.jpeg"
+  },
+  {
+    "objectName": "izh18.p3d",
+    "inGameName": "BK-18",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, 7.62x39",
+    "image": "images/weapons/firearms/dzweaponsfirearmsizh18izh18.p3d.jpeg"
+  },
+  {
+    "objectName": "m4a1.p3d",
+    "inGameName": "M4-A1",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "submachine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/dzweaponsfirearmsm4m4a1.p3d.jpeg"
+  },
+  {
+    "objectName": "m14.p3d",
+    "inGameName": "DMR",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, .308",
+    "image": "images/weapons/firearms/dzweaponsfirearmsm14m14.p3d.jpeg"
+  },
+  {
+    "objectName": "m16a2.p3d",
+    "inGameName": "M16-A2",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/dzweaponsfirearmsm16a2m16a2.p3d.jpeg"
+  },
+  {
+    "objectName": "m249.p3d",
+    "inGameName": "$UNT$M249 SAW",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "unreleased",
+    "image": "images/weapons/firearms/dzweaponsfirearmsm249m249.p3d.jpeg"
+  },
+  {
+    "objectName": "mosin_sawn.p3d",
+    "inGameName": "Sawed-off Mosin 91/30",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, 7.62x54mmr",
+    "image": "images/weapons/firearms/dzweaponsfirearmsmosin9130mosin_sawn.p3d.jpeg"
+  },
+  {
+    "objectName": "mosin9130.p3d",
+    "inGameName": "Mosin 91/30",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, 7.62x54mmr",
+    "image": "images/weapons/firearms/dzweaponsfirearmsmosin9130mosin9130.p3d.jpeg"
+  },
+  {
+    "objectName": "mp5k.p3d",
+    "inGameName": "SG5-K",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "submachine gun, automatic, 9x19",
+    "image": "images/weapons/firearms/dzweaponsfirearmsmp5mp5k.p3d.jpeg"
+  },
+  {
+    "objectName": "pp19.p3d",
+    "inGameName": "Bizon",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "submachine_gun, automatic, .380acp",
+    "image": "images/weapons/firearms/dzweaponsfirearmspp19pp19.p3d.jpeg"
+  },
+  {
+    "objectName": "repeater.p3d",
+    "inGameName": "Repeater Carbine",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, .357",
+    "image": "images/weapons/firearms/dzweaponsfirearmsrepeaterrepeater.p3d.jpeg"
+  },
+  {
+    "objectName": "ruger1022.p3d",
+    "inGameName": "Sporter 22",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, .22",
+    "image": "images/weapons/firearms/dzweaponsfirearmsruger1022ruger1022.p3d.jpeg"
+  },
+  {
+    "objectName": "scout.p3d",
+    "inGameName": "Pioneer",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, 5.56x45",
+    "image": "images/weapons/firearms/dzweaponsfirearmsscoutscout.p3d.jpeg"
+  },
+  {
+    "objectName": "sks.p3d",
+    "inGameName": "SK 59/66",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, 7.62x39",
+    "image": "images/weapons/firearms/dzweaponsfirearmsskssks.p3d.jpeg"
+  },
+  {
+    "objectName": "sg82.p3d",
+    "inGameName": "SSG 82",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, 5.56x45",
+    "image": "images/weapons/firearms/dzweaponsfirearmsssg82ssg82.p3d.jpeg"
+  },
+  {
+    "objectName": "sv98.p3d",
+    "inGameName": "VS-89",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, 7.62x54mmr",
+    "image": "images/weapons/firearms/dzweaponsfirearmssv98sv98.p3d.jpeg"
+  },
+  {
+    "objectName": "svd_old.p3d",
+    "inGameName": "VSD - Wooden",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, 7.62x54mmr, dragunov",
+    "image": "images/weapons/firearms/dzweaponsfirearmssvdsvd_old.p3d.jpeg"
+  },
+  {
+    "objectName": "svd.p3d",
+    "inGameName": "VSD",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, 7.62x54mmr, dragunov",
+    "image": "images/weapons/firearms/dzweaponsfirearmssvdsvd.p3d.jpeg"
+  },
+  {
+    "objectName": "trumpet_parts.p3d",
+    "inGameName": "",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "unreleased, a trumpet?!",
+    "image": "images/weapons/firearms/dzweaponsfirearmstrumpettrumpet_parts.p3d.jpeg"
+  },
+  {
+    "objectName": "ump.p3d",
+    "inGameName": "USG-45",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "submachine_gun, automatic, .45acp",
+    "image": "images/weapons/firearms/dzweaponsfirearmsump45ump.p3d.jpeg"
+  },
+  {
+    "objectName": "sval.p3d",
+    "inGameName": "SVAL",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, 9x39, silenced",
+    "image": "images/weapons/firearms/dzweaponsfirearmsvssval.p3d.jpeg"
+  },
+  {
+    "objectName": "vikhr.p3d",
+    "inGameName": "Vikhr",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, 9x39",
+    "image": "images/weapons/firearms/dzweaponsfirearmsvssvikhr.p3d.jpeg"
+  },
+  {
+    "objectName": "vss.p3d",
+    "inGameName": "VSS",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, 9x39, silenced",
+    "image": "images/weapons/firearms/dzweaponsfirearmsvssvss.p3d.jpeg"
+  },
+  {
+    "objectName": "winchester70.p3d",
+    "inGameName": "M70 Tundra",
+    "category": "firearms",
+    "modelType": "Raw P3D",
+    "path": "/dz/weapons/firearms",
+    "usableOnConsole": false,
+    "searchTags": "rifle, .308",
+    "image": "images/weapons/firearms/dzweaponsfirearmswinchester70winchester70.p3d.jpeg"
   }
 
 ]
