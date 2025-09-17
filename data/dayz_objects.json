@@ -13096,6 +13096,1418 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/placeholder.jpeg"
+  },
+
+
+  {
+    "objectName": "Land_Wall_Gate_Camp",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "gate, summer camp, sign, metal, brown, large, double",
+    "image": "images/structures/walls/Land_Wall_Gate_Camp.jpg"
+  }, 
+  {
+    "objectName": "Land_Wall_Gate_Fen2_L",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, gate, wire, barbed wire, brown, single, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_Fen2_L.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_Fen2_R",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, gate, wire, barbed wire, brown, medium, single, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_Fen2_R.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_FenG_Big_L",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, gate, green, medium, single, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_FenG_Big_L.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_FenG_Big_Open",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, gate, green, double, large, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_FenG_Big_Open.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_FenG_Big_R",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, gate, green, medium, single, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_FenG_Big_R.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_FenG_Big",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "green, metal, gate, double, large, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_FenG_Big.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_FenG_Open",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+     "searchTags": "green, metal, gate, double, large, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_FenG_Open.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_FenG",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "green, metal, gate, single, small, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_FenG.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_FenR_Big_L",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, gate, red, medium, single, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_FenR_Big_L.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_FenR_Big_Open",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "red, metal, gate, double, large, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_FenR_Big_Open.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_FenR_Big_R",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "red, metal, gate, single, medium, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_FenR_Big_R.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_FenR_Big",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "red, metal, gate, double, large, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_FenR_Big.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_FenR_Open",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "red, metal, stone, brick, gate, small, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_FenR_Open.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_FenR",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "red, metal, stone, brick, gate, small, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_FenR.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_Ind1_L",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "green, red, metal, gate, large, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_Ind1_L.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_Ind1_R",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "green, red, metal, gate, large, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_Ind1_R.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_Ind2A_L",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "blue, metal, gate, large, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_Ind2A_L.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_Ind2A_R",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "blue, metal, gate, large, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_Ind2A_R.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_Ind2B_L",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "red, metal, gate, single, large, broken, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_Ind2B_L.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_Ind2B_R",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "red, metal, gate, single, large, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_Ind2B_R.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_Ind2Rail_L",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "blue, metal, gate, large, train, crossing, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_Ind2Rail_L.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_Ind2Rail_R",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "blue, metal, gate, large, train, crossing, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_Ind2Rail_R.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_Village",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, gate, blue, single, small, residential",
+    "image": "images/structures/walls/Land_Wall_Gate_Village.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_Wood1",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, gate, broken, single, small, residential",
+    "image": "images/structures/walls/Land_Wall_Gate_Wood1.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_Wood2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, gate, single, small, residential",
+    "image": "images/structures/walls/Land_Wall_Gate_Wood2.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_Wood3",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, gate, single, small, residential",
+    "image": "images/structures/walls/Land_Wall_Gate_Wood3.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_Wood4",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, gate, single, small, brick, stone, residential",
+    "image": "images/structures/walls/Land_Wall_Gate_Wood4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CBrk_5_D",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "red, brick wall, medium, broken, residential",
+    "image": "images/structures/walls/StaticObj_Wall_CBrk_5_D.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CBrk_5",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "red brick, wall, medium, residential",
+    "image": "images/structures/walls/StaticObj_Wall_CBrk_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CBrk_Corner",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "red brick, wall, small, residential",
+    "image": "images/structures/walls/StaticObj_Wall_CBrk_Corner.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CBrk_End",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "red, brick, wall, small, broken, residential",
+    "image": "images/structures/walls/StaticObj_Wall_CBrk_End.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CBrk_Pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "red, brick, wall, small, broken, residential",
+    "image": "images/structures/walls/StaticObj_Wall_CBrk_Pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CGry_5_D",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "white, tiled, wall, medium, broken, residential",
+    "image": "images/structures/walls/StaticObj_Wall_CGry_5_D.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CGry_5",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "white, tiled, wall, medium, residential",
+    "image": "images/structures/walls/StaticObj_Wall_CGry_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CGry_Corner_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "white, tiled, wall, small, residential",
+    "image": "images/structures/walls/StaticObj_Wall_CGry_Corner_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CGry_Corner",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "white, tiled, wall, small, residential",
+    "image": "images/structures/walls/StaticObj_Wall_CGry_Corner.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CGry_End",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "white, tiled, wall, small, broken, residential",
+    "image": "images/structures/walls/StaticObj_Wall_CGry_End.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CGryLow_5",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "white, tiled, wall, medium, residential, low",
+    "image": "images/structures/walls/StaticObj_Wall_CGryLow_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CGryLow_End1",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "white, tiled, wall, medium, residential, low, broken",
+    "image": "images/structures/walls/StaticObj_Wall_CGryLow_End1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CGryLow_End2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "white, tiled, wall, medium, residential, low, broken",
+    "image": "images/structures/walls/StaticObj_Wall_CGryLow_End2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Cnc_5",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "large, concrete, wall, damaged, slab, reenforced, foundations, vertical",
+    "image": "images/structures/walls/StaticObj_Wall_Cnc_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CncSmall_4",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "small, concrete, wall, slab, reenforced, foundations, vertical",
+    "image": "images/structures/walls/StaticObj_Wall_CncSmall_4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CncSmall_8",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "small, concrete, wall, slab, reenforced, medium, foundations, vertical",
+    "image": "images/structures/walls/StaticObj_Wall_CncSmall_8.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CYel_5",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "medium, yellow, brick, plaster, wall, residential",
+    "image": "images/structures/walls/StaticObj_Wall_CYel_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CYel_Corner",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "small, yellow, brick, plaster, wall, residential",
+    "image": "images/structures/walls/StaticObj_Wall_CYel_Corner.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CYel_End",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "small, yellow, brick, plaster, wall, residential, broken",
+    "image": "images/structures/walls/StaticObj_Wall_CYel_End.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_CYel_End2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "small, yellow, brick, plaster, wall, residential, broken",
+    "image": "images/structures/walls/StaticObj_Wall_CYel_End2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Fen1_5_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, fence, small, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Fen1_5_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Fen1_5_Hole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, fence, small, residential, broken",
+    "image": "images/structures/walls/StaticObj_Wall_Fen1_5_Hole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Fen1_5_Pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, fence, small, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Fen1_5_Pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Fen1_5",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, fence, small, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Fen1_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Fen2_6_Hole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, fence, large, industrial, barbed wire, broken",
+    "image": "images/structures/walls/StaticObj_Wall_Fen2_6_Hole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Fen2_6",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, fence, large, industrial, barbed wire",
+    "image": "images/structures/walls/StaticObj_Wall_Fen2_6.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Fen2_Pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, fence, small, industrial, barbed wire",
+    "image": "images/structures/walls/StaticObj_Wall_Fen2_Pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_FenG_3",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, stone, fence, medium, residential, green",
+    "image": "images/structures/walls/StaticObj_Wall_FenG_3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_FenG_Pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, stone, fence, small, residential",
+    "image": "images/structures/walls/StaticObj_Wall_FenG_Pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_FenR_3",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, stone, fence, medium, residential, red",
+    "image": "images/structures/walls/StaticObj_Wall_FenR_3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_FenR_Pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, stone, fence, small, residential",
+    "image": "images/structures/walls/StaticObj_Wall_FenR_Pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_FenW_7_D",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, fence, large, long, wire, broken, residential",
+    "image": "images/structures/walls/StaticObj_Wall_FenW_7_D.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_FenW_7_S",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, fence, large, long, wire, broken, residential",
+    "image": "images/structures/walls/StaticObj_Wall_FenW_7_S.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_FenW_7",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, fence, large, long, wire, broken, residential",
+    "image": "images/structures/walls/StaticObj_Wall_FenW_7.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_ForFieldFen_1",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, farm, industrial, small",
+    "image": "images/structures/walls/StaticObj_Wall_ForFieldFen_1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_ForFieldFen_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, farm, industrial, small",
+    "image": "images/structures/walls/StaticObj_Wall_ForFieldFen_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_ForFieldFen_end",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, farm, industrial, small",
+    "image": "images/structures/walls/StaticObj_Wall_ForFieldFen_end.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_GarbCont_Corner",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "concrete, wall, industrial, corner, white",
+    "image": "images/structures/walls/StaticObj_Wall_GarbCont_Corner.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_GarbCont",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "concrete, wall, industrial, white",
+    "image": "images/structures/walls/StaticObj_Wall_GarbCont.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Gate_CGry",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "stone, arch, archway, roman, greek, entrance, gate",
+    "image": "images/structures/walls/StaticObj_Wall_Gate_CGry.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndCnc_4_D",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "concrete, panel, wall, military, broken, medium",
+    "image": "images/structures/walls/StaticObj_Wall_IndCnc_4_D.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndCnc_4",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "concrete, panel, wall, military, medium",
+    "image": "images/structures/walls/StaticObj_Wall_IndCnc_4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndCnc_10",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "large, concrete, wall, damaged, slab, reenforced, foundations, vertical",
+    "image": "images/structures/walls/StaticObj_Wall_IndCnc_10.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndCnc_End_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "concrete, panel, wall, military, small, broken",
+    "image": "images/structures/walls/StaticObj_Wall_IndCnc_End_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndCnc_End_3",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "concrete, panel, wall, military, small",
+    "image": "images/structures/walls/StaticObj_Wall_IndCnc_End_3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndCnc_Pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "concrete, panel, wall, military, small",
+    "image": "images/structures/walls/StaticObj_Wall_IndCnc_Pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndCnc2_3",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "concrete, wall, industrial, small",
+    "image": "images/structures/walls/StaticObj_Wall_IndCnc2_3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndCncH_5",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "large, concrete, wall, damaged, slab, reenforced, foundations, horizontal, flat, rectangle",
+    "image": "images/structures/walls/StaticObj_Wall_IndCncH_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndCncH_10",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "large, concrete, wall, damaged, slab, reenforced, foundations, horizontal, flat, square",
+    "image": "images/structures/walls/StaticObj_Wall_IndCncH_10.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndFnc_3_D",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, fence, military, broken, barbed wire, small",
+    "image": "images/structures/walls/StaticObj_Wall_IndFnc_3_D.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndFnc_3_Hole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, fence, military, broken, barbed wire, small",
+    "image": "images/structures/walls/StaticObj_Wall_IndFnc_3_Hole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndFnc_3",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, fence, military, barbed wire, small",
+    "image": "images/structures/walls/StaticObj_Wall_IndFnc_3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndFnc_9",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, fence, military, barbed wire, large",
+    "image": "images/structures/walls/StaticObj_Wall_IndFnc_9.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndFnc_Corner",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, fence, military, barbed wire, small",
+    "image": "images/structures/walls/StaticObj_Wall_IndFnc_Corner.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndFnc_Pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, wire, fence, military, broken, barbed wire, small",
+    "image": "images/structures/walls/StaticObj_Wall_IndFnc_Pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndVar1_5_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "brick, plaster, wall, residential, large",
+    "image": "images/structures/walls/StaticObj_Wall_IndVar1_5_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndVar1_5_D_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "brick, plaster, wall, residential, large, broken, end",
+    "image": "images/structures/walls/StaticObj_Wall_IndVar1_5_D_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndVar1_5_D",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "brick, plaster, wall, residential, large, broken, end",
+    "image": "images/structures/walls/StaticObj_Wall_IndVar1_5_D.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndVar1_5",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "small, brick, plaster, wall, residential",
+    "image": "images/structures/walls/StaticObj_Wall_IndVar1_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndVar1_Pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "small, brick, plaster, wall, residential",
+    "image": "images/structures/walls/StaticObj_Wall_IndVar1_Pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndVar2_5_D",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "brick, wall, broken, red, small",
+    "image": "images/structures/walls/StaticObj_Wall_IndVar2_5_D.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndVar2_5",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "brick, wall, broken, red, medium",
+    "image": "images/structures/walls/StaticObj_Wall_IndVar2_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_IndVar2_Pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "brick, wall, broken, red, small",
+    "image": "images/structures/walls/StaticObj_Wall_IndVar2_Pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Railing_1_EndL",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, train, rail, small, white",
+    "image": "images/structures/walls/StaticObj_Wall_Railing_1_EndL.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Railing_1_EndR",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, train, rail, small, white",
+    "image": "images/structures/walls/StaticObj_Wall_Railing_1_EndR.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Railing_1_Slope",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, train, rail, small, white",
+    "image": "images/structures/walls/StaticObj_Wall_Railing_1_Slope.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Railing_1",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, train, rail, small, white",
+    "image": "images/structures/walls/StaticObj_Wall_Railing_1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Railing_2_Slope",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, train, rail, small, white, red",
+    "image": "images/structures/walls/StaticObj_Wall_Railing_2_Slope.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Railing_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, train, rail, small, white, red",
+    "image": "images/structures/walls/StaticObj_Wall_Railing_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Railing_EndL",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, train, rail, small, white, red",
+    "image": "images/structures/walls/StaticObj_Wall_Railing_EndL.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Railing_EndR",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, train, rail, small, white, red",
+    "image": "images/structures/walls/StaticObj_Wall_Railing_EndR.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Stone",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "old, rock, wall, large, nature, farm",
+    "image": "images/structures/walls/StaticObj_Wall_Stone.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_StoneD",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "old, rock, wall, large, nature, farm, broken",
+    "image": "images/structures/walls/StaticObj_Wall_StoneD.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Tin_4_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, fence, wall, medium, industrial, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Tin_4_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Tin_4",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, fence, wall, medium, industrial, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Tin_4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Tin_5",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, fence, wall, medium, industrial, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Tin_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Tin_Pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, fence, wall, small, industrial, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Tin_Pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_TinCom_3",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, fence, wall, small, industrial",
+    "image": "images/structures/walls/StaticObj_Wall_TinCom_3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_TinCom_9_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, fence, wall, large, industrial, broken",
+    "image": "images/structures/walls/StaticObj_Wall_TinCom_9_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_TinCom_9",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, fence, wall, large, industrial",
+    "image": "images/structures/walls/StaticObj_Wall_TinCom_9.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_TinCom_Pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, fence, wall, small, industrial",
+    "image": "images/structures/walls/StaticObj_Wall_TinCom_Pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_VilVar1_6",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, large, residential, picket",
+    "image": "images/structures/walls/StaticObj_Wall_VilVar1_6.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_VilVar1_Pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, small, residential",
+    "image": "images/structures/walls/StaticObj_Wall_VilVar1_Pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_VilVar2_4_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, medium, residential",
+    "image": "images/structures/walls/StaticObj_Wall_VilVar2_4_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_VilVar2_4_D",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, medium, broken, residential",
+    "image": "images/structures/walls/StaticObj_Wall_VilVar2_4_D.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_VilVar2_4_END",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, medium, broken, residential",
+    "image": "images/structures/walls/StaticObj_Wall_VilVar2_4_END.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_VilVar2_4",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, medium, residential",
+    "image": "images/structures/walls/StaticObj_Wall_VilVar2_4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_VilVar2_Pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, small, broken, residential",
+    "image": "images/structures/walls/StaticObj_Wall_VilVar2_Pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood1_5_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, medium, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Wood1_5_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood1_5_pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, small, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Wood1_5_pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood1_5",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, medium, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Wood1_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood1D_5_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, medium, residential, broken",
+    "image": "images/structures/walls/StaticObj_Wall_Wood1D_5_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood1D_5_pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, small, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Wood1D_5_pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood1D_5",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, medium, residential, broken",
+    "image": "images/structures/walls/StaticObj_Wall_Wood1D_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood2_5_D",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, medium, residential, broken",
+    "image": "images/structures/walls/StaticObj_Wall_Wood2_5_D.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood2_5_END_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, small, residential, broken",
+    "image": "images/structures/walls/StaticObj_Wall_Wood2_5_END_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood2_5_END",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, small, residential, broken",
+    "image": "images/structures/walls/StaticObj_Wall_Wood2_5_END.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood2_5_nolc",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, medium, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Wood2_5_nolc.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood2_5_pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, small, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Wood2_5_pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood2_5",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, fence, medium, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Wood2_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood3_4_End",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, stone, brick, fence, medium, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Wood3_4_End.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood3_4",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, stone, brick, fence, medium, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Wood3_4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood4_4",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, stone, brick, fence, medium, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Wood4_4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood4_End1",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "stone, brick, fence, medium, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Wood4_End1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood4_End2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "stone, brick, fence, small, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Wood4_End2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_Wood4_Pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "stone, brick, fence, small, residential",
+    "image": "images/structures/walls/StaticObj_Wall_Wood4_Pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_WoodF_5_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, trail, fence, nature, medium",
+    "image": "images/structures/walls/StaticObj_Wall_WoodF_5_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_WoodF_5_END",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, trail, fence, nature, medium",
+    "image": "images/structures/walls/StaticObj_Wall_WoodF_5_END.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_WoodF_5",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, trail, fence, nature, small",
+    "image": "images/structures/walls/StaticObj_Wall_WoodF_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_WoodVil_4_2",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, medium, fence, residential",
+    "image": "images/structures/walls/StaticObj_Wall_WoodVil_4_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_WoodVil_4_pole",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, small, fence, residential",
+    "image": "images/structures/walls/StaticObj_Wall_WoodVil_4_pole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_WoodVil_4",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wooden, medium, fence, residential",
+    "image": "images/structures/walls/StaticObj_Wall_WoodVil_4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Walls_End",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures/walls",
+    "usableOnConsole": true,
+    "searchTags": "wall, brick, stone, small",
+    "image": "images/structures/walls/StaticObj_Walls_End.jpg"
   }
 
 
