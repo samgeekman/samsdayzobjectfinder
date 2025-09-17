@@ -2,6 +2,43 @@
 
 
 <style>
+/* copy button */
+.copy-btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1em;
+  color: #0077cc;
+  opacity: 0;
+  transition: opacity .15s ease;
+  padding: 0;
+  position: absolute;  
+  right: 6px;          
+  top: 50%;
+  transform: translateY(-50%);
+}
+#dayzObjects tbody td:first-child {
+  position: relative; 
+}
+
+#dayzObjects tbody td:first-child:hover .copy-btn {
+  opacity: 1;
+}
+
+.copy-btn:hover {
+  color: #005fa3;
+}
+/* Flash row highlight */
+@keyframes flash-highlight {
+  0%   { background-color: #fff6a1; }
+  100% { background-color: transparent; }
+}
+.flash {
+  animation: flash-highlight 1s ease-out;
+}
+
+
+
   /* Make the table full width with margin */
   #dayzObjects_wrapper {
     width: 95% !important;
@@ -38,7 +75,7 @@
 
   /* Adjust search input width */
   #dayzObjects_filter input {
-    width: 200px;
+    width: 250px;
     max-width: 100%;
   }
 
@@ -123,7 +160,12 @@ $(document).ready(function() {
     columnDefs: [
       { targets: [6], visible: true } // Search Tags column
     ],
-    dom: '<"top-bar"lfr>tip'
+    dom: '<"top-bar"lfr>tip',
+     language: {
+    search: "Search: ",  // remove the "Search:" label
+    searchPlaceholder: "'large snow rock', '308 rifles'" // 
+  }
+    
   });
 
   // Move filters into top-bar
@@ -164,6 +206,51 @@ $(document).ready(function() {
     $('#imgPreview').remove();
   });
 });
+
+ // add copy button
+  function addCopyButtons() {
+    $('#dayzObjects tbody tr').each(function () {
+      var $firstTd = $(this).find('td:first');
+      // don't add twice
+      if ($firstTd.find('.copy-btn').length) return;
+
+      // copy proper text
+      var text = $firstTd.clone().children().remove().end().text().trim();
+      if (!text) return;
+
+      var $btn = $('<button type="button" class="copy-btn" title="Copy object name">📋</button>');
+
+      $btn.on('click', function (e) {
+        e.stopPropagation(); // IMPORTANT: prevent row expand / responsive control
+        navigator.clipboard.writeText(text).then(function () {
+          var $row = $(e.target).closest('tr');
+          $row.addClass('flash');
+
+          // tick mark
+          var $b = $(e.target);
+          var prev = $b.html();
+          $b.html('✔');
+
+          setTimeout(function () {
+            $row.removeClass('flash');
+            $b.html(prev);
+          }, 1000);
+        }).catch(function (err) {
+          console.error('Failed to copy:', err);
+        });
+      });
+
+      // keeps original cell text intact
+      $firstTd.append(' ').append($btn);
+    });
+  }
+
+  // initial run
+  addCopyButtons();
+  table.on('draw', addCopyButtons);
+
+
 </script>
+
 
 {{ end }}

@@ -91,12 +91,72 @@
         </ul>
       
       <div class="ananke-socials"></div>
-
+<label style="margin-left:20px;">
+  <input type="checkbox" id="darkModeToggle"> Dark Mode
+</label>
     </div>
   </div>
 </nav>
 
 <style>
+/* Dark mode base */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode #dayzObjects_wrapper {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+body.dark-mode #dayzObjects {
+  color: #e0e0e0;
+  background-color: #1e1e1e;
+}
+
+body.dark-mode #dayzObjects thead th {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+}
+
+body.dark-mode #dayzObjects tbody tr {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode #dayzObjects tbody tr.flash {
+  background-color: #555400; /* adjust flash highlight for dark mode */
+}
+
+body.dark-mode .top-bar,
+body.dark-mode #filters {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .copy-btn {
+  color: #80c0ff;
+}
+
+body.dark-mode .copy-btn:hover {
+  color: #a0e0ff;
+}
+
+/* Input fields & selects */
+body.dark-mode #dayzObjects_filter input,
+body.dark-mode select {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+body.dark-mode #dayzObjects_filter input::placeholder {
+  color: #aaa;
+}
+
+
+
 
 .bg-black {
   background-color: #EEA700 !important; 
@@ -7397,6 +7457,14 @@ $(document).ready(function() {
   }).on('mouseleave', 'td:first-child', function () {
     $('#imgPreview').remove();
   });
+});
+
+$('#darkModeToggle').on('change', function() {
+  if ($(this).is(':checked')) {
+    $('body').addClass('dark-mode');
+  } else {
+    $('body').removeClass('dark-mode');
+  }
 });
 </script>
 
