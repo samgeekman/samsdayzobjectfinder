@@ -15919,9 +15919,29 @@
     "usableOnConsole": false,
     "searchTags": "wall, brick, stone, small",
     "image": "images/structures/walls/StaticObj_Walls_End.jpg"
-  }
+  },
 
-  
+  {
+    "objectName": "Land_Wall_Gate_IndCnc4_Low",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures_bliss/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, concrete, security, sliding, gate, large, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_IndCnc4_Low.jpg"
+  },
+  {
+    "objectName": "Land_Wall_Gate_IndCnc4",
+    "inGameName": "-",
+    "category": "walls",
+    "modelType": "Config",
+    "path": "/dz/structures_bliss/walls",
+    "usableOnConsole": true,
+    "searchTags": "metal, concrete, security, sliding, gate, large, industrial",
+    "image": "images/structures/walls/Land_Wall_Gate_IndCnc4.jpg"
+  },
+
 
 
 ]
