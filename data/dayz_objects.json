@@ -16831,7 +16831,491 @@
     "usableOnConsole": true,
     "searchTags": "metal, fence, wall, industrial, small",
     "image": "images/structures_bliss/walls/StaticObj_Wall_Tin7_Pole.jpg"
+  },
+
+
+  {
+    "objectName": "Land_Cementworks_Conveyorhall",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, brick, large, industrial, loading",
+    "image": "images/structures/industrial/cementworks/Land_Cementworks_Conveyorhall.jpg"
+  },
+  {
+    "objectName": "Land_CementWorks_ExpeditionA",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, concrete, silos, large, industrial",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_ExpeditionA.jpg"
+  },
+  {
+    "objectName": "Land_CementWorks_ExpeditionB",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "walkway, metal, large, industrial, catwalk, plaform",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_ExpeditionB.jpg"
+  },
+  {
+    "objectName": "Land_CementWorks_ExpeditionC",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "walkway, metal, large, industrial, catwalk, plaform, roofed, pipes",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_ExpeditionC.jpg"
+  },
+  {
+    "objectName": "Land_CementWorks_Hall1",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, concrete, large, industrial, blue",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_Hall1.jpg"
+  },
+  {
+    "objectName": "Land_CementWorks_Hall2_Brick",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, brick, large, industrial",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_Hall2_Brick.jpg"
+  },
+  {
+    "objectName": "Land_CementWorks_Hall2_Grey",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, brick, large, industrial",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_Hall2_Grey.jpg"
+  },
+  {
+    "objectName": "Land_CementWorks_MillA",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, silos, tower, large, industrial, broken, damaged, concrete",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_MillA.jpg"
+  },
+  {
+    "objectName": "Land_CementWorks_MillB",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, large, industrial, concrete, pipes",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_MillB.jpg"
+  },
+  {
+    "objectName": "Land_CementWorks_MillC",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, silos, tower, large, industrial, broken, damaged, concrete",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_MillC.jpg"
+  },
+  {
+    "objectName": "Land_CementWorks_RotFurnace",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, silos, tower, large, industrial, broken, damaged, concrete",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_RotFurnace.jpg"
+  },
+  {
+    "objectName": "Land_CementWorks_SiloBig1A",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, silos, tower, large, industrial, concrete",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_SiloBig1A.jpg"
+  },
+  {
+    "objectName": "Land_CementWorks_SiloBig1B",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, silos, tower, large, industrial, concrete",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_SiloBig1B.jpg"
+  },
+  {
+    "objectName": "StaticObj_CementWorks_Conveyor_Up1",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, metal, diagonal, belt, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_Conveyor_Up1.jpg"
+  },
+  {
+    "objectName": "StaticObj_CementWorks_Conveyor_Up2",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, metal, diagonal, belt, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_Conveyor_Up2.jpg"
+  },
+  {
+    "objectName": "StaticObj_CementWorks_Conveyor_Up3",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, metal, diagonal, belt, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_Conveyor_Up3.jpg"
+  },
+  {
+    "objectName": "StaticObj_CementWorks_ConveyorFurnace",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, medium, industrial, metal",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_ConveyorFurnace.jpg"
+  },
+  {
+    "objectName": "StaticObj_CementWorks_ConveyorMillA",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, metal, diagonal, belt, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_ConveyorMillA.jpg"
+  },
+  {
+    "objectName": "StaticObj_CementWorks_ConveyorMillB",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, metal, diagonal, belt, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_ConveyorMillB.jpg"
+  },
+  {
+    "objectName": "StaticObj_CementWorks_ConveyorTowerA",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, large, industrial, metal, vertical",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_ConveyorTowerA.jpg"
+  },
+  {
+    "objectName": "StaticObj_CementWorks_ConveyorTowerB",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, metal, horizontal, belt, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_ConveyorTowerB.jpg"
+  },
+  {
+    "objectName": "StaticObj_CementWorks_ConveyorTowerC",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, metal, horizontal, belt, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_ConveyorTowerC.jpg"
+  },
+  {
+    "objectName": "StaticObj_CementWorks_SiloBig1Bridge",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, metal, horizontal, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_SiloBig1Bridge.jpg"
+  },
+  {
+    "objectName": "StaticObj_CementWorks_SiloBig2",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Config",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": true,
+    "searchTags": "factory, silos, tower, large, industrial, concrete",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_SiloBig2.jpg"
+  },
+
+  {
+    "objectName": "cementworks_conveyorhall.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, brick, large, industrial, loading",
+    "image": "images/structures/industrial/cementworks/Land_Cementworks_Conveyorhall.jpg"
+  },
+  {
+    "objectName": "cementworks_siloblg1a.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, silos, tower, large, industrial, concrete",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_SiloBig1A.jpg"
+  },
+  {
+    "objectName": "cementworks_siloblg1b.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, silos, tower, large, industrial, concrete",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_SiloBig1B.jpg"
+  },
+  {
+    "objectName": "cementworks_expeditiona.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, concrete, silos, large, industrial",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_ExpeditionA.jpg"
+  },
+  {
+    "objectName": "cementworks_hall1.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, concrete, large, industrial, blue",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_Hall1.jpg"
+  },
+  {
+    "objectName": "cementworks_hall2_brick.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, brick, large, industrial",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_Hall2_Brick.jpg"
+  },
+  {
+    "objectName": "cementworks_hall2_grey.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, brick, large, industrial",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_Hall2_Grey.jpg"
+  },
+  {
+    "objectName": "cementworks_milla.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, silos, tower, large, industrial, broken, damaged, concrete",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_MillA.jpg"
+  },
+  {
+    "objectName": "cementworks_millb.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, large, industrial, concrete, pipes",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_MillB.jpg"
+  },
+  {
+    "objectName": "cementworks_millc.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, silos, tower, large, industrial, broken, damaged, concrete",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_MillC.jpg"
+  },
+  {
+    "objectName": "cementworks_rotfurnace.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, silos, tower, large, industrial, broken, damaged, concrete",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_RotFurnace.jpg"
+  },
+  {
+    "objectName": "cementworks_expeditionb.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "walkway, metal, large, industrial, catwalk, plaform",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_ExpeditionB.jpg"
+  },
+  {
+    "objectName": "cementworks_expeditionc.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "walkway, metal, large, industrial, catwalk, plaform, roofed, pipes",
+    "image": "images/structures/industrial/cementworks/Land_CementWorks_ExpeditionC.jpg"
+  },
+  {
+    "objectName": "cementworks_conveyor_up1.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, metal, diagonal, belt, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_Conveyor_Up1.jpg"
+  },
+  {
+    "objectName": "cementworks_conveyor_up2.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, metal, diagonal, belt, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_Conveyor_Up2.jpg"
+  },
+  {
+    "objectName": "cementworks_conveyor_up3.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, metal, diagonal, belt, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_Conveyor_Up3.jpg"
+  },
+  {
+    "objectName": "cementworks_conveyorfurnace.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, medium, industrial, metal",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_ConveyorFurnace.jpg"
+  },
+  {
+    "objectName": "cementworks_conveyormilla.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, metal, diagonal, belt, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_ConveyorMillA.jpg"
+  },
+  {
+    "objectName": "cementworks_conveyormillb.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, metal, diagonal, belt, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_ConveyorMillB.jpg"
+  },
+  {
+    "objectName": "cementworks_conveyortowera.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, large, industrial, metal, vertical",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_ConveyorTowerA.jpg"
+  },
+  {
+    "objectName": "cementworks_conveyortowerb.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, metal, horizontal, belt, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_ConveyorTowerB.jpg"
+  },
+  {
+    "objectName": "cementworks_conveyortowerc.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, metal, horizontal, belt, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_ConveyorTowerC.jpg"
+  },
+  {
+    "objectName": "cementworks_siloblg1bridge.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, metal, horizontal, industrial, large",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_SiloBig1Bridge.jpg"
+  },
+  {
+    "objectName": "cementworks_siloblg2.p3d",
+    "inGameName": "-",
+    "category": "cementworks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/industrial/cementworks",
+    "usableOnConsole": false,
+    "searchTags": "factory, silos, tower, large, industrial, concrete",
+    "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_SiloBig2.jpg"
   }
+
 
 
 
