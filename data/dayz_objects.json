@@ -17314,9 +17314,137 @@
     "usableOnConsole": false,
     "searchTags": "factory, silos, tower, large, industrial, concrete",
     "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_SiloBig2.jpg"
-  }
-
-
+  }, 
+  {
+  "objectName": "StaticObj_CoalPlant_LoadingHouse",
+  "inGameName": "-",
+  "category": "coalplant",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/coalplant",
+  "usableOnConsole": true,
+  "searchTags": "large, factory",
+  "image": "images/structures/industrial/coalplant/StaticObj_CoalPlant_LoadingHouse.jpg"
+},
+{
+  "objectName": "Land_CoalPlant_Main",
+  "inGameName": "-",
+  "category": "coalplant",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/coalplant",
+  "usableOnConsole": true,
+  "searchTags": "large, factory, mural",
+  "image": "images/structures/industrial/coalplant/Land_CoalPlant_Main.jpg"
+},
+{
+  "objectName": "StaticObj_CoalPlant_Conveyor",
+  "inGameName": "-",
+  "category": "coalplant",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/coalplant",
+  "usableOnConsole": true,
+  "searchTags": "large, factory, ramp",
+  "image": "images/structures/industrial/coalplant/StaticObj_CoalPlant_Conveyor.jpg"
+},
+{
+  "objectName": "coalplant_loadinghouse.p3d",
+  "inGameName": "-",
+  "category": "coalplant",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/coalplant",
+  "usableOnConsole": false,
+  "searchTags": "large, factory",
+  "image": "images/structures/industrial/coalplant/StaticObj_CoalPlant_LoadingHouse.jpg"
+},
+{
+  "objectName": "coalplant_main.p3d",
+  "inGameName": "-",
+  "category": "coalplant",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/coalplant",
+  "usableOnConsole": false,
+  "searchTags": "large, factory, mural",
+  "image": "images/structures/industrial/coalplant/Land_CoalPlant_Main.jpg"
+},
+{
+  "objectName": "coalplant_conveyor.p3d",
+  "inGameName": "-",
+  "category": "coalplant",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/coalplant",
+  "usableOnConsole": false,
+  "searchTags": "large, factory, ramp",
+  "image": "images/structures/industrial/coalplant/StaticObj_CoalPlant_Conveyor.jpg"
+},
+{
+  "objectName": "StaticObj_Dam_Concrete_40",
+  "inGameName": "-",
+  "category": "dams",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/dams",
+  "usableOnConsole": true,
+  "searchTags": "dam, water, large, hydro, concrete, infrastructure, power",
+  "image": "images/structures/industrial/dams/StaticObj_Dam_Concrete_40.jpg"
+},
+{
+  "objectName": "Dam_Concrete_20_Floodgate",
+  "inGameName": "-",
+  "category": "dams",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/dams",
+  "usableOnConsole": true,
+  "searchTags": "dam, water, floodgate, hydro, concrete, infrastructure, power",
+  "image": "images/structures/industrial/dams/Dam_Concrete_20_Floodgate.jpg"
+},
+{
+  "objectName": "StaticObj_Dam_Concrete_20_Floodgate",
+  "inGameName": "-",
+  "category": "dams",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/dams",
+  "usableOnConsole": true,
+  "searchTags": "dam, water, floodgate, hydro, concrete, infrastructure, power",
+  "image": "images/structures/industrial/dams/StaticObj_Dam_Concrete_20_Floodgate.jpg"
+},
+{
+  "objectName": "StaticObj_Dam_Concrete_20",
+  "inGameName": "-",
+  "category": "dams",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/dams",
+  "usableOnConsole": true,
+  "searchTags": "dam, water, hydro, concrete, infrastructure, power",
+  "image": "images/structures/industrial/dams/StaticObj_Dam_Concrete_20.jpg"
+},
+{
+  "objectName": "dam_concrete_20_floodgate.p3d",
+  "inGameName": "-",
+  "category": "dams",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/dams",
+  "usableOnConsole": false,
+  "searchTags": "dam, water, floodgate, hydro, concrete, infrastructure, power",
+  "image": "images/structures/industrial/dams/Dam_Concrete_20_Floodgate.jpg"
+},
+{
+  "objectName": "dam_concrete_20.p3d",
+  "inGameName": "-",
+  "category": "dams",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/dams",
+  "usableOnConsole": false,
+  "searchTags": "dam, water, hydro, concrete, infrastructure, power",
+  "image": "images/structures/industrial/dams/StaticObj_Dam_Concrete_20.jpg"
+},
+{
+  "objectName": "dam_stone_40.p3d",
+  "inGameName": "-",
+  "category": "dams",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/dams",
+  "usableOnConsole": false,
+  "searchTags": "dam, water, stone, hydro, infrastructure, power",
+  "image": "images/structures/industrial/dams/StaticObj_Dam_Concrete_40.jpg"
+}
 
 
 ]
