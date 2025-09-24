@@ -17444,6 +17444,884 @@
   "usableOnConsole": false,
   "searchTags": "dam, water, stone, hydro, infrastructure, power",
   "image": "images/structures/industrial/dams/StaticObj_Dam_Concrete_40.jpg"
+},
+
+
+{
+  "objectName": "Land_Construction_Building",
+  "inGameName": "-",
+  "category": "construction",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/construction",
+  "usableOnConsole": true,
+  "searchTags": "broken, half_built, incomplete, large, concrete, building",
+  "image": "images/structures/industrial/construction/Land_Construction_Building.jpg"
+},
+{
+  "objectName": "Land_Construction_House1",
+  "inGameName": "-",
+  "category": "construction",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/construction",
+  "usableOnConsole": true,
+  "searchTags": "broken, half_built, incomplete, medium, concrete, building",
+  "image": "images/structures/industrial/construction/Land_Construction_House1.jpg"
+},
+{
+  "objectName": "Land_Construction_House2",
+  "inGameName": "-",
+  "category": "construction",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/construction",
+  "usableOnConsole": true,
+  "searchTags": "broken, half_built, incomplete, medium, concrete, building",
+  "image": "images/structures/industrial/construction/Land_Construction_House2.jpg"
+},
+{
+  "objectName": "Land_Construction_Crane",
+  "inGameName": "-",
+  "category": "construction",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/construction",
+  "usableOnConsole": true,
+  "searchTags": "crane, yellow, large, lifting",
+  "image": "images/structures/industrial/construction/Land_Construction_Crane.jpg"
+},
+{
+  "objectName": "construction_building.p3d",
+  "inGameName": "-",
+  "category": "construction",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/construction",
+  "usableOnConsole": false,
+  "searchTags": "broken, half_built, incomplete, large, concrete, building",
+  "image": "images/structures/industrial/construction/Land_Construction_Building.jpg"
+},
+{
+  "objectName": "construction_house1.p3d",
+  "inGameName": "-",
+  "category": "construction",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/construction",
+  "usableOnConsole": false,
+  "searchTags": "broken, half_built, incomplete, medium, concrete, building",
+  "image": "images/structures/industrial/construction/Land_Construction_House1.jpg"
+},
+{
+  "objectName": "construction_house2.p3d",
+  "inGameName": "-",
+  "category": "construction",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/construction",
+  "usableOnConsole": false,
+  "searchTags": "broken, half_built, incomplete, medium, concrete, building",
+  "image": "images/structures/industrial/construction/Land_Construction_House2.jpg"
+},
+{
+  "objectName": "construction_crane.p3d",
+  "inGameName": "-",
+  "category": "construction",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/construction",
+  "usableOnConsole": false,
+  "searchTags": "crane, yellow, large, lifting",
+  "image": "images/structures/industrial/construction/Land_Construction_Crane.jpg"
+},
+{
+  "objectName": "Land_Container_1Aoh_DE",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, sea, metal, yellow, dynamic_event, enterable",
+  "image": "images/structures/industrial/containers/Land_Container_1Aoh_DE.jpg"
+},
+{
+  "objectName": "Land_Container_1Aoh",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, sea, metal, yellow, enterable",
+  "image": "images/structures/industrial/containers/Land_Container_1Aoh.jpg"
+},
+{
+  "objectName": "Land_Container_1Bo_DE",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, red, enterable, dynamic_event",
+  "image": "images/structures/industrial/containers/Land_Container_1Bo_DE.jpg"
+},
+{
+  "objectName": "Land_Container_1Bo",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, red, enterable",
+  "image": "images/structures/industrial/containers/Land_Container_1Bo.jpg"
+},
+{
+  "objectName": "Land_Container_1Mo_DE",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, red, enterable, military, camo, dynamic_event",
+  "image": "images/structures/industrial/containers/Land_Container_1Mo_DE.jpg"
+},
+{
+  "objectName": "Land_Container_1Mo",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, red, enterable, military, camo",
+  "image": "images/structures/industrial/containers/Land_Container_1Mo.jpg"
+},
+{
+  "objectName": "Land_Container_1Moh_DE",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, red, enterable, military, camo, dynamic_event",
+  "image": "images/structures/industrial/containers/Land_Container_1Moh_DE.jpg"
+},
+{
+  "objectName": "Land_Container_1Moh",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, red, enterable, military, camo, enterable",
+  "image": "images/structures/industrial/containers/Land_Container_1Moh.jpg"
+},
+{
+  "objectName": "Land_ContainerLocked_Blue_DE",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "sakhal, blue, camo, dynamic event, metal, freight, container, enterable",
+  "image": "images/structures/industrial/containers/Land_ContainerLocked_Blue_DE.jpg"
+},
+{
+  "objectName": "Land_ContainerLocked_Orange_DE",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "sakhal, orange, camo, dynamic event, metal, freight, container, enterable",
+  "image": "images/structures/industrial/containers/Land_ContainerLocked_Orange_DE.jpg"
+},
+{
+  "objectName": "Land_ContainerLocked_Red_DE",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "sakhal, red, camo, dynamic event, metal, freight, container, enterable",
+  "image": "images/structures/industrial/containers/Land_ContainerLocked_Red_DE.jpg"
+},
+{
+  "objectName": "Land_ContainerLocked_Yellow_DE",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "sakhal, yellow, camo, dynamic event, metal, freight, container, enterable",
+  "image": "images/structures/industrial/containers/Land_ContainerLocked_Yellow_DE.jpg"
+},
+{
+  "objectName": "StaticObj_Container_1C",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, red, inaccessible",
+  "image": "images/structures/industrial/containers/StaticObj_Container_1C.jpg"
+},
+{
+  "objectName": "StaticObj_Container_1D",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, blue, inaccessible",
+  "image": "images/structures/industrial/containers/StaticObj_Container_1D.jpg"
+},
+{
+  "objectName": "StaticObj_Container_1N",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, blue, inaccessible",
+  "image": "images/structures/industrial/containers/StaticObj_Container_1N.jpg"
+},
+{
+  "objectName": "StaticObj_Container_1Nr",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, blue, camo, broken, weathered, damaged, inaccessible",
+  "image": "images/structures/industrial/containers/StaticObj_Container_1Nr.jpg"
+},
+{
+  "objectName": "StaticObj_Container_1Nr2",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, camo, broken, weathered, damaged, inaccessible",
+  "image": "images/structures/industrial/containers/StaticObj_Container_1Nr2.jpg"
+},
+{
+  "objectName": "StaticObj_Container_2A",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, inaccessible, orange, yellow, stacked, double",
+  "image": "images/structures/industrial/containers/StaticObj_Container_2A.jpg"
+},
+{
+  "objectName": "StaticObj_Container_2B",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, inaccessible, orange, brown, stacked, double",
+  "image": "images/structures/industrial/containers/StaticObj_Container_2B.jpg"
+},
+{
+  "objectName": "StaticObj_Container_2C",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, inaccessible, blue, yellow, stacked, double",
+  "image": "images/structures/industrial/containers/StaticObj_Container_2C.jpg"
+},
+{
+  "objectName": "StaticObj_Container_2D",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, inaccessible, blue, red, stacked, double",
+  "image": "images/structures/industrial/containers/StaticObj_Container_2D.jpg"
+},
+
+{
+  "objectName": "StaticObj_Container_2E",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": true,
+  "searchTags": "shipping, container, freight, metal, inaccessible, orange, brown, stacked, double",
+  "image": "images/structures/industrial/containers/StaticObj_Container_2E.jpg"
+},
+
+{
+  "objectName": "container_1aoh.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "shipping, container, sea, metal, yellow, enterable",
+  "image": "images/structures/industrial/containers/Land_Container_1Aoh.jpg"
+},
+{
+  "objectName": "container_1bo.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "shipping, container, freight, metal, red, enterable",
+  "image": "images/structures/industrial/containers/Land_Container_1Bo.jpg"
+},
+{
+  "objectName": "contalner_1mo.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "shipping, container, freight, metal, red, enterable, military, camo",
+  "image": "images/structures/industrial/containers/Land_Container_1Mo.jpg"
+},
+{
+  "objectName": "contalner_1moh.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "shipping, container, freight, metal, red, enterable, military, camo, enterable",
+  "image": "images/structures/industrial/containers/Land_Container_1Moh.jpg"
+},
+{
+  "objectName": "contalnerlocked.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "sakhal, yellow, camo, dynamic event, metal, freight, container, enterable",
+  "image": "images/structures/industrial/containers/Land_ContainerLocked_Yellow_DE.jpg"
+},
+{
+  "objectName": "container_1c.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "shipping, container, freight, metal, red, inaccessible",
+  "image": "images/structures/industrial/containers/StaticObj_Container_1C.jpg"
+},
+{
+  "objectName": "container_1d.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "shipping, container, freight, metal, blue, inaccessible",
+  "image": "images/structures/industrial/containers/StaticObj_Container_1D.jpg"
+},
+{
+  "objectName": "container_1n.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "shipping, container, freight, metal, blue, inaccessible",
+  "image": "images/structures/industrial/containers/StaticObj_Container_1N.jpg"
+},
+{
+  "objectName": "contalner_1nr.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "shipping, container, freight, metal, blue, camo, broken, weathered, damaged, inaccessible",
+  "image": "images/structures/industrial/containers/StaticObj_Container_1Nr.jpg"
+},
+{
+  "objectName": "contalner_1nr2.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "shipping, container, freight, metal, camo, broken, weathered, damaged, inaccessible",
+  "image": "images/structures/industrial/containers/StaticObj_Container_1Nr2.jpg"
+},
+{
+  "objectName": "contalner_2a.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "shipping, container, freight, metal, inaccessible, orange, yellow, stacked, double",
+  "image": "images/structures/industrial/containers/StaticObj_Container_2A.jpg"
+},
+{
+  "objectName": "container_2b.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "shipping, container, freight, metal, inaccessible, orange, brown, stacked, double",
+  "image": "images/structures/industrial/containers/StaticObj_Container_2B.jpg"
+},
+{
+  "objectName": "contalner_2c.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "shipping, container, freight, metal, inaccessible, blue, yellow, stacked, double",
+  "image": "images/structures/industrial/containers/StaticObj_Container_2C.jpg"
+},
+{
+  "objectName": "contalner_2d.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "shipping, container, freight, metal, inaccessible, blue, red, stacked, double",
+  "image": "images/structures/industrial/containers/StaticObj_Container_2D.jpg"
+},
+{
+  "objectName": "container_2e.p3d",
+  "inGameName": "-",
+  "category": "containers",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/containers",
+  "usableOnConsole": false,
+  "searchTags": "shipping, container, freight, metal, inaccessible, orange, brown, stacked, double",
+  "image": "images/structures/industrial/containers/StaticObj_Container_2E.jpg"
+},
+
+{
+  "objectName": "Land_Barn_Brick1",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, red_roof, double, stairs, two_storey, medium",
+  "image": "images/structures/industrial/containers/Land_Barn_Brick1.jpg"
+},
+{
+  "objectName": "Land_Barn_Brick2",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, grey_roof, double, medium",
+  "image": "images/structures/industrial/containers/Land_Barn_Brick2.jpg"
+},
+{
+  "objectName": "Land_Barn_Metal_Big_Grey",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, metal, large, metal, broken, damaged, grey",
+  "image": "images/structures/industrial/containers/Land_Barn_Metal_Big_Grey.jpg"
+},
+{
+  "objectName": "Land_Barn_Metal_Big",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, metal, large, metal, broken, damaged, red",
+  "image": "images/structures/industrial/containers/Land_Barn_Metal_Big.jpg"
+},
+{
+  "objectName": "Land_Barn_Wood1",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, wooden, large, cows, animal",
+  "image": "images/structures/industrial/containers/Land_Barn_Wood1.jpg"
+},
+{
+  "objectName": "Land_Barn_Wood2",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, wooden, small, cows, animal",
+  "image": "images/structures/industrial/containers/Land_Barn_Wood2.jpg"
+},
+{
+  "objectName": "Land_Farm_CowshedA",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+  "image": "images/structures/industrial/containers/Land_Farm_CowshedA.jpg"
+},
+{
+  "objectName": "Land_Farm_CowshedB",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+  "image": "images/structures/industrial/containers/Land_Farm_CowshedB.jpg"
+},
+{
+  "objectName": "Land_Farm_CowshedC",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+  "image": "images/structures/industrial/containers/Land_Farm_CowshedC.jpg"
+},
+{
+  "objectName": "Land_Farm_Hopper",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, grain, silo, animals, feed, metal, ladder, rusted",
+  "image": "images/structures/industrial/containers/Land_Farm_Hopper.jpg"
+},
+{
+  "objectName": "Land_Farm_WaterTower_Small",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, water, tower, metal, ladder, rusted",
+  "image": "images/structures/industrial/containers/Land_Farm_WaterTower_Small.jpg"
+},
+{
+  "objectName": "Land_Farm_Watertower",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, water, tower, large, ball, wires, round",
+  "image": "images/structures/industrial/containers/Land_Farm_Watertower.jpg"
+},
+{
+  "objectName": "StaticObj_Barn_CowshedA",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+  "image": "images/structures/industrial/containers/StaticObj_Barn_CowshedA.jpg"
+},
+{
+  "objectName": "StaticObj_Barn_CowshedB",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+  "image": "images/structures/industrial/containers/StaticObj_Barn_CowshedB.jpg"
+},
+{
+  "objectName": "StaticObj_Barn_CowshedC",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+  "image": "images/structures/industrial/containers/StaticObj_Barn_CowshedC.jpg"
+},
+{
+  "objectName": "StaticObj_Barn_Hopper",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, grain, silo, animals, feed, metal, ladder, rusted",
+  "image": "images/structures/industrial/containers/StaticObj_Barn_Hopper.jpg"
+},
+{
+  "objectName": "StaticObj_Barn_StrawStack",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, straw",
+  "image": "images/structures/industrial/containers/StaticObj_Barn_StrawStack.jpg"
+},
+{
+  "objectName": "StaticObj_Barn_WaterTower_Small",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, water, tower, metal, ladder, rusted",
+  "image": "images/structures/industrial/containers/Land_Farm_WaterTower_Small.png"
+},
+{
+  "objectName": "StaticObj_Barn_WaterTower",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": true,
+  "searchTags": "agriculture, farm, water, tower, large, ball, wires, round",
+  "image": "images/structures/industrial/containers/Land_Farm_Watertower.jpg"
+},
+
+{
+  "objectName": "barn_brick1.p3d",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": false,
+  "searchTags": "agriculture, farm, red_roof, double, stairs, two_storey, medium",
+  "image": "images/structures/industrial/containers/Land_Barn_Brick1.jpg"
+},
+{
+  "objectName": "barn_brick2.p3d",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": false,
+  "searchTags": "agriculture, farm, grey_roof, double, medium",
+  "image": "images/structures/industrial/containers/Land_Barn_Brick2.jpg"
+},
+{
+  "objectName": "barn_metal_blg_grey.p3d",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": false,
+  "searchTags": "agriculture, farm, metal, large, metal, broken, damaged, grey",
+  "image": "images/structures/industrial/containers/Land_Barn_Metal_Big_Grey.jpg"
+},
+{
+  "objectName": "barn_metal_blg.p3d",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": false,
+  "searchTags": "agriculture, farm, metal, large, metal, broken, damaged, red",
+  "image": "images/structures/industrial/containers/Land_Barn_Metal_Big.jpg"
+},
+{
+  "objectName": "barn_wood1.p3d",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": false,
+  "searchTags": "agriculture, farm, wooden, large, cows, animal",
+  "image": "images/structures/industrial/containers/Land_Barn_Wood1.jpg"
+},
+{
+  "objectName": "barn_wood2.p3d",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": false,
+  "searchTags": "agriculture, farm, wooden, small, cows, animal",
+  "image": "images/structures/industrial/containers/Land_Barn_Wood2.jpg"
+},
+{
+  "objectName": "farm_cowsheda.p3d",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": false,
+  "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+  "image": "images/structures/industrial/containers/Land_Farm_CowshedA.jpg"
+},
+{
+  "objectName": "farm_cowshedb.p3d",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": false,
+  "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+  "image": "images/structures/industrial/containers/Land_Farm_CowshedB.jpg"
+},
+{
+  "objectName": "farm_cowshedc.p3d",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": false,
+  "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+  "image": "images/structures/industrial/containers/Land_Farm_CowshedC.jpg"
+},
+{
+  "objectName": "farm_hopper.p3d",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": false,
+  "searchTags": "agriculture, farm, grain, silo, animals, feed, metal, ladder, rusted",
+  "image": "images/structures/industrial/containers/Land_Farm_Hopper.jpg"
+},
+{
+  "objectName": "farm_watertower_small.p3d",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": false,
+  "searchTags": "agriculture, farm, water, tower, metal, ladder, rusted",
+  "image": "images/structures/industrial/containers/Land_Farm_WaterTower_Small.jpg"
+},
+{
+  "objectName": "farm_watertower.p3d",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": false,
+  "searchTags": "agriculture, farm, water, tower, large, ball, wires, round",
+  "image": "images/structures/industrial/containers/Land_Farm_Watertower.jpg"
+},
+{
+  "objectName": "farm_strawstack.p3d",
+  "inGameName": "-",
+  "category": "farms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/farms",
+  "usableOnConsole": false,
+  "searchTags": "agriculture, farm, straw",
+  "image": "images/structures/industrial/containers/StaticObj_Barn_StrawStack.jpg"
+},
+
+{
+  "objectName": "Land_Garage_Big",
+  "inGameName": "-",
+  "category": "garages",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/garages",
+  "usableOnConsole": true,
+  "searchTags": "car, truck, large, double, blue, warehouse",
+  "image": "images/structures/industrial/garages/Land_Garage_Big.jpg"
+},
+{
+  "objectName": "Land_Garage_Office",
+  "inGameName": "-",
+  "category": "garages",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/garages",
+  "usableOnConsole": true,
+  "searchTags": "office, medium, brick, two_storey, depo",
+  "image": "images/structures/industrial/garages/Land_Garage_Office.jpg"
+},
+{
+  "objectName": "Land_Garage_Row_Big",
+  "inGameName": "-",
+  "category": "garages",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/garages",
+  "usableOnConsole": true,
+  "searchTags": "car, garage, row, large, truck, ladder",
+  "image": "images/structures/industrial/garages/Land_Garage_Row_Big.jpg"
+},
+{
+  "objectName": "Land_Garage_Row_Small",
+  "inGameName": "-",
+  "category": "garages",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/garages",
+  "usableOnConsole": true,
+  "searchTags": "car, row, small, residential, red, concrete",
+  "image": "images/structures/industrial/garages/Land_Garage_Row_Small.jpg"
+},
+{
+  "objectName": "Land_Garage_Small",
+  "inGameName": "-",
+  "category": "garages",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/garages",
+  "usableOnConsole": true,
+  "searchTags": "car, garage, yellow, side_door, small",
+  "image": "images/structures/industrial/garages/Land_Garage_Small.jpg"
+},
+
+{
+  "objectName": "garage_big.p3d",
+  "inGameName": "-",
+  "category": "garages",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/garages",
+  "usableOnConsole": false,
+  "searchTags": "car, truck, large, double, blue, warehouse",
+  "image": "images/structures/industrial/garages/Land_Garage_Big.jpg"
+},
+{
+  "objectName": "garage_office.p3d",
+  "inGameName": "-",
+  "category": "garages",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/garages",
+  "usableOnConsole": false,
+  "searchTags": "office, medium, brick, two_storey, depo",
+  "image": "images/structures/industrial/garages/Land_Garage_Office.jpg"
+},
+{
+  "objectName": "garage_row_blg.p3d",
+  "inGameName": "-",
+  "category": "garages",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/garages",
+  "usableOnConsole": false,
+  "searchTags": "car, garage, row, large, truck, ladder",
+  "image": "images/structures/industrial/garages/Land_Garage_Row_Big.jpg"
+},
+{
+  "objectName": "garage_row_small.p3d",
+  "inGameName": "-",
+  "category": "garages",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/garages",
+  "usableOnConsole": false,
+  "searchTags": "car, row, small, residential, red, concrete",
+  "image": "images/structures/industrial/garages/Land_Garage_Row_Small.jpg"
+},
+{
+  "objectName": "garage_small.p3d",
+  "inGameName": "-",
+  "category": "garages",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/garages",
+  "usableOnConsole": false,
+  "searchTags": "car, garage, yellow, side_door, small",
+  "image": "images/structures/industrial/garages/Land_Garage_Small.jpg"
 }
 
 
