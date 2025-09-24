@@ -2,43 +2,6 @@
 
 
 <style>
-/* copy button */
-.copy-btn {
-  cursor: pointer;
-  border: none;
-  background: none;
-  font-size: 1em;
-  color: #0077cc;
-  opacity: 0;
-  transition: opacity .15s ease;
-  padding: 0;
-  position: absolute;  
-  right: 6px;          
-  top: 50%;
-  transform: translateY(-50%);
-}
-#dayzObjects tbody td:first-child {
-  position: relative; 
-}
-
-#dayzObjects tbody td:first-child:hover .copy-btn {
-  opacity: 1;
-}
-
-.copy-btn:hover {
-  color: #005fa3;
-}
-/* Flash row highlight */
-@keyframes flash-highlight {
-  0%   { background-color: #fff6a1; }
-  100% { background-color: transparent; }
-}
-.flash {
-  animation: flash-highlight 1s ease-out;
-}
-
-
-
   /* Make the table full width with margin */
   #dayzObjects_wrapper {
     width: 95% !important;
@@ -100,6 +63,42 @@
       font-size: 10px;
     }
   }
+
+/* copy button */
+.copy-btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1em;
+  color: #0077cc;
+  opacity: 0;
+  transition: opacity .15s ease;
+  padding: 0;
+  position: absolute;  
+  right: 6px;          
+  top: 50%;
+  transform: translateY(-50%);
+}
+#dayzObjects tbody td:first-child {
+  position: relative; 
+}
+
+#dayzObjects tbody td:first-child:hover .copy-btn {
+  opacity: 1;
+}
+
+.copy-btn:hover {
+  color: #005fa3;
+}
+/* Flash row highlight */
+@keyframes flash-highlight {
+  0%   { background-color: #fff6a1; }
+  100% { background-color: transparent; }
+}
+.flash {
+  animation: flash-highlight 1s ease-out;
+}
+
 </style>
 
 <div id="filters">
