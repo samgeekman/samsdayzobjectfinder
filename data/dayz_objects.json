@@ -11552,7 +11552,7 @@
     "modelType": "Config",
     "path": "/dz/weapons/firearms",
     "usableOnConsole": true,
-    "inGameName": "Sawed-off LE-MAS",
+    "searchTags": "automatic, 5.56x45",
     "image": "images/weapons/firearms/SawedoffFAMAS.jpeg"
   },
   {
@@ -12052,7 +12052,7 @@
     "modelType": "Raw P3D",
     "path": "/dz/weapons/firearms",
     "usableOnConsole": false,
-    "inGameName": "Sawed-off LE-MAS",
+    "searchTags": "automatic, 5.56x45, machine_gun",
     "image": "images/weapons/firearms/dzweaponsfirearmsfamassawedofffamas.p3d.jpeg"
   },
   {
@@ -19135,7 +19135,7 @@
   "path": "/dz/structures/industrial/mines",
   "usableOnConsole": true,
   "searchTags": "industrial, brick, large, roof, ladder, factory",
-  "image": "images/structures/industrial/houses/Land_Mine_Building.jpg"
+  "image": "images/structures/industrial/mines/Land_Mine_Building.jpg"
 },
 {
   "objectName": "StaticObj_Mine_Conveyer1_10",
@@ -19266,7 +19266,7 @@
   "path": "/dz/structures/industrial/mines",
   "usableOnConsole": false,
   "searchTags": "industrial, brick, large, roof, ladder, factory",
-  "image": "images/structures/industrial/houses/Land_Mine_Building.jpg"
+  "image": "images/structures/industrial/mines/Land_Mine_Building.jpg"
 },
 {
   "objectName": "mine_conveyer1_10.p3d",
@@ -19397,7 +19397,7 @@
   "path": "/dz/structures/industrial/quarry",
   "usableOnConsole": true,
   "searchTags": "large, metal, ladder, silos, rusted, factory, stone, machinery",
-  "image": "images/structures/industrial/mines/Land_Quarry_Main.jpg"
+  "image": "images/structures/industrial/quarry/Land_Quarry_Main.jpg"
 },
 {
   "objectName": "StaticObj_Quarry_Conveyer",
@@ -19438,7 +19438,7 @@
   "path": "/dz/structures/industrial/quarry",
   "usableOnConsole": false,
   "searchTags": "large, metal, ladder, silos, rusted, factory, stone, machinery",
-  "image": "images/structures/industrial/mines/Land_Quarry_Main.jpg"
+  "image": "images/structures/industrial/quarry/Land_Quarry_Main.jpg"
 },
 {
   "objectName": "quarry_conveyer.p3d",
@@ -19479,7 +19479,7 @@
   "path": "/dz/structures/industrial/sawmills",
   "usableOnConsole": true,
   "searchTags": "timber, logging, factory, wood",
-  "image": "images/structures/industrial/quarry/Land_Sawmill_Building.jpg"
+  "image": "images/structures/industrial/sawmills/Land_Sawmill_Building.jpg"
 },
 
 {
@@ -19490,7 +19490,7 @@
   "path": "/dz/structures/industrial/sawmills",
   "usableOnConsole": true,
   "searchTags": "metal, watchtower, guard_tower, ladder, platform, spotlight, security",
-  "image": "images/structures/industrial/quarry/Land_Sawmill_Illuminanttower.jpg"
+  "image": "images/structures/industrial/sawmills/Land_Sawmill_Illuminanttower.jpg"
 },
 
 {
@@ -19501,7 +19501,7 @@
   "path": "/dz/structures/industrial/sawmills",
   "usableOnConsole": false,
   "searchTags": "timber, logging, factory, wood",
-  "image": "images/structures/industrial/quarry/Land_Sawmill_Building.jpg"
+  "image": "images/structures/industrial/sawmills/Land_Sawmill_Building.jpg"
 },
 
 {
@@ -19512,7 +19512,7 @@
   "path": "/dz/structures/industrial/sawmills",
   "usableOnConsole": false,
   "searchTags": "metal, watchtower, guard_tower, ladder, platform, spotlight, security",
-  "image": "images/structures/industrial/quarry/Land_Sawmill_Illuminanttower.jpg"
+  "image": "images/structures/industrial/sawmills/Land_Sawmill_Illuminanttower.jpg"
 },
 
 {
