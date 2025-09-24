@@ -14356,7 +14356,7 @@
     "modelType": "Config",
     "path": "/dz/structures/walls",
     "usableOnConsole": true,
-    "searchTags": "wooden, fence, medium, residential",
+    "searchTags": "wooden, fence, medium, residential, no_land_contact",
     "image": "images/structures/walls/StaticObj_Wall_Wood2_5_nolc.jpg"
   },
   {
@@ -15767,7 +15767,7 @@
     "modelType": "Raw P3D",
     "path": "/dz/structures/walls",
     "usableOnConsole": false,
-    "searchTags": "wooden, fence, medium, residential",
+    "searchTags": "wooden, fence, medium, residential, no_land_contact",
     "image": "images/structures/walls/StaticObj_Wall_Wood2_5_nolc.jpg"
   },
   {
@@ -16159,7 +16159,7 @@
     "modelType": "Config",
     "path": "/dz/structures_bliss/walls",
     "usableOnConsole": true,
-    "searchTags": "metal, concrete, fence, medium, industrial",
+    "searchTags": "metal, concrete, fence, medium, industrial, no_land_contact",
     "image": "images/structures_bliss/walls/StaticObj_Wall_Fen4_4_nolc.jpg"
   },
   {
@@ -16189,7 +16189,7 @@
     "modelType": "Config",
     "path": "/dz/structures_bliss/walls",
     "usableOnConsole": true,
-    "searchTags": "metal, concrete, fence, medium, industrial, broken",
+    "searchTags": "metal, concrete, fence, medium, industrial, broken, no_land_contact",
     "image": "images/structures_bliss/walls/StaticObj_Wall_Fen4_D_nolc.jpg"
   },
   {
@@ -16489,7 +16489,7 @@
     "modelType": "Config",
     "path": "/dz/structures_bliss/walls",
     "usableOnConsole": true,
-    "searchTags": "military, wire, concrete, fence, small, broken",
+    "searchTags": "military, wire, concrete, fence, small, broken, no_land_contact",
     "image": "images/structures_bliss/walls/StaticObj_Wall_IndFnc2_3_D_nolc.jpg"
   },
   {
@@ -16519,7 +16519,7 @@
     "modelType": "Config",
     "path": "/dz/structures_bliss/walls",
     "usableOnConsole": true,
-    "searchTags": "military, wire, security, concrete, fence, small",
+    "searchTags": "military, wire, security, concrete, fence, small, no_land_contact",
     "image": "images/structures_bliss/walls/StaticObj_Wall_IndFnc2_3_nolc.jpg"
   },
   {
@@ -16539,7 +16539,7 @@
     "modelType": "Config",
     "path": "/dz/structures_bliss/walls",
     "usableOnConsole": true,
-    "searchTags": "military, wire, security, concrete, fence, small",
+    "searchTags": "military, wire, security, concrete, fence, small, no_land_contact",
     "image": "images/structures_bliss/walls/StaticObj_Wall_IndFnc2_9_nolc.jpg"
   },
   {
@@ -16569,7 +16569,7 @@
     "modelType": "Config",
     "path": "/dz/structures_bliss/walls",
     "usableOnConsole": true,
-    "searchTags": "military, security, wire, concrete, fence, small",
+    "searchTags": "military, security, wire, concrete, fence, small, no_land_contact",
     "image": "images/structures_bliss/walls/StaticObj_Wall_IndFnc2_Pole_nolc.jpg"
   },
   {
@@ -16649,7 +16649,7 @@
     "modelType": "Config",
     "path": "/dz/structures_bliss/walls",
     "usableOnConsole": true,
-    "searchTags": "roadblock, wall, industrial, security, roads, medium ",
+    "searchTags": "roadblock, wall, industrial, security, roads, medium, no_land_contact",
     "image": "images/structures_bliss/walls/StaticObj_Wall_PipeFence_4_nolc.jpg"
   },
   {
@@ -18322,7 +18322,1344 @@
   "usableOnConsole": false,
   "searchTags": "car, garage, yellow, side_door, small",
   "image": "images/structures/industrial/garages/Land_Garage_Small.jpg"
+},
+{
+  "objectName": "Land_Boathouse",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "coast, fishing, wooden, pier, dock, medium, stilts",
+  "image": "images/structures/industrial/harbour/Land_Boathouse.jpg"
+},
+{
+  "objectName": "Land_Lighthouse",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "coast, red, white, tower, medium, beacon, signal",
+  "image": "images/structures/industrial/harbour/Land_Lighthouse.jpg"
+},
+{
+  "objectName": "Land_Pier_Crane_A",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "large, base, industrial, coast, ladder, metal",
+  "image": "images/structures/industrial/harbour/Land_Pier_Crane_A.jpg"
+},
+{
+  "objectName": "Land_Pier_Crane_B",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "hook, top, large, lifting, industrial, metal, coast",
+  "image": "images/structures/industrial/harbour/Land_Pier_Crane_B.jpg"
+},
+{
+  "objectName": "StaticObj_Boathouse_PierL",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, wooden, left, dock, stairs, coast, fishing, stilts",
+  "image": "images/structures/industrial/harbour/StaticObj_Boathouse_PierL.jpg"
+},
+{
+  "objectName": "StaticObj_Boathouse_PierR",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, wooden, right, dock, stairs, coast, fishing, stilts",
+  "image": "images/structures/industrial/harbour/StaticObj_Boathouse_PierR.jpg"
+},
+{
+  "objectName": "StaticObj_Boathouse_PierT",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, wooden, dock, coast, fishing, long, large, stilts",
+  "image": "images/structures/industrial/harbour/StaticObj_Boathouse_PierT.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete1_CornerIn",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, coast, industrial, dock, infrastructure, platform, l_shape",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_CornerIn.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete1_CornerOut",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, coast, industrial, dock, infrastructure, platform, square",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_CornerOut.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete1_End",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, end, dock, t_shape, coast, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_End.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete1_L",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, curve, dock, t_shape, coast, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_L.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete1_L10",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, dock, thin, coast, curve, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_L10.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete1_L30",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, dock, thin, coast, curve, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_L30.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete1_TBig",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, t_shape, big, dock, coast, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_TBig.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete1_TSmall",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, t_shape, small, dock, coast, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_TSmall.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete1",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete2_End",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, dock, coast, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete2_End.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete2",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete2.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete3_1",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform, stilts",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete3_1.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete3_2",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform, stilts",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete3_2.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete3_End",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, end, dock, coast, industrial, infrastructure, platform, stilts",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete3_End.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Concrete3_Fuel",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, concrete, fuel, dock, dock, coast, industrial, infrastructure, platform, stilts, gangway, gangplank, ramp",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete3_Fuel.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Crane_Rails_End",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, crane, rails, end, track, industrial, metal",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Crane_Rails_End.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Crane_Rails",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, crane, rails, track, industrial, metal",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Crane_Rails.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Tube_Big",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, dock, pipe, chimeny, cylinder, large, industrial",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Tube_Big.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Tube_Small",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, tube, small, dock,  pipe, chimeny, cylinder, small, industrial",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Tube_Small.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Wooden1_End",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, wooden, end, dock, platform, fishing, coast, stilts, catwalk",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Wooden1_End.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Wooden1_Pillars",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, wooden, end, dock, platform, fishing, coast, stilts, timbers",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Wooden1_Pillars.jpg"
+},
+{
+  "objectName": "StaticObj_Pier_Wooden1",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": true,
+  "searchTags": "pier, wooden, end, dock, platform, fishing, coast, stilts, catwalk",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Wooden1.jpg"
+},
+
+{
+  "objectName": "boathouse.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "coast, fishing, wooden, pier, dock, medium, stilts",
+  "image": "images/structures/industrial/harbour/Land_Boathouse.jpg"
+},
+{
+  "objectName": "lighthouse.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "coast, red, white, tower, medium, beacon, signal",
+  "image": "images/structures/industrial/harbour/Land_Lighthouse.jpg"
+},
+{
+  "objectName": "pler_crane_a.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "large, base, industrial, coast, ladder, metal",
+  "image": "images/structures/industrial/harbour/Land_Pier_Crane_A.jpg"
+},
+{
+  "objectName": "pler_crane_b.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "hook, top, large, lifting, industrial, metal, coast",
+  "image": "images/structures/industrial/harbour/Land_Pier_Crane_B.jpg"
+},
+{
+  "objectName": "boathouse_plerl.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, wooden, left, dock, stairs, coast, fishing, stilts",
+  "image": "images/structures/industrial/harbour/StaticObj_Boathouse_PierL.jpg"
+},
+{
+  "objectName": "boathouse_plerr.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, wooden, right, dock, stairs, coast, fishing, stilts",
+  "image": "images/structures/industrial/harbour/StaticObj_Boathouse_PierR.jpg"
+},
+{
+  "objectName": "boathouse_plert.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, wooden, dock, coast, fishing, long, large, stilts",
+  "image": "images/structures/industrial/harbour/StaticObj_Boathouse_PierT.jpg"
+},
+{
+  "objectName": "pler_concrete1_cornerin.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, coast, industrial, dock, infrastructure, platform, l_shape",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_CornerIn.jpg"
+},
+{
+  "objectName": "pler_concrete1_cornerout.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, coast, industrial, dock, infrastructure, platform, square",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_CornerOut.jpg"
+},
+{
+  "objectName": "pler_concrete1_end.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, end, dock, t_shape, coast, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_End.jpg"
+},
+{
+  "objectName": "pler_concrete1.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1.jpg"
+},
+{
+  "objectName": "pler_concrete1_r.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, curve, dock, t_shape, coast, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_L.jpg"
+},
+{
+  "objectName": "pler_concrete1_r10.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, dock, thin, coast, curve, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_L10.jpg"
+},
+{
+  "objectName": "pler_concrete1_r30.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, dock, thin, coast, curve, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_L30.jpg"
+},
+{
+  "objectName": "pler_concrete1_tbig.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, t_shape, big, dock, coast, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_TBig.jpg"
+},
+{
+  "objectName": "pler_concrete1_tsmall.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, t_shape, small, dock, coast, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_TSmall.jpg"
+},
+{
+  "objectName": "pler_concrete2_end.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, dock, coast, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete2_End.jpg"
+},
+{
+  "objectName": "pler_concrete2.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete2.jpg"
+},
+{
+  "objectName": "pler_concrete3_1.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform, stilts",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete3_1.jpg"
+},
+{
+  "objectName": "pler_concrete3_2.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform, stilts",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete3_2.jpg"
+},
+{
+  "objectName": "pler_concrete3_end.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, end, dock, coast, industrial, infrastructure, platform, stilts",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete3_End.jpg"
+},
+{
+  "objectName": "pler_concrete3_fuel.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, concrete, fuel, dock, dock, coast, industrial, infrastructure, platform, stilts, gangway, gangplank, ramp",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete3_Fuel.jpg"
+},
+{
+  "objectName": "pler_crane_rails_end.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, crane, rails, end, track, industrial, metal",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Crane_Rails_End.jpg"
+},
+{
+  "objectName": "pler_crane_rails.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, crane, rails, track, industrial, metal",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Crane_Rails.jpg"
+},
+{
+  "objectName": "pler_tube_blg.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, dock, pipe, chimeny, cylinder, large, industrial",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Tube_Big.jpg"
+},
+{
+  "objectName": "pler_tube_small.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, tube, small, dock,  pipe, chimeny, cylinder, small, industrial",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Tube_Small.jpg"
+},
+{
+  "objectName": "pler_wooden1_end.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, wooden, end, dock, platform, fishing, coast, stilts, catwalk",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Wooden1_End.jpg"
+},
+{
+  "objectName": "pler_wooden1_plllars.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, wooden, end, dock, platform, fishing, coast, stilts, timbers",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Wooden1_Pillars.jpg"
+},
+{
+  "objectName": "pler_wooden1.p3d",
+  "inGameName": "-",
+  "category": "harbour",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/harbour",
+  "usableOnConsole": false,
+  "searchTags": "pier, wooden, end, dock, platform, fishing, coast, stilts, catwalk",
+  "image": "images/structures/industrial/harbour/StaticObj_Pier_Wooden1.jpg"
+},
+
+{
+  "objectName": "Land_Factory_Lathes",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": true,
+  "searchTags": "machinery, industrial, large, workshop, sewing_factory",
+  "image": "images/structures/industrial/houses/Land_Factory_Lathes.jpg"
+},
+{
+  "objectName": "Land_Factory_Small",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": true,
+  "searchTags": "factory, small, industrial, warehouse, brick, glass_building",
+  "image": "images/structures/industrial/houses/Land_Factory_Small.jpg"
+},
+{
+  "objectName": "Land_Guardhouse",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": true,
+  "searchTags": "guardhouse, checkpoint, security, small, industrial, green, guard_shack",
+  "image": "images/structures/industrial/houses/Land_Guardhouse.jpg"
+},
+{
+  "objectName": "Land_Repair_Center",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": true,
+  "searchTags": "repair, center, industrial, workshop, machinery, garage, mechanic",
+  "image": "images/structures/industrial/houses/Land_Repair_Center.jpg"
+},
+{
+  "objectName": "Land_Water_Station",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": true,
+  "searchTags": "water, station, pumping, industrial, blue_door, small",
+  "image": "images/structures/industrial/houses/Land_Water_Station.jpg"
+},
+{
+  "objectName": "Land_Workshop1",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": true,
+  "searchTags": "workshop, small, industrial, side_door, double_door, brown",
+  "image": "images/structures/industrial/houses/Land_Workshop1.jpg"
+},
+{
+  "objectName": "Land_Workshop2",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": true,
+  "searchTags": "workshop, small, industrial, single_door, rusted",
+  "image": "images/structures/industrial/houses/Land_Workshop2.jpg"
+},
+{
+  "objectName": "Land_Workshop3",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": true,
+  "searchTags": "workshop, medium, industrial, double_door, red",
+  "image": "images/structures/industrial/houses/Land_Workshop3.jpg"
+},
+{
+  "objectName": "Land_Workshop4",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": true,
+  "searchTags": "workshop, industrial, warehouse, double_door, red, blue",
+  "image": "images/structures/industrial/houses/Land_Workshop4.jpg"
+},
+{
+  "objectName": "Land_Workshop5",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": true,
+  "searchTags": "workshop, industrial, L, l_shape, red, rusted",
+  "image": "images/structures/industrial/houses/Land_Workshop5.jpg"
+},
+{
+  "objectName": "StaticObj_Workshop_Box",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": true,
+  "searchTags": "workshop, industrial, attach, transparent, side",
+  "image": "images/structures/industrial/houses/StaticObj_Workshop_Box.jpg"
+},
+
+{
+  "objectName": "factory_lathes.p3d",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": false,
+  "searchTags": "machinery, industrial, large, workshop, sewing_factory",
+  "image": "images/structures/industrial/houses/Land_Factory_Lathes.jpg"
+},
+{
+  "objectName": "factory_small.p3d",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": false,
+  "searchTags": "factory, small, industrial, warehouse, brick, glass_building",
+  "image": "images/structures/industrial/houses/Land_Factory_Small.jpg"
+},
+{
+  "objectName": "guardhouse.p3d",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": false,
+  "searchTags": "guardhouse, checkpoint, security, small, industrial, green, guard_shack",
+  "image": "images/structures/industrial/houses/Land_Guardhouse.jpg"
+},
+{
+  "objectName": "repair_center.p3d",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": false,
+  "searchTags": "repair, center, industrial, workshop, machinery, garage, mechanic",
+  "image": "images/structures/industrial/houses/Land_Repair_Center.jpg"
+},
+{
+  "objectName": "water_station.p3d",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": false,
+  "searchTags": "water, station, pumping, industrial, blue_door, small",
+  "image": "images/structures/industrial/houses/Land_Water_Station.jpg"
+},
+{
+  "objectName": "workshop1.p3d",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": false,
+  "searchTags": "workshop, small, industrial, side_door, double_door, brown",
+  "image": "images/structures/industrial/houses/Land_Workshop1.jpg"
+},
+{
+  "objectName": "workshop2.p3d",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": false,
+  "searchTags": "workshop, small, industrial, single_door, rusted",
+  "image": "images/structures/industrial/houses/Land_Workshop2.jpg"
+},
+{
+  "objectName": "workshop3.p3d",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": false,
+  "searchTags": "workshop, medium, industrial, double_door, red",
+  "image": "images/structures/industrial/houses/Land_Workshop3.jpg"
+},
+{
+  "objectName": "workshop4.p3d",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": false,
+  "searchTags": "workshop, industrial, warehouse, double_door, red, blue",
+  "image": "images/structures/industrial/houses/Land_Workshop4.jpg"
+},
+{
+  "objectName": "workshop5.p3d",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": false,
+  "searchTags": "workshop, industrial, L, l_shape, red, rusted",
+  "image": "images/structures/industrial/houses/Land_Workshop5.jpg"
+},
+{
+  "objectName": "workshop_box.p3d",
+  "inGameName": "-",
+  "category": "houses [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/houses",
+  "usableOnConsole": false,
+  "searchTags": "workshop, industrial, attach, transparent, side",
+  "image": "images/structures/industrial/houses/StaticObj_Workshop_Box.jpg"
+},
+
+{
+  "objectName": "Land_Mine_Building",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": true,
+  "searchTags": "industrial, brick, large, roof, ladder, factory",
+  "image": "images/structures/industrial/houses/Land_Mine_Building.jpg"
+},
+{
+  "objectName": "StaticObj_Mine_Conveyer1_10",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": true,
+  "searchTags": "conveyer belt, industrial, factory, metal, small",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Conveyer1_10.jpg"
+},
+{
+  "objectName": "StaticObj_Mine_Conveyer1_Begin",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": true,
+  "searchTags": "conveyer belt, industrial, factory, metal, small",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Conveyer1_Begin.jpg"
+},
+{
+  "objectName": "StaticObj_Mine_Conveyer1_EndBuild",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": true,
+  "searchTags": "industrial, factory, brick, small",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Conveyer1_EndBuild.jpg"
+},
+{
+  "objectName": "StaticObj_Mine_Conveyer2_Build",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": true,
+  "searchTags": "conveyer belt, industrial, factory, metal, large",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Conveyer2_Build.jpg"
+},
+{
+  "objectName": "StaticObj_Mine_Heap",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": true,
+  "searchTags": "rubble, rocks, stone, pile, dirt, debris, large",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Heap.jpg"
+},
+{
+  "objectName": "StaticObj_Mine_Hopper_Build_nolc",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": true,
+  "searchTags": "conveyer belt, industrial, factory, metal, large, no_land_contact",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Hopper_Build_nolc.jpg"
+},
+{
+  "objectName": "StaticObj_Mine_Hopper_Build",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": true,
+  "searchTags": "conveyer belt, industrial, factory, metal, large",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Hopper_Build.jpg"
+},
+{
+  "objectName": "StaticObj_Mine_Rail_End",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": true,
+  "searchTags": "mine_cart, track, stop, buffer",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Rail_End.jpg"
+},
+{
+  "objectName": "StaticObj_Mine_Rail_Switch",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": true,
+  "searchTags": "mine_cart, track, siding, split",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Rail_Switch.jpg"
+},
+{
+  "objectName": "StaticObj_Mine_Rail_Tram",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": true,
+  "searchTags": "mine_cart, cart, track, industrial",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Rail_Tram.jpg"
+},
+{
+  "objectName": "StaticObj_Mine_Rail",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": true,
+  "searchTags": "mine_cart, track, straight, single, industrial",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Rail.jpg"
+},
+{
+  "objectName": "StaticObj_Mine_Tunnel",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": true,
+  "searchTags": "underground, entrance, inaccessible, mine_cart, industrial",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Tunnel.jpg"
+},
+
+{
+  "objectName": "mine_building.p3d",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": false,
+  "searchTags": "industrial, brick, large, roof, ladder, factory",
+  "image": "images/structures/industrial/houses/Land_Mine_Building.jpg"
+},
+{
+  "objectName": "mine_conveyer1_10.p3d",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": false,
+  "searchTags": "conveyer belt, industrial, factory, metal, small",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Conveyer1_10.jpg"
+},
+{
+  "objectName": "mine_conveyer1_begin.p3d",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": false,
+  "searchTags": "conveyer belt, industrial, factory, metal, small",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Conveyer1_Begin.jpg"
+},
+{
+  "objectName": "mine_conveyer1_endbuild.p3d",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": false,
+  "searchTags": "industrial, factory, brick, small",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Conveyer1_EndBuild.jpg"
+},
+{
+  "objectName": "mine_conveyer2_build.p3d",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": false,
+  "searchTags": "conveyer belt, industrial, factory, metal, large",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Conveyer2_Build.jpg"
+},
+{
+  "objectName": "mine_heap.p3d",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": false,
+  "searchTags": "rubble, rocks, stone, pile, dirt, debris, large",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Heap.jpg"
+},
+{
+  "objectName": "mine_hopper_build_nolc.p3d",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": false,
+  "searchTags": "conveyer belt, industrial, factory, metal, large, no_land_contact",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Hopper_Build_nolc.jpg"
+},
+{
+  "objectName": "mine_hopper_build.p3d",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": false,
+  "searchTags": "conveyer belt, industrial, factory, metal, large",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Hopper_Build.jpg"
+},
+{
+  "objectName": "mine_rail_end.p3d",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": false,
+  "searchTags": "mine_cart, track, stop, buffer",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Rail_End.jpg"
+},
+{
+  "objectName": "mine_rail_switch.p3d",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": false,
+  "searchTags": "mine_cart, track, siding, split",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Rail_Switch.jpg"
+},
+{
+  "objectName": "mine_rail_tram.p3d",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": false,
+  "searchTags": "mine_cart, cart, track, industrial",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Rail_Tram.jpg"
+},
+{
+  "objectName": "mine_rail.p3d",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": false,
+  "searchTags": "mine_cart, track, straight, single, industrial",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Rail.jpg"
+},
+{
+  "objectName": "mine_tunnel.p3d",
+  "inGameName": "-",
+  "category": "mines",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/mines",
+  "usableOnConsole": false,
+  "searchTags": "underground, entrance, inaccessible, mine_cart, industrial",
+  "image": "images/structures/industrial/mines/StaticObj_Mine_Tunnel.jpg"
+},
+
+{
+  "objectName": "Land_Quarry_Main",
+  "inGameName": "-",
+  "category": "quarry",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/quarry",
+  "usableOnConsole": true,
+  "searchTags": "large, metal, ladder, silos, rusted, factory, stone, machinery",
+  "image": "images/structures/industrial/mines/Land_Quarry_Main.jpg"
+},
+{
+  "objectName": "StaticObj_Quarry_Conveyer",
+  "inGameName": "-",
+  "category": "quarry",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/quarry",
+  "usableOnConsole": true,
+  "searchTags": "conveyer_belt, machinery, factory, stone, large, diagonal, ramp",
+  "image": "images/structures/industrial/quarry/StaticObj_Quarry_Conveyer.jpg"
+},
+{
+  "objectName": "StaticObj_Quarry_ConveyerLong",
+  "inGameName": "-",
+  "category": "quarry",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/quarry",
+  "usableOnConsole": true,
+  "searchTags": "conveyer_belt, machinery, factory, stone, large, diagonal, ramp",
+  "image": "images/structures/industrial/quarry/StaticObj_Quarry_ConveyerLong.jpg"
+},
+{
+  "objectName": "StaticObj_Quarry_HammerMill",
+  "inGameName": "-",
+  "category": "quarry",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/quarry",
+  "usableOnConsole": true,
+  "searchTags": "crusher, stone, machinery, factory",
+  "image": "images/structures/industrial/quarry/StaticObj_Quarry_HammerMill.jpg"
+},
+
+{
+  "objectName": "quarry_main.p3d",
+  "inGameName": "-",
+  "category": "quarry",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/quarry",
+  "usableOnConsole": false,
+  "searchTags": "large, metal, ladder, silos, rusted, factory, stone, machinery",
+  "image": "images/structures/industrial/mines/Land_Quarry_Main.jpg"
+},
+{
+  "objectName": "quarry_conveyer.p3d",
+  "inGameName": "-",
+  "category": "quarry",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/quarry",
+  "usableOnConsole": false,
+  "searchTags": "conveyer_belt, machinery, factory, stone, large, diagonal, ramp",
+  "image": "images/structures/industrial/quarry/StaticObj_Quarry_Conveyer.jpg"
+},
+{
+  "objectName": "quarry_conveyerlong.p3d",
+  "inGameName": "-",
+  "category": "quarry",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/quarry",
+  "usableOnConsole": false,
+  "searchTags": "conveyer_belt, machinery, factory, stone, large, diagonal, ramp",
+  "image": "images/structures/industrial/quarry/StaticObj_Quarry_ConveyerLong.jpg"
+},
+{
+  "objectName": "quarry_hammermill.p3d",
+  "inGameName": "-",
+  "category": "quarry",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/quarry",
+  "usableOnConsole": false,
+  "searchTags": "crusher, stone, machinery, factory",
+  "image": "images/structures/industrial/quarry/StaticObj_Quarry_HammerMill.jpg"
+},
+
+{
+  "objectName": "Land_Sawmill_Building",
+  "inGameName": "-",
+  "category": "sawmills",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/sawmills",
+  "usableOnConsole": true,
+  "searchTags": "timber, logging, factory, wood",
+  "image": "images/structures/industrial/quarry/Land_Sawmill_Building.jpg"
+},
+
+{
+  "objectName": "Land_Sawmill_Illuminanttower",
+  "inGameName": "-",
+  "category": "sawmills",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/sawmills",
+  "usableOnConsole": true,
+  "searchTags": "metal, watchtower, guard_tower, ladder, platform, spotlight, security",
+  "image": "images/structures/industrial/quarry/Land_Sawmill_Illuminanttower.jpg"
+},
+
+{
+  "objectName": "sawmill_building.p3d",
+  "inGameName": "-",
+  "category": "sawmills",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/sawmills",
+  "usableOnConsole": false,
+  "searchTags": "timber, logging, factory, wood",
+  "image": "images/structures/industrial/quarry/Land_Sawmill_Building.jpg"
+},
+
+{
+  "objectName": "sawmill_illuminanttower.p3d",
+  "inGameName": "-",
+  "category": "sawmills",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/sawmills",
+  "usableOnConsole": false,
+  "searchTags": "metal, watchtower, guard_tower, ladder, platform, spotlight, security",
+  "image": "images/structures/industrial/quarry/Land_Sawmill_Illuminanttower.jpg"
+},
+
+{
+  "objectName": "Land_Shed_Closed",
+  "inGameName": "-",
+  "category": "sheds [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/sheds",
+  "usableOnConsole": true,
+  "searchTags": "metal, blue, double_door, blue_tin", 
+  "image": "images/structures/industrial/sheds/Land_Shed_Closed.jpg"
+},
+{
+  "objectName": "StaticObj_Shed_Open_Small_end",
+  "inGameName": "-",
+  "category": "sheds [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/sheds",
+  "usableOnConsole": true,
+  "searchTags": "archyway, end, metal, frame, part, half, concrete",
+  "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Small_end.jpg"
+},
+{
+  "objectName": "StaticObj_Shed_Open_Small",
+  "inGameName": "-",
+  "category": "sheds [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/sheds",
+  "usableOnConsole": true,
+  "searchTags": "metal, frame, part, roof",
+  "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Small.jpg"
+},
+{
+  "objectName": "StaticObj_Shed_Open_SideRoof",
+  "inGameName": "-",
+  "category": "sheds [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/sheds",
+  "usableOnConsole": true,
+  "searchTags": "wooden, covered, half, medium",
+  "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_SideRoof.jpg"
+},
+{
+  "objectName": "StaticObj_Shed_Open_Sawmill",
+  "inGameName": "-",
+  "category": "sheds [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/sheds",
+  "usableOnConsole": true,
+  "searchTags": "large, metal, roof, cover, open, logs, timber, wood",
+  "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Sawmill.jpg"
+},
+{
+  "objectName": "StaticObj_Shed_Open_Big_end",
+  "inGameName": "-",
+  "category": "sheds [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/sheds",
+  "usableOnConsole": true,
+  "searchTags": "sarchyway, end, metal, frame, part, full",
+  "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Big_end.jpg"
+},
+{
+  "objectName": "StaticObj_Shed_Open_Big",
+  "inGameName": "-",
+  "category": "sheds [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/sheds",
+  "usableOnConsole": true,
+  "searchTags": "archyway, end, metal, frame, part, half",
+  "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Big.jpg"
+},
+
+{
+  "objectName": "shed_closed.p3d",
+  "inGameName": "-",
+  "category": "sheds [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/sheds",
+  "usableOnConsole": false,
+  "searchTags": "metal, blue, double_door, blue_tin",
+  "image": "images/structures/industrial/sheds/Land_Shed_Closed.jpg"
+},
+{
+  "objectName": "shed_open_small_end.p3d",
+  "inGameName": "-",
+  "category": "sheds [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/sheds",
+  "usableOnConsole": false,
+  "searchTags": "archyway, end, metal, frame, part, half, concrete",
+  "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Small_end.jpg"
+},
+{
+  "objectName": "shed_open_small.p3d",
+  "inGameName": "-",
+  "category": "sheds [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/sheds",
+  "usableOnConsole": false,
+  "searchTags": "metal, frame, part, roof",
+  "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Small.jpg"
+},
+{
+  "objectName": "shed_open_sideroof.p3d",
+  "inGameName": "-",
+  "category": "sheds [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/sheds",
+  "usableOnConsole": false,
+  "searchTags": "wooden, covered, half, medium",
+  "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_SideRoof.jpg"
+},
+{
+  "objectName": "shed_open_sawmill.p3d",
+  "inGameName": "-",
+  "category": "sheds [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/sheds",
+  "usableOnConsole": false,
+  "searchTags": "large, metal, roof, cover, open, logs, timber, wood",
+  "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Sawmill.jpg"
+},
+{
+  "objectName": "shed_open_big_end.p3d",
+  "inGameName": "-",
+  "category": "sheds [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/sheds",
+  "usableOnConsole": false,
+  "searchTags": "sarchyway, end, metal, frame, part, full",
+  "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Big_end.jpg"
+},
+{
+  "objectName": "shed_open_big.p3d",
+  "inGameName": "-",
+  "category": "sheds [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/sheds",
+  "usableOnConsole": false,
+  "searchTags": "archyway, end, metal, frame, part, half",
+  "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Big.jpg"
 }
+
+
+
+
 
 
 ]
