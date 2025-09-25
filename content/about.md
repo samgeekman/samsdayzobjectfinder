@@ -6,19 +6,14 @@ draft: false
 
 <img src="/images/logo-icon.png" alt="Icon" style="float:right; width:250px; margin-left:10px;"/>
 
-**Sam's DayZ Object Finder** is work in progress tool by SamGeekMan to help DayZ modders, map makers, and server owners find the objects they need. 
+## How to use
 
-Designed to be used with Terrain Builder, DayZ Editor and other modding tools, once complete it will have **every object in the game**, searchable by common names, size, colour, type and more - all with image previews. 
+> ⚠️ This tool is a work in progress! See progress in the [Discord](https://discord.com/channels/1414751279548203008/1414751374394261534).
 
-No more having to remember obscure object names, and the ability to browse by category, and search for items like 'large snow rocks'. 
+- Press 🏗️ to copy the object to DayZ Editor - just switch to the Editor and press Ctrl + V to paste on your cursor
+- Press 📋 to copy the object name to your clipboard
 
-> ⚠️ This tool is very much still a work in progress! Functionality will change, and many more objects still need to be added. See progress in the [Discord](https://discord.com/channels/1414751279548203008/1414751374394261534).
-
-**How to use**
-
-Browse by category and search for specifics. 
-
-Many items feature search tags and allow you to combine them to create useful searches like
+Almost every object in the game has been tagged by hand, meaning you  search by common name, size, colour, type and much, much more. 
 
 > `green backpack`
 
@@ -31,7 +26,17 @@ Many items feature search tags and allow you to combine them to create useful se
 
 > `akm mag`
 
-You can also filter for console compatible objects.
+You can also browse / filter by category, and filter for console compatible objects.
+
+## About
+
+**Sam's DayZ Object Finder** has been designed to be used with DayZ Editor,  Terrain Builder and other modding tools.
+
+**Once complete**, it will have everything object in the game search by hand-added tags - all with image previews.
+
+No more having to remember obscure object names, and the ability to browse by category, and search for items like 'large snow rocks'. 
+
+Developed by SamGeekMan.
 
 **Errors and suggestions**
 
