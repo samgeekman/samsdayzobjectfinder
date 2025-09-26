@@ -12997,7 +12997,7 @@
     "image": "images/placeholder.jpeg"
   },
   {
-    "objectName": "bott_blggame.p3d",
+    "objectName": "bott_biggame.p3d",
     "inGameName": "-",
     "category": "projectiles",
     "modelType": "Raw P3D",
@@ -17085,7 +17085,7 @@
     "image": "images/structures/industrial/cementworks/Land_Cementworks_Conveyorhall.jpg"
   },
   {
-    "objectName": "cementworks_siloblg1a.p3d",
+    "objectName": "cementworks_silobig1a.p3d",
     "inGameName": "-",
     "category": "cementworks",
     "modelType": "Raw P3D",
@@ -17095,7 +17095,7 @@
     "image": "images/structures/industrial/cementworks/Land_CementWorks_SiloBig1A.jpg"
   },
   {
-    "objectName": "cementworks_siloblg1b.p3d",
+    "objectName": "cementworks_silobig1b.p3d",
     "inGameName": "-",
     "category": "cementworks",
     "modelType": "Raw P3D",
@@ -17295,7 +17295,7 @@
     "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_ConveyorTowerC.jpg"
   },
   {
-    "objectName": "cementworks_siloblg1bridge.p3d",
+    "objectName": "cementworks_silobig1bridge.p3d",
     "inGameName": "-",
     "category": "cementworks",
     "modelType": "Raw P3D",
@@ -17305,7 +17305,7 @@
     "image": "images/structures/industrial/cementworks/StaticObj_CementWorks_SiloBig1Bridge.jpg"
   },
   {
-    "objectName": "cementworks_siloblg2.p3d",
+    "objectName": "cementworks_silobig2.p3d",
     "inGameName": "-",
     "category": "cementworks",
     "modelType": "Raw P3D",
@@ -18121,7 +18121,7 @@
   "image": "images/structures/industrial/farms/Land_Barn_Metal_Big_Grey.jpg"
 },
 {
-  "objectName": "barn_metal_blg.p3d",
+  "objectName": "barn_metal_big.p3d",
   "inGameName": "-",
   "category": "farms",
   "modelType": "Raw P3D",
@@ -18293,7 +18293,7 @@
   "image": "images/structures/industrial/garages/Land_Garage_Office.jpg"
 },
 {
-  "objectName": "garage_row_blg.p3d",
+  "objectName": "garage_row_big.p3d",
   "inGameName": "-",
   "category": "garages",
   "modelType": "Raw P3D",
@@ -18854,7 +18854,7 @@
   "image": "images/structures/industrial/harbour/StaticObj_Pier_Crane_Rails.jpg"
 },
 {
-  "objectName": "pler_tube_blg.p3d",
+  "objectName": "pler_tube_big.p3d",
   "inGameName": "-",
   "category": "harbour",
   "modelType": "Raw P3D",
@@ -19654,10 +19654,1936 @@
   "usableOnConsole": false,
   "searchTags": "archyway, end, metal, frame, part, half",
   "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Big.jpg"
+},
+
+{
+  "objectName": "Land_Misc_Scaffolding",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "metal, construction, frame",
+  "image": "images/structures/industrial/misc/Land_Misc_Scaffolding.jpg"
+},
+{
+  "objectName": "Land_Misc_Through_Static",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "animal, farm, feeding, water",
+  "image": "images/structures/industrial/misc/Land_Misc_Through_Static.jpg"
+},
+{
+  "objectName": "Misc_Spotlight",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "light, lamp, illuminate, shine",
+  "image": "images/structures/industrial/misc/Misc_Spotlight.jpg"
+},
+{
+  "objectName": "StaticObj_Lamp_Ind",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "street_light, street_lamp, metal, lantern, floodlight, city, residential",
+  "image": "images/structures/industrial/misc/StaticObj_Lamp_Ind.jpg"
+},
+{
+  "objectName": "StaticObj_Lamp_Rail",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "street_light, street_lamp, metal, lantern, floodlight, city, residential, climb, ladder",
+  "image": "images/structures/industrial/misc/StaticObj_Lamp_Rail.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_BoardsPack1",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "wood, package, delivery, fright, crate, white",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_BoardsPack1.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_BoardsPack2",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "wood, package, delivery, fright, crate, white",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_BoardsPack2.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_BoardsPack3",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "wood, package, delivery, fright, crate, white",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_BoardsPack3.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Coil",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "cable, metal, roll, steel, wire, empty",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Coil.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_ConcretePanels",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "stacked, construction",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_ConcretePanels.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_ConcretePipe_Gate",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "grate, pipe, metal, sewers, water, underground, construction",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_ConcretePipe_Gate.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_ConcretePipe",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "grate, pipe, metal, sewers, water, underground, construction",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_ConcretePipe.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Drainage",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "drain_pipe, sewers, infrastructure, pipes, city, residential",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Drainage.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_GContainer_Big",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "garbage, bin, dump, skip, rubbish, city, construction",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_GContainer_Big.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_HayBale_Decayed",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "farm, field, animal, feed, rotten, damaged",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_HayBale_Decayed.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_HayBale",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "farm, field, animal, feed",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_HayBale.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Pallet",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "wooden, freight, single, panel",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Pallet.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Pallets1",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "wooden, freight, triple, panel",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Pallets1.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Pallets2",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "wooden, freight, triple, panel",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Pallets2.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Pallets3",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "wooden, freight, stacked, pile, panel",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Pallets3.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Pipes_2",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "pipes, water, underground, double, sewers",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Pipes_2.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Pipes",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "pipes, water, underground, multiple, sewers",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Pipes.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Through_Trailer",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "animal, farm, feeding, water, tractor",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Through_Trailer.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Timbers_Log1",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log1.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Timbers_Log2",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal, long, medium",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log2.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Timbers_Log3",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal, long, large",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log3.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Timbers_Log4",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal, short, small",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log4.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Timbers_Log5",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, vertical, long, large",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log5.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Timbers1",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "stacked, pile, wood, log, forest, chopped, tree, horizontal",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers1.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Timbers2",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "stacked, pile, wood, log, forest, chopped, tree, horizontal",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers2.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_Timbers3",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "stacked, pile, wood, log, forest, chopped, tree, horizontal",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers3.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_TirePile_Group",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "tyre, triple, rubber, wheel, vehicle, stacked",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_TirePile_Group.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_TirePile",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "tyre, single, rubber, wheel, vehicle, stacked",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_TirePile.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_WoodPile_Forest1",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "stacked, pile wood, log, forest, chopped, tree, horizontal",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_WoodPile_Forest1.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_WoodPile_Forest2",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "stacked, pile wood, log, forest, chopped, tree, horizontal",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_WoodPile_Forest2.jpg"
+},
+{
+  "objectName": "StaticObj_Misc_WoodPile_Forest3",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": true,
+  "searchTags": "stacked, pile wood, log, forest, chopped, tree, horizontal",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_WoodPile_Forest3.jpg"
+},
+{
+  "objectName": "misc_scaffolding.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "metal, construction, frame",
+  "image": "images/structures/industrial/misc/Land_Misc_Scaffolding.jpg"
+},
+{
+  "objectName": "misc_through_static.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "animal, farm, feeding, water",
+  "image": "images/structures/industrial/misc/Land_Misc_Through_Static.jpg"
+},
+{
+  "objectName": "misc_spotlight.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "light, lamp, illuminate, shine",
+  "image": "images/structures/industrial/misc/Misc_Spotlight.jpg"
+},
+{
+  "objectName": "lamp_ind.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "street_light, street_lamp, metal, lantern, floodlight, city, residential",
+  "image": "images/structures/industrial/misc/StaticObj_Lamp_Ind.jpg"
+},
+{
+  "objectName": "lamp_rail.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "street_light, street_lamp, metal, lantern, floodlight, city, residential, climb, ladder",
+  "image": "images/structures/industrial/misc/StaticObj_Lamp_Rail.jpg"
+},
+{
+  "objectName": "misc_boardspack1.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "wood, package, delivery, fright, crate, white",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_BoardsPack1.jpg"
+},
+{
+  "objectName": "misc_boardspack2.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "wood, package, delivery, fright, crate, white",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_BoardsPack2.jpg"
+},
+{
+  "objectName": "misc_boardspack3.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "wood, package, delivery, fright, crate, white",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_BoardsPack3.jpg"
+},
+{
+  "objectName": "misc_coll.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "cable, metal, roll, steel, wire, empty",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Coil.jpg"
+},
+{
+  "objectName": "misc_concretepanels.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "stacked, construction",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_ConcretePanels.jpg"
+},
+{
+  "objectName": "misc_concretepipe.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "grate, pipe, metal, sewers, water, underground, construction",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_ConcretePipe.jpg"
+},
+{
+  "objectName": "misc_concretepipe_gate.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "grate, pipe, metal, sewers, water, underground, construction",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_ConcretePipe_Gate.jpg"
+},
+{
+  "objectName": "misc_drainage.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "drain_pipe, sewers, infrastructure, pipes, city, residential",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Drainage.jpg"
+},
+{
+  "objectName": "misc_gcontainer_big.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "garbage, bin, dump, skip, rubbish, city, construction",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_GContainer_Big.jpg"
+},
+{
+  "objectName": "misc_haybale.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "farm, field, animal, feed",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_HayBale.jpg"
+},
+{
+  "objectName": "misc_haybale_decayed.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "farm, field, animal, feed, rotten, damaged",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_HayBale_Decayed.jpg"
+},
+{
+  "objectName": "misc_pallet.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "wooden, freight, single, panel",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Pallet.jpg"
+},
+{
+  "objectName": "misc_pallets1.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "wooden, freight, triple, panel",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Pallets1.jpg"
+},
+{
+  "objectName": "misc_pallets2.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "wooden, freight, triple, panel",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Pallets2.jpg"
+},
+{
+  "objectName": "misc_pallets3.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "wooden, freight, stacked, pile, panel",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Pallets3.jpg"
+},
+{
+  "objectName": "misc_pipes.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "pipes, water, underground, multiple, sewers",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Pipes.jpg"
+},
+{
+  "objectName": "misc_pipes_2.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "pipes, water, underground, double, sewers",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Pipes_2.jpg"
+},
+{
+  "objectName": "misc_through_trailer.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "animal, farm, feeding, water, tractor",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Through_Trailer.jpg"
+},
+{
+  "objectName": "misc_timbers_log1.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log1.jpg"
+},
+{
+  "objectName": "misc_timbers_log2.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal, long, medium",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log2.jpg"
+},
+{
+  "objectName": "misc_timbers_log3.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal, long, large",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log3.jpg"
+},
+{
+  "objectName": "misc_timbers_log4.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal, short, small",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log4.jpg"
+},
+{
+  "objectName": "misc_timbers_log5.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, vertical, long, large",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log5.jpg"
+},
+{
+  "objectName": "misc_timbers1.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "stacked, pile, wood, log, forest, chopped, tree, horizontal",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers1.jpg"
+},
+{
+  "objectName": "misc_timbers2.p3d",
+  "inGameName": "-",
+  "category": "misc [industrial]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/misc",
+  "usableOnConsole": false,
+  "searchTags": "stacked, pile, wood, log, forest, chopped, tree, horizontal",
+  "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers2.jpg"
+},
+
+{
+  "objectName": "Land_Pipe_Big_BuildL",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, left, large",
+  "image": "images/structures/industrial/pipes/Land_Pipe_Big_BuildL.jpg"
+},
+{
+  "objectName": "Land_Pipe_Big_BuildR",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/Land_Pipe_Big_BuildR.jpg"
+},
+{
+  "objectName": "Land_Pipe_Big_CornerL",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, left, large",
+  "image": "images/structures/industrial/pipes/Land_Pipe_Big_CornerL.jpg"
+},
+{
+  "objectName": "Land_Pipe_Big_CornerR",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/Land_Pipe_Big_CornerR.jpg"
+},
+{
+  "objectName": "Land_Pipe_Big_Ground1",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, large",
+  "image": "images/structures/industrial/pipes/Land_Pipe_Big_Ground1.jpg"
+},
+{
+  "objectName": "Land_Pipe_Big_Ground2",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/Land_Pipe_Big_Ground2.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Big_9m",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Big_9m.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Big_18m_Ladder",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Big_18m_Ladder.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Big_18m",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Big_18m.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Big_SmallConL",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, left, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Big_SmallConL.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Big_SmallConR",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Big_SmallConR.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Big_Support",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Big_Support.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Med_9m",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, metal, oil, gas, walkway, medium",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Med_9m.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Med_BuildL",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, metal, oil, gas, walkway, left, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Med_BuildL.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Med_BuildR",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Med_BuildR.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Med_Ground1",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, metal, oil, gas, walkway, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Med_Ground1.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Med_Ground2",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, metal, oil, gas, walkway, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Med_Ground2.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_MedL_BuildR",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_MedL_BuildR.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_MedL_CornerL",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, metal, oil, gas, walkway, left, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_MedL_CornerL.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_MedL_CornerR",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "raised, high, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_MedL_CornerR.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Small_20m",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "low, metal, oil, gas, water, long",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_20m.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Small_Broken",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_Broken.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Small_Ground1",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked, end, curve",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_Ground1.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Small_Ground2",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked, end, curve",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_Ground2.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Small_L45",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked, end, curve, diagonal",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_L45.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Small_L90",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_L90.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Small_R45",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked, end, curve",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_R45.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Small_R90",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked, end, curve",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_R90.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Small_Stairs",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked, walkway",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_Stairs.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Small_U",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "high, metal, oil, gas, water, end, curve, bend, vehicle",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_U.jpg"
+},
+{
+  "objectName": "StaticObj_Pipe_Small_Valve",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": true,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked, turn, contorl, lever",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_Valve.jpg"
+},
+
+{
+  "objectName": "pipe_big_buildl.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, left, large",
+  "image": "images/structures/industrial/pipes/Land_Pipe_Big_BuildL.jpg"
+},
+{
+  "objectName": "pipe_big_buildr.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/Land_Pipe_Big_BuildR.jpg"
+},
+{
+  "objectName": "pipe_big_cornerl.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, left, large",
+  "image": "images/structures/industrial/pipes/Land_Pipe_Big_CornerL.jpg"
+},
+{
+  "objectName": "pipe_big_cornerr.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/Land_Pipe_Big_CornerR.jpg"
+},
+{
+  "objectName": "pipe_big_ground1.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, large",
+  "image": "images/structures/industrial/pipes/Land_Pipe_Big_Ground1.jpg"
+},
+{
+  "objectName": "pipe_big_ground2.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/Land_Pipe_Big_Ground2.jpg"
+},
+{
+  "objectName": "pipe_big_9m.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Big_9m.jpg"
+},
+{
+  "objectName": "pipe_big_18m.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Big_18m.jpg"
+},
+{
+  "objectName": "pipe_big_18m_ladder.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Big_18m_Ladder.jpg"
+},
+{
+  "objectName": "pipe_big_smallconl.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, left, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Big_SmallConL.jpg"
+},
+{
+  "objectName": "pipe_big_smallconr.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Big_SmallConR.jpg"
+},
+{
+  "objectName": "pipe_big_support.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, ladder, metal, oil, gas, walkway, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Big_Support.jpg"
+},
+{
+  "objectName": "pipe_med_9m.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, metal, oil, gas, walkway, medium",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Med_9m.jpg"
+},
+{
+  "objectName": "pipe_med_ground1.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, metal, oil, gas, walkway, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Med_Ground1.jpg"
+},
+{
+  "objectName": "pipe_med_ground2.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, metal, oil, gas, walkway, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Med_Ground2.jpg"
+},
+{
+  "objectName": "pipe_medl_buildr.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_MedL_BuildR.jpg"
+},
+{
+  "objectName": "pipe_medl_cornerl.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, metal, oil, gas, walkway, left, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_MedL_CornerL.jpg"
+},
+{
+  "objectName": "pipe_medl_cornerr.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_MedL_CornerR.jpg"
+},
+{
+  "objectName": "pipe_medr_buildl.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, metal, oil, gas, walkway, left, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Med_BuildL.jpg"
+},
+{
+  "objectName": "pipe_medr_buildr.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "raised, high, metal, oil, gas, walkway, right, large",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Med_BuildR.jpg"
+},
+{
+  "objectName": "pipe_small_20m.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "low, metal, oil, gas, water, long",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_20m.jpg"
+},
+{
+  "objectName": "pipe_small_broken.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_Broken.jpg"
+},
+{
+  "objectName": "pipe_small_ground1.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked, end, curve",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_Ground1.jpg"
+},
+{
+  "objectName": "pipe_small_ground2.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked, end, curve",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_Ground2.jpg"
+},
+{
+  "objectName": "pipe_small_l45.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked, end, curve, diagonal",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_L45.jpg"
+},
+{
+  "objectName": "pipe_small_l90.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_L90.jpg"
+},
+{
+  "objectName": "pipe_small_r45.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked, end, curve",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_R45.jpg"
+},
+{
+  "objectName": "pipe_small_r90.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked, end, curve",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_R90.jpg"
+},
+{
+  "objectName": "pipe_small_stairs.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked, walkway",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_Stairs.jpg"
+},
+{
+  "objectName": "pipe_small_u.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "high, metal, oil, gas, water, end, curve, bend, vehicle",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_U.jpg"
+},
+{
+  "objectName": "pipe_small_valve.p3d",
+  "inGameName": "-",
+  "category": "pipes",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/pipes",
+  "usableOnConsole": false,
+  "searchTags": "low, metal, oil, gas, water, damaged, cracked, turn, contorl, lever",
+  "image": "images/structures/industrial/pipes/StaticObj_Pipe_Small_Valve.jpg"
+},
+
+{
+  "objectName": "Land_Power_Pole_Conc1_Amp",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "pole, metal, PA, pa_system, speaker, infrastructure, electricity, utility",
+  "image": "images/structures/industrial/power/Land_Power_Pole_Conc1_Amp.jpg"
+},
+{
+  "objectName": "Land_Power_Pole_Conc4_Lamp_Amp",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "pole, metal, PA, pa_system, speaker, infrastructure, street_light, street_lamp",
+  "image": "images/structures/industrial/power/Land_Power_Pole_Conc4_Lamp_Amp.jpg"
+},
+{
+  "objectName": "Land_Power_Pole_Wood1_Amp",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, pole, wood, powerline, infrastructure, utility, PA, pa_system, speaker",
+  "image": "images/structures/industrial/power/Land_Power_Pole_Wood1_Amp.jpg"
+},
+{
+  "objectName": "Land_Power_Pole_Wood1_Lamp_Amp",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, pole, wood, lamp, light, streetlight, utility, PA, pa_system, speaker",
+  "image": "images/structures/industrial/power/Land_Power_Pole_Wood1_Lamp_Amp.jpg"
+},
+{
+  "objectName": "Land_Power_Station",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, building, industrial, utility, loading, generator",
+  "image": "images/structures/industrial/power/Land_Power_Station.jpg"
+},
+{
+  "objectName": "Land_Power_Transformer_Build",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, utility, tower",
+  "image": "images/structures/industrial/power/Land_Power_Transformer_Build.jpg"
+},
+{
+  "objectName": "StaticObj_Power_HV_Line_80m_damaged",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage",
+  "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_80m_damaged.jpg"
+},
+{
+  "objectName": "StaticObj_Power_HV_Line_damaged",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage",
+  "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_damaged.jpg"
+},
+{
+  "objectName": "StaticObj_Power_HV_Line_Turn",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, powerline, infrastructure, high_voltage, corner",
+  "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_Turn.jpg"
+},
+{
+  "objectName": "StaticObj_Power_HV_Line_TurnL",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, powerline, infrastructure, high_voltage, left_turn",
+  "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_TurnL.jpg"
+},
+{
+  "objectName": "StaticObj_Power_HV_Line_TurnR",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, powerline, infrastructure, high_voltage, right_turn",
+  "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_TurnR.jpg"
+},
+{
+  "objectName": "StaticObj_Power_HV_Tower",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, powerline, pylon, metal, tower, high_voltage, infrastructure",
+  "image": "images/structures/industrial/power/StaticObj_Power_HV_Tower.jpg"
+},
+{
+  "objectName": "StaticObj_Power_Pole_ConcT",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, pole, concrete, utility, powerline",
+  "image": "images/structures/industrial/power/StaticObj_Power_Pole_ConcT.jpg"
+},
+{
+  "objectName": "StaticObj_Power_Pole_Wood1_Trail_B",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, pole, wood, trail, marker, blue, utility",
+  "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_B.jpg"
+},
+{
+  "objectName": "StaticObj_Power_Pole_Wood1_Trail_G",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, pole, wood, trail, marker, green, utility",
+  "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_G.jpg"
+},
+{
+  "objectName": "StaticObj_Power_Pole_Wood1_Trail_R",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, pole, wood, trail, marker, red, utility",
+  "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_R.jpg"
+},
+{
+  "objectName": "StaticObj_Power_Pole_Wood1_Trail_Y",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, pole, wood, trail, marker, yellow, utility",
+  "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_Y.jpg"
+},
+{
+  "objectName": "StaticObj_Power_Pole_Wood2",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, pole, wood, powerline, infrastructure, utility",
+  "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood2.jpg"
+},
+{
+  "objectName": "StaticObj_Power_Pole_Wood3",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, pole, wood, powerline, infrastructure, utility",
+  "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood3.jpg"
+},
+{
+  "objectName": "StaticObj_Power_Transformer_Small",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, transformer, utility, small, substation",
+  "image": "images/structures/industrial/power/StaticObj_Power_Transformer_Small.jpg"
+},
+{
+  "objectName": "StaticObj_Power_TransformerStation_Big",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, transformer, utility, large, station, substation",
+  "image": "images/structures/industrial/power/StaticObj_Power_TransformerStation_Big.jpg"
+},
+{
+  "objectName": "StaticObj_Power_TransformerStation_Cables",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": true,
+  "searchTags": "electricity, transformer, utility, station, substation, cables",
+  "image": "images/structures/industrial/power/StaticObj_Power_TransformerStation_Cables.jpg"
+},
+
+{
+  "objectName": "power_pole_conc1_amp.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "pole, metal, PA, pa_system, speaker, infrastructure, electricity, utility",
+  "image": "images/structures/industrial/power/Land_Power_Pole_Conc1_Amp.jpg"
+},
+{
+  "objectName": "power_pole_conc4_lamp_amp.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "pole, metal, PA, pa_system, speaker, infrastructure, street_light, street_lamp",
+  "image": "images/structures/industrial/power/Land_Power_Pole_Conc4_Lamp_Amp.jpg"
+},
+{
+  "objectName": "power_pole_wood1_amp.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, pole, wood, powerline, infrastructure, utility, PA, pa_system, speaker",
+  "image": "images/structures/industrial/power/Land_Power_Pole_Wood1_Amp.jpg"
+},
+{
+  "objectName": "power_pole_wood1_lamp_amp.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, pole, wood, lamp, light, streetlight, utility, PA, pa_system, speaker",
+  "image": "images/structures/industrial/power/Land_Power_Pole_Wood1_Lamp_Amp.jpg"
+},
+{
+  "objectName": "power_station.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, building, industrial, utility, loading, generator",
+  "image": "images/structures/industrial/power/Land_Power_Station.jpg"
+},
+{
+  "objectName": "power_transformer_build.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, utility, tower",
+  "image": "images/structures/industrial/power/Land_Power_Transformer_Build.jpg"
+},
+{
+  "objectName": "power_hv_line_80m_damaged.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage",
+  "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_80m_damaged.jpg"
+},
+{
+  "objectName": "power_hv_line_damaged.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage",
+  "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_damaged.jpg"
+},
+{
+  "objectName": "power_hv_line.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, powerline, infrastructure, high_voltage",
+  "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_Turn.jpg"
+},
+{
+  "objectName": "power_hv_line_turnl.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, powerline, infrastructure, high_voltage, left_turn",
+  "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_TurnL.jpg"
+},
+{
+  "objectName": "power_hv_line_turnr.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, powerline, infrastructure, high_voltage, right_turn",
+  "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_TurnR.jpg"
+},
+{
+  "objectName": "power_hv_tower.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, powerline, pylon, metal, tower, high_voltage, infrastructure",
+  "image": "images/structures/industrial/power/StaticObj_Power_HV_Tower.jpg"
+},
+{
+  "objectName": "power_pole_conct.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, pole, concrete, utility, powerline",
+  "image": "images/structures/industrial/power/StaticObj_Power_Pole_ConcT.jpg"
+},
+{
+  "objectName": "power_pole_wood1_trail_b.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, pole, wood, trail, marker, blue, utility",
+  "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_B.jpg"
+},
+{
+  "objectName": "power_pole_wood1_trail_g.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, pole, wood, trail, marker, green, utility",
+  "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_G.jpg"
+},
+{
+  "objectName": "power_pole_wood1_trail_r.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, pole, wood, trail, marker, red, utility",
+  "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_R.jpg"
+},
+{
+  "objectName": "power_pole_wood1_trail_y.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, pole, wood, trail, marker, yellow, utility",
+  "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_Y.jpg"
+},
+{
+  "objectName": "power_pole_wood2.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, pole, wood, powerline, infrastructure, utility",
+  "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood2.jpg"
+},
+{
+  "objectName": "power_pole_wood3.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, pole, wood, powerline, infrastructure, utility",
+  "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood3.jpg"
+},
+{
+  "objectName": "power_transformer_small.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, transformer, utility, small, substation",
+  "image": "images/structures/industrial/power/StaticObj_Power_Transformer_Small.jpg"
+},
+{
+  "objectName": "power_transformerstation_big.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, transformer, utility, large, station, substation",
+  "image": "images/structures/industrial/power/StaticObj_Power_TransformerStation_Big.jpg"
+},
+{
+  "objectName": "power_transformerstation_cables.p3d",
+  "inGameName": "-",
+  "category": "power",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/power",
+  "usableOnConsole": false,
+  "searchTags": "electricity, transformer, utility, station, substation, cables",
+  "image": "images/structures/industrial/power/StaticObj_Power_TransformerStation_Cables.jpg"
+},
+
+{
+  "objectName": "Land_Smokestack_Medium",
+  "inGameName": "-",
+  "category": "smokestacks",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/smokestacks",
+  "usableOnConsole": true,
+  "searchTags": "chimney, factory, industry, tall, exhaust, smoke, red, white",
+  "image": "images/structures/industrial/smokestacks/Land_Smokestack_Medium.jpg"
+},
+{
+  "objectName": "Land_Smokestack_Metal",
+  "inGameName": "-",
+  "category": "smokestacks",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/smokestacks",
+  "usableOnConsole": true,
+  "searchTags": "chimney, factory, industry, pipe, exhaust, smoke, metal, tall, large",
+  "image": "images/structures/industrial/smokestacks/Land_Smokestack_Metal.jpg"
+},
+{
+  "objectName": "Land_Smokestack_Big",
+  "inGameName": "-",
+  "category": "smokestacks",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/smokestacks",
+  "usableOnConsole": true,
+  "searchTags": "chimney, factory, industry, tall, exhaust, large",
+  "image": "images/structures/industrial/smokestacks/Land_Smokestack_Big.jpg"
+},
+{
+  "objectName": "Land_Smokestack_Brick",
+  "inGameName": "-",
+  "category": "smokestacks",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/smokestacks",
+  "usableOnConsole": true,
+  "searchTags": "chimney, factory, industry, brick, masonry, pipe, exhaust, smoke",
+  "image": "images/structures/industrial/smokestacks/Land_Smokestack_Brick.jpg"
+},
+
+{
+  "objectName": "smokestack_medium.p3d",
+  "inGameName": "-",
+  "category": "smokestacks",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/smokestacks",
+  "usableOnConsole": false,
+  "searchTags": "chimney, factory, industry, tall, exhaust, smoke, red, white",
+  "image": "images/structures/industrial/smokestacks/Land_Smokestack_Medium.jpg"
+},
+{
+  "objectName": "smokestack_metal.p3d",
+  "inGameName": "-",
+  "category": "smokestacks",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/smokestacks",
+  "usableOnConsole": false,
+  "searchTags": "chimney, factory, industry, pipe, exhaust, smoke, metal, tall, large",
+  "image": "images/structures/industrial/smokestacks/Land_Smokestack_Metal.jpg"
+},
+{
+  "objectName": "smokestack_big.p3d",
+  "inGameName": "-",
+  "category": "smokestacks",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/smokestacks",
+  "usableOnConsole": false,
+  "searchTags": "chimney, factory, industry, tall, exhaust, large",
+  "image": "images/structures/industrial/smokestacks/Land_Smokestack_Big.jpg"
+},
+{
+  "objectName": "smokestack_brick.p3d",
+  "inGameName": "-",
+  "category": "smokestacks",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/smokestacks",
+  "usableOnConsole": false,
+  "searchTags": "chimney, factory, industry, brick, masonry, pipe, exhaust, smoke",
+  "image": "images/structures/industrial/smokestacks/Land_Smokestack_Brick.jpg"
+},
+
+{
+  "objectName": "StaticObj_Tank_Small_White",
+  "inGameName": "-",
+  "category": "tanks",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/tanks",
+  "usableOnConsole": true,
+  "searchTags": "tank, fuel, container, white, storage, industrial, liquid, gas, oil",
+  "image": "images/structures/industrial/tanks/StaticObj_Tank_Small_White.jpg"
+},
+{
+  "objectName": "StaticObj_Tank_Small_Rusty",
+  "inGameName": "-",
+  "category": "tanks",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/tanks",
+  "usableOnConsole": true,
+  "searchTags": "tank, fuel, container, rusty, storage, industrial, liquid, gas, oil",
+  "image": "images/structures/industrial/tanks/StaticObj_Tank_Small_Rusty.jpg"
+},
+{
+  "objectName": "StaticObj_Tank_Small_Gas",
+  "inGameName": "-",
+  "category": "tanks",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/tanks",
+  "usableOnConsole": true,
+  "searchTags": "tank, fuel, gas, propane, container, storage, industrial, cylinder",
+  "image": "images/structures/industrial/tanks/StaticObj_Tank_Small_Gas.jpg"
+},
+{
+  "objectName": "StaticObj_Tank_Medium",
+  "inGameName": "-",
+  "category": "tanks",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/tanks",
+  "usableOnConsole": true,
+  "searchTags": "tank, fuel, container, medium, storage, industrial, liquid, gas, oil",
+  "image": "images/structures/industrial/tanks/StaticObj_Tank_Medium.jpg"
+},
+{
+  "objectName": "Land_Tank_Medium_Stairs",
+  "inGameName": "-",
+  "category": "tanks",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/tanks",
+  "usableOnConsole": true,
+  "searchTags": "tank, fuel, container, medium, storage, industrial, liquid, gas, oil, stairs, access",
+  "image": "images/structures/industrial/tanks/Land_Tank_Medium_Stairs.jpg"
+},
+{
+  "objectName": "Land_Tank_Big",
+  "inGameName": "-",
+  "category": "tanks",
+  "modelType": "Config",
+  "path": "/dz/structures/industrial/tanks",
+  "usableOnConsole": true,
+  "searchTags": "tank, fuel, container, big, storage, industrial, liquid, gas, oil",
+  "image": "images/structures/industrial/tanks/Land_Tank_Big.jpg"
+},
+
+{
+  "objectName": "tank_small_white.p3d",
+  "inGameName": "-",
+  "category": "tanks",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/tanks",
+  "usableOnConsole": false,
+  "searchTags": "tank, fuel, container, white, storage, industrial, liquid, gas, oil",
+  "image": "images/structures/industrial/tanks/StaticObj_Tank_Small_White.jpg"
+},
+{
+  "objectName": "tank_small_rusty.p3d",
+  "inGameName": "-",
+  "category": "tanks",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/tanks",
+  "usableOnConsole": false,
+  "searchTags": "tank, fuel, container, rusty, storage, industrial, liquid, gas, oil",
+  "image": "images/structures/industrial/tanks/StaticObj_Tank_Small_Rusty.jpg"
+},
+{
+  "objectName": "tank_small_gas.p3d",
+  "inGameName": "-",
+  "category": "tanks",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/tanks",
+  "usableOnConsole": false,
+  "searchTags": "tank, fuel, gas, propane, container, storage, industrial, cylinder",
+  "image": "images/structures/industrial/tanks/StaticObj_Tank_Small_Gas.jpg"
+},
+{
+  "objectName": "tank_medium.p3d",
+  "inGameName": "-",
+  "category": "tanks",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/tanks",
+  "usableOnConsole": false,
+  "searchTags": "tank, fuel, container, medium, storage, industrial, liquid, gas, oil",
+  "image": "images/structures/industrial/tanks/StaticObj_Tank_Medium.jpg"
+},
+{
+  "objectName": "tank_medium_stairs.p3d",
+  "inGameName": "-",
+  "category": "tanks",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/tanks",
+  "usableOnConsole": false,
+  "searchTags": "tank, fuel, container, medium, storage, industrial, liquid, gas, oil, stairs, access",
+  "image": "images/structures/industrial/tanks/Land_Tank_Medium_Stairs.jpg"
+},
+{
+  "objectName": "tank_big.p3d",
+  "inGameName": "-",
+  "category": "tanks",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/industrial/tanks",
+  "usableOnConsole": false,
+  "searchTags": "tank, fuel, container, big, storage, industrial, liquid, gas, oil",
+  "image": "images/structures/industrial/tanks/Land_Tank_Big.jpg"
 }
-
-
-
 
 
 
