@@ -24200,7 +24200,7 @@
   "inGameName": "-",
   "category": "misc [military]",
   "modelType": "p3d",
-  "path": "/dz/structures/military/misc.p3d",
+  "path": "/dz/structures/military/misc",
   "usableOnConsole": false,
   "searchTags": "military, hedgehog, obstacle, concrete, tanktrap, metal",
   "image": "images/structures/military/misc/StaticObj_Misc_Hedgehog_Concrete.jpg"
@@ -24418,7 +24418,7 @@
 },
 
 {
-  "objectName": "rall_bridge_15.p3d",
+  "objectName": "rail_bridge_15.p3d",
   "inGameName": "-",
   "category": "bridges [rail]",
   "modelType": "Raw P3D",
@@ -24428,7 +24428,7 @@
   "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15.jpg"
 },
 {
-  "objectName": "rall_bridge_15_3tracks.p3d",
+  "objectName": "rail_bridge_15_3tracks.p3d",
   "inGameName": "-",
   "category": "bridges [rail]",
   "modelType": "Raw P3D",
@@ -24438,7 +24438,7 @@
   "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15_3tracks.jpg"
 },
 {
-  "objectName": "rall_bridge_15_curve.p3d",
+  "objectName": "rail_bridge_15_curve.p3d",
   "inGameName": "-",
   "category": "bridges [rail]",
   "modelType": "Raw P3D",
@@ -24448,7 +24448,7 @@
   "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15_Curve.jpg"
 },
 {
-  "objectName": "rall_bridge_15_end.p3d",
+  "objectName": "rail_bridge_15_end.p3d",
   "inGameName": "-",
   "category": "bridges [rail]",
   "modelType": "Raw P3D",
@@ -24458,7 +24458,7 @@
   "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15_End.jpg"
 },
 {
-  "objectName": "rall_bridge_40.p3d",
+  "objectName": "rail_bridge_40.p3d",
   "inGameName": "-",
   "category": "bridges [rail]",
   "modelType": "Raw P3D",
@@ -24473,7 +24473,7 @@
   "inGameName": "-",
   "category": "houses [rail stations]",
   "modelType": "Config",
-  "path": "/dz/structures/rail/stations",
+  "path": "/dz/structures/rail/houses",
   "usableOnConsole": true,
   "searchTags": "rail, station, large, train, railway, building, platform, depot, railway, brick",
   "image": "images/structures/rail/houses/Land_Rail_Station_Big.jpg"
@@ -24483,7 +24483,7 @@
   "inGameName": "-",
   "category": "houses [rail stations]",
   "modelType": "Config",
-  "path": "/dz/structures/rail/stations",
+  "path": "/dz/structures/rail/houses",
   "usableOnConsole": true,
   "searchTags": "rail, station, small, train, railway, building, platform, depot, railway, brick",
   "image": "images/structures/rail/houses/Land_Rail_Station_Small.jpg"
@@ -24493,7 +24493,7 @@
   "inGameName": "-",
   "category": "houses [rail stations]",
   "modelType": "Config",
-  "path": "/dz/structures/rail/warehouses",
+  "path": "/dz/structures/rail/houses",
   "usableOnConsole": true,
   "searchTags": "rail, warehouse, small, train, railway, depot, storage, building, wooden, old, damaged, industrial",
   "image": "images/structures/rail/houses/Land_Rail_Warehouse_Small.jpg"
@@ -24504,7 +24504,7 @@
   "inGameName": "-",
   "category": "houses [rail stations]",
   "modelType": "Raw P3D",
-  "path": "/dz/structures/rail/stations",
+  "path": "/dz/structures/rail/houses",
   "usableOnConsole": false,
   "searchTags": "rail, station, large, train, railway, building, platform, depot, brick",
   "image": "images/structures/rail/houses/Land_Rail_Station_Big.jpg"
@@ -24514,7 +24514,7 @@
   "inGameName": "-",
   "category": "houses [rail stations]",
   "modelType": "Raw P3D",
-  "path": "/dz/structures/rail/stations",
+  "path": "/dz/structures/rail/houses",
   "usableOnConsole": false,
   "searchTags": "rail, station, small, train, railway, building, platform, depot, brick",
   "image": "images/structures/rail/houses/Land_Rail_Station_Small.jpg"
@@ -24524,7 +24524,7 @@
   "inGameName": "-",
   "category": "houses [rail stations]",
   "modelType": "Raw P3D",
-  "path": "/dz/structures/rail/warehouses",
+  "path": "/dz/structures/rail/houses",
   "usableOnConsole": false,
   "searchTags": "rail, warehouse, small, train, railway, depot, storage, building, wooden, old, damaged, industrial",
   "image": "images/structures/rail/houses/Land_Rail_Warehouse_Small.jpg"
