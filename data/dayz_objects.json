@@ -22527,7 +22527,286 @@
   "usableOnConsole": false,
   "searchTags": "military, tower, guard, lookout, watchtower, defense, security, metal, rusted",
   "image": "images/structures/military/houses/Land_Mil_GuardTower.jpg"
-}
-
+},
+  {
+    "objectName": "Land_Tisy_Barracks",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Config",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": true,
+    "searchTags": "tisy, military, barracks, housing, soldiers, building, base, yellow, large, brick",
+    "image": "images/structures/military/tisy/Land_Tisy_Barracks.jpg"
+  },
+  {
+    "objectName": "Land_Tisy_Base_cooler",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Config",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": true,
+    "searchTags": "tisy, military, base, cooler, storage, utility, industrial, small",
+    "image": "images/structures/military/tisy/Land_Tisy_Base_cooler.jpg"
+  },
+  {
+    "objectName": "Land_Tisy_Garages",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Config",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": true,
+    "searchTags": "tisy, military, garages, storage, vehicles, bunker, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/tisy/Land_Tisy_Garages.jpg"
+  },
+  {
+    "objectName": "Land_Tisy_Garages2",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Config",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": true,
+    "searchTags": "tisy, military, garages, storage, vehicles, bunker, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/tisy/Land_Tisy_Garages2.jpg"
+  },
+  {
+    "objectName": "Land_Tisy_KitchenRoom",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Config",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": true,
+    "searchTags": "tisy, military, kitchen, room, building, food, base, damaged, broken, old, chimney",
+    "image": "images/structures/military/tisy/Land_Tisy_KitchenRoom.jpg"
+  },
+  {
+    "objectName": "Land_Tisy_RadarB_Antenna",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Config",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": true,
+    "searchTags": "tisy, military, radar, antenna, communication, surveillance, base, satellite, dish",
+    "image": "images/structures/military/tisy/Land_Tisy_RadarB_Antenna.jpg"
+  },
+  {
+    "objectName": "Land_Tisy_RadarB_Base",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Config",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": true,
+    "searchTags": "tisy, military, radar, base, communication, surveillance, structure, satellite, dish, rusted, metal, damaged, old",
+    "image": "images/structures/military/tisy/Land_Tisy_RadarB_Base.jpg"
+  },
+  {
+    "objectName": "Land_Tisy_RadarPlatform_Top",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Config",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": true,
+    "searchTags": "tisy, military, radar, platform, top, structure, communication, surveillance, platform, large, stilts, tall, pillars",
+    "image": "images/structures/military/tisy/Land_Tisy_RadarPlatform_Top.jpg"
+  },
+  {
+    "objectName": "StaticObj_Tisy_Garages_Grass_L",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Config",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": true,
+    "searchTags": "tisy, military, garages, grass, left, terrain, vegetation, cover",
+    "image": "images/structures/military/tisy/StaticObj_Tisy_Garages_Grass_L.jpg"
+  },
+  {
+    "objectName": "StaticObj_Tisy_Garages_Grass_R",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Config",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": true,
+    "searchTags": "tisy, military, garages, grass, right, terrain, vegetation, cover",
+    "image": "images/structures/military/tisy/StaticObj_Tisy_Garages_Grass_R.jpg"
+  },
+  {
+    "objectName": "StaticObj_Tisy_RadarPlatform_Bot",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Config",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": true,
+    "searchTags": "tisy, military, radar, platform, bottom, structure, surveillance, ramp, slope, sking, ski",
+    "image": "images/structures/military/tisy/StaticObj_Tisy_RadarPlatform_Bot.jpg"
+  },
+  {
+    "objectName": "StaticObj_Tisy_RadarPlatform_Mid",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Config",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": true,
+    "searchTags": "tisy, military, radar, platform, middle, structure, surveillance, ramp, slope, sking, ski",
+    "image": "images/structures/military/tisy/StaticObj_Tisy_RadarPlatform_Mid.jpg"
+  },
+  {
+    "objectName": "StaticObj_Tisy_AirShaft",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Config",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": true,
+    "searchTags": "tisy, military, shaft, bunker, tunnel, ventilation, mine, underground",
+    "image": "images/structures/military/tisy/StaticObj_Tisy_AirShaft.jpg"
+  },
+  {
+    "objectName": "Land_Tisy_HQ",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Config",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": true,
+    "searchTags": "tisy, military, headquarters, hq, command, control, building, office, underground, vault, base",
+    "image": "images/structures/military/tisy/Land_Tisy_HQ.jpg"
+  },
+  {
+    "objectName": "tisy_radarplatform_top.p3d",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": false,
+    "searchTags": "tisy, military, radar, platform, top, structure, communication, surveillance, platform, large, stilts, tall, pillars",
+    "image": "images/structures/military/tisy/Land_Tisy_RadarPlatform_Top.jpg"
+  },
+  {
+    "objectName": "tisy_kitchenroom.p3d",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": false,
+    "searchTags": "tisy, military, kitchen, room, building, food, base, damaged, broken, old, chimney",
+    "image": "images/structures/military/tisy/Land_Tisy_KitchenRoom.jpg"
+  },
+  {
+    "objectName": "tisy_garages.p3d",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": false,
+    "searchTags": "tisy, military, garages, storage, vehicles, bunker, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/tisy/Land_Tisy_Garages.jpg"
+  },
+  {
+    "objectName": "tisy_garages2.p3d",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": false,
+    "searchTags": "tisy, military, garages, storage, vehicles, bunker, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/tisy/Land_Tisy_Garages2.jpg"
+  },
+  {
+    "objectName": "tisy_radarb_base.p3d",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": false,
+    "searchTags": "tisy, military, radar, base, communication, surveillance, structure, satellite, dish, rusted, metal, damaged, old",
+    "image": "images/structures/military/tisy/Land_Tisy_RadarB_Base.jpg"
+  },
+  {
+    "objectName": "tisy_radarb_antenna.p3d",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": false,
+    "searchTags": "tisy, military, radar, antenna, communication, surveillance, base, satellite, dish",
+    "image": "images/structures/military/tisy/Land_Tisy_RadarB_Antenna.jpg"
+  },
+  {
+    "objectName": "tisy_base_cooler.p3d",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": false,
+    "searchTags": "tisy, military, base, cooler, storage, utility, industrial, small",
+    "image": "images/structures/military/tisy/Land_Tisy_Base_cooler.jpg"
+  },
+  {
+    "objectName": "tisy_barracks.p3d",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": false,
+    "searchTags": "tisy, military, barracks, housing, soldiers, building, base, yellow, large, brick",
+    "image": "images/structures/military/tisy/Land_Tisy_Barracks.jpg"
+  },
+  {
+    "objectName": "tisy_garages_grass_l.p3d",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": false,
+    "searchTags": "tisy, military, garages, grass, left, terrain, vegetation, cover",
+    "image": "images/structures/military/tisy/StaticObj_Tisy_Garages_Grass_L.jpg"
+  },
+  {
+    "objectName": "tisy_garages_grass_r.p3d",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": false,
+    "searchTags": "tisy, military, garages, grass, right, terrain, vegetation, cover",
+    "image": "images/structures/military/tisy/StaticObj_Tisy_Garages_Grass_R.jpg"
+  },
+  {
+    "objectName": "tisy_radarplatform_bot.p3d",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": false,
+    "searchTags": "tisy, military, radar, platform, bottom, structure, surveillance, ramp, slope, sking, ski",
+    "image": "images/structures/military/tisy/StaticObj_Tisy_RadarPlatform_Bot.jpg"
+  },
+  {
+    "objectName": "tisy_radarplatform_mid.p3d",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": false,
+    "searchTags": "tisy, military, radar, platform, middle, structure, surveillance, ramp, slope, sking, ski",
+    "image": "images/structures/military/tisy/StaticObj_Tisy_RadarPlatform_Mid.jpg"
+  },
+  {
+    "objectName": "tisy_airshaft.p3d",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": false,
+    "searchTags": "tisy, military, shaft, bunker, tunnel, ventilation, mine, underground",
+    "image": "images/structures/military/tisy/StaticObj_Tisy_AirShaft.jpg"
+  },
+  {
+    "objectName": "tisy_hq.p3d",
+    "inGameName": "-",
+    "category": "tisy [military]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/military/tisy",
+    "usableOnConsole": false,
+    "searchTags": "tisy, military, headquarters, hq, command, control, building, office, underground, vault, base",
+    "image": "images/structures/military/tisy/Land_Tisy_HQ.jpg"
+  }
 ]
 
