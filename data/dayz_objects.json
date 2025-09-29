@@ -24364,9 +24364,171 @@
   "usableOnConsole": false,
   "searchTags": "military, supplybox, crate, storage, box, loot, drop, supply, package, dynamic_event, orange, medical",
   "image": "images/structures/military/misc/StaticObj_Misc_SupplyBox3_DE.jpg"
+},
+
+{
+  "objectName": "StaticObj_Rail_Bridge_15_3tracks",
+  "inGameName": "-",
+  "category": "bridges [rail]",
+  "modelType": "Config",
+  "path": "/dz/structures/rail/bridges",
+  "usableOnConsole": true,
+  "searchTags": "rail, bridge, 15m, 3 tracks, tunnel, train, railway",
+  "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15_3tracks.jpg"
+},
+{
+  "objectName": "StaticObj_Rail_Bridge_15_Curve",
+  "inGameName": "-",
+  "category": "bridges [rail]",
+  "modelType": "Config",
+  "path": "/dz/structures/rail/bridges",
+  "usableOnConsole": true,
+  "searchTags": "rail, bridge, 1 track, train, railway, tunnel",
+  "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15_Curve.jpg"
+},
+{
+  "objectName": "StaticObj_Rail_Bridge_15_End",
+  "inGameName": "-",
+  "category": "bridges [rail]",
+  "modelType": "Config",
+  "path": "/dz/structures/rail/bridges",
+  "usableOnConsole": true,
+  "searchTags": "rail, bridge, 15m, end, big, single, 1 track, train, railway, tunnel",
+  "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15_End.jpg"
+},
+{
+  "objectName": "StaticObj_Rail_Bridge_15",
+  "inGameName": "-",
+  "category": "bridges [rail]",
+  "modelType": "Config",
+  "path": "/dz/structures/rail/bridges",
+  "usableOnConsole": true,
+  "searchTags": "rail, bridge, 15m, straight, 1 track, train, railway, tunnel",
+  "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15.jpg"
+},
+{
+  "objectName": "StaticObj_Rail_Bridge_40",
+  "inGameName": "-",
+  "category": "bridges [rail]",
+  "modelType": "Config",
+  "path": "/dz/structures/rail/bridges",
+  "usableOnConsole": true,
+  "searchTags": "rail, bridge, 40m, straight, big, metal, large, steel, 1 track, train, railway",
+  "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_40.jpg"
+},
+
+{
+  "objectName": "rall_bridge_15.p3d",
+  "inGameName": "-",
+  "category": "bridges [rail]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/rail/bridges",
+  "usableOnConsole": false,
+  "searchTags": "rail, bridge, 15m, straight, 1 track, train, railway, tunnel",
+  "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15.jpg"
+},
+{
+  "objectName": "rall_bridge_15_3tracks.p3d",
+  "inGameName": "-",
+  "category": "bridges [rail]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/rail/bridges",
+  "usableOnConsole": false,
+  "searchTags": "rail, bridge, 15m, 3 tracks, tunnel, train, railway",
+  "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15_3tracks.jpg"
+},
+{
+  "objectName": "rall_bridge_15_curve.p3d",
+  "inGameName": "-",
+  "category": "bridges [rail]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/rail/bridges",
+  "usableOnConsole": false,
+  "searchTags": "rail, bridge, 15m, curve, 1 track, train, railway, tunnel",
+  "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15_Curve.jpg"
+},
+{
+  "objectName": "rall_bridge_15_end.p3d",
+  "inGameName": "-",
+  "category": "bridges [rail]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/rail/bridges",
+  "usableOnConsole": false,
+  "searchTags": "rail, bridge, 15m, end, big, single, 1 track, train, railway, tunnel",
+  "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15_End.jpg"
+},
+{
+  "objectName": "rall_bridge_40.p3d",
+  "inGameName": "-",
+  "category": "bridges [rail]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/rail/bridges",
+  "usableOnConsole": false,
+  "searchTags": "rail, bridge, 40m, straight, big, metal, large, steel, 1 track, train, railway",
+  "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_40.jpg"
+},
+
+{
+  "objectName": "Land_Rail_Station_Big",
+  "inGameName": "-",
+  "category": "houses [rail stations]",
+  "modelType": "Config",
+  "path": "/dz/structures/rail/stations",
+  "usableOnConsole": true,
+  "searchTags": "rail, station, large, train, railway, building, platform, depot, railway, brick",
+  "image": "images/structures/rail/stations/Land_Rail_Station_Big.jpg"
+},
+{
+  "objectName": "Land_Rail_Station_Small",
+  "inGameName": "-",
+  "category": "houses [rail stations]",
+  "modelType": "Config",
+  "path": "/dz/structures/rail/stations",
+  "usableOnConsole": true,
+  "searchTags": "rail, station, small, train, railway, building, platform, depot, railway, brick",
+  "image": "images/structures/rail/stations/Land_Rail_Station_Small.jpg"
+},
+{
+  "objectName": "Land_Rail_Warehouse_Small",
+  "inGameName": "-",
+  "category": "houses [rail stations]",
+  "modelType": "Config",
+  "path": "/dz/structures/rail/warehouses",
+  "usableOnConsole": true,
+  "searchTags": "rail, warehouse, small, train, railway, depot, storage, building, wooden, old, damaged, industrial",
+  "image": "images/structures/rail/warehouses/Land_Rail_Warehouse_Small.jpg"
+},
+
+{
+  "objectName": "rail_station_big.p3d",
+  "inGameName": "-",
+  "category": "houses [rail stations]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/rail/stations",
+  "usableOnConsole": false,
+  "searchTags": "rail, station, large, train, railway, building, platform, depot, brick",
+  "image": "images/structures/rail/stations/Land_Rail_Station_Big.jpg"
+},
+{
+  "objectName": "rail_station_small.p3d",
+  "inGameName": "-",
+  "category": "houses [rail stations]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/rail/stations",
+  "usableOnConsole": false,
+  "searchTags": "rail, station, small, train, railway, building, platform, depot, brick",
+  "image": "images/structures/rail/stations/Land_Rail_Station_Small.jpg"
+},
+{
+  "objectName": "rail_warehouse_small.p3d",
+  "inGameName": "-",
+  "category": "houses [rail stations]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/rail/warehouses",
+  "usableOnConsole": false,
+  "searchTags": "rail, warehouse, small, train, railway, depot, storage, building, wooden, old, damaged, industrial",
+  "image": "images/structures/rail/warehouses/Land_Rail_Warehouse_Small.jpg"
 }
-
-
 
 
 ]
