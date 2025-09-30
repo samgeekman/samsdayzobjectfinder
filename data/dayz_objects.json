@@ -24628,7 +24628,7 @@
   "path": "/dz/structures/rail/tracks",
   "usableOnConsole": true,
   "searchTags": "rail, track, switch, railway, train, line, bend",
-  "image": "images/structures/rail/tracks/StaticObj_Rail_Track_LE_RB_lc.jpg"
+  "image": "images/structures/rail/tracks/StaticObj_Rail_Track_LE_RB.jpg"
 },
 {
   "objectName": "StaticObj_Rail_Track_LE_RB",
@@ -24688,7 +24688,7 @@
   "path": "/dz/structures/rail/tracks",
   "usableOnConsole": true,
   "searchTags": "rail, track, passing, 25m, railway, train, line, road, crossing",
-  "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Passing_25_nolc.jpg"
+  "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Passing_25.jpg"
 },
 {
   "objectName": "StaticObj_Rail_Track_Passing_25",
@@ -24971,6 +24971,47 @@
   "image": "images/structures/rail/tracks/StaticObj_Rail_TrackE_TurnOutR.jpg"
 },
 
+{
+  "objectName": "StaticObj_Rail_TrackE_R25_5",
+  "inGameName": "-",
+  "category": "misc [rail]",
+  "modelType": "Config",
+  "path": "/dz/structures/rail/tracks",
+  "usableOnConsole": true,
+  "searchTags": "rail, train, railway, straight",
+  "image": "images/structures/rail/tracks/StaticObj_Rail_TrackE_R25_5.jpg"
+},
+{
+  "objectName": "StaticObj_Rail_TrackE_R25_5_lc",
+  "inGameName": "-",
+  "category": "misc [rail]",
+  "modelType": "Config",
+  "path": "/dz/structures/rail/tracks",
+  "usableOnConsole": true,
+  "searchTags": "rail, train, railway, straight",
+  "image": "images/structures/rail/tracks/StaticObj_Rail_TrackE_R25_5_lc.jpg"
+},
+{
+  "objectName": "StaticObj_Rail_TrackE_L30_20",
+  "inGameName": "-",
+  "category": "misc [rail]",
+  "modelType": "Config",
+  "path": "/dz/structures/rail/tracks",
+  "usableOnConsole": true,
+  "searchTags": "rail, train, railway, straight",
+  "image": "images/structures/rail/tracks/StaticObj_Rail_TrackE_L30_20.jpg"
+},
+{
+  "objectName": "StaticObj_Rail_TrackE_L30_20_lc",
+  "inGameName": "-",
+  "category": "misc [rail]",
+  "modelType": "Config",
+  "path": "/dz/structures/rail/tracks",
+  "usableOnConsole": true,
+  "searchTags": "rail, train, railway, straight",
+  "image": "images/structures/rail/tracks/StaticObj_Rail_TrackE_L30_20.jpg"
+},
+
   {
     "objectName": "rail_track_25.p3d",
     "inGameName": "-",
@@ -24992,7 +25033,7 @@
     "image": "images/structures/rail/tracks/StaticObj_Rail_Track_25_lc.jpg"
   },
   {
-    "objectName": "rail_track_Down_25.p3d",
+    "objectName": "rail_track_down_25.p3d",
     "inGameName": "-",
     "category": "tracks [rail]",
     "modelType": "Raw P3D",
@@ -25002,7 +25043,7 @@
     "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Down_25.jpg"
   },
   {
-    "objectName": "rail_track_Down_25_lc.p3d",
+    "objectName": "rail_track_down_25_lc.p3d",
     "inGameName": "-",
     "category": "tracks [rail]",
     "modelType": "Raw P3D",
@@ -25012,7 +25053,7 @@
     "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Down_25_lc.jpg"
   },
   {
-    "objectName": "rail_track_Down_40.p3d",
+    "objectName": "rail_track_down_40.p3d",
     "inGameName": "-",
     "category": "tracks [rail]",
     "modelType": "Raw P3D",
@@ -25022,14 +25063,14 @@
     "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Down_40.jpg"
   },
   {
-    "objectName": "rail_track_Down_40_lc.p3d",
+    "objectName": "rail_track_down_40_lc.p3d",
     "inGameName": "-",
     "category": "tracks [rail]",
     "modelType": "Raw P3D",
     "path": "/dz/structures/rail/tracks",
     "usableOnConsole": false,
     "searchTags": "rail, track, railway, train, line",
-    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Down_40_lc.jpg"
+    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Down_40.jpg"
   },
   {
     "objectName": "rail_track_l25_10.p3d",
@@ -25079,7 +25120,7 @@
     "path": "/dz/structures/rail/tracks",
     "usableOnConsole": false,
     "searchTags": "rail, track, railway, train, line",
-    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_LB1_RE.jpg"
+    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_LB1_RE_lc.jpg"
   },
   {
     "objectName": "rail_track_lb1_re_lc.p3d",
@@ -25089,7 +25130,7 @@
     "path": "/dz/structures/rail/tracks",
     "usableOnConsole": false,
     "searchTags": "rail, track, railway, train, line",
-    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_LB1_RE_LC.jpg"
+    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_LB1_RE_lc.jpg"
   },
   {
     "objectName": "rail_track_le_rb.p3d",
@@ -25129,7 +25170,7 @@
     "path": "/dz/structures/rail/tracks",
     "usableOnConsole": false,
     "searchTags": "rail, track, railway, train, line",
-    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_LE1_RB_LC.jpg"
+    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_LE1_RB_lc.jpg"
   },
   {
     "objectName": "rail_track_passing_10.p3d",
@@ -25169,7 +25210,7 @@
     "path": "/dz/structures/rail/tracks",
     "usableOnConsole": false,
     "searchTags": "rail, track, railway, train, line",
-    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Passing_25_lc.jpg"
+    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Passing_25.jpg"
   },
   {
     "objectName": "rail_track_passing_25_nolc.p3d",
@@ -25219,7 +25260,7 @@
     "path": "/dz/structures/rail/tracks",
     "usableOnConsole": false,
     "searchTags": "rail, track, railway, train, line",
-    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_SP_LC.jpg"
+    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_SP.jpg"
   },
   {
     "objectName": "rail_track_turnoutr.p3d",
@@ -25259,7 +25300,7 @@
     "path": "/dz/structures/rail/tracks",
     "usableOnConsole": false,
     "searchTags": "rail, track, turnout, left, switch, railway, train, line, junction",
-    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_TurnOutL_lc.jpg"
+    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_TurnOutL.jpg"
   },
   {
     "objectName": "rail_track_up_25.p3d",
@@ -25269,7 +25310,7 @@
     "path": "/dz/structures/rail/tracks",
     "usableOnConsole": false,
     "searchTags": "rail, track, railway, train, line",
-    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_up_25.jpg"
+    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Up_25.jpg"
   },
   {
     "objectName": "rail_track_up_40.p3d",
@@ -25289,7 +25330,7 @@
     "path": "/dz/structures/rail/tracks",
     "usableOnConsole": false,
     "searchTags": "rail, track, railway, train, line",
-    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Up_25_LC.jpg"
+    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Up_25.jpg"
   },
   {
     "objectName": "rail_track_up_40_lc.p3d",
@@ -25299,7 +25340,7 @@
     "path": "/dz/structures/rail/tracks",
     "usableOnConsole": false,
     "searchTags": "rail, track, railway, train, line",
-    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Up_40_LC.jpg"
+    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Up_40.jpg"
   },
   {
     "objectName": "rail_tracke_2.p3d",
@@ -25339,7 +25380,7 @@
     "path": "/dz/structures/rail/tracks",
     "usableOnConsole": false,
     "searchTags": "rail, track, railway, train, line",
-    "image": "images/structures/rail/tracks/StaticObj_Rail_TrackE__nolc.jpg"
+    "image": "images/structures/rail/tracks/StaticObj_Rail_TrackE_8.jpg"
   },
   {
     "objectName": "rail_tracke_25.p3d",
@@ -25419,7 +25460,7 @@
     "path": "/dz/structures/rail/tracks",
     "usableOnConsole": false,
     "searchTags": "rail, track, curve, left, 25m, railway, train, line",
-    "image": "images/structures/rail/tracks/StaticObj_Rail_TrackE_L25_10_lc.jpg"
+    "image": "images/structures/rail/tracks/StaticObj_Rail_TrackE_L25_10.jpg"
   },
   {
     "objectName": "rail_tracke_l30_20.p3d",
