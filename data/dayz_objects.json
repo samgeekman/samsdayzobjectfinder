@@ -25014,7 +25014,7 @@
 {
   "objectName": "StaticObj_Rail_TrackE_L30_20_lc",
   "inGameName": "-",
-  "category": "trackss [rail]",
+  "category": "tracks [rail]",
   "modelType": "Config",
   "path": "/dz/structures/rail/tracks",
   "usableOnConsole": true,
@@ -25230,7 +25230,7 @@
     "path": "/dz/structures/rail/tracks",
     "usableOnConsole": false,
     "searchTags": "rail, track, railway, train, line",
-    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Passing_2.jpg"
+    "image": "images/structures/rail/tracks/StaticObj_Rail_Track_Passing_25.jpg"
   },
   {
     "objectName": "rail_track_r25_10.p3d",
@@ -26481,6 +26481,108 @@
   "usableOnConsole": false,
   "searchTags": "house, block, 5 floor, apartment, residential, building, urban, tall, shop, store, alleyway, workshop, large",
   "image": "images/structures/residential/houseblocks/Land_HouseBlock_5F.jpg"
+},
+{
+  "objectName": "Land_Village_PoliceStation",
+  "inGameName": "-",
+  "category": "police [station]",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/police",
+  "usableOnConsole": true,
+  "searchTags": "police, station, village, law, enforcement, small, rural, municipal, jail, office, yellow",
+  "image": "images/structures/residential/police/Land_Village_PoliceStation.jpg"
+},
+{
+  "objectName": "Land_City_PoliceStation",
+  "inGameName": "-",
+  "category": "police [station]",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/police",
+  "usableOnConsole": true,
+  "searchTags": "police, station, city, law, enforcement, urban, municipal, jail, office, large, grey",
+  "image": "images/structures/residential/police/Land_City_PoliceStation.jpg"
+},
+{
+  "objectName": "village_policestation.p3d",
+  "inGameName": "-",
+  "category": "police [station]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/police",
+  "usableOnConsole": false,
+  "searchTags": "police, station, village, law, enforcement, small, rural, municipal, jail, office",
+  "image": "images/structures/residential/police/Land_Village_PoliceStation.jpg"
+},
+
+{
+  "objectName": "city_policestation.p3d",
+  "inGameName": "-",
+  "category": "police [station]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/police",
+  "usableOnConsole": false,
+  "searchTags": "police, station, city, law, enforcement, urban, municipal, jail, office, large",
+  "image": "images/structures/residential/police/Land_City_PoliceStation.jpg"
+},
+{
+  "objectName": "Land_City_School",
+  "inGameName": "-",
+  "category": "school [city]",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/schools",
+  "usableOnConsole": true,
+  "searchTags": "school, city, education, building, urban, municipal, classroom, learning, large, gym, sports, basketball",
+  "image": "images/structures/residential/schools/Land_City_School.jpg"
+},
+{
+  "objectName": "city_school.p3d",
+  "inGameName": "-",
+  "category": "school [city]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/schools",
+  "usableOnConsole": false,
+  "searchTags": "school, city, education, building, urban, municipal, classroom, learning, large, gym, sports, basketball",
+  "image": "images/structures/residential/schools/Land_City_School.jpg"
+},
+{
+  "objectName": "Land_Tenement_Big",
+  "inGameName": "-",
+  "category": "tenement [apartments]",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/tenements",
+  "usableOnConsole": true,
+  "searchTags": "tenement, apartment, block, large, residential, housing, flats, concrete, urban, highrise, building",
+  "image": "images/structures/residential/tenements/Land_Tenement_Big.jpg"
+},
+{
+  "objectName": "Land_Tenement_Small",
+  "inGameName": "-",
+  "category": "tenement [apartments]",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/tenements",
+  "usableOnConsole": true,
+  "searchTags": "tenement, apartment, block, small, residential, housing, flats, concrete, urban, lowrise, building",
+  "image": "images/structures/residential/tenements/Land_Tenement_Small.jpg"
+},
+
+{
+  "objectName": "tenement_big.p3d",
+  "inGameName": "-",
+  "category": "tenement [apartments]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/tenements",
+  "usableOnConsole": false,
+  "searchTags": "tenement, apartment, block, large, residential, housing, flats, concrete, urban, highrise, building",
+  "image": "images/structures/residential/tenements/Land_Tenement_Big.jpg"
+},
+{
+  "objectName": "tenement_small.p3d",
+  "inGameName": "-",
+  "category": "tenement [apartments]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/tenements",
+  "usableOnConsole": false,
+  "searchTags": "tenement, apartment, block, small, residential, housing, flats, concrete, urban, lowrise, building",
+  "image": "images/structures/residential/tenements/Land_Tenement_Small.jpg"
 }
 
 
