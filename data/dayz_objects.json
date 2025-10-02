@@ -26583,6 +26583,827 @@
   "usableOnConsole": false,
   "searchTags": "tenement, apartment, block, small, residential, housing, flats, concrete, urban, lowrise, building",
   "image": "images/structures/residential/tenements/Land_Tenement_Small.jpg"
+},
+{
+  "objectName": "Land_Shed_W6",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": true,
+  "searchTags": "shed, storage, wooden, double, garage, brown, medium, residential",
+  "image": "images/structures/residential/sheds/Land_Shed_W6.jpg"
+},
+{
+  "objectName": "shed_w6.p3d",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": false,
+  "searchTags": "shed, storage, wooden, double, garage, light_brown, medium, residential",
+  "image": "images/structures/residential/sheds/Land_Shed_W6.jpg"
+},
+
+{
+  "objectName": "Land_Shed_W5",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": true,
+  "searchTags": "shed, warehouse, wooden, residential, brown, light_brown, garden ",
+  "image": "images/structures/residential/sheds/Land_Shed_W5.jpg"
+},
+{
+  "objectName": "shed_w5.p3d",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": false,
+  "searchTags": "shed, warehouse, wooden, residential, brown, light_brown, garden",
+  "image": "images/structures/residential/sheds/Land_Shed_W5.jpg"
+},
+
+{
+  "objectName": "Land_Shed_W4",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": true,
+  "searchTags": "shed, warehouse, wooden, residential, brown, garden, broken, damaged",
+  "image": "images/structures/residential/sheds/Land_Shed_W4.jpg"
+},
+{
+  "objectName": "shed_w4.p3d",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": false,
+  "searchTags": "shed, warehouse, wooden, residential, brown, garden, broken, damaged",
+  "image": "images/structures/residential/sheds/Land_Shed_W4.jpg"
+},
+
+{
+  "objectName": "Land_Shed_W3",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": true,
+  "searchTags": "shed, warehouse, wooden, residential, brown, garden",
+  "image": "images/structures/residential/sheds/Land_Shed_W3.jpg"
+},
+{
+  "objectName": "shed_w3.p3d",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": false,
+  "searchTags": "shed, warehouse, wooden, residential, brown, garden",
+  "image": "images/structures/residential/sheds/Land_Shed_W3.jpg"
+},
+
+{
+  "objectName": "Land_Shed_W2",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": true,
+  "searchTags": "shed, warehouse, wooden, residential, brown, garden, window",
+  "image": "images/structures/residential/sheds/Land_Shed_W2.jpg"
+},
+{
+  "objectName": "shed_w2.p3d",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": false,
+  "searchTags": "shed, warehouse, wooden, residential, metal, brown, garden, shelter",
+  "image": "images/structures/residential/sheds/Land_Shed_W2.jpg"
+},
+
+{
+  "objectName": "Land_Shed_W1",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": true,
+  "searchTags": "shed, warehouse, wooden, residential, metal, brown, garden, shelter",
+  "image": "images/structures/residential/sheds/Land_Shed_W1.jpg"
+},
+{
+  "objectName": "shed_w1.p3d",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": false,
+  "searchTags": "shed, warehouse, wooden, residential, metal, brown, garden, shelter",
+  "image": "images/structures/residential/sheds/Land_Shed_W1.jpg"
+},
+
+{
+  "objectName": "Land_Shed_M4",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": true,
+  "searchTags": "shed, warehouse, wooden, industrial, metal, brown, garden, broken, no_door, industrial",
+  "image": "images/structures/residential/sheds/Land_Shed_M4.jpg"
+},
+{
+  "objectName": "shed_m4.p3d",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": false,
+  "searchTags": "shed, warehouse, wooden, industrial, metal, brown, garden, broken, no_door, industrial",
+  "image": "images/structures/residential/sheds/Land_Shed_M4.jpg"
+},
+
+{
+  "objectName": "Land_Shed_M3",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": true,
+  "searchTags": "shed, warehouse, industrial, metal, brown, garden, rusted",
+  "image": "images/structures/residential/sheds/Land_Shed_M3.jpg"
+},
+{
+  "objectName": "shed_m3.p3d",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": false,
+  "searchTags": "shed, warehouse, industrial, metal, brown, garden, rusted",
+  "image": "images/structures/residential/sheds/Land_Shed_M3.jpg"
+},
+
+{
+  "objectName": "Land_Shed_M1",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": true,
+  "searchTags": "shed, warehouse, industrial, metal, brown, garden, grey",
+  "image": "images/structures/residential/sheds/Land_Shed_M1.jpg"
+},
+{
+  "objectName": "shed_m1.p3d",
+  "inGameName": "-",
+  "category": "sheds [residential]",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/sheds",
+  "usableOnConsole": false,
+  "searchTags": "shed, warehouse, industrial, metal, brown, garden, grey",
+  "image": "images/structures/residential/sheds/Land_Shed_M1.jpg"
+},
+{
+  "objectName": "Land_City_Stand_FastFood",
+  "inGameName": "-",
+  "category": "stores",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/stores",
+  "usableOnConsole": true,
+  "searchTags": "store, stand, fast food, kiosk, city, shop, food, takeaway, market, stall, small",
+  "image": "images/structures/residential/stores/Land_City_Stand_FastFood.jpg"
+},
+{
+  "objectName": "city_stand_fastfood.p3d",
+  "inGameName": "-",
+  "category": "stores",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/stores",
+  "usableOnConsole": false,
+  "searchTags": "store, stand, fast food, kiosk, city, shop, food, takeaway, market, stall, small",
+  "image": "images/structures/residential/stores/Land_City_Stand_FastFood.jpg"
+},
+
+{
+  "objectName": "Land_City_Stand_Grocery",
+  "inGameName": "-",
+  "category": "stores",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/stores",
+  "usableOnConsole": true,
+  "searchTags": "store, stand, grocery, kiosk, city, shop, market, stall, food, small",
+  "image": "images/structures/residential/stores/Land_City_Stand_Grocery.jpg"
+},
+{
+  "objectName": "city_stand_grocery.p3d",
+  "inGameName": "-",
+  "category": "stores",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/stores",
+  "usableOnConsole": false,
+  "searchTags": "store, stand, grocery, kiosk, city, shop, market, stall, food, small",
+  "image": "images/structures/residential/stores/Land_City_Stand_Grocery.jpg"
+},
+
+{
+  "objectName": "Land_City_Stand_News1",
+  "inGameName": "-",
+  "category": "stores",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/stores",
+  "usableOnConsole": true,
+  "searchTags": "store, stand, news, kiosk, papers, magazine, city, stall, shop, small",
+  "image": "images/structures/residential/stores/Land_City_Stand_News1.jpg"
+},
+{
+  "objectName": "city_stand_news1.p3d",
+  "inGameName": "-",
+  "category": "stores",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/stores",
+  "usableOnConsole": false,
+  "searchTags": "store, stand, news, kiosk, papers, magazine, city, stall, shop, small",
+  "image": "images/structures/residential/stores/Land_City_Stand_News1.jpg"
+},
+
+{
+  "objectName": "Land_City_Stand_News2",
+  "inGameName": "-",
+  "category": "stores",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/stores",
+  "usableOnConsole": true,
+  "searchTags": "store, stand, news, kiosk, papers, magazine, city, stall, shop, small",
+  "image": "images/structures/residential/stores/Land_City_Stand_News2.jpg"
+},
+{
+  "objectName": "city_stand_news2.p3d",
+  "inGameName": "-",
+  "category": "stores",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/stores",
+  "usableOnConsole": false,
+  "searchTags": "store, stand, news, kiosk, papers, magazine, city, stall, shop, small",
+  "image": "images/structures/residential/stores/Land_City_Stand_News2.jpg"
+},
+
+{
+  "objectName": "Land_City_Store_WithStairs",
+  "inGameName": "-",
+  "category": "stores",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/stores",
+  "usableOnConsole": true,
+  "searchTags": "store, city, shop, stairs, building, urban, grocery, retail, large",
+  "image": "images/structures/residential/stores/Land_City_Store_WithStairs.jpg"
+},
+{
+  "objectName": "city_store_withstairs.p3d",
+  "inGameName": "-",
+  "category": "stores",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/stores",
+  "usableOnConsole": false,
+  "searchTags": "store, city, shop, stairs, building, urban, grocery, retail, large",
+  "image": "images/structures/residential/stores/Land_City_Store_WithStairs.jpg"
+},
+
+{
+  "objectName": "Land_City_Store",
+  "inGameName": "-",
+  "category": "stores",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/stores",
+  "usableOnConsole": true,
+  "searchTags": "store, city, shop, stairs, building, urban, city grocery, retail, medium",
+  "image": "images/structures/residential/stores/Land_City_Store.jpg"
+},
+{
+  "objectName": "city_store.p3d",
+  "inGameName": "-",
+  "category": "stores",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/stores",
+  "usableOnConsole": false,
+  "searchTags": "store, city, shop, stairs, building, urban, city grocery, retail, medium",
+  "image": "images/structures/residential/stores/Land_City_Store.jpg"
+},
+
+{
+  "objectName": "Land_Village_store",
+  "inGameName": "-",
+  "category": "stores",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/stores",
+  "usableOnConsole": true,
+  "searchTags": "store, village, shop, rural, grocery, retail, small, market, hunting shop, hunter, medium",
+  "image": "images/structures/residential/stores/Land_Village_store.jpg"
+},
+{
+  "objectName": "village_store.p3d",
+  "inGameName": "-",
+  "category": "stores",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/stores",
+  "usableOnConsole": false,
+  "searchTags": "store, village, shop, rural, grocery, retail, small, market, hunting shop, hunter, medium",
+  "image": "images/structures/residential/stores/Land_Village_store.jpg"
+}, 
+
+{
+  "objectName": "StaticObj_Platform2_Stairs_30_WallR",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, stairs, 30 degree, right wall, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Stairs_30_WallR.jpg"
+},
+{
+  "objectName": "platform2_stairs_30_wallr.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, stairs, 30 degree, right wall, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Stairs_30_WallR.jpg"
+},
+
+{
+  "objectName": "StaticObj_Platform2_Stairs_Block",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "invisible",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Stairs_Block.jpg"
+},
+{
+  "objectName": "platform2_stairs_block.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, stairs, 30 degree, right wall, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Stairs_Block.jpg"
+},
+
+{
+  "objectName": "StaticObj_Platform2_Stairs_30_WallL",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, stairs, 30 degree, left wall, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Stairs_30_WallL.jpg"
+},
+{
+  "objectName": "platform2_stairs_30_walll.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, stairs, 30 degree, left wall, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Stairs_30_WallL.jpg"
+},
+
+{
+  "objectName": "StaticObj_Platform2_Stairs_30",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, stairs, 30 degree, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Stairs_30.jpg"
+},
+{
+  "objectName": "platform2_stairs_30.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, stairs, 30 degree, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Stairs_30.jpg"
+},
+
+{
+  "objectName": "StaticObj_Platform2_Stairs_20",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, stairs, 20 degree, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Stairs_20.jpg"
+},
+{
+  "objectName": "platform2_stairs_20.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, stairs, 20 degree, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Stairs_20.jpg"
+},
+
+{
+  "objectName": "StaticObj_Platform2_Wall",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, wall, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Wall.jpg"
+},
+{
+  "objectName": "platform2_wall.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, wall, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Wall.jpg"
+},
+
+{
+  "objectName": "StaticObj_Platform2_Enter",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, enter, entry, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Enter.jpg"
+},
+{
+  "objectName": "platform2_enter.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, enter, entry, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Enter.jpg"
+},
+
+{
+  "objectName": "StaticObj_Platform2_Block",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, block, residential, building, structure, square, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Block.jpg"
+},
+{
+  "objectName": "platform2_block.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, block, residential, building, structure, square, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Block.jpg"
+},
+
+{
+  "objectName": "StaticObj_Platform2_Angle",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, angle, residential, building, structure, construction, foundations, wedge, curve",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Angle.jpg"
+},
+{
+  "objectName": "platform2_angle.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, angle, residential, building, structure, construction, foundations, wedge, curve",
+  "image": "images/structures/residential/platforms/StaticObj_Platform2_Angle.jpg"
+},
+{
+  "objectName": "StaticObj_Platform1_Wall",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, wall, residential, building, structure, small, low, construction, foundations",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Wall.jpg"
+},
+{
+  "objectName": "platform1_wall.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, wall, residential, building, structure, small, low, construction, foundations",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Wall.jpg"
+},
+
+{
+  "objectName": "StaticObj_Platform1_Stairs_Block",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, stairs, block, residential, building, structure, rectangle, small, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Stairs_Block.jpg"
+},
+{
+  "objectName": "platform1_stairs_block.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, stairs, block, residential, building, structure, rectangle, small, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Stairs_Block.jpg"
+},
+
+{
+  "objectName": "StaticObj_Platform1_Stairs_30_WallR",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, stairs, 30 degree, right wall, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Stairs_30_WallR.jpg"
+},
+{
+  "objectName": "platform1_stairs_30_wallr.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, stairs, 30 degree, right wall, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Stairs_30_WallR.jpg"
+},
+{
+  "objectName": "StaticObj_Platform1_Stairs_30_WallL",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, stairs, 30 degree, left wall, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Stairs_30_WallL.jpg"
+},
+{
+  "objectName": "platform1_stairs_30_walll.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, stairs, 30 degree, left wall, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Stairs_30_WallL.jpg"
+},
+
+{
+  "objectName": "StaticObj_Platform1_Stairs_30",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, stairs, 30 degree, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Stairs_30.jpg"
+},
+{
+  "objectName": "platform1_stairs_30.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, stairs, 30 degree, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Stairs_30.jpg"
+},
+{
+  "objectName": "StaticObj_Platform1_Stairs_20",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, stairs, 20 degree, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Stairs_20.jpg"
+},
+{
+  "objectName": "platform1_stairs_20.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, stairs, 20 degree, residential, building, structure, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Stairs_20.jpg"
+},
+{
+  "objectName": "StaticObj_Platform1_Ramp",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, ramp, residential, building, structure. hill, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Ramp.jpg"
+},
+{
+  "objectName": "platform1_ramp.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, ramp, residential, building, structure. hill, foundation, construction",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Ramp.jpg"
+},
+{
+  "objectName": "StaticObj_Platform1_Block",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, block, residential, building, structure, foundation, construction, square, block, concrete",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Block.jpg"
+},
+{
+  "objectName": "platform1_block.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, block, residential, building, structure, foundation, construction, square, concrete",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Block.jpg"
+},
+{
+  "objectName": "StaticObj_Platform1_Angle",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": true,
+  "searchTags": "platform, angle, building, foundation, construction, structure, wedge, curve, concrete",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Angle.jpg"
+},
+{
+  "objectName": "platform1_angle.p3d",
+  "inGameName": "-",
+  "category": "platforms",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/platforms",
+  "usableOnConsole": false,
+  "searchTags": "platform, angle, building, foundation, construction, structure, wedge, curve, concrete",
+  "image": "images/structures/residential/platforms/StaticObj_Platform1_Angle.jpg"
+},
+{
+  "objectName": "Land_Office1",
+  "inGameName": "-",
+  "category": "offices",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/offices",
+  "usableOnConsole": true,
+  "searchTags": "office, building, workplace, residential, urban, block, school, glass, small",
+  "image": "images/structures/residential/offices/Land_Office1.jpg"
+},
+{
+  "objectName": "office1.p3d",
+  "inGameName": "-",
+  "category": "offices",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/offices",
+  "usableOnConsole": false,
+  "searchTags": "office, building, workplace, residential, urban, block, school, glass, small",
+  "image": "images/structures/residential/offices/Land_Office1.jpg"
+},
+
+{
+  "objectName": "Land_Office2",
+  "inGameName": "-",
+  "category": "offices",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/offices",
+  "usableOnConsole": true,
+  "searchTags": "office, building, workplace, residential, urban, block, school, glass, small",
+  "image": "images/structures/residential/offices/Land_Office2.jpg"
+},
+{
+  "objectName": "office2.p3d",
+  "inGameName": "-",
+  "category": "offices",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/offices",
+  "usableOnConsole": false,
+  "searchTags": "office, building, workplace, residential, urban, block, school, glass, small",
+  "image": "images/structures/residential/offices/Land_Office2.jpg"
+},
+
+{
+  "objectName": "Land_Office_Municipal1",
+  "inGameName": "-",
+  "category": "offices",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/offices",
+  "usableOnConsole": true,
+  "searchTags": "office, municipal, administration, residential, government, urban, skyscraper, tall large, city_hall, clock, tower",
+  "image": "images/structures/residential/offices/Land_Office_Municipal1.jpg"
+},
+{
+  "objectName": "office_municipal1.p3d",
+  "inGameName": "-",
+  "category": "offices",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/offices",
+  "usableOnConsole": false,
+  "searchTags": "office, municipal, administration, residential, government, urban, skyscraper, tall large, city_hall, clock, tower",
+  "image": "images/structures/residential/offices/Land_Office_Municipal1.jpg"
+},
+
+{
+  "objectName": "Land_Office_Municipal2",
+  "inGameName": "-",
+  "category": "offices",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/offices",
+  "usableOnConsole": true,
+  "searchTags": "office, municipal, administration, residential, government, urban, skyscraper, tall large, city_hall, clock, tower",
+  "image": "images/structures/residential/offices/Land_Office_Municipal2.png"
+},
+{
+  "objectName": "office_municipal2.p3d",
+  "inGameName": "-",
+  "category": "offices",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/offices",
+  "usableOnConsole": false,
+  "searchTags": "office, municipal, administration, residential, government, urban, skyscraper, tall large, city_hall, clock, tower",
+  "image": "images/structures/residential/offices/Land_Office_Municipal2.png"
+},
+
+{
+  "objectName": "Land_Office2_Ghost1",
+  "inGameName": "-",
+  "category": "offices",
+  "modelType": "Config",
+  "path": "/dz/structures/residential/offices",
+  "usableOnConsole": true,
+  "searchTags": "invisible",
+  "image": "images/structures/residential/offices/Land_Office2_Ghost1.jpg"
+},
+{
+  "objectName": "office2_ghost1.p3d",
+  "inGameName": "-",
+  "category": "offices",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/offices",
+  "usableOnConsole": false,
+  "searchTags": "invisible",
+  "image": "images/structures/residential/offices/Land_Office2_Ghost1.jpg"
+},
+
+{
+  "objectName": "office2_ghost2.p3d",
+  "inGameName": "-",
+  "category": "offices",
+  "modelType": "Raw P3D",
+  "path": "/dz/structures/residential/offices",
+  "usableOnConsole": false,
+  "searchTags": "invisible",
+  "image": "images/structures/residential/offices/Land_Office2_Ghost1.jpg"
 }
 
 
