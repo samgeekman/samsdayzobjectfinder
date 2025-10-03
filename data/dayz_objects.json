@@ -27417,7 +27417,7 @@
 {
     "objectName": "Land_City_Hospital",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Config",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": true,
@@ -27427,7 +27427,7 @@
   {
     "objectName": "city_hospital.p3d",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Raw P3D",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": false,
@@ -27437,7 +27437,7 @@
   {
     "objectName": "Land_City_Hospital_Ghost1",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Config",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": true,
@@ -27447,7 +27447,7 @@
   {
     "objectName": "city_hospital_ghost1.p3d",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Raw P3D",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": false,
@@ -27457,7 +27457,7 @@
   {
     "objectName": "Land_City_Hospital_Ghost2",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Config",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": true,
@@ -27467,7 +27467,7 @@
   {
     "objectName": "city_hospital_ghost2.p3d",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Raw P3D",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": false,
@@ -27477,27 +27477,27 @@
   {
     "objectName": "Land_Village_HealthCare",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Config",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": true,
-    "searchTags": "village, healthcare, clinic, medical, rural, building, blue, chernarus",
+    "searchTags": "village, healthcare, clinic, medical, rural, building, blue, chernarus, hospital",
     "image": "images/structures/residential/medical/Land_Village_HealthCare.jpg"
   },
   {
     "objectName": "village_healthcare.p3d",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Raw P3D",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": false,
-    "searchTags": "village, healthcare, clinic, medical, rural, building",
+    "searchTags": "village, healthcare, clinic, medical, rural, building, hospital, blue, chernarus",
     "image": "images/structures/residential/medical/Land_Village_HealthCare.jpg"
   },
   {
     "objectName": "Land_Village_HealthCare_Ghost1",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Config",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": true,
@@ -27507,7 +27507,7 @@
   {
     "objectName": "village_healthcare_ghost1.p3d",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Raw P3D",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": false,
@@ -27517,7 +27517,7 @@
   {
     "objectName": "Land_Village_HealthCare_Ghost2",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Config",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": true,
@@ -27527,7 +27527,7 @@
   {
     "objectName": "village_healthcare_ghost2.p3d",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Raw P3D",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": false,
@@ -27537,7 +27537,7 @@
   {
     "objectName": "Land_Medical_Tent_Big",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Config",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": true,
@@ -27547,7 +27547,7 @@
   {
     "objectName": "medical_tent_big.p3d",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Raw P3D",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": false,
@@ -27557,7 +27557,7 @@
   {
     "objectName": "Land_Medical_Tent_Shower",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Config",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": true,
@@ -27567,7 +27567,7 @@
   {
     "objectName": "medical_tent_shower.p3d",
     "inGameName": "-",
-    "category": "medical [residential]",
+    "category": "medical",
     "modelType": "Raw P3D",
     "path": "/dz/structures/residential/medical",
     "usableOnConsole": false,
