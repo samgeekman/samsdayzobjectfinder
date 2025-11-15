@@ -19747,7 +19747,7 @@
   "modelType": "Config",
   "path": "/dz/structures/industrial/misc",
   "usableOnConsole": true,
-  "searchTags": "stacked, construction",
+  "searchTags": "stacked, construction, concrete, ",
   "image": "images/structures/industrial/misc/StaticObj_Misc_ConcretePanels.jpg"
 },
 {
@@ -30970,7 +30970,994 @@
     "usableOnConsole": false,
     "searchTags": "tunnel, road, biathlon, right, concrete, underground, terrain, grass, cover, ground, dirt, overgrown, grass, elytrigia",
     "image": "images/structures/roads/tunnels/StaticObj_Tunnel_Biathlon_Right_elytrigia.jpg"
-  }
+  },
+  {
+    "objectName": "StaticObj_Decal_Concrete_Panels_End1",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, concrete, panel, road, surface, panel, floor, concrete, industrial, platform, rectangle, single",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Concrete_Panels_End1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Concrete_Panels_End2",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, concrete, panel, end, road, surface, decal, concrete, panel, road, surface, panel, floor, concrete, industrial, platform, rectangle, single, small",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Concrete_Panels_End2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Concrete_Panels",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, concrete, panels, surface, decal, concrete, panel, road, surface, panel, floor, concrete, industrial, platform, rectangle, single",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Concrete_Panels.jpg"
+  },
 
-]
+  {
+    "objectName": "StaticObj_Decal_Crosswalk",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, road, crosswalk, pedestrian, zebra crossing",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Crosswalk.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_damage_long1_DE",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long1_DE.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_damage_long2_DE",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long2_DE.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_damage_long3_DE",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long3_DE.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_damage_long4_DE",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long4_DE.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_damage_long5_DE",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long5_DE.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_Heli_Army",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, helicopter, landing, army, helipad, military",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Heli_Army.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_Manhole",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, manhole, cover, sewer, round, street, city",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Manhole.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Manhole2",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, manhole, cover, sewer, round, street, city",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Manhole2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Manhole3",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, manhole, cover, sewer, round, street, city",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Manhole3.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_Runway_HoldShort",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, hold short, airport, aviation, line, small",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_HoldShort.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_Runway_Line_1x30",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, line, strip, airport, aviation, line, medium",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Line_1x30.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Runway_Line_2x30",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, line, strip, airport, aviation, line, large",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Line_2x30.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Runway_Line_6x30",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, line, strip, airport, aviation",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Line_6x30.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_Runway_Num0",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, number, airport, aviation, 0, zero",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num0.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Runway_Num1",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, number, airport, aviation, 1, one",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Runway_Num2",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, number, airport, aviation, 2, two",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Runway_Num3",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, number, airport, aviation, 3, three",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Runway_Num4",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, number, airport, aviation, 4, four",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Runway_Num5",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, number, airport, aviation, 5, five",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Runway_Num6",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, number, airport, aviation, 6, six",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num6.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Runway_Num7",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, number, airport, aviation, 7, seven",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num7.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Runway_Num8",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, number, airport, aviation, 8, eight",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num8.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Runway_Num9",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, number, airport, aviation, 9, nine",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num9.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_Runway_Skidmarks_End",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, skid, end, airport, aviation, landing",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Skidmarks_End.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Runway_Skidmarks_End2",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, skid, end, airport, aviation, landing",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Skidmarks_End2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Runway_Skidmarks_Light",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, skid, light, airport, aviation, rubber",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Skidmarks_Light.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_Runway_Skidmarks",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, skid, heavy, airport, aviation, landing",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Skidmarks.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_RunwayPanel_1",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, outline, section",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_RunwayPanel_2",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, outline, section",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_2.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_RunwayPanel_Damage_1",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, damage, crack, broken, concrete",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_Damage_1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_RunwayPanel_Damage_2",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, damage, crack, broken, concrete",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_Damage_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_RunwayPanel_Damage_3",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, damage, crack, broken, concrete",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_Damage_3.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_RunwayPanel_Line_2m",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, line, 2m, strip, airport",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_Line_2m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_RunwayPanel_Line_8m",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, line, 8m, strip, airport",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_Line_8m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_RunwayPanel_Line_15m",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, runway, line, 15m, strip, airport",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_Line_15m.jpg"
+  },
+  {
+    "objectName": "decal_heli_army.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, helicopter, landing, army, helipad, military",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Heli_Army.jpg"
+  },
+  {
+    "objectName": "decal_manhole.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, manhole, cover, sewer, round, street, city",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Manhole.jpg"
+  },
+  {
+    "objectName": "decal_manhole2.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, manhole, cover, sewer, round, street, city",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Manhole2.jpg"
+  },
+  {
+    "objectName": "decal_manhole3.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, manhole, cover, sewer, round, street, city",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Manhole3.jpg"
+  },
+
+  {
+    "objectName": "decal_runway_holdshort.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, hold short, airport, aviation, line, small",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_HoldShort.jpg"
+  },
+
+  {
+    "objectName": "decal_runway_line_1x30.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, line, strip, airport, aviation, line, medium",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Line_1x30.jpg"
+  },
+  {
+    "objectName": "decal_runway_line_2x30.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, line, strip, airport, aviation, line, large",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Line_2x30.jpg"
+  },
+  {
+    "objectName": "decal_runway_line_6x30.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, line, strip, airport, aviation",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Line_6x30.jpg"
+  },
+
+  {
+    "objectName": "decal_runway_num0.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, number, airport, aviation, 0, zero",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num0.jpg"
+  },
+  {
+    "objectName": "decal_runway_num1.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, number, airport, aviation, 1, one",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num1.jpg"
+  },
+  {
+    "objectName": "decal_runway_num2.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, number, airport, aviation, 2, two",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num2.jpg"
+  },
+  {
+    "objectName": "decal_runway_num3.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, number, airport, aviation, 3, three",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num3.jpg"
+  },
+  {
+    "objectName": "decal_runway_num4.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, number, airport, aviation, 4, four",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num4.jpg"
+  },
+  {
+    "objectName": "decal_runway_num5.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, number, airport, aviation, 5, five",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num5.jpg"
+  },
+  {
+    "objectName": "decal_runway_num6.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, number, airport, aviation, 6, six",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num6.jpg"
+  },
+  {
+    "objectName": "decal_runway_num7.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, number, airport, aviation, 7, seven",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num7.jpg"
+  },
+  {
+    "objectName": "decal_runway_num8.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, number, airport, aviation, 8, eight",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num8.jpg"
+  },
+  {
+    "objectName": "decal_runway_num9.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, number, airport, aviation, 9, nine",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Num9.jpg"
+  },
+
+  {
+    "objectName": "decal_runway_skidmarks.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, skid, heavy, airport, aviation, landing",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Skidmarks.jpg"
+  },
+  {
+    "objectName": "decal_runway_skidmarks_end.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, skid, end, airport, aviation, landing",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Skidmarks_End.jpg"
+  },
+  {
+    "objectName": "decal_runway_skidmarks_end_light.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, skid, end, airport, aviation, landing",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Skidmarks_End.jpg"
+  },
+  {
+    "objectName": "decal_runway_skidmarks_end2.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, skid, end, airport, aviation, landing",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Skidmarks_End2.jpg"
+  },
+  {
+    "objectName": "decal_runway_skidmarks_end2_light.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, skid, end, airport, aviation, landing",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Skidmarks_End2.jpg"
+  },
+  {
+    "objectName": "decal_runway_skidmarks_light.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, skid, light, airport, aviation, rubber",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Runway_Skidmarks_Light.jpg"
+  },
+
+  {
+    "objectName": "decal_damage_long1.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long1_DE.jpg"
+  },
+  {
+    "objectName": "decal_damage_long2.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long2_DE.jpg"
+  },
+  {
+    "objectName": "decal_damage_long3.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long3_DE.jpg"
+  },
+  {
+    "objectName": "decal_damage_long4.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long4_DE.jpg"
+  },
+  {
+    "objectName": "decal_damage_long5.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long5_DE.jpg"
+  },
+
+  {
+    "objectName": "decal_runwaypanel_1.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, outline, section",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_1.jpg"
+  },
+  {
+    "objectName": "decal_runwaypanel_2.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, outline, section",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_2.jpg"
+  },
+
+  {
+    "objectName": "decal_runwaypanel_line_2m.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, line, 2m, strip, airport",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_Line_2m.jpg"
+  },
+  {
+    "objectName": "decal_runwaypanel_line_8m.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, line, 8m, strip, airport",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_Line_8m.jpg"
+  },
+  {
+    "objectName": "decal_runwaypanel_line_15m.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, line, 15m, strip, airport",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_Line_15m.jpg"
+  },
+
+  {
+    "objectName": "decal_runwaypanel_damage_1.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, damage, crack, broken, concrete",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_Damage_1.jpg"
+  },
+  {
+    "objectName": "decal_runwaypanel_damage_2.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, damage, crack, broken, concrete",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_Damage_2.jpg"
+  },
+  {
+    "objectName": "decal_runwaypanel_damage_3.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, runway, damage, crack, broken, concrete",
+    "image": "images/structures/roads/decals/StaticObj_Decal_RunwayPanel_Damage_3.jpg"
+  },
+
+  {
+    "objectName": "decal_concrete_panels.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, concrete, panels, surface, decal, concrete, panel, road, surface, panel, floor, concrete, industrial, platform, rectangle, single",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Concrete_Panels.jpg"
+  },
+  {
+    "objectName": "decal_concrete_panels_end1.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, concrete, panel, road, surface, panel, floor, concrete, industrial, platform, rectangle, single",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Concrete_Panels_End1.jpg"
+  },
+  {
+    "objectName": "decal_concrete_panels_end2.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, concrete, panel, end, road, surface, decal, concrete, panel, road, surface, panel, floor, concrete, industrial, platform, rectangle, single, small",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Concrete_Panels_End2.jpg"
+  },
+
+  {
+    "objectName": "decal_crosswalk.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, road, crosswalk, pedestrian, zebra crossing",
+    "image": "images/structures/roads/decals/StaticObj_Decal_Crosswalk.jpg"
+  },
+  {
+    "objectName": "StaticObj_Decal_damage_long2",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long2.jpg"
+  },
+  {
+    "objectName": "decal_damage_long2.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long2.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_damage_long3",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long3.jpg"
+  },
+  {
+    "objectName": "decal_damage_long3.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long3.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_damage_long4",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long4.jpg"
+  },
+  {
+    "objectName": "decal_damage_long4.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long4.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_damage_long5",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long5.jpg"
+  },
+  {
+    "objectName": "decal_damage_long5.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_long5.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_damage_medium1",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, damage, crack, road, worn, tarmac, asphalt, broken, medium",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_medium1.jpg"
+  },
+  {
+    "objectName": "decal_damage_medium1.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, damage, crack, road, worn, tarmac, asphalt, broken, medium",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_medium1.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_damage_medium2",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, damage, crack, road, worn, tarmac, asphalt, broken, medium",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_medium2.jpg"
+  },
+  {
+    "objectName": "decal_damage_medium2.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, damage, crack, road, worn, tarmac, asphalt, broken, medium",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_medium2.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_damage_small1",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, damage, crack, road, worn, tarmac, asphalt, broken, small",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_small1.jpg"
+  },
+    {
+    "objectName": "decal_damage_small1.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, damage, crack, road, worn, tarmac, asphalt, broken, small",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_small1.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Decal_damage_small2",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": true,
+    "searchTags": "decal, damage, crack, road, worn, tarmac, asphalt, broken, small",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_small2.jpg"
+  },
+  {
+    "objectName": "decal_damage_small2.p3d",
+    "inGameName": "-",
+    "category": "decals [road]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "decal, damage, crack, road, worn, tarmac, asphalt, broken, small",
+    "image": "images/structures/roads/decals/StaticObj_Decal_damage_small2.jpg"
+  }
+  ]
 
