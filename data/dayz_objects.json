@@ -31928,6 +31928,762 @@
     "usableOnConsole": false,
     "searchTags": "decal, damage, crack, long, road, worn, tarmac, asphalt, broken",
     "image": "images/structures/roads/decals/StaticObj_Decal_damage_long1_DE.jpg"
+  },
+
+{
+    "objectName": "StaticObj_Sidewalk1_1m",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 1m, narrow",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_1m.jpg"
+  },
+  {
+    "objectName": "sidewalk1_1m.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 1m, narrow",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_1m.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk1_5m",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 5m, narrow",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_5m.jpg"
+  },
+  {
+    "objectName": "sidewalk1_5m.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 5m, narrow",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_5m.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk1_10m",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 10m, narrow",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_10m.jpg"
+  },
+  {
+    "objectName": "sidewalk1_10m.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 10m, narrow",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_10m.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk1_Corner",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, corner, 90deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Corner.jpg"
+  },
+  {
+    "objectName": "sidewalk1_corner.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, corner, 90deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Corner.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk1_End",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, end, terminator, dead end",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_End.jpg"
+  },
+  {
+    "objectName": "sidewalk1_end.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, end, terminator, dead end",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_End.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk1_TCross",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, junction, t-cross, t-junction, intersection",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_TCross.jpg"
+  },
+  {
+    "objectName": "sidewalk1_tcross.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, junction, t-cross, t-junction, intersection",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_TCross.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk1_Turn_5deg",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 5deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Turn_5deg.jpg"
+  },
+  {
+    "objectName": "sidewalk1_turn_5deg.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 5deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Turn_5deg.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk1_Turn_10deg",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 10deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Turn_10deg.jpg"
+  },
+  {
+    "objectName": "sidewalk1_turn_10deg.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 10deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Turn_10deg.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk1_Turn_20deg",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 20deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Turn_20deg.jpg"
+  },
+  {
+    "objectName": "sidewalk1_turn_20deg.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 20deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Turn_20deg.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk1_Turn_30deg",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 30deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Turn_30deg.jpg"
+  },
+  {
+    "objectName": "sidewalk1_turn_30deg.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 30deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Turn_30deg.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk2_1m",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 1m, variant2",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk2_1m.jpg"
+  },
+  {
+    "objectName": "sidewalk2_1m.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 1m, variant2",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk2_1m.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk2_5m",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 5m, variant2",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk2_5m.jpg"
+  },
+  {
+    "objectName": "sidewalk2_5m.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 5m, variant2",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk2_5m.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk3_Border_nolc",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, border, edge, pavement, concrete, strip, no corner, nolc",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Border_nolc.jpg"
+  },
+  {
+    "objectName": "sidewalk3_border_nolc.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, border, edge, pavement, concrete, strip, no corner, nolc",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Border_nolc.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk3_Border",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, border, edge, pavement, concrete, strip",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Border.jpg"
+  },
+  {
+    "objectName": "sidewalk3_border.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, border, edge, pavement, concrete, strip",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Border.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk3_Narrow_4m",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, narrow, 4m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Narrow_4m.jpg"
+  },
+  {
+    "objectName": "sidewalk3_narrow_4m.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, narrow, 4m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Narrow_4m.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk3_Narrow_12m",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, narrow, 12m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Narrow_12m.jpg"
+  },
+  {
+    "objectName": "sidewalk3_narrow_12m.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, narrow, 12m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Narrow_12m.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk3_Narrow_Corner",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, narrow, corner, 90deg, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Narrow_Corner.jpg"
+  },
+  {
+    "objectName": "sidewalk3_narrow_corner.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, narrow, corner, 90deg, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Narrow_Corner.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk3_Wide_4m",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, wide, 4m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Wide_4m.jpg"
+  },
+  {
+    "objectName": "sidewalk3_wide_4m.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, wide, 4m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Wide_4m.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk3_Wide_12m",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, wide, 12m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Wide_12m.jpg"
+  },
+  {
+    "objectName": "sidewalk3_wide_12m.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, wide, 12m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Wide_12m.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk3_Wide_Corner",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, wide, corner, 90deg, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Wide_Corner.jpg"
+  },
+  {
+    "objectName": "sidewalk3_wide_corner.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, wide, corner, 90deg, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Wide_Corner.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Sidewalk3_WideB_4m",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, wide, 4m, variantB, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_WideB_4m.jpg"
+  },
+  {
+    "objectName": "sidewalk3_wideb_4m.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, wide, 4m, variantB, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_WideB_4m.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_0_2000",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, straight, 2000",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_0_2000.jpg"
+  },
+  {
+    "objectName": "taxiway_0 2000.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, straight, 2000",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_0_2000.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_1_1000",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, straight, 1000",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_1_1000.jpg"
+  },
+  {
+    "objectName": "taxiway_1 1000.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, straight, 1000",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_1_1000.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_6",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, segment, short",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_6.jpg"
+  },
+  {
+    "objectName": "taxiway_6.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, segment, short",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_6.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_6konec",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, end, terminator",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_6konec.jpg"
+  },
+  {
+    "objectName": "taxiway_6konec.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, end, terminator",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_6konec.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_7_100",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 7, 100",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_7_100.jpg"
+  },
+  {
+    "objectName": "taxiway_7 100.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 7, 100",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_7_100.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_10_25",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 10, 25",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_10_25.jpg"
+  },
+  {
+    "objectName": "taxiway_10 25.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 10, 25",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_10_25.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_10_50",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 10, 50",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_10_50.jpg"
+  },
+  {
+    "objectName": "taxiway_10 50.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 10, 50",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_10_50.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_10_75",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 10, 75",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_10_75.jpg"
+  },
+  {
+    "objectName": "taxiway_10 75.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 10, 75",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_10_75.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_10_100",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 10, 100",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_10_100.jpg"
+  },
+  {
+    "objectName": "taxiway_10 100.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 10, 100",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_10_100.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_12",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, straight, 12",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_12.jpg"
+  },
+  {
+    "objectName": "taxiway_12.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, straight, 12",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_12.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_15_75",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 15, 75",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_15_75.jpg"
+  },
+  {
+    "objectName": "taxiway_15 75.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 15, 75",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_15_75.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_22_50",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 22, 50",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_22_50.jpg"
+  },
+  {
+    "objectName": "taxiway_22 50.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 22, 50",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_22_50.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_25",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, bend, 25",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_25.jpg"
+  },
+  {
+    "objectName": "taxiway_25.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, bend, 25",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_25.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_30_25",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 30, 25",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_30_25.jpg"
+  },
+  {
+    "objectName": "taxiway_30 25.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, curve, 30, 25",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_30_25.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Taxiway_60_10",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Config",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": true,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, tight curve, 60, 10",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_60_10.jpg"
+  },
+  {
+    "objectName": "taxiway_60 10.p3d",
+    "inGameName": "-",
+    "category": "sidewalks",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/roads/roads",
+    "usableOnConsole": false,
+    "searchTags": "taxiway, runway, airport, non-functional, aviation, tight curve, 60, 10",
+    "image": "images/structures/roads/roads/StaticObj_Taxiway_60_10.jpg"
   }
   
   ]
