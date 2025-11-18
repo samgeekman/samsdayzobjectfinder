@@ -32684,7 +32684,598 @@
     "usableOnConsole": false,
     "searchTags": "taxiway, runway, airport, non-functional, aviation, tight curve, 60, 10",
     "image": "images/structures/roads/sidewalks/StaticObj_Taxiway_60_10.jpg"
+  },
+
+  {
+    "objectName": "StaticObj_Ruin_Wall",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "ruin, wall, destroyed, building, collapsed, broken, masonry",
+    "image": "images/structures/ruins/StaticObj_Ruin_Wall.jpg"
+  },
+  {
+    "objectName": "Land_Ruin_Chimney",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "ruin, chimney, fireplace, destroyed, house, brick, stack",
+    "image": "images/structures/ruins/Land_Ruin_Chimney.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Bricks1",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, bricks, debris, pile, small, broken, wall",
+    "image": "images/structures/ruins/StaticObj_Rubble_Bricks1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Bricks2",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, bricks, debris, pile, medium, broken, wall",
+    "image": "images/structures/ruins/StaticObj_Rubble_Bricks2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Bricks3",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, bricks, debris, pile, large, broken, wall",
+    "image": "images/structures/ruins/StaticObj_Rubble_Bricks3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Concrete1",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, concrete, debris, broken, industrial",
+    "image": "images/structures/ruins/StaticObj_Rubble_Concrete1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Concrete2",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, concrete, debris, broken, industrial, flat",
+    "image": "images/structures/ruins/StaticObj_Rubble_Concrete2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Concrete3",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, concrete, block, debris, broken, slab",
+    "image": "images/structures/ruins/StaticObj_Rubble_Concrete3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_DirtPile_Large",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, dirt, mound, large, soil, earth, pile",
+    "image": "images/structures/ruins/StaticObj_Rubble_DirtPile_Large.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_DirtPile_Medium1",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, dirt, mound, medium, soil, earth, pile",
+    "image": "images/structures/ruins/StaticObj_Rubble_DirtPile_Medium1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_DirtPile_Medium2",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, dirt, mound, medium, soil, earth, pile",
+    "image": "images/structures/ruins/StaticObj_Rubble_DirtPile_Medium2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Glass",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, glass, shards, broken, window, debris",
+    "image": "images/structures/ruins/StaticObj_Rubble_Glass.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Metal1",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, metal, scrap, plates, twisted, debris",
+    "image": "images/structures/ruins/StaticObj_Rubble_Metal1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Metal2",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, metal, scrap, plates, twisted, debris, large",
+    "image": "images/structures/ruins/StaticObj_Rubble_Metal2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Metal3",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, metal, scrap, girder, twisted, debris, red, sheets, corrugated",
+    "image": "images/structures/ruins/StaticObj_Rubble_Metal3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Rocks1",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, rocks, stones, pile, debris, large",
+    "image": "images/structures/ruins/StaticObj_Rubble_Rocks1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Rocks2",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, rocks, stones, debris, small",
+    "image": "images/structures/ruins/StaticObj_Rubble_Rocks2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Wood1",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, wood, planks, debris, broken, beams",
+    "image": "images/structures/ruins/StaticObj_Rubble_Wood1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Wood2",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, wood, planks, debris, broken, collapsed",
+    "image": "images/structures/ruins/StaticObj_Rubble_Wood2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Wood3",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "wood, beams, debris, broken, pile",
+    "image": "images/structures/ruins/StaticObj_Rubble_Wood3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Ruin_Chimney",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "ruin, chimney, fireplace, destroyed, house, brick, stack",
+    "image": "images/structures/ruins/StaticObj_Ruin_Chimney.jpg"
+  },
+  {
+    "objectName": "StaticObj_Ruin_Church",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "ruin, church, chapel, stone, religious, destroyed, gothic, broken, shell",
+    "image": "images/structures/ruins/StaticObj_Ruin_Church.jpg"
+  },
+  {
+    "objectName": "StaticObj_Ruin_Corner1",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "ruin, wall, corner, building, destroyed, masonry",
+    "image": "images/structures/ruins/StaticObj_Ruin_Corner1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Ruin_Corner2",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "ruin, wall, corner, building, destroyed, masonry",
+    "image": "images/structures/ruins/StaticObj_Ruin_Corner2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Ruin_DoorWall",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "ruin, wall, doorway, entrance, destroyed, building",
+    "image": "images/structures/ruins/StaticObj_Ruin_DoorWall.jpg"
+  },
+  {
+    "objectName": "StaticObj_Ruin_House_Total",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "ruin, house, total, collapsed, building, destroyed, shell, broken",
+    "image": "images/structures/ruins/StaticObj_Ruin_House_Total.jpg"
+  },
+  {
+    "objectName": "StaticObj_Ruin_HouseBlock_Corner_Total",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "ruin, houseblock, corner, apartments, total, collapsed, destroyed, tower, small, concrete ",
+    "image": "images/structures/ruins/StaticObj_Ruin_HouseBlock_Corner_Total.jpg"
+  },
+  {
+    "objectName": "StaticObj_Ruin_HouseBlock_Half",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "ruin, houseblock, half, building, destroyed, shell, tower, large, concrete",
+    "image": "images/structures/ruins/StaticObj_Ruin_HouseBlock_Half.jpg"
+  },
+  {
+    "objectName": "StaticObj_Ruin_HouseBlock_Total",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "ruin, houseblock, total, building, collapsed, destroyed, tower, concrete",
+    "image": "images/structures/ruins/StaticObj_Ruin_HouseBlock_Total.jpg"
+  },
+  {
+    "objectName": "StaticObj_Ruin_Rubble",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Config",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "ruin, rubble, debris, building, collapse, pile, mixed, concrete, wood",
+    "image": "images/structures/ruins/StaticObj_Ruin_Rubble.jpg"
+  },
+  {
+    "objectName": "rubble_bricks1.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, bricks, debris, pile, small, broken, wall",
+    "image": "images/structures/ruins/StaticObj_Rubble_Bricks1.jpg"
+  },
+  {
+    "objectName": "rubble_bricks2.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, bricks, debris, pile, medium, broken, wall",
+    "image": "images/structures/ruins/StaticObj_Rubble_Bricks2.jpg"
+  },
+  {
+    "objectName": "rubble_bricks3.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, bricks, debris, pile, large, broken, wall",
+    "image": "images/structures/ruins/StaticObj_Rubble_Bricks3.jpg"
+  },
+  {
+    "objectName": "rubble_concrete1.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, concrete, slab, debris, broken, industrial",
+    "image": "images/structures/ruins/StaticObj_Rubble_Concrete1.jpg"
+  },
+  {
+    "objectName": "rubble_concrete2.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, concrete, slab, debris, broken, industrial, large",
+    "image": "images/structures/ruins/StaticObj_Rubble_Concrete2.jpg"
+  },
+  {
+    "objectName": "rubble_concrete3.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, concrete, block, debris, broken",
+    "image": "images/structures/ruins/StaticObj_Rubble_Concrete3.jpg"
+  },
+  {
+    "objectName": "rubble_dirtpile_large.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, dirt, mound, large, soil, earth, pile",
+    "image": "images/structures/ruins/StaticObj_Rubble_DirtPile_Large.jpg"
+  },
+  {
+    "objectName": "rubble_dirtpile_medium1.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, dirt, mound, medium, soil, earth, pile",
+    "image": "images/structures/ruins/StaticObj_Rubble_DirtPile_Medium1.jpg"
+  },
+  {
+    "objectName": "rubble_dirtpile_medium2.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, dirt, mound, medium, soil, earth, pile",
+    "image": "images/structures/ruins/StaticObj_Rubble_DirtPile_Medium2.jpg"
+  },
+  {
+    "objectName": "rubble_glass.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, glass, shards, broken, window, debris",
+    "image": "images/structures/ruins/StaticObj_Rubble_Glass.jpg"
+  },
+  {
+    "objectName": "rubble_metal1.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, metal, scrap, plates, twisted, debris",
+    "image": "images/structures/ruins/StaticObj_Rubble_Metal1.jpg"
+  },
+  {
+    "objectName": "rubble_metal2.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, metal, scrap, plates, twisted, debris, large",
+    "image": "images/structures/ruins/StaticObj_Rubble_Metal2.jpg"
+  },
+  {
+    "objectName": "rubble_metal3.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, metal, scrap, girder, twisted, debris",
+    "image": "images/structures/ruins/StaticObj_Rubble_Metal3.jpg"
+  },
+  {
+    "objectName": "rubble_rocks1.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, rocks, stones, pile, debris, small",
+    "image": "images/structures/ruins/StaticObj_Rubble_Rocks1.jpg"
+  },
+  {
+    "objectName": "rubble_rocks2.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, rocks, stones, pile, debris, large",
+    "image": "images/structures/ruins/StaticObj_Rubble_Rocks2.jpg"
+  },
+  {
+    "objectName": "rubble_wood1.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, wood, planks, debris, broken, beams",
+    "image": "images/structures/ruins/StaticObj_Rubble_Wood1.jpg"
+  },
+  {
+    "objectName": "rubble_wood2.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, wood, planks, debris, broken, collapsed",
+    "image": "images/structures/ruins/StaticObj_Rubble_Wood2.jpg"
+  },
+  {
+    "objectName": "rubble_wood3.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "rubble, wood, beams, debris, broken, pile",
+    "image": "images/structures/ruins/StaticObj_Rubble_Wood3.jpg"
+  },
+  {
+    "objectName": "ruin_chimney.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "ruin, chimney, fireplace, destroyed, house, brick, stack",
+    "image": "images/structures/ruins/StaticObj_Ruin_Chimney.jpg"
+  },
+  {
+    "objectName": "ruin_church.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "ruin, church, chapel, stone, religious, destroyed, gothic",
+    "image": "images/structures/ruins/StaticObj_Ruin_Church.jpg"
+  },
+  {
+    "objectName": "ruin_corner1.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "ruin, wall, corner, building, destroyed, masonry",
+    "image": "images/structures/ruins/StaticObj_Ruin_Corner1.jpg"
+  },
+  {
+    "objectName": "ruin_corner2.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "ruin, wall, corner, building, destroyed, masonry",
+    "image": "images/structures/ruins/StaticObj_Ruin_Corner2.jpg"
+  },
+  {
+    "objectName": "ruin_doorwall.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "ruin, wall, doorway, entrance, destroyed, building",
+    "image": "images/structures/ruins/StaticObj_Ruin_DoorWall.jpg"
+  },
+  {
+    "objectName": "ruin_house_total.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "ruin, house, total, collapsed, building, destroyed, shell",
+    "image": "images/structures/ruins/StaticObj_Ruin_House_Total.jpg"
+  },
+  {
+    "objectName": "ruin_houseblock_corner_total.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "ruin, houseblock, corner, apartments, total, collapsed, destroyed",
+    "image": "images/structures/ruins/StaticObj_Ruin_HouseBlock_Corner_Total.jpg"
+  },
+  {
+    "objectName": "ruin_houseblock_half.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "ruin, houseblock, half, building, destroyed, shell",
+    "image": "images/structures/ruins/StaticObj_Ruin_HouseBlock_Half.jpg"
+  },
+  {
+    "objectName": "ruin_houseblock_total.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "ruin, houseblock, total, building, collapsed, destroyed",
+    "image": "images/structures/ruins/StaticObj_Ruin_HouseBlock_Total.jpg"
+  },
+  {
+    "objectName": "ruin_rubble.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "ruin, rubble, debris, building, collapse, pile, mixed",
+    "image": "images/structures/ruins/StaticObj_Ruin_Rubble.jpg"
+  },
+  {
+    "objectName": "ruin_wall.p3d",
+    "inGameName": "-",
+    "category": "ruins",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/ruins",
+    "usableOnConsole": false,
+    "searchTags": "ruin, wall, destroyed, building, collapsed, broken, masonry, facade",
+    "image": "images/structures/ruins/StaticObj_Ruin_Wall.jpg"
   }
-  
+
   ]
 
