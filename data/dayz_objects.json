@@ -35468,9 +35468,188 @@
     "usableOnConsole": false,
     "searchTags": "prison, side_building, annex, jail, detention, office, storeroom, concrete, high_security",
     "image": "images/structures/specific/prison/prison_side.jpg"
-  }
-]
+  },
+  {
+    "objectName": "Land_Cableway_Base",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, gondola, base_station, terminal, station_building, machinery, support, ski_resort",
+    "image": "images/structures/specific/cableway/Land_Cableway_Base.jpg"
+  },
+  {
+    "objectName": "Land_Cableway_Cart",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, gondola, cable_car, cabin, cart, passenger, ski_resort",
+    "image": "images/structures/specific/cableway/Land_Cableway_Cart.jpg"
+  },
+  {
+    "objectName": "Land_Cableway_Cart2",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, gondola, cable_car, cabin, cart, passenger, variant, ski_resort",
+    "image": "images/structures/specific/cableway/Land_Cableway_Cart2.jpg"
+  },
+  {
+    "objectName": "Land_Cableway_Cart3",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, gondola, cable_car, cabin, cart, passenger, variant, ski_resort",
+    "image": "images/structures/specific/cableway/Land_Cableway_Cart3.jpg"
+  },
+  {
+    "objectName": "Land_Cableway_Tower_Slope",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, gondola, tower, pylon, support, slope, incline, ski_resort",
+    "image": "images/structures/specific/cableway/Land_Cableway_Tower_Slope.jpg"
+  },
+  {
+    "objectName": "Land_Cableway_Tower",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, gondola, tower, pylon, support, vertical, ski_resort",
+    "image": "images/structures/specific/cableway/Land_Cableway_Tower.jpg"
+  },
+  {
+    "objectName": "StaticObj_Cableway_Base_Rope1",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, gondola, base_station, rope, cable, support, connection, ski_resort",
+    "image": "images/structures/specific/cableway/StaticObj_Cableway_Base_Rope1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Cableway_Base_Rope2",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, gondola, base_station, rope, cable, support, connection, ski_resort, variant",
+    "image": "images/structures/specific/cableway/StaticObj_Cableway_Base_Rope2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Cableway_Rope",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, gondola, main_rope, cable, span, wire, overhead, ski_resort",
+    "image": "images/structures/specific/cableway/StaticObj_Cableway_Rope.jpg"
+  },
 
+  {
+    "objectName": "cableway_base",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "cableway, ski_lift, gondola, base_station, terminal, station_building, machinery, support, ski_resort",
+    "image": "images/structures/specific/cableway/cableway_base.jpg"
+  },
+  {
+    "objectName": "cableway_cart",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "cableway, ski_lift, gondola, cable_car, cabin, cart, passenger, ski_resort",
+    "image": "images/structures/specific/cableway/cableway_cart.jpg"
+  },
+  {
+    "objectName": "cableway_cart2",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "cableway, ski_lift, gondola, cable_car, cabin, cart, passenger, variant, ski_resort",
+    "image": "images/structures/specific/cableway/cableway_cart2.jpg"
+  },
+  {
+    "objectName": "cableway_cart3",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "cableway, ski_lift, gondola, cable_car, cabin, cart, passenger, variant, ski_resort",
+    "image": "images/structures/specific/cableway/cableway_cart3.jpg"
+  },
+  {
+    "objectName": "cableway_tower_slope",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "cableway, ski_lift, gondola, tower, pylon, support, slope, incline, ski_resort",
+    "image": "images/structures/specific/cableway/cableway_tower_slope.jpg"
+  },
+  {
+    "objectName": "cableway_tower",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "cableway, ski_lift, gondola, tower, pylon, support, vertical, ski_resort",
+    "image": "images/structures/specific/cableway/cableway_tower.jpg"
+  },
+  {
+    "objectName": "cableway_base_rope1",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "cableway, ski_lift, gondola, base_station, rope, cable, support, connection, ski_resort",
+    "image": "images/structures/specific/cableway/cableway_base_rope1.jpg"
+  },
+  {
+    "objectName": "cableway_base_rope2",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "cableway, ski_lift, gondola, base_station, rope, cable, support, connection, ski_resort, variant",
+    "image": "images/structures/specific/cableway/cableway_base_rope2.jpg"
+  },
+  {
+    "objectName": "cableway_rope",
+    "inGameName": "-",
+    "category": "cableway",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "cableway, ski_lift, gondola, main_rope, cable, span, wire, overhead, ski_resort",
+    "image": "images/structures/specific/cableway/cableway_rope.jpg"
+  }
 
   ]
 
