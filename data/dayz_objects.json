@@ -35386,7 +35386,7 @@
     "path": "/dz/structures/specific/camps",
     "usableOnConsole": false,
     "searchTags": "camp, cabin, house, small, wooden, brown, summer, holiday, campsite, lodge, summer_camp",
-    "image": "images/structures/specific/camps/camp_house_brown.jpg"
+    "image": "images/structures/specific/camps/Land_Camp_House_brown.jpg"
   },
   {
     "objectName": "camp_house_red",
@@ -35396,7 +35396,7 @@
     "path": "/dz/structures/specific/camps",
     "usableOnConsole": false,
     "searchTags": "camp, cabin, house, small, wooden, red, summer, holiday, campsite, lodge, summer_camp",
-    "image": "images/structures/specific/camps/camp_house_red.jpg"
+    "image": "images/structures/specific/camps/Land_Camp_House_red.jpg"
   },
   {
     "objectName": "camp_house_white",
@@ -35446,7 +35446,7 @@
     "path": "/dz/structures/specific/prison",
     "usableOnConsole": false,
     "searchTags": "prison, wall, perimeter, concrete, barrier, security, high_security, fortified, fence",
-    "image": "images/structures/specific/prison/prison_wall_large.jpg"
+    "image": "images/structures/specific/prison/Land_Prison_Wall_Large.jpg"
   },
   {
     "objectName": "prison_main",
@@ -35456,7 +35456,7 @@
     "path": "/dz/structures/specific/prison",
     "usableOnConsole": false,
     "searchTags": "prison, main_building, jail, detention, concrete, multi_storey, high_security, fortified",
-    "image": "images/structures/specific/prison/prison_main.jpg"
+    "image": "images/structures/specific/prison/Land_Prison_Main.jpg"
   },
   {
     "objectName": "prison_side",
@@ -35466,7 +35466,7 @@
     "path": "/dz/structures/specific/prison",
     "usableOnConsole": false,
     "searchTags": "prison, side_building, annex, jail, detention, office, storeroom, concrete, high_security",
-    "image": "images/structures/specific/prison/prison_side.jpg"
+    "image": "images/structures/specific/prison/Land_Prison_Side.jpg"
   },
   {
     "objectName": "Land_Cableway_Base",
@@ -35475,7 +35475,7 @@
     "modelType": "Config",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": true,
-    "searchTags": "cableway, ski_lift, gondola, base_station, terminal, station_building, machinery, support, ski_resort",
+    "searchTags": "cableway, ski_lift, base_station, station, building, support, terminal",
     "image": "images/structures/specific/cableway/Land_Cableway_Base.jpg"
   },
   {
@@ -35485,7 +35485,7 @@
     "modelType": "Config",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": true,
-    "searchTags": "cableway, ski_lift, gondola, cable_car, cabin, cart, passenger, ski_resort",
+    "searchTags": "cableway, ski_lift, cart, gondola, cabin, chairlift, vehicle",
     "image": "images/structures/specific/cableway/Land_Cableway_Cart.jpg"
   },
   {
@@ -35495,7 +35495,7 @@
     "modelType": "Config",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": true,
-    "searchTags": "cableway, ski_lift, gondola, cable_car, cabin, cart, passenger, variant, ski_resort",
+    "searchTags": "cableway, ski_lift, cart, gondola, cabin, variant, chairlift",
     "image": "images/structures/specific/cableway/Land_Cableway_Cart2.jpg"
   },
   {
@@ -35505,7 +35505,7 @@
     "modelType": "Config",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": true,
-    "searchTags": "cableway, ski_lift, gondola, cable_car, cabin, cart, passenger, variant, ski_resort",
+    "searchTags": "cableway, ski_lift, cart, gondola, cabin, variant, ski_resort",
     "image": "images/structures/specific/cableway/Land_Cableway_Cart3.jpg"
   },
   {
@@ -35515,7 +35515,7 @@
     "modelType": "Config",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": true,
-    "searchTags": "cableway, ski_lift, gondola, tower, pylon, support, slope, incline, ski_resort",
+    "searchTags": "cableway, ski_lift, tower, pylon, slope, angled, support, mast",
     "image": "images/structures/specific/cableway/Land_Cableway_Tower_Slope.jpg"
   },
   {
@@ -35525,7 +35525,7 @@
     "modelType": "Config",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": true,
-    "searchTags": "cableway, ski_lift, gondola, tower, pylon, support, vertical, ski_resort",
+    "searchTags": "cableway, ski_lift, tower, pylon, support, vertical, mast",
     "image": "images/structures/specific/cableway/Land_Cableway_Tower.jpg"
   },
   {
@@ -35535,7 +35535,7 @@
     "modelType": "Config",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": true,
-    "searchTags": "cableway, ski_lift, gondola, base_station, rope, cable, support, connection, ski_resort",
+    "searchTags": "cableway, ski_lift, base_station, rope, cable, attachment, support",
     "image": "images/structures/specific/cableway/StaticObj_Cableway_Base_Rope1.jpg"
   },
   {
@@ -35545,7 +35545,7 @@
     "modelType": "Config",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": true,
-    "searchTags": "cableway, ski_lift, gondola, base_station, rope, cable, support, connection, ski_resort, variant",
+    "searchTags": "cableway, ski_lift, base_station, rope, cable, attachment, support, variant",
     "image": "images/structures/specific/cableway/StaticObj_Cableway_Base_Rope2.jpg"
   },
   {
@@ -35555,7 +35555,7 @@
     "modelType": "Config",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": true,
-    "searchTags": "cableway, ski_lift, gondola, main_rope, cable, span, wire, overhead, ski_resort",
+    "searchTags": "cableway, ski_lift, rope, cable, span, line, overhead",
     "image": "images/structures/specific/cableway/StaticObj_Cableway_Rope.jpg"
   },
 
@@ -35566,8 +35566,8 @@
     "modelType": "Raw P3D",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": false,
-    "searchTags": "cableway, ski_lift, gondola, base_station, terminal, station_building, machinery, support, ski_resort",
-    "image": "images/structures/specific/cableway/cableway_base.jpg"
+    "searchTags": "cableway, ski_lift, base_station, station, building, support, terminal",
+    "image": "images/structures/specific/cableway/Land_Cableway_Base.jpg"
   },
   {
     "objectName": "cableway_cart",
@@ -35576,8 +35576,8 @@
     "modelType": "Raw P3D",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": false,
-    "searchTags": "cableway, ski_lift, gondola, cable_car, cabin, cart, passenger, ski_resort",
-    "image": "images/structures/specific/cableway/cableway_cart.jpg"
+    "searchTags": "cableway, ski_lift, cart, gondola, cabin, chairlift, vehicle",
+    "image": "images/structures/specific/cableway/Land_Cableway_Cart.jpg"
   },
   {
     "objectName": "cableway_cart2",
@@ -35586,8 +35586,8 @@
     "modelType": "Raw P3D",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": false,
-    "searchTags": "cableway, ski_lift, gondola, cable_car, cabin, cart, passenger, variant, ski_resort",
-    "image": "images/structures/specific/cableway/cableway_cart2.jpg"
+    "searchTags": "cableway, ski_lift, cart, gondola, cabin, variant, chairlift",
+    "image": "images/structures/specific/cableway/Land_Cableway_Cart2.jpg"
   },
   {
     "objectName": "cableway_cart3",
@@ -35596,8 +35596,8 @@
     "modelType": "Raw P3D",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": false,
-    "searchTags": "cableway, ski_lift, gondola, cable_car, cabin, cart, passenger, variant, ski_resort",
-    "image": "images/structures/specific/cableway/cableway_cart3.jpg"
+    "searchTags": "cableway, ski_lift, cart, gondola, cabin, variant, ski_resort",
+    "image": "images/structures/specific/cableway/Land_Cableway_Cart3.jpg"
   },
   {
     "objectName": "cableway_tower_slope",
@@ -35606,8 +35606,8 @@
     "modelType": "Raw P3D",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": false,
-    "searchTags": "cableway, ski_lift, gondola, tower, pylon, support, slope, incline, ski_resort",
-    "image": "images/structures/specific/cableway/cableway_tower_slope.jpg"
+    "searchTags": "cableway, ski_lift, tower, pylon, slope, angled, support, mast",
+    "image": "images/structures/specific/cableway/Land_Cableway_Tower_Slope.jpg"
   },
   {
     "objectName": "cableway_tower",
@@ -35616,8 +35616,8 @@
     "modelType": "Raw P3D",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": false,
-    "searchTags": "cableway, ski_lift, gondola, tower, pylon, support, vertical, ski_resort",
-    "image": "images/structures/specific/cableway/cableway_tower.jpg"
+    "searchTags": "cableway, ski_lift, tower, pylon, support, vertical, mast",
+    "image": "images/structures/specific/cableway/Land_Cableway_Tower.jpg"
   },
   {
     "objectName": "cableway_base_rope1",
@@ -35626,8 +35626,8 @@
     "modelType": "Raw P3D",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": false,
-    "searchTags": "cableway, ski_lift, gondola, base_station, rope, cable, support, connection, ski_resort",
-    "image": "images/structures/specific/cableway/cableway_base_rope1.jpg"
+    "searchTags": "cableway, ski_lift, base_station, rope, cable, attachment, support",
+    "image": "images/structures/specific/cableway/StaticObj_Cableway_Base_Rope1.jpg"
   },
   {
     "objectName": "cableway_base_rope2",
@@ -35636,8 +35636,8 @@
     "modelType": "Raw P3D",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": false,
-    "searchTags": "cableway, ski_lift, gondola, base_station, rope, cable, support, connection, ski_resort, variant",
-    "image": "images/structures/specific/cableway/cableway_base_rope2.jpg"
+    "searchTags": "cableway, ski_lift, base_station, rope, cable, attachment, support, variant",
+    "image": "images/structures/specific/cableway/StaticObj_Cableway_Base_Rope2.jpg"
   },
   {
     "objectName": "cableway_rope",
@@ -35646,9 +35646,111 @@
     "modelType": "Raw P3D",
     "path": "/dz/structures/specific/cableway",
     "usableOnConsole": false,
-    "searchTags": "cableway, ski_lift, gondola, main_rope, cable, span, wire, overhead, ski_resort",
-    "image": "images/structures/specific/cableway/cableway_rope.jpg"
+    "searchTags": "cableway, ski_lift, rope, cable, span, line, overhead",
+    "image": "images/structures/specific/cableway/StaticObj_Cableway_Rope.jpg"
+  },
+  {
+    "objectName": "Land_Chapel",
+    "inGameName": "-",
+    "category": "churches",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/churches",
+    "usableOnConsole": true,
+    "searchTags": "church, chapel, small, rural, stone, religious, worship, village, cemetery",
+    "image": "images/structures/specific/churches/Land_Chapel.jpg"
+  },
+  {
+    "objectName": "Land_Church1_Yellow",
+    "inGameName": "-",
+    "category": "churches",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/churches",
+    "usableOnConsole": true,
+    "searchTags": "church, yellow, plaster, village, religious, worship, tower, steeple, medium",
+    "image": "images/structures/specific/churches/Land_Church1_Yellow.jpg"
+  },
+  {
+    "objectName": "Land_Church2_1",
+    "inGameName": "-",
+    "category": "churches",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/churches",
+    "usableOnConsole": true,
+    "searchTags": "church, large, stone, spire, religious, worship, town, grey, plaster",
+    "image": "images/structures/specific/churches/Land_Church2_1.jpg"
+  },
+  {
+    "objectName": "Land_Church2_2",
+    "inGameName": "-",
+    "category": "churches",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/churches",
+    "usableOnConsole": true,
+    "searchTags": "church, large, stone, orthodox spire, dome, religious, worship, variant, town",
+    "image": "images/structures/specific/churches/Land_Church2_2.jpg"
+  },
+  {
+    "objectName": "Land_Church3",
+    "inGameName": "-",
+    "category": "churches",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/churches",
+    "usableOnConsole": true,
+    "searchTags": "church, stone, plaster, tall, tower, religious, worship, city, grey, large",
+    "image": "images/structures/specific/churches/Land_Church3.jpg"
+  },
+
+  {
+    "objectName": "chapel",
+    "inGameName": "-",
+    "category": "churches",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/churches",
+    "usableOnConsole": false,
+    "searchTags": "church, chapel, small, rural, stone, religious, worship, village, cemetery",
+    "image": "images/structures/specific/churches/Land_Chapel.jpg"
+  },
+  {
+    "objectName": "church1_yellow",
+    "inGameName": "-",
+    "category": "churches",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/churches",
+    "usableOnConsole": false,
+    "searchTags": "church, yellow, plaster, village, religious, worship, tower, steeple, medium",
+    "image": "images/structures/specific/churches/Land_Church1_Yellow.jpg"
+  },
+  {
+    "objectName": "church2_1",
+    "inGameName": "-",
+    "category": "churches",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/churches",
+    "usableOnConsole": false,
+    "searchTags": "church, large, stone, spire, religious, worship, town, grey, plaster",
+    "image": "images/structures/specific/churches/Land_Church2_1.jpg"
+  },
+  {
+    "objectName": "church2_2",
+    "inGameName": "-",
+    "category": "churches",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/churches",
+    "usableOnConsole": false,
+    "searchTags": "church, large, stone, orthodox spire, dome, religious, worship, variant, town",
+    "image": "images/structures/specific/churches/Land_Church2_2.jpg"
+  },
+  {
+    "objectName": "church3",
+    "inGameName": "-",
+    "category": "churches",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/churches",
+    "usableOnConsole": false,
+    "searchTags": "church, stone, plaster, tall, tower, religious, worship, city, grey, large",
+    "image": "images/structures/specific/churches/Land_Church3.jpg"
   }
+  
 
   ]
 
