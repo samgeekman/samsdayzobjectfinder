@@ -36171,6 +36171,127 @@
     "usableOnConsole": false,
     "searchTags": "hotel, rubble, debris, collapsed, concrete, bricks, destruction, ruin",
     "image": "images/structures/specific/hotel/StaticObj_Hotel_Damaged_Rubble.jpg"
+  },
+   {
+    "objectName": "Land_Lunapark_Autodrome",
+    "inGameName": "-",
+    "category": "lunapark",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/lunapark",
+    "usableOnConsole": true,
+    "searchTags": "lunapark, fairground, amusement, carnival, autodrome, bumper_cars, dodgems, ride, arena, tent",
+    "image": "images/structures/specific/lunapark/Land_Lunapark_Autodrome.jpg"
+  },
+  {
+    "objectName": "Land_Lunapark_Bumper_Car",
+    "inGameName": "-",
+    "category": "lunapark",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/lunapark",
+    "usableOnConsole": true,
+    "searchTags": "lunapark, fairground, amusement, carnival, bumper_car, dodgem, ride, vehicle",
+    "image": "images/structures/specific/lunapark/Land_Lunapark_Bumper_Car.jpg"
+  },
+  {
+    "objectName": "Land_Lunapark_Carousel_Small",
+    "inGameName": "-",
+    "category": "lunapark",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/lunapark",
+    "usableOnConsole": true,
+    "searchTags": "lunapark, fairground, amusement, carnival, carousel, merry_go_round, small_ride, children",
+    "image": "images/structures/specific/lunapark/Land_Lunapark_Carousel_Small.jpg"
+  },
+  {
+    "objectName": "Land_Lunapark_Carousel_Swan",
+    "inGameName": "-",
+    "category": "lunapark",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/lunapark",
+    "usableOnConsole": true,
+    "searchTags": "lunapark, fairground, amusement, carnival, carousel, swan_boats, ride, pond, themed",
+    "image": "images/structures/specific/lunapark/Land_Lunapark_Carousel_Swan.jpg"
+  },
+  {
+    "objectName": "Land_Lunapark_Ferris_wheel",
+    "inGameName": "-",
+    "category": "lunapark",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/lunapark",
+    "usableOnConsole": true,
+    "searchTags": "lunapark, fairground, amusement, carnival, ferris_wheel, big_wheel, ride, tall, landmark",
+    "image": "images/structures/specific/lunapark/Land_Lunapark_Ferris_wheel.jpg"
+  },
+  {
+    "objectName": "Land_Lunapark_Shooting_Gallery",
+    "inGameName": "-",
+    "category": "lunapark",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/lunapark",
+    "usableOnConsole": true,
+    "searchTags": "lunapark, fairground, amusement, carnival, shooting_gallery, stall, targets, game, attraction",
+    "image": "images/structures/specific/lunapark/Land_Lunapark_Shooting_Gallery.jpg"
+  },
+
+  {
+    "objectName": "lunapark_autodrome.p3d",
+    "inGameName": "-",
+    "category": "lunapark",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/lunapark",
+    "usableOnConsole": false,
+    "searchTags": "lunapark, fairground, amusement, carnival, autodrome, bumper_cars, dodgems, ride, arena",
+    "image": "images/structures/specific/lunapark/Land_Lunapark_Autodrome.jpg"
+  },
+  {
+    "objectName": "lunapark_bumper_car.p3d",
+    "inGameName": "-",
+    "category": "lunapark",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/lunapark",
+    "usableOnConsole": false,
+    "searchTags": "lunapark, fairground, amusement, carnival, bumper_car, dodgem, ride, vehicle",
+    "image": "images/structures/specific/lunapark/Land_Lunapark_Bumper_Car.jpg"
+  },
+  {
+    "objectName": "lunapark_carousel_small.p3d",
+    "inGameName": "-",
+    "category": "lunapark",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/lunapark",
+    "usableOnConsole": false,
+    "searchTags": "lunapark, fairground, amusement, carnival, carousel, merry_go_round, small_ride, children",
+    "image": "images/structures/specific/lunapark/Land_Lunapark_Carousel_Small.jpg"
+  },
+  {
+    "objectName": "lunapark_carousel_swan.p3d",
+    "inGameName": "-",
+    "category": "lunapark",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/lunapark",
+    "usableOnConsole": false,
+    "searchTags": "lunapark, fairground, amusement, carnival, carousel, swan_boats, ride, pond, themed",
+    "image": "images/structures/specific/lunapark/Land_Lunapark_Carousel_Swan.jpg"
+  },
+  {
+    "objectName": "lunapark_ferris_wheel.p3d",
+    "inGameName": "-",
+    "category": "lunapark",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/lunapark",
+    "usableOnConsole": false,
+    "searchTags": "lunapark, fairground, amusement, carnival, ferris_wheel, big_wheel, ride, tall, landmark",
+    "image": "images/structures/specific/lunapark/Land_Lunapark_Ferris_wheel.jpg"
+  },
+  {
+    "objectName": "lunapark_shooting_gallery.p3d",
+    "inGameName": "-",
+    "category": "lunapark",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/lunapark",
+    "usableOnConsole": false,
+    "searchTags": "lunapark, fairground, amusement, carnival, shooting_gallery, stall, targets, game, attraction",
+    "image": "images/structures/specific/lunapark/Land_Lunapark_Shooting_Gallery.jpg"
   }
 
   ]
