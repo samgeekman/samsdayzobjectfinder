@@ -34564,6 +34564,547 @@
     "usableOnConsole": true,
     "searchTags": "runway, old, main, airfield, strip, aviation, 40",
     "image": "images/structures/roads/parts/StaticObj_Roads_Partrunwayold_40_main.jpg"
+  },
+
+  {
+    "objectName": "10thanniversarybanner_big",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, banner, 10th, anniversary, celebration, event, advertising",
+    "image": "images/structures/signs/billboards/10thanniversarybanner_big.jpg"
+  },
+  {
+    "objectName": "10thanniversarybanner_small",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, banner, 10th, anniversary, celebration, event, small, advertising",
+    "image": "images/structures/signs/billboards/10thanniversarybanner_small.jpg"
+  },
+  {
+    "objectName": "StaticObj_10thAnniversaryBanner_Big",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, banner, 10th, anniversary, celebration, event, decorative, large",
+    "image": "images/structures/signs/billboards/StaticObj_10thAnniversaryBanner_Big.jpg"
+  },
+  {
+    "objectName": "StaticObj_10thAnniversaryBanner_Small",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, banner, 10th, anniversary, celebration, event, decorative, small",
+    "image": "images/structures/signs/billboards/StaticObj_10thAnniversaryBanner_Small.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_alkohol",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, alcohol, drink, liquor, bottle",
+    "image": "images/structures/signs/billboards/Land_Bilboard_alkohol.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_Beach",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, beach, holiday, travel, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Beach.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_Bienvenudo",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, welcome, advert, welcome, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Bienvenudo.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_cibulka",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, food, field, sunflower, ruined, farmer, farm",
+    "image": "images/structures/signs/billboards/Land_Bilboard_cibulka.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_cigara_chernomorky",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, cigarette, cigars, tobacco, smoking, brand, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_cigara_chernomorky.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_Escape",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, poster, movie, film, escape, action, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Escape.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_Everon",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, Everon, island, map, tourist, travel, mountain, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Everon.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_hey_buddy",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, dog food, dog, woof, can, tin, your best friend, buddy",
+    "image": "images/structures/signs/billboards/Land_Bilboard_hey_buddy.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_hlinik",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, aluminium, metal, industry, factory, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_hlinik.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_likery_bardak",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, liqueur, alcohol, drink, bar, bottles, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_likery_bardak.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_Livonia_1",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, Livonia, map, region, tourist, travel, hell, spray_paint, graffiti, fields",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Livonia_1.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_Livonia_2",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, Livonia, landscape, region, tourist, travel, prison, stay_away",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Livonia_2.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_Nogova",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, Nogova, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Nogova.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_notacola",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, cola, soda, soft drink, beverage, parody, coke, coca_cola, nota_cola",
+    "image": "images/structures/signs/billboards/Land_Bilboard_notacola.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_pizza_presto",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, pizza, food, restaurant, fast food",
+    "image": "images/structures/signs/billboards/Land_Bilboard_pizza_presto.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_Riviera",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, riviera, resort, sea, beach, hotel, woman, sun_bathing",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Riviera.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_seci_stroje",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, farming, machinery, tractor, agriculture, tozer",
+    "image": "images/structures/signs/billboards/Land_Bilboard_seci_stroje.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_Skiresort",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, ski, resort, snow, mountains, holiday, map, skiing, ski_run",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Skiresort.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_smadny_maskrnik",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, drink, alcohol, beverage, man",
+    "image": "images/structures/signs/billboards/Land_Bilboard_smadny_maskrnik.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_strana_noveho_radu",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, political, propaganda, party, new order, election, man, politics",
+    "image": "images/structures/signs/billboards/Land_Bilboard_strana_noveho_radu.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_toaletak_armasan",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, toilet paper, hygiene, roll, toilet_roll",
+    "image": "images/structures/signs/billboards/Land_Bilboard_toaletak_armasan.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_vodka",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, vodka, alcohol, bottle, bar, drink, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_vodka.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_volte_cernaruske_hnuti",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, political, propaganda, vote, Chernarus, movement, election, ruined",
+    "image": "images/structures/signs/billboards/Land_Bilboard_volte_cernaruske_hnuti.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_vstup_do_CDF",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, military, recruitment, CDF, army, enlist, poster, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_vstup_do_CDF.jpg"
+  },
+  {
+    "objectName": "Land_Bilboard_zlute_zgrynda",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Config",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": true,
+    "searchTags": "billboard, advert, drink, soft_drink, bottles, cartoon",
+    "image": "images/structures/signs/billboards/Land_Bilboard_zlute_zgrynda.jpg"
+  },
+  {
+    "objectName": "bilboard_zlute_zgrynda",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, drink, soft_drink, bottles, cartoon",
+    "image": "images/structures/signs/billboards/Land_Bilboard_zlute_zgrynda.jpg"
+  },
+  {
+    "objectName": "bilboard_alkohol",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, alcohol, drink, liquor, bottle",
+    "image": "images/structures/signs/billboards/Land_Bilboard_alkohol.jpg"
+  },
+  {
+    "objectName": "bilboard_beach",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, beach, holiday, travel, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Beach.jpg"
+  },
+  {
+    "objectName": "bilboard_bienvenudo",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, welcome, advert, welcome, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Bienvenudo.jpg"
+  },
+  {
+    "objectName": "bilboard_cibulka",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, food, field, sunflower, ruined, farmer, farm",
+    "image": "images/structures/signs/billboards/Land_Bilboard_cibulka.jpg"
+  },
+  {
+    "objectName": "bilboard_cigara_chernomorky",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, cigarette, cigars, tobacco, smoking, brand, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_cigara_chernomorky.jpg"
+  },
+  {
+    "objectName": "bilboard_escape",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, poster, movie, film, escape, action, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Escape.jpg"
+  },
+  {
+    "objectName": "bilboard_everon",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, Everon, island, map, tourist, travel, mountain, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Everon.jpg"
+  },
+  {
+    "objectName": "bilboard_hey_buddy",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, dog food, dog, woof, can, tin, your best friend, buddy",
+    "image": "images/structures/signs/billboards/Land_Bilboard_hey_buddy.jpg"
+  },
+  {
+    "objectName": "bilboard_hlinik",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, aluminium, metal, industry, factory, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_hlinik.jpg"
+  },
+  {
+    "objectName": "bilboard_likery_bardak",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, liqueur, alcohol, drink, bar, bottles, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_likery_bardak.jpg"
+  },
+  {
+    "objectName": "bilboard_livonia_1",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, Livonia, map, region, tourist, travel, hell, spray_paint, graffiti, fields",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Livonia_1.jpg"
+  },
+  {
+    "objectName": "bilboard_livonia_2",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, Livonia, landscape, region, tourist, travel, prison, stay_away",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Livonia_2.jpg"
+  },
+  {
+    "objectName": "bilboard_nogova",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, Nogova, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Nogova.jpg"
+  },
+  {
+    "objectName": "bilboard_notacola",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, cola, soda, soft drink, beverage, parody, coke, coca_cola, nota_cola",
+    "image": "images/structures/signs/billboards/Land_Bilboard_notacola.jpg"
+  },
+  {
+    "objectName": "bilboard_pizza_presto",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, pizza, food, restaurant, fast food",
+    "image": "images/structures/signs/billboards/Land_Bilboard_pizza_presto.jpg"
+  },
+  {
+    "objectName": "bilboard_riviera",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, riviera, resort, sea, beach, hotel, woman, sun_bathing",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Riviera.jpg"
+  },
+  {
+    "objectName": "bilboard_seci_stroje",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, farming, machinery, tractor, agriculture, tozer",
+    "image": "images/structures/signs/billboards/Land_Bilboard_seci_stroje.jpg"
+  },
+  {
+    "objectName": "bilboard_skiresort",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, ski, resort, snow, mountains, holiday, map, skiing, ski_run",
+    "image": "images/structures/signs/billboards/Land_Bilboard_Skiresort.jpg"
+  },
+  {
+    "objectName": "bilboard_smadny_maskrnik",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, drink, alcohol, beverage, man",
+    "image": "images/structures/signs/billboards/Land_Bilboard_smadny_maskrnik.jpg"
+  },
+  {
+    "objectName": "bilboard_strana_noveho_radu",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, political, propaganda, party, new order, election, man, politics",
+    "image": "images/structures/signs/billboards/Land_Bilboard_strana_noveho_radu.jpg"
+  },
+  {
+    "objectName": "bilboard_toaletak_armasan",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, toilet paper, hygiene, roll, toilet_roll",
+    "image": "images/structures/signs/billboards/Land_Bilboard_toaletak_armasan.jpg"
+  },
+  {
+    "objectName": "bilboard_vodka",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, advert, vodka, alcohol, bottle, bar, drink, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_vodka.jpg"
+  },
+  {
+    "objectName": "bilboard_volte_cernaruske_hnuti",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, political, propaganda, vote, Chernarus, movement, election, ruined",
+    "image": "images/structures/signs/billboards/Land_Bilboard_volte_cernaruske_hnuti.jpg"
+  },
+  {
+    "objectName": "bilboard_vstup_do_cdf",
+    "inGameName": "-",
+    "category": "billboards",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/signs/billboards",
+    "usableOnConsole": false,
+    "searchTags": "billboard, military, recruitment, CDF, army, enlist, poster, ruined, ripped",
+    "image": "images/structures/signs/billboards/Land_Bilboard_vstup_do_CDF.jpg"
   }
 
   ]
