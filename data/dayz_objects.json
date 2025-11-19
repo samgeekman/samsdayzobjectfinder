@@ -36353,7 +36353,228 @@
     "usableOnConsole": false,
     "searchTags": "radio, panel, PA_system, loudspeaker, public_address, announcement, communication, pa system, amp",
     "image": "images/structures/specific/radio/Land_Radio_PanelPAS.jpg"
-  }
+  },
+  {
+    "objectName": "StaticObj_model_plane_mig21_lines",
+    "inGameName": "-",
+    "category": "proxy [MIG statue]",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/statues/proxy",
+    "usableOnConsole": true,
+    "searchTags": "mig21, jet, fighter, plane, aircraft, proxy, lines, guide, wireframe, statue, monument, display, memorial, aviation",
+    "image": "images/structures/specific/statues/proxy/StaticObj_model_plane_mig21_lines.jpg"
+  },
+  {
+    "objectName": "StaticObj_Monument_plane_mig21_lines",
+    "inGameName": "-",
+    "category": "proxy [MIG statue]",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/statues/proxy",
+    "usableOnConsole": true,
+    "searchTags": "mig21, jet, fighter, plane, aircraft, proxy, monument, lines, guide, wireframe, statue, plinth, memorial, aviation",
+    "image": "images/structures/specific/statues/proxy/StaticObj_Monument_plane_mig21_lines.jpg"
+  },
+  {
+    "objectName": "StaticObj_Monument_plane_mig21",
+    "inGameName": "-",
+    "category": "proxy [MIG statue]",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/statues/proxy",
+    "usableOnConsole": true,
+    "searchTags": "mig21, jet, fighter, plane, aircraft, monument, statue, memorial, display, aviation, plinth, landmark",
+    "image": "images/structures/specific/statues/proxy/StaticObj_Monument_plane_mig21.jpg"
+  },
 
+  {
+    "objectName": "model_plane_mig21_lines.p3d",
+    "inGameName": "-",
+    "category": "proxy [MIG statue]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/statues/proxy",
+    "usableOnConsole": false,
+    "searchTags": "mig21, jet, fighter, plane, aircraft, proxy, lines, guide, wireframe, statue, monument, display, memorial, aviation",
+    "image": "images/structures/specific/statues/proxy/StaticObj_model_plane_mig21_lines.jpg"
+  },
+  {
+    "objectName": "monument_plane_mig21_lines.p3d",
+    "inGameName": "-",
+    "category": "proxy [MIG statue]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/statues/proxy",
+    "usableOnConsole": false,
+    "searchTags": "mig21, jet, fighter, plane, aircraft, proxy, monument, lines, guide, wireframe, statue, plinth, memorial, aviation",
+    "image": "images/structures/specific/statues/proxy/StaticObj_Monument_plane_mig21_lines.jpg"
+  },
+  {
+    "objectName": "monument_plane_mig21.p3d",
+    "inGameName": "-",
+    "category": "proxy [MIG statue]",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/statues/proxy",
+    "usableOnConsole": false,
+    "searchTags": "mig21, jet, fighter, plane, aircraft, monument, statue, memorial, display, aviation, plinth, landmark",
+    "image": "images/structures/specific/statues/proxy/StaticObj_Monument_plane_mig21.jpg"
+  },
+  {
+    "objectName": "Land_Monument_T34",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": true,
+    "searchTags": "monument, statue, t34, tank, war, memorial, soviet, ww2, pedestal, military, armor",
+    "image": "images/structures/specific/statues/Land_Monument_T34.jpg"
+  },
+  {
+    "objectName": "Land_Monument_mig21",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": true,
+    "searchTags": "monument, statue, mig21, jet, fighter, plane, aircraft, war, memorial, military, aviation",
+    "image": "images/structures/specific/statues/Land_Monument_mig21.jpg"
+  },
+  {
+    "objectName": "Land_Model_plane_mig21",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": true,
+    "searchTags": "model, plane, mig21, jet, fighter, aircraft, static, display, museum, aviation, monument",
+    "image": "images/structures/specific/statues/Land_Model_plane_mig21.jpg"
+  },
+  {
+    "objectName": "StaticObj_Monument_Soldiers",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": true,
+    "searchTags": "monument, statue, soldiers, war, memorial, infantry, bronze, sculpture, military, remembrance",
+    "image": "images/structures/specific/statues/StaticObj_Monument_Soldiers.jpg"
+  },
+  {
+    "objectName": "StaticObj_Monument_Wall",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": true,
+    "searchTags": "monument, wall, memorial, names, plaque, sculpture, war, remembrance, stone",
+    "image": "images/structures/specific/statues/StaticObj_Monument_Wall.jpg"
+  },
+  {
+    "objectName": "StaticObj_Monument_War2",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": true,
+    "searchTags": "monument, statue, war, memorial, sculpture, military, remembrance, obelisk, stone",
+    "image": "images/structures/specific/statues/StaticObj_Monument_War2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Monument_War1",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": true,
+    "searchTags": "monument, statue, war, memorial, sculpture, military, remembrance, column, stone",
+    "image": "images/structures/specific/statues/StaticObj_Monument_War1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Statue_General",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": true,
+    "searchTags": "statue, general, officer, monument, war, memorial, military, leader, sculpture, bronze",
+    "image": "images/structures/specific/statues/StaticObj_Statue_General.jpg"
+  },
+
+  {
+    "objectName": "monument_t34.p3d",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": false,
+    "searchTags": "monument, statue, t34, tank, war, memorial, soviet, ww2, pedestal, military, armor",
+    "image": "images/structures/specific/statues/Land_Monument_T34.jpg"
+  },
+  {
+    "objectName": "monument_mig21.p3d",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": false,
+    "searchTags": "monument, statue, mig21, jet, fighter, plane, aircraft, war, memorial, military, aviation",
+    "image": "images/structures/specific/statues/Land_Monument_mig21.jpg"
+  },
+  {
+    "objectName": "model_plane_mig21.p3d",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": false,
+    "searchTags": "model, plane, mig21, jet, fighter, aircraft, static, display, museum, aviation, monument",
+    "image": "images/structures/specific/statues/Land_Model_plane_mig21.jpg"
+  },
+  {
+    "objectName": "monument_soldiers.p3d",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": false,
+    "searchTags": "monument, statue, soldiers, war, memorial, infantry, bronze, sculpture, military, remembrance",
+    "image": "images/structures/specific/statues/StaticObj_Monument_Soldiers.jpg"
+  },
+  {
+    "objectName": "monument_wall.p3d",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": false,
+    "searchTags": "monument, wall, memorial, names, plaque, sculpture, war, remembrance, stone",
+    "image": "images/structures/specific/statues/StaticObj_Monument_Wall.jpg"
+  },
+  {
+    "objectName": "monument_war2.p3d",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": false,
+    "searchTags": "monument, statue, war, memorial, sculpture, military, remembrance, obelisk, stone",
+    "image": "images/structures/specific/statues/StaticObj_Monument_War2.jpg"
+  },
+  {
+    "objectName": "monument_war1.p3d",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": false,
+    "searchTags": "monument, statue, war, memorial, sculpture, military, remembrance, column, stone",
+    "image": "images/structures/specific/statues/StaticObj_Monument_War1.jpg"
+  },
+  {
+    "objectName": "statue_general.p3d",
+    "inGameName": "-",
+    "category": "statues",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/statues",
+    "usableOnConsole": false,
+    "searchTags": "statue, general, officer, monument, war, memorial, military, leader, sculpture, bronze",
+    "image": "images/structures/specific/statues/StaticObj_Statue_General.jpg"
+  }
   ]
 
