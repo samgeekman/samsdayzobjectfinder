@@ -1,16 +1,15 @@
 {{ define "main" }}
 
 <div class="annoucenment-bar">
-<strong></strong>⚠️ This tool is a work in progress with an incomplete database. More objects added every day - see progress in the <a href="https://discord.com/channels/1414751279548203008/1414751374394261534">Discord</a>.
-
+  <strong></strong>⚠️ This tool is a work in progress with an incomplete database. More objects added every day - see progress in the <a href="https://discord.com/channels/1414751279548203008/1414751374394261534">Discord</a>.
 </div>
 
 <style>
-
-  .annoucenment-bar 
-{background-color:#F2B226;
-padding: 4px;
-margin: 2px; }
+  .annoucenment-bar {
+    background-color:#eeeeee;
+    padding: 4px;
+    margin: 2px;
+  }
 
   /* Table styling */
   #dayzObjects_wrapper {
@@ -21,55 +20,94 @@ margin: 2px; }
   #dayzObjects { width: 100% !important; }
 
   /* Top bar & filters */
-  .top-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 10px; gap: 10px; }
-  .top-bar select, .top-bar input { margin-right: 10px; }
-  #filters { display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 10px; align-items: center; }
-  #dayzObjects_filter input { width: 250px; max-width: 100%; }
-  @media (max-width: 768px) { #filters { flex-direction: column; align-items: stretch; } #filters label, #filters select { width: 100%; } #dayzObjects { font-size: 12px; } }
-  @media (max-width: 480px) { #dayzObjects { font-size: 10px; } }
+  .top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+  .top-bar select,
+  .top-bar input {
+    margin-right: 10px;
+  }
+  #filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  #dayzObjects_filter input {
+    width: 250px;
+    max-width: 100%;
+  }
+  @media (max-width: 768px) {
+    #filters {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    #filters label,
+    #filters select {
+      width: 100%;
+    }
+    #dayzObjects { font-size: 12px; }
+  }
+  @media (max-width: 480px) {
+    #dayzObjects { font-size: 10px; }
+  }
 
-  /* Ensure the first td is the positioning context */
-#dayzObjects tbody td:first-child {
-  position: relative; /* needed for absolute positioning inside */
-}
-/* Copy buttons positioned at top-right with background */
-.copy-btn {
-  position: absolute; /* float over content */
-  top: 4px;           /* small offset from top */
-  right: 4px;         /* small offset from right */
-  cursor: pointer;
-  border: none;
-  background-color: #656d6d; /* dark background */
-  color: #fff;              /* white icon text */
-  font-size: 1em;
-  opacity: 0;
-  transition: opacity 0.15s ease;
-  padding: 2px 4px;         /* padding around icon */
-  border-radius: 3px;        /* slightly rounded corners */
-}
+  /* First td as positioning context for buttons */
+  #dayzObjects tbody td:first-child {
+    position: relative;
+  }
 
-/* Show buttons on hover */
-#dayzObjects tbody td:first-child:hover .copy-btn {
-  opacity: 1;
-}
+  /* Copy buttons */
+  .copy-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+    border: none;
+    background-color: #656d6d;
+    color: #fff;
+    font-size: 1em;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
 
-/* Optional: spacing between multiple buttons */
-.copy-btn + .copy-btn {
-  right: 40px; /* adjust spacing between buttons */
-}
+  /* Show buttons on hover */
+  #dayzObjects tbody td:first-child:hover .copy-btn {
+    opacity: 1;
+  }
 
-.copy-btn:hover {
-  color: #fff; /* maintain white on hover, or change if desired */
-}
+  /* Spacing between the two buttons */
+  .copy-btn + .copy-btn {
+    right: 40px;
+  }
+
+  .copy-btn:hover {
+    color: #fff;
+  }
 
   /* Flash row highlight */
-  @keyframes flash-highlight { 0% { background-color: #fff6a1; } 100% { background-color: transparent; } }
-  .flash { animation: flash-highlight 1s ease-out; }
+  @keyframes flash-highlight {
+    0% { background-color: #fff6a1; }
+    100% { background-color: transparent; }
+  }
+  .flash {
+    animation: flash-highlight 1s ease-out;
+  }
 </style>
 
 <div id="filters">
   <label for="filterCategory">Category:</label>
-  <select id="filterCategory"><option value="">All</option></select>
+  <select id="filterCategory">
+    <option value="">All</option>
+  </select>
   <label for="filterConsole">Usable on Console:</label>
   <select id="filterConsole">
     <option value="">All</option>
@@ -93,11 +131,12 @@ margin: 2px; }
   <tbody>
     {{ range .Site.Data.dayz_objects }}
     <tr>
-      <td 
-        data-object="{{ .objectName }}" 
+      <td
+        data-object="{{ .objectName }}"
         data-p3d="{{ .path }}"
         data-modeltype="{{ .modelType }}"
         data-image="{{ with .image }}{{ . }}{{ end }}"
+        data-editorjson='{{ with .editorJson }}{{ . | jsonify }}{{ end }}'
       >
         {{ .objectName }}
         <button class="copy-btn" title="Copy object name">📋</button>
@@ -128,61 +167,120 @@ $(document).ready(function() {
     lengthMenu: [[50,100,200,500],[50,100,200,500]],
     columnDefs: [{ targets: [6], visible: true }],
     dom: '<"top-bar"lfr>tip',
-    language: { search: "Search: ", searchPlaceholder: "'large snow rock', '308 rifles'" }
+    language: {
+      search: "Search: ",
+      searchPlaceholder: "'large snow rock', '308 rifles'"
+    }
   });
 
+  // Move filters above the DataTables top bar
   $("#filters").insertBefore("#dayzObjects_wrapper .top-bar");
 
   // Populate Category filter
   var categories = [];
-  table.column(2).data().each(function(value){ if(value && categories.indexOf(value)===-1) categories.push(value); });
-  categories.sort().forEach(function(cat){ $('#filterCategory').append('<option value="'+cat+'">'+cat+'</option>'); });
-  $('#filterCategory').on('change', function(){ table.column(2).search(this.value).draw(); });
-  $('#filterConsole').on('change', function(){ table.column(5).search(this.value).draw(); });
+  table.column(2).data().each(function(value) {
+    if (value && categories.indexOf(value) === -1) {
+      categories.push(value);
+    }
+  });
+  categories.sort().forEach(function(cat) {
+    $('#filterCategory').append('<option value="' + cat + '">' + cat + '</option>');
+  });
 
-  // Hover image preview
-  $('#dayzObjects tbody').on('mouseenter', 'td:first-child', function(e){
-    var imgPath = $(this).data('image'); if(!imgPath) return;
-    $('body').append('<div id="imgPreview" style="position:absolute; z-index:9999; border:1px solid #ccc; background:#fff; padding:5px; box-shadow:0 2px 6px rgba(0,0,0,0.2);"><img src="/'+imgPath+'" style="max-width:400px; max-height:400px;"></div>');
-    $('#imgPreview').css({ top: e.pageY+10, left: e.pageX+10 });
-  }).on('mousemove','td:first-child',function(e){ $('#imgPreview').css({ top: e.pageY+10, left: e.pageX+10 }); })
-    .on('mouseleave','td:first-child',function(){ $('#imgPreview').remove(); });
+  $('#filterCategory').on('change', function() {
+    table.column(2).search(this.value).draw();
+  });
 
-  // Copy object name
-  $('#dayzObjects tbody').on('click','.copy-btn:not(.editor-copy-btn)',function(e){
+  $('#filterConsole').on('change', function() {
+    table.column(5).search(this.value).draw();
+  });
+
+  // Hover image preview on first column
+  $('#dayzObjects tbody')
+    .on('mouseenter', 'td:first-child', function(e) {
+      var imgPath = $(this).data('image');
+      if (!imgPath) return;
+
+      $('body').append(
+        '<div id="imgPreview" style="position:absolute; z-index:9999; border:1px solid #ccc; background:#fff; padding:5px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">' +
+          '<img src="/' + imgPath + '" style="max-width:400px; max-height:400px;">' +
+        '</div>'
+      );
+      $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });
+    })
+    .on('mousemove', 'td:first-child', function(e) {
+      $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });
+    })
+    .on('mouseleave', 'td:first-child', function() {
+      $('#imgPreview').remove();
+    });
+
+  // Copy object name (📋)
+  $('#dayzObjects tbody').on('click', '.copy-btn:not(.editor-copy-btn)', function(e) {
     e.stopPropagation();
     var text = $(this).closest('td').data('object');
     navigator.clipboard.writeText(text);
-    var $btn = $(this); $btn.text('✔'); setTimeout(()=>$btn.text('📋'),1000);
+    var $btn = $(this);
+    $btn.text('✔');
+    setTimeout(function() { $btn.text('📋'); }, 1000);
   });
 
-  // Copy DayZ Editor JSON
-  $('#dayzObjects tbody').on('click','.editor-copy-btn',function(e){
+  // Copy DayZ Editor JSON (🏗️) – supports presets with multiple objects
+  $('#dayzObjects tbody').on('click', '.editor-copy-btn', function(e) {
     e.stopPropagation();
     var $td = $(this).closest('td');
-    var objName = $td.data('object');
-    var modelType = $td.data('modeltype');
-    var path = $td.data('p3d');
 
-    var typeValue = modelType === "Config"
+    // 1) Check for predefined editorJson (presets like "TC2 Tower preset")
+    var predefined = $td.attr('data-editorjson');
+    var jsonText = null;
+
+    if (predefined && predefined.trim() !== "") {
+      try {
+        var parsed = JSON.parse(predefined); // should be an array
+        // Copy as a valid JSON array of separate items
+        jsonText = JSON.stringify(parsed, null, 4);
+
+        // If you instead want to paste into an existing array without brackets:
+        // jsonText = parsed.map(function(o){ return JSON.stringify(o, null, 4); }).join(',\n');
+      } catch (err) {
+        console.error("Invalid editorJson for row:", err);
+      }
+    }
+
+    // 2) Fallback: generate single-object stub (Config / Raw P3D / etc.)
+    if (!jsonText) {
+      var objName   = $td.data('object');
+      var modelType = $td.data('modeltype');
+      var path      = $td.data('p3d');
+
+      // Config: use class name; anything else: path + file
+      var typeValue = (modelType === "Config")
         ? objName
-        : path.replace(/\//g,"\\") + "\\" + objName; // single backslashes, no extra leading \
+        : path.replace(/\//g, "\\") + "\\" + objName;
 
-    var json = [{
-      Type: typeValue,
-      DisplayName: "",
-      Position: [0,0,0],
-      Orientation: [0,0,0],
-      Scale: 1.0,
-      AttachmentMap: {},
-      Model: "",
-      Flags: 30,
-      m_LowBits: 0,
-      m_HighBits: 0
-    }];
+      var json = [{
+        Type: typeValue,
+        DisplayName: "",
+        Position: [0, 0, 0],
+        Orientation: [0, 0, 0],
+        Scale: 1.0,
+        AttachmentMap: {},
+        Model: "",
+        Flags: 30,
+        m_LowBits: 0,
+        m_HighBits: 0
+      }];
 
-    navigator.clipboard.writeText(JSON.stringify(json,null,4));
-    var $btn = $(this); $btn.text('✔'); setTimeout(()=>$btn.text('🏗️'),1000);
+      jsonText = JSON.stringify(json, null, 4);
+    }
+
+    // 3) Copy to clipboard
+    navigator.clipboard.writeText(jsonText);
+
+    // 4) Button feedback
+    var $btn = $(this);
+    $btn.text('✔');
+    setTimeout(function() { $btn.text('🏗️'); }, 1000);
   });
 });
 </script>
