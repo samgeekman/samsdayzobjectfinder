@@ -35347,6 +35347,66 @@
     "usableOnConsole": false,
     "searchTags": "non-functional, airfield, light, control tower, building, floodlight, ATC, lighting",
     "image": "images/structures/specific/airfieldsStaticObj_Airfield_Light_Control.jpg"
+  },
+  {
+    "objectName": "Land_Camp_House_brown",
+    "inGameName": "-",
+    "category": "camp",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/camps",
+    "usableOnConsole": true,
+    "searchTags": "camp, cabin, house, small, wooden, brown, summer, holiday, campsite, lodge, summer_camp",
+    "image": "images/structures/specific/camps/Land_Camp_House_brown.jpg"
+  },
+  {
+    "objectName": "Land_Camp_House_red",
+    "inGameName": "-",
+    "category": "camp",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/camps",
+    "usableOnConsole": true,
+    "searchTags": "camp, cabin, house, small, wooden, red, summer, holiday, campsite, lodge, summer_camp",
+    "image": "images/structures/specific/camps/Land_Camp_House_red.jpg"
+  },
+  {
+    "objectName": "Land_Camp_House_white",
+    "inGameName": "-",
+    "category": "camp",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/camps",
+    "usableOnConsole": true,
+    "searchTags": "camp, cabin, house, small, wooden, white, summer, holiday, campsite, lodge, summer_camp",
+    "image": "images/structures/specific/camps/Land_Camp_House_white.jpg"
+  },
+  {
+    "objectName": "camp_house_brown",
+    "inGameName": "-",
+    "category": "camp",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/camps",
+    "usableOnConsole": false,
+    "searchTags": "camp, cabin, house, small, wooden, brown, summer, holiday, campsite, lodge, summer_camp",
+    "image": "images/structures/specific/camps/camp_house_brown.jpg"
+  },
+  {
+    "objectName": "camp_house_red",
+    "inGameName": "-",
+    "category": "camp",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/camps",
+    "usableOnConsole": false,
+    "searchTags": "camp, cabin, house, small, wooden, red, summer, holiday, campsite, lodge, summer_camp",
+    "image": "images/structures/specific/camps/camp_house_red.jpg"
+  },
+  {
+    "objectName": "camp_house_white",
+    "inGameName": "-",
+    "category": "camp",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/camps",
+    "usableOnConsole": false,
+    "searchTags": "camp, cabin, house, small, wooden, white, summer, holiday, campsite, lodge, summer_camp",
+    "image": "images/structures/specific/camps/camp_house_white.jpg"
   }
 
 
