@@ -1,6 +1,726 @@
 [
+{
+  "objectName": "Small airfield hanger and ATC",
+  "inGameName": "-",
+  "category": "Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "airfield, hanger, airport, plane, atc, NEAF",
+  "image": "images/presets/service_hanger.jpg",
+  "editorJson": [
+    {
+        "Type": "Land_Airfield_Small_Control",
+        "DisplayName": "Land_Airfield_Small_Control",
+        "Position": [
+            -295.77166748046877,
+            20.27178382873535,
+            4332.70068359375
+        ],
+        "Orientation": [
+            27.0,
+            -0.0,
+            -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\airfields\\airfield_small_control.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Airfield_Small_Hangar",
+        "DisplayName": "Land_Airfield_Small_Hangar",
+        "Position": [
+            -315.2911682128906,
+            13.388936996459961,
+            4363.2294921875
+        ],
+        "Orientation": [
+            27.000045776367189,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\airfields\\airfield_small_hangar.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+
+},
 
 
+{
+  "objectName": "Complete cowshed",
+  "inGameName": "-",
+  "category": "Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "cowshed, farm, barn, preset",
+  "image": "images/presets/cow_shed.jpg",
+  "editorJson": 
+[
+    {
+        "Type": "Land_Farm_CowshedA",
+        "DisplayName": "Land_Farm_CowshedA",
+        "Position": [
+            -374.87152099609377,
+            13.145411491394043,
+            4284.130859375
+        ],
+        "Orientation": [
+            55.79997634887695,
+            -0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\farms\\farm_cowsheda.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Farm_CowshedB",
+        "DisplayName": "Land_Farm_CowshedB",
+        "Position": [
+            -385.7588195800781,
+            13.184419631958008,
+            4300.2138671875
+        ],
+        "Orientation": [
+            53.99998474121094,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\farms\\farm_cowshedb.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Farm_CowshedC",
+        "DisplayName": "Land_Farm_CowshedC",
+        "Position": [
+            -394.2057800292969,
+            13.217254638671875,
+            4312.72021484375
+        ],
+        "Orientation": [
+            53.99998474121094,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\farms\\farm_cowshedc.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+
+},
+
+{
+  "objectName": "Airfield service hanger",
+  "inGameName": "-",
+  "category": "Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "airfield, hanger, airport, plane, NWAF",
+  "image": "images/presets/service_hanger.jpg",
+  "editorJson": [
+    {
+        "Type": "Land_Airfield_ServiceHangar_L",
+        "DisplayName": "Land_Airfield_ServiceHangar_L",
+        "Position": [
+            -271.29107666015627,
+            10.0,
+            4318.64208984375
+        ],
+        "Orientation": [
+            -80.9999008178711,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\airfield\\airfield_servicehangar_l.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Airfield_ServiceHangar_R",
+        "DisplayName": "Land_Airfield_ServiceHangar_R",
+        "Position": [
+            -320.6689453125,
+            9.999998092651368,
+            4326.46044921875
+        ],
+        "Orientation": [
+            -80.99995422363281,
+            0.0,
+            0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\airfield\\airfield_servicehangar_r.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+},
+
+{
+  "objectName": "Rify ship intact",
+  "inGameName": "-",
+  "category": "Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "ship, boat, rify, oil tanker, preset",
+  "image": "images/presets/TC2_Stack.jpg",
+  "editorJson": [
+    {
+        "Type": "Land_Ship_Big_FrontB",
+        "DisplayName": "Land_Ship_Big_FrontB",
+        "Position": [
+            8805.65625,
+            28.57248306274414,
+            1778.184326171875
+        ],
+        "Orientation": [
+            -0.000003390757001398015,
+            -0.4515979290008545,
+            2.754156014361797e-8
+        ],
+        "Scale": 0.9996976256370544,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_frontb.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Ship_Big_FrontA",
+        "DisplayName": "Land_Ship_Big_FrontA",
+        "Position": [
+            8825.541015625,
+            30.056686401367189,
+            1780.5126953125
+        ],
+        "Orientation": [
+            -0.0000034229992706968916,
+            -0.469308465719223,
+            2.779630747795636e-8
+        ],
+        "Scale": 0.9997892379760742,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_fronta.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Ship_Big_BackA",
+        "DisplayName": "Land_Ship_Big_BackA",
+        "Position": [
+            8770.158203125,
+            30.035930633544923,
+            1776.982177734375
+        ],
+        "Orientation": [
+            -0.0000034157267236878399,
+            -0.4653136432170868,
+            2.7739581298646955e-8
+        ],
+        "Scale": 0.9996975064277649,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_backa.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Wreck_Ship_Big_Castle",
+        "DisplayName": "StaticObj_Wreck_Ship_Big_Castle",
+        "Position": [
+            8761.7744140625,
+            38.68409729003906,
+            1777.3182373046876
+        ],
+        "Orientation": [
+            -0.000003420881512283813,
+            -0.46815064549446108,
+            2.7773763733307534e-8
+        ],
+        "Scale": 0.9997602701187134,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_castle.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Wreck_Ship_Big_BackB",
+        "DisplayName": "StaticObj_Wreck_Ship_Big_BackB",
+        "Position": [
+            8750.4814453125,
+            28.507205963134767,
+            1777.51318359375
+        ],
+        "Orientation": [
+            -0.000003415725814193138,
+            -0.4653119444847107,
+            2.7739574193219597e-8
+        ],
+        "Scale": 0.9996947646141052,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_backb.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+
+},
+{
+  "objectName": "6 x 2 garage row",
+  "inGameName": "-",
+  "category": "Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "garages, cars, row, double",
+  "image": "images/presets/garage_row.jpg",
+  "editorJson":[
+    {
+        "Type": "Land_Garage_Row_Small",
+        "DisplayName": "Land_Garage_Row_Small",
+        "Position": [
+            -372.047607421875,
+            11.588173866271973,
+            4316.65185546875
+        ],
+        "Orientation": [
+            53.999969482421878,
+            -0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Garage_Row_Small",
+        "DisplayName": "Land_Garage_Row_Small",
+        "Position": [
+            -381.1348876953125,
+            11.588173866271973,
+            4329.15966796875
+        ],
+        "Orientation": [
+            53.999969482421878,
+            -0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Garage_Row_Small",
+        "DisplayName": "Land_Garage_Row_Small",
+        "Position": [
+            -357.9907531738281,
+            11.58842945098877,
+            4325.88330078125
+        ],
+        "Orientation": [
+            -126.07952117919922,
+            0.002370860893279314,
+            0.0008855393389239907
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Garage_Row_Small",
+        "DisplayName": "Land_Garage_Row_Small",
+        "Position": [
+            -348.8861389160156,
+            11.588668823242188,
+            4313.38818359375
+        ],
+        "Orientation": [
+            -126.07952117919922,
+            0.002370860893279314,
+            0.000885539164301008
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Garage_Row_Small",
+        "DisplayName": "Land_Garage_Row_Small",
+        "Position": [
+            -367.0962829589844,
+            11.588191032409668,
+            4338.38134765625
+        ],
+        "Orientation": [
+            -126.07952117919922,
+            0.002370860893279314,
+            0.0008855393389239907
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Garage_Row_Small",
+        "DisplayName": "Land_Garage_Row_Small",
+        "Position": [
+            -362.9594421386719,
+            11.588173866271973,
+            4304.14111328125
+        ],
+        "Orientation": [
+            53.999969482421878,
+            -0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+},
+{
+  "objectName": "Harbour crane",
+  "inGameName": "-",
+  "category": "Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "harbour, harbor crane, dock, pier",
+  "image": "images/presets/TC2_Stack.jpg",
+  "editorJson":
+[
+    {
+        "Type": "Land_Pier_Crane_A",
+        "DisplayName": "Land_Pier_Crane_A",
+        "Position": [
+            -365.21527099609377,
+            15.646161079406739,
+            4278.37158203125
+        ],
+        "Orientation": [
+            -52.199974060058597,
+            0.0,
+            0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\harbour\\pier_crane_a.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Pier_Crane_B",
+        "DisplayName": "Land_Pier_Crane_B",
+        "Position": [
+            -361.79132080078127,
+            28.850812911987306,
+            4273.623046875
+        ],
+        "Orientation": [
+            44.99999237060547,
+            0.0,
+            -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\harbour\\pier_crane_b.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+},
+{
+  "objectName": "Grass-covered aircraft hanger",
+  "inGameName": "-",
+  "category": "Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "hanger, grass, terrain, NWAF, aircraft, plane, airport",
+  "image": "images/presets/grass_hanger.jpg",
+  "editorJson":
+[
+    {
+        "Type": "StaticObj_Mil_AircraftShelter_Grass_R",
+        "DisplayName": "StaticObj_Mil_AircraftShelter_Grass_R",
+        "Position": [
+            -214.86712646484376,
+            10.06705379486084,
+            3302.91064453125
+        ],
+        "Orientation": [
+            18.496944427490236,
+            -0.23729489743709565,
+            0.12405707687139511
+        ],
+        "Scale": 1.0000001192092896,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_grass_r.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Mil_AircraftShelter",
+        "DisplayName": "Land_Mil_AircraftShelter",
+        "Position": [
+            -208.06979370117188,
+            10.00000286102295,
+            3323.937744140625
+        ],
+        "Orientation": [
+            17.999984741210939,
+            -0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Mil_AircraftShelter_Door_L",
+        "DisplayName": "StaticObj_Mil_AircraftShelter_Door_L",
+        "Position": [
+            -220.41917419433595,
+            13.749004364013672,
+            3303.539306640625
+        ],
+        "Orientation": [
+            17.999801635742189,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_door_l.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Mil_AircraftShelter_Door_R",
+        "DisplayName": "StaticObj_Mil_AircraftShelter_Door_R",
+        "Position": [
+            -210.10678100585938,
+            13.753116607666016,
+            3300.18798828125
+        ],
+        "Orientation": [
+            18.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_door_r.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Mil_AircraftShelter_Grass_L",
+        "DisplayName": "StaticObj_Mil_AircraftShelter_Grass_L",
+        "Position": [
+            -215.0099334716797,
+            9.842689514160157,
+            3302.952880859375
+        ],
+        "Orientation": [
+            17.455730438232423,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_grass_l.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+},
+{
+  "objectName": "Tisy Radar",
+  "inGameName": "-",
+  "category": "Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "tisy, radar, military",
+  "image": "images/structures/specific/towers/tisy_radar.jpg",
+  "editorJson":
+[
+    {
+        "Type": "Land_Tisy_RadarB_Base",
+        "DisplayName": "Land_Tisy_RadarB_Base",
+        "Position": [
+            -211.7570343017578,
+            10.000003814697266,
+            3310.91015625
+        ],
+        "Orientation": [
+            0.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\tisy\\tisy_radarb_base.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Tisy_RadarB_Antenna",
+        "DisplayName": "Land_Tisy_RadarB_Antenna",
+        "Position": [
+            -203.5809783935547,
+            10.010910034179688,
+            3315.685546875
+        ],
+        "Orientation": [
+            62.87129211425781,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\tisy\\tisy_radarb_antenna.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+
+},
+{
+  "objectName": "Radio tower",
+  "inGameName": "-",
+  "category": "Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "radio, tower, preset",
+  "image": "images/structures/specific/towers/radio_tower.jpg",
+  "editorJson":
+[
+    {
+        "Type": "Land_Tower_TC4_Base",
+        "DisplayName": "Land_Tower_TC4_Base",
+        "Position": [
+            -350.01947021484377,
+            32.2001953125,
+            3126.7666015625
+        ],
+        "Orientation": [
+            0.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\towers\\tower_tc4_base.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Tower_TC4_Mid",
+        "DisplayName": "Land_Tower_TC4_Mid",
+        "Position": [
+            -349.90618896484377,
+            75.85259246826172,
+            3126.6923828125
+        ],
+        "Orientation": [
+            0.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\towers\\tower_tc4_mid.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Tower_TC4_Top",
+        "DisplayName": "Land_Tower_TC4_Top",
+        "Position": [
+            -350.0517578125,
+            116.351806640625,
+            3126.793212890625
+        ],
+        "Orientation": [
+            0.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\towers\\tower_tc4_top.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+
+},
   
   {
   "objectName": "Candy cane tower preset",
