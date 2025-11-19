@@ -52,8 +52,6 @@
 ]
 
 },
-
-
 {
   "objectName": "Complete cowshed",
   "inGameName": "-",
@@ -190,7 +188,7 @@
   "path": "-",
   "usableOnConsole": true,
   "searchTags": "ship, boat, rify, oil tanker, preset",
-  "image": "images/presets/TC2_Stack.jpg",
+  "image": "images/presets/rify_boat_preset.jpg",
   "editorJson": [
     {
         "Type": "Land_Ship_Big_FrontB",
@@ -293,7 +291,6 @@
         "m_HighBits": 0
     }
 ]
-
 },
 {
   "objectName": "6 x 2 garage row",
@@ -435,7 +432,7 @@
   "path": "-",
   "usableOnConsole": true,
   "searchTags": "harbour, harbor crane, dock, pier",
-  "image": "images/presets/TC2_Stack.jpg",
+  "image": "images/presets/harbour_crane.jpg",
   "editorJson":
 [
     {
@@ -601,7 +598,7 @@
   "path": "-",
   "usableOnConsole": true,
   "searchTags": "tisy, radar, military",
-  "image": "images/structures/specific/towers/tisy_radar.jpg",
+  "image": "images/preset/tisy_radar.jpg",
   "editorJson":
 [
     {
@@ -655,7 +652,7 @@
   "path": "-",
   "usableOnConsole": true,
   "searchTags": "radio, tower, preset",
-  "image": "images/structures/specific/towers/radio_tower.jpg",
+  "image": "images/preset/radio_tower.jpg",
   "editorJson":
 [
     {
