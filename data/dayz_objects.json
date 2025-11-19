@@ -36292,6 +36292,67 @@
     "usableOnConsole": false,
     "searchTags": "lunapark, fairground, amusement, carnival, shooting_gallery, stall, targets, game, attraction",
     "image": "images/structures/specific/lunapark/Land_Lunapark_Shooting_Gallery.jpg"
+  },
+  {
+    "objectName": "Land_Radio_building",
+    "inGameName": "-",
+    "category": "radio",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/radio",
+    "usableOnConsole": true,
+    "searchTags": "radio, building, station, broadcast, communication, control_room, antenna, PA_system, pa system, amp, loudspeaker, public_address, announcement",
+    "image": "images/structures/specific/radio/Land_Radio_building.jpg"
+  },
+  {
+    "objectName": "Land_Radio_PanelBig",
+    "inGameName": "-",
+    "category": "radio",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/radio",
+    "usableOnConsole": true,
+    "searchTags": "radio, panel, console, equipment, controls, broadcast, electronics, rack, PA_system, pa system, amp, loudspeaker, public_address, announcement",
+    "image": "images/structures/specific/radio/Land_Radio_PanelBig.jpg"
+  },
+  {
+    "objectName": "Land_Radio_PanelPAS",
+    "inGameName": "-",
+    "category": "radio",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/radio",
+    "usableOnConsole": true,
+    "searchTags": "radio, panel, PA_system, loudspeaker, public_address, announcement, communication, pa system, amp",
+    "image": "images/structures/specific/radio/Land_Radio_PanelPAS.jpg"
+  },
+
+  {
+    "objectName": "radio_building.p3d",
+    "inGameName": "-",
+    "category": "radio",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/radio",
+    "usableOnConsole": false,
+    "searchTags": "radio, building, station, broadcast, communication, control_room, antenna, PA_system, pa system, amp, loudspeaker, public_address, announcement",
+    "image": "images/structures/specific/radio/Land_Radio_building.jpg"
+  },
+  {
+    "objectName": "radio_panelbig.p3d",
+    "inGameName": "-",
+    "category": "radio",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/radio",
+    "usableOnConsole": false,
+    "searchTags": "radio, panel, console, equipment, controls, broadcast, electronics, rack, PA_system, pa system, amp, loudspeaker, public_address, announcement",
+    "image": "images/structures/specific/radio/Land_Radio_PanelBig.jpg"
+  },
+  {
+    "objectName": "radio_panelpas.p3d",
+    "inGameName": "-",
+    "category": "radio",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/radio",
+    "usableOnConsole": false,
+    "searchTags": "radio, panel, PA_system, loudspeaker, public_address, announcement, communication, pa system, amp",
+    "image": "images/structures/specific/radio/Land_Radio_PanelPAS.jpg"
   }
 
   ]
