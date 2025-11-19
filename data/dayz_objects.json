@@ -35749,6 +35749,186 @@
     "usableOnConsole": false,
     "searchTags": "church, stone, plaster, tall, tower, religious, worship, city, grey, large",
     "image": "images/structures/specific/churches/Land_Church3.jpg"
+  },
+  {
+    "objectName": "Land_Dead_MassGrave",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": true,
+    "searchTags": "dead, bodies, mass_grave, corpse, pit, grave, horror, piled, zombies",
+    "image": "images/structures/specific/deadbodies/Land_Dead_MassGrave.jpg"
+  },
+  {
+    "objectName": "StaticObj_Dead_MassGrave_8m",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": true,
+    "searchTags": "dead, bodies, mass_grave, corpse, pit, grave, long, 8m, row, zombies",
+    "image": "images/structures/specific/deadbodies/StaticObj_Dead_MassGrave_8m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Dead_MassGrave_15m",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": true,
+    "searchTags": "dead, bodies, mass_grave, corpse, pit, grave, long, 15m, row, zombies",
+    "image": "images/structures/specific/deadbodies/StaticObj_Dead_MassGrave_15m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Dead_pile1",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": true,
+    "searchTags": "dead, bodies, corpse_pile, pile, gore, horror, bodies_heap, zombies",
+    "image": "images/structures/specific/deadbodies/StaticObj_Dead_pile1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Dead_pile2",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": true,
+    "searchTags": "dead, bodies, corpse_pile, pile, gore, horror, bodies_heap, zombies",
+    "image": "images/structures/specific/deadbodies/StaticObj_Dead_pile2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Dead_pile3",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": true,
+    "searchTags": "dead, bodies, corpse_pile, pile, gore, horror, bodies_heap, zombies",
+    "image": "images/structures/specific/deadbodies/StaticObj_Dead_pile3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Dead_pile4",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": true,
+    "searchTags": "dead, bodies, corpse_pile, pile, gore, horror, bodies_heap, zombies",
+    "image": "images/structures/specific/deadbodies/StaticObj_Dead_pile4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Hanged_civil",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": true,
+    "searchTags": "dead, hanged, civilian, rope, gallows, executed, body, hanging",
+    "image": "images/structures/specific/deadbodies/StaticObj_Hanged_civil.jpg"
+  },
+  {
+    "objectName": "StaticObj_Hanged_doctor",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Config",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": true,
+    "searchTags": "dead, hanged, doctor, medic, coat, rope, gallows, executed, body, hanging",
+    "image": "images/structures/specific/deadbodies/StaticObj_Hanged_doctor.jpg"
+  },
+  {
+    "objectName": "dead_massgrave.p3d",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": false,
+    "searchTags": "dead, bodies, mass_grave, corpse, pit, grave, horror, piled, skeletons",
+    "image": "images/structures/specific/deadbodies/Land_Dead_MassGrave.jpg"
+  },
+  {
+    "objectName": "dead_massgrave_8m.p3d",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": false,
+    "searchTags": "dead, bodies, mass_grave, corpse, pit, grave, long, 8m, row",
+    "image": "images/structures/specific/deadbodies/StaticObj_Dead_MassGrave_8m.jpg"
+  },
+  {
+    "objectName": "dead_massgrave_15m.p3d",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": false,
+    "searchTags": "dead, bodies, mass_grave, corpse, pit, grave, long, 15m, row",
+    "image": "images/structures/specific/deadbodies/StaticObj_Dead_MassGrave_15m.jpg"
+  },
+  {
+    "objectName": "dead_pile1.p3d",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": false,
+    "searchTags": "dead, bodies, corpse_pile, pile, gore, horror, bodies_heap, variant1",
+    "image": "images/structures/specific/deadbodies/StaticObj_Dead_pile1.jpg"
+  },
+  {
+    "objectName": "dead_pile2.p3d",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": false,
+    "searchTags": "dead, bodies, corpse_pile, pile, gore, horror, bodies_heap, variant2",
+    "image": "images/structures/specific/deadbodies/StaticObj_Dead_pile2.jpg"
+  },
+  {
+    "objectName": "dead_pile3.p3d",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": false,
+    "searchTags": "dead, bodies, corpse_pile, pile, gore, horror, bodies_heap, variant3",
+    "image": "images/structures/specific/deadbodies/StaticObj_Dead_pile3.jpg"
+  },
+  {
+    "objectName": "dead_pile4.p3d",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": false,
+    "searchTags": "dead, bodies, corpse_pile, pile, gore, horror, bodies_heap, variant4",
+    "image": "images/structures/specific/deadbodies/StaticObj_Dead_pile4.jpg"
+  },
+  {
+    "objectName": "hanged_civil.p3d",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": false,
+    "searchTags": "dead, hanged, civilian, rope, gallows, executed, body, hanging",
+    "image": "images/structures/specific/deadbodies/StaticObj_Hanged_civil.jpg"
+  },
+  {
+    "objectName": "hanged_doctor.p3d",
+    "inGameName": "-",
+    "category": "deadbodies",
+    "modelType": "Raw P3D",
+    "path": "/dz/structures/specific/deadbodies",
+    "usableOnConsole": false,
+    "searchTags": "dead, hanged, doctor, medic, coat, rope, gallows, executed, body, hanging",
+    "image": "images/structures/specific/deadbodies/StaticObj_Hanged_doctor.jpg"
   }
   
 
