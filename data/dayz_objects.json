@@ -1,4 +1,914 @@
 [
+
+{
+  "objectName": "Traffic accident",
+  "inGameName": "-",
+  "category": "Editor Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "bus, car, crash, traffic, accident, emergency, roadblock",
+  "image": "images/presets/traffic_crash.jpg",
+  "editorJson": 
+
+
+[
+    {
+        "Type": "StaticObj_EmergencyBlanket_discarded",
+        "DisplayName": "StaticObj_EmergencyBlanket_discarded",
+        "Position": [
+            9807.8037109375,
+            12.109408378601075,
+            10560.740234375
+        ],
+        "Orientation": [
+            -62.99997329711914,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\medical\\emergencyblanket_discarded.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Roadblock_Wood_Long",
+        "DisplayName": "StaticObj_Roadblock_Wood_Long",
+        "Position": [
+            9822.6337890625,
+            12.01256275177002,
+            10566.8916015625
+        ],
+        "Orientation": [
+            -89.99995422363281,
+            74.31834411621094,
+            -179.9999542236328
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\improvised\\roadblock_wood_long.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_wreck_truck01_aban2_firetruck",
+        "DisplayName": "Land_wreck_truck01_aban2_firetruck",
+        "Position": [
+            9812.892578125,
+            12.013140678405762,
+            10562.0751953125
+        ],
+        "Orientation": [
+            98.99993133544922,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_truck01_aban2_firetruck.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Roadblock_Wood_Long",
+        "DisplayName": "StaticObj_Roadblock_Wood_Long",
+        "Position": [
+            9792.927734375,
+            12.786846160888672,
+            10563.048828125
+        ],
+        "Orientation": [
+            80.99995422363281,
+            0.0,
+            -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\improvised\\roadblock_wood_long.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Stretcher_Red",
+        "DisplayName": "StaticObj_Stretcher_Red",
+        "Position": [
+            9800.9375,
+            12.368040084838868,
+            10560.9453125
+        ],
+        "Orientation": [
+            26.999990463256837,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\furniture\\beds\\stretcher_red.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Stretcher_Red_Folded",
+        "DisplayName": "StaticObj_Stretcher_Red_Folded",
+        "Position": [
+            9802.65234375,
+            12.174956321716309,
+            10560.72265625
+        ],
+        "Orientation": [
+            -18.0,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\furniture\\beds\\stretcher_red_folded.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Stretcher_Red_Folded",
+        "DisplayName": "StaticObj_Stretcher_Red_Folded",
+        "Position": [
+            9794.697265625,
+            12.751453399658204,
+            10565.6572265625
+        ],
+        "Orientation": [
+            27.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\furniture\\beds\\stretcher_red_folded.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Stretcher_Red_Folded",
+        "DisplayName": "StaticObj_Stretcher_Red_Folded",
+        "Position": [
+            9794.349609375,
+            12.747661590576172,
+            10565.8203125
+        ],
+        "Orientation": [
+            35.999996185302737,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\furniture\\beds\\stretcher_red_folded.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Wreck_Ikarus",
+        "DisplayName": "Land_Wreck_Ikarus",
+        "Position": [
+            9806.7197265625,
+            13.510860443115235,
+            10566.6611328125
+        ],
+        "Orientation": [
+            -98.99993133544922,
+            0.1666097790002823,
+            -0.41311025619506838
+        ],
+        "Scale": 0.9999898672103882,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_ikarus.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Wreck_Volha_Blue",
+        "DisplayName": "Land_Wreck_Volha_Blue",
+        "Position": [
+            9799.9716796875,
+            12.89264965057373,
+            10565.92578125
+        ],
+        "Orientation": [
+            -36.00004959106445,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_volha_blue.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Wreck_sed01_aban1_black",
+        "DisplayName": "Land_Wreck_sed01_aban1_black",
+        "Position": [
+            9796.59765625,
+            12.9317626953125,
+            10561.3681640625
+        ],
+        "Orientation": [
+            -99.00003814697266,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_sed01_aban1_black.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Wreck_hb02_aban2_black",
+        "DisplayName": "Land_Wreck_hb02_aban2_black",
+        "Position": [
+            9814.7919921875,
+            12.70937728881836,
+            10566.591796875
+        ],
+        "Orientation": [
+            -107.99993896484375,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_hb02_aban2_black.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Wreck_hb01_aban1_green",
+        "DisplayName": "Land_Wreck_hb01_aban1_green",
+        "Position": [
+            9808.8623046875,
+            12.771371841430664,
+            10564.94140625
+        ],
+        "Orientation": [
+            -98.99993133544922,
+            0.0,
+            -91.35478973388672
+        ],
+        "Scale": 1.0000001192092896,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_hb01_aban1_green.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Wreck_Decal_Big_DE",
+        "DisplayName": "StaticObj_Wreck_Decal_Big_DE",
+        "Position": [
+            9813.953125,
+            12.002625465393067,
+            10562.21484375
+        ],
+        "Orientation": [
+            89.99995422363281,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_decal_big.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Wreck_sed02_aban1_grey",
+        "DisplayName": "Land_Wreck_sed02_aban1_grey",
+        "Position": [
+            9804.5283203125,
+            12.931324005126954,
+            10561.150390625
+        ],
+        "Orientation": [
+            -144.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_sed02_aban1_grey.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Wreck_sed01_aban1_police",
+        "DisplayName": "Land_Wreck_sed01_aban1_police",
+        "Position": [
+            9819.513671875,
+            12.611099243164063,
+            10564.212890625
+        ],
+        "Orientation": [
+            152.9999542236328,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_sed01_aban1_police.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Roadblock_Wood_Long",
+        "DisplayName": "StaticObj_Roadblock_Wood_Long",
+        "Position": [
+            9822.173828125,
+            12.370218276977539,
+            10562.1474609375
+        ],
+        "Orientation": [
+            116.62586975097656,
+            0.0000332022609654814,
+            -0.00009702932584332302
+        ],
+        "Scale": 1.000000238418579,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\improvised\\roadblock_wood_long.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Wreck_S1023_Medic_Beige",
+        "DisplayName": "Land_Wreck_S1023_Medic_Beige",
+        "Position": [
+            9794.767578125,
+            12.217846870422364,
+            10565.9140625
+        ],
+        "Orientation": [
+            -53.99998474121094,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_s1023_medic.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Rubble_Glass",
+        "DisplayName": "StaticObj_Rubble_Glass",
+        "Position": [
+            9801.498046875,
+            12.149150848388672,
+            10563.5625
+        ],
+        "Orientation": [
+            0.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\ruins\\rubble_glass.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Rubble_Glass",
+        "DisplayName": "StaticObj_Rubble_Glass",
+        "Position": [
+            9809.4794921875,
+            12.048596382141114,
+            10563.6220703125
+        ],
+        "Orientation": [
+            0.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\ruins\\rubble_glass.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Rubble_Glass",
+        "DisplayName": "StaticObj_Rubble_Glass",
+        "Position": [
+            9806.193359375,
+            12.08796215057373,
+            10564.8330078125
+        ],
+        "Orientation": [
+            27.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\ruins\\rubble_glass.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_EmergencyBlanket_discarded",
+        "DisplayName": "StaticObj_EmergencyBlanket_discarded",
+        "Position": [
+            9816.390625,
+            12.034330368041993,
+            10565.2001953125
+        ],
+        "Orientation": [
+            27.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\medical\\emergencyblanket_discarded.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_EmergencyBlanket_discarded",
+        "DisplayName": "StaticObj_EmergencyBlanket_discarded",
+        "Position": [
+            9799.2578125,
+            12.210442543029786,
+            10561.3671875
+        ],
+        "Orientation": [
+            0.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\medical\\emergencyblanket_discarded.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+},
+
+
+{
+  "objectName": "Sakhal warhead storage complete interior",
+  "inGameName": "-",
+  "category": "Editor Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "sakhal, bunker, warhead, storage, military",
+  "image": "images/presets/sakhal_bunker.jpg",
+  "editorJson": 
+
+[
+    {
+        "Type": "Land_WarheadStorage_Main",
+        "DisplayName": "Land_WarheadStorage_Main",
+        "Position": [
+            7250.10986328125,
+            4.686585903167725,
+            2498.6767578125
+        ],
+        "Orientation": [
+            -9.0,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_main.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_WarheadStorage_Room1",
+        "DisplayName": "Land_WarheadStorage_Room1",
+        "Position": [
+            7256.17529296875,
+            1.2300167083740235,
+            2495.774658203125
+        ],
+        "Orientation": [
+            -9.0,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room1.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_WarheadStorage_Room2",
+        "DisplayName": "Land_WarheadStorage_Room2",
+        "Position": [
+            7249.9033203125,
+            1.2300167083740235,
+            2494.7294921875
+        ],
+        "Orientation": [
+            -9.0,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room2.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_WarheadStorage_Room3",
+        "DisplayName": "Land_WarheadStorage_Room3",
+        "Position": [
+            7243.7333984375,
+            1.2300167083740235,
+            2493.624755859375
+        ],
+        "Orientation": [
+            -9.0,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room3.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_WarheadStorage_Room4",
+        "DisplayName": "Land_WarheadStorage_Room4",
+        "Position": [
+            7237.26220703125,
+            1.2300162315368653,
+            2492.7392578125
+        ],
+        "Orientation": [
+            -9.0,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room4.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+
+
+},
+
+{
+  "objectName": "House block complex",
+  "inGameName": "-",
+  "category": "Editor Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "bus, car, crash, traffic, accident, emergency, roadblock",
+  "image": "images/presets/house_block_complex.jpg",
+  "editorJson": 
+
+[
+    {
+        "Type": "Land_HouseBlock_2F4",
+        "DisplayName": "Land_HouseBlock_2F4",
+        "Position": [
+            6908.419921875,
+            23.799236297607423,
+            3043.978515625
+        ],
+        "Orientation": [
+            129.92254638671876,
+            0.0,
+            -0.0
+        ],
+        "Scale": 0.9999998807907105,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_HouseBlock_2F_Corner",
+        "DisplayName": "Land_HouseBlock_2F_Corner",
+        "Position": [
+            6917.35693359375,
+            23.690902709960939,
+            3056.8798828125
+        ],
+        "Orientation": [
+            -140.68499755859376,
+            0.0,
+            -0.0
+        ],
+        "Scale": 0.9999998807907105,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f_corner.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_HouseBlock_2F4",
+        "DisplayName": "Land_HouseBlock_2F4",
+        "Position": [
+            6928.546875,
+            23.69748306274414,
+            3045.976318359375
+        ],
+        "Orientation": [
+            -140.01600646972657,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_HouseBlock_1F1",
+        "DisplayName": "Land_HouseBlock_1F1",
+        "Position": [
+            6937.841796875,
+            21.018306732177736,
+            3038.24658203125
+        ],
+        "Orientation": [
+            -140.01600646972657,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f1.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_HouseBlock_1F_Corner",
+        "DisplayName": "Land_HouseBlock_1F_Corner",
+        "Position": [
+            6947.1328125,
+            22.37173843383789,
+            3026.8603515625
+        ],
+        "Orientation": [
+            -50.1459846496582,
+            0.0,
+            0.0
+        ],
+        "Scale": 0.9999998807907105,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f_corner.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_HouseBlock_2F5",
+        "DisplayName": "Land_HouseBlock_2F5",
+        "Position": [
+            6943.271484375,
+            23.35955047607422,
+            3013.873046875
+        ],
+        "Orientation": [
+            -49.407325744628909,
+            0.0,
+            0.0
+        ],
+        "Scale": 0.9999998807907105,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f5.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_HouseBlock_2F4",
+        "DisplayName": "Land_HouseBlock_2F4",
+        "Position": [
+            6934.22314453125,
+            23.581554412841798,
+            3007.4541015625
+        ],
+        "Orientation": [
+            -50.06875991821289,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_HouseBlock_2F2",
+        "DisplayName": "Land_HouseBlock_2F2",
+        "Position": [
+            6924.5908203125,
+            23.230388641357423,
+            2997.27783203125
+        ],
+        "Orientation": [
+            -50.04618835449219,
+            0.0,
+            0.0
+        ],
+        "Scale": 0.9999998807907105,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f2.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_HouseBlock_2F1",
+        "DisplayName": "Land_HouseBlock_2F1",
+        "Position": [
+            6916.0849609375,
+            22.847410202026368,
+            2985.75634765625
+        ],
+        "Orientation": [
+            -49.98497009277344,
+            0.0,
+            0.0
+        ],
+        "Scale": 0.9999998807907105,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f1.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_HouseBlock_2F_Corner",
+        "DisplayName": "Land_HouseBlock_2F_Corner",
+        "Position": [
+            6907.25537109375,
+            23.62146759033203,
+            2973.155517578125
+        ],
+        "Orientation": [
+            39.92953109741211,
+            0.0,
+            -0.0
+        ],
+        "Scale": 0.9999998807907105,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f_corner.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_HouseBlock_2F2",
+        "DisplayName": "Land_HouseBlock_2F2",
+        "Position": [
+            6895.4658203125,
+            23.386348724365236,
+            2985.625244140625
+        ],
+        "Orientation": [
+            39.787776947021487,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f2.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_HouseBlock_2F3",
+        "DisplayName": "Land_HouseBlock_2F3",
+        "Position": [
+            6880.31982421875,
+            23.6668643951416,
+            2997.016845703125
+        ],
+        "Orientation": [
+            39.624656677246097,
+            0.0,
+            -0.0
+        ],
+        "Scale": 0.9999998807907105,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f3.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_HouseBlock_1F2",
+        "DisplayName": "Land_HouseBlock_1F2",
+        "Position": [
+            6886.36962890625,
+            21.20720100402832,
+            3017.754150390625
+        ],
+        "Orientation": [
+            128.5271759033203,
+            0.0,
+            -0.0
+        ],
+        "Scale": 0.9999998807907105,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f2.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_HouseBlock_1F1",
+        "DisplayName": "Land_HouseBlock_1F1",
+        "Position": [
+            6895.38818359375,
+            21.042781829833986,
+            3028.03857421875
+        ],
+        "Orientation": [
+            128.9207763671875,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f1.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_HouseBlock_1F3",
+        "DisplayName": "Land_HouseBlock_1F3",
+        "Position": [
+            6901.89990234375,
+            21.680133819580079,
+            3035.838134765625
+        ],
+        "Orientation": [
+            129.58834838867188,
+            0.0,
+            -0.0
+        ],
+        "Scale": 0.9999998807907105,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f3.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+
+},
 {
   "objectName": "Small airfield hanger and ATC",
   "inGameName": "-",
