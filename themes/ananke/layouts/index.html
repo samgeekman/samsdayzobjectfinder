@@ -93,6 +93,22 @@
     color: #fff;
   }
 
+  /* Preset toggle button */
+  #togglePresets {
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  #togglePresets.active {
+    background-color: #656d6d;
+    color: #fff;
+    border-color: #656d6d;
+  }
+
   /* Flash row highlight */
   @keyframes flash-highlight {
     0% { background-color: #fff6a1; }
@@ -108,12 +124,16 @@
   <select id="filterCategory">
     <option value="">All</option>
   </select>
+
   <label for="filterConsole">Usable on Console:</label>
   <select id="filterConsole">
     <option value="">All</option>
     <option value="✅">Yes</option>
     <option value="❌">No</option>
   </select>
+
+  <!-- Show presets toggle -->
+  <button id="togglePresets" type="button">Show presets</button>
 </div>
 
 <table id="dayzObjects" class="display nowrap" style="width:100%">
@@ -193,6 +213,29 @@ $(document).ready(function() {
 
   $('#filterConsole').on('change', function() {
     table.column(5).search(this.value).draw();
+  });
+
+  // Preset toggle (filters to Editor Preset category)
+  // Adjust this string if your category name is slightly different (e.g. "Editor Presets")
+  var presetsCategoryValue = "Editor Preset";
+  var presetsActive = false;
+  var previousCategoryValue = "";
+
+  $('#togglePresets').on('click', function() {
+    var $btn = $(this);
+
+    if (!presetsActive) {
+      // Activate presets view: remember old category, then switch to Editor Preset
+      previousCategoryValue = $('#filterCategory').val();
+      $('#filterCategory').val(presetsCategoryValue).trigger('change');
+      presetsActive = true;
+      $btn.addClass('active').text('Show all');
+    } else {
+      // Deactivate presets view: restore previous category selection
+      $('#filterCategory').val(previousCategoryValue).trigger('change');
+      presetsActive = false;
+      $btn.removeClass('active').text('Show presets');
+    }
   });
 
   // Hover image preview on first column
