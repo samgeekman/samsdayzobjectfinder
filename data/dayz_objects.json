@@ -2186,41 +2186,22 @@
   "searchTags": "cowshed, farm, barn, preset",
   "image": "images/presets/cow_shed.jpg",
   "editorJson": 
-[
-    {
-        "Type": "Land_Farm_CowshedA",
-        "DisplayName": "Land_Farm_CowshedA",
-        "Position": [
-            -374.87152099609377,
-            13.145411491394043,
-            4284.130859375
-        ],
-        "Orientation": [
-            100.000,
-            -0.0,
-            -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\farms\\farm_cowsheda.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-    },
+
+  [
     {
         "Type": "Land_Farm_CowshedB",
         "DisplayName": "Land_Farm_CowshedB",
         "Position": [
-            -385.7588195800781,
-            13.184419631958008,
-            4300.2138671875
+            4454.13623046875,
+            339.03485107421877,
+            10215.2587890625
         ],
         "Orientation": [
-            53.99998474121094,
+            81.4986801147461,
             0.0,
             -0.0
         ],
-        "Scale": 1.0,
+        "Scale": 1.0000001192092896,
         "AttachmentMap": {},
         "Model": "dz\\structures\\industrial\\farms\\farm_cowshedb.p3d",
         "Flags": 30,
@@ -2231,18 +2212,38 @@
         "Type": "Land_Farm_CowshedC",
         "DisplayName": "Land_Farm_CowshedC",
         "Position": [
-            -394.2057800292969,
-            13.217254638671875,
-            4312.72021484375
+            4452.41796875,
+            339.06768798828127,
+            10230.251953125
         ],
         "Orientation": [
-            53.99998474121094,
+            81.4986801147461,
             0.0,
             -0.0
         ],
         "Scale": 1.0,
         "AttachmentMap": {},
         "Model": "dz\\structures\\industrial\\farms\\farm_cowshedc.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Farm_CowshedA",
+        "DisplayName": "Land_Farm_CowshedA",
+        "Position": [
+            4456.4716796875,
+            338.9908752441406,
+            10195.9482421875
+        ],
+        "Orientation": [
+            82.69329071044922,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\farms\\farm_cowsheda.p3d",
         "Flags": 30,
         "m_LowBits": 0,
         "m_HighBits": 0
