@@ -1,6 +1,810 @@
 [
 
 {
+  "objectName": "Gas station",
+  "inGameName": "-",
+  "category": "Editor Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "petrol, gas station, fuel, cars, vehicles",
+  "image": "images/presets/gas_station.jpg",
+  "editorJson":
+
+  [
+    {
+        "Type": "StaticObj_FueldStation_Shed",
+        "DisplayName": "StaticObj_FueldStation_Shed",
+        "Position": [
+            3647.75439453125,
+            314.3646240234375,
+            8991.099609375
+        ],
+        "Orientation": [
+            -49.458168029785159,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_shed.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Tank_Small_Gas",
+        "DisplayName": "StaticObj_Tank_Small_Gas",
+        "Position": [
+            3662.29541015625,
+            312.0242004394531,
+            9000.5576171875
+        ],
+        "Orientation": [
+            39.99999237060547,
+            -0.0,
+            -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\tanks\\tank_small_gas.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_FuelStation_Feed",
+        "DisplayName": "Land_FuelStation_Feed",
+        "Position": [
+            3642.203369140625,
+            312.37353515625,
+            8986.6904296875
+        ],
+        "Orientation": [
+            131.1173095703125,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_FuelStation_Feed",
+        "DisplayName": "Land_FuelStation_Feed",
+        "Position": [
+            3644.16357421875,
+            312.37353515625,
+            8985.001953125
+        ],
+        "Orientation": [
+            129.86082458496095,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_FuelStation_Feed",
+        "DisplayName": "Land_FuelStation_Feed",
+        "Position": [
+            3646.630859375,
+            312.37353515625,
+            8991.9873046875
+        ],
+        "Orientation": [
+            131.1173095703125,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0000001192092896,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_FuelStation_Feed",
+        "DisplayName": "Land_FuelStation_Feed",
+        "Position": [
+            3648.591064453125,
+            312.37353515625,
+            8990.298828125
+        ],
+        "Orientation": [
+            129.86082458496095,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_FuelStation_Feed",
+        "DisplayName": "Land_FuelStation_Feed",
+        "Position": [
+            3651.158935546875,
+            312.37353515625,
+            8997.1748046875
+        ],
+        "Orientation": [
+            131.1173095703125,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0000001192092896,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_FuelStation_Feed",
+        "DisplayName": "Land_FuelStation_Feed",
+        "Position": [
+            3653.119140625,
+            312.37353515625,
+            8995.486328125
+        ],
+        "Orientation": [
+            129.86082458496095,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_FuelStation_Build",
+        "DisplayName": "Land_FuelStation_Build",
+        "Position": [
+            3659.656005859375,
+            313.0489807128906,
+            9003.974609375
+        ],
+        "Orientation": [
+            39.99999237060547,
+            -0.0,
+            -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_build.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Lamp_City1",
+        "DisplayName": "StaticObj_Lamp_City1",
+        "Position": [
+            3655.15771484375,
+            315.6287536621094,
+            9004.1416015625
+        ],
+        "Orientation": [
+            0.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\misc\\lamp_city1.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Garbage_Bin",
+        "DisplayName": "StaticObj_Garbage_Bin",
+        "Position": [
+            3655.4375,
+            311.9817810058594,
+            9004.7509765625
+        ],
+        "Orientation": [
+            39.99999237060547,
+            -0.0,
+            -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\misc\\garbage_bin.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_Bench2",
+        "DisplayName": "StaticObj_Misc_Bench2",
+        "Position": [
+            3659.505615234375,
+            311.7927551269531,
+            8999.943359375
+        ],
+        "Orientation": [
+            -139.9999542236328,
+            0.0,
+            -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\misc\\misc_bench2.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+},
+
+{
+  "objectName": "Construction site",
+  "inGameName": "-",
+  "category": "Editor Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "building, construction, crane, site, industrial",
+  "image": "images/presets/construction_site.jpg",
+  "editorJson":
+
+ [
+    {
+        "Type": "Land_Construction_Building",
+        "DisplayName": "Land_Construction_Building",
+        "Position": [
+            4547.08203125,
+            345.8759765625,
+            10078.2158203125
+        ],
+        "Orientation": [
+            91.7983169555664,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\construction\\construction_building.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_ConcretePanels",
+        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Position": [
+            4529.35107421875,
+            339.715576171875,
+            10059.701171875
+        ],
+        "Orientation": [
+            94.02482604980469,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_ConcretePanels",
+        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Position": [
+            4535.53369140625,
+            339.52978515625,
+            10059.0517578125
+        ],
+        "Orientation": [
+            92.72520446777344,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_Pallets3",
+        "DisplayName": "StaticObj_Misc_Pallets3",
+        "Position": [
+            4535.55908203125,
+            338.79443359375,
+            10055.341796875
+        ],
+        "Orientation": [
+            -88.4273452758789,
+            0.0,
+            0.0
+        ],
+        "Scale": 0.9999998807907105,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_pallets3.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Misc_Scaffolding",
+        "DisplayName": "Land_Misc_Scaffolding",
+        "Position": [
+            4526.46142578125,
+            344.5953674316406,
+            10090.2451171875
+        ],
+        "Orientation": [
+            1.7347180843353272,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_scaffolding.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_GContainer_Big",
+        "DisplayName": "StaticObj_Misc_GContainer_Big",
+        "Position": [
+            4523.71533203125,
+            339.68280029296877,
+            10072.2392578125
+        ],
+        "Orientation": [
+            73.6322250366211,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_gcontainer_big.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_GContainer_Big",
+        "DisplayName": "StaticObj_Misc_GContainer_Big",
+        "Position": [
+            4521.8251953125,
+            339.69140625,
+            10094.09765625
+        ],
+        "Orientation": [
+            -85.61559295654297,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_gcontainer_big.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_Pipes",
+        "DisplayName": "StaticObj_Misc_Pipes",
+        "Position": [
+            4532.8486328125,
+            339.6099853515625,
+            10071.349609375
+        ],
+        "Orientation": [
+            -93.36005401611328,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_pipes.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Garbage_Pile3",
+        "DisplayName": "StaticObj_Garbage_Pile3",
+        "Position": [
+            4524.59814453125,
+            339.30548095703127,
+            10062.73828125
+        ],
+        "Orientation": [
+            -120.42896270751953,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\misc\\garbage_pile3.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_Pipes",
+        "DisplayName": "StaticObj_Misc_Pipes",
+        "Position": [
+            4566.26220703125,
+            339.678466796875,
+            10101.0361328125
+        ],
+        "Orientation": [
+            -176.49734497070313,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_pipes.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_Pipes",
+        "DisplayName": "StaticObj_Misc_Pipes",
+        "Position": [
+            4564.75146484375,
+            339.6289978027344,
+            10098.68359375
+        ],
+        "Orientation": [
+            16.193958282470704,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_pipes.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_Pallet",
+        "DisplayName": "StaticObj_Misc_Pallet",
+        "Position": [
+            4564.8720703125,
+            339.1002197265625,
+            10095.7939453125
+        ],
+        "Orientation": [
+            -66.66830444335938,
+            0.0,
+            0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_pallet.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_Pallet",
+        "DisplayName": "StaticObj_Misc_Pallet",
+        "Position": [
+            4563.42724609375,
+            339.0724182128906,
+            10093.8583984375
+        ],
+        "Orientation": [
+            -15.426897048950196,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_pallet.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_ConcretePanels",
+        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Position": [
+            4567.9833984375,
+            339.728515625,
+            10091.625
+        ],
+        "Orientation": [
+            169.84927368164063,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_ConcretePanels",
+        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Position": [
+            4569.74267578125,
+            339.61407470703127,
+            10088.9541015625
+        ],
+        "Orientation": [
+            81.03792572021485,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Garbage_Pile1",
+        "DisplayName": "StaticObj_Garbage_Pile1",
+        "Position": [
+            4569.03759765625,
+            339.4759826660156,
+            10098.623046875
+        ],
+        "Orientation": [
+            -121.4081802368164,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\misc\\garbage_pile1.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_Construction_Crane",
+        "DisplayName": "Land_Construction_Crane",
+        "Position": [
+            4562.298828125,
+            356.92376708984377,
+            10074.189453125
+        ],
+        "Orientation": [
+            -155.75250244140626,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\construction\\construction_crane.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_GContainer_Big",
+        "DisplayName": "StaticObj_Misc_GContainer_Big",
+        "Position": [
+            4561.33154296875,
+            339.5101623535156,
+            10067.4794921875
+        ],
+        "Orientation": [
+            92.54054260253906,
+            0.0,
+            -0.0
+        ],
+        "Scale": 0.9999998807907105,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_gcontainer_big.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+},
+
+{
+  "objectName": "Cement works",
+  "inGameName": "-",
+  "category": "Editor Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "cement, industrial, silo, factory, building",
+  "image": "images/presets/cement_works.jpg",
+  "editorJson":
+[
+    {
+        "Type": "StaticObj_Misc_ConcretePanels",
+        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Position": [
+            7252.64697265625,
+            7.302845001220703,
+            1997.629638671875
+        ],
+        "Orientation": [
+            74.49027252197266,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_CementWorks_SiloBig1Bridge",
+        "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
+        "Position": [
+            7139.240234375,
+            68.57177734375,
+            2470.53173828125
+        ],
+        "Orientation": [
+            164.74893188476563,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
+        "Flags": 1054,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_CementWorks_SiloBig1B",
+        "DisplayName": "Land_CementWorks_SiloBig1B",
+        "Position": [
+            7347.17333984375,
+            25.688209533691408,
+            2010.895263671875
+        ],
+        "Orientation": [
+            -15.251004219055176,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1b.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_CementWorks_SiloBig1A",
+        "DisplayName": "Land_CementWorks_SiloBig1A",
+        "Position": [
+            7310.8642578125,
+            31.258209228515626,
+            2000.580322265625
+        ],
+        "Orientation": [
+            -15.251004219055176,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1a.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_CementWorks_SiloBig1Bridge",
+        "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
+        "Position": [
+            7320.564453125,
+            41.857093811035159,
+            2004.07568359375
+        ],
+        "Orientation": [
+            -15.251004219055176,
+            0.0,
+            0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "Land_CementWorks_SiloBig1B",
+        "DisplayName": "Land_CementWorks_SiloBig1B",
+        "Position": [
+            7265.9248046875,
+            25.72919464111328,
+            1990.154541015625
+        ],
+        "Orientation": [
+            164.4405975341797,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1b.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_CementWorks_SiloBig1Bridge",
+        "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
+        "Position": [
+            7292.6396484375,
+            41.857093811035159,
+            1996.814697265625
+        ],
+        "Orientation": [
+            166.74578857421876,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    },
+    {
+        "Type": "StaticObj_Misc_ConcretePanels",
+        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Position": [
+            7360.55517578125,
+            7.252708435058594,
+            2003.079345703125
+        ],
+        "Orientation": [
+            74.49027252197266,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+    }
+]
+},
+
+{
   "objectName": "Traffic accident",
   "inGameName": "-",
   "category": "Editor Preset",
