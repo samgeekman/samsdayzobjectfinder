@@ -1,0 +1,232 @@
+{{ define "main" }}
+
+<div class="annoucenment-bar">
+  <strong></strong>⚠️ This presets tool is a work in progress with an incomplete database. More presets added over time - see progress in the <a href="https://discord.com/channels/1414751279548203008/1414751374394261534">Discord</a>.
+</div>
+
+<style>
+  .annoucenment-bar {
+    background-color:#eeeeee;
+    padding: 4px;
+    margin: 2px;
+  }
+
+  /* Table styling */
+  #dayzPresets_wrapper {
+    width: 95% !important;
+    margin: 20px auto;
+    overflow-x: auto;
+  }
+  #dayzPresets { width: 100% !important; }
+
+  /* Top bar (just search + length now) */
+  .top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+  .top-bar select,
+  .top-bar input {
+    margin-right: 10px;
+  }
+  #dayzPresets_filter input {
+    width: 250px;
+    max-width: 100%;
+  }
+  @media (max-width: 768px) {
+    #dayzPresets { font-size: 12px; }
+  }
+  @media (max-width: 480px) {
+    #dayzPresets { font-size: 10px; }
+  }
+
+  /* First td as positioning context for buttons */
+  #dayzPresets tbody td:first-child {
+    position: relative;
+  }
+
+  /* Copy buttons */
+  .copy-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+    border: none;
+    background-color: #656d6d;
+    color: #fff;
+    font-size: 1em;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+
+  /* Show buttons on hover */
+  #dayzPresets tbody td:first-child:hover .copy-btn {
+    opacity: 1;
+  }
+
+  /* Spacing between the two buttons */
+  .copy-btn + .copy-btn {
+    right: 40px;
+  }
+
+  .copy-btn:hover {
+    color: #fff;
+  }
+
+  /* Flash row highlight (if you want to use later) */
+  @keyframes flash-highlight {
+    0% { background-color: #fff6a1; }
+    100% { background-color: transparent; }
+  }
+  .flash {
+    animation: flash-highlight 1s ease-out;
+  }
+</style>
+
+<table id="dayzPresets" class="display nowrap" style="width:100%">
+  <thead>
+    <tr>
+      <th>Preset name</th>
+      <th>In-game name</th>
+      <th>Model Type</th>
+      <th>Path</th>
+      <th>Search Tags</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{/* 
+      Page is locked to presets only.
+      Adjust "Editor Preset" if you use a different category label, e.g. "Editor Presets".
+    */}}
+    {{ range .Site.Data.dayz_objects }}
+      {{ if eq .category "Editor Preset" }}
+      <tr>
+        <td
+          data-object="{{ .objectName }}"
+          data-p3d="{{ .path }}"
+          data-modeltype="{{ .modelType }}"
+          data-image="{{ with .image }}{{ . }}{{ end }}"
+          data-editorjson='{{ with .editorJson }}{{ . | jsonify | htmlEscape }}{{ end }}'
+        >
+          {{ .objectName }}
+          <button class="copy-btn" title="Copy preset name">📋</button>
+          <button class="copy-btn editor-copy-btn" title="Copy DayZ Editor JSON preset">🏗️</button>
+        </td>
+        <td>{{ .inGameName }}</td>
+        <td>{{ .modelType }}</td>
+        <td>{{ .path }}</td>
+        <td>{{ with .searchTags }}{{ . }}{{ end }}</td>
+      </tr>
+      {{ end }}
+    {{ end }}
+  </tbody>
+</table>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  var table = $('#dayzPresets').DataTable({
+    responsive: true,
+    pageLength: 50,
+    lengthMenu: [[50,100,200,500],[50,100,200,500]],
+    dom: '<"top-bar"lfr>tip',
+    language: {
+      search: "Search presets: ",
+      searchPlaceholder: "'tower', 'airfield', 'compound'"
+    }
+  });
+
+  // Hover image preview on first column (if images are set for presets)
+  $('#dayzPresets tbody')
+    .on('mouseenter', 'td:first-child', function(e) {
+      var imgPath = $(this).data('image');
+      if (!imgPath) return;
+
+      $('body').append(
+        '<div id="imgPreview" style="position:absolute; z-index:9999; border:1px solid #ccc; background:#fff; padding:5px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">' +
+          '<img src="/' + imgPath + '" style="max-width:400px; max-height:400px;">' +
+        '</div>'
+      );
+      $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });
+    })
+    .on('mousemove', 'td:first-child', function(e) {
+      $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });
+    })
+    .on('mouseleave', 'td:first-child', function() {
+      $('#imgPreview').remove();
+    });
+
+  // Copy preset name (📋)
+  $('#dayzPresets tbody').on('click', '.copy-btn:not(.editor-copy-btn)', function(e) {
+    e.stopPropagation();
+    var text = $(this).closest('td').data('object');
+    navigator.clipboard.writeText(text);
+    var $btn = $(this);
+    $btn.text('✔');
+    setTimeout(function() { $btn.text('📋'); }, 1000);
+  });
+
+  // Copy DayZ Editor JSON preset (🏗️) – uses editorJson array if present
+  $('#dayzPresets tbody').on('click', '.editor-copy-btn', function(e) {
+    e.stopPropagation();
+    var $td = $(this).closest('td');
+
+    var predefined = $td.attr('data-editorjson');
+    var jsonText = null;
+
+    if (predefined && predefined.trim() !== "") {
+      try {
+        var parsed = JSON.parse(predefined); // expected to be an array
+        jsonText = JSON.stringify(parsed, null, 4);
+      } catch (err) {
+        console.error("Invalid editorJson for preset row:", err);
+      }
+    }
+
+    // Fallback: single-object stub if editorJson is missing for some reason
+    if (!jsonText) {
+      var objName   = $td.data('object');
+      var modelType = $td.data('modeltype');
+      var path      = $td.data('p3d');
+
+      var typeValue = (modelType === "Config")
+        ? objName
+        : path.replace(/\//g, "\\") + "\\" + objName;
+
+      var json = [{
+        Type: typeValue,
+        DisplayName: "",
+        Position: [0, 0, 0],
+        Orientation: [0, 0, 0],
+        Scale: 1.0,
+        AttachmentMap: {},
+        Model: "",
+        Flags: 30,
+        m_LowBits: 0,
+        m_HighBits: 0
+      }];
+
+      jsonText = JSON.stringify(json, null, 4);
+    }
+
+    navigator.clipboard.writeText(jsonText);
+
+    var $btn = $(this);
+    $btn.text('✔');
+    setTimeout(function() { $btn.text('🏗️'); }, 1000);
+  });
+});
+</script>
+
+
+{{ end }}
