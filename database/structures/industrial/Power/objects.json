@@ -217,7 +217,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, powerline, infrastructure, high_voltage",
-    "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_Turn.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_hv_line_turn.jpg"
   },
   {
     "objectName": "power_hv_line_80m_damaged.p3d",
@@ -227,7 +227,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage",
-    "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_80m_damaged.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_hv_line_80m_damaged.jpg"
   },
   {
     "objectName": "power_hv_line_damaged.p3d",
@@ -237,7 +237,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage",
-    "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_damaged.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_hv_line_damaged.jpg"
   },
   {
     "objectName": "power_hv_line_turn.p3d",
@@ -257,7 +257,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, powerline, infrastructure, high_voltage, left_turn",
-    "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_TurnL.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_hv_line_turnl.jpg"
   },
   {
     "objectName": "power_hv_line_turnr.p3d",
@@ -267,7 +267,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, powerline, infrastructure, high_voltage, right_turn",
-    "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_TurnR.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_hv_line_turnr.jpg"
   },
   {
     "objectName": "power_hv_tower.p3d",
@@ -277,7 +277,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, powerline, pylon, metal, tower, high_voltage, infrastructure",
-    "image": "images/structures/industrial/power/StaticObj_Power_HV_Tower.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_hv_tower.jpg"
   },
   {
     "objectName": "power_pole_conc1.p3d",
@@ -297,7 +297,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "pole, metal, PA, pa_system, speaker, infrastructure, electricity, utility",
-    "image": "images/structures/industrial/power/Land_Power_Pole_Conc1_Amp.jpg"
+    "image": "images/structures/industrial/power/land_power_pole_conc1_amp.jpg"
   },
   {
     "objectName": "power_pole_conc3.p3d",
@@ -337,7 +337,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "pole, metal, PA, pa_system, speaker, infrastructure, street_light, street_lamp",
-    "image": "images/structures/industrial/power/Land_Power_Pole_Conc4_Lamp_Amp.jpg"
+    "image": "images/structures/industrial/power/land_power_pole_conc4_lamp_amp.jpg"
   },
   {
     "objectName": "power_pole_conc4_lamp_trail_b.p3d",
@@ -387,7 +387,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, pole, concrete, utility, powerline",
-    "image": "images/structures/industrial/power/StaticObj_Power_Pole_ConcT.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_pole_conct.jpg"
   },
   {
     "objectName": "power_pole_wood1.p3d",
@@ -407,7 +407,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, pole, wood, powerline, infrastructure, utility, PA, pa_system, speaker",
-    "image": "images/structures/industrial/power/Land_Power_Pole_Wood1_Amp.jpg"
+    "image": "images/structures/industrial/power/land_power_pole_wood1_amp.jpg"
   },
   {
     "objectName": "power_pole_wood1_lamp.p3d",
@@ -427,7 +427,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, pole, wood, lamp, light, streetlight, utility, PA, pa_system, speaker",
-    "image": "images/structures/industrial/power/Land_Power_Pole_Wood1_Lamp_Amp.jpg"
+    "image": "images/structures/industrial/power/land_power_pole_wood1_lamp_amp.jpg"
   },
   {
     "objectName": "power_pole_wood1_lamp_only.p3d",
@@ -447,7 +447,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, pole, wood, trail, marker, blue, utility",
-    "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_B.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_pole_wood1_trail_b.jpg"
   },
   {
     "objectName": "power_pole_wood1_trail_g.p3d",
@@ -457,7 +457,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, pole, wood, trail, marker, green, utility",
-    "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_G.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_pole_wood1_trail_g.jpg"
   },
   {
     "objectName": "power_pole_wood1_trail_r.p3d",
@@ -467,7 +467,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, pole, wood, trail, marker, red, utility",
-    "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_R.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_pole_wood1_trail_r.jpg"
   },
   {
     "objectName": "power_pole_wood1_trail_y.p3d",
@@ -477,7 +477,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, pole, wood, trail, marker, yellow, utility",
-    "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_Y.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_pole_wood1_trail_y.jpg"
   },
   {
     "objectName": "power_pole_wood2.p3d",
@@ -487,7 +487,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, pole, wood, powerline, infrastructure, utility",
-    "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood2.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_pole_wood2.jpg"
   },
   {
     "objectName": "power_pole_wood3.p3d",
@@ -497,7 +497,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, pole, wood, powerline, infrastructure, utility",
-    "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood3.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_pole_wood3.jpg"
   },
   {
     "objectName": "power_transformerstation_big.p3d",
@@ -507,7 +507,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, transformer, utility, large, station, substation",
-    "image": "images/structures/industrial/power/StaticObj_Power_TransformerStation_Big.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_transformerstation_big.jpg"
   },
   {
     "objectName": "power_transformerstation_cables.p3d",
@@ -517,7 +517,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, transformer, utility, station, substation, cables",
-    "image": "images/structures/industrial/power/StaticObj_Power_TransformerStation_Cables.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_transformerstation_cables.jpg"
   },
   {
     "objectName": "power_transformer_small.p3d",
@@ -527,7 +527,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, transformer, utility, small, substation",
-    "image": "images/structures/industrial/power/StaticObj_Power_Transformer_Small.jpg"
+    "image": "images/structures/industrial/power/staticobj_power_transformer_small.jpg"
   },
   {
     "objectName": "Land_Power_Station",
@@ -554,7 +554,7 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, building, industrial, utility, loading, generator",
-    "image": "images/structures/industrial/power/Land_Power_Station.jpg"
+    "image": "images/structures/industrial/power/land_power_station.jpg"
   },
   {
     "objectName": "power_transformer_build.p3d",
@@ -563,6 +563,6 @@
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
     "searchTags": "electricity, utility, tower",
-    "image": "images/structures/industrial/power/Land_Power_Transformer_Build.jpg"
+    "image": "images/structures/industrial/power/land_power_transformer_build.jpg"
   }
 ]

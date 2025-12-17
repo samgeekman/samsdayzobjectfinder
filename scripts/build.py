@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import json
 import shutil
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import List
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,6 +29,15 @@ def load_objects(path: Path) -> List[dict]:
     return [obj for obj in items if isinstance(obj, dict)]
 
 
+def normalize_object(obj: dict) -> dict:
+    """Normalize fields for consistent output."""
+    image = obj.get("image")
+    if isinstance(image, str):
+        parts = PurePosixPath(image).parts
+        obj["image"] = "/".join(part.lower() for part in parts)
+    return obj
+
+
 def main() -> None:
     if not DB_DIR.exists():
         raise SystemExit(f"Database folder not found: {DB_DIR}")
@@ -40,7 +49,7 @@ def main() -> None:
 
     if presets_file.exists():
         # Add presets to the beginning of the export to keep them prominent
-        all_objects.extend(load_objects(presets_file))
+        all_objects.extend(normalize_object(obj) for obj in load_objects(presets_file))
     else:
         print(f"Warning: presets file not found: {presets_file}")
 
@@ -50,7 +59,7 @@ def main() -> None:
         objs = load_objects(obj_file)
         if not objs:
             continue
-        all_objects.extend(objs)
+        all_objects.extend(normalize_object(obj) for obj in objs)
 
     # Backup previous export
     if OUTPUT_JSON.exists():

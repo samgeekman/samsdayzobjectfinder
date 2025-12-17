@@ -4,8 +4,6 @@ type: "page"
 draft: false
 ---
 
-<img src="/images/logo-icon.jpg" alt="Icon" style="float:right; width:250px; margin-left:10px;"/>
-
 ## How to use
 
 > ⚠️ This tool is a work in progress. Every object has been added, images and tags currently being added. See progress in the [Discord](https://discord.com/channels/1414751279548203008/1414751374394261534).
