@@ -4,11 +4,11 @@ type: "page"
 draft: false
 ---
 
-<img src="/images/logo-icon.png" alt="Icon" style="float:right; width:250px; margin-left:10px;"/>
+<img src="/images/logo-icon.jpg" alt="Icon" style="float:right; width:250px; margin-left:10px;"/>
 
 ## How to use
 
-> ⚠️ This tool is a work in progress! See progress in the [Discord](https://discord.com/channels/1414751279548203008/1414751374394261534).
+> ⚠️ This tool is a work in progress. Every object has been added, images and tags currently being added. See progress in the [Discord](https://discord.com/channels/1414751279548203008/1414751374394261534).
 
 - Press 🏗️ to copy the object to DayZ Editor - just switch to the Editor and press Ctrl + V to paste on your cursor
 - Press 📋 to copy the object name to your clipboard
@@ -36,9 +36,11 @@ You can also browse / filter by category, and filter for console compatible obje
 
 No more having to remember obscure object names, and the ability to browse by category, and search for items like 'large snow rocks'. 
 
-Developed by SamGeekMan.
+Developed by Samgeekman.
+
+Much appreciation to [Bauvdel](https://bauv.dev/) for developing a massively timesaving screenshot tool to make my life easier. 
 
 **Errors and suggestions**
 
-There will be errors in spelling and taxonomy - all this was done by hand! Report errors in the [Discord](https://discord.com/channels/1414751279548203008/1414754388064604220).
+There will be errors in spelling and taxonomy - all this was done by hand. Report errors in the [Discord](https://discord.com/channels/1414751279548203008/1414754388064604220).
 
