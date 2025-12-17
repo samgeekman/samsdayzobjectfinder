@@ -1,8 +1,18 @@
-{{ define "main" }}
+{{ define "head" }}
+  {{ partials.Include "head-additions.html" . }}
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+  <style>
+    /* Prevent flash of unstyled content before DataTables finishes rendering */
+    #dayzObjects,
+    #dayzObjects_wrapper {
+      visibility: hidden;
+    }
+  </style>
+{{ end }}
 
-<div class="annoucenment-bar">
-  <strong></strong>⚠️ This tool is a work in progress with an incomplete database. More objects added every day - see progress in the <a href="https://discord.com/channels/1414751279548203008/1414751374394261534">Discord</a>.
-</div>
+{{ define "main" }}
+{{ $objectCount := len .Site.Data.dayz_objects }}
 
 <style>
   .annoucenment-bar {
@@ -117,6 +127,24 @@
   .flash {
     animation: flash-highlight 1s ease-out;
   }
+
+  /* Loading indicator */
+  #loadingIndicator {
+    margin: 40px 0 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+  }
+
+  /* Status message under loader */
+  #statusMessage {
+    margin: 18px 0 0;
+    text-align: center;
+    font-weight: 500;
+  }
 </style>
 
 <div id="filters">
@@ -135,6 +163,12 @@
   <!-- Show presets toggle -->
   <button id="togglePresets" type="button">Show presets</button>
 </div>
+
+<div id="loadingIndicator">
+  Loading {{ $objectCount }} objects...
+</div>
+
+<div id="statusMessage">This project is a work in progress - add feedback to the Discord</div>
 
 <table id="dayzObjects" class="display nowrap" style="width:100%">
   <thead>
@@ -173,14 +207,19 @@
   </tbody>
 </table>
 
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
 
 <script>
 $(document).ready(function() {
+  // Status messages (add more strings to rotate)
+  var statusMessages = [
+    'This project is a work in progress - add feedback to the Discord'
+  ];
+  var randomMessage = statusMessages[Math.floor(Math.random() * statusMessages.length)];
+  $('#statusMessage').text(randomMessage);
+
   var table = $('#dayzObjects').DataTable({
     responsive: true,
     pageLength: 50,
@@ -192,6 +231,9 @@ $(document).ready(function() {
       searchPlaceholder: "'large snow rock', '308 rifles'"
     }
   });
+  $('#dayzObjects, #dayzObjects_wrapper').css('visibility', 'visible');
+  $('#loadingIndicator').hide();
+  $('#statusMessage').hide();
 
   // Move filters above the DataTables top bar
   $("#filters").insertBefore("#dayzObjects_wrapper .top-bar");
