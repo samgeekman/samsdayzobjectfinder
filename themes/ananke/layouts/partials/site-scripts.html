@@ -1,1 +1,64 @@
-{{/* For Users's overwrite */}}
+<script>
+(function() {
+  var storageKey = "sdof-theme";
+  var root = document.documentElement;
+  var prefersDark = window.matchMedia
+    ? window.matchMedia("(prefers-color-scheme: dark)")
+    : null;
+  var saved;
+
+  try {
+    saved = localStorage.getItem(storageKey);
+  } catch (e) {
+    saved = null;
+  }
+
+  var initial = saved || (prefersDark && prefersDark.matches ? "dark" : "light");
+  if (initial === "dark") {
+    root.classList.add("dark-mode");
+  }
+
+  function applyTheme(mode) {
+    if (mode === "dark") {
+      root.classList.add("dark-mode");
+    } else {
+      root.classList.remove("dark-mode");
+    }
+
+    try {
+      localStorage.setItem(storageKey, mode);
+    } catch (e) {
+      /* Ignore storage errors */
+    }
+
+    var toggle = document.getElementById("themeToggle");
+    if (!toggle) return;
+
+    toggle.textContent = mode === "dark" ? "Light mode" : "Dark mode";
+    toggle.setAttribute("aria-pressed", mode === "dark");
+  }
+
+  window.addEventListener("DOMContentLoaded", function() {
+    applyTheme(initial);
+    var toggle = document.getElementById("themeToggle");
+    if (!toggle) return;
+
+    toggle.addEventListener("click", function() {
+      var next = root.classList.contains("dark-mode") ? "light" : "dark";
+      applyTheme(next);
+    });
+  });
+
+  function handleSchemeChange(event) {
+    if (!localStorage.getItem(storageKey)) {
+      applyTheme(event.matches ? "dark" : "light");
+    }
+  }
+
+  if (prefersDark && typeof prefersDark.addEventListener === "function") {
+    prefersDark.addEventListener("change", handleSchemeChange);
+  } else if (prefersDark && typeof prefersDark.addListener === "function") {
+    prefersDark.addListener(handleSchemeChange);
+  }
+})();
+</script>

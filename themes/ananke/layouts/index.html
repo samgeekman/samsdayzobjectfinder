@@ -16,9 +16,12 @@
 
 <style>
   .annoucenment-bar {
-    background-color:#eeeeee;
-    padding: 4px;
+    background-color: var(--card);
+    color: var(--text);
+    padding: 6px 8px;
     margin: 2px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-soft);
   }
 
   
@@ -26,6 +29,11 @@
     width: 95% !important;
     margin: 20px auto;
     overflow-x: auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    box-shadow: var(--shadow-soft);
+    padding: 14px 14px 18px;
   }
   #dayzObjects { width: 100% !important; }
 
@@ -48,10 +56,44 @@
     gap: 15px;
     margin-bottom: 10px;
     align-items: center;
+    padding: 0;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--card);
+    box-shadow: none;
+  }
+  #filters label {
+    font-weight: 600;
+    color: var(--text);
+  }
+  .filter-actions {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .dataTables_length label,
+  .dataTables_filter label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--text);
+    font-size: 0.95rem;
+  }
+  .dataTables_length select,
+  .dataTables_filter input {
+    border-radius: 6px;
+  }
+  .dataTables_info {
+    border: none !important;
   }
   #dayzObjects_filter input {
     width: 250px;
     max-width: 100%;
+    background-color: var(--input-bg);
+    color: var(--text);
+    border: 1px solid var(--input-border);
   }
   @media (max-width: 768px) {
     #filters {
@@ -73,20 +115,19 @@
     position: relative;
   }
 
-  /* Copy buttons */
   .copy-btn {
     position: absolute;
     top: 4px;
     right: 4px;
     cursor: pointer;
-    border: none;
-    background-color: #656d6d;
+    border: 1px solid #6b7280;
+    background-color: #6b7280;
     color: #fff;
     font-size: 1em;
     opacity: 0;
     transition: opacity 0.15s ease;
     padding: 2px 4px;
-    border-radius: 3px;
+    border-radius: 2px;
   }
 
   
@@ -100,35 +141,32 @@
   }
 
   .copy-btn:hover {
+    background-color: #4b5563;
+    border-color: #4b5563;
     color: #fff;
   }
 
   
   #togglePresets {
-    padding: 4px 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    background-color: #f3f3f3;
-    cursor: pointer;
-    font-size: 0.9rem;
+    padding: 8px 12px;
+    font-size: 0.95rem;
   }
 
   #togglePresets.active {
-    background-color: #656d6d;
-    color: #fff;
-    border-color: #656d6d;
+    background-color: var(--accent);
+    color: #111;
+    border-color: var(--accent);
   }
 
   
   @keyframes flash-highlight {
-    0% { background-color: #fff6a1; }
+    0% { background-color: rgba(242, 183, 0, 0.28); }
     100% { background-color: transparent; }
   }
   .flash {
     animation: flash-highlight 1s ease-out;
   }
 
-  /* Loading indicator */
   #loadingIndicator {
     margin: 40px 0 8px;
     font-weight: 600;
@@ -137,6 +175,7 @@
     justify-content: center;
     gap: 6px;
     text-align: center;
+    color: var(--text);
   }
 
   
@@ -145,6 +184,14 @@
     text-align: center;
     font-weight: 500;
     font-style: italic;
+    color: var(--muted);
+  }
+
+  #imgPreview img {
+    max-width: 400px;
+    max-height: 400px;
+    display: block;
+    border-radius: 3px;
   }
 </style>
 
@@ -161,8 +208,12 @@
     <option value="❌">No</option>
   </select>
 
-  
-  <button id="togglePresets" type="button">Show presets</button>
+  <div class="filter-actions">
+    <button id="togglePresets" class="pill-button" type="button">Show presets</button>
+    <button id="themeToggle" class="pill-button theme-toggle" type="button" aria-live="polite">
+      Dark mode
+    </button>
+  </div>
 </div>
 
 <div id="loadingIndicator">
@@ -324,8 +375,8 @@
         if (!imgPath) return;
 
         $('body').append(
-          '<div id="imgPreview" style="position:absolute; z-index:9999; border:1px solid #ccc; background:#fff; padding:5px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">' +
-            '<img src="/' + imgPath + '" style="max-width:400px; max-height:400px;">' +
+          '<div id="imgPreview" class="preview-card">' +
+            '<img src="/' + imgPath + '" alt="Object preview">' +
           '</div>'
         );
         $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });

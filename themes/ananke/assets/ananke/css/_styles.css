@@ -1,5 +1,3 @@
-/* Put your custom styles here and run `npm start` from the "src" directory on */
-
 #TableOfContents ul li {
   margin-bottom: 1em;
 }
@@ -17,4 +15,183 @@
 
 .nested-links a{
   overflow-wrap: break-word;
+}
+
+:root {
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --text: #10121a;
+  --muted: #4b5563;
+  --border: #d7dce5;
+  --accent: #eea700;
+  --accent-strong: #f6c344;
+  --table-stripe: #f1f3f9;
+  --table-hover: #e7ecf7;
+  --input-bg: #ffffff;
+  --input-border: #d7dce5;
+  --shadow-soft: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+:root.dark-mode {
+  --bg: #0c111b;
+  --card: #101827;
+  --text: #e5edf7;
+  --muted: #9aa9c2;
+  --border: #1f2a3c;
+  --accent: #f2b700;
+  --accent-strong: #ffd166;
+  --table-stripe: #0f1624;
+  --table-hover: #182235;
+  --input-bg: #0f1624;
+  --input-border: #25334a;
+  --shadow-soft: 0 14px 36px rgba(0, 0, 0, 0.45);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.25s ease, color 0.25s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-strong);
+}
+
+.bg-near-white {
+  background-color: var(--bg) !important;
+}
+
+.bg-white {
+  background-color: var(--card) !important;
+}
+
+.bg-black {
+  background-color: var(--accent) !important;
+}
+
+:root.dark-mode .white,
+:root.dark-mode .white-90,
+:root.dark-mode .light-gray,
+:root.dark-mode .mid-gray,
+:root.dark-mode .dark-gray,
+:root.dark-mode .near-black,
+:root.dark-mode .black-80 {
+  color: var(--text) !important;
+}
+
+.pill-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background-color: var(--card);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: transform 0.12s ease, box-shadow 0.18s ease, background-color 0.2s ease;
+}
+
+.pill-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.theme-toggle {
+  letter-spacing: 0.01em;
+}
+
+.dataTables_wrapper {
+  color: var(--text);
+}
+
+main {
+  flex: 1;
+}
+
+.dataTables_wrapper table.dataTable,
+.dataTables_wrapper table.dataTable th,
+.dataTables_wrapper table.dataTable td {
+  color: var(--text);
+}
+
+.dataTables_filter input,
+.dataTables_length select,
+.dataTables_info,
+#filterCategory,
+#filterConsole,
+#togglePresets {
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: var(--text);
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--card) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: var(--accent) !important;
+  color: #111 !important;
+  border-color: var(--accent) !important;
+}
+
+#togglePresets.active {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #111;
+}
+
+table.dataTable {
+  background-color: var(--card);
+  border-color: var(--border);
+}
+
+table.dataTable thead th,
+table.dataTable tbody td {
+  border-color: var(--border);
+}
+
+table.dataTable tbody tr:nth-child(even) {
+  background-color: var(--card);
+}
+
+table.dataTable tbody tr:nth-child(odd) {
+  background-color: var(--table-stripe);
+}
+
+table.dataTable.stripe tbody tr.odd {
+  background-color: var(--table-stripe);
+}
+
+table.dataTable.display tbody tr:hover {
+  background-color: var(--table-hover);
+}
+
+.copy-btn {
+  background-color: var(--accent);
+  color: #111;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.preview-card {
+  position: absolute;
+  z-index: 9999;
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 5px;
+  box-shadow: var(--shadow-soft);
 }
