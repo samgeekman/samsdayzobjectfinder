@@ -1,0 +1,82 @@
+[
+  {
+    "objectName": "UniversalLight",
+    "inGameName": "Universal Flashlight",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/light",
+    "usableOnConsole": true,
+    "searchTags": "light, tactical_helmet, mich2001helmet",
+    "image": "images/weapons/attachments/light/universallight.jpg"
+  },
+  {
+    "objectName": "TLRLight",
+    "inGameName": "Pistol Flashlight",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/light",
+    "usableOnConsole": true,
+    "searchTags": "light, pistol",
+    "image": "images/weapons/attachments/light/tlrlight.jpg"
+  },
+  {
+    "objectName": "ProxyWeaponlight_universal",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/light",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/light/proxyweaponlight_universal.jpg"
+  },
+  {
+    "objectName": "ProxyWeaponlight_TLR",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/light",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/light/proxyweaponlight_tlr.jpg"
+  },
+  {
+    "objectName": "weaponlight_peq2.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/light",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/light/weaponlight_peq2.p3d.jpg"
+  },
+  {
+    "objectName": "weaponlight_tlr.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/light",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/light/weaponlight_tlr.p3d.jpg"
+  },
+  {
+    "objectName": "weaponlight_tlr_mich2001_slothelper.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/light",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/light/weaponlight_tlr_mich2001_slothelper.p3d.jpg"
+  },
+  {
+    "objectName": "weaponlight_universal.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/light",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/light/weaponlight_universal.p3d.jpg"
+  }
+]

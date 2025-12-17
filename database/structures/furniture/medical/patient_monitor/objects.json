@@ -1,0 +1,22 @@
+[
+  {
+    "objectName": "StaticObj_Furniture_patient_monitor",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/furniture/medical/patient_monitor",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/furniture/medical/patient_monitor/staticobj_furniture_patient_monitor.jpg"
+  },
+  {
+    "objectName": "patient_monitor.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/furniture/medical/patient_monitor",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/furniture/medical/patient_monitor/patient_monitor.p3d.jpg"
+  }
+]

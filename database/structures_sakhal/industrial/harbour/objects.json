@@ -1,0 +1,568 @@
+[
+  {
+    "objectName": "Land_DryDock_End",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/land_drydock_end.jpg"
+  },
+  {
+    "objectName": "Land_DryDock_Middle",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/land_drydock_middle.jpg"
+  },
+  {
+    "objectName": "Land_Pier_Concrete4_Ladders",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/land_pier_concrete4_ladders.jpg"
+  },
+  {
+    "objectName": "Land_Pier_Concrete5_Ladder",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/land_pier_concrete5_ladder.jpg"
+  },
+  {
+    "objectName": "Land_Pier_Wooden3_Ladder",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/land_pier_wooden3_ladder.jpg"
+  },
+  {
+    "objectName": "Land_Pier_Crane2_Base",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/land_pier_crane2_base.jpg"
+  },
+  {
+    "objectName": "Land_Pier_Floating_50m",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/land_pier_floating_50m.jpg"
+  },
+  {
+    "objectName": "Land_Pier_Floating_Bridge",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/land_pier_floating_bridge.jpg"
+  },
+  {
+    "objectName": "Land_Buoy",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/land_buoy.jpg"
+  },
+  {
+    "objectName": "Land_MooringBuoy",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/land_mooringbuoy.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete4_16m",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_concrete4_16m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete4_16m_NoSup",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_concrete4_16m_nosup.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete4_30deg",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_concrete4_30deg.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete4_End",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_concrete4_end.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete4_Steps",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_concrete4_steps.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete5_20m",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_concrete5_20m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete5_Corner_Inner",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_concrete5_corner_inner.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete5_Corner_Outer",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_concrete5_corner_outer.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete5_T",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_concrete5_t.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Crane2_Rails_4m",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_crane2_rails_4m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Crane2_Rails_4m_End",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_crane2_rails_4m_end.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Crane2_Rails_8m",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_crane2_rails_8m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Wooden3_30deg",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_wooden3_30deg.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Wooden3_Barrels",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_wooden3_barrels.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Wooden3_16m",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_wooden3_16m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Wooden3_Platform",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_pier_wooden3_platform.jpg"
+  },
+  {
+    "objectName": "StaticObj_MooringBuoy",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/staticobj_mooringbuoy.jpg"
+  },
+  {
+    "objectName": "buoy.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/buoy.p3d.jpg"
+  },
+  {
+    "objectName": "drydock_end.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/drydock_end.p3d.jpg"
+  },
+  {
+    "objectName": "drydock_middle.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/drydock_middle.p3d.jpg"
+  },
+  {
+    "objectName": "mooringbuoy.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/mooringbuoy.p3d.jpg"
+  },
+  {
+    "objectName": "pier_concrete4_16m.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_concrete4_16m.p3d.jpg"
+  },
+  {
+    "objectName": "pier_concrete4_16m_nosup.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_concrete4_16m_nosup.p3d.jpg"
+  },
+  {
+    "objectName": "pier_concrete4_30deg.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_concrete4_30deg.p3d.jpg"
+  },
+  {
+    "objectName": "pier_concrete4_end.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_concrete4_end.p3d.jpg"
+  },
+  {
+    "objectName": "pier_concrete4_ladders.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_concrete4_ladders.p3d.jpg"
+  },
+  {
+    "objectName": "pier_concrete4_steps.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_concrete4_steps.p3d.jpg"
+  },
+  {
+    "objectName": "pier_concrete5_20m.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_concrete5_20m.p3d.jpg"
+  },
+  {
+    "objectName": "pier_concrete5_corner_inner.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_concrete5_corner_inner.p3d.jpg"
+  },
+  {
+    "objectName": "pier_concrete5_corner_outer.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_concrete5_corner_outer.p3d.jpg"
+  },
+  {
+    "objectName": "pier_concrete5_ladder.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_concrete5_ladder.p3d.jpg"
+  },
+  {
+    "objectName": "pier_concrete5_t.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_concrete5_t.p3d.jpg"
+  },
+  {
+    "objectName": "pier_crane2_base.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_crane2_base.p3d.jpg"
+  },
+  {
+    "objectName": "pier_crane2_rails_4m.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_crane2_rails_4m.p3d.jpg"
+  },
+  {
+    "objectName": "pier_crane2_rails_4m_end.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_crane2_rails_4m_end.p3d.jpg"
+  },
+  {
+    "objectName": "pier_crane2_rails_8m.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_crane2_rails_8m.p3d.jpg"
+  },
+  {
+    "objectName": "pier_floating_50m.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_floating_50m.p3d.jpg"
+  },
+  {
+    "objectName": "pier_floating_bridge.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_floating_bridge.p3d.jpg"
+  },
+  {
+    "objectName": "pier_wooden3_16m.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_wooden3_16m.p3d.jpg"
+  },
+  {
+    "objectName": "pier_wooden3_30deg.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_wooden3_30deg.p3d.jpg"
+  },
+  {
+    "objectName": "pier_wooden3_barrels.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_wooden3_barrels.p3d.jpg"
+  },
+  {
+    "objectName": "pier_wooden3_ladder.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_wooden3_ladder.p3d.jpg"
+  },
+  {
+    "objectName": "pier_wooden3_platform.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_wooden3_platform.p3d.jpg"
+  },
+  {
+    "objectName": "Land_Pier_Crane2_Top",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/land_pier_crane2_top.jpg"
+  },
+  {
+    "objectName": "Land_Pier_Crane_Submarine",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/land_pier_crane_submarine.jpg"
+  },
+  {
+    "objectName": "pier_crane2_top.p3d",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_crane2_top.p3d.jpg"
+  },
+  {
+    "objectName": "pier_crane_submarine.p3d",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/industrial/harbour/pier_crane_submarine.p3d.jpg"
+  }
+]

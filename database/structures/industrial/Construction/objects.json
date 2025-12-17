@@ -1,0 +1,82 @@
+[
+  {
+    "objectName": "Land_Construction_Building",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/construction",
+    "usableOnConsole": true,
+    "searchTags": "broken, half_built, incomplete, large, concrete, building",
+    "image": "images/structures/industrial/construction/land_construction_building.jpg"
+  },
+  {
+    "objectName": "Land_Construction_Crane",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/construction",
+    "usableOnConsole": true,
+    "searchTags": "crane, yellow, large, lifting",
+    "image": "images/structures/industrial/construction/land_construction_crane.jpg"
+  },
+  {
+    "objectName": "Land_Construction_House1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/construction",
+    "usableOnConsole": true,
+    "searchTags": "broken, half_built, incomplete, medium, concrete, building",
+    "image": "images/structures/industrial/construction/land_construction_house1.jpg"
+  },
+  {
+    "objectName": "Land_Construction_House2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/construction",
+    "usableOnConsole": true,
+    "searchTags": "broken, half_built, incomplete, medium, concrete, building",
+    "image": "images/structures/industrial/construction/land_construction_house2.jpg"
+  },
+  {
+    "objectName": "construction_building.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/construction",
+    "usableOnConsole": false,
+    "searchTags": "broken, half_built, incomplete, large, concrete, building",
+    "image": "images/structures/industrial/construction/Land_Construction_Building.jpg"
+  },
+  {
+    "objectName": "construction_crane.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/construction",
+    "usableOnConsole": false,
+    "searchTags": "crane, yellow, large, lifting",
+    "image": "images/structures/industrial/construction/Land_Construction_Crane.jpg"
+  },
+  {
+    "objectName": "construction_house1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/construction",
+    "usableOnConsole": false,
+    "searchTags": "broken, half_built, incomplete, medium, concrete, building",
+    "image": "images/structures/industrial/construction/Land_Construction_House1.jpg"
+  },
+  {
+    "objectName": "construction_house2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/construction",
+    "usableOnConsole": false,
+    "searchTags": "broken, half_built, incomplete, medium, concrete, building",
+    "image": "images/structures/industrial/construction/Land_Construction_House2.jpg"
+  }
+]

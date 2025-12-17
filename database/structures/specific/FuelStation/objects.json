@@ -1,0 +1,100 @@
+[
+  {
+    "objectName": "Land_FuelStation_Feed",
+    "inGameName": "Gas Pump",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/fuelstation",
+    "usableOnConsole": true,
+    "searchTags": "fuel, station, pump, dispenser, petrol, gas, feed, nozzle",
+    "image": "images/structures/specific/fuelstation/land_fuelstation_feed.jpg"
+  },
+  {
+    "objectName": "StaticObj_FueldStation_Feed_NoFuel",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/fuelstation",
+    "usableOnConsole": true,
+    "searchTags": "fuel, station, pump, dispenser, empty, no_fuel, broken, ruined",
+    "image": "images/structures/specific/fuelstation/staticobj_fueldstation_feed_nofuel.jpg"
+  },
+  {
+    "objectName": "StaticObj_FueldStation_Shed",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/fuelstation",
+    "usableOnConsole": true,
+    "searchTags": "fuel, station, shed, canopy, shelter, roof, forecourt, structure",
+    "image": "images/structures/specific/fuelstation/staticobj_fueldstation_shed.jpg"
+  },
+  {
+    "objectName": "StaticObj_FueldStation_Sign",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/fuelstation",
+    "usableOnConsole": true,
+    "searchTags": "fuel, station, sign, logo, prices, adverts, roadside, pole",
+    "image": "images/structures/specific/fuelstation/staticobj_fueldstation_sign.jpg"
+  },
+  {
+    "objectName": "fuelstation_feed.p3d",
+    "inGameName": "Gas Pump",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/fuelstation",
+    "usableOnConsole": false,
+    "searchTags": "fuel, station, pump, dispenser, petrol, gas, feed, nozzle",
+    "image": "images/structures/specific/fuelstation/Land_FuelStation_Feed.jpg"
+  },
+  {
+    "objectName": "fuelstation_feed_nofuel.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/fuelstation",
+    "usableOnConsole": false,
+    "searchTags": "fuel, station, pump, dispenser, empty, no_fuel, broken, ruined",
+    "image": "images/structures/specific/fuelstation/StaticObj_FueldStation_Feed_NoFuel.jpg"
+  },
+  {
+    "objectName": "fuelstation_shed.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/fuelstation",
+    "usableOnConsole": false,
+    "searchTags": "fuel, station, shed, canopy, shelter, roof, forecourt, structure",
+    "image": "images/structures/specific/fuelstation/StaticObj_FueldStation_Shed.jpg"
+  },
+  {
+    "objectName": "fuelstation_sign.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/fuelstation",
+    "usableOnConsole": false,
+    "searchTags": "fuel, station, sign, logo, prices, adverts, roadside, pole",
+    "image": "images/structures/specific/fuelstation/StaticObj_FueldStation_Sign.jpg"
+  },
+  {
+    "objectName": "fuelstation_build.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/fuelstation",
+    "usableOnConsole": false,
+    "searchTags": "fuel, station, building, petrol, gas, garage, forecourt, shop",
+    "image": "images/structures/specific/fuelstation/Land_FuelStation_Build.jpg"
+  },
+  {
+    "objectName": "Land_FuelStation_Build",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/fuelstation",
+    "usableOnConsole": true,
+    "searchTags": "fuel, station, building, petrol, gas, garage, forecourt, shop",
+    "image": "images/structures/specific/fuelstation/land_fuelstation_build.jpg"
+  }
+]

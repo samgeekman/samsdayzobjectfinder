@@ -1,0 +1,732 @@
+[
+  {
+    "objectName": "M4_CarryHandleOptic",
+    "inGameName": "M4-A1 Carry Handle Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/optics/m4_carryhandleoptic.jpg"
+  },
+  {
+    "objectName": "BUISOptic",
+    "inGameName": "Backup Iron Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/optics/buisoptic.jpg"
+  },
+  {
+    "objectName": "M68Optic",
+    "inGameName": "Combat Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "sg5, usg, m4, pioneer, sval, lar, dmr, r12, vs-89",
+    "image": "images/weapons/attachments/optics/m68optic.jpg"
+  },
+  {
+    "objectName": "M4_T3NRDSOptic",
+    "inGameName": "RVN Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "sg5, usg, m4, pioneer, sval, lar, dmr, r12, vs-89",
+    "image": "images/weapons/attachments/optics/m4_t3nrdsoptic.jpg"
+  },
+  {
+    "objectName": "FNP45_MRDSOptic",
+    "inGameName": "Mini Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "mlock-91, cr-75, fx-45, deagle, longhorn, bk-133",
+    "image": "images/weapons/attachments/optics/fnp45_mrdsoptic.jpg"
+  },
+  {
+    "objectName": "ReflexOptic",
+    "inGameName": "Baraka Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "red_dot, sg5, usg, m4, pioneer, sval, lar, dmr, vs-89",
+    "image": "images/weapons/attachments/optics/reflexoptic.jpg"
+  },
+  {
+    "objectName": "ACOGOptic",
+    "inGameName": "ATOG 4x32 Scope",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "sg5, usg, m4, pioneer, sval, lar, crossbow, r12, vs-89",
+    "image": "images/weapons/attachments/optics/acogoptic.jpg"
+  },
+  {
+    "objectName": "ACOGOptic_6x",
+    "inGameName": "ATOG 6x48 Scope",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "m4, sg5, pioneer, dmr, lar, sval, aug, vs-89",
+    "image": "images/weapons/attachments/optics/acogoptic_6x.jpg"
+  },
+  {
+    "objectName": "PUScopeOptic",
+    "inGameName": "PU Scope",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "sks, mosin",
+    "image": "images/weapons/attachments/optics/puscopeoptic.jpg"
+  },
+  {
+    "objectName": "KashtanOptic",
+    "inGameName": "P1-87-L Scope",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "kam, ka-74, ka-101, vaiga, vsd, vss, bizon",
+    "image": "images/weapons/attachments/optics/kashtanoptic.jpg"
+  },
+  {
+    "objectName": "LongrangeOptic",
+    "inGameName": "Long Range Scope",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "not_enabled",
+    "image": "images/weapons/attachments/optics/longrangeoptic.jpg"
+  },
+  {
+    "objectName": "HuntingOptic",
+    "inGameName": "Hunting Scope",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "sporter, cr-527, tundra, savanna, cr-550, blaze",
+    "image": "images/weapons/attachments/optics/huntingoptic.jpg"
+  },
+  {
+    "objectName": "rings_winchester_pilot",
+    "inGameName": "Handgun Scope",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/rings_winchester_pilot.jpg"
+  },
+  {
+    "objectName": "PistolOptic",
+    "inGameName": "Handgun Scope",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "deagle, longhorn",
+    "image": "images/weapons/attachments/optics/pistoloptic.jpg"
+  },
+  {
+    "objectName": "SportingOptic",
+    "inGameName": "Sportpoint Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/sportingoptic.jpg"
+  },
+  {
+    "objectName": "PSO1Optic",
+    "inGameName": "PSO-1 Scope",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "kam, ka-74, ka-101, vaiga, vsd, vss, bizon",
+    "image": "images/weapons/attachments/optics/pso1optic.jpg"
+  },
+  {
+    "objectName": "PSO11Optic",
+    "inGameName": "PSO-1-1 Scope",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "kam, ka-74, ka-101, vaiga, vsd, vss, bizon",
+    "image": "images/weapons/attachments/optics/pso11optic.jpg"
+  },
+  {
+    "objectName": "PSO6Optic",
+    "inGameName": "PSO-6 Scope",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "kam, ka-74, ka-101, vaiga, vsd, vss, bizon",
+    "image": "images/weapons/attachments/optics/pso6optic.jpg"
+  },
+  {
+    "objectName": "GrozaOptic",
+    "inGameName": "PO4x34 Scope",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "not_enabled",
+    "image": "images/weapons/attachments/optics/grozaoptic.jpg"
+  },
+  {
+    "objectName": "hide",
+    "inGameName": "Kobra Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/hide.jpg"
+  },
+  {
+    "objectName": "KobraOptic",
+    "inGameName": "Kobra Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "kam, ka-74, ka-101, vaiga, vsd, vss, bizon",
+    "image": "images/weapons/attachments/optics/kobraoptic.jpg"
+  },
+  {
+    "objectName": "KazuarOptic",
+    "inGameName": "1PN51 Scope",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "ka-101, ka-74, kam, vaiga, vss, vsd, vikhr, night_vision",
+    "image": "images/weapons/attachments/optics/kazuaroptic.jpg"
+  },
+  {
+    "objectName": "StarlightOptic",
+    "inGameName": "NV-PVS4 Scope",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "m4, pioneer, sg5, usg, lar, sval, dmr, vs-89",
+    "image": "images/weapons/attachments/optics/starlightoptic.jpg"
+  },
+  {
+    "objectName": "ProxyOptic_M4_carryhandle",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/proxyoptic_m4_carryhandle.jpg"
+  },
+  {
+    "objectName": "ProxyOptic_BUIS",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/proxyoptic_buis.jpg"
+  },
+  {
+    "objectName": "ProxyOptic_FNP45_MRDS",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/proxyoptic_fnp45_mrds.jpg"
+  },
+  {
+    "objectName": "ProxyOptic_ACOG",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/proxyoptic_acog.jpg"
+  },
+  {
+    "objectName": "ProxyOptic_T3N_RDS",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/proxyoptic_t3n_rds.jpg"
+  },
+  {
+    "objectName": "Proxyoptic_red_point",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/proxyoptic_red_point.jpg"
+  },
+  {
+    "objectName": "ProxyOptic_PUScope",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/proxyoptic_puscope.jpg"
+  },
+  {
+    "objectName": "ProxyOptic_LongRange",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/proxyoptic_longrange.jpg"
+  },
+  {
+    "objectName": "ProxyOptic_PSO1",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/proxyoptic_pso1.jpg"
+  },
+  {
+    "objectName": "ProxyOptic_Hunting",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/proxyoptic_hunting.jpg"
+  },
+  {
+    "objectName": "ProxyOptic_MK4Optic",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/proxyoptic_mk4optic.jpg"
+  },
+  {
+    "objectName": "ProxyOptic_Pistol",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/proxyoptic_pistol.jpg"
+  },
+  {
+    "objectName": "ProxyOptic_Reflex",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/proxyoptic_reflex.jpg"
+  },
+  {
+    "objectName": "Proxyoptic_1PN51",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/proxyoptic_1pn51.jpg"
+  },
+  {
+    "objectName": "1pn51_cover_opticview.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/1pn51_cover_opticview.p3d.jpg"
+  },
+  {
+    "objectName": "1pn51_opticview.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/1pn51_opticview.p3d.jpg"
+  },
+  {
+    "objectName": "bow_sights.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/bow_sights.p3d.jpg"
+  },
+  {
+    "objectName": "opticview_longrange.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/opticview_longrange.p3d.jpg"
+  },
+  {
+    "objectName": "opticview_mark4.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/opticview_mark4.p3d.jpg"
+  },
+  {
+    "objectName": "opticview_mark4_off.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/opticview_mark4_off.p3d.jpg"
+  },
+  {
+    "objectName": "opticview_pistol.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/opticview_pistol.p3d.jpg"
+  },
+  {
+    "objectName": "opticview_pso1.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/opticview_pso1.p3d.jpg"
+  },
+  {
+    "objectName": "opticview_pso1_vss.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/opticview_pso1_vss.p3d.jpg"
+  },
+  {
+    "objectName": "optic_1pn51.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "ka-101, ka-74, kam, vaiga, vss, vsd, vikhr, night_vision",
+    "image": "images/weapons/attachments/optics/KazuarOptic.jpeg"
+  },
+  {
+    "objectName": "optic_acog.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "sg5, usg, m4, pioneer, sval, lar, crossbow, r12, vs-89",
+    "image": "images/weapons/attachments/optics/ACOGOptic.jpeg"
+  },
+  {
+    "objectName": "optic_acog6x.p3d",
+    "inGameName": "ATOG 6x48 Scope",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "m4, sg5, pioneer, dmr, lar, sval, aug, vs-89",
+    "image": "images/weapons/attachments/optics/ACOGOptic_6x.jpeg"
+  },
+  {
+    "objectName": "optic_buis.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/optics/BUISOptic.jpeg"
+  },
+  {
+    "objectName": "optic_crossbow.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/optic_crossbow.p3d.jpg"
+  },
+  {
+    "objectName": "optic_fnp45_mrds.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "mlock-91, cr-75, fx-45, deagle, longhorn, bk-133",
+    "image": "images/weapons/attachments/optics/FNP45_MRDSOptic.jpeg"
+  },
+  {
+    "objectName": "optic_holo_sight.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/optic_holo_sight.p3d.jpg"
+  },
+  {
+    "objectName": "optic_hunting.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "sporter, cr-527, tundra, savanna, cr-550, blaze",
+    "image": "images/weapons/attachments/optics/HuntingOptic.jpeg"
+  },
+  {
+    "objectName": "optic_kashtan.p3d",
+    "inGameName": "P1-87-L Scope",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "kam, ka-74, ka-101, vaiga, vsd, vss, bizon",
+    "image": "images/weapons/attachments/optics/KashtanOptic.jpeg"
+  },
+  {
+    "objectName": "optic_kobra.p3d",
+    "inGameName": "Kobra Sights",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "kam, ka-74, ka-101, vaiga, vsd, vss, bizon",
+    "image": "images/weapons/attachments/optics/KobraOptic.jpeg"
+  },
+  {
+    "objectName": "optic_longrange.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "not_enabled",
+    "image": "images/weapons/attachments/optics/LongrangeOptic.jpeg"
+  },
+  {
+    "objectName": "optic_m4_carryhandle.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/optics/M4_CarryHandleOptic.jpeg"
+  },
+  {
+    "objectName": "optic_m68_cco.p3d",
+    "inGameName": "Combat Sights",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "sg5, usg, m4, pioneer, sval, lar, dmr, r12, vs-89",
+    "image": "images/weapons/attachments/optics/M68Optic.jpeg"
+  },
+  {
+    "objectName": "optic_mark4.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "aug, crossbow, dmr, lar, m4, pioneer, r12, sg5, sval, usg, vs-89",
+    "image": "images/weapons/attachments/optics/MK4Optic_Black.jpeg"
+  },
+  {
+    "objectName": "optic_ots14.p3d",
+    "inGameName": "PO4x34 Scope",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "not_enabled",
+    "image": "images/weapons/attachments/optics/GrozaOptic.jpeg"
+  },
+  {
+    "objectName": "optic_pistol.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "deagle, longhorn",
+    "image": "images/weapons/attachments/optics/PistolOptic.jpeg"
+  },
+  {
+    "objectName": "optic_pso1.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "kam, ka-74, ka-101, vaiga, vsd, vss, bizon",
+    "image": "images/weapons/attachments/optics/PSO1Optic.jpeg"
+  },
+  {
+    "objectName": "optic_pso6.p3d",
+    "inGameName": "PSO-6 Scope",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "kam, ka-74, ka-101, vaiga, vsd, vss, bizon",
+    "image": "images/weapons/attachments/optics/PSO6Optic.jpeg"
+  },
+  {
+    "objectName": "optic_puscope.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "sks, mosin",
+    "image": "images/weapons/attachments/optics/PUScopeOptic.jpeg"
+  },
+  {
+    "objectName": "optic_red_point.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/optic_red_point.p3d.jpg"
+  },
+  {
+    "objectName": "optic_reflex.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "red_dot, sg5, usg, m4, pioneer, sval, lar, dmr, vs-89",
+    "image": "images/weapons/attachments/optics/ReflexOptic.jpeg"
+  },
+  {
+    "objectName": "optic_rpg7.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/optic_rpg7.p3d.jpg"
+  },
+  {
+    "objectName": "optic_sporting.p3d",
+    "inGameName": "Sportpoint Sights",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/SportingOptic.jpeg"
+  },
+  {
+    "objectName": "optic_starlight.p3d",
+    "inGameName": "NV-PVS4 Scope",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "m4, pioneer, sg5, usg, lar, sval, dmr, vs-89",
+    "image": "images/weapons/attachments/optics/StarlightOptic.jpeg"
+  },
+  {
+    "objectName": "optic_t3n_rds.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "sg5, usg, m4, pioneer, sval, lar, dmr, r12, vs-89",
+    "image": "images/weapons/attachments/optics/M4_T3NRDSOptic.jpeg"
+  },
+  {
+    "objectName": "starlightscope_cover_opticview.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/starlightscope_cover_opticview.p3d.jpg"
+  },
+  {
+    "objectName": "starlightscope_opticview.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/optics/starlightscope_opticview.p3d.jpg"
+  }
+]
