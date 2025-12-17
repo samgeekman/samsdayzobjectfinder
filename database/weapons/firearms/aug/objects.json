@@ -1,0 +1,42 @@
+[
+  {
+    "objectName": "Aug",
+    "inGameName": "AUR AX",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/aug",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/aug/aug.jpg"
+  },
+  {
+    "objectName": "AugShort",
+    "inGameName": "AUR A1",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/aug",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/aug/augshort.jpg"
+  },
+  {
+    "objectName": "aug.p3d",
+    "inGameName": "AUR AX",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/aug",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/dzweaponsfirearmsaugaug.p3d.jpeg"
+  },
+  {
+    "objectName": "aug_short.p3d",
+    "inGameName": "AUR A1",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/aug",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/firearms/dzweaponsfirearmsaugaug_short.p3d.jpeg"
+  }
+]

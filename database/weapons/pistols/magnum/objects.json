@@ -1,0 +1,42 @@
+[
+  {
+    "objectName": "Magnum",
+    "inGameName": "Revolver",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/magnum",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/magnum/magnum.jpg"
+  },
+  {
+    "objectName": "SawedoffMagnum",
+    "inGameName": "Sawed-off Revolver",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/magnum",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/magnum/sawedoffmagnum.jpg"
+  },
+  {
+    "objectName": "magnum.p3d",
+    "inGameName": "Revolver",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/pistols/magnum",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/pistols/magnum/magnum.p3d.jpg"
+  },
+  {
+    "objectName": "magnum_sawn.p3d",
+    "inGameName": "Sawed-off Revolver",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/pistols/magnum",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/pistols/magnum/magnum_sawn.p3d.jpg"
+  }
+]

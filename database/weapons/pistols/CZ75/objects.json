@@ -1,0 +1,32 @@
+[
+  {
+    "objectName": "CZ75",
+    "inGameName": "CR-75",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/cz75",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/cz75/cz75.jpg"
+  },
+  {
+    "objectName": "ProxyCZ75",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/cz75",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/cz75/proxycz75.jpg"
+  },
+  {
+    "objectName": "cz75.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/pistols/cz75",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/pistols/cz75/cz75.p3d.jpg"
+  }
+]

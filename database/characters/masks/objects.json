@@ -1,0 +1,862 @@
+[
+  {
+    "objectName": "WeldingMask",
+    "inGameName": "Welding Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/weldingmask.jpg"
+  },
+  {
+    "objectName": "GasMask",
+    "inGameName": "Combat Gas Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/gasmask.jpg"
+  },
+  {
+    "objectName": "NioshFaceMask",
+    "inGameName": "Dust Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/nioshfacemask.jpg"
+  },
+  {
+    "objectName": "BalaclavaMask_BDU",
+    "inGameName": "Ski Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+  },
+  {
+    "objectName": "BalaclavaMask_Beige",
+    "inGameName": "Ski Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+  },
+  {
+    "objectName": "BalaclavaMask_Black",
+    "inGameName": "Ski Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+  },
+  {
+    "objectName": "BalaclavaMask_Blackskull",
+    "inGameName": "Ski Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+  },
+  {
+    "objectName": "BalaclavaMask_Blue",
+    "inGameName": "Ski Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+  },
+  {
+    "objectName": "BalaclavaMask_Chain",
+    "inGameName": "Ski Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+  },
+  {
+    "objectName": "BalaclavaMask_Green",
+    "inGameName": "Ski Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+  },
+  {
+    "objectName": "BalaclavaMask_Pig",
+    "inGameName": "Ski Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+  },
+  {
+    "objectName": "BalaclavaMask_Pink",
+    "inGameName": "Ski Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+  },
+  {
+    "objectName": "BalaclavaMask_White",
+    "inGameName": "Ski Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+  },
+  {
+    "objectName": "PaydayMask_Dallas",
+    "inGameName": "Dallas Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/paydaymask_dallas.jpg"
+  },
+  {
+    "objectName": "PaydayMask_Hoxton",
+    "inGameName": "Hoxton Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/paydaymask_hoxton.jpg"
+  },
+  {
+    "objectName": "PaydayMask_Wolf",
+    "inGameName": "Wolf Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/paydaymask_wolf.jpg"
+  },
+  {
+    "objectName": "PaydayMask_Chains",
+    "inGameName": "Chains Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/paydaymask_chains.jpg"
+  },
+  {
+    "objectName": "GP5GasMask",
+    "inGameName": "Gas Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/gp5gasmask.jpg"
+  },
+  {
+    "objectName": "AirborneMask",
+    "inGameName": "NBC Respirator",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/airbornemask.jpg"
+  },
+  {
+    "objectName": "Balaclava3Holes_Beige",
+    "inGameName": "Balaclava",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclava3holes_colorbase.jpg"
+  },
+  {
+    "objectName": "Balaclava3Holes_Black",
+    "inGameName": "Balaclava",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclava3holes_colorbase.jpg"
+  },
+  {
+    "objectName": "Balaclava3Holes_Blue",
+    "inGameName": "Balaclava",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclava3holes_colorbase.jpg"
+  },
+  {
+    "objectName": "Balaclava3Holes_Green",
+    "inGameName": "Balaclava",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclava3holes_colorbase.jpg"
+  },
+  {
+    "objectName": "Balaclava3Holes_White",
+    "inGameName": "Balaclava",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclava3holes_colorbase.jpg"
+  },
+  {
+    "objectName": "SantasBeard",
+    "inGameName": "Santa Beard",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/santasbeard.jpg"
+  },
+  {
+    "objectName": "SurgicalMask",
+    "inGameName": "Surgical Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/surgicalmask.jpg"
+  },
+  {
+    "objectName": "HockeyMask",
+    "inGameName": "Hockey Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/hockeymask.jpg"
+  },
+  {
+    "objectName": "MimeMask_Male",
+    "inGameName": "Mime Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/mimemask_male.jpg"
+  },
+  {
+    "objectName": "CrookedNose",
+    "inGameName": "Crooked Nose",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/crookednose.jpg"
+  },
+  {
+    "objectName": "FaceCover_Improvised",
+    "inGameName": "Improvised Face Wrapping",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/facecover_improvised.jpg"
+  },
+  {
+    "objectName": "airborne_mask_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/airborne_mask_f.p3d.jpg"
+  },
+  {
+    "objectName": "airborne_mask_g.p3d",
+    "inGameName": "NBC Respirator",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/airborne_mask_g.p3d.jpg"
+  },
+  {
+    "objectName": "airborne_mask_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/airborne_mask_m.p3d.jpg"
+  },
+  {
+    "objectName": "balaclava_3holes_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclava_3holes_f.p3d.jpg"
+  },
+  {
+    "objectName": "balaclava_3holes_g.p3d",
+    "inGameName": "Balaclava",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclava_3holes_g.p3d.jpg"
+  },
+  {
+    "objectName": "balaclava_3holes_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclava_3holes_m.p3d.jpg"
+  },
+  {
+    "objectName": "balaclava_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclava_f.p3d.jpg"
+  },
+  {
+    "objectName": "balaclava_g.p3d",
+    "inGameName": "Ski Mask",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclava_g.p3d.jpg"
+  },
+  {
+    "objectName": "balaclava_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/balaclava_m.p3d.jpg"
+  },
+  {
+    "objectName": "bandanaface_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/bandanaface_f.p3d.jpg"
+  },
+  {
+    "objectName": "bandanaface_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/bandanaface_g.p3d.jpg"
+  },
+  {
+    "objectName": "bandanaface_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/bandanaface_m.p3d.jpg"
+  },
+  {
+    "objectName": "chainsmask_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/chainsmask_f.p3d.jpg"
+  },
+  {
+    "objectName": "chainsmask_g.p3d",
+    "inGameName": "Chains Mask",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/chainsmask_g.p3d.jpg"
+  },
+  {
+    "objectName": "chainsmask_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/chainsmask_m.p3d.jpg"
+  },
+  {
+    "objectName": "crookednose_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/crookednose_f.p3d.jpg"
+  },
+  {
+    "objectName": "crookednose_g.p3d",
+    "inGameName": "Crooked Nose",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/crookednose_g.p3d.jpg"
+  },
+  {
+    "objectName": "crookednose_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/crookednose_m.p3d.jpg"
+  },
+  {
+    "objectName": "dallasmask_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/dallasmask_f.p3d.jpg"
+  },
+  {
+    "objectName": "dallasmask_g.p3d",
+    "inGameName": "Dallas Mask",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/dallasmask_g.p3d.jpg"
+  },
+  {
+    "objectName": "dallasmask_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/dallasmask_m.p3d.jpg"
+  },
+  {
+    "objectName": "facecover_improvised_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/facecover_improvised_f.p3d.jpg"
+  },
+  {
+    "objectName": "facecover_improvised_g.p3d",
+    "inGameName": "Improvised Face Wrapping",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/facecover_improvised_g.p3d.jpg"
+  },
+  {
+    "objectName": "facecover_improvised_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/facecover_improvised_m.p3d.jpg"
+  },
+  {
+    "objectName": "gasmask_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/gasmask_f.p3d.jpg"
+  },
+  {
+    "objectName": "gasmask_g.p3d",
+    "inGameName": "Combat Gas Mask",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/gasmask_g.p3d.jpg"
+  },
+  {
+    "objectName": "gasmask_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/gasmask_m.p3d.jpg"
+  },
+  {
+    "objectName": "gp5gasmask_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/gp5gasmask_f.p3d.jpg"
+  },
+  {
+    "objectName": "gp5gasmask_filter.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/gp5gasmask_filter.p3d.jpg"
+  },
+  {
+    "objectName": "gp5gasmask_g.p3d",
+    "inGameName": "Gas Mask",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/gp5gasmask_g.p3d.jpg"
+  },
+  {
+    "objectName": "gp5gasmask_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/gp5gasmask_m.p3d.jpg"
+  },
+  {
+    "objectName": "hoxtonmask_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/hoxtonmask_f.p3d.jpg"
+  },
+  {
+    "objectName": "hoxtonmask_g.p3d",
+    "inGameName": "Hoxton Mask",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/hoxtonmask_g.p3d.jpg"
+  },
+  {
+    "objectName": "hoxtonmask_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/hoxtonmask_m.p3d.jpg"
+  },
+  {
+    "objectName": "mimemask_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/mimemask_f.p3d.jpg"
+  },
+  {
+    "objectName": "mimemask_g.p3d",
+    "inGameName": "Mime Mask",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/mimemask_g.p3d.jpg"
+  },
+  {
+    "objectName": "mimemask_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/mimemask_m.p3d.jpg"
+  },
+  {
+    "objectName": "mouth_rags.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/mouth_rags.p3d.jpg"
+  },
+  {
+    "objectName": "nioshfacemask_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/nioshfacemask_f.p3d.jpg"
+  },
+  {
+    "objectName": "nioshfacemask_g.p3d",
+    "inGameName": "Dust Mask",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/nioshfacemask_g.p3d.jpg"
+  },
+  {
+    "objectName": "nioshfacemask_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/nioshfacemask_m.p3d.jpg"
+  },
+  {
+    "objectName": "santasbeard_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/santasbeard_f.p3d.jpg"
+  },
+  {
+    "objectName": "santasbeard_g.p3d",
+    "inGameName": "Santa Beard",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/santasbeard_g.p3d.jpg"
+  },
+  {
+    "objectName": "santasbeard_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/santasbeard_m.p3d.jpg"
+  },
+  {
+    "objectName": "surgical_mask_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/surgical_mask_f.p3d.jpg"
+  },
+  {
+    "objectName": "surgical_mask_g.p3d",
+    "inGameName": "Surgical Mask",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/surgical_mask_g.p3d.jpg"
+  },
+  {
+    "objectName": "surgical_mask_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/surgical_mask_m.p3d.jpg"
+  },
+  {
+    "objectName": "vintagehockeymask_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/vintagehockeymask_f.p3d.jpg"
+  },
+  {
+    "objectName": "vintagehockeymask_g.p3d",
+    "inGameName": "Hockey Mask",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/vintagehockeymask_g.p3d.jpg"
+  },
+  {
+    "objectName": "vintagehockeymask_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/vintagehockeymask_m.p3d.jpg"
+  },
+  {
+    "objectName": "welding_mask_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/welding_mask_f.p3d.jpg"
+  },
+  {
+    "objectName": "welding_mask_g.p3d",
+    "inGameName": "Welding Mask",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/welding_mask_g.p3d.jpg"
+  },
+  {
+    "objectName": "welding_mask_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/welding_mask_m.p3d.jpg"
+  },
+  {
+    "objectName": "wolfmask_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/wolfmask_f.p3d.jpg"
+  },
+  {
+    "objectName": "wolfmask_g.p3d",
+    "inGameName": "Wolf Mask",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/wolfmask_g.p3d.jpg"
+  },
+  {
+    "objectName": "wolfmask_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/masks",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/masks/wolfmask_m.p3d.jpg"
+  }
+]

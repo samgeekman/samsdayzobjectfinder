@@ -1,0 +1,1422 @@
+[
+  {
+    "objectName": "ChristmasTree",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/plants/tree/christmastree.jpg"
+  },
+  {
+    "objectName": "ChristmasTree_Green",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/plants/tree/christmastree_green.jpg"
+  },
+  {
+    "objectName": "b_betulapendula_1f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "birch, small, yellow",
+    "image": "images/tree/dzplantstreeb_betulapendula_1f.p3d.jpeg"
+  },
+  {
+    "objectName": "b_fagussylvatica_1f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, small, yellow",
+    "image": "images/tree/dzplantstreeb_fagussylvatica_1f.p3d.jpeg"
+  },
+  {
+    "objectName": "b_piceaabies_1f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "spruce, small, green",
+    "image": "images/tree/dzplantstreeb_piceaabies_1f.p3d.jpeg"
+  },
+  {
+    "objectName": "b_piceaabies_1fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "small, green, spruce, pine",
+    "image": "images/tree/dzplantstreeb_piceaabies_1fb.p3d.jpeg"
+  },
+  {
+    "objectName": "b_quercusrobur_1f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "smal, brown, oak",
+    "image": "images/tree/dzplantstreeb_quercusrobur_1f.p3d.jpeg"
+  },
+  {
+    "objectName": "d_fagussylvatica_fallen.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, dead",
+    "image": "images/tree/dzplantstreed_fagussylvatica_fallen.p3d.jpeg"
+  },
+  {
+    "objectName": "d_fagussylvatica_fallenb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, dead",
+    "image": "images/tree/dzplantstreed_quercusrobur_stumpb.p3d.jpeg"
+  },
+  {
+    "objectName": "d_fagussylvatica_fallenc.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "dead, oak",
+    "image": "images/tree/dzplantstreed_fagussylvatica_fallenc.p3d.jpeg"
+  },
+  {
+    "objectName": "d_fagussylvatica_stump.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, dead",
+    "image": "images/tree/dzplantstreed_fagussylvatica_stump.p3d.jpeg"
+  },
+  {
+    "objectName": "d_fagussylvatica_stumpb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/plants/tree/d_fagussylvatica_stumpb.p3d.jpg"
+  },
+  {
+    "objectName": "d_fagussylvatica_stumpc.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/plants/tree/d_fagussylvatica_stumpc.p3d.jpg"
+  },
+  {
+    "objectName": "d_piceaabies_fallen.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "dead, spruce",
+    "image": "images/tree/dzplantstreed_piceaabies_fallen.p3d.jpeg"
+  },
+  {
+    "objectName": "d_piceaabies_fallenb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/tree/dzplantstreed_piceaabies_fallenb.p3d.jpeg"
+  },
+  {
+    "objectName": "d_piceaabies_fallenc.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "dead, spruce",
+    "image": "images/tree/dzplantstreed_piceaabies_fallenc.p3d.jpeg"
+  },
+  {
+    "objectName": "d_piceaabies_stump.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "dead",
+    "image": "images/tree/-dzplantstreed_piceaabies_stump.p3d.jpeg"
+  },
+  {
+    "objectName": "d_piceaabies_stumpb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "dead tree, spruce, pine",
+    "image": "images/tree/dzplantstreed_piceaabies_stumpb.p3d.jpeg"
+  },
+  {
+    "objectName": "d_pinussylvestris_fallen.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "dead, pine",
+    "image": "images/tree/dzplantstreed_pinussylvestris_fallen.p3d.jpeg"
+  },
+  {
+    "objectName": "d_pinussylvestris_fallenb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, dead",
+    "image": "images/tree/dzplantstreed_pinussylvestris_fallenb.p3d.jpeg"
+  },
+  {
+    "objectName": "d_pinussylvestris_fallenc.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, dead",
+    "image": "images/tree/dzplantstreed_pinussylvestris_fallenc.p3d.jpeg"
+  },
+  {
+    "objectName": "d_pinussylvestris_stump.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, dead",
+    "image": "images/tree/dzplantstreed_pinussylvestris_stump.p3d.jpeg"
+  },
+  {
+    "objectName": "d_pinussylvestris_stumpb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, dead",
+    "image": "images/plants/tree/d_pinussylvestris_stumpb.p3d.jpg"
+  },
+  {
+    "objectName": "d_quercusrobur_fallenb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "dead tree, oak",
+    "image": "images/tree/dzplantstreed_quercusrobur_fallenb.p3d.jpeg"
+  },
+  {
+    "objectName": "d_quercusrobur_fallenc.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, dead",
+    "image": "images/tree/dzplantstreed_quercusrobur_fallenc.p3d.jpeg"
+  },
+  {
+    "objectName": "d_quercusrobur_stump.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "ok, dead",
+    "image": "images/tree/dzplantstreed_quercusrobur_stump.p3d.jpeg"
+  },
+  {
+    "objectName": "d_quercusrobur_stumpb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "dead tree",
+    "image": "images/plants/tree/d_quercusrobur_stumpb.p3d.jpg"
+  },
+  {
+    "objectName": "t_betulapendula_1f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "birch, medium, yellow",
+    "image": "images/tree/dzplantstreeb_betulapendula_1f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_betulapendula_1fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "birch, small, yellow",
+    "image": "images/tree/dzplantstreet_betulapendula_1fb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_betulapendula_1s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "birch, small, yellow",
+    "image": "images/tree/dzplantstreet_betulapendula_1s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_betulapendula_2f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "birch, tall, yellow",
+    "image": "images/tree/dzplantstreet_betulapendula_2f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_betulapendula_2fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "birch, tall, yellow",
+    "image": "images/tree/dzplantstreet_betulapendula_2f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_betulapendula_2fc.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "birch, medium, yellow",
+    "image": "images/tree/dzplantstreet_betulapendula_2fc.p3d.jpeg"
+  },
+  {
+    "objectName": "t_betulapendula_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "birch, tall, yellow",
+    "image": "images/tree/dzplantstreet_betulapendula_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_betulapendula_2w.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "birch, small, yellow",
+    "image": "images/tree/dzplantstreet_betulapendula_1fb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_betulapendula_3f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "birch, tall, yellow",
+    "image": "images/tree/dzplantstreet_betulapendula_3f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_betulapendula_3fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "bitch, tall, yellow",
+    "image": "images/tree/dzplantstreet_betulapendula_3fb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_betulapendula_3fc.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "birch, tall, yellow",
+    "image": "images/tree/dzplantstreet_betulapendula_3fc.p3d.jpeg"
+  },
+  {
+    "objectName": "t_betulapendula_3s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "birch, tall, yellow",
+    "image": "images/tree/dzplantstreet_betulapendula_3s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_carpinus_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "hornbeam, medium, brown",
+    "image": "images/tree/dzplantstreet_carpinus_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_1f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, tall, yellow",
+    "image": "images/tree/dzplantstreet_fagussylvatica_1f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_1fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, small, yellow",
+    "image": "images/tree/dzplantstreet_fagussylvatica_1fb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_1fc.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, tall, brown",
+    "image": "images/tree/dzplantstreet_fagussylvatica_1fc.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_1fd.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, small, brown",
+    "image": "images/tree/dzplantstreeb_quercusrobur_1f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_1fe.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/plants/tree/t_fagussylvatica_1fe.p3d.jpg"
+  },
+  {
+    "objectName": "t_fagussylvatica_1s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, medium, brown",
+    "image": "images/tree/dzplantstreet_fagussylvatica_1s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_2d.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, medium, dead",
+    "image": "images/tree/dzplantstreet_fagussylvatica_2d.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_2f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, tall, brown",
+    "image": "images/tree/dzplantstreet_fagussylvatica_2f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_2fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, tall, brown",
+    "image": "images/tree/dzplantstreet_fagussylvatica_2fb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_2fc.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/plants/tree/t_fagussylvatica_2fc.p3d.jpg"
+  },
+  {
+    "objectName": "t_fagussylvatica_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, medium, brown",
+    "image": "images/tree/dzplantstreet_fagussylvatica_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_2sb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, medium, brown",
+    "image": "images/tree/dzplantstreet_fagussylvatica_2sb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_2sb_trail_b.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, medium, brown",
+    "image": "images/tree/dzplantstreet_fagussylvatica_2sb_trail_b.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_2sb_trail_g.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, medium, brown",
+    "image": "images/tree/dzplantstreet_fagussylvatica_2sb_trail_g.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_2sb_trail_r.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, medium, brown",
+    "image": "images/tree/dzplantstreet_fagussylvatica_2sb_trail_r.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_2sb_trail_y.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, medium, brown",
+    "image": "images/tree/dzplantstreet_fagussylvatica_2sb_trail_y.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_3d.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, tall, dead",
+    "image": "images/tree/dzplantstreet_fagussylvatica_3d.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_3f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, tall, brown",
+    "image": "images/tree/dzplantstreet_fagussylvatica_3f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_3fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, tall, brown",
+    "image": "images/tree/dzplantstreet_fagussylvatica_3fb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_3fb_test.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, tall, brown",
+    "image": "images/tree/dzplantstreet_fagussylvatica_3fb_test.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fagussylvatica_3s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/tree/dzplantstreet_fagussylvatica_3s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fraxinusexcelsior_2f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "ash, medium, yellow",
+    "image": "images/tree/dzplantstreet_fraxinusexcelsior_2f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fraxinusexcelsior_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "ash, tall, yellow",
+    "image": "images/tree/dzplantstreet_fraxinusexcelsior_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fraxinusexcelsior_2w.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "ask, medium, green",
+    "image": "images/tree/dzplantstreet_fraxinusexcelsior_2w.p3d.jpeg"
+  },
+  {
+    "objectName": "t_fraxinusexcelsior_3s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "ash, tall, yellow",
+    "image": "images/tree/dzplantstreet_fraxinusexcelsior_3s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_juglansregia_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "walnut, medium, yellow",
+    "image": "images/tree/dzplantstreet_juglansregia_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_juglansregia_3s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "wallnut, medium, yellow",
+    "image": "images/tree/dzplantstreet_juglansregia_3s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_larixdecidua_1f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "larch, medium, brown",
+    "image": "images/tree/dzplantstreet_larixdecidua_1f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_larixdecidua_1s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "larch, medium, green",
+    "image": "images/tree/dzplantstreet_larixdecidua_1s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_larixdecidua_2f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, medium, brown",
+    "image": "images/tree/dzplantstreet_fagussylvatica_3s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_larixdecidua_2fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "larch, tall, green",
+    "image": "images/tree/dzplantstreet_larixdecidua_2fb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_larixdecidua_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "larch, tall, green",
+    "image": "images/tree/dzplantstreet_larixdecidua_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_larixdecidua_3f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "larch, tall, brown",
+    "image": "images/tree/dzplantstreet_larixdecidua_3f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_larixdecidua_3fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "larch, tall, green",
+    "image": "images/tree/dzplantstreet_larixdecidua_3fb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_malusdomestica_1s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "apple, small, brown, fruit",
+    "image": "images/tree/dzplantstreet_malusdomestica_1s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_malusdomestica_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "apple, medium, brown, fruit",
+    "image": "images/tree/dzplantstreet_malusdomestica_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_malusdomestica_3s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "apple, medium, brown, fruit",
+    "image": "images/tree/dzplantstreet_malusdomestica_3s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_naked_1s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "dead, medium",
+    "image": "images/tree/dzplantstreet_naked_1s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_naked_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "dead, tall",
+    "image": "images/tree/dzplantstreet_naked_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_1f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "spruce, small, green",
+    "image": "images/tree/dzplantstreet_piceaabies_1f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_1s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, small, green",
+    "image": "images/tree/dzplantstreet_piceaabies_1s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_1sb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "spruce, small, green",
+    "image": "images/tree/dzplantstreet_piceaabies_1sb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_2d.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "spruce, tall, dead",
+    "image": "images/tree/dzplantstreet_piceaabies_2d.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_2f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "spruce, tall, green",
+    "image": "images/tree/dzplantstreet_piceaabies_2f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_2fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "spruce, tall, green",
+    "image": "images/tree/dzplantstreet_piceaabies_2fb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "spruce, small, green",
+    "image": "images/tree/dzplantstreeb_piceaabies_1fb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_2sb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "spruce, tall, green",
+    "image": "images/tree/dzplantstreet_piceaabies_2sb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_2s_green_xmas.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "christmas, festive, seasonal, santa",
+    "image": "images/tree/christmas_tree_green.jpg"
+  },
+  {
+    "objectName": "t_piceaabies_2s_xmas.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "christmas, festive, seasonal, santa",
+    "image": "images/tree/christmas_tree.jpg"
+  },
+  {
+    "objectName": "t_piceaabies_3d.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "spruce, tall, dead",
+    "image": "images/tree/dzplantstreet_piceaabies_3d.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_3f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "spruce, tall, green",
+    "image": "images/tree/dzplantstreet_piceaabies_3f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_3f_trail_b.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, dead",
+    "image": "images/tree/dzplantstreed_pinussylvestris_stumpb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_3f_trail_g.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "spruce, tall, green",
+    "image": "images/tree/dzplantstreet_piceaabies_3f_trail_g.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_3f_trail_r.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "tall, oak, green",
+    "image": "images/tree/dzplantstreet_piceaabies_3f_trail_r.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_3f_trail_y.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "spruce, tall, green",
+    "image": "images/tree/dzplantstreet_piceaabies_3f_trail_y.p3d.jpeg"
+  },
+  {
+    "objectName": "t_piceaabies_3s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, tall, green",
+    "image": "images/tree/dzplantstreet_piceaabies_3s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_pinussylvestris_1f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, small, green",
+    "image": "images/tree/dzplantstreet_pinussylvestris_1f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_pinussylvestris_1s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, small, green",
+    "image": "images/tree/dzplantstreet_pinussylvestris_1s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_pinussylvestris_2f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, tall, green",
+    "image": "images/tree/dzplantstreet_pinussylvestris_2f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_pinussylvestris_2fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, tall, green",
+    "image": "images/tree/dzplantstreet_pinussylvestris_2fb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_pinussylvestris_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, tall, green",
+    "image": "images/tree/dzplantstreet_pinussylvestris_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_pinussylvestris_2sb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, tall, green",
+    "image": "images/tree/dzplantstreet_pinussylvestris_2sb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_pinussylvestris_3d.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, tall, dead",
+    "image": "images/tree/dzplantstreet_pinussylvestris_3d.p3d.jpeg"
+  },
+  {
+    "objectName": "t_pinussylvestris_3f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, tall, green",
+    "image": "images/tree/dzplantstreet_pinussylvestris_3f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_pinussylvestris_3fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "spruce, tall, green",
+    "image": "images/tree/dzplantstreet_piceaabies_3f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_pinussylvestris_3fc.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "spruce, small, green",
+    "image": "images/tree/dzplantstreeb_piceaabies_1f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_pinussylvestris_3s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, tall, green",
+    "image": "images/tree/dzplantstreet_pinussylvestris_3s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_populusalba_1f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/plants/tree/t_populusalba_1f.p3d.jpg"
+  },
+  {
+    "objectName": "t_populusalba_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "poplar, medium, yellow",
+    "image": "images/tree/dzplantstreet_populusalba_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_populusalba_3s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "white_poplar, meduim, yellow",
+    "image": "images/tree/dzplantstreet_populusalba_3s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_populusnigra_3s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "black_poplar, tall, yellow",
+    "image": "images/tree/dzplantstreet_populusnigra_3s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_prunusdomestica_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "plum, medium, yellow, fruit",
+    "image": "images/tree/dzplantstreet_prunusdomestica_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_pyruscommunis_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pear, medium, brown, fruit",
+    "image": "images/tree/dzplantstreet_pyruscommunis_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_pyruscommunis_3s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pear, medium, brown, fruit",
+    "image": "images/tree/dzplantstreet_pyruscommunis_3s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_pyruscommunis_3sb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pear, medium, yellow, fruit",
+    "image": "images/tree/dzplantstreet_pyruscommunis_3sb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_1f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, small, brown",
+    "image": "images/tree/dzplantstreeb_quercusrobur_1f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_1fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "small, brown, oak",
+    "image": "images/tree/dzplantstreet_quercusrobur_1fb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_1fc.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, tall, brown",
+    "image": "images/tree/dzplantstreet_quercusrobur_1fc.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_1fd.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "pine, tall, dead",
+    "image": "images/tree/dzplantstreet_piceaabies_3d.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_1s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, small, brown",
+    "image": "images/tree/dzplantstreet_quercusrobur_1s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_2d.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, tall, dead",
+    "image": "images/tree/dzplantstreet_quercusrobur_2d.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_2f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "white_poplar, small, yellow",
+    "image": "images/tree/dzplantstreet_populusalba_1f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_2fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, tall, brown",
+    "image": "images/tree/dzplantstreet_quercusrobur_2fb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_2fc.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, tall, brown",
+    "image": "images/tree/dzplantstreet_quercusrobur_2fc.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, medium, brown",
+    "image": "images/tree/dzplantstreet_quercusrobur_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_2sb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, tall, brown",
+    "image": "images/tree/dzplantstreet_quercusrobur_2sb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_2sc.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "tall, oak, brown",
+    "image": "images/tree/dzplantstreet_quercusrobur_2sc.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_3d.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, dead",
+    "image": "images/tree/dzplantstreet_quercusrobur_3d.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_3f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, tall, brown",
+    "image": "images/tree/dzplantstreet_quercusrobur_3f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_3fb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, tall, brown",
+    "image": "images/tree/dzplantstreet_quercusrobur_3fb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_3s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "tall, oak, brown",
+    "image": "images/tree/dzplantstreet_quercusrobur_3s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_quercusrobur_3sb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, tall, brown",
+    "image": "images/tree/dzplantstreet_quercusrobur_3sb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_robiniapseudoacacia_1f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "black_locust, medium, yellow",
+    "image": "images/tree/dzplantstreet_robiniapseudoacacia_1f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_robiniapseudoacacia_2f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "black_locust, medium, yellow",
+    "image": "images/tree/dzplantstreet_robiniapseudoacacia_2f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_robiniapseudoacacia_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "black_locust, yellow, medium",
+    "image": "images/tree/dzplantstreet_robiniapseudoacacia_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_robiniapseudoacacia_3f.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "black_locust, tall, yellow",
+    "image": "images/tree/dzplantstreet_robiniapseudoacacia_3f.p3d.jpeg"
+  },
+  {
+    "objectName": "t_salixalba_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "willow, medium, yellow",
+    "image": "images/tree/dzplantstreet_salixalba_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_salixalba_2sb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "willow, medium, green",
+    "image": "images/tree/dzplantstreet_salixalba_2sb.p3d.jpeg"
+  },
+  {
+    "objectName": "t_salixalba_2sb_swamp.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "willow, medium, yellow",
+    "image": "images/tree/dzplantstreet_salixalba_2sb_swamp.p3d.jpeg"
+  },
+  {
+    "objectName": "t_sorbus_2s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "rose, small, green",
+    "image": "images/tree/dzplantstreet_sorbus_2s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_town_1s.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "medium, green",
+    "image": "images/tree/dzplantstreet_town_1s.p3d.jpeg"
+  },
+  {
+    "objectName": "t_town_1sb.p3d",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Raw P3D",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "medium, brown",
+    "image": "images/tree/dzplantstreet_town_1sb.p3d.jpeg"
+  }
+]

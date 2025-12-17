@@ -1,0 +1,32 @@
+[
+  {
+    "objectName": "MakarovPB",
+    "inGameName": "6P9 Makarov PB",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/pb6p9",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/pb6p9/makarovpb.jpg"
+  },
+  {
+    "objectName": "ProxyPB6P9",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/pb6p9",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/pb6p9/proxypb6p9.jpg"
+  },
+  {
+    "objectName": "pb6p9.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/pistols/pb6p9",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/pistols/pb6p9/pb6p9.p3d.jpg"
+  }
+]

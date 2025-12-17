@@ -1,0 +1,672 @@
+[
+  {
+    "objectName": "ZmbM_usSoldier_Officer_Desert",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_PatrolNormal_Winter",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_NBC_Grey",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_nbc_grey.jpg"
+  },
+  {
+    "objectName": "ZmbM_NBC_Yellow",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_nbc_yellow.jpg"
+  },
+  {
+    "objectName": "ZmbM_NBC_White",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_nbc_white.jpg"
+  },
+  {
+    "objectName": "ZmbM_Santa",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_santa.jpg"
+  },
+  {
+    "objectName": "ZmbM_Mummy",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_mummy.jpg"
+  },
+  {
+    "objectName": "StaticObj_FrozenScientist_DE",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/staticobj_frozenscientist_de.jpg"
+  },
+  {
+    "objectName": "armyofficer_fat_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/armyofficer_fat_m.p3d.jpg"
+  },
+  {
+    "objectName": "bluecollar_fat_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/bluecollar_fat_f.p3d.jpg"
+  },
+  {
+    "objectName": "citizena_normal_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/citizena_normal_f.p3d.jpg"
+  },
+  {
+    "objectName": "citizena_skinny_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/citizena_skinny_m.p3d.jpg"
+  },
+  {
+    "objectName": "citizenb_fat_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/citizenb_fat_m.p3d.jpg"
+  },
+  {
+    "objectName": "citizenb_skinny_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/citizenb_skinny_f.p3d.jpg"
+  },
+  {
+    "objectName": "clerka_normal_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/clerka_normal_f.p3d.jpg"
+  },
+  {
+    "objectName": "clerkb_fat_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/clerkb_fat_f.p3d.jpg"
+  },
+  {
+    "objectName": "clerk_fat_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/clerk_fat_m.p3d.jpg"
+  },
+  {
+    "objectName": "commercialpilot_old_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/commercialpilot_old_m.p3d.jpg"
+  },
+  {
+    "objectName": "constructionworker_normal_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/constructionworker_normal_m.p3d.jpg"
+  },
+  {
+    "objectName": "coveralls.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/coveralls.p3d.jpg"
+  },
+  {
+    "objectName": "doctor_fat_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/doctor_fat_m.p3d.jpg"
+  },
+  {
+    "objectName": "doctor_skinny_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/doctor_skinny_f.p3d.jpg"
+  },
+  {
+    "objectName": "farmer_above0.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/farmer_above0.p3d.jpg"
+  },
+  {
+    "objectName": "firefighter_normal_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/firefighter_normal_m.p3d.jpg"
+  },
+  {
+    "objectName": "fisherman_old_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/fisherman_old_m.p3d.jpg"
+  },
+  {
+    "objectName": "gamedev_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/gamedev_m.p3d.jpg"
+  },
+  {
+    "objectName": "heavyindustryworker_normal_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/heavyindustryworker_normal_m.p3d.jpg"
+  },
+  {
+    "objectName": "hermit_above0.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/hermit_above0.p3d.jpg"
+  },
+  {
+    "objectName": "hermit_newbindpose.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/hermit_newbindpose.p3d.jpg"
+  },
+  {
+    "objectName": "hiker_skinny_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/hiker_skinny_f.p3d.jpg"
+  },
+  {
+    "objectName": "hiker_skinny_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/hiker_skinny_m.p3d.jpg"
+  },
+  {
+    "objectName": "hunter_old_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/hunter_old_m.p3d.jpg"
+  },
+  {
+    "objectName": "jacket_above0.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/jacket_above0.p3d.jpg"
+  },
+  {
+    "objectName": "jogger_skinny_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/jogger_skinny_f.p3d.jpg"
+  },
+  {
+    "objectName": "jogger_skinny_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/jogger_skinny_m.p3d.jpg"
+  },
+  {
+    "objectName": "journalist_normal_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/journalist_normal_f.p3d.jpg"
+  },
+  {
+    "objectName": "journalist_skinny_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/journalist_skinny_m.p3d.jpg"
+  },
+  {
+    "objectName": "mechanic_normal_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/mechanic_normal_f.p3d.jpg"
+  },
+  {
+    "objectName": "mechanic_skinny_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/mechanic_skinny_m.p3d.jpg"
+  },
+  {
+    "objectName": "milkmaid_old_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/milkmaid_old_f.p3d.jpg"
+  },
+  {
+    "objectName": "motobiker_fat_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/motobiker_fat_m.p3d.jpg"
+  },
+  {
+    "objectName": "mummy.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/mummy.p3d.jpg"
+  },
+  {
+    "objectName": "nbcinfected_grey.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/nbcinfected_grey.p3d.jpg"
+  },
+  {
+    "objectName": "nbcinfected_yellow.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/nbcinfected_yellow.p3d.jpg"
+  },
+  {
+    "objectName": "nurse_fat_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/nurse_fat_f.p3d.jpg"
+  },
+  {
+    "objectName": "offshoreworker_normal_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/offshoreworker_normal_m.p3d.jpg"
+  },
+  {
+    "objectName": "paramedic_normal_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/paramedic_normal_f.p3d.jpg"
+  },
+  {
+    "objectName": "paramedic_normal_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/paramedic_normal_m.p3d.jpg"
+  },
+  {
+    "objectName": "patient_old_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/patient_old_f.p3d.jpg"
+  },
+  {
+    "objectName": "patient_skinny_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/patient_skinny_m.p3d.jpg"
+  },
+  {
+    "objectName": "patrol_normal_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/patrol_normal_m.p3d.jpg"
+  },
+  {
+    "objectName": "patrol_normal_winter_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/patrol_normal_winter_m.p3d.jpg"
+  },
+  {
+    "objectName": "policemanspecialforce_normal_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/policemanspecialforce_normal_m.p3d.jpg"
+  },
+  {
+    "objectName": "policeman_fat_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/policeman_fat_m.p3d.jpg"
+  },
+  {
+    "objectName": "policewoman_normal_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/policewoman_normal_f.p3d.jpg"
+  },
+  {
+    "objectName": "priestpop_skinny_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/priestpop_skinny_m.p3d.jpg"
+  },
+  {
+    "objectName": "prisoner_skinny_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/prisoner_skinny_m.p3d.jpg"
+  },
+  {
+    "objectName": "santa.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/santa.p3d.jpg"
+  },
+  {
+    "objectName": "shortskirt_above0.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/shortskirt_above0.p3d.jpg"
+  },
+  {
+    "objectName": "skater_young_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/skater_young_f.p3d.jpg"
+  },
+  {
+    "objectName": "skater_young_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/skater_young_m.p3d.jpg"
+  },
+  {
+    "objectName": "soldier_normal_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/soldier_normal_m.p3d.jpg"
+  },
+  {
+    "objectName": "static_frozenscientist.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/static_frozenscientist.p3d.jpg"
+  },
+  {
+    "objectName": "survivor_normal_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/survivor_normal_f.p3d.jpg"
+  },
+  {
+    "objectName": "ussoldier_normal_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/ussoldier_normal_m.p3d.jpg"
+  },
+  {
+    "objectName": "villager_old_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/villager_old_f.p3d.jpg"
+  },
+  {
+    "objectName": "villager_old_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/zombies/villager_old_m.p3d.jpg"
+  }
+]

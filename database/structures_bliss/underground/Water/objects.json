@@ -1,0 +1,50 @@
+[
+  {
+    "objectName": "ValveGauge2",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Config",
+    "path": "dz/structures_bliss/underground/water",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_bliss/underground/water/valvegauge2.jpg"
+  },
+  {
+    "objectName": "Land_Underground_WaterReservoir_Water",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Config",
+    "path": "dz/structures_bliss/underground/water",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_bliss/underground/water/land_underground_waterreservoir_water.jpg"
+  },
+  {
+    "objectName": "underground_waterreservoir_water.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/underground/water",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_bliss/underground/water/underground_waterreservoir_water.p3d.jpg"
+  },
+  {
+    "objectName": "Land_Underground_WaterMaintenance",
+    "category": "structures_bliss",
+    "modelType": "Config",
+    "path": "dz/structures_bliss/underground/water",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_bliss/underground/water/land_underground_watermaintenance.jpg"
+  },
+  {
+    "objectName": "Land_Underground_WaterReservoir",
+    "category": "structures_bliss",
+    "modelType": "Config",
+    "path": "dz/structures_bliss/underground/water",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_bliss/underground/water/land_underground_waterreservoir.jpg"
+  }
+]

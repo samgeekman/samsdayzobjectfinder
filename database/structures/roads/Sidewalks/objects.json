@@ -1,0 +1,422 @@
+[
+  {
+    "objectName": "StaticObj_Sidewalk1_1m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 1m, narrow",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk1_1m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk1_5m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 5m, narrow",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk1_5m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk1_10m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 10m, narrow",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk1_10m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk1_Corner",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, corner, 90deg",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk1_corner.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk1_End",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, end, terminator, dead end",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk1_end.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk1_TCross",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, junction, t-cross, t-junction, intersection",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk1_tcross.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk1_Turn_5deg",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 5deg",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk1_turn_5deg.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk1_Turn_10deg",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 10deg",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk1_turn_10deg.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk1_Turn_20deg",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 20deg",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk1_turn_20deg.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk1_Turn_30deg",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 30deg",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk1_turn_30deg.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk2_1m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 1m, variant2",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk2_1m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk2_5m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 5m, variant2",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk2_5m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk3_Border",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, border, edge, pavement, concrete, strip",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk3_border.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk3_Border_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, border, edge, pavement, concrete, strip, no corner, nolc",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk3_border_nolc.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk3_Narrow_4m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, narrow, 4m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk3_narrow_4m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk3_Narrow_12m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, narrow, 12m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk3_narrow_12m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk3_Narrow_Corner",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, narrow, corner, 90deg, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk3_narrow_corner.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk3_Wide_4m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, wide, 4m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk3_wide_4m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk3_Wide_12m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, wide, 12m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk3_wide_12m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk3_Wide_Corner",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, wide, corner, 90deg, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk3_wide_corner.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sidewalk3_WideB_4m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": true,
+    "searchTags": "sidewalk, pavement, wide, 4m, variantB, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/staticobj_sidewalk3_wideb_4m.jpg"
+  },
+  {
+    "objectName": "sidewalk1_10m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 10m, narrow",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_10m.jpg"
+  },
+  {
+    "objectName": "sidewalk1_1m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 1m, narrow",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_1m.jpg"
+  },
+  {
+    "objectName": "sidewalk1_5m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 5m, narrow",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_5m.jpg"
+  },
+  {
+    "objectName": "sidewalk1_corner.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, corner, 90deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Corner.jpg"
+  },
+  {
+    "objectName": "sidewalk1_end.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, end, terminator, dead end",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_End.jpg"
+  },
+  {
+    "objectName": "sidewalk1_tcross.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, junction, t-cross, t-junction, intersection",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_TCross.jpg"
+  },
+  {
+    "objectName": "sidewalk1_turn_10deg.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 10deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Turn_10deg.jpg"
+  },
+  {
+    "objectName": "sidewalk1_turn_20deg.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 20deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Turn_20deg.jpg"
+  },
+  {
+    "objectName": "sidewalk1_turn_30deg.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 30deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Turn_30deg.jpg"
+  },
+  {
+    "objectName": "sidewalk1_turn_5deg.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, curve, bend, 5deg",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk1_Turn_5deg.jpg"
+  },
+  {
+    "objectName": "sidewalk2_1m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 1m, variant2",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk2_1m.jpg"
+  },
+  {
+    "objectName": "sidewalk2_5m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, curb, pedestrian, concrete, straight, 5m, variant2",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk2_5m.jpg"
+  },
+  {
+    "objectName": "sidewalk3_border.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, border, edge, pavement, concrete, strip",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Border.jpg"
+  },
+  {
+    "objectName": "sidewalk3_border_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, border, edge, pavement, concrete, strip, no corner, nolc",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Border_nolc.jpg"
+  },
+  {
+    "objectName": "sidewalk3_narrow_12m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, narrow, 12m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Narrow_12m.jpg"
+  },
+  {
+    "objectName": "sidewalk3_narrow_4m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, narrow, 4m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Narrow_4m.jpg"
+  },
+  {
+    "objectName": "sidewalk3_narrow_corner.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, narrow, corner, 90deg, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Narrow_Corner.jpg"
+  },
+  {
+    "objectName": "sidewalk3_wideb_4m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, wide, 4m, variantB, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_WideB_4m.jpg"
+  },
+  {
+    "objectName": "sidewalk3_wide_12m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, wide, 12m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Wide_12m.jpg"
+  },
+  {
+    "objectName": "sidewalk3_wide_4m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, wide, 4m, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Wide_4m.jpg"
+  },
+  {
+    "objectName": "sidewalk3_wide_corner.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/sidewalks",
+    "usableOnConsole": false,
+    "searchTags": "sidewalk, pavement, wide, corner, 90deg, pedestrian, concrete",
+    "image": "images/structures/roads/sidewalks/StaticObj_Sidewalk3_Wide_Corner.jpg"
+  }
+]

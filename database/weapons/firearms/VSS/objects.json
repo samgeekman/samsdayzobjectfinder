@@ -1,0 +1,62 @@
+[
+  {
+    "objectName": "VSS",
+    "inGameName": "VSS",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/vss",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, 9x39, silenced",
+    "image": "images/weapons/firearms/vss/vss.jpg"
+  },
+  {
+    "objectName": "ASVAL",
+    "inGameName": "SVAL",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/vss",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 9x39, silenced",
+    "image": "images/weapons/firearms/vss/asval.jpg"
+  },
+  {
+    "objectName": "Vikhr",
+    "inGameName": "Vikhr",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/vss",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 9x39",
+    "image": "images/weapons/firearms/vss/vikhr.jpg"
+  },
+  {
+    "objectName": "val.p3d",
+    "inGameName": "SVAL",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/vss",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/firearms/vss/val.p3d.jpg"
+  },
+  {
+    "objectName": "vikhr.p3d",
+    "inGameName": "Vikhr",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/vss",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, 9x39",
+    "image": "images/weapons/firearms/dzweaponsfirearmsvssvikhr.p3d.jpeg"
+  },
+  {
+    "objectName": "vss.p3d",
+    "inGameName": "VSS",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/vss",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, 9x39, silenced",
+    "image": "images/weapons/firearms/dzweaponsfirearmsvssvss.p3d.jpeg"
+  }
+]

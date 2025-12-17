@@ -1,0 +1,52 @@
+[
+  {
+    "objectName": "Ammo_LAW_HE",
+    "inGameName": "M72 LAW Warhead",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/launchers/law",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/launchers/law/ammo_law_he.jpg"
+  },
+  {
+    "objectName": "LAWBase",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/launchers/law",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/launchers/law/lawbase.jpg"
+  },
+  {
+    "objectName": "LAW",
+    "inGameName": "M72 LAW",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/launchers/law",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/launchers/law/law.jpg"
+  },
+  {
+    "objectName": "law.p3d",
+    "inGameName": "M72 LAW",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/launchers/law",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/launchers/law/law.p3d.jpg"
+  },
+  {
+    "objectName": "law_rocket.p3d",
+    "inGameName": "M72 LAW Warhead",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/launchers/law",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/launchers/law/law_rocket.p3d.jpg"
+  }
+]

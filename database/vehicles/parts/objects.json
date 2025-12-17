@@ -1,0 +1,472 @@
+[
+  {
+    "objectName": "TruckBattery",
+    "inGameName": "Truck Battery",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/truckbattery.jpg"
+  },
+  {
+    "objectName": "CarBattery",
+    "inGameName": "Car Battery",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/carbattery.jpg"
+  },
+  {
+    "objectName": "BrakeFluid",
+    "inGameName": "Brake Fluid",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/brakefluid.jpg"
+  },
+  {
+    "objectName": "EngineOil",
+    "inGameName": "Motor Oil",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/engineoil.jpg"
+  },
+  {
+    "objectName": "CarRadiator",
+    "inGameName": "Car Radiator",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/carradiator.jpg"
+  },
+  {
+    "objectName": "HeadlightH7",
+    "inGameName": "Headlight Bulb",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/headlighth7.jpg"
+  },
+  {
+    "objectName": "HeadlightH7_Box",
+    "inGameName": "Boxed Headlight Bulb",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/headlighth7_box.jpg"
+  },
+  {
+    "objectName": "HeadlightH7",
+    "inGameName": "Spark Plug",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/headlighth7.jpg"
+  },
+  {
+    "objectName": "SparkPlug",
+    "inGameName": "Spark Plug",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/sparkplug.jpg"
+  },
+  {
+    "objectName": "GlowPlug",
+    "inGameName": "Glowplug",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/glowplug.jpg"
+  },
+  {
+    "objectName": "TireRepairKit",
+    "inGameName": "Tire Repair Kit",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/tirerepairkit.jpg"
+  },
+  {
+    "objectName": "CanisterGasoline",
+    "inGameName": "Jerrycan",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/canistergasoline.jpg"
+  },
+  {
+    "objectName": "ProxyPart",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/proxypart.jpg"
+  },
+  {
+    "objectName": "ProxyBattery_truck",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/proxybattery_truck.jpg"
+  },
+  {
+    "objectName": "ProxyBattery_Car",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/proxybattery_car.jpg"
+  },
+  {
+    "objectName": "Proxysparkplug",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/proxysparkplug.jpg"
+  },
+  {
+    "objectName": "ProxyGlowplug",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/proxyglowplug.jpg"
+  },
+  {
+    "objectName": "ProxyReplacement_Headlight",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/proxyreplacement_headlight.jpg"
+  },
+  {
+    "objectName": "ProxyRadiator_car",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/parts/proxyradiator_car.jpg"
+  },
+  {
+    "objectName": "aircraft_battery.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/aircraft_battery.p3d.jpg"
+  },
+  {
+    "objectName": "air_oil_bottle.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/air_oil_bottle.p3d.jpg"
+  },
+  {
+    "objectName": "aviator_spark_plug.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/aviator_spark_plug.p3d.jpg"
+  },
+  {
+    "objectName": "battery_car.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/battery_car.p3d.jpg"
+  },
+  {
+    "objectName": "battery_smallcar.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/battery_smallcar.p3d.jpg"
+  },
+  {
+    "objectName": "battery_truck.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/battery_truck.p3d.jpg"
+  },
+  {
+    "objectName": "belt.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/belt.p3d.jpg"
+  },
+  {
+    "objectName": "brake_fluid.p3d",
+    "inGameName": "Brake Fluid",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/brake_fluid.p3d.jpg"
+  },
+  {
+    "objectName": "control_unit.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/control_unit.p3d.jpg"
+  },
+  {
+    "objectName": "electric_wires.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/electric_wires.p3d.jpg"
+  },
+  {
+    "objectName": "exhaust_truck.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/exhaust_truck.p3d.jpg"
+  },
+  {
+    "objectName": "glowplug.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/glowplug.p3d.jpg"
+  },
+  {
+    "objectName": "helicopter_battery.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/helicopter_battery.p3d.jpg"
+  },
+  {
+    "objectName": "hydraulic_fluid_bottle.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/hydraulic_fluid_bottle.p3d.jpg"
+  },
+  {
+    "objectName": "hydraulic_hoses.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/hydraulic_hoses.p3d.jpg"
+  },
+  {
+    "objectName": "igniter_plug.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/igniter_plug.p3d.jpg"
+  },
+  {
+    "objectName": "jerrycan.p3d",
+    "inGameName": "Jerrycan",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/jerrycan.p3d.jpg"
+  },
+  {
+    "objectName": "oil_bottle.p3d",
+    "inGameName": "Motor Oil",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/oil_bottle.p3d.jpg"
+  },
+  {
+    "objectName": "pitch_link.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/pitch_link.p3d.jpg"
+  },
+  {
+    "objectName": "radiator_car.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/radiator_car.p3d.jpg"
+  },
+  {
+    "objectName": "radiator_smallcar.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/radiator_smallcar.p3d.jpg"
+  },
+  {
+    "objectName": "radiator_truck.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/radiator_truck.p3d.jpg"
+  },
+  {
+    "objectName": "replacement_headlight.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/replacement_headlight.p3d.jpg"
+  },
+  {
+    "objectName": "replacement_headlight_box.p3d",
+    "inGameName": "Boxed Headlight Bulb",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/replacement_headlight_box.p3d.jpg"
+  },
+  {
+    "objectName": "sparkplug.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/sparkplug.p3d.jpg"
+  },
+  {
+    "objectName": "tail_rotor_blade.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/tail_rotor_blade.p3d.jpg"
+  },
+  {
+    "objectName": "tire_repair_kit.p3d",
+    "inGameName": "Tire Repair Kit",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/tire_repair_kit.p3d.jpg"
+  },
+  {
+    "objectName": "windscreen_box.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/parts",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/parts/windscreen_box.p3d.jpg"
+  }
+]

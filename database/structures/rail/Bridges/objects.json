@@ -1,0 +1,102 @@
+[
+  {
+    "objectName": "StaticObj_Rail_Bridge_15",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/bridges",
+    "usableOnConsole": true,
+    "searchTags": "rail, bridge, 15m, straight, 1 track, train, railway, tunnel",
+    "image": "images/structures/rail/bridges/staticobj_rail_bridge_15.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_Bridge_15_3tracks",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/bridges",
+    "usableOnConsole": true,
+    "searchTags": "rail, bridge, 15m, 3 tracks, tunnel, train, railway",
+    "image": "images/structures/rail/bridges/staticobj_rail_bridge_15_3tracks.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_Bridge_15_Curve",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/bridges",
+    "usableOnConsole": true,
+    "searchTags": "rail, bridge, 1 track, train, railway, tunnel",
+    "image": "images/structures/rail/bridges/staticobj_rail_bridge_15_curve.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_Bridge_15_End",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/bridges",
+    "usableOnConsole": true,
+    "searchTags": "rail, bridge, 15m, end, big, single, 1 track, train, railway, tunnel",
+    "image": "images/structures/rail/bridges/staticobj_rail_bridge_15_end.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_Bridge_40",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/bridges",
+    "usableOnConsole": true,
+    "searchTags": "rail, bridge, 40m, straight, big, metal, large, steel, 1 track, train, railway",
+    "image": "images/structures/rail/bridges/staticobj_rail_bridge_40.jpg"
+  },
+  {
+    "objectName": "rail_bridge_15.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/bridges",
+    "usableOnConsole": false,
+    "searchTags": "rail, bridge, 15m, straight, 1 track, train, railway, tunnel",
+    "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15.jpg"
+  },
+  {
+    "objectName": "rail_bridge_15_3tracks.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/bridges",
+    "usableOnConsole": false,
+    "searchTags": "rail, bridge, 15m, 3 tracks, tunnel, train, railway",
+    "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15_3tracks.jpg"
+  },
+  {
+    "objectName": "rail_bridge_15_curve.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/bridges",
+    "usableOnConsole": false,
+    "searchTags": "rail, bridge, 15m, curve, 1 track, train, railway, tunnel",
+    "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15_Curve.jpg"
+  },
+  {
+    "objectName": "rail_bridge_15_end.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/bridges",
+    "usableOnConsole": false,
+    "searchTags": "rail, bridge, 15m, end, big, single, 1 track, train, railway, tunnel",
+    "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_15_End.jpg"
+  },
+  {
+    "objectName": "rail_bridge_40.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/bridges",
+    "usableOnConsole": false,
+    "searchTags": "rail, bridge, 40m, straight, big, metal, large, steel, 1 track, train, railway",
+    "image": "images/structures/rail/bridges/StaticObj_Rail_Bridge_40.jpg"
+  }
+]

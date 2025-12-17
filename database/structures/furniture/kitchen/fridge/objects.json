@@ -1,0 +1,22 @@
+[
+  {
+    "objectName": "StaticObj_Furniture_fridge",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/furniture/kitchen/fridge",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/furniture/kitchen/fridge/staticobj_furniture_fridge.jpg"
+  },
+  {
+    "objectName": "fridge.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/furniture/kitchen/fridge",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/furniture/kitchen/fridge/fridge.p3d.jpg"
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "objectName": "StaticObj_Panel_Concrete_1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": true,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, rectangle, single",
+    "image": "images/structures/roads/panels/staticobj_panel_concrete_1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Panel_Concrete_2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": true,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, rectangle, single",
+    "image": "images/structures/roads/panels/staticobj_panel_concrete_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Panel_Concrete_Dam",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": true,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, rectangle, damaged, broken, metal, single",
+    "image": "images/structures/roads/panels/staticobj_panel_concrete_dam.jpg"
+  },
+  {
+    "objectName": "StaticObj_Panels_Concrete",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": true,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, rectangle, damaged, broken, metal, quad, four, multiple",
+    "image": "images/structures/roads/panels/staticobj_panels_concrete.jpg"
+  },
+  {
+    "objectName": "StaticObj_Path_Panels",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": true,
+    "searchTags": "path, walkway, concrete, residential, flat, pathway",
+    "image": "images/structures/roads/panels/staticobj_path_panels.jpg"
+  },
+  {
+    "objectName": "StaticObj_Path_Panels_Damaged",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": true,
+    "searchTags": "path, walkway, concrete, damaged, broken, residential, pathway",
+    "image": "images/structures/roads/panels/staticobj_path_panels_damaged.jpg"
+  },
+  {
+    "objectName": "StaticObj_Panel_Concrete_1_Legacy",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": true,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, grass, rectangle, single",
+    "image": "images/structures/roads/panels/staticobj_panel_concrete_1_legacy.jpg"
+  },
+  {
+    "objectName": "StaticObj_Panel_Concrete_2_Legacy",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": true,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, grass, rectangle, single",
+    "image": "images/structures/roads/panels/staticobj_panel_concrete_2_legacy.jpg"
+  },
+  {
+    "objectName": "StaticObj_Panel_Concrete_Dam_Legacy",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": true,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, rectangle, grass, damaged, broken, metal single",
+    "image": "images/structures/roads/panels/staticobj_panel_concrete_dam_legacy.jpg"
+  },
+  {
+    "objectName": "StaticObj_Panels_Concrete_Legacy",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": true,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, rectangle, damaged, broken, grass, metal, quad, four, multiple",
+    "image": "images/structures/roads/panels/staticobj_panels_concrete_legacy.jpg"
+  },
+  {
+    "objectName": "panels_concrete.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": false,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, rectangle, damaged, broken, metal, quad, four, multiple",
+    "image": "images/structures/roads/panels/StaticObj_Panels_Concrete.jpg"
+  },
+  {
+    "objectName": "panels_concrete_lc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/roads/panels/panels_concrete_lc.p3d.jpg"
+  },
+  {
+    "objectName": "panels_concrete_legacy.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": false,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, rectangle, damaged, broken, grass, metal, quad, four, multiple",
+    "image": "images/structures/roads/panels/StaticObj_Panels_Concrete_Legacy.jpg"
+  },
+  {
+    "objectName": "panel_concrete_1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": false,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, rectangle, single",
+    "image": "images/structures/roads/panels/StaticObj_Panel_Concrete_1.jpg"
+  },
+  {
+    "objectName": "panel_concrete_1_lc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/roads/panels/panel_concrete_1_lc.p3d.jpg"
+  },
+  {
+    "objectName": "panel_concrete_1_legacy.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": false,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, grass, rectangle, single",
+    "image": "images/structures/roads/panels/StaticObj_Panel_Concrete_1_Legacy.jpg"
+  },
+  {
+    "objectName": "panel_concrete_2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": false,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, grass, rectangle, single",
+    "image": "images/structures/roads/panels/StaticObj_Panel_Concrete_2.jpg"
+  },
+  {
+    "objectName": "panel_concrete_2_lc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/roads/panels/panel_concrete_2_lc.p3d.jpg"
+  },
+  {
+    "objectName": "panel_concrete_2_legacy.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": false,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, grass, rectangle, single",
+    "image": "images/structures/roads/panels/StaticObj_Panel_Concrete_2_Legacy.jpg"
+  },
+  {
+    "objectName": "panel_concrete_dam.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": false,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, rectangle, damaged, broken, metal, single",
+    "image": "images/structures/roads/panels/StaticObj_Panel_Concrete_Dam.jpg"
+  },
+  {
+    "objectName": "panel_concrete_dam_lc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/roads/panels/panel_concrete_dam_lc.p3d.jpg"
+  },
+  {
+    "objectName": "panel_concrete_dam_legacy.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": false,
+    "searchTags": "panel, road, floor, concrete, industrial, platform, rectangle, grass, damaged, broken, metal, single",
+    "image": "images/structures/roads/panels/StaticObj_Panel_Concrete_Dam_Legacy.jpg"
+  },
+  {
+    "objectName": "path_panels.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": false,
+    "searchTags": "path, walkway, concrete, residential, flat, pathway",
+    "image": "images/structures/roads/panels/StaticObj_Path_Panels.jpg"
+  },
+  {
+    "objectName": "path_panels_damaged.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/panels",
+    "usableOnConsole": false,
+    "searchTags": "path, walkway, concrete, damaged, broken, residential, pathway",
+    "image": "images/structures/roads/panels/StaticObj_Path_Panels_Damaged.jpg"
+  }
+]

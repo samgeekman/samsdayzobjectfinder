@@ -1,0 +1,32 @@
+[
+  {
+    "objectName": "M203",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/launchers/m203",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/launchers/m203/m203.jpg"
+  },
+  {
+    "objectName": "M203_Standalone",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/launchers/m203",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/launchers/m203/m203_standalone.jpg"
+  },
+  {
+    "objectName": "m203.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/launchers/m203",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/launchers/m203/m203.p3d.jpg"
+  }
+]

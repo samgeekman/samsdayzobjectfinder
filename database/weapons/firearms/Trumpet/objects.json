@@ -1,0 +1,32 @@
+[
+  {
+    "objectName": "TrumpetParts",
+    "inGameName": "Disassembled Trumpet",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/trumpet",
+    "usableOnConsole": true,
+    "searchTags": "unreleased, a trumpet?!",
+    "image": "images/weapons/firearms/trumpet/trumpetparts.jpg"
+  },
+  {
+    "objectName": "trumpet.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/trumpet",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/firearms/trumpet/trumpet.p3d.jpg"
+  },
+  {
+    "objectName": "trumpet_parts.p3d",
+    "inGameName": "Disassembled Trumpet",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/trumpet",
+    "usableOnConsole": false,
+    "searchTags": "unreleased, a trumpet?!",
+    "image": "images/weapons/firearms/dzweaponsfirearmstrumpettrumpet_parts.p3d.jpeg"
+  }
+]

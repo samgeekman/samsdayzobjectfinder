@@ -1,0 +1,282 @@
+[
+  {
+    "objectName": "StaticObj_Rail_ConcreteRamp",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": true,
+    "searchTags": "rail, concrete, ramp, slope, platform, train",
+    "image": "images/structures/rail/misc/staticobj_rail_concreteramp.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_Crossing_Barrier",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": true,
+    "searchTags": "rail, crossing, barrier, gate, train, railway, road",
+    "image": "images/structures/rail/misc/staticobj_rail_crossing_barrier.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_Crossing_Block_10",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": true,
+    "searchTags": "rail, crossing, block, barrier, medium, train, railway, road",
+    "image": "images/structures/rail/misc/staticobj_rail_crossing_block_10.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_Crossing_Block_25",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": true,
+    "searchTags": "rail, crossing, block, barrier, large, train, railway, road",
+    "image": "images/structures/rail/misc/staticobj_rail_crossing_block_25.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_LineBreak_Concrete",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": true,
+    "searchTags": "rail, line break, concrete, stop, train, railway, buffer, siding, end",
+    "image": "images/structures/rail/misc/staticobj_rail_linebreak_concrete.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_LineBreak_Iron",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": true,
+    "searchTags": "rail, line break, iron, stop, train, railway, buffer, sising, end",
+    "image": "images/structures/rail/misc/staticobj_rail_linebreak_iron.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_Platform_Cross",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": true,
+    "searchTags": "rail, platform, cross, walkway, train, railway, metal, dip",
+    "image": "images/structures/rail/misc/staticobj_rail_platform_cross.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_Platform_Segment",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": true,
+    "searchTags": "rail, platform, segment, walkway, train, railway, metal",
+    "image": "images/structures/rail/misc/staticobj_rail_platform_segment.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_Platform_Start",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": true,
+    "searchTags": "rail, platform, start, walkway, train, railway, end",
+    "image": "images/structures/rail/misc/staticobj_rail_platform_start.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_PoleF",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": true,
+    "searchTags": "rail, pole, support, train, railway, cable, electricity, power, small",
+    "image": "images/structures/rail/misc/staticobj_rail_polef.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_PoleT",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": true,
+    "searchTags": "rail, pole, T type, support, train, railway, railway, cable, electricity, power, small",
+    "image": "images/structures/rail/misc/staticobj_rail_polet.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_PoleTT1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": true,
+    "searchTags": "rail, pole, TT1, support, train, railway, railway, cable, electricity, power, large",
+    "image": "images/structures/rail/misc/staticobj_rail_polett1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_PoleTT2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": true,
+    "searchTags": "rail, pole, TT2, support, train, railway, railway, cable, electricity, power, large",
+    "image": "images/structures/rail/misc/staticobj_rail_polett2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rail_Signals",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": true,
+    "searchTags": "rail, signal, train, railway, light, post",
+    "image": "images/structures/rail/misc/staticobj_rail_signals.jpg"
+  },
+  {
+    "objectName": "rail_concreteramp.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": false,
+    "searchTags": "rail, concrete, ramp, slope, platform, train",
+    "image": "images/structures/rail/misc/StaticObj_Rail_ConcreteRamp.jpg"
+  },
+  {
+    "objectName": "rail_crossing_barrier.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": false,
+    "searchTags": "rail, crossing, barrier, gate, train, railway, road",
+    "image": "images/structures/rail/misc/StaticObj_Rail_Crossing_Barrier.jpg"
+  },
+  {
+    "objectName": "rail_crossing_block_10.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": false,
+    "searchTags": "rail, crossing, block, barrier, medium, train, railway, road",
+    "image": "images/structures/rail/misc/StaticObj_Rail_Crossing_Block_10.jpg"
+  },
+  {
+    "objectName": "rail_crossing_block_25.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": false,
+    "searchTags": "rail, crossing, block, barrier, large, train, railway, road",
+    "image": "images/structures/rail/misc/StaticObj_Rail_Crossing_Block_25.jpg"
+  },
+  {
+    "objectName": "rail_linebreak_concrete.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/rail/misc/rail_linebreak_concrete.p3d.jpg"
+  },
+  {
+    "objectName": "rail_linebreak_iron.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/rail/misc/rail_linebreak_iron.p3d.jpg"
+  },
+  {
+    "objectName": "rail_platform_cross.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": false,
+    "searchTags": "rail, platform, cross, walkway, train, railway, metal, dip",
+    "image": "images/structures/rail/misc/StaticObj_Rail_Platform_Cross.jpg"
+  },
+  {
+    "objectName": "rail_platform_segment.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": false,
+    "searchTags": "rail, platform, segment, walkway, train, railway, metal",
+    "image": "images/structures/rail/misc/StaticObj_Rail_Platform_Segment.jpg"
+  },
+  {
+    "objectName": "rail_platform_start.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": false,
+    "searchTags": "rail, platform, start, walkway, train, railway, end",
+    "image": "images/structures/rail/misc/StaticObj_Rail_Platform_Start.jpg"
+  },
+  {
+    "objectName": "rail_polef.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": false,
+    "searchTags": "rail, pole, support, train, railway, cable, electricity, power, small",
+    "image": "images/structures/rail/misc/StaticObj_Rail_PoleF.jpg"
+  },
+  {
+    "objectName": "rail_polet.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": false,
+    "searchTags": "rail, pole, T type, support, train, railway, railway, cable, electricity, power, small",
+    "image": "images/structures/rail/misc/StaticObj_Rail_PoleT.jpg"
+  },
+  {
+    "objectName": "rail_polett1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": false,
+    "searchTags": "rail, pole, TT1, support, train, railway, railway, cable, electricity, power, large",
+    "image": "images/structures/rail/misc/StaticObj_Rail_PoleTT1.jpg"
+  },
+  {
+    "objectName": "rail_polett2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": false,
+    "searchTags": "rail, pole, TT2, support, train, railway, railway, cable, electricity, power, large",
+    "image": "images/structures/rail/misc/StaticObj_Rail_PoleTT2.jpg"
+  },
+  {
+    "objectName": "rail_signals.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/rail/misc",
+    "usableOnConsole": false,
+    "searchTags": "rail, signal, train, railway, light, post",
+    "image": "images/structures/rail/misc/StaticObj_Rail_Signals.jpg"
+  }
+]

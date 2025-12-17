@@ -1,0 +1,42 @@
+[
+  {
+    "objectName": "StaticObj_Furniture_almara",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/furniture/cases/almara",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/furniture/cases/almara/staticobj_furniture_almara.jpg"
+  },
+  {
+    "objectName": "StaticObj_Furniture_almara_open",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/furniture/cases/almara",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/furniture/cases/almara/staticobj_furniture_almara_open.jpg"
+  },
+  {
+    "objectName": "almara.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/furniture/cases/almara",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/furniture/cases/almara/almara.p3d.jpg"
+  },
+  {
+    "objectName": "almara_open.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/furniture/cases/almara",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/furniture/cases/almara/almara_open.p3d.jpg"
+  }
+]

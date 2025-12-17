@@ -1,0 +1,22 @@
+[
+  {
+    "objectName": "RecurveBow",
+    "inGameName": "Recurve Bow",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/archery/bow_recurve",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/archery/bow_recurve/recurvebow.jpg"
+  },
+  {
+    "objectName": "bow_recurve.p3d",
+    "inGameName": "Recurve Bow",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/archery/bow_recurve",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/archery/bow_recurve/bow_recurve.p3d.jpg"
+  }
+]

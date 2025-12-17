@@ -1,0 +1,42 @@
+[
+  {
+    "objectName": "StaticObj_Monument_Bears",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/specific/monuments",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/specific/monuments/staticobj_monument_bears.jpg"
+  },
+  {
+    "objectName": "StaticObj_Monument_Workcamp",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/specific/monuments",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/specific/monuments/staticobj_monument_workcamp.jpg"
+  },
+  {
+    "objectName": "monument_bears.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/specific/monuments",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/specific/monuments/monument_bears.p3d.jpg"
+  },
+  {
+    "objectName": "monument_workcamp.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/specific/monuments",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/specific/monuments/monument_workcamp.p3d.jpg"
+  }
+]

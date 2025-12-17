@@ -1,0 +1,60 @@
+[
+  {
+    "objectName": "Land_Radio_PanelBig",
+    "inGameName": "Radio Control Panel",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/radio",
+    "usableOnConsole": true,
+    "searchTags": "radio, panel, console, equipment, controls, broadcast, electronics, rack, PA_system, pa system, amp, loudspeaker, public_address, announcement",
+    "image": "images/structures/specific/radio/land_radio_panelbig.jpg"
+  },
+  {
+    "objectName": "Land_Radio_PanelPAS",
+    "inGameName": "PAS Control Panel",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/radio",
+    "usableOnConsole": true,
+    "searchTags": "radio, panel, PA_system, loudspeaker, public_address, announcement, communication, pa system, amp",
+    "image": "images/structures/specific/radio/land_radio_panelpas.jpg"
+  },
+  {
+    "objectName": "radio_panelbig.p3d",
+    "inGameName": "Radio Control Panel",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/radio",
+    "usableOnConsole": false,
+    "searchTags": "radio, panel, console, equipment, controls, broadcast, electronics, rack, PA_system, pa system, amp, loudspeaker, public_address, announcement",
+    "image": "images/structures/specific/radio/Land_Radio_PanelBig.jpg"
+  },
+  {
+    "objectName": "radio_panelpas.p3d",
+    "inGameName": "PAS Control Panel",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/radio",
+    "usableOnConsole": false,
+    "searchTags": "radio, panel, PA_system, loudspeaker, public_address, announcement, communication, pa system, amp",
+    "image": "images/structures/specific/radio/Land_Radio_PanelPAS.jpg"
+  },
+  {
+    "objectName": "Land_Radio_building",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/radio",
+    "usableOnConsole": true,
+    "searchTags": "radio, building, station, broadcast, communication, control_room, antenna, PA_system, pa system, amp, loudspeaker, public_address, announcement",
+    "image": "images/structures/specific/radio/land_radio_building.jpg"
+  },
+  {
+    "objectName": "radio_building.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/radio",
+    "usableOnConsole": false,
+    "searchTags": "radio, building, station, broadcast, communication, control_room, antenna, PA_system, pa system, amp, loudspeaker, public_address, announcement",
+    "image": "images/structures/specific/radio/Land_Radio_building.jpg"
+  }
+]

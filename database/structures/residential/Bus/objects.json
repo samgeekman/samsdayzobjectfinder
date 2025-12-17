@@ -1,0 +1,180 @@
+[
+  {
+    "objectName": "Land_BusStation_wall_bench",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": true,
+    "searchTags": "bus, station, wall, waiting, green, tiled, spawns, loot, public, transport",
+    "image": "images/structures/residential/bus/land_busstation_wall_bench.jpg"
+  },
+  {
+    "objectName": "Land_BusStop_City",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": true,
+    "searchTags": "bus, stop, city, transport, public, shelter, waiting, public, transport, metal ",
+    "image": "images/structures/residential/bus/land_busstop_city.jpg"
+  },
+  {
+    "objectName": "StaticObj_BusStation_Corner",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": true,
+    "searchTags": "bus, station, curved, public, shelter, terminal, ticket, office, green, tiled, public, transport",
+    "image": "images/structures/residential/bus/staticobj_busstation_corner.jpg"
+  },
+  {
+    "objectName": "StaticObj_BusStation_roof_big",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": true,
+    "searchTags": "bus, station, transport, public, shelter, terminal, ticket, office, green, tiled, public, transport, large",
+    "image": "images/structures/residential/bus/staticobj_busstation_roof_big.jpg"
+  },
+  {
+    "objectName": "StaticObj_BusStation_roof_long",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": true,
+    "searchTags": "bus, station, roof, long, cover, shelter, public, public, transport",
+    "image": "images/structures/residential/bus/staticobj_busstation_roof_long.jpg"
+  },
+  {
+    "objectName": "StaticObj_BusStation_wall",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": true,
+    "searchTags": "bus, station, wall, structure, shelter, public, public, transport",
+    "image": "images/structures/residential/bus/staticobj_busstation_wall.jpg"
+  },
+  {
+    "objectName": "StaticObj_BusStop_Village",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": true,
+    "searchTags": "bus, stop, village, rural, shelter, waiting, transport, small, public, transport",
+    "image": "images/structures/residential/bus/staticobj_busstop_village.jpg"
+  },
+  {
+    "objectName": "busstation_corner.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": false,
+    "searchTags": "bus, station, curved, public, shelter, terminal, ticket, office, green, tiled, public, transport",
+    "image": "images/structures/residential/bus/StaticObj_BusStation_Corner.jpg"
+  },
+  {
+    "objectName": "busstation_roof_big.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": false,
+    "searchTags": "bus, station, transport, public, shelter, terminal, public, transport",
+    "image": "images/structures/residential/bus/StaticObj_BusStation_roof_big.jpg"
+  },
+  {
+    "objectName": "busstation_roof_long.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": false,
+    "searchTags": "bus, station, roof, long, cover, shelter, public, public, transport",
+    "image": "images/structures/residential/bus/StaticObj_BusStation_roof_long.jpg"
+  },
+  {
+    "objectName": "busstation_wall.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": false,
+    "searchTags": "bus, station, wall, structure, shelter, public, public, transport",
+    "image": "images/structures/residential/bus/StaticObj_BusStation_wall.jpg"
+  },
+  {
+    "objectName": "busstation_wall_bench.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": false,
+    "searchTags": "bus, station, wall, waiting, green, tiled, spawns, loot, public, transport",
+    "image": "images/structures/residential/bus/Land_BusStation_wall_bench.jpg"
+  },
+  {
+    "objectName": "busstop_city.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": false,
+    "searchTags": "bus, stop, city, transport, public, shelter, waiting, public, transport, metal ",
+    "image": "images/structures/residential/bus/Land_BusStop_City.jpg"
+  },
+  {
+    "objectName": "busstop_city_sign.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/residential/bus/busstop_city_sign.p3d.jpg"
+  },
+  {
+    "objectName": "busstop_village.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": false,
+    "searchTags": "bus, stop, village, rural, shelter, waiting, transport, small, public, transport",
+    "image": "images/structures/residential/bus/StaticObj_BusStop_Village.jpg"
+  },
+  {
+    "objectName": "busstop_village_sign.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/residential/bus/busstop_village_sign.p3d.jpg"
+  },
+  {
+    "objectName": "busstation_building.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": false,
+    "searchTags": "bus, station, transport, public, shelter, terminal, ticket, office, green, tiled, public, transport",
+    "image": "images/structures/residential/bus/Land_BusStation_building.jpg"
+  },
+  {
+    "objectName": "Land_BusStation_building",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/bus",
+    "usableOnConsole": true,
+    "searchTags": "bus, station, transport, public, shelter, terminal, ticket, office, green, tiled, public, transport",
+    "image": "images/structures/residential/bus/land_busstation_building.jpg"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "objectName": "Land_Garage_Medium",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Config",
+    "path": "dz/structures_bliss/industrial/garages",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_bliss/industrial/garages/land_garage_medium.jpg"
+  },
+  {
+    "objectName": "garage_medium.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/industrial/garages",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_bliss/industrial/garages/garage_medium.p3d.jpg"
+  },
+  {
+    "objectName": "garage_tall.p3d",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/industrial/garages",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_bliss/industrial/garages/garage_tall.p3d.jpg"
+  },
+  {
+    "objectName": "Land_Garage_Tall",
+    "category": "structures_bliss",
+    "modelType": "Config",
+    "path": "dz/structures_bliss/industrial/garages",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_bliss/industrial/garages/land_garage_tall.jpg"
+  }
+]

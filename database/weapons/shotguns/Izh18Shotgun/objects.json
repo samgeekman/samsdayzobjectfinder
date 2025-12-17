@@ -1,0 +1,42 @@
+[
+  {
+    "objectName": "Izh18Shotgun",
+    "inGameName": "BK-12",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/shotguns/izh18shotgun",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/shotguns/izh18shotgun/izh18shotgun.jpg"
+  },
+  {
+    "objectName": "SawedoffIzh18Shotgun",
+    "inGameName": "Sawed-off BK-12",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/shotguns/izh18shotgun",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/shotguns/izh18shotgun/sawedoffizh18shotgun.jpg"
+  },
+  {
+    "objectName": "izh18shotgun.p3d",
+    "inGameName": "BK-12",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/shotguns/izh18shotgun",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/shotguns/izh18shotgun/izh18shotgun.p3d.jpg"
+  },
+  {
+    "objectName": "izh18shotgun_sawedoff.p3d",
+    "inGameName": "Sawed-off BK-12",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/shotguns/izh18shotgun",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/shotguns/izh18shotgun/izh18shotgun_sawedoff.p3d.jpg"
+  }
+]

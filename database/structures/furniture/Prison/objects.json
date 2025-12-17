@@ -1,0 +1,42 @@
+[
+  {
+    "objectName": "StaticObj_Furniture_prison_sink",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/furniture/prison",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/furniture/prison/staticobj_furniture_prison_sink.jpg"
+  },
+  {
+    "objectName": "StaticObj_Furniture_prison_toilet",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/furniture/prison",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/furniture/prison/staticobj_furniture_prison_toilet.jpg"
+  },
+  {
+    "objectName": "prison_sink.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/furniture/prison",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/furniture/prison/prison_sink.p3d.jpg"
+  },
+  {
+    "objectName": "prison_toilet.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/furniture/prison",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/furniture/prison/prison_toilet.p3d.jpg"
+  }
+]

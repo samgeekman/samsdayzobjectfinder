@@ -1,0 +1,1032 @@
+[
+  {
+    "objectName": "Ammo_45ACP",
+    "inGameName": ".45 ACP Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_45acp.jpg"
+  },
+  {
+    "objectName": "Ammo_308Win",
+    "inGameName": ".308 WIN Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_308win.jpg"
+  },
+  {
+    "objectName": "Ammo_308WinTracer",
+    "inGameName": ".308 WIN Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_308wintracer.jpg"
+  },
+  {
+    "objectName": "Ammo_9x19",
+    "inGameName": "9x19mm Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_9x19.jpg"
+  },
+  {
+    "objectName": "Ammo_380",
+    "inGameName": ".380 ACP Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_380.jpg"
+  },
+  {
+    "objectName": "Ammo_556x45",
+    "inGameName": "5.56x45mm Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_556x45.jpg"
+  },
+  {
+    "objectName": "Ammo_556x45Tracer",
+    "inGameName": "5.56x45mm Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_556x45tracer.jpg"
+  },
+  {
+    "objectName": "Ammo_762x54",
+    "inGameName": "7.62x54mmR Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_762x54.jpg"
+  },
+  {
+    "objectName": "Ammo_762x54Tracer",
+    "inGameName": "7.62x54mmR Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_762x54tracer.jpg"
+  },
+  {
+    "objectName": "Ammo_762x39",
+    "inGameName": "7.62x39mm Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_762x39.jpg"
+  },
+  {
+    "objectName": "Ammo_762x39Tracer",
+    "inGameName": "7.62x39mm Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_762x39tracer.jpg"
+  },
+  {
+    "objectName": "Ammo_9x39AP",
+    "inGameName": "9x39mm Armor-Piercing Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_9x39ap.jpg"
+  },
+  {
+    "objectName": "Ammo_9x39",
+    "inGameName": "9x39mm Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_9x39.jpg"
+  },
+  {
+    "objectName": "Ammo_22",
+    "inGameName": ".22 LR Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_22.jpg"
+  },
+  {
+    "objectName": "Ammo_12gaPellets",
+    "inGameName": "12ga 00 Buckshots",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_12gapellets.jpg"
+  },
+  {
+    "objectName": "Ammo_12gaSlug",
+    "inGameName": "12ga Rifled Slugs",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_12gaslug.jpg"
+  },
+  {
+    "objectName": "Ammo_12gaRubberSlug",
+    "inGameName": "12ga Rubber Slugs",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_12garubberslug.jpg"
+  },
+  {
+    "objectName": "Ammo_12gaBeanbag",
+    "inGameName": "",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_12gabeanbag.jpg"
+  },
+  {
+    "objectName": "Ammo_357",
+    "inGameName": ".357 Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_357.jpg"
+  },
+  {
+    "objectName": "Ammo_545x39",
+    "inGameName": "5.45x39mm Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_545x39.jpg"
+  },
+  {
+    "objectName": "Ammo_545x39Tracer",
+    "inGameName": "5.45x39mm Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_545x39tracer.jpg"
+  },
+  {
+    "objectName": "Ammo_Flare",
+    "inGameName": "Flare",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_flare.jpg"
+  },
+  {
+    "objectName": "Ammo_FlareRed",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_flarered.jpg"
+  },
+  {
+    "objectName": "Ammo_FlareGreen",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_flaregreen.jpg"
+  },
+  {
+    "objectName": "Ammo_FlareBlue",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_flareblue.jpg"
+  },
+  {
+    "objectName": "Ammo_RPG7_HE",
+    "inGameName": "PG-7V Warhead",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_rpg7_he.jpg"
+  },
+  {
+    "objectName": "Ammo_RPG7_AP",
+    "inGameName": "PG-7V Warhead, AP",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_rpg7_ap.jpg"
+  },
+  {
+    "objectName": "Ammo_40mm_Explosive",
+    "inGameName": "40mm Explosive Grenade",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_40mm_explosive.jpg"
+  },
+  {
+    "objectName": "Ammo_40mm_ChemGas",
+    "inGameName": "40mm PO-X Grenade",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_40mm_chemgas.jpg"
+  },
+  {
+    "objectName": "Ammo_40mm_Smoke_Red",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_40mm_smoke_red.jpg"
+  },
+  {
+    "objectName": "Ammo_40mm_Smoke_Green",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_40mm_smoke_green.jpg"
+  },
+  {
+    "objectName": "Ammo_40mm_Smoke_White",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_40mm_smoke_white.jpg"
+  },
+  {
+    "objectName": "Ammo_40mm_Smoke_Black",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_40mm_smoke_black.jpg"
+  },
+  {
+    "objectName": "AmmoBox_556x45_20Rnd",
+    "inGameName": "Boxed 5.56x45mm Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_556x45_20rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_556x45Tracer_20Rnd",
+    "inGameName": "Boxed 5.56x45mm Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_556x45tracer_20rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_308Win_20Rnd",
+    "inGameName": "Boxed .308 WIN Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_308win_20rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_308WinTracer_20Rnd",
+    "inGameName": "Boxed .308 WIN Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_308wintracer_20rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_762x54_20Rnd",
+    "inGameName": "Boxed 7.62x54mmR Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_762x54_20rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_762x54Tracer_20Rnd",
+    "inGameName": "Boxed 7.62x54mmR Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_762x54tracer_20rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_762x39_20Rnd",
+    "inGameName": "Boxed 7.62x39mm Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_762x39_20rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_762x39Tracer_20Rnd",
+    "inGameName": "Boxed 7.62x39mm Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_762x39tracer_20rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_22_50Rnd",
+    "inGameName": "Boxed .22 LR Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_22_50rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_357_20Rnd",
+    "inGameName": "Boxed .357 Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_357_20rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_45ACP_25rnd",
+    "inGameName": "Boxed .45 ACP Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_45acp_25rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_9x19_25rnd",
+    "inGameName": "Boxed 9x19mm Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_9x19_25rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_380_35rnd",
+    "inGameName": "Boxed .380 ACP Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_380_35rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_00buck_10rnd",
+    "inGameName": "Boxed 12ga 00 Buckshots",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_00buck_10rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_12gaSlug_10Rnd",
+    "inGameName": "Boxed 12ga Rifled Slugs",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_12gaslug_10rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_12gaRubberSlug_10Rnd",
+    "inGameName": "Boxed 12ga Rubber Slugs",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_12garubberslug_10rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_12gaBeanbag_10Rnd",
+    "inGameName": "",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_12gabeanbag_10rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_545x39_20Rnd",
+    "inGameName": "Boxed 5.45x39mm Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_545x39_20rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_545x39Tracer_20Rnd",
+    "inGameName": "Boxed 5.45x39mm Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_545x39tracer_20rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_9x39AP_20Rnd",
+    "inGameName": "Boxed 9x39mm Armor-Piercing Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_9x39ap_20rnd.jpg"
+  },
+  {
+    "objectName": "AmmoBox_9x39_20Rnd",
+    "inGameName": "Boxed 9x39mm Rounds",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammobox_9x39_20rnd.jpg"
+  },
+  {
+    "objectName": "GrenadeM4",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/grenadem4.jpg"
+  },
+  {
+    "objectName": "Rocket_RPG7_Base",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/rocket_rpg7_base.jpg"
+  },
+  {
+    "objectName": "Rocket_RPG7_HE",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/rocket_rpg7_he.jpg"
+  },
+  {
+    "objectName": "Rocket_RPG7_AP",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/rocket_rpg7_ap.jpg"
+  },
+  {
+    "objectName": "Rocket_LAW_Base",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/rocket_law_base.jpg"
+  },
+  {
+    "objectName": "Rocket_LAW_HE",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/rocket_law_he.jpg"
+  },
+  {
+    "objectName": "00buck_10roundbox.p3d",
+    "inGameName": "",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/00buck_10roundbox.p3d.jpg"
+  },
+  {
+    "objectName": "12ga_00buck.p3d",
+    "inGameName": "12ga 00 Buckshots",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/12ga_00buck.p3d.jpg"
+  },
+  {
+    "objectName": "12ga_beanbag.p3d",
+    "inGameName": "",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/12ga_beanbag.p3d.jpg"
+  },
+  {
+    "objectName": "12ga_rifled_slug.p3d",
+    "inGameName": "12ga Rifled Slugs",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/12ga_rifled_slug.p3d.jpg"
+  },
+  {
+    "objectName": "12ga_rubberrifled_slug.p3d",
+    "inGameName": "12ga Rubber Slugs",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/12ga_rubberrifled_slug.p3d.jpg"
+  },
+  {
+    "objectName": "22lr_looseround.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/22lr_looseround.p3d.jpg"
+  },
+  {
+    "objectName": "22_50roundbox.p3d",
+    "inGameName": "Boxed .22 LR Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/22_50roundbox.p3d.jpg"
+  },
+  {
+    "objectName": "22_looserounds.p3d",
+    "inGameName": ".22 LR Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/22_looserounds.p3d.jpg"
+  },
+  {
+    "objectName": "308win_20roundbox.p3d",
+    "inGameName": "Boxed .308 WIN Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/308win_20roundbox.p3d.jpg"
+  },
+  {
+    "objectName": "308win_looserounds.p3d",
+    "inGameName": ".308 WIN Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/308win_looserounds.p3d.jpg"
+  },
+  {
+    "objectName": "357_20roundbox.p3d",
+    "inGameName": "Boxed .357 Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/357_20roundbox.p3d.jpg"
+  },
+  {
+    "objectName": "357_looserounds.p3d",
+    "inGameName": ".357 Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/357_looserounds.p3d.jpg"
+  },
+  {
+    "objectName": "380auto_35roundbox.p3d",
+    "inGameName": "Boxed .380 ACP Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/380auto_35roundbox.p3d.jpg"
+  },
+  {
+    "objectName": "380auto_looserounds.p3d",
+    "inGameName": ".380 ACP Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/380auto_looserounds.p3d.jpg"
+  },
+  {
+    "objectName": "380auto_singleround.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/380auto_singleround.p3d.jpg"
+  },
+  {
+    "objectName": "40mm_grenade.p3d",
+    "inGameName": "40mm Explosive Grenade",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/40mm_grenade.p3d.jpg"
+  },
+  {
+    "objectName": "40mm_grenade_chemgas.p3d",
+    "inGameName": "40mm PO-X Grenade",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/40mm_grenade_chemgas.p3d.jpg"
+  },
+  {
+    "objectName": "40mm_grenade_smoke_b.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/40mm_grenade_smoke_b.p3d.jpg"
+  },
+  {
+    "objectName": "40mm_grenade_smoke_g.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/40mm_grenade_smoke_g.p3d.jpg"
+  },
+  {
+    "objectName": "40mm_grenade_smoke_r.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/40mm_grenade_smoke_r.p3d.jpg"
+  },
+  {
+    "objectName": "40mm_grenade_smoke_w.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/40mm_grenade_smoke_w.p3d.jpg"
+  },
+  {
+    "objectName": "45acp_25rnd_box.p3d",
+    "inGameName": "Boxed .45 ACP Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/45acp_25rnd_box.p3d.jpg"
+  },
+  {
+    "objectName": "45acp_looserounds.p3d",
+    "inGameName": ".45 ACP Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/45acp_looserounds.p3d.jpg"
+  },
+  {
+    "objectName": "545x39_20roundbox.p3d",
+    "inGameName": "Boxed 5.45x39mm Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/545x39_20roundbox.p3d.jpg"
+  },
+  {
+    "objectName": "545x39_looserounds.p3d",
+    "inGameName": "5.45x39mm Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/545x39_looserounds.p3d.jpg"
+  },
+  {
+    "objectName": "556_20roundbox.p3d",
+    "inGameName": "Boxed 5.56x45mm Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/556_20roundbox.p3d.jpg"
+  },
+  {
+    "objectName": "556_looserounds.p3d",
+    "inGameName": "5.56x45mm Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/556_looserounds.p3d.jpg"
+  },
+  {
+    "objectName": "762x39_20roundbox.p3d",
+    "inGameName": "Boxed 7.62x39mm Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/762x39_20roundbox.p3d.jpg"
+  },
+  {
+    "objectName": "762x39_box.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/762x39_box.p3d.jpg"
+  },
+  {
+    "objectName": "762x39_looserounds.p3d",
+    "inGameName": "7.62x39mm Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/762x39_looserounds.p3d.jpg"
+  },
+  {
+    "objectName": "762_20roundbox.p3d",
+    "inGameName": "Boxed 7.62x54mmR Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/762_20roundbox.p3d.jpg"
+  },
+  {
+    "objectName": "762_looserounds.p3d",
+    "inGameName": "7.62x54mmR Tracer Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/762_looserounds.p3d.jpg"
+  },
+  {
+    "objectName": "9mm_25rnd_box.p3d",
+    "inGameName": "Boxed 9x19mm Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/9mm_25rnd_box.p3d.jpg"
+  },
+  {
+    "objectName": "9mm_looserounds.p3d",
+    "inGameName": "9x19mm Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/9mm_looserounds.p3d.jpg"
+  },
+  {
+    "objectName": "9x39_20roundbox.p3d",
+    "inGameName": "Boxed 9x39mm Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/9x39_20roundbox.p3d.jpg"
+  },
+  {
+    "objectName": "9x39_looserounds.p3d",
+    "inGameName": "9x39mm Rounds",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/9x39_looserounds.p3d.jpg"
+  },
+  {
+    "objectName": "flare_singleround.p3d",
+    "inGameName": "Flare",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/placeholder.jpeg"
+  },
+  {
+    "objectName": "flare_singleround_blue.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/placeholder.jpeg"
+  },
+  {
+    "objectName": "flare_singleround_green.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/placeholder.jpeg"
+  },
+  {
+    "objectName": "flare_singleround_red.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/placeholder.jpeg"
+  },
+  {
+    "objectName": "rocket_rpg7.p3d",
+    "inGameName": "PG-7V Warhead, AP",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/rocket_rpg7.p3d.jpg"
+  },
+  {
+    "objectName": "rocket_rpg7_inflight.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/rocket_rpg7_inflight.p3d.jpg"
+  },
+  {
+    "objectName": "vog25.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/vog25.p3d.jpg"
+  }
+]

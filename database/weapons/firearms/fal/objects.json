@@ -1,0 +1,22 @@
+[
+  {
+    "objectName": "FAL",
+    "inGameName": "LAR",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/fal",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, .308",
+    "image": "images/weapons/firearms/fal/fal.jpg"
+  },
+  {
+    "objectName": "fal.p3d",
+    "inGameName": "LAR",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/fal",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, .308",
+    "image": "images/weapons/firearms/fal.jpg"
+  }
+]

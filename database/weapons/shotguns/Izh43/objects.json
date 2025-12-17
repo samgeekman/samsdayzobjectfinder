@@ -1,0 +1,42 @@
+[
+  {
+    "objectName": "Izh43Shotgun",
+    "inGameName": "BK-43",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/shotguns/izh43",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/shotguns/izh43/izh43shotgun.jpg"
+  },
+  {
+    "objectName": "SawedoffIzh43Shotgun",
+    "inGameName": "Sawed-off BK-43",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/shotguns/izh43",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/shotguns/izh43/sawedoffizh43shotgun.jpg"
+  },
+  {
+    "objectName": "izh43.p3d",
+    "inGameName": "BK-43",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/shotguns/izh43",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/shotguns/izh43/izh43.p3d.jpg"
+  },
+  {
+    "objectName": "izh43_sawedoff.p3d",
+    "inGameName": "Sawed-off BK-43",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/shotguns/izh43",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/shotguns/izh43/izh43_sawedoff.p3d.jpg"
+  }
+]

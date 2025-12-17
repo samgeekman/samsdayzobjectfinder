@@ -1,0 +1,42 @@
+[
+  {
+    "objectName": "SVD",
+    "inGameName": "VSD",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/svd",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr, dragunov",
+    "image": "images/weapons/firearms/svd/svd.jpg"
+  },
+  {
+    "objectName": "SVD_Wooden",
+    "inGameName": "VSD",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/svd",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr, dragunov",
+    "image": "images/weapons/firearms/svd/svd_wooden.jpg"
+  },
+  {
+    "objectName": "svd.p3d",
+    "inGameName": "VSD",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/svd",
+    "usableOnConsole": false,
+    "searchTags": "rifles, 7.62x54mmr, dragunov",
+    "image": "images/weapons/firearms/dzweaponsfirearmssvdsvd.p3d.jpeg"
+  },
+  {
+    "objectName": "svd_old.p3d",
+    "inGameName": "VSD",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/svd",
+    "usableOnConsole": false,
+    "searchTags": "rifles, 7.62x54mmr, dragunov",
+    "image": "images/weapons/firearms/dzweaponsfirearmssvdsvd_old.p3d.jpeg"
+  }
+]

@@ -1,0 +1,682 @@
+[
+  {
+    "objectName": "PlateCarrierPouches",
+    "inGameName": "Pouches",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarrierpouches.jpg"
+  },
+  {
+    "objectName": "PlateCarrierVest",
+    "inGameName": "Plate Carrier",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarriervest.jpg"
+  },
+  {
+    "objectName": "SmershVest",
+    "inGameName": "Assault Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/smershvest.jpg"
+  },
+  {
+    "objectName": "PressVest_Blue",
+    "inGameName": "Ballistic Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/pressvest_colorbase.jpg"
+  },
+  {
+    "objectName": "PressVest_LightBlue",
+    "inGameName": "Ballistic Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/pressvest_colorbase.jpg"
+  },
+  {
+    "objectName": "UKAssVest_Black",
+    "inGameName": "Field Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/ukassvest_colorbase.jpg"
+  },
+  {
+    "objectName": "UKAssVest_Camo",
+    "inGameName": "Field Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/ukassvest_colorbase.jpg"
+  },
+  {
+    "objectName": "UKAssVest_Khaki",
+    "inGameName": "Field Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/ukassvest_colorbase.jpg"
+  },
+  {
+    "objectName": "UKAssVest_Olive",
+    "inGameName": "Field Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/ukassvest_colorbase.jpg"
+  },
+  {
+    "objectName": "UKAssVest_Winter",
+    "inGameName": "Field Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/ukassvest_colorbase.jpg"
+  },
+  {
+    "objectName": "PoliceVest",
+    "inGameName": "Stab Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/policevest.jpg"
+  },
+  {
+    "objectName": "PlateCarrierHolster",
+    "inGameName": "Holster",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarrierholster.jpg"
+  },
+  {
+    "objectName": "ChestHolster",
+    "inGameName": "Chest Holster",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/chestholster.jpg"
+  },
+  {
+    "objectName": "HighCapacityVest_Black",
+    "inGameName": "Tactical Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/highcapacityvest_colorbase.jpg"
+  },
+  {
+    "objectName": "HighCapacityVest_Olive",
+    "inGameName": "Tactical Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/highcapacityvest_colorbase.jpg"
+  },
+  {
+    "objectName": "LeatherStorageVest_Beige",
+    "inGameName": "Leather Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/leatherstoragevest_colorbase.jpg"
+  },
+  {
+    "objectName": "LeatherStorageVest_Black",
+    "inGameName": "Leather Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/leatherstoragevest_colorbase.jpg"
+  },
+  {
+    "objectName": "LeatherStorageVest_Brown",
+    "inGameName": "Leather Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/leatherstoragevest_colorbase.jpg"
+  },
+  {
+    "objectName": "LeatherStorageVest_Natural",
+    "inGameName": "Leather Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/leatherstoragevest_colorbase.jpg"
+  },
+  {
+    "objectName": "HuntingVest",
+    "inGameName": "Hunter Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/huntingvest.jpg"
+  },
+  {
+    "objectName": "ReflexVest",
+    "inGameName": "Reflective Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/reflexvest.jpg"
+  },
+  {
+    "objectName": "Chestplate",
+    "inGameName": "Chestplate",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/chestplate.jpg"
+  },
+  {
+    "objectName": "Proxyplate_carrier_pouches_g",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/proxyplate_carrier_pouches_g.jpg"
+  },
+  {
+    "objectName": "Proxyplate_carrier_holster_g",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/proxyplate_carrier_holster_g.jpg"
+  },
+  {
+    "objectName": "chestplate_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/chestplate_f.p3d.jpg"
+  },
+  {
+    "objectName": "chestplate_g.p3d",
+    "inGameName": "Chestplate",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/chestplate_g.p3d.jpg"
+  },
+  {
+    "objectName": "chestplate_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/chestplate_m.p3d.jpg"
+  },
+  {
+    "objectName": "chest_holster_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/chest_holster_f.p3d.jpg"
+  },
+  {
+    "objectName": "chest_holster_g.p3d",
+    "inGameName": "Chest Holster",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/chest_holster_g.p3d.jpg"
+  },
+  {
+    "objectName": "chest_holster_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/chest_holster_m.p3d.jpg"
+  },
+  {
+    "objectName": "hunter_vest_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/hunter_vest_f.p3d.jpg"
+  },
+  {
+    "objectName": "hunter_vest_g.p3d",
+    "inGameName": "Hunter Vest",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/hunter_vest_g.p3d.jpg"
+  },
+  {
+    "objectName": "hunter_vest_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/hunter_vest_m.p3d.jpg"
+  },
+  {
+    "objectName": "orange_vest_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/orange_vest_f.p3d.jpg"
+  },
+  {
+    "objectName": "orange_vest_g.p3d",
+    "inGameName": "Reflective Vest",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/orange_vest_g.p3d.jpg"
+  },
+  {
+    "objectName": "orange_vest_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/orange_vest_m.p3d.jpg"
+  },
+  {
+    "objectName": "plate_carrier_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/plate_carrier_f.p3d.jpg"
+  },
+  {
+    "objectName": "plate_carrier_g.p3d",
+    "inGameName": "Plate Carrier",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/plate_carrier_g.p3d.jpg"
+  },
+  {
+    "objectName": "plate_carrier_holster_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/plate_carrier_holster_g.p3d.jpg"
+  },
+  {
+    "objectName": "plate_carrier_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/plate_carrier_m.p3d.jpg"
+  },
+  {
+    "objectName": "plate_carrier_pouches_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/plate_carrier_pouches_g.p3d.jpg"
+  },
+  {
+    "objectName": "policevest_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/policevest_f.p3d.jpg"
+  },
+  {
+    "objectName": "policevest_g.p3d",
+    "inGameName": "Stab Vest",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/policevest_g.p3d.jpg"
+  },
+  {
+    "objectName": "policevest_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/policevest_m.p3d.jpg"
+  },
+  {
+    "objectName": "pressvest_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/pressvest_f.p3d.jpg"
+  },
+  {
+    "objectName": "pressvest_g.p3d",
+    "inGameName": "Ballistic Vest",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/pressvest_g.p3d.jpg"
+  },
+  {
+    "objectName": "pressvest_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/pressvest_m.p3d.jpg"
+  },
+  {
+    "objectName": "smersh_animated_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/smersh_animated_f.p3d.jpg"
+  },
+  {
+    "objectName": "smersh_animated_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/smersh_animated_g.p3d.jpg"
+  },
+  {
+    "objectName": "smersh_animated_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/smersh_animated_m.p3d.jpg"
+  },
+  {
+    "objectName": "smersh_buttpack.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/smersh_buttpack.p3d.jpg"
+  },
+  {
+    "objectName": "smersh_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/smersh_f.p3d.jpg"
+  },
+  {
+    "objectName": "smersh_g.p3d",
+    "inGameName": "Assault Vest",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/smersh_g.p3d.jpg"
+  },
+  {
+    "objectName": "smersh_light_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/smersh_light_f.p3d.jpg"
+  },
+  {
+    "objectName": "smersh_light_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/smersh_light_g.p3d.jpg"
+  },
+  {
+    "objectName": "smersh_light_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/smersh_light_m.p3d.jpg"
+  },
+  {
+    "objectName": "smersh_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/smersh_m.p3d.jpg"
+  },
+  {
+    "objectName": "tacticalvest2_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/tacticalvest2_f.p3d.jpg"
+  },
+  {
+    "objectName": "tacticalvest2_g.p3d",
+    "inGameName": "Tactical Vest",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/tacticalvest2_g.p3d.jpg"
+  },
+  {
+    "objectName": "tacticalvest2_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/tacticalvest2_m.p3d.jpg"
+  },
+  {
+    "objectName": "ukassvest_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/ukassvest_f.p3d.jpg"
+  },
+  {
+    "objectName": "ukassvest_g.p3d",
+    "inGameName": "Field Vest",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/ukassvest_g.p3d.jpg"
+  },
+  {
+    "objectName": "ukassvest_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/ukassvest_m.p3d.jpg"
+  },
+  {
+    "objectName": "vestholster.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/vestholster.p3d.jpg"
+  },
+  {
+    "objectName": "vestholster_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/vestholster_g.p3d.jpg"
+  },
+  {
+    "objectName": "vest_leatherstorage_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/vest_leatherstorage_f.p3d.jpg"
+  },
+  {
+    "objectName": "vest_leatherstorage_g.p3d",
+    "inGameName": "Leather Vest",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/vest_leatherstorage_g.p3d.jpg"
+  },
+  {
+    "objectName": "vest_leatherstorage_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/vests",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/vests/vest_leatherstorage_m.p3d.jpg"
+  }
+]

@@ -1,0 +1,568 @@
+[
+  {
+    "objectName": "Land_Power_Pole_Conc1_Amp",
+    "inGameName": "Amplion on concrete pole",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "pole, metal, PA, pa_system, speaker, infrastructure, electricity, utility",
+    "image": "images/structures/industrial/power/land_power_pole_conc1_amp.jpg"
+  },
+  {
+    "objectName": "Land_Power_Pole_Conc4_Lamp_Amp",
+    "inGameName": "Amplion on concrete pole",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "pole, metal, PA, pa_system, speaker, infrastructure, street_light, street_lamp",
+    "image": "images/structures/industrial/power/land_power_pole_conc4_lamp_amp.jpg"
+  },
+  {
+    "objectName": "Land_Power_Pole_Wood1_Amp",
+    "inGameName": "Amplion on wooden pole",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility, PA, pa_system, speaker",
+    "image": "images/structures/industrial/power/land_power_pole_wood1_amp.jpg"
+  },
+  {
+    "objectName": "Land_Power_Pole_Wood1_Lamp_Amp",
+    "inGameName": "Amplion on wooden pole",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, pole, wood, lamp, light, streetlight, utility, PA, pa_system, speaker",
+    "image": "images/structures/industrial/power/land_power_pole_wood1_lamp_amp.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_HV_Line",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/industrial/power/staticobj_power_hv_line.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_HV_Line_80m_damaged",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage",
+    "image": "images/structures/industrial/power/staticobj_power_hv_line_80m_damaged.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_HV_Line_damaged",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage",
+    "image": "images/structures/industrial/power/staticobj_power_hv_line_damaged.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_HV_Line_Turn",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, powerline, infrastructure, high_voltage, corner",
+    "image": "images/structures/industrial/power/staticobj_power_hv_line_turn.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_HV_Line_TurnL",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, powerline, infrastructure, high_voltage, left_turn",
+    "image": "images/structures/industrial/power/staticobj_power_hv_line_turnl.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_HV_Line_TurnR",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, powerline, infrastructure, high_voltage, right_turn",
+    "image": "images/structures/industrial/power/staticobj_power_hv_line_turnr.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_HV_Tower",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, powerline, pylon, metal, tower, high_voltage, infrastructure",
+    "image": "images/structures/industrial/power/staticobj_power_hv_tower.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_Pole_ConcT",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, pole, concrete, utility, powerline",
+    "image": "images/structures/industrial/power/staticobj_power_pole_conct.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_Pole_Wood1_Trail_B",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, pole, wood, trail, marker, blue, utility",
+    "image": "images/structures/industrial/power/staticobj_power_pole_wood1_trail_b.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_Pole_Wood1_Trail_G",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, pole, wood, trail, marker, green, utility",
+    "image": "images/structures/industrial/power/staticobj_power_pole_wood1_trail_g.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_Pole_Wood1_Trail_R",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, pole, wood, trail, marker, red, utility",
+    "image": "images/structures/industrial/power/staticobj_power_pole_wood1_trail_r.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_Pole_Wood1_Trail_Y",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, pole, wood, trail, marker, yellow, utility",
+    "image": "images/structures/industrial/power/staticobj_power_pole_wood1_trail_y.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_Pole_Wood2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility",
+    "image": "images/structures/industrial/power/staticobj_power_pole_wood2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_Pole_Wood3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility",
+    "image": "images/structures/industrial/power/staticobj_power_pole_wood3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_Transformer_Small",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, transformer, utility, small, substation",
+    "image": "images/structures/industrial/power/staticobj_power_transformer_small.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_TransformerStation_Big",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, transformer, utility, large, station, substation",
+    "image": "images/structures/industrial/power/staticobj_power_transformerstation_big.jpg"
+  },
+  {
+    "objectName": "StaticObj_Power_TransformerStation_Cables",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, transformer, utility, station, substation, cables",
+    "image": "images/structures/industrial/power/staticobj_power_transformerstation_cables.jpg"
+  },
+  {
+    "objectName": "power_hv_line.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, powerline, infrastructure, high_voltage",
+    "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_Turn.jpg"
+  },
+  {
+    "objectName": "power_hv_line_80m_damaged.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage",
+    "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_80m_damaged.jpg"
+  },
+  {
+    "objectName": "power_hv_line_damaged.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage",
+    "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_damaged.jpg"
+  },
+  {
+    "objectName": "power_hv_line_turn.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/power/staticobj_power_hv_line_turn.jpg"
+  },
+  {
+    "objectName": "power_hv_line_turnl.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, powerline, infrastructure, high_voltage, left_turn",
+    "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_TurnL.jpg"
+  },
+  {
+    "objectName": "power_hv_line_turnr.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, powerline, infrastructure, high_voltage, right_turn",
+    "image": "images/structures/industrial/power/StaticObj_Power_HV_Line_TurnR.jpg"
+  },
+  {
+    "objectName": "power_hv_tower.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, powerline, pylon, metal, tower, high_voltage, infrastructure",
+    "image": "images/structures/industrial/power/StaticObj_Power_HV_Tower.jpg"
+  },
+  {
+    "objectName": "power_pole_conc1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/power/power_pole_conc1.p3d.jpg"
+  },
+  {
+    "objectName": "power_pole_conc1_amp.p3d",
+    "inGameName": "Amplion on concrete pole",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "pole, metal, PA, pa_system, speaker, infrastructure, electricity, utility",
+    "image": "images/structures/industrial/power/Land_Power_Pole_Conc1_Amp.jpg"
+  },
+  {
+    "objectName": "power_pole_conc3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/power/power_pole_conc3.p3d.jpg"
+  },
+  {
+    "objectName": "power_pole_conc4.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/power/power_pole_conc4.p3d.jpg"
+  },
+  {
+    "objectName": "power_pole_conc4_lamp.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/power/power_pole_conc4_lamp.p3d.jpg"
+  },
+  {
+    "objectName": "power_pole_conc4_lamp_amp.p3d",
+    "inGameName": "Amplion on concrete pole",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "pole, metal, PA, pa_system, speaker, infrastructure, street_light, street_lamp",
+    "image": "images/structures/industrial/power/Land_Power_Pole_Conc4_Lamp_Amp.jpg"
+  },
+  {
+    "objectName": "power_pole_conc4_lamp_trail_b.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/power/power_pole_conc4_lamp_trail_b.p3d.jpg"
+  },
+  {
+    "objectName": "power_pole_conc4_lamp_trail_g.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/power/power_pole_conc4_lamp_trail_g.p3d.jpg"
+  },
+  {
+    "objectName": "power_pole_conc4_lamp_trail_r.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/power/power_pole_conc4_lamp_trail_r.p3d.jpg"
+  },
+  {
+    "objectName": "power_pole_conc4_lamp_trail_y.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/power/power_pole_conc4_lamp_trail_y.p3d.jpg"
+  },
+  {
+    "objectName": "power_pole_conct.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, pole, concrete, utility, powerline",
+    "image": "images/structures/industrial/power/StaticObj_Power_Pole_ConcT.jpg"
+  },
+  {
+    "objectName": "power_pole_wood1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/power/power_pole_wood1.p3d.jpg"
+  },
+  {
+    "objectName": "power_pole_wood1_amp.p3d",
+    "inGameName": "Amplion on wooden pole",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility, PA, pa_system, speaker",
+    "image": "images/structures/industrial/power/Land_Power_Pole_Wood1_Amp.jpg"
+  },
+  {
+    "objectName": "power_pole_wood1_lamp.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/power/power_pole_wood1_lamp.p3d.jpg"
+  },
+  {
+    "objectName": "power_pole_wood1_lamp_amp.p3d",
+    "inGameName": "Amplion on wooden pole",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, pole, wood, lamp, light, streetlight, utility, PA, pa_system, speaker",
+    "image": "images/structures/industrial/power/Land_Power_Pole_Wood1_Lamp_Amp.jpg"
+  },
+  {
+    "objectName": "power_pole_wood1_lamp_only.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/power/power_pole_wood1_lamp_only.p3d.jpg"
+  },
+  {
+    "objectName": "power_pole_wood1_trail_b.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, pole, wood, trail, marker, blue, utility",
+    "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_B.jpg"
+  },
+  {
+    "objectName": "power_pole_wood1_trail_g.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, pole, wood, trail, marker, green, utility",
+    "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_G.jpg"
+  },
+  {
+    "objectName": "power_pole_wood1_trail_r.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, pole, wood, trail, marker, red, utility",
+    "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_R.jpg"
+  },
+  {
+    "objectName": "power_pole_wood1_trail_y.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, pole, wood, trail, marker, yellow, utility",
+    "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood1_Trail_Y.jpg"
+  },
+  {
+    "objectName": "power_pole_wood2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility",
+    "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood2.jpg"
+  },
+  {
+    "objectName": "power_pole_wood3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility",
+    "image": "images/structures/industrial/power/StaticObj_Power_Pole_Wood3.jpg"
+  },
+  {
+    "objectName": "power_transformerstation_big.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, transformer, utility, large, station, substation",
+    "image": "images/structures/industrial/power/StaticObj_Power_TransformerStation_Big.jpg"
+  },
+  {
+    "objectName": "power_transformerstation_cables.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, transformer, utility, station, substation, cables",
+    "image": "images/structures/industrial/power/StaticObj_Power_TransformerStation_Cables.jpg"
+  },
+  {
+    "objectName": "power_transformer_small.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, transformer, utility, small, substation",
+    "image": "images/structures/industrial/power/StaticObj_Power_Transformer_Small.jpg"
+  },
+  {
+    "objectName": "Land_Power_Station",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, building, industrial, utility, loading, generator",
+    "image": "images/structures/industrial/power/land_power_station.jpg"
+  },
+  {
+    "objectName": "Land_Power_Transformer_Build",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": true,
+    "searchTags": "electricity, utility, tower",
+    "image": "images/structures/industrial/power/land_power_transformer_build.jpg"
+  },
+  {
+    "objectName": "power_station.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, building, industrial, utility, loading, generator",
+    "image": "images/structures/industrial/power/Land_Power_Station.jpg"
+  },
+  {
+    "objectName": "power_transformer_build.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "electricity, utility, tower",
+    "image": "images/structures/industrial/power/Land_Power_Transformer_Build.jpg"
+  }
+]

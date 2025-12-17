@@ -1,0 +1,42 @@
+[
+  {
+    "objectName": "Mp133Shotgun",
+    "inGameName": "BK-133",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/shotguns/mp133",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/shotguns/mp133/mp133shotgun.jpg"
+  },
+  {
+    "objectName": "Mp133Shotgun_PistolGrip",
+    "inGameName": "MP-133 Shotgun with a pistol grip",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/shotguns/mp133",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/shotguns/mp133/mp133shotgun_pistolgrip.jpg"
+  },
+  {
+    "objectName": "mp133.p3d",
+    "inGameName": "BK-133",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/shotguns/mp133",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/shotguns/mp133/mp133.p3d.jpg"
+  },
+  {
+    "objectName": "mp133_pistol_grip.p3d",
+    "inGameName": "MP-133 Shotgun with a pistol grip",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/shotguns/mp133",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/shotguns/mp133/mp133_pistol_grip.p3d.jpg"
+  }
+]

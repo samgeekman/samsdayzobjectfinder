@@ -1,0 +1,22 @@
+[
+  {
+    "objectName": "PVCBow",
+    "inGameName": "PVC Bow",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/archery/bow_pvc",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/archery/bow_pvc/pvcbow.jpg"
+  },
+  {
+    "objectName": "bow_pvc.p3d",
+    "inGameName": "PVC Bow",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/archery/bow_pvc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/archery/bow_pvc/bow_pvc.p3d.jpg"
+  }
+]

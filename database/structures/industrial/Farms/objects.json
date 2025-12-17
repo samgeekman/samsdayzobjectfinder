@@ -1,0 +1,308 @@
+[
+  {
+    "objectName": "Land_Farm_CowshedB",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+    "image": "images/structures/industrial/farms/land_farm_cowshedb.jpg"
+  },
+  {
+    "objectName": "Land_Farm_Hopper",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, grain, silo, animals, feed, metal, ladder, rusted",
+    "image": "images/structures/industrial/farms/land_farm_hopper.jpg"
+  },
+  {
+    "objectName": "Land_Farm_Watertower",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, water, tower, large, ball, wires, round",
+    "image": "images/structures/industrial/farms/land_farm_watertower.jpg"
+  },
+  {
+    "objectName": "Land_Farm_WaterTower_Small",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, water, tower, metal, ladder, rusted",
+    "image": "images/structures/industrial/farms/land_farm_watertower_small.jpg"
+  },
+  {
+    "objectName": "StaticObj_Barn_CowshedA",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+    "image": "images/structures/industrial/farms/staticobj_barn_cowsheda.jpg"
+  },
+  {
+    "objectName": "StaticObj_Barn_CowshedB",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+    "image": "images/structures/industrial/farms/staticobj_barn_cowshedb.jpg"
+  },
+  {
+    "objectName": "StaticObj_Barn_CowshedC",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+    "image": "images/structures/industrial/farms/staticobj_barn_cowshedc.jpg"
+  },
+  {
+    "objectName": "StaticObj_Barn_Hopper",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, grain, silo, animals, feed, metal, ladder, rusted",
+    "image": "images/structures/industrial/farms/staticobj_barn_hopper.jpg"
+  },
+  {
+    "objectName": "StaticObj_Barn_StrawStack",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, straw",
+    "image": "images/structures/industrial/farms/staticobj_barn_strawstack.jpg"
+  },
+  {
+    "objectName": "StaticObj_Barn_WaterTower",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, water, tower, large, ball, wires, round",
+    "image": "images/structures/industrial/farms/staticobj_barn_watertower.jpg"
+  },
+  {
+    "objectName": "StaticObj_Barn_WaterTower_Small",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, water, tower, metal, ladder, rusted",
+    "image": "images/structures/industrial/farms/staticobj_barn_watertower_small.jpg"
+  },
+  {
+    "objectName": "farm_cowsheda.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": false,
+    "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+    "image": "images/structures/industrial/farms/Land_Farm_CowshedA.jpg"
+  },
+  {
+    "objectName": "farm_cowshedb.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": false,
+    "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+    "image": "images/structures/industrial/farms/Land_Farm_CowshedB.jpg"
+  },
+  {
+    "objectName": "farm_cowshedc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": false,
+    "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+    "image": "images/structures/industrial/farms/Land_Farm_CowshedC.jpg"
+  },
+  {
+    "objectName": "farm_hopper.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": false,
+    "searchTags": "agriculture, farm, grain, silo, animals, feed, metal, ladder, rusted",
+    "image": "images/structures/industrial/farms/Land_Farm_Hopper.jpg"
+  },
+  {
+    "objectName": "farm_strawstack.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": false,
+    "searchTags": "agriculture, farm, straw",
+    "image": "images/structures/industrial/farms/StaticObj_Barn_StrawStack.jpg"
+  },
+  {
+    "objectName": "farm_watertower.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": false,
+    "searchTags": "agriculture, farm, water, tower, large, ball, wires, round",
+    "image": "images/structures/industrial/farms/Land_Farm_Watertower.jpg"
+  },
+  {
+    "objectName": "farm_watertower_small.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": false,
+    "searchTags": "agriculture, farm, water, tower, metal, ladder, rusted",
+    "image": "images/structures/industrial/farms/Land_Farm_WaterTower_Small.jpg"
+  },
+  {
+    "objectName": "Land_Farm_CowshedA",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+    "image": "images/structures/industrial/farms/land_farm_cowsheda.jpg"
+  },
+  {
+    "objectName": "Land_Farm_CowshedC",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, wooden, small, cows, animal, broken, damaged",
+    "image": "images/structures/industrial/farms/land_farm_cowshedc.jpg"
+  },
+  {
+    "objectName": "barn_brick1.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": false,
+    "searchTags": "agriculture, farm, red_roof, double, stairs, two_storey, medium",
+    "image": "images/structures/industrial/farms/Land_Barn_Brick1.jpg"
+  },
+  {
+    "objectName": "barn_brick2.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": false,
+    "searchTags": "agriculture, farm, grey_roof, double, medium",
+    "image": "images/structures/industrial/farms/Land_Barn_Brick2.jpg"
+  },
+  {
+    "objectName": "barn_metal_big.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": false,
+    "searchTags": "agriculture, farm, metal, large, metal, broken, damaged, red",
+    "image": "images/structures/industrial/farms/Land_Barn_Metal_Big.jpg"
+  },
+  {
+    "objectName": "barn_metal_big_grey.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": false,
+    "searchTags": "agriculture, farm, metal, large, metal, broken, damaged, grey",
+    "image": "images/structures/industrial/farms/Land_Barn_Metal_Big_Grey.jpg"
+  },
+  {
+    "objectName": "barn_wood1.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": false,
+    "searchTags": "agriculture, farm, wooden, large, cows, animal",
+    "image": "images/structures/industrial/farms/Land_Barn_Wood1.jpg"
+  },
+  {
+    "objectName": "barn_wood2.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": false,
+    "searchTags": "agriculture, farm, wooden, small, cows, animal",
+    "image": "images/structures/industrial/farms/Land_Barn_Wood2.jpg"
+  },
+  {
+    "objectName": "Land_Barn_Brick1",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, red_roof, double, stairs, two_storey, medium",
+    "image": "images/structures/industrial/farms/land_barn_brick1.jpg"
+  },
+  {
+    "objectName": "Land_Barn_Brick2",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, grey_roof, double, medium",
+    "image": "images/structures/industrial/farms/land_barn_brick2.jpg"
+  },
+  {
+    "objectName": "Land_Barn_Metal_Big",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, metal, large, metal, broken, damaged, red",
+    "image": "images/structures/industrial/farms/land_barn_metal_big.jpg"
+  },
+  {
+    "objectName": "Land_Barn_Metal_Big_Grey",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, metal, large, metal, broken, damaged, grey",
+    "image": "images/structures/industrial/farms/land_barn_metal_big_grey.jpg"
+  },
+  {
+    "objectName": "Land_Barn_Wood1",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, wooden, large, cows, animal",
+    "image": "images/structures/industrial/farms/land_barn_wood1.jpg"
+  },
+  {
+    "objectName": "Land_Barn_Wood2",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/farms",
+    "usableOnConsole": true,
+    "searchTags": "agriculture, farm, wooden, small, cows, animal",
+    "image": "images/structures/industrial/farms/land_barn_wood2.jpg"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "objectName": "Flaregun",
+    "inGameName": "Signal Pistol",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/flaregun",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/flaregun/flaregun.jpg"
+  },
+  {
+    "objectName": "ProxyFlaregun",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/flaregun",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/flaregun/proxyflaregun.jpg"
+  },
+  {
+    "objectName": "flaregun.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/pistols/flaregun",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/pistols/flaregun/flaregun.p3d.jpg"
+  }
+]

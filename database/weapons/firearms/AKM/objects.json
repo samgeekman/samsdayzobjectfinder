@@ -1,0 +1,22 @@
+[
+  {
+    "objectName": "AKM",
+    "inGameName": "KA-M",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/akm",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/firearms/akm/akm.jpg"
+  },
+  {
+    "objectName": "akm.p3d",
+    "inGameName": "KA-M",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/akm",
+    "usableOnConsole": false,
+    "searchTags": "AK, machine_gun, automatic, 7.62x39",
+    "image": "images/weapons/firearms/dzweaponsfirearmsakmakm.p3d.jpeg"
+  }
+]

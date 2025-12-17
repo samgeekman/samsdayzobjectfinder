@@ -1,0 +1,29 @@
+[
+  {
+    "objectName": "city_policestation_enoch.p3d",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/residential/police",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_bliss/residential/police/city_policestation_enoch.p3d.jpg"
+  },
+  {
+    "objectName": "Land_City_PoliceStation_Enoch",
+    "category": "structures_bliss",
+    "modelType": "Config",
+    "path": "dz/structures_bliss/residential/police",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_bliss/residential/police/land_city_policestation_enoch.jpg"
+  },
+  {
+    "objectName": "Land_Village_PoliceStation_Enoch",
+    "category": "structures_bliss",
+    "modelType": "Config",
+    "path": "dz/structures_bliss/residential/police",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_bliss/residential/police/land_village_policestation_enoch.jpg"
+  }
+]

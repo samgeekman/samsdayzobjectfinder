@@ -1,0 +1,80 @@
+[
+  {
+    "objectName": "StaticObj_Quarry_Conveyer",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/quarry",
+    "usableOnConsole": true,
+    "searchTags": "conveyer_belt, machinery, factory, stone, large, diagonal, ramp",
+    "image": "images/structures/industrial/quarry/staticobj_quarry_conveyer.jpg"
+  },
+  {
+    "objectName": "StaticObj_Quarry_ConveyerLong",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/quarry",
+    "usableOnConsole": true,
+    "searchTags": "conveyer_belt, machinery, factory, stone, large, diagonal, ramp",
+    "image": "images/structures/industrial/quarry/staticobj_quarry_conveyerlong.jpg"
+  },
+  {
+    "objectName": "StaticObj_Quarry_HammerMill",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/quarry",
+    "usableOnConsole": true,
+    "searchTags": "crusher, stone, machinery, factory",
+    "image": "images/structures/industrial/quarry/staticobj_quarry_hammermill.jpg"
+  },
+  {
+    "objectName": "quarry_conveyer.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/quarry",
+    "usableOnConsole": false,
+    "searchTags": "conveyer_belt, machinery, factory, stone, large, diagonal, ramp",
+    "image": "images/structures/industrial/quarry/StaticObj_Quarry_Conveyer.jpg"
+  },
+  {
+    "objectName": "quarry_conveyerlong.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/quarry",
+    "usableOnConsole": false,
+    "searchTags": "conveyer_belt, machinery, factory, stone, large, diagonal, ramp",
+    "image": "images/structures/industrial/quarry/StaticObj_Quarry_ConveyerLong.jpg"
+  },
+  {
+    "objectName": "quarry_hammermill.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/quarry",
+    "usableOnConsole": false,
+    "searchTags": "crusher, stone, machinery, factory",
+    "image": "images/structures/industrial/quarry/StaticObj_Quarry_HammerMill.jpg"
+  },
+  {
+    "objectName": "Land_Quarry_Main",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/quarry",
+    "usableOnConsole": true,
+    "searchTags": "large, metal, ladder, silos, rusted, factory, stone, machinery",
+    "image": "images/structures/industrial/quarry/land_quarry_main.jpg"
+  },
+  {
+    "objectName": "quarry_main.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/quarry",
+    "usableOnConsole": false,
+    "searchTags": "large, metal, ladder, silos, rusted, factory, stone, machinery",
+    "image": "images/structures/industrial/quarry/Land_Quarry_Main.jpg"
+  }
+]

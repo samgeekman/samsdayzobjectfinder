@@ -1,0 +1,72 @@
+[
+  {
+    "objectName": "Dam_Concrete_20_Floodgate",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/dams",
+    "usableOnConsole": true,
+    "searchTags": "dam, water, floodgate, hydro, concrete, infrastructure, power",
+    "image": "images/structures/industrial/dams/dam_concrete_20_floodgate.jpg"
+  },
+  {
+    "objectName": "StaticObj_Dam_Concrete_20",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/dams",
+    "usableOnConsole": true,
+    "searchTags": "dam, water, hydro, concrete, infrastructure, power",
+    "image": "images/structures/industrial/dams/staticobj_dam_concrete_20.jpg"
+  },
+  {
+    "objectName": "StaticObj_Dam_Concrete_20_Floodgate",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/dams",
+    "usableOnConsole": true,
+    "searchTags": "dam, water, floodgate, hydro, concrete, infrastructure, power",
+    "image": "images/structures/industrial/dams/staticobj_dam_concrete_20_floodgate.jpg"
+  },
+  {
+    "objectName": "StaticObj_Dam_Concrete_40",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/dams",
+    "usableOnConsole": true,
+    "searchTags": "dam, water, large, hydro, concrete, infrastructure, power",
+    "image": "images/structures/industrial/dams/staticobj_dam_concrete_40.jpg"
+  },
+  {
+    "objectName": "dam_concrete_20.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/dams",
+    "usableOnConsole": false,
+    "searchTags": "dam, water, hydro, concrete, infrastructure, power",
+    "image": "images/structures/industrial/dams/StaticObj_Dam_Concrete_20.jpg"
+  },
+  {
+    "objectName": "dam_concrete_20_floodgate.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/dams",
+    "usableOnConsole": false,
+    "searchTags": "dam, water, floodgate, hydro, concrete, infrastructure, power",
+    "image": "images/structures/industrial/dams/Dam_Concrete_20_Floodgate.jpg"
+  },
+  {
+    "objectName": "dam_stone_40.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/dams",
+    "usableOnConsole": false,
+    "searchTags": "dam, water, stone, hydro, infrastructure, power",
+    "image": "images/structures/industrial/dams/StaticObj_Dam_Concrete_40.jpg"
+  }
+]

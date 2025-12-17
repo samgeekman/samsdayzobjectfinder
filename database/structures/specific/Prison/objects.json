@@ -1,0 +1,70 @@
+[
+  {
+    "objectName": "Land_Prison_Side",
+    "inGameName": "door 3",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/prison",
+    "usableOnConsole": true,
+    "searchTags": "prison, side_building, annex, jail, detention, concrete, office, storeroom, high_security",
+    "image": "images/structures/specific/prison/land_prison_side.jpg"
+  },
+  {
+    "objectName": "Land_Prison_Wall_Large",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/prison",
+    "usableOnConsole": true,
+    "searchTags": "prison, wall, perimeter, concrete, barrier, security, high_security, fortified, fence",
+    "image": "images/structures/specific/prison/land_prison_wall_large.jpg"
+  },
+  {
+    "objectName": "prison_side.p3d",
+    "inGameName": "door 3",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/prison",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/prison/prison_side.p3d.jpg"
+  },
+  {
+    "objectName": "prison_wall_large.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/prison",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/prison/prison_wall_large.p3d.jpg"
+  },
+  {
+    "objectName": "prison_wall_small.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/prison",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/prison/prison_wall_small.p3d.jpg"
+  },
+  {
+    "objectName": "Land_Prison_Main",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/prison",
+    "usableOnConsole": true,
+    "searchTags": "prison, main_building, jail, detention, concrete, multi_storey, high_security, fortified",
+    "image": "images/structures/specific/prison/land_prison_main.jpg"
+  },
+  {
+    "objectName": "prison_main.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/prison",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/prison/prison_main.p3d.jpg"
+  }
+]

@@ -1,0 +1,610 @@
+[
+  {
+    "objectName": "Land_Lighthouse",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "coast, red, white, tower, medium, beacon, signal",
+    "image": "images/structures/industrial/harbour/land_lighthouse.jpg"
+  },
+  {
+    "objectName": "Land_Pier_Crane_A",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "large, base, industrial, coast, ladder, metal",
+    "image": "images/structures/industrial/harbour/land_pier_crane_a.jpg"
+  },
+  {
+    "objectName": "Land_Pier_Crane_B",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "hook, top, large, lifting, industrial, metal, coast",
+    "image": "images/structures/industrial/harbour/land_pier_crane_b.jpg"
+  },
+  {
+    "objectName": "StaticObj_Boathouse_PierL",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, wooden, left, dock, stairs, coast, fishing, stilts",
+    "image": "images/structures/industrial/harbour/staticobj_boathouse_pierl.jpg"
+  },
+  {
+    "objectName": "StaticObj_Boathouse_PierR",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, wooden, right, dock, stairs, coast, fishing, stilts",
+    "image": "images/structures/industrial/harbour/staticobj_boathouse_pierr.jpg"
+  },
+  {
+    "objectName": "StaticObj_Boathouse_PierT",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, wooden, dock, coast, fishing, long, large, stilts",
+    "image": "images/structures/industrial/harbour/staticobj_boathouse_piert.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete1_CornerIn",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, coast, industrial, dock, infrastructure, platform, l_shape",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete1_cornerin.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete1_CornerOut",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, coast, industrial, dock, infrastructure, platform, square",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete1_cornerout.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete1_End",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, end, dock, t_shape, coast, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete1_end.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete1_L",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, curve, dock, t_shape, coast, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete1_l.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete1_L10",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, dock, thin, coast, curve, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete1_l10.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete1_L30",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, dock, thin, coast, curve, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete1_l30.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete1_TBig",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, t_shape, big, dock, coast, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete1_tbig.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete1_TSmall",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, t_shape, small, dock, coast, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete1_tsmall.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete2_End",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, dock, coast, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete2_end.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete3_1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform, stilts",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete3_1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete3_2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform, stilts",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete3_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete3_End",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, end, dock, coast, industrial, infrastructure, platform, stilts",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete3_end.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Concrete3_Fuel",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, concrete, fuel, dock, dock, coast, industrial, infrastructure, platform, stilts, gangway, gangplank, ramp",
+    "image": "images/structures/industrial/harbour/staticobj_pier_concrete3_fuel.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Crane_Rails",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, crane, rails, track, industrial, metal",
+    "image": "images/structures/industrial/harbour/staticobj_pier_crane_rails.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Crane_Rails_End",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, crane, rails, end, track, industrial, metal",
+    "image": "images/structures/industrial/harbour/staticobj_pier_crane_rails_end.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Tube_Big",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, dock, pipe, chimeny, cylinder, large, industrial",
+    "image": "images/structures/industrial/harbour/staticobj_pier_tube_big.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Tube_Small",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, tube, small, dock,  pipe, chimeny, cylinder, small, industrial",
+    "image": "images/structures/industrial/harbour/staticobj_pier_tube_small.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Wooden1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, wooden, end, dock, platform, fishing, coast, stilts, stage, catwalk",
+    "image": "images/structures/industrial/harbour/staticobj_pier_wooden1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Wooden1_End",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, wooden, end, dock, platform, fishing, coast, stilts, catwalk, stage",
+    "image": "images/structures/industrial/harbour/staticobj_pier_wooden1_end.jpg"
+  },
+  {
+    "objectName": "StaticObj_Pier_Wooden1_Pillars",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "pier, wooden, end, dock, platform, fishing, coast, stilts, timbers",
+    "image": "images/structures/industrial/harbour/staticobj_pier_wooden1_pillars.jpg"
+  },
+  {
+    "objectName": "boathouse_pierl.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, wooden, left, dock, stairs, coast, fishing, stilts",
+    "image": "images/structures/industrial/harbour/StaticObj_Boathouse_PierL.jpg"
+  },
+  {
+    "objectName": "boathouse_pierr.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, wooden, right, dock, stairs, coast, fishing, stilts",
+    "image": "images/structures/industrial/harbour/StaticObj_Boathouse_PierR.jpg"
+  },
+  {
+    "objectName": "boathouse_piert.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, wooden, dock, coast, fishing, long, large, stilts",
+    "image": "images/structures/industrial/harbour/StaticObj_Boathouse_PierT.jpg"
+  },
+  {
+    "objectName": "lighthouse.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "coast, red, white, tower, medium, beacon, signal",
+    "image": "images/structures/industrial/harbour/Land_Lighthouse.jpg"
+  },
+  {
+    "objectName": "pier_concrete1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1.jpg"
+  },
+  {
+    "objectName": "pier_concrete1_cornerin.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, coast, industrial, dock, infrastructure, platform, l_shape",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_CornerIn.jpg"
+  },
+  {
+    "objectName": "pier_concrete1_cornerout.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, coast, industrial, dock, infrastructure, platform, square",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_CornerOut.jpg"
+  },
+  {
+    "objectName": "pier_concrete1_end.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, end, dock, t_shape, coast, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_End.jpg"
+  },
+  {
+    "objectName": "pier_concrete1_l.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/harbour/pier_concrete1_l.p3d.jpg"
+  },
+  {
+    "objectName": "pier_concrete1_l10.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/harbour/pier_concrete1_l10.p3d.jpg"
+  },
+  {
+    "objectName": "pier_concrete1_l30.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/harbour/pier_concrete1_l30.p3d.jpg"
+  },
+  {
+    "objectName": "pier_concrete1_r.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, curve, dock, t_shape, coast, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_L.jpg"
+  },
+  {
+    "objectName": "pier_concrete1_r10.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, dock, thin, coast, curve, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_L10.jpg"
+  },
+  {
+    "objectName": "pier_concrete1_r30.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, dock, thin, coast, curve, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_L30.jpg"
+  },
+  {
+    "objectName": "pier_concrete1_tbig.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, t_shape, big, dock, coast, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_TBig.jpg"
+  },
+  {
+    "objectName": "pier_concrete1_tsmall.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, t_shape, small, dock, coast, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete1_TSmall.jpg"
+  },
+  {
+    "objectName": "pier_concrete2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete2.jpg"
+  },
+  {
+    "objectName": "pier_concrete2_end.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, dock, coast, industrial, infrastructure, platform",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete2_End.jpg"
+  },
+  {
+    "objectName": "pier_concrete3_1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform, stilts",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete3_1.jpg"
+  },
+  {
+    "objectName": "pier_concrete3_2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, straight, dock, coast, industrial, infrastructure, platform, stilts",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete3_2.jpg"
+  },
+  {
+    "objectName": "pier_concrete3_end.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, end, dock, coast, industrial, infrastructure, platform, stilts",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete3_End.jpg"
+  },
+  {
+    "objectName": "pier_concrete3_fuel.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, concrete, fuel, dock, dock, coast, industrial, infrastructure, platform, stilts, gangway, gangplank, ramp",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Concrete3_Fuel.jpg"
+  },
+  {
+    "objectName": "pier_crane_a.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "large, base, industrial, coast, ladder, metal",
+    "image": "images/structures/industrial/harbour/Land_Pier_Crane_A.jpg"
+  },
+  {
+    "objectName": "pier_crane_b.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "hook, top, large, lifting, industrial, metal, coast",
+    "image": "images/structures/industrial/harbour/Land_Pier_Crane_B.jpg"
+  },
+  {
+    "objectName": "pier_crane_rails.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, crane, rails, track, industrial, metal",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Crane_Rails.jpg"
+  },
+  {
+    "objectName": "pier_crane_rails_end.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, crane, rails, end, track, industrial, metal",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Crane_Rails_End.jpg"
+  },
+  {
+    "objectName": "pier_tube_big.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, dock, pipe, chimeny, cylinder, large, industrial",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Tube_Big.jpg"
+  },
+  {
+    "objectName": "pier_tube_small.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, tube, small, dock,  pipe, chimeny, cylinder, small, industrial",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Tube_Small.jpg"
+  },
+  {
+    "objectName": "pier_wooden1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, wooden, end, dock, platform, fishing, coast, stilts, catwalk",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Wooden1.jpg"
+  },
+  {
+    "objectName": "pier_wooden1_end.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "pier, wooden, end, dock, platform, fishing, coast, stilts, catwalk",
+    "image": "images/structures/industrial/harbour/StaticObj_Pier_Wooden1_End.jpg"
+  },
+  {
+    "objectName": "pier_wooden1_pillars.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/harbour/pier_wooden1_pillars.p3d.jpg"
+  },
+  {
+    "objectName": "boathouse.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": false,
+    "searchTags": "coast, fishing, wooden, pier, dock, medium, stilts",
+    "image": "images/structures/industrial/harbour/Land_Boathouse.jpg"
+  },
+  {
+    "objectName": "Land_Boathouse",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/harbour",
+    "usableOnConsole": true,
+    "searchTags": "coast, fishing, wooden, pier, dock, medium, stilts",
+    "image": "images/structures/industrial/harbour/land_boathouse.jpg"
+  }
+]

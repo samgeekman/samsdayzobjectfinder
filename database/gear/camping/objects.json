@@ -1,0 +1,1400 @@
+[
+  {
+    "objectName": "MediumTent",
+    "inGameName": "Medium Tent",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/mediumtent.jpg"
+  },
+  {
+    "objectName": "MediumTentClutterCutter",
+    "inGameName": "Clutter Cutter 3x3",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/mediumtentcluttercutter.jpg"
+  },
+  {
+    "objectName": "LargeTent",
+    "inGameName": "Large Tent",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/largetent.jpg"
+  },
+  {
+    "objectName": "LargeTentClutterCutter",
+    "inGameName": "Clutter Cutter 3x3",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/largetentcluttercutter.jpg"
+  },
+  {
+    "objectName": "CarTent",
+    "inGameName": "Car Tent",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/cartent.jpg"
+  },
+  {
+    "objectName": "PartyTent",
+    "inGameName": "Canopy Tent",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/partytent.jpg"
+  },
+  {
+    "objectName": "StaticObj_PartyTent",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/staticobj_partytent.jpg"
+  },
+  {
+    "objectName": "CamoNetShelter",
+    "inGameName": "Camo net shelter",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/camonetshelter.jpg"
+  },
+  {
+    "objectName": "FenceKit",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "WatchtowerKit",
+    "inGameName": "Watchtower Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/watchtowerkit.jpg"
+  },
+  {
+    "objectName": "Fence",
+    "inGameName": "Fence",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fence.jpg"
+  },
+  {
+    "objectName": "Watchtower",
+    "inGameName": "Watchtower",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/watchtower.jpg"
+  },
+  {
+    "objectName": "Material2",
+    "inGameName": "Barbed Wire",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/material2.jpg"
+  },
+  {
+    "objectName": "BarbedWire",
+    "inGameName": "Barbed Wire",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/barbedwire.jpg"
+  },
+  {
+    "objectName": "CombinationLock",
+    "inGameName": "3-Dial Combination Lock",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/combinationlock.jpg"
+  },
+  {
+    "objectName": "CombinationLock4",
+    "inGameName": "4-Dial Combination Lock",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/combinationlock4.jpg"
+  },
+  {
+    "objectName": "BarbedWireLocked",
+    "inGameName": "Restrained by Barbed Wire",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/barbedwirelocked.jpg"
+  },
+  {
+    "objectName": "CamoNet",
+    "inGameName": "Camo Net",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/camonet.jpg"
+  },
+  {
+    "objectName": "SeaChest",
+    "inGameName": "Sea Chest",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/seachest.jpg"
+  },
+  {
+    "objectName": "AnniversaryBox",
+    "inGameName": "Anniversary T-Shirt Box",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/anniversarybox.jpg"
+  },
+  {
+    "objectName": "WoodenCrate",
+    "inGameName": "Wooden Crate",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/woodencrate.jpg"
+  },
+  {
+    "objectName": "UndergroundStash",
+    "inGameName": "Mound",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/undergroundstash.jpg"
+  },
+  {
+    "objectName": "UndergroundStashSnow",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/undergroundstashsnow.jpg"
+  },
+  {
+    "objectName": "Spotlight",
+    "inGameName": "Construction Light",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/spotlight.jpg"
+  },
+  {
+    "objectName": "XmasLights",
+    "inGameName": "Festive Lights",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/xmaslights.jpg"
+  },
+  {
+    "objectName": "PowerGenerator",
+    "inGameName": "Power Generator",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/powergenerator.jpg"
+  },
+  {
+    "objectName": "CableReel",
+    "inGameName": "Cable Reel",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/cablereel.jpg"
+  },
+  {
+    "objectName": "cablereel_drop",
+    "inGameName": "Battery Charger",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/cablereel_drop.jpg"
+  },
+  {
+    "objectName": "BatteryCharger",
+    "inGameName": "Battery Charger",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/batterycharger.jpg"
+  },
+  {
+    "objectName": "HescoBox",
+    "inGameName": "Wire Mesh Barrier",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/hescobox.jpg"
+  },
+  {
+    "objectName": "filled",
+    "inGameName": "Tarp",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/filled.jpg"
+  },
+  {
+    "objectName": "Fabric",
+    "inGameName": "Tarp",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fabric.jpg"
+  },
+  {
+    "objectName": "ShelterKit",
+    "inGameName": "Shelter Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/shelterkit.jpg"
+  },
+  {
+    "objectName": "ShelterSite",
+    "inGameName": "Shelter Site",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/sheltersite.jpg"
+  },
+  {
+    "objectName": "ShelterFabric",
+    "inGameName": "Tarp Shelter",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/shelterfabric.jpg"
+  },
+  {
+    "objectName": "ShelterLeather",
+    "inGameName": "Leather Shelter",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/shelterleather.jpg"
+  },
+  {
+    "objectName": "ShelterStick",
+    "inGameName": "Improvised Shelter",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/shelterstick.jpg"
+  },
+  {
+    "objectName": "TerritoryFlag",
+    "inGameName": "Flag Pole",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/territoryflag.jpg"
+  },
+  {
+    "objectName": "Material4",
+    "inGameName": "Flag Pole Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/material4.jpg"
+  },
+  {
+    "objectName": "TerritoryFlagKit",
+    "inGameName": "Flag Pole Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/territoryflagkit.jpg"
+  },
+  {
+    "objectName": "Bonfire",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/bonfire.jpg"
+  },
+  {
+    "objectName": "ProxyCombinationLock",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/proxycombinationlock.jpg"
+  },
+  {
+    "objectName": "Proxycombination_lock3",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/proxycombination_lock3.jpg"
+  },
+  {
+    "objectName": "Proxycombination_lock4",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/proxycombination_lock4.jpg"
+  },
+  {
+    "objectName": "Proxywooden_log",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/proxywooden_log.jpg"
+  },
+  {
+    "objectName": "dropped_plug_1",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/dropped_plug_1.jpg"
+  },
+  {
+    "objectName": "ProxyDZ_Flag",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/proxydz_flag.jpg"
+  },
+  {
+    "objectName": "Proxyfabric_ground",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/proxyfabric_ground.jpg"
+  },
+  {
+    "objectName": "WoodenLog",
+    "inGameName": "Wooden Log",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/woodenlog.jpg"
+  },
+  {
+    "objectName": "barbed_wire.p3d",
+    "inGameName": "Barbed Wire",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/barbed_wire.p3d.jpg"
+  },
+  {
+    "objectName": "barbed_wire_tied.p3d",
+    "inGameName": "Restrained by Barbed Wire",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/barbed_wire_tied.p3d.jpg"
+  },
+  {
+    "objectName": "battery_charger.p3d",
+    "inGameName": "Battery Charger",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/battery_charger.p3d.jpg"
+  },
+  {
+    "objectName": "bonfire.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/bonfire.p3d.jpg"
+  },
+  {
+    "objectName": "cable_reel.p3d",
+    "inGameName": "Cable Reel",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/cable_reel.p3d.jpg"
+  },
+  {
+    "objectName": "camo_net_p.p3d",
+    "inGameName": "Camo Net",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/camo_net_p.p3d.jpg"
+  },
+  {
+    "objectName": "camo_net_shelter.p3d",
+    "inGameName": "Camo net shelter",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/camo_net_shelter.p3d.jpg"
+  },
+  {
+    "objectName": "canvas.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/canvas.p3d.jpg"
+  },
+  {
+    "objectName": "cartent.p3d",
+    "inGameName": "Car Tent",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/cartent.p3d.jpg"
+  },
+  {
+    "objectName": "christmas_lights.p3d",
+    "inGameName": "Festive Lights",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/christmas_lights.p3d.jpg"
+  },
+  {
+    "objectName": "combination_lock3.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/combination_lock3.p3d.jpg"
+  },
+  {
+    "objectName": "combination_lock4.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/combination_lock4.p3d.jpg"
+  },
+  {
+    "objectName": "combination_lock_proxied.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/combination_lock_proxied.p3d.jpg"
+  },
+  {
+    "objectName": "dz_flag.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/dz_flag.p3d.jpg"
+  },
+  {
+    "objectName": "fabric_ground.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/fabric_ground.p3d.jpg"
+  },
+  {
+    "objectName": "fence.p3d",
+    "inGameName": "Fence",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/fence.p3d.jpg"
+  },
+  {
+    "objectName": "fence_deployed.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/fence_deployed.p3d.jpg"
+  },
+  {
+    "objectName": "fence_folded.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/fence_folded.p3d.jpg"
+  },
+  {
+    "objectName": "fence_kit.p3d",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/fence_kit.p3d.jpg"
+  },
+  {
+    "objectName": "fence_kit_deployed.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/fence_kit_deployed.p3d.jpg"
+  },
+  {
+    "objectName": "fence_kit_deployed_orig.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/fence_kit_deployed_orig.p3d.jpg"
+  },
+  {
+    "objectName": "fence_kit_folded.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/fence_kit_folded.p3d.jpg"
+  },
+  {
+    "objectName": "hbox.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/hbox.p3d.jpg"
+  },
+  {
+    "objectName": "hbox_base.p3d",
+    "inGameName": "Wire Mesh Barrier",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/hbox_base.p3d.jpg"
+  },
+  {
+    "objectName": "hbox_folded.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/hbox_folded.p3d.jpg"
+  },
+  {
+    "objectName": "hbox_unfolded_empty.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/hbox_unfolded_empty.p3d.jpg"
+  },
+  {
+    "objectName": "hbox_unfolded_filled.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/hbox_unfolded_filled.p3d.jpg"
+  },
+  {
+    "objectName": "improvised_tent_01.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/improvised_tent_01.p3d.jpg"
+  },
+  {
+    "objectName": "improvised_tent_02.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/improvised_tent_02.p3d.jpg"
+  },
+  {
+    "objectName": "improvised_tent_g_01.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/improvised_tent_g_01.p3d.jpg"
+  },
+  {
+    "objectName": "improvised_tent_g_02.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/improvised_tent_g_02.p3d.jpg"
+  },
+  {
+    "objectName": "largetent.p3d",
+    "inGameName": "Large Tent",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/largetent.p3d.jpg"
+  },
+  {
+    "objectName": "largetentcluttercutter.p3d",
+    "inGameName": "Clutter Cutter 3x3",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/largetentcluttercutter.p3d.jpg"
+  },
+  {
+    "objectName": "large_tent_backpack.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/large_tent_backpack.p3d.jpg"
+  },
+  {
+    "objectName": "mediumtent.p3d",
+    "inGameName": "Medium Tent",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/mediumtent.p3d.jpg"
+  },
+  {
+    "objectName": "mediumtentcluttercutter.p3d",
+    "inGameName": "Clutter Cutter 3x3",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/mediumtentcluttercutter.p3d.jpg"
+  },
+  {
+    "objectName": "party_tent.p3d",
+    "inGameName": "Canopy Tent",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/party_tent.p3d.jpg"
+  },
+  {
+    "objectName": "party_tent_g.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/party_tent_g.p3d.jpg"
+  },
+  {
+    "objectName": "party_tent_static.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/party_tent_static.p3d.jpg"
+  },
+  {
+    "objectName": "power_generator.p3d",
+    "inGameName": "Power Generator",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/power_generator.p3d.jpg"
+  },
+  {
+    "objectName": "sea_chest.p3d",
+    "inGameName": "Sea Chest",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/sea_chest.p3d.jpg"
+  },
+  {
+    "objectName": "sea_chest_anniversary.p3d",
+    "inGameName": "Anniversary T-Shirt Box",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/sea_chest_anniversary.p3d.jpg"
+  },
+  {
+    "objectName": "sheltersite.p3d",
+    "inGameName": "Shelter Site",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/sheltersite.p3d.jpg"
+  },
+  {
+    "objectName": "shelter_fabric.p3d",
+    "inGameName": "Tarp Shelter",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/shelter_fabric.p3d.jpg"
+  },
+  {
+    "objectName": "shelter_frame.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/shelter_frame.p3d.jpg"
+  },
+  {
+    "objectName": "shelter_kit.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/shelter_kit.p3d.jpg"
+  },
+  {
+    "objectName": "shelter_kit_deployed.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/shelter_kit_deployed.p3d.jpg"
+  },
+  {
+    "objectName": "shelter_kit_folded.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/shelter_kit_folded.p3d.jpg"
+  },
+  {
+    "objectName": "shelter_leather.p3d",
+    "inGameName": "Leather Shelter",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/shelter_leather.p3d.jpg"
+  },
+  {
+    "objectName": "shelter_stick.p3d",
+    "inGameName": "Improvised Shelter",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/shelter_stick.p3d.jpg"
+  },
+  {
+    "objectName": "spotlight.p3d",
+    "inGameName": "Construction Light",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/spotlight.p3d.jpg"
+  },
+  {
+    "objectName": "string_lights_p.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/string_lights_p.p3d.jpg"
+  },
+  {
+    "objectName": "tent_cluttercutter.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/tent_cluttercutter.p3d.jpg"
+  },
+  {
+    "objectName": "tent_large_cluttercutter.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/tent_large_cluttercutter.p3d.jpg"
+  },
+  {
+    "objectName": "tent_medium_packed.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/tent_medium_packed.p3d.jpg"
+  },
+  {
+    "objectName": "tent_medium_pitched.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/tent_medium_pitched.p3d.jpg"
+  },
+  {
+    "objectName": "territory_flag.p3d",
+    "inGameName": "Flag Pole",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/territory_flag.p3d.jpg"
+  },
+  {
+    "objectName": "territory_flag_kit.p3d",
+    "inGameName": "Flag Pole Kit",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/territory_flag_kit.p3d.jpg"
+  },
+  {
+    "objectName": "territory_flag_kit_deployed.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/territory_flag_kit_deployed.p3d.jpg"
+  },
+  {
+    "objectName": "territory_flag_kit_folded.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/territory_flag_kit_folded.p3d.jpg"
+  },
+  {
+    "objectName": "t_fagussylvatica_2fmesh.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/t_fagussylvatica_2fmesh.p3d.jpg"
+  },
+  {
+    "objectName": "t_fagussylvatica_2fproxy.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/t_fagussylvatica_2fproxy.p3d.jpg"
+  },
+  {
+    "objectName": "underground_stash.p3d",
+    "inGameName": "Mound",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/underground_stash.p3d.jpg"
+  },
+  {
+    "objectName": "underground_stash_snow.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/underground_stash_snow.p3d.jpg"
+  },
+  {
+    "objectName": "watchtower.p3d",
+    "inGameName": "Watchtower",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/watchtower.p3d.jpg"
+  },
+  {
+    "objectName": "watchtower_deployed.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/watchtower_deployed.p3d.jpg"
+  },
+  {
+    "objectName": "watchtower_folded.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/watchtower_folded.p3d.jpg"
+  },
+  {
+    "objectName": "watchtower_kit.p3d",
+    "inGameName": "Shelter Kit",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/watchtower_kit.p3d.jpg"
+  },
+  {
+    "objectName": "watchtower_kit_deployed.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/watchtower_kit_deployed.p3d.jpg"
+  },
+  {
+    "objectName": "watchtower_kit_deployed_orig.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/watchtower_kit_deployed_orig.p3d.jpg"
+  },
+  {
+    "objectName": "watchtower_kit_folded.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/watchtower_kit_folded.p3d.jpg"
+  },
+  {
+    "objectName": "watchtower_no_proxy.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/watchtower_no_proxy.p3d.jpg"
+  },
+  {
+    "objectName": "wooden_case.p3d",
+    "inGameName": "Wooden Crate",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/wooden_case.p3d.jpg"
+  },
+  {
+    "objectName": "wooden_log.p3d",
+    "inGameName": "Wooden Log",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/wooden_log.p3d.jpg"
+  },
+  {
+    "objectName": "MediumTentPlacing",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/mediumtentplacing.jpg",
+    "editorJson": null,
+    "configClass": "MediumTentPlacing"
+  },
+  {
+    "objectName": "LargeTentPlacing",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/largetentplacing.jpg",
+    "editorJson": null,
+    "configClass": "LargeTentPlacing"
+  },
+  {
+    "objectName": "CarTentPlacing",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/cartentplacing.jpg",
+    "editorJson": null,
+    "configClass": "CarTentPlacing"
+  },
+  {
+    "objectName": "PartyTentPlacing",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/partytentplacing.jpg",
+    "editorJson": null,
+    "configClass": "PartyTentPlacing"
+  },
+  {
+    "objectName": "FenceKitPlacing",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekitplacing.jpg",
+    "editorJson": null,
+    "configClass": "FenceKitPlacing"
+  },
+  {
+    "objectName": "WatchtowerKitPlacing",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/watchtowerkitplacing.jpg",
+    "editorJson": null,
+    "configClass": "WatchtowerKitPlacing"
+  },
+  {
+    "objectName": "ShelterKitPlacing",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/shelterkitplacing.jpg",
+    "editorJson": null,
+    "configClass": "ShelterKitPlacing"
+  },
+  {
+    "objectName": "TerritoryFlagKitPlacing",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/territoryflagkitplacing.jpg",
+    "editorJson": null,
+    "configClass": "TerritoryFlagKitPlacing"
+  },
+  {
+    "objectName": "cartentplacing.p3d",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/cartentplacing.p3d.jpg",
+    "editorJson": null
+  },
+  {
+    "objectName": "fence_kit_placing.p3d",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/fence_kit_placing.p3d.jpg",
+    "editorJson": null
+  },
+  {
+    "objectName": "largetentplacing.p3d",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/largetentplacing.p3d.jpg",
+    "editorJson": null
+  },
+  {
+    "objectName": "mediumtentplacing.p3d",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/mediumtentplacing.p3d.jpg",
+    "editorJson": null
+  },
+  {
+    "objectName": "party_tentplacing.p3d",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/party_tentplacing.p3d.jpg",
+    "editorJson": null
+  },
+  {
+    "objectName": "shelter_kit_placing.p3d",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/shelter_kit_placing.p3d.jpg",
+    "editorJson": null
+  },
+  {
+    "objectName": "territory_flag_kit_placing.p3d",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/territory_flag_kit_placing.p3d.jpg",
+    "editorJson": null
+  },
+  {
+    "objectName": "watchtower_kit_placing.p3d",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/camping",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/camping/watchtower_kit_placing.p3d.jpg",
+    "editorJson": null
+  }
+]

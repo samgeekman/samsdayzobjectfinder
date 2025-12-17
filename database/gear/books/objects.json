@@ -1,0 +1,32 @@
+[
+  {
+    "objectName": "Book_Base",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/books",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/books/book_base.jpg"
+  },
+  {
+    "objectName": "ProxyBook_kniga",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/books",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/books/proxybook_kniga.jpg"
+  },
+  {
+    "objectName": "book_kniga.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/books",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/books/book_kniga.p3d.jpg"
+  }
+]

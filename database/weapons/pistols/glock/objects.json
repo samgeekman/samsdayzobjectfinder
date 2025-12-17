@@ -1,0 +1,32 @@
+[
+  {
+    "objectName": "Glock19",
+    "inGameName": "Mlock-91",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/glock",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/glock/glock19.jpg"
+  },
+  {
+    "objectName": "ProxyGlock",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/glock",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/glock/proxyglock.jpg"
+  },
+  {
+    "objectName": "glock19.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/pistols/glock",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/pistols/glock/glock19.p3d.jpg"
+  }
+]

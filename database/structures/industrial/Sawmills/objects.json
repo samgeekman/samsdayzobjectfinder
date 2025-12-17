@@ -1,0 +1,40 @@
+[
+  {
+    "objectName": "Land_Sawmill_Illuminanttower",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/sawmills",
+    "usableOnConsole": true,
+    "searchTags": "metal, watchtower, guard_tower, ladder, platform, spotlight, security",
+    "image": "images/structures/industrial/sawmills/land_sawmill_illuminanttower.jpg"
+  },
+  {
+    "objectName": "sawmill_illuminanttower.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/sawmills",
+    "usableOnConsole": false,
+    "searchTags": "metal, watchtower, guard_tower, ladder, platform, spotlight, security",
+    "image": "images/structures/industrial/sawmills/Land_Sawmill_Illuminanttower.jpg"
+  },
+  {
+    "objectName": "Land_Sawmill_Building",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/sawmills",
+    "usableOnConsole": true,
+    "searchTags": "timber, logging, factory, wood",
+    "image": "images/structures/industrial/sawmills/land_sawmill_building.jpg"
+  },
+  {
+    "objectName": "sawmill_building.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/sawmills",
+    "usableOnConsole": false,
+    "searchTags": "timber, logging, factory, wood",
+    "image": "images/structures/industrial/sawmills/Land_Sawmill_Building.jpg"
+  }
+]

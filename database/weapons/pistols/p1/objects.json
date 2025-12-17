@@ -1,0 +1,32 @@
+[
+  {
+    "objectName": "P1",
+    "inGameName": "P1",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/p1",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/p1/p1.jpg"
+  },
+  {
+    "objectName": "ProxyP1",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/p1",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/p1/proxyp1.jpg"
+  },
+  {
+    "objectName": "p1.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/pistols/p1",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/pistols/p1/p1.p3d.jpg"
+  }
+]

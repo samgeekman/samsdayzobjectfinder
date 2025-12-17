@@ -1,0 +1,58 @@
+[
+  {
+    "objectName": "tenement_big_entry.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/tenements",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/residential/tenements/tenement_big_entry.p3d.jpg"
+  },
+  {
+    "objectName": "tenement_small_entry.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/tenements",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/residential/tenements/tenement_small_entry.p3d.jpg"
+  },
+  {
+    "objectName": "Land_Tenement_Big",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/tenements",
+    "usableOnConsole": true,
+    "searchTags": "tenement, apartment, block, large, residential, housing, flats, concrete, urban, highrise, building",
+    "image": "images/structures/residential/tenements/land_tenement_big.jpg"
+  },
+  {
+    "objectName": "Land_Tenement_Small",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/tenements",
+    "usableOnConsole": true,
+    "searchTags": "tenement, apartment, block, small, residential, housing, flats, concrete, urban, lowrise, building",
+    "image": "images/structures/residential/tenements/land_tenement_small.jpg"
+  },
+  {
+    "objectName": "tenement_big.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/tenements",
+    "usableOnConsole": false,
+    "searchTags": "tenement, apartment, block, large, residential, housing, flats, concrete, urban, highrise, building",
+    "image": "images/structures/residential/tenements/Land_Tenement_Big.jpg"
+  },
+  {
+    "objectName": "tenement_small.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/tenements",
+    "usableOnConsole": false,
+    "searchTags": "tenement, apartment, block, small, residential, housing, flats, concrete, urban, lowrise, building",
+    "image": "images/structures/residential/tenements/Land_Tenement_Small.jpg"
+  }
+]

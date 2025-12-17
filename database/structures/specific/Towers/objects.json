@@ -1,0 +1,171 @@
+[
+  {
+    "objectName": "Land_Tower_TC3_Red",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": true,
+    "searchTags": "tower, tc3, red, warning, radio, telecom, communication, mast, antenna, lattice, red, white",
+    "image": "images/structures/specific/towers/land_tower_tc3_red.jpg"
+  },
+  {
+    "objectName": "Land_Tower_TC3_Grey",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": true,
+    "searchTags": "tower, tc3, grey, gray, radio, telecom, communication, mast, antenna, lattice",
+    "image": "images/structures/specific/towers/land_tower_tc3_grey.jpg"
+  },
+  {
+    "objectName": "Land_Tower_TC1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": true,
+    "searchTags": "tower, tc1, radio, telecom, communication, mast, antenna, lattice, metal, red, white",
+    "image": "images/structures/specific/towers/land_tower_tc1.jpg"
+  },
+  {
+    "objectName": "Land_Tower_TC2_Mid",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": true,
+    "searchTags": "tower, tc2, middle, mid, segment, radio, telecom, communication, mast, antenna, red, white, candy_cane, candy cane",
+    "image": "images/structures/specific/towers/land_tower_tc2_mid.jpg"
+  },
+  {
+    "objectName": "Land_Tower_TC2_Top",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": true,
+    "searchTags": "tower, tc2, top, segment, radio, telecom, communication, mast, antenn, red, white, candy_cane, candy cane",
+    "image": "images/structures/specific/towers/land_tower_tc2_top.jpg"
+  },
+  {
+    "objectName": "Land_Tower_TC4_Base",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": true,
+    "searchTags": "tower, tc4, base, segment, radio, telecom, communication, mast, antenna, red, white",
+    "image": "images/structures/specific/towers/land_tower_tc4_base.jpg"
+  },
+  {
+    "objectName": "Land_Tower_TC4_Mid",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": true,
+    "searchTags": "tower, tc4, middle, mid, segment, radio, telecom, communication, mast, antenna, red, white",
+    "image": "images/structures/specific/towers/land_tower_tc4_mid.jpg"
+  },
+  {
+    "objectName": "Land_Tower_TC4_Top",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": true,
+    "searchTags": "tower, tc4, top, segment, radio, telecom, communication, mast, antenna, red, white",
+    "image": "images/structures/specific/towers/land_tower_tc4_top.jpg"
+  },
+  {
+    "objectName": "tower_tc1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": false,
+    "searchTags": "tower, tc1, radio, telecom, communication, mast, antenna, lattice, metal, red, white",
+    "image": "images/structures/specific/towers/Land_Tower_TC1.jpg"
+  },
+  {
+    "objectName": "tower_tc2_mid.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": false,
+    "searchTags": "tower, tc2, middle, mid, segment, radio, telecom, communication, mast, antenna, red, white, candy_cane, candy cane",
+    "image": "images/structures/specific/towers/Land_Tower_TC2_Mid.jpg"
+  },
+  {
+    "objectName": "tower_tc2_top.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": false,
+    "searchTags": "tower, tc2, top, segment, radio, telecom, communication, mast, antenn, red, white, candy_cane, candy cane",
+    "image": "images/structures/specific/towers/Land_Tower_TC2_Top.jpg"
+  },
+  {
+    "objectName": "tower_tc3_grey.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": false,
+    "searchTags": "tower, tc3, grey, gray, radio, telecom, communication, mast, antenna, lattice",
+    "image": "images/structures/specific/towers/Land_Tower_TC3_Grey.jpg"
+  },
+  {
+    "objectName": "tower_tc3_red.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": false,
+    "searchTags": "tower, tc3, red, warning, radio, telecom, communication, mast, antenna, lattice, red, white",
+    "image": "images/structures/specific/towers/Land_Tower_TC3_Red.jpg"
+  },
+  {
+    "objectName": "tower_tc4_base.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": false,
+    "searchTags": "tower, tc4, base, segment, radio, telecom, communication, mast, antenna, red, white",
+    "image": "images/structures/specific/towers/Land_Tower_TC4_Base.jpg"
+  },
+  {
+    "objectName": "tower_tc4_mid.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": false,
+    "searchTags": "tower, tc4, middle, mid, segment, radio, telecom, communication, mast, antenna, red, white",
+    "image": "images/structures/specific/towers/Land_Tower_TC4_Mid.jpg"
+  },
+  {
+    "objectName": "tower_tc4_top.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": false,
+    "searchTags": "tower, tc4, top, segment, radio, telecom, communication, mast, antenna, red, white",
+    "image": "images/structures/specific/towers/Land_Tower_TC4_Top.jpg"
+  },
+  {
+    "objectName": "Land_Tower_TC2_Base",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/towers",
+    "usableOnConsole": true,
+    "searchTags": "tower, tc2, base, segment, radio, telecom, communication, mast, antenna, red, white, candy_cane, candy cane",
+    "image": "images/structures/specific/towers/land_tower_tc2_base.jpg"
+  }
+]

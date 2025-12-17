@@ -1,0 +1,32 @@
+[
+  {
+    "objectName": "GP25",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/launchers/gp25",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/launchers/gp25/gp25.jpg"
+  },
+  {
+    "objectName": "GP25_Standalone",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/launchers/gp25",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/launchers/gp25/gp25_standalone.jpg"
+  },
+  {
+    "objectName": "ubgl_gp25.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/launchers/gp25",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/launchers/gp25/ubgl_gp25.p3d.jpg"
+  }
+]

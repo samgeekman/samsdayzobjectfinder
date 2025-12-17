@@ -1,0 +1,140 @@
+[
+  {
+    "objectName": "StaticObj_Shed_Open_Big",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/sheds",
+    "usableOnConsole": true,
+    "searchTags": "archyway, end, metal, frame, part, half",
+    "image": "images/structures/industrial/sheds/staticobj_shed_open_big.jpg"
+  },
+  {
+    "objectName": "StaticObj_Shed_Open_Big_end",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/sheds",
+    "usableOnConsole": true,
+    "searchTags": "sarchyway, end, metal, frame, part, full",
+    "image": "images/structures/industrial/sheds/staticobj_shed_open_big_end.jpg"
+  },
+  {
+    "objectName": "StaticObj_Shed_Open_Sawmill",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/sheds",
+    "usableOnConsole": true,
+    "searchTags": "large, metal, roof, cover, open, logs, timber, wood",
+    "image": "images/structures/industrial/sheds/staticobj_shed_open_sawmill.jpg"
+  },
+  {
+    "objectName": "StaticObj_Shed_Open_SideRoof",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/sheds",
+    "usableOnConsole": true,
+    "searchTags": "wooden, covered, half, medium",
+    "image": "images/structures/industrial/sheds/staticobj_shed_open_sideroof.jpg"
+  },
+  {
+    "objectName": "StaticObj_Shed_Open_Small",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/sheds",
+    "usableOnConsole": true,
+    "searchTags": "metal, frame, part, roof",
+    "image": "images/structures/industrial/sheds/staticobj_shed_open_small.jpg"
+  },
+  {
+    "objectName": "StaticObj_Shed_Open_Small_end",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/sheds",
+    "usableOnConsole": true,
+    "searchTags": "archyway, end, metal, frame, part, half, concrete",
+    "image": "images/structures/industrial/sheds/staticobj_shed_open_small_end.jpg"
+  },
+  {
+    "objectName": "shed_open_big.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/sheds",
+    "usableOnConsole": false,
+    "searchTags": "archyway, end, metal, frame, part, half",
+    "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Big.jpg"
+  },
+  {
+    "objectName": "shed_open_big_end.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/sheds",
+    "usableOnConsole": false,
+    "searchTags": "sarchyway, end, metal, frame, part, full",
+    "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Big_end.jpg"
+  },
+  {
+    "objectName": "shed_open_sawmill.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/sheds",
+    "usableOnConsole": false,
+    "searchTags": "large, metal, roof, cover, open, logs, timber, wood",
+    "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Sawmill.jpg"
+  },
+  {
+    "objectName": "shed_open_sideroof.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/sheds",
+    "usableOnConsole": false,
+    "searchTags": "wooden, covered, half, medium",
+    "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_SideRoof.jpg"
+  },
+  {
+    "objectName": "shed_open_small.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/sheds",
+    "usableOnConsole": false,
+    "searchTags": "metal, frame, part, roof",
+    "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Small.jpg"
+  },
+  {
+    "objectName": "shed_open_small_end.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/sheds",
+    "usableOnConsole": false,
+    "searchTags": "archyway, end, metal, frame, part, half, concrete",
+    "image": "images/structures/industrial/sheds/StaticObj_Shed_Open_Small_end.jpg"
+  },
+  {
+    "objectName": "Land_Shed_Closed",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/sheds",
+    "usableOnConsole": true,
+    "searchTags": "metal, blue, double_door, blue_tin",
+    "image": "images/structures/industrial/sheds/land_shed_closed.jpg"
+  },
+  {
+    "objectName": "shed_closed.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/sheds",
+    "usableOnConsole": false,
+    "searchTags": "metal, blue, double_door, blue_tin",
+    "image": "images/structures/industrial/sheds/Land_Shed_Closed.jpg"
+  }
+]

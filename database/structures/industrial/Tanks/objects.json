@@ -1,0 +1,122 @@
+[
+  {
+    "objectName": "Land_Tank_Big",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/tanks",
+    "usableOnConsole": true,
+    "searchTags": "tank, fuel, container, big, storage, industrial, liquid, gas, oil",
+    "image": "images/structures/industrial/tanks/land_tank_big.jpg"
+  },
+  {
+    "objectName": "Land_Tank_Medium_Stairs",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/tanks",
+    "usableOnConsole": true,
+    "searchTags": "tank, fuel, container, medium, storage, industrial, liquid, gas, oil, stairs, access",
+    "image": "images/structures/industrial/tanks/land_tank_medium_stairs.jpg"
+  },
+  {
+    "objectName": "StaticObj_Tank_Medium",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/tanks",
+    "usableOnConsole": true,
+    "searchTags": "tank, fuel, container, medium, storage, industrial, liquid, gas, oil",
+    "image": "images/structures/industrial/tanks/staticobj_tank_medium.jpg"
+  },
+  {
+    "objectName": "StaticObj_Tank_Small_Gas",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/tanks",
+    "usableOnConsole": true,
+    "searchTags": "tank, fuel, gas, propane, container, storage, industrial, cylinder",
+    "image": "images/structures/industrial/tanks/staticobj_tank_small_gas.jpg"
+  },
+  {
+    "objectName": "StaticObj_Tank_Small_Rusty",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/tanks",
+    "usableOnConsole": true,
+    "searchTags": "tank, fuel, container, rusty, storage, industrial, liquid, gas, oil",
+    "image": "images/structures/industrial/tanks/staticobj_tank_small_rusty.jpg"
+  },
+  {
+    "objectName": "StaticObj_Tank_Small_White",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/tanks",
+    "usableOnConsole": true,
+    "searchTags": "tank, fuel, container, white, storage, industrial, liquid, gas, oil",
+    "image": "images/structures/industrial/tanks/staticobj_tank_small_white.jpg"
+  },
+  {
+    "objectName": "tank_big.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/tanks",
+    "usableOnConsole": false,
+    "searchTags": "tank, fuel, container, big, storage, industrial, liquid, gas, oil",
+    "image": "images/structures/industrial/tanks/Land_Tank_Big.jpg"
+  },
+  {
+    "objectName": "tank_medium.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/tanks",
+    "usableOnConsole": false,
+    "searchTags": "tank, fuel, container, medium, storage, industrial, liquid, gas, oil",
+    "image": "images/structures/industrial/tanks/StaticObj_Tank_Medium.jpg"
+  },
+  {
+    "objectName": "tank_medium_stairs.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/tanks",
+    "usableOnConsole": false,
+    "searchTags": "tank, fuel, container, medium, storage, industrial, liquid, gas, oil, stairs, access",
+    "image": "images/structures/industrial/tanks/Land_Tank_Medium_Stairs.jpg"
+  },
+  {
+    "objectName": "tank_small_gas.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/tanks",
+    "usableOnConsole": false,
+    "searchTags": "tank, fuel, gas, propane, container, storage, industrial, cylinder",
+    "image": "images/structures/industrial/tanks/StaticObj_Tank_Small_Gas.jpg"
+  },
+  {
+    "objectName": "tank_small_rusty.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/tanks",
+    "usableOnConsole": false,
+    "searchTags": "tank, fuel, container, rusty, storage, industrial, liquid, gas, oil",
+    "image": "images/structures/industrial/tanks/StaticObj_Tank_Small_Rusty.jpg"
+  },
+  {
+    "objectName": "tank_small_white.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/tanks",
+    "usableOnConsole": false,
+    "searchTags": "tank, fuel, container, white, storage, industrial, liquid, gas, oil",
+    "image": "images/structures/industrial/tanks/StaticObj_Tank_Small_White.jpg"
+  }
+]

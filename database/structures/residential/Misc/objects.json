@@ -1,0 +1,1756 @@
+[
+  {
+    "objectName": "Land_Ladder",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "ladder, climb, utility, metal, full",
+    "image": "images/structures/residential/misc/land_ladder.jpg"
+  },
+  {
+    "objectName": "Land_Ladder_Half",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/residential/misc/land_ladder_half.jpg"
+  },
+  {
+    "objectName": "Land_Misc_FeedShack",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "feed, animal, farm, hunting, hunting stand, shelter, wooden",
+    "image": "images/structures/residential/misc/land_misc_feedshack.jpg"
+  },
+  {
+    "objectName": "Land_Misc_DogHouse",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "dog, kennel, pet, wooden",
+    "image": "images/structures/residential/misc/land_misc_doghouse.jpg"
+  },
+  {
+    "objectName": "Land_Misc_DeerStand2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "deer, stand, hunting, elevated, ladder, wooden",
+    "image": "images/structures/residential/misc/land_misc_deerstand2.jpg"
+  },
+  {
+    "objectName": "Land_Misc_DeerStand1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "deer, stand, hunting, elevated, ladder, wooden",
+    "image": "images/structures/residential/misc/land_misc_deerstand1.jpg"
+  },
+  {
+    "objectName": "Land_Misc_Toilet_Dry",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "toilet, outhouse, latrine, privy, wodden",
+    "image": "images/structures/residential/misc/land_misc_toilet_dry.jpg"
+  },
+  {
+    "objectName": "Land_misc_chickenCoop",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "chicken, coop, farm, poultry, wooden, feed",
+    "image": "images/structures/residential/misc/land_misc_chickencoop.jpg"
+  },
+  {
+    "objectName": "Land_Misc_TrailRoof_Big",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "shelter, roof, trail, picnic bench, hunting, hiking",
+    "image": "images/structures/residential/misc/land_misc_trailroof_big.jpg"
+  },
+  {
+    "objectName": "Land_Misc_TrailRoof_Small",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "shelter, roof, trail, picnic bench, hunting, hiking",
+    "image": "images/structures/residential/misc/land_misc_trailroof_small.jpg"
+  },
+  {
+    "objectName": "Land_Misc_Well_Pump_Yellow",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "well, pump, water, fountain, watering_hole",
+    "image": "images/structures/residential/misc/land_misc_well_pump_yellow.jpg"
+  },
+  {
+    "objectName": "Land_Misc_Well_Pump_Blue",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "well, pump, water, fountain, watering_hole",
+    "image": "images/structures/residential/misc/land_misc_well_pump_blue.jpg"
+  },
+  {
+    "objectName": "Land_Lamp_City1_amp",
+    "inGameName": "Amplion on concrete pole",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "light, street, pole, city, streetlight, speakers, amplifier",
+    "image": "images/structures/residential/misc/land_lamp_city1_amp.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_Bin",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, bin, container, rubbish",
+    "image": "images/structures/residential/misc/staticobj_garbage_bin.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_Container",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, bin, container, recycling, city",
+    "image": "images/structures/residential/misc/staticobj_garbage_container.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_Container_Glass",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, bin, container, recycling, city",
+    "image": "images/structures/residential/misc/staticobj_garbage_container_glass.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_Container_Paper",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, bin, container, recycling, city",
+    "image": "images/structures/residential/misc/staticobj_garbage_container_paper.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_Container_Plastic",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, bin, container, recycling, city",
+    "image": "images/structures/residential/misc/staticobj_garbage_container_plastic.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_Ground_6m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, ground, surface, clutter, city, street",
+    "image": "images/structures/residential/misc/staticobj_garbage_ground_6m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_Ground_6m_NoLC",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/residential/misc/staticobj_garbage_ground_6m_nolc.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_GroundSq_3m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, ground, surface, clutter, city, street",
+    "image": "images/structures/residential/misc/staticobj_garbage_groundsq_3m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_GroundSq_3m_NoLC",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, ground, surface, no_land_contact",
+    "image": "images/structures/residential/misc/staticobj_garbage_groundsq_3m_nolc.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_GroundSq_5m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, ground, surface, clutter, city, street",
+    "image": "images/structures/residential/misc/staticobj_garbage_groundsq_5m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_GroundSq_5m_NoLC",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, ground, surface, clutter, city, street, no_land_contact",
+    "image": "images/structures/residential/misc/staticobj_garbage_groundsq_5m_nolc.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_Pile1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, pile, heap, washing_machine, medium",
+    "image": "images/structures/residential/misc/staticobj_garbage_pile1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_Pile2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, pile, heap, pallet, plastic, oil",
+    "image": "images/structures/residential/misc/staticobj_garbage_pile2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_Pile3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, pile, heap",
+    "image": "images/structures/residential/misc/staticobj_garbage_pile3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_Pile4",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, pile, heap, car_bonnet, car_hood, tires, ladder",
+    "image": "images/structures/residential/misc/staticobj_garbage_pile4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_Pile5",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, pile, heap",
+    "image": "images/structures/residential/misc/staticobj_garbage_pile5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Garbage_Pile6",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, pile, heap, medical, biohazard, trolley, yellow, bags",
+    "image": "images/structures/residential/misc/staticobj_garbage_pile6.jpg"
+  },
+  {
+    "objectName": "StaticObj_Lamp_City1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "light, street, pole, city, streetlight, metal",
+    "image": "images/structures/residential/misc/staticobj_lamp_city1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Lamp_City2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "light, street, pole, city, streetlight, double, two",
+    "image": "images/structures/residential/misc/staticobj_lamp_city2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Lamp_City3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "light, street, pole, city, streetlight, triple, three",
+    "image": "images/structures/residential/misc/staticobj_lamp_city3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_AdvertColumn",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "advert, poster, column, advertisiement, billboard, city",
+    "image": "images/structures/residential/misc/staticobj_misc_advertcolumn.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Barricade",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "barrier, road, block, garbage, trash, waste, pile, heap, large, car, washing_machine, tires, streetlight",
+    "image": "images/structures/residential/misc/staticobj_misc_barricade.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Bench1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "bench, seat, park, city, village, blue, wooden",
+    "image": "images/structures/residential/misc/staticobj_misc_bench1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Bench2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "bench, seat, park, city, village, blue, wooden, broken",
+    "image": "images/structures/residential/misc/staticobj_misc_bench2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Bench3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "bench, seat, park, trail, woods, hunting, wooden",
+    "image": "images/structures/residential/misc/staticobj_misc_bench3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Bench4",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "bench, seat, park, city, village, brown",
+    "image": "images/structures/residential/misc/staticobj_misc_bench4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Bench5",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "bench, seat, park, trail, woods, hunting, wooden",
+    "image": "images/structures/residential/misc/staticobj_misc_bench5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Boogieman",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "statue, figure, scarecrow",
+    "image": "images/structures/residential/misc/staticobj_misc_boogieman.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_BoundaryStone",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "boundary, marker, stone, concrete, road, traffic",
+    "image": "images/structures/residential/misc/staticobj_misc_boundarystone.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_BoundaryStone_Plastic",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "boundary, marker, stone, road, traffic, reflector",
+    "image": "images/structures/residential/misc/staticobj_misc_boundarystone_plastic.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_BoundaryStone_Tube",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "boundary, marker, metal, road, traffic, barrier",
+    "image": "images/structures/residential/misc/staticobj_misc_boundarystone_tube.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_BoxWooden",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "box, wood, crate, square, shipping",
+    "image": "images/structures/residential/misc/staticobj_misc_boxwooden.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Carousel",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "playground, ride, children, kids, playpark, merry-go-round, roundabout",
+    "image": "images/structures/residential/misc/staticobj_misc_carousel.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Carousel_Small",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "playground, ride, children, kids, playpark, merry-go-round, roundabout",
+    "image": "images/structures/residential/misc/staticobj_misc_carousel_small.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Chair_Camp1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "chair, seat, metal, folding, green",
+    "image": "images/structures/residential/misc/staticobj_misc_chair_camp1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Chair_Camp2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "chair, seat, metal, folding, green",
+    "image": "images/structures/residential/misc/staticobj_misc_chair_camp2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Chair_Plastic",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "chair, seat, lawn, plastic, outdoor, white",
+    "image": "images/structures/residential/misc/staticobj_misc_chair_plastic.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_CrashBarrier",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "barrier, road, traffic, metal, frame, crash",
+    "image": "images/structures/residential/misc/staticobj_misc_crashbarrier.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_CrashBarrier_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "barrier, road, traffic, metal, frame, crash, no_land_contact",
+    "image": "images/structures/residential/misc/staticobj_misc_crashbarrier_nolc.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_FeedRack",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "feed, animal, farm, hunting, woods",
+    "image": "images/structures/residential/misc/staticobj_misc_feedrack.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Football_Gate",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "football, soccer, field, sport, goal, nets, goalposts",
+    "image": "images/structures/residential/misc/staticobj_misc_football_gate.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Football_Line",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "football, soccer, field, sport, markings",
+    "image": "images/structures/residential/misc/staticobj_misc_football_line.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Football_Line_Corner",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "football, soccer, field, line, corner, sport, marking",
+    "image": "images/structures/residential/misc/staticobj_misc_football_line_corner.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Football_Line_HCircle",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "football, soccer, field, sport, markings, center circle",
+    "image": "images/structures/residential/misc/staticobj_misc_football_line_hcircle.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Fountain",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "fountain, water, park, city, decorative, ornamental",
+    "image": "images/structures/residential/misc/staticobj_misc_fountain.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Haystack",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "hay, farm, bale, empty, frame, straw",
+    "image": "images/structures/residential/misc/staticobj_misc_haystack.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_NoticeBoard1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "notice, board, info, broken, glass, wooden, dark",
+    "image": "images/structures/residential/misc/staticobj_misc_noticeboard1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_NoticeBoard2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "notice, board, info, broken, glass, wooden, light",
+    "image": "images/structures/residential/misc/staticobj_misc_noticeboard2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_PostBox1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "post, mail, box, red, metal, letter, pole",
+    "image": "images/structures/residential/misc/staticobj_misc_postbox1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_PostBox2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "post, mail, box, blue, letter, wall-mounted",
+    "image": "images/structures/residential/misc/staticobj_misc_postbox2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_RoadBarrier",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "barrier, road, block, checkpoint, entry, exit, traffic, security, military, closed, small",
+    "image": "images/structures/residential/misc/staticobj_misc_roadbarrier.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_RoadBarrier_2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "barrier, road, block, checkpoint, entry, exit, traffic, security, military, open, lifted, large",
+    "image": "images/structures/residential/misc/staticobj_misc_roadbarrier_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Sandbox",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "sandbox, play, sand, kids, children, playground, beach, playpark",
+    "image": "images/structures/residential/misc/staticobj_misc_sandbox.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Seesaw",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "seesaw, playground, park, ride, children, kids, playpark",
+    "image": "images/structures/residential/misc/staticobj_misc_seesaw.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_StadiumBenches",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "bench, seat, park, seats, bleachers, sport, audotorium, raised, wooden",
+    "image": "images/structures/residential/misc/staticobj_misc_stadiumbenches.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Sunshade",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "shade, beach, shelter, umbrella, beach, cafe, beer, outdoor, picnic",
+    "image": "images/structures/residential/misc/staticobj_misc_sunshade.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Table",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "wooden, table, square, outdoor",
+    "image": "images/structures/residential/misc/staticobj_misc_table.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Table_Camp",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "table, camp, folding, metal, plastic green, large",
+    "image": "images/structures/residential/misc/staticobj_misc_table_camp.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Table_Camp_Small",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "table, camp, folding, metal, small, white",
+    "image": "images/structures/residential/misc/staticobj_misc_table_camp_small.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_TrafficLights",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "light, street, pole, traffic, road, city, cars",
+    "image": "images/structures/residential/misc/staticobj_misc_trafficlights.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Tree_Pavement1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "tree, pavement, urban, planter, metal, decorative, square",
+    "image": "images/structures/residential/misc/staticobj_misc_tree_pavement1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Tree_Pavement2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "tree, pavement, urban, plater, square",
+    "image": "images/structures/residential/misc/staticobj_misc_tree_pavement2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Tree_Pavement3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "tree, pavement, urban, planter, recentangle, long",
+    "image": "images/structures/residential/misc/staticobj_misc_tree_pavement3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Tree_Protector",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "tree, guard, urban, tree, metal, city",
+    "image": "images/structures/residential/misc/staticobj_misc_tree_protector.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_WindBreak",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "shelter, weather, outdoor",
+    "image": "images/structures/residential/misc/staticobj_misc_windbreak.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_WoodBlock",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "wood, lumber, block, cut, logs, chopping, timber",
+    "image": "images/structures/residential/misc/staticobj_misc_woodblock.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_WoodPile1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "pile, heap, wood, logs, stack, chopping, timber, brown, firewood",
+    "image": "images/structures/residential/misc/staticobj_misc_woodpile1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_WoodPile2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "pile, heap, wood, logs, stack, chopping, timber, green, firewood",
+    "image": "images/structures/residential/misc/staticobj_misc_woodpile2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_WoodReserve",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "wood, logs, stack, chopping, timber, firewood, frame, storage",
+    "image": "images/structures/residential/misc/staticobj_misc_woodreserve.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_WoodTable_Outdoor",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "table, picnic bench, wooden, park, a-frame table, lassen table",
+    "image": "images/structures/residential/misc/staticobj_misc_woodtable_outdoor.jpg"
+  },
+  {
+    "objectName": "garbage_bin.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, bin, container, rubbish",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_Bin.jpg"
+  },
+  {
+    "objectName": "garbage_container.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, bin, container, recycling, city",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_Container.jpg"
+  },
+  {
+    "objectName": "garbage_container_glass.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, bin, container, recycling, city",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_Container_Glass.jpg"
+  },
+  {
+    "objectName": "garbage_container_paper.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, bin, container, recycling, city",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_Container_Paper.jpg"
+  },
+  {
+    "objectName": "garbage_container_plastic.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, bin, container, recycling, city",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_Container_Plastic.jpg"
+  },
+  {
+    "objectName": "garbage_groundsq_3m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, ground, surface, clutter, city, street",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_GroundSq_3m.jpg"
+  },
+  {
+    "objectName": "garbage_groundsq_3m_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, ground, surface, no_land_contact",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_GroundSq_3m_NoLC.jpg"
+  },
+  {
+    "objectName": "garbage_groundsq_5m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, ground, surface, clutter, city, street",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_GroundSq_5m.jpg"
+  },
+  {
+    "objectName": "garbage_groundsq_5m_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, ground, surface, clutter, city, street, no_land_contact",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_GroundSq_5m_NoLC.jpg"
+  },
+  {
+    "objectName": "garbage_ground_6m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, ground, surface, clutter, city, street",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_Ground_6m.jpg"
+  },
+  {
+    "objectName": "garbage_ground_6m_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, ground, surface, clutter, city, street",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_Ground_6mNoLC.jpg"
+  },
+  {
+    "objectName": "garbage_pile1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, pile, heap, washing_machine, medium",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_Pile1.jpg"
+  },
+  {
+    "objectName": "garbage_pile2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, pile, heap, pallet, plastic, oil",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_Pile2.jpg"
+  },
+  {
+    "objectName": "garbage_pile3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, pile, heap",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_Pile3.jpg"
+  },
+  {
+    "objectName": "garbage_pile4.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, pile, heap, car_bonnet, car_hood, tires, ladder",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_Pile4.jpg"
+  },
+  {
+    "objectName": "garbage_pile5.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, pile, heap",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_Pile5.jpg"
+  },
+  {
+    "objectName": "garbage_pile6.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, trash, waste, pile, heap, medical, biohazard, trolley, yellow, bags",
+    "image": "images/structures/residential/misc/StaticObj_Garbage_Pile6.jpg"
+  },
+  {
+    "objectName": "garden_plot.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/residential/misc/garden_plot.p3d.jpg"
+  },
+  {
+    "objectName": "ladder.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "ladder, climb, utility, metal, full",
+    "image": "images/structures/residential/misc/Land_Ladder.jpg"
+  },
+  {
+    "objectName": "ladder_half.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "ladder, half, climb",
+    "image": "images/structures/residential/misc/StaticObj_Ladder_Half.jpg"
+  },
+  {
+    "objectName": "lamp_city1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "light, street, pole, city, streetlight, metal",
+    "image": "images/structures/residential/misc/StaticObj_Lamp_City1.jpg"
+  },
+  {
+    "objectName": "lamp_city1_amp.p3d",
+    "inGameName": "Amplion on concrete pole",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "light, street, pole, city, streetlight, speakers, amplifier",
+    "image": "images/structures/residential/misc/Land_Lamp_City1_amp.jpg"
+  },
+  {
+    "objectName": "lamp_city2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "light, street, pole, city, streetlight, double, two",
+    "image": "images/structures/residential/misc/StaticObj_Lamp_City2.jpg"
+  },
+  {
+    "objectName": "lamp_city3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "light, street, pole, city, streetlight, triple, three",
+    "image": "images/structures/residential/misc/StaticObj_Lamp_City3.jpg"
+  },
+  {
+    "objectName": "misc_advertcolumn.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "advert, poster, column, advertisiement, billboard, city",
+    "image": "images/structures/residential/misc/StaticObj_Misc_AdvertColumn.jpg"
+  },
+  {
+    "objectName": "misc_barricade.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "barrier, road, block, garbage, trash, waste, pile, heap, large, car, washing_machine, tires, streetlight",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Barricade.jpg"
+  },
+  {
+    "objectName": "misc_bench1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "bench, seat, park, city, village, blue, wooden",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Bench1.jpg"
+  },
+  {
+    "objectName": "misc_bench2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "bench, seat, park, city, village, blue, wooden, broken",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Bench2.jpg"
+  },
+  {
+    "objectName": "misc_bench3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "bench, seat, park, trail, woods, hunting, wooden",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Bench3.jpg"
+  },
+  {
+    "objectName": "misc_bench4.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "bench, seat, park, city, village, brown",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Bench4.jpg"
+  },
+  {
+    "objectName": "misc_bench5.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "bench, seat, park, trail, woods, hunting, wooden",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Bench5.jpg"
+  },
+  {
+    "objectName": "misc_boogieman.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "statue, figure, scarecrow",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Boogieman.jpg"
+  },
+  {
+    "objectName": "misc_boundarystone.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "boundary, marker, stone, concrete, road, traffic",
+    "image": "images/structures/residential/misc/StaticObj_Misc_BoundaryStone.jpg"
+  },
+  {
+    "objectName": "misc_boundarystone_plastic.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "boundary, marker, stone, road, traffic, reflector",
+    "image": "images/structures/residential/misc/StaticObj_Misc_BoundaryStone_Plastic.jpg"
+  },
+  {
+    "objectName": "misc_boundarystone_tube.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "boundary, marker, metal, road, traffic, barrier",
+    "image": "images/structures/residential/misc/StaticObj_Misc_BoundaryStone_Tube.jpg"
+  },
+  {
+    "objectName": "misc_boxwooden.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "box, wood, crate, square, shipping",
+    "image": "images/structures/residential/misc/StaticObj_Misc_BoxWooden.jpg"
+  },
+  {
+    "objectName": "misc_carousel.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "playground, ride, children, kids, playpark, merry-go-round, roundabout",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Carousel.jpg"
+  },
+  {
+    "objectName": "misc_carousel_small.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "playground, ride, children, kids, playpark, merry-go-round, roundabout",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Carousel_Small.jpg"
+  },
+  {
+    "objectName": "misc_chair_camp1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "chair, seat, metal, folding, green",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Chair_Camp1.jpg"
+  },
+  {
+    "objectName": "misc_chair_camp2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "chair, seat, metal, folding, green",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Chair_Camp2.jpg"
+  },
+  {
+    "objectName": "misc_chair_plastic.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "chair, seat, lawn, plastic, outdoor, white",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Chair_Plastic.jpg"
+  },
+  {
+    "objectName": "misc_chickencoop.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "chicken, coop, farm, poultry, wooden, feed",
+    "image": "images/structures/residential/misc/Land_misc_chickenCoop.jpg"
+  },
+  {
+    "objectName": "misc_crashbarrier.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "barrier, road, traffic, metal, frame, crash",
+    "image": "images/structures/residential/misc/StaticObj_Misc_CrashBarrier.jpg"
+  },
+  {
+    "objectName": "misc_crashbarrier_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "barrier, road, traffic, metal, frame, crash, no_land_contact",
+    "image": "images/structures/residential/misc/StaticObj_Misc_CrashBarrier_nolc.jpg"
+  },
+  {
+    "objectName": "misc_deerstand1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "deer, stand, hunting, elevated, ladder, wooden",
+    "image": "images/structures/residential/misc/Land_Misc_DeerStand1.jpg"
+  },
+  {
+    "objectName": "misc_deerstand2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "deer, stand, hunting, elevated, ladder, wooden",
+    "image": "images/structures/residential/misc/Land_Misc_DeerStand2.jpg"
+  },
+  {
+    "objectName": "misc_doghouse.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "dog, kennel, pet, wooden",
+    "image": "images/structures/residential/misc/Land_Misc_DogHouse.jpg"
+  },
+  {
+    "objectName": "misc_feedrack.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "feed, animal, farm, hunting, woods",
+    "image": "images/structures/residential/misc/StaticObj_Misc_FeedRack.jpg"
+  },
+  {
+    "objectName": "misc_feedshack.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "feed, animal, farm, hunting, hunting stand, shelter, wooden",
+    "image": "images/structures/residential/misc/Land_Misc_FeedShack.jpg"
+  },
+  {
+    "objectName": "misc_football_gate.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "football, soccer, field, sport, goal, nets, goalposts",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Football_Gate.jpg"
+  },
+  {
+    "objectName": "misc_football_line.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "football, soccer, field, sport, markings",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Football_Line.jpg"
+  },
+  {
+    "objectName": "misc_football_line_corner.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "football, soccer, field, line, corner, sport, marking",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Football_Line_Corner.jpg"
+  },
+  {
+    "objectName": "misc_football_line_hcircle.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "football, soccer, field, sport, markings, center circle",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Football_Line_HCircle.jpg"
+  },
+  {
+    "objectName": "misc_fountain.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "fountain, water, park, city, decorative, ornamental",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Fountain.jpg"
+  },
+  {
+    "objectName": "misc_haystack.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "hay, farm, bale, empty, frame, straw",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Haystack.jpg"
+  },
+  {
+    "objectName": "misc_hutch.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/residential/misc/misc_hutch.p3d.jpg"
+  },
+  {
+    "objectName": "misc_noticeboard1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "notice, board, info, broken, glass, wooden, dark",
+    "image": "images/structures/residential/misc/StaticObj_Misc_NoticeBoard1.jpg"
+  },
+  {
+    "objectName": "misc_noticeboard2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "notice, board, info, broken, glass, wooden, light",
+    "image": "images/structures/residential/misc/StaticObj_Misc_NoticeBoard2.jpg"
+  },
+  {
+    "objectName": "misc_postbox1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "post, mail, box, red, metal, letter, pole",
+    "image": "images/structures/residential/misc/StaticObj_Misc_PostBox1.jpg"
+  },
+  {
+    "objectName": "misc_postbox2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "post, mail, box, blue, letter, wall-mounted",
+    "image": "images/structures/residential/misc/StaticObj_Misc_PostBox2.jpg"
+  },
+  {
+    "objectName": "misc_roadbarrier.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "barrier, road, block, checkpoint, entry, exit, traffic, security, military, closed, small",
+    "image": "images/structures/residential/misc/StaticObj_Misc_RoadBarrier.jpg"
+  },
+  {
+    "objectName": "misc_roadbarrier2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "barrier, road, block, checkpoint, entry, exit, traffic, security, military, open, lifted, large",
+    "image": "images/structures/residential/misc/StaticObj_Misc_RoadBarrier_2.jpg"
+  },
+  {
+    "objectName": "misc_sandbox.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "sandbox, play, sand, kids, children, playground, beach, playpark",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Sandbox.jpg"
+  },
+  {
+    "objectName": "misc_seesaw.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "seesaw, playground, park, ride, children, kids, playpark",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Seesaw.jpg"
+  },
+  {
+    "objectName": "misc_stadiumbenches.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "bench, seat, park, seats, bleachers, sport, audotorium, raised, wooden",
+    "image": "images/structures/residential/misc/StaticObj_Misc_StadiumBenches.jpg"
+  },
+  {
+    "objectName": "misc_sunshade.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "shade, beach, shelter, umbrella, beach, cafe, beer, outdoor, picnic",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Sunshade.jpg"
+  },
+  {
+    "objectName": "misc_table.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "wooden, table, square, outdoor",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Table.jpg"
+  },
+  {
+    "objectName": "misc_table_camp.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "table, camp, folding, metal, plastic green, large",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Table_Camp.jpg"
+  },
+  {
+    "objectName": "misc_table_camp_small.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "table, camp, folding, metal, small, white",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Table_Camp_Small.jpg"
+  },
+  {
+    "objectName": "misc_toilet_dry.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "toilet, outhouse, latrine, privy",
+    "image": "images/structures/residential/misc/Land_Misc_Toilet_Dry.jpg"
+  },
+  {
+    "objectName": "misc_trafficlights.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "light, street, pole, traffic, road, city, cars",
+    "image": "images/structures/residential/misc/StaticObj_Misc_TrafficLights.jpg"
+  },
+  {
+    "objectName": "misc_trailroof_big.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "shelter, roof, trail, picnic bench, hunting, hiking",
+    "image": "images/structures/residential/misc/Land_Misc_TrailRoof_Big.jpg"
+  },
+  {
+    "objectName": "misc_trailroof_small.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "shelter, roof, trail, picnic bench, hunting, hiking",
+    "image": "images/structures/residential/misc/Land_Misc_TrailRoof_Small.jpg"
+  },
+  {
+    "objectName": "misc_tree_pavement1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "tree, pavement, urban, planter, metal, decorative, square",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Tree_Pavement1.jpg"
+  },
+  {
+    "objectName": "misc_tree_pavement2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "tree, pavement, urban, plater, square",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Tree_Pavement2.jpg"
+  },
+  {
+    "objectName": "misc_tree_pavement3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "tree, pavement, urban, planter, recentangle, long",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Tree_Pavement3.jpg"
+  },
+  {
+    "objectName": "misc_tree_protector.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "tree, guard, urban, tree, metal, city",
+    "image": "images/structures/residential/misc/StaticObj_Misc_Tree_Protector.jpg"
+  },
+  {
+    "objectName": "misc_well.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/residential/misc/misc_well.p3d.jpg"
+  },
+  {
+    "objectName": "misc_well_pump_blue.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "well, pump, water, fountain, watering_hole",
+    "image": "images/structures/residential/misc/Land_Misc_Well_Pump_Blue.jpg"
+  },
+  {
+    "objectName": "misc_well_pump_yellow.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/residential/misc/misc_well_pump_yellow.p3d.jpg"
+  },
+  {
+    "objectName": "misc_windbreak.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "shelter, weather, outdoor",
+    "image": "images/structures/residential/misc/StaticObj_Misc_WindBreak.jpg"
+  },
+  {
+    "objectName": "misc_woodblock.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "wood, lumber, block, cut, logs, chopping, timber",
+    "image": "images/structures/residential/misc/StaticObj_Misc_WoodBlock.jpg"
+  },
+  {
+    "objectName": "misc_woodpile1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "pile, heap, wood, logs, stack, chopping, timber, brown, firewood",
+    "image": "images/structures/residential/misc/StaticObj_Misc_WoodPile1.jpg"
+  },
+  {
+    "objectName": "misc_woodpile2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "pile, heap, wood, logs, stack, chopping, timber, green, firewood",
+    "image": "images/structures/residential/misc/StaticObj_Misc_WoodPile2.jpg"
+  },
+  {
+    "objectName": "misc_woodreserve.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "wood, logs, stack, chopping, timber, firewood, frame, storage",
+    "image": "images/structures/residential/misc/StaticObj_Misc_WoodReserve.jpg"
+  },
+  {
+    "objectName": "misc_woodtable_indoor.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "table, picnic bench, wooden, park, a-frame table, lassen table",
+    "image": "images/structures/residential/misc/StaticObj_Misc_WoodTable_Indoor.jpg"
+  },
+  {
+    "objectName": "misc_woodtable_outdoor.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "table, picnic bench, wooden, park, a-frame table, lassen table",
+    "image": "images/structures/residential/misc/StaticObj_Misc_WoodTable_Outdoor.jpg"
+  },
+  {
+    "objectName": "Land_Misc_Greenhouse",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garden, plants, glass, grow, glass, metal, green house, polytunnel",
+    "image": "images/structures/residential/misc/land_misc_greenhouse.jpg"
+  },
+  {
+    "objectName": "Land_Misc_Polytunnel",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garden, plants, grow, plastic, greenhouse, green house",
+    "image": "images/structures/residential/misc/land_misc_polytunnel.jpg"
+  },
+  {
+    "objectName": "Land_Misc_Toilet_Mobile",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "toilet, portable, porta-loo, latrine, plastic",
+    "image": "images/structures/residential/misc/land_misc_toilet_mobile.jpg"
+  },
+  {
+    "objectName": "misc_greenhouse.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garden, plants, glass, grow, glass, metal",
+    "image": "images/structures/residential/misc/Land_Misc_Greenhouse.jpg"
+  },
+  {
+    "objectName": "misc_polytunnel.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "garden, plants, glass, grow, plastic",
+    "image": "images/structures/residential/misc/Land_Misc_Polytunnel.jpg"
+  },
+  {
+    "objectName": "misc_toilet_mobile.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "toilet, portable, porta-loo, latrine",
+    "image": "images/structures/residential/misc/Land_Misc_Toilet_Mobile.jpg"
+  }
+]

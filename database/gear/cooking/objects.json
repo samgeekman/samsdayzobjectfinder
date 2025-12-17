@@ -1,0 +1,492 @@
+[
+  {
+    "objectName": "Firewood",
+    "inGameName": "Firewood",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/firewood.jpg"
+  },
+  {
+    "objectName": "ClutterCutterFireplace",
+    "inGameName": "Fireplace Clutter Cutter",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/cluttercutterfireplace.jpg"
+  },
+  {
+    "objectName": "NoiseFireplaceSpecial",
+    "inGameName": "Fireplace",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/noisefireplacespecial.jpg"
+  },
+  {
+    "objectName": "Fireplace",
+    "inGameName": "Fireplace",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/fireplace.jpg"
+  },
+  {
+    "objectName": "StaticObj_fireplace_spot_snow",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/staticobj_fireplace_spot_snow.jpg"
+  },
+  {
+    "objectName": "FireplaceIndoor",
+    "inGameName": "Fireplace",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/fireplaceindoor.jpg"
+  },
+  {
+    "objectName": "FireplaceFireBarrel",
+    "inGameName": "Fireplace",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/fireplacefirebarrel.jpg"
+  },
+  {
+    "objectName": "OvenIndoor",
+    "inGameName": "Fireplace",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/ovenindoor.jpg"
+  },
+  {
+    "objectName": "BarrelHoles_Blue",
+    "inGameName": "Fire Barrel",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/barrelholes_colorbase.jpg"
+  },
+  {
+    "objectName": "BarrelHoles_Green",
+    "inGameName": "Fire Barrel",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/barrelholes_colorbase.jpg"
+  },
+  {
+    "objectName": "BarrelHoles_Red",
+    "inGameName": "Fire Barrel",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/barrelholes_colorbase.jpg"
+  },
+  {
+    "objectName": "BarrelHoles_Yellow",
+    "inGameName": "Fire Barrel",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/barrelholes_colorbase.jpg"
+  },
+  {
+    "objectName": "Pot",
+    "inGameName": "Cooking Pot",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/pot.jpg"
+  },
+  {
+    "objectName": "FryingPan",
+    "inGameName": "Frying Pan",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/fryingpan.jpg"
+  },
+  {
+    "objectName": "Cauldron",
+    "inGameName": "Cauldron",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/cauldron.jpg"
+  },
+  {
+    "objectName": "PortableGasStove",
+    "inGameName": "Gas Stove",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/portablegasstove.jpg"
+  },
+  {
+    "objectName": "PortableGasLamp",
+    "inGameName": "Gas Lamp",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/portablegaslamp.jpg"
+  },
+  {
+    "objectName": "PetrolLighter",
+    "inGameName": "Lighter",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/petrollighter.jpg"
+  },
+  {
+    "objectName": "LighterZippo",
+    "inGameName": "Campfire Tripod",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/lighterzippo.jpg"
+  },
+  {
+    "objectName": "Tripod",
+    "inGameName": "Campfire Tripod",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/tripod.jpg"
+  },
+  {
+    "objectName": "CookingStand",
+    "inGameName": "Cooking Stand",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/cookingstand.jpg"
+  },
+  {
+    "objectName": "ProxyCookingPot",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/proxycookingpot.jpg"
+  },
+  {
+    "objectName": "Proxytripod_deployed",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/cooking/proxytripod_deployed.jpg"
+  },
+  {
+    "objectName": "barrel_holes.p3d",
+    "inGameName": "Fire Barrel",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/barrel_holes.p3d.jpg"
+  },
+  {
+    "objectName": "cauldron.p3d",
+    "inGameName": "Cauldron",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/cauldron.p3d.jpg"
+  },
+  {
+    "objectName": "cookingpot.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/cookingpot.p3d.jpg"
+  },
+  {
+    "objectName": "cookingstand.p3d",
+    "inGameName": "Cooking Stand",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/cookingstand.p3d.jpg"
+  },
+  {
+    "objectName": "fireplace.p3d",
+    "inGameName": "Fireplace",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/fireplace.p3d.jpg"
+  },
+  {
+    "objectName": "fireplaceindoor.p3d",
+    "inGameName": "Fireplace",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/fireplaceindoor.p3d.jpg"
+  },
+  {
+    "objectName": "fireplace_backup.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/fireplace_backup.p3d.jpg"
+  },
+  {
+    "objectName": "fireplace_cluttercutter.p3d",
+    "inGameName": "Fireplace Clutter Cutter",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/fireplace_cluttercutter.p3d.jpg"
+  },
+  {
+    "objectName": "fireplace_spot_snow.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/fireplace_spot_snow.p3d.jpg"
+  },
+  {
+    "objectName": "fryingpan.p3d",
+    "inGameName": "Frying Pan",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/fryingpan.p3d.jpg"
+  },
+  {
+    "objectName": "gascooker.p3d",
+    "inGameName": "Gas Stove",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/gascooker.p3d.jpg"
+  },
+  {
+    "objectName": "gaslight.p3d",
+    "inGameName": "Gas Lamp",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/gaslight.p3d.jpg"
+  },
+  {
+    "objectName": "log01.p3d",
+    "inGameName": "Firewood",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/log01.p3d.jpg"
+  },
+  {
+    "objectName": "log01burned.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/log01burned.p3d.jpg"
+  },
+  {
+    "objectName": "log02.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/log02.p3d.jpg"
+  },
+  {
+    "objectName": "log02burned.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/log02burned.p3d.jpg"
+  },
+  {
+    "objectName": "log03.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/log03.p3d.jpg"
+  },
+  {
+    "objectName": "log03burned.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/log03burned.p3d.jpg"
+  },
+  {
+    "objectName": "oven.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/oven.p3d.jpg"
+  },
+  {
+    "objectName": "ovenindoor.p3d",
+    "inGameName": "Fireplace",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/ovenindoor.p3d.jpg"
+  },
+  {
+    "objectName": "petrol_lighter.p3d",
+    "inGameName": "Lighter",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/petrol_lighter.p3d.jpg"
+  },
+  {
+    "objectName": "stone.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/stone.p3d.jpg"
+  },
+  {
+    "objectName": "stoneground.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/stoneground.p3d.jpg"
+  },
+  {
+    "objectName": "tripod.p3d",
+    "inGameName": "Campfire Tripod",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/tripod.p3d.jpg"
+  },
+  {
+    "objectName": "tripod_collapsed.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/tripod_collapsed.p3d.jpg"
+  },
+  {
+    "objectName": "tripod_deployed.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/cooking",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gear/cooking/tripod_deployed.p3d.jpg"
+  }
+]

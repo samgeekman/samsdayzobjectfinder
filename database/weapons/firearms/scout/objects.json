@@ -1,0 +1,22 @@
+[
+  {
+    "objectName": "Scout",
+    "inGameName": "Pioneer",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/scout",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 5.56x45",
+    "image": "images/weapons/firearms/scout/scout.jpg"
+  },
+  {
+    "objectName": "scout.p3d",
+    "inGameName": "Pioneer",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/scout",
+    "usableOnConsole": false,
+    "searchTags": "rifles, 5.56x45",
+    "image": "images/weapons/firearms/dzweaponsfirearmsscoutscout.p3d.jpeg"
+  }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "objectName": "Land_Castle_Bergfrit",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_bergfrit.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Bergfrit2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_bergfrit2.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Donjon",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_donjon.jpg"
+  },
+  {
+    "objectName": "castle_bastion.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_bastion.p3d.jpg"
+  },
+  {
+    "objectName": "castle_bastion_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_bastion_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_bergfrit.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_bergfrit.p3d.jpg"
+  },
+  {
+    "objectName": "castle_bergfrit2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_bergfrit2.p3d.jpg"
+  },
+  {
+    "objectName": "castle_donjon.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_donjon.p3d.jpg"
+  },
+  {
+    "objectName": "castle_gate.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_gate.p3d.jpg"
+  },
+  {
+    "objectName": "castle_stairs.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_stairs.p3d.jpg"
+  },
+  {
+    "objectName": "castle_stairs_bottom_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_stairs_bottom_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_stairs_middle_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_stairs_middle_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_stairs_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_stairs_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_stairs_top_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_stairs_top_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall1_20.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall1_20.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall1_20_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall1_20_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall1_20_turn.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall1_20_turn.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall1_20_turn_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall1_20_turn_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall1_corner1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall1_corner1.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall1_corner1_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall1_corner1_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall1_corner2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall1_corner2.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall1_corner2_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall1_corner2_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall1_end1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall1_end1.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall1_end1_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall1_end1_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall1_end2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall1_end2.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall1_end2_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall1_end2_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall2_30.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall2_30.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall2_30_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall2_30_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall2_corner1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall2_corner1.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall2_corner1_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall2_corner1_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall2_corner2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall2_corner2.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall2_corner2_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall2_corner2_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall2_end1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall2_end1.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall2_end1_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall2_end1_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall2_end2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall2_end2.p3d.jpg"
+  },
+  {
+    "objectName": "castle_wall2_end2_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_wall2_end2_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_walls_10.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_walls_10.p3d.jpg"
+  },
+  {
+    "objectName": "castle_walls_10_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_walls_10_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_walls_5_d.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_walls_5_d.p3d.jpg"
+  },
+  {
+    "objectName": "castle_walls_5_d_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_walls_5_d_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "castle_walls_end.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_walls_end.p3d.jpg"
+  },
+  {
+    "objectName": "castle_walls_end_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/castle_walls_end_nolc.p3d.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Bastion",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_bastion.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Bastion_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_bastion_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Gate",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_gate.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Stairs",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_stairs.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Stairs_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_stairs_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall1_20",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall1_20.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall1_20_Turn",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall1_20_turn.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall1_20_Turn_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall1_20_turn_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall1_20_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall1_20_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall1_Corner1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall1_corner1.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall1_Corner1_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall1_corner1_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall1_Corner2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall1_corner2.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall1_Corner2_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall1_corner2_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall1_End1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall1_end1.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall1_End1_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall1_end1_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall1_End2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall1_end2.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall1_End2_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall1_end2_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall2_30",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall2_30.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall2_30_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall2_30_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall2_Corner1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall2_corner1.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall2_Corner1_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall2_corner1_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall2_Corner2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall2_corner2.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall2_Corner2_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall2_corner2_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall2_End1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall2_end1.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall2_End1_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall2_end1_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall2_End2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall2_end2.jpg"
+  },
+  {
+    "objectName": "Land_Castle_Wall2_End2_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_wall2_end2_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_WallS_10",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_walls_10.jpg"
+  },
+  {
+    "objectName": "Land_Castle_WallS_10_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_walls_10_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_WallS_5_D",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_walls_5_d.jpg"
+  },
+  {
+    "objectName": "Land_Castle_WallS_5_D_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_walls_5_d_nolc.jpg"
+  },
+  {
+    "objectName": "Land_Castle_WallS_End",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_walls_end.jpg"
+  },
+  {
+    "objectName": "Land_Castle_WallS_End_nolc",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/castles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/specific/castles/land_castle_walls_end_nolc.jpg"
+  }
+]

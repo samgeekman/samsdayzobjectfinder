@@ -1,0 +1,52 @@
+[
+  {
+    "objectName": "Chainsaw",
+    "inGameName": "Chainsaw",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/melee/powered",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/melee/powered/chainsaw.jpg"
+  },
+  {
+    "objectName": "Sprint_SwitchedOn",
+    "inGameName": "Stun Baton",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/melee/powered",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/melee/powered/sprint_switchedon.jpg"
+  },
+  {
+    "objectName": "StunBaton",
+    "inGameName": "Stun Baton",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/melee/powered",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/melee/powered/stunbaton.jpg"
+  },
+  {
+    "objectName": "chainsaw.p3d",
+    "inGameName": "Chainsaw",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/melee/powered",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/melee/powered/chainsaw.p3d.jpg"
+  },
+  {
+    "objectName": "stun_baton.p3d",
+    "inGameName": "Stun Baton",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/melee/powered",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/melee/powered/stun_baton.p3d.jpg"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "objectName": "FAMAS",
+    "inGameName": "LE-MAS",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/famas",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/famas/famas.jpg"
+  },
+  {
+    "objectName": "SawedoffFAMAS",
+    "inGameName": "Sawed-off LE-MAS",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/famas",
+    "usableOnConsole": true,
+    "searchTags": "automatic, 5.56x45",
+    "image": "images/weapons/firearms/famas/sawedofffamas.jpg"
+  },
+  {
+    "objectName": "famas.p3d",
+    "inGameName": "LE-MAS",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/famas",
+    "usableOnConsole": false,
+    "searchTags": "machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/dzweaponsfirearmsfamasfamas.p3d.jpeg"
+  },
+  {
+    "objectName": "sawedofffamas.p3d",
+    "inGameName": "Sawed-off LE-MAS",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/famas",
+    "usableOnConsole": false,
+    "searchTags": "automatic, 5.56x45, machine_gun",
+    "image": "images/weapons/firearms/dzweaponsfirearmsfamassawedofffamas.p3d.jpeg"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "objectName": "MP5K",
+    "inGameName": "SG5-K",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mp5",
+    "usableOnConsole": true,
+    "searchTags": "submachine gun, automatic, 9x19",
+    "image": "images/weapons/firearms/mp5/mp5k.jpg"
+  },
+  {
+    "objectName": "mp5k.p3d",
+    "inGameName": "SG5-K",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/mp5",
+    "usableOnConsole": false,
+    "searchTags": "submachine gun, automatic, 9x19",
+    "image": "images/weapons/firearms/dzweaponsfirearmsmp5mp5k.p3d.jpeg"
+  }
+]

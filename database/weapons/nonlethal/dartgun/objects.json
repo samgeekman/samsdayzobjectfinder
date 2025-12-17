@@ -1,0 +1,22 @@
+[
+  {
+    "objectName": "DartGun",
+    "inGameName": "Dartgun",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/nonlethal/dartgun",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/nonlethal/dartgun/dartgun.jpg"
+  },
+  {
+    "objectName": "dartgun.p3d",
+    "inGameName": "Dartgun",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/nonlethal/dartgun",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/nonlethal/dartgun/dartgun.p3d.jpg"
+  }
+]

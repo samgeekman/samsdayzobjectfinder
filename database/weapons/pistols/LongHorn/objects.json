@@ -1,0 +1,32 @@
+[
+  {
+    "objectName": "LongHorn",
+    "inGameName": "Longhorn",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/longhorn",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/longhorn/longhorn.jpg"
+  },
+  {
+    "objectName": "ProxyLongHorn",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/longhorn",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/longhorn/proxylonghorn.jpg"
+  },
+  {
+    "objectName": "longhorn.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/pistols/longhorn",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/pistols/longhorn/longhorn.p3d.jpg"
+  }
+]

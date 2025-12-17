@@ -1,0 +1,742 @@
+[
+  {
+    "objectName": "Land_Misc_Scaffolding",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "metal, construction, frame",
+    "image": "images/structures/industrial/misc/land_misc_scaffolding.jpg"
+  },
+  {
+    "objectName": "Land_Misc_Through_Static",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "animal, farm, feeding, water",
+    "image": "images/structures/industrial/misc/land_misc_through_static.jpg"
+  },
+  {
+    "objectName": "Misc_Spotlight",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "light, lamp, illuminate, shine",
+    "image": "images/structures/industrial/misc/misc_spotlight.jpg"
+  },
+  {
+    "objectName": "StaticObj_Lamp_Ind",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "street_light, street_lamp, metal, lantern, floodlight, city, residential",
+    "image": "images/structures/industrial/misc/staticobj_lamp_ind.jpg"
+  },
+  {
+    "objectName": "StaticObj_Lamp_Rail",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "street_light, street_lamp, metal, lantern, floodlight, city, residential, climb, ladder",
+    "image": "images/structures/industrial/misc/staticobj_lamp_rail.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_BoardsPack1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "wood, package, delivery, fright, crate, white",
+    "image": "images/structures/industrial/misc/staticobj_misc_boardspack1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_BoardsPack2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "wood, package, delivery, fright, crate, white",
+    "image": "images/structures/industrial/misc/staticobj_misc_boardspack2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_BoardsPack3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "wood, package, delivery, fright, crate, white",
+    "image": "images/structures/industrial/misc/staticobj_misc_boardspack3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Coil",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "cable, metal, roll, steel, wire, empty",
+    "image": "images/structures/industrial/misc/staticobj_misc_coil.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_ConcretePanels",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "stacked, construction, concrete, ",
+    "image": "images/structures/industrial/misc/staticobj_misc_concretepanels.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_ConcretePipe",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "grate, pipe, metal, sewers, water, underground, construction",
+    "image": "images/structures/industrial/misc/staticobj_misc_concretepipe.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_ConcretePipe_Gate",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "grate, pipe, metal, sewers, water, underground, construction",
+    "image": "images/structures/industrial/misc/staticobj_misc_concretepipe_gate.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Drainage",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "drain_pipe, sewers, infrastructure, pipes, city, residential",
+    "image": "images/structures/industrial/misc/staticobj_misc_drainage.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_GContainer_Big",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, bin, dump, skip, rubbish, city, construction",
+    "image": "images/structures/industrial/misc/staticobj_misc_gcontainer_big.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_HayBale",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "farm, field, animal, feed",
+    "image": "images/structures/industrial/misc/staticobj_misc_haybale.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_HayBale_Decayed",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "farm, field, animal, feed, rotten, damaged",
+    "image": "images/structures/industrial/misc/staticobj_misc_haybale_decayed.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Pallet",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "wooden, freight, single, panel",
+    "image": "images/structures/industrial/misc/staticobj_misc_pallet.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Pallets1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "wooden, freight, triple, panel",
+    "image": "images/structures/industrial/misc/staticobj_misc_pallets1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Pallets2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "wooden, freight, triple, panel",
+    "image": "images/structures/industrial/misc/staticobj_misc_pallets2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Pallets3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "wooden, freight, stacked, pile, panel",
+    "image": "images/structures/industrial/misc/staticobj_misc_pallets3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Pipes",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "pipes, water, underground, multiple, sewers",
+    "image": "images/structures/industrial/misc/staticobj_misc_pipes.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Pipes_2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "pipes, water, underground, double, sewers",
+    "image": "images/structures/industrial/misc/staticobj_misc_pipes_2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Through_Trailer",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "animal, farm, feeding, water, tractor",
+    "image": "images/structures/industrial/misc/staticobj_misc_through_trailer.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Timbers_Log1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal",
+    "image": "images/structures/industrial/misc/staticobj_misc_timbers_log1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Timbers_Log2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal, long, medium",
+    "image": "images/structures/industrial/misc/staticobj_misc_timbers_log2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Timbers_Log3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal, long, large",
+    "image": "images/structures/industrial/misc/staticobj_misc_timbers_log3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Timbers_Log4",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal, short, small",
+    "image": "images/structures/industrial/misc/staticobj_misc_timbers_log4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Timbers_Log5",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, vertical, long, large",
+    "image": "images/structures/industrial/misc/staticobj_misc_timbers_log5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Timbers1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "stacked, pile, wood, log, forest, chopped, tree, horizontal",
+    "image": "images/structures/industrial/misc/staticobj_misc_timbers1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Timbers2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "stacked, pile, wood, log, forest, chopped, tree, horizontal",
+    "image": "images/structures/industrial/misc/staticobj_misc_timbers2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Timbers3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "stacked, pile, wood, log, forest, chopped, tree, horizontal",
+    "image": "images/structures/industrial/misc/staticobj_misc_timbers3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_Timbers4",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/industrial/misc/staticobj_misc_timbers4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_TirePile",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "tyre, single, rubber, wheel, vehicle, stacked",
+    "image": "images/structures/industrial/misc/staticobj_misc_tirepile.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_TirePile_Group",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "tyre, triple, rubber, wheel, vehicle, stacked",
+    "image": "images/structures/industrial/misc/staticobj_misc_tirepile_group.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_WoodPile_Forest1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "stacked, pile wood, log, forest, chopped, tree, horizontal",
+    "image": "images/structures/industrial/misc/staticobj_misc_woodpile_forest1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_WoodPile_Forest2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "stacked, pile wood, log, forest, chopped, tree, horizontal",
+    "image": "images/structures/industrial/misc/staticobj_misc_woodpile_forest2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_WoodPile_Forest3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "stacked, pile wood, log, forest, chopped, tree, horizontal",
+    "image": "images/structures/industrial/misc/staticobj_misc_woodpile_forest3.jpg"
+  },
+  {
+    "objectName": "lamp_ind.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "street_light, street_lamp, metal, lantern, floodlight, city, residential",
+    "image": "images/structures/industrial/misc/StaticObj_Lamp_Ind.jpg"
+  },
+  {
+    "objectName": "lamp_rail.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "street_light, street_lamp, metal, lantern, floodlight, city, residential, climb, ladder",
+    "image": "images/structures/industrial/misc/StaticObj_Lamp_Rail.jpg"
+  },
+  {
+    "objectName": "misc_boardspack1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "wood, package, delivery, fright, crate, white",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_BoardsPack1.jpg"
+  },
+  {
+    "objectName": "misc_boardspack2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "wood, package, delivery, fright, crate, white",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_BoardsPack2.jpg"
+  },
+  {
+    "objectName": "misc_boardspack3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "wood, package, delivery, fright, crate, white",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_BoardsPack3.jpg"
+  },
+  {
+    "objectName": "misc_coil.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/misc/misc_coil.p3d.jpg"
+  },
+  {
+    "objectName": "misc_concretepanels.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "stacked, construction",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_ConcretePanels.jpg"
+  },
+  {
+    "objectName": "misc_concretepipe.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "grate, pipe, metal, sewers, water, underground, construction",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_ConcretePipe.jpg"
+  },
+  {
+    "objectName": "misc_concretepipe_gate.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "grate, pipe, metal, sewers, water, underground, construction",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_ConcretePipe_Gate.jpg"
+  },
+  {
+    "objectName": "misc_drainage.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "drain_pipe, sewers, infrastructure, pipes, city, residential",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Drainage.jpg"
+  },
+  {
+    "objectName": "misc_gcontainer_big.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "garbage, bin, dump, skip, rubbish, city, construction",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_GContainer_Big.jpg"
+  },
+  {
+    "objectName": "misc_haybale.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "farm, field, animal, feed",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_HayBale.jpg"
+  },
+  {
+    "objectName": "misc_haybale_decayed.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "farm, field, animal, feed, rotten, damaged",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_HayBale_Decayed.jpg"
+  },
+  {
+    "objectName": "misc_pallet.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "wooden, freight, single, panel",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Pallet.jpg"
+  },
+  {
+    "objectName": "misc_pallets1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "wooden, freight, triple, panel",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Pallets1.jpg"
+  },
+  {
+    "objectName": "misc_pallets2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "wooden, freight, triple, panel",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Pallets2.jpg"
+  },
+  {
+    "objectName": "misc_pallets3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "wooden, freight, stacked, pile, panel",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Pallets3.jpg"
+  },
+  {
+    "objectName": "misc_pipes.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "pipes, water, underground, multiple, sewers",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Pipes.jpg"
+  },
+  {
+    "objectName": "misc_pipes_2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "pipes, water, underground, double, sewers",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Pipes_2.jpg"
+  },
+  {
+    "objectName": "misc_scaffolding.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "metal, construction, frame",
+    "image": "images/structures/industrial/misc/Land_Misc_Scaffolding.jpg"
+  },
+  {
+    "objectName": "misc_spotlight.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "light, lamp, illuminate, shine",
+    "image": "images/structures/industrial/misc/Misc_Spotlight.jpg"
+  },
+  {
+    "objectName": "misc_through_static.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "animal, farm, feeding, water",
+    "image": "images/structures/industrial/misc/Land_Misc_Through_Static.jpg"
+  },
+  {
+    "objectName": "misc_through_trailer.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "animal, farm, feeding, water, tractor",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Through_Trailer.jpg"
+  },
+  {
+    "objectName": "misc_timbers1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "stacked, pile, wood, log, forest, chopped, tree, horizontal",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers1.jpg"
+  },
+  {
+    "objectName": "misc_timbers2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "stacked, pile, wood, log, forest, chopped, tree, horizontal",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers2.jpg"
+  },
+  {
+    "objectName": "misc_timbers3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/misc/staticobj_misc_timbers3.jpg.jpg"
+  },
+  {
+    "objectName": "misc_timbers4.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/misc/misc_timbers4.p3d.jpg"
+  },
+  {
+    "objectName": "misc_timbers_log1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log1.jpg"
+  },
+  {
+    "objectName": "misc_timbers_log2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal, long, medium",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log2.jpg"
+  },
+  {
+    "objectName": "misc_timbers_log3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal, long, large",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log3.jpg"
+  },
+  {
+    "objectName": "misc_timbers_log4.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, horizontal, short, small",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log4.jpg"
+  },
+  {
+    "objectName": "misc_timbers_log5.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "single, wooden, log, wood, one, forest, chopped, tree, vertical, long, large",
+    "image": "images/structures/industrial/misc/StaticObj_Misc_Timbers_Log5.jpg"
+  },
+  {
+    "objectName": "misc_tirepile.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/misc/misc_tirepile.p3d.jpg"
+  },
+  {
+    "objectName": "misc_tirepile_group.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/misc/misc_tirepile_group.p3d.jpg"
+  },
+  {
+    "objectName": "misc_woodpile_forest1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/misc/misc_woodpile_forest1.p3d.jpg"
+  },
+  {
+    "objectName": "misc_woodpile_forest2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/misc/misc_woodpile_forest2.p3d.jpg"
+  },
+  {
+    "objectName": "misc_woodpile_forest3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/industrial/misc/misc_woodpile_forest3.p3d.jpg"
+  }
+]

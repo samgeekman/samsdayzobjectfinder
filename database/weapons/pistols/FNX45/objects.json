@@ -1,0 +1,42 @@
+[
+  {
+    "objectName": "FNX45",
+    "inGameName": "FX-45",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/fnx45",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/fnx45/fnx45.jpg"
+  },
+  {
+    "objectName": "FNX45_arrow",
+    "inGameName": "FX-45",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/fnx45",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/fnx45/fnx45_arrow.jpg"
+  },
+  {
+    "objectName": "ProxyFNP45",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/fnx45",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/fnx45/proxyfnp45.jpg"
+  },
+  {
+    "objectName": "fnp45.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/pistols/fnx45",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/pistols/fnx45/fnp45.p3d.jpg"
+  }
+]

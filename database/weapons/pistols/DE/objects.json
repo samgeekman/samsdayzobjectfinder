@@ -1,0 +1,32 @@
+[
+  {
+    "objectName": "Deagle",
+    "inGameName": "Deagle",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/de",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/de/deagle.jpg"
+  },
+  {
+    "objectName": "ProxyDE",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/de",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/de/proxyde.jpg"
+  },
+  {
+    "objectName": "de.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/pistols/de",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/pistols/de/de.p3d.jpg"
+  }
+]

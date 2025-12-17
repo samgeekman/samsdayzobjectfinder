@@ -1,0 +1,482 @@
+[
+  {
+    "objectName": "MaleHands_Base",
+    "inGameName": "Bare hands",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/gloves/malehands_base.jpg"
+  },
+  {
+    "objectName": "FemaleHands_Base",
+    "inGameName": "Bare hands",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/gloves/femalehands_base.jpg"
+  },
+  {
+    "objectName": "WorkingGloves_Beige",
+    "inGameName": "Working Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/gloves/workinggloves_colorbase.jpg"
+  },
+  {
+    "objectName": "WorkingGloves_Black",
+    "inGameName": "Working Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/gloves/workinggloves_colorbase.jpg"
+  },
+  {
+    "objectName": "WorkingGloves_Brown",
+    "inGameName": "Working Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/gloves/workinggloves_colorbase.jpg"
+  },
+  {
+    "objectName": "WorkingGloves_Yellow",
+    "inGameName": "Working Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/gloves/workinggloves_colorbase.jpg"
+  },
+  {
+    "objectName": "HandsCover_Improvised",
+    "inGameName": "Improvised Hands Wrapping",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/gloves/handscover_improvised.jpg"
+  },
+  {
+    "objectName": "TacticalGloves_Beige",
+    "inGameName": "Tactical Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/gloves/tacticalgloves_colorbase.jpg"
+  },
+  {
+    "objectName": "TacticalGloves_Black",
+    "inGameName": "Tactical Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/gloves/tacticalgloves_colorbase.jpg"
+  },
+  {
+    "objectName": "TacticalGloves_Green",
+    "inGameName": "Tactical Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/gloves/tacticalgloves_colorbase.jpg"
+  },
+  {
+    "objectName": "hands3_f.p3d",
+    "inGameName": "Bare hands",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gloves/bare_hands.jpg"
+  },
+  {
+    "objectName": "hands3_m.p3d",
+    "inGameName": "Bare hands",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/gloves/bare_hands.jpg"
+  },
+  {
+    "objectName": "handscover_improvised_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/handscover_improvised_f.p3d.jpg"
+  },
+  {
+    "objectName": "handscover_improvised_g.p3d",
+    "inGameName": "Improvised Hands Wrapping",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/handscover_improvised_g.p3d.jpg"
+  },
+  {
+    "objectName": "handscover_improvised_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/handscover_improvised_m.p3d.jpg"
+  },
+  {
+    "objectName": "hands_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/hands_f.p3d.jpg"
+  },
+  {
+    "objectName": "hands_m_above0.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/hands_m_above0.p3d.jpg"
+  },
+  {
+    "objectName": "hands_new_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/hands_new_m.p3d.jpg"
+  },
+  {
+    "objectName": "leather_gloves_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/leather_gloves_f.p3d.jpg"
+  },
+  {
+    "objectName": "leather_gloves_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "LeatherGloves_Natural, LeatherGloves_Beige, LeatherGloves_Black, LeatherGloves_Brown",
+    "image": "images/gloves/leather_gloves_beige.jpeg"
+  },
+  {
+    "objectName": "leather_gloves_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/leather_gloves_m.p3d.jpg"
+  },
+  {
+    "objectName": "nbc_gloves_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/nbc_gloves_f.p3d.jpg"
+  },
+  {
+    "objectName": "nbc_gloves_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "NBCGlovesGray, NBCGloves_Yellow",
+    "image": "images/gloves/nbc_gloves_gray.jpeg"
+  },
+  {
+    "objectName": "nbc_gloves_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/nbc_gloves_m.p3d.jpg"
+  },
+  {
+    "objectName": "omno_gloves_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/omno_gloves_f.p3d.jpg"
+  },
+  {
+    "objectName": "omno_gloves_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "OMNOGloves_Gray, OMNOGloves_Brown",
+    "image": "images/gloves/omno_gloves_brown.jpeg"
+  },
+  {
+    "objectName": "omno_gloves_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/omno_gloves_m.p3d.jpg"
+  },
+  {
+    "objectName": "paddedgloves_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/paddedgloves_f.p3d.jpg"
+  },
+  {
+    "objectName": "paddedgloves_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "PaddedGloves_Brown, PaddedGloves_Beige, PaddedGloves_Threat",
+    "image": "images/gloves/padded_gloves_beige.jpeg"
+  },
+  {
+    "objectName": "paddedgloves_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/paddedgloves_m.p3d.jpg"
+  },
+  {
+    "objectName": "skigloves_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/skigloves_f.p3d.jpg"
+  },
+  {
+    "objectName": "skigloves_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "SkiGloves_Blue, SkiGloves_Red, SkiGloves_90s",
+    "image": "images/gloves/ski_gloves_90s.jpeg"
+  },
+  {
+    "objectName": "skigloves_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/skigloves_m.p3d.jpg"
+  },
+  {
+    "objectName": "surgical_gloves_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/surgical_gloves_f.p3d.jpg"
+  },
+  {
+    "objectName": "surgical_gloves_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "SurgicalGloves_Blue, SurgicalGloves_LightBlue, SurgicalGloves_Green, SurgicalGloves_White",
+    "image": "images/gloves/surgical_gloves_blue.jpeg"
+  },
+  {
+    "objectName": "surgical_gloves_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/surgical_gloves_m.p3d.jpg"
+  },
+  {
+    "objectName": "tactical_gloves_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/tactical_gloves_f.p3d.jpg"
+  },
+  {
+    "objectName": "tactical_gloves_g.p3d",
+    "inGameName": "Tactical Gloves",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "TacticalGloves_Black, TacticalGloves_Beige, TacticalGloves_Green",
+    "image": "images/gloves/tactical_gloves_beige.jpeg"
+  },
+  {
+    "objectName": "tactical_gloves_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/tactical_gloves_m.p3d.jpg"
+  },
+  {
+    "objectName": "woolglovesfingerless_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/woolglovesfingerless_f.p3d.jpg"
+  },
+  {
+    "objectName": "woolglovesfingerless_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "WoolGlovesFingerless_Green, WoolGlovesFingerless_Black, WoolGlovesFingerless_Tan, WoolGlovesFingerless_White, WoolGlovesFingerless_ChristmasBlue, WoolGlovesFingerless_ChristmasRed",
+    "image": "images/gloves/wool_glovesfingerless_green.jpeg"
+  },
+  {
+    "objectName": "woolglovesfingerless_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/woolglovesfingerless_m.p3d.jpg"
+  },
+  {
+    "objectName": "woolgloves_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/woolgloves_f.p3d.jpg"
+  },
+  {
+    "objectName": "woolgloves_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "WoolGloves_Green, WoolGloves_Black, WoolGloves_Tan, WoolGloves_White, WoolGloves_ChristmasBlue, WoolGloves_ChristmasRed",
+    "image": "images/gloves/wool_gloves_green.jpeg"
+  },
+  {
+    "objectName": "woolgloves_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/woolgloves_m.p3d.jpg"
+  },
+  {
+    "objectName": "working_gloves_f.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/working_gloves_f.p3d.jpg"
+  },
+  {
+    "objectName": "working_gloves_g.p3d",
+    "inGameName": "Working Gloves",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "WorkingGloves_Black, WorkingGloves_Beige, WorkingGloves_Brown, WorkingGloves_Yellow",
+    "image": "images/gloves/working_gloves_beige.jpeg"
+  },
+  {
+    "objectName": "working_gloves_m.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/characters/gloves/working_gloves_m.p3d.jpg"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "objectName": "MKII",
+    "inGameName": "MK II",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/mkii",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/mkii/mkii.jpg"
+  },
+  {
+    "objectName": "Proxymkii",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/mkii",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/mkii/proxymkii.jpg"
+  },
+  {
+    "objectName": "rugermkii.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/pistols/mkii",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/pistols/mkii/rugermkii.p3d.jpg"
+  }
+]

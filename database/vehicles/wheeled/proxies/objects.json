@@ -1,0 +1,42 @@
+[
+  {
+    "objectName": "ProxyCrew_Driver",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/proxies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/proxies/proxycrew_driver.jpg"
+  },
+  {
+    "objectName": "ProxyCrew_Cargo",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/proxies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/proxies/proxycrew_cargo.jpg"
+  },
+  {
+    "objectName": "crew_cargo.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/wheeled/proxies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/proxies/crew_cargo.p3d.jpg"
+  },
+  {
+    "objectName": "crew_driver.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/wheeled/proxies",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/proxies/crew_driver.p3d.jpg"
+  }
+]

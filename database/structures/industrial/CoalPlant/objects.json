@@ -1,0 +1,60 @@
+[
+  {
+    "objectName": "StaticObj_CoalPlant_Conveyor",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/coalplant",
+    "usableOnConsole": true,
+    "searchTags": "large, factory, ramp",
+    "image": "images/structures/industrial/coalplant/staticobj_coalplant_conveyor.jpg"
+  },
+  {
+    "objectName": "StaticObj_CoalPlant_LoadingHouse",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/coalplant",
+    "usableOnConsole": true,
+    "searchTags": "large, factory",
+    "image": "images/structures/industrial/coalplant/staticobj_coalplant_loadinghouse.jpg"
+  },
+  {
+    "objectName": "coalplant_conveyor.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/coalplant",
+    "usableOnConsole": false,
+    "searchTags": "large, factory, ramp",
+    "image": "images/structures/industrial/coalplant/StaticObj_CoalPlant_Conveyor.jpg"
+  },
+  {
+    "objectName": "coalplant_loadinghouse.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/coalplant",
+    "usableOnConsole": false,
+    "searchTags": "large, factory",
+    "image": "images/structures/industrial/coalplant/StaticObj_CoalPlant_LoadingHouse.jpg"
+  },
+  {
+    "objectName": "coalplant_main.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/coalplant",
+    "usableOnConsole": false,
+    "searchTags": "large, factory, mural",
+    "image": "images/structures/industrial/coalplant/Land_CoalPlant_Main.jpg"
+  },
+  {
+    "objectName": "Land_CoalPlant_Main",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/coalplant",
+    "usableOnConsole": true,
+    "searchTags": "large, factory, mural",
+    "image": "images/structures/industrial/coalplant/land_coalplant_main.jpg"
+  }
+]

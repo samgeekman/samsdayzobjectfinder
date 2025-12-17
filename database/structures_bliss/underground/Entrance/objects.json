@@ -1,0 +1,51 @@
+[
+  {
+    "objectName": "Land_Underground_Panel",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Config",
+    "path": "dz/structures_bliss/underground/entrance",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_bliss/underground/entrance/land_underground_panel.jpg"
+  },
+  {
+    "objectName": "Land_Underground_Panel_Lever",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Config",
+    "path": "dz/structures_bliss/underground/entrance",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_bliss/underground/entrance/land_underground_panel_lever.jpg"
+  },
+  {
+    "objectName": "underground_panel.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/underground/entrance",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_bliss/underground/entrance/underground_panel.p3d.jpg"
+  },
+  {
+    "objectName": "underground_panel_lever.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/underground/entrance",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_bliss/underground/entrance/underground_panel_lever.p3d.jpg"
+  },
+  {
+    "objectName": "Land_Underground_Entrance",
+    "category": "structures_bliss",
+    "modelType": "Config",
+    "path": "dz/structures_bliss/underground/entrance",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_bliss/underground/entrance/land_underground_entrance.jpg"
+  }
+]

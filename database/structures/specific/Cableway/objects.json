@@ -1,0 +1,182 @@
+[
+  {
+    "objectName": "Land_Cableway_Base",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, base_station, station, building, support, terminal",
+    "image": "images/structures/specific/cableway/land_cableway_base.jpg"
+  },
+  {
+    "objectName": "Land_Cableway_Tower",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, tower, pylon, support, vertical, mast",
+    "image": "images/structures/specific/cableway/land_cableway_tower.jpg"
+  },
+  {
+    "objectName": "Land_Cableway_Tower_Slope",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, tower, pylon, slope, angled, support, mast",
+    "image": "images/structures/specific/cableway/land_cableway_tower_slope.jpg"
+  },
+  {
+    "objectName": "Land_Cableway_Cart",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, cart, gondola, cabin, chairlift, vehicle",
+    "image": "images/structures/specific/cableway/land_cableway_cart.jpg"
+  },
+  {
+    "objectName": "Land_Cableway_Cart2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, cart, gondola, cabin, variant, chairlift",
+    "image": "images/structures/specific/cableway/land_cableway_cart2.jpg"
+  },
+  {
+    "objectName": "Land_Cableway_Cart3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, cart, gondola, cabin, variant, ski_resort",
+    "image": "images/structures/specific/cableway/land_cableway_cart3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Cableway_Base_Rope1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, base_station, rope, cable, attachment, support",
+    "image": "images/structures/specific/cableway/staticobj_cableway_base_rope1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Cableway_Base_Rope2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, base_station, rope, cable, attachment, support, variant",
+    "image": "images/structures/specific/cableway/staticobj_cableway_base_rope2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Cableway_Rope",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": true,
+    "searchTags": "cableway, ski_lift, rope, cable, span, line, overhead",
+    "image": "images/structures/specific/cableway/staticobj_cableway_rope.jpg"
+  },
+  {
+    "objectName": "cableway_base.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/cableway/cableway_base.p3d.jpg"
+  },
+  {
+    "objectName": "cableway_base_rope1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/cableway/cableway_base_rope1.p3d.jpg"
+  },
+  {
+    "objectName": "cableway_base_rope2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/cableway/cableway_base_rope2.p3d.jpg"
+  },
+  {
+    "objectName": "cableway_cart.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/cableway/cableway_cart.p3d.jpg"
+  },
+  {
+    "objectName": "cableway_cart2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/cableway/cableway_cart2.p3d.jpg"
+  },
+  {
+    "objectName": "cableway_cart3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/cableway/cableway_cart3.p3d.jpg"
+  },
+  {
+    "objectName": "cableway_rope.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/cableway/cableway_rope.p3d.jpg"
+  },
+  {
+    "objectName": "cableway_tower.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/cableway/cableway_tower.p3d.jpg"
+  },
+  {
+    "objectName": "cableway_tower_slope.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/cableway",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/specific/cableway/cableway_tower_slope.p3d.jpg"
+  }
+]

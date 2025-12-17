@@ -1,0 +1,852 @@
+[
+  {
+    "objectName": "Land_Mil_CamoNet_Roof_east",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, camonet, roof, netting, camouflage, cover, improvised",
+    "image": "images/structures/military/improvised/land_mil_camonet_roof_east.jpg"
+  },
+  {
+    "objectName": "Land_Roadblock_Table",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, table, checkpoint, furniture, plastic",
+    "image": "images/structures/military/improvised/land_roadblock_table.jpg"
+  },
+  {
+    "objectName": "Land_Roadblock_WoodenCrate",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, crate, wooden, checkpoint, storage",
+    "image": "images/structures/military/improvised/land_roadblock_woodencrate.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_HBarrier_1m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, barrier, wall, sandbag, defense, fortification, single, one, 1, small",
+    "image": "images/structures/military/improvised/staticobj_mil_hbarrier_1m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_HBarrier_4m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, barrier, wall, sandbag, defense, fortification, triple, three, 3, medium",
+    "image": "images/structures/military/improvised/staticobj_mil_hbarrier_4m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_HBarrier_6m",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, barrier, wall, sandbag, defense, fortification, pentuple, five, 5, large",
+    "image": "images/structures/military/improvised/staticobj_mil_hbarrier_6m.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_HBarrier_Big",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, barrier, wall, sandbag, defense, fortification, large, tall",
+    "image": "images/structures/military/improvised/staticobj_mil_hbarrier_big.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_HBarrier_Round",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, barrier, wall, sandbag, defense, fortification, round, pentuple, five, 5 large",
+    "image": "images/structures/military/improvised/staticobj_mil_hbarrier_round.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_Artilery_Rampart",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, artillery, rampart, wall, defensive, fortification, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/improvised/staticobj_mil_artilery_rampart.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_Artilery_Nest",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, artillery, nest, bunker, fortification, defensive, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/improvised/staticobj_mil_artilery_nest.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_CamoNet_Big_east",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, camonet, large, east, netting, camouflage, cover, camo, green",
+    "image": "images/structures/military/improvised/staticobj_mil_camonet_big_east.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_CamoNet_Big_nato",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, camonet, large, nato, netting, camouflage, cover, light, green",
+    "image": "images/structures/military/improvised/staticobj_mil_camonet_big_nato.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_CamoNet_Side_east",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, camonet, east, netting, camouflage, cover",
+    "image": "images/structures/military/improvised/staticobj_mil_camonet_side_east.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_CamoNet_Side_nato",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, camonet, nato, netting, camouflage, cover, light, green",
+    "image": "images/structures/military/improvised/staticobj_mil_camonet_side_nato.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_CamoNet_Tent2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, camonet, tent, netting, camouflage, cover, dark, green",
+    "image": "images/structures/military/improvised/staticobj_mil_camonet_tent2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_Bags_Curve",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, bags, sandbag, curve, defense, samll, curved, round",
+    "image": "images/structures/military/improvised/staticobj_roadblock_bags_curve.jpg"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_Bags_EndL",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, bags, sandbag, end, left, small, defense",
+    "image": "images/structures/military/improvised/staticobj_roadblock_bags_endl.jpg"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_Bags_EndR",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, bags, sandbag, end, right, small, defense",
+    "image": "images/structures/military/improvised/staticobj_roadblock_bags_endr.jpg"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_Bags_Long",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, bags, sandbag, long, defense, barrier",
+    "image": "images/structures/military/improvised/staticobj_roadblock_bags_long.jpg"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_CncBlock",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, concrete, block, barrier, defense, security, single, one, 1",
+    "image": "images/structures/military/improvised/staticobj_roadblock_cncblock.jpg"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_CncBlocks_Long",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, concrete, blocks, long, barrier, defense, security, overlapping",
+    "image": "images/structures/military/improvised/staticobj_roadblock_cncblocks_long.jpg"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_CncBlocks_short",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, concrete, blocks, short, barrier, defense, two, double, stacked, 2",
+    "image": "images/structures/military/improvised/staticobj_roadblock_cncblocks_short.jpg"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_Pillbox",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, pillbox, bunker, fortification, defense, sandbags, concrete",
+    "image": "images/structures/military/improvised/staticobj_roadblock_pillbox.jpg"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_Wood_Long",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/staticobj_roadblock_wood_long.jpg"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_Wood_Small",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/staticobj_roadblock_wood_small_de.jpg"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_Wood_Long_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, wood, long, barrier, defense, security, crowd_control, traffic",
+    "image": "images/structures/military/improvised/staticobj_roadblock_wood_long_de.jpg"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_Wood_Small_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, wood, small, barrier, defense, security, crowd_control, traffic",
+    "image": "images/structures/military/improvised/staticobj_roadblock_wood_small_de.jpg"
+  },
+  {
+    "objectName": "hbarrier_1m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, barrier, wall, sandbag, defense, fortification, single, one, 1, small",
+    "image": "images/structures/military/improvised/StaticObj_Mil_HBarrier_1m.jpg"
+  },
+  {
+    "objectName": "hbarrier_4m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, barrier, wall, sandbag, defense, fortification, triple, three, 3, medium",
+    "image": "images/structures/military/improvised/StaticObj_Mil_HBarrier_4m.jpg"
+  },
+  {
+    "objectName": "hbarrier_6m.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, barrier, wall, sandbag, defense, fortification, pentuple, five, 5, large",
+    "image": "images/structures/military/improvised/StaticObj_Mil_HBarrier_6m.jpg"
+  },
+  {
+    "objectName": "hbarrier_big.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/hbarrier_big.p3d.jpg"
+  },
+  {
+    "objectName": "hbarrier_round.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, barrier, wall, sandbag, defense, fortification, round, pentuple, five, 5 large",
+    "image": "images/structures/military/improvised/StaticObj_Mil_HBarrier_Round.jpg"
+  },
+  {
+    "objectName": "mil_artilery_rampart.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, artillery, rampart, wall, defensive, fortification, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/improvised/StaticObj_Mil_Artilery_Rampart.jpg"
+  },
+  {
+    "objectName": "mil_artillery_nest.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, artillery, nest, bunker, fortification, defensive, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/improvised/StaticObj_Mil_Artilery_Nest.jpg"
+  },
+  {
+    "objectName": "mil_camonet_big_east.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, camonet, large, east, netting, camouflage, cover, camo, green",
+    "image": "images/structures/military/improvised/StaticObj_Mil_CamoNet_Big_east.jpg"
+  },
+  {
+    "objectName": "mil_camonet_big_nato.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, camonet, large, nato, netting, camouflage, cover, light, green",
+    "image": "images/structures/military/improvised/StaticObj_Mil_CamoNet_Big_nato.jpg"
+  },
+  {
+    "objectName": "mil_camonet_roof_east.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, camonet, roof, netting, camouflage, cover, improvised",
+    "image": "images/structures/military/improvised/Land_Mil_CamoNet_Roof_east.jpg"
+  },
+  {
+    "objectName": "mil_camonet_roof_nato.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/mil_camonet_roof_nato.p3d.jpg"
+  },
+  {
+    "objectName": "mil_camonet_side_east.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/mil_camonet_side_east.p3d.jpg"
+  },
+  {
+    "objectName": "mil_camonet_side_nato.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, camonet, nato, netting, camouflage, cover, light, green",
+    "image": "images/structures/military/improvised/StaticObj_Mil_CamoNet_Side_nato.jpg"
+  },
+  {
+    "objectName": "mil_camonet_tent2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, camonet, tent, netting, camouflage, cover, dark, green",
+    "image": "images/structures/military/improvised/StaticObj_Mil_CamoNet_Tent2.jpg"
+  },
+  {
+    "objectName": "mil_fortified_nest_big.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/mil_fortified_nest_big.p3d.jpg"
+  },
+  {
+    "objectName": "mil_fortified_nest_small.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/mil_fortified_nest_small.p3d.jpg"
+  },
+  {
+    "objectName": "mil_fortified_nest_watchtower.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/mil_fortified_nest_watchtower.p3d.jpg"
+  },
+  {
+    "objectName": "mil_guardshed.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, guard, shed, checkpoint, security, small, wooden, lemonade_stand",
+    "image": "images/structures/military/improvised/Land_Mil_GuardShed.jpg"
+  },
+  {
+    "objectName": "mil_tent_big1_1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, tent, medium canvas, housing, soldiers, camp",
+    "image": "images/structures/military/improvised/Land_Mil_Tent_Big1_1.jpg"
+  },
+  {
+    "objectName": "mil_tent_big1_2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, tent, medium canvas, housing, soldiers, camp",
+    "image": "images/structures/military/improvised/Land_Mil_Tent_Big1_2.jpg"
+  },
+  {
+    "objectName": "mil_tent_big1_3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, tent, medium canvas, housing, soldiers, camp",
+    "image": "images/structures/military/improvised/Land_Mil_Tent_Big1_3.jpg"
+  },
+  {
+    "objectName": "mil_tent_big1_4.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, tent, medium canvas, housing, soldiers, camp",
+    "image": "images/structures/military/improvised/Land_Mil_Tent_Big1_4.jpg"
+  },
+  {
+    "objectName": "mil_tent_big1_5.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, tent, medium canvas, housing, soldiers, camp",
+    "image": "images/structures/military/improvised/Land_Mil_Tent_Big1_5.jpg"
+  },
+  {
+    "objectName": "mil_tent_big2_1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, tent, medium canvas, housing, soldiers, camp, double, double_entrance",
+    "image": "images/structures/military/improvised/Land_Mil_Tent_Big2_1.jpg"
+  },
+  {
+    "objectName": "mil_tent_big2_2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, tent, medium canvas, housing, soldiers, camp, double, double_entrance",
+    "image": "images/structures/military/improvised/Land_Mil_Tent_Big2_2.jpg"
+  },
+  {
+    "objectName": "mil_tent_big2_3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, tent, medium canvas, housing, soldiers, camp, double, double_entrance",
+    "image": "images/structures/military/improvised/Land_Mil_Tent_Big2_3.jpg"
+  },
+  {
+    "objectName": "mil_tent_big2_4.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, tent, a, canvas, housing, soldiers, camp, double, double_entrance",
+    "image": "images/structures/military/improvised/Land_Mil_Tent_Big2_4.jpg"
+  },
+  {
+    "objectName": "mil_tent_big2_5.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, tent, medium canvas, housing, soldiers, camp, type2, variant5",
+    "image": "images/structures/military/improvised/Land_Mil_Tent_Big2_5.jpg"
+  },
+  {
+    "objectName": "mil_tent_big3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, tent, large canvas, housing, soldiers, camp",
+    "image": "images/structures/military/improvised/Land_Mil_Tent_Big3.jpg"
+  },
+  {
+    "objectName": "mil_tent_big4.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, tent, medium canvas, housing, soldiers, camp",
+    "image": "images/structures/military/improvised/Land_Mil_Tent_Big4.jpg"
+  },
+  {
+    "objectName": "roadblock_bags_curve.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, roadblock, bags, sandbag, curve, defense, samll, curved, round",
+    "image": "images/structures/military/improvised/StaticObj_Roadblock_Bags_Curve.jpg"
+  },
+  {
+    "objectName": "roadblock_bags_endl.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, roadblock, bags, sandbag, end, left, small, defense",
+    "image": "images/structures/military/improvised/StaticObj_Roadblock_Bags_EndL.jpg"
+  },
+  {
+    "objectName": "roadblock_bags_endr.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, roadblock, bags, sandbag, end, right, small, defense",
+    "image": "images/structures/military/improvised/StaticObj_Roadblock_Bags_EndR.jpg"
+  },
+  {
+    "objectName": "roadblock_bags_long.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, roadblock, bags, sandbag, long, defense, barrier",
+    "image": "images/structures/military/improvised/StaticObj_Roadblock_Bags_Long.jpg"
+  },
+  {
+    "objectName": "roadblock_cncblock.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, roadblock, concrete, block, barrier, defense, security, single, one, 1",
+    "image": "images/structures/military/improvised/StaticObj_Roadblock_CncBlock.jpg"
+  },
+  {
+    "objectName": "roadblock_cncblocks_long.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, roadblock, concrete, blocks, long, barrier, defense, security, overlapping",
+    "image": "images/structures/military/improvised/StaticObj_Roadblock_CncBlocks_Long.jpg"
+  },
+  {
+    "objectName": "roadblock_cncblocks_short.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, roadblock, concrete, blocks, short, barrier, defense, two, double, stacked, 2",
+    "image": "images/structures/military/improvised/StaticObj_Roadblock_CncBlocks_short.jpg"
+  },
+  {
+    "objectName": "roadblock_pillbox.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, roadblock, pillbox, bunker, fortification, defense, sandbags, concrete",
+    "image": "images/structures/military/improvised/StaticObj_Roadblock_Pillbox.jpg"
+  },
+  {
+    "objectName": "roadblock_table.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, roadblock, table, checkpoint, furniture, plastic",
+    "image": "images/structures/military/improvised/Land_Roadblock_Table.jpg"
+  },
+  {
+    "objectName": "roadblock_woodencrate.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, roadblock, crate, wooden, checkpoint, storage",
+    "image": "images/structures/military/improvised/Land_Roadblock_WoodenCrate.jpg"
+  },
+  {
+    "objectName": "roadblock_wood_long.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, roadblock, wood, long, barrier, defense, security, crowd_control, traffic",
+    "image": "images/structures/military/improvised/StaticObj_Roadblock_Wood_Long_DE.jpg"
+  },
+  {
+    "objectName": "roadblock_wood_small.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": false,
+    "searchTags": "military, roadblock, wood, small, barrier, defense, security, crowd_control, traffic",
+    "image": "images/structures/military/improvised/StaticObj_Roadblock_Wood_Small_DE.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Fortified_Nest_Big",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_fortified_nest_big.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Fortified_Nest_Small",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_fortified_nest_small.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Fortified_Nest_Watchtower",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_fortified_nest_watchtower.jpg"
+  },
+  {
+    "objectName": "Land_Mil_GuardShed",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_guardshed.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Tent_Big1_1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_tent_big1_1.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Tent_Big1_2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_tent_big1_2.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Tent_Big1_3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_tent_big1_3.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Tent_Big1_4",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_tent_big1_4.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Tent_Big1_5",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_tent_big1_5.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Tent_Big2_1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_tent_big2_1.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Tent_Big2_2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_tent_big2_2.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Tent_Big2_3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_tent_big2_3.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Tent_Big2_4",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_tent_big2_4.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Tent_Big2_5",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_tent_big2_5.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Tent_Big3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_tent_big3.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Tent_Big4",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/improvised/land_mil_tent_big4.jpg"
+  }
+]

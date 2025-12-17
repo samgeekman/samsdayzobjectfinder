@@ -1,0 +1,22 @@
+[
+  {
+    "objectName": "Repeater",
+    "inGameName": "Repeater Carbine",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/repeater",
+    "usableOnConsole": true,
+    "searchTags": "rifles, .357",
+    "image": "images/weapons/firearms/repeater/repeater.jpg"
+  },
+  {
+    "objectName": "repeater.p3d",
+    "inGameName": "Repeater Carbine",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/repeater",
+    "usableOnConsole": false,
+    "searchTags": "rifles, .357",
+    "image": "images/weapons/firearms/dzweaponsfirearmsrepeaterrepeater.p3d.jpeg"
+  }
+]

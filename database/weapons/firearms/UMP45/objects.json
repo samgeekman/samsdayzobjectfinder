@@ -1,0 +1,22 @@
+[
+  {
+    "objectName": "UMP45",
+    "inGameName": "USG-45",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/ump45",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, automatic, .45acp",
+    "image": "images/weapons/firearms/ump45/ump45.jpg"
+  },
+  {
+    "objectName": "ump.p3d",
+    "inGameName": "USG-45",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/ump45",
+    "usableOnConsole": false,
+    "searchTags": "submachine_gun, automatic, .45acp",
+    "image": "images/weapons/firearms/dzweaponsfirearmsump45ump.p3d.jpeg"
+  }
+]

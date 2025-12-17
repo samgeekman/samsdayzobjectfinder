@@ -1,0 +1,42 @@
+[
+  {
+    "objectName": "B95",
+    "inGameName": "Blaze",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/b95",
+    "usableOnConsole": true,
+    "searchTags": "rifles, .308",
+    "image": "images/weapons/firearms/b95/b95.jpg"
+  },
+  {
+    "objectName": "SawedoffB95",
+    "inGameName": "Sawed-off Blaze",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/b95",
+    "usableOnConsole": true,
+    "searchTags": "rifles, .308",
+    "image": "images/weapons/firearms/b95/sawedoffb95.jpg"
+  },
+  {
+    "objectName": "b95.p3d",
+    "inGameName": "Blaze",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/b95",
+    "usableOnConsole": false,
+    "searchTags": "rifles, .308",
+    "image": "images/weapons/firearms/dzweaponsfirearmsb95b95.p3d.jpeg"
+  },
+  {
+    "objectName": "b95_sawn.p3d",
+    "inGameName": "Sawed-off Blaze",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/b95",
+    "usableOnConsole": false,
+    "searchTags": "rifles, .308",
+    "image": "images/weapons/firearms/dzweaponsfirearmsb95b95_sawn.p3d.jpeg"
+  }
+]

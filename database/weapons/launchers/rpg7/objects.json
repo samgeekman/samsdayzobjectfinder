@@ -1,0 +1,32 @@
+[
+  {
+    "objectName": "RPG7Base",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/launchers/rpg7",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/launchers/rpg7/rpg7base.jpg"
+  },
+  {
+    "objectName": "RPG7",
+    "inGameName": "RPG-7",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/launchers/rpg7",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/launchers/rpg7/rpg7.jpg"
+  },
+  {
+    "objectName": "rpg7.p3d",
+    "inGameName": "RPG-7",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/launchers/rpg7",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/launchers/rpg7/rpg7.p3d.jpg"
+  }
+]

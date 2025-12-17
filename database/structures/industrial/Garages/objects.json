@@ -1,0 +1,92 @@
+[
+  {
+    "objectName": "garage_big.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/garages",
+    "usableOnConsole": false,
+    "searchTags": "car, truck, large, double, blue, warehouse",
+    "image": "images/structures/industrial/garages/Land_Garage_Big.jpg"
+  },
+  {
+    "objectName": "garage_row_small.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/garages",
+    "usableOnConsole": false,
+    "searchTags": "car, row, small, residential, red, concrete",
+    "image": "images/structures/industrial/garages/Land_Garage_Row_Small.jpg"
+  },
+  {
+    "objectName": "garage_small.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/garages",
+    "usableOnConsole": false,
+    "searchTags": "car, garage, yellow, side_door, small",
+    "image": "images/structures/industrial/garages/Land_Garage_Small.jpg"
+  },
+  {
+    "objectName": "Land_Garage_Big",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/garages",
+    "usableOnConsole": true,
+    "searchTags": "car, truck, large, double, blue, warehouse",
+    "image": "images/structures/industrial/garages/land_garage_big.jpg"
+  },
+  {
+    "objectName": "Land_Garage_Row_Small",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/garages",
+    "usableOnConsole": true,
+    "searchTags": "car, row, small, residential, red, concrete",
+    "image": "images/structures/industrial/garages/land_garage_row_small.jpg"
+  },
+  {
+    "objectName": "Land_Garage_Small",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/garages",
+    "usableOnConsole": true,
+    "searchTags": "car, garage, yellow, side_door, small",
+    "image": "images/structures/industrial/garages/land_garage_small.jpg"
+  },
+  {
+    "objectName": "garage_office.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/garages",
+    "usableOnConsole": false,
+    "searchTags": "office, medium, brick, two_storey, depo",
+    "image": "images/structures/industrial/garages/Land_Garage_Office.jpg"
+  },
+  {
+    "objectName": "garage_row_big.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/garages",
+    "usableOnConsole": false,
+    "searchTags": "car, garage, row, large, truck, ladder",
+    "image": "images/structures/industrial/garages/Land_Garage_Row_Big.jpg"
+  },
+  {
+    "objectName": "Land_Garage_Office",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/garages",
+    "usableOnConsole": true,
+    "searchTags": "office, medium, brick, two_storey, depo",
+    "image": "images/structures/industrial/garages/land_garage_office.jpg"
+  },
+  {
+    "objectName": "Land_Garage_Row_Big",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/garages",
+    "usableOnConsole": true,
+    "searchTags": "car, garage, row, large, truck, ladder",
+    "image": "images/structures/industrial/garages/land_garage_row_big.jpg"
+  }
+]

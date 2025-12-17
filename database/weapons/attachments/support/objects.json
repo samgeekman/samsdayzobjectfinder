@@ -1,0 +1,932 @@
+[
+  {
+    "objectName": "M4_OEBttstck",
+    "inGameName": "M4-A1 Telescopic Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/support/m4_oebttstck.jpg"
+  },
+  {
+    "objectName": "M4_MPBttstck",
+    "inGameName": "M4-A1 MP Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/support/m4_mpbttstck.jpg"
+  },
+  {
+    "objectName": "M4_CQBBttstck",
+    "inGameName": "M4-A1 CQB Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/m4_cqbbttstck.jpg"
+  },
+  {
+    "objectName": "AK_WoodBttstck",
+    "inGameName": "KA Wooden Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_woodbttstck.jpg"
+  },
+  {
+    "objectName": "AK74_WoodBttstck",
+    "inGameName": "KA Wooden Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak74_woodbttstck.jpg"
+  },
+  {
+    "objectName": "AK_FoldingBttstck",
+    "inGameName": "KA Lightweight Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_foldingbttstck.jpg"
+  },
+  {
+    "objectName": "AK_PlasticBttstck",
+    "inGameName": "KA Polymer Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_plasticbttstck.jpg"
+  },
+  {
+    "objectName": "AKS74U_Bttstck",
+    "inGameName": "KAS-74U Lightweight Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "kas-74u",
+    "image": "images/weapons/attachments/support/aks74u_bttstck.jpg"
+  },
+  {
+    "objectName": "MP5k_StockBttstck",
+    "inGameName": "SG5-K Lightweight Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "sg5",
+    "image": "images/weapons/attachments/support/mp5k_stockbttstck.jpg"
+  },
+  {
+    "objectName": "Red9Bttstck",
+    "inGameName": "Red 9 Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "not_enabled",
+    "image": "images/weapons/attachments/support/red9bttstck.jpg"
+  },
+  {
+    "objectName": "Fal_OeBttstck",
+    "inGameName": "LAR Polymer Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "lar",
+    "image": "images/weapons/attachments/support/fal_oebttstck.jpg"
+  },
+  {
+    "objectName": "Fal_FoldingBttstck",
+    "inGameName": "LAR Lightweight Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "lar",
+    "image": "images/weapons/attachments/support/fal_foldingbttstck.jpg"
+  },
+  {
+    "objectName": "Saiga_Bttstck",
+    "inGameName": "Vaiga Lightweight Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "vaiga",
+    "image": "images/weapons/attachments/support/saiga_bttstck.jpg"
+  },
+  {
+    "objectName": "PP19_Bttstck",
+    "inGameName": "Bizon Lightweight Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "bizon",
+    "image": "images/weapons/attachments/support/pp19_bttstck.jpg"
+  },
+  {
+    "objectName": "M4_PlasticHndgrd",
+    "inGameName": "M4-A1 Polymer Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/support/m4_plastichndgrd.jpg"
+  },
+  {
+    "objectName": "M4_RISHndgrd",
+    "inGameName": "M4-A1 Rail Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/support/m4_rishndgrd.jpg"
+  },
+  {
+    "objectName": "M4_MPHndgrd",
+    "inGameName": "M4-A1 MP Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/support/m4_mphndgrd.jpg"
+  },
+  {
+    "objectName": "AK_WoodHndgrd",
+    "inGameName": "KA Wooden Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_woodhndgrd.jpg"
+  },
+  {
+    "objectName": "AK74_Hndgrd",
+    "inGameName": "KA Wooden Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak74_hndgrd.jpg"
+  },
+  {
+    "objectName": "AK_RailHndgrd",
+    "inGameName": "KA Rail Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_railhndgrd.jpg"
+  },
+  {
+    "objectName": "AK_PlasticHndgrd",
+    "inGameName": "KA Polymer Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/ak_plastichndgrd.jpg"
+  },
+  {
+    "objectName": "MP5_PlasticHndgrd",
+    "inGameName": "SG5-K Polymer Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "sg5",
+    "image": "images/weapons/attachments/support/mp5_plastichndgrd.jpg"
+  },
+  {
+    "objectName": "MP5_RailHndgrd",
+    "inGameName": "SG5-K Rail Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "sg5",
+    "image": "images/weapons/attachments/support/mp5_railhndgrd.jpg"
+  },
+  {
+    "objectName": "M249_Hndgrd",
+    "inGameName": "M249 handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "not_enabled",
+    "image": "images/weapons/attachments/support/m249_hndgrd.jpg"
+  },
+  {
+    "objectName": "M249_RisHndgrd",
+    "inGameName": "M249 Ris handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/m249_rishndgrd.jpg"
+  },
+  {
+    "objectName": "AtlasBipod",
+    "inGameName": "ATLAS Bipod",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "not_enabled",
+    "image": "images/weapons/attachments/support/atlasbipod.jpg"
+  },
+  {
+    "objectName": "M249_Bipod",
+    "inGameName": "M248 Bipod",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/m249_bipod.jpg"
+  },
+  {
+    "objectName": "GhillieAtt_Mossy",
+    "inGameName": "Ghillie Rifle Wrap",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/ghillieatt_colorbase.jpg"
+  },
+  {
+    "objectName": "GhillieAtt_Tan",
+    "inGameName": "Ghillie Rifle Wrap",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/ghillieatt_colorbase.jpg"
+  },
+  {
+    "objectName": "GhillieAtt_Winter",
+    "inGameName": "Ghillie Rifle Wrap",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/ghillieatt_colorbase.jpg"
+  },
+  {
+    "objectName": "GhillieAtt_Woodland",
+    "inGameName": "Ghillie Rifle Wrap",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/ghillieatt_colorbase.jpg"
+  },
+  {
+    "objectName": "ProxyButtstock_M4_OE",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybuttstock_m4_oe.jpg"
+  },
+  {
+    "objectName": "ProxyButtstock_M4_MP",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybuttstock_m4_mp.jpg"
+  },
+  {
+    "objectName": "ProxyButtstock_M4_CQB",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybuttstock_m4_cqb.jpg"
+  },
+  {
+    "objectName": "ProxyButtstock_AK_Wood",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybuttstock_ak_wood.jpg"
+  },
+  {
+    "objectName": "ProxyButtstock_AK_Folding_Black",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybuttstock_ak_folding_black.jpg"
+  },
+  {
+    "objectName": "ProxyButtstock_AK_Plastic",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybuttstock_ak_plastic.jpg"
+  },
+  {
+    "objectName": "Proxybuttstock_aks",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybuttstock_aks.jpg"
+  },
+  {
+    "objectName": "ProxyButtstock_mp5K_stock",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybuttstock_mp5k_stock.jpg"
+  },
+  {
+    "objectName": "ProxyButtstock_red9",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybuttstock_red9.jpg"
+  },
+  {
+    "objectName": "ProxyButtstock_fal_oe",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybuttstock_fal_oe.jpg"
+  },
+  {
+    "objectName": "ProxyButtstock_fal_folding",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybuttstock_fal_folding.jpg"
+  },
+  {
+    "objectName": "ProxyButtstock_saiga_folding",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybuttstock_saiga_folding.jpg"
+  },
+  {
+    "objectName": "ProxyButtstock_pp19",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybuttstock_pp19.jpg"
+  },
+  {
+    "objectName": "ProxyHandguard_M4_Plastic",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxyhandguard_m4_plastic.jpg"
+  },
+  {
+    "objectName": "ProxyHandguard_M4_RIS",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxyhandguard_m4_ris.jpg"
+  },
+  {
+    "objectName": "ProxyHandguard_M4_MP",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxyhandguard_m4_mp.jpg"
+  },
+  {
+    "objectName": "ProxyHandguard_AK_Wood",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxyhandguard_ak_wood.jpg"
+  },
+  {
+    "objectName": "ProxyHandguard_AK_Rail_Black",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxyhandguard_ak_rail_black.jpg"
+  },
+  {
+    "objectName": "ProxyHandguard_AK_Plastic",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxyhandguard_ak_plastic.jpg"
+  },
+  {
+    "objectName": "ProxyHandguard_mp5k_plastic",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxyhandguard_mp5k_plastic.jpg"
+  },
+  {
+    "objectName": "ProxyHandguard_mp5k_rail",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxyhandguard_mp5k_rail.jpg"
+  },
+  {
+    "objectName": "ProxyHandguard_m249",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxyhandguard_m249.jpg"
+  },
+  {
+    "objectName": "ProxyHandguard_m249_ris",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxyhandguard_m249_ris.jpg"
+  },
+  {
+    "objectName": "ProxyBipod_Atlas",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybipod_atlas.jpg"
+  },
+  {
+    "objectName": "ProxyBipod_m249",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxybipod_m249.jpg"
+  },
+  {
+    "objectName": "ProxyGhillie_wrap",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/proxyghillie_wrap.jpg"
+  },
+  {
+    "objectName": "bipod_atlas.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/bipod_atlas.p3d.jpg"
+  },
+  {
+    "objectName": "bipod_m249.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/bipod_m249.p3d.jpg"
+  },
+  {
+    "objectName": "bipod_rpg7.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/bipod_rpg7.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_aks.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_aks.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_ak_folding.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_ak_folding.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_ak_plastic.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_ak_plastic.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_ak_wood.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_ak_wood.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_fal_folding.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_fal_folding.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_fal_oe.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_fal_oe.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_m249.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_m249.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_m4_cqb.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_m4_cqb.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_m4_mp.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_m4_mp.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_m4_oe.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_m4_oe.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_mp5k_stock.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_mp5k_stock.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_pkm.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_pkm.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_pp19.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_pp19.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_red9.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_red9.p3d.jpg"
+  },
+  {
+    "objectName": "buttstock_saiga_folding.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/buttstock_saiga_folding.p3d.jpg"
+  },
+  {
+    "objectName": "ghillie_wrap.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/ghillie_wrap.p3d.jpg"
+  },
+  {
+    "objectName": "grip_m4_mp.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/grip_m4_mp.p3d.jpg"
+  },
+  {
+    "objectName": "handguard_ak_plastic.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/handguard_ak_plastic.p3d.jpg"
+  },
+  {
+    "objectName": "handguard_ak_rail.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/handguard_ak_rail.p3d.jpg"
+  },
+  {
+    "objectName": "handguard_ak_wood.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/handguard_ak_wood.p3d.jpg"
+  },
+  {
+    "objectName": "handguard_m249.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/handguard_m249.p3d.jpg"
+  },
+  {
+    "objectName": "handguard_m249_ris.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/handguard_m249_ris.p3d.jpg"
+  },
+  {
+    "objectName": "handguard_m4_mp.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/handguard_m4_mp.p3d.jpg"
+  },
+  {
+    "objectName": "handguard_m4_mp_ris.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/handguard_m4_mp_ris.p3d.jpg"
+  },
+  {
+    "objectName": "handguard_m4_plastic.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/handguard_m4_plastic.p3d.jpg"
+  },
+  {
+    "objectName": "handguard_m4_ris.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/handguard_m4_ris.p3d.jpg"
+  },
+  {
+    "objectName": "handguard_mp5k_plastic.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/handguard_mp5k_plastic.p3d.jpg"
+  },
+  {
+    "objectName": "handguard_mp5k_rail.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/handguard_mp5k_rail.p3d.jpg"
+  },
+  {
+    "objectName": "mosin_wrap.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/mosin_wrap.p3d.jpg"
+  },
+  {
+    "objectName": "mosin_wrap_grass.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/mosin_wrap_grass.p3d.jpg"
+  },
+  {
+    "objectName": "universal_rail.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/universal_rail.p3d.jpg"
+  },
+  {
+    "objectName": "wrap_burlap.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/wrap_burlap.p3d.jpg"
+  },
+  {
+    "objectName": "wrap_burlap_grass.p3d",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/attachments/support/wrap_burlap_grass.p3d.jpg"
+  }
+]

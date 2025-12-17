@@ -1,0 +1,42 @@
+[
+  {
+    "objectName": "StaticObj_Furniture_foldingbed_matress",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/furniture/folding_beds",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/furniture/folding_beds/staticobj_furniture_foldingbed_matress.jpg"
+  },
+  {
+    "objectName": "StaticObj_Furniture_foldingbed_open",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/furniture/folding_beds",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/furniture/folding_beds/staticobj_furniture_foldingbed_open.jpg"
+  },
+  {
+    "objectName": "foldingbed_matress.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/furniture/folding_beds",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/furniture/folding_beds/foldingbed_matress.p3d.jpg"
+  },
+  {
+    "objectName": "foldingbed_open.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/furniture/folding_beds",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures/furniture/folding_beds/foldingbed_open.p3d.jpg"
+  }
+]

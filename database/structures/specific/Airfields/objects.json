@@ -1,0 +1,198 @@
+[
+  {
+    "objectName": "StaticObj_Airfield_Lamp",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": true,
+    "searchTags": "airfield, lamp, light, pole, lighting, runway, taxiway, floodlight",
+    "image": "images/structures/specific/airfields/staticobj_airfield_lamp.jpg"
+  },
+  {
+    "objectName": "StaticObj_Airfield_Light_Edge",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": true,
+    "searchTags": "airfield, light, edge, runway, taxiway, marker, navigation, blue",
+    "image": "images/structures/specific/airfields/staticobj_airfield_light_edge.jpg"
+  },
+  {
+    "objectName": "StaticObj_Airfield_Light_Navig",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": true,
+    "searchTags": "airfield, light, navigation, beacon, runway, approach, marker",
+    "image": "images/structures/specific/airfields/staticobj_airfield_light_navig.jpg"
+  },
+  {
+    "objectName": "StaticObj_Airfield_Light_PAPI1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": true,
+    "searchTags": "airfield, light, PAPI, papi1, glide slope, runway, approach, landing",
+    "image": "images/structures/specific/airfields/staticobj_airfield_light_papi1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Airfield_Light_PAPI2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": true,
+    "searchTags": "airfield, light, PAPI, papi2, glide slope, runway, approach, landing",
+    "image": "images/structures/specific/airfields/staticobj_airfield_light_papi2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Airfield_Light_PAPI3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": true,
+    "searchTags": "airfield, light, PAPI, papi3, glide slope, runway, approach, landing",
+    "image": "images/structures/specific/airfields/staticobj_airfield_light_papi3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Airfield_Light_PAPI4",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": true,
+    "searchTags": "airfield, light, PAPI, papi4, glide slope, runway, approach, landing",
+    "image": "images/structures/specific/airfields/staticobj_airfield_light_papi4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Airfield_Light_Reflector",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": true,
+    "searchTags": "airfield, light, reflector, floodlight, spotlight, runway, apron, lighting",
+    "image": "images/structures/specific/airfields/staticobj_airfield_light_reflector.jpg"
+  },
+  {
+    "objectName": "airfield_lamp.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": false,
+    "searchTags": "airfield, lamp, light, pole, lighting, runway, taxiway, floodlight",
+    "image": "images/structures/specific/airfields/StaticObj_Airfield_Lamp.jpg"
+  },
+  {
+    "objectName": "airfield_light_edge.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": false,
+    "searchTags": "airfield, light, edge, runway, taxiway, marker, navigation, blue",
+    "image": "images/structures/specific/airfields/StaticObj_Airfield_Light_Edge.jpg"
+  },
+  {
+    "objectName": "airfield_light_navig.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": false,
+    "searchTags": "airfield, light, navigation, beacon, runway, approach, marker",
+    "image": "images/structures/specific/airfields/StaticObj_Airfield_Light_Navig.jpg"
+  },
+  {
+    "objectName": "airfield_light_papi1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": false,
+    "searchTags": "airfield, light, PAPI, papi1, glide slope, runway, approach, landing",
+    "image": "images/structures/specific/airfields/StaticObj_Airfield_Light_PAPI1.jpg"
+  },
+  {
+    "objectName": "airfield_light_papi2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": false,
+    "searchTags": "airfield, light, PAPI, papi2, glide slope, runway, approach, landing",
+    "image": "images/structures/specific/airfields/StaticObj_Airfield_Light_PAPI2.jpg"
+  },
+  {
+    "objectName": "airfield_light_papi3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": false,
+    "searchTags": "airfield, light, PAPI, papi3, glide slope, runway, approach, landing",
+    "image": "images/structures/specific/airfields/StaticObj_Airfield_Light_PAPI3.jpg"
+  },
+  {
+    "objectName": "airfield_light_papi4.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": false,
+    "searchTags": "airfield, light, PAPI, papi4, glide slope, runway, approach, landing",
+    "image": "images/structures/specific/airfields/StaticObj_Airfield_Light_PAPI4.jpg"
+  },
+  {
+    "objectName": "airfield_light_reflector.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": false,
+    "searchTags": "airfield, light, reflector, floodlight, spotlight, runway, apron, lighting",
+    "image": "images/structures/specific/airfields/StaticObj_Airfield_Light_Reflector.jpg"
+  },
+  {
+    "objectName": "airfield_small_control.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": false,
+    "searchTags": "airfield, control tower, ATC, small, building, airstrip, airport",
+    "image": "images/structures/specific/airfields/Land_Airfield_Small_Control.jpg"
+  },
+  {
+    "objectName": "airfield_small_hangar.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": false,
+    "searchTags": "airfield, hangar, small, aircraft, storage, building, airstrip, airport",
+    "image": "images/structures/specific/airfields/Land_Airfield_Small_Hangar.jpg"
+  },
+  {
+    "objectName": "Land_Airfield_Small_Control",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": true,
+    "searchTags": "airfield, control tower, ATC, small, building, airstrip, airport",
+    "image": "images/structures/specific/airfields/land_airfield_small_control.jpg"
+  },
+  {
+    "objectName": "Land_Airfield_Small_Hangar",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": true,
+    "searchTags": "airfield, hangar, small, aircraft, storage, building, airstrip, airport",
+    "image": "images/structures/specific/airfields/land_airfield_small_hangar.jpg"
+  }
+]

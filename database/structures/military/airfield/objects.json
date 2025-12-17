@@ -1,0 +1,639 @@
+[
+  {
+    "objectName": "Land_Airfield_Hangar_Green",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "airfield, hangar, storage, aircraft, plane, building, green, military, metal",
+    "image": "images/structures/military/airfield/land_airfield_hangar_green.jpg"
+  },
+  {
+    "objectName": "Land_Airfield_Radar_Tall",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "airfield, radar, tall, tower, surveillance, communication, military, metal, red, NWAF",
+    "image": "images/structures/military/airfield/land_airfield_radar_tall.jpg"
+  },
+  {
+    "objectName": "Land_Mil_ReinforcedTank1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, reinforced, tank, bunker, cover, fortification, terrain, grass, cover, ground, dirt, oil, gas",
+    "image": "images/structures/military/airfield/land_mil_reinforcedtank1.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Radar_Mobile1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer, dish, satellite, metal",
+    "image": "images/structures/military/airfield/land_mil_radar_mobile1.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Radar_Mobile2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer, metal, dish, satellite",
+    "image": "images/structures/military/airfield/land_mil_radar_mobile2.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Radar_Mobile3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer, dish, satellite",
+    "image": "images/structures/military/airfield/land_mil_radar_mobile3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_AircraftShelter_Door_L",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "aircraft, shelter, hangar, door, left, military, bunker, NWAF",
+    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_door_l.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_AircraftShelter_Door_R",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "aircraft, shelter, hangar, door, right, military, bunker, NWAF",
+    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_door_r.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_AircraftShelter_Grass_L",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "aircraft, shelter, hangar, grass, cover, left, camouflage, NWAF, bunker, terrain",
+    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_grass_l.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_AircraftShelter_Grass_R",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "aircraft, shelter, hangar, grass, cover, right, camouflage, NWAF, bunker, terrain",
+    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_grass_r.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_BlastCover1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, blast_cover, bunker, fortification, small, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_BlastCover1_Grass",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, small, NWAF, bunker, terrain",
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover1_grass.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_BlastCover2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, blast_cover, bunker, fortification, medium, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_BlastCover2_Grass",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, medium, grass, terrain",
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover2_grass.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_BlastCover3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, blast_cover, bunker, fortification, large, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_BlastCover3_Grass",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, large, terrain, grass",
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover3_grass.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_BlastCover4",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, blast_cover, bunker, fortification, large, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover4.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_BlastCover4_Grass_L",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, left, terrain",
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover4_grass_l.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_BlastCover4_Grass_R",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, right, terrain",
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover4_grass_r.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_Radar_Mobile1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer",
+    "image": "images/structures/military/airfield/staticobj_mil_radar_mobile1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_Radar_Mobile2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer",
+    "image": "images/structures/military/airfield/staticobj_mil_radar_mobile2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_Radar_Mobile3",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer",
+    "image": "images/structures/military/airfield/staticobj_mil_radar_mobile3.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_ReinforcedTank1",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, reinforced, tank, bunker, cover, fortification",
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank1.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_ReinforcedTank1_Grass",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank1_grass.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_ReinforcedTank2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, reinforced, tank, bunker, cover, fortification",
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_ReinforcedTank2_Grass_L",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, reinforced, tank, bunker, cover, fortification, grass, camouflage, left",
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_l.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_ReinforcedTank2_Grass_R",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, reinforced, tank, bunker, cover, fortification, grass, camouflage, right",
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_r.jpg"
+  },
+  {
+    "objectName": "StaticObj_Mil_ReinforcedTank2_Grass_Top",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, reinforced, tank, bunker, cover, fortification, grass, camouflage, top",
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_top.jpg"
+  },
+  {
+    "objectName": "airfield_hangar_green.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "airfield, hangar, storage, aircraft, plane, building, green, military, metal",
+    "image": "images/structures/military/airfield/Land_Airfield_Hangar_Green.jpg"
+  },
+  {
+    "objectName": "airfield_radar_tall.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "airfield, radar, tall, tower, surveillance, communication, military, metal, red, NWAF",
+    "image": "images/structures/military/airfield/Land_Airfield_Radar_Tall.jpg"
+  },
+  {
+    "objectName": "mil_aircraftshelter_door_l.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "aircraft, shelter, hangar, door, left, military, bunker, NWAF",
+    "image": "images/structures/military/airfield/StaticObj_Mil_AircraftShelter_Door_L.jpg"
+  },
+  {
+    "objectName": "mil_aircraftshelter_door_r.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "aircraft, shelter, hangar, door, right, military, bunker, NWAF",
+    "image": "images/structures/military/airfield/StaticObj_Mil_AircraftShelter_Door_R.jpg"
+  },
+  {
+    "objectName": "mil_aircraftshelter_grass_l.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "aircraft, shelter, hangar, grass, cover, left, camouflage, NWAF, bunker, terrain",
+    "image": "images/structures/military/airfield/StaticObj_Mil_AircraftShelter_Grass_L.jpg"
+  },
+  {
+    "objectName": "mil_aircraftshelter_grass_r.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "aircraft, shelter, hangar, grass, cover, right, camouflage, NWAF, bunker, terrain",
+    "image": "images/structures/military/airfield/StaticObj_Mil_AircraftShelter_Grass_R.jpg"
+  },
+  {
+    "objectName": "mil_blastcover1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, blast_cover, bunker, fortification, small, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/airfield/StaticObj_Mil_BlastCover1.jpg"
+  },
+  {
+    "objectName": "mil_blastcover1_grass.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, small, NWAF, bunker, terrain",
+    "image": "images/structures/military/airfield/StaticObj_Mil_BlastCover1_Grass.jpg"
+  },
+  {
+    "objectName": "mil_blastcover2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, blast_cover, bunker, fortification, medium, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/airfield/StaticObj_Mil_BlastCover2.jpg"
+  },
+  {
+    "objectName": "mil_blastcover2_grass.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, medium, grass, terrain",
+    "image": "images/structures/military/airfield/StaticObj_Mil_BlastCover2_Grass.jpg"
+  },
+  {
+    "objectName": "mil_blastcover3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, blast_cover, bunker, fortification, large, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/airfield/StaticObj_Mil_BlastCover3.jpg"
+  },
+  {
+    "objectName": "mil_blastcover3_grass.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, large, terrain, grass",
+    "image": "images/structures/military/airfield/StaticObj_Mil_BlastCover3_Grass.jpg"
+  },
+  {
+    "objectName": "mil_blastcover4.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, blast_cover, bunker, fortification, large, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/airfield/StaticObj_Mil_BlastCover4.jpg"
+  },
+  {
+    "objectName": "mil_blastcover4_grass_l.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, left, terrain",
+    "image": "images/structures/military/airfield/StaticObj_Mil_BlastCover4_Grass_L.jpg"
+  },
+  {
+    "objectName": "mil_blastcover4_grass_r.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, right, terrain",
+    "image": "images/structures/military/airfield/StaticObj_Mil_BlastCover4_Grass_R.jpg"
+  },
+  {
+    "objectName": "mil_radar_mobile1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer, dish, satellite, metal",
+    "image": "images/structures/military/airfield/Land_Mil_Radar_Mobile1.jpg"
+  },
+  {
+    "objectName": "mil_radar_mobile2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer, metal, dish, satellite",
+    "image": "images/structures/military/airfield/Land_Mil_Radar_Mobile2.jpg"
+  },
+  {
+    "objectName": "mil_radar_mobile3.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer, dish, satellite",
+    "image": "images/structures/military/airfield/Land_Mil_Radar_Mobile3.jpg"
+  },
+  {
+    "objectName": "mil_reinforcedtank1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, reinforced, tank, bunker, cover, fortification, terrain, grass, cover, ground, dirt, oil, gas",
+    "image": "images/structures/military/airfield/Land_Mil_ReinforcedTank1.jpg"
+  },
+  {
+    "objectName": "mil_reinforcedtank1_grass.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, reinforced, tank, bunker, cover, fortification, terrain, grass, cover, ground, dirt, oil, gas",
+    "image": "images/structures/military/airfield/Land_Mil_ReinforcedTank1.jpg"
+  },
+  {
+    "objectName": "mil_reinforcedtank2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, reinforced, tank, bunker, cover, fortification, terrain, grass, cover, ground, dirt, oil, gas, NWAF",
+    "image": "images/structures/military/airfield/Land_Mil_ReinforcedTank2.jpg"
+  },
+  {
+    "objectName": "mil_reinforcedtank2_grass_l.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, reinforced, tank, bunker, cover, fortification, grass, camouflage, left",
+    "image": "images/structures/military/airfield/StaticObj_Mil_ReinforcedTank2_Grass_L.jpg"
+  },
+  {
+    "objectName": "mil_reinforcedtank2_grass_r.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, reinforced, tank, bunker, cover, fortification, grass, camouflage, right",
+    "image": "images/structures/military/airfield/StaticObj_Mil_ReinforcedTank2_Grass_R.jpg"
+  },
+  {
+    "objectName": "mil_reinforcedtank2_grass_top.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, reinforced, tank, bunker, cover, fortification, grass, camouflage, top",
+    "image": "images/structures/military/airfield/StaticObj_Mil_ReinforcedTank2_Grass_Top.jpg"
+  },
+  {
+    "objectName": "Land_Mil_AircraftShelter",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, aircraft, shelter, hangar, cover, reinforced, bunker, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/airfield/land_mil_aircraftshelter.jpg"
+  },
+  {
+    "objectName": "Land_Mil_Airfield_HQ",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, HQ, airfield, building, headquarters, command, control",
+    "image": "images/structures/military/airfield/land_mil_airfield_hq.jpg"
+  },
+  {
+    "objectName": "Land_Mil_ATC_Big",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, airfield, ATC, tower, big, control, aviation, communication, air traffic contorl, camo",
+    "image": "images/structures/military/airfield/land_mil_atc_big.jpg"
+  },
+  {
+    "objectName": "Land_Mil_ATC_Small",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, airfield, ATC, tower, small, control, aviation, communication, air traffic contorl, camo",
+    "image": "images/structures/military/airfield/land_mil_atc_small.jpg"
+  },
+  {
+    "objectName": "mil_aircraftshelter.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, aircraft, shelter, hangar, cover, reinforced, bunker, terrain, grass, cover, ground, dirt",
+    "image": "images/structures/military/airfield/Land_Mil_AircraftShelter.jpg"
+  },
+  {
+    "objectName": "mil_airfield_hq.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, HQ, airfield, building, headquarters, command, control",
+    "image": "images/structures/military/airfield/Land_Mil_Airfield_HQ.jpg"
+  },
+  {
+    "objectName": "mil_atc_big.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, airfield, ATC, tower, big, control, aviation, communication, air traffic contorl, camo",
+    "image": "images/structures/military/airfield/Land_Mil_ATC_Big.jpg"
+  },
+  {
+    "objectName": "mil_atc_small.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "military, airfield, ATC, tower, small, control, aviation, communication, air traffic contorl, camo",
+    "image": "images/structures/military/airfield/Land_Mil_ATC_Small.jpg"
+  },
+  {
+    "objectName": "airfield_servicehangar_l.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "airfield, hangar, left, service, building, maintenance, aircraft, metal, NWAF",
+    "image": "images/structures/military/airfield/Land_Airfield_ServiceHangar_L.jpg"
+  },
+  {
+    "objectName": "airfield_servicehangar_r.p3d",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "airfield, hangar, right, service, building, maintenance, aircraft, metal, NWAF",
+    "image": "images/structures/military/airfield/Land_Airfield_ServiceHangar_R.jpg"
+  },
+  {
+    "objectName": "Land_Airfield_ServiceHangar_L",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "airfield, hangar, left, service, building, maintenance, aircraft, metal, NWAF",
+    "image": "images/structures/military/airfield/land_airfield_servicehangar_l.jpg"
+  },
+  {
+    "objectName": "Land_Airfield_ServiceHangar_R",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "airfield, hangar, right, service, building, maintenance, aircraft, metal, NWAF",
+    "image": "images/structures/military/airfield/land_airfield_servicehangar_r.jpg"
+  },
+  {
+    "objectName": "Land_Mil_ReinforcedTank2",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "military, reinforced, tank, bunker, cover, fortification, terrain, grass, cover, ground, dirt, oil, gas, NWAF",
+    "image": "images/structures/military/airfield/land_mil_reinforcedtank2.jpg"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "objectName": "Land_MobileLaboratory_Ruin",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/specific/volcano",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/specific/volcano/land_mobilelaboratory_ruin.jpg"
+  },
+  {
+    "objectName": "mobilelaboratory_ruin.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/specific/volcano",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/specific/volcano/mobilelaboratory_ruin.p3d.jpg"
+  },
+  {
+    "objectName": "Land_MobileLaboratory",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/specific/volcano",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures_sakhal/specific/volcano/land_mobilelaboratory.jpg"
+  },
+  {
+    "objectName": "mobilelaboratory.p3d",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/specific/volcano",
+    "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/structures_sakhal/specific/volcano/mobilelaboratory.p3d.jpg"
+  }
+]
