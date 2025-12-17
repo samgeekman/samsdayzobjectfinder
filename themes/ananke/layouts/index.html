@@ -3,7 +3,7 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
   <style>
-    /* Prevent flash of unstyled content before DataTables finishes rendering */
+    /* Loading state */
     #dayzObjects,
     #dayzObjects_wrapper {
       visibility: hidden;
@@ -21,7 +21,7 @@
     margin: 2px;
   }
 
-  /* Table styling */
+  
   #dayzObjects_wrapper {
     width: 95% !important;
     margin: 20px auto;
@@ -29,7 +29,7 @@
   }
   #dayzObjects { width: 100% !important; }
 
-  /* Top bar & filters */
+  
   .top-bar {
     display: flex;
     flex-wrap: wrap;
@@ -68,7 +68,7 @@
     #dayzObjects { font-size: 10px; }
   }
 
-  /* First td as positioning context for buttons */
+  
   #dayzObjects tbody td:first-child {
     position: relative;
   }
@@ -89,12 +89,12 @@
     border-radius: 3px;
   }
 
-  /* Show buttons on hover */
+  
   #dayzObjects tbody td:first-child:hover .copy-btn {
     opacity: 1;
   }
 
-  /* Spacing between the two buttons */
+  
   .copy-btn + .copy-btn {
     right: 40px;
   }
@@ -103,7 +103,7 @@
     color: #fff;
   }
 
-  /* Preset toggle button */
+  
   #togglePresets {
     padding: 4px 10px;
     border-radius: 4px;
@@ -119,7 +119,7 @@
     border-color: #656d6d;
   }
 
-  /* Flash row highlight */
+  
   @keyframes flash-highlight {
     0% { background-color: #fff6a1; }
     100% { background-color: transparent; }
@@ -139,7 +139,7 @@
     text-align: center;
   }
 
-  /* Status message under loader */
+  
   #statusMessage {
     margin: 18px 0 0;
     text-align: center;
@@ -160,7 +160,7 @@
     <option value="❌">No</option>
   </select>
 
-  <!-- Show presets toggle -->
+  
   <button id="togglePresets" type="button">Show presets</button>
 </div>
 
@@ -213,9 +213,29 @@
 
 <script>
 $(document).ready(function() {
-  // Status messages (add more strings to rotate)
+  // Status messages 
   var statusMessages = [
-    'This project is a work in progress - add feedback to the Discord'
+    'This project is a work in progress - add feedback to the Discord',
+    'There are more than 190 hats in DayZ - Sam favourite is the Zimikova',
+    'The only P3Ds you can use on console are rocks and plants',
+    'Working on console? Filter by conole and look for the ✅ mark',
+    'You can copy and paste directly into DayZ Editor using the 🏗️ button',
+    'DayZ uses the scientific names for plants and animals - but you can just search for "birch" or "wolf"',
+    'There are more than 60 different types of birch tree in DayZ',
+    'There are more than 40 different types of armbands in DayZ',
+    'The most annoying type of object to categorise was railway tracks',
+    'There are several invisible ghost assets used for development - they may also be haunted',
+    'There are nine types of mushroom in DayZ',
+    'There are 31 different playable Survivors in DayZ',
+    'You can add size and colour to you searches for large rocks or green bag',
+    'Notice an error? Well done, you get a gold star. Report it on the Disrord',
+    'Sam spent too long categorising fences',
+    'If you keep refreshing the page you will eventually see all these messages',
+    'Put your credit card into this website to unlock object list WITHOUT the errors',
+    'There are more than 90 different types of spruce tree in DayZ',
+    'There are 45 different houses in DayZ - each has been tagged with their callouts'
+    'This loading message hides many sins'
+
   ];
   var randomMessage = statusMessages[Math.floor(Math.random() * statusMessages.length)];
   $('#statusMessage').text(randomMessage);
@@ -234,11 +254,10 @@ $(document).ready(function() {
   $('#dayzObjects, #dayzObjects_wrapper').css('visibility', 'visible');
   $('#loadingIndicator').hide();
   $('#statusMessage').hide();
-
-  // Move filters above the DataTables top bar
+ 
   $("#filters").insertBefore("#dayzObjects_wrapper .top-bar");
 
-  // Populate Category filter
+
   var categories = [];
   table.column(2).data().each(function(value) {
     if (value && categories.indexOf(value) === -1) {
@@ -258,7 +277,7 @@ $(document).ready(function() {
   });
 
   // Preset toggle (filters to Editor Preset category)
-  // Adjust this string if your category name is slightly different (e.g. "Editor Presets")
+
   var presetsCategoryValue = "Editor Preset";
   var presetsActive = false;
   var previousCategoryValue = "";
@@ -267,13 +286,13 @@ $(document).ready(function() {
     var $btn = $(this);
 
     if (!presetsActive) {
-      // Activate presets view: remember old category, then switch to Editor Preset
+      // Activate presets view: remember old category
       previousCategoryValue = $('#filterCategory').val();
       $('#filterCategory').val(presetsCategoryValue).trigger('change');
       presetsActive = true;
       $btn.addClass('active').text('Show all');
     } else {
-      // Deactivate presets view: restore previous category selection
+      // restore previous category selection
       $('#filterCategory').val(previousCategoryValue).trigger('change');
       presetsActive = false;
       $btn.removeClass('active').text('Show presets');
@@ -310,35 +329,34 @@ $(document).ready(function() {
     setTimeout(function() { $btn.text('📋'); }, 1000);
   });
 
-  // Copy DayZ Editor JSON (🏗️) – supports presets with multiple objects
+  // Copy DayZ Editor JSON (🏗️) 
   $('#dayzObjects tbody').on('click', '.editor-copy-btn', function(e) {
     e.stopPropagation();
     var $td = $(this).closest('td');
 
-    // 1) Check for predefined editorJson (presets like "TC2 Tower preset")
+    // 1) Check for predefined editorJson 
     var predefined = $td.attr('data-editorjson');
     var jsonText = null;
 
     if (predefined && predefined.trim() !== "") {
       try {
-        var parsed = JSON.parse(predefined); // should be an array
+        var parsed = JSON.parse(predefined); 
         // Copy as a valid JSON array of separate items
         jsonText = JSON.stringify(parsed, null, 4);
 
-        // If you instead want to paste into an existing array without brackets:
-        // jsonText = parsed.map(function(o){ return JSON.stringify(o, null, 4); }).join(',\n');
+        
       } catch (err) {
         console.error("Invalid editorJson for row:", err);
       }
     }
 
-    // 2) Fallback: generate single-object stub (Config / Raw P3D / etc.)
+    
     if (!jsonText) {
       var objName   = $td.data('object');
       var modelType = $td.data('modeltype');
       var path      = $td.data('p3d');
 
-      // Config: use class name; anything else: path + file
+   
       var typeValue = (modelType === "Config")
         ? objName
         : path.replace(/\//g, "\\") + "\\" + objName;
