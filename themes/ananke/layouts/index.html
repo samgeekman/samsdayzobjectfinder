@@ -3,7 +3,7 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
   <style>
-    /* Loading state */
+    
     #dayzObjects,
     #dayzObjects_wrapper {
       visibility: hidden;
@@ -43,7 +43,7 @@
     margin-right: 10px;
   }
   #filters {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 10px;
@@ -144,6 +144,7 @@
     margin: 18px 0 0;
     text-align: center;
     font-weight: 500;
+    font-style: italic;
   }
 </style>
 
@@ -168,7 +169,7 @@
   Loading {{ $objectCount }} objects...
 </div>
 
-<div id="statusMessage">This project is a work in progress - add feedback to the Discord</div>
+<div id="statusMessage"></div>
 
 <table id="dayzObjects" class="display nowrap" style="width:100%">
   <thead>
@@ -212,180 +213,194 @@
 <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
 
 <script>
-$(document).ready(function() {
-  // Status messages 
   var statusMessages = [
-    'This project is a work in progress - add feedback to the Discord',
-    'There are more than 190 hats in DayZ - Sam favourite is the Zimikova',
-    'The only P3Ds you can use on console are rocks and plants',
-    'Working on console? Filter by conole and look for the ✅ mark',
-    'You can copy and paste directly into DayZ Editor using the 🏗️ button',
-    'DayZ uses the scientific names for plants and animals - but you can just search for "birch" or "wolf"',
-    'There are more than 60 different types of birch tree in DayZ',
-    'There are more than 40 different types of armbands in DayZ',
-    'The most annoying type of object to categorise was railway tracks',
-    'There are several invisible ghost assets used for development - they may also be haunted',
-    'There are nine types of mushroom in DayZ',
-    'There are 31 different playable Survivors in DayZ',
-    'You can add size and colour to you searches for large rocks or green bag',
-    'Notice an error? Well done, you get a gold star. Report it on the Disrord',
-    'Sam spent too long categorising fences',
-    'If you keep refreshing the page you will eventually see all these messages',
-    'Put your credit card into this website to unlock object list WITHOUT the errors',
-    'There are more than 90 different types of spruce tree in DayZ',
-    'There are 45 different houses in DayZ - each has been tagged with their callouts',
-    'This loading message hides many sins'
-
+    'This project is a work in progress - add feedback on the Discord',
+	'There are more than 190 hats in DayZ - Sam’s favourite is the Zimikova',
+	'The only P3Ds you can use on console are rocks and plants',
+	'Working on console? Filter by console and look for the ✅ mark',
+	'You can copy and paste directly into DayZ Editor using the 🏗️ button',
+	'DayZ uses the scientific names for plants and animals - but you can just search for "birch" or "wolf"',
+	'There are more than 60 different types of birch tree in DayZ',
+	'There are more than 40 different types of armbands in DayZ',
+	'The most annoying type of object to categorise was railway tracks',
+	'There are several invisible ghost assets used for development - they may also be haunted',
+	'There are nine types of mushroom in DayZ',
+	'There are 31 different playable Survivors in DayZ',
+	'You can add size and colour to your searches for large rocks or green bags',
+	'Notice an error? Well done, you get a gold star. Report it on the Discord',
+	'Sam spent too long categorising fences',
+	'If you keep refreshing the page, you will eventually see all these messages',
+	'Put your credit card into this website to unlock the object list WITHOUT the errors',
+	'There are more than 90 different types of spruce tree in DayZ',
+	'There are 45 different houses in DayZ - each has been tagged with its callouts',
+	'This loading message hides many sins'
   ];
-  var randomMessage = statusMessages[Math.floor(Math.random() * statusMessages.length)];
-  $('#statusMessage').text(randomMessage);
+  (function() {
+    var statusMessageEl = document.getElementById('statusMessage');
+    if (!statusMessageEl) return;
+    statusMessageEl.textContent = statusMessages[Math.floor(Math.random() * statusMessages.length)];
+    statusMessageEl.style.display = 'block';
+  })();
 
-  var table = $('#dayzObjects').DataTable({
-    responsive: true,
-    pageLength: 50,
-    lengthMenu: [[50,100,200,500],[50,100,200,500]],
-    columnDefs: [{ targets: [6], visible: true }],
-    dom: '<"top-bar"lfr>tip',
-    language: {
-      search: "Search: ",
-      searchPlaceholder: "'large snow rock', '308 rifles'"
+  $(document).ready(function() {
+    var statusMessageEl = document.getElementById('statusMessage');
+    var $tableEl = $('#dayzObjects');
+    $('#filters').hide();
+
+    var showContent = function() {
+      $('#dayzObjects, #dayzObjects_wrapper').css('visibility', 'visible');
+      $('#loadingIndicator').hide();
+      $('#filters').css('display', 'flex');
+      if (statusMessageEl) {
+        statusMessageEl.style.display = 'none';
+      }
+    };
+    
+    $tableEl.one('init.dt', showContent);
+
+    var table = $tableEl.DataTable({
+      responsive: true,
+      pageLength: 50,
+      lengthMenu: [[50,100,200,500],[50,100,200,500]],
+      columnDefs: [{ targets: [6], visible: true }],
+      dom: '<"top-bar"lfr>tip',
+      language: {
+        search: "Search: ",
+        searchPlaceholder: "'large snow rock', '308 rifles'"
+      }
+    });
+    
+    if (table.settings()[0]._bInitComplete) {
+      showContent();
     }
-  });
-  $('#dayzObjects, #dayzObjects_wrapper').css('visibility', 'visible');
-  $('#loadingIndicator').hide();
-  $('#statusMessage').hide();
- 
-  $("#filters").insertBefore("#dayzObjects_wrapper .top-bar");
+   
+    $("#filters").insertBefore("#dayzObjects_wrapper .top-bar");
 
 
-  var categories = [];
-  table.column(2).data().each(function(value) {
-    if (value && categories.indexOf(value) === -1) {
-      categories.push(value);
-    }
-  });
-  categories.sort().forEach(function(cat) {
-    $('#filterCategory').append('<option value="' + cat + '">' + cat + '</option>');
-  });
-
-  $('#filterCategory').on('change', function() {
-    table.column(2).search(this.value).draw();
-  });
-
-  $('#filterConsole').on('change', function() {
-    table.column(5).search(this.value).draw();
-  });
-
-  // Preset toggle (filters to Editor Preset category)
-
-  var presetsCategoryValue = "Editor Preset";
-  var presetsActive = false;
-  var previousCategoryValue = "";
-
-  $('#togglePresets').on('click', function() {
-    var $btn = $(this);
-
-    if (!presetsActive) {
-      // Activate presets view: remember old category
-      previousCategoryValue = $('#filterCategory').val();
-      $('#filterCategory').val(presetsCategoryValue).trigger('change');
-      presetsActive = true;
-      $btn.addClass('active').text('Show all');
-    } else {
-      // restore previous category selection
-      $('#filterCategory').val(previousCategoryValue).trigger('change');
-      presetsActive = false;
-      $btn.removeClass('active').text('Show presets');
-    }
-  });
-
-  // Hover image preview on first column
-  $('#dayzObjects tbody')
-    .on('mouseenter', 'td:first-child', function(e) {
-      var imgPath = $(this).data('image');
-      if (!imgPath) return;
-
-      $('body').append(
-        '<div id="imgPreview" style="position:absolute; z-index:9999; border:1px solid #ccc; background:#fff; padding:5px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">' +
-          '<img src="/' + imgPath + '" style="max-width:400px; max-height:400px;">' +
-        '</div>'
-      );
-      $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });
-    })
-    .on('mousemove', 'td:first-child', function(e) {
-      $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });
-    })
-    .on('mouseleave', 'td:first-child', function() {
-      $('#imgPreview').remove();
+    var categories = [];
+    table.column(2).data().each(function(value) {
+      if (value && categories.indexOf(value) === -1) {
+        categories.push(value);
+      }
+    });
+    categories.sort().forEach(function(cat) {
+      $('#filterCategory').append('<option value="' + cat + '">' + cat + '</option>');
     });
 
-  // Copy object name (📋)
-  $('#dayzObjects tbody').on('click', '.copy-btn:not(.editor-copy-btn)', function(e) {
-    e.stopPropagation();
-    var text = $(this).closest('td').data('object');
-    navigator.clipboard.writeText(text);
-    var $btn = $(this);
-    $btn.text('✔');
-    setTimeout(function() { $btn.text('📋'); }, 1000);
-  });
+    $('#filterCategory').on('change', function() {
+      table.column(2).search(this.value).draw();
+    });
 
-  // Copy DayZ Editor JSON (🏗️) 
-  $('#dayzObjects tbody').on('click', '.editor-copy-btn', function(e) {
-    e.stopPropagation();
-    var $td = $(this).closest('td');
+    $('#filterConsole').on('change', function() {
+      table.column(5).search(this.value).draw();
+    });
 
-    // 1) Check for predefined editorJson 
-    var predefined = $td.attr('data-editorjson');
-    var jsonText = null;
+    // Preset toggle 
+    var presetsCategoryValue = "Editor Preset";
+    var presetsActive = false;
+    var previousCategoryValue = "";
 
-    if (predefined && predefined.trim() !== "") {
-      try {
-        var parsed = JSON.parse(predefined); 
-        // Copy as a valid JSON array of separate items
-        jsonText = JSON.stringify(parsed, null, 4);
+    $('#togglePresets').on('click', function() {
+      var $btn = $(this);
 
-        
-      } catch (err) {
-        console.error("Invalid editorJson for row:", err);
+      if (!presetsActive) {
+        // remember old category
+        previousCategoryValue = $('#filterCategory').val();
+        $('#filterCategory').val(presetsCategoryValue).trigger('change');
+        presetsActive = true;
+        $btn.addClass('active').text('Show all');
+      } else {
+        // restore previous category selection
+        $('#filterCategory').val(previousCategoryValue).trigger('change');
+        presetsActive = false;
+        $btn.removeClass('active').text('Show presets');
       }
-    }
+    });
 
-    
-    if (!jsonText) {
-      var objName   = $td.data('object');
-      var modelType = $td.data('modeltype');
-      var path      = $td.data('p3d');
+    // Hover image preview on first column
+    $('#dayzObjects tbody')
+      .on('mouseenter', 'td:first-child', function(e) {
+        var imgPath = $(this).data('image');
+        if (!imgPath) return;
 
-   
-      var typeValue = (modelType === "Config")
-        ? objName
-        : path.replace(/\//g, "\\") + "\\" + objName;
+        $('body').append(
+          '<div id="imgPreview" style="position:absolute; z-index:9999; border:1px solid #ccc; background:#fff; padding:5px; box-shadow:0 2px 6px rgba(0,0,0,0.2);">' +
+            '<img src="/' + imgPath + '" style="max-width:400px; max-height:400px;">' +
+          '</div>'
+        );
+        $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });
+      })
+      .on('mousemove', 'td:first-child', function(e) {
+        $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });
+      })
+      .on('mouseleave', 'td:first-child', function() {
+        $('#imgPreview').remove();
+      });
 
-      var json = [{
-        Type: typeValue,
-        DisplayName: "",
-        Position: [0, 0, 0],
-        Orientation: [0, 0, 0],
-        Scale: 1.0,
-        AttachmentMap: {},
-        Model: "",
-        Flags: 30,
-        m_LowBits: 0,
-        m_HighBits: 0
-      }];
+    // Copy object name (📋)
+    $('#dayzObjects tbody').on('click', '.copy-btn:not(.editor-copy-btn)', function(e) {
+      e.stopPropagation();
+      var text = $(this).closest('td').data('object');
+      navigator.clipboard.writeText(text);
+      var $btn = $(this);
+      $btn.text('✔');
+      setTimeout(function() { $btn.text('📋'); }, 1000);
+    });
 
-      jsonText = JSON.stringify(json, null, 4);
-    }
+    // Copy DayZ Editor JSON (🏗️) 
+    $('#dayzObjects tbody').on('click', '.editor-copy-btn', function(e) {
+      e.stopPropagation();
+      var $td = $(this).closest('td');
 
-    // 3) Copy to clipboard
-    navigator.clipboard.writeText(jsonText);
+      // 
+      var predefined = $td.attr('data-editorjson');
+      var jsonText = null;
 
-    // 4) Button feedback
-    var $btn = $(this);
-    $btn.text('✔');
-    setTimeout(function() { $btn.text('🏗️'); }, 1000);
+      if (predefined && predefined.trim() !== "") {
+        try {
+          var parsed = JSON.parse(predefined); 
+          // Copy as a valid JSON array of separate items
+          jsonText = JSON.stringify(parsed, null, 4);
+        } catch (err) {
+          console.error("Invalid editorJson for row:", err);
+        }
+      }
+
+      // 
+      if (!jsonText) {
+        var objName   = $td.data('object');
+        var modelType = $td.data('modeltype');
+        var path      = $td.data('p3d');
+
+        var typeValue = (modelType === "Config")
+          ? objName
+          : path.replace(/\//g, "\\") + "\\" + objName;
+
+        var json = [{
+          Type: typeValue,
+          DisplayName: "",
+          Position: [0, 0, 0],
+          Orientation: [0, 0, 0],
+          Scale: 1.0,
+          AttachmentMap: {},
+          Model: "",
+          Flags: 30,
+          m_LowBits: 0,
+          m_HighBits: 0
+        }];
+
+        jsonText = JSON.stringify(json, null, 4);
+      }
+
+      
+      navigator.clipboard.writeText(jsonText);
+
+     
+      var $btn = $(this);
+      $btn.text('✔');
+      setTimeout(function() { $btn.text('🏗️'); }, 1000);
+    });
   });
-});
 </script>
 
 {{ end }}
