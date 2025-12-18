@@ -4496,7 +4496,7 @@
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "belt, leather, civilian, waist, accessory",
     "image": "images/characters/belts/civilianbelt/civilianbelt.jpg"
   },
   {
@@ -4506,7 +4506,7 @@
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "belt, tactical, military, utility, holster",
     "image": "images/characters/belts/militarybelt/militarybelt.jpg"
   },
   {
@@ -4516,7 +4516,7 @@
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "belt, rope, improvised, survival, waist",
     "image": "images/characters/belts/ropebelt/ropebelt.jpg"
   },
   {
@@ -4526,7 +4526,7 @@
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "knife, sheath, leather, belt, holster",
     "image": "images/characters/belts/leatherknifesheath/leatherknifesheath.jpg"
   },
   {
@@ -4536,7 +4536,7 @@
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "knife, sheath, nylon, belt, holster, plate carrier, vest",
     "image": "images/characters/belts/nylonknifesheath/nylonknifesheath.jpg"
   },
   {
@@ -4546,8 +4546,8 @@
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/belts/hippack_colorbase.jpg"
+    "searchTags": "hip pack, belt bag, fanny pack, storage, waist, military",
+    "image": "images/characters/belts/hippack_black/hippack_black.jpg"
   },
   {
     "objectName": "HipPack_Green",
@@ -4556,8 +4556,8 @@
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/belts/hippack_colorbase.jpg"
+    "searchTags": "hip pack, belt bag, fanny pack, storage, waist, camo",
+    "image": "images/characters/belts/hippack_green/hippack_green.jpg"
   },
   {
     "objectName": "HipPack_Medical",
@@ -4566,8 +4566,8 @@
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/belts/hippack_colorbase.jpg"
+    "searchTags": "hip pack, belt bag, fanny pack, storage, waist, medicine, first aid",
+    "image": "images/characters/belts/hippack_medical/hippack_medical.jpg"
   },
   {
     "objectName": "HipPack_Party",
@@ -4576,18 +4576,48 @@
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/belts/hippack_colorbase.jpg"
+    "searchTags": "hip pack, belt bag, fanny pack, storage, waist, colorful, rave",
+    "image": "images/characters/belts/hippack_party/hippack_party.jpg"
   },
   {
-    "objectName": "belt_leather_f.p3d",
-    "inGameName": "-",
+    "objectName": "LeatherBelt_Natrual",
+    "inGameName": "Leather Belt",
     "category": "characters",
-    "modelType": "Raw P3D",
+    "modelType": "Config",
     "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/belt_leather_f.p3d.jpg"
+    "usableOnConsole": true,
+    "searchTags": "belt, leather, civilian, waist, crafting, tanning",
+    "image": "images/characters/belts/leatherbelt_natrual/leatherbelt_natrual.jpg"
+  },
+  {
+    "objectName": "LeatherBelt_Black",
+    "inGameName": "Leather Belt",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/belts",
+    "usableOnConsole": true,
+    "searchTags": "belt, leather, civilian, waist, crafting, tanning",
+    "image": "images/characters/belts/leatherbelt_black/leatherbelt_black.jpg"
+  },
+  {
+    "objectName": "LeatherBelt_Brown",
+    "inGameName": "Leather Belt",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/belts",
+    "usableOnConsole": true,
+    "searchTags": "belt, leather, civilian, waist, crafting, tanning",
+    "image": "images/characters/belts/leatherbelt_brown/leatherbelt_brown.jpg"
+  },
+  {
+    "objectName": "LeatherBelt_Beige",
+    "inGameName": "Leather Belt",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/belts",
+    "usableOnConsole": true,
+    "searchTags": "belt, leather, civilian, waist, crafting, tanning",
+    "image": "images/characters/belts/leatherbelt_beige/leatherbelt_beige.jpg"
   },
   {
     "objectName": "belt_leather_g.p3d",
@@ -4596,28 +4626,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "belt, leather, civilian, waist, crafting, tanning",
     "image": "images/characters/belts/belt_leather_g.p3d.jpg"
-  },
-  {
-    "objectName": "belt_leather_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/belt_leather_m.p3d.jpg"
-  },
-  {
-    "objectName": "civ_belt_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/civ_belt_f.p3d.jpg"
   },
   {
     "objectName": "civ_belt_g.p3d",
@@ -4626,58 +4636,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "belt, leather, civilian, waist, accessory",
     "image": "images/characters/belts/civ_belt_g.p3d.jpg"
-  },
-  {
-    "objectName": "civ_belt_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/civ_belt_m.p3d.jpg"
-  },
-  {
-    "objectName": "gun_holster_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/gun_holster_f.p3d.jpg"
-  },
-  {
-    "objectName": "gun_holster_g.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/gun_holster_g.p3d.jpg"
-  },
-  {
-    "objectName": "gun_holster_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/gun_holster_m.p3d.jpg"
-  },
-  {
-    "objectName": "hippack_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/hippack_f.p3d.jpg"
   },
   {
     "objectName": "hippack_g.p3d",
@@ -4686,28 +4646,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "hip pack, belt bag, fanny pack, storage, waist",
     "image": "images/characters/belts/hippack_g.p3d.jpg"
-  },
-  {
-    "objectName": "hippack_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/hippack_m.p3d.jpg"
-  },
-  {
-    "objectName": "knife_holster_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/knife_holster_f.p3d.jpg"
   },
   {
     "objectName": "knife_holster_g.p3d",
@@ -4716,28 +4656,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "knife, sheath, leather, belt, holster",
     "image": "images/characters/belts/knife_holster_g.p3d.jpg"
-  },
-  {
-    "objectName": "knife_holster_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/knife_holster_m.p3d.jpg"
-  },
-  {
-    "objectName": "leather_quiver_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/leather_quiver_f.p3d.jpg"
   },
   {
     "objectName": "leather_quiver_g.p3d",
@@ -4746,28 +4666,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "quiver, arrows, leather, belt, archery, not_in_game, not_included",
     "image": "images/characters/belts/leather_quiver_g.p3d.jpg"
-  },
-  {
-    "objectName": "leather_quiver_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/leather_quiver_m.p3d.jpg"
-  },
-  {
-    "objectName": "mil_belt_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/mil_belt_f.p3d.jpg"
   },
   {
     "objectName": "mil_belt_g.p3d",
@@ -4776,18 +4676,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "belt, tactical, military, utility, holster",
     "image": "images/characters/belts/mil_belt_g.p3d.jpg"
-  },
-  {
-    "objectName": "mil_belt_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/mil_belt_m.p3d.jpg"
   },
   {
     "objectName": "nylon_knifesheath.p3d",
@@ -4796,7 +4686,7 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "knife, sheath, nylon, belt, holster",
     "image": "images/characters/belts/nylon_knifesheath.p3d.jpg"
   },
   {
@@ -4806,18 +4696,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "tool holder, nylon, belt, utility, pouch",
     "image": "images/characters/belts/nylon_toolholder.p3d.jpg"
-  },
-  {
-    "objectName": "rope_belt_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/rope_belt_f.p3d.jpg"
   },
   {
     "objectName": "rope_belt_g.p3d",
@@ -4826,18 +4706,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "belt, rope, improvised, survival, waist",
     "image": "images/characters/belts/rope_belt_g.p3d.jpg"
-  },
-  {
-    "objectName": "rope_belt_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/rope_belt_m.p3d.jpg"
   },
   {
     "objectName": "SurvivorM_Mirek",
@@ -5160,13 +5030,53 @@
     "image": ""
   },
   {
+    "objectName": "SportGlasses_Black",
+    "inGameName": "Athletic Sunglasses",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/glasses",
+    "usableOnConsole": true,
+    "searchTags": "glasses, sport, wraparound, athletic, eyewear",
+    "image": "images/characters/glasses/sportglasses_black/sportglasses_black.jpg"
+  },
+  {
+    "objectName": "SportGlasses_Blue",
+    "inGameName": "Athletic Sunglasses",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/glasses",
+    "usableOnConsole": true,
+    "searchTags": "glasses, sport, wraparound, athletic, eyewear",
+    "image": "images/characters/glasses/sportglasses_blue/sportglasses_blue.jpg"
+  },
+  {
+    "objectName": "SportGlasses_Green",
+    "inGameName": "Athletic Sunglasses",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/glasses",
+    "usableOnConsole": true,
+    "searchTags": "glasses, sport, wraparound, athletic, eyewear",
+    "image": "images/characters/glasses/sportglasses_green/sportglasses_green.jpg"
+  },
+  {
+    "objectName": "SportGlasses_Orange",
+    "inGameName": "Athletic Sunglasses",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/glasses",
+    "usableOnConsole": true,
+    "searchTags": "glasses, sport, wraparound, athletic, eyewear",
+    "image": "images/characters/glasses/sportglasses_orange/sportglasses_orange.jpg"
+  },
+  {
     "objectName": "AviatorGlasses",
     "inGameName": "Aviator Sunglasses",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "glasses, sunglasses, aviator, pilot, eyewear",
     "image": "images/characters/glasses/aviatorglasses/aviatorglasses.jpg"
   },
   {
@@ -5176,7 +5086,7 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "glasses, sunglasses, designer, casual, eyewear",
     "image": "images/characters/glasses/designerglasses/designerglasses.jpg"
   },
   {
@@ -5186,7 +5096,7 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "glasses, eyeglasses, thick frame, nerd, classic",
     "image": "images/characters/glasses/thickframesglasses.jpg"
   },
   {
@@ -5196,7 +5106,7 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "glasses, eyeglasses, thin frame, slim, light",
     "image": "images/characters/glasses/thinframesglasses/thinframesglasses.jpg"
   },
   {
@@ -5206,7 +5116,7 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "goggles, tactical, military, protective, eyewear",
     "image": "images/characters/glasses/tacticalgoggles/tacticalgoggles.jpg"
   },
   {
@@ -5216,7 +5126,7 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "eye patch, improvised, bandage, pirate, medical",
     "image": "images/characters/glasses/eyepatch_improvised/eyepatch_improvised.jpg"
   },
   {
@@ -5226,7 +5136,7 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "nvg, night vision, headstrap, mount, goggles",
     "image": "images/characters/glasses/nvgheadstrap/nvgheadstrap.jpg"
   },
   {
@@ -5236,18 +5146,8 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "nvg, night vision, goggles, military, stealth",
     "image": "images/characters/glasses/nvgoggles/nvgoggles.jpg"
-  },
-  {
-    "objectName": "rotate",
-    "inGameName": "Carnival Mask",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/glasses",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/glasses/rotate.jpg"
   },
   {
     "objectName": "EyeMask_Black",
@@ -5256,7 +5156,7 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "mask, carnival, costume, festival, party",
     "image": "images/characters/glasses/eyemask_colorbase.jpg"
   },
   {
@@ -5266,7 +5166,7 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "mask, carnival, costume, festival, party",
     "image": "images/characters/glasses/eyemask_colorbase.jpg"
   },
   {
@@ -5276,7 +5176,7 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "mask, carnival, costume, festival, party",
     "image": "images/characters/glasses/eyemask_colorbase.jpg"
   },
   {
@@ -5286,7 +5186,7 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "mask, carnival, costume, festival, party",
     "image": "images/characters/glasses/eyemask_colorbase.jpg"
   },
   {
@@ -5296,7 +5196,7 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "mask, carnival, costume, festival, party",
     "image": "images/characters/glasses/eyemask_colorbase.jpg"
   },
   {
@@ -5306,7 +5206,7 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "mask, carnival, costume, festival, party",
     "image": "images/characters/glasses/eyemask_colorbase.jpg"
   },
   {
@@ -5316,7 +5216,7 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "mask, carnival, costume, festival, party",
     "image": "images/characters/glasses/eyemask_colorbase.jpg"
   },
   {
@@ -5326,28 +5226,38 @@
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "mask, carnival, costume, festival, party",
     "image": "images/characters/glasses/eyemask_colorbase.jpg"
   },
   {
-    "objectName": "ProxyNVG",
-    "inGameName": "-",
+    "objectName": "SkiGoggles_WhiteClear",
+    "inGameName": "Ski Goggles",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/glasses",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/glasses/proxynvg.jpg"
+    "searchTags": "goggles, ski, snow, winter, sports",
+    "image": "images/characters/glasses/skigoggles_whiteclear/skigoggles_whiteclear.jpg"
   },
   {
-    "objectName": "aviator_glasses.p3d",
-    "inGameName": "-",
+    "objectName": "SkiGoggles_WhiteDark",
+    "inGameName": "Ski Goggles",
     "category": "characters",
-    "modelType": "Raw P3D",
+    "modelType": "Config",
     "path": "dz/characters/glasses",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/glasses/aviator_glasses.p3d.jpg"
+    "usableOnConsole": true,
+    "searchTags": "goggles, ski, snow, winter, sports",
+    "image": "images/characters/glasses/skigoggles_whitedark/skigoggles_whitedark.jpg"
+  },
+  {
+    "objectName": "SkiGoggles_BlackYellow",
+    "inGameName": "Ski Goggles",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/glasses",
+    "usableOnConsole": true,
+    "searchTags": "goggles, ski, snow, winter, sports",
+    "image": "images/characters/glasses/skigoggles_blackyellow/skigoggles_blackyellow.jpg"
   },
   {
     "objectName": "aviator_glasses_g.p3d",
@@ -5356,18 +5266,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/glasses",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "glasses, sunglasses, aviator, pilot, eyewear",
     "image": "images/characters/glasses/aviator_glasses_g.p3d.jpg"
-  },
-  {
-    "objectName": "eyemask_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/glasses",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/glasses/eyemask_f.p3d.jpg"
   },
   {
     "objectName": "eyemask_g.p3d",
@@ -5376,28 +5276,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/glasses",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "mask, carnival, costume, festival, party",
     "image": "images/characters/glasses/eyemask_g.p3d.jpg"
-  },
-  {
-    "objectName": "eyemask_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/glasses",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/glasses/eyemask_m.p3d.jpg"
-  },
-  {
-    "objectName": "eyepatch.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/glasses",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/glasses/eyepatch.p3d.jpg"
   },
   {
     "objectName": "eyepatch_g.p3d",
@@ -5406,28 +5286,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/glasses",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "eye patch, improvised, bandage, pirate, medical",
     "image": "images/characters/glasses/eyepatch_g.p3d.jpg"
-  },
-  {
-    "objectName": "eyepatch_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/glasses",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/glasses/eyepatch_m.p3d.jpg"
-  },
-  {
-    "objectName": "glasses_thick_frame.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/glasses",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/glasses/glasses_thick_frame.p3d.jpg"
   },
   {
     "objectName": "glasses_thick_frame_g.p3d",
@@ -5436,18 +5296,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/glasses",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "glasses, eyeglasses, thick frame, nerd, classic",
     "image": "images/characters/glasses/glasses_thick_frame_g.p3d.jpg"
-  },
-  {
-    "objectName": "glasses_thin_frame.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/glasses",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/glasses/glasses_thin_frame.p3d.jpg"
   },
   {
     "objectName": "glasses_thin_frame_g.p3d",
@@ -5456,7 +5306,7 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/glasses",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "glasses, eyeglasses, thin frame, slim, light",
     "image": "images/characters/glasses/glasses_thin_frame_g.p3d.jpg"
   },
   {
@@ -5466,28 +5316,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/glasses",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "nvg, night vision, goggles, military, stealth",
     "image": "images/characters/glasses/nvg.p3d.jpg"
-  },
-  {
-    "objectName": "nvg_headstrap.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/glasses",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/glasses/nvg_headstrap.p3d.jpg"
-  },
-  {
-    "objectName": "nvg_headstrap_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/glasses",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/glasses/nvg_headstrap_f.p3d.jpg"
   },
   {
     "objectName": "nvg_headstrap_g.p3d",
@@ -5496,18 +5326,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/glasses",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "nvg, night vision, headstrap, mount, goggles",
     "image": "images/characters/glasses/nvg_headstrap_g.p3d.jpg"
-  },
-  {
-    "objectName": "skigoggles_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/glasses",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/glasses/skigoggles_f.p3d.jpg"
   },
   {
     "objectName": "skigoggles_g.p3d",
@@ -5516,28 +5336,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/glasses",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "goggles, ski, snow, winter, sports",
     "image": "images/characters/glasses/skigoggles_g.p3d.jpg"
-  },
-  {
-    "objectName": "skigoggles_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/glasses",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/glasses/skigoggles_m.p3d.jpg"
-  },
-  {
-    "objectName": "sport_glasses.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/glasses",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/glasses/sport_glasses.p3d.jpg"
   },
   {
     "objectName": "sport_glasses_g.p3d",
@@ -5546,18 +5346,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/glasses",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "glasses, sport, wraparound, athletic, eyewear",
     "image": "images/characters/glasses/sport_glasses_g.p3d.jpg"
-  },
-  {
-    "objectName": "sunglasses_designer.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/glasses",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/glasses/sunglasses_designer.p3d.jpg"
   },
   {
     "objectName": "sunglasses_designer_g.p3d",
@@ -5566,18 +5356,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/glasses",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "glasses, sunglasses, designer, casual, eyewear",
     "image": "images/characters/glasses/sunglasses_designer_g.p3d.jpg"
-  },
-  {
-    "objectName": "tacgoggles.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/glasses",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/glasses/tacgoggles.p3d.jpg"
   },
   {
     "objectName": "tacgoggles_g.p3d",
@@ -5586,7 +5366,7 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/glasses",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "goggles, tactical, military, protective, eyewear",
     "image": "images/characters/glasses/tacgoggles_g.p3d.jpg"
   },
   {
@@ -5596,8 +5376,8 @@
     "modelType": "Config",
     "path": "dz/characters/gloves",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/gloves/malehands_base.jpg"
+    "searchTags": "hands, bare, unprotected, skin, no gloves",
+    "image": "images/characters/gloves/bare_hands.jpg"
   },
   {
     "objectName": "FemaleHands_Base",
@@ -5606,8 +5386,8 @@
     "modelType": "Config",
     "path": "dz/characters/gloves",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/gloves/femalehands_base.jpg"
+    "searchTags": "hands, bare, unprotected, skin, no gloves",
+    "image": "images/characters/gloves/bare_hands.jpg"
   },
   {
     "objectName": "WorkingGloves_Beige",
@@ -5616,8 +5396,8 @@
     "modelType": "Config",
     "path": "dz/characters/gloves",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/gloves/workinggloves_colorbase.jpg"
+    "searchTags": "gloves, working, leather, protective, labor",
+    "image": "images/characters/gloves/working_gloves_beige.jpg"
   },
   {
     "objectName": "WorkingGloves_Black",
@@ -5626,8 +5406,8 @@
     "modelType": "Config",
     "path": "dz/characters/gloves",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/gloves/workinggloves_colorbase.jpg"
+    "searchTags": "gloves, working, leather, protective, labor",
+    "image": "images/characters/gloves/working_gloves_black.jpg"
   },
   {
     "objectName": "WorkingGloves_Brown",
@@ -5636,8 +5416,8 @@
     "modelType": "Config",
     "path": "dz/characters/gloves",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/gloves/workinggloves_colorbase.jpg"
+    "searchTags": "gloves, working, leather, protective, labor",
+    "image": "images/characters/gloves/working_gloves_brown.jpg"
   },
   {
     "objectName": "WorkingGloves_Yellow",
@@ -5646,8 +5426,8 @@
     "modelType": "Config",
     "path": "dz/characters/gloves",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/gloves/workinggloves_colorbase.jpg"
+    "searchTags": "gloves, working, leather, protective, labor",
+    "image": "images/characters/gloves/working_gloves_yellow.jpg"
   },
   {
     "objectName": "HandsCover_Improvised",
@@ -5656,7 +5436,7 @@
     "modelType": "Config",
     "path": "dz/characters/gloves",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gloves, improvised, wrapping, bandage, cloth",
     "image": "images/characters/gloves/handscover_improvised.jpeg"
   },
   {
@@ -5666,8 +5446,8 @@
     "modelType": "Config",
     "path": "dz/characters/gloves",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/gloves/tacticalgloves_colorbase.jpg"
+    "searchTags": "gloves, tactical, military, grip, combat",
+    "image": "images/characters/gloves/tactical_gloves_beige.jpg"
   },
   {
     "objectName": "TacticalGloves_Black",
@@ -5676,8 +5456,8 @@
     "modelType": "Config",
     "path": "dz/characters/gloves",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/gloves/tacticalgloves_colorbase.jpg"
+    "searchTags": "gloves, tactical, military, grip, combat",
+    "image": "images/characters/gloves/tactical_gloves_black.jpg"
   },
   {
     "objectName": "TacticalGloves_Green",
@@ -5686,8 +5466,308 @@
     "modelType": "Config",
     "path": "dz/characters/gloves",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/gloves/tacticalgloves_colorbase.jpg"
+    "searchTags": "gloves, tactical, military, grip, combat",
+    "image": "images/characters/gloves/tactical_gloves_green.jpg"
+  },
+  {
+    "objectName": "NBCGlovesGray",
+    "inGameName": "NBC Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, nbc, hazmat, chemical, protective, medical",
+    "image": "images/characters/gloves/nbc_gloves_gray.jpeg"
+  },
+  {
+    "objectName": "NBCGlovesYellow",
+    "inGameName": "NBC Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, nbc, hazmat, chemical, protective, medical",
+    "image": "images/characters/gloves/nbc_gloves_yellow.jpeg"
+  },
+  {
+    "objectName": "SurgivalGloves_Blue",
+    "inGameName": "Surgival Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, surgical, medical, sterile, disposable",
+    "image": "images/characters/gloves/surgical_gloves_blue.jpeg"
+  },
+  {
+    "objectName": "SurgivalGloves_White",
+    "inGameName": "Surgival Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, surgical, medical, sterile, disposable",
+    "image": "images/characters/gloves/surgical_gloves_blue.jpeg"
+  },
+  {
+    "objectName": "SurgivalGloves_LightBlue",
+    "inGameName": "Surgival Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, surgical, medical, sterile, disposable",
+    "image": "images/characters/gloves/surgical_gloves_light_blue.jpeg"
+  },
+  {
+    "objectName": "SurgivalGloves_Green",
+    "inGameName": "Surgival Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, surgical, medical, sterile, disposable",
+    "image": "images/characters/gloves/surgical_gloves_green.jpeg"
+  },
+  {
+    "objectName": "LeatherGloves_Natural",
+    "inGameName": "Leather Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, leather, dress, warm, classic",
+    "image": "images/characters/gloves/leather_gloves_natural.jpeg"
+  },
+  {
+    "objectName": "LeatherGloves_Beige",
+    "inGameName": "Leather Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, leather, dress, warm, classic",
+    "image": "images/characters/gloves/leather_gloves_beige.jpeg"
+  },
+  {
+    "objectName": "LeatherGloves_Black",
+    "inGameName": "Leather Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, leather, dress, warm, classic",
+    "image": "images/characters/gloves/leather_gloves_black.jpeg"
+  },
+  {
+    "objectName": "LeatherGloves_Brown",
+    "inGameName": "Leather Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, leather, dress, warm, classic",
+    "image": "images/characters/gloves/leather_gloves_brown.jpeg"
+  },
+  {
+    "objectName": "OMNOGloves_Gray",
+    "inGameName": "OMNO Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, tactical, military, grip, combat",
+    "image": "images/characters/gloves/omno_gloves_gray.jpeg"
+  },
+  {
+    "objectName": "OMNOGloves_Brown",
+    "inGameName": "OMNO Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, tactical, military, grip, combat",
+    "image": "images/characters/gloves/omno_gloves_brown.jpeg"
+  },
+  {
+    "objectName": "WoolGloves_Green",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, wool, knitted, warm, winter",
+    "image": "images/characters/gloves/wool_gloves_green.jpeg"
+  },
+  {
+    "objectName": "WoolGloves_Tan",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, wool, knitted, warm, winter",
+    "image": "images/characters/gloves/wool_gloves_tan.jpeg"
+  },
+  {
+    "objectName": "WoolGloves_Black",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, wool, knitted, warm, winter",
+    "image": "images/characters/gloves/wool_gloves_black.jpeg"
+  },
+  {
+    "objectName": "WoolGloves_White",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, wool, knitted, warm, winter",
+    "image": "images/characters/gloves/wool_gloves_white.jpeg"
+  },
+  {
+    "objectName": "WoolGloves_ChristmasBlue",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, wool, knitted, warm, winter, festive, santa, seasonal",
+    "image": "images/characters/gloves/wool_gloves_christmas_blue.jpeg"
+  },
+  {
+    "objectName": "WoolGloves_ChristmasRed",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, wool, knitted, warm, winter, festive, santa, seasonal",
+    "image": "images/characters/gloves/wool_gloves_christmas_red.jpeg"
+  },
+  {
+    "objectName": "WoolGloves_Fingerless_Green",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, fingerless, wool, winter, dexterity",
+    "image": "images/characters/gloves/wool_gloves_christmas_red.jpeg"
+  },
+  {
+    "objectName": "WoolGloves_Fingerless_Tan",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, fingerless, wool, winter, dexterity",
+    "image": "images/characters/gloves/wool_gloves_fingerless_tan.jpeg"
+  },
+  {
+    "objectName": "WoolGloves_Fingerless_Black",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, fingerless, wool, winter, dexterity",
+    "image": "images/characters/gloves/wool_gloves_fingerless_black.jpeg"
+  },
+  {
+    "objectName": "WoolGloves_Fingerless_White",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, fingerless, wool, winter, dexterity",
+    "image": "images/characters/gloves/wool_gloves_fingerless_white.jpeg"
+  },
+  {
+    "objectName": "WoolGloves_Fingerless_ChristmasBlue",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, fingerless, wool, winter, dexterity, festive, santa, seasonal",
+    "image": "images/characters/gloves/wool_gloves_fingerless_christmas_blue.jpeg"
+  },
+  {
+    "objectName": "WoolGloves_Fingerless_ChristmasRed",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, fingerless, wool, winter, dexterity, festive, santa, seasonal",
+    "image": "images/characters/gloves/wool_gloves_fingerless_christmas_red.jpeg"
+  },
+  {
+    "objectName": "PaddedGloves_Brown",
+    "inGameName": "Padded Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, padded, motorcycle, protective, armored",
+    "image": "images/characters/gloves/padded_gloves_brown.jpeg"
+  },
+  {
+    "objectName": "PaddedGloves_Beige",
+    "inGameName": "Padded Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, padded, motorcycle, protective, armored",
+    "image": "images/characters/gloves/padded_gloves_beige.jpeg"
+  },
+  {
+    "objectName": "PaddedGloves_Threat",
+    "inGameName": "Padded Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, padded, motorcycle, protective, armored",
+    "image": "images/characters/gloves/padded_gloves_threat.jpeg"
+  },
+  {
+    "objectName": "SkiGloves_Blue",
+    "inGameName": "Ski Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, ski, insulated, snow, winter",
+    "image": "images/characters/gloves/ski_gloves_blue.jpeg"
+  },
+  {
+    "objectName": "SkiGloves_Red",
+    "inGameName": "Ski Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, ski, insulated, snow, winter",
+    "image": "images/characters/gloves/ski_gloves_red.jpeg"
+  },
+  {
+    "objectName": "SkiGloves_90s",
+    "inGameName": "Ski Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, ski, insulated, snow, winter",
+    "image": "images/characters/gloves/ski_gloves_90s.jpeg"
   },
   {
     "objectName": "hands3_f.p3d",
@@ -5696,7 +5776,7 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/gloves",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "hands, bare, unprotected, skin, no gloves",
     "image": "images/characters/gloves/bare_hands.jpg"
   },
   {
@@ -5706,18 +5786,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/gloves",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "hands, bare, unprotected, skin, no gloves",
     "image": "images/characters/gloves/bare_hands.jpg"
-  },
-  {
-    "objectName": "handscover_improvised_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/handscover_improvised_f.p3d.jpg"
   },
   {
     "objectName": "handscover_improvised_g.p3d",
@@ -5726,58 +5796,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/gloves",
     "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/handscover_improvised_g.p3d.jpg"
-  },
-  {
-    "objectName": "handscover_improvised_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/handscover_improvised_m.p3d.jpg"
-  },
-  {
-    "objectName": "hands_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/hands_f.p3d.jpg"
-  },
-  {
-    "objectName": "hands_m_above0.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/hands_m_above0.p3d.jpg"
-  },
-  {
-    "objectName": "hands_new_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/hands_new_m.p3d.jpg"
-  },
-  {
-    "objectName": "leather_gloves_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/leather_gloves_f.p3d.jpg"
+    "searchTags": "gloves, improvised, wrapping, bandage, cloth",
+    "image": "images/characters/gloves/handscover_improvised.jpg"
   },
   {
     "objectName": "leather_gloves_g.p3d",
@@ -5786,28 +5806,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/gloves",
     "usableOnConsole": false,
-    "searchTags": "LeatherGloves_Natural, LeatherGloves_Beige, LeatherGloves_Black, LeatherGloves_Brown",
+    "searchTags": "gloves, leather, dress, warm, classic",
     "image": "images/characters/gloves/leather_gloves_beige.jpeg"
-  },
-  {
-    "objectName": "leather_gloves_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/leather_gloves_m.p3d.jpg"
-  },
-  {
-    "objectName": "nbc_gloves_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/nbc_gloves_f.p3d.jpg"
   },
   {
     "objectName": "nbc_gloves_g.p3d",
@@ -5816,28 +5816,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/gloves",
     "usableOnConsole": false,
-    "searchTags": "NBCGlovesGray, NBCGloves_Yellow",
+    "searchTags": "gloves, nbc, hazmat, chemical, protective, medical",
     "image": "images/characters/gloves/nbc_gloves_gray.jpeg"
-  },
-  {
-    "objectName": "nbc_gloves_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/nbc_gloves_m.p3d.jpg"
-  },
-  {
-    "objectName": "omno_gloves_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/omno_gloves_f.p3d.jpg"
   },
   {
     "objectName": "omno_gloves_g.p3d",
@@ -5846,28 +5826,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/gloves",
     "usableOnConsole": false,
-    "searchTags": "OMNOGloves_Gray, OMNOGloves_Brown",
+    "searchTags": "gloves, tactical, military, grip, combat",
     "image": "images/characters/gloves/omno_gloves_brown.jpeg"
-  },
-  {
-    "objectName": "omno_gloves_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/omno_gloves_m.p3d.jpg"
-  },
-  {
-    "objectName": "paddedgloves_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/paddedgloves_f.p3d.jpg"
   },
   {
     "objectName": "paddedgloves_g.p3d",
@@ -5876,28 +5836,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/gloves",
     "usableOnConsole": false,
-    "searchTags": "PaddedGloves_Brown, PaddedGloves_Beige, PaddedGloves_Threat",
+    "searchTags": "gloves, padded, motorcycle, protective, armored",
     "image": "images/characters/gloves/padded_gloves_beige.jpeg"
-  },
-  {
-    "objectName": "paddedgloves_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/paddedgloves_m.p3d.jpg"
-  },
-  {
-    "objectName": "skigloves_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/skigloves_f.p3d.jpg"
   },
   {
     "objectName": "skigloves_g.p3d",
@@ -5906,28 +5846,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/gloves",
     "usableOnConsole": false,
-    "searchTags": "SkiGloves_Blue, SkiGloves_Red, SkiGloves_90s",
+    "searchTags": "gloves, ski, insulated, snow, winter",
     "image": "images/characters/gloves/ski_gloves_90s.jpeg"
-  },
-  {
-    "objectName": "skigloves_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/skigloves_m.p3d.jpg"
-  },
-  {
-    "objectName": "surgical_gloves_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/surgical_gloves_f.p3d.jpg"
   },
   {
     "objectName": "surgical_gloves_g.p3d",
@@ -5936,28 +5856,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/gloves",
     "usableOnConsole": false,
-    "searchTags": "SurgicalGloves_Blue, SurgicalGloves_LightBlue, SurgicalGloves_Green, SurgicalGloves_White",
+    "searchTags": "gloves, surgical, medical, sterile, disposable",
     "image": "images/characters/gloves/surgical_gloves_blue.jpeg"
-  },
-  {
-    "objectName": "surgical_gloves_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/surgical_gloves_m.p3d.jpg"
-  },
-  {
-    "objectName": "tactical_gloves_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/tactical_gloves_f.p3d.jpg"
   },
   {
     "objectName": "tactical_gloves_g.p3d",
@@ -5966,28 +5866,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/gloves",
     "usableOnConsole": false,
-    "searchTags": "TacticalGloves_Black, TacticalGloves_Beige, TacticalGloves_Green",
+    "searchTags": "gloves, tactical, military, grip, combat",
     "image": "images/characters/gloves/tactical_gloves_beige.jpeg"
-  },
-  {
-    "objectName": "tactical_gloves_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/tactical_gloves_m.p3d.jpg"
-  },
-  {
-    "objectName": "woolglovesfingerless_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/woolglovesfingerless_f.p3d.jpg"
   },
   {
     "objectName": "woolglovesfingerless_g.p3d",
@@ -5996,28 +5876,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/gloves",
     "usableOnConsole": false,
-    "searchTags": "WoolGlovesFingerless_Green, WoolGlovesFingerless_Black, WoolGlovesFingerless_Tan, WoolGlovesFingerless_White, WoolGlovesFingerless_ChristmasBlue, WoolGlovesFingerless_ChristmasRed",
+    "searchTags": "gloves, fingerless, wool, winter, dexterity",
     "image": "images/characters/gloves/wool_glovesfingerless_green.jpeg"
-  },
-  {
-    "objectName": "woolglovesfingerless_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/woolglovesfingerless_m.p3d.jpg"
-  },
-  {
-    "objectName": "woolgloves_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/woolgloves_f.p3d.jpg"
   },
   {
     "objectName": "woolgloves_g.p3d",
@@ -6026,28 +5886,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/gloves",
     "usableOnConsole": false,
-    "searchTags": "WoolGloves_Green, WoolGloves_Black, WoolGloves_Tan, WoolGloves_White, WoolGloves_ChristmasBlue, WoolGloves_ChristmasRed",
+    "searchTags": "gloves, wool, knitted, warm, winter",
     "image": "images/characters/gloves/wool_gloves_green.jpeg"
-  },
-  {
-    "objectName": "woolgloves_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/woolgloves_m.p3d.jpg"
-  },
-  {
-    "objectName": "working_gloves_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/working_gloves_f.p3d.jpg"
   },
   {
     "objectName": "working_gloves_g.p3d",
@@ -6056,18 +5896,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/gloves",
     "usableOnConsole": false,
-    "searchTags": "WorkingGloves_Black, WorkingGloves_Beige, WorkingGloves_Brown, WorkingGloves_Yellow",
+    "searchTags": "gloves, working, leather, protective, labor",
     "image": "images/characters/gloves/working_gloves_beige.jpeg"
-  },
-  {
-    "objectName": "working_gloves_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/gloves/working_gloves_m.p3d.jpg"
   },
   {
     "objectName": "GorkaHelmetVisor",
@@ -34776,7 +34606,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "medium",
-    "image": "images/rocks/dzrocksrock_apart1.p3d.jpeg"
+    "image": "images/rocks/rock_apart1.p3d.jpg"
   },
   {
     "objectName": "rock_apart2.p3d",
@@ -34786,7 +34616,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "medium",
-    "image": "images/rocks/dzrocksrock_apart2.p3d.jpeg"
+    "image": "images/rocks/rock_apart2.p3d.jpg"
   },
   {
     "objectName": "rock_bright_apart1.p3d",
@@ -34796,7 +34626,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "medium",
-    "image": "images/rocks/dzrocksrock_bright_apart1.p3d.jpeg"
+    "image": "images/rocks/rock_bright_apart1.p3d.jpg"
   },
   {
     "objectName": "rock_bright_apart2.p3d",
@@ -34806,7 +34636,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "small",
-    "image": "images/rocks/dzrocksrock_bright_apart2.p3d.jpeg"
+    "image": "images/rocks/rock_bright_apart2.p3d.jpg"
   },
   {
     "objectName": "rock_bright_monolith1.p3d",
@@ -34816,7 +34646,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "large",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_bright_monolith1.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_bright_monolith1.p3d.jpg"
   },
   {
     "objectName": "rock_bright_monolith2.p3d",
@@ -34826,7 +34656,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "medium",
-    "image": "images/rocks/dzrocksrock_bright_monolith2.p3d.jpeg"
+    "image": "images/rocks/rock_bright_monolith2.p3d.jpg"
   },
   {
     "objectName": "rock_bright_monolith3.p3d",
@@ -34836,7 +34666,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "medium",
-    "image": "images/rocks/dzrocksrock_bright_monolith3.p3d.jpeg"
+    "image": "images/rocks/rock_bright_monolith3.p3d.jpg"
   },
   {
     "objectName": "rock_bright_monolith4.p3d",
@@ -34856,7 +34686,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "medium",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_spike1.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_spike1.p3d.jpg"
   },
   {
     "objectName": "rock_bright_spike2.p3d",
@@ -34866,7 +34696,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/rocks/dzrocksrock_bright_spike2.p3d.jpeg"
+    "image": "images/rocks/rock_bright_spike2.p3d.jpg"
   },
   {
     "objectName": "rock_bright_spike3.p3d",
@@ -34876,7 +34706,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "medium",
-    "image": "images/rocks/dzrocksrock_bright_spike3.p3d.jpeg"
+    "image": "images/rocks/rock_bright_spike3.p3d.jpg"
   },
   {
     "objectName": "rock_bright_wallh1.p3d",
@@ -34886,7 +34716,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "large, long",
-    "image": "images/rocks/dzrocksrock_bright_wallh1.p3d.jpeg"
+    "image": "images/rocks/rock_bright_wallh1.p3d.jpg"
   },
   {
     "objectName": "rock_bright_wallh2.p3d",
@@ -34896,7 +34726,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "large, long",
-    "image": "images/rocks/dzrocksrock_bright_wallh2.p3d.jpeg"
+    "image": "images/rocks/rock_bright_wallh2.p3d.jpg"
   },
   {
     "objectName": "rock_bright_wallh3.p3d",
@@ -34906,7 +34736,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "medium, long",
-    "image": "images/rocks/dzrocksrock_bright_wallh3.p3d.jpeg"
+    "image": "images/rocks/rock_bright_wallh3.p3d.jpg"
   },
   {
     "objectName": "rock_bright_wallv.p3d",
@@ -34916,7 +34746,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "large, tall",
-    "image": "images/rocks/dzrocksrock_bright_wallv.p3d.jpeg"
+    "image": "images/rocks/rock_bright_wallv.p3d.jpg"
   },
   {
     "objectName": "rock_monolith1.p3d",
@@ -34926,7 +34756,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "large",
-    "image": "images/rocks/dzrocksrock_monolith1.p3d.jpeg"
+    "image": "images/rocks/rock_monolith1.p3d.jpg"
   },
   {
     "objectName": "rock_monolith2.p3d",
@@ -34936,7 +34766,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "medium",
-    "image": "images/rocks/dzrocksrock_monolith2.p3d.jpeg"
+    "image": "images/rocks/rock_monolith2.p3d.jpg"
   },
   {
     "objectName": "rock_monolith3.p3d",
@@ -34946,7 +34776,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "medium",
-    "image": "images/rocks/dzrocksrock_monolith3.p3d.jpeg"
+    "image": "images/rocks/rock_monolith3.p3d.jpg"
   },
   {
     "objectName": "rock_monolith4.p3d",
@@ -34956,7 +34786,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "medium",
-    "image": "images/rocks/dzrocksrock_monolith4.p3d.jpeg"
+    "image": "images/rocks/rock_monolith4.p3d.jpg"
   },
   {
     "objectName": "rock_spike1.p3d",
@@ -34966,7 +34796,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "large",
-    "image": "images/rocks/dzrocksrock_spike1.p3d.jpeg"
+    "image": "images/rocks/rock_spike1.p3d.jpg"
   },
   {
     "objectName": "rock_spike2.p3d",
@@ -34976,7 +34806,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "medium",
-    "image": "images/rocks/dzrocksrock_spike2.p3d.jpeg"
+    "image": "images/rocks/rock_spike2.p3d.jpg"
   },
   {
     "objectName": "rock_spike3.p3d",
@@ -34986,7 +34816,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "medium",
-    "image": "images/rocks/dzrocksrock_spike3.p3d.jpeg"
+    "image": "images/rocks/rock_spike3.p3d.jpg"
   },
   {
     "objectName": "rock_wallh1.p3d",
@@ -34996,7 +34826,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "large, long",
-    "image": "images/rocks/dzrocksrock_wallh1.p3d.jpeg"
+    "image": "images/rocks/rock_wallh1.p3d.jpg"
   },
   {
     "objectName": "rock_wallh2.p3d",
@@ -35006,7 +34836,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "large, long",
-    "image": "images/rocks/dzrocksrock_wallh2.p3d.jpeg"
+    "image": "images/rocks/rock_wallh2.p3d.jpg"
   },
   {
     "objectName": "rock_wallh3.p3d",
@@ -35016,7 +34846,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "large, tall",
-    "image": "images/structures/walls/dzrocksrock_wallh3.jpg"
+    "image": "images/structures/walls/rock_wallh3.jpg"
   },
   {
     "objectName": "rock_wallv.p3d",
@@ -35026,7 +34856,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "large, tall",
-    "image": "images/rocks/dzrocksrock_wallv.p3d.jpeg"
+    "image": "images/rocks/rock_wallv.p3d.jpg"
   },
   {
     "objectName": "stone1.p3d",
@@ -35036,7 +34866,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "small",
-    "image": "images/rocks/dzrocksstone1.p3d.jpeg"
+    "image": "images/rocks/stone1.p3d.jpg"
   },
   {
     "objectName": "stone2.p3d",
@@ -35046,7 +34876,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "small",
-    "image": "images/rocks/dzrocksstone2.p3d.jpeg"
+    "image": "images/rocks/stone2.p3d.jpg"
   },
   {
     "objectName": "stone3.p3d",
@@ -35056,7 +34886,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "small",
-    "image": "images/rocks/dzrocksstone3.p3d.jpeg"
+    "image": "images/rocks/stone3.p3d.jpg"
   },
   {
     "objectName": "stone4.p3d",
@@ -35066,7 +34896,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "small",
-    "image": "images/rocks/dzrocksstone4.p3d.jpeg"
+    "image": "images/rocks/stone4.p3d.jpg"
   },
   {
     "objectName": "stone5.p3d",
@@ -35076,7 +34906,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "small",
-    "image": "images/rocks/dzrocksstone5.p3d.jpeg"
+    "image": "images/rocks/stone5.p3d.jpg"
   },
   {
     "objectName": "stone5_trail_b.p3d",
@@ -35086,7 +34916,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "small",
-    "image": "images/rocks/dzrocksstone5_trail_b.p3d.jpeg"
+    "image": "images/rocks/stone5_trail_b.p3d.jpg"
   },
   {
     "objectName": "stone5_trail_g.p3d",
@@ -35096,7 +34926,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "small",
-    "image": "images/rocks/dzrocksstone5_trail_g.p3d.jpeg"
+    "image": "images/rocks/stone5_trail_g.p3d.jpg"
   },
   {
     "objectName": "stone5_trail_r.p3d",
@@ -35106,7 +34936,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "small",
-    "image": "images/rocks/dzrocksstone5_trail_r.p3d.jpeg"
+    "image": "images/rocks/stone5_trail_r.p3d.jpg"
   },
   {
     "objectName": "stone5_trail_y.p3d",
@@ -35116,7 +34946,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "small",
-    "image": "images/rocks/dzrocksstone5_trail_y.p3d.jpeg"
+    "image": "images/rocks/stone5_trail_y.p3d.jpg"
   },
   {
     "objectName": "stones_erosion.p3d",
@@ -35126,7 +34956,7 @@
     "path": "dz/rocks",
     "usableOnConsole": true,
     "searchTags": "small",
-    "image": "images/rocks/dzrocksstones_erosion.p3d.jpeg"
+    "image": "images/rocks/stones_erosion.p3d.jpg"
   },
   {
     "objectName": "snow_rock_apart1.p3d",
@@ -35136,7 +34966,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "medium",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_apart1.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_apart1.p3d.jpg"
   },
   {
     "objectName": "snow_rock_apart2.p3d",
@@ -35146,7 +34976,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "medium",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_apart2.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_apart2.p3d.jpg"
   },
   {
     "objectName": "snow_rock_bright_apart1.p3d",
@@ -35156,7 +34986,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "medium",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_bright_apart1.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_bright_apart1.p3d.jpg"
   },
   {
     "objectName": "snow_rock_bright_apart2.p3d",
@@ -35166,7 +34996,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "small",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_bright_apart2.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_bright_apart2.p3d.jpg"
   },
   {
     "objectName": "snow_rock_bright_monolith1.p3d",
@@ -35176,7 +35006,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "large",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_bright_monolith1.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_bright_monolith1.p3d.jpg"
   },
   {
     "objectName": "snow_rock_bright_monolith2.p3d",
@@ -35186,7 +35016,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "medium",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_bright_monolith2.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_bright_monolith2.p3d.jpg"
   },
   {
     "objectName": "snow_rock_bright_monolith3.p3d",
@@ -35196,7 +35026,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "medium",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_bright_monolith3.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_bright_monolith3.p3d.jpg"
   },
   {
     "objectName": "snow_rock_bright_monolith4.p3d",
@@ -35206,7 +35036,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "medium",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_bright_monolith4.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_bright_monolith4.p3d.jpg"
   },
   {
     "objectName": "snow_rock_bright_spike1.p3d",
@@ -35216,7 +35046,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "medium",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_bright_spike1.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_bright_spike1.p3d.jpg"
   },
   {
     "objectName": "snow_rock_bright_spike2.p3d",
@@ -35226,7 +35056,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_bright_spike2.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_bright_spike2.p3d.jpg"
   },
   {
     "objectName": "snow_rock_bright_spike3.p3d",
@@ -35236,7 +35066,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "medium",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_bright_spike3.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_bright_spike3.p3d.jpg"
   },
   {
     "objectName": "snow_rock_bright_wallh1.p3d",
@@ -35246,7 +35076,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "large, long",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_bright_wallh1.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_bright_wallh1.p3d.jpg"
   },
   {
     "objectName": "snow_rock_bright_wallh2.p3d",
@@ -35256,7 +35086,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "large, long",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_bright_wallh2.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_bright_wallh2.p3d.jpg"
   },
   {
     "objectName": "snow_rock_bright_wallh3.p3d",
@@ -35266,7 +35096,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "medium, long",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_bright_wallh3.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_bright_wallh3.p3d.jpg"
   },
   {
     "objectName": "snow_rock_bright_wallv.p3d",
@@ -35276,7 +35106,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "large, tall",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_bright_wallv.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_bright_wallv.p3d.jpg"
   },
   {
     "objectName": "snow_rock_monolith1.p3d",
@@ -35286,7 +35116,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "large",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_monolith1.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_monolith1.p3d.jpg"
   },
   {
     "objectName": "snow_rock_monolith2.p3d",
@@ -35296,7 +35126,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "medium",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_monolith2.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_monolith2.p3d.jpg"
   },
   {
     "objectName": "snow_rock_monolith3.p3d",
@@ -35306,7 +35136,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "medium",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_monolith3.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_monolith3.p3d.jpg"
   },
   {
     "objectName": "snow_rock_monolith4.p3d",
@@ -35316,7 +35146,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "medium",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_monolith4.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_monolith4.p3d.jpg"
   },
   {
     "objectName": "snow_rock_spike1.p3d",
@@ -35326,7 +35156,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "large",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_spike1.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_spike1.p3d.jpg"
   },
   {
     "objectName": "snow_rock_spike2.p3d",
@@ -35336,7 +35166,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "medium",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_spike2.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_spike2.p3d.jpg"
   },
   {
     "objectName": "snow_rock_spike3.p3d",
@@ -35346,7 +35176,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "medium",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_spike3.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_spike3.p3d.jpg"
   },
   {
     "objectName": "snow_rock_wallh1.p3d",
@@ -35356,7 +35186,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "large, long",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_wallh1.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_wallh1.p3d.jpg"
   },
   {
     "objectName": "snow_rock_wallh2.p3d",
@@ -35366,7 +35196,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "large, long",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_wallh2.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_wallh2.p3d.jpg"
   },
   {
     "objectName": "snow_rock_wallh3.p3d",
@@ -35376,7 +35206,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "large, tall",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_wallh3.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_wallh3.p3d.jpg"
   },
   {
     "objectName": "snow_rock_wallv.p3d",
@@ -35386,7 +35216,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "large, tall",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_rock_wallv.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_rock_wallv.p3d.jpg"
   },
   {
     "objectName": "snow_stone1.p3d",
@@ -35396,7 +35226,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "small",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_stone1.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_stone1.p3d.jpg"
   },
   {
     "objectName": "snow_stone2.p3d",
@@ -35406,7 +35236,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "small",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_stone2.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_stone2.p3d.jpg"
   },
   {
     "objectName": "snow_stone3.p3d",
@@ -35416,7 +35246,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "small",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_stone3.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_stone3.p3d.jpg"
   },
   {
     "objectName": "snow_stone4.p3d",
@@ -35436,7 +35266,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "small",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_stone5.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_stone5.p3d.jpg"
   },
   {
     "objectName": "snow_stone5_trail_b.p3d",
@@ -35446,7 +35276,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "small",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_stone5_trail_b.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_stone5_trail_b.p3d.jpg"
   },
   {
     "objectName": "snow_stone5_trail_g.p3d",
@@ -35456,7 +35286,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "small",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_stone5_trail_g.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_stone5_trail_g.p3d.jpg"
   },
   {
     "objectName": "snow_stone5_trail_r.p3d",
@@ -35466,7 +35296,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "small",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_stone5_trail_r.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_stone5_trail_r.p3d.jpg"
   },
   {
     "objectName": "snow_stone5_trail_y.p3d",
@@ -35476,7 +35306,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "small",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_stone5_trail_y.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_stone5_trail_y.p3d.jpg"
   },
   {
     "objectName": "snow_stones_erosion.p3d",
@@ -35486,7 +35316,7 @@
     "path": "dz/rocks/snow_rocks",
     "usableOnConsole": false,
     "searchTags": "small",
-    "image": "images/rocks/snow_rocks/dzrockssnow_rockssnow_stones_erosion.p3d.jpeg"
+    "image": "images/rocks/snow_rocks/snow_rockssnow_stones_erosion.p3d.jpg"
   },
   {
     "objectName": "rock_wallh4.p3d",
@@ -35496,7 +35326,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "medium, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissrock_wallh4.p3d.jpeg"
+    "image": "images/rocks_bliss/rock_wallh4.p3d.jpg"
   },
   {
     "objectName": "rock_wallh5.p3d",
@@ -35506,7 +35336,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "medium, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissrock_wallh5.p3d.jpeg"
+    "image": "images/rocks_bliss/rock_wallh5.p3d.jpg"
   },
   {
     "objectName": "rock_wallh6.p3d",
@@ -35516,7 +35346,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "medium, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissrock_wallh6.p3d.jpeg"
+    "image": "images/rocks_bliss/rock_wallh6.p3d.jpg"
   },
   {
     "objectName": "stone10.p3d",
@@ -35526,7 +35356,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone9.p3d.jpeg"
+    "image": "images/rocks_bliss/stone9.p3d.jpg"
   },
   {
     "objectName": "stone10_moss.p3d",
@@ -35536,7 +35366,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone9.p3d.jpeg"
+    "image": "images/rocks_bliss/stone9.p3d.jpg"
   },
   {
     "objectName": "stone10_moss_lc.p3d",
@@ -35546,7 +35376,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone9.p3d.jpeg"
+    "image": "images/rocks_bliss/stone9.p3d.jpg"
   },
   {
     "objectName": "stone6.p3d",
@@ -35556,7 +35386,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone6.p3d.jpeg"
+    "image": "images/rocks_bliss/stone6.p3d.jpg"
   },
   {
     "objectName": "stone6_moss.p3d",
@@ -35566,7 +35396,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone6_moss.p3d.jpeg"
+    "image": "images/rocks_bliss/stone6_moss.p3d.jpg"
   },
   {
     "objectName": "stone6_moss_lc.p3d",
@@ -35576,7 +35406,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone6_moss_lc.p3d.jpeg"
+    "image": "images/rocks_bliss/stone6_moss_lc.p3d.jpg"
   },
   {
     "objectName": "stone7.p3d",
@@ -35586,7 +35416,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone7.p3d.jpeg"
+    "image": "images/rocks_bliss/stone7.p3d.jpg"
   },
   {
     "objectName": "stone7_moss.p3d",
@@ -35596,7 +35426,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone7_moss.p3d.jpeg"
+    "image": "images/rocks_bliss/stone7_moss.p3d.jpg"
   },
   {
     "objectName": "stone7_moss_lc.p3d",
@@ -35606,7 +35436,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone7_moss_lc.p3d.jpeg"
+    "image": "images/rocks_bliss/stone7_moss_lc.p3d.jpg"
   },
   {
     "objectName": "stone7_trail_b.p3d",
@@ -35616,7 +35446,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone7_trail_b.p3d.jpeg"
+    "image": "images/rocks_bliss/stone7_trail_b.p3d.jpg"
   },
   {
     "objectName": "stone7_trail_g.p3d",
@@ -35626,7 +35456,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone7_trail_g.p3d.jpeg"
+    "image": "images/rocks_bliss/stone7_trail_g.p3d.jpg"
   },
   {
     "objectName": "stone7_trail_r.p3d",
@@ -35636,7 +35466,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone7_trail_r.p3d.jpeg"
+    "image": "images/rocks_bliss/stone7_trail_r.p3d.jpg"
   },
   {
     "objectName": "stone7_trail_y.p3d",
@@ -35646,7 +35476,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone7_trail_y.p3d.jpeg"
+    "image": "images/rocks_bliss/stone7_trail_y.p3d.jpg"
   },
   {
     "objectName": "stone8.p3d",
@@ -35656,7 +35486,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone8.p3d.jpeg"
+    "image": "images/rocks_bliss/stone8.p3d.jpg"
   },
   {
     "objectName": "stone8_carving.p3d",
@@ -35666,7 +35496,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia, art",
-    "image": "images/rocks_bliss/dzrocks_blissstone8_carving.p3d.jpeg"
+    "image": "images/rocks_bliss/stone8_carving.p3d.jpg"
   },
   {
     "objectName": "stone8_moss.p3d",
@@ -35676,7 +35506,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone8_moss.p3d.jpeg"
+    "image": "images/rocks_bliss/stone8_moss.p3d.jpg"
   },
   {
     "objectName": "stone8_moss_lc.p3d",
@@ -35686,7 +35516,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone8_moss_lc.p3d.jpeg"
+    "image": "images/rocks_bliss/stone8_moss_lc.p3d.jpg"
   },
   {
     "objectName": "stone9.p3d",
@@ -35696,7 +35526,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone9.p3d.jpeg"
+    "image": "images/rocks_bliss/stone9.p3d.jpg"
   },
   {
     "objectName": "stone9_moss.p3d",
@@ -35706,7 +35536,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone9_moss.p3d.jpeg"
+    "image": "images/rocks_bliss/stone9_moss.p3d.jpg"
   },
   {
     "objectName": "stone9_moss_lc.p3d",
@@ -35716,7 +35546,7 @@
     "path": "dz/rocks_bliss",
     "usableOnConsole": true,
     "searchTags": "small, livonia",
-    "image": "images/rocks_bliss/dzrocks_blissstone9_moss_lc.p3d.jpeg"
+    "image": "images/rocks_bliss/stone9_moss_lc.p3d.jpg"
   },
   {
     "objectName": "rock_lava_boulder1.p3d",
@@ -35726,7 +35556,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "large, volcano, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_lava_boulder1.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_lava_boulder1.p3d.jpeg"
   },
   {
     "objectName": "rock_lava_boulder2.p3d",
@@ -35736,7 +35566,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "large, volcano, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_lava_boulder2.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_lava_boulder2.p3d.jpeg"
   },
   {
     "objectName": "rock_lava_boulder3.p3d",
@@ -35746,7 +35576,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "medium, volcano, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_lava_boulder3.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_lava_boulder3.p3d.jpeg"
   },
   {
     "objectName": "rock_lava_boulder4.p3d",
@@ -35756,7 +35586,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "medium, volcano, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_lava_boulder4.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_lava_boulder4.p3d.jpeg"
   },
   {
     "objectName": "rock_monolith5.p3d",
@@ -35766,7 +35596,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "medium, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_monolith5.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_monolith5.p3d.jpeg"
   },
   {
     "objectName": "rock_monolith5_int.p3d",
@@ -35776,7 +35606,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "medium, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_monolith5_int.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_monolith5_int.p3d.jpeg"
   },
   {
     "objectName": "rock_monolith5_snow.p3d",
@@ -35786,7 +35616,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "medium, snow, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_monolith5_snow.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_monolith5_snow.p3d.jpeg"
   },
   {
     "objectName": "rock_spike4.p3d",
@@ -35796,7 +35626,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "large, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_spike4.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_spike4.p3d.jpeg"
   },
   {
     "objectName": "rock_spike4_int.p3d",
@@ -35806,7 +35636,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "medium, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_spike4_int.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_spike4_int.p3d.jpeg"
   },
   {
     "objectName": "rock_spike4_snow.p3d",
@@ -35816,7 +35646,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_spike4_snow.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_spike4_snow.p3d.jpeg"
   },
   {
     "objectName": "rock_wallh7_long.p3d",
@@ -35826,7 +35656,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "large, long, tall, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_wallh7_long.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_wallh7_long.p3d.jpeg"
   },
   {
     "objectName": "rock_wallh7_long_int.p3d",
@@ -35836,7 +35666,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "large, long, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_wallh7_long_int.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_wallh7_long_int.p3d.jpeg"
   },
   {
     "objectName": "rock_wallh7_long_snow.p3d",
@@ -35846,7 +35676,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "large, long, sakhal, snow",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_wallh7_long_snow.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_wallh7_long_snow.p3d.jpeg"
   },
   {
     "objectName": "rock_wallh7_round.p3d",
@@ -35856,7 +35686,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "large, tall, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_wallh7_round.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_wallh7_round.p3d.jpeg"
   },
   {
     "objectName": "rock_wallh7_round_int.p3d",
@@ -35866,7 +35696,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "large, tall, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_wallh7_round_int.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_wallh7_round_int.p3d.jpeg"
   },
   {
     "objectName": "rock_wallh7_round_snow.p3d",
@@ -35876,7 +35706,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "large, tall, snow, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_wallh7_round_snow.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_wallh7_round_snow.p3d.jpeg"
   },
   {
     "objectName": "rock_wallh7_tall.p3d",
@@ -35886,7 +35716,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "large, tall, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_wallh7_tall.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_wallh7_tall.p3d.jpeg"
   },
   {
     "objectName": "rock_wallh7_tall_int.p3d",
@@ -35896,7 +35726,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "large, tall, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_wallh7_tall_int.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_wallh7_tall_int.p3d.jpeg"
   },
   {
     "objectName": "rock_wallh7_tall_painting1.p3d",
@@ -35906,7 +35736,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "medium, art, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_wallh7_tall_painting1.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_wallh7_tall_painting1.p3d.jpeg"
   },
   {
     "objectName": "rock_wallh7_tall_snow.p3d",
@@ -35916,7 +35746,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "large, tall, snow, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalrock_wallh7_tall_snow.p3d.jpeg"
+    "image": "images/rocks_sakhal/rock_wallh7_tall_snow.p3d.jpeg"
   },
   {
     "objectName": "stone10_snow.p3d",
@@ -35926,7 +35756,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, snow, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone10_snow.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone10_snow.p3d.jpeg"
   },
   {
     "objectName": "stone10_snow_lc.p3d",
@@ -35936,7 +35766,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone10_snow_lc.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone10_snow_lc.p3d.jpeg"
   },
   {
     "objectName": "stone11.p3d",
@@ -35946,7 +35776,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone11.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone11.p3d.jpeg"
   },
   {
     "objectName": "stone11_int.p3d",
@@ -35956,7 +35786,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone11_int.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone11_int.p3d.jpeg"
   },
   {
     "objectName": "stone11_lc.p3d",
@@ -35966,7 +35796,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone11_lc.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone11_lc.p3d.jpeg"
   },
   {
     "objectName": "stone11_snow_lc.p3d",
@@ -35976,7 +35806,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, snow, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone11_snow_lc.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone11_snow_lc.p3d.jpeg"
   },
   {
     "objectName": "stone12.p3d",
@@ -35986,7 +35816,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone12.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone12.p3d.jpeg"
   },
   {
     "objectName": "stone12_lc.p3d",
@@ -35996,7 +35826,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone12_lc.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone12_lc.p3d.jpeg"
   },
   {
     "objectName": "stone12_snow_lc.p3d",
@@ -36006,7 +35836,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, sakhal, snow",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone12_snow_lc.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone12_snow_lc.p3d.jpeg"
   },
   {
     "objectName": "stone13.p3d",
@@ -36016,7 +35846,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone13.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone13.p3d.jpeg"
   },
   {
     "objectName": "stone13_lc.p3d",
@@ -36026,7 +35856,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone13_lc.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone13_lc.p3d.jpeg"
   },
   {
     "objectName": "stone13_snow_lc.p3d",
@@ -36036,7 +35866,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, snow, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone13_snow_lc.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone13_snow_lc.p3d.jpeg"
   },
   {
     "objectName": "stone14_lava.p3d",
@@ -36046,7 +35876,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, volcano, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone14_lava.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone14_lava.p3d.jpeg"
   },
   {
     "objectName": "stone14_lava_lc.p3d",
@@ -36056,7 +35886,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, volcano, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone14_lava_lc.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone14_lava_lc.p3d.jpeg"
   },
   {
     "objectName": "stone15_lava.p3d",
@@ -36066,7 +35896,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone15_lava.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone15_lava.p3d.jpeg"
   },
   {
     "objectName": "stone15_lava_lc.p3d",
@@ -36076,7 +35906,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, volcano, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone15_lava_lc.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone15_lava_lc.p3d.jpeg"
   },
   {
     "objectName": "stone6_snow.p3d",
@@ -36086,7 +35916,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, sakhal, snow",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone6_snow.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone6_snow.p3d.jpeg"
   },
   {
     "objectName": "stone6_snow_lc.p3d",
@@ -36096,7 +35926,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, snow, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone6_snow_lc.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone6_snow_lc.p3d.jpeg"
   },
   {
     "objectName": "stone7_snow.p3d",
@@ -36106,7 +35936,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, snow, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone7_snow.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone7_snow.p3d.jpeg"
   },
   {
     "objectName": "stone7_snow_lc.p3d",
@@ -36116,7 +35946,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, snow, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone7_snow_lc.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone7_snow_lc.p3d.jpeg"
   },
   {
     "objectName": "stone8_snow.p3d",
@@ -36126,7 +35956,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, snow, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone8_snow.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone8_snow.p3d.jpeg"
   },
   {
     "objectName": "stone8_snow_lc.p3d",
@@ -36136,7 +35966,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, snow, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone8_snow_lc.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone8_snow_lc.p3d.jpeg"
   },
   {
     "objectName": "stone9_snow.p3d",
@@ -36146,7 +35976,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, snow, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone9_snow.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone9_snow.p3d.jpeg"
   },
   {
     "objectName": "stone9_snow_lc.p3d",
@@ -36156,7 +35986,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, snow, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstone9_snow_lc.p3d.jpeg"
+    "image": "images/rocks_sakhal/stone9_snow_lc.p3d.jpeg"
   },
   {
     "objectName": "stones_erosion2.p3d",
@@ -36166,7 +35996,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstones_erosion2.p3d.jpeg"
+    "image": "images/rocks_sakhal/stones_erosion2.p3d.jpeg"
   },
   {
     "objectName": "stones_erosion2_snow.p3d",
@@ -36176,7 +36006,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "small, snow, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstones_erosion2_snow.p3d.jpeg"
+    "image": "images/rocks_sakhal/stones_erosion2_snow.p3d.jpeg"
   },
   {
     "objectName": "stones_lava_cluster1.p3d",
@@ -36186,7 +36016,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "medium, volcano, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstones_lava_cluster1.p3d.jpeg"
+    "image": "images/rocks_sakhal/stones_lava_cluster1.p3d.jpeg"
   },
   {
     "objectName": "stones_lava_cluster2.p3d",
@@ -36196,7 +36026,7 @@
     "path": "dz/rocks_sakhal",
     "usableOnConsole": true,
     "searchTags": "medium, volcano, sakhal",
-    "image": "images/rocks_sakhal/dzrocks_sakhalstones_lava_cluster2.p3d.jpeg"
+    "image": "images/rocks_sakhal/stones_lava_cluster2.p3d.jpeg"
   },
   {
     "objectName": "aircond_big.p3d",
