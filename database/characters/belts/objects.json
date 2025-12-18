@@ -1,83 +1,83 @@
 [
   {
-    "objectName": "CivilianBelt",
+    "objectName": "CivilianBelt", 
     "inGameName": "Belt",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "belt, leather, civilian, waist, accessory",
     "image": "images/characters/belts/civilianbelt/civilianbelt.jpg"
   },
   {
-    "objectName": "MilitaryBelt",
+    "objectName": "MilitaryBelt", 
     "inGameName": "Tactical Belt",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "belt, tactical, military, utility, holster",
     "image": "images/characters/belts/militarybelt/militarybelt.jpg"
   },
   {
-    "objectName": "RopeBelt",
+    "objectName": "RopeBelt", 
     "inGameName": "Rope Belt",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "belt, rope, improvised, survival, waist",
     "image": "images/characters/belts/ropebelt/ropebelt.jpg"
   },
   {
-    "objectName": "LeatherKnifeSheath",
+    "objectName": "LeatherKnifeSheath", 
     "inGameName": "Leather Sheath",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "knife, sheath, leather, belt, holster",
     "image": "images/characters/belts/leatherknifesheath/leatherknifesheath.jpg"
   },
   {
-    "objectName": "NylonKnifeSheath",
+    "objectName": "NylonKnifeSheath", 
     "inGameName": "Sheath",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "knife, sheath, nylon, belt, holster, plate carrier, vest",
     "image": "images/characters/belts/nylonknifesheath/nylonknifesheath.jpg"
   },
   {
-    "objectName": "HipPack_Black",
+    "objectName": "HipPack_Black", 
     "inGameName": "Hip Pack",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/belts/hippack_colorbase.jpg"
+    "searchTags": "hip pack, belt bag, fanny pack, storage, waist, military",
+    "image": "images/characters/belts/hippack_black/hippack_black.jpg"
   },
   {
-    "objectName": "HipPack_Green",
+    "objectName": "HipPack_Green", 
     "inGameName": "Hip Pack",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/belts/hippack_colorbase.jpg"
+    "searchTags": "hip pack, belt bag, fanny pack, storage, waist, camo",
+    "image": "images/characters/belts/hippack_green/hippack_green.jpg"
   },
   {
-    "objectName": "HipPack_Medical",
+    "objectName": "HipPack_Medical", 
     "inGameName": "Hip Pack",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/belts/hippack_colorbase.jpg"
+    "searchTags": "hip pack, belt bag, fanny pack, storage, waist, medicine, first aid",
+    "image": "images/characters/belts/hippack_medical/hippack_medical.jpg"
   },
   {
     "objectName": "HipPack_Party",
@@ -86,18 +86,48 @@
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/belts/hippack_colorbase.jpg"
+    "searchTags": "hip pack, belt bag, fanny pack, storage, waist, colorful, rave",
+    "image": "images/characters/belts/hippack_party/hippack_party.jpg"
   },
   {
-    "objectName": "belt_leather_f.p3d",
-    "inGameName": "-",
+    "objectName": "LeatherBelt_Natrual",
+    "inGameName": "Leather Belt",
     "category": "characters",
-    "modelType": "Raw P3D",
+    "modelType": "Config",
     "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/belt_leather_f.p3d.jpg"
+    "usableOnConsole": true,
+    "searchTags": "belt, leather, civilian, waist, crafting, tanning",
+    "image": "images/characters/belts/leatherbelt_natrual/leatherbelt_natrual.jpg"
+  },
+  {
+    "objectName": "LeatherBelt_Black",
+    "inGameName": "Leather Belt",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/belts",
+    "usableOnConsole": true,
+    "searchTags": "belt, leather, civilian, waist, crafting, tanning",
+    "image": "images/characters/belts/leatherbelt_black/leatherbelt_black.jpg"
+  },
+  {
+    "objectName": "LeatherBelt_Brown",
+    "inGameName": "Leather Belt",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/belts",
+    "usableOnConsole": true,
+    "searchTags": "belt, leather, civilian, waist, crafting, tanning",
+    "image": "images/characters/belts/leatherbelt_brown/leatherbelt_brown.jpg"
+  },
+  {
+    "objectName": "LeatherBelt_Beige",
+    "inGameName": "Leather Belt",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/belts",
+    "usableOnConsole": true,
+    "searchTags": "belt, leather, civilian, waist, crafting, tanning",
+    "image": "images/characters/belts/leatherbelt_beige/leatherbelt_beige.jpg"
   },
   {
     "objectName": "belt_leather_g.p3d",
@@ -106,28 +136,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "belt, leather, civilian, waist, crafting, tanning",
     "image": "images/characters/belts/belt_leather_g.p3d.jpg"
-  },
-  {
-    "objectName": "belt_leather_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/belt_leather_m.p3d.jpg"
-  },
-  {
-    "objectName": "civ_belt_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/civ_belt_f.p3d.jpg"
   },
   {
     "objectName": "civ_belt_g.p3d",
@@ -136,58 +146,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "belt, leather, civilian, waist, accessory",
     "image": "images/characters/belts/civ_belt_g.p3d.jpg"
-  },
-  {
-    "objectName": "civ_belt_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/civ_belt_m.p3d.jpg"
-  },
-  {
-    "objectName": "gun_holster_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/gun_holster_f.p3d.jpg"
-  },
-  {
-    "objectName": "gun_holster_g.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/gun_holster_g.p3d.jpg"
-  },
-  {
-    "objectName": "gun_holster_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/gun_holster_m.p3d.jpg"
-  },
-  {
-    "objectName": "hippack_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/hippack_f.p3d.jpg"
   },
   {
     "objectName": "hippack_g.p3d",
@@ -196,28 +156,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "hip pack, belt bag, fanny pack, storage, waist",
     "image": "images/characters/belts/hippack_g.p3d.jpg"
-  },
-  {
-    "objectName": "hippack_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/hippack_m.p3d.jpg"
-  },
-  {
-    "objectName": "knife_holster_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/knife_holster_f.p3d.jpg"
   },
   {
     "objectName": "knife_holster_g.p3d",
@@ -226,28 +166,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "knife, sheath, leather, belt, holster",
     "image": "images/characters/belts/knife_holster_g.p3d.jpg"
-  },
-  {
-    "objectName": "knife_holster_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/knife_holster_m.p3d.jpg"
-  },
-  {
-    "objectName": "leather_quiver_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/leather_quiver_f.p3d.jpg"
   },
   {
     "objectName": "leather_quiver_g.p3d",
@@ -256,28 +176,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "quiver, arrows, leather, belt, archery, not_in_game, not_included",
     "image": "images/characters/belts/leather_quiver_g.p3d.jpg"
-  },
-  {
-    "objectName": "leather_quiver_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/leather_quiver_m.p3d.jpg"
-  },
-  {
-    "objectName": "mil_belt_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/mil_belt_f.p3d.jpg"
   },
   {
     "objectName": "mil_belt_g.p3d",
@@ -286,18 +186,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "belt, tactical, military, utility, holster",
     "image": "images/characters/belts/mil_belt_g.p3d.jpg"
-  },
-  {
-    "objectName": "mil_belt_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/mil_belt_m.p3d.jpg"
   },
   {
     "objectName": "nylon_knifesheath.p3d",
@@ -306,7 +196,7 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "knife, sheath, nylon, belt, holster",
     "image": "images/characters/belts/nylon_knifesheath.p3d.jpg"
   },
   {
@@ -316,18 +206,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "tool holder, nylon, belt, utility, pouch",
     "image": "images/characters/belts/nylon_toolholder.p3d.jpg"
-  },
-  {
-    "objectName": "rope_belt_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/rope_belt_f.p3d.jpg"
   },
   {
     "objectName": "rope_belt_g.p3d",
@@ -336,17 +216,7 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/belts",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "belt, rope, improvised, survival, waist",
     "image": "images/characters/belts/rope_belt_g.p3d.jpg"
-  },
-  {
-    "objectName": "rope_belt_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/belts/rope_belt_m.p3d.jpg"
   }
 ]
