@@ -50,6 +50,16 @@
     "image": "images/characters/backpacks/combat_backpack.jpg"
   },
   {
+    "objectName": "TortillaBag_Winter",
+    "inGameName": "Combat Backpack",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/backpacks",
+    "usableOnConsole": true,
+    "searchTags": "bag, military, large, backpack, combat, winter, snow",
+    "image": "images/characters/backpacks/tortillabag_winter.jpg"
+  },
+  {
     "objectName": "CourierBag",
     "inGameName": "Burlap Courier Bag",
     "category": "characters",
@@ -510,6 +520,26 @@
     "image": "images/characters/backpacks/alice_bag_green.jpg"
   },
   {
+    "objectName": "AliceBag_NearBubble",
+    "inGameName": "Field Backpack",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/backpacks",
+    "usableOnConsole": true,
+    "searchTags": "backpack, alice, field, military, large, green",
+    "image": "images/characters/backpacks/alice_bag_green.jpg"
+  },
+  {
+    "objectName": "AliceBag_FarBubble",
+    "inGameName": "Field Backpack",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/backpacks",
+    "usableOnConsole": true,
+    "searchTags": "backpack, alice, field, military, large, green",
+    "image": "images/characters/backpacks/alice_bag_green.jpg"
+  },
+  {
     "objectName": "SlingBag_Black",
     "inGameName": "Sling Bag",
     "category": "characters",
@@ -587,7 +617,7 @@
     "path": "dz/characters/backpacks",
     "usableOnConsole": true,
     "searchTags": "bag, duffel, leather, carry, medium, camo, camouflage",
-    "image": "images/characters/backpacks/duffel_bag_camo.jpg"
+    "image": "images/characters/backpacks/duffelbagsmall_camo.jpg"
   },
   {
     "objectName": "DuffelBagSmall_Green",
@@ -607,7 +637,7 @@
     "path": "dz/characters/backpacks",
     "usableOnConsole": true,
     "searchTags": "bag, duffel, leather, carry, medium, medical",
-    "image": "images/characters/backpacks/duffel_bag_green.jpg"
+    "image": "images/characters/backpacks/duffelbagsmall_medical.jpg"
   },
   {
     "objectName": "CanvasBag_Medical",
@@ -706,7 +736,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/backpacks",
     "usableOnConsole": false,
-    "searchTags": "backpack, improvised, fur, craftable, warm"
+    "searchTags": "backpack, improvised, fur, craftable, warm",
+    "image": "images/characters/backpacks/fur_backpack.jpg"
   },
   {
     "objectName": "bp_improvised_g.p3d",
@@ -725,7 +756,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/backpacks",
     "usableOnConsole": false,
-    "searchTags": "bag, canvas, messenger, medium"
+    "searchTags": "bag, canvas, messenger, medium",
+    "image": "images/characters/backpacks/canvas_bag_olive.jpg"
   },
   {
     "objectName": "childs_g.p3d",
@@ -734,7 +766,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/backpacks",
     "usableOnConsole": false,
-    "searchTags": "backpack, school, kids, small"
+    "searchTags": "backpack, school, kids, small",
+    "image": "images/characters/backpacks/school_backpack_blue.jpg"
   },
   {
     "objectName": "coyotesbp_g.p3d",
@@ -743,7 +776,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/backpacks",
     "usableOnConsole": false,
-    "searchTags": "backpack, coyote, tactical, frame, military"
+    "searchTags": "backpack, coyote, tactical, frame, military",
+    "image": "images/characters/backpacks/coyote_green.jpg"
   },
   {
     "objectName": "drybag_g.p3d",
@@ -762,7 +796,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/backpacks",
     "usableOnConsole": false,
-    "searchTags": "bag, drysack, waterproof, roll-top, medium"
+    "searchTags": "bag, drysack, waterproof, roll-top, medium",
+    "image": "images/characters/backpacks/drysack_bag_green.jpg"
   },
   {
     "objectName": "duffelbagsmall_g.p3d",
@@ -791,7 +826,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/backpacks",
     "usableOnConsole": false,
-    "searchTags": "backpack, hunter, outdoors, camouflage, large"
+    "searchTags": "backpack, hunter, outdoors, camouflage, large",
+    "image": "images/characters/backpacks/hunting_bag.jpg"
   },
   {
     "objectName": "hunting_hannah_g.p3d",
@@ -800,7 +836,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/backpacks",
     "usableOnConsole": false,
-    "searchTags": "backpack, hunter, outdoors, camouflage, large, hannah, variant"
+    "searchTags": "backpack, hunter, outdoors, camouflage, large, hannah, variant",
+    "image": "images/characters/backpacks/huntingbag_hannah.jpg"
   },
   {
     "objectName": "impcourierbagfur_g.p3d",
@@ -839,7 +876,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/backpacks",
     "usableOnConsole": false,
-    "searchTags": "bag, sling, casual, urban, small"
+    "searchTags": "bag, sling, casual, urban, small",
+    "image": "images/characters/backpacks/sling_bag_black.jpg"
   },
   {
     "objectName": "smershbag_alternate_g.p3d",
@@ -860,15 +898,6 @@
     "usableOnConsole": false,
     "searchTags": "bag, military, green, smershbag_f smershbag_m, backpack, utility, buttpack, modular",
     "image": "images/characters/backpacks/utility_buttpack.jpg"
-  },
-  {
-    "objectName": "taloon.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/backpacks",
-    "usableOnConsole": false,
-    "searchTags": "backpack, hiking, taloon, medium"
   },
   {
     "objectName": "taloon_g.p3d",
