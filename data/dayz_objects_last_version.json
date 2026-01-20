@@ -6031,7 +6031,7 @@
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
     "searchTags": "fur, green, headgear, insulated, ushanka, winter",
-    "image": "images/characters/headgear/ushanka_colorbase.jpg"
+    "image": "images/characters/headgear/ushanka_green/ushanka_green.jpg"
   },
   {
     "objectName": "PumpkinHelmet",
@@ -6130,7 +6130,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "headgear, helmet, protective, yellow",
+    "searchTags": "headgear, helmet, protective, yellow, yellow_king",
     "image": "images/characters/headgear/darkmotohelmet_yellowscarred/darkmotohelmet_yellowscarred.jpg"
   },
   {
@@ -6651,7 +6651,7 @@
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
     "searchTags": "green, headgear, helmet, protective",
-    "image": "images/characters/headgear/skatehelmet_colorbase.jpg"
+    "image": "images/characters/headgear/skatehelmet_green/skatehelmet_green.jpg"
   },
   {
     "objectName": "SkateHelmet_Red",
@@ -6944,6 +6944,16 @@
     "image": "images/characters/headgear/santashat/santashat.jpg"
   },
   {
+    "objectName": "BudenovkaHat_Gray",
+    "inGameName": "Budenovka Hat",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "soviet, military, insulated, headgear, gray, winter",
+    "image": "images/characters/headgear/budenovkahat_gray/budenovkahat_gray.jpg"
+  },
+  {
     "objectName": "WitchHood_Black",
     "inGameName": "Witch Hood",
     "category": "characters",
@@ -6982,6 +6992,46 @@
     "usableOnConsole": true,
     "searchTags": "festive, headgear",
     "image": "images/characters/headgear/witchhat/witchhat.jpg"
+  },
+  {
+    "objectName": "WinterCoif_Black",
+    "inGameName": "Winter Coif",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "festive, headgear",
+    "image": "images/characters/headgear/wintercoif_black/wintercoif_black.jpg"
+  },
+  {
+    "objectName": "WinterCoif_Blue",
+    "inGameName": "Winter Coif",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "festive, headgear",
+    "image": "images/characters/headgear/wintercoif_blue/wintercoif_blue.jpg"
+  },
+  {
+    "objectName": "WinterCoif_Green",
+    "inGameName": "Winter Coif",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "festive, headgear",
+    "image": "images/characters/headgear/wintercoif_green/wintercoif_green.jpg"
+  },
+  {
+    "objectName": "WinterCoif_Skull",
+    "inGameName": "Winter Coif",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "festive, headgear",
+    "image": "images/characters/headgear/wintercoif_skull/wintercoif_skull.jpg"
   },
   {
     "objectName": "Mich2001Helmet",
@@ -7134,6 +7184,76 @@
     "image": "images/characters/headgear/snowstormushanka_white/snowstormushanka_white.jpg"
   },
   {
+    "objectName": "Shemag_Brown",
+    "inGameName": "Shemagh",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "woolen, scarf, facewrap headgear, insulated, ushanka, white, winter",
+    "image": "images/characters/headgear/shemag_brown/shemag_brown.jpg"
+  },
+  {
+    "objectName": "Shemag_Green",
+    "inGameName": "Shemagh",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "woolen, scarf, facewrap headgear, insulated, ushanka, white, winter",
+    "image": "images/characters/headgear/shemag_green/shemag_green.jpg"
+  },
+  {
+    "objectName": "Shemag_Red",
+    "inGameName": "Shemagh",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "woolen, scarf, facewrap headgear, insulated, ushanka, white, winter",
+    "image": "images/characters/headgear/shemag_red/shemag_red.jpg"
+  },
+  {
+    "objectName": "Shemag_White",
+    "inGameName": "Shemagh",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "woolen, scarf, facewrap headgear, insulated, ushanka, white, winter",
+    "image": "images/characters/headgear/shemag_white/shemag_white.jpg"
+  },
+  {
+    "objectName": "SherpaHat_Blue",
+    "inGameName": "Sherpa Hat",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "woolen, headgear, insulated, sherpa, blue, winter",
+    "image": "images/characters/headgear/sherpahat_blue/sherpahat_blue.jpg"
+  },
+  {
+    "objectName": "SherpaHat_Red",
+    "inGameName": "Sherpa Hat",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "woolen, headgear, insulated, sherpa, red, winter",
+    "image": "images/characters/headgear/sherpahat_red/sherpahat_red.jpg"
+  },
+  {
+    "objectName": "SherpaHat_Black",
+    "inGameName": "Sherpa Hat",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "woolen, headgear, insulated, sherpa, black, winter",
+    "image": "images/characters/headgear/sherpahat_black/sherpahat_black.jpg"
+  },
+  {
     "objectName": "LeafCrown_Spring",
     "inGameName": "Leaf Crown",
     "category": "characters",
@@ -7215,7 +7335,7 @@
   },
   {
     "objectName": "budenovka_g.p3d",
-    "inGameName": "-",
+    "inGameName": "Budenovka Hat",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
@@ -7325,23 +7445,13 @@
   },
   {
     "objectName": "flatcap.p3d",
-    "inGameName": "-",
+    "inGameName": "Flat Cap",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
     "searchTags": "cap, civilian, headgear, p3d",
     "image": "images/characters/headgear/flatcap_black/flatcap_black.jpg"
-  },
-  {
-    "objectName": "ghilliehood.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/headgear",
-    "usableOnConsole": false,
-    "searchTags": "camouflage, headgear, hood, p3d",
-    "image": "images/characters/headgear/ghilliehood_mossy/ghilliehood_mossy.jpg"
   },
   {
     "objectName": "ghilliehood_g.p3d",
@@ -7352,16 +7462,6 @@
     "usableOnConsole": false,
     "searchTags": "camouflage, headgear, hood, p3d",
     "image": "images/characters/headgear/ghilliehood_mossy/ghilliehood_mossy.jpg"
-  },
-  {
-    "objectName": "greathelm.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/headgear",
-    "usableOnConsole": false,
-    "searchTags": "headgear, p3d",
-    "image": "images/characters/headgear/greathelm/greathelm.jpg"
   },
   {
     "objectName": "greathelm_g.p3d",
@@ -7435,7 +7535,7 @@
   },
   {
     "objectName": "hockey_helmet.p3d",
-    "inGameName": "-",
+    "inGameName": "Hockey Helmet",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
@@ -7445,7 +7545,7 @@
   },
   {
     "objectName": "leafcrown_autumn_g.p3d",
-    "inGameName": "-",
+    "inGameName": "Leaf Crown",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
@@ -7455,7 +7555,7 @@
   },
   {
     "objectName": "leafcrown_spring_g.p3d",
-    "inGameName": "-",
+    "inGameName": "Leaf Crown",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
@@ -7465,7 +7565,7 @@
   },
   {
     "objectName": "leafcrown_summer_g.p3d",
-    "inGameName": "-",
+    "inGameName": "Leaf Crown",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
@@ -7475,7 +7575,7 @@
   },
   {
     "objectName": "leafcrown_winter_g.p3d",
-    "inGameName": "-",
+    "inGameName": "Leaf Crown",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
@@ -7495,7 +7595,7 @@
   },
   {
     "objectName": "maska_glass_g.p3d",
-    "inGameName": "-",
+    "inGameName": "Assault Helmet Visor",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
@@ -7605,12 +7705,12 @@
   },
   {
     "objectName": "motohelmet_scarred_ground.p3d",
-    "inGameName": "-",
+    "inGameName": "Motorbike Helmet Scarred",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
-    "searchTags": "headgear, helmet, p3d, protective",
+    "searchTags": "headgear, helmet, p3d, protective, yellow_king",
     "image": "images/characters/headgear/motohelmet_black/motohelmet_black.jpg"
   },
   {
@@ -7631,7 +7731,7 @@
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
     "searchTags": "headgear, helmet, p3d, protective",
-    "image": "images/characters/headgear/mxhelmet_mouthguard.p3d.jpg"
+    "image": "images/characters/headgear/dirtbikehelmet_mouthguard/dirtbikehelmet_mouthguard.jpg"
   },
   {
     "objectName": "mxhelmet_visor.p3d",
@@ -7645,7 +7745,7 @@
   },
   {
     "objectName": "nbc_hood_g.p3d",
-    "inGameName": "-",
+    "inGameName": "NBC Hood",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
@@ -7791,7 +7891,7 @@
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
     "searchTags": "headgear, insulated, p3d, winter",
-    "image": "images/characters/headgear/sherpahat_g.p3d.jpg"
+    "image": "images/characters/headgear/sherpahat_black/sherpahat_black.jpg"
   },
   {
     "objectName": "snowstormushanka_g.p3d",
@@ -7815,7 +7915,7 @@
   },
   {
     "objectName": "tankerhelmet.p3d",
-    "inGameName": "-",
+    "inGameName": "Tanker Helmet",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
@@ -7881,7 +7981,7 @@
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
     "searchTags": "headgear, insulated, p3d, winter",
-    "image": "images/characters/headgear/wolfheaddress_g.p3d.jpg"
+    "image": "images/characters/headgear/headdress_wolf/headdress_wolf.jpg"
   },
   {
     "objectName": "zmijovkacap_g.p3d",

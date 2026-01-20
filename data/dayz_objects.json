@@ -7994,16 +7994,6 @@
     "image": "images/characters/headgear/zmijovkacap_black/zmijovkacap_black.jpg"
   },
   {
-    "objectName": "test_skeleton.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/heads/anim",
-    "usableOnConsole": false,
-    "searchTags": "",
-    "image": "images/characters/heads/anim/test_skeleton.p3d.jpg"
-  },
-  {
     "objectName": "Head_Default",
     "inGameName": "face",
     "category": "characters",
@@ -44154,7 +44144,7 @@
     "path": "dz/structures/military/improvised",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/structures/military/improvised/staticobj_roadblock_wood_long.jpg"
+    "image": "images/structures/military/improvised/staticobj_roadblock_wood_long_de.jpg"
   },
   {
     "objectName": "StaticObj_Roadblock_Wood_Small",
@@ -44163,7 +44153,7 @@
     "modelType": "Config",
     "path": "dz/structures/military/improvised",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "military, roadblock, wood, long, barrier, defense, security, crowd_control, traffic",
     "image": "images/structures/military/improvised/staticobj_roadblock_wood_small_de.jpg"
   },
   {
@@ -44173,7 +44163,7 @@
     "modelType": "Config",
     "path": "dz/structures/military/improvised",
     "usableOnConsole": true,
-    "searchTags": "military, roadblock, wood, long, barrier, defense, security, crowd_control, traffic",
+    "searchTags": "military, roadblock, wood, long, barrier, defense, security, crowd_control, traffic, flashing, light, bright, orange",
     "image": "images/structures/military/improvised/staticobj_roadblock_wood_long_de.jpg"
   },
   {

@@ -146,6 +146,10 @@
     color: #fff;
   }
 
+  table.dataTable.dtr-inline.collapsed.no-detail-control > tbody > tr > td:first-child:before {
+    display: none;
+  }
+
   
   #togglePresets {
     padding: 8px 12px;
@@ -187,6 +191,125 @@
     color: var(--muted);
   }
 
+  .objects-layout {
+    width: 95%;
+    margin: 14px auto 0;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .objects-layout #dayzObjects_wrapper {
+    flex: 1;
+    width: auto !important;
+    margin: 0;
+  }
+
+  .object-focus {
+    display: none;
+    width: 390px;
+    padding: 12px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    box-shadow: var(--shadow-soft);
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: sticky;
+    top: 12px;
+  }
+  .object-focus.visible {
+    display: flex;
+  }
+  .object-focus__image {
+    width: 330px;
+    height: 330px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--input-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .object-focus__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .object-focus__missing {
+    color: var(--muted);
+    font-style: italic;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .object-focus__details {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .object-focus__label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+  .object-focus__name {
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
+    font-weight: 700;
+    color: var(--text);
+    word-break: break-word;
+  }
+  .object-focus__path {
+    font-family: monospace;
+    color: var(--muted);
+    font-size: clamp(0.78rem, 0.72rem + 0.3vw, 0.92rem);
+    word-break: break-word;
+  }
+  .object-focus__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .object-focus__primary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 8px;
+  }
+  .object-focus__secondary {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .object-focus__secondary .pill-button {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+  .object-focus__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: clamp(0.78rem, 0.72rem + 0.3vw, 0.92rem);
+    color: var(--text);
+  }
+  .object-focus__meta span {
+    color: var(--muted);
+  }
+
+  @media (max-width: 1100px) {
+    .objects-layout {
+      flex-direction: column;
+    }
+    .object-focus {
+      width: 100%;
+      position: static;
+    }
+  }
+
   #imgPreview img {
     max-width: 400px;
     max-height: 400px;
@@ -207,6 +330,7 @@
     <option value="✅">Yes</option>
     <option value="❌">No</option>
   </select>
+  <button id="resetFilters" class="pill-button" type="button">Reset filters</button>
 
   <div class="filter-actions">
     <button id="togglePresets" class="pill-button" type="button">Show presets</button>
@@ -222,42 +346,71 @@
 
 <div id="statusMessage"></div>
 
-<table id="dayzObjects" class="display nowrap" style="width:100%">
-  <thead>
-    <tr>
-      <th>Object name</th>
-      <th>In-game name</th>
-      <th>Category</th>
-      <th>Model Type</th>
-      <th>Path</th>
-      <th>Console</th>
-      <th>Search Tags</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{ range .Site.Data.dayz_objects }}
-    <tr>
-      <td
-        data-object="{{ .objectName }}"
-        data-p3d="{{ .path }}"
-        data-modeltype="{{ .modelType }}"
-        data-image="{{ with .image }}{{ . }}{{ end }}"
-        data-editorjson='{{ with .editorJson }}{{ . | jsonify }}{{ end }}'
-      >
-        {{ .objectName }}
-        <button class="copy-btn" title="Copy object name">📋</button>
-        <button class="copy-btn editor-copy-btn" title="Copy DayZ Editor JSON">🏗️</button>
-      </td>
-      <td>{{ .inGameName }}</td>
-      <td>{{ .category }}</td>
-      <td>{{ .modelType }}</td>
-      <td>{{ .path }}</td>
-      <td>{{ if .usableOnConsole }}✅{{ else }}❌{{ end }}</td>
-      <td>{{ with .searchTags }}{{ . }}{{ end }}</td>
-    </tr>
-    {{ end }}
-  </tbody>
-</table>
+<div class="objects-layout">
+  <table id="dayzObjects" class="display nowrap" style="width:100%">
+    <thead>
+      <tr>
+        <th>Object name</th>
+        <th>In-game name</th>
+        <th>Category</th>
+        <th>Model Type</th>
+        <th>Path</th>
+        <th>Console</th>
+        <th>Search Tags</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .Site.Data.dayz_objects }}
+      <tr>
+        <td
+          data-object="{{ .objectName }}"
+          data-p3d="{{ .path }}"
+          data-modeltype="{{ .modelType }}"
+          data-ingame="{{ .inGameName }}"
+          data-category="{{ .category }}"
+          data-console="{{ if .usableOnConsole }}✅{{ else }}❌{{ end }}"
+          data-tags="{{ with .searchTags }}{{ . }}{{ end }}"
+          data-image="{{ with .image }}{{ . }}{{ end }}"
+          data-editorjson='{{ with .editorJson }}{{ . | jsonify }}{{ end }}'
+        >
+          {{ .objectName }}
+          <button class="copy-btn" title="Copy object name">📋</button>
+          <button class="copy-btn editor-copy-btn" title="Copy DayZ Editor JSON">🏗️</button>
+        </td>
+        <td>{{ .inGameName }}</td>
+        <td>{{ .category }}</td>
+        <td>{{ .modelType }}</td>
+        <td>{{ .path }}</td>
+        <td>{{ if .usableOnConsole }}✅{{ else }}❌{{ end }}</td>
+        <td>{{ with .searchTags }}{{ . }}{{ end }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+
+  <div id="objectFocus" class="object-focus" aria-live="polite">
+    <div class="object-focus__image" id="objectFocusImage">
+      <span class="object-focus__missing">Select an object to preview its image.</span>
+    </div>
+    <div class="object-focus__details">
+      <div class="object-focus__label">Linked object</div>
+      <div id="objectFocusName" class="object-focus__name"></div>
+      <div id="objectFocusPath" class="object-focus__path"></div>
+      <div class="object-focus__meta" id="objectFocusMeta"></div>
+      <div class="object-focus__actions">
+        <div class="object-focus__primary">
+          <button id="objectFocusCopy" class="pill-button" type="button">🔗 Copy link</button>
+          <button id="objectFocusEditor" class="pill-button" type="button">🏗️ Copy to Editor</button>
+          <button id="objectFocusNameCopy" class="pill-button" type="button">📋 Copy name</button>
+        </div>
+        <div class="object-focus__secondary">
+          <a id="objectFocusLink" class="pill-button" href="#" target="_blank" rel="noopener">⎘ Open image</a>
+          <button id="objectFocusClear" class="pill-button" type="button">🆇 Close object</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
@@ -313,7 +466,7 @@
       responsive: true,
       pageLength: 50,
       lengthMenu: [[50,100,200,500],[50,100,200,500]],
-      columnDefs: [{ targets: [6], visible: true }],
+      columnDefs: [{ targets: [6], visible: false }],
       dom: '<"top-bar"lfr>tip',
       language: {
         search: "Search: ",
@@ -326,6 +479,240 @@
     }
    
     $("#filters").insertBefore("#dayzObjects_wrapper .top-bar");
+
+    var updateResponsiveControls = function(visibleColumns) {
+      var important = [2, 3, 4, 5];
+      var shouldShow = false;
+      if (visibleColumns && visibleColumns.length) {
+        for (var i = 0; i < important.length; i++) {
+          if (!visibleColumns[important[i]]) {
+            shouldShow = true;
+            break;
+          }
+        }
+      } else {
+        for (var j = 0; j < important.length; j++) {
+          if (!table.column(important[j]).visible()) {
+            shouldShow = true;
+            break;
+          }
+        }
+      }
+      $tableEl.toggleClass('no-detail-control', !shouldShow);
+    };
+
+    updateResponsiveControls();
+    $tableEl.on('responsive-resize', function(e, datatable, columns) {
+      updateResponsiveControls(columns);
+    });
+
+    var objectFocusEl = document.getElementById('objectFocus');
+    var objectFocusNameEl = document.getElementById('objectFocusName');
+    var objectFocusPathEl = document.getElementById('objectFocusPath');
+    var objectFocusImageEl = document.getElementById('objectFocusImage');
+    var objectFocusLinkEl = document.getElementById('objectFocusLink');
+    var objectFocusClearEl = document.getElementById('objectFocusClear');
+    var objectFocusCopyEl = document.getElementById('objectFocusCopy');
+    var objectFocusEditorEl = document.getElementById('objectFocusEditor');
+    var objectFocusNameCopyEl = document.getElementById('objectFocusNameCopy');
+    var objectFocusMetaEl = document.getElementById('objectFocusMeta');
+    var currentObjectName = null;
+    var currentObjectData = null;
+
+    var escapeRegex = function(value) {
+      return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    };
+
+    var buildObjectUrl = function(objName) {
+      var nextUrl = new URL(window.location);
+      if (objName) {
+        nextUrl.searchParams.set('object', objName);
+      } else {
+        nextUrl.searchParams.delete('object');
+      }
+      return nextUrl.toString();
+    };
+
+    var buildEditorJson = function(editorJsonRaw, objName, modelType, p3dPath) {
+      if (editorJsonRaw && editorJsonRaw.trim() !== "") {
+        try {
+          var parsed = JSON.parse(editorJsonRaw);
+          return JSON.stringify(parsed, null, 4);
+        } catch (err) {
+          console.error("Invalid editorJson for row:", err);
+        }
+      }
+
+      var typeValue = (modelType === "Config")
+        ? objName
+        : p3dPath.replace(/\//g, "\\") + "\\" + objName;
+
+      var json = [{
+        Type: typeValue,
+        DisplayName: "",
+        Position: [0, 0, 0],
+        Orientation: [0, 0, 0],
+        Scale: 1.0,
+        AttachmentMap: {},
+        Model: "",
+        Flags: 30,
+        m_LowBits: 0,
+        m_HighBits: 0
+      }];
+
+      return JSON.stringify(json, null, 4);
+    };
+
+    var showObjectFocus = function($td, updateUrl) {
+      if (!objectFocusEl || !$td || !$td.length) return;
+      var objName = $td.data('object') || '';
+      var imgPath = $td.data('image');
+      var p3dPath = $td.data('p3d');
+      var modelType = $td.data('modeltype');
+      var category = $td.data('category');
+      var inGame = $td.data('ingame');
+      var consoleFlag = $td.data('console');
+      var tags = $td.data('tags');
+      var editorJsonRaw = $td.attr('data-editorjson');
+
+      currentObjectName = objName;
+      currentObjectData = {
+        objName: objName,
+        imgPath: imgPath,
+        p3dPath: p3dPath,
+        modelType: modelType,
+        editorJsonRaw: editorJsonRaw
+      };
+      objectFocusNameEl.textContent = objName;
+      objectFocusPathEl.textContent = p3dPath ? ('Path: ' + p3dPath) : '';
+      if (objectFocusMetaEl) {
+        objectFocusMetaEl.innerHTML =
+          '<div><span>In-game name:</span> ' + (inGame || '—') + '</div>' +
+          '<div><span>Category:</span> ' + (category || '—') + '</div>' +
+          '<div><span>Model type:</span> ' + (modelType || '—') + '</div>' +
+          '<div><span>Console:</span> ' + (consoleFlag || '—') + '</div>' +
+          '<div><span>Tags:</span> ' + (tags || '—') + '</div>';
+      }
+
+      if (imgPath) {
+        objectFocusImageEl.innerHTML =
+          '<img src="/' + imgPath + '" alt="' + objName + ' preview">';
+        objectFocusLinkEl.href = '/' + imgPath;
+        objectFocusLinkEl.style.display = 'inline-flex';
+      } else {
+        objectFocusImageEl.innerHTML =
+          '<span class="object-focus__missing">No image available for this object.</span>';
+        objectFocusLinkEl.style.display = 'none';
+      }
+
+      objectFocusEl.classList.add('visible');
+
+      if (updateUrl && objName) {
+        history.replaceState({}, '', buildObjectUrl(objName));
+      }
+    };
+
+    var showMissingObject = function(objName) {
+      if (!objectFocusEl) return;
+      currentObjectName = objName;
+      objectFocusNameEl.textContent = objName;
+      objectFocusPathEl.textContent = 'No exact match found.';
+      if (objectFocusMetaEl) {
+        objectFocusMetaEl.innerHTML = '';
+      }
+      objectFocusImageEl.innerHTML =
+        '<span class="object-focus__missing">No image available for this object.</span>';
+      objectFocusLinkEl.style.display = 'none';
+      objectFocusEl.classList.add('visible');
+    };
+
+    var focusByName = function(objName) {
+      if (!objName) return;
+      var normalized = objName.trim();
+      if (!normalized) return;
+
+      var matchCell = $(table.rows().nodes()).find('td:first-child').filter(function() {
+        var value = $(this).data('object');
+        return value && String(value).toLowerCase() === normalized.toLowerCase();
+      }).first();
+
+      if (!matchCell.length) {
+        showMissingObject(normalized);
+        return;
+      }
+
+      showObjectFocus(matchCell, false);
+      table.column(0).search('^' + escapeRegex(normalized), true, false).draw();
+      table.one('draw', function() {
+        var $cell = $tableEl.find('tbody td:first-child').filter(function() {
+          var value = $(this).data('object');
+          return value && String(value).toLowerCase() === normalized.toLowerCase();
+        }).first();
+
+        if ($cell.length) {
+          showObjectFocus($cell, false);
+          var rowEl = $cell.closest('tr').get(0);
+          if (rowEl && rowEl.scrollIntoView) {
+            rowEl.classList.add('flash');
+            rowEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            setTimeout(function() { rowEl.classList.remove('flash'); }, 1200);
+          }
+        }
+      });
+    };
+
+    if (objectFocusClearEl) {
+      objectFocusClearEl.addEventListener('click', function() {
+        table.column(0).search('').draw();
+        if (objectFocusEl) {
+          objectFocusEl.classList.remove('visible');
+        }
+        history.replaceState({}, '', buildObjectUrl(''));
+      });
+    }
+
+    if (objectFocusCopyEl) {
+      objectFocusCopyEl.addEventListener('click', function() {
+        var link = buildObjectUrl(currentObjectName || objectFocusNameEl.textContent || '');
+        navigator.clipboard.writeText(link);
+        var original = objectFocusCopyEl.textContent;
+        objectFocusCopyEl.textContent = 'Copied';
+        setTimeout(function() { objectFocusCopyEl.textContent = original; }, 1200);
+      });
+    }
+
+    if (objectFocusEditorEl) {
+      objectFocusEditorEl.addEventListener('click', function() {
+        if (!currentObjectData) return;
+        var jsonText = buildEditorJson(
+          currentObjectData.editorJsonRaw,
+          currentObjectData.objName,
+          currentObjectData.modelType,
+          currentObjectData.p3dPath
+        );
+        navigator.clipboard.writeText(jsonText);
+        var original = objectFocusEditorEl.textContent;
+        objectFocusEditorEl.textContent = 'Copied';
+        setTimeout(function() { objectFocusEditorEl.textContent = original; }, 1200);
+      });
+    }
+
+    if (objectFocusNameCopyEl) {
+      objectFocusNameCopyEl.addEventListener('click', function() {
+        var nameText = currentObjectName || objectFocusNameEl.textContent || '';
+        if (!nameText) return;
+        navigator.clipboard.writeText(nameText);
+        var original = objectFocusNameCopyEl.textContent;
+        objectFocusNameCopyEl.textContent = 'Copied';
+        setTimeout(function() { objectFocusNameCopyEl.textContent = original; }, 1200);
+      });
+    }
+
+    var searchParams = new URLSearchParams(window.location.search);
+    var objectParam = searchParams.get('object');
+    if (objectParam) {
+      focusByName(objectParam);
+    }
 
 
     var categories = [];
@@ -346,7 +733,24 @@
       table.column(5).search(this.value).draw();
     });
 
-    // Preset toggle 
+    $('#resetFilters').on('click', function() {
+      table.search('').columns().search('').draw();
+      $('#filterCategory').val('').trigger('change');
+      $('#filterConsole').val('').trigger('change');
+      if (presetsActive) {
+        presetsActive = false;
+        previousCategoryValue = '';
+        $('#togglePresets').removeClass('active').text('Show presets');
+      }
+      if (objectFocusEl) {
+        objectFocusEl.classList.remove('visible');
+      }
+      currentObjectName = null;
+      var nextUrl = new URL(window.location);
+      nextUrl.searchParams.delete('object');
+      history.replaceState({}, '', nextUrl);
+    });
+
     var presetsCategoryValue = "Editor Preset";
     var presetsActive = false;
     var previousCategoryValue = "";
@@ -355,20 +759,17 @@
       var $btn = $(this);
 
       if (!presetsActive) {
-        // remember old category
         previousCategoryValue = $('#filterCategory').val();
         $('#filterCategory').val(presetsCategoryValue).trigger('change');
         presetsActive = true;
         $btn.addClass('active').text('Show all');
       } else {
-        // restore previous category selection
         $('#filterCategory').val(previousCategoryValue).trigger('change');
         presetsActive = false;
         $btn.removeClass('active').text('Show presets');
       }
     });
 
-    // Hover image preview on first column
     $('#dayzObjects tbody')
       .on('mouseenter', 'td:first-child', function(e) {
         var imgPath = $(this).data('image');
@@ -388,7 +789,11 @@
         $('#imgPreview').remove();
       });
 
-    // Copy object name (📋)
+    $('#dayzObjects tbody').on('click', 'td:first-child', function(e) {
+      if ($(e.target).hasClass('copy-btn')) return;
+      showObjectFocus($(this), true);
+    });
+
     $('#dayzObjects tbody').on('click', '.copy-btn:not(.editor-copy-btn)', function(e) {
       e.stopPropagation();
       var text = $(this).closest('td').data('object');
@@ -398,26 +803,22 @@
       setTimeout(function() { $btn.text('📋'); }, 1000);
     });
 
-    // Copy DayZ Editor JSON (🏗️) 
     $('#dayzObjects tbody').on('click', '.editor-copy-btn', function(e) {
       e.stopPropagation();
       var $td = $(this).closest('td');
 
-      // 
       var predefined = $td.attr('data-editorjson');
       var jsonText = null;
 
       if (predefined && predefined.trim() !== "") {
         try {
           var parsed = JSON.parse(predefined); 
-          // Copy as a valid JSON array of separate items
           jsonText = JSON.stringify(parsed, null, 4);
         } catch (err) {
           console.error("Invalid editorJson for row:", err);
         }
       }
 
-      // 
       if (!jsonText) {
         var objName   = $td.data('object');
         var modelType = $td.data('modeltype');
@@ -443,10 +844,8 @@
         jsonText = JSON.stringify(json, null, 4);
       }
 
-      
       navigator.clipboard.writeText(jsonText);
 
-     
       var $btn = $(this);
       $btn.text('✔');
       setTimeout(function() { $btn.text('🏗️'); }, 1000);
