@@ -113,6 +113,8 @@
   
   #dayzObjects tbody td:first-child {
     position: relative;
+    cursor: pointer;
+    user-select: none;
   }
 
   .copy-btn {
@@ -791,7 +793,14 @@
 
     $('#dayzObjects tbody').on('click', 'td:first-child', function(e) {
       if ($(e.target).hasClass('copy-btn')) return;
-      showObjectFocus($(this), true);
+      var objName = $(this).data('object');
+      if (objectFocusEl && objectFocusEl.classList.contains('visible') && currentObjectName === objName) {
+        objectFocusEl.classList.remove('visible');
+        currentObjectName = null;
+        currentObjectData = null;
+        return;
+      }
+      showObjectFocus($(this), false);
     });
 
     $('#dayzObjects tbody').on('click', '.copy-btn:not(.editor-copy-btn)', function(e) {
