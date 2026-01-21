@@ -28,7 +28,7 @@
   #dayzObjects_wrapper {
     width: 95% !important;
     margin: 20px auto;
-    overflow-x: auto;
+    overflow-x: hidden;
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 4px;
@@ -104,14 +104,22 @@
     #filters select {
       width: 100%;
     }
-    #dayzObjects { font-size: 12px; }
+    #dayzObjects { font-size: 11px; }
+    #dayzObjects td,
+    #dayzObjects th {
+      padding: 6px 8px;
+    }
   }
   @media (max-width: 480px) {
     #dayzObjects { font-size: 10px; }
+    #dayzObjects td,
+    #dayzObjects th {
+      padding: 5px 6px;
+    }
   }
 
   
-  #dayzObjects tbody td:first-child {
+  #dayzObjects tbody .object-name-cell {
     position: relative;
     cursor: pointer;
     user-select: none;
@@ -133,13 +141,16 @@
   }
 
   
-  #dayzObjects tbody td:first-child:hover .copy-btn {
+  #dayzObjects tbody .object-name-cell:hover .copy-btn {
     opacity: 1;
   }
 
   
-  .copy-btn + .copy-btn {
+  .copy-btn.editor-copy-btn {
     right: 40px;
+  }
+  .copy-btn.pin-btn {
+    right: 76px;
   }
 
   .copy-btn:hover {
@@ -148,8 +159,18 @@
     color: #fff;
   }
 
-  table.dataTable.dtr-inline.collapsed.no-detail-control > tbody > tr > td:first-child:before {
-    display: none;
+  table.dataTable.dtr-inline.collapsed > tbody > tr > td.details-control:before {
+    left: 8px;
+    right: auto;
+  }
+
+  table.dataTable.dtr-inline.collapsed > tbody > tr > td.details-control {
+    width: 26px;
+    text-align: center;
+  }
+
+  table.dataTable tbody tr.child td {
+    background: var(--bg-soft);
   }
 
   
@@ -210,24 +231,58 @@
   .object-focus {
     display: none;
     width: 390px;
-    padding: 12px;
+    padding: 8px;
+    max-width: 100%;
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 4px;
     box-shadow: var(--shadow-soft);
-    gap: 14px;
+    gap: 10px;
     flex-wrap: wrap;
     align-items: flex-start;
     position: sticky;
     top: 12px;
   }
-  .object-focus.visible {
+  .object-focus.visible,
+  .object-focus.has-pins {
     display: flex;
   }
-  .object-focus__image {
-    width: 330px;
-    height: 330px;
+  .object-focus.collapsed {
+    width: 52px;
+    padding: 8px 6px;
+    justify-content: center;
+  }
+  .object-focus.collapsed .object-focus__image,
+  .object-focus.collapsed .object-focus__details {
+    display: none;
+  }
+  .object-focus__pin-hint {
+    display: none;
+    margin-top: 6px;
+    font-size: 1rem;
+    color: var(--muted);
+  }
+  .object-focus.collapsed .object-focus__pin-hint {
+    display: block;
+  }
+
+  .object-focus__collapse {
     border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 8px;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .object-focus__collapse:hover {
+    background: var(--bg-soft);
+  }
+  .object-focus__image {
+    width: 100%;
+    height: 260px;
+    border: none;
     border-radius: 4px;
     background: var(--input-bg);
     display: flex;
@@ -285,11 +340,14 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .object-focus__secondary.is-right {
     justify-content: flex-end;
   }
   .object-focus__secondary .pill-button {
-    font-size: 0.85rem;
-    padding: 6px 10px;
+    font-size: 0.7rem;
+    padding: 3px 6px;
   }
   .object-focus__meta {
     display: flex;
@@ -302,13 +360,230 @@
     color: var(--muted);
   }
 
+  .pinned-objects {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .pinned-objects.is-empty {
+    display: none;
+  }
+
+  .pinned-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .pinned-copy {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .pinned-copy__row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .pinned-copy .pill-button {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+  }
+  .pinned-copy .pill-button.copied {
+    background-color: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+  .pinned-title {
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: var(--text);
+  }
+
+  #pinnedCopyAll {
+    display: none;
+  }
+
+  #pinnedCopyAll.visible {
+    display: inline-flex;
+  }
+
+  #pinnedCopyNames {
+    display: none;
+  }
+
+  #pinnedCopyNames.visible {
+    display: inline-flex;
+  }
+  #pinnedClearAll {
+    display: none;
+  }
+  #pinnedClearAll.visible {
+    display: inline-flex;
+  }
+  #pinnedClearAll {
+    margin-left: 6px;
+    color: #f87171;
+    border-color: #fca5a5;
+  }
+  #pinnedClearAll:hover {
+    color: #ef4444;
+    border-color: #ef4444;
+  }
+  #pinnedDownloadAll {
+    display: none;
+  }
+  #pinnedDownloadAll.visible {
+    display: inline-flex;
+  }
+
+  .pinned-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pinned-item {
+    display: grid;
+    grid-template-columns: 32px 1fr auto;
+    align-items: center;
+    gap: 6px;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 4px 6px;
+  }
+
+  .pinned-thumb {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--muted);
+    font-size: 0.6rem;
+  }
+
+  .pinned-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .pinned-name {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .pinned-remove {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 2px 6px;
+    cursor: pointer;
+    font-size: 0.7rem;
+  }
+
+  .pinned-remove:hover {
+    background: var(--bg-soft);
+  }
+
+  .object-focus.focus-empty .object-focus__image,
+  .object-focus.focus-empty .object-focus__details {
+    display: none;
+  }
+  .object-focus.empty-state .object-focus__image,
+  .object-focus.empty-state .object-focus__actions {
+    display: none;
+  }
+  .object-focus.no-selection .object-focus__actions {
+    display: none;
+  }
+  .object-focus.empty-state .object-focus__details > :not(.object-focus__empty) {
+    display: none;
+  }
+  .object-focus__empty {
+    display: none;
+    font-size: 0.9rem;
+    color: var(--muted);
+    text-align: center;
+    padding: 16px 8px;
+  }
+  .object-focus.empty-state .object-focus__empty {
+    display: block;
+  }
+
+  .object-focus.collapsed .pinned-objects {
+    width: 100%;
+    padding: 6px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .object-focus.collapsed .pinned-header {
+    display: none;
+  }
+
+  .object-focus.collapsed .pinned-list {
+    gap: 6px;
+    align-items: center;
+  }
+
+  .object-focus.collapsed .pinned-item {
+    grid-template-columns: 1fr;
+    padding: 2px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .object-focus.collapsed .pinned-thumb {
+    width: 40px;
+    height: 40px;
+  }
+
+  .object-focus.collapsed .pinned-name,
+  .object-focus.collapsed .pinned-remove {
+    display: none;
+  }
+
   @media (max-width: 1100px) {
     .objects-layout {
       flex-direction: column;
     }
     .object-focus {
       width: 100%;
-      position: static;
+      position: sticky;
+    }
+  }
+  @media (max-width: 768px) {
+    .object-focus__image {
+      width: 100%;
+      height: 220px;
+    }
+    .object-focus__details {
+      width: 100%;
     }
   }
 
@@ -352,19 +627,22 @@
   <table id="dayzObjects" class="display nowrap" style="width:100%">
     <thead>
       <tr>
-        <th>Object name</th>
+        <th></th>
+        <th>Class name</th>
         <th>In-game name</th>
         <th>Category</th>
-        <th>Model Type</th>
         <th>Path</th>
         <th>Console</th>
+        <th>Type</th>
         <th>Search Tags</th>
       </tr>
     </thead>
     <tbody>
       {{ range .Site.Data.dayz_objects }}
       <tr>
+        <td class="details-control"></td>
         <td
+          class="object-name-cell"
           data-object="{{ .objectName }}"
           data-p3d="{{ .path }}"
           data-modeltype="{{ .modelType }}"
@@ -376,14 +654,15 @@
           data-editorjson='{{ with .editorJson }}{{ . | jsonify }}{{ end }}'
         >
           {{ .objectName }}
+          <button class="copy-btn pin-btn" title="Pin object">📌</button>
           <button class="copy-btn" title="Copy object name">📋</button>
           <button class="copy-btn editor-copy-btn" title="Copy DayZ Editor JSON">🏗️</button>
         </td>
         <td>{{ .inGameName }}</td>
         <td>{{ .category }}</td>
-        <td>{{ .modelType }}</td>
         <td>{{ .path }}</td>
         <td>{{ if .usableOnConsole }}✅{{ else }}❌{{ end }}</td>
+        <td>{{ .modelType }}</td>
         <td>{{ with .searchTags }}{{ . }}{{ end }}</td>
       </tr>
       {{ end }}
@@ -391,22 +670,44 @@
   </table>
 
   <div id="objectFocus" class="object-focus" aria-live="polite">
+    <div class="object-focus__pin-hint" aria-hidden="true">📌</div>
+    <button id="objectFocusCollapse" class="object-focus__collapse" type="button" aria-label="Collapse sidebar">&gt;&gt;</button>
+    <div id="pinnedObjects" class="pinned-objects is-empty" aria-live="polite">
+      <div class="pinned-header">
+        <span class="pinned-title">Pinned</span>
+        <div class="pinned-copy">
+          <div class="pinned-copy__row">
+            <span>Copy all:</span>
+            <button id="pinnedCopyAll" class="pill-button" type="button" title="Copy all to Editor">🏗️</button>
+            <button id="pinnedCopyNames" class="pill-button" type="button" title="Copy all names">📋</button>
+          </div>
+          <div class="pinned-copy__row">
+            <button id="pinnedDownloadAll" class="pill-button" type="button" title="Download all">↓ Download all</button>
+            <button id="pinnedClearAll" class="pill-button" type="button" title="Unpin all">Unpin all</button>
+          </div>
+        </div>
+      </div>
+      <div id="pinnedList" class="pinned-list"></div>
+    </div>
     <div class="object-focus__image" id="objectFocusImage">
       <span class="object-focus__missing">Select an object to preview its image.</span>
     </div>
     <div class="object-focus__details">
-      <div class="object-focus__label">Linked object</div>
       <div id="objectFocusName" class="object-focus__name"></div>
-      <div id="objectFocusPath" class="object-focus__path"></div>
-      <div class="object-focus__meta" id="objectFocusMeta"></div>
+      <div id="objectFocusEmpty" class="object-focus__empty">You can select or pin objects in this menu.</div>
       <div class="object-focus__actions">
-        <div class="object-focus__primary">
+        <div class="object-focus__secondary">
+          <button id="objectFocusPin" class="pill-button" type="button">📌 Pin</button>
           <button id="objectFocusCopy" class="pill-button" type="button">🔗 Copy link</button>
           <button id="objectFocusEditor" class="pill-button" type="button">🏗️ Copy to Editor</button>
           <button id="objectFocusNameCopy" class="pill-button" type="button">📋 Copy name</button>
         </div>
-        <div class="object-focus__secondary">
-          <a id="objectFocusLink" class="pill-button" href="#" target="_blank" rel="noopener">⎘ Open image</a>
+      </div>
+      <div id="objectFocusPath" class="object-focus__path"></div>
+      <div class="object-focus__meta" id="objectFocusMeta"></div>
+      <div class="object-focus__actions">
+        <div class="object-focus__secondary is-right">
+          <a id="objectFocusLink" class="pill-button" href="#" download>↓ Download image</a>
           <button id="objectFocusClear" class="pill-button" type="button">🆇 Close object</button>
         </div>
       </div>
@@ -417,6 +718,8 @@
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
 <script>
   var statusMessages = [
@@ -465,10 +768,18 @@
     $tableEl.one('init.dt', showContent);
 
     var table = $tableEl.DataTable({
-      responsive: true,
+      responsive: {
+        details: {
+          type: 'column',
+          target: 0
+        }
+      },
       pageLength: 50,
       lengthMenu: [[50,100,200,500],[50,100,200,500]],
-      columnDefs: [{ targets: [6], visible: false }],
+      columnDefs: [
+        { targets: [7], visible: false },
+        { targets: 0, orderable: false, className: 'dtr-control' }
+      ],
       dom: '<"top-bar"lfr>tip',
       language: {
         search: "Search: ",
@@ -482,31 +793,7 @@
    
     $("#filters").insertBefore("#dayzObjects_wrapper .top-bar");
 
-    var updateResponsiveControls = function(visibleColumns) {
-      var important = [2, 3, 4, 5];
-      var shouldShow = false;
-      if (visibleColumns && visibleColumns.length) {
-        for (var i = 0; i < important.length; i++) {
-          if (!visibleColumns[important[i]]) {
-            shouldShow = true;
-            break;
-          }
-        }
-      } else {
-        for (var j = 0; j < important.length; j++) {
-          if (!table.column(important[j]).visible()) {
-            shouldShow = true;
-            break;
-          }
-        }
-      }
-      $tableEl.toggleClass('no-detail-control', !shouldShow);
-    };
-
-    updateResponsiveControls();
-    $tableEl.on('responsive-resize', function(e, datatable, columns) {
-      updateResponsiveControls(columns);
-    });
+    $tableEl.addClass('dtr-column');
 
     var objectFocusEl = document.getElementById('objectFocus');
     var objectFocusNameEl = document.getElementById('objectFocusName');
@@ -518,8 +805,41 @@
     var objectFocusEditorEl = document.getElementById('objectFocusEditor');
     var objectFocusNameCopyEl = document.getElementById('objectFocusNameCopy');
     var objectFocusMetaEl = document.getElementById('objectFocusMeta');
+    var objectFocusEmptyEl = document.getElementById('objectFocusEmpty');
     var currentObjectName = null;
     var currentObjectData = null;
+    var pinnedObjectsEl = document.getElementById('pinnedObjects');
+    var pinnedListEl = document.getElementById('pinnedList');
+    var pinnedClearAllEl = document.getElementById('pinnedClearAll');
+    var pinnedCopyAllEl = document.getElementById('pinnedCopyAll');
+    var pinnedCopyNamesEl = document.getElementById('pinnedCopyNames');
+    var pinnedDownloadAllEl = document.getElementById('pinnedDownloadAll');
+    var objectFocusPinEl = document.getElementById('objectFocusPin');
+    var objectFocusCollapseEl = document.getElementById('objectFocusCollapse');
+    var pinnedItems = [];
+    var isPinned = function(objName) {
+      return pinnedItems.some(function(item) { return item.objName === objName; });
+    };
+    var updateCollapseButtonLabel = function() {
+      if (!objectFocusCollapseEl || !objectFocusEl) return;
+      var isCollapsed = objectFocusEl.classList.contains('collapsed');
+      objectFocusCollapseEl.textContent = isCollapsed ? '>>' : '<<';
+      objectFocusCollapseEl.setAttribute('aria-label', isCollapsed ? 'Expand sidebar' : 'Collapse sidebar');
+    };
+    var updateEmptyState = function() {
+      if (!objectFocusEl || !objectFocusEmptyEl) return;
+      var hasSelection = Boolean(currentObjectName);
+      var hasPins = pinnedItems.length > 0;
+      var isCollapsed = objectFocusEl.classList.contains('collapsed');
+      objectFocusEl.classList.toggle('empty-state', !hasSelection && !hasPins && !isCollapsed);
+      objectFocusEl.classList.toggle('no-selection', !hasSelection);
+    };
+
+    if (objectFocusEl) {
+      objectFocusEl.classList.add('visible', 'collapsed');
+      updateCollapseButtonLabel();
+      updateEmptyState();
+    }
 
     var escapeRegex = function(value) {
       return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -565,17 +885,28 @@
       return JSON.stringify(json, null, 4);
     };
 
-    var showObjectFocus = function($td, updateUrl) {
-      if (!objectFocusEl || !$td || !$td.length) return;
-      var objName = $td.data('object') || '';
-      var imgPath = $td.data('image');
-      var p3dPath = $td.data('p3d');
-      var modelType = $td.data('modeltype');
-      var category = $td.data('category');
-      var inGame = $td.data('ingame');
-      var consoleFlag = $td.data('console');
-      var tags = $td.data('tags');
-      var editorJsonRaw = $td.attr('data-editorjson');
+    var hideFocusDetails = function() {
+      if (objectFocusEl) {
+        objectFocusEl.classList.add('visible');
+        objectFocusEl.classList.remove('focus-empty');
+      }
+      currentObjectName = null;
+      currentObjectData = null;
+      updateEmptyState();
+    };
+
+    var setObjectFocusData = function(objData, updateUrl) {
+      if (!objectFocusEl || !objData) return;
+      objectFocusEl.classList.remove('focus-empty');
+      var objName = objData.objName || '';
+      var imgPath = objData.imgPath;
+      var p3dPath = objData.p3dPath;
+      var modelType = objData.modelType;
+      var category = objData.category;
+      var inGame = objData.inGame;
+      var consoleFlag = objData.consoleFlag;
+      var tags = objData.tags;
+      var editorJsonRaw = objData.editorJsonRaw;
 
       currentObjectName = objName;
       currentObjectData = {
@@ -583,7 +914,11 @@
         imgPath: imgPath,
         p3dPath: p3dPath,
         modelType: modelType,
-        editorJsonRaw: editorJsonRaw
+        editorJsonRaw: editorJsonRaw,
+        category: category,
+        inGame: inGame,
+        consoleFlag: consoleFlag,
+        tags: tags
       };
       objectFocusNameEl.textContent = objName;
       objectFocusPathEl.textContent = p3dPath ? ('Path: ' + p3dPath) : '';
@@ -600,6 +935,7 @@
         objectFocusImageEl.innerHTML =
           '<img src="/' + imgPath + '" alt="' + objName + ' preview">';
         objectFocusLinkEl.href = '/' + imgPath;
+        objectFocusLinkEl.setAttribute('download', objName ? (objName + '.png') : '');
         objectFocusLinkEl.style.display = 'inline-flex';
       } else {
         objectFocusImageEl.innerHTML =
@@ -608,10 +944,197 @@
       }
 
       objectFocusEl.classList.add('visible');
+      if (objectFocusPinEl) {
+        objectFocusPinEl.textContent = isPinned(objName) ? '📌 Unpin' : '📌 Pin';
+      }
+      updateEmptyState();
 
       if (updateUrl && objName) {
         history.replaceState({}, '', buildObjectUrl(objName));
       }
+    };
+
+    var buildPinnedItemFromCell = function($td) {
+      return {
+        objName: $td.data('object') || '',
+        imgPath: $td.data('image'),
+        p3dPath: $td.data('p3d'),
+        modelType: $td.data('modeltype'),
+        editorJsonRaw: $td.attr('data-editorjson'),
+        category: $td.data('category'),
+        inGame: $td.data('ingame'),
+        consoleFlag: $td.data('console'),
+        tags: $td.data('tags')
+      };
+    };
+
+    var addPinnedItem = function(item) {
+      if (!item || !item.objName) return;
+      var exists = isPinned(item.objName);
+      if (exists) return;
+      pinnedItems.push(item);
+      updatePinnedUI();
+    };
+
+    var removePinnedItemByName = function(objName) {
+      if (!objName) return;
+      pinnedItems = pinnedItems.filter(function(item) {
+        return item.objName !== objName;
+      });
+      updatePinnedUI();
+    };
+
+    var savePinnedItems = function() {
+      try {
+        localStorage.setItem('dayzPinnedObjects', JSON.stringify(pinnedItems));
+      } catch (err) {
+        console.warn('Unable to save pinned objects:', err);
+      }
+    };
+
+    var loadPinnedItems = function() {
+      try {
+        var stored = localStorage.getItem('dayzPinnedObjects');
+        if (!stored) return [];
+        var parsed = JSON.parse(stored);
+        return Array.isArray(parsed) ? parsed : [];
+      } catch (err) {
+        console.warn('Unable to load pinned objects:', err);
+        return [];
+      }
+    };
+
+    var updatePinnedUI = function() {
+      if (!pinnedObjectsEl || !pinnedListEl || !objectFocusEl) return;
+      pinnedListEl.innerHTML = '';
+
+      pinnedItems.forEach(function(item) {
+        var wrapper = document.createElement('div');
+        wrapper.className = 'pinned-item';
+        wrapper.setAttribute('data-object', item.objName || '');
+
+        var thumb = document.createElement('div');
+        thumb.className = 'pinned-thumb';
+        if (item.imgPath) {
+          var img = document.createElement('img');
+          img.src = '/' + item.imgPath;
+          img.alt = (item.objName || 'Object') + ' preview';
+          thumb.appendChild(img);
+        } else {
+          thumb.textContent = 'No image';
+        }
+
+        var name = document.createElement('div');
+        name.className = 'pinned-name';
+        name.textContent = item.objName || 'Unknown';
+
+        var removeBtn = document.createElement('button');
+        removeBtn.className = 'pinned-remove';
+        removeBtn.type = 'button';
+        removeBtn.textContent = '🆇';
+        removeBtn.addEventListener('click', function() {
+          pinnedItems = pinnedItems.filter(function(pinned) {
+            return pinned.objName !== item.objName;
+          });
+          updatePinnedUI();
+        });
+
+        wrapper.addEventListener('click', function(e) {
+          if (e.target.closest('.pinned-remove')) return;
+          if (objectFocusEl && objectFocusEl.classList.contains('collapsed')) {
+            objectFocusEl.classList.remove('collapsed');
+            updateCollapseButtonLabel();
+            updateEmptyState();
+          }
+          if (objectFocusEl && objectFocusEl.classList.contains('visible') && currentObjectName === item.objName) {
+            hideFocusDetails();
+            return;
+          }
+          setObjectFocusData({
+            objName: item.objName,
+            imgPath: item.imgPath,
+            p3dPath: item.p3dPath,
+            modelType: item.modelType,
+            editorJsonRaw: item.editorJsonRaw,
+            category: item.category,
+            inGame: item.inGame,
+            consoleFlag: item.consoleFlag,
+            tags: item.tags
+          }, false);
+        });
+
+        wrapper.appendChild(thumb);
+        wrapper.appendChild(name);
+        wrapper.appendChild(removeBtn);
+        pinnedListEl.appendChild(wrapper);
+      });
+
+      if (pinnedItems.length > 0) {
+        pinnedObjectsEl.classList.remove('is-empty');
+        objectFocusEl.classList.add('has-pins');
+      } else {
+        pinnedObjectsEl.classList.add('is-empty');
+        objectFocusEl.classList.remove('has-pins');
+      }
+
+      var hasPins = pinnedItems.length > 0;
+      if (pinnedCopyAllEl) {
+        pinnedCopyAllEl.classList.toggle('visible', hasPins);
+      }
+
+      if (pinnedCopyNamesEl) {
+        pinnedCopyNamesEl.classList.toggle('visible', hasPins);
+      }
+
+      if (pinnedDownloadAllEl) {
+        pinnedDownloadAllEl.classList.toggle('visible', hasPins);
+      }
+
+      if (pinnedClearAllEl) {
+        pinnedClearAllEl.classList.toggle('visible', hasPins);
+      }
+
+      savePinnedItems();
+      updateEmptyState();
+    };
+
+    pinnedItems = loadPinnedItems();
+    updatePinnedUI();
+
+    var buildEditorJsonArray = function(item) {
+      var jsonText = buildEditorJson(
+        item.editorJsonRaw,
+        item.objName,
+        item.modelType,
+        item.p3dPath
+      );
+      try {
+        var parsed = JSON.parse(jsonText);
+        return Array.isArray(parsed) ? parsed : [parsed];
+      } catch (err) {
+        console.error('Invalid editor JSON for pinned item:', err);
+        return [];
+      }
+    };
+
+    var showObjectFocus = function($td, updateUrl) {
+      if (!objectFocusEl || !$td || !$td.length) return;
+      if (objectFocusEl.classList.contains('collapsed')) {
+        objectFocusEl.classList.remove('collapsed');
+        updateCollapseButtonLabel();
+        updateEmptyState();
+      }
+      setObjectFocusData({
+        objName: $td.data('object') || '',
+        imgPath: $td.data('image'),
+        p3dPath: $td.data('p3d'),
+        modelType: $td.data('modeltype'),
+        category: $td.data('category'),
+        inGame: $td.data('ingame'),
+        consoleFlag: $td.data('console'),
+        tags: $td.data('tags'),
+        editorJsonRaw: $td.attr('data-editorjson')
+      }, updateUrl);
     };
 
     var showMissingObject = function(objName) {
@@ -626,6 +1149,7 @@
         '<span class="object-focus__missing">No image available for this object.</span>';
       objectFocusLinkEl.style.display = 'none';
       objectFocusEl.classList.add('visible');
+      updateEmptyState();
     };
 
     var focusByName = function(objName) {
@@ -633,7 +1157,7 @@
       var normalized = objName.trim();
       if (!normalized) return;
 
-      var matchCell = $(table.rows().nodes()).find('td:first-child').filter(function() {
+      var matchCell = $(table.rows().nodes()).find('.object-name-cell').filter(function() {
         var value = $(this).data('object');
         return value && String(value).toLowerCase() === normalized.toLowerCase();
       }).first();
@@ -644,9 +1168,9 @@
       }
 
       showObjectFocus(matchCell, false);
-      table.column(0).search('^' + escapeRegex(normalized), true, false).draw();
+      table.column(1).search('^' + escapeRegex(normalized), true, false).draw();
       table.one('draw', function() {
-        var $cell = $tableEl.find('tbody td:first-child').filter(function() {
+        var $cell = $tableEl.find('tbody .object-name-cell').filter(function() {
           var value = $(this).data('object');
           return value && String(value).toLowerCase() === normalized.toLowerCase();
         }).first();
@@ -665,10 +1189,8 @@
 
     if (objectFocusClearEl) {
       objectFocusClearEl.addEventListener('click', function() {
-        table.column(0).search('').draw();
-        if (objectFocusEl) {
-          objectFocusEl.classList.remove('visible');
-        }
+        table.column(1).search('').draw();
+        hideFocusDetails();
         history.replaceState({}, '', buildObjectUrl(''));
       });
     }
@@ -710,6 +1232,143 @@
       });
     }
 
+    if (objectFocusPinEl) {
+      objectFocusPinEl.addEventListener('click', function() {
+        if (!currentObjectData || !currentObjectData.objName) return;
+        var exists = isPinned(currentObjectData.objName);
+        if (exists) {
+          pinnedItems = pinnedItems.filter(function(item) {
+            return item.objName !== currentObjectData.objName;
+          });
+          updatePinnedUI();
+          if (objectFocusPinEl) {
+            objectFocusPinEl.textContent = '📌 Pin';
+          }
+          return;
+        }
+        pinnedItems.push({
+          objName: currentObjectData.objName,
+          imgPath: currentObjectData.imgPath,
+          p3dPath: currentObjectData.p3dPath,
+          modelType: currentObjectData.modelType,
+          editorJsonRaw: currentObjectData.editorJsonRaw,
+          category: currentObjectData.category,
+          inGame: currentObjectData.inGame,
+          consoleFlag: currentObjectData.consoleFlag,
+          tags: currentObjectData.tags
+        });
+        updatePinnedUI();
+        hideFocusDetails();
+      });
+    }
+
+    if (pinnedCopyNamesEl) {
+      pinnedCopyNamesEl.addEventListener('click', function() {
+        if (pinnedItems.length < 1) return;
+        var names = pinnedItems.map(function(item) { return item.objName; }).filter(Boolean);
+        if (!names.length) return;
+        navigator.clipboard.writeText(names.join('\n'));
+        pinnedCopyNamesEl.classList.add('copied');
+        setTimeout(function() { pinnedCopyNamesEl.classList.remove('copied'); }, 1200);
+      });
+    }
+
+    if (objectFocusCollapseEl) {
+      objectFocusCollapseEl.addEventListener('click', function() {
+        if (!objectFocusEl) return;
+        objectFocusEl.classList.toggle('collapsed');
+        updateCollapseButtonLabel();
+        updateEmptyState();
+      });
+    }
+
+    if (pinnedCopyAllEl) {
+      pinnedCopyAllEl.addEventListener('click', function() {
+        if (pinnedItems.length < 1) return;
+        var combined = [];
+        pinnedItems.forEach(function(item) {
+          combined = combined.concat(buildEditorJsonArray(item));
+        });
+        if (!combined.length) return;
+        navigator.clipboard.writeText(JSON.stringify(combined, null, 4));
+        pinnedCopyAllEl.classList.add('copied');
+        setTimeout(function() { pinnedCopyAllEl.classList.remove('copied'); }, 1200);
+      });
+    }
+
+    if (pinnedClearAllEl) {
+      pinnedClearAllEl.addEventListener('click', function() {
+        if (!pinnedItems.length) return;
+        pinnedItems = [];
+        updatePinnedUI();
+        if (objectFocusPinEl && currentObjectName) {
+          objectFocusPinEl.textContent = '📌 Pin';
+        }
+      });
+    }
+
+    var csvEscape = function(value) {
+      if (value === null || value === undefined) return '';
+      var str = String(value);
+      if (str.indexOf('"') !== -1 || str.indexOf(',') !== -1 || str.indexOf('\n') !== -1 || str.indexOf('\r') !== -1) {
+        return '"' + str.replace(/"/g, '""') + '"';
+      }
+      return str;
+    };
+
+    if (pinnedDownloadAllEl) {
+      pinnedDownloadAllEl.addEventListener('click', function() {
+        if (pinnedItems.length < 1) return;
+        if (typeof JSZip === 'undefined' || typeof saveAs === 'undefined') return;
+
+        var zip = new JSZip();
+        var csvRows = [];
+        csvRows.push([
+          'className',
+          'inGameName',
+          'category',
+          'path',
+          'console',
+          'type',
+          'tags',
+          'image'
+        ].join(','));
+
+        var imagePromises = pinnedItems.map(function(item) {
+          csvRows.push([
+            csvEscape(item.objName),
+            csvEscape(item.inGame),
+            csvEscape(item.category),
+            csvEscape(item.p3dPath),
+            csvEscape(item.consoleFlag === '✅' ? 'Yes' : item.consoleFlag === '❌' ? 'No' : item.consoleFlag),
+            csvEscape(item.modelType),
+            csvEscape(item.tags),
+            csvEscape(item.imgPath)
+          ].join(','));
+
+          if (!item.imgPath) return Promise.resolve();
+          return fetch('/' + item.imgPath)
+            .then(function(response) {
+              if (!response.ok) throw new Error('Image fetch failed');
+              return response.blob();
+            })
+            .then(function(blob) {
+              var name = item.objName ? (item.objName + '.png') : item.imgPath.split('/').pop();
+              zip.file('images/' + name, blob);
+            })
+            .catch(function() {});
+        });
+
+        zip.file('objects.csv', csvRows.join('\n'));
+
+        Promise.all(imagePromises).then(function() {
+          return zip.generateAsync({ type: 'blob' });
+        }).then(function(content) {
+          saveAs(content, 'dayz_objects.zip');
+        }).catch(function() {});
+      });
+    }
+
     var searchParams = new URLSearchParams(window.location.search);
     var objectParam = searchParams.get('object');
     if (objectParam) {
@@ -718,7 +1377,7 @@
 
 
     var categories = [];
-    table.column(2).data().each(function(value) {
+    table.column(3).data().each(function(value) {
       if (value && categories.indexOf(value) === -1) {
         categories.push(value);
       }
@@ -728,7 +1387,7 @@
     });
 
     $('#filterCategory').on('change', function() {
-      table.column(2).search(this.value).draw();
+      table.column(3).search(this.value).draw();
     });
 
     $('#filterConsole').on('change', function() {
@@ -744,10 +1403,12 @@
         previousCategoryValue = '';
         $('#togglePresets').removeClass('active').text('Show presets');
       }
+      hideFocusDetails();
       if (objectFocusEl) {
-        objectFocusEl.classList.remove('visible');
+        objectFocusEl.classList.add('visible', 'collapsed');
+        updateCollapseButtonLabel();
+        updateEmptyState();
       }
-      currentObjectName = null;
       var nextUrl = new URL(window.location);
       nextUrl.searchParams.delete('object');
       history.replaceState({}, '', nextUrl);
@@ -773,7 +1434,7 @@
     });
 
     $('#dayzObjects tbody')
-      .on('mouseenter', 'td:first-child', function(e) {
+      .on('mouseenter', '.object-name-cell', function(e) {
         var imgPath = $(this).data('image');
         if (!imgPath) return;
 
@@ -784,32 +1445,41 @@
         );
         $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });
       })
-      .on('mousemove', 'td:first-child', function(e) {
+      .on('mousemove', '.object-name-cell', function(e) {
         $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });
       })
-      .on('mouseleave', 'td:first-child', function() {
+      .on('mouseleave', '.object-name-cell', function() {
         $('#imgPreview').remove();
       });
 
-    $('#dayzObjects tbody').on('click', 'td:first-child', function(e) {
+    $('#dayzObjects tbody').on('click', '.object-name-cell', function(e) {
       if ($(e.target).hasClass('copy-btn')) return;
       var objName = $(this).data('object');
       if (objectFocusEl && objectFocusEl.classList.contains('visible') && currentObjectName === objName) {
-        objectFocusEl.classList.remove('visible');
-        currentObjectName = null;
-        currentObjectData = null;
+        hideFocusDetails();
         return;
       }
       showObjectFocus($(this), false);
     });
 
-    $('#dayzObjects tbody').on('click', '.copy-btn:not(.editor-copy-btn)', function(e) {
+    $('#dayzObjects tbody').on('click', '.copy-btn:not(.editor-copy-btn):not(.pin-btn)', function(e) {
       e.stopPropagation();
       var text = $(this).closest('td').data('object');
       navigator.clipboard.writeText(text);
       var $btn = $(this);
       $btn.text('✔');
       setTimeout(function() { $btn.text('📋'); }, 1000);
+    });
+
+    $('#dayzObjects tbody').on('click', '.pin-btn', function(e) {
+      e.stopPropagation();
+      var $td = $(this).closest('td');
+      var item = buildPinnedItemFromCell($td);
+      if (isPinned(item.objName)) {
+        removePinnedItemByName(item.objName);
+      } else {
+        addPinnedItem(item);
+      }
     });
 
     $('#dayzObjects tbody').on('click', '.editor-copy-btn', function(e) {
