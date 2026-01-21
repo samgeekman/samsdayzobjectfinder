@@ -464,6 +464,32 @@
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 4px 6px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .pinned-item:hover {
+    background: rgba(148, 163, 184, 0.12);
+  }
+  .pinned-actions {
+    display: inline-flex;
+    gap: 4px;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+  .pinned-item:hover .pinned-actions {
+    opacity: 1;
+  }
+  .pinned-action-btn {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    border-radius: 4px;
+    padding: 2px 4px;
+    cursor: pointer;
+    font-size: 0.65rem;
+  }
+  .pinned-action-btn:hover {
+    background: var(--bg-soft);
   }
 
   .pinned-thumb {
@@ -536,7 +562,7 @@
 
   .object-focus.collapsed .pinned-objects {
     width: 100%;
-    padding: 6px;
+    padding: 4px;
     border: none;
     box-shadow: none;
     background: transparent;
@@ -553,14 +579,18 @@
 
   .object-focus.collapsed .pinned-item {
     grid-template-columns: 1fr;
-    padding: 2px;
+    padding: 0;
     border: none;
     background: transparent;
     cursor: pointer;
+    justify-items: center;
+  }
+  .object-focus.collapsed .pinned-actions {
+    display: none;
   }
   .object-focus.collapsed .pinned-thumb {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
   }
 
   .object-focus.collapsed .pinned-name,
@@ -1028,11 +1058,48 @@
         name.className = 'pinned-name';
         name.textContent = item.objName || 'Unknown';
 
+        var actions = document.createElement('div');
+        actions.className = 'pinned-actions';
+
+        var editorBtn = document.createElement('button');
+        editorBtn.className = 'pinned-action-btn';
+        editorBtn.type = 'button';
+        editorBtn.title = 'Copy to Editor';
+        editorBtn.textContent = '🏗️';
+        editorBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var jsonText = buildEditorJson(
+            item.editorJsonRaw,
+            item.objName,
+            item.modelType,
+            item.p3dPath
+          );
+          navigator.clipboard.writeText(jsonText);
+          var original = editorBtn.textContent;
+          editorBtn.textContent = '✔';
+          setTimeout(function() { editorBtn.textContent = original; }, 900);
+        });
+
+        var nameBtn = document.createElement('button');
+        nameBtn.className = 'pinned-action-btn';
+        nameBtn.type = 'button';
+        nameBtn.title = 'Copy name';
+        nameBtn.textContent = '📋';
+        nameBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          if (!item.objName) return;
+          navigator.clipboard.writeText(item.objName);
+          var original = nameBtn.textContent;
+          nameBtn.textContent = '✔';
+          setTimeout(function() { nameBtn.textContent = original; }, 900);
+        });
+
         var removeBtn = document.createElement('button');
         removeBtn.className = 'pinned-remove';
         removeBtn.type = 'button';
         removeBtn.textContent = '🆇';
-        removeBtn.addEventListener('click', function() {
+        removeBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
           pinnedItems = pinnedItems.filter(function(pinned) {
             return pinned.objName !== item.objName;
           });
@@ -1064,8 +1131,11 @@
         });
 
         wrapper.appendChild(thumb);
+        actions.appendChild(editorBtn);
+        actions.appendChild(nameBtn);
+        actions.appendChild(removeBtn);
         wrapper.appendChild(name);
-        wrapper.appendChild(removeBtn);
+        wrapper.appendChild(actions);
         pinnedListEl.appendChild(wrapper);
       });
 
@@ -1268,8 +1338,8 @@
         var names = pinnedItems.map(function(item) { return item.objName; }).filter(Boolean);
         if (!names.length) return;
         navigator.clipboard.writeText(names.join('\n'));
-        pinnedCopyNamesEl.classList.add('copied');
-        setTimeout(function() { pinnedCopyNamesEl.classList.remove('copied'); }, 1200);
+        pinnedCopyNamesEl.textContent = '✔';
+        setTimeout(function() { pinnedCopyNamesEl.textContent = '📋'; }, 900);
       });
     }
 
@@ -1291,8 +1361,8 @@
         });
         if (!combined.length) return;
         navigator.clipboard.writeText(JSON.stringify(combined, null, 4));
-        pinnedCopyAllEl.classList.add('copied');
-        setTimeout(function() { pinnedCopyAllEl.classList.remove('copied'); }, 1200);
+        pinnedCopyAllEl.textContent = '✔';
+        setTimeout(function() { pinnedCopyAllEl.textContent = '🏗️'; }, 900);
       });
     }
 
@@ -1475,11 +1545,15 @@
       e.stopPropagation();
       var $td = $(this).closest('td');
       var item = buildPinnedItemFromCell($td);
+      var $btn = $(this);
+      var original = $btn.text();
       if (isPinned(item.objName)) {
         removePinnedItemByName(item.objName);
       } else {
         addPinnedItem(item);
       }
+      $btn.text('✔');
+      setTimeout(function() { $btn.text(original); }, 900);
     });
 
     $('#dayzObjects tbody').on('click', '.editor-copy-btn', function(e) {
