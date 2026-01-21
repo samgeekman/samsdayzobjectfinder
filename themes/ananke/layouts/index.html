@@ -124,6 +124,10 @@
     cursor: pointer;
     user-select: none;
   }
+  #dayzObjects tbody tr.object-selected {
+    outline: 1px solid var(--accent);
+    outline-offset: -1px;
+  }
 
   .copy-btn {
     position: absolute;
@@ -702,23 +706,6 @@
   <div id="objectFocus" class="object-focus" aria-live="polite">
     <div class="object-focus__pin-hint" aria-hidden="true">📌</div>
     <button id="objectFocusCollapse" class="object-focus__collapse" type="button" aria-label="Collapse sidebar">&gt;&gt;</button>
-    <div id="pinnedObjects" class="pinned-objects is-empty" aria-live="polite">
-      <div class="pinned-header">
-        <span class="pinned-title">Pinned</span>
-        <div class="pinned-copy">
-          <div class="pinned-copy__row">
-            <span>Copy all:</span>
-            <button id="pinnedCopyAll" class="pill-button" type="button" title="Copy all to Editor">🏗️</button>
-            <button id="pinnedCopyNames" class="pill-button" type="button" title="Copy all names">📋</button>
-          </div>
-          <div class="pinned-copy__row">
-            <button id="pinnedDownloadAll" class="pill-button" type="button" title="Download all">↓ Download all</button>
-            <button id="pinnedClearAll" class="pill-button" type="button" title="Unpin all">Unpin all</button>
-          </div>
-        </div>
-      </div>
-      <div id="pinnedList" class="pinned-list"></div>
-    </div>
     <div class="object-focus__image" id="objectFocusImage">
       <span class="object-focus__missing">Select an object to preview its image.</span>
     </div>
@@ -738,9 +725,26 @@
       <div class="object-focus__actions">
         <div class="object-focus__secondary is-right">
           <a id="objectFocusLink" class="pill-button" href="#" download>↓ Download image</a>
-          <button id="objectFocusClear" class="pill-button" type="button">🆇 Close object</button>
+          <button id="objectFocusClear" class="pill-button" type="button">🆇 Deselect object</button>
         </div>
       </div>
+    </div>
+    <div id="pinnedObjects" class="pinned-objects is-empty" aria-live="polite">
+      <div class="pinned-header">
+        <span class="pinned-title">Pinned</span>
+        <div class="pinned-copy">
+          <div class="pinned-copy__row">
+            <span>Copy all:</span>
+            <button id="pinnedCopyAll" class="pill-button" type="button" title="Copy all to Editor">🏗️</button>
+            <button id="pinnedCopyNames" class="pill-button" type="button" title="Copy all names">📋</button>
+          </div>
+          <div class="pinned-copy__row">
+            <button id="pinnedDownloadAll" class="pill-button" type="button" title="Download all">↓ Download all</button>
+            <button id="pinnedClearAll" class="pill-button" type="button" title="Unpin all">Unpin all</button>
+          </div>
+        </div>
+      </div>
+      <div id="pinnedList" class="pinned-list"></div>
     </div>
   </div>
 </div>
@@ -838,6 +842,7 @@
     var objectFocusEmptyEl = document.getElementById('objectFocusEmpty');
     var currentObjectName = null;
     var currentObjectData = null;
+    var currentObjectRowEl = null;
     var pinnedObjectsEl = document.getElementById('pinnedObjects');
     var pinnedListEl = document.getElementById('pinnedList');
     var pinnedClearAllEl = document.getElementById('pinnedClearAll');
@@ -859,9 +864,8 @@
     var updateEmptyState = function() {
       if (!objectFocusEl || !objectFocusEmptyEl) return;
       var hasSelection = Boolean(currentObjectName);
-      var hasPins = pinnedItems.length > 0;
       var isCollapsed = objectFocusEl.classList.contains('collapsed');
-      objectFocusEl.classList.toggle('empty-state', !hasSelection && !hasPins && !isCollapsed);
+      objectFocusEl.classList.toggle('empty-state', !hasSelection && !isCollapsed);
       objectFocusEl.classList.toggle('no-selection', !hasSelection);
     };
 
@@ -920,8 +924,29 @@
         objectFocusEl.classList.add('visible');
         objectFocusEl.classList.remove('focus-empty');
       }
+      if (objectFocusNameEl) {
+        objectFocusNameEl.textContent = '';
+      }
+      if (objectFocusPathEl) {
+        objectFocusPathEl.textContent = '';
+      }
+      if (objectFocusMetaEl) {
+        objectFocusMetaEl.innerHTML = '';
+      }
+      if (objectFocusImageEl) {
+        objectFocusImageEl.innerHTML =
+          '<span class="object-focus__missing">Select an object to preview its image.</span>';
+      }
+      if (objectFocusLinkEl) {
+        objectFocusLinkEl.style.display = 'none';
+        objectFocusLinkEl.removeAttribute('download');
+      }
       currentObjectName = null;
       currentObjectData = null;
+      if (currentObjectRowEl) {
+        currentObjectRowEl.classList.remove('object-selected');
+        currentObjectRowEl = null;
+      }
       updateEmptyState();
     };
 
@@ -1189,10 +1214,17 @@
 
     var showObjectFocus = function($td, updateUrl) {
       if (!objectFocusEl || !$td || !$td.length) return;
+      if (currentObjectRowEl) {
+        currentObjectRowEl.classList.remove('object-selected');
+      }
       if (objectFocusEl.classList.contains('collapsed')) {
         objectFocusEl.classList.remove('collapsed');
         updateCollapseButtonLabel();
         updateEmptyState();
+      }
+      currentObjectRowEl = $td.closest('tr').get(0);
+      if (currentObjectRowEl) {
+        currentObjectRowEl.classList.add('object-selected');
       }
       setObjectFocusData({
         objName: $td.data('object') || '',
