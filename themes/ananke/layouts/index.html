@@ -124,6 +124,9 @@
     cursor: pointer;
     user-select: none;
   }
+  #dayzObjects tbody .path-cell {
+    position: relative;
+  }
   #dayzObjects tbody tr.object-selected {
     outline: 1px solid var(--accent);
     outline-offset: -1px;
@@ -155,6 +158,13 @@
   }
   .copy-btn.pin-btn {
     right: 76px;
+  }
+  .path-cell .path-pin-btn {
+    right: 4px;
+    opacity: 0;
+  }
+  .path-cell:hover .path-pin-btn {
+    opacity: 1;
   }
 
   .copy-btn:hover {
@@ -694,7 +704,12 @@
         </td>
         <td>{{ .inGameName }}</td>
         <td>{{ .category }}</td>
-        <td>{{ .path }}</td>
+        <td class="path-cell">
+          {{ .path }}
+          {{ if and .path (compare.Ne .path "-") }}
+          <button class="copy-btn path-pin-btn" title="Pin path">📌</button>
+          {{ end }}
+        </td>
         <td>{{ if .usableOnConsole }}✅{{ else }}❌{{ end }}</td>
         <td>{{ .modelType }}</td>
         <td>{{ with .searchTags }}{{ . }}{{ end }}</td>
@@ -1011,6 +1026,7 @@
 
     var buildPinnedItemFromCell = function($td) {
       return {
+        type: 'object',
         objName: $td.data('object') || '',
         imgPath: $td.data('image'),
         p3dPath: $td.data('p3d'),
@@ -1023,6 +1039,12 @@
       };
     };
 
+    var buildPinnedItemFromRow = function(rowEl) {
+      var cell = rowEl ? rowEl.querySelector('.object-name-cell') : null;
+      if (!cell) return null;
+      return buildPinnedItemFromCell($(cell));
+    };
+
     var addPinnedItem = function(item) {
       if (!item || !item.objName) return;
       var exists = isPinned(item.objName);
@@ -1031,12 +1053,58 @@
       updatePinnedUI();
     };
 
+    var addPinnedPathItem = function(pathValue, rows) {
+      if (!pathValue) return;
+      var exists = pinnedItems.some(function(item) {
+        return item.type === 'path' && item.p3dPath === pathValue;
+      });
+      if (exists) {
+        pinnedItems = pinnedItems.filter(function(item) {
+          return item.type !== 'path' || item.p3dPath !== pathValue;
+        });
+        updatePinnedUI();
+        return;
+      }
+      var items = rows.map(function(rowEl) {
+        var item = buildPinnedItemFromRow(rowEl);
+        if (item) {
+          item.sourcePath = pathValue;
+        }
+        return item;
+      }).filter(Boolean);
+      pinnedItems.push({
+        type: 'path',
+        objName: pathValue,
+        p3dPath: pathValue,
+        items: items,
+        count: items.length
+      });
+      updatePinnedUI();
+    };
+
     var removePinnedItemByName = function(objName) {
       if (!objName) return;
       pinnedItems = pinnedItems.filter(function(item) {
+        if (item.type === 'path') {
+          return item.p3dPath !== objName && item.objName !== objName;
+        }
         return item.objName !== objName;
       });
       updatePinnedUI();
+    };
+
+    var getPinnedEntries = function() {
+      var entries = [];
+      pinnedItems.forEach(function(item) {
+        if (item.type === 'path') {
+          if (Array.isArray(item.items)) {
+            entries = entries.concat(item.items);
+          }
+        } else {
+          entries.push(item);
+        }
+      });
+      return entries;
     };
 
     var savePinnedItems = function() {
@@ -1064,60 +1132,34 @@
       pinnedListEl.innerHTML = '';
 
       pinnedItems.forEach(function(item) {
+        if (item.type === 'path' && !item.count && Array.isArray(item.items)) {
+          item.count = item.items.length;
+        }
         var wrapper = document.createElement('div');
         wrapper.className = 'pinned-item';
         wrapper.setAttribute('data-object', item.objName || '');
 
         var thumb = document.createElement('div');
         thumb.className = 'pinned-thumb';
-        if (item.imgPath) {
+        if (item.imgPath && item.type !== 'path') {
           var img = document.createElement('img');
           img.src = '/' + item.imgPath;
           img.alt = (item.objName || 'Object') + ' preview';
           thumb.appendChild(img);
         } else {
-          thumb.textContent = 'No image';
+          thumb.textContent = item.type === 'path' ? 'Path' : 'No image';
         }
 
         var name = document.createElement('div');
         name.className = 'pinned-name';
-        name.textContent = item.objName || 'Unknown';
+        if (item.type === 'path') {
+          name.textContent = (item.p3dPath || item.objName || 'Path') + ' (' + (item.count || 0) + ' objects)';
+        } else {
+          name.textContent = item.objName || 'Unknown';
+        }
 
         var actions = document.createElement('div');
         actions.className = 'pinned-actions';
-
-        var editorBtn = document.createElement('button');
-        editorBtn.className = 'pinned-action-btn';
-        editorBtn.type = 'button';
-        editorBtn.title = 'Copy to Editor';
-        editorBtn.textContent = '🏗️';
-        editorBtn.addEventListener('click', function(e) {
-          e.stopPropagation();
-          var jsonText = buildEditorJson(
-            item.editorJsonRaw,
-            item.objName,
-            item.modelType,
-            item.p3dPath
-          );
-          navigator.clipboard.writeText(jsonText);
-          var original = editorBtn.textContent;
-          editorBtn.textContent = '✔';
-          setTimeout(function() { editorBtn.textContent = original; }, 900);
-        });
-
-        var nameBtn = document.createElement('button');
-        nameBtn.className = 'pinned-action-btn';
-        nameBtn.type = 'button';
-        nameBtn.title = 'Copy name';
-        nameBtn.textContent = '📋';
-        nameBtn.addEventListener('click', function(e) {
-          e.stopPropagation();
-          if (!item.objName) return;
-          navigator.clipboard.writeText(item.objName);
-          var original = nameBtn.textContent;
-          nameBtn.textContent = '✔';
-          setTimeout(function() { nameBtn.textContent = original; }, 900);
-        });
 
         var removeBtn = document.createElement('button');
         removeBtn.className = 'pinned-remove';
@@ -1126,10 +1168,51 @@
         removeBtn.addEventListener('click', function(e) {
           e.stopPropagation();
           pinnedItems = pinnedItems.filter(function(pinned) {
+            if (item.type === 'path') {
+              return pinned.type !== 'path' || pinned.p3dPath !== item.p3dPath;
+            }
             return pinned.objName !== item.objName;
           });
           updatePinnedUI();
         });
+
+        if (item.type !== 'path') {
+          var editorBtn = document.createElement('button');
+          editorBtn.className = 'pinned-action-btn';
+          editorBtn.type = 'button';
+          editorBtn.title = 'Copy to Editor';
+          editorBtn.textContent = '🏗️';
+          editorBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            var jsonText = buildEditorJson(
+              item.editorJsonRaw,
+              item.objName,
+              item.modelType,
+              item.p3dPath
+            );
+            navigator.clipboard.writeText(jsonText);
+            var original = editorBtn.textContent;
+            editorBtn.textContent = '✔';
+            setTimeout(function() { editorBtn.textContent = original; }, 900);
+          });
+
+          var nameBtn = document.createElement('button');
+          nameBtn.className = 'pinned-action-btn';
+          nameBtn.type = 'button';
+          nameBtn.title = 'Copy name';
+          nameBtn.textContent = '📋';
+          nameBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            if (!item.objName) return;
+            navigator.clipboard.writeText(item.objName);
+            var original = nameBtn.textContent;
+            nameBtn.textContent = '✔';
+            setTimeout(function() { nameBtn.textContent = original; }, 900);
+          });
+
+          actions.appendChild(editorBtn);
+          actions.appendChild(nameBtn);
+        }
 
         wrapper.addEventListener('click', function(e) {
           if (e.target.closest('.pinned-remove')) return;
@@ -1138,6 +1221,7 @@
             updateCollapseButtonLabel();
             updateEmptyState();
           }
+          if (item.type === 'path') return;
           if (objectFocusEl && objectFocusEl.classList.contains('visible') && currentObjectName === item.objName) {
             hideFocusDetails();
             return;
@@ -1156,8 +1240,6 @@
         });
 
         wrapper.appendChild(thumb);
-        actions.appendChild(editorBtn);
-        actions.appendChild(nameBtn);
         actions.appendChild(removeBtn);
         wrapper.appendChild(name);
         wrapper.appendChild(actions);
@@ -1366,8 +1448,9 @@
 
     if (pinnedCopyNamesEl) {
       pinnedCopyNamesEl.addEventListener('click', function() {
-        if (pinnedItems.length < 1) return;
-        var names = pinnedItems.map(function(item) { return item.objName; }).filter(Boolean);
+        var entries = getPinnedEntries();
+        if (!entries.length) return;
+        var names = entries.map(function(item) { return item.objName; }).filter(Boolean);
         if (!names.length) return;
         navigator.clipboard.writeText(names.join('\n'));
         pinnedCopyNamesEl.textContent = '✔';
@@ -1386,10 +1469,28 @@
 
     if (pinnedCopyAllEl) {
       pinnedCopyAllEl.addEventListener('click', function() {
-        if (pinnedItems.length < 1) return;
+        var entries = getPinnedEntries();
+        if (!entries.length) return;
         var combined = [];
-        pinnedItems.forEach(function(item) {
-          combined = combined.concat(buildEditorJsonArray(item));
+        var cursor = 0;
+        var spacingBase = 10;
+        entries.forEach(function(item) {
+          var objects = buildEditorJsonArray(item);
+          objects.forEach(function(obj) {
+            var scale = 1;
+            if (obj && obj.Scale !== undefined && obj.Scale !== null) {
+              var parsedScale = parseFloat(obj.Scale);
+              if (!isNaN(parsedScale) && isFinite(parsedScale)) {
+                scale = parsedScale;
+              }
+            }
+            if (!obj.Position || obj.Position.length < 3) {
+              obj.Position = [0, 0, 0];
+            }
+            obj.Position[0] = cursor;
+            cursor += spacingBase * scale;
+            combined.push(obj);
+          });
         });
         if (!combined.length) return;
         navigator.clipboard.writeText(JSON.stringify(combined, null, 4));
@@ -1417,10 +1518,18 @@
       }
       return str;
     };
+    var sanitizePathFolder = function(value) {
+      if (!value) return 'unknown';
+      return String(value)
+        .replace(/[\\\/]+/g, '_')
+        .replace(/[^a-zA-Z0-9._-]/g, '_')
+        .slice(0, 80);
+    };
 
     if (pinnedDownloadAllEl) {
       pinnedDownloadAllEl.addEventListener('click', function() {
-        if (pinnedItems.length < 1) return;
+        var entries = getPinnedEntries();
+        if (!entries.length) return;
         if (typeof JSZip === 'undefined' || typeof saveAs === 'undefined') return;
 
         var zip = new JSZip();
@@ -1433,10 +1542,12 @@
           'console',
           'type',
           'tags',
-          'image'
+          'image',
+          'imageFound'
         ].join(','));
 
-        var imagePromises = pinnedItems.map(function(item) {
+        var imagePromises = entries.map(function(item) {
+          var imageFound = item.imgPath ? 'Yes' : 'No';
           csvRows.push([
             csvEscape(item.objName),
             csvEscape(item.inGame),
@@ -1445,7 +1556,8 @@
             csvEscape(item.consoleFlag === '✅' ? 'Yes' : item.consoleFlag === '❌' ? 'No' : item.consoleFlag),
             csvEscape(item.modelType),
             csvEscape(item.tags),
-            csvEscape(item.imgPath)
+            csvEscape(item.imgPath),
+            csvEscape(imageFound)
           ].join(','));
 
           if (!item.imgPath) return Promise.resolve();
@@ -1456,7 +1568,11 @@
             })
             .then(function(blob) {
               var name = item.objName ? (item.objName + '.png') : item.imgPath.split('/').pop();
-              zip.file('images/' + name, blob);
+              if (item.sourcePath) {
+                zip.file('images/' + sanitizePathFolder(item.sourcePath) + '/' + name, blob);
+              } else {
+                zip.file('images/' + name, blob);
+              }
             })
             .catch(function() {});
         });
@@ -1584,6 +1700,28 @@
       } else {
         addPinnedItem(item);
       }
+      $btn.text('✔');
+      setTimeout(function() { $btn.text(original); }, 900);
+    });
+
+    $('#dayzObjects tbody').on('click', '.path-pin-btn', function(e) {
+      e.stopPropagation();
+      var $cell = $(this).closest('td');
+      var $row = $cell.closest('tr');
+      var $nameCell = $row.find('.object-name-cell');
+      var pathValue = $nameCell.data('p3d') || $cell.text().trim();
+      if (!pathValue) return;
+      var rows = [];
+      $(table.rows().nodes()).each(function() {
+        var cell = this.querySelector('.object-name-cell');
+        if (!cell) return;
+        if (cell.getAttribute('data-p3d') === pathValue) {
+          rows.push(this);
+        }
+      });
+      addPinnedPathItem(pathValue, rows);
+      var $btn = $(this);
+      var original = $btn.text();
       $btn.text('✔');
       setTimeout(function() { $btn.text(original); }, 900);
     });
