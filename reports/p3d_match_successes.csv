@@ -1,0 +1,544 @@
+class_name,file_path,matched_config,matched_tags,match_score,Confimed by user
+piss_particle.p3d,database/data/data/ParticleEffects/Excretion/objects.json,PissGround,"excretion, particleeffects, pee",4,y
+shit_particle.p3d,database/data/data/ParticleEffects/Excretion/objects.json,ShitGround,"excretion, particleeffects, poop, poo",4,y
+vomit_blood_particle.p3d,database/data/data/ParticleEffects/Excretion/objects.json,VomitGround,"excretion, particleeffects, sick",5,n
+vomit_particle.p3d,database/data/data/ParticleEffects/Excretion/objects.json,VomitGround,"excretion, particleeffects, sick",5,y
+warheadstorage_top.p3d,database/structures_sakhal/military/storage/objects.json,Land_WarheadStorage_Top,"military, sakhal, bunker, underground",20,y
+sodacan.p3d,database/gear/drinks/objects.json,SodaCan_Cola,"drinks, gear, pop, fizzy, coke",17,y
+sodacan_used.p3d,database/gear/drinks/objects.json,SodaCan_Cola,"drinks, gear, pop, fizzy, coke",18,n
+waterpouch.p3d,database/gear/drinks/objects.json,WaterPouch_Natural,"drinks, gear, water, drinking, bottle, leather",20,y
+barrel_holes.p3d,database/gear/cooking/objects.json,BarrelHoles_Blue,"container, cooking, drum, effect, fire, flame, gear, storage, base building, oil",6,y
+cookingpot.p3d,database/gear/cooking/objects.json,CookingStand,"gear, cooking",7,n
+log01.p3d,database/gear/cooking/objects.json,LighterZippo,"campfire, cooking, gear, fire",1,n
+log01burned.p3d,database/gear/cooking/objects.json,LighterZippo,"campfire, cooking, gear, fire",1,n
+log02.p3d,database/gear/cooking/objects.json,LighterZippo,"campfire, cooking, gear, fire",1,n
+log02burned.p3d,database/gear/cooking/objects.json,LighterZippo,"campfire, cooking, gear, fire",1,n
+log03.p3d,database/gear/cooking/objects.json,LighterZippo,"campfire, cooking, gear, fire",1,n
+log03burned.p3d,database/gear/cooking/objects.json,LighterZippo,"campfire, cooking, gear, fire",1,n
+oven.p3d,database/gear/cooking/objects.json,OvenIndoor,"cooking, fireplace, gear",4,y
+stone.p3d,database/gear/cooking/objects.json,StaticObj_fireplace_spot_snow,"cooking, gear, fire, tree, wood, timber, warm, melt, sakhal",2,n
+stoneground.p3d,database/gear/cooking/objects.json,StaticObj_fireplace_spot_snow,"cooking, gear, fire, tree, wood, timber, warm, melt, sakhal",2,n
+alarmclock.p3d,database/gear/tools/objects.json,AlarmClock_Blue,"clock, timer",20,y
+canoe_paddle.p3d,database/gear/tools/objects.json,Paddle,"canoe, gear, tools",10,y
+catle_prod.p3d,database/gear/tools/objects.json,CattleProd,"gear, tools",3,y
+cleaning_kit_wood.p3d,database/gear/tools/objects.json,CattleProd,"gear, tools",1,n
+csla_field_shovel.p3d,database/gear/tools/objects.json,Shovel,"gear, tools, digging, spade",10,n
+doorcheck120x220-1cm.p3d,database/gear/tools/objects.json,DigSecondary,"gear, tools, digging, spade, base building",1,n
+electroniccase.p3d,database/gear/tools/objects.json,ElectronicRepairKit,"electrical, gear, tools",10,y
+flanged_mace.p3d,database/gear/tools/objects.json,Mace,"gear, tools, medieval, castle",10,y
+improvised_fish_trap.p3d,database/gear/tools/objects.json,ImprovisedFishingRod,"gear, simple, tools, fishing",10,n
+metal_pipe.p3d,database/gear/tools/objects.json,Pipe,"gear, tools",10,y
+pen.p3d,database/gear/tools/objects.json,Pen_Black,"gear, tools, writing, notes",13,y
+pressure_monitor.p3d,database/gear/tools/objects.json,Pen_Black,"gear, tools, writing, notes",1,n
+shippingcontainerkeys.p3d,database/gear/tools/objects.json,ShippingContainerKeys_Blue,"sakhal, quest, locked",31,y
+walkietalkie.p3d,database/gear/tools/objects.json,WeaponCleaningKit,"gear, guns, tools, repair",1,n
+canvas.p3d,database/gear/camping/objects.json,CarTent,"camping, gear, shelter, transport, vehicle",2,n
+christmas_lights.p3d,database/gear/camping/objects.json,CarTent,"camping, gear, shelter, transport, vehicle",1,n
+combination_lock3.p3d,database/gear/camping/objects.json,CombinationLock,"camping, dial, gear, base building",11,y
+dz_flag.p3d,database/gear/camping/objects.json,Flag_APA,"banner, signal, base building, territory, ",10,y
+hbox.p3d,database/gear/camping/objects.json,HescoBox,"barrier, camping, crate, gear, mesh, storage, wire",1,y
+hbox_base.p3d,database/gear/camping/objects.json,HescoBox,"barrier, camping, crate, gear, mesh, storage, wire",1,n
+hbox_folded.p3d,database/gear/camping/objects.json,HescoBox,"barrier, camping, crate, gear, mesh, storage, wire",1,n
+hbox_unfolded_empty.p3d,database/gear/camping/objects.json,HescoBox,"barrier, camping, crate, gear, mesh, storage, wire",1,n
+hbox_unfolded_filled.p3d,database/gear/camping/objects.json,HescoBox,"barrier, camping, crate, gear, mesh, storage, wire",1,n
+shelter_frame.p3d,database/gear/camping/objects.json,ShelterKit,"camping, gear, storage",7,n
+string_lights_p.p3d,database/gear/camping/objects.json,StaticObj_PartyTent,"camping, gear, shelter",2,n
+tent_cluttercutter.p3d,database/gear/camping/objects.json,TerritoryFlag,"banner, camping, gear, pole, signal, base building",2,n
+tent_large_cluttercutter.p3d,database/gear/camping/objects.json,TerritoryFlag,"banner, camping, gear, pole, signal, base building",2,n
+tent_medium_packed.p3d,database/gear/camping/objects.json,TerritoryFlag,"banner, camping, gear, pole, signal, base building",2,n
+tent_medium_pitched.p3d,database/gear/camping/objects.json,TerritoryFlag,"banner, camping, gear, pole, signal, base building",2,n
+t_fagussylvatica_2fmesh.p3d,database/gear/camping/objects.json,TerritoryFlag,"banner, camping, gear, pole, signal, base building",1,n
+t_fagussylvatica_2fproxy.p3d,database/gear/camping/objects.json,TerritoryFlag,"banner, camping, gear, pole, signal, base building",1,n
+wooden_case.p3d,database/gear/camping/objects.json,WoodenCrate,"box, camping, gear, storage",6,y
+map_1stperson.p3d,database/gear/navigation/objects.json,map_opened,"gear, navigation, tourist",14,n
+map_chernarus.p3d,database/gear/navigation/objects.json,map_opened,"gear, navigation, tourist",14,n
+map_chernarus_animated.p3d,database/gear/navigation/objects.json,map_opened,"gear, navigation, tourist",14,n
+map_chernarus_open.p3d,database/gear/navigation/objects.json,map_opened,"gear, navigation, tourist",14,
+landmine.p3d,database/gear/traps/objects.json,LandMineTrap,"gear, explosion, military, combat",8,y
+snaretrap.p3d,database/gear/traps/objects.json,SmallFishTrap,"gear, traps",1,n
+tripwire.p3d,database/gear/traps/objects.json,TripwireTrap,"gear, traps",8,y
+tripwire_g.p3d,database/gear/traps/objects.json,TripwireTrap,"gear, traps",8,n
+cannabis_plant.p3d,database/gear/cultivation/objects.json,Plant_Cannabis,"3x3, clutter, cultivation, cutter, gear",20,y
+clutter_cutter_2m_x_2m.p3d,database/gear/cultivation/objects.json,ClutterCutter6x6,"3x3, cultivation, gear",7,n
+clutter_cutter_6m_x_6m.p3d,database/gear/cultivation/objects.json,ClutterCutter6x6,"3x3, cultivation, gear",7,y
+compost.p3d,database/gear/cultivation/objects.json,ClutterCutter6x6,"3x3, cultivation, gear",1,n
+pepper_plant.p3d,database/gear/cultivation/objects.json,Plant_Pepper,"cultivation, gear, growing, gardening",21,y
+potatoes_seeds_pack.p3d,database/gear/cultivation/objects.json,ProxyTomato_Seeds,"cultivation, gear",11,n
+potato_plant.p3d,database/gear/cultivation/objects.json,Plant_Potato,"cultivation, gear, growing, gardening",21,n
+pumpkin_plant.p3d,database/gear/cultivation/objects.json,Plant_Pumpkin,"cultivation, gear, growing, gardening",21,n
+soil_cultivated.p3d,database/gear/cultivation/objects.json,stake,"cultivation, gear, growing, gardening",1,n
+tomato_plant.p3d,database/gear/cultivation/objects.json,Plant_Tomato,"cultivation, gear, growing, gardening",20,n
+zucchini_plant.p3d,database/gear/cultivation/objects.json,Plant_Zucchini,"cultivation, gear, growing, gardening",20,y
+alfa.p3d,database/gear/medical/objects.json,AntiPestsSpray,"gear, health, hospital, insecticide, medical",1,y
+bandage.p3d,database/gear/medical/objects.json,Bandage_end,"disinfectant, gear, health, hospital, medical, spray",17,y
+bloodbag_sealed.p3d,database/gear/medical/objects.json,BloodBagEmpty,"backpack, collection, gear, health, hospital, kit, medical, storage",8,n
+cigarettes_lit.p3d,database/gear/medical/objects.json,CigarettePack_Chernamorka,"cigarettes, gear, health",9,y
+cigarettes_unlit.p3d,database/gear/medical/objects.json,CigarettePack_Chernamorka,"cigarettes, gear, health",9,y
+cigarette_pack.p3d,database/gear/medical/objects.json,CigarettePack_Chernamorka,"cigarettes, gear, health",9,y
+dexamphetamine.p3d,database/gear/medical/objects.json,Defibrillator,"gear, health, hospital, medical",2,n
+improvised_fixture.p3d,database/gear/medical/objects.json,Proxyimprovised_fixture,"cigarettes, gear, health",10,n
+improvised_fixture_f.p3d,database/gear/medical/objects.json,Proxyimprovised_fixture,"cigarettes, gear, health",10,n
+improvised_fixture_m.p3d,database/gear/medical/objects.json,Proxyimprovised_fixture,"cigarettes, gear, health",10,n
+med_tmeter.p3d,database/gear/medical/objects.json,Morphine,"auto, gear, health, hospital, injector, medical",1,n
+painkillers2.p3d,database/gear/medical/objects.json,PainkillerTablets,"codeine, gear, health, hospital, medical, pills",10,y
+startkit.p3d,database/gear/medical/objects.json,StartKitIV,"gear, health, hospital, medical, blood, saline",8,y
+tetracycline.p3d,database/gear/medical/objects.json,TetracyclineAntibiotics,"gear, health, hospital, medical, pills",12,y
+transfusionkit.p3d,database/gear/medical/objects.json,TetracyclineAntibiotics,"gear, health, hospital, medical, pills",1,n
+animal_guts.p3d,database/gear/food/objects.json,Guts,"food, gear, animal",10,y
+animal_smallguts.p3d,database/gear/food/objects.json,SmallGuts,"food, gear, animal",10,y
+bait_worm.p3d,database/gear/food/objects.json,Worm,"earthworm, food, gear, fishingm bait",10,y
+bakedbeans.p3d,database/gear/food/objects.json,BakedBeansCan,"canned, food, gear",10,y
+bakedbeans_open.p3d,database/gear/food/objects.json,BakedBeansCanOpened,"canned, food, gear",10,y
+blueberries.p3d,database/gear/food/objects.json,Bone,"bones, food, gear",1,n
+boxcereal.p3d,database/gear/food/objects.json,BoxCerealCrunchin,"cereals, crate, food, gear, storage",9,y
+candycane.p3d,database/gear/food/objects.json,Candycane_Green,"candy, cane, food, gear, seasonal, festive, santa, christmas",19,y
+canina_raw.p3d,database/gear/food/objects.json,CaninaBerry,"food, gear, fruit, vegetable",6,y
+can_sardines.p3d,database/gear/food/objects.json,Sardines,"food, gear, meat, fishing",10,y
+can_sardines_open.p3d,database/gear/food/objects.json,SardinesOpened,"food, gear, meat, fishing",10,y
+foodcan_100g.p3d,database/gear/food/objects.json,FoxSteakMeat,"food, gear, meat, hunting",2,n
+foodcan_100g_open.p3d,database/gear/food/objects.json,FoxSteakMeat,"food, gear, meat, hunting",2,n
+foodcan_250g.p3d,database/gear/food/objects.json,FoxSteakMeat,"food, gear, meat, hunting",2,n
+foodcan_250g_open.p3d,database/gear/food/objects.json,FoxSteakMeat,"food, gear, meat, hunting",2,n
+food_can.p3d,database/gear/food/objects.json,FoxSteakMeat,"food, gear, meat, hunting",2,n
+food_can_open.p3d,database/gear/food/objects.json,FoxSteakMeat,"food, gear, meat, hunting",2,n
+food_can_proxied.p3d,database/gear/food/objects.json,FoxSteakMeat,"food, gear, meat, hunting",2,n
+gallus_gallus_female_dead.p3d,database/gear/food/objects.json,Guts,"food, gear, animal",1,n
+gallus_gallus_male_dead.p3d,database/gear/food/objects.json,Guts,"food, gear, animal",1,n
+human_meat.p3d,database/gear/food/objects.json,HumanSteakMeat,"food, gear, cannibal, kuru, prion",5,y
+lepus_europaeus_dead.p3d,database/gear/food/objects.json,Lunchmeat,"canned, food, gear",1,n
+meat.p3d,database/gear/food/objects.json,Marmalade,"food, gear, jam, strawberry",1,n
+meat_breast.p3d,database/gear/food/objects.json,Marmalade,"food, gear, jam, strawberry",1,n
+meat_leg.p3d,database/gear/food/objects.json,Marmalade,"food, gear, jam, strawberry",1,n
+meat_steak.p3d,database/gear/food/objects.json,ProxyMeat_steak,"food, gear",10,n
+mushroom_agaricus.p3d,database/gear/food/objects.json,Marmalade,"food, gear, jam, strawberry",1,n
+mushroom_amanita.p3d,database/gear/food/objects.json,Marmalade,"food, gear, jam, strawberry",1,n
+mushroom_auricularia.p3d,database/gear/food/objects.json,Marmalade,"food, gear, jam, strawberry",1,n
+mushroom_boletus.p3d,database/gear/food/objects.json,Marmalade,"food, gear, jam, strawberry",1,n
+mushroom_craterellus.p3d,database/gear/food/objects.json,Marmalade,"food, gear, jam, strawberry",1,n
+mushroom_lactarius.p3d,database/gear/food/objects.json,Marmalade,"food, gear, jam, strawberry",1,n
+mushroom_macrolepiota.p3d,database/gear/food/objects.json,Marmalade,"food, gear, jam, strawberry",1,n
+mushroom_pleurotus.p3d,database/gear/food/objects.json,Marmalade,"food, gear, jam, strawberry",1,n
+pepper_green.p3d,database/gear/food/objects.json,Candycane_Green,"candy, cane, food, gear, seasonal, festive, santa, christmas",10,n
+pepper_green_rotten.p3d,database/gear/food/objects.json,Candycane_Green,"candy, cane, food, gear, seasonal, festive, santa, christmas",10,n
+pile_of_bones.p3d,database/gear/food/objects.json,PigSteakMeat,"food, gear, meat, hunting, pork",2,n
+psilocybe_semilanceata.p3d,database/gear/food/objects.json,PsilocybeMushroom,"field, food, gear, foraging, woods",9,n
+salty_chips.p3d,database/gear/food/objects.json,Chips,"food, gear, crisps, snacks",10,y
+salty_crackers.p3d,database/gear/food/objects.json,Crackers,"food, gear, crisps, snacks",10,y
+sambucus_nigra.p3d,database/gear/food/objects.json,SambucusBerry,"food, gear, fruit, vegetable",8,y
+spaghetti.p3d,database/gear/food/objects.json,SpaghettiCan,"canned, food, gear",9,y
+spaghetti_open.p3d,database/gear/food/objects.json,SpaghettiCanOpened,"canned, food, gear",9,y
+tuna.p3d,database/gear/food/objects.json,TunaCan,"canned, food, gear",4,y
+tuna_open.p3d,database/gear/food/objects.json,TunaCanOpened,"canned, food, gear",4,y
+christmasbox1.p3d,database/gear/containers/objects.json,christmas_lights,"containers, gear, christms, festive, santa, season",9,n
+christmasbox2.p3d,database/gear/containers/objects.json,christmas_lights,"containers, gear, christms, festive, santa, season",9,n
+christmasbox3.p3d,database/gear/containers/objects.json,christmas_lights,"containers, gear, christms, festive, santa, season",9,n
+fridge.p3d,database/gear/containers/objects.json,FirstAidKit,"containers, gear, pouch, bandage, medical, IV, hospital, ambulnce",1,n
+scientificcase.p3d,database/gear/containers/objects.json,ScientificBriefcase,"containers, gear, storage, sakhal, volcano, frozen, scientist",10,y
+teddybear.p3d,database/gear/containers/objects.json,TrashCan,"containers, gear",1,n
+wallet.p3d,database/gear/containers/objects.json,WaterproofBag_Green,"backpack, containers, drysack, gear, storage",2,n
+waterproofbag.p3d,database/gear/containers/objects.json,WaterproofBag_Green,"backpack, containers, drysack, gear, storage",23,n
+opticview_rangefinder.p3d,database/gear/optics/objects.json,Rangefinder,"gear, optics, military, combat, sniping",10,y
+opticview_rangefinder_new.p3d,database/gear/optics/objects.json,Rangefinder,"gear, optics, military, combat, sniping",10,y
+bandanafh_ground.p3d,database/gear/consumables/objects.json,Battery9V,"9v, consumables, energy, gear, power",2,n
+batteryd.p3d,database/gear/consumables/objects.json,Battery9V,"9v, consumables, energy, gear, power",7,y
+birch_bark.p3d,database/gear/consumables/objects.json,Bark_Birch,"consumables, gear, tree, kindling",21,y
+chemlight.p3d,database/gear/consumables/objects.json,Chemlight_Blue,"consumables, gear, glow, stick, lights",19,y
+firewood.p3d,database/gear/consumables/objects.json,Flare_open,"consumables, gear, glow, stick, lights",1,
+gascannisterlarge.p3d,database/gear/consumables/objects.json,GasMask_Filter,"consumables, face, fuel, gear, protection, NBC, gas mask, respirator",3,n
+gascannistermedium.p3d,database/gear/consumables/objects.json,GasMask_Filter,"consumables, face, fuel, gear, protection, NBC, gas mask, respirator",3,n
+gascannistersmall.p3d,database/gear/consumables/objects.json,GasMask_Filter,"consumables, face, fuel, gear, protection, NBC, gas mask, respirator",3,n
+metal_sheets.p3d,database/gear/consumables/objects.json,MetalPlate,"consumables, gear, sheet, metal, wall, base building",5,y
+metal_sheet_pile.p3d,database/gear/consumables/objects.json,MetalPlate,"consumables, gear, sheet, metal, wall, base building",5,n
+nails_box.p3d,database/gear/consumables/objects.json,NailBox,"boxed, consumables, crate, gear, nails, storage, base building",4,y
+nails_loose_10.p3d,database/gear/consumables/objects.json,NailBox,"boxed, consumables, crate, gear, nails, storage, base building",4,n
+oak_bark.p3d,database/gear/consumables/objects.json,Bark_Oak,"consumables, gear, tree, kindling",20,y
+pelt_bear.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pelt_bull.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pelt_cow.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pelt_deer.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pelt_deer_fem.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pelt_fox.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pelt_goat.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pelt_horse.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pelt_mouflon.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pelt_pig.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pelt_rabbit.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pelt_reindeer.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pelt_sheep.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pelt_wildboar.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pelt_wolf.p3d,database/gear/consumables/objects.json,Paper,"consumables, gear, writing, notes, fire, kindling",1,n
+pile_of_planks.p3d,database/gear/consumables/objects.json,PileOfWoodenPlanks,"consumables, gear, lumber, base building",4,y
+pile_of_planks_high.p3d,database/gear/consumables/objects.json,PileOfWoodenPlanks,"consumables, gear, lumber, base building",4,y
+pile_of_planks_low.p3d,database/gear/consumables/objects.json,PileOfWoodenPlanks,"consumables, gear, lumber, base building",4,y
+pile_of_planks_medium.p3d,database/gear/consumables/objects.json,PileOfWoodenPlanks,"consumables, gear, lumber, base building",4,y
+pile_of_planks_small.p3d,database/gear/consumables/objects.json,PileOfWoodenPlanks,"consumables, gear, lumber, base building",4,y
+rags.p3d,database/gear/consumables/objects.json,Rag,"consumables, gear, torn, clothing, wrapping, kindling, bandage",3,y
+single_metal_sheet.p3d,database/gear/consumables/objects.json,Stone,"consumables, gear,",1,n
+single_plank.p3d,database/gear/consumables/objects.json,Stone,"consumables, gear,",1,n
+spraycan.p3d,database/gear/consumables/objects.json,Spraycan_Black,"consumables, gear, spraypaint",18,y
+misc_coil.p3d,database/structures/industrial/Misc/objects.json,StaticObj_Misc_Timbers4,"wood, log, lumber",10,n
+misc_timbers3.p3d,database/structures/industrial/Misc/objects.json,StaticObj_Misc_Timbers4,"wood, log, lumber",10,n
+misc_timbers4.p3d,database/structures/industrial/Misc/objects.json,StaticObj_Misc_Timbers4,"wood, log, lumber",20,n
+boat_small1.p3d,database/structures/wrecks/Ships/objects.json,Land_Boat_Small1,"ships, transport, vehicle, watercraft, wrecks",20,y
+boat_small2.p3d,database/structures/wrecks/Ships/objects.json,Land_Boat_Small2,"ships, transport, vehicle, watercraft, wrecks",20,y
+boat_small3.p3d,database/structures/wrecks/Ships/objects.json,Land_Boat_Small3,"ships, transport, vehicle, watercraft, wrecks",20,y
+ship_big_backa.p3d,database/structures/wrecks/Ships/objects.json,StaticObj_Wreck_Ship_Big_BackA,"ships, wrecks, rify",31,y
+ship_big_backb.p3d,database/structures/wrecks/Ships/objects.json,StaticObj_Wreck_Ship_Big_BackB,"ships, wrecks, rify",31,y
+ship_big_castle.p3d,database/structures/wrecks/Ships/objects.json,StaticObj_Wreck_Ship_Big_Castle,"ships, wrecks, rify",31,y
+ship_big_fronta.p3d,database/structures/wrecks/Ships/objects.json,StaticObj_Wreck_Ship_Big_FrontA,"ships, wrecks, rify",31,y
+ship_big_frontb.p3d,database/structures/wrecks/Ships/objects.json,StaticObj_Wreck_Ship_Big_FrontB,"ships, wrecks, rify",31,y
+ship_big_lifeboat.p3d,database/structures/wrecks/Ships/objects.json,StaticObj_Wreck_Ship_Big_Lifeboat,"ships, wrecks",31,y
+ship_medium_back.p3d,database/structures/wrecks/Ships/objects.json,StaticObj_Wreck_Ship_Medium_Back,"ships, wrecks",31,y
+ship_medium_front.p3d,database/structures/wrecks/Ships/objects.json,StaticObj_Wreck_Ship_Medium_Front,"ships, wrecks",31,y
+wreck_c130j.p3d,database/structures/wrecks/Aircraft/objects.json,Land_Wreck_C130J,"aircraft, plane, transport, vehicle, wrecks",20,y
+wreck_c130j_2.p3d,database/structures/wrecks/Aircraft/objects.json,Land_Wreck_C130J_2,"aircraft, plane, transport, vehicle, wrecks",30,y
+wreck_c130j_cargo.p3d,database/structures/wrecks/Aircraft/objects.json,Land_Wreck_C130J_Cargo,"aircraft, plane, transport, vehicle, wrecks",30,y
+wreck_baler.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_Uaz,"vehicles, wrecks, military, jeep",10,y
+wreck_bmp1.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_BMP1,"vehicles, wrecks",20,y
+wreck_bmp1_noplacement.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_BMP1_NoPlacement_DE,"vehicles, wrecks, tank, dynamic event",30,y
+wreck_bmp2.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_BMP2,"vehicles, wrecks",20,y
+wreck_brdm.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_BRDM,"vehicles, wrecks",20,y
+wreck_bulldozer.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_Bulldozer,"vehicles, wrecks, construction",20,y
+wreck_caravan_mrust.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_Caravan_MRust,"vehicles, wrecks, gypsy",30,y
+wreck_caravan_wbrown.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_Caravan_WBrown,"vehicles, wrecks, gypsy",30,y
+wreck_caravan_wgreen.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_Caravan_WGreen,"vehicles, wrecks, gypsy",30,y
+wreck_decal_big.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_Decal_Big,"vehicles, wrecks",30,y
+wreck_decal_big_nolc.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_Decal_Big_NoLC,"vehicles, wrecks",40,y
+wreck_decal_small1.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_Decal_Small1,"vehicles, wrecks",30,y
+wreck_decal_small1_nolc.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_Decal_Small1_NoLC,"vehicles, wrecks",40,y
+wreck_decal_small2.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_Decal_Small2,"vehicles, wrecks",30,y
+wreck_decal_small2_nolc.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_Decal_Small2_NoLC,"vehicles, wrecks",40,y
+wreck_digger.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_Digger,"vehicles, wrecks, construction",20,y
+wreck_harverster.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_Harverster,"vehicles, wrecks, farming",20,y
+wreck_harvester_head_trailer.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_Harvester_head_trailer,"vehicles, wrecks, farming",40,y
+wreck_hb01_aban1_blue.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_hb01_aban1_blue_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_hb01_aban1_green.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_hb01_aban1_green_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_hb01_aban1_police.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_hb01_aban1_police_DE,"vehicles, wrecks, police, law enforcement",40,y
+wreck_hb01_aban1_white.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_hb01_aban1_white_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_hb01_aban2_blue.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_hb01_aban2_blue_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_hb01_aban2_green.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_hb01_aban2_green_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_hb01_aban2_police.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_hb01_aban2_police_DE,"vehicles, wrecks, police, law enforcement",40,y
+wreck_hb01_aban2_white.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_hb01_aban2_white_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_hb02_aban1_black.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_hb02_aban1_black_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_hb02_aban1_blue.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_hb02_aban1_blue_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_hb02_aban1_red.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_hb02_aban1_red_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_hb02_aban2_black.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_hb02_aban2_black_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_hb02_aban2_blue.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_hb02_aban2_blue_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_hb02_aban2_red.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_hb02_aban2_red_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_hmmwv.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_HMMWV,"vehicles, military, power",20,y
+wreck_ikarus.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_Ikarus,bus,20,y
+wreck_lada_red.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_Lada_Red,"vehicles, wrecks, car",30,y
+wreck_offroad02_aban1.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_offroad02_aban1_DE,"vehicles, wrecks, dynamic event, car",30,y
+wreck_offroad02_aban2.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_offroad02_aban2_DE,"vehicles, wrecks, dynamic event, car",30,y
+wreck_powgen.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_PowGen,"vehicles, military, power",20,y
+wreck_s1023_beige.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_S1023_Beige,"vehicles, wrecks, car",30,y
+wreck_s120_red.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_Lada_Red,"vehicles, wrecks, car",20,y
+wreck_sed01_aban1_black.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_sed01_aban1_black_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_sed01_aban1_police.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_sed01_aban1_police_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_sed01_aban1_white.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_sed01_aban1_white_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_sed01_aban1_wine.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_sed01_aban1_wine_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_sed01_aban2_black.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_sed01_aban2_black_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_sed01_aban2_police.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_sed01_aban2_police_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_sed01_aban2_white.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_sed01_aban2_white_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_sed01_aban2_wine.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_sed01_aban2_wine_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_sed02_aban1_grey.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_sed02_aban1_grey_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_sed02_aban1_red.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_sed02_aban1_red_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_sed02_aban1_yellow.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_sed02_aban1_yellow_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_sed02_aban2_grey.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_sed02_aban2_grey_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_sed02_aban2_red.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_sed02_aban2_red_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_sed02_aban2_yellow.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_sed02_aban2_yellow_DE,"vehicles, wrecks, dynamic event, car",40,y
+wreck_t72_chassis.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_T72_Chassis,"vehicles, wrecks, tanks",30,y
+wreck_t72_turret.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_T72_Turret,"vehicles, wrecks, tanks",30,y
+wreck_trailer_cistern.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_Trailer_Cistern,"vehicles, wrecks, farming",30,y
+wreck_trailer_closed.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_Trailer_Closed,"vehicles, wrecks",30,y
+wreck_trailer_flat.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_Trailer_Flat,"vehicles, wrecks, farming",30,y
+wreck_truck01_aban1_blue.p3d,database/structures/wrecks/Vehicles/objects.json,Land_wreck_truck01_aban1_blue_DE,"transport, vehicle, vehicles, wrecks, car, dynamic event",40,y
+wreck_truck01_aban1_command.p3d,database/structures/wrecks/Vehicles/objects.json,Land_wreck_truck01_aban1_green,"transport, vehicle, vehicles, wrecks",30,y
+wreck_truck01_aban1_firetruck.p3d,database/structures/wrecks/Vehicles/objects.json,Land_wreck_truck01_aban1_firetruck_DE,"transport, vehicle, vehicles, wrecks, fire, fighter, engine, dynamic event",40,y
+wreck_truck01_aban1_green.p3d,database/structures/wrecks/Vehicles/objects.json,Land_wreck_truck01_aban1_green,"transport, vehicle, vehicles, wrecks",40,y
+wreck_truck01_aban1_orange.p3d,database/structures/wrecks/Vehicles/objects.json,Land_wreck_truck01_aban1_orange,"transport, vehicle, vehicles, wrecks",40,y
+wreck_truck01_aban2_blue.p3d,database/structures/wrecks/Vehicles/objects.json,Land_wreck_truck01_aban2_blue_DE,"transport, vehicle, vehicles, wrecks, car, dynamic event",40,y
+wreck_truck01_aban2_command.p3d,database/structures/wrecks/Vehicles/objects.json,Land_wreck_truck01_aban2_green,"transport, vehicle, vehicles, wrecks",30,y
+wreck_truck01_aban2_firetruck.p3d,database/structures/wrecks/Vehicles/objects.json,Land_wreck_truck01_aban2_firetruck_DE,"transport, vehicle, vehicles, wrecks, fire, fighter, engine, dynamic event",40,y
+wreck_truck01_aban2_green.p3d,database/structures/wrecks/Vehicles/objects.json,Land_wreck_truck01_aban2_green,"transport, vehicle, vehicles, wrecks",40,y
+wreck_truck01_aban2_orange.p3d,database/structures/wrecks/Vehicles/objects.json,Land_wreck_truck01_aban2_orange,"transport, vehicle, vehicles, wrecks",40,y
+wreck_uaz.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_Uaz,"vehicles, wrecks, military, jeep",20,y
+wreck_ural.p3d,database/structures/wrecks/Vehicles/objects.json,StaticObj_Wreck_Ural,"vehicles, wrecks, truck",20,y
+wreck_volha_grey.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_Volha_Grey,"vehicles, wrecks, car",30,y
+wreck_volha_police.p3d,database/structures/wrecks/Vehicles/objects.json,Land_Wreck_Volha_Police,"vehicles, wrecks, car",30,y
+train_742_blue.p3d,database/structures/wrecks/Trains/objects.json,Land_Train_742_Blue,"trains, wrecks",30,y
+train_742_red.p3d,database/structures/wrecks/Trains/objects.json,Land_Train_742_Red,"trains, wrecks",30,y
+train_wagon_flat.p3d,database/structures/wrecks/Trains/objects.json,StaticObj_Wreck_Train_Wagon_Flat," trains, wrecks, carriage",30,y
+train_wagon_tanker.p3d,database/structures/wrecks/Trains/objects.json,StaticObj_Wreck_Train_Wagon_Tanker," trains, wrecks, carriage",30,y
+cemetery_fence1.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Fence1,"cemetery, specific, metal, gate",20,y
+cemetery_fence2.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Fence2,"cemetery, specific, metal, gate",20,y
+cemetery_fence3.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Fence3,"cemetery, specific, metal, gate",20,y
+cemetery_fence4.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Fence4,"cemetery, specific, metal, gate",20,y
+cemetery_fence_straight.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Fence_straight,"cemetery, specific, metal, gate",30,y
+cemetery_grave1.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Grave1,"cemetery, specific, metal, gate",20,y
+cemetery_grave2.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Grave2,"cemetery, specific, metal, gate",20,y
+cemetery_grave3.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Grave3,"cemetery, specific, metal, gate",20,y
+cemetery_grave4.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Grave4,"cemetery, specific, metal, gate",20,y
+cemetery_smallcross.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_SmallCross,"cemeteries, specific, grave",20,y
+cemetery_smallcross2.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_SmallCross2,"cemeteries, specific, grave",20,y
+cemetery_tombstone1.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone1,"cemeteries, specific, grave",20,y
+cemetery_tombstone10.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone10,"cemeteries, specific, grave",20,y
+cemetery_tombstone11.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone11,"cemeteries, specific, grave",20,y
+cemetery_tombstone12.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone12,"cemeteries, specific, grave",20,y
+cemetery_tombstone13.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone13,"cemeteries, specific, grave",20,y
+cemetery_tombstone14.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone14,"cemeteries, specific, grave",20,y
+cemetery_tombstone2.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone2,"cemeteries, specific, grave",20,y
+cemetery_tombstone3.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone3,"cemeteries, specific, grave",20,y
+cemetery_tombstone4.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone4,"cemeteries, specific, grave",20,y
+cemetery_tombstone5.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone5,"cemeteries, specific, grave",20,y
+cemetery_tombstone5_damaged.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone5_damaged,"cemeteries, specific, grave",30,y
+cemetery_tombstone6.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone6,"cemeteries, specific, grave",20,y
+cemetery_tombstone7.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone7,"cemeteries, specific, grave",20,y
+cemetery_tombstone8.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone8,"cemeteries, specific, grave",20,y
+cemetery_tombstone8_damaged.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone8_damaged,"cemeteries, specific, grave",30,y
+cemetery_tombstone9.p3d,database/structures/specific/Cemeteries/objects.json,StaticObj_Cemetery_Tombstone9,"cemeteries, specific, grave",20,y
+ruin_busstop_village2.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_BusStop_Village2,"livonia, ruins, transport, vehicle",30,y
+ruin_camp_house.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Camp_House,"livonia, camping, outdoor, ruins, hunting shack",30,y
+ruin_chapel2_white.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Chapel2_White,"livonia, ruins, broken, collapsed",30,y
+ruin_chapel2_yellow.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Chapel2_Yellow,"livonia, ruins, broken, collapsed",30,y
+ruin_church2.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Church2,"livonia, religious, ruins",20,y
+ruin_church2_noivy.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Church2_NoIvy,"livonia, religious, ruins",30,y
+ruin_highway_pillar1.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Highway_Pillar1,"livonia, ruins, broken, collapsed",30,y
+ruin_housebig1_noivy.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_HouseBig1_NoIvy,"livonia, ruins, broken, collapsed",30,y
+ruin_housebig1_noivy_half.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_HouseBig1_NoIvy_Half,"livonia, ruins, broken, collapsed",40,y
+ruin_housebig2_noivy.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_HouseBig2_NoIvy,"livonia, ruins, broken, collapsed",30,y
+ruin_housebig2_noivy_half.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_HouseBig2_NoIvy_Half,"livonia, ruins, broken, collapsed",40,y
+ruin_housebig3_noivy.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_HouseBig3_NoIvy,"livonia, ruins, broken, collapsed",30,y
+ruin_housebig3_noivy_half.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_HouseBig3_NoIvy_Half,"livonia, ruins, broken, collapsed",40,y
+ruin_housesmall1_half.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_HouseSmall1_Half,"livonia, ruins, broken, collapsed",30,y
+ruin_housesmall1_noivy.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_HouseSmall1_NoIvy,"livonia, ruins, broken, collapsed",30,y
+ruin_housesmall1_noivy_half.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_HouseSmall1_NoIvy_Half,"livonia, ruins, broken, collapsed",40,y
+ruin_housesmall2_noivy.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_HouseSmall2_NoIvy,"livonia, ruins, broken, collapsed",30,y
+ruin_house_1b01.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_1B01,"livonia, ruins, broken, collapsed",30,y
+ruin_house_1w01.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_1W01,"livonia, ruins, broken, collapsed",30,y
+ruin_house_1w02.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_1W02,"livonia, ruins, broken, collapsed",30,y
+ruin_house_1w03.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_1W03,"livonia, ruins, broken, collapsed",30,y
+ruin_house_1w04.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_1W04,"livonia, ruins, broken, collapsed",30,y
+ruin_house_1w05.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_1W05,"livonia, ruins, broken, collapsed",30,y
+ruin_house_1w06.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_1W06,"livonia, ruins, broken, collapsed",30,y
+ruin_house_1w07.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_1W07,"livonia, ruins, broken, collapsed",30,y
+ruin_house_1w08.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_1W08,"livonia, ruins, broken, collapsed",30,y
+ruin_house_1w09.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_1W09,"livonia, ruins, broken, collapsed",30,y
+ruin_house_1w10.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_1W10,"livonia, ruins, broken, collapsed",30,y
+ruin_house_1w11.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_1W11,"livonia, ruins, broken, collapsed",30,y
+ruin_house_1w12.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_1W12,"livonia, ruins, broken, collapsed",30,y
+ruin_house_1w13.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_1W13,"livonia, ruins, broken, collapsed",30,y
+ruin_house_2b01.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_2B01,"livonia, ruins, broken, collapsed",30,y
+ruin_house_2b02.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_2B02,"livonia, ruins, broken, collapsed",30,y
+ruin_house_2b03.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_2B03,"livonia, ruins, broken, collapsed",30,y
+ruin_house_2b04.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_2B04,"livonia, ruins, broken, collapsed",30,y
+ruin_house_2w01.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_2W01,"livonia, ruins, broken, collapsed",30,y
+ruin_house_2w02.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_2W02,"livonia, ruins, broken, collapsed",30,y
+ruin_house_2w03.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_2W03,"livonia, ruins, broken, collapsed",30,y
+ruin_house_2w04.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_2W04,"livonia, ruins, broken, collapsed",30,y
+ruin_house_2w05.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_House_2W05,"livonia, ruins, broken, collapsed",30,y
+ruin_mil_controltower.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Mil_ControlTower,"livonia, ruins, tower, collapsed, broken",30,y
+ruin_mil_guardbox_brown.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Mil_GuardBox_Brown,"livonia, crate, ruins, storage",40,y
+ruin_mil_guardbox_green.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Mil_GuardBox_Green,"livonia, crate, ruins, storage",40,y
+ruin_mil_guardbox_smooth.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Mil_GuardBox_Smooth,"livonia, crate, ruins, storage",40,y
+ruin_shed_closed.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Shed_Closed,"livonia, ruins, broken, collapsed",30,y
+ruin_shed_closed2.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Shed_Closed2,"livonia, ruins, broken, collapsed",30,y
+ruin_slum_house2.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Slum_House2,"livonia, ruins, broken, collapsed",30,y
+ruin_slum_house3.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Slum_House3,"livonia, ruins, broken, collapsed",30,y
+ruin_slum_house4.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Slum_House4,"livonia, ruins, broken, collapsed",30,y
+ruin_smokestack_metal.p3d,database/structures_bliss/ruins/objects.json,Land_Ruin_Smokestack_Metal,"livonia, ruins, broken, collapsed",30,y
+garbage_bin2.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Garbage_Bin2,"livonia, misc, residential, trash, rubbish",20,y
+garbage_container2_closed.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Garbage_Container2_Closed,"livonia, misc, residential, trash, rubbish",30,y
+garbage_container2_open.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Garbage_Container2_Open,"livonia, misc, residential, trash, rubbish",30,y
+garbage_pile7.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Garbage_Pile7,"livonia, misc, residential, trash, rubbish",20,y
+garbage_pile8.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Garbage_Pile8,"livonia, misc, residential, trash, rubbish",20,y
+lamp_decorative.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Lamp_Decorative,"livonia, light, lighting, misc, residential",20,y
+lamp_halogen.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Lamp_Halogen,"livonia, light, lighting, misc, residential",20,y
+lamp_harbour.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Lamp_Harbour,"livonia, light, lighting, misc, residential",20,y
+lamp_stadium.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Lamp_Stadium,"livonia, light, lighting, misc, residential",20,y
+misc_bench6.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Misc_Bench6,"livonia, residential",20,y
+misc_bench7.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Misc_Bench7,"livonia, residential",20,y
+misc_bench8.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Misc_Bench8,"livonia, residential",20,y
+misc_bench9.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Misc_Bench9,"livonia, residential",20,y
+misc_gasmetercabinet.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Misc_GasMeterCabinet,"livonia, fuel, residential, station",20,y
+misc_mysteriousbell.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Misc_MysteriousBell,"livonia, residential",20,y
+misc_sewercover.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Misc_SewerCover,"livonia, residential, manhole",20,y
+misc_table_large.p3d,database/structures_bliss/residential/Misc/objects.json,Land_Misc_Table_Large_Spawn,"livonia, desk, furniture, residential",30,y
+misc_table_large_spawn.p3d,database/structures_bliss/residential/Misc/objects.json,Land_Misc_Table_Large_Spawn,"livonia, desk, furniture, residential",40,y
+misc_table_market.p3d,database/structures_bliss/residential/Misc/objects.json,Land_Misc_Table_Market_Spawn,"livonia, desk, furniture, residential",30,y
+misc_table_market_spawn.p3d,database/structures_bliss/residential/Misc/objects.json,Land_Misc_Table_Market_Spawn,"livonia, desk, furniture, residential",40,y
+misc_woodencrate.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Misc_WoodenCrate,"livonia, box, residential, storage",20,y
+misc_woodencrate_3x.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Misc_WoodenCrate_3x,"livonia, box, residential, storage",30,y
+misc_woodencrate_5x.p3d,database/structures_bliss/residential/Misc/objects.json,StaticObj_Misc_WoodenCrate_5x,"livonia, box, residential, storage",30,y
+city_policestation_enoch.p3d,database/structures_bliss/residential/Police/objects.json,Land_City_PoliceStation_Enoch,"livonia, residential, police, law enforcement",30,y
+misc_cinderblocks.p3d,database/structures_bliss/industrial/Misc/objects.json,StaticObj_Misc_CinderBlocks,"livonia, industrial, decoration",20,y
+misc_haybale_packed.p3d,database/structures_bliss/industrial/Misc/objects.json,StaticObj_Misc_HayBale_Packed,"livonia, industrial, farming",30,y
+misc_haybale_packed_stack.p3d,database/structures_bliss/industrial/Misc/objects.json,StaticObj_Misc_HayBale_Packed_Stack,"livonia, industrial, farming",40,y
+misc_surveymarker_cover.p3d,database/structures_bliss/industrial/Misc/objects.json,StaticObj_Misc_SurveyMarker_Cover,"livonia, industrial",30,y
+misc_surveymarker_post.p3d,database/structures_bliss/industrial/Misc/objects.json,StaticObj_Misc_SurveyMarker_Post,"livonia, industrial",30,y
+misc_surveymarker_rod.p3d,database/structures_bliss/industrial/Misc/objects.json,StaticObj_Misc_SurveyMarker_Rod,"livonia, industrial",30,y
+misc_tire.p3d,database/structures_bliss/industrial/Misc/objects.json,StaticObj_Misc_Tire,"livonia, industrial, tyre",20,y
+misc_tirepile_large.p3d,database/structures_bliss/industrial/Misc/objects.json,StaticObj_Misc_TirePile_Large,"livonia, industrial, tyre",30,y
+misc_transformer.p3d,database/structures_bliss/industrial/Misc/objects.json,StaticObj_Misc_Transformer,"livonia, industrial, power",20,y
+bed_large_metal.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_bed_large_metal,"livonia, furniture, ruins, sleep",30,y
+bed_large_metal_broken.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_bed_large_metal_broken,"livonia, furniture, ruins, sleep",40,y
+bed_large_metal_crushed.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_bed_large_metal_crushed,"livonia, furniture, ruins, sleep",40,y
+carpet_big_dirty.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_carpet_big_dirty,"livonia, ruins, see through",30,y
+carpet_big_dirty2.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_carpet_big_dirty2,"livonia, ruins, see through",30,y
+case_bedroom_a.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_case_bedroom_a,"livonia, ruins, furniture",30,y
+case_bedroom_b.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_case_bedroom_b,"livonia, ruins, furniture",30,y
+chair.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_chair,"livonia, furniture, ruins, seat, furniture",10,y
+chair_broken.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_chair_broken,"livonia, furniture, ruins, seat, furniture",20,y
+chair_crushed.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_chair_crushed,"livonia, furniture, ruins, seat, furniture",20,y
+chair_leisure.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_chair_leisure,"livonia, furniture, ruins, seat, furniture",20,y
+chair_leisure_broken.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_chair_leisure_broken,"livonia, furniture, ruins, seat, furniture",30,y
+chair_leisure_crushed.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_chair_leisure_crushed,"livonia, furniture, ruins, seat, furniture",30,y
+classroom_case_a.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_classroom_case_a,"livonia, furniture, ruins, seat, furniture",30,y
+classroom_case_a_broken.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_classroom_case_a_broken,"livonia, furniture, ruins, seat, furniture",40,y
+classroom_case_a_crushed.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_classroom_case_a_crushed,"livonia, furniture, ruins, seat, furniture",40,y
+classroom_case_b.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_classroom_case_b,"livonia, furniture, ruins, seat, furniture",30,y
+classroom_case_b_broken.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_classroom_case_b_broken,"livonia, furniture, ruins, seat, furniture",40,y
+classroom_case_b_crushed.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_classroom_case_b_crushed,"livonia, furniture, ruins, seat, furniture",40,y
+drapes_long_torn.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_drapes_long_torn,"livonia, furniture, ruins, seat, furniture, see through",30,y
+drapes_torn.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_drapes_long_torn,"livonia, furniture, ruins, seat, furniture, see through",20,y
+flowerpot.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_flowerpot,"livonia, furniture, ruins, seat, furniture",10,y
+lobby_table.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_lobby_table,"livonia, furniture, ruins, seat, furniture",20,y
+piano_broken.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_piano_broken,"livonia, furniture, ruins, seat, furniture",20,y
+picture_a.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_picture_a,"livonia, ruins, art, photo",20,y
+picture_b.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_picture_b,"livonia, ruins, art, photo",20,y
+picture_c.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_picture_c,"livonia, ruins, art, photo",20,y
+picture_d.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_picture_d,"livonia, ruins, art, photo",20,y
+picture_e.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_picture_e,"livonia, ruins, art, photo",20,y
+picture_f.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_picture_f,"livonia, ruins, art, photo",20,y
+picture_g.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_picture_g,"livonia, ruins, art, photo",20,y
+racks.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_racks,"livonia, ruins, art, photo",10,y
+racks_broken.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_racks_broken,"livonia, ruins, art, photo",20,y
+racks_crushed.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_racks_crushed,"livonia, ruins, art, photo",20,y
+ruin_church2_01_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_Church2_01_Proxy,"livonia, religious, ruins",40,y
+ruin_church2_02_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_Church2_02_Proxy,"livonia, religious, ruins",40,y
+ruin_church2_03_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_Church2_03_Proxy,"livonia, religious, ruins",40,y
+ruin_church2_04_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_Church2_04_Proxy,"livonia, religious, ruins",40,y
+ruin_church2_proxy_overgrowth.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_Church2_Proxy_overgrowth,"livonia, religious, ruins",40,y
+ruin_housebig1_half_proxy_01.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig1_Half_Proxy_01,"livonia, ruins",50,y
+ruin_housebig1_half_proxy_overgrowth.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig1_Half_Proxy_overgrowth,"livonia, ruins",50,y
+ruin_housebig1_proxy_01.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig1_Half_Proxy_01,"livonia, ruins",40,y
+ruin_housebig1_proxy_overgrowth.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig1_Half_Proxy_overgrowth,"livonia, ruins",40,y
+ruin_housebig1_proxy_overgrowth_02.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig1_Proxy_overgrowth_02,"livonia, ruins",50,y
+ruin_housebig1_proxy_overgrowth_02_template.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig1_Proxy_overgrowth_02_template,"livonia, ruins",60,y
+ruin_housebig1_proxy_overgrowth_template.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig1_Proxy_overgrowth_02_template,"livonia, ruins",50,y
+ruin_housebig2_half_proxy_01.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig2_Half_Proxy_01,"livonia, ruins",50,y
+ruin_housebig2_half_proxy_overgrowth.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig2_Half_Proxy_overgrowth,"livonia, ruins",50,y
+ruin_housebig2_proxy_01.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig2_Half_Proxy_01,"livonia, ruins",40,y
+ruin_housebig2_proxy_02.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig2_Proxy_02,"livonia, ruins",40,y
+ruin_housebig2_proxy_overgrowth.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig2_Half_Proxy_overgrowth,"livonia, ruins",40,y
+ruin_housebig3_half_proxy_01.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig3_Half_Proxy_01,"livonia, ruins",50,y
+ruin_housebig3_half_proxy_overgrowth.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig3_Half_Proxy_overgrowth,"livonia, ruins",50,y
+ruin_housebig3_proxy_01.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig3_Half_Proxy_01,"livonia, ruins",40,y
+ruin_housebig3_proxy_overgrowth.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseBig3_Half_Proxy_overgrowth,"livonia, ruins",40,y
+ruin_housesmall1_half_proxy_01.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseSmall1_Half_Proxy_01,"livonia, ruins",50,y
+ruin_housesmall1_half_proxy_overgrowth.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseSmall1_Half_Proxy_overgrowth,"livonia, ruins",50,y
+ruin_housesmall1_proxy_01.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseSmall1_Half_Proxy_01,"livonia, ruins",40,y
+ruin_housesmall1_proxy_02.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseSmall1_Proxy_02,"livonia, ruins",40,y
+ruin_housesmall1_proxy_overgrowth.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseSmall1_Half_Proxy_overgrowth,"livonia, ruins",40,y
+ruin_housesmall2_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseSmall2_Proxy,"livonia, ruins",30,y
+ruin_housesmall2_proxy_bricks.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseSmall2_Proxy_bricks,"livonia, ruins",40,y
+ruin_housesmall2_proxy_overgrowth.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_HouseSmall2_Proxy_overgrowth,"livonia, ruins",40,y
+ruin_house_1b01_1_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_1B01_1_Proxy,"livonia, ruins",50,y
+ruin_house_1b01_2_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_1B01_2_Proxy,"livonia, ruins",50,y
+ruin_house_1w02_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_1W02_Proxy,"livonia, ruins",40,y
+ruin_house_1w03_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_1W03_Proxy,"livonia, ruins",40,y
+ruin_house_1w04_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_1W04_Proxy,"livonia, ruins",40,y
+ruin_house_1w05_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_1W05_Proxy,"livonia, ruins",40,y
+ruin_house_1w06_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_1W06_Proxy,"livonia, ruins",40,y
+ruin_house_1w07_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_1W07_Proxy,"livonia, ruins",40,y
+ruin_house_1w09_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_1W09_Proxy,"livonia, ruins",40,y
+ruin_house_1w11_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_1W11_Proxy,"livonia, ruins",40,y
+ruin_house_1w12_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_1W12_Proxy,"livonia, ruins",40,y
+ruin_house_2b01_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_2B01_Proxy,"livonia, ruins",40,y
+ruin_house_2b02_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_2B02_Proxy,"livonia, ruins",40,y
+ruin_house_2b03_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_2B03_Proxy,"livonia, ruins",40,y
+ruin_house_2b04_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_2B04_Proxy,"livonia, ruins",40,y
+ruin_house_2w01_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_2W01_Proxy,"livonia, ruins",40,y
+ruin_house_2w02_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_2W02_Proxy,"livonia, ruins",40,y
+ruin_house_2w03_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_2W03_Proxy,"livonia, ruins",40,y
+ruin_house_2w04_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_2W04_Proxy,"livonia, ruins",40,y
+ruin_house_2w05_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_House_2W05_Proxy,"livonia, ruins",40,y
+ruin_mil_controltower_proxy.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Ruin_Mil_ControlTower_Proxy,"livonia, ruins, watch",40,y
+shelfs_small.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Furniture_shelfs_small,"livonia, ruins",21,y
+shelfs_small_broken.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Furniture_shelfs_small_broken,"livonia, ruins",31,y
+shelfs_small_crushed.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Furniture_shelfs_small_crushed,"livonia, ruins",31,y
+skrin_bar.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Furniture_skrin_bar,"livonia, ruins",21,y
+sofacorner.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Furniture_SofaCorner,"livonia, ruins",11,y
+table.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_lobby_table,"livonia, furniture, ruins, seat, furniture",10,y
+table_broken.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Furniture_table_broken,"livonia, desk, ruins",20,y
+table_crushed.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Furniture_table_crushed,"livonia, desk, ruins",20,y
+tools_racking.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Furniture_tools_racking,"livonia, ruins",20,y
+wardrobe_a.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Furniture_wardrobe_a,"livonia, ruins",20,y
+wardrobe_b.p3d,database/structures_bliss/ruins/Proxy/objects.json,StaticObj_Furniture_wardrobe_b,"livonia, ruins",20,y
+underground_storage_ammo.p3d,database/structures_bliss/underground/Storage/objects.json,Land_Underground_Storage_Ammo,"livoni, bunker",30,y
+underground_storage_ammo2.p3d,database/structures_bliss/underground/Storage/objects.json,Land_Underground_Storage_Ammo2,"livoni, bunker",30,y
+underground_storage_barracks.p3d,database/structures_bliss/underground/Storage/objects.json,Land_Underground_Storage_Barracks,"livoni, bunker",30,y
+underground_storage_big.p3d,database/structures_bliss/underground/Storage/objects.json,Land_Underground_Storage_Big,"livoni, bunker",30,y
+underground_storage_big_vent.p3d,database/structures_bliss/underground/Storage/objects.json,Land_Underground_Storage_Big_Vent,"livoni, bunker",40,y
+underground_storage_hospital.p3d,database/structures_bliss/underground/Storage/objects.json,Land_Underground_Storage_Hospital,"livoni, bunker",30,y
+underground_storage_laboratory.p3d,database/structures_bliss/underground/Storage/objects.json,Land_Underground_Storage_Laboratory,"livoni, bunker",30,y
+underground_storage_pox.p3d,database/structures_bliss/underground/Storage/objects.json,Land_Underground_Storage_POX,"livoni, bunker",30,y
+underground_storage_pox2.p3d,database/structures_bliss/underground/Storage/objects.json,Land_Underground_Storage_POX2,"livoni, bunker",30,y
+underground_storage_workshop.p3d,database/structures_bliss/underground/Storage/objects.json,Land_Underground_Storage_Workshop,"livoni, bunker",30,y
+ammoboxes_big.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_ammoboxes_big,"livonia, storage, bunker",20,y
+ammoboxes_pox.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_ammoboxes_big,"livonia, storage, bunker",10,y
+ammoboxes_single.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_ammoboxes_single,"livonia, storage, bunker",20,y
+ammoboxes_single_open.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_ammoboxes_single,"livonia, storage, bunker",20,y
+ammoboxes_single_open2.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_ammoboxes_single,"livonia, storage, bunker",20,y
+ammoboxes_stacked.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_ammoboxes_stacked,"livonia, storage, bunker",20,y
+curtain_divider.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_Curtain_Divider,"livonia, storage, bunker",20,y
+enginecrane_01_f.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_EngineCrane_01_F,"livonia, storage, bunker",30,y
+laboratory_scaffolding_1.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_WhiteBoard_Laboratory,"livonia, storage, bunker",10,y
+laboratory_scaffolding_2.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_WhiteBoard_Laboratory,"livonia, storage, bunker",10,y
+laboratory_tarps.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_WhiteBoard_Laboratory,"livonia, storage, bunker",10,y
+medical_tarp_large_yellow.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_Medical_Tarp_Large_Yellow,"livonia, storage, bunker",40,y
+pallettrolley_01_yellow_f.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_PalletTrolley_01_yellow_F,"livonia, storage, bunker",40,y
+shells.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_ammoboxes_big,"livonia, storage, bunker",1,y
+shells2.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_ammoboxes_big,"livonia, storage, bunker",1,y
+shells_single.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_ammoboxes_single,"livonia, storage, bunker",11,y
+shells_supportbottom.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_ammoboxes_big,"livonia, storage, bunker",1,y
+shells_supporttop.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_ammoboxes_big,"livonia, storage, bunker",1,y
+shell_dummy.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_ammoboxes_big,"livonia, storage, bunker",1,y
+tooltrolley_02_f.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_ToolTrolley_02_F,"livonia, storage, bunker",30,y
+whiteboard.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_WhiteBoard,"livonia, storage, bunker",10,y
+whiteboard_laboratory.p3d,database/structures_bliss/underground/Storage/proxy/objects.json,StaticObj_WhiteBoard_Laboratory,"livonia, storage, bunker",20,y
+misc_deconshower_large.p3d,database/structures_bliss/military/Misc/objects.json,StaticObj_Misc_DeconShower_Large,"livonia, military, medical, yellow, tent",30,y
+misc_dragonteeth_multiple.p3d,database/structures_bliss/military/Misc/objects.json,StaticObj_Misc_DragonTeeth_Multiple,"livonia, military, medical, yellow, tent",30,y
+misc_dragonteeth_multiple_redwhite.p3d,database/structures_bliss/military/Misc/objects.json,StaticObj_Misc_DragonTeeth_Multiple_RedWhite,"livonia, military, medical, yellow, tent",40,y
+misc_dragonteeth_single.p3d,database/structures_bliss/military/Misc/objects.json,StaticObj_Misc_DragonTeeth_Single,"livonia, military, medical, yellow, tent",30,y
+misc_dragonteeth_single_redwhite.p3d,database/structures_bliss/military/Misc/objects.json,StaticObj_Misc_DragonTeeth_Single_RedWhite,"livonia, military, medical, yellow, tent",40,y
+shellcrater1.p3d,database/structures_bliss/military/Training/objects.json,StaticObj_ShellCrater1,"livonia, military, training, explosion, rubble, dirt",11,y
+shellcrater1_decal.p3d,database/structures_bliss/military/Training/objects.json,StaticObj_ShellCrater1_Decal,"livonia, military, training, explosion, rubble, dirt",21,y
+shellcrater2_debris.p3d,database/structures_bliss/military/Training/objects.json,StaticObj_ShellCrater2_Debris,"livonia, military, training, explosion, rubble, dirt",21,y
+shellcrater2_decal.p3d,database/structures_bliss/military/Training/objects.json,StaticObj_ShellCrater2_Decal,"livonia, military, training, explosion, rubble, dirt",21,y
+shellcrater2_large.p3d,database/structures_bliss/military/Training/objects.json,StaticObj_ShellCrater2_Large,"livonia, military, training, explosion, rubble, dirt",21,y
+shellcrater2_small.p3d,database/structures_bliss/military/Training/objects.json,StaticObj_ShellCrater2_Small,"livonia, military, training, explosion, rubble, dirt",21,y
+target_concrete1.p3d,database/structures_bliss/military/Training/objects.json,StaticObj_Target_Concrete1,"livonia, military, training, foundation, structure",20,y
+target_concrete2.p3d,database/structures_bliss/military/Training/objects.json,StaticObj_Target_Concrete2,"livonia, military, training, foundation, structure",20,y
+target_concrete_block.p3d,database/structures_bliss/military/Training/objects.json,StaticObj_Target_Concrete_Block,"livonia, military, training, foundation, structure",30,y
+target_concrete_ramp.p3d,database/structures_bliss/military/Training/objects.json,StaticObj_Target_Concrete_Ramp,"livonia, military, training, foundation, structure",30,y
+target_support.p3d,database/structures_bliss/military/Training/objects.json,StaticObj_Target_Support,"livonia, military, training, foundation, structure",20,y
+chapel2_white_dam.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Chapel2_White_Dam,"livonia, cultural, specific, church",30,y
+chapel2_yellow_dam.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Chapel2_Yellow_Dam,"livonia, cultural, specific, church",30,y
+church5_dam.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Chapel2_White_Dam,"livonia, cultural, specific, church",10,y
+church5_red_dam.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Chapel2_White_Dam,"livonia, cultural, specific, church",10,y
+church5_white.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Chapel2_White_Dam,"livonia, cultural, specific, church",10,y
+church5_white_dam.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Chapel2_White_Dam,"livonia, cultural, specific, church",20,y
+church5_yellow_dam.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Chapel2_Yellow_Dam,"livonia, cultural, specific, church",20,y
+misc_calvary1.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Misc_Calvary1,"livonia, cultural, specific, cross, jesus, statue, religious",20,y
+misc_calvary2.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Misc_Calvary1,"livonia, cultural, specific, cross, jesus, statue, religious",10,y
+misc_calvary3.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Misc_Calvary1,"livonia, cultural, specific, cross, jesus, statue, religious",10,y
+monument_enoch1.p3d,database/structures_bliss/specific/cultural/objects.json,StaticObj_Monument_Enoch1,"livonia, cultural, specific, cross, grave, statue, religious, memorial",20,y
+monument_enoch2.p3d,database/structures_bliss/specific/cultural/objects.json,StaticObj_Monument_Enoch2,"livonia, cultural, specific, cross, grave, statue, religious, memorial",20,y
+statue_enoch1.p3d,database/structures_bliss/specific/cultural/objects.json,StaticObj_Statue_Enoch1,"livonia, cultural, specific, cross, grave, statue, religious, memorial",24,y
+church4.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Church4,"livonia, cultural, religious, specific",10,y
+church4_dam.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Church4_Dam,"livonia, cultural, religious, specific",20,y
+church4_lightblue.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Church4_Lightblue,"livonia, cultural, religious, specific",20,y
+church4_red.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Church4_Red,"livonia, cultural, religious, specific",20,y
+church4_white.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Church4_White,"livonia, cultural, religious, specific",20,y
+church4_yellow_dam.p3d,database/structures_bliss/specific/cultural/objects.json,Land_Church4_Yellow_Dam,"livonia, cultural, religious, specific",30,y

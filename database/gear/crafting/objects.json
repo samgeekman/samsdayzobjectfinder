@@ -1,42 +1,12 @@
 [
   {
-    "objectName": "unfolded",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/crafting",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/crafting/unfolded.jpg"
-  },
-  {
-    "objectName": "ProxyWooden_stick_blunt",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/crafting",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/crafting/proxywooden_stick_blunt.jpg"
-  },
-  {
-    "objectName": "Proxybp_wooden_stick",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/crafting",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/crafting/proxybp_wooden_stick.jpg"
-  },
-  {
     "objectName": "BurlapStrip",
     "inGameName": "Burlap Strips",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, gear, strips",
     "image": "images/gear/crafting/burlapstrip.jpg"
   },
   {
@@ -46,7 +16,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, fishing, gear",
     "image": "images/gear/crafting/bonehook.jpg"
   },
   {
@@ -56,7 +26,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, fishing, gear",
     "image": "images/gear/crafting/woodenhook.jpg"
   },
   {
@@ -66,7 +36,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, fishing, gear",
     "image": "images/gear/crafting/bonebait.jpg"
   },
   {
@@ -76,7 +46,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/burlapsack.jpg"
   },
   {
@@ -86,7 +56,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/rope.jpg"
   },
   {
@@ -96,7 +66,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "by, crafting, gear, restrained",
     "image": "images/gear/crafting/ropelocked.jpg"
   },
   {
@@ -106,7 +76,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/metalwire.jpg"
   },
   {
@@ -116,7 +86,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "by, crafting, gear, restrained",
     "image": "images/gear/crafting/metalwirelocked.jpg"
   },
   {
@@ -126,7 +96,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, gear, short",
     "image": "images/gear/crafting/woodenstick.jpg"
   },
   {
@@ -136,7 +106,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, gear, fore",
     "image": "images/gear/crafting/torch.jpg"
   },
   {
@@ -146,7 +116,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, gear, fiore",
     "image": "images/gear/crafting/longtorch.jpg"
   },
   {
@@ -156,7 +126,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/longwoodenstick.jpg"
   },
   {
@@ -166,7 +136,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, gear, sharpened",
     "image": "images/gear/crafting/sharpwoodenstick.jpg"
   },
   {
@@ -176,7 +146,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/handdrillkit.jpg"
   },
   {
@@ -186,68 +156,8 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, face, fuel, gear, protection, NBC, respirator",
     "image": "images/gear/crafting/gasmask_filter_improvised.jpg"
-  },
-  {
-    "objectName": "CS_Burned",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/crafting",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/crafting/cs_burned.jpg"
-  },
-  {
-    "objectName": "ProxyString_MetalWire",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/crafting",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/crafting/proxystring_metalwire.jpg"
-  },
-  {
-    "objectName": "Rolled",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/crafting",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/crafting/rolled.jpg"
-  },
-  {
-    "objectName": "ProxyBp_rope",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/crafting",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/crafting/proxybp_rope.jpg"
-  },
-  {
-    "objectName": "ProxyWooden_stick",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/crafting",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/crafting/proxywooden_stick.jpg"
-  },
-  {
-    "objectName": "ObsoleteFishingRod",
-    "inGameName": "Obsolete Fishing Rod",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/crafting",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/crafting/obsoletefishingrod.jpg"
   },
   {
     "objectName": "advanced_spear.p3d",
@@ -266,7 +176,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/basic_spear.p3d.jpg"
   },
   {
@@ -276,7 +186,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/bone_bait.p3d.jpg"
   },
   {
@@ -286,7 +196,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/bone_hook.p3d.jpg"
   },
   {
@@ -296,7 +206,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/bp_burlap_sack.p3d.jpg"
   },
   {
@@ -306,7 +216,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/bp_rope.p3d.jpg"
   },
   {
@@ -316,7 +226,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/bp_rope_tied.p3d.jpg"
   },
   {
@@ -326,7 +236,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/bp_wooden_stick.p3d.jpg"
   },
   {
@@ -336,7 +246,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/gasmask_filter_improvised.p3d.jpg"
   },
   {
@@ -346,7 +256,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/grass.p3d.jpg"
   },
   {
@@ -356,7 +266,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/hand_drill_kit.p3d.jpg"
   },
   {
@@ -366,7 +276,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/longtorch.p3d.jpg"
   },
   {
@@ -376,7 +286,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/rabbit_snare.p3d.jpg"
   },
   {
@@ -386,7 +296,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/sackcloth_rag.p3d.jpg"
   },
   {
@@ -396,7 +306,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/string_metalwire.p3d.jpg"
   },
   {
@@ -406,7 +316,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/string_metalwire_tied.p3d.jpg"
   },
   {
@@ -416,7 +326,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/torch.p3d.jpg"
   },
   {
@@ -426,7 +336,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/waterbottlefishtrap.p3d.jpg"
   },
   {
@@ -436,7 +346,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/wooden_bait.p3d.jpg"
   },
   {
@@ -446,7 +356,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/wooden_hook.p3d.jpg"
   },
   {
@@ -456,7 +366,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/wooden_stick.p3d.jpg"
   },
   {
@@ -466,7 +376,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/crafting",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "crafting, gear",
     "image": "images/gear/crafting/wooden_stick_blunt.p3d.jpg"
   },
   {
@@ -476,7 +386,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, gear, sharpened, stick",
     "image": "images/gear/crafting/sharpwoodenstick.jpg"
   },
   {
@@ -486,7 +396,7 @@
     "modelType": "Config",
     "path": "dz/gear/crafting",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "crafting, gear, rock, sharpened, stick, terrain",
     "image": "images/gear/crafting/sharpwoodenstick.jpg"
   }
 ]

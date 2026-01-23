@@ -6,7 +6,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "fire",
     "image": "images/gear/tools/flame.jpg"
   },
   {
@@ -16,7 +16,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/cattleprod.jpg"
   },
   {
@@ -26,7 +26,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/candle.jpg"
   },
   {
@@ -36,7 +36,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "cooking, gear, interior, tools",
     "image": "images/gear/tools/kitchentimer.jpg"
   },
   {
@@ -46,7 +46,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/flashlight.jpg"
   },
   {
@@ -56,18 +56,8 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, raycast, scanner, tools",
     "image": "images/gear/tools/attack_flashlight_heavy2.jpg"
-  },
-  {
-    "objectName": "Raycaster",
-    "inGameName": "Raycast Scanner",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/tools/raycaster.jpg"
   },
   {
     "objectName": "Pen_Black",
@@ -76,7 +66,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, writing, notes",
     "image": "images/gear/tools/pen_colorbase.jpg"
   },
   {
@@ -86,7 +76,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, writing, notes",
     "image": "images/gear/tools/pen_colorbase.jpg"
   },
   {
@@ -96,7 +86,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, writing, notes",
     "image": "images/gear/tools/pen_colorbase.jpg"
   },
   {
@@ -106,7 +96,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, writing, notes",
     "image": "images/gear/tools/pen_colorbase.jpg"
   },
   {
@@ -116,7 +106,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, canned, cooking, food",
     "image": "images/gear/tools/canopener.jpg"
   },
   {
@@ -126,7 +116,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, heat, pack, tools, warm",
     "image": "images/gear/tools/heatpack.jpg"
   },
   {
@@ -136,7 +126,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/messtin.jpg"
   },
   {
@@ -146,18 +136,8 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, base building",
     "image": "images/gear/tools/pliers.jpg"
-  },
-  {
-    "objectName": "Pliers_loop",
-    "inGameName": "Lock Pick",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/tools/pliers_loop.jpg"
   },
   {
     "objectName": "Lockpick",
@@ -166,18 +146,8 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, lock, pick, tools",
     "image": "images/gear/tools/lockpick.jpg"
-  },
-  {
-    "objectName": "lockpicker_end",
-    "inGameName": "Gun Cleaning Kit",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/tools/lockpicker_end.jpg"
   },
   {
     "objectName": "WeaponCleaningKit",
@@ -186,7 +156,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, guns, tools, repair",
     "image": "images/gear/tools/weaponcleaningkit.jpg"
   },
   {
@@ -196,7 +166,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, repair",
     "image": "images/gear/tools/sewingkit.jpg"
   },
   {
@@ -206,7 +176,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, repair",
     "image": "images/gear/tools/leathersewingkit.jpg"
   },
   {
@@ -216,7 +186,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, police",
     "image": "images/gear/tools/handcuffs.jpg"
   },
   {
@@ -226,18 +196,8 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "by, gear, restrained, tools",
     "image": "images/gear/tools/handcuffslocked.jpg"
-  },
-  {
-    "objectName": "handcuff_struggle",
-    "inGameName": "Handcuff Keys",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/tools/handcuff_struggle.jpg"
   },
   {
     "objectName": "HandcuffKeys",
@@ -246,7 +206,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, police",
     "image": "images/gear/tools/handcuffkeys.jpg"
   },
   {
@@ -256,7 +216,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, sakhal, volcano",
     "image": "images/gear/tools/scientificbriefcasekeys.jpg"
   },
   {
@@ -266,7 +226,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/cassette.jpg"
   },
   {
@@ -276,7 +236,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, digging, spade",
     "image": "images/gear/tools/shovel.jpg"
   },
   {
@@ -286,7 +246,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, digging, spade, base building",
     "image": "images/gear/tools/fieldshovel.jpg"
   },
   {
@@ -296,7 +256,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, digging, spade, base building",
     "image": "images/gear/tools/digsecondary.jpg"
   },
   {
@@ -306,18 +266,8 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/crowbar.jpg"
-  },
-  {
-    "objectName": "minePickAxe_SoundSet",
-    "inGameName": "Fire Extinguisher",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/tools/minepickaxe_soundset.jpg"
   },
   {
     "objectName": "FireExtinguisher",
@@ -326,7 +276,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "effect, flame, gear, tools",
     "image": "images/gear/tools/fireextinguisher.jpg"
   },
   {
@@ -336,7 +286,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, base building",
     "image": "images/gear/tools/hammer.jpg"
   },
   {
@@ -356,7 +306,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/meattenderizer.jpg"
   },
   {
@@ -366,7 +316,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, meat, tenderizer, tools",
     "image": "images/gear/tools/minningbuilding.jpg"
   },
   {
@@ -376,7 +326,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/wrench.jpg"
   },
   {
@@ -386,7 +336,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, iron, tire, tools",
     "image": "images/gear/tools/lugwrench.jpg"
   },
   {
@@ -396,7 +346,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/pipe.jpg"
   },
   {
@@ -406,7 +356,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/screwdriver.jpg"
   },
   {
@@ -416,7 +366,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/sickle.jpg"
   },
   {
@@ -426,7 +376,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, base building",
     "image": "images/gear/tools/hacksaw.jpg"
   },
   {
@@ -436,7 +386,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "cooking, gear, interior, tools",
     "image": "images/gear/tools/kitchenknife.jpg"
   },
   {
@@ -446,7 +396,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/steakknife.jpg"
   },
   {
@@ -456,7 +406,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/hayhook.jpg"
   },
   {
@@ -466,7 +416,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/boneknife.jpg"
   },
   {
@@ -476,18 +426,8 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, medieval, castle",
     "image": "images/gear/tools/mace.jpg"
-  },
-  {
-    "objectName": "minePickAxe_SoundSet",
-    "inGameName": "Farming Hoe",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/tools/minepickaxe_soundset.jpg"
   },
   {
     "objectName": "FarmingHoe",
@@ -496,7 +436,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, gardening, growing",
     "image": "images/gear/tools/farminghoe.jpg"
   },
   {
@@ -506,7 +446,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, simple, tools, fishing",
     "image": "images/gear/tools/improvisedfishingrod.jpg"
   },
   {
@@ -516,7 +456,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/fishingrod.jpg"
   },
   {
@@ -526,18 +466,8 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/sledgehammer.jpg"
-  },
-  {
-    "objectName": "ShoulderR_Show",
-    "inGameName": "Ice Axe",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/tools/shoulderr_show.jpg"
   },
   {
     "objectName": "Iceaxe",
@@ -546,7 +476,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "axe, gear, ice, tools",
     "image": "images/gear/tools/iceaxe.jpg"
   },
   {
@@ -556,18 +486,8 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/broom.jpg"
-  },
-  {
-    "objectName": "Sprint_SwitchedOn",
-    "inGameName": "Birch Broom",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/tools/sprint_switchedon.jpg"
   },
   {
     "objectName": "Broom_Birch",
@@ -576,7 +496,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/broom_birch.jpg"
   },
   {
@@ -586,7 +506,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "canoe, gear, tools",
     "image": "images/gear/tools/paddle.jpg"
   },
   {
@@ -596,7 +516,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "electrical, gear, tools",
     "image": "images/gear/tools/electronicrepairkit.jpg"
   },
   {
@@ -606,7 +526,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools, repair",
     "image": "images/gear/tools/epoxyputty.jpg"
   },
   {
@@ -616,7 +536,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, rock, sharpening, stone, terrain, tools",
     "image": "images/gear/tools/whetstone.jpg"
   },
   {
@@ -626,7 +546,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/handsaw.jpg"
   },
   {
@@ -636,18 +556,8 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/fireworkslauncher.jpg"
-  },
-  {
-    "objectName": "DoorTestCamera",
-    "inGameName": "DoorTestCamera",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/tools/doortestcamera.jpg"
   },
   {
     "objectName": "RemoteDetonator",
@@ -656,7 +566,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "detonation, gear, tools, unit, bomb, c4, plastic explosive",
     "image": "images/gear/tools/remotedetonator.jpg"
   },
   {
@@ -666,7 +576,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "detonation, gear, tools, unit, bomb, c4, plastic explosive",
     "image": "images/gear/tools/remotedetonatorreceiver.jpg"
   },
   {
@@ -676,7 +586,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "detonation, gear, tools, unit, bomb, c4, plastic explosive",
     "image": "images/gear/tools/remotedetonatortrigger.jpg"
   },
   {
@@ -686,38 +596,8 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/blowtorch.jpg"
-  },
-  {
-    "objectName": "ProxyAlarmClock",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/tools/proxyalarmclock.jpg"
-  },
-  {
-    "objectName": "ProxyKitchenTimer",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/tools/proxykitchentimer.jpg"
-  },
-  {
-    "objectName": "ProxyRemoteDetonator_Receiver",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/tools/proxyremotedetonator_receiver.jpg"
   },
   {
     "objectName": "alarmclock.p3d",
@@ -726,7 +606,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "clock, timer",
     "image": "images/gear/tools/alarmclock.p3d.jpg"
   },
   {
@@ -736,7 +616,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/blowtorch.p3d.jpg"
   },
   {
@@ -746,7 +626,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/bone_knife.p3d.jpg"
   },
   {
@@ -756,7 +636,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/broom.p3d.jpg"
   },
   {
@@ -766,7 +646,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/broom_birch.p3d.jpg"
   },
   {
@@ -776,7 +656,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/candle.p3d.jpg"
   },
   {
@@ -786,7 +666,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "canoe, gear, tools",
     "image": "images/gear/tools/canoe_paddle.p3d.jpg"
   },
   {
@@ -796,7 +676,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools, canned, cooking, food",
     "image": "images/gear/tools/canopener.p3d.jpg"
   },
   {
@@ -806,7 +686,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/cassette.p3d.jpg"
   },
   {
@@ -816,7 +696,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/catle_prod.p3d.jpg"
   },
   {
@@ -836,7 +716,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/crowbar.p3d.jpg"
   },
   {
@@ -866,7 +746,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "electrical, gear, tools",
     "image": "images/gear/tools/electroniccase.p3d.jpg"
   },
   {
@@ -876,7 +756,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools, repair",
     "image": "images/gear/tools/epoxy_putty.p3d.jpg"
   },
   {
@@ -886,7 +766,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools, gardening, growing",
     "image": "images/gear/tools/farming_hoe.p3d.jpg"
   },
   {
@@ -896,7 +776,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "effect, flame, gear, tools",
     "image": "images/gear/tools/fireextinguisher.p3d.jpg"
   },
   {
@@ -906,7 +786,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/fireworkslauncher.p3d.jpg"
   },
   {
@@ -916,7 +796,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/fishing_rod.p3d.jpg"
   },
   {
@@ -926,7 +806,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/fishing_rod_closed.p3d.jpg"
   },
   {
@@ -936,7 +816,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/fishing_rod_open.p3d.jpg"
   },
   {
@@ -946,7 +826,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools, medieval, castle",
     "image": "images/gear/tools/flanged_mace.p3d.jpg"
   },
   {
@@ -956,7 +836,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/flashlight.p3d.jpg"
   },
   {
@@ -966,7 +846,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools, base building",
     "image": "images/gear/tools/hacksaw.p3d.jpg"
   },
   {
@@ -976,7 +856,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools, base building",
     "image": "images/gear/tools/hammer.p3d.jpg"
   },
   {
@@ -986,7 +866,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools, police",
     "image": "images/gear/tools/handcuffs.p3d.jpg"
   },
   {
@@ -996,7 +876,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools, police",
     "image": "images/gear/tools/handcuffs_locked.p3d.jpg"
   },
   {
@@ -1006,7 +886,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools, police",
     "image": "images/gear/tools/handcuff_keys.p3d.jpg"
   },
   {
@@ -1016,7 +896,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/handsaw.p3d.jpg"
   },
   {
@@ -1026,7 +906,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/hay_hook.p3d.jpg"
   },
   {
@@ -1036,7 +916,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, heat, pack, tools, warm",
     "image": "images/gear/tools/heatpack.p3d.jpg"
   },
   {
@@ -1046,7 +926,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "axe, gear, ice, tools",
     "image": "images/gear/tools/ice_axe.p3d.jpg"
   },
   {
@@ -1056,7 +936,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, simple, tools, fishing",
     "image": "images/gear/tools/improvisedfishingrod.p3d.jpg"
   },
   {
@@ -1076,7 +956,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "cooking, gear, interior, tools",
     "image": "images/gear/tools/kitchenknife.p3d.jpg"
   },
   {
@@ -1086,7 +966,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "cooking, gear, interior, tools",
     "image": "images/gear/tools/kitchentimer.p3d.jpg"
   },
   {
@@ -1096,7 +976,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools, repair",
     "image": "images/gear/tools/leather_sewing_kit.p3d.jpg"
   },
   {
@@ -1106,7 +986,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, lock, pick, tools",
     "image": "images/gear/tools/lockpick.p3d.jpg"
   },
   {
@@ -1116,7 +996,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, iron, tire, tools",
     "image": "images/gear/tools/lug_wrench.p3d.jpg"
   },
   {
@@ -1126,7 +1006,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/meat_tenderizer.p3d.jpg"
   },
   {
@@ -1136,7 +1016,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/mess_tin.p3d.jpg"
   },
   {
@@ -1146,7 +1026,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/metal_pipe.p3d.jpg"
   },
   {
@@ -1156,7 +1036,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools, writing, notes",
     "image": "images/gear/tools/pen.p3d.jpg"
   },
   {
@@ -1166,7 +1046,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools, base building",
     "image": "images/gear/tools/pliers.p3d.jpg"
   },
   {
@@ -1186,7 +1066,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "detonation, gear, tools, unit, bomb, c4, plastic explosive",
     "image": "images/gear/tools/remotedetonator.p3d.jpg"
   },
   {
@@ -1196,7 +1076,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "detonation, gear, tools, unit, bomb, c4, plastic explosive",
     "image": "images/gear/tools/remotedetonator_receiver.p3d.jpg"
   },
   {
@@ -1206,7 +1086,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "detonation, gear, tools, unit, bomb, c4, plastic explosive",
     "image": "images/gear/tools/remotedetonator_trigger.p3d.jpg"
   },
   {
@@ -1216,7 +1096,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/screwdriver.p3d.jpg"
   },
   {
@@ -1226,7 +1106,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools, repair",
     "image": "images/gear/tools/sewing_kit.p3d.jpg"
   },
   {
@@ -1236,7 +1116,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "sakhal, quest, locked",
     "image": "images/gear/tools/shippingcontainerkeys.p3d.jpg"
   },
   {
@@ -1246,7 +1126,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools, digging, spade",
     "image": "images/gear/tools/shovel.p3d.jpg"
   },
   {
@@ -1256,7 +1136,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/sickle.p3d.jpg"
   },
   {
@@ -1266,7 +1146,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/sledge_hammer.p3d.jpg"
   },
   {
@@ -1276,7 +1156,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/steak_knife.p3d.jpg"
   },
   {
@@ -1296,7 +1176,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, rock, sharpening, stone, terrain, tools",
     "image": "images/gear/tools/whetstone.p3d.jpg"
   },
   {
@@ -1306,7 +1186,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/tools",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tools",
     "image": "images/gear/tools/wrench.p3d.jpg"
   },
   {
@@ -1316,7 +1196,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "clock, timer",
     "image": "images/gear/tools/attack_flashlight_heavy2.jpg"
   },
   {
@@ -1326,7 +1206,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "clock, timer",
     "image": "images/gear/tools/attack_flashlight_heavy2.jpg"
   },
   {
@@ -1336,7 +1216,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "clock, timer",
     "image": "images/gear/tools/attack_flashlight_heavy2.jpg"
   },
   {
@@ -1346,7 +1226,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "explosion, loud",
     "image": "images/gear/tools/attack_flashlight_heavy2.jpg"
   },
   {
@@ -1356,7 +1236,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "sakhal, quest, locked",
     "image": "images/gear/tools/shovel.jpg"
   },
   {
@@ -1366,7 +1246,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "sakhal, quest, locked",
     "image": "images/gear/tools/shovel.jpg"
   },
   {
@@ -1376,7 +1256,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "sakhal, quest, locked",
     "image": "images/gear/tools/shovel.jpg"
   },
   {
@@ -1386,7 +1266,7 @@
     "modelType": "Config",
     "path": "dz/gear/tools",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "sakhal, quest, locked",
     "image": "images/gear/tools/shovel.jpg"
   }
 ]

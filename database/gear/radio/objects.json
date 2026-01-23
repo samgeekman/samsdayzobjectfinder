@@ -6,18 +6,8 @@
     "modelType": "Config",
     "path": "dz/gear/radio",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "audio, communication, gear, handheld, transceiver",
     "image": "images/gear/radio/personalradio.jpg"
-  },
-  {
-    "objectName": "turnOffRadio",
-    "inGameName": "Field Transceiver",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/radio",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/radio/turnoffradio.jpg"
   },
   {
     "objectName": "BaseRadio",
@@ -26,7 +16,7 @@
     "modelType": "Config",
     "path": "dz/gear/radio",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "audio, communication, field, gear, transceiver",
     "image": "images/gear/radio/baseradio.jpg"
   },
   {
@@ -36,7 +26,7 @@
     "modelType": "Config",
     "path": "dz/gear/radio",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "audio, communication, gear, radio",
     "image": "images/gear/radio/megaphone.jpg"
   },
   {
@@ -46,7 +36,7 @@
     "modelType": "Config",
     "path": "dz/gear/radio",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "audio, communication, gear",
     "image": "images/gear/radio/radio.jpg"
   },
   {
@@ -56,18 +46,8 @@
     "modelType": "Config",
     "path": "dz/gear/radio",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "audio, communication, gear, radio",
     "image": "images/gear/radio/absolute90s.jpg"
-  },
-  {
-    "objectName": "ProxyWalkieTalkie",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/radio",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/radio/proxywalkietalkie.jpg"
   },
   {
     "objectName": "base_radio_station_f.p3d",
@@ -76,7 +56,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/radio",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "audio, communication, gear",
     "image": "images/gear/radio/base_radio_station_f.p3d.jpg"
   },
   {
@@ -86,7 +66,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/radio",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "audio, communication, field, gear, transceiver",
     "image": "images/gear/radio/base_radio_station_g.p3d.jpg"
   },
   {
@@ -96,7 +76,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/radio",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "audio, communication, gear",
     "image": "images/gear/radio/base_radio_station_m.p3d.jpg"
   },
   {
@@ -106,7 +86,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/radio",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "audio, communication, gear, radio",
     "image": "images/gear/radio/cassette.p3d.jpg"
   },
   {
@@ -116,7 +96,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/radio",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "audio, communication, gear, radio",
     "image": "images/gear/radio/megaphone.p3d.jpg"
   },
   {
@@ -126,7 +106,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/radio",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "audio, communication, gear, radio",
     "image": "images/gear/radio/unitra_wilga.p3d.jpg"
   },
   {
@@ -136,7 +116,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/radio",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "audio, communication, gear, radio",
     "image": "images/gear/radio/walkietalkie.p3d.jpg"
   }
 ]

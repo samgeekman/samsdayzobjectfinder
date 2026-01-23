@@ -6,7 +6,7 @@
     "modelType": "Config",
     "path": "dz/gear/navigation",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, navigation, tourist",
     "image": "images/gear/navigation/chernarusmap.jpg"
   },
   {
@@ -16,7 +16,7 @@
     "modelType": "Config",
     "path": "dz/gear/navigation",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, navigation, tourist",
     "image": "images/gear/navigation/map_opened.jpg"
   },
   {
@@ -26,7 +26,7 @@
     "modelType": "Config",
     "path": "dz/gear/navigation",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, navigation",
     "image": "images/gear/navigation/compass.jpg"
   },
   {
@@ -36,7 +36,7 @@
     "modelType": "Config",
     "path": "dz/gear/navigation",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, navigation",
     "image": "images/gear/navigation/orienteeringcompass.jpg"
   },
   {
@@ -46,28 +46,8 @@
     "modelType": "Config",
     "path": "dz/gear/navigation",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, navigation",
     "image": "images/gear/navigation/gpsreceiver.jpg"
-  },
-  {
-    "objectName": "DisplayState",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/navigation",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/navigation/displaystate.jpg"
-  },
-  {
-    "objectName": "ProxyGPSReceiver",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/navigation",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/navigation/proxygpsreceiver.jpg"
   },
   {
     "objectName": "compass.p3d",
@@ -76,7 +56,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/navigation",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, navigation",
     "image": "images/gear/navigation/compass.p3d.jpg"
   },
   {
@@ -86,7 +66,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/navigation",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, navigation",
     "image": "images/gear/navigation/compass_modern.p3d.jpg"
   },
   {
@@ -96,7 +76,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/navigation",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, navigation",
     "image": "images/gear/navigation/gpsreceiver.p3d.jpg"
   },
   {
@@ -146,7 +126,7 @@
     "modelType": "Config",
     "path": "dz/gear/navigation",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, navigation, tourist",
     "image": "images/gear/navigation/chernarusmap.jpg"
   }
 ]

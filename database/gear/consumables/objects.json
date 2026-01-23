@@ -1,52 +1,12 @@
 [
   {
-    "objectName": "Proxysingle_plank",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/consumables",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/consumables/proxysingle_plank.jpg"
-  },
-  {
-    "objectName": "ProxySingle_Metal_Sheet",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/consumables",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/consumables/proxysingle_metal_sheet.jpg"
-  },
-  {
-    "objectName": "ProxyNails_loose_10",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/consumables",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/consumables/proxynails_loose_10.jpg"
-  },
-  {
-    "objectName": "Proxytanned_leather",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/consumables",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/consumables/proxytanned_leather.jpg"
-  },
-  {
     "objectName": "Paper",
     "inGameName": "Paper",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, writing, notes, fire, kindling",
     "image": "images/gear/consumables/paper.jpg"
   },
   {
@@ -56,7 +16,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, bunker, access, keycard, underground, panel",
     "image": "images/gear/consumables/punchedcard.jpg"
   },
   {
@@ -66,7 +26,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, christmas, seasonal, festive, santa",
     "image": "images/gear/consumables/giftwrappaper.jpg"
   },
   {
@@ -76,7 +36,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, repair, clothing",
     "image": "images/gear/consumables/ducttape.jpg"
   },
   {
@@ -86,7 +46,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "by, gear, restrained",
     "image": "images/gear/consumables/ducttapelocked.jpg"
   },
   {
@@ -96,7 +56,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, torn, clothing, wrapping, kindling, bandage",
     "image": "images/gear/consumables/rag.jpg"
   },
   {
@@ -106,7 +66,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear",
     "image": "images/gear/consumables/stone.jpg"
   },
   {
@@ -116,7 +76,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, rock, terrain",
     "image": "images/gear/consumables/smallstone.jpg"
   },
   {
@@ -126,7 +86,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "9v, energy, gear, power",
     "image": "images/gear/consumables/battery9v.jpg"
   },
   {
@@ -136,7 +96,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "fuel, gear, station",
     "image": "images/gear/consumables/largegascanister.jpg"
   },
   {
@@ -146,7 +106,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "fuel, gear, station",
     "image": "images/gear/consumables/mediumgascanister.jpg"
   },
   {
@@ -156,7 +116,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "fuel, gear, station",
     "image": "images/gear/consumables/smallgascanister.jpg"
   },
   {
@@ -166,7 +126,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear",
     "image": "images/gear/consumables/butanecanister.jpg"
   },
   {
@@ -176,7 +136,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, spraypaint",
     "image": "images/gear/consumables/spraycan_colorbase.jpg"
   },
   {
@@ -186,7 +146,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, spraypaint",
     "image": "images/gear/consumables/spraycan_colorbase.jpg"
   },
   {
@@ -196,18 +156,8 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, matches, fire, natches",
     "image": "images/gear/consumables/matchbox.jpg"
-  },
-  {
-    "objectName": "MatchIgnite",
-    "inGameName": "Boxed Nails",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/consumables",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/consumables/matchignite.jpg"
   },
   {
     "objectName": "NailBox",
@@ -216,7 +166,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "boxed, crate, gear, nails, storage, base building",
     "image": "images/gear/consumables/nailbox.jpg"
   },
   {
@@ -226,7 +176,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "flare, gear, road, lights",
     "image": "images/gear/consumables/roadflare.jpg"
   },
   {
@@ -236,7 +186,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, glow, stick, lights",
     "image": "images/gear/consumables/flare_open.jpg"
   },
   {
@@ -246,7 +196,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, glow, stick, lights",
     "image": "images/gear/consumables/chemlight_colorbase.jpg"
   },
   {
@@ -256,7 +206,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, glow, stick, lights",
     "image": "images/gear/consumables/chemlight_colorbase.jpg"
   },
   {
@@ -266,7 +216,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, glow, stick, lights",
     "image": "images/gear/consumables/chemlight_colorbase.jpg"
   },
   {
@@ -276,7 +226,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, glow, stick, lights",
     "image": "images/gear/consumables/chemlight_colorbase.jpg"
   },
   {
@@ -286,7 +236,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, glow, stick, lights",
     "image": "images/gear/consumables/chemlight_colorbase.jpg"
   },
   {
@@ -296,7 +246,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "boar, gear, hunting",
     "image": "images/gear/consumables/wildboarpelt.jpg"
   },
   {
@@ -306,7 +256,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, hare, hunting",
     "image": "images/gear/consumables/rabbitpelt.jpg"
   },
   {
@@ -316,7 +266,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, hunting",
     "image": "images/gear/consumables/cowpelt.jpg"
   },
   {
@@ -326,7 +276,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, hunting",
     "image": "images/gear/consumables/pigpelt.jpg"
   },
   {
@@ -336,7 +286,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, hunting",
     "image": "images/gear/consumables/deerpelt.jpg"
   },
   {
@@ -346,7 +296,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, hunting",
     "image": "images/gear/consumables/reindeerpelt.jpg"
   },
   {
@@ -356,7 +306,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, hunting",
     "image": "images/gear/consumables/goatpelt.jpg"
   },
   {
@@ -366,7 +316,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, hunting",
     "image": "images/gear/consumables/bearpelt.jpg"
   },
   {
@@ -376,7 +326,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, hunting",
     "image": "images/gear/consumables/wolfpelt.jpg"
   },
   {
@@ -386,7 +336,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, hunting",
     "image": "images/gear/consumables/sheeppelt.jpg"
   },
   {
@@ -396,7 +346,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, hunting",
     "image": "images/gear/consumables/mouflonpelt.jpg"
   },
   {
@@ -406,7 +356,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, hunting",
     "image": "images/gear/consumables/foxpelt.jpg"
   },
   {
@@ -416,7 +366,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, hunting",
     "image": "images/gear/consumables/tannedleather.jpg"
   },
   {
@@ -426,7 +376,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "fishing, gear",
     "image": "images/gear/consumables/hook.jpg"
   },
   {
@@ -436,7 +386,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tree, kindling",
     "image": "images/gear/consumables/bark_oak.jpg"
   },
   {
@@ -446,7 +396,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tree, kindling",
     "image": "images/gear/consumables/bark_birch.jpg"
   },
   {
@@ -456,18 +406,8 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, nails, base building",
     "image": "images/gear/consumables/nail.jpg"
-  },
-  {
-    "objectName": "NoiseImpact",
-    "inGameName": "Fishing Bait",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/consumables",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/consumables/noiseimpact.jpg"
   },
   {
     "objectName": "Bait",
@@ -476,7 +416,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "worms, fishing, hook",
     "image": "images/gear/consumables/bait.jpg"
   },
   {
@@ -486,7 +426,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, fishing",
     "image": "images/gear/consumables/jig.jpg"
   },
   {
@@ -496,7 +436,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, growing, gardening",
     "image": "images/gear/consumables/gardenlime.jpg"
   },
   {
@@ -506,7 +446,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, fishing",
     "image": "images/gear/consumables/netting.jpg"
   },
   {
@@ -516,7 +456,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, tree, wood, base building, lumber",
     "image": "images/gear/consumables/woodenplank.jpg"
   },
   {
@@ -526,7 +466,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, lumber, base building",
     "image": "images/gear/consumables/pileofwoodenplanks.jpg"
   },
   {
@@ -536,7 +476,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, sheet, metal, wall, base building",
     "image": "images/gear/consumables/metalplate.jpg"
   },
   {
@@ -546,7 +486,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "capsule, eggsperimental, gear",
     "image": "images/gear/consumables/easteregg.jpg"
   },
   {
@@ -556,7 +496,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "face, fuel, gear, protection, NBC, gas mask, respirator",
     "image": "images/gear/consumables/gasmask_filter.jpg"
   },
   {
@@ -566,58 +506,8 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear",
     "image": "images/gear/consumables/proxyroad_flare.jpg"
-  },
-  {
-    "objectName": "Sticks_Flare_Unfolded_1",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/consumables",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/consumables/sticks_flare_unfolded_1.jpg"
-  },
-  {
-    "objectName": "ProxyGasCannisterLarge",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/consumables",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/consumables/proxygascannisterlarge.jpg"
-  },
-  {
-    "objectName": "Proxybait_hook",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/consumables",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/consumables/proxybait_hook.jpg"
-  },
-  {
-    "objectName": "ProxyChemlight",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/consumables",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/consumables/proxychemlight.jpg"
-  },
-  {
-    "objectName": "ProxyStone",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/consumables",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/consumables/proxystone.jpg"
   },
   {
     "objectName": "ChickenFeather",
@@ -626,7 +516,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "feathers, gear, poultry, hunting, arrows, crossbow, bolt",
     "image": "images/gear/consumables/chickenfeather.jpg"
   },
   {
@@ -636,7 +526,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, rock, crafting",
     "image": "images/gear/consumables/stoneknife.jpg"
   },
   {
@@ -646,7 +536,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, wrapping, rags",
     "image": "images/gear/consumables/mouthrag.jpg"
   },
   {
@@ -686,7 +576,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "worms, fishing, hook",
     "image": "images/gear/consumables/bait_hook.p3d.jpg"
   },
   {
@@ -696,7 +586,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "worms, fishing, hook",
     "image": "images/gear/consumables/bait_hook2.p3d.jpg"
   },
   {
@@ -706,7 +596,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "worms, fishing, hook",
     "image": "images/gear/consumables/bait_worm_pinned.p3d.jpg"
   },
   {
@@ -726,7 +616,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "9v, energy, gear, power",
     "image": "images/gear/consumables/batteryd.p3d.jpg"
   },
   {
@@ -736,7 +626,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tree, kindling",
     "image": "images/gear/consumables/birch_bark.p3d.jpg"
   },
   {
@@ -746,7 +636,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear",
     "image": "images/gear/consumables/butanecanister.p3d.jpg"
   },
   {
@@ -756,7 +646,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, glow, stick, lights",
     "image": "images/gear/consumables/chemlight.p3d.jpg"
   },
   {
@@ -766,7 +656,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, repair, clothing",
     "image": "images/gear/consumables/ducttape.p3d.jpg"
   },
   {
@@ -776,7 +666,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, repair, clothing",
     "image": "images/gear/consumables/ducttape_tied.p3d.jpg"
   },
   {
@@ -786,7 +676,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "capsule, eggsperimental, gear",
     "image": "images/gear/consumables/easteregg.p3d.jpg"
   },
   {
@@ -806,7 +696,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, growing, gardening",
     "image": "images/gear/consumables/garden_lime.p3d.jpg"
   },
   {
@@ -846,7 +736,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "face, fuel, gear, protection, NBC, gas mask, respirator",
     "image": "images/gear/consumables/gasmask_filter.p3d.jpg"
   },
   {
@@ -856,7 +746,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, christmas, seasonal, festive, santa",
     "image": "images/gear/consumables/giftwrappaper.p3d.jpg"
   },
   {
@@ -866,7 +756,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, fishing",
     "image": "images/gear/consumables/jig.p3d.jpg"
   },
   {
@@ -876,7 +766,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, matches, fire, natches",
     "image": "images/gear/consumables/matchbox.p3d.jpg"
   },
   {
@@ -886,7 +776,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, sheet, metal, wall, base building",
     "image": "images/gear/consumables/metal_plate.p3d.jpg"
   },
   {
@@ -896,7 +786,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, sheet, metal, wall, base building",
     "image": "images/gear/consumables/metal_sheets.p3d.jpg"
   },
   {
@@ -916,7 +806,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "boxed, crate, gear, nails, storage, base building",
     "image": "images/gear/consumables/nails_box.p3d.jpg"
   },
   {
@@ -936,7 +826,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, fishing",
     "image": "images/gear/consumables/netting.p3d.jpg"
   },
   {
@@ -946,7 +836,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, tree, kindling",
     "image": "images/gear/consumables/oak_bark.p3d.jpg"
   },
   {
@@ -966,7 +856,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, writing, notes, fire, kindling",
     "image": "images/gear/consumables/paper.p3d.jpg"
   },
   {
@@ -1126,7 +1016,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, lumber, base building",
     "image": "images/gear/consumables/pile_of_planks.p3d.jpg"
   },
   {
@@ -1136,7 +1026,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, lumber, base building",
     "image": "images/gear/consumables/pile_of_planks_high.p3d.jpg"
   },
   {
@@ -1146,7 +1036,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, lumber, base building",
     "image": "images/gear/consumables/pile_of_planks_low.p3d.jpg"
   },
   {
@@ -1156,7 +1046,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, lumber, base building",
     "image": "images/gear/consumables/pile_of_planks_medium.p3d.jpg"
   },
   {
@@ -1166,7 +1056,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, lumber, base building",
     "image": "images/gear/consumables/pile_of_planks_small.p3d.jpg"
   },
   {
@@ -1176,7 +1066,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, bunker, access, keycard, underground, panel",
     "image": "images/gear/consumables/punchedcard.p3d.jpg"
   },
   {
@@ -1186,7 +1076,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, torn, clothing, wrapping, kindling, bandage",
     "image": "images/gear/consumables/rags.p3d.jpg"
   },
   {
@@ -1196,7 +1086,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "flare, gear, road, lights",
     "image": "images/gear/consumables/road_flare.p3d.jpg"
   },
   {
@@ -1226,7 +1116,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, rock, terrain",
     "image": "images/gear/consumables/smallstone.p3d.jpg"
   },
   {
@@ -1236,7 +1126,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, spraypaint",
     "image": "images/gear/consumables/spraycan.p3d.jpg"
   },
   {
@@ -1246,7 +1136,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear",
     "image": "images/gear/consumables/stone.p3d.jpg"
   },
   {
@@ -1256,7 +1146,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear",
     "image": "images/gear/consumables/stone_slice.p3d.jpg"
   },
   {
@@ -1266,7 +1156,7 @@
     "modelType": "Raw P3D",
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "gear, hunting",
     "image": "images/gear/consumables/tanned_leather.p3d.jpg"
   },
   {
@@ -1276,7 +1166,7 @@
     "modelType": "Config",
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
-    "searchTags": "",
+    "searchTags": "gear, hunting",
     "image": "images/gear/consumables/foxpelt.jpg"
   }
 ]
