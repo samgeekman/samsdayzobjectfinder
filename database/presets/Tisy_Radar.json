@@ -1,0 +1,52 @@
+{
+  "objectName": "Tisy Radar",
+  "inGameName": "-",
+  "category": "Editor Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "tisy, radar, military",
+  "image": "images/presets/tisy_radar.jpg",
+  "editorJson": [
+    {
+      "Type": "Land_Tisy_RadarB_Base",
+      "DisplayName": "Land_Tisy_RadarB_Base",
+      "Position": [
+        -211.7570343017578,
+        10.000003814697266,
+        3310.91015625
+      ],
+      "Orientation": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\military\\tisy\\tisy_radarb_base.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    },
+    {
+      "Type": "Land_Tisy_RadarB_Antenna",
+      "DisplayName": "Land_Tisy_RadarB_Antenna",
+      "Position": [
+        -203.5809783935547,
+        10.010910034179688,
+        3315.685546875
+      ],
+      "Orientation": [
+        62.87129211425781,
+        0.0,
+        -0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\military\\tisy\\tisy_radarb_antenna.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    }
+  ]
+}

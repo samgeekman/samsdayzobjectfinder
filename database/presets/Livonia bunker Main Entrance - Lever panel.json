@@ -1,0 +1,49 @@
+{
+  "objectName": "Livonia bunker Main Entrance - Lever panel",
+  "inGameName": "-",
+  "category": "Editor Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "bunker, entrance, level",
+  "image": "images/presets/livonia_bunker.jpg",
+  "editorJson": [
+    {
+        "Type": "Land_Underground_Entrance",
+        "DisplayName": "Land_Underground_Entrance",
+        "Position": [
+            4272.23486328125,
+            257.00653076171877,
+            4895.14111328125
+        ],
+        "Orientation": [
+            9.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_bliss\\underground\\entrance\\underground_entrance.p3d",
+        "Flags": 30
+    },
+    {
+        "Type": "Land_Underground_Panel_Lever",
+        "DisplayName": "Land_Underground_Panel_Lever",
+        "Position": [
+            4268.42138671875,
+            258.4884948730469,
+            4888.4794921875
+        ],
+        "Orientation": [
+            9.0,
+            0.0,
+            -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_bliss\\underground\\entrance\\underground_panel_lever.p3d",
+        "Flags": 30
+    }
+]
+
+}

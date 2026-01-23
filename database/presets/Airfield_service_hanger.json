@@ -1,0 +1,52 @@
+{
+  "objectName": "Airfield service hanger",
+  "inGameName": "-",
+  "category": "Editor Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "airfield, hanger, airport, plane, NWAF",
+  "image": "images/presets/service_hanger.jpg",
+  "editorJson": [
+    {
+      "Type": "Land_Airfield_ServiceHangar_L",
+      "DisplayName": "Land_Airfield_ServiceHangar_L",
+      "Position": [
+        -271.29107666015625,
+        10.0,
+        4318.64208984375
+      ],
+      "Orientation": [
+        -80.9999008178711,
+        0.0,
+        0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\military\\airfield\\airfield_servicehangar_l.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    },
+    {
+      "Type": "Land_Airfield_ServiceHangar_R",
+      "DisplayName": "Land_Airfield_ServiceHangar_R",
+      "Position": [
+        -320.6689453125,
+        9.999998092651367,
+        4326.46044921875
+      ],
+      "Orientation": [
+        -80.99995422363281,
+        0.0,
+        0.0
+      ],
+      "Scale": 0.9999999403953552,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\military\\airfield\\airfield_servicehangar_r.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "objectName": "Candy cane tower preset",
+  "inGameName": "-",
+  "category": "Editor Preset",
+  "modelType": "Editor Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "tower, preset, tc2, stack, airfield, telecom, mast",
+  "image": "images/presets/tc2_tower.jpg",
+  "editorJson": [
+    {
+      "Type": "Land_Tower_TC2_Top",
+      "DisplayName": "Land_Tower_TC2_Top",
+      "Position": [
+        5879.10791015625,
+        132.33628845214844,
+        8114.09326171875
+      ],
+      "Orientation": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\specific\\towers\\tower_tc2_top.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    },
+    {
+      "Type": "Land_Tower_TC2_Base",
+      "DisplayName": "Land_Tower_TC2_Base",
+      "Position": [
+        5879.73779296875,
+        33.003173828125,
+        8114.98974609375
+      ],
+      "Orientation": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\specific\\towers\\tower_tc2_base.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    },
+    {
+      "Type": "Land_Tower_TC2_Mid",
+      "DisplayName": "Land_Tower_TC2_Mid",
+      "Position": [
+        5879.203125,
+        82.595947265625,
+        8114.54150390625
+      ],
+      "Orientation": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\specific\\towers\\tower_tc2_mid.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    }
+  ]
+}

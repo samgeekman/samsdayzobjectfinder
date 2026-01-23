@@ -1,0 +1,52 @@
+{
+  "objectName": "Harbour crane",
+  "inGameName": "-",
+  "category": "Editor Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "harbour, harbor crane, dock, pier",
+  "image": "images/presets/harbour_crane.jpg",
+  "editorJson": [
+    {
+      "Type": "Land_Pier_Crane_A",
+      "DisplayName": "Land_Pier_Crane_A",
+      "Position": [
+        -365.21527099609375,
+        15.646161079406738,
+        4278.37158203125
+      ],
+      "Orientation": [
+        -52.199974060058594,
+        0.0,
+        0.0
+      ],
+      "Scale": 0.9999999403953552,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\industrial\\harbour\\pier_crane_a.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    },
+    {
+      "Type": "Land_Pier_Crane_B",
+      "DisplayName": "Land_Pier_Crane_B",
+      "Position": [
+        -361.79132080078125,
+        28.850812911987305,
+        4273.623046875
+      ],
+      "Orientation": [
+        44.99999237060547,
+        0.0,
+        -0.0
+      ],
+      "Scale": 0.9999999403953552,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\industrial\\harbour\\pier_crane_b.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    }
+  ]
+}

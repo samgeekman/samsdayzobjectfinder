@@ -1,0 +1,52 @@
+{
+  "objectName": "Small airfield hanger and ATC",
+  "inGameName": "-",
+  "category": "Editor Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "airfield, hanger, airport, plane, atc, NEAF",
+  "image": "images/presets/small_hanger.jpg",
+  "editorJson": [
+    {
+      "Type": "Land_Airfield_Small_Control",
+      "DisplayName": "Land_Airfield_Small_Control",
+      "Position": [
+        -295.77166748046875,
+        20.27178382873535,
+        4332.70068359375
+      ],
+      "Orientation": [
+        27.0,
+        -0.0,
+        -0.0
+      ],
+      "Scale": 0.9999999403953552,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\specific\\airfields\\airfield_small_control.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    },
+    {
+      "Type": "Land_Airfield_Small_Hangar",
+      "DisplayName": "Land_Airfield_Small_Hangar",
+      "Position": [
+        -315.2911682128906,
+        13.388936996459961,
+        4363.2294921875
+      ],
+      "Orientation": [
+        27.000045776367188,
+        0.0,
+        -0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\specific\\airfields\\airfield_small_hangar.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    }
+  ]
+}

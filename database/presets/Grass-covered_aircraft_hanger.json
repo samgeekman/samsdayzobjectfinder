@@ -1,0 +1,112 @@
+{
+  "objectName": "Grass-covered aircraft hanger",
+  "inGameName": "-",
+  "category": "Editor Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "hanger, grass, terrain, NWAF, aircraft, plane, airport",
+  "image": "images/presets/grass_hanger.jpg",
+  "editorJson": [
+    {
+      "Type": "StaticObj_Mil_AircraftShelter_Grass_R",
+      "DisplayName": "StaticObj_Mil_AircraftShelter_Grass_R",
+      "Position": [
+        -214.86712646484375,
+        10.06705379486084,
+        3302.91064453125
+      ],
+      "Orientation": [
+        18.496944427490234,
+        -0.23729489743709564,
+        0.12405707687139511
+      ],
+      "Scale": 1.0000001192092896,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_grass_r.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    },
+    {
+      "Type": "Land_Mil_AircraftShelter",
+      "DisplayName": "Land_Mil_AircraftShelter",
+      "Position": [
+        -208.06979370117188,
+        10.00000286102295,
+        3323.937744140625
+      ],
+      "Orientation": [
+        17.999984741210938,
+        -0.0,
+        -0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    },
+    {
+      "Type": "StaticObj_Mil_AircraftShelter_Door_L",
+      "DisplayName": "StaticObj_Mil_AircraftShelter_Door_L",
+      "Position": [
+        -220.41917419433594,
+        13.749004364013672,
+        3303.539306640625
+      ],
+      "Orientation": [
+        17.999801635742188,
+        0.0,
+        -0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_door_l.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    },
+    {
+      "Type": "StaticObj_Mil_AircraftShelter_Door_R",
+      "DisplayName": "StaticObj_Mil_AircraftShelter_Door_R",
+      "Position": [
+        -210.10678100585938,
+        13.753116607666016,
+        3300.18798828125
+      ],
+      "Orientation": [
+        18.0,
+        0.0,
+        -0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_door_r.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    },
+    {
+      "Type": "StaticObj_Mil_AircraftShelter_Grass_L",
+      "DisplayName": "StaticObj_Mil_AircraftShelter_Grass_L",
+      "Position": [
+        -215.0099334716797,
+        9.842689514160156,
+        3302.952880859375
+      ],
+      "Orientation": [
+        17.455730438232422,
+        0.0,
+        -0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_grass_l.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    }
+  ]
+}
