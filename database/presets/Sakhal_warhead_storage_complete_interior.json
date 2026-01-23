@@ -1,0 +1,112 @@
+{
+  "objectName": "Sakhal warhead storage complete interior",
+  "inGameName": "-",
+  "category": "Editor Preset",
+  "modelType": "Preset",
+  "path": "-",
+  "usableOnConsole": true,
+  "searchTags": "sakhal, bunker, warhead, storage, military",
+  "image": "images/presets/sakhal_bunker.jpg",
+  "editorJson": [
+    {
+      "Type": "Land_WarheadStorage_Main",
+      "DisplayName": "Land_WarheadStorage_Main",
+      "Position": [
+        7250.10986328125,
+        4.686585903167725,
+        2498.6767578125
+      ],
+      "Orientation": [
+        -9.0,
+        0.0,
+        0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_main.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    },
+    {
+      "Type": "Land_WarheadStorage_Room1",
+      "DisplayName": "Land_WarheadStorage_Room1",
+      "Position": [
+        7256.17529296875,
+        1.2300167083740234,
+        2495.774658203125
+      ],
+      "Orientation": [
+        -9.0,
+        0.0,
+        0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room1.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    },
+    {
+      "Type": "Land_WarheadStorage_Room2",
+      "DisplayName": "Land_WarheadStorage_Room2",
+      "Position": [
+        7249.9033203125,
+        1.2300167083740234,
+        2494.7294921875
+      ],
+      "Orientation": [
+        -9.0,
+        0.0,
+        0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room2.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    },
+    {
+      "Type": "Land_WarheadStorage_Room3",
+      "DisplayName": "Land_WarheadStorage_Room3",
+      "Position": [
+        7243.7333984375,
+        1.2300167083740234,
+        2493.624755859375
+      ],
+      "Orientation": [
+        -9.0,
+        0.0,
+        0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room3.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    },
+    {
+      "Type": "Land_WarheadStorage_Room4",
+      "DisplayName": "Land_WarheadStorage_Room4",
+      "Position": [
+        7237.26220703125,
+        1.2300162315368652,
+        2492.7392578125
+      ],
+      "Orientation": [
+        -9.0,
+        0.0,
+        0.0
+      ],
+      "Scale": 1.0,
+      "AttachmentMap": {},
+      "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room4.p3d",
+      "Flags": 30,
+      "m_LowBits": 0,
+      "m_HighBits": 0
+    }
+  ]
+}

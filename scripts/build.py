@@ -45,13 +45,22 @@ def main() -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     all_objects: List[dict] = []
+    presets_dir = DB_DIR / "presets"
     presets_file = DB_DIR / "presets.json"
 
-    if presets_file.exists():
-        # Add presets to the beginning of the export to keep them prominent
+    if presets_dir.exists():
+        preset_files = sorted(presets_dir.glob("*.json"))
+        if preset_files:
+            # Add presets to the beginning of the export to keep them prominent
+            for preset_path in preset_files:
+                all_objects.extend(normalize_object(obj) for obj in load_objects(preset_path))
+        else:
+            print(f"Warning: presets folder has no json files: {presets_dir}")
+    elif presets_file.exists():
+        # Backward compatibility: old single-file preset export
         all_objects.extend(normalize_object(obj) for obj in load_objects(presets_file))
     else:
-        print(f"Warning: presets file not found: {presets_file}")
+        print(f"Warning: presets not found: {presets_dir} or {presets_file}")
 
     object_files = sorted(DB_DIR.rglob("objects.json"))
 

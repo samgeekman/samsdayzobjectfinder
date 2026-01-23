@@ -1,5 +1,877 @@
 [
   {
+    "objectName": "9 x 2 garage row",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "garages, cars, row, double",
+    "image": "images/presets/garage_row.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Garage_Row_Small",
+        "DisplayName": "Land_Garage_Row_Small",
+        "Position": [
+          -372.047607421875,
+          11.588173866271973,
+          4316.65185546875
+        ],
+        "Orientation": [
+          53.999969482421875,
+          -0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Garage_Row_Small",
+        "DisplayName": "Land_Garage_Row_Small",
+        "Position": [
+          -381.1348876953125,
+          11.588173866271973,
+          4329.15966796875
+        ],
+        "Orientation": [
+          53.999969482421875,
+          -0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Garage_Row_Small",
+        "DisplayName": "Land_Garage_Row_Small",
+        "Position": [
+          -357.9907531738281,
+          11.58842945098877,
+          4325.88330078125
+        ],
+        "Orientation": [
+          -126.07952117919922,
+          0.002370860893279314,
+          0.0008855393389239907
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Garage_Row_Small",
+        "DisplayName": "Land_Garage_Row_Small",
+        "Position": [
+          -348.8861389160156,
+          11.588668823242188,
+          4313.38818359375
+        ],
+        "Orientation": [
+          -126.07952117919922,
+          0.002370860893279314,
+          0.000885539164301008
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Garage_Row_Small",
+        "DisplayName": "Land_Garage_Row_Small",
+        "Position": [
+          -367.0962829589844,
+          11.588191032409668,
+          4338.38134765625
+        ],
+        "Orientation": [
+          -126.07952117919922,
+          0.002370860893279314,
+          0.0008855393389239907
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Garage_Row_Small",
+        "DisplayName": "Land_Garage_Row_Small",
+        "Position": [
+          -362.9594421386719,
+          11.588173866271973,
+          4304.14111328125
+        ],
+        "Orientation": [
+          53.999969482421875,
+          -0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ]
+  },
+  {
+    "objectName": "Airfield service hanger",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "airfield, hanger, airport, plane, NWAF",
+    "image": "images/presets/service_hanger.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Airfield_ServiceHangar_L",
+        "DisplayName": "Land_Airfield_ServiceHangar_L",
+        "Position": [
+          -271.29107666015625,
+          10.0,
+          4318.64208984375
+        ],
+        "Orientation": [
+          -80.9999008178711,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\airfield\\airfield_servicehangar_l.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Airfield_ServiceHangar_R",
+        "DisplayName": "Land_Airfield_ServiceHangar_R",
+        "Position": [
+          -320.6689453125,
+          9.999998092651367,
+          4326.46044921875
+        ],
+        "Orientation": [
+          -80.99995422363281,
+          0.0,
+          0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\airfield\\airfield_servicehangar_r.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ]
+  },
+  {
+    "objectName": "Candy cane tower preset",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Editor Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "tower, preset, tc2, stack, airfield, telecom, mast",
+    "image": "images/presets/tc2_tower.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Tower_TC2_Top",
+        "DisplayName": "Land_Tower_TC2_Top",
+        "Position": [
+          5879.10791015625,
+          132.33628845214844,
+          8114.09326171875
+        ],
+        "Orientation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\towers\\tower_tc2_top.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Tower_TC2_Base",
+        "DisplayName": "Land_Tower_TC2_Base",
+        "Position": [
+          5879.73779296875,
+          33.003173828125,
+          8114.98974609375
+        ],
+        "Orientation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\towers\\tower_tc2_base.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Tower_TC2_Mid",
+        "DisplayName": "Land_Tower_TC2_Mid",
+        "Position": [
+          5879.203125,
+          82.595947265625,
+          8114.54150390625
+        ],
+        "Orientation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\towers\\tower_tc2_mid.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ]
+  },
+  {
+    "objectName": "Cement works",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "cement, industrial, silo, factory, building",
+    "image": "images/presets/cement_works.jpg",
+    "editorJson": [
+      {
+        "Type": "StaticObj_Misc_ConcretePanels",
+        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Position": [
+          7252.64697265625,
+          7.302845001220703,
+          1997.629638671875
+        ],
+        "Orientation": [
+          74.49027252197266,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_CementWorks_SiloBig1Bridge",
+        "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
+        "Position": [
+          7139.240234375,
+          68.57177734375,
+          2470.53173828125
+        ],
+        "Orientation": [
+          164.74893188476562,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
+        "Flags": 1054,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_CementWorks_SiloBig1B",
+        "DisplayName": "Land_CementWorks_SiloBig1B",
+        "Position": [
+          7347.17333984375,
+          25.688209533691406,
+          2010.895263671875
+        ],
+        "Orientation": [
+          -15.251004219055176,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1b.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_CementWorks_SiloBig1A",
+        "DisplayName": "Land_CementWorks_SiloBig1A",
+        "Position": [
+          7310.8642578125,
+          31.258209228515625,
+          2000.580322265625
+        ],
+        "Orientation": [
+          -15.251004219055176,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1a.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_CementWorks_SiloBig1Bridge",
+        "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
+        "Position": [
+          7320.564453125,
+          41.857093811035156,
+          2004.07568359375
+        ],
+        "Orientation": [
+          -15.251004219055176,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_CementWorks_SiloBig1B",
+        "DisplayName": "Land_CementWorks_SiloBig1B",
+        "Position": [
+          7265.9248046875,
+          25.72919464111328,
+          1990.154541015625
+        ],
+        "Orientation": [
+          164.4405975341797,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1b.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_CementWorks_SiloBig1Bridge",
+        "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
+        "Position": [
+          7292.6396484375,
+          41.857093811035156,
+          1996.814697265625
+        ],
+        "Orientation": [
+          166.74578857421875,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_ConcretePanels",
+        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Position": [
+          7360.55517578125,
+          7.252708435058594,
+          2003.079345703125
+        ],
+        "Orientation": [
+          74.49027252197266,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ]
+  },
+  {
+    "objectName": "Complete cowshed",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "cowshed, farm, barn, preset",
+    "image": "images/presets/cow_shed.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Farm_CowshedB",
+        "DisplayName": "Land_Farm_CowshedB",
+        "Position": [
+          4454.13623046875,
+          339.03485107421875,
+          10215.2587890625
+        ],
+        "Orientation": [
+          81.4986801147461,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0000001192092896,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\farms\\farm_cowshedb.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Farm_CowshedC",
+        "DisplayName": "Land_Farm_CowshedC",
+        "Position": [
+          4452.41796875,
+          339.06768798828125,
+          10230.251953125
+        ],
+        "Orientation": [
+          81.4986801147461,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\farms\\farm_cowshedc.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Farm_CowshedA",
+        "DisplayName": "Land_Farm_CowshedA",
+        "Position": [
+          4456.4716796875,
+          338.9908752441406,
+          10195.9482421875
+        ],
+        "Orientation": [
+          82.69329071044922,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\farms\\farm_cowsheda.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ]
+  },
+  {
+    "objectName": "Construction site",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "building, construction, crane, site, industrial",
+    "image": "images/presets/construction_site.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Construction_Building",
+        "DisplayName": "Land_Construction_Building",
+        "Position": [
+          4547.08203125,
+          345.8759765625,
+          10078.2158203125
+        ],
+        "Orientation": [
+          91.7983169555664,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\construction\\construction_building.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_ConcretePanels",
+        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Position": [
+          4529.35107421875,
+          339.715576171875,
+          10059.701171875
+        ],
+        "Orientation": [
+          94.02482604980469,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_ConcretePanels",
+        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Position": [
+          4535.53369140625,
+          339.52978515625,
+          10059.0517578125
+        ],
+        "Orientation": [
+          92.72520446777344,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_Pallets3",
+        "DisplayName": "StaticObj_Misc_Pallets3",
+        "Position": [
+          4535.55908203125,
+          338.79443359375,
+          10055.341796875
+        ],
+        "Orientation": [
+          -88.4273452758789,
+          0.0,
+          0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_pallets3.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Misc_Scaffolding",
+        "DisplayName": "Land_Misc_Scaffolding",
+        "Position": [
+          4526.46142578125,
+          344.5953674316406,
+          10090.2451171875
+        ],
+        "Orientation": [
+          1.7347180843353271,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_scaffolding.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_GContainer_Big",
+        "DisplayName": "StaticObj_Misc_GContainer_Big",
+        "Position": [
+          4523.71533203125,
+          339.68280029296875,
+          10072.2392578125
+        ],
+        "Orientation": [
+          73.6322250366211,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_gcontainer_big.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_GContainer_Big",
+        "DisplayName": "StaticObj_Misc_GContainer_Big",
+        "Position": [
+          4521.8251953125,
+          339.69140625,
+          10094.09765625
+        ],
+        "Orientation": [
+          -85.61559295654297,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_gcontainer_big.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_Pipes",
+        "DisplayName": "StaticObj_Misc_Pipes",
+        "Position": [
+          4532.8486328125,
+          339.6099853515625,
+          10071.349609375
+        ],
+        "Orientation": [
+          -93.36005401611328,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_pipes.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Garbage_Pile3",
+        "DisplayName": "StaticObj_Garbage_Pile3",
+        "Position": [
+          4524.59814453125,
+          339.30548095703125,
+          10062.73828125
+        ],
+        "Orientation": [
+          -120.42896270751953,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\misc\\garbage_pile3.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_Pipes",
+        "DisplayName": "StaticObj_Misc_Pipes",
+        "Position": [
+          4566.26220703125,
+          339.678466796875,
+          10101.0361328125
+        ],
+        "Orientation": [
+          -176.49734497070312,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_pipes.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_Pipes",
+        "DisplayName": "StaticObj_Misc_Pipes",
+        "Position": [
+          4564.75146484375,
+          339.6289978027344,
+          10098.68359375
+        ],
+        "Orientation": [
+          16.193958282470703,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_pipes.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_Pallet",
+        "DisplayName": "StaticObj_Misc_Pallet",
+        "Position": [
+          4564.8720703125,
+          339.1002197265625,
+          10095.7939453125
+        ],
+        "Orientation": [
+          -66.66830444335938,
+          0.0,
+          0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_pallet.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_Pallet",
+        "DisplayName": "StaticObj_Misc_Pallet",
+        "Position": [
+          4563.42724609375,
+          339.0724182128906,
+          10093.8583984375
+        ],
+        "Orientation": [
+          -15.426897048950195,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_pallet.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_ConcretePanels",
+        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Position": [
+          4567.9833984375,
+          339.728515625,
+          10091.625
+        ],
+        "Orientation": [
+          169.84927368164062,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_ConcretePanels",
+        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Position": [
+          4569.74267578125,
+          339.61407470703125,
+          10088.9541015625
+        ],
+        "Orientation": [
+          81.03792572021484,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Garbage_Pile1",
+        "DisplayName": "StaticObj_Garbage_Pile1",
+        "Position": [
+          4569.03759765625,
+          339.4759826660156,
+          10098.623046875
+        ],
+        "Orientation": [
+          -121.4081802368164,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\misc\\garbage_pile1.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Construction_Crane",
+        "DisplayName": "Land_Construction_Crane",
+        "Position": [
+          4562.298828125,
+          356.92376708984375,
+          10074.189453125
+        ],
+        "Orientation": [
+          -155.75250244140625,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\construction\\construction_crane.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_GContainer_Big",
+        "DisplayName": "StaticObj_Misc_GContainer_Big",
+        "Position": [
+          4561.33154296875,
+          339.5101623535156,
+          10067.4794921875
+        ],
+        "Orientation": [
+          92.54054260253906,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_gcontainer_big.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ]
+  },
+  {
     "objectName": "Double gate castle",
     "inGameName": "-",
     "category": "Editor Preset",
@@ -664,371 +1536,111 @@
     ]
   },
   {
-    "objectName": "Construction site",
+    "objectName": "Grass-covered aircraft hanger",
     "inGameName": "-",
     "category": "Editor Preset",
     "modelType": "Preset",
     "path": "-",
     "usableOnConsole": true,
-    "searchTags": "building, construction, crane, site, industrial",
-    "image": "images/presets/construction_site.jpg",
+    "searchTags": "hanger, grass, terrain, NWAF, aircraft, plane, airport",
+    "image": "images/presets/grass_hanger.jpg",
     "editorJson": [
       {
-        "Type": "Land_Construction_Building",
-        "DisplayName": "Land_Construction_Building",
+        "Type": "StaticObj_Mil_AircraftShelter_Grass_R",
+        "DisplayName": "StaticObj_Mil_AircraftShelter_Grass_R",
         "Position": [
-          4547.08203125,
-          345.8759765625,
-          10078.2158203125
+          -214.86712646484375,
+          10.06705379486084,
+          3302.91064453125
         ],
         "Orientation": [
-          91.7983169555664,
+          18.496944427490234,
+          -0.23729489743709564,
+          0.12405707687139511
+        ],
+        "Scale": 1.0000001192092896,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_grass_r.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Mil_AircraftShelter",
+        "DisplayName": "Land_Mil_AircraftShelter",
+        "Position": [
+          -208.06979370117188,
+          10.00000286102295,
+          3323.937744140625
+        ],
+        "Orientation": [
+          17.999984741210938,
+          -0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Mil_AircraftShelter_Door_L",
+        "DisplayName": "StaticObj_Mil_AircraftShelter_Door_L",
+        "Position": [
+          -220.41917419433594,
+          13.749004364013672,
+          3303.539306640625
+        ],
+        "Orientation": [
+          17.999801635742188,
           0.0,
           -0.0
         ],
         "Scale": 1.0,
         "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\construction\\construction_building.p3d",
+        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_door_l.p3d",
         "Flags": 30,
         "m_LowBits": 0,
         "m_HighBits": 0
       },
       {
-        "Type": "StaticObj_Misc_ConcretePanels",
-        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Type": "StaticObj_Mil_AircraftShelter_Door_R",
+        "DisplayName": "StaticObj_Mil_AircraftShelter_Door_R",
         "Position": [
-          4529.35107421875,
-          339.715576171875,
-          10059.701171875
+          -210.10678100585938,
+          13.753116607666016,
+          3300.18798828125
         ],
         "Orientation": [
-          94.02482604980469,
+          18.0,
           0.0,
           -0.0
         ],
         "Scale": 1.0,
         "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_door_r.p3d",
         "Flags": 30,
         "m_LowBits": 0,
         "m_HighBits": 0
       },
       {
-        "Type": "StaticObj_Misc_ConcretePanels",
-        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Type": "StaticObj_Mil_AircraftShelter_Grass_L",
+        "DisplayName": "StaticObj_Mil_AircraftShelter_Grass_L",
         "Position": [
-          4535.53369140625,
-          339.52978515625,
-          10059.0517578125
+          -215.0099334716797,
+          9.842689514160156,
+          3302.952880859375
         ],
         "Orientation": [
-          92.72520446777344,
+          17.455730438232422,
           0.0,
           -0.0
         ],
         "Scale": 1.0,
         "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Misc_Pallets3",
-        "DisplayName": "StaticObj_Misc_Pallets3",
-        "Position": [
-          4535.55908203125,
-          338.79443359375,
-          10055.341796875
-        ],
-        "Orientation": [
-          -88.4273452758789,
-          0.0,
-          0.0
-        ],
-        "Scale": 0.9999998807907104,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_pallets3.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Misc_Scaffolding",
-        "DisplayName": "Land_Misc_Scaffolding",
-        "Position": [
-          4526.46142578125,
-          344.5953674316406,
-          10090.2451171875
-        ],
-        "Orientation": [
-          1.7347180843353271,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_scaffolding.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Misc_GContainer_Big",
-        "DisplayName": "StaticObj_Misc_GContainer_Big",
-        "Position": [
-          4523.71533203125,
-          339.68280029296875,
-          10072.2392578125
-        ],
-        "Orientation": [
-          73.6322250366211,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_gcontainer_big.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Misc_GContainer_Big",
-        "DisplayName": "StaticObj_Misc_GContainer_Big",
-        "Position": [
-          4521.8251953125,
-          339.69140625,
-          10094.09765625
-        ],
-        "Orientation": [
-          -85.61559295654297,
-          0.0,
-          0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_gcontainer_big.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Misc_Pipes",
-        "DisplayName": "StaticObj_Misc_Pipes",
-        "Position": [
-          4532.8486328125,
-          339.6099853515625,
-          10071.349609375
-        ],
-        "Orientation": [
-          -93.36005401611328,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_pipes.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Garbage_Pile3",
-        "DisplayName": "StaticObj_Garbage_Pile3",
-        "Position": [
-          4524.59814453125,
-          339.30548095703125,
-          10062.73828125
-        ],
-        "Orientation": [
-          -120.42896270751953,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\misc\\garbage_pile3.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Misc_Pipes",
-        "DisplayName": "StaticObj_Misc_Pipes",
-        "Position": [
-          4566.26220703125,
-          339.678466796875,
-          10101.0361328125
-        ],
-        "Orientation": [
-          -176.49734497070312,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_pipes.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Misc_Pipes",
-        "DisplayName": "StaticObj_Misc_Pipes",
-        "Position": [
-          4564.75146484375,
-          339.6289978027344,
-          10098.68359375
-        ],
-        "Orientation": [
-          16.193958282470703,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_pipes.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Misc_Pallet",
-        "DisplayName": "StaticObj_Misc_Pallet",
-        "Position": [
-          4564.8720703125,
-          339.1002197265625,
-          10095.7939453125
-        ],
-        "Orientation": [
-          -66.66830444335938,
-          0.0,
-          0.0
-        ],
-        "Scale": 0.9999999403953552,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_pallet.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Misc_Pallet",
-        "DisplayName": "StaticObj_Misc_Pallet",
-        "Position": [
-          4563.42724609375,
-          339.0724182128906,
-          10093.8583984375
-        ],
-        "Orientation": [
-          -15.426897048950195,
-          0.0,
-          0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_pallet.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Misc_ConcretePanels",
-        "DisplayName": "StaticObj_Misc_ConcretePanels",
-        "Position": [
-          4567.9833984375,
-          339.728515625,
-          10091.625
-        ],
-        "Orientation": [
-          169.84927368164062,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Misc_ConcretePanels",
-        "DisplayName": "StaticObj_Misc_ConcretePanels",
-        "Position": [
-          4569.74267578125,
-          339.61407470703125,
-          10088.9541015625
-        ],
-        "Orientation": [
-          81.03792572021484,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Garbage_Pile1",
-        "DisplayName": "StaticObj_Garbage_Pile1",
-        "Position": [
-          4569.03759765625,
-          339.4759826660156,
-          10098.623046875
-        ],
-        "Orientation": [
-          -121.4081802368164,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\misc\\garbage_pile1.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Construction_Crane",
-        "DisplayName": "Land_Construction_Crane",
-        "Position": [
-          4562.298828125,
-          356.92376708984375,
-          10074.189453125
-        ],
-        "Orientation": [
-          -155.75250244140625,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\construction\\construction_crane.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Misc_GContainer_Big",
-        "DisplayName": "StaticObj_Misc_GContainer_Big",
-        "Position": [
-          4561.33154296875,
-          339.5101623535156,
-          10067.4794921875
-        ],
-        "Orientation": [
-          92.54054260253906,
-          0.0,
-          -0.0
-        ],
-        "Scale": 0.9999998807907104,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_gcontainer_big.p3d",
+        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_grass_l.p3d",
         "Flags": 30,
         "m_LowBits": 0,
         "m_HighBits": 0
@@ -1036,171 +1648,991 @@
     ]
   },
   {
-    "objectName": "Cement works",
+    "objectName": "Harbour crane",
     "inGameName": "-",
     "category": "Editor Preset",
     "modelType": "Preset",
     "path": "-",
     "usableOnConsole": true,
-    "searchTags": "cement, industrial, silo, factory, building",
-    "image": "images/presets/cement_works.jpg",
+    "searchTags": "harbour, harbor crane, dock, pier",
+    "image": "images/presets/harbour_crane.jpg",
     "editorJson": [
       {
-        "Type": "StaticObj_Misc_ConcretePanels",
-        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Type": "Land_Pier_Crane_A",
+        "DisplayName": "Land_Pier_Crane_A",
         "Position": [
-          7252.64697265625,
-          7.302845001220703,
-          1997.629638671875
+          -365.21527099609375,
+          15.646161079406738,
+          4278.37158203125
         ],
         "Orientation": [
-          74.49027252197266,
+          -52.199974060058594,
           0.0,
-          -0.0
+          0.0
         ],
-        "Scale": 1.0,
+        "Scale": 0.9999999403953552,
         "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Model": "dz\\structures\\industrial\\harbour\\pier_crane_a.p3d",
         "Flags": 30,
         "m_LowBits": 0,
         "m_HighBits": 0
       },
       {
-        "Type": "StaticObj_CementWorks_SiloBig1Bridge",
-        "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
+        "Type": "Land_Pier_Crane_B",
+        "DisplayName": "Land_Pier_Crane_B",
         "Position": [
-          7139.240234375,
-          68.57177734375,
-          2470.53173828125
+          -361.79132080078125,
+          28.850812911987305,
+          4273.623046875
         ],
         "Orientation": [
-          164.74893188476562,
+          44.99999237060547,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\harbour\\pier_crane_b.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ]
+  },
+  {
+    "objectName": "House block complex",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "bus, car, crash, traffic, accident, emergency, roadblock",
+    "image": "images/presets/house_block_complex.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_HouseBlock_2F4",
+        "DisplayName": "Land_HouseBlock_2F4",
+        "Position": [
+          6908.419921875,
+          23.799236297607422,
+          3043.978515625
+        ],
+        "Orientation": [
+          129.92254638671875,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F_Corner",
+        "DisplayName": "Land_HouseBlock_2F_Corner",
+        "Position": [
+          6917.35693359375,
+          23.690902709960938,
+          3056.8798828125
+        ],
+        "Orientation": [
+          -140.68499755859375,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f_corner.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F4",
+        "DisplayName": "Land_HouseBlock_2F4",
+        "Position": [
+          6928.546875,
+          23.69748306274414,
+          3045.976318359375
+        ],
+        "Orientation": [
+          -140.01600646972656,
           0.0,
           -0.0
         ],
         "Scale": 1.0,
         "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
-        "Flags": 1054,
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
+        "Flags": 30,
         "m_LowBits": 0,
         "m_HighBits": 0
       },
       {
-        "Type": "Land_CementWorks_SiloBig1B",
-        "DisplayName": "Land_CementWorks_SiloBig1B",
+        "Type": "Land_HouseBlock_1F1",
+        "DisplayName": "Land_HouseBlock_1F1",
         "Position": [
-          7347.17333984375,
-          25.688209533691406,
-          2010.895263671875
+          6937.841796875,
+          21.018306732177734,
+          3038.24658203125
         ],
         "Orientation": [
-          -15.251004219055176,
+          -140.01600646972656,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f1.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_1F_Corner",
+        "DisplayName": "Land_HouseBlock_1F_Corner",
+        "Position": [
+          6947.1328125,
+          22.37173843383789,
+          3026.8603515625
+        ],
+        "Orientation": [
+          -50.1459846496582,
+          0.0,
+          0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f_corner.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F5",
+        "DisplayName": "Land_HouseBlock_2F5",
+        "Position": [
+          6943.271484375,
+          23.35955047607422,
+          3013.873046875
+        ],
+        "Orientation": [
+          -49.407325744628906,
+          0.0,
+          0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f5.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F4",
+        "DisplayName": "Land_HouseBlock_2F4",
+        "Position": [
+          6934.22314453125,
+          23.581554412841797,
+          3007.4541015625
+        ],
+        "Orientation": [
+          -50.06875991821289,
           0.0,
           0.0
         ],
         "Scale": 1.0,
         "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1b.p3d",
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
         "Flags": 30,
         "m_LowBits": 0,
         "m_HighBits": 0
       },
       {
-        "Type": "Land_CementWorks_SiloBig1A",
-        "DisplayName": "Land_CementWorks_SiloBig1A",
+        "Type": "Land_HouseBlock_2F2",
+        "DisplayName": "Land_HouseBlock_2F2",
         "Position": [
-          7310.8642578125,
-          31.258209228515625,
-          2000.580322265625
+          6924.5908203125,
+          23.230388641357422,
+          2997.27783203125
         ],
         "Orientation": [
-          -15.251004219055176,
+          -50.04618835449219,
+          0.0,
+          0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f2.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F1",
+        "DisplayName": "Land_HouseBlock_2F1",
+        "Position": [
+          6916.0849609375,
+          22.847410202026367,
+          2985.75634765625
+        ],
+        "Orientation": [
+          -49.98497009277344,
+          0.0,
+          0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f1.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F_Corner",
+        "DisplayName": "Land_HouseBlock_2F_Corner",
+        "Position": [
+          6907.25537109375,
+          23.62146759033203,
+          2973.155517578125
+        ],
+        "Orientation": [
+          39.92953109741211,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f_corner.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F2",
+        "DisplayName": "Land_HouseBlock_2F2",
+        "Position": [
+          6895.4658203125,
+          23.386348724365234,
+          2985.625244140625
+        ],
+        "Orientation": [
+          39.787776947021484,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f2.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F3",
+        "DisplayName": "Land_HouseBlock_2F3",
+        "Position": [
+          6880.31982421875,
+          23.6668643951416,
+          2997.016845703125
+        ],
+        "Orientation": [
+          39.624656677246094,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f3.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_1F2",
+        "DisplayName": "Land_HouseBlock_1F2",
+        "Position": [
+          6886.36962890625,
+          21.20720100402832,
+          3017.754150390625
+        ],
+        "Orientation": [
+          128.5271759033203,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f2.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_1F1",
+        "DisplayName": "Land_HouseBlock_1F1",
+        "Position": [
+          6895.38818359375,
+          21.042781829833984,
+          3028.03857421875
+        ],
+        "Orientation": [
+          128.9207763671875,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f1.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_1F3",
+        "DisplayName": "Land_HouseBlock_1F3",
+        "Position": [
+          6901.89990234375,
+          21.680133819580078,
+          3035.838134765625
+        ],
+        "Orientation": [
+          129.58834838867188,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f3.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ]
+  },
+  {
+    "objectName": "Livonia bunker Main Entrance - Lever panel",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "bunker, entrance, level",
+    "image": "images/presets/livonia_bunker.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Underground_Entrance",
+        "DisplayName": "Land_Underground_Entrance",
+        "Position": [
+          4272.23486328125,
+          257.00653076171875,
+          4895.14111328125
+        ],
+        "Orientation": [
+          9.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_bliss\\underground\\entrance\\underground_entrance.p3d",
+        "Flags": 30
+      },
+      {
+        "Type": "Land_Underground_Panel_Lever",
+        "DisplayName": "Land_Underground_Panel_Lever",
+        "Position": [
+          4268.42138671875,
+          258.4884948730469,
+          4888.4794921875
+        ],
+        "Orientation": [
+          9.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_bliss\\underground\\entrance\\underground_panel_lever.p3d",
+        "Flags": 30
+      }
+    ]
+  },
+  {
+    "objectName": "Livonia bunker Main Entrance - Lever panel",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "bunker, entrance, level",
+    "image": "images/presets/livonia_bunker.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Underground_Entrance",
+        "DisplayName": "Land_Underground_Entrance",
+        "Position": [
+          4272.23486328125,
+          257.00653076171875,
+          4895.14111328125
+        ],
+        "Orientation": [
+          9.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_bliss\\underground\\entrance\\underground_entrance.p3d",
+        "Flags": 30
+      },
+      {
+        "Type": "Land_Underground_Panel",
+        "DisplayName": "Land_Underground_Panel",
+        "Position": [
+          4268.42138671875,
+          258.4884948730469,
+          4888.4794921875
+        ],
+        "Orientation": [
+          9.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_bliss\\underground\\entrance\\underground_panel.p3d",
+        "Flags": 30
+      }
+    ]
+  },
+  {
+    "objectName": "Livonia bunker exit - lever",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "livonia, bunker",
+    "image": "images/presets/bunker_exit.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Underground_Stairs_Exit",
+        "DisplayName": "Land_Underground_Stairs_Exit",
+        "Position": [
+          4320.27294921875,
+          338.0639953613281,
+          10499.2373046875
+        ],
+        "Orientation": [
+          63.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_bliss\\underground\\stairs\\underground_stairs_exit.p3d",
+        "Flags": 30
+      },
+      {
+        "Type": "Land_Underground_Panel_Lever",
+        "DisplayName": "Land_Underground_Panel_Lever",
+        "Position": [
+          4325.0458984375,
+          340.3938903808594,
+          10496.826171875
+        ],
+        "Orientation": [
+          152.98291015625,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_bliss\\underground\\entrance\\underground_panel_lever.p3d",
+        "Flags": 30
+      },
+      {
+        "Type": "Land_Underground_Panel_Lever",
+        "DisplayName": "Land_Underground_Panel_Lever",
+        "Position": [
+          4324.0859375,
+          340.3938903808594,
+          10498.708984375
+        ],
+        "Orientation": [
+          152.98289489746094,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_bliss\\underground\\entrance\\underground_panel_lever.p3d",
+        "Flags": 30
+      }
+    ]
+  },
+  {
+    "objectName": "Livonia bunker exit - Punched card",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "livonia, bunker",
+    "image": "images/presets/bunker_exit.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Underground_Stairs_Exit",
+        "DisplayName": "Land_Underground_Stairs_Exit",
+        "Position": [
+          4320.27294921875,
+          338.0639953613281,
+          10499.2373046875
+        ],
+        "Orientation": [
+          63.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_bliss\\underground\\stairs\\underground_stairs_exit.p3d",
+        "Flags": 30
+      },
+      {
+        "Type": "Land_Underground_Panel",
+        "DisplayName": "Land_Underground_Panel",
+        "Position": [
+          4325.0458984375,
+          340.3938903808594,
+          10496.826171875
+        ],
+        "Orientation": [
+          152.98291015625,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_bliss\\underground\\entrance\\underground_panel.p3d",
+        "Flags": 30
+      },
+      {
+        "Type": "Land_Underground_Panel",
+        "DisplayName": "Land_Underground_Panel",
+        "Position": [
+          4324.0859375,
+          340.3938903808594,
+          10498.708984375
+        ],
+        "Orientation": [
+          152.98289489746094,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_bliss\\underground\\entrance\\underground_panel.p3d",
+        "Flags": 30
+      }
+    ]
+  },
+  {
+    "objectName": "Radio tower",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "radio, tower, preset",
+    "image": "images/presets/radio_tower.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Tower_TC4_Base",
+        "DisplayName": "Land_Tower_TC4_Base",
+        "Position": [
+          -350.01947021484375,
+          32.2001953125,
+          3126.7666015625
+        ],
+        "Orientation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\towers\\tower_tc4_base.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Tower_TC4_Mid",
+        "DisplayName": "Land_Tower_TC4_Mid",
+        "Position": [
+          -349.90618896484375,
+          75.85259246826172,
+          3126.6923828125
+        ],
+        "Orientation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\towers\\tower_tc4_mid.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Tower_TC4_Top",
+        "DisplayName": "Land_Tower_TC4_Top",
+        "Position": [
+          -350.0517578125,
+          116.351806640625,
+          3126.793212890625
+        ],
+        "Orientation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\towers\\tower_tc4_top.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ]
+  },
+  {
+    "objectName": "Rify ship intact",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "ship, boat, rify, oil tanker, preset",
+    "image": "images/presets/rify_boat_preset.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Ship_Big_FrontB",
+        "DisplayName": "Land_Ship_Big_FrontB",
+        "Position": [
+          8805.65625,
+          28.57248306274414,
+          1778.184326171875
+        ],
+        "Orientation": [
+          -3.390757001398015e-06,
+          -0.4515979290008545,
+          2.754156014361797e-08
+        ],
+        "Scale": 0.9996976256370544,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_frontb.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Ship_Big_FrontA",
+        "DisplayName": "Land_Ship_Big_FrontA",
+        "Position": [
+          8825.541015625,
+          30.056686401367188,
+          1780.5126953125
+        ],
+        "Orientation": [
+          -3.4229992706968915e-06,
+          -0.469308465719223,
+          2.779630747795636e-08
+        ],
+        "Scale": 0.9997892379760742,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_fronta.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Ship_Big_BackA",
+        "DisplayName": "Land_Ship_Big_BackA",
+        "Position": [
+          8770.158203125,
+          30.035930633544922,
+          1776.982177734375
+        ],
+        "Orientation": [
+          -3.4157267236878397e-06,
+          -0.4653136432170868,
+          2.7739581298646954e-08
+        ],
+        "Scale": 0.9996975064277649,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_backa.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Wreck_Ship_Big_Castle",
+        "DisplayName": "StaticObj_Wreck_Ship_Big_Castle",
+        "Position": [
+          8761.7744140625,
+          38.68409729003906,
+          1777.3182373046875
+        ],
+        "Orientation": [
+          -3.420881512283813e-06,
+          -0.46815064549446106,
+          2.7773763733307533e-08
+        ],
+        "Scale": 0.9997602701187134,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_castle.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Wreck_Ship_Big_BackB",
+        "DisplayName": "StaticObj_Wreck_Ship_Big_BackB",
+        "Position": [
+          8750.4814453125,
+          28.507205963134766,
+          1777.51318359375
+        ],
+        "Orientation": [
+          -3.415725814193138e-06,
+          -0.4653119444847107,
+          2.7739574193219596e-08
+        ],
+        "Scale": 0.9996947646141052,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_backb.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ]
+  },
+  {
+    "objectName": "Sakhal warhead storage complete interior",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "sakhal, bunker, warhead, storage, military",
+    "image": "images/presets/sakhal_bunker.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_WarheadStorage_Main",
+        "DisplayName": "Land_WarheadStorage_Main",
+        "Position": [
+          7250.10986328125,
+          4.686585903167725,
+          2498.6767578125
+        ],
+        "Orientation": [
+          -9.0,
           0.0,
           0.0
         ],
         "Scale": 1.0,
         "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1a.p3d",
+        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_main.p3d",
         "Flags": 30,
         "m_LowBits": 0,
         "m_HighBits": 0
       },
       {
-        "Type": "StaticObj_CementWorks_SiloBig1Bridge",
-        "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
+        "Type": "Land_WarheadStorage_Room1",
+        "DisplayName": "Land_WarheadStorage_Room1",
         "Position": [
-          7320.564453125,
-          41.857093811035156,
-          2004.07568359375
+          7256.17529296875,
+          1.2300167083740234,
+          2495.774658203125
         ],
         "Orientation": [
-          -15.251004219055176,
+          -9.0,
           0.0,
           0.0
         ],
         "Scale": 1.0,
         "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
+        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room1.p3d",
         "Flags": 30,
         "m_LowBits": 0,
         "m_HighBits": 0
       },
       {
-        "Type": "Land_CementWorks_SiloBig1B",
-        "DisplayName": "Land_CementWorks_SiloBig1B",
+        "Type": "Land_WarheadStorage_Room2",
+        "DisplayName": "Land_WarheadStorage_Room2",
         "Position": [
-          7265.9248046875,
-          25.72919464111328,
-          1990.154541015625
+          7249.9033203125,
+          1.2300167083740234,
+          2494.7294921875
         ],
         "Orientation": [
-          164.4405975341797,
+          -9.0,
           0.0,
-          -0.0
+          0.0
         ],
         "Scale": 1.0,
         "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1b.p3d",
+        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room2.p3d",
         "Flags": 30,
         "m_LowBits": 0,
         "m_HighBits": 0
       },
       {
-        "Type": "StaticObj_CementWorks_SiloBig1Bridge",
-        "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
+        "Type": "Land_WarheadStorage_Room3",
+        "DisplayName": "Land_WarheadStorage_Room3",
         "Position": [
-          7292.6396484375,
-          41.857093811035156,
-          1996.814697265625
+          7243.7333984375,
+          1.2300167083740234,
+          2493.624755859375
         ],
         "Orientation": [
-          166.74578857421875,
+          -9.0,
           0.0,
-          -0.0
+          0.0
         ],
         "Scale": 1.0,
         "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
+        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room3.p3d",
         "Flags": 30,
         "m_LowBits": 0,
         "m_HighBits": 0
       },
       {
-        "Type": "StaticObj_Misc_ConcretePanels",
-        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Type": "Land_WarheadStorage_Room4",
+        "DisplayName": "Land_WarheadStorage_Room4",
         "Position": [
-          7360.55517578125,
-          7.252708435058594,
-          2003.079345703125
+          7237.26220703125,
+          1.2300162315368652,
+          2492.7392578125
         ],
         "Orientation": [
-          74.49027252197266,
+          -9.0,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room4.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ]
+  },
+  {
+    "objectName": "Small airfield hanger and ATC",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "airfield, hanger, airport, plane, atc, NEAF",
+    "image": "images/presets/small_hanger.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Airfield_Small_Control",
+        "DisplayName": "Land_Airfield_Small_Control",
+        "Position": [
+          -295.77166748046875,
+          20.27178382873535,
+          4332.70068359375
+        ],
+        "Orientation": [
+          27.0,
+          -0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\airfields\\airfield_small_control.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Airfield_Small_Hangar",
+        "DisplayName": "Land_Airfield_Small_Hangar",
+        "Position": [
+          -315.2911682128906,
+          13.388936996459961,
+          4363.2294921875
+        ],
+        "Orientation": [
+          27.000045776367188,
           0.0,
           -0.0
         ],
         "Scale": 1.0,
         "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Model": "dz\\structures\\specific\\airfields\\airfield_small_hangar.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ]
+  },
+  {
+    "objectName": "Tisy Radar",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "tisy, radar, military",
+    "image": "images/presets/tisy_radar.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Tisy_RadarB_Base",
+        "DisplayName": "Land_Tisy_RadarB_Base",
+        "Position": [
+          -211.7570343017578,
+          10.000003814697266,
+          3310.91015625
+        ],
+        "Orientation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\tisy\\tisy_radarb_base.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Tisy_RadarB_Antenna",
+        "DisplayName": "Land_Tisy_RadarB_Antenna",
+        "Position": [
+          -203.5809783935547,
+          10.010910034179688,
+          3315.685546875
+        ],
+        "Orientation": [
+          62.87129211425781,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\tisy\\tisy_radarb_antenna.p3d",
         "Flags": 30,
         "m_LowBits": 0,
         "m_HighBits": 0
@@ -1673,1210 +3105,6 @@
         "Scale": 1.0,
         "AttachmentMap": {},
         "Model": "dz\\structures\\residential\\medical\\emergencyblanket_discarded.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      }
-    ]
-  },
-  {
-    "objectName": "Sakhal warhead storage complete interior",
-    "inGameName": "-",
-    "category": "Editor Preset",
-    "modelType": "Preset",
-    "path": "-",
-    "usableOnConsole": true,
-    "searchTags": "sakhal, bunker, warhead, storage, military",
-    "image": "images/presets/sakhal_bunker.jpg",
-    "editorJson": [
-      {
-        "Type": "Land_WarheadStorage_Main",
-        "DisplayName": "Land_WarheadStorage_Main",
-        "Position": [
-          7250.10986328125,
-          4.686585903167725,
-          2498.6767578125
-        ],
-        "Orientation": [
-          -9.0,
-          0.0,
-          0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_main.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_WarheadStorage_Room1",
-        "DisplayName": "Land_WarheadStorage_Room1",
-        "Position": [
-          7256.17529296875,
-          1.2300167083740234,
-          2495.774658203125
-        ],
-        "Orientation": [
-          -9.0,
-          0.0,
-          0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room1.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_WarheadStorage_Room2",
-        "DisplayName": "Land_WarheadStorage_Room2",
-        "Position": [
-          7249.9033203125,
-          1.2300167083740234,
-          2494.7294921875
-        ],
-        "Orientation": [
-          -9.0,
-          0.0,
-          0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room2.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_WarheadStorage_Room3",
-        "DisplayName": "Land_WarheadStorage_Room3",
-        "Position": [
-          7243.7333984375,
-          1.2300167083740234,
-          2493.624755859375
-        ],
-        "Orientation": [
-          -9.0,
-          0.0,
-          0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room3.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_WarheadStorage_Room4",
-        "DisplayName": "Land_WarheadStorage_Room4",
-        "Position": [
-          7237.26220703125,
-          1.2300162315368652,
-          2492.7392578125
-        ],
-        "Orientation": [
-          -9.0,
-          0.0,
-          0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures_sakhal\\military\\storage\\warheadstorage_room4.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      }
-    ]
-  },
-  {
-    "objectName": "House block complex",
-    "inGameName": "-",
-    "category": "Editor Preset",
-    "modelType": "Preset",
-    "path": "-",
-    "usableOnConsole": true,
-    "searchTags": "bus, car, crash, traffic, accident, emergency, roadblock",
-    "image": "images/presets/house_block_complex.jpg",
-    "editorJson": [
-      {
-        "Type": "Land_HouseBlock_2F4",
-        "DisplayName": "Land_HouseBlock_2F4",
-        "Position": [
-          6908.419921875,
-          23.799236297607422,
-          3043.978515625
-        ],
-        "Orientation": [
-          129.92254638671875,
-          0.0,
-          -0.0
-        ],
-        "Scale": 0.9999998807907104,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_HouseBlock_2F_Corner",
-        "DisplayName": "Land_HouseBlock_2F_Corner",
-        "Position": [
-          6917.35693359375,
-          23.690902709960938,
-          3056.8798828125
-        ],
-        "Orientation": [
-          -140.68499755859375,
-          0.0,
-          -0.0
-        ],
-        "Scale": 0.9999998807907104,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f_corner.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_HouseBlock_2F4",
-        "DisplayName": "Land_HouseBlock_2F4",
-        "Position": [
-          6928.546875,
-          23.69748306274414,
-          3045.976318359375
-        ],
-        "Orientation": [
-          -140.01600646972656,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_HouseBlock_1F1",
-        "DisplayName": "Land_HouseBlock_1F1",
-        "Position": [
-          6937.841796875,
-          21.018306732177734,
-          3038.24658203125
-        ],
-        "Orientation": [
-          -140.01600646972656,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f1.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_HouseBlock_1F_Corner",
-        "DisplayName": "Land_HouseBlock_1F_Corner",
-        "Position": [
-          6947.1328125,
-          22.37173843383789,
-          3026.8603515625
-        ],
-        "Orientation": [
-          -50.1459846496582,
-          0.0,
-          0.0
-        ],
-        "Scale": 0.9999998807907104,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f_corner.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_HouseBlock_2F5",
-        "DisplayName": "Land_HouseBlock_2F5",
-        "Position": [
-          6943.271484375,
-          23.35955047607422,
-          3013.873046875
-        ],
-        "Orientation": [
-          -49.407325744628906,
-          0.0,
-          0.0
-        ],
-        "Scale": 0.9999998807907104,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f5.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_HouseBlock_2F4",
-        "DisplayName": "Land_HouseBlock_2F4",
-        "Position": [
-          6934.22314453125,
-          23.581554412841797,
-          3007.4541015625
-        ],
-        "Orientation": [
-          -50.06875991821289,
-          0.0,
-          0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_HouseBlock_2F2",
-        "DisplayName": "Land_HouseBlock_2F2",
-        "Position": [
-          6924.5908203125,
-          23.230388641357422,
-          2997.27783203125
-        ],
-        "Orientation": [
-          -50.04618835449219,
-          0.0,
-          0.0
-        ],
-        "Scale": 0.9999998807907104,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f2.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_HouseBlock_2F1",
-        "DisplayName": "Land_HouseBlock_2F1",
-        "Position": [
-          6916.0849609375,
-          22.847410202026367,
-          2985.75634765625
-        ],
-        "Orientation": [
-          -49.98497009277344,
-          0.0,
-          0.0
-        ],
-        "Scale": 0.9999998807907104,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f1.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_HouseBlock_2F_Corner",
-        "DisplayName": "Land_HouseBlock_2F_Corner",
-        "Position": [
-          6907.25537109375,
-          23.62146759033203,
-          2973.155517578125
-        ],
-        "Orientation": [
-          39.92953109741211,
-          0.0,
-          -0.0
-        ],
-        "Scale": 0.9999998807907104,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f_corner.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_HouseBlock_2F2",
-        "DisplayName": "Land_HouseBlock_2F2",
-        "Position": [
-          6895.4658203125,
-          23.386348724365234,
-          2985.625244140625
-        ],
-        "Orientation": [
-          39.787776947021484,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f2.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_HouseBlock_2F3",
-        "DisplayName": "Land_HouseBlock_2F3",
-        "Position": [
-          6880.31982421875,
-          23.6668643951416,
-          2997.016845703125
-        ],
-        "Orientation": [
-          39.624656677246094,
-          0.0,
-          -0.0
-        ],
-        "Scale": 0.9999998807907104,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f3.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_HouseBlock_1F2",
-        "DisplayName": "Land_HouseBlock_1F2",
-        "Position": [
-          6886.36962890625,
-          21.20720100402832,
-          3017.754150390625
-        ],
-        "Orientation": [
-          128.5271759033203,
-          0.0,
-          -0.0
-        ],
-        "Scale": 0.9999998807907104,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f2.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_HouseBlock_1F1",
-        "DisplayName": "Land_HouseBlock_1F1",
-        "Position": [
-          6895.38818359375,
-          21.042781829833984,
-          3028.03857421875
-        ],
-        "Orientation": [
-          128.9207763671875,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f1.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_HouseBlock_1F3",
-        "DisplayName": "Land_HouseBlock_1F3",
-        "Position": [
-          6901.89990234375,
-          21.680133819580078,
-          3035.838134765625
-        ],
-        "Orientation": [
-          129.58834838867188,
-          0.0,
-          -0.0
-        ],
-        "Scale": 0.9999998807907104,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f3.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      }
-    ]
-  },
-  {
-    "objectName": "Small airfield hanger and ATC",
-    "inGameName": "-",
-    "category": "Editor Preset",
-    "modelType": "Preset",
-    "path": "-",
-    "usableOnConsole": true,
-    "searchTags": "airfield, hanger, airport, plane, atc, NEAF",
-    "image": "images/presets/small_hanger.jpg",
-    "editorJson": [
-      {
-        "Type": "Land_Airfield_Small_Control",
-        "DisplayName": "Land_Airfield_Small_Control",
-        "Position": [
-          -295.77166748046875,
-          20.27178382873535,
-          4332.70068359375
-        ],
-        "Orientation": [
-          27.0,
-          -0.0,
-          -0.0
-        ],
-        "Scale": 0.9999999403953552,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\specific\\airfields\\airfield_small_control.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Airfield_Small_Hangar",
-        "DisplayName": "Land_Airfield_Small_Hangar",
-        "Position": [
-          -315.2911682128906,
-          13.388936996459961,
-          4363.2294921875
-        ],
-        "Orientation": [
-          27.000045776367188,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\specific\\airfields\\airfield_small_hangar.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      }
-    ]
-  },
-  {
-    "objectName": "Complete cowshed",
-    "inGameName": "-",
-    "category": "Editor Preset",
-    "modelType": "Preset",
-    "path": "-",
-    "usableOnConsole": true,
-    "searchTags": "cowshed, farm, barn, preset",
-    "image": "images/presets/cow_shed.jpg",
-    "editorJson": [
-      {
-        "Type": "Land_Farm_CowshedB",
-        "DisplayName": "Land_Farm_CowshedB",
-        "Position": [
-          4454.13623046875,
-          339.03485107421875,
-          10215.2587890625
-        ],
-        "Orientation": [
-          81.4986801147461,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0000001192092896,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\farms\\farm_cowshedb.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Farm_CowshedC",
-        "DisplayName": "Land_Farm_CowshedC",
-        "Position": [
-          4452.41796875,
-          339.06768798828125,
-          10230.251953125
-        ],
-        "Orientation": [
-          81.4986801147461,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\farms\\farm_cowshedc.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Farm_CowshedA",
-        "DisplayName": "Land_Farm_CowshedA",
-        "Position": [
-          4456.4716796875,
-          338.9908752441406,
-          10195.9482421875
-        ],
-        "Orientation": [
-          82.69329071044922,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\farms\\farm_cowsheda.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      }
-    ]
-  },
-  {
-    "objectName": "Airfield service hanger",
-    "inGameName": "-",
-    "category": "Editor Preset",
-    "modelType": "Preset",
-    "path": "-",
-    "usableOnConsole": true,
-    "searchTags": "airfield, hanger, airport, plane, NWAF",
-    "image": "images/presets/service_hanger.jpg",
-    "editorJson": [
-      {
-        "Type": "Land_Airfield_ServiceHangar_L",
-        "DisplayName": "Land_Airfield_ServiceHangar_L",
-        "Position": [
-          -271.29107666015625,
-          10.0,
-          4318.64208984375
-        ],
-        "Orientation": [
-          -80.9999008178711,
-          0.0,
-          0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\military\\airfield\\airfield_servicehangar_l.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Airfield_ServiceHangar_R",
-        "DisplayName": "Land_Airfield_ServiceHangar_R",
-        "Position": [
-          -320.6689453125,
-          9.999998092651367,
-          4326.46044921875
-        ],
-        "Orientation": [
-          -80.99995422363281,
-          0.0,
-          0.0
-        ],
-        "Scale": 0.9999999403953552,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\military\\airfield\\airfield_servicehangar_r.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      }
-    ]
-  },
-  {
-    "objectName": "Rify ship intact",
-    "inGameName": "-",
-    "category": "Editor Preset",
-    "modelType": "Preset",
-    "path": "-",
-    "usableOnConsole": true,
-    "searchTags": "ship, boat, rify, oil tanker, preset",
-    "image": "images/presets/rify_boat_preset.jpg",
-    "editorJson": [
-      {
-        "Type": "Land_Ship_Big_FrontB",
-        "DisplayName": "Land_Ship_Big_FrontB",
-        "Position": [
-          8805.65625,
-          28.57248306274414,
-          1778.184326171875
-        ],
-        "Orientation": [
-          -3.390757001398015e-06,
-          -0.4515979290008545,
-          2.754156014361797e-08
-        ],
-        "Scale": 0.9996976256370544,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\wrecks\\ships\\ship_big_frontb.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Ship_Big_FrontA",
-        "DisplayName": "Land_Ship_Big_FrontA",
-        "Position": [
-          8825.541015625,
-          30.056686401367188,
-          1780.5126953125
-        ],
-        "Orientation": [
-          -3.4229992706968915e-06,
-          -0.469308465719223,
-          2.779630747795636e-08
-        ],
-        "Scale": 0.9997892379760742,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\wrecks\\ships\\ship_big_fronta.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Ship_Big_BackA",
-        "DisplayName": "Land_Ship_Big_BackA",
-        "Position": [
-          8770.158203125,
-          30.035930633544922,
-          1776.982177734375
-        ],
-        "Orientation": [
-          -3.4157267236878397e-06,
-          -0.4653136432170868,
-          2.7739581298646954e-08
-        ],
-        "Scale": 0.9996975064277649,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\wrecks\\ships\\ship_big_backa.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Wreck_Ship_Big_Castle",
-        "DisplayName": "StaticObj_Wreck_Ship_Big_Castle",
-        "Position": [
-          8761.7744140625,
-          38.68409729003906,
-          1777.3182373046875
-        ],
-        "Orientation": [
-          -3.420881512283813e-06,
-          -0.46815064549446106,
-          2.7773763733307533e-08
-        ],
-        "Scale": 0.9997602701187134,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\wrecks\\ships\\ship_big_castle.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Wreck_Ship_Big_BackB",
-        "DisplayName": "StaticObj_Wreck_Ship_Big_BackB",
-        "Position": [
-          8750.4814453125,
-          28.507205963134766,
-          1777.51318359375
-        ],
-        "Orientation": [
-          -3.415725814193138e-06,
-          -0.4653119444847107,
-          2.7739574193219596e-08
-        ],
-        "Scale": 0.9996947646141052,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\wrecks\\ships\\ship_big_backb.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      }
-    ]
-  },
-  {
-    "objectName": "9 x 2 garage row",
-    "inGameName": "-",
-    "category": "Editor Preset",
-    "modelType": "Preset",
-    "path": "-",
-    "usableOnConsole": true,
-    "searchTags": "garages, cars, row, double",
-    "image": "images/presets/garage_row.jpg",
-    "editorJson": [
-      {
-        "Type": "Land_Garage_Row_Small",
-        "DisplayName": "Land_Garage_Row_Small",
-        "Position": [
-          -372.047607421875,
-          11.588173866271973,
-          4316.65185546875
-        ],
-        "Orientation": [
-          53.999969482421875,
-          -0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Garage_Row_Small",
-        "DisplayName": "Land_Garage_Row_Small",
-        "Position": [
-          -381.1348876953125,
-          11.588173866271973,
-          4329.15966796875
-        ],
-        "Orientation": [
-          53.999969482421875,
-          -0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Garage_Row_Small",
-        "DisplayName": "Land_Garage_Row_Small",
-        "Position": [
-          -357.9907531738281,
-          11.58842945098877,
-          4325.88330078125
-        ],
-        "Orientation": [
-          -126.07952117919922,
-          0.002370860893279314,
-          0.0008855393389239907
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Garage_Row_Small",
-        "DisplayName": "Land_Garage_Row_Small",
-        "Position": [
-          -348.8861389160156,
-          11.588668823242188,
-          4313.38818359375
-        ],
-        "Orientation": [
-          -126.07952117919922,
-          0.002370860893279314,
-          0.000885539164301008
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Garage_Row_Small",
-        "DisplayName": "Land_Garage_Row_Small",
-        "Position": [
-          -367.0962829589844,
-          11.588191032409668,
-          4338.38134765625
-        ],
-        "Orientation": [
-          -126.07952117919922,
-          0.002370860893279314,
-          0.0008855393389239907
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Garage_Row_Small",
-        "DisplayName": "Land_Garage_Row_Small",
-        "Position": [
-          -362.9594421386719,
-          11.588173866271973,
-          4304.14111328125
-        ],
-        "Orientation": [
-          53.999969482421875,
-          -0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\garages\\garage_row_small.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      }
-    ]
-  },
-  {
-    "objectName": "Harbour crane",
-    "inGameName": "-",
-    "category": "Editor Preset",
-    "modelType": "Preset",
-    "path": "-",
-    "usableOnConsole": true,
-    "searchTags": "harbour, harbor crane, dock, pier",
-    "image": "images/presets/harbour_crane.jpg",
-    "editorJson": [
-      {
-        "Type": "Land_Pier_Crane_A",
-        "DisplayName": "Land_Pier_Crane_A",
-        "Position": [
-          -365.21527099609375,
-          15.646161079406738,
-          4278.37158203125
-        ],
-        "Orientation": [
-          -52.199974060058594,
-          0.0,
-          0.0
-        ],
-        "Scale": 0.9999999403953552,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\harbour\\pier_crane_a.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Pier_Crane_B",
-        "DisplayName": "Land_Pier_Crane_B",
-        "Position": [
-          -361.79132080078125,
-          28.850812911987305,
-          4273.623046875
-        ],
-        "Orientation": [
-          44.99999237060547,
-          0.0,
-          -0.0
-        ],
-        "Scale": 0.9999999403953552,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\industrial\\harbour\\pier_crane_b.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      }
-    ]
-  },
-  {
-    "objectName": "Grass-covered aircraft hanger",
-    "inGameName": "-",
-    "category": "Editor Preset",
-    "modelType": "Preset",
-    "path": "-",
-    "usableOnConsole": true,
-    "searchTags": "hanger, grass, terrain, NWAF, aircraft, plane, airport",
-    "image": "images/presets/grass_hanger.jpg",
-    "editorJson": [
-      {
-        "Type": "StaticObj_Mil_AircraftShelter_Grass_R",
-        "DisplayName": "StaticObj_Mil_AircraftShelter_Grass_R",
-        "Position": [
-          -214.86712646484375,
-          10.06705379486084,
-          3302.91064453125
-        ],
-        "Orientation": [
-          18.496944427490234,
-          -0.23729489743709564,
-          0.12405707687139511
-        ],
-        "Scale": 1.0000001192092896,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_grass_r.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Mil_AircraftShelter",
-        "DisplayName": "Land_Mil_AircraftShelter",
-        "Position": [
-          -208.06979370117188,
-          10.00000286102295,
-          3323.937744140625
-        ],
-        "Orientation": [
-          17.999984741210938,
-          -0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Mil_AircraftShelter_Door_L",
-        "DisplayName": "StaticObj_Mil_AircraftShelter_Door_L",
-        "Position": [
-          -220.41917419433594,
-          13.749004364013672,
-          3303.539306640625
-        ],
-        "Orientation": [
-          17.999801635742188,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_door_l.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Mil_AircraftShelter_Door_R",
-        "DisplayName": "StaticObj_Mil_AircraftShelter_Door_R",
-        "Position": [
-          -210.10678100585938,
-          13.753116607666016,
-          3300.18798828125
-        ],
-        "Orientation": [
-          18.0,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_door_r.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "StaticObj_Mil_AircraftShelter_Grass_L",
-        "DisplayName": "StaticObj_Mil_AircraftShelter_Grass_L",
-        "Position": [
-          -215.0099334716797,
-          9.842689514160156,
-          3302.952880859375
-        ],
-        "Orientation": [
-          17.455730438232422,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\military\\airfield\\mil_aircraftshelter_grass_l.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      }
-    ]
-  },
-  {
-    "objectName": "Tisy Radar",
-    "inGameName": "-",
-    "category": "Editor Preset",
-    "modelType": "Preset",
-    "path": "-",
-    "usableOnConsole": true,
-    "searchTags": "tisy, radar, military",
-    "image": "images/presets/tisy_radar.jpg",
-    "editorJson": [
-      {
-        "Type": "Land_Tisy_RadarB_Base",
-        "DisplayName": "Land_Tisy_RadarB_Base",
-        "Position": [
-          -211.7570343017578,
-          10.000003814697266,
-          3310.91015625
-        ],
-        "Orientation": [
-          0.0,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\military\\tisy\\tisy_radarb_base.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Tisy_RadarB_Antenna",
-        "DisplayName": "Land_Tisy_RadarB_Antenna",
-        "Position": [
-          -203.5809783935547,
-          10.010910034179688,
-          3315.685546875
-        ],
-        "Orientation": [
-          62.87129211425781,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\military\\tisy\\tisy_radarb_antenna.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      }
-    ]
-  },
-  {
-    "objectName": "Radio tower",
-    "inGameName": "-",
-    "category": "Editor Preset",
-    "modelType": "Preset",
-    "path": "-",
-    "usableOnConsole": true,
-    "searchTags": "radio, tower, preset",
-    "image": "images/presets/radio_tower.jpg",
-    "editorJson": [
-      {
-        "Type": "Land_Tower_TC4_Base",
-        "DisplayName": "Land_Tower_TC4_Base",
-        "Position": [
-          -350.01947021484375,
-          32.2001953125,
-          3126.7666015625
-        ],
-        "Orientation": [
-          0.0,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\specific\\towers\\tower_tc4_base.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Tower_TC4_Mid",
-        "DisplayName": "Land_Tower_TC4_Mid",
-        "Position": [
-          -349.90618896484375,
-          75.85259246826172,
-          3126.6923828125
-        ],
-        "Orientation": [
-          0.0,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\specific\\towers\\tower_tc4_mid.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Tower_TC4_Top",
-        "DisplayName": "Land_Tower_TC4_Top",
-        "Position": [
-          -350.0517578125,
-          116.351806640625,
-          3126.793212890625
-        ],
-        "Orientation": [
-          0.0,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\specific\\towers\\tower_tc4_top.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      }
-    ]
-  },
-  {
-    "objectName": "Candy cane tower preset",
-    "inGameName": "-",
-    "category": "Editor Preset",
-    "modelType": "Editor Preset",
-    "path": "-",
-    "usableOnConsole": true,
-    "searchTags": "tower, preset, tc2, stack, airfield, telecom, mast",
-    "image": "images/presets/tc2_tower.jpg",
-    "editorJson": [
-      {
-        "Type": "Land_Tower_TC2_Top",
-        "DisplayName": "Land_Tower_TC2_Top",
-        "Position": [
-          5879.10791015625,
-          132.33628845214844,
-          8114.09326171875
-        ],
-        "Orientation": [
-          0.0,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\specific\\towers\\tower_tc2_top.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Tower_TC2_Base",
-        "DisplayName": "Land_Tower_TC2_Base",
-        "Position": [
-          5879.73779296875,
-          33.003173828125,
-          8114.98974609375
-        ],
-        "Orientation": [
-          0.0,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\specific\\towers\\tower_tc2_base.p3d",
-        "Flags": 30,
-        "m_LowBits": 0,
-        "m_HighBits": 0
-      },
-      {
-        "Type": "Land_Tower_TC2_Mid",
-        "DisplayName": "Land_Tower_TC2_Mid",
-        "Position": [
-          5879.203125,
-          82.595947265625,
-          8114.54150390625
-        ],
-        "Orientation": [
-          0.0,
-          0.0,
-          -0.0
-        ],
-        "Scale": 1.0,
-        "AttachmentMap": {},
-        "Model": "dz\\structures\\specific\\towers\\tower_tc2_mid.p3d",
         "Flags": 30,
         "m_LowBits": 0,
         "m_HighBits": 0
