@@ -468,5 +468,25 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/gear/crafting/wooden_stick_blunt.p3d.jpg"
+  },
+  {
+    "objectName": "SpearBone",
+    "inGameName": "Sharpened Stick",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/crafting",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/crafting/sharpwoodenstick.jpg"
+  },
+  {
+    "objectName": "SpearStone",
+    "inGameName": "Sharpened Stick",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/crafting",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/crafting/sharpwoodenstick.jpg"
   }
 ]

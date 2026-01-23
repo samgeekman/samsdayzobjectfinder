@@ -4114,6 +4114,36 @@
     "image": "images/characters/backpacks/combat_backpack.jpg"
   },
   {
+    "objectName": "Slingbag_Black",
+    "inGameName": "Sling Bag",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/backpacks",
+    "usableOnConsole": true,
+    "searchTags": "bag, sling, casual, urban, small, black",
+    "image": "images/characters/backpacks/sling_bag_black.jpg"
+  },
+  {
+    "objectName": "Slingbag_Brown",
+    "inGameName": "Sling Bag",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/backpacks",
+    "usableOnConsole": true,
+    "searchTags": "bag, sling, casual, urban, small, black",
+    "image": "images/characters/backpacks/sling_bag_black.jpg"
+  },
+  {
+    "objectName": "Slingbag_Gray",
+    "inGameName": "Sling Bag",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/backpacks",
+    "usableOnConsole": true,
+    "searchTags": "bag, sling, casual, urban, small, black",
+    "image": "images/characters/backpacks/sling_bag_black.jpg"
+  },
+  {
     "objectName": "CivilianBelt",
     "inGameName": "Belt",
     "category": "characters",
@@ -4332,6 +4362,16 @@
     "usableOnConsole": false,
     "searchTags": "belt, rope, improvised, survival, waist",
     "image": "images/characters/belts/rope_belt_g.p3d.jpg"
+  },
+  {
+    "objectName": "LeatherBelt_Natural",
+    "inGameName": "Leather Belt",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/belts",
+    "usableOnConsole": true,
+    "searchTags": "belt, leather, civilian, waist, crafting, tanning",
+    "image": "images/characters/belts/leatherbelt_natrual/leatherbelt_natrual.jpg"
   },
   {
     "objectName": "SurvivorM_Mirek",
@@ -5522,6 +5562,106 @@
     "usableOnConsole": false,
     "searchTags": "gloves, working, leather, protective, labor",
     "image": "images/characters/gloves/working_gloves_beige.jpg"
+  },
+  {
+    "objectName": "SurgicalGloves_Blue",
+    "inGameName": "Surgival Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, surgical, medical, sterile, disposable",
+    "image": "images/characters/gloves/surgical_gloves_blue.jpg"
+  },
+  {
+    "objectName": "SurgicalGloves_Green",
+    "inGameName": "Surgival Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, surgical, medical, sterile, disposable",
+    "image": "images/characters/gloves/surgical_gloves_blue.jpg"
+  },
+  {
+    "objectName": "SurgicalGloves_LightBlue",
+    "inGameName": "Surgival Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, surgical, medical, sterile, disposable",
+    "image": "images/characters/gloves/surgical_gloves_blue.jpg"
+  },
+  {
+    "objectName": "SurgicalGloves_White",
+    "inGameName": "Surgival Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, surgical, medical, sterile, disposable",
+    "image": "images/characters/gloves/surgical_gloves_blue.jpg"
+  },
+  {
+    "objectName": "WoolGlovesFingerless_Black",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, wool, knitted, warm, winter",
+    "image": "images/characters/gloves/wool_gloves_green.jpg"
+  },
+  {
+    "objectName": "WoolGlovesFingerless_ChristmasBlue",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, wool, knitted, warm, winter",
+    "image": "images/characters/gloves/wool_gloves_green.jpg"
+  },
+  {
+    "objectName": "WoolGlovesFingerless_ChristmasRed",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, wool, knitted, warm, winter",
+    "image": "images/characters/gloves/wool_gloves_green.jpg"
+  },
+  {
+    "objectName": "WoolGlovesFingerless_Green",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, wool, knitted, warm, winter",
+    "image": "images/characters/gloves/wool_gloves_green.jpg"
+  },
+  {
+    "objectName": "WoolGlovesFingerless_Tan",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, wool, knitted, warm, winter",
+    "image": "images/characters/gloves/wool_gloves_green.jpg"
+  },
+  {
+    "objectName": "WoolGlovesFingerless_White",
+    "inGameName": "Wool Gloves",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/gloves",
+    "usableOnConsole": true,
+    "searchTags": "gloves, wool, knitted, warm, winter",
+    "image": "images/characters/gloves/wool_gloves_green.jpg"
   },
   {
     "objectName": "GorkaHelmetVisor",
@@ -7994,6 +8134,256 @@
     "image": "images/characters/headgear/zmijovkacap_black/zmijovkacap_black.jpg"
   },
   {
+    "objectName": "Bandana_Camopattern",
+    "inGameName": "Bandana",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "armored, black, headgear, helmet, military, protective",
+    "image": "images/characters/headgear/bandana_blue/bandana_blue.jpg"
+  },
+  {
+    "objectName": "Bandana_Polkapattern",
+    "inGameName": "Bandana",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "armored, black, headgear, helmet, military, protective",
+    "image": "images/characters/headgear/bandana_polkapattern/bandana_polkapattern.jpg"
+  },
+  {
+    "objectName": "Bandana_Redpattern",
+    "inGameName": "Bandana",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "armored, black, headgear, helmet, military, protective",
+    "image": "images/characters/headgear/bandana_redpattern/bandana_redpattern.jpg"
+  },
+  {
+    "objectName": "DarkMotoHelmet_Black",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear, helmet, protective, white",
+    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+  },
+  {
+    "objectName": "DarkMotoHelmet_Blue",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear, helmet, protective, white",
+    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+  },
+  {
+    "objectName": "DarkMotoHelmet_Green",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear, helmet, protective, white",
+    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+  },
+  {
+    "objectName": "DarkMotoHelmet_Grey",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear, helmet, protective, white",
+    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+  },
+  {
+    "objectName": "DarkMotoHelmet_Lime",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear, helmet, protective, white",
+    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+  },
+  {
+    "objectName": "DarkMotoHelmet_Red",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear, helmet, protective, white",
+    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+  },
+  {
+    "objectName": "MotoHelmet_White",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, headgear, helmet, protective",
+    "image": "images/characters/headgear/motohelmet_black/motohelmet_black.jpg"
+  },
+  {
+    "objectName": "MotoHelmet_Yellow",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, headgear, helmet, protective",
+    "image": "images/characters/headgear/motohelmet_black/motohelmet_black.jpg"
+  },
+  {
+    "objectName": "NBCHoodGray",
+    "inGameName": "Norse Helm",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear",
+    "image": "images/characters/headgear/norsehelm/norsehelm.jpg"
+  },
+  {
+    "objectName": "NBCHoodWhite",
+    "inGameName": "Norse Helm",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear",
+    "image": "images/characters/headgear/norsehelm/norsehelm.jpg"
+  },
+  {
+    "objectName": "NBCHoodYellow",
+    "inGameName": "Norse Helm",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear",
+    "image": "images/characters/headgear/norsehelm/norsehelm.jpg"
+  },
+  {
+    "objectName": "OKZKCap_Beige",
+    "inGameName": "Officer Cap",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "cap, civilian, headgear, uniform",
+    "image": "images/characters/headgear/officerhat/officerhat.jpg"
+  },
+  {
+    "objectName": "OKZKCap_Green",
+    "inGameName": "Officer Cap",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "cap, civilian, headgear, uniform",
+    "image": "images/characters/headgear/officerhat/officerhat.jpg"
+  },
+  {
+    "objectName": "PetushokHat_Black",
+    "inGameName": "Petushok",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, headgear, insulated, knit, winter",
+    "image": "images/characters/headgear/petushokhat_black/petushokhat_black.jpg"
+  },
+  {
+    "objectName": "PetushokHat_Green",
+    "inGameName": "Petushok",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, headgear, insulated, knit, winter",
+    "image": "images/characters/headgear/petushokhat_black/petushokhat_black.jpg"
+  },
+  {
+    "objectName": "PetushokHat_Yellow",
+    "inGameName": "Petushok",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, headgear, insulated, knit, winter",
+    "image": "images/characters/headgear/petushokhat_black/petushokhat_black.jpg"
+  },
+  {
+    "objectName": "WitchHoodCoif_Black",
+    "inGameName": "Witch Hood",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, festive, headgear, hood",
+    "image": "images/characters/headgear/witchhood_black/witchhood_black.jpg"
+  },
+  {
+    "objectName": "WitchHoodCoif_Brown",
+    "inGameName": "Witch Hood",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, festive, headgear, hood",
+    "image": "images/characters/headgear/witchhood_black/witchhood_black.jpg"
+  },
+  {
+    "objectName": "WitchHoodCoif_Red",
+    "inGameName": "Witch Hood",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, festive, headgear, hood",
+    "image": "images/characters/headgear/witchhood_black/witchhood_black.jpg"
+  },
+  {
+    "objectName": "WitchHood_Chainmail_Black",
+    "inGameName": "Witch Hood",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, festive, headgear, hood",
+    "image": "images/characters/headgear/witchhood_black/witchhood_black.jpg"
+  },
+  {
+    "objectName": "WitchHood_Chainmail_Brown",
+    "inGameName": "Witch Hood",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, festive, headgear, hood",
+    "image": "images/characters/headgear/witchhood_black/witchhood_black.jpg"
+  },
+  {
+    "objectName": "WitchHood_Chainmail_Red",
+    "inGameName": "Witch Hood",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, festive, headgear, hood",
+    "image": "images/characters/headgear/witchhood_black/witchhood_black.jpg"
+  },
+  {
     "objectName": "Head_Default",
     "inGameName": "face",
     "category": "characters",
@@ -9794,6 +10184,16 @@
     "image": "images/characters/masks/wolfmask_m.p3d.jpg"
   },
   {
+    "objectName": "MimeMask_Female",
+    "inGameName": "Mime Mask",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/masks",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/masks/mimemask_male.jpg"
+  },
+  {
     "objectName": "MaleLegs_Base",
     "inGameName": "Underwear shorts",
     "category": "characters",
@@ -11244,6 +11644,326 @@
     "image": "images/characters/pants/usmc_pants_m.p3d.jpg"
   },
   {
+    "objectName": "Breeches_Beetcheck",
+    "inGameName": "BDU Pants",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/bdupants.jpg"
+  },
+  {
+    "objectName": "Breeches_Beige",
+    "inGameName": "BDU Pants",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/bdupants.jpg"
+  },
+  {
+    "objectName": "Breeches_Black",
+    "inGameName": "BDU Pants",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/bdupants.jpg"
+  },
+  {
+    "objectName": "Breeches_Blackcheck",
+    "inGameName": "BDU Pants",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/bdupants.jpg"
+  },
+  {
+    "objectName": "Breeches_Blue",
+    "inGameName": "BDU Pants",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/bdupants.jpg"
+  },
+  {
+    "objectName": "Breeches_Browncheck",
+    "inGameName": "BDU Pants",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/bdupants.jpg"
+  },
+  {
+    "objectName": "Breeches_Green",
+    "inGameName": "BDU Pants",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/bdupants.jpg"
+  },
+  {
+    "objectName": "Breeches_Pink",
+    "inGameName": "BDU Pants",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/bdupants.jpg"
+  },
+  {
+    "objectName": "Breeches_Red",
+    "inGameName": "BDU Pants",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/bdupants.jpg"
+  },
+  {
+    "objectName": "Breeches_White",
+    "inGameName": "BDU Pants",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/bdupants.jpg"
+  },
+  {
+    "objectName": "NBCPantsGray",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "NBCPantsWhite",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "NBCPantsYellow",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "NavyUniformPants",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "ShortJeans_Black",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "ShortJeans_Blue",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "ShortJeans_Brown",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "ShortJeans_Darkblue",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "ShortJeans_Green",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "ShortJeans_Red",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "Skirt_Blue",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "Skirt_Red",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "Skirt_White",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "Skirt_Yellow",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "SlacksPants_Beige",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "SlacksPants_Black",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "SlacksPants_Blue",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "SlacksPants_Brown",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "SlacksPants_DarkGrey",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "SlacksPants_Khaki",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "SlacksPants_LightGrey",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
+    "objectName": "SlacksPants_White",
+    "inGameName": "Underwear shorts",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/pants",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/pants/malelegs_base.jpg"
+  },
+  {
     "objectName": "MaleFeet_Base",
     "inGameName": "Bare feet new",
     "category": "characters",
@@ -12452,6 +13172,36 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/characters/shoes/workingboots_m.p3d.jpg"
+  },
+  {
+    "objectName": "NBCBootsGray",
+    "inGameName": "Bare feet new",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/shoes",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/shoes/malefeet_base.jpg"
+  },
+  {
+    "objectName": "NBCBootsWhite",
+    "inGameName": "Bare feet new",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/shoes",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/shoes/malefeet_base.jpg"
+  },
+  {
+    "objectName": "NBCBootsYellow",
+    "inGameName": "Bare feet new",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/shoes",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/shoes/malefeet_base.jpg"
   },
   {
     "objectName": "MaleTorso_Base",
@@ -15804,6 +16554,76 @@
     "image": "images/characters/tops/woolcoat_m.p3d.jpg"
   },
   {
+    "objectName": "NBCJacketGray",
+    "inGameName": "Pea Coat",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/tops",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+  },
+  {
+    "objectName": "NBCJacketWhite",
+    "inGameName": "Pea Coat",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/tops",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+  },
+  {
+    "objectName": "NBCJacketYellow",
+    "inGameName": "Pea Coat",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/tops",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+  },
+  {
+    "objectName": "Sweater_ChristmasBlue",
+    "inGameName": "Sweater",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/tops",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/tops/sweater_colorbase.jpg"
+  },
+  {
+    "objectName": "Sweater_ChristmasGreen",
+    "inGameName": "Sweater",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/tops",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/tops/sweater_colorbase.jpg"
+  },
+  {
+    "objectName": "Sweater_ChristmasRed",
+    "inGameName": "Sweater",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/tops",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/tops/sweater_colorbase.jpg"
+  },
+  {
+    "objectName": "Tshirt_10thAnniversary",
+    "inGameName": "T-Shirt",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/tops",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/tops/tshirt_colorbase.jpg"
+  },
+  {
     "objectName": "PlateCarrierPouches",
     "inGameName": "Pouches",
     "category": "characters",
@@ -16484,6 +17304,136 @@
     "image": "images/characters/vests/vest_leatherstorage_m.p3d.jpg"
   },
   {
+    "objectName": "HuntingVest_Winter",
+    "inGameName": "Hunter Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/huntingvest.jpg"
+  },
+  {
+    "objectName": "PlateCarrierHolster_Black",
+    "inGameName": "Holster",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarrierholster.jpg"
+  },
+  {
+    "objectName": "PlateCarrierHolster_Camo",
+    "inGameName": "Holster",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarrierholster.jpg"
+  },
+  {
+    "objectName": "PlateCarrierHolster_Green",
+    "inGameName": "Holster",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarrierholster.jpg"
+  },
+  {
+    "objectName": "PlateCarrierHolster_Winter",
+    "inGameName": "Holster",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarrierholster.jpg"
+  },
+  {
+    "objectName": "PlateCarrierPouches_Black",
+    "inGameName": "Pouches",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarrierpouches.jpg"
+  },
+  {
+    "objectName": "PlateCarrierPouches_Camo",
+    "inGameName": "Pouches",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarrierpouches.jpg"
+  },
+  {
+    "objectName": "PlateCarrierPouches_Green",
+    "inGameName": "Pouches",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarrierpouches.jpg"
+  },
+  {
+    "objectName": "PlateCarrierPouches_Winter",
+    "inGameName": "Pouches",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarrierpouches.jpg"
+  },
+  {
+    "objectName": "PlateCarrierVest_Black",
+    "inGameName": "Plate Carrier",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarriervest.jpg"
+  },
+  {
+    "objectName": "PlateCarrierVest_Camo",
+    "inGameName": "Plate Carrier",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarriervest.jpg"
+  },
+  {
+    "objectName": "PlateCarrierVest_Green",
+    "inGameName": "Plate Carrier",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarriervest.jpg"
+  },
+  {
+    "objectName": "PlateCarrierVest_Winter",
+    "inGameName": "Plate Carrier",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/vests/platecarriervest.jpg"
+  },
+  {
     "objectName": "ZmbM_usSoldier_Officer_Desert",
     "inGameName": "-",
     "category": "characters",
@@ -17152,6 +18102,1686 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/characters/zombies/villager_old_m.p3d.jpg"
+  },
+  {
+    "objectName": "Static_FrozenScientist_DE",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/staticobj_frozenscientist_de.jpg"
+  },
+  {
+    "objectName": "ZmbF_BlueCollarFat_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_BlueCollarFat_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_BlueCollarFat_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_BlueCollarFat_White",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_CitizenANormal_Beige",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_CitizenANormal_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_CitizenANormal_Brown",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_CitizenBSkinny",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_Clerk_Normal_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_Clerk_Normal_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_Clerk_Normal_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_Clerk_Normal_White",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_DoctorSkinny",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_HikerSkinny_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_HikerSkinny_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_HikerSkinny_Grey",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_HikerSkinny_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_JoggerSkinny_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_JoggerSkinny_Brown",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_JoggerSkinny_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_JoggerSkinny_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_JournalistNormal_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_JournalistNormal_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_JournalistNormal_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_JournalistNormal_White",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_MechanicNormal_Beige",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_MechanicNormal_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_MechanicNormal_Grey",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_MechanicNormal_Orange",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_MilkMaidOld_Beige",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_MilkMaidOld_Black",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_MilkMaidOld_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_MilkMaidOld_Grey",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_NurseFat",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_NurseFat_Winter",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_ParamedicNormal_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_ParamedicNormal_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_ParamedicNormal_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_PatientOld",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_PatientOld_Winter",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_PoliceWomanNormal",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_ShortSkirt_beige",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_ShortSkirt_black",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_ShortSkirt_brown",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_ShortSkirt_checks",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_ShortSkirt_green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_ShortSkirt_grey",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_ShortSkirt_red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_ShortSkirt_stripes",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_ShortSkirt_white",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_ShortSkirt_yellow",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_SkaterYoung_Brown",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_SkaterYoung_Striped",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_SkaterYoung_Violet",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_SurvivorNormal_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_SurvivorNormal_Orange",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_SurvivorNormal_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_SurvivorNormal_White",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_VillagerOld_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_VillagerOld_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_VillagerOld_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbF_VillagerOld_White",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_CitizenASkinny_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_CitizenASkinny_Brown",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_CitizenASkinny_Grey",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_CitizenASkinny_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_CitizenBFat_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_CitizenBFat_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_CitizenBFat_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_ClerkFat_Brown",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_ClerkFat_Grey",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_ClerkFat_Khaki",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_ClerkFat_White",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_CommercialPilotOld_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_CommercialPilotOld_Brown",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_CommercialPilotOld_Grey",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_CommercialPilotOld_Olive",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_ConstrWorkerNormal_Beige",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_ConstrWorkerNormal_Black",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_ConstrWorkerNormal_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_ConstrWorkerNormal_Grey",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_DoctorFat",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_DoctorFat_Winter",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_FarmerFat_Beige",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_FarmerFat_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_FarmerFat_Brown",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_FarmerFat_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_FirefighterNormal",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_FishermanOld_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_FishermanOld_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_FishermanOld_Grey",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_FishermanOld_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_Gamedev_Black",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_Gamedev_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_Gamedev_Gray",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HandymanNormal_Beige",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HandymanNormal_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HandymanNormal_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HandymanNormal_Grey",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HandymanNormal_White",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HeavyIndustryWorker",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HermitSkinny_Beige",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HermitSkinny_Black",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HermitSkinny_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HermitSkinny_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HikerSkinny_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HikerSkinny_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HikerSkinny_Yellow",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HunterOld_Autumn",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HunterOld_Spring",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HunterOld_Summer",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_HunterOld_Winter",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_Jacket_beige",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_Jacket_black",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_Jacket_blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_Jacket_bluechecks",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_Jacket_brown",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_Jacket_greenchecks",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_Jacket_grey",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_Jacket_khaki",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_Jacket_magenta",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_Jacket_stripes",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_JoggerSkinny_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_JoggerSkinny_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_JoggerSkinny_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_JournalistSkinny",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_MechanicSkinny_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_mummy.jpg"
+  },
+  {
+    "objectName": "ZmbM_MechanicSkinny_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_mummy.jpg"
+  },
+  {
+    "objectName": "ZmbM_MechanicSkinny_Grey",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_mummy.jpg"
+  },
+  {
+    "objectName": "ZmbM_MechanicSkinny_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_mummy.jpg"
+  },
+  {
+    "objectName": "ZmbM_MotobikerFat_Beige",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_mummy.jpg"
+  },
+  {
+    "objectName": "ZmbM_MotobikerFat_Black",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_mummy.jpg"
+  },
+  {
+    "objectName": "ZmbM_MotobikerFat_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_mummy.jpg"
+  },
+  {
+    "objectName": "ZmbM_OffshoreWorker_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_OffshoreWorker_Orange",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_OffshoreWorker_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_OffshoreWorker_Yellow",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_ParamedicNormal_Black",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_ParamedicNormal_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_ParamedicNormal_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_ParamedicNormal_Red",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_PatientSkinny",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_PatientSkinny_Winter",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_PatrolNormal_Autumn",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_PatrolNormal_Flat",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_PatrolNormal_PautRev",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_PatrolNormal_Summer",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_PolicemanFat",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_PolicemanSpecForce",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_PolicemanSpecForce_Heavy",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_PrisonerSkinny",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_patrolnormal_winter.jpg"
+  },
+  {
+    "objectName": "ZmbM_SkaterYoung_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_santa.jpg"
+  },
+  {
+    "objectName": "ZmbM_SkaterYoung_Brown",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_santa.jpg"
+  },
+  {
+    "objectName": "ZmbM_SkaterYoung_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_santa.jpg"
+  },
+  {
+    "objectName": "ZmbM_SkaterYoung_Grey",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_santa.jpg"
+  },
+  {
+    "objectName": "ZmbM_SoldierNormal",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_santa.jpg"
+  },
+  {
+    "objectName": "ZmbM_VillagerOld_Blue",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_VillagerOld_Green",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_VillagerOld_White",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_eastSoldier_Heavy_Navy",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_eastSoldier_normal_Navy",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_priestPopSkinny",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_usSoldier_Heavy_Woodland",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_usSoldier_Officer_Convoy",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_usSoldier_normal_Desert",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "ZmbM_usSoldier_normal_Woodland",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
+  },
+  {
+    "objectName": "Zmbm_Mummy",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/characters/zombies/zmbm_ussoldier_officer_desert.jpg"
   },
   {
     "objectName": "CraterLong",
@@ -18892,6 +21522,396 @@
     "editorJson": null
   },
   {
+    "objectName": "Camonet",
+    "inGameName": "Camo net shelter",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/camonetshelter.jpg"
+  },
+  {
+    "objectName": "Flag_APA",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Altis",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_BabyDeer",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Bear",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Bohemia",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_BrainZ",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_CDF",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_CHEL",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_CMC",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Cannibals",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Chedaki",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Chernarus",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Crook",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_DayZ",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_HunterZ",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Livonia",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_LivoniaArmy",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_LivoniaPolice",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_NAPA",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_NSahrani",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Pirates",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_RSTA",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Refuge",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Rex",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Rooster",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_SSahrani",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Snake",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_TEC",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_UEC",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_White",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Wolf",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Zagorky",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "Flag_Zenit",
+    "inGameName": "Fence Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/fencekit.jpg"
+  },
+  {
+    "objectName": "MediumTent_Green",
+    "inGameName": "Medium Tent",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/mediumtent.jpg"
+  },
+  {
+    "objectName": "MediumTent_Orange",
+    "inGameName": "Medium Tent",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/mediumtent.jpg"
+  },
+  {
+    "objectName": "PartyTent_Blue",
+    "inGameName": "Canopy Tent",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/partytent.jpg"
+  },
+  {
+    "objectName": "PartyTent_Brown",
+    "inGameName": "Canopy Tent",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/partytent.jpg"
+  },
+  {
+    "objectName": "PartyTent_Lunapark",
+    "inGameName": "Canopy Tent",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/camping",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/camping/partytent.jpg"
+  },
+  {
     "objectName": "Proxysingle_plank",
     "inGameName": "-",
     "category": "gear",
@@ -20162,6 +23182,16 @@
     "image": "images/gear/consumables/tanned_leather.p3d.jpg"
   },
   {
+    "objectName": "Foxpelt",
+    "inGameName": "Fox Pelt",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/consumables",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/consumables/foxpelt.jpg"
+  },
+  {
     "objectName": "christmas_lights",
     "inGameName": "Refridgerator",
     "category": "gear",
@@ -20500,6 +23530,126 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/gear/containers/waterproofbag.p3d.jpg"
+  },
+  {
+    "objectName": "GiftBox_Large_1",
+    "inGameName": "Large Gift Box",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/containers",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/containers/giftbox_large.jpg"
+  },
+  {
+    "objectName": "GiftBox_Large_2",
+    "inGameName": "Large Gift Box",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/containers",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/containers/giftbox_large.jpg"
+  },
+  {
+    "objectName": "GiftBox_Large_3",
+    "inGameName": "Large Gift Box",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/containers",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/containers/giftbox_large.jpg"
+  },
+  {
+    "objectName": "GiftBox_Large_4",
+    "inGameName": "Large Gift Box",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/containers",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/containers/giftbox_large.jpg"
+  },
+  {
+    "objectName": "GiftBox_Medium_1",
+    "inGameName": "Medium Gift Box",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/containers",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/containers/giftbox_medium.jpg"
+  },
+  {
+    "objectName": "GiftBox_Medium_2",
+    "inGameName": "Medium Gift Box",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/containers",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/containers/giftbox_medium.jpg"
+  },
+  {
+    "objectName": "GiftBox_Medium_3",
+    "inGameName": "Medium Gift Box",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/containers",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/containers/giftbox_medium.jpg"
+  },
+  {
+    "objectName": "GiftBox_Medium_4",
+    "inGameName": "Medium Gift Box",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/containers",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/containers/giftbox_medium.jpg"
+  },
+  {
+    "objectName": "GiftBox_Small_1",
+    "inGameName": "Medium Gift Box",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/containers",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/containers/giftbox_medium.jpg"
+  },
+  {
+    "objectName": "GiftBox_Small_2",
+    "inGameName": "Medium Gift Box",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/containers",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/containers/giftbox_medium.jpg"
+  },
+  {
+    "objectName": "GiftBox_Small_3",
+    "inGameName": "Medium Gift Box",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/containers",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/containers/giftbox_medium.jpg"
+  },
+  {
+    "objectName": "GiftBox_Small_4",
+    "inGameName": "Medium Gift Box",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/containers",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/containers/giftbox_medium.jpg"
   },
   {
     "objectName": "Firewood",
@@ -21460,6 +24610,26 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/gear/crafting/wooden_stick_blunt.p3d.jpg"
+  },
+  {
+    "objectName": "SpearBone",
+    "inGameName": "Sharpened Stick",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/crafting",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/crafting/sharpwoodenstick.jpg"
+  },
+  {
+    "objectName": "SpearStone",
+    "inGameName": "Sharpened Stick",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/crafting",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/crafting/sharpwoodenstick.jpg"
   },
   {
     "objectName": "ProxyTomato_Seeds",
@@ -25203,6 +28373,16 @@
     "image": "images/gear/navigation/map_chernarus_open.p3d.jpg"
   },
   {
+    "objectName": "ChernarusMap_Open",
+    "inGameName": "Tourist Map",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/navigation",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/navigation/chernarusmap.jpg"
+  },
+  {
     "objectName": "Rangefinder",
     "inGameName": "Rangefinder",
     "category": "gear",
@@ -26731,6 +29911,86 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/gear/tools/wrench.p3d.jpg"
+  },
+  {
+    "objectName": "AlarmClock_Blue",
+    "inGameName": "Raycast Scanner",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/tools",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/tools/attack_flashlight_heavy2.jpg"
+  },
+  {
+    "objectName": "AlarmClock_Green",
+    "inGameName": "Raycast Scanner",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/tools",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/tools/attack_flashlight_heavy2.jpg"
+  },
+  {
+    "objectName": "AlarmClock_Red",
+    "inGameName": "Raycast Scanner",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/tools",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/tools/attack_flashlight_heavy2.jpg"
+  },
+  {
+    "objectName": "Anniversary_FireworksLauncher",
+    "inGameName": "Raycast Scanner",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/tools",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/tools/attack_flashlight_heavy2.jpg"
+  },
+  {
+    "objectName": "ShippingContainerKeys_Blue",
+    "inGameName": "Shovel",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/tools",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/tools/shovel.jpg"
+  },
+  {
+    "objectName": "ShippingContainerKeys_Orange",
+    "inGameName": "Shovel",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/tools",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/tools/shovel.jpg"
+  },
+  {
+    "objectName": "ShippingContainerKeys_Red",
+    "inGameName": "Shovel",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/tools",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/tools/shovel.jpg"
+  },
+  {
+    "objectName": "ShippingContainerKeys_Yellow",
+    "inGameName": "Shovel",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/tools",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/gear/tools/shovel.jpg"
   },
   {
     "objectName": "BearTrap",
@@ -36559,7 +39819,7 @@
     "modelType": "Config",
     "path": "dz/structures/furniture/eletrical_appliances/tv_a",
     "usableOnConsole": true,
-    "searchTags": "television, tv, screen, minitor, electronics",
+    "searchTags": "television, tv, screen, monitor, electronics",
     "image": "images/structures/furniture/eletrical_appliances/tv_a/staticobj_furniture_tv_a.jpg"
   },
   {
@@ -36569,7 +39829,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/furniture/eletrical_appliances/tv_a",
     "usableOnConsole": false,
-    "searchTags": "television, tv, screen, minitor, electronics",
+    "searchTags": "television, tv, screen, monitor, electronics",
     "image": "images/structures/furniture/eletrical_appliances/tv_a/staticobj_furniture_tv_a.jpg"
   },
   {
@@ -39507,7 +42767,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/coalplant",
     "usableOnConsole": true,
-    "searchTags": "large, factory",
+    "searchTags": "large, factory, car crusher",
     "image": "images/structures/industrial/coalplant/staticobj_coalplant_loadinghouse.jpg"
   },
   {
@@ -73487,6 +76747,84 @@
     "image": "images/structures/wrecks/vehicles/land_wreck_volha_blue.jpg"
   },
   {
+    "objectName": "Land_Wreck_Ikarus_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/wrecks/vehicles/land_wreck_ikarus.jpg"
+  },
+  {
+    "objectName": "Land_Wreck_S1023_Medic_Beige_DE",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/wrecks/vehicles/land_wreck_s1023_medic_beige.jpg"
+  },
+  {
+    "objectName": "Land_Wreck_Tractor_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/wrecks/vehicles/land_wreck_trailer_closed.jpg"
+  },
+  {
+    "objectName": "Land_Wreck_Trailer_Closed_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/wrecks/vehicles/land_wreck_trailer_closed.jpg"
+  },
+  {
+    "objectName": "Land_Wreck_V3S_DE",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/wrecks/vehicles/land_wreck_v3s.jpg"
+  },
+  {
+    "objectName": "Land_Wreck_sed02_aban1_Police_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/wrecks/vehicles/land_wreck_sed02_aban1_yellow_de.jpg"
+  },
+  {
+    "objectName": "Land_Wreck_sed02_aban2_Police_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/wrecks/vehicles/land_wreck_sed02_aban2_yellow_de.jpg"
+  },
+  {
+    "objectName": "Land_wreck_truck01_aban1_orange_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/structures/wrecks/vehicles/land_wreck_truck01_aban1_orange.jpg"
+  },
+  {
     "objectName": "StaticObj_Construction_Hopper",
     "inGameName": "-",
     "category": "structures_bliss",
@@ -95438,6 +98776,306 @@
     "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_wheel_ruined.p3d.jpg"
   },
   {
+    "objectName": "Hatchback_02_Door_1_1_Black",
+    "inGameName": "Gunter 2 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_1_1.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_1_1_BlackRust",
+    "inGameName": "Gunter 2 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_1_1.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_1_1_Blue",
+    "inGameName": "Gunter 2 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_1_1.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_1_1_BlueRust",
+    "inGameName": "Gunter 2 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_1_1.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_1_1_RedRust",
+    "inGameName": "Gunter 2 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_1_1.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_1_2_Black",
+    "inGameName": "Gunter 2 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_1_2.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_1_2_BlackRust",
+    "inGameName": "Gunter 2 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_1_2.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_1_2_Blue",
+    "inGameName": "Gunter 2 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_1_2.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_1_2_BlueRust",
+    "inGameName": "Gunter 2 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_1_2.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_1_2_RedRust",
+    "inGameName": "Gunter 2 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_1_2.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_2_1_Black",
+    "inGameName": "Gunter 2 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_2_1.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_2_1_BlackRust",
+    "inGameName": "Gunter 2 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_2_1.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_2_1_Blue",
+    "inGameName": "Gunter 2 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_2_1.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_2_1_BlueRust",
+    "inGameName": "Gunter 2 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_2_1.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_2_1_RedRust",
+    "inGameName": "Gunter 2 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_2_1.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_2_2_Black",
+    "inGameName": "Gunter 2 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_2_2.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_2_2_BlackRust",
+    "inGameName": "Gunter 2 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_2_2.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_2_2_Blue",
+    "inGameName": "Gunter 2 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_2_2.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_2_2_BlueRust",
+    "inGameName": "Gunter 2 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_2_2.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Door_2_2_RedRust",
+    "inGameName": "Gunter 2 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_2_2.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Hood_Black",
+    "inGameName": "Gunter 2 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_hood.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Hood_BlackRust",
+    "inGameName": "Gunter 2 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_hood.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Hood_Blue",
+    "inGameName": "Gunter 2 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_hood.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Hood_BlueRust",
+    "inGameName": "Gunter 2 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_hood.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Hood_RedRust",
+    "inGameName": "Gunter 2 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_hood.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Trunk_Black",
+    "inGameName": "Gunter 2 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_trunk.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Trunk_BlackRust",
+    "inGameName": "Gunter 2 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_trunk.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Trunk_Blue",
+    "inGameName": "Gunter 2 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_trunk.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Trunk_BlueRust",
+    "inGameName": "Gunter 2 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_trunk.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Trunk_RedRust",
+    "inGameName": "Gunter 2 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_trunk.jpg"
+  },
+  {
     "objectName": "Hatchback_02",
     "inGameName": "Gunter 2",
     "category": "vehicles",
@@ -95458,6 +99096,26 @@
     "image": "images/vehicles/wheeled/hatchback_02/hatchback_02.p3d.jpg"
   },
   {
+    "objectName": "Hatchback_02_Black",
+    "inGameName": "Gunter 2",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/hatchback_02.jpg"
+  },
+  {
+    "objectName": "Hatchback_02_Blue",
+    "inGameName": "Gunter 2",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/hatchback_02",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/hatchback_02/hatchback_02.jpg"
+  },
+  {
     "objectName": "OffroadHatchback",
     "inGameName": "Ada 4x4",
     "category": "vehicles",
@@ -95476,6 +99134,26 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/vehicles/wheeled/offroadhatchback/offroadhatchback.p3d.jpg"
+  },
+  {
+    "objectName": "OffroadHatchback_Blue",
+    "inGameName": "Ada 4x4",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/offroadhatchback.jpg"
+  },
+  {
+    "objectName": "OffroadHatchback_White",
+    "inGameName": "Ada 4x4",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/offroadhatchback.jpg"
   },
   {
     "objectName": "Suspension",
@@ -95736,6 +99414,206 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/vehicles/wheeled/offroadhatchback/proxy/niva_interior_aban.p3d.jpg"
+  },
+  {
+    "objectName": "HatchbackDoors_CoDriver_Blue",
+    "inGameName": "Ada 4x4 Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackdoors_codriver.jpg"
+  },
+  {
+    "objectName": "HatchbackDoors_CoDriver_BlueRust",
+    "inGameName": "Ada 4x4 Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackdoors_codriver.jpg"
+  },
+  {
+    "objectName": "HatchbackDoors_CoDriver_GreenRust",
+    "inGameName": "Ada 4x4 Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackdoors_codriver.jpg"
+  },
+  {
+    "objectName": "HatchbackDoors_CoDriver_White",
+    "inGameName": "Ada 4x4 Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackdoors_codriver.jpg"
+  },
+  {
+    "objectName": "HatchbackDoors_CoDriver_WhiteRust",
+    "inGameName": "Ada 4x4 Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackdoors_codriver.jpg"
+  },
+  {
+    "objectName": "HatchbackDoors_Driver_Blue",
+    "inGameName": "Ada 4x4 Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackdoors_driver.jpg"
+  },
+  {
+    "objectName": "HatchbackDoors_Driver_BlueRust",
+    "inGameName": "Ada 4x4 Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackdoors_driver.jpg"
+  },
+  {
+    "objectName": "HatchbackDoors_Driver_GreenRust",
+    "inGameName": "Ada 4x4 Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackdoors_driver.jpg"
+  },
+  {
+    "objectName": "HatchbackDoors_Driver_White",
+    "inGameName": "Ada 4x4 Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackdoors_driver.jpg"
+  },
+  {
+    "objectName": "HatchbackDoors_Driver_WhiteRust",
+    "inGameName": "Ada 4x4 Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackdoors_driver.jpg"
+  },
+  {
+    "objectName": "HatchbackHood_Blue",
+    "inGameName": "Ada 4x4 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackhood.jpg"
+  },
+  {
+    "objectName": "HatchbackHood_BlueRust",
+    "inGameName": "Ada 4x4 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackhood.jpg"
+  },
+  {
+    "objectName": "HatchbackHood_GreenRust",
+    "inGameName": "Ada 4x4 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackhood.jpg"
+  },
+  {
+    "objectName": "HatchbackHood_White",
+    "inGameName": "Ada 4x4 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackhood.jpg"
+  },
+  {
+    "objectName": "HatchbackHood_WhiteRust",
+    "inGameName": "Ada 4x4 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbackhood.jpg"
+  },
+  {
+    "objectName": "HatchbackTrunk_Blue",
+    "inGameName": "Ada 4x4 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbacktrunk.jpg"
+  },
+  {
+    "objectName": "HatchbackTrunk_BlueRust",
+    "inGameName": "Ada 4x4 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbacktrunk.jpg"
+  },
+  {
+    "objectName": "HatchbackTrunk_GreenRust",
+    "inGameName": "Ada 4x4 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbacktrunk.jpg"
+  },
+  {
+    "objectName": "HatchbackTrunk_White",
+    "inGameName": "Ada 4x4 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbacktrunk.jpg"
+  },
+  {
+    "objectName": "HatchbackTrunk_WhiteRust",
+    "inGameName": "Ada 4x4 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/hatchbacktrunk.jpg"
   },
   {
     "objectName": "Offroad_02",
@@ -96018,6 +99896,56 @@
     "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_wheel_destroyed.p3d.jpg"
   },
   {
+    "objectName": "Offroad_02_Door_1_1_Rust",
+    "inGameName": "M1025 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1.jpg"
+  },
+  {
+    "objectName": "Offroad_02_Door_1_2_Rust",
+    "inGameName": "M1025 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2.jpg"
+  },
+  {
+    "objectName": "Offroad_02_Door_2_1_Rust",
+    "inGameName": "M1025 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1.jpg"
+  },
+  {
+    "objectName": "Offroad_02_Door_2_2_Rust",
+    "inGameName": "M1025 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2.jpg"
+  },
+  {
+    "objectName": "Offroad_02_Trunk_Rust",
+    "inGameName": "M1025 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk.jpg"
+  },
+  {
     "objectName": "Sedan_02",
     "inGameName": "Sarka 120",
     "category": "vehicles",
@@ -96036,6 +99964,26 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/vehicles/wheeled/sedan_02/sedan_02.p3d.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Grey",
+    "inGameName": "Sarka 120",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/sedan_02.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Red",
+    "inGameName": "Sarka 120",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/sedan_02.jpg"
   },
   {
     "objectName": "Sedan_02_Wheel",
@@ -96346,6 +100294,306 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_wheel_ruined.p3d.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_1_1_Grey",
+    "inGameName": "Sarka 120 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_1_1.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_1_1_GreyRust",
+    "inGameName": "Sarka 120 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_1_1.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_1_1_Red",
+    "inGameName": "Sarka 120 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_1_1.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_1_1_RedRust",
+    "inGameName": "Sarka 120 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_1_1.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_1_1_YellowRust",
+    "inGameName": "Sarka 120 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_1_1.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_1_2_Grey",
+    "inGameName": "Sarka 120 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_1_2.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_1_2_GreyRust",
+    "inGameName": "Sarka 120 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_1_2.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_1_2_Red",
+    "inGameName": "Sarka 120 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_1_2.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_1_2_RedRust",
+    "inGameName": "Sarka 120 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_1_2.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_1_2_YellowRust",
+    "inGameName": "Sarka 120 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_1_2.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_2_1_Grey",
+    "inGameName": "Sarka 120 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_2_1.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_2_1_GreyRust",
+    "inGameName": "Sarka 120 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_2_1.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_2_1_Red",
+    "inGameName": "Sarka 120 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_2_1.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_2_1_RedRust",
+    "inGameName": "Sarka 120 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_2_1.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_2_1_YellowRust",
+    "inGameName": "Sarka 120 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_2_1.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_2_2_Grey",
+    "inGameName": "Sarka 120 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_2_2.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_2_2_GreyRust",
+    "inGameName": "Sarka 120 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_2_2.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_2_2_Red",
+    "inGameName": "Sarka 120 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_2_2.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_2_2_RedRust",
+    "inGameName": "Sarka 120 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_2_2.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Door_2_2_YellowRust",
+    "inGameName": "Sarka 120 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_2_2.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Hood_Grey",
+    "inGameName": "Sarka 120 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_hood.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Hood_GreyRust",
+    "inGameName": "Sarka 120 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_hood.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Hood_Red",
+    "inGameName": "Sarka 120 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_hood.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Hood_RedRust",
+    "inGameName": "Sarka 120 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_hood.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Hood_YellowRust",
+    "inGameName": "Sarka 120 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_hood.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Trunk_Grey",
+    "inGameName": "Sarka 120 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_trunk.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Trunk_GreyRust",
+    "inGameName": "Sarka 120 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_trunk.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Trunk_Red",
+    "inGameName": "Sarka 120 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_trunk.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Trunk_RedRust",
+    "inGameName": "Sarka 120 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_trunk.jpg"
+  },
+  {
+    "objectName": "Sedan_02_Trunk_YellowRust",
+    "inGameName": "Sarka 120 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/sedan_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_trunk.jpg"
   },
   {
     "objectName": "transitbus.p3d",
@@ -96748,6 +100996,26 @@
     "image": "images/vehicles/wheeled/truck_01/truck_01_covered.p3d.jpg"
   },
   {
+    "objectName": "Truck_01_Covered_Blue",
+    "inGameName": "M3S Covered",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/truck_01_covered.jpg"
+  },
+  {
+    "objectName": "Truck_01_Covered_Orange",
+    "inGameName": "M3S Covered",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/truck_01_covered.jpg"
+  },
+  {
     "objectName": "Truck_01_Wheel",
     "inGameName": "M3S Wheel",
     "category": "vehicles",
@@ -97128,6 +101396,156 @@
     "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_window_cover.p3d.jpg"
   },
   {
+    "objectName": "Truck_01_Door_1_1_Blue",
+    "inGameName": "M3S Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_door_1_1.jpg"
+  },
+  {
+    "objectName": "Truck_01_Door_1_1_BlueRust",
+    "inGameName": "M3S Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_door_1_1.jpg"
+  },
+  {
+    "objectName": "Truck_01_Door_1_1_GreenRust",
+    "inGameName": "M3S Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_door_1_1.jpg"
+  },
+  {
+    "objectName": "Truck_01_Door_1_1_Orange",
+    "inGameName": "M3S Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_door_1_1.jpg"
+  },
+  {
+    "objectName": "Truck_01_Door_1_1_OrangeRust",
+    "inGameName": "M3S Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_door_1_1.jpg"
+  },
+  {
+    "objectName": "Truck_01_Door_2_1_Blue",
+    "inGameName": "M3S Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_door_2_1.jpg"
+  },
+  {
+    "objectName": "Truck_01_Door_2_1_BlueRust",
+    "inGameName": "M3S Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_door_2_1.jpg"
+  },
+  {
+    "objectName": "Truck_01_Door_2_1_GreenRust",
+    "inGameName": "M3S Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_door_2_1.jpg"
+  },
+  {
+    "objectName": "Truck_01_Door_2_1_Orange",
+    "inGameName": "M3S Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_door_2_1.jpg"
+  },
+  {
+    "objectName": "Truck_01_Door_2_1_OrangeRust",
+    "inGameName": "M3S Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_door_2_1.jpg"
+  },
+  {
+    "objectName": "Truck_01_Hood_Blue",
+    "inGameName": "M3S Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_hood.jpg"
+  },
+  {
+    "objectName": "Truck_01_Hood_BlueRust",
+    "inGameName": "M3S Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_hood.jpg"
+  },
+  {
+    "objectName": "Truck_01_Hood_GreenRust",
+    "inGameName": "M3S Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_hood.jpg"
+  },
+  {
+    "objectName": "Truck_01_Hood_Orange",
+    "inGameName": "M3S Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_hood.jpg"
+  },
+  {
+    "objectName": "Truck_01_Hood_OrangeRust",
+    "inGameName": "M3S Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/truck_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_hood.jpg"
+  },
+  {
     "objectName": "truck_02.p3d",
     "inGameName": "-",
     "category": "vehicles",
@@ -97456,6 +101874,26 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/vehicles/wheeled/civiliansedan/civiliansedan.p3d.jpg"
+  },
+  {
+    "objectName": "CivilianSedan_Black",
+    "inGameName": "Olga 24",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/civiliansedan.jpg"
+  },
+  {
+    "objectName": "CivilianSedan_Wine",
+    "inGameName": "Olga 24",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/civiliansedan.jpg"
   },
   {
     "objectName": "CivSedanWheel",
@@ -97816,6 +102254,306 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/vehicles/wheeled/civiliansedan/proxy/sedan_engine_aban.p3d.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_BackLeft_Black",
+    "inGameName": "Olga 24 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_backleft.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_BackLeft_BlackRust",
+    "inGameName": "Olga 24 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_backleft.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_BackLeft_WhiteRust",
+    "inGameName": "Olga 24 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_backleft.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_BackLeft_Wine",
+    "inGameName": "Olga 24 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_backleft.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_BackLeft_WineRust",
+    "inGameName": "Olga 24 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_backleft.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_BackRight_Black",
+    "inGameName": "Olga 24 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_backright.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_BackRight_BlackRust",
+    "inGameName": "Olga 24 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_backright.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_BackRight_WhiteRust",
+    "inGameName": "Olga 24 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_backright.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_BackRight_Wine",
+    "inGameName": "Olga 24 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_backright.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_BackRight_WineRust",
+    "inGameName": "Olga 24 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_backright.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_CoDriver_Black",
+    "inGameName": "Olga 24 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_codriver.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_CoDriver_BlackRust",
+    "inGameName": "Olga 24 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_codriver.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_CoDriver_WhiteRust",
+    "inGameName": "Olga 24 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_codriver.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_CoDriver_Wine",
+    "inGameName": "Olga 24 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_codriver.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_CoDriver_WineRust",
+    "inGameName": "Olga 24 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_codriver.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_Driver_Black",
+    "inGameName": "Olga 24 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_driver.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_Driver_BlackRust",
+    "inGameName": "Olga 24 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_driver.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_Driver_WhiteRust",
+    "inGameName": "Olga 24 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_driver.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_Driver_Wine",
+    "inGameName": "Olga 24 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_driver.jpg"
+  },
+  {
+    "objectName": "CivSedanDoors_Driver_WineRust",
+    "inGameName": "Olga 24 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedandoors_driver.jpg"
+  },
+  {
+    "objectName": "CivSedanHood_Black",
+    "inGameName": "Olga 24 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedanhood.jpg"
+  },
+  {
+    "objectName": "CivSedanHood_BlackRust",
+    "inGameName": "Olga 24 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedanhood.jpg"
+  },
+  {
+    "objectName": "CivSedanHood_WhiteRust",
+    "inGameName": "Olga 24 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedanhood.jpg"
+  },
+  {
+    "objectName": "CivSedanHood_Wine",
+    "inGameName": "Olga 24 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedanhood.jpg"
+  },
+  {
+    "objectName": "CivSedanHood_WineRust",
+    "inGameName": "Olga 24 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedanhood.jpg"
+  },
+  {
+    "objectName": "CivSedanTrunk_Black",
+    "inGameName": "Olga 24 Trunk Lid",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedantrunk.jpg"
+  },
+  {
+    "objectName": "CivSedanTrunk_BlackRust",
+    "inGameName": "Olga 24 Trunk Lid",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedantrunk.jpg"
+  },
+  {
+    "objectName": "CivSedanTrunk_WhiteRust",
+    "inGameName": "Olga 24 Trunk Lid",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedantrunk.jpg"
+  },
+  {
+    "objectName": "CivSedanTrunk_Wine",
+    "inGameName": "Olga 24 Trunk Lid",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedantrunk.jpg"
+  },
+  {
+    "objectName": "CivSedanTrunk_WineRust",
+    "inGameName": "Olga 24 Trunk Lid",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/civiliansedan/proxy",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/civsedantrunk.jpg"
   },
   {
     "objectName": "civiliansedan_wreckedback.p3d",
@@ -112318,6 +117056,16 @@
     "image": "images/weapons/ammunition/vog25.p3d.jpg"
   },
   {
+    "objectName": "Ammo_40mm_Chemgas",
+    "inGameName": "40mm PO-X Grenade",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_40mm_chemgas.jpg"
+  },
+  {
     "objectName": "PVCBow",
     "inGameName": "PVC Bow",
     "category": "weapons",
@@ -112374,6 +117122,46 @@
     "modelType": "Raw P3D",
     "path": "dz/weapons/archery/crossbow",
     "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/archery/crossbow/crossbow.p3d.jpg"
+  },
+  {
+    "objectName": "Crossbow_Autumn",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/archery/crossbow",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/archery/crossbow/crossbow.p3d.jpg"
+  },
+  {
+    "objectName": "Crossbow_Black",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/archery/crossbow",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/archery/crossbow/crossbow.p3d.jpg"
+  },
+  {
+    "objectName": "Crossbow_Summer",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/archery/crossbow",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/archery/crossbow/crossbow.p3d.jpg"
+  },
+  {
+    "objectName": "Crossbow_Wood",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/archery/crossbow",
+    "usableOnConsole": true,
     "searchTags": "",
     "image": "images/weapons/archery/crossbow/crossbow.p3d.jpg"
   },
@@ -114228,6 +119016,16 @@
     "image": "images/weapons/attachments/magazine/snaploader_empty.p3d.jpg"
   },
   {
+    "objectName": "Mag_CZ550_10Rnd",
+    "inGameName": "10rd CR-550 Mag",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "savanna, cr-550, rifles, .308",
+    "image": "images/weapons/attachments/magazine/mag_cz550_10rnd.jpg"
+  },
+  {
     "objectName": "AK_Bayonet",
     "inGameName": "KA Bayonet",
     "category": "weapons",
@@ -115288,6 +120086,66 @@
     "image": "images/weapons/attachments/optics/starlightscope_opticview.p3d.jpg"
   },
   {
+    "objectName": "MK4Optic_Black",
+    "inGameName": "M4-A1 Carry Handle Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/optics/m4_carryhandleoptic.jpg"
+  },
+  {
+    "objectName": "MK4Optic_Green",
+    "inGameName": "M4-A1 Carry Handle Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/optics/m4_carryhandleoptic.jpg"
+  },
+  {
+    "objectName": "MK4Optic_Tan",
+    "inGameName": "M4-A1 Carry Handle Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/optics/m4_carryhandleoptic.jpg"
+  },
+  {
+    "objectName": "MK4Optic_black",
+    "inGameName": "M4-A1 Carry Handle Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/optics/m4_carryhandleoptic.jpg"
+  },
+  {
+    "objectName": "MK4Optic_green",
+    "inGameName": "M4-A1 Carry Handle Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/optics/m4_carryhandleoptic.jpg"
+  },
+  {
+    "objectName": "MK4Optic_tan",
+    "inGameName": "M4-A1 Carry Handle Sights",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/optics/m4_carryhandleoptic.jpg"
+  },
+  {
     "objectName": "M4_OEBttstck",
     "inGameName": "M4-A1 Telescopic Buttstock",
     "category": "weapons",
@@ -116218,6 +121076,126 @@
     "image": "images/weapons/attachments/support/wrap_burlap_grass.p3d.jpg"
   },
   {
+    "objectName": "AK_FoldingBttstck_Black",
+    "inGameName": "KA Lightweight Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_foldingbttstck.jpg"
+  },
+  {
+    "objectName": "AK_FoldingBttstck_Green",
+    "inGameName": "KA Lightweight Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_foldingbttstck.jpg"
+  },
+  {
+    "objectName": "AK_PlasticBttstck_Black",
+    "inGameName": "KA Polymer Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_plasticbttstck.jpg"
+  },
+  {
+    "objectName": "AK_PlasticBttstck_Green",
+    "inGameName": "KA Polymer Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_plasticbttstck.jpg"
+  },
+  {
+    "objectName": "AK_RailHndgrd_Black",
+    "inGameName": "KA Rail Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_railhndgrd.jpg"
+  },
+  {
+    "objectName": "AK_RailHndgrd_Green",
+    "inGameName": "KA Rail Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_railhndgrd.jpg"
+  },
+  {
+    "objectName": "AK_WoodBttstck_Black",
+    "inGameName": "KA Wooden Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_woodbttstck.jpg"
+  },
+  {
+    "objectName": "AK_WoodBttstck_Camo",
+    "inGameName": "KA Wooden Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_woodbttstck.jpg"
+  },
+  {
+    "objectName": "AK_WoodHndgrd_Black",
+    "inGameName": "KA Wooden Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_woodhndgrd.jpg"
+  },
+  {
+    "objectName": "AK_WoodHndgrd_Camo",
+    "inGameName": "KA Wooden Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "ka-74, ak-74",
+    "image": "images/weapons/attachments/support/ak_woodhndgrd.jpg"
+  },
+  {
+    "objectName": "M4_RISHndgrd_Black",
+    "inGameName": "M4-A1 Rail Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/support/m4_rishndgrd.jpg"
+  },
+  {
+    "objectName": "M4_RISHndgrd_Green",
+    "inGameName": "M4-A1 Rail Handguard",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "m4",
+    "image": "images/weapons/attachments/support/m4_rishndgrd.jpg"
+  },
+  {
     "objectName": "m203.p3d",
     "inGameName": "-",
     "category": "weapons",
@@ -116658,6 +121636,46 @@
     "image": "images/weapons/firearms/ak74.jpg"
   },
   {
+    "objectName": "AK101_Black",
+    "inGameName": "KA-101",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/ak101",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/ak101.jpg"
+  },
+  {
+    "objectName": "AK101_Green",
+    "inGameName": "KA-101",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/ak101",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/ak101.jpg"
+  },
+  {
+    "objectName": "AK74_Black",
+    "inGameName": "KA-74",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/ak101",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
+    "image": "images/weapons/firearms/ak74.jpg"
+  },
+  {
+    "objectName": "AK74_Green",
+    "inGameName": "KA-74",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/ak101",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
+    "image": "images/weapons/firearms/ak74.jpg"
+  },
+  {
     "objectName": "AKS74U",
     "inGameName": "KAS-74U",
     "category": "weapons",
@@ -116674,6 +121692,26 @@
     "modelType": "Raw P3D",
     "path": "dz/weapons/firearms/ak74",
     "usableOnConsole": false,
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
+    "image": "images/weapons/firearms/aks74u.jpg"
+  },
+  {
+    "objectName": "AKS74U_Black",
+    "inGameName": "KAS-74U",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/ak74",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
+    "image": "images/weapons/firearms/aks74u.jpg"
+  },
+  {
+    "objectName": "AKS74U_Green",
+    "inGameName": "KAS-74U",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/ak74",
+    "usableOnConsole": true,
     "searchTags": "AK, machine_gun, automatic, 5.45x39",
     "image": "images/weapons/firearms/aks74u.jpg"
   },
@@ -116818,6 +121856,26 @@
     "image": "images/weapons/firearms/dzweaponsfirearmsm4m4a1.p3d.jpg"
   },
   {
+    "objectName": "M4A1_Black",
+    "inGameName": "M4-A1",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/m4",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/m4a1.jpg"
+  },
+  {
+    "objectName": "M4A1_Green",
+    "inGameName": "M4-A1",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/m4",
+    "usableOnConsole": true,
+    "searchTags": "submachine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/m4a1.jpg"
+  },
+  {
     "objectName": "MP5K",
     "inGameName": "SG5-K",
     "category": "weapons",
@@ -116844,6 +121902,16 @@
     "modelType": "Raw P3D",
     "path": "dz/weapons/firearms/pp19",
     "usableOnConsole": false,
+    "searchTags": "submachine_gun, automatic, .380acp",
+    "image": "images/weapons/firearms/dzweaponsfirearmspp19pp19.p3d.jpg"
+  },
+  {
+    "objectName": "PP19",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/pp19",
+    "usableOnConsole": true,
     "searchTags": "submachine_gun, automatic, .380acp",
     "image": "images/weapons/firearms/dzweaponsfirearmspp19pp19.p3d.jpg"
   },
@@ -117228,6 +122296,16 @@
     "image": "images/weapons/firearms/dzweaponsfirearmsm16a2m16a2.p3d.jpg"
   },
   {
+    "objectName": "M16A2",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/m16a2",
+    "usableOnConsole": true,
+    "searchTags": "machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/dzweaponsfirearmsm16a2m16a2.p3d.jpg"
+  },
+  {
     "objectName": "M249",
     "inGameName": "M249 SAW",
     "category": "weapons",
@@ -117296,6 +122374,66 @@
     "usableOnConsole": false,
     "searchTags": "rifles, 7.62x54mmr",
     "image": "images/weapons/firearms/dzweaponsfirearmsmosin9130mosin_sawn.p3d.jpg"
+  },
+  {
+    "objectName": "Mosin9130_Black",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr",
+    "image": "images/weapons/firearms/mosin9130.jpg"
+  },
+  {
+    "objectName": "Mosin9130_Camo",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr",
+    "image": "images/weapons/firearms/mosin9130.jpg"
+  },
+  {
+    "objectName": "Mosin9130_Green",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr",
+    "image": "images/weapons/firearms/mosin9130.jpg"
+  },
+  {
+    "objectName": "SawedoffMosin9130_Black",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/firearms/sawedoffmosin9130.jpg"
+  },
+  {
+    "objectName": "SawedoffMosin9130_Camo",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/firearms/sawedoffmosin9130.jpg"
+  },
+  {
+    "objectName": "SawedoffMosin9130_Green",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/firearms/sawedoffmosin9130.jpg"
   },
   {
     "objectName": "UnderSlugGrenadeM4",
@@ -117526,6 +122664,26 @@
     "usableOnConsole": false,
     "searchTags": "rifles, 5.56x45",
     "image": "images/weapons/firearms/dzweaponsfirearmsscoutscout.p3d.jpg"
+  },
+  {
+    "objectName": "Scout_Chernarus",
+    "inGameName": "Pioneer",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/scout",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 5.56x45",
+    "image": "images/weapons/firearms/scout.jpg"
+  },
+  {
+    "objectName": "Scout_Livonia",
+    "inGameName": "Pioneer",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/scout",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 5.56x45",
+    "image": "images/weapons/firearms/scout.jpg"
   },
   {
     "objectName": "speargun.p3d",
@@ -118128,6 +123286,26 @@
     "image": "images/weapons/melee/blade/woodaxe.p3d.jpg"
   },
   {
+    "objectName": "FirefighterAxe_Black",
+    "inGameName": "Firefighter Axe",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/melee/blade",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/melee/blade/firefighteraxe.jpg"
+  },
+  {
+    "objectName": "FirefighterAxe_Green",
+    "inGameName": "Firefighter Axe",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/melee/blade",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/melee/blade/firefighteraxe.jpg"
+  },
+  {
     "objectName": "BaseballBat",
     "inGameName": "Baseball Bat",
     "category": "weapons",
@@ -118548,6 +123726,16 @@
     "image": "images/weapons/pistols/de/de.p3d.jpg"
   },
   {
+    "objectName": "Deagle_Gold",
+    "inGameName": "Deagle",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/de",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/de/deagle.jpg"
+  },
+  {
     "objectName": "FNX45",
     "inGameName": "FX-45",
     "category": "weapons",
@@ -118618,6 +123806,16 @@
     "image": "images/weapons/pistols/longhorn/longhorn.p3d.jpg"
   },
   {
+    "objectName": "Longhorn",
+    "inGameName": "Longhorn",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/longhorn",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/longhorn/longhorn.jpg"
+  },
+  {
     "objectName": "ProxyRed9",
     "inGameName": "-",
     "category": "weapons",
@@ -118644,6 +123842,36 @@
     "modelType": "Raw P3D",
     "path": "dz/weapons/pistols/derringer",
     "usableOnConsole": false,
+    "searchTags": "",
+    "image": "images/weapons/pistols/derringer/derringer.p3d.jpg"
+  },
+  {
+    "objectName": "Derringer_Black",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/derringer",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/derringer/derringer.p3d.jpg"
+  },
+  {
+    "objectName": "Derringer_Grey",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/derringer",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/pistols/derringer/derringer.p3d.jpg"
+  },
+  {
+    "objectName": "Derringer_Pink",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/derringer",
+    "usableOnConsole": true,
     "searchTags": "",
     "image": "images/weapons/pistols/derringer/derringer.p3d.jpg"
   },

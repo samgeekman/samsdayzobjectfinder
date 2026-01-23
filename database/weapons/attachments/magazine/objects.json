@@ -1768,5 +1768,15 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/weapons/attachments/magazine/snaploader_empty.p3d.jpg"
+  },
+  {
+    "objectName": "Mag_CZ550_10Rnd",
+    "inGameName": "10rd CR-550 Mag",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "savanna, cr-550, rifles, .308",
+    "image": "images/weapons/attachments/magazine/mag_cz550_10rnd.jpg"
   }
 ]

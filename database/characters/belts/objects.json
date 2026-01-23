@@ -1,6 +1,6 @@
 [
   {
-    "objectName": "CivilianBelt", 
+    "objectName": "CivilianBelt",
     "inGameName": "Belt",
     "category": "characters",
     "modelType": "Config",
@@ -10,7 +10,7 @@
     "image": "images/characters/belts/civilianbelt/civilianbelt.jpg"
   },
   {
-    "objectName": "MilitaryBelt", 
+    "objectName": "MilitaryBelt",
     "inGameName": "Tactical Belt",
     "category": "characters",
     "modelType": "Config",
@@ -20,7 +20,7 @@
     "image": "images/characters/belts/militarybelt/militarybelt.jpg"
   },
   {
-    "objectName": "RopeBelt", 
+    "objectName": "RopeBelt",
     "inGameName": "Rope Belt",
     "category": "characters",
     "modelType": "Config",
@@ -30,7 +30,7 @@
     "image": "images/characters/belts/ropebelt/ropebelt.jpg"
   },
   {
-    "objectName": "LeatherKnifeSheath", 
+    "objectName": "LeatherKnifeSheath",
     "inGameName": "Leather Sheath",
     "category": "characters",
     "modelType": "Config",
@@ -40,7 +40,7 @@
     "image": "images/characters/belts/leatherknifesheath/leatherknifesheath.jpg"
   },
   {
-    "objectName": "NylonKnifeSheath", 
+    "objectName": "NylonKnifeSheath",
     "inGameName": "Sheath",
     "category": "characters",
     "modelType": "Config",
@@ -50,7 +50,7 @@
     "image": "images/characters/belts/nylonknifesheath/nylonknifesheath.jpg"
   },
   {
-    "objectName": "HipPack_Black", 
+    "objectName": "HipPack_Black",
     "inGameName": "Hip Pack",
     "category": "characters",
     "modelType": "Config",
@@ -60,7 +60,7 @@
     "image": "images/characters/belts/hippack_black/hippack_black.jpg"
   },
   {
-    "objectName": "HipPack_Green", 
+    "objectName": "HipPack_Green",
     "inGameName": "Hip Pack",
     "category": "characters",
     "modelType": "Config",
@@ -70,7 +70,7 @@
     "image": "images/characters/belts/hippack_green/hippack_green.jpg"
   },
   {
-    "objectName": "HipPack_Medical", 
+    "objectName": "HipPack_Medical",
     "inGameName": "Hip Pack",
     "category": "characters",
     "modelType": "Config",
@@ -218,5 +218,15 @@
     "usableOnConsole": false,
     "searchTags": "belt, rope, improvised, survival, waist",
     "image": "images/characters/belts/rope_belt_g.p3d.jpg"
+  },
+  {
+    "objectName": "LeatherBelt_Natural",
+    "inGameName": "Leather Belt",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/belts",
+    "usableOnConsole": true,
+    "searchTags": "belt, leather, civilian, waist, crafting, tanning",
+    "image": "images/characters/belts/leatherbelt_natrual/leatherbelt_natrual.jpg"
   }
 ]

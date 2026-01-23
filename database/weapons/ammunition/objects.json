@@ -1028,5 +1028,15 @@
     "usableOnConsole": false,
     "searchTags": "",
     "image": "images/weapons/ammunition/vog25.p3d.jpg"
+  },
+  {
+    "objectName": "Ammo_40mm_Chemgas",
+    "inGameName": "40mm PO-X Grenade",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/ammunition",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/weapons/ammunition/ammo_40mm_chemgas.jpg"
   }
 ]

@@ -38,5 +38,45 @@
     "usableOnConsole": false,
     "searchTags": "AK, machine_gun, automatic, 5.45x39",
     "image": "images/weapons/firearms/ak74.jpg"
+  },
+  {
+    "objectName": "AK101_Black",
+    "inGameName": "KA-101",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/ak101",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/ak101.jpg"
+  },
+  {
+    "objectName": "AK101_Green",
+    "inGameName": "KA-101",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/ak101",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.56x45",
+    "image": "images/weapons/firearms/ak101.jpg"
+  },
+  {
+    "objectName": "AK74_Black",
+    "inGameName": "KA-74",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/ak101",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
+    "image": "images/weapons/firearms/ak74.jpg"
+  },
+  {
+    "objectName": "AK74_Green",
+    "inGameName": "KA-74",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/ak101",
+    "usableOnConsole": true,
+    "searchTags": "AK, machine_gun, automatic, 5.45x39",
+    "image": "images/weapons/firearms/ak74.jpg"
   }
 ]

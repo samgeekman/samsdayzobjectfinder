@@ -18,5 +18,25 @@
     "usableOnConsole": false,
     "searchTags": "rifles, 5.56x45",
     "image": "images/weapons/firearms/dzweaponsfirearmsscoutscout.p3d.jpg"
+  },
+  {
+    "objectName": "Scout_Chernarus",
+    "inGameName": "Pioneer",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/scout",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 5.56x45",
+    "image": "images/weapons/firearms/scout.jpg"
+  },
+  {
+    "objectName": "Scout_Livonia",
+    "inGameName": "Pioneer",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/scout",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 5.56x45",
+    "image": "images/weapons/firearms/scout.jpg"
   }
 ]

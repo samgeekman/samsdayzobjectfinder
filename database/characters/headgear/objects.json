@@ -19,7 +19,7 @@
     "searchTags": "armored, black, headgear, helmet, military, protective",
     "image": "images/characters/headgear/bandana_blue/bandana_blue.jpg"
   },
-    {
+  {
     "objectName": "Bandana_Blackpattern",
     "inGameName": "Bandana",
     "category": "characters",
@@ -29,7 +29,7 @@
     "searchTags": "armored, black, headgear, helmet, military, protective",
     "image": "images/characters/headgear/bandana_blackpattern/bandana_blackpattern.jpg"
   },
-    {
+  {
     "objectName": "Bandana_camopattern",
     "inGameName": "Bandana",
     "category": "characters",
@@ -39,7 +39,7 @@
     "searchTags": "armored, black, headgear, helmet, military, protective",
     "image": "images/characters/headgear/bandana_camopattern/bandana_camopattern.jpg"
   },
-    {
+  {
     "objectName": "Bandana_Greenpattern",
     "inGameName": "Bandana",
     "category": "characters",
@@ -49,7 +49,7 @@
     "searchTags": "armored, black, headgear, helmet, military, protective",
     "image": "images/characters/headgear/bandana_greenpattern/bandana_greenpattern.jpg"
   },
-    {
+  {
     "objectName": "Bandana_Pink",
     "inGameName": "Bandana",
     "category": "characters",
@@ -59,7 +59,7 @@
     "searchTags": "armored, black, headgear, helmet, military, protective",
     "image": "images/characters/headgear/bandana_pink/bandana_pink.jpg"
   },
-    {
+  {
     "objectName": "Bandana_PolkaPattern",
     "inGameName": "Bandana",
     "category": "characters",
@@ -69,7 +69,7 @@
     "searchTags": "armored, black, headgear, helmet, military, protective",
     "image": "images/characters/headgear/bandana_polkapattern/bandana_polkapattern.jpg"
   },
-    {
+  {
     "objectName": "Bandana_RedPattern",
     "inGameName": "Bandana",
     "category": "characters",
@@ -79,7 +79,7 @@
     "searchTags": "armored, black, headgear, helmet, military, protective",
     "image": "images/characters/headgear/bandana_redpattern/bandana_redpattern.jpg"
   },
-    {
+  {
     "objectName": "Bandana_Yellow",
     "inGameName": "Bandana",
     "category": "characters",
@@ -1499,7 +1499,7 @@
     "searchTags": "festive, headgear",
     "image": "images/characters/headgear/wintercoif_green/wintercoif_green.jpg"
   },
-   {
+  {
     "objectName": "WinterCoif_Skull",
     "inGameName": "Winter Coif",
     "category": "characters",
@@ -1689,7 +1689,7 @@
     "searchTags": "woolen, scarf, facewrap headgear, insulated, ushanka, white, winter",
     "image": "images/characters/headgear/shemag_red/shemag_red.jpg"
   },
-   {
+  {
     "objectName": "Shemag_White",
     "inGameName": "Shemagh",
     "category": "characters",
@@ -2468,5 +2468,255 @@
     "usableOnConsole": false,
     "searchTags": "cap, civilian, headgear, p3d",
     "image": "images/characters/headgear/zmijovkacap_black/zmijovkacap_black.jpg"
+  },
+  {
+    "objectName": "Bandana_Camopattern",
+    "inGameName": "Bandana",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "armored, black, headgear, helmet, military, protective",
+    "image": "images/characters/headgear/bandana_blue/bandana_blue.jpg"
+  },
+  {
+    "objectName": "Bandana_Polkapattern",
+    "inGameName": "Bandana",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "armored, black, headgear, helmet, military, protective",
+    "image": "images/characters/headgear/bandana_polkapattern/bandana_polkapattern.jpg"
+  },
+  {
+    "objectName": "Bandana_Redpattern",
+    "inGameName": "Bandana",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "armored, black, headgear, helmet, military, protective",
+    "image": "images/characters/headgear/bandana_redpattern/bandana_redpattern.jpg"
+  },
+  {
+    "objectName": "DarkMotoHelmet_Black",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear, helmet, protective, white",
+    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+  },
+  {
+    "objectName": "DarkMotoHelmet_Blue",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear, helmet, protective, white",
+    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+  },
+  {
+    "objectName": "DarkMotoHelmet_Green",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear, helmet, protective, white",
+    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+  },
+  {
+    "objectName": "DarkMotoHelmet_Grey",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear, helmet, protective, white",
+    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+  },
+  {
+    "objectName": "DarkMotoHelmet_Lime",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear, helmet, protective, white",
+    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+  },
+  {
+    "objectName": "DarkMotoHelmet_Red",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear, helmet, protective, white",
+    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+  },
+  {
+    "objectName": "MotoHelmet_White",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, headgear, helmet, protective",
+    "image": "images/characters/headgear/motohelmet_black/motohelmet_black.jpg"
+  },
+  {
+    "objectName": "MotoHelmet_Yellow",
+    "inGameName": "Motorbike Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, headgear, helmet, protective",
+    "image": "images/characters/headgear/motohelmet_black/motohelmet_black.jpg"
+  },
+  {
+    "objectName": "NBCHoodGray",
+    "inGameName": "Norse Helm",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear",
+    "image": "images/characters/headgear/norsehelm/norsehelm.jpg"
+  },
+  {
+    "objectName": "NBCHoodWhite",
+    "inGameName": "Norse Helm",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear",
+    "image": "images/characters/headgear/norsehelm/norsehelm.jpg"
+  },
+  {
+    "objectName": "NBCHoodYellow",
+    "inGameName": "Norse Helm",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "headgear",
+    "image": "images/characters/headgear/norsehelm/norsehelm.jpg"
+  },
+  {
+    "objectName": "OKZKCap_Beige",
+    "inGameName": "Officer Cap",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "cap, civilian, headgear, uniform",
+    "image": "images/characters/headgear/officerhat/officerhat.jpg"
+  },
+  {
+    "objectName": "OKZKCap_Green",
+    "inGameName": "Officer Cap",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "cap, civilian, headgear, uniform",
+    "image": "images/characters/headgear/officerhat/officerhat.jpg"
+  },
+  {
+    "objectName": "PetushokHat_Black",
+    "inGameName": "Petushok",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, headgear, insulated, knit, winter",
+    "image": "images/characters/headgear/petushokhat_black/petushokhat_black.jpg"
+  },
+  {
+    "objectName": "PetushokHat_Green",
+    "inGameName": "Petushok",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, headgear, insulated, knit, winter",
+    "image": "images/characters/headgear/petushokhat_black/petushokhat_black.jpg"
+  },
+  {
+    "objectName": "PetushokHat_Yellow",
+    "inGameName": "Petushok",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, headgear, insulated, knit, winter",
+    "image": "images/characters/headgear/petushokhat_black/petushokhat_black.jpg"
+  },
+  {
+    "objectName": "WitchHoodCoif_Black",
+    "inGameName": "Witch Hood",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, festive, headgear, hood",
+    "image": "images/characters/headgear/witchhood_black/witchhood_black.jpg"
+  },
+  {
+    "objectName": "WitchHoodCoif_Brown",
+    "inGameName": "Witch Hood",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, festive, headgear, hood",
+    "image": "images/characters/headgear/witchhood_black/witchhood_black.jpg"
+  },
+  {
+    "objectName": "WitchHoodCoif_Red",
+    "inGameName": "Witch Hood",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, festive, headgear, hood",
+    "image": "images/characters/headgear/witchhood_black/witchhood_black.jpg"
+  },
+  {
+    "objectName": "WitchHood_Chainmail_Black",
+    "inGameName": "Witch Hood",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, festive, headgear, hood",
+    "image": "images/characters/headgear/witchhood_black/witchhood_black.jpg"
+  },
+  {
+    "objectName": "WitchHood_Chainmail_Brown",
+    "inGameName": "Witch Hood",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, festive, headgear, hood",
+    "image": "images/characters/headgear/witchhood_black/witchhood_black.jpg"
+  },
+  {
+    "objectName": "WitchHood_Chainmail_Red",
+    "inGameName": "Witch Hood",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "black, festive, headgear, hood",
+    "image": "images/characters/headgear/witchhood_black/witchhood_black.jpg"
   }
 ]
