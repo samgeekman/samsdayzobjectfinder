@@ -23,6 +23,9 @@
     border: 1px solid var(--border);
     box-shadow: var(--shadow-soft);
   }
+  footer[role="contentinfo"] {
+    padding: 0.75rem;
+  }
 
   
   #dayzObjects_wrapper {
@@ -84,6 +87,11 @@
   .dataTables_length select,
   .dataTables_filter input {
     border-radius: 6px;
+  }
+  .dataTables_length select {
+    background-color: var(--input-bg);
+    color: var(--text);
+    border: 1px solid var(--input-border);
   }
   .dataTables_info {
     border: none !important;
@@ -484,6 +492,60 @@
   .pinned-item:hover {
     background: rgba(148, 163, 184, 0.12);
   }
+  .pinned-item.expanded {
+    grid-template-columns: 32px 1fr auto;
+  }
+  .pinned-path-panel {
+    grid-column: 1 / -1;
+    display: none;
+    margin-top: 4px;
+    padding: 6px;
+    border-radius: 6px;
+    background: var(--card);
+    border: 1px solid var(--border);
+  }
+  .pinned-item.expanded .pinned-path-panel {
+    display: block;
+  }
+  .pinned-path-row {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .pinned-path-row--between {
+    justify-content: space-between;
+  }
+  .pinned-path-row:last-child {
+    margin-bottom: 0;
+  }
+  .pinned-path-label {
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+  .pinned-path-cta {
+    font-weight: 700;
+  }
+  .pinned-path-btn {
+    border: 1px solid var(--border);
+    background: var(--bg-soft);
+    color: var(--text);
+    border-radius: 4px;
+    padding: 2px 6px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .pinned-path-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  }
+  .pinned-path-btn.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
   .pinned-actions {
     display: inline-flex;
     gap: 4px;
@@ -600,6 +662,9 @@
     justify-items: center;
   }
   .object-focus.collapsed .pinned-actions {
+    display: none;
+  }
+  .object-focus.collapsed .pinned-path-panel {
     display: none;
   }
   .object-focus.collapsed .pinned-thumb {
@@ -844,6 +909,16 @@
 
     $tableEl.addClass('dtr-column');
 
+    var logoLink = document.querySelector('nav a');
+    if (logoLink) {
+      logoLink.addEventListener('click', function() {
+        if (table) {
+          table.search('').columns().search('').draw();
+        }
+        hideFocusDetails();
+      });
+    }
+
     var objectFocusEl = document.getElementById('objectFocus');
     var objectFocusNameEl = document.getElementById('objectFocusName');
     var objectFocusPathEl = document.getElementById('objectFocusPath');
@@ -1077,7 +1152,11 @@
         objName: pathValue,
         p3dPath: pathValue,
         items: items,
-        count: items.length
+        count: items.length,
+        layout: 'line',
+        spacing: 5,
+        mode: 'P3D',
+        expanded: false
       });
       updatePinnedUI();
     };
@@ -1125,6 +1204,14 @@
         console.warn('Unable to load pinned objects:', err);
         return [];
       }
+    };
+
+    var getSpacingValue = function(label) {
+      if (label === 'small') return 1;
+      if (label === 'medium') return 5;
+      if (label === 'large') return 10;
+      if (label === 'huge') return 25;
+      return 5;
     };
 
     var updatePinnedUI = function() {
@@ -1221,7 +1308,11 @@
             updateCollapseButtonLabel();
             updateEmptyState();
           }
-          if (item.type === 'path') return;
+          if (item.type === 'path') {
+            item.expanded = !item.expanded;
+            updatePinnedUI();
+            return;
+          }
           if (objectFocusEl && objectFocusEl.classList.contains('visible') && currentObjectName === item.objName) {
             hideFocusDetails();
             return;
@@ -1243,6 +1334,106 @@
         actions.appendChild(removeBtn);
         wrapper.appendChild(name);
         wrapper.appendChild(actions);
+
+        if (item.type === 'path') {
+          wrapper.classList.toggle('expanded', !!item.expanded);
+
+          var panel = document.createElement('div');
+          panel.className = 'pinned-path-panel';
+
+          var rowActions = document.createElement('div');
+          rowActions.className = 'pinned-path-row pinned-path-row--between';
+          var copyBtn = document.createElement('button');
+          copyBtn.className = 'pinned-path-btn pinned-path-cta';
+          copyBtn.textContent = '🏗️ Copy to Editor';
+          copyBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            copyPinnedPath(item);
+            var originalText = copyBtn.textContent;
+            copyBtn.textContent = '✔';
+            setTimeout(function() { copyBtn.textContent = originalText; }, 900);
+          });
+          var downloadBtn = document.createElement('button');
+          downloadBtn.className = 'pinned-path-btn pinned-path-cta';
+          downloadBtn.textContent = '↓ Download all';
+          downloadBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            downloadPinnedPath(item);
+            var originalText = downloadBtn.textContent;
+            downloadBtn.textContent = '✔';
+            setTimeout(function() { downloadBtn.textContent = originalText; }, 900);
+          });
+          rowActions.appendChild(copyBtn);
+          rowActions.appendChild(downloadBtn);
+
+          var rowLayout = document.createElement('div');
+          rowLayout.className = 'pinned-path-row';
+          var layoutLabel = document.createElement('span');
+          layoutLabel.className = 'pinned-path-label';
+          layoutLabel.textContent = 'Layout:';
+          rowLayout.appendChild(layoutLabel);
+          ['grid', 'line', 'stacked'].forEach(function(mode) {
+            var btn = document.createElement('button');
+            btn.className = 'pinned-path-btn' + (item.layout === mode ? ' active' : '');
+            btn.textContent = mode === 'grid' ? 'As grid' : mode === 'line' ? 'In line' : 'Stacked';
+            btn.addEventListener('click', function(e) {
+              e.stopPropagation();
+              item.layout = mode;
+              item.expanded = true;
+              updatePinnedUI();
+            });
+            rowLayout.appendChild(btn);
+          });
+
+          var rowSpacing = document.createElement('div');
+          rowSpacing.className = 'pinned-path-row';
+          var spacingLabel = document.createElement('span');
+          spacingLabel.className = 'pinned-path-label';
+          spacingLabel.textContent = 'Spacing:';
+          rowSpacing.appendChild(spacingLabel);
+          [
+            { label: 'small', text: 'Small (1m)' },
+            { label: 'medium', text: 'Medium (5m)' },
+            { label: 'large', text: 'Large (10m)' },
+            { label: 'huge', text: 'Huge (25m)' }
+          ].forEach(function(opt) {
+            var btn = document.createElement('button');
+            btn.className = 'pinned-path-btn' + (item.spacing === getSpacingValue(opt.label) ? ' active' : '');
+            btn.textContent = opt.text;
+            btn.addEventListener('click', function(e) {
+              e.stopPropagation();
+              item.spacing = getSpacingValue(opt.label);
+              item.expanded = true;
+              updatePinnedUI();
+            });
+            rowSpacing.appendChild(btn);
+          });
+
+          var rowMode = document.createElement('div');
+          rowMode.className = 'pinned-path-row';
+          var modeLabel = document.createElement('span');
+          modeLabel.className = 'pinned-path-label';
+          modeLabel.textContent = 'Type:';
+          rowMode.appendChild(modeLabel);
+          ['Config', 'P3D', 'Both'].forEach(function(mode) {
+            var btn = document.createElement('button');
+            btn.className = 'pinned-path-btn' + (item.mode === mode ? ' active' : '');
+            btn.textContent = mode;
+            btn.addEventListener('click', function(e) {
+              e.stopPropagation();
+              item.mode = mode;
+              item.expanded = true;
+              updatePinnedUI();
+            });
+            rowMode.appendChild(btn);
+          });
+
+          panel.appendChild(rowActions);
+          panel.appendChild(rowLayout);
+          panel.appendChild(rowSpacing);
+          panel.appendChild(rowMode);
+          wrapper.appendChild(panel);
+        }
         pinnedListEl.appendChild(wrapper);
       });
 
@@ -1525,6 +1716,56 @@
         .replace(/[^a-zA-Z0-9._-]/g, '_')
         .slice(0, 80);
     };
+    var buildEditorJsonArrayWithMode = function(item, mode) {
+      if (!item) return [];
+      var originalModelType = item.modelType;
+      if (mode === 'Config') {
+        item.modelType = 'Config';
+        var configItems = buildEditorJsonArray(item);
+        item.modelType = originalModelType;
+        return configItems;
+      }
+      if (mode === 'P3D') {
+        item.modelType = 'P3D';
+        var p3dItems = buildEditorJsonArray(item);
+        item.modelType = originalModelType;
+        return p3dItems;
+      }
+      if (mode === 'Both') {
+        item.modelType = 'Config';
+        var configItems = buildEditorJsonArray(item);
+        item.modelType = 'P3D';
+        var p3dItems = buildEditorJsonArray(item);
+        item.modelType = originalModelType;
+        return configItems.concat(p3dItems);
+      }
+      return buildEditorJsonArray(item);
+    };
+    var applyLayoutOffsets = function(objects, index, count, layout, spacing) {
+      if (!objects || !objects.length) return;
+      var offsetX = 0;
+      var offsetZ = 0;
+      var offsetY = 0;
+      if (layout === 'line') {
+        offsetX = index * spacing;
+      } else if (layout === 'grid') {
+        var cols = Math.max(1, Math.ceil(Math.sqrt(count)));
+        var col = index % cols;
+        var row = Math.floor(index / cols);
+        offsetX = col * spacing;
+        offsetZ = row * spacing;
+      } else if (layout === 'stacked') {
+        offsetY = index * spacing;
+      }
+      objects.forEach(function(obj) {
+        if (!obj.Position || obj.Position.length < 3) {
+          obj.Position = [0, 0, 0];
+        }
+        obj.Position[0] += offsetX;
+        obj.Position[1] += offsetY;
+        obj.Position[2] += offsetZ;
+      });
+    };
 
     if (pinnedDownloadAllEl) {
       pinnedDownloadAllEl.addEventListener('click', function() {
@@ -1587,6 +1828,78 @@
       });
     }
 
+    var copyPinnedPath = function(pathItem) {
+      if (!pathItem || !Array.isArray(pathItem.items) || !pathItem.items.length) return;
+      var entries = pathItem.items;
+      var combined = [];
+      var spacing = pathItem.spacing || 5;
+      var layout = pathItem.layout || 'line';
+      var mode = pathItem.mode || 'P3D';
+      entries.forEach(function(item, index) {
+        var objects = buildEditorJsonArrayWithMode(item, mode);
+        applyLayoutOffsets(objects, index, entries.length, layout, spacing);
+        combined = combined.concat(objects);
+      });
+      if (!combined.length) return;
+      navigator.clipboard.writeText(JSON.stringify(combined, null, 4));
+    };
+
+    var downloadPinnedPath = function(pathItem) {
+      if (!pathItem || !Array.isArray(pathItem.items) || !pathItem.items.length) return;
+      if (typeof JSZip === 'undefined' || typeof saveAs === 'undefined') return;
+      var entries = pathItem.items;
+      var zip = new JSZip();
+      var csvRows = [];
+      csvRows.push([
+        'className',
+        'inGameName',
+        'category',
+        'path',
+        'console',
+        'type',
+        'tags',
+        'image',
+        'imageFound'
+      ].join(','));
+
+      var imagePromises = entries.map(function(item) {
+        var imageFound = item.imgPath ? 'Yes' : 'No';
+        csvRows.push([
+          csvEscape(item.objName),
+          csvEscape(item.inGame),
+          csvEscape(item.category),
+          csvEscape(item.p3dPath),
+          csvEscape(item.consoleFlag === '✅' ? 'Yes' : item.consoleFlag === '❌' ? 'No' : item.consoleFlag),
+          csvEscape(item.modelType),
+          csvEscape(item.tags),
+          csvEscape(item.imgPath),
+          csvEscape(imageFound)
+        ].join(','));
+
+        if (!item.imgPath) return Promise.resolve();
+        return fetch('/' + item.imgPath)
+          .then(function(response) {
+            if (!response.ok) throw new Error('Image fetch failed');
+            return response.blob();
+          })
+          .then(function(blob) {
+            var name = item.objName ? (item.objName + '.png') : item.imgPath.split('/').pop();
+            var folder = sanitizePathFolder(pathItem.p3dPath || pathItem.objName);
+            zip.file('images/' + folder + '/' + name, blob);
+          })
+          .catch(function() {});
+      });
+
+      zip.file('objects.csv', csvRows.join('\n'));
+
+      Promise.all(imagePromises).then(function() {
+        return zip.generateAsync({ type: 'blob' });
+      }).then(function(content) {
+        var folder = sanitizePathFolder(pathItem.p3dPath || 'path');
+        saveAs(content, folder + '_objects.zip');
+      }).catch(function() {});
+    };
+
     var searchParams = new URLSearchParams(window.location.search);
     var objectParam = searchParams.get('object');
     if (objectParam) {
@@ -1612,7 +1925,12 @@
       table.column(5).search(this.value).draw();
     });
 
-    $('#resetFilters').on('click', function() {
+    var presetsCategoryValue = "Editor Preset";
+    var presetsActive = false;
+    var previousCategoryValue = "";
+
+    var resetFilters = function() {
+      if (!table) return;
       table.search('').columns().search('').draw();
       $('#filterCategory').val('').trigger('change');
       $('#filterConsole').val('').trigger('change');
@@ -1630,15 +1948,10 @@
       var nextUrl = new URL(window.location);
       nextUrl.searchParams.delete('object');
       history.replaceState({}, '', nextUrl);
-    });
+    };
 
-    var presetsCategoryValue = "Editor Preset";
-    var presetsActive = false;
-    var previousCategoryValue = "";
-
-    $('#togglePresets').on('click', function() {
-      var $btn = $(this);
-
+    var togglePresets = function($btn) {
+      if (!table) return;
       if (!presetsActive) {
         previousCategoryValue = $('#filterCategory').val();
         $('#filterCategory').val(presetsCategoryValue).trigger('change');
@@ -1649,6 +1962,14 @@
         presetsActive = false;
         $btn.removeClass('active').text('Show presets');
       }
+    };
+
+    $(document).on('click', '#resetFilters', function() {
+      resetFilters();
+    });
+
+    $(document).on('click', '#togglePresets', function() {
+      togglePresets($(this));
     });
 
     $('#dayzObjects tbody')
