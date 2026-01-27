@@ -602,6 +602,13 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .pinned-path-arrow {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 6px;
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
 
   .pinned-remove {
     border: 1px solid var(--border);
@@ -614,6 +621,22 @@
   }
 
   .pinned-remove:hover {
+    background: var(--bg-soft);
+  }
+  .pinned-remove-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+  .pinned-remove-link:hover {
     background: var(--bg-soft);
   }
 
@@ -1261,7 +1284,12 @@
         var name = document.createElement('div');
         name.className = 'pinned-name';
         if (item.type === 'path') {
-          name.textContent = (item.p3dPath || item.objName || 'Path') + ' (' + (item.count || 0) + ' objects)';
+          var pathLabel = (item.p3dPath || item.objName || 'Path') + ' (' + (item.count || 0) + ' objects)';
+          var arrow = document.createElement('span');
+          arrow.className = 'pinned-path-arrow';
+          arrow.textContent = item.expanded ? '▾' : '▸';
+          name.appendChild(arrow);
+          name.appendChild(document.createTextNode(pathLabel));
         } else {
           name.textContent = item.objName || 'Unknown';
         }
@@ -1283,6 +1311,25 @@
           });
           updatePinnedUI();
         });
+
+        if (item.type === 'path') {
+          var linkBadge = document.createElement('button');
+          linkBadge.className = 'pinned-remove-link';
+          linkBadge.type = 'button';
+          linkBadge.title = 'Copy link to this path';
+          linkBadge.textContent = '🔗';
+          linkBadge.addEventListener('click', function(e) {
+            e.stopPropagation();
+            if (!Array.isArray(item.items) || !item.items.length) return;
+            var names = item.items.map(function(entry) { return entry.objName; }).filter(Boolean);
+            if (!names.length) return;
+            navigator.clipboard.writeText(buildPinnedUrl(names));
+            var original = linkBadge.textContent;
+            linkBadge.textContent = '✔';
+            setTimeout(function() { linkBadge.textContent = original; }, 900);
+          });
+          actions.appendChild(linkBadge);
+        }
 
         if (item.type !== 'path') {
           var editorBtn = document.createElement('button');
