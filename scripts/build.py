@@ -9,8 +9,10 @@ from typing import List
 BASE_DIR = Path(__file__).resolve().parent.parent
 DB_DIR = BASE_DIR / "database"
 DATA_DIR = BASE_DIR / "data"
+STATIC_DIR = BASE_DIR / "static"
 OUTPUT_JSON = DATA_DIR / "dayz_objects.json"
 BACKUP_JSON = DATA_DIR / "dayz_objects_last_version.json"
+DB_ZIP = STATIC_DIR / "dayz_objects_latest.zip"
 
 
 def load_objects(path: Path) -> List[dict]:
@@ -36,6 +38,14 @@ def normalize_object(obj: dict) -> dict:
         parts = PurePosixPath(image).parts
         obj["image"] = "/".join(part.lower() for part in parts)
     return obj
+
+
+def export_database_zip() -> None:
+    """Export the current database folder as a zip in the static root."""
+    STATIC_DIR.mkdir(parents=True, exist_ok=True)
+    if DB_ZIP.exists():
+        DB_ZIP.unlink()
+    shutil.make_archive(DB_ZIP.with_suffix("").as_posix(), "zip", root_dir=DB_DIR)
 
 
 def main() -> None:
@@ -79,6 +89,9 @@ def main() -> None:
     print(f"Built {OUTPUT_JSON} with {len(all_objects)} objects from {len(object_files)} files.")
     if OUTPUT_JSON.exists():
         print(f"Previous export saved to {BACKUP_JSON}.")
+
+    export_database_zip()
+    print(f"Database zip exported to {DB_ZIP}.")
 
 
 if __name__ == "__main__":

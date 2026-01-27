@@ -6,39 +6,27 @@ draft: false
 
 ## How to use
 
-> ⚠️ This tool is a work in progress. Every object has been added, images and tags currently being added. See progress in the [Discord](https://discord.com/channels/1414751279548203008/1414751374394261534).
+Every DayZ object searchable by class name, in-game name and tags. Useful for DayZ Editor, Terrain Builder, and those who want to explore DayZ’s 12,000+ objects for thier modding projects.
 
 - Press 🏗️ to copy the object to DayZ Editor - just switch to the Editor and press Ctrl + V to paste on your cursor
 - Press 📋 to copy the object name to your clipboard
+- Press 📌 to save pin an object to the sidebar. From there you can copy a link to it or download its data and images. You can pin entire paths and copy them as a grid into Editor.
 
-Almost every object in the game has been tagged by hand, meaning you  search by common name, size, colour, type and much, much more. 
+Developed by samgeekman.
 
-> `green backpack`
+## Using the data
 
+All the data is available for anyone to use for their own project.
 
-> `large snow rock`
+- By pinning 📌 an object, you can export its data and images as a zip file. You can also hover over entire paths (e.g.dz/industrial) to pin and export the entire path’s data.
+- The repo is available on [github](https://github.com/samgeekman/samsdayzobjectfinder)
+- The images database (not yet complete) is available [here](https://drive.google.com/drive/folders/1Hg82OAu-Br5VPSF4NxGvifG_IeF6Iw-u?usp=share_link).
+- The latest objects.json export structure is available here.
 
+If you need anything else, or notice an error, contact me on [Discord](https://discord.com/channels/1414751279548203008/1414754388064604220)
 
-> `small yellow birch`
-
-
-> `akm mag`
-
-You can also browse / filter by category, and filter for console compatible objects.
-
-## About
-
-**Sam's DayZ Object Finder** has been designed to be used with DayZ Editor,  Terrain Builder and other modding tools.
-
-**Once complete**, it will have everything object in the game search by hand-added tags - all with image previews.
-
-No more having to remember obscure object names, and the ability to browse by category, and search for items like 'large snow rocks'. 
-
-Developed by Samgeekman.
+## Thanks
 
 Much appreciation to [Bauvdel](https://bauv.dev/) for developing a massively timesaving screenshot tool to make my life easier. 
 
-**Errors and suggestions**
-
-There will be errors in spelling and taxonomy - all this was done by hand. Report errors in the [Discord](https://discord.com/channels/1414751279548203008/1414754388064604220).
-
+A big thanks to [Wobo](https://wobo.tools/) for providing additional object images.
