@@ -1,0 +1,350 @@
+Raw P3D image updates (database/**/objects.json)
+================================================
+
+Total changes: 92
+
+
+database/structures/specific/Castles/objects.json
+-------------------------------------------------
+castle_bergfrit2.p3d
+  before: images/structures/specific/castles/castle_bergfrit2.p3d.jpg
+  after : images/structures/specific/castles/land_castle_bergfrit2.jpg
+castle_gate.p3d
+  before: images/structures/specific/castles/castle_gate.p3d.jpg
+  after : images/structures/specific/castles/land_castle_gate.jpg
+castle_stairs_nolc.p3d
+  before: images/structures/specific/castles/castle_stairs_nolc.p3d.jpg
+  after : images/structures/specific/castles/land_castle_stairs_nolc.jpg
+
+database/structures/wrecks/Aircraft/objects.json
+------------------------------------------------
+wreck_mi8_crashed.p3d
+  before: images/structures/wrecks/aircraft/wreck_mi8_crashed.p3d.jpg
+  after : images/structures/wrecks/aircraft/wreck_mi8_crashed.jpg
+wreck_uh1y.p3d
+  before: images/structures/wrecks/aircraft/wreck_uh1y.p3d.jpg
+  after : images/structures/wrecks/aircraft/wreck_uh1y.jpg
+
+database/structures/wrecks/Ships/objects.json
+---------------------------------------------
+boat_small1.p3d
+  before: images/structures/wrecks/ships/boat_small1.p3d.jpg
+  after : images/structures/wrecks/ships/land_boat_small1.jpg
+boat_small2.p3d
+  before: images/structures/wrecks/ships/boat_small2.p3d.jpg
+  after : images/structures/wrecks/ships/land_boat_small2.jpg
+boat_small3.p3d
+  before: images/structures/wrecks/ships/boat_small3.p3d.jpg
+  after : images/structures/wrecks/ships/land_boat_small3.jpg
+ship_big_backa.p3d
+  before: images/structures/wrecks/ships/ship_big_backa.p3d.jpg
+  after : images/structures/wrecks/ships/land_ship_big_backa.jpg
+ship_big_backb.p3d
+  before: images/structures/wrecks/ships/ship_big_backb.p3d.jpg
+  after : images/structures/wrecks/ships/land_ship_big_backb.jpg
+ship_big_castle.p3d
+  before: images/structures/wrecks/ships/ship_big_castle.p3d.jpg
+  after : images/structures/wrecks/ships/land_ship_big_castle.jpg
+ship_big_fronta.p3d
+  before: images/structures/wrecks/ships/ship_big_fronta.p3d.jpg
+  after : images/structures/wrecks/ships/land_ship_big_fronta.jpg
+ship_big_frontb.p3d
+  before: images/structures/wrecks/ships/ship_big_frontb.p3d.jpg
+  after : images/structures/wrecks/ships/land_ship_big_frontb.jpg
+
+database/structures/wrecks/Trains/objects.json
+----------------------------------------------
+train_742_blue.p3d
+  before: images/structures/wrecks/trains/train_742_blue.p3d.jpg
+  after : images/structures/wrecks/trains/land_train_742_blue.jpg
+train_742_red.p3d
+  before: images/structures/wrecks/trains/train_742_red.p3d.jpg
+  after : images/structures/wrecks/trains/land_train_742_red.jpg
+
+database/structures/wrecks/Vehicles/objects.json
+------------------------------------------------
+wreck_caravan_mrust.p3d
+  before: images/structures/wrecks/vehicles/wreck_caravan_mrust.p3d.jpg
+  after : images/structures/wrecks/vehicles/land_wreck_caravan_mrust.jpg
+wreck_caravan_wbrown.p3d
+  before: images/structures/wrecks/vehicles/wreck_caravan_wbrown.p3d.jpg
+  after : images/structures/wrecks/vehicles/land_wreck_caravan_wbrown.jpg
+wreck_caravan_wgreen.p3d
+  before: images/structures/wrecks/vehicles/wreck_caravan_wgreen.p3d.jpg
+  after : images/structures/wrecks/vehicles/land_wreck_caravan_wgreen.jpg
+wreck_ikarus.p3d
+  before: images/structures/wrecks/vehicles/wreck_ikarus.p3d.jpg
+  after : images/structures/wrecks/vehicles/land_wreck_ikarus.jpg
+wreck_offroad02_aban1.p3d
+  before: images/structures/wrecks/vehicles/wreck_offroad02_aban1.p3d.jpg
+  after : images/structures/wrecks/vehicles/land_wreck_offroad02_aban1.jpg
+wreck_offroad02_aban2.p3d
+  before: images/structures/wrecks/vehicles/wreck_offroad02_aban2.p3d.jpg
+  after : images/structures/wrecks/vehicles/land_wreck_offroad02_aban2.jpg
+wreck_sed01_aban1_police.p3d
+  before: images/structures/wrecks/vehicles/wreck_sed01_aban1_police.p3d.jpg
+  after : images/structures/wrecks/vehicles/land_wreck_sed01_aban1_police.jpg
+wreck_sed01_aban2_police.p3d
+  before: images/structures/wrecks/vehicles/wreck_sed01_aban2_police.p3d.jpg
+  after : images/structures/wrecks/vehicles/land_wreck_sed01_aban2_police.jpg
+wreck_trailer_closed.p3d
+  before: images/structures/wrecks/vehicles/wreck_trailer_closed.p3d.jpg
+  after : images/structures/wrecks/vehicles/land_wreck_trailer_closed.jpg
+wreck_truck01_aban1_firetruck.p3d
+  before: images/structures/wrecks/vehicles/wreck_truck01_aban1_firetruck.p3d.jpg
+  after : images/structures/wrecks/vehicles/land_wreck_truck01_aban1_firetruck.jpg
+wreck_truck01_aban2_firetruck.p3d
+  before: images/structures/wrecks/vehicles/wreck_truck01_aban2_firetruck.p3d.jpg
+  after : images/structures/wrecks/vehicles/land_wreck_truck01_aban2_firetruck.jpg
+
+database/structures_bliss/ruins/objects.json
+--------------------------------------------
+ruin_church2.p3d
+  before: images/structures_bliss/ruins/ruin_church2.jpg
+  after : images/structures_bliss/ruins/land_ruin_church2.jpg
+ruin_housebig1.p3d
+  before: images/structures_bliss/ruins/ruin_housebig1.jpg
+  after : images/structures_bliss/ruins/land_ruin_housebig1.jpg
+ruin_housebig1_half.p3d
+  before: images/structures_bliss/ruins/ruin_housebig1_half.jpg
+  after : images/structures_bliss/ruins/land_ruin_housebig1_half.jpg
+ruin_housebig2.p3d
+  before: images/structures_bliss/ruins/ruin_housebig2.jpg
+  after : images/structures_bliss/ruins/land_ruin_housebig2.jpg
+ruin_housebig2_half.p3d
+  before: images/structures_bliss/ruins/ruin_housebig2_half.jpg
+  after : images/structures_bliss/ruins/land_ruin_housebig2_half.jpg
+ruin_housebig3.p3d
+  before: images/structures_bliss/ruins/ruin_housebig3.jpg
+  after : images/structures_bliss/ruins/land_ruin_housebig3.jpg
+ruin_housebig3_half.p3d
+  before: images/structures_bliss/ruins/ruin_housebig3_half.jpg
+  after : images/structures_bliss/ruins/land_ruin_housebig3_half.jpg
+ruin_housesmall1.p3d
+  before: images/structures_bliss/ruins/ruin_housesmall1.jpg
+  after : images/structures_bliss/ruins/land_ruin_housesmall1.jpg
+ruin_housesmall2.p3d
+  before: images/structures_bliss/ruins/ruin_housesmall2.jpg
+  after : images/structures_bliss/ruins/land_ruin_housesmall2.jpg
+
+database/structures_sakhal/industrial/harbour/objects.json
+----------------------------------------------------------
+pier_crane2_top.p3d
+  before: images/structures_sakhal/industrial/harbour/pier_crane2_top.p3d.jpg
+  after : images/structures_sakhal/industrial/harbour/land_pier_crane2_top.jpg
+
+database/structures_sakhal/industrial/misc/objects.json
+-------------------------------------------------------
+misc_pallet_spawn.p3d
+  before: images/structures_sakhal/industrial/misc/misc_pallet_spawn.p3d.jpg
+  after : images/structures_sakhal/industrial/misc/land_misc_pallet_spawn.jpg
+misc_woodencrate_spawn.p3d
+  before: images/structures_sakhal/industrial/misc/misc_woodencrate_spawn.p3d.jpg
+  after : images/structures_sakhal/industrial/misc/land_misc_woodencrate_spawn.jpg
+
+database/structures_sakhal/industrial/powerplant/objects.json
+-------------------------------------------------------------
+geoplant_coolingstack.p3d
+  before: images/structures_sakhal/industrial/powerplant/geoplant_coolingstack.p3d.jpg
+  after : images/structures_sakhal/industrial/powerplant/land_geoplant_coolingstack.jpg
+geoplant_corridor_main.p3d
+  before: images/structures_sakhal/industrial/powerplant/geoplant_corridor_main.p3d.jpg
+  after : images/structures_sakhal/industrial/powerplant/land_geoplant_corridor_main.jpg
+geoplant_mainhall_middle.p3d
+  before: images/structures_sakhal/industrial/powerplant/geoplant_mainhall_middle.p3d.jpg
+  after : images/structures_sakhal/industrial/powerplant/land_geoplant_mainhall_middle.jpg
+geoplant_pipehall.p3d
+  before: images/structures_sakhal/industrial/powerplant/geoplant_pipehall.p3d.jpg
+  after : images/structures_sakhal/industrial/powerplant/land_geoplant_pipehall.jpg
+geoplant_powerhall.p3d
+  before: images/structures_sakhal/industrial/powerplant/geoplant_powerhall.p3d.jpg
+  after : images/structures_sakhal/industrial/powerplant/land_geoplant_powerhall.jpg
+geoplant_maintenancehall.p3d
+  before: images/structures_sakhal/industrial/powerplant/geoplant_maintenancehall.p3d.jpg
+  after : images/structures_sakhal/industrial/powerplant/land_geoplant_maintenancehall.jpg
+
+database/structures_sakhal/military/Bunkers/objects.json
+--------------------------------------------------------
+bunker3_1.p3d
+  before: images/structures_sakhal/military/bunkers/bunker3_1.p3d.jpg
+  after : images/structures_sakhal/military/bunkers/land_bunker3_1.jpg
+bunker3_2.p3d
+  before: images/structures_sakhal/military/bunkers/bunker3_2.p3d.jpg
+  after : images/structures_sakhal/military/bunkers/land_bunker3_2.jpg
+
+database/structures_sakhal/military/houses/objects.json
+-------------------------------------------------------
+mil_controltower_east.p3d
+  before: images/structures_sakhal/military/houses/mil_controltower_east.p3d.jpg
+  after : images/structures_sakhal/military/houses/land_mil_controltower_east.jpg
+
+database/structures_sakhal/military/radar/objects.json
+------------------------------------------------------
+mil_radome_big.p3d
+  before: images/structures_sakhal/military/radar/mil_radome_big.p3d.jpg
+  after : images/structures_sakhal/military/radar/land_mil_radome_big.jpg
+
+database/structures_sakhal/military/storage/objects.json
+--------------------------------------------------------
+warheadstorage_room1.p3d
+  before: images/structures_sakhal/military/storage/warheadstorage_room1.p3d.jpg
+  after : images/structures_sakhal/military/storage/land_warheadstorage_room1.jpg
+warheadstorage_room2.p3d
+  before: images/structures_sakhal/military/storage/warheadstorage_room2.p3d.jpg
+  after : images/structures_sakhal/military/storage/land_warheadstorage_room2.jpg
+warheadstorage_room3.p3d
+  before: images/structures_sakhal/military/storage/warheadstorage_room3.p3d.jpg
+  after : images/structures_sakhal/military/storage/land_warheadstorage_room3.jpg
+warheadstorage_room4.p3d
+  before: images/structures_sakhal/military/storage/warheadstorage_room4.p3d.jpg
+  after : images/structures_sakhal/military/storage/land_warheadstorage_room4.jpg
+
+database/structures_sakhal/military/tisy/objects.json
+-----------------------------------------------------
+tisy_bighangar_a.p3d
+  before: images/structures_sakhal/military/tisy/tisy_bighangar_a.p3d.jpg
+  after : images/structures_sakhal/military/tisy/land_tisy_bighangar_a.jpg
+tisy_bighangar_b.p3d
+  before: images/structures_sakhal/military/tisy/tisy_bighangar_b.p3d.jpg
+  after : images/structures_sakhal/military/tisy/land_tisy_bighangar_b.jpg
+tisy_garages2_sakhal.p3d
+  before: images/structures_sakhal/military/tisy/tisy_garages2_sakhal.p3d.jpg
+  after : images/structures_sakhal/military/tisy/land_tisy_garages2_sakhal.jpg
+tisy_garages3.p3d
+  before: images/structures_sakhal/military/tisy/tisy_garages3.p3d.jpg
+  after : images/structures_sakhal/military/tisy/land_tisy_garages3.jpg
+tisy_launchcontrol.p3d
+  before: images/structures_sakhal/military/tisy/tisy_launchcontrol.p3d.jpg
+  after : images/structures_sakhal/military/tisy/land_tisy_launchcontrol.jpg
+
+database/structures_sakhal/residential/Schools/objects.json
+-----------------------------------------------------------
+city_school_east.p3d
+  before: images/structures_sakhal/residential/schools/city_school_east.p3d.jpg
+  after : images/structures_sakhal/residential/schools/land_city_school_east.jpg
+
+database/structures_sakhal/residential/houses/objects.json
+----------------------------------------------------------
+house_1w01_red.p3d
+  before: images/structures_sakhal/residential/houses/house_1w01_red.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_1w01_red.jpg
+house_1w02_blue.p3d
+  before: images/structures_sakhal/residential/houses/house_1w02_blue.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_1w02_blue.jpg
+house_1w03_yellow.p3d
+  before: images/structures_sakhal/residential/houses/house_1w03_yellow.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_1w03_yellow.jpg
+house_1w04_yellow.p3d
+  before: images/structures_sakhal/residential/houses/house_1w04_yellow.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_1w04_yellow.jpg
+house_1w06_blue.p3d
+  before: images/structures_sakhal/residential/houses/house_1w06_blue.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_1w06_blue.jpg
+house_1w07_green.p3d
+  before: images/structures_sakhal/residential/houses/house_1w07_green.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_1w07_green.jpg
+house_1w08_blue.p3d
+  before: images/structures_sakhal/residential/houses/house_1w08_blue.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_1w08_blue.jpg
+house_1w11_blue.p3d
+  before: images/structures_sakhal/residential/houses/house_1w11_blue.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_1w11_blue.jpg
+house_1w13_dam_snow.p3d
+  before: images/structures_sakhal/residential/houses/house_1w13_dam_snow.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_1w13_dam_snow.jpg
+house_1w14_dam.p3d
+  before: images/structures_sakhal/residential/houses/house_1w14_dam.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_1w14_dam.jpg
+house_1w14_dam_snow.p3d
+  before: images/structures_sakhal/residential/houses/house_1w14_dam_snow.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_1w14_dam_snow.jpg
+house_1w15_dam.p3d
+  before: images/structures_sakhal/residential/houses/house_1w15_dam.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_1w15_dam.jpg
+house_1w15_dam_snow.p3d
+  before: images/structures_sakhal/residential/houses/house_1w15_dam_snow.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_1w15_dam_snow.jpg
+house_2w01_yellow.p3d
+  before: images/structures_sakhal/residential/houses/house_2w01_yellow.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_2w01_yellow.jpg
+house_2w04_blue.p3d
+  before: images/structures_sakhal/residential/houses/house_2w04_blue.p3d.jpg
+  after : images/structures_sakhal/residential/houses/land_house_2w04_blue.jpg
+
+database/structures_sakhal/residential/medical/objects.json
+-----------------------------------------------------------
+city_hospital_east.p3d
+  before: images/structures_sakhal/residential/medical/city_hospital_east.p3d.jpg
+  after : images/structures_sakhal/residential/medical/land_city_hospital_east.jpg
+village_healthcare_east.p3d
+  before: images/structures_sakhal/residential/medical/village_healthcare_east.p3d.jpg
+  after : images/structures_sakhal/residential/medical/land_village_healthcare_east.jpg
+
+database/structures_sakhal/residential/police/objects.json
+----------------------------------------------------------
+village_policestation_east.p3d
+  before: images/structures_sakhal/residential/police/village_policestation_east.p3d.jpg
+  after : images/structures_sakhal/residential/police/land_village_policestation_east.jpg
+
+database/structures_sakhal/residential/tenements/objects.json
+-------------------------------------------------------------
+tenement_medium.p3d
+  before: images/structures_sakhal/residential/tenements/tenement_medium.p3d.jpg
+  after : images/structures_sakhal/residential/tenements/land_tenement_medium.jpg
+tenement_small_brick.p3d
+  before: images/structures_sakhal/residential/tenements/tenement_small_brick.p3d.jpg
+  after : images/structures_sakhal/residential/tenements/land_tenement_small_brick.jpg
+tenement_small_brown.p3d
+  before: images/structures_sakhal/residential/tenements/tenement_small_brown.p3d.jpg
+  after : images/structures_sakhal/residential/tenements/land_tenement_small_brown.jpg
+tenement_small_yellow.p3d
+  before: images/structures_sakhal/residential/tenements/tenement_small_yellow.p3d.jpg
+  after : images/structures_sakhal/residential/tenements/land_tenement_small_yellow.jpg
+
+database/structures_sakhal/specific/airport/objects.json
+--------------------------------------------------------
+airport_small_hangar.p3d
+  before: images/structures_sakhal/specific/airport/airport_small_hangar.p3d.jpg
+  after : images/structures_sakhal/specific/airport/land_airport_small_hangar.jpg
+airport_small_hangar2.p3d
+  before: images/structures_sakhal/specific/airport/airport_small_hangar2.p3d.jpg
+  after : images/structures_sakhal/specific/airport/land_airport_small_hangar2.jpg
+airport_small_main.p3d
+  before: images/structures_sakhal/specific/airport/airport_small_main.p3d.jpg
+  after : images/structures_sakhal/specific/airport/land_airport_small_main.jpg
+
+database/structures_sakhal/specific/radio/objects.json
+------------------------------------------------------
+radio_building_east.p3d
+  before: images/structures_sakhal/specific/radio/radio_building_east.p3d.jpg
+  after : images/structures_sakhal/specific/radio/land_radio_building_east.jpg
+
+database/structures_sakhal/specific/volcano/objects.json
+--------------------------------------------------------
+mobilelaboratory.p3d
+  before: images/structures_sakhal/specific/volcano/mobilelaboratory.p3d.jpg
+  after : images/structures_sakhal/specific/volcano/land_mobilelaboratory.jpg
+
+database/structures_sakhal/wrecks/objects.json
+----------------------------------------------
+boat_small10_blue.p3d
+  before: images/structures_sakhal/wrecks/boat_small10_blue.p3d.jpg
+  after : images/structures_sakhal/wrecks/land_boat_small10_blue.jpg
+boat_small10_red.p3d
+  before: images/structures_sakhal/wrecks/boat_small10_red.p3d.jpg
+  after : images/structures_sakhal/wrecks/land_boat_small10_red.jpg
+boat_small7.p3d
+  before: images/structures_sakhal/wrecks/boat_small7.p3d.jpg
+  after : images/structures_sakhal/wrecks/land_boat_small7.jpg
+static_mi8_civilian.p3d
+  before: images/structures_sakhal/wrecks/static_mi8_civilian.p3d.jpg
+  after : images/structures_sakhal/wrecks/land_static_mi8_civilian.jpg
+wreck_mi8_civilian.p3d
+  before: images/structures_sakhal/wrecks/wreck_mi8_civilian.p3d.jpg
+  after : images/structures_sakhal/wrecks/land_wreck_mi8_civilian.jpg
+boat_small9.p3d
+  before: images/structures_sakhal/wrecks/boat_small9.p3d.jpg
+  after : images/structures_sakhal/wrecks/land_boat_small9.jpg
+ship_medium2.p3d
+  before: images/structures_sakhal/wrecks/ship_medium2.p3d.jpg
+  after : images/structures_sakhal/wrecks/land_ship_medium2.jpg
