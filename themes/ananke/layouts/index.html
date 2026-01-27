@@ -449,6 +449,12 @@
   #pinnedCopyNames.visible {
     display: inline-flex;
   }
+  #pinnedCopyLink {
+    display: none;
+  }
+  #pinnedCopyLink.visible {
+    display: inline-flex;
+  }
   #pinnedClearAll {
     display: none;
   }
@@ -817,6 +823,7 @@
             <span>Copy all:</span>
             <button id="pinnedCopyAll" class="pill-button" type="button" title="Copy all to Editor">🏗️</button>
             <button id="pinnedCopyNames" class="pill-button" type="button" title="Copy all names">📋</button>
+            <button id="pinnedCopyLink" class="pill-button" type="button" title="Copy link to pinned collection">🔗 Copy link to all</button>
           </div>
           <div class="pinned-copy__row">
             <button id="pinnedDownloadAll" class="pill-button" type="button" title="Download all">↓ Download all</button>
@@ -938,6 +945,7 @@
     var pinnedClearAllEl = document.getElementById('pinnedClearAll');
     var pinnedCopyAllEl = document.getElementById('pinnedCopyAll');
     var pinnedCopyNamesEl = document.getElementById('pinnedCopyNames');
+    var pinnedCopyLinkEl = document.getElementById('pinnedCopyLink');
     var pinnedDownloadAllEl = document.getElementById('pinnedDownloadAll');
     var objectFocusPinEl = document.getElementById('objectFocusPin');
     var objectFocusCollapseEl = document.getElementById('objectFocusCollapse');
@@ -976,6 +984,19 @@
       } else {
         nextUrl.searchParams.delete('object');
       }
+      return nextUrl.toString();
+    };
+    var buildPinnedUrl = function(names) {
+      var nextUrl = new URL(window.location);
+      if (Array.isArray(names) && names.length) {
+        var encoded = names.map(function(name) {
+          return encodeURIComponent(name);
+        }).join('|');
+        nextUrl.searchParams.set('pinned', encoded);
+      } else {
+        nextUrl.searchParams.delete('pinned');
+      }
+      nextUrl.searchParams.delete('object');
       return nextUrl.toString();
     };
 
@@ -1454,6 +1475,10 @@
         pinnedCopyNamesEl.classList.toggle('visible', hasPins);
       }
 
+      if (pinnedCopyLinkEl) {
+        pinnedCopyLinkEl.classList.toggle('visible', hasPins);
+      }
+
       if (pinnedDownloadAllEl) {
         pinnedDownloadAllEl.classList.toggle('visible', hasPins);
       }
@@ -1646,6 +1671,20 @@
         navigator.clipboard.writeText(names.join('\n'));
         pinnedCopyNamesEl.textContent = '✔';
         setTimeout(function() { pinnedCopyNamesEl.textContent = '📋'; }, 900);
+      });
+    }
+
+    if (pinnedCopyLinkEl) {
+      pinnedCopyLinkEl.addEventListener('click', function() {
+        var entries = getPinnedEntries();
+        if (!entries.length) return;
+        var names = entries.map(function(item) { return item.objName; }).filter(Boolean);
+        if (!names.length) return;
+        var link = buildPinnedUrl(names);
+        navigator.clipboard.writeText(link);
+        var original = pinnedCopyLinkEl.textContent;
+        pinnedCopyLinkEl.textContent = 'Copied';
+        setTimeout(function() { pinnedCopyLinkEl.textContent = original; }, 1200);
       });
     }
 
@@ -1900,7 +1939,55 @@
       }).catch(function() {});
     };
 
+    var parsePinnedParam = function(value) {
+      if (!value) return [];
+      return value.split('|').map(function(item) {
+        try {
+          return decodeURIComponent(item);
+        } catch (err) {
+          return item;
+        }
+      }).map(function(name) { return name.trim(); }).filter(Boolean);
+    };
+
+    var findObjectCellByName = function(objName) {
+      if (!objName) return null;
+      var normalized = objName.trim();
+      if (!normalized) return null;
+      var matchCell = $(table.rows().nodes()).find('.object-name-cell').filter(function() {
+        var value = $(this).data('object');
+        return value && String(value).toLowerCase() === normalized.toLowerCase();
+      }).first();
+      return matchCell.length ? matchCell : null;
+    };
+
     var searchParams = new URLSearchParams(window.location.search);
+    var pinnedParam = searchParams.get('pinned');
+    if (pinnedParam) {
+      var names = parsePinnedParam(pinnedParam);
+      if (names.length) {
+        pinnedItems = [];
+        var seen = {};
+        names.forEach(function(name) {
+          var key = name.toLowerCase();
+          if (seen[key]) return;
+          seen[key] = true;
+          var $cell = findObjectCellByName(name);
+          if (!$cell) return;
+          var item = buildPinnedItemFromCell($cell);
+          if (item && item.objName) {
+            pinnedItems.push(item);
+          }
+        });
+        updatePinnedUI();
+        if (objectFocusEl) {
+          objectFocusEl.classList.remove('collapsed');
+          updateCollapseButtonLabel();
+          updateEmptyState();
+        }
+      }
+    }
+
     var objectParam = searchParams.get('object');
     if (objectParam) {
       focusByName(objectParam);
