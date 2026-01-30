@@ -135,6 +135,24 @@
   #dayzObjects tbody .path-cell {
     position: relative;
   }
+  #dayzObjects tbody .thumb-cell {
+    width: 40px;
+    text-align: center;
+    padding: 2px 4px !important;
+  }
+  #dayzObjects tbody .thumb-img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #374151;
+    background: #111827;
+    display: inline-block;
+  }
+  #dayzObjects tbody .thumb-fallback {
+    color: #6b7280;
+    font-size: 0.85em;
+  }
   #dayzObjects tbody tr.object-selected {
     outline: 1px solid var(--accent);
     outline-offset: -1px;
@@ -171,7 +189,12 @@
     right: 4px;
     opacity: 0;
   }
-  .path-cell:hover .path-pin-btn {
+  .path-cell .path-link-btn {
+    right: 40px;
+    opacity: 0;
+  }
+  .path-cell:hover .path-pin-btn,
+  .path-cell:hover .path-link-btn {
     opacity: 1;
   }
 
@@ -766,6 +789,7 @@
     <thead>
       <tr>
         <th></th>
+        <th>Thumb</th>
         <th>Class name</th>
         <th>In-game name</th>
         <th>Category</th>
@@ -778,7 +802,15 @@
     <tbody>
       {{ range .Site.Data.dayz_objects }}
       <tr>
+        {{ $obj := . }}
         <td class="details-control"></td>
+        <td class="thumb-cell">
+          {{ with $obj.image }}
+          <img class="thumb-img" src="/{{ . }}" alt="{{ $obj.objectName }} thumbnail" loading="lazy">
+          {{ else }}
+          <span class="thumb-fallback">—</span>
+          {{ end }}
+        </td>
         <td
           class="object-name-cell"
           data-object="{{ .objectName }}"
@@ -801,6 +833,7 @@
         <td class="path-cell">
           {{ .path }}
           {{ if and .path (compare.Ne .path "-") }}
+          <button class="copy-btn path-link-btn" title="Copy link to path">🔗</button>
           <button class="copy-btn path-pin-btn" title="Pin path">📌</button>
           {{ end }}
         </td>
@@ -1615,7 +1648,7 @@
       }
 
       showObjectFocus(matchCell, false);
-      table.column(1).search('^' + escapeRegex(normalized), true, false).draw();
+      table.column(2).search('^' + escapeRegex(normalized), true, false).draw();
       table.one('draw', function() {
         var $cell = $tableEl.find('tbody .object-name-cell').filter(function() {
           var value = $(this).data('object');
@@ -1636,7 +1669,7 @@
 
     if (objectFocusClearEl) {
       objectFocusClearEl.addEventListener('click', function() {
-        table.column(1).search('').draw();
+        table.column(2).search('').draw();
         hideFocusDetails();
         history.replaceState({}, '', buildObjectUrl(''));
       });
@@ -2042,7 +2075,7 @@
 
 
     var categories = [];
-    table.column(3).data().each(function(value) {
+    table.column(4).data().each(function(value) {
       if (value && categories.indexOf(value) === -1) {
         categories.push(value);
       }
@@ -2052,11 +2085,11 @@
     });
 
     $('#filterCategory').on('change', function() {
-      table.column(3).search(this.value).draw();
+      table.column(4).search(this.value).draw();
     });
 
     $('#filterConsole').on('change', function() {
-      table.column(5).search(this.value).draw();
+      table.column(6).search(this.value).draw();
     });
 
     var presetsCategoryValue = "Editor Preset";
@@ -2135,7 +2168,7 @@
       showObjectFocus($(this), false);
     });
 
-    $('#dayzObjects tbody').on('click', '.copy-btn:not(.editor-copy-btn):not(.pin-btn)', function(e) {
+    $('#dayzObjects tbody').on('click', '.copy-btn:not(.editor-copy-btn):not(.pin-btn):not(.path-link-btn)', function(e) {
       e.stopPropagation();
       var text = $(this).closest('td').data('object');
       navigator.clipboard.writeText(text);
@@ -2175,6 +2208,33 @@
         }
       });
       addPinnedPathItem(pathValue, rows);
+      var $btn = $(this);
+      var original = $btn.text();
+      $btn.text('✔');
+      setTimeout(function() { $btn.text(original); }, 900);
+    });
+
+    $('#dayzObjects tbody').on('click', '.path-link-btn', function(e) {
+      e.stopPropagation();
+      var $cell = $(this).closest('td');
+      var $row = $cell.closest('tr');
+      var $nameCell = $row.find('.object-name-cell');
+      var pathValue = $nameCell.data('p3d') || $cell.text().trim();
+      if (!pathValue) return;
+      var rows = [];
+      $(table.rows().nodes()).each(function() {
+        var cell = this.querySelector('.object-name-cell');
+        if (!cell) return;
+        if (cell.getAttribute('data-p3d') === pathValue) {
+          rows.push(this);
+        }
+      });
+      var names = rows.map(function(rowEl) {
+        var cell = rowEl.querySelector('.object-name-cell');
+        return cell ? cell.getAttribute('data-object') : null;
+      }).filter(Boolean);
+      if (!names.length) return;
+      navigator.clipboard.writeText(buildPinnedUrl(names));
       var $btn = $(this);
       var original = $btn.text();
       $btn.text('✔');
