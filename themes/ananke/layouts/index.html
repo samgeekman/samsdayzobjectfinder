@@ -125,6 +125,14 @@
       padding: 5px 6px;
     }
   }
+  @media (max-width: 1360px) {
+    #dayzObjects td,
+    #dayzObjects th {
+      white-space: nowrap !important;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
 
   
   #dayzObjects tbody .object-name-cell {
@@ -139,15 +147,32 @@
     width: 40px;
     text-align: center;
     padding: 2px 4px !important;
+    vertical-align: middle;
   }
   #dayzObjects tbody .thumb-img {
     width: 32px;
     height: 32px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 4px;
     border: 1px solid #374151;
     background: #111827;
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
+  }
+  #dayzObjects tbody tr {
+    height: 40px;
+  }
+  #dayzObjects tbody td,
+  #dayzObjects tbody th {
+    vertical-align: middle;
+    line-height: 32px;
+  }
+  #dayzObjects tbody .thumb-cell {
+    width: 32px;
+    min-width: 32px;
+    max-width: 32px;
+    padding: 0 !important;
   }
   #dayzObjects tbody .thumb-fallback {
     color: #6b7280;
@@ -204,18 +229,59 @@
     color: #fff;
   }
 
-  table.dataTable.dtr-inline.collapsed > tbody > tr > td.details-control:before {
-    left: 8px;
+  table.dataTable.dtr-inline > tbody > tr > td.dtr-control:before,
+  table.dataTable.dtr-inline > tbody > tr > td.details-control:before {
+    content: '▸' !important;
+    left: 4px;
     right: auto;
   }
+  table.dataTable.dtr-inline > tbody > tr.parent > td.dtr-control:before,
+  table.dataTable.dtr-inline > tbody > tr.parent > td.details-control:before {
+    content: '▾' !important;
+  }
 
-  table.dataTable.dtr-inline.collapsed > tbody > tr > td.details-control {
-    width: 26px;
-    text-align: center;
+  table.dataTable.dtr-inline > tbody > tr > td.dtr-control,
+  table.dataTable.dtr-inline > tbody > tr > td.details-control {
+    width: 18px;
+    text-align: left;
   }
 
   table.dataTable tbody tr.child td {
     background: var(--bg-soft);
+  }
+  .row-detail {
+    padding: 8px 10px;
+    display: grid;
+    gap: 8px;
+    font-size: 0.85rem;
+  }
+  .row-detail__title {
+    font-weight: 700;
+  }
+  .row-detail__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .row-detail__meta {
+    display: grid;
+    gap: 4px;
+  }
+  .row-detail__image {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--bg-soft);
+  }
+  .row-detail__action {
+    border: 1px solid var(--border);
+    background: var(--bg-soft);
+    color: var(--text);
+    border-radius: 4px;
+    padding: 2px 6px;
+    cursor: pointer;
+    font-size: 0.7rem;
   }
 
   
@@ -827,7 +893,7 @@
     <thead>
       <tr>
         <th></th>
-        <th>Thumb</th>
+        <th aria-label="Thumbnail"></th>
         <th>Class name</th>
         <th>In-game name</th>
         <th>Category</th>
@@ -1011,16 +1077,33 @@
 
     var table = $tableEl.DataTable({
       responsive: {
+        breakpoints: [
+          { name: 'wide', width: 1360 },
+          { name: 'desktop', width: 1133 },
+          { name: 'tablet', width: 744 },
+          { name: 'mobile', width: 0 }
+        ],
         details: {
           type: 'column',
-          target: 0
+          target: 0,
+          renderer: function(api, rowIdx) {
+            var $cell = $(api.row(rowIdx).node()).find('.object-name-cell');
+            return buildRowDetailsHtml($cell);
+          }
         }
       },
       pageLength: 50,
       lengthMenu: [[50,100,200,500],[50,100,200,500]],
       columnDefs: [
-        { targets: [7], visible: false },
-        { targets: 0, orderable: false, className: 'dtr-control' }
+        { targets: 0, orderable: false, className: 'dtr-control min-desktop' },
+        { targets: 1, orderable: false, className: 'all' },
+        { targets: 2, className: 'all' },
+        { targets: 3, className: 'min-desktop' },
+        { targets: 4, className: 'min-desktop' },
+        { targets: 5, className: 'min-desktop' },
+        { targets: 6, className: 'min-wide' },
+        { targets: 7, className: 'min-wide' },
+        { targets: 8, className: 'min-wide' }
       ],
       dom: '<"top-bar"lfr>tip',
       language: {
@@ -1036,6 +1119,12 @@
     $("#filters").insertBefore("#dayzObjects_wrapper .top-bar");
 
     $tableEl.addClass('dtr-column');
+    $(window).on('resize', function() {
+      if (table) {
+        table.columns.adjust();
+        table.responsive.recalc();
+      }
+    });
 
     var logoLink = document.querySelector('nav a');
     if (logoLink) {
@@ -1075,6 +1164,7 @@
     var pinnedBulkCopyConfirmEl = document.getElementById('pinnedBulkCopyConfirm');
     var pinnedBulkLayoutButtons = document.querySelectorAll('.pinned-bulk-layout');
     var pinnedBulkSpacingButtons = document.querySelectorAll('.pinned-bulk-spacing');
+    var isMobileView = window.matchMedia('(max-width: 768px)').matches;
     var objectFocusPinEl = document.getElementById('objectFocusPin');
     var objectFocusCollapseEl = document.getElementById('objectFocusCollapse');
     var pinnedItems = [];
@@ -1094,15 +1184,67 @@
       objectFocusEl.classList.toggle('empty-state', !hasSelection && !isCollapsed);
       objectFocusEl.classList.toggle('no-selection', !hasSelection);
     };
+    var updateMobileView = function() {
+      isMobileView = window.matchMedia('(max-width: 768px)').matches;
+      if (isMobileView) {
+        $('#imgPreview').remove();
+      }
+    };
 
     if (objectFocusEl) {
       objectFocusEl.classList.add('visible', 'collapsed');
       updateCollapseButtonLabel();
       updateEmptyState();
     }
+    window.addEventListener('resize', updateMobileView);
+    updateMobileView();
 
     var escapeRegex = function(value) {
       return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    };
+    var escapeHtml = function(value) {
+      if (value === null || value === undefined) return '';
+      return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    };
+    var buildRowDetailsHtml = function($cell) {
+      var objName = $cell.data('object') || '';
+      var imgPath = $cell.data('image') || '';
+      var p3dPath = $cell.data('p3d') || '';
+      var inGame = $cell.data('ingame') || '';
+      var category = $cell.data('category') || '';
+      var modelType = $cell.data('modeltype') || '';
+      var consoleFlag = $cell.data('console') || '';
+      var tags = $cell.data('tags') || '';
+      var imgHtml = imgPath ? '<img class="row-detail__image" src="/' + escapeHtml(imgPath) + '" alt="' + escapeHtml(objName) + ' preview">' : '';
+      return (
+        '<div class="row-detail" data-object="' + escapeHtml(objName) + '">' +
+          '<div class="row-detail__title">' + escapeHtml(objName) + '</div>' +
+          '<div class="row-detail__actions">' +
+            '<button class="row-detail__action" data-action="pin">📌 Pin</button>' +
+            '<button class="row-detail__action" data-action="link">🔗 Copy link</button>' +
+            '<button class="row-detail__action" data-action="editor">🏗️ Copy to Editor</button>' +
+            '<button class="row-detail__action" data-action="name">📋 Copy name</button>' +
+          '</div>' +
+          (imgHtml ? imgHtml : '') +
+          '<div class="row-detail__meta">' +
+            '<div>Path: ' + escapeHtml(p3dPath || '—') + '</div>' +
+            '<div>In-game name: ' + escapeHtml(inGame || '—') + '</div>' +
+            '<div>Category: ' + escapeHtml(category || '—') + '</div>' +
+            '<div>Model type: ' + escapeHtml(modelType || '—') + '</div>' +
+            '<div>Console: ' + escapeHtml(consoleFlag || '—') + '</div>' +
+            '<div>Tags: ' + escapeHtml(tags || '—') + '</div>' +
+          '</div>' +
+          '<div class="row-detail__actions">' +
+            (imgPath ? '<a class="row-detail__action" data-action="download" href="/' + escapeHtml(imgPath) + '" download>↓ Download image</a>' : '') +
+            '<button class="row-detail__action" data-action="close">🆇 Deselect object</button>' +
+          '</div>' +
+        '</div>'
+      );
     };
 
     var buildObjectUrl = function(objName) {
@@ -2308,6 +2450,7 @@
 
     $('#dayzObjects tbody')
       .on('mouseenter', '.object-name-cell', function(e) {
+        if (isMobileView) return;
         var imgPath = $(this).data('image');
         if (!imgPath) return;
 
@@ -2319,14 +2462,32 @@
         $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });
       })
       .on('mousemove', '.object-name-cell', function(e) {
+        if (isMobileView) return;
         $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });
       })
       .on('mouseleave', '.object-name-cell', function() {
+        if (isMobileView) return;
         $('#imgPreview').remove();
       });
 
     $('#dayzObjects tbody').on('click', '.object-name-cell', function(e) {
       if ($(e.target).hasClass('copy-btn')) return;
+      e.stopPropagation();
+      if (table) {
+        var $row = $(this).closest('tr');
+        var row = table.row($row);
+        if (row && row.child) {
+          if (row.child.isShown()) {
+            row.child.hide();
+            $row.removeClass('parent');
+            if (isMobileView) return;
+          } else if (isMobileView) {
+            row.child(buildRowDetailsHtml($(this)), 'child').show();
+            $row.addClass('parent');
+            return;
+          }
+        }
+      }
       var objName = $(this).data('object');
       if (objectFocusEl && objectFocusEl.classList.contains('visible') && currentObjectName === objName) {
         hideFocusDetails();
@@ -2406,6 +2567,68 @@
       var original = $btn.text();
       $btn.text('✔');
       setTimeout(function() { $btn.text(original); }, 900);
+    });
+
+    $('#dayzObjects tbody').on('click', '.row-detail__action', function(e) {
+      e.stopPropagation();
+      var $action = $(this);
+      var action = $action.data('action');
+      var $detail = $action.closest('.row-detail');
+      var objName = $detail.data('object');
+      var $row = $detail.closest('tr').prev();
+      var $cell = $row.find('.object-name-cell');
+      if (!$cell.length || !objName) return;
+
+      if (action === 'close') {
+        if (table) {
+          var row = table.row($row);
+          if (row && row.child && row.child.isShown()) {
+            row.child.hide();
+            $row.removeClass('parent');
+          }
+        }
+        return;
+      }
+
+      if (action === 'pin') {
+        var item = buildPinnedItemFromCell($cell);
+        if (!item || !item.objName) return;
+        if (isPinned(item.objName)) {
+          removePinnedItemByName(item.objName);
+        } else {
+          addPinnedItem(item);
+        }
+        $action.text('✔');
+        setTimeout(function() { $action.text('📌 Pin'); }, 900);
+        return;
+      }
+
+      if (action === 'name') {
+        navigator.clipboard.writeText(objName);
+        $action.text('✔');
+        setTimeout(function() { $action.text('📋 Copy name'); }, 900);
+        return;
+      }
+
+      if (action === 'link') {
+        navigator.clipboard.writeText(buildObjectUrl(objName));
+        $action.text('✔');
+        setTimeout(function() { $action.text('🔗 Copy link'); }, 900);
+        return;
+      }
+
+      if (action === 'editor') {
+        var jsonText = buildEditorJson(
+          $cell.attr('data-editorjson'),
+          $cell.data('object'),
+          $cell.data('modeltype'),
+          $cell.data('p3d')
+        );
+        navigator.clipboard.writeText(jsonText);
+        $action.text('✔');
+        setTimeout(function() { $action.text('🏗️ Copy to Editor'); }, 900);
+        return;
+      }
     });
 
     $('#dayzObjects tbody').on('click', '.editor-copy-btn', function(e) {
