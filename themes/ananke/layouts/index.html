@@ -440,6 +440,20 @@
     gap: 8px;
     align-items: center;
   }
+  .pinned-copy__row--between {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .pinned-copy__toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+  .pinned-copy__toggle input {
+    accent-color: var(--accent);
+  }
   .pinned-copy .pill-button {
     font-size: 0.7rem;
     padding: 3px 6px;
@@ -477,6 +491,27 @@
   }
   #pinnedCopyLink.visible {
     display: inline-flex;
+  }
+
+  #pinnedCopyAllLayout,
+  #pinnedBulkPanel {
+    display: none;
+  }
+
+  #pinnedCopyAllLayoutRow {
+    display: none;
+  }
+
+  #pinnedCopyAllLayoutRow.visible {
+    display: flex;
+  }
+
+  #pinnedCopyAllLayout.visible {
+    display: inline-flex;
+  }
+
+  #pinnedBulkPanel.visible {
+    display: block;
   }
   #pinnedClearAll {
     display: none;
@@ -545,6 +580,9 @@
   }
   .pinned-path-row--between {
     justify-content: space-between;
+  }
+  .pinned-path-row--right {
+    justify-content: flex-end;
   }
   .pinned-path-row:last-child {
     margin-bottom: 0;
@@ -873,17 +911,44 @@
     </div>
     <div id="pinnedObjects" class="pinned-objects is-empty" aria-live="polite">
       <div class="pinned-header">
-        <span class="pinned-title">Pinned</span>
         <div class="pinned-copy">
-          <div class="pinned-copy__row">
-            <span>Copy all:</span>
-            <button id="pinnedCopyAll" class="pill-button" type="button" title="Copy all to Editor">🏗️</button>
-            <button id="pinnedCopyNames" class="pill-button" type="button" title="Copy all names">📋</button>
-            <button id="pinnedCopyLink" class="pill-button" type="button" title="Copy link to pinned collection">🔗 Copy link to all</button>
+          <div id="pinnedCopyAllLayoutRow" class="pinned-copy__row pinned-copy__row--between">
+            <span class="pinned-title">Pinned</span>
+            <div class="pinned-copy__row">
+              <span>Copy all:</span>
+              <button id="pinnedCopyAll" class="pill-button" type="button" title="Copy all to Editor">🏗️</button>
+              <button id="pinnedCopyNames" class="pill-button" type="button" title="Copy all names">📋</button>
+              <button id="pinnedCopyLink" class="pill-button" type="button" title="Copy link to pinned collection">🔗</button>
+            </div>
           </div>
           <div class="pinned-copy__row">
+            <button id="pinnedCopyAllLayout" class="pill-button" type="button" title="Copy pinned objects with layout">Copy to Editor as...</button>
             <button id="pinnedDownloadAll" class="pill-button" type="button" title="Download all">↓ Download all</button>
             <button id="pinnedClearAll" class="pill-button" type="button" title="Unpin all">Unpin all</button>
+          </div>
+          <div id="pinnedBulkPanel" class="pinned-path-panel pinned-bulk-panel">
+            <div class="pinned-path-row">
+              <span class="pinned-path-label">Layout:</span>
+              <button class="pinned-path-btn pinned-bulk-layout" type="button" data-layout="grid">As grid</button>
+              <button class="pinned-path-btn pinned-bulk-layout" type="button" data-layout="line">In line</button>
+              <button class="pinned-path-btn pinned-bulk-layout" type="button" data-layout="stacked">Stacked</button>
+            </div>
+            <div class="pinned-path-row">
+              <span class="pinned-path-label">Spacing:</span>
+              <button class="pinned-path-btn pinned-bulk-spacing" type="button" data-spacing="small">Small (1m)</button>
+              <button class="pinned-path-btn pinned-bulk-spacing" type="button" data-spacing="medium">Medium (5m)</button>
+              <button class="pinned-path-btn pinned-bulk-spacing" type="button" data-spacing="large">Large (10m)</button>
+              <button class="pinned-path-btn pinned-bulk-spacing" type="button" data-spacing="huge">Huge (25m)</button>
+            </div>
+            <div class="pinned-path-row">
+              <label class="pinned-copy__toggle" for="pinnedIncludePaths">
+                <input id="pinnedIncludePaths" type="checkbox">
+                Include paths?
+              </label>
+            </div>
+            <div class="pinned-path-row pinned-path-row--right">
+              <button id="pinnedBulkCopyConfirm" class="pinned-path-btn pinned-path-cta" type="button">Copy now</button>
+            </div>
           </div>
         </div>
       </div>
@@ -1000,9 +1065,16 @@
     var pinnedListEl = document.getElementById('pinnedList');
     var pinnedClearAllEl = document.getElementById('pinnedClearAll');
     var pinnedCopyAllEl = document.getElementById('pinnedCopyAll');
+    var pinnedCopyAllLayoutEl = document.getElementById('pinnedCopyAllLayout');
+    var pinnedCopyAllLayoutRowEl = document.getElementById('pinnedCopyAllLayoutRow');
     var pinnedCopyNamesEl = document.getElementById('pinnedCopyNames');
     var pinnedCopyLinkEl = document.getElementById('pinnedCopyLink');
     var pinnedDownloadAllEl = document.getElementById('pinnedDownloadAll');
+    var pinnedIncludePathsEl = document.getElementById('pinnedIncludePaths');
+    var pinnedBulkPanelEl = document.getElementById('pinnedBulkPanel');
+    var pinnedBulkCopyConfirmEl = document.getElementById('pinnedBulkCopyConfirm');
+    var pinnedBulkLayoutButtons = document.querySelectorAll('.pinned-bulk-layout');
+    var pinnedBulkSpacingButtons = document.querySelectorAll('.pinned-bulk-spacing');
     var objectFocusPinEl = document.getElementById('objectFocusPin');
     var objectFocusCollapseEl = document.getElementById('objectFocusCollapse');
     var pinnedItems = [];
@@ -1254,6 +1326,19 @@
       pinnedItems.forEach(function(item) {
         if (item.type === 'path') {
           if (Array.isArray(item.items)) {
+            entries = entries.concat(item.items);
+          }
+        } else {
+          entries.push(item);
+        }
+      });
+      return entries;
+    };
+    var getPinnedObjectEntries = function(includePaths) {
+      var entries = [];
+      pinnedItems.forEach(function(item) {
+        if (item.type === 'path') {
+          if (includePaths && Array.isArray(item.items)) {
             entries = entries.concat(item.items);
           }
         } else {
@@ -1547,6 +1632,9 @@
       }
 
       var hasPins = pinnedItems.length > 0;
+      if (!hasPins) {
+        pinnedBulkExpanded = false;
+      }
       if (pinnedCopyAllEl) {
         pinnedCopyAllEl.classList.toggle('visible', hasPins);
       }
@@ -1557,6 +1645,18 @@
 
       if (pinnedCopyLinkEl) {
         pinnedCopyLinkEl.classList.toggle('visible', hasPins);
+      }
+
+      if (pinnedCopyAllLayoutEl) {
+        pinnedCopyAllLayoutEl.classList.toggle('visible', hasPins);
+      }
+
+      if (pinnedCopyAllLayoutRowEl) {
+        pinnedCopyAllLayoutRowEl.classList.toggle('visible', hasPins);
+      }
+
+      if (pinnedBulkPanelEl) {
+        pinnedBulkPanelEl.classList.toggle('visible', hasPins && pinnedBulkExpanded);
       }
 
       if (pinnedDownloadAllEl) {
@@ -1571,8 +1671,48 @@
       updateEmptyState();
     };
 
+    var pinnedBulkLayout = 'line';
+    var pinnedBulkSpacing = 5;
+    var pinnedBulkExpanded = false;
+
     pinnedItems = loadPinnedItems();
     updatePinnedUI();
+
+    var updatePinnedBulkButtons = function() {
+      if (pinnedBulkLayoutButtons && pinnedBulkLayoutButtons.length) {
+        pinnedBulkLayoutButtons.forEach(function(btn) {
+          btn.classList.toggle('active', btn.getAttribute('data-layout') === pinnedBulkLayout);
+        });
+      }
+      if (pinnedBulkSpacingButtons && pinnedBulkSpacingButtons.length) {
+        pinnedBulkSpacingButtons.forEach(function(btn) {
+          btn.classList.toggle('active', getSpacingValue(btn.getAttribute('data-spacing')) === pinnedBulkSpacing);
+        });
+      }
+      if (pinnedCopyAllLayoutEl) {
+        pinnedCopyAllLayoutEl.classList.toggle('active', pinnedBulkExpanded);
+      }
+    };
+
+    if (pinnedBulkLayoutButtons && pinnedBulkLayoutButtons.length) {
+      pinnedBulkLayoutButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          pinnedBulkLayout = btn.getAttribute('data-layout') || 'line';
+          updatePinnedBulkButtons();
+        });
+      });
+    }
+
+    if (pinnedBulkSpacingButtons && pinnedBulkSpacingButtons.length) {
+      pinnedBulkSpacingButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          pinnedBulkSpacing = getSpacingValue(btn.getAttribute('data-spacing'));
+          updatePinnedBulkButtons();
+        });
+      });
+    }
+
+    updatePinnedBulkButtons();
 
     var buildEditorJsonArray = function(item) {
       var jsonText = buildEditorJson(
@@ -1806,6 +1946,33 @@
         navigator.clipboard.writeText(JSON.stringify(combined, null, 4));
         pinnedCopyAllEl.textContent = '✔';
         setTimeout(function() { pinnedCopyAllEl.textContent = '🏗️'; }, 900);
+      });
+    }
+
+    if (pinnedCopyAllLayoutEl) {
+      pinnedCopyAllLayoutEl.addEventListener('click', function() {
+        pinnedBulkExpanded = !pinnedBulkExpanded;
+        updatePinnedUI();
+        updatePinnedBulkButtons();
+      });
+    }
+
+    if (pinnedBulkCopyConfirmEl) {
+      pinnedBulkCopyConfirmEl.addEventListener('click', function() {
+        var includePaths = pinnedIncludePathsEl ? pinnedIncludePathsEl.checked : false;
+        var entries = getPinnedObjectEntries(includePaths);
+        if (!entries.length) return;
+        var combined = [];
+        entries.forEach(function(item, index) {
+          var objects = buildEditorJsonArray(item);
+          applyLayoutOffsets(objects, index, entries.length, pinnedBulkLayout, pinnedBulkSpacing);
+          combined = combined.concat(objects);
+        });
+        if (!combined.length) return;
+        navigator.clipboard.writeText(JSON.stringify(combined, null, 4));
+        var originalText = pinnedBulkCopyConfirmEl.textContent;
+        pinnedBulkCopyConfirmEl.textContent = '✔';
+        setTimeout(function() { pinnedBulkCopyConfirmEl.textContent = originalText; }, 1200);
       });
     }
 
