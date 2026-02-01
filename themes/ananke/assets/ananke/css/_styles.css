@@ -135,6 +135,12 @@ main {
   color: var(--text);
 }
 
+:root.dark-mode .dataTables_length select {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  border-color: #d7dce5 !important;
+}
+
 .dataTables_wrapper .dataTables_paginate .paginate_button {
   color: var(--text) !important;
   border: 1px solid var(--border) !important;
