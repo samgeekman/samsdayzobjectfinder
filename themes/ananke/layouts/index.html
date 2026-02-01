@@ -15,6 +15,11 @@
 {{ $objectCount := len .Site.Data.dayz_objects }}
 
 <style>
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   .annoucenment-bar {
     background-color: var(--card);
     color: var(--text);
@@ -32,6 +37,8 @@
     width: 95% !important;
     margin: 20px auto;
     overflow-x: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 4px;
@@ -116,6 +123,11 @@
     #dayzObjects td,
     #dayzObjects th {
       padding: 6px 8px;
+    }
+    .copy-btn,
+    .path-cell .path-pin-btn,
+    .path-cell .path-link-btn {
+      display: none !important;
     }
   }
   @media (max-width: 480px) {
@@ -2470,6 +2482,19 @@
         $('#imgPreview').remove();
       });
 
+    var closeOtherRowDetails = function($keepRow) {
+      if (!table) return;
+      $(table.rows().nodes()).each(function() {
+        var $row = $(this);
+        if ($keepRow && $row.is($keepRow)) return;
+        var row = table.row($row);
+        if (row && row.child && row.child.isShown()) {
+          row.child.hide();
+          $row.removeClass('parent');
+        }
+      });
+    };
+
     $('#dayzObjects tbody').on('click', '.object-name-cell', function(e) {
       if ($(e.target).hasClass('copy-btn')) return;
       e.stopPropagation();
@@ -2477,14 +2502,21 @@
         var $row = $(this).closest('tr');
         var row = table.row($row);
         if (row && row.child) {
-          if (row.child.isShown()) {
-            row.child.hide();
-            $row.removeClass('parent');
-            if (isMobileView) return;
-          } else if (isMobileView) {
+          if (isMobileView) {
+            var isOpen = row.child.isShown();
+            closeOtherRowDetails($row);
+            if (isOpen) {
+              row.child.hide();
+              $row.removeClass('parent');
+              return;
+            }
             row.child(buildRowDetailsHtml($(this)), 'child').show();
             $row.addClass('parent');
             return;
+          }
+          if (row.child.isShown()) {
+            row.child.hide();
+            $row.removeClass('parent');
           }
         }
       }
