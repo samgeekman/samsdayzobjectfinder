@@ -870,6 +870,41 @@
     display: block;
     border-radius: 3px;
   }
+
+  .export-panel {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card);
+    box-shadow: var(--shadow-soft);
+  }
+  .export-panel.is-open {
+    display: block;
+  }
+  .export-panel__intro {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .export-panel__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .export-panel__suggestions {
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+  .export-panel__suggestions ul {
+    margin: 6px 0 0 18px;
+  }
+  .export-panel__images {
+    color: var(--text);
+  }
 </style>
 
 <div id="filters">
@@ -888,9 +923,22 @@
 
   <div class="filter-actions">
     <button id="togglePresets" class="pill-button" type="button">Show presets</button>
+    <button id="exportToggle" class="pill-button" type="button" aria-expanded="false" aria-controls="exportPanel">Export data</button>
     <button id="themeToggle" class="pill-button theme-toggle" type="button" aria-live="polite">
       Dark mode
     </button>
+  </div>
+
+  <div id="exportPanel" class="export-panel" aria-hidden="true">
+    <div class="export-panel__intro">Export the current filtered view (images excluded).</div>
+    <div class="export-panel__actions">
+      <button id="exportCsv" class="pill-button" type="button">Download CSV</button>
+      <button id="exportXlsx" class="pill-button" type="button">Download XLSX</button>
+      <button id="exportJson" class="pill-button" type="button">Download JSON</button>
+    </div>
+    <div class="export-panel__images">
+      Want all the images? <a href="https://drive.google.com/drive/folders/1Hg82OAu-Br5VPSF4NxGvifG_IeF6Iw-u?usp=share_link" target="_blank" rel="noopener">Download here.</a>
+    </div>
   </div>
 </div>
 
@@ -1038,6 +1086,7 @@
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
@@ -2458,6 +2507,129 @@
 
     $(document).on('click', '#togglePresets', function() {
       togglePresets($(this));
+    });
+
+    var exportPanelEl = document.getElementById('exportPanel');
+    var exportToggleEl = document.getElementById('exportToggle');
+
+    var setExportPanelState = function(isOpen) {
+      if (!exportPanelEl || !exportToggleEl) return;
+      exportPanelEl.classList.toggle('is-open', isOpen);
+      exportPanelEl.setAttribute('aria-hidden', String(!isOpen));
+      exportToggleEl.setAttribute('aria-expanded', String(isOpen));
+    };
+
+    if (exportToggleEl) {
+      exportToggleEl.addEventListener('click', function() {
+        var isOpen = exportPanelEl && exportPanelEl.classList.contains('is-open');
+        setExportPanelState(!isOpen);
+      });
+    }
+
+    var getCurrentViewRows = function() {
+      if (!table) return [];
+      var rows = [];
+      table.rows({ search: 'applied' }).every(function() {
+        var rowEl = this.node();
+        var cell = rowEl ? rowEl.querySelector('.object-name-cell') : null;
+        if (!cell) return;
+        rows.push({
+          className: cell.getAttribute('data-object') || '',
+          inGameName: cell.getAttribute('data-ingame') || '',
+          category: cell.getAttribute('data-category') || '',
+          path: cell.getAttribute('data-p3d') || '',
+          console: cell.getAttribute('data-console') || '',
+          type: cell.getAttribute('data-modeltype') || '',
+          tags: cell.getAttribute('data-tags') || ''
+        });
+      });
+      return rows;
+    };
+
+    var downloadTextFile = function(content, filename, mimeType) {
+      var blob = new Blob([content], { type: mimeType || 'text/plain;charset=utf-8' });
+      if (typeof saveAs !== 'undefined') {
+        saveAs(blob, filename);
+        return;
+      }
+      var link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setTimeout(function() { URL.revokeObjectURL(link.href); }, 500);
+    };
+
+    var exportCurrentViewCsv = function() {
+      var rows = getCurrentViewRows();
+      if (!rows.length) return;
+      var csvRows = [];
+      csvRows.push([
+        'className',
+        'inGameName',
+        'category',
+        'path',
+        'console',
+        'type',
+        'tags'
+      ].join(','));
+      rows.forEach(function(item) {
+        csvRows.push([
+          csvEscape(item.className),
+          csvEscape(item.inGameName),
+          csvEscape(item.category),
+          csvEscape(item.path),
+          csvEscape(item.console === '✅' ? 'Yes' : item.console === '❌' ? 'No' : item.console),
+          csvEscape(item.type),
+          csvEscape(item.tags)
+        ].join(','));
+      });
+      var csvContent = '\ufeff' + csvRows.join('\r\n');
+      downloadTextFile(csvContent, 'dayz_objects_view.csv', 'text/csv;charset=utf-8');
+    };
+
+    var exportCurrentViewXlsx = function() {
+      if (typeof XLSX === 'undefined') return;
+      var rows = getCurrentViewRows();
+      if (!rows.length) return;
+      var data = rows.map(function(item) {
+        return {
+          className: item.className,
+          inGameName: item.inGameName,
+          category: item.category,
+          path: item.path,
+          console: item.console === '✅' ? 'Yes' : item.console === '❌' ? 'No' : item.console,
+          type: item.type,
+          tags: item.tags
+        };
+      });
+      var worksheet = XLSX.utils.json_to_sheet(data);
+      var workbook = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(workbook, worksheet, 'Objects');
+      var arrayBuffer = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' });
+      var blob = new Blob([arrayBuffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+      if (typeof saveAs !== 'undefined') {
+        saveAs(blob, 'dayz_objects_view.xlsx');
+      }
+    };
+
+    var exportCurrentViewJson = function() {
+      var rows = getCurrentViewRows();
+      if (!rows.length) return;
+      downloadTextFile(JSON.stringify(rows, null, 2), 'dayz_objects_view.json', 'application/json;charset=utf-8');
+    };
+
+    $(document).on('click', '#exportCsv', function() {
+      exportCurrentViewCsv();
+    });
+
+    $(document).on('click', '#exportXlsx', function() {
+      exportCurrentViewXlsx();
+    });
+
+    $(document).on('click', '#exportJson', function() {
+      exportCurrentViewJson();
     });
 
     $('#dayzObjects tbody')
