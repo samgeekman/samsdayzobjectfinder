@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage Proposal</title>
+    <style>
+      :root {
+        --bg: #f6f7fb;
+        --card: #ffffff;
+        --text: #10121a;
+        --muted: #4b5563;
+        --border: #d7dce5;
+        --accent: #eea700;
+        --accent-strong: #f6c344;
+        --table-stripe: #f1f3f9;
+        --table-hover: #e7ecf7;
+        --input-bg: #ffffff;
+        --input-border: #d7dce5;
+        --shadow-soft: 0 8px 20px rgba(0, 0, 0, 0.06);
+      }
+      :root.dark-mode {
+        --bg: #0c111b;
+        --card: #101827;
+        --text: #e5edf7;
+        --muted: #9aa9c2;
+        --border: #1f2a3c;
+        --accent: #f2b700;
+        --accent-strong: #ffd166;
+        --table-stripe: #0f1624;
+        --table-hover: #182235;
+        --input-bg: #0f1624;
+        --input-border: #25334a;
+        --shadow-soft: 0 14px 36px rgba(0, 0, 0, 0.45);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        color: var(--accent-strong);
+      }
+      .page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        padding: 18px 24px;
+        border-bottom: 1px solid var(--border);
+        background: var(--card);
+        box-shadow: var(--shadow-soft);
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+      .brand-badge {
+        width: 38px;
+        height: 38px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+        display: grid;
+        place-items: center;
+        color: #111;
+        font-weight: 800;
+      }
+      main {
+        flex: 1;
+        padding: 28px 24px 40px;
+      }
+      .hero {
+        display: grid;
+        gap: 18px;
+        margin-bottom: 26px;
+      }
+      .hero h1 {
+        margin: 0;
+        font-size: clamp(1.8rem, 1.1rem + 2vw, 2.8rem);
+      }
+      .hero p {
+        margin: 0;
+        color: var(--muted);
+        max-width: 720px;
+        line-height: 1.6;
+      }
+      .pill-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 12px;
+        border-radius: 4px;
+        border: 1px solid var(--border);
+        background-color: var(--card);
+        color: var(--text);
+        cursor: pointer;
+        font-size: 0.95rem;
+        font-weight: 600;
+        transition: transform 0.12s ease, box-shadow 0.18s ease, background-color 0.2s ease;
+      }
+      .pill-button:hover {
+        transform: translateY(-1px);
+        box-shadow: var(--shadow-soft);
+      }
+      .columns {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: var(--shadow-soft);
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        min-height: 260px;
+      }
+      .card h2 {
+        margin: 0;
+        font-size: 1.15rem;
+      }
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+      .card-actions {
+        margin-top: auto;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .search-input {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 6px;
+        border: 1px solid var(--input-border);
+        background: var(--input-bg);
+        color: var(--text);
+        font-size: 0.95rem;
+      }
+      .meta-list {
+        margin: 0;
+        padding: 0 0 0 18px;
+        color: var(--muted);
+      }
+      .meta-list li {
+        margin-bottom: 6px;
+      }
+      .callout {
+        border: 1px dashed var(--border);
+        border-radius: 8px;
+        padding: 12px;
+        background: rgba(238, 167, 0, 0.08);
+        color: var(--text);
+      }
+      footer {
+        padding: 18px 24px 36px;
+        border-top: 1px solid var(--border);
+        text-align: center;
+        color: var(--muted);
+      }
+      @media (max-width: 980px) {
+        .columns {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="brand">
+          <div class="brand-badge">SO</div>
+          <div>
+            <div>Sam's DayZ Object Finder</div>
+            <small style="color: var(--muted);">Design draft • Three-column layout</small>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <h1>Find, pin, and export DayZ objects in seconds.</h1>
+          <p>Proposed homepage layout matching the current visual system. Three focused columns guide players to search the database, browse editor presets, and export filtered data.</p>
+        </section>
+
+        <section class="columns">
+          <article class="card">
+            <h2>Search the database</h2>
+            <p>Jump straight into the master list and find objects by class name, in-game name, or tags.</p>
+            <input class="search-input" type="text" placeholder="Search objects, e.g. metal sheet, bunker panel…">
+            <ul class="meta-list">
+              <li>Quick access to recent searches.</li>
+              <li>Filter by category and console status.</li>
+              <li>Pin results for batch export.</li>
+            </ul>
+            <div class="card-actions">
+              <button class="pill-button">Open full database</button>
+              <button class="pill-button">View filters</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>View Editor presets</h2>
+            <p>Browse curated presets built for Editor workflows with repeatable layouts.</p>
+            <div class="callout">Preset spotlight: Livonia bunker kit</div>
+            <ul class="meta-list">
+              <li>Preview layouts and spacing.</li>
+              <li>Copy directly to the Editor JSON.</li>
+              <li>Save presets to your pinned list.</li>
+            </ul>
+            <div class="card-actions">
+              <button class="pill-button">Browse presets</button>
+              <button class="pill-button">Create preset</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>Export data</h2>
+            <p>Export the current filtered view as CSV, XLSX, or JSON without images.</p>
+            <ul class="meta-list">
+              <li>Uses the active filters and search.</li>
+              <li>Optional console-only exports.</li>
+              <li>Share lightweight links or files.</li>
+            </ul>
+            <div class="card-actions">
+              <button class="pill-button">Export CSV</button>
+              <button class="pill-button">Export XLSX</button>
+              <button class="pill-button">Export JSON</button>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        Draft layout only. No production changes applied.
+      </footer>
+    </div>
+  </body>
+</html>

@@ -30,7 +30,12 @@
   }
   footer[role="contentinfo"] {
     padding: 0.75rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
   }
 
   
@@ -965,48 +970,6 @@
       </tr>
     </thead>
     <tbody>
-      {{ range .Site.Data.dayz_objects }}
-      <tr>
-        {{ $obj := . }}
-        <td class="details-control"></td>
-        <td class="thumb-cell">
-          {{ with $obj.image }}
-          <img class="thumb-img" src="/{{ . }}" alt="{{ $obj.objectName }} thumbnail" loading="lazy">
-          {{ else }}
-          <span class="thumb-fallback">—</span>
-          {{ end }}
-        </td>
-        <td
-          class="object-name-cell"
-          data-object="{{ .objectName }}"
-          data-p3d="{{ .path }}"
-          data-modeltype="{{ .modelType }}"
-          data-ingame="{{ .inGameName }}"
-          data-category="{{ .category }}"
-          data-console="{{ if .usableOnConsole }}✅{{ else }}❌{{ end }}"
-          data-tags="{{ with .searchTags }}{{ . }}{{ end }}"
-          data-image="{{ with .image }}{{ . }}{{ end }}"
-          data-editorjson='{{ with .editorJson }}{{ . | jsonify }}{{ end }}'
-        >
-          {{ .objectName }}
-          <button class="copy-btn pin-btn" title="Pin object">📌</button>
-          <button class="copy-btn" title="Copy object name">📋</button>
-          <button class="copy-btn editor-copy-btn" title="Copy DayZ Editor JSON">🏗️</button>
-        </td>
-        <td>{{ .inGameName }}</td>
-        <td>{{ .category }}</td>
-        <td class="path-cell">
-          {{ .path }}
-          {{ if and .path (compare.Ne .path "-") }}
-          <button class="copy-btn path-link-btn" title="Copy link to path">🔗</button>
-          <button class="copy-btn path-pin-btn" title="Pin path">📌</button>
-          {{ end }}
-        </td>
-        <td>{{ if .usableOnConsole }}✅{{ else }}❌{{ end }}</td>
-        <td>{{ .modelType }}</td>
-        <td>{{ with .searchTags }}{{ . }}{{ end }}</td>
-      </tr>
-      {{ end }}
     </tbody>
   </table>
 
@@ -1126,6 +1089,28 @@
     var $tableEl = $('#dayzObjects');
     $('#filters').hide();
 
+    var escapeRegex = function(value) {
+      return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    };
+    var escapeHtml = function(value) {
+      if (value === null || value === undefined) return '';
+      return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    };
+    var getObjectName = function(row) {
+      return row.objectName || row.name || row.Name || '';
+    };
+    var getConsoleFlag = function(row) {
+      return row.usableOnConsole ? '✅' : '❌';
+    };
+    var getSearchTags = function(row) {
+      return row.searchTags || '';
+    };
+
     var showContent = function() {
       $('#dayzObjects, #dayzObjects_wrapper').css('visibility', 'visible');
       $('#loadingIndicator').hide();
@@ -1138,6 +1123,11 @@
     $tableEl.one('init.dt', showContent);
 
     var table = $tableEl.DataTable({
+      ajax: {
+        url: '/data/dayz_objects.json',
+        dataSrc: ''
+      },
+      deferRender: true,
       responsive: {
         breakpoints: [
           { name: 'wide', width: 1360 },
@@ -1156,13 +1146,93 @@
       },
       pageLength: 50,
       lengthMenu: [[50,100,200,500],[50,100,200,500]],
+      columns: [
+        { data: null, defaultContent: '' },
+        {
+          data: null,
+          render: function(data, type, row) {
+            if (type !== 'display') return row.image || '';
+            if (row.image) {
+              var safeImg = escapeHtml(row.image);
+              var safeName = escapeHtml(getObjectName(row));
+              return '<img class="thumb-img" src="/' + safeImg + '" alt="' + safeName + ' thumbnail" loading="lazy">';
+            }
+            return '<span class="thumb-fallback">—</span>';
+          }
+        },
+        {
+          data: null,
+          render: function(data, type, row) {
+            var objName = getObjectName(row);
+            if (type !== 'display') return objName;
+            var consoleFlag = getConsoleFlag(row);
+            var editorJson = row.editorJson ? JSON.stringify(row.editorJson) : '';
+            return (
+              escapeHtml(objName) +
+              '<button class="copy-btn pin-btn" title="Pin object">📌</button>' +
+              '<button class="copy-btn" title="Copy object name">📋</button>' +
+              '<button class="copy-btn editor-copy-btn" title="Copy DayZ Editor JSON">🏗️</button>'
+            );
+          }
+        },
+        { data: 'inGameName', defaultContent: '' },
+        { data: 'category', defaultContent: '' },
+        {
+          data: null,
+          render: function(data, type, row) {
+            var pathValue = row.path || '';
+            if (type !== 'display') return pathValue;
+            var safePath = escapeHtml(pathValue);
+            var buttons = '';
+            if (pathValue && pathValue !== '-') {
+              buttons = (
+                '<button class="copy-btn path-link-btn" title="Copy link to path">🔗</button>' +
+                '<button class="copy-btn path-pin-btn" title="Pin path">📌</button>'
+              );
+            }
+            return safePath + buttons;
+          }
+        },
+        {
+          data: null,
+          render: function(data, type, row) {
+            var flag = getConsoleFlag(row);
+            if (type !== 'display') return flag;
+            return flag;
+          }
+        },
+        { data: 'modelType', defaultContent: '' },
+        {
+          data: null,
+          render: function(data, type, row) {
+            return type === 'display' ? escapeHtml(getSearchTags(row)) : getSearchTags(row);
+          }
+        }
+      ],
       columnDefs: [
         { targets: 0, orderable: false, className: 'dtr-control min-desktop' },
-        { targets: 1, orderable: false, className: 'all' },
-        { targets: 2, className: 'all' },
+        { targets: 1, orderable: false, className: 'all thumb-cell' },
+        {
+          targets: 2,
+          className: 'all object-name-cell',
+          createdCell: function(td, cellData, rowData) {
+            var objName = getObjectName(rowData);
+            var consoleFlag = getConsoleFlag(rowData);
+            var editorJson = rowData.editorJson ? JSON.stringify(rowData.editorJson) : '';
+            td.setAttribute('data-object', objName);
+            td.setAttribute('data-p3d', rowData.path || '');
+            td.setAttribute('data-modeltype', rowData.modelType || '');
+            td.setAttribute('data-ingame', rowData.inGameName || '');
+            td.setAttribute('data-category', rowData.category || '');
+            td.setAttribute('data-console', consoleFlag);
+            td.setAttribute('data-tags', getSearchTags(rowData));
+            td.setAttribute('data-image', rowData.image || '');
+            td.setAttribute('data-editorjson', editorJson);
+          }
+        },
         { targets: 3, className: 'min-desktop' },
         { targets: 4, className: 'min-desktop' },
-        { targets: 5, className: 'min-desktop' },
+        { targets: 5, className: 'min-desktop path-cell' },
         { targets: 6, className: 'min-wide' },
         { targets: 7, className: 'min-wide' },
         { targets: 8, className: 'min-wide' }
@@ -1261,18 +1331,6 @@
     window.addEventListener('resize', updateMobileView);
     updateMobileView();
 
-    var escapeRegex = function(value) {
-      return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    };
-    var escapeHtml = function(value) {
-      if (value === null || value === undefined) return '';
-      return String(value)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;');
-    };
     var buildRowDetailsHtml = function($cell) {
       var objName = $cell.data('object') || '';
       var imgPath = $cell.data('image') || '';
