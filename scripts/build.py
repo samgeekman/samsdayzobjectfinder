@@ -12,6 +12,11 @@ DATA_DIR = BASE_DIR / "data"
 STATIC_DIR = BASE_DIR / "static"
 OUTPUT_JSON = DATA_DIR / "dayz_objects.json"
 BACKUP_JSON = DATA_DIR / "dayz_objects_last_version.json"
+<<<<<<< HEAD
+=======
+STATIC_DATA_DIR = STATIC_DIR / "data"
+STATIC_OUTPUT_JSON = STATIC_DATA_DIR / "dayz_objects.json"
+>>>>>>> exp
 DB_ZIP = STATIC_DIR / "dayz_objects_latest.zip"
 
 
@@ -53,6 +58,7 @@ def main() -> None:
         raise SystemExit(f"Database folder not found: {DB_DIR}")
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+    STATIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     all_objects: List[dict] = []
     presets_dir = DB_DIR / "presets"
@@ -85,10 +91,12 @@ def main() -> None:
         shutil.copyfile(OUTPUT_JSON, BACKUP_JSON)
 
     OUTPUT_JSON.write_text(json.dumps(all_objects, indent=2, ensure_ascii=False))
+    shutil.copyfile(OUTPUT_JSON, STATIC_OUTPUT_JSON)
 
     print(f"Built {OUTPUT_JSON} with {len(all_objects)} objects from {len(object_files)} files.")
     if OUTPUT_JSON.exists():
         print(f"Previous export saved to {BACKUP_JSON}.")
+    print(f"Copied export to {STATIC_OUTPUT_JSON}.")
 
     export_database_zip()
     print(f"Database zip exported to {DB_ZIP}.")
