@@ -9,8 +9,14 @@ from typing import List
 BASE_DIR = Path(__file__).resolve().parent.parent
 DB_DIR = BASE_DIR / "database"
 DATA_DIR = BASE_DIR / "data"
+STATIC_DIR = BASE_DIR / "static"
 OUTPUT_JSON = DATA_DIR / "dayz_objects.json"
 BACKUP_JSON = DATA_DIR / "dayz_objects_last_version.json"
+STATIC_DATA_DIR = STATIC_DIR / "data"
+STATIC_OUTPUT_JSON = STATIC_DATA_DIR / "dayz_objects.json"
+DB_ZIP = STATIC_DIR / "dayz_objects_latest.zip"
+TYPES_XML = DATA_DIR / "types_aggregated.xml"
+STATIC_TYPES_XML = STATIC_DATA_DIR / "types_aggregated.xml"
 
 
 def load_objects(path: Path) -> List[dict]:
@@ -38,11 +44,20 @@ def normalize_object(obj: dict) -> dict:
     return obj
 
 
+def export_database_zip() -> None:
+    """Export the current database folder as a zip in the static root."""
+    STATIC_DIR.mkdir(parents=True, exist_ok=True)
+    if DB_ZIP.exists():
+        DB_ZIP.unlink()
+    shutil.make_archive(DB_ZIP.with_suffix("").as_posix(), "zip", root_dir=DB_DIR)
+
+
 def main() -> None:
     if not DB_DIR.exists():
         raise SystemExit(f"Database folder not found: {DB_DIR}")
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+    STATIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     all_objects: List[dict] = []
     presets_dir = DB_DIR / "presets"
@@ -75,10 +90,18 @@ def main() -> None:
         shutil.copyfile(OUTPUT_JSON, BACKUP_JSON)
 
     OUTPUT_JSON.write_text(json.dumps(all_objects, indent=2, ensure_ascii=False))
+    shutil.copyfile(OUTPUT_JSON, STATIC_OUTPUT_JSON)
+    if TYPES_XML.exists():
+        shutil.copyfile(TYPES_XML, STATIC_TYPES_XML)
+    else:
+        print(f"Warning: types_aggregated.xml not found at {TYPES_XML}")
 
     print(f"Built {OUTPUT_JSON} with {len(all_objects)} objects from {len(object_files)} files.")
     if OUTPUT_JSON.exists():
         print(f"Previous export saved to {BACKUP_JSON}.")
+
+    export_database_zip()
+    print(f"Database zip exported to {DB_ZIP}.")
 
 
 if __name__ == "__main__":

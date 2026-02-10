@@ -280,6 +280,17 @@
     display: block;
   }
 
+  .object-focus__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+  }
+  .object-focus.collapsed .object-focus__clear {
+    display: none;
+  }
+
   .object-focus__collapse {
     border: 1px solid var(--border);
     background: var(--card);
@@ -291,6 +302,20 @@
     line-height: 1;
   }
   .object-focus__collapse:hover {
+    background: var(--bg-soft);
+  }
+
+  .object-focus__clear {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 6px 8px;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .object-focus__clear:hover {
     background: var(--bg-soft);
   }
   .object-focus__image {
@@ -720,7 +745,10 @@
 
   <div id="objectFocus" class="object-focus" aria-live="polite">
     <div class="object-focus__pin-hint" aria-hidden="true">📌</div>
-    <button id="objectFocusCollapse" class="object-focus__collapse" type="button" aria-label="Collapse sidebar">&gt;&gt;</button>
+    <div class="object-focus__header">
+      <button id="objectFocusCollapse" class="object-focus__collapse" type="button" aria-label="Collapse sidebar">&gt;&gt;</button>
+      <button id="objectFocusClear" class="object-focus__clear" type="button" aria-label="Deselect object" title="Deselect object">🆇</button>
+    </div>
     <div class="object-focus__image" id="objectFocusImage">
       <span class="object-focus__missing">Select an object to preview its image.</span>
     </div>
@@ -740,7 +768,7 @@
       <div class="object-focus__actions">
         <div class="object-focus__secondary is-right">
           <a id="objectFocusLink" class="pill-button" href="#" download>↓ Download image</a>
-          <button id="objectFocusClear" class="pill-button" type="button">🆇 Deselect object</button>
+          <a id="objectFocusTypesLink" class="pill-button" href="#" download>↓ Download types entry</a>
         </div>
       </div>
     </div>
@@ -849,6 +877,7 @@
     var objectFocusPathEl = document.getElementById('objectFocusPath');
     var objectFocusImageEl = document.getElementById('objectFocusImage');
     var objectFocusLinkEl = document.getElementById('objectFocusLink');
+    var objectFocusTypesLinkEl = document.getElementById('objectFocusTypesLink');
     var objectFocusClearEl = document.getElementById('objectFocusClear');
     var objectFocusCopyEl = document.getElementById('objectFocusCopy');
     var objectFocusEditorEl = document.getElementById('objectFocusEditor');
@@ -858,6 +887,8 @@
     var currentObjectName = null;
     var currentObjectData = null;
     var currentObjectRowEl = null;
+    var typesEntryUrl = null;
+    var typesEntryByName = {};
     var pinnedObjectsEl = document.getElementById('pinnedObjects');
     var pinnedListEl = document.getElementById('pinnedList');
     var pinnedClearAllEl = document.getElementById('pinnedClearAll');
@@ -882,6 +913,30 @@
       var isCollapsed = objectFocusEl.classList.contains('collapsed');
       objectFocusEl.classList.toggle('empty-state', !hasSelection && !isCollapsed);
       objectFocusEl.classList.toggle('no-selection', !hasSelection);
+    };
+
+    var setTypesEntry = function(objName) {
+      if (!objectFocusTypesLinkEl) return;
+      if (typesEntryUrl) {
+        URL.revokeObjectURL(typesEntryUrl);
+        typesEntryUrl = null;
+      }
+      if (!objName) {
+        objectFocusTypesLinkEl.style.display = 'none';
+        objectFocusTypesLinkEl.removeAttribute('download');
+        return;
+      }
+      var entry = typesEntryByName[objName];
+      if (!entry) {
+        objectFocusTypesLinkEl.style.display = 'none';
+        objectFocusTypesLinkEl.removeAttribute('download');
+        return;
+      }
+      var blob = new Blob([entry + '\n'], { type: 'application/xml;charset=utf-8' });
+      typesEntryUrl = URL.createObjectURL(blob);
+      objectFocusTypesLinkEl.href = typesEntryUrl;
+      objectFocusTypesLinkEl.setAttribute('download', objName + '.xml');
+      objectFocusTypesLinkEl.style.display = 'inline-flex';
     };
 
     if (objectFocusEl) {
@@ -956,6 +1011,10 @@
         objectFocusLinkEl.style.display = 'none';
         objectFocusLinkEl.removeAttribute('download');
       }
+      if (objectFocusTypesLinkEl) {
+        objectFocusTypesLinkEl.style.display = 'none';
+        objectFocusTypesLinkEl.removeAttribute('download');
+      }
       currentObjectName = null;
       currentObjectData = null;
       if (currentObjectRowEl) {
@@ -1012,6 +1071,7 @@
           '<span class="object-focus__missing">No image available for this object.</span>';
         objectFocusLinkEl.style.display = 'none';
       }
+      setTypesEntry(objName);
 
       objectFocusEl.classList.add('visible');
       if (objectFocusPinEl) {
@@ -1023,6 +1083,22 @@
         history.replaceState({}, '', buildObjectUrl(objName));
       }
     };
+
+    fetch('/data/types_aggregated.xml')
+      .then(function(resp) { return resp.ok ? resp.text() : ''; })
+      .then(function(text) {
+        if (!text) return;
+        var parser = new DOMParser();
+        var xml = parser.parseFromString(text, 'application/xml');
+        var nodes = xml.getElementsByTagName('type');
+        for (var i = 0; i < nodes.length; i++) {
+          var node = nodes[i];
+          var nameAttr = node.getAttribute('name');
+          if (!nameAttr) continue;
+          typesEntryByName[nameAttr] = node.outerHTML;
+        }
+      })
+      .catch(function() {});
 
     var buildPinnedItemFromCell = function($td) {
       return {
