@@ -12,20 +12,11 @@ DATA_DIR = BASE_DIR / "data"
 STATIC_DIR = BASE_DIR / "static"
 OUTPUT_JSON = DATA_DIR / "dayz_objects.json"
 BACKUP_JSON = DATA_DIR / "dayz_objects_last_version.json"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-STATIC_DATA_DIR = STATIC_DIR / "data"
-STATIC_OUTPUT_JSON = STATIC_DATA_DIR / "dayz_objects.json"
->>>>>>> exp
-DB_ZIP = STATIC_DIR / "dayz_objects_latest.zip"
-=======
 STATIC_DATA_DIR = STATIC_DIR / "data"
 STATIC_OUTPUT_JSON = STATIC_DATA_DIR / "dayz_objects.json"
 DB_ZIP = STATIC_DIR / "dayz_objects_latest.zip"
 TYPES_XML = DATA_DIR / "types_aggregated.xml"
 STATIC_TYPES_XML = STATIC_DATA_DIR / "types_aggregated.xml"
->>>>>>> data
 
 
 def load_objects(path: Path) -> List[dict]:
@@ -100,21 +91,15 @@ def main() -> None:
 
     OUTPUT_JSON.write_text(json.dumps(all_objects, indent=2, ensure_ascii=False))
     shutil.copyfile(OUTPUT_JSON, STATIC_OUTPUT_JSON)
-<<<<<<< HEAD
-=======
     if TYPES_XML.exists():
         shutil.copyfile(TYPES_XML, STATIC_TYPES_XML)
     else:
         print(f"Warning: types_aggregated.xml not found at {TYPES_XML}")
->>>>>>> data
 
     print(f"Built {OUTPUT_JSON} with {len(all_objects)} objects from {len(object_files)} files.")
     if OUTPUT_JSON.exists():
         print(f"Previous export saved to {BACKUP_JSON}.")
     print(f"Copied export to {STATIC_OUTPUT_JSON}.")
-
-    export_database_zip()
-    print(f"Database zip exported to {DB_ZIP}.")
 
     export_database_zip()
     print(f"Database zip exported to {DB_ZIP}.")
