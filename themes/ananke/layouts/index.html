@@ -2579,14 +2579,31 @@
     }
 
 
-    var categories = [];
-    table.column(4).data().each(function(value) {
-      if (value && categories.indexOf(value) === -1) {
-        categories.push(value);
+    var populateCategories = function(sourceData) {
+      var categories = [];
+      if (Array.isArray(sourceData)) {
+        sourceData.forEach(function(item) {
+          var value = item && item.category ? String(item.category) : '';
+          if (value && categories.indexOf(value) === -1) {
+            categories.push(value);
+          }
+        });
+      } else if (table) {
+        table.column(4).data().each(function(value) {
+          if (value && categories.indexOf(value) === -1) {
+            categories.push(value);
+          }
+        });
       }
-    });
-    categories.sort().forEach(function(cat) {
-      $('#filterCategory').append('<option value="' + cat + '">' + cat + '</option>');
+      categories.sort();
+      var $select = $('#filterCategory');
+      $select.find('option:not([value=""])').remove();
+      categories.forEach(function(cat) {
+        $select.append('<option value="' + cat + '">' + cat + '</option>');
+      });
+    };
+    table.on('xhr.dt', function(e, settings, json) {
+      populateCategories(json);
     });
 
     $('#filterCategory').on('change', function() {
