@@ -2114,18 +2114,6 @@
       if (!objName) return;
       var normalized = objName.trim();
       if (!normalized) return;
-
-      var matchCell = $(table.rows().nodes()).find('.object-name-cell').filter(function() {
-        var value = $(this).data('object');
-        return value && String(value).toLowerCase() === normalized.toLowerCase();
-      }).first();
-
-      if (!matchCell.length) {
-        showMissingObject(normalized);
-        return;
-      }
-
-      showObjectFocus(matchCell, false);
       table.column(2).search('^' + escapeRegex(normalized), true, false).draw();
       table.one('draw', function() {
         var $cell = $tableEl.find('tbody .object-name-cell').filter(function() {
@@ -2141,6 +2129,8 @@
             rowEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
             setTimeout(function() { rowEl.classList.remove('flash'); }, 1200);
           }
+        } else {
+          showMissingObject(normalized);
         }
       });
     };
@@ -2548,35 +2538,42 @@
 
     var searchParams = new URLSearchParams(window.location.search);
     var pinnedParam = searchParams.get('pinned');
-    if (pinnedParam) {
-      var names = parsePinnedParam(pinnedParam);
-      if (names.length) {
-        pinnedItems = [];
-        var seen = {};
-        names.forEach(function(name) {
-          var key = name.toLowerCase();
-          if (seen[key]) return;
-          seen[key] = true;
-          var $cell = findObjectCellByName(name);
-          if (!$cell) return;
-          var item = buildPinnedItemFromCell($cell);
-          if (item && item.objName) {
-            pinnedItems.push(item);
+    var objectParam = searchParams.get('object');
+    var appliedUrlState = false;
+
+    var applyUrlState = function() {
+      if (appliedUrlState) return;
+      appliedUrlState = true;
+
+      if (pinnedParam) {
+        var names = parsePinnedParam(pinnedParam);
+        if (names.length) {
+          pinnedItems = [];
+          var seen = {};
+          names.forEach(function(name) {
+            var key = name.toLowerCase();
+            if (seen[key]) return;
+            seen[key] = true;
+            var $cell = findObjectCellByName(name);
+            if (!$cell) return;
+            var item = buildPinnedItemFromCell($cell);
+            if (item && item.objName) {
+              pinnedItems.push(item);
+            }
+          });
+          updatePinnedUI();
+          if (objectFocusEl) {
+            objectFocusEl.classList.remove('collapsed');
+            updateCollapseButtonLabel();
+            updateEmptyState();
           }
-        });
-        updatePinnedUI();
-        if (objectFocusEl) {
-          objectFocusEl.classList.remove('collapsed');
-          updateCollapseButtonLabel();
-          updateEmptyState();
         }
       }
-    }
 
-    var objectParam = searchParams.get('object');
-    if (objectParam) {
-      focusByName(objectParam);
-    }
+      if (objectParam) {
+        focusByName(objectParam);
+      }
+    };
 
 
     var populateCategories = function(sourceData) {
@@ -2604,6 +2601,7 @@
     };
     table.on('xhr.dt', function(e, settings, json) {
       populateCategories(json);
+      applyUrlState();
     });
 
     $('#filterCategory').on('change', function() {
