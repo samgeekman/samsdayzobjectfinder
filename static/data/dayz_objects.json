@@ -3128,8 +3128,8 @@
     "modelType": "Config",
     "path": "dz/animals/bos_taurus",
     "usableOnConsole": true,
-    "searchTags": "bull, cow, farmyard, brown, male",
-    "image": "images/animals/bos_taurus/animal_bostaurus_brown/animal_bostaurus_spotted.jpg"
+    "searchTags": "bull, cow, farmyard, spotted, male",
+    "image": "images/animals/bos_taurus/animal_bostaurus_spotted/animal_bostaurus_spotted.jpg"
   },
   {
     "objectName": "Animal_BosTaurus_White",
@@ -3138,8 +3138,8 @@
     "modelType": "Config",
     "path": "dz/animals/bos_taurus",
     "usableOnConsole": true,
-    "searchTags": "bull, cow, farmyard, brown, male",
-    "image": "images/animals/bos_taurus/animal_bostaurus_brown/animal_bostaurus_white.jpg"
+    "searchTags": "bull, cow, farmyard, white, male",
+    "image": "images/animals/bos_taurus/animal_bostaurus_white/animal_bostaurus_white.jpg"
   },
   {
     "objectName": "Animal_BosTaurusF_Brown",
@@ -4462,14 +4462,14 @@
     "image": "images/characters/belts/hippack_party/hippack_party.jpg"
   },
   {
-    "objectName": "LeatherBelt_Natrual",
+    "objectName": "LeatherBelt_Natural",
     "inGameName": "Leather Belt",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/belts",
     "usableOnConsole": true,
     "searchTags": "belt, leather, civilian, waist, crafting, tanning",
-    "image": "images/characters/belts/leatherbelt_natrual/leatherbelt_natrual.jpg"
+    "image": "images/characters/belts/leatherbelt_natural/leatherbelt_natural.jpg"
   },
   {
     "objectName": "LeatherBelt_Black",
@@ -4509,7 +4509,7 @@
     "path": "dz/characters/belts",
     "usableOnConsole": false,
     "searchTags": "belt, leather, civilian, waist, crafting, tanning",
-    "image": "images/characters/belts/belt_leather_g.p3d.jpg"
+    "image": "images/characters/belts/leatherbelt_natural/leatherbelt_natural.jpg"
   },
   {
     "objectName": "civ_belt_g.p3d",
@@ -4519,7 +4519,7 @@
     "path": "dz/characters/belts",
     "usableOnConsole": false,
     "searchTags": "belt, leather, civilian, waist, accessory",
-    "image": "images/characters/belts/civ_belt_g.p3d.jpg"
+    "image": "images/characters/belts/civilianbelt/civilianbelt.jpg"
   },
   {
     "objectName": "hippack_g.p3d",
@@ -4529,7 +4529,7 @@
     "path": "dz/characters/belts",
     "usableOnConsole": false,
     "searchTags": "hip pack, belt bag, fanny pack, storage, waist",
-    "image": "images/characters/belts/hippack_g.p3d.jpg"
+    "image": "images/characters/belts/hippack_black/hippack_black.jpg"
   },
   {
     "objectName": "knife_holster_g.p3d",
@@ -4539,17 +4539,7 @@
     "path": "dz/characters/belts",
     "usableOnConsole": false,
     "searchTags": "knife, sheath, leather, belt, holster",
-    "image": "images/characters/belts/knife_holster_g.p3d.jpg"
-  },
-  {
-    "objectName": "leather_quiver_g.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "quiver, arrows, leather, belt, archery, not_in_game, not_included",
-    "image": "images/characters/belts/leather_quiver_g.p3d.jpg"
+    "image": "images/characters/belts/leatherknifesheath/leatherknifesheath.jpg"
   },
   {
     "objectName": "mil_belt_g.p3d",
@@ -4559,7 +4549,7 @@
     "path": "dz/characters/belts",
     "usableOnConsole": false,
     "searchTags": "belt, tactical, military, utility, holster",
-    "image": "images/characters/belts/mil_belt_g.p3d.jpg"
+    "image": "images/characters/belts/militarybelt/militarybelt.jpg"
   },
   {
     "objectName": "nylon_knifesheath.p3d",
@@ -4569,17 +4559,7 @@
     "path": "dz/characters/belts",
     "usableOnConsole": false,
     "searchTags": "knife, sheath, nylon, belt, holster",
-    "image": "images/characters/belts/nylon_knifesheath.p3d.jpg"
-  },
-  {
-    "objectName": "nylon_toolholder.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/belts",
-    "usableOnConsole": false,
-    "searchTags": "tool holder, nylon, belt, utility, pouch",
-    "image": "images/characters/belts/nylon_toolholder.p3d.jpg"
+    "image": "images/characters/belts/nylon_knifesheath/nylon_knifesheath.jpg"
   },
   {
     "objectName": "rope_belt_g.p3d",
@@ -4589,17 +4569,7 @@
     "path": "dz/characters/belts",
     "usableOnConsole": false,
     "searchTags": "belt, rope, improvised, survival, waist",
-    "image": "images/characters/belts/rope_belt_g.p3d.jpg"
-  },
-  {
-    "objectName": "LeatherBelt_Natural",
-    "inGameName": "Leather Belt",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/belts",
-    "usableOnConsole": true,
-    "searchTags": "belt, leather, civilian, waist, crafting, tanning",
-    "image": "images/characters/belts/leatherbelt_natrual/leatherbelt_natrual.jpg"
+    "image": "images/characters/belts/ropebelt/ropebelt.jpg"
   },
   {
     "objectName": "SurvivorM_Mirek",
@@ -4910,16 +4880,6 @@
     "usableOnConsole": true,
     "searchTags": "bodies, player, pc, female, women, loot",
     "image": "images/characters/bodies/survivorf_baty.jpeg"
-  },
-  {
-    "objectName": "bodyparts_above0.p3d",
-    "inGameName": "-",
-    "category": "bodies",
-    "modelType": "Raw P3D",
-    "path": "/dz/characters/bodies",
-    "usableOnConsole": false,
-    "searchTags": "[REMOVE ENTRY], loot",
-    "image": ""
   },
   {
     "objectName": "SportGlasses_Black",
@@ -5898,7 +5858,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "armored, assault, headgear, helmet, military, protective, spetsnaz",
+    "searchTags": "armored, assault, headgear, glass, helmet, military, protective, spetsnaz",
     "image": "images/characters/headgear/gorkahelmetvisor/gorkahelmetvisor.jpg"
   },
   {
@@ -5908,7 +5868,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "armored, black, headgear, helmet, military, protective",
+    "searchTags": "bandana, blue, cloth, headgear, wrap",
     "image": "images/characters/headgear/bandana_blue/bandana_blue.jpg"
   },
   {
@@ -5918,7 +5878,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "armored, black, headgear, helmet, military, protective",
+    "searchTags": "bandana, black, cloth, headgear, pattern, wrap",
     "image": "images/characters/headgear/bandana_blackpattern/bandana_blackpattern.jpg"
   },
   {
@@ -5928,7 +5888,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "armored, black, headgear, helmet, military, protective",
+    "searchTags": "bandana, camouflage, cloth, headgear, wrap",
     "image": "images/characters/headgear/bandana_camopattern/bandana_camopattern.jpg"
   },
   {
@@ -5938,7 +5898,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "armored, black, headgear, helmet, military, protective",
+    "searchTags": "bandana, cloth, green, headgear, pattern, wrap",
     "image": "images/characters/headgear/bandana_greenpattern/bandana_greenpattern.jpg"
   },
   {
@@ -5948,7 +5908,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "armored, black, headgear, helmet, military, protective",
+    "searchTags": "bandana, cloth, headgear, pink, wrap",
     "image": "images/characters/headgear/bandana_pink/bandana_pink.jpg"
   },
   {
@@ -5958,7 +5918,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "armored, black, headgear, helmet, military, protective",
+    "searchTags": "bandana, cloth, headgear, pattern, polka, wrap",
     "image": "images/characters/headgear/bandana_polkapattern/bandana_polkapattern.jpg"
   },
   {
@@ -5968,7 +5928,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "armored, black, headgear, helmet, military, protective",
+    "searchTags": "bandana, cloth, headgear, pattern, red, wrap",
     "image": "images/characters/headgear/bandana_redpattern/bandana_redpattern.jpg"
   },
   {
@@ -5978,7 +5938,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "armored, black, headgear, helmet, military, protective",
+    "searchTags": "bandana, cloth, headgear, wrap, yellow",
     "image": "images/characters/headgear/bandana_yellow/bandana_yellow.jpg"
   },
   {
@@ -6208,7 +6168,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "headgear, helmet, protective",
+    "searchTags": "headgear, helmet, lime, protective",
     "image": "images/characters/headgear/constructionhelmet_lime/constructionhelmet_lime.jpg"
   },
   {
@@ -6458,7 +6418,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "headgear, helmet, protective",
+    "searchTags": "headgear, helmet, lime, protective",
     "image": "images/characters/headgear/motohelmet_lime/motohelmet_lime.jpg"
   },
   {
@@ -7328,7 +7288,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "black, festive, headgear, hood",
+    "searchTags": "seasonal, headgear, witch, halloween, spooky",
     "image": "images/characters/headgear/witchhood_black/witchhood_black.jpg"
   },
   {
@@ -7338,7 +7298,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "brown, festive, headgear, hood",
+    "searchTags": "seasonal, headgear, witch, halloween, spooky",
     "image": "images/characters/headgear/witchhood_brown/witchhood_brown.jpg"
   },
   {
@@ -7348,7 +7308,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "festive, headgear, hood, red",
+    "searchTags": "seasonal, headgear, witch, halloween, spooky",
     "image": "images/characters/headgear/witchhood_red/witchhood_red.jpg"
   },
   {
@@ -7358,7 +7318,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "festive, headgear",
+    "searchTags": "seasonal, headgear, witch, halloween, spooky",
     "image": "images/characters/headgear/witchhat/witchhat.jpg"
   },
   {
@@ -7368,7 +7328,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "festive, headgear",
+    "searchTags": "winter, insulated, headgear",
     "image": "images/characters/headgear/wintercoif_black/wintercoif_black.jpg"
   },
   {
@@ -7378,7 +7338,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "festive, headgear",
+    "searchTags": "winter, cold, insulated, headgear",
     "image": "images/characters/headgear/wintercoif_blue/wintercoif_blue.jpg"
   },
   {
@@ -7388,7 +7348,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "festive, headgear",
+    "searchTags": "winter, cold, insulated, headgear",
     "image": "images/characters/headgear/wintercoif_green/wintercoif_green.jpg"
   },
   {
@@ -7398,7 +7358,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "festive, headgear",
+    "searchTags": "winter, cold, insulated, headgear",
     "image": "images/characters/headgear/wintercoif_skull/wintercoif_skull.jpg"
   },
   {
@@ -7568,7 +7528,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "woolen, scarf, facewrap headgear, insulated, ushanka, white, winter",
+    "searchTags": "woolen, scarf, facewrap headgear, insulated, green, winter",
     "image": "images/characters/headgear/shemag_green/shemag_green.jpg"
   },
   {
@@ -7578,7 +7538,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "woolen, scarf, facewrap headgear, insulated, ushanka, white, winter",
+    "searchTags": "woolen, scarf, facewrap headgear, insulated, red, winter",
     "image": "images/characters/headgear/shemag_red/shemag_red.jpg"
   },
   {
@@ -7708,8 +7668,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
-    "searchTags": "headgear, p3d, uniform",
-    "image": "images/characters/headgear/budenovka_g.p3d.jpg"
+    "searchTags": "soviet, military, insulated, headgear, gray, winter",
+    "image": "images/characters/headgear/budenovkahat_gray/budenovkahat_gray.jpg"
   },
   {
     "objectName": "chainmail_coif_g.p3d",
@@ -7968,8 +7928,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
-    "searchTags": "armored, headgear, helmet, mask, military, p3d, protective",
-    "image": "images/characters/headgear/maska_glass_g.p3d.jpg"
+    "searchTags": "armored, headgear, helmet, mask, glass, military, p3d, protective",
+    "image": "images/characters/headgear/gorkahelmetvisor/gorkahelmetvisor.jpg"
   },
   {
     "objectName": "medicalscrubs_hat_g.p3d",
@@ -8079,7 +8039,7 @@
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
     "searchTags": "headgear, helmet, p3d, protective, yellow_king",
-    "image": "images/characters/headgear/motohelmet_black/motohelmet_black.jpg"
+    "image": "images/characters/headgear/darkmotohelmet_yellowscarred/darkmotohelmet_yellowscarred.jpg"
   },
   {
     "objectName": "mxhelmet_g.p3d",
@@ -8168,8 +8128,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
-    "searchTags": "festive, headgear, p3d",
-    "image": "images/characters/headgear/petushokhat.jpg"
+    "searchTags": "headgear, insulated, knit, winter",
+    "image": "images/characters/headgear/petushokhat_black/petushokhat_black.jpg"
   },
   {
     "objectName": "pilotka_g.p3d",
@@ -8249,7 +8209,7 @@
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
     "searchTags": "cloth, desert, headgear, p3d, scarf, wrap",
-    "image": "images/characters/headgear/shemaghybrid_g.p3d.jpg"
+    "image": "images/characters/headgear/shemag_brown/shemag_brown.jpg"
   },
   {
     "objectName": "sherpahat_g.p3d",
@@ -8309,7 +8269,7 @@
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
     "searchTags": "headgear, insulated, p3d, winter",
-    "image": "images/characters/headgear/wintercoif_g.p3d.jpg"
+    "image": "images/characters/headgear/wintercoif_black/wintercoif_black.jpg"
   },
   {
     "objectName": "witchhat_g.p3d",
@@ -8328,8 +8288,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
-    "searchTags": "festive, headgear, hood, p3d",
-    "image": "images/characters/headgear/witchhoodcoif_g.p3d.jpg"
+    "searchTags": "seasonal, headgear, witch, halloween, spooky",
+    "image": "images/characters/headgear/witchhood_red/witchhood_red.jpg"
   },
   {
     "objectName": "witchhood_g.p3d",
@@ -8398,8 +8358,8 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "headgear, helmet, protective, white",
-    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+    "searchTags": "headgear, helmet, protective, black",
+    "image": "images/characters/headgear/darkmotohelmet_black/darkmotohelmet_black.jpg"
   },
   {
     "objectName": "DarkMotoHelmet_Blue",
@@ -8408,8 +8368,8 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "headgear, helmet, protective, white",
-    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+    "searchTags": "headgear, helmet, protective, blue",
+    "image": "images/characters/headgear/darkmotohelmet_blue/darkmotohelmet_blue.jpg"
   },
   {
     "objectName": "DarkMotoHelmet_Green",
@@ -8418,8 +8378,8 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "headgear, helmet, protective, white",
-    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+    "searchTags": "headgear, helmet, protective, green",
+    "image": "images/characters/headgear/darkmotohelmet_green/darkmotohelmet_green.jpg"
   },
   {
     "objectName": "DarkMotoHelmet_Grey",
@@ -8428,8 +8388,8 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "headgear, helmet, protective, white",
-    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+    "searchTags": "headgear, helmet, protective, grey",
+    "image": "images/characters/headgear/darkmotohelmet_grey/darkmotohelmet_grey.jpg"
   },
   {
     "objectName": "DarkMotoHelmet_Lime",
@@ -8438,8 +8398,8 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "headgear, helmet, protective, white",
-    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+    "searchTags": "headgear, helmet, protective, lime",
+    "image": "images/characters/headgear/darkmotohelmet_lime/darkmotohelmet_lime.jpg"
   },
   {
     "objectName": "DarkMotoHelmet_Red",
@@ -8448,8 +8408,8 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "headgear, helmet, protective, white",
-    "image": "images/characters/headgear/darkmotohelmet_white/darkmotohelmet_white.jpg"
+    "searchTags": "headgear, helmet, protective, red",
+    "image": "images/characters/headgear/darkmotohelmet_red/darkmotohelmet_red.jpg"
   },
   {
     "objectName": "MotoHelmet_White",
@@ -8458,8 +8418,8 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "black, headgear, helmet, protective",
-    "image": "images/characters/headgear/motohelmet_black/motohelmet_black.jpg"
+    "searchTags": "white, headgear, helmet, protective",
+    "image": "images/characters/headgear/motohelmet_white/motohelmet_white.jpg"
   },
   {
     "objectName": "MotoHelmet_Yellow",
@@ -8468,8 +8428,8 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "black, headgear, helmet, protective",
-    "image": "images/characters/headgear/motohelmet_black/motohelmet_black.jpg"
+    "searchTags": "yellow, headgear, helmet, protective",
+    "image": "images/characters/headgear/motohelmet_yellow/motohelmet_yellow.jpg"
   },
   {
     "objectName": "NBCHoodGray",
@@ -8613,13 +8573,13 @@
   },
   {
     "objectName": "Head_Default",
-    "inGameName": "face",
+    "inGameName": "survivor, faces, heads, player, character, pc",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "face, heads, loot",
-    "image": "images/characters/heads/head_default.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/heads/maleadamhead/maleadamhead.jpg"
   },
   {
     "objectName": "FemaleFridaHead",
@@ -8628,8 +8588,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/femalefridahead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_frida.jpeg"
   },
   {
     "objectName": "FemaleGabiHead",
@@ -8638,8 +8598,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/femalegabihead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_gabi.jpeg"
   },
   {
     "objectName": "FemaleHelgaHead",
@@ -8648,8 +8608,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/femalehelgahead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_helga.jpeg"
   },
   {
     "objectName": "FemaleIrenaHead",
@@ -8658,8 +8618,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/femaleirenahead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_irena.jpeg"
   },
   {
     "objectName": "FemaleJudyHead",
@@ -8668,8 +8628,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/femalejudyhead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_judy.jpeg"
   },
   {
     "objectName": "FemaleKeikoHead",
@@ -8678,8 +8638,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/femalekeikohead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_keiko.jpeg"
   },
   {
     "objectName": "FemaleLindaHead",
@@ -8688,8 +8648,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/femalelindahead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_linda.jpeg"
   },
   {
     "objectName": "FemaleMariaHead",
@@ -8698,8 +8658,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/femalemariahead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_maria.jpeg"
   },
   {
     "objectName": "FemaleNaomiHead",
@@ -8708,8 +8668,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/femalenaomihead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_naomi.jpeg"
   },
   {
     "objectName": "FemaleEvaHead",
@@ -8718,8 +8678,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/femaleevahead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_eva.jpeg"
   },
   {
     "objectName": "FemaleBatyHead",
@@ -8729,7 +8689,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/heads/femalebatyhead.jpg"
+    "image": "images/characters/bodies/survivorf_baty.jpeg"
   },
   {
     "objectName": "MaleAdamHead",
@@ -8738,8 +8698,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/maleadamhead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/heads/maleadamhead/maleadamhead.jpg"
   },
   {
     "objectName": "MaleBorisHead",
@@ -8748,8 +8708,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/maleborishead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_boris.jpeg"
   },
   {
     "objectName": "MaleCyrilHead",
@@ -8758,8 +8718,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/malecyrilhead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_cyril.jpeg"
   },
   {
     "objectName": "MaleDenisHead",
@@ -8768,8 +8728,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/maledenishead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_denis.jpeg"
   },
   {
     "objectName": "MaleEliasHead",
@@ -8778,8 +8738,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/maleeliashead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_elias.jpeg"
   },
   {
     "objectName": "MaleFrancisHead",
@@ -8788,8 +8748,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/malefrancishead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_francis.jpeg"
   },
   {
     "objectName": "MaleGuoHead",
@@ -8798,8 +8758,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/maleguohead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_guo.jpeg"
   },
   {
     "objectName": "MaleHassanHead",
@@ -8808,8 +8768,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/malehassanhead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_hassan.jpeg"
   },
   {
     "objectName": "MaleIndarHead",
@@ -8818,8 +8778,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/maleindarhead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_indar.jpeg"
   },
   {
     "objectName": "MaleJoseHead",
@@ -8828,8 +8788,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/malejosehead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_jose.jpeg"
   },
   {
     "objectName": "MaleKaitoHead",
@@ -8838,8 +8798,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/malekaitohead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_kaito.jpeg"
   },
   {
     "objectName": "MaleLewisHead",
@@ -8848,8 +8808,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/malelewishead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_lewis.jpeg"
   },
   {
     "objectName": "MaleManuaHead",
@@ -8858,8 +8818,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/malemanuahead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_manua.jpeg"
   },
   {
     "objectName": "MaleNikiHead",
@@ -8868,8 +8828,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/malenikihead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_niki.jpeg"
   },
   {
     "objectName": "MaleOliverHead",
@@ -8878,8 +8838,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/maleoliverhead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_oliver.jpeg"
   },
   {
     "objectName": "MalePeterHead",
@@ -8888,8 +8848,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/malepeterhead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_peter.jpeg"
   },
   {
     "objectName": "MaleQuinnHead",
@@ -8898,8 +8858,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/malequinnhead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_quinn.jpeg"
   },
   {
     "objectName": "MaleRolfHead",
@@ -8908,8 +8868,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/malerolfhead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_rolf.jpeg"
   },
   {
     "objectName": "MaleSethHead",
@@ -8918,8 +8878,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/malesethhead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_seth.jpeg"
   },
   {
     "objectName": "MaleTaikiHead",
@@ -8928,8 +8888,8 @@
     "modelType": "Config",
     "path": "dz/characters/heads",
     "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/characters/heads/maletaikihead.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_taiki.jpeg"
   },
   {
     "objectName": "FemaleFridaHead",
@@ -8939,7 +8899,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/heads/femalefridahead.jpg"
+    "image": "images/characters/bodies/survivorf_frida.jpeg"
   },
   {
     "objectName": "FemaleGabiHead",
@@ -8949,7 +8909,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/heads/femalegabihead.jpg"
+    "image": "images/characters/bodies/survivorf_gabi.jpeg"
   },
   {
     "objectName": "FemaleHelgaHead",
@@ -8959,7 +8919,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/heads/femalehelgahead.jpg"
+    "image": "images/characters/bodies/survivorf_helga.jpeg"
   },
   {
     "objectName": "FemaleIrenaHead",
@@ -8969,7 +8929,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/heads/femaleirenahead.jpg"
+    "image": "images/characters/bodies/survivorf_irena.jpeg"
   },
   {
     "objectName": "FemaleJudyHead",
@@ -8979,7 +8939,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/heads/femalejudyhead.jpg"
+    "image": "images/characters/bodies/survivorf_judy.jpeg"
   },
   {
     "objectName": "FemaleKeikoHead",
@@ -8989,7 +8949,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/heads/femalekeikohead.jpg"
+    "image": "images/characters/bodies/survivorf_keiko.jpeg"
   },
   {
     "objectName": "FemaleLindaHead",
@@ -8999,7 +8959,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/heads/femalelindahead.jpg"
+    "image": "images/characters/bodies/survivorf_linda.jpeg"
   },
   {
     "objectName": "FemaleMariaHead",
@@ -9009,7 +8969,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/heads/femalemariahead.jpg"
+    "image": "images/characters/bodies/survivorf_maria.jpeg"
   },
   {
     "objectName": "FemaleNaomiHead",
@@ -9019,7 +8979,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/heads/femalenaomihead.jpg"
+    "image": "images/characters/bodies/survivorf_naomi.jpeg"
   },
   {
     "objectName": "FemaleEvaHead",
@@ -9029,17 +8989,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/heads/femaleevahead.jpg"
-  },
-  {
-    "objectName": "MaleAdamHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/maleadamhead.jpg"
+    "image": "images/characters/bodies/survivorf_eva.jpeg"
   },
   {
     "objectName": "MaleBorisHead",
@@ -9049,7 +8999,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/maleborishead.jpg"
+    "image": "images/characters/bodies/survivorm_boris.jpeg"
   },
   {
     "objectName": "MaleCyrilHead",
@@ -9059,7 +9009,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/malecyrilhead.jpg"
+    "image": "images/characters/bodies/survivorm_cyril.jpeg"
   },
   {
     "objectName": "MaleDenisHead",
@@ -9069,7 +9019,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/maledenishead.jpg"
+    "image": "images/characters/bodies/survivorm_denis.jpeg"
   },
   {
     "objectName": "MaleEliasHead",
@@ -9079,7 +9029,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/maleeliashead.jpg"
+    "image": "images/characters/bodies/survivorm_elias.jpeg"
   },
   {
     "objectName": "MaleFrancisHead",
@@ -9089,7 +9039,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/malefrancishead.jpg"
+    "image": "images/characters/bodies/survivorm_francis.jpeg"
   },
   {
     "objectName": "MaleGuoHead",
@@ -9099,7 +9049,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/maleguohead.jpg"
+    "image": "images/characters/bodies/survivorm_guo.jpeg"
   },
   {
     "objectName": "MaleHassanHead",
@@ -9109,7 +9059,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/malehassanhead.jpg"
+    "image": "images/characters/bodies/survivorm_hassan.jpeg"
   },
   {
     "objectName": "MaleIndarHead",
@@ -9119,7 +9069,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/maleindarhead.jpg"
+    "image": "images/characters/bodies/survivorm_indar.jpeg"
   },
   {
     "objectName": "MaleJoseHead",
@@ -9129,7 +9079,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/malejosehead.jpg"
+    "image": "images/characters/bodies/survivorm_jose.jpeg"
   },
   {
     "objectName": "MaleKaitoHead",
@@ -9139,7 +9089,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/malekaitohead.jpg"
+    "image": "images/characters/bodies/survivorm_kaito.jpeg"
   },
   {
     "objectName": "MaleLewisHead",
@@ -9149,7 +9099,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/malelewishead.jpg"
+    "image": "images/characters/bodies/survivorm_lewis.jpeg"
   },
   {
     "objectName": "MaleManuaHead",
@@ -9159,7 +9109,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/malemanuahead.jpg"
+    "image": "images/characters/bodies/survivorm_manua.jpeg"
   },
   {
     "objectName": "MaleNikiHead",
@@ -9169,7 +9119,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/malenikihead.jpg"
+    "image": "images/characters/bodies/survivorm_niki.jpeg"
   },
   {
     "objectName": "MaleOliverHead",
@@ -9179,7 +9129,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/maleoliverhead.jpg"
+    "image": "images/characters/bodies/survivorm_oliver.jpeg"
   },
   {
     "objectName": "MalePeterHead",
@@ -9189,7 +9139,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/malepeterhead.jpg"
+    "image": "images/characters/bodies/survivorm_peter.jpeg"
   },
   {
     "objectName": "MaleQuinnHead",
@@ -9199,7 +9149,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/malequinnhead.jpg"
+    "image": "images/characters/bodies/survivorm_quinn.jpeg"
   },
   {
     "objectName": "MaleRolfHead",
@@ -9209,7 +9159,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/malerolfhead.jpg"
+    "image": "images/characters/bodies/survivorm_rolf.jpeg"
   },
   {
     "objectName": "MaleSethHead",
@@ -9219,7 +9169,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/malesethhead.jpg"
+    "image": "images/characters/bodies/survivorm_seth.jpeg"
   },
   {
     "objectName": "MaleTaikiHead",
@@ -9229,7 +9179,7 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/heads/maletaikihead.jpg"
+    "image": "images/characters/bodies/survivorm_taiki.jpeg"
   },
   {
     "objectName": "f_baty.p3d",
@@ -9238,8 +9188,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/f_baty.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_baty.jpeg"
   },
   {
     "objectName": "f_eva_2.p3d",
@@ -9248,8 +9198,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/f_eva_2.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_eva.jpeg"
   },
   {
     "objectName": "f_frida_2.p3d",
@@ -9258,8 +9208,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/f_frida_2.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_frida.jpeg"
   },
   {
     "objectName": "f_gabi_2.p3d",
@@ -9268,8 +9218,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/f_gabi_2.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_gabi.jpeg"
   },
   {
     "objectName": "f_helga.p3d",
@@ -9278,8 +9228,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/f_helga.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_helga.jpeg"
   },
   {
     "objectName": "f_irena_2.p3d",
@@ -9288,8 +9238,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/f_irena_2.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_irena.jpeg"
   },
   {
     "objectName": "f_judy.p3d",
@@ -9298,8 +9248,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/f_judy.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_judy.jpeg"
   },
   {
     "objectName": "f_keiko.p3d",
@@ -9308,8 +9258,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/f_keiko.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_keiko.jpeg"
   },
   {
     "objectName": "f_linda_2.p3d",
@@ -9318,8 +9268,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/f_linda_2.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_linda.jpeg"
   },
   {
     "objectName": "f_maria_2.p3d",
@@ -9328,8 +9278,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/f_maria_2.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_maria.jpeg"
   },
   {
     "objectName": "f_naomi.p3d",
@@ -9338,8 +9288,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/f_naomi.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorf_naomi.jpeg"
   },
   {
     "objectName": "m_adam.p3d",
@@ -9348,8 +9298,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_adam.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/heads/maleadamhead/maleadamhead.jpg"
   },
   {
     "objectName": "m_boris.p3d",
@@ -9358,8 +9308,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_boris.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_boris.jpeg"
   },
   {
     "objectName": "m_cyril.p3d",
@@ -9368,8 +9318,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_cyril.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_cyril.jpeg"
   },
   {
     "objectName": "m_denis_2.p3d",
@@ -9378,8 +9328,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_denis_2.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_denis.jpeg"
   },
   {
     "objectName": "m_elias.p3d",
@@ -9388,8 +9338,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_elias.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_elias.jpeg"
   },
   {
     "objectName": "m_francis.p3d",
@@ -9398,8 +9348,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_francis.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_francis.jpeg"
   },
   {
     "objectName": "m_guo.p3d",
@@ -9408,8 +9358,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_guo.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_guo.jpeg"
   },
   {
     "objectName": "m_hassan.p3d",
@@ -9418,8 +9368,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_hassan.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_hassan.jpeg"
   },
   {
     "objectName": "m_indar.p3d",
@@ -9428,8 +9378,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_indar.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_indar.jpeg"
   },
   {
     "objectName": "m_jose.p3d",
@@ -9438,8 +9388,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_jose.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_jose.jpeg"
   },
   {
     "objectName": "m_kaito.p3d",
@@ -9448,8 +9398,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_kaito.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_kaito.jpeg"
   },
   {
     "objectName": "m_lewis.p3d",
@@ -9458,8 +9408,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_lewis.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_lewis.jpeg"
   },
   {
     "objectName": "m_manua.p3d",
@@ -9468,8 +9418,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_manua.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_manua.jpeg"
   },
   {
     "objectName": "m_niki_2.p3d",
@@ -9478,8 +9428,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_niki_2.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_niki.jpeg"
   },
   {
     "objectName": "m_oliver.p3d",
@@ -9488,8 +9438,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_oliver.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_oliver.jpeg"
   },
   {
     "objectName": "m_peter.p3d",
@@ -9498,8 +9448,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_peter.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_peter.jpeg"
   },
   {
     "objectName": "m_quinn.p3d",
@@ -9508,8 +9458,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_quinn.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_quinn.jpeg"
   },
   {
     "objectName": "m_rolf.p3d",
@@ -9518,18 +9468,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_rolf.p3d.jpg"
-  },
-  {
-    "objectName": "m_ruslan.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/heads",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_ruslan.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_rolf.jpeg"
   },
   {
     "objectName": "m_seth.p3d",
@@ -9538,8 +9478,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_seth.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_seth.jpeg"
   },
   {
     "objectName": "m_taiki.p3d",
@@ -9548,8 +9488,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/heads",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/heads/m_taiki.p3d.jpg"
+    "searchTags": "survivor, faces, heads, player, character, pc",
+    "image": "images/characters/bodies/survivorm_taiki.jpeg"
   },
   {
     "objectName": "WeldingMask",
