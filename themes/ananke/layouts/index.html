@@ -349,6 +349,10 @@
     display: flex;
     gap: 14px;
     align-items: flex-start;
+    padding-right: 404px;
+  }
+  .objects-layout.sidebar-collapsed {
+    padding-right: 70px;
   }
 
   .objects-layout #dayzObjects_wrapper {
@@ -369,8 +373,12 @@
     gap: 10px;
     flex-wrap: wrap;
     align-items: flex-start;
-    position: sticky;
-    top: 12px;
+    position: fixed;
+    top: 135px;
+    right: 2.5%;
+    z-index: 6;
+    flex: 0 0 390px;
+    align-self: flex-start;
   }
   .object-focus.visible,
   .object-focus.has-pins {
@@ -378,8 +386,15 @@
   }
   .object-focus.collapsed {
     width: 52px;
+    min-width: 52px;
+    max-width: 52px;
+    flex: 0 0 52px;
     padding: 8px 6px;
     justify-content: center;
+    position: fixed;
+    top: 135px;
+    right: 2.5%;
+    z-index: 6;
   }
   .object-focus.collapsed .object-focus__image,
   .object-focus.collapsed .object-focus__details {
@@ -879,10 +894,23 @@
   @media (max-width: 1100px) {
     .objects-layout {
       flex-direction: column;
+      padding-right: 0;
     }
     .object-focus {
       width: 100%;
       position: sticky;
+      top: auto;
+      order: 2;
+    }
+    .objects-layout #dayzObjects_wrapper {
+      order: 1;
+      width: 100% !important;
+    }
+    .objects-layout.sidebar-collapsed {
+      padding-right: 0;
+    }
+    .object-focus.collapsed {
+      display: none !important;
     }
   }
   @media (max-width: 768px) {
@@ -1297,6 +1325,7 @@
     }
 
     var objectFocusEl = document.getElementById('objectFocus');
+    var objectsLayoutEl = document.querySelector('.objects-layout');
     var objectFocusNameEl = document.getElementById('objectFocusName');
     var objectFocusPathEl = document.getElementById('objectFocusPath');
     var objectFocusImageEl = document.getElementById('objectFocusImage');
@@ -1347,6 +1376,10 @@
       objectFocusEl.classList.toggle('empty-state', !hasSelection && !isCollapsed);
       objectFocusEl.classList.toggle('no-selection', !hasSelection);
     };
+    var updateLayoutForSidebar = function() {
+      if (!objectsLayoutEl || !objectFocusEl) return;
+      objectsLayoutEl.classList.toggle('sidebar-collapsed', objectFocusEl.classList.contains('collapsed'));
+    };
     var updateMobileView = function() {
       isMobileView = window.matchMedia('(max-width: 768px)').matches;
       if (isMobileView) {
@@ -1382,6 +1415,7 @@
       objectFocusEl.classList.add('visible', 'collapsed');
       updateCollapseButtonLabel();
       updateEmptyState();
+      updateLayoutForSidebar();
     }
     window.addEventListener('resize', updateMobileView);
     updateMobileView();
@@ -1509,7 +1543,10 @@
 
     var setObjectFocusData = function(objData, updateUrl) {
       if (!objectFocusEl || !objData) return;
+      objectFocusEl.classList.remove('collapsed');
+      objectFocusEl.classList.add('expanded');
       objectFocusEl.classList.remove('focus-empty');
+      updateLayoutForSidebar();
       var objName = objData.objName || '';
       var imgPath = objData.imgPath;
       var p3dPath = objData.p3dPath;
@@ -2091,7 +2128,9 @@
         objectFocusEl.classList.remove('collapsed');
         updateCollapseButtonLabel();
         updateEmptyState();
+        updateLayoutForSidebar();
       }
+      objectFocusEl.classList.add('expanded');
       currentObjectRowEl = $td.closest('tr').get(0);
       if (currentObjectRowEl) {
         currentObjectRowEl.classList.add('object-selected');
@@ -2254,8 +2293,14 @@
       objectFocusCollapseEl.addEventListener('click', function() {
         if (!objectFocusEl) return;
         objectFocusEl.classList.toggle('collapsed');
+        if (objectFocusEl.classList.contains('collapsed')) {
+          objectFocusEl.classList.remove('expanded');
+        } else {
+          objectFocusEl.classList.add('expanded');
+        }
         updateCollapseButtonLabel();
         updateEmptyState();
+        updateLayoutForSidebar();
       });
     }
 
