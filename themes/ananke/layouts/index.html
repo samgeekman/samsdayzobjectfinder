@@ -1434,10 +1434,7 @@
     var buildPinnedUrl = function(names) {
       var nextUrl = new URL(window.location);
       if (Array.isArray(names) && names.length) {
-        var encoded = names.map(function(name) {
-          return encodeURIComponent(name);
-        }).join('|');
-        nextUrl.searchParams.set('pinned', encoded);
+        nextUrl.searchParams.set('pinned', names.join('|'));
       } else {
         nextUrl.searchParams.delete('pinned');
       }
@@ -1598,6 +1595,23 @@
         inGame: $td.data('ingame'),
         consoleFlag: $td.data('console'),
         tags: $td.data('tags')
+      };
+    };
+    var buildPinnedItemFromData = function(rowData) {
+      if (!rowData) return null;
+      var objName = getObjectName(rowData);
+      if (!objName) return null;
+      return {
+        type: 'object',
+        objName: objName,
+        imgPath: rowData.image || '',
+        p3dPath: rowData.path || '',
+        modelType: rowData.modelType || '',
+        editorJsonRaw: rowData.editorJson ? JSON.stringify(rowData.editorJson) : '',
+        category: rowData.category || '',
+        inGame: rowData.inGameName || '',
+        consoleFlag: getConsoleFlag(rowData),
+        tags: rowData.searchTags || ''
       };
     };
 
@@ -2518,9 +2532,9 @@
       if (!value) return [];
       return value.split('|').map(function(item) {
         try {
-          return decodeURIComponent(item);
+          return decodeURIComponent(item.replace(/\+/g, ' '));
         } catch (err) {
-          return item;
+          return item.replace(/\+/g, ' ');
         }
       }).map(function(name) { return name.trim(); }).filter(Boolean);
     };
@@ -2541,7 +2555,7 @@
     var objectParam = searchParams.get('object');
     var appliedUrlState = false;
 
-    var applyUrlState = function() {
+    var applyUrlState = function(sourceData) {
       if (appliedUrlState) return;
       appliedUrlState = true;
 
@@ -2550,13 +2564,21 @@
         if (names.length) {
           pinnedItems = [];
           var seen = {};
+          var data = Array.isArray(sourceData) ? sourceData : table.rows().data();
           names.forEach(function(name) {
             var key = name.toLowerCase();
             if (seen[key]) return;
             seen[key] = true;
-            var $cell = findObjectCellByName(name);
-            if (!$cell) return;
-            var item = buildPinnedItemFromCell($cell);
+            var match = null;
+            for (var i = 0; i < data.length; i++) {
+              var row = data[i];
+              var objName = getObjectName(row);
+              if (objName && objName.toLowerCase() === key) {
+                match = row;
+                break;
+              }
+            }
+            var item = buildPinnedItemFromData(match);
             if (item && item.objName) {
               pinnedItems.push(item);
             }
@@ -2601,7 +2623,7 @@
     };
     table.on('xhr.dt', function(e, settings, json) {
       populateCategories(json);
-      applyUrlState();
+      applyUrlState(json);
     });
 
     $('#filterCategory').on('change', function() {
