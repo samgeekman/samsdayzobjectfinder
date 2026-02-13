@@ -463,12 +463,77 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    cursor: pointer;
   }
   .object-focus__missing {
     color: var(--muted);
     font-style: italic;
     text-align: center;
     padding: 0 10px;
+  }
+  .image-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 10, 15, 0.78);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+    padding: 24px;
+  }
+  .image-overlay.is-open {
+    display: flex;
+  }
+  .image-overlay__content {
+    position: relative;
+    max-width: min(1100px, 96vw);
+    max-height: 90vh;
+  }
+  .image-overlay__img {
+    max-width: 100%;
+    max-height: 90vh;
+    border-radius: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.2);
+    display: block;
+  }
+  .image-overlay__close {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(20, 25, 30, 0.9);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .image-overlay__download {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(20, 25, 30, 0.9);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .image-overlay__download:hover {
+    background: rgba(32, 40, 48, 0.96);
+  }
+  .image-overlay__download:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.9);
+    outline-offset: 2px;
   }
   .object-focus__details {
     flex: 1;
@@ -1101,6 +1166,13 @@
       <div id="pinnedList" class="pinned-list"></div>
     </div>
   </div>
+  <div id="imageOverlay" class="image-overlay" aria-hidden="true">
+    <div class="image-overlay__content">
+      <button id="imageOverlayClose" class="image-overlay__close" type="button" aria-label="Close image">🆇</button>
+      <img id="imageOverlayImg" class="image-overlay__img" src="" alt="">
+      <a id="imageOverlayDownload" class="image-overlay__download" href="#" download aria-label="Download image">Download image</a>
+    </div>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -1359,6 +1431,10 @@
     var isMobileView = window.matchMedia('(max-width: 768px)').matches;
     var objectFocusPinEl = document.getElementById('objectFocusPin');
     var objectFocusCollapseEl = document.getElementById('objectFocusCollapse');
+    var imageOverlayEl = document.getElementById('imageOverlay');
+    var imageOverlayImgEl = document.getElementById('imageOverlayImg');
+    var imageOverlayCloseEl = document.getElementById('imageOverlayClose');
+    var imageOverlayDownloadEl = document.getElementById('imageOverlayDownload');
     var pinnedItems = [];
     var isPinned = function(objName) {
       return pinnedItems.some(function(item) { return item.objName === objName; });
@@ -1379,6 +1455,40 @@
     var updateLayoutForSidebar = function() {
       if (!objectsLayoutEl || !objectFocusEl) return;
       objectsLayoutEl.classList.toggle('sidebar-collapsed', objectFocusEl.classList.contains('collapsed'));
+    };
+    var getImageDownloadName = function(src, altText) {
+      if (!src) return 'object-image.jpg';
+      try {
+        var parsed = new URL(src, window.location.origin);
+        var rawPath = parsed.pathname || '';
+        var base = rawPath.split('/').pop() || '';
+        if (base) return base;
+      } catch (_) {}
+      var safeBase = (altText || 'object-image').toString().trim().replace(/[^\w.-]+/g, '_');
+      return safeBase + '.jpg';
+    };
+    var openImageOverlay = function(src, altText) {
+      if (!imageOverlayEl || !imageOverlayImgEl) return;
+      if (!src) return;
+      imageOverlayImgEl.src = src;
+      imageOverlayImgEl.alt = altText || 'Object image';
+      if (imageOverlayDownloadEl) {
+        imageOverlayDownloadEl.href = src;
+        imageOverlayDownloadEl.setAttribute('download', getImageDownloadName(src, altText));
+      }
+      imageOverlayEl.classList.add('is-open');
+      imageOverlayEl.setAttribute('aria-hidden', 'false');
+    };
+    var closeImageOverlay = function() {
+      if (!imageOverlayEl || !imageOverlayImgEl) return;
+      imageOverlayEl.classList.remove('is-open');
+      imageOverlayEl.setAttribute('aria-hidden', 'true');
+      imageOverlayImgEl.src = '';
+      imageOverlayImgEl.alt = '';
+      if (imageOverlayDownloadEl) {
+        imageOverlayDownloadEl.href = '#';
+        imageOverlayDownloadEl.removeAttribute('download');
+      }
     };
     var updateMobileView = function() {
       isMobileView = window.matchMedia('(max-width: 768px)').matches;
@@ -1416,6 +1526,26 @@
       updateCollapseButtonLabel();
       updateEmptyState();
       updateLayoutForSidebar();
+    }
+    if (imageOverlayCloseEl) {
+      imageOverlayCloseEl.addEventListener('click', function(e) {
+        e.stopPropagation();
+        closeImageOverlay();
+      });
+    }
+    if (imageOverlayEl) {
+      imageOverlayEl.addEventListener('click', function(e) {
+        if (e.target === imageOverlayEl) {
+          closeImageOverlay();
+        }
+      });
+    }
+    if (objectFocusImageEl) {
+      objectFocusImageEl.addEventListener('click', function(e) {
+        var imgEl = e.target.closest('img');
+        if (!imgEl || !currentObjectData || !currentObjectData.imgPath) return;
+        openImageOverlay('/' + currentObjectData.imgPath, currentObjectData.objName);
+      });
     }
     window.addEventListener('resize', updateMobileView);
     updateMobileView();
