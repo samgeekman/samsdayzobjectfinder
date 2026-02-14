@@ -9459,7 +9459,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, ski, bank robbery, loot",
-    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+    "image": "images/characters/masks/balaclavamask_green/balaclavamask_green.jpg"
   },
   {
     "objectName": "BalaclavaMask_Pig",
@@ -9662,44 +9662,14 @@
     "image": "images/characters/masks/facecover_improvised/facecover_improvised.jpg"
   },
   {
-    "objectName": "airborne_mask_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/airborne_mask_f.p3d.jpg"
-  },
-  {
     "objectName": "airborne_mask_g.p3d",
     "inGameName": "NBC Respirator",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/airborne_mask_g.p3d.jpg"
-  },
-  {
-    "objectName": "airborne_mask_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/airborne_mask_m.p3d.jpg"
-  },
-  {
-    "objectName": "balaclava_3holes_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/balaclava_3holes_f.p3d.jpg"
+    "searchTags": "face, masks, nbc, protection, respirator, loot",
+    "image": "images/characters/masks/airbornemask/airbornemask.jpg"
   },
   {
     "objectName": "balaclava_3holes_g.p3d",
@@ -9708,28 +9678,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/balaclava_3holes_g.p3d.jpg"
-  },
-  {
-    "objectName": "balaclava_3holes_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/balaclava_3holes_m.p3d.jpg"
-  },
-  {
-    "objectName": "balaclava_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/balaclava_f.p3d.jpg"
+    "searchTags": "masks, bank robbery, loot",
+    "image": "images/characters/masks/balaclava3holes_beige/balaclava3holes_beige.jpg"
   },
   {
     "objectName": "balaclava_g.p3d",
@@ -9738,28 +9688,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/balaclava_g.p3d.jpg"
-  },
-  {
-    "objectName": "balaclava_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/balaclava_m.p3d.jpg"
-  },
-  {
-    "objectName": "bandanaface_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/bandanaface_f.p3d.jpg"
+    "searchTags": "face, masks, protection, ski, bank robbery, loot",
+    "image": "images/characters/masks/balaclavamask_bdu/balaclavamask_bdu.jpg"
   },
   {
     "objectName": "bandanaface_g.p3d",
@@ -9772,54 +9702,14 @@
     "image": "images/characters/masks/bandanaface_g.p3d.jpg"
   },
   {
-    "objectName": "bandanaface_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/bandanaface_m.p3d.jpg"
-  },
-  {
-    "objectName": "chainsmask_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/chainsmask_f.p3d.jpg"
-  },
-  {
     "objectName": "chainsmask_g.p3d",
     "inGameName": "Chains Mask",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/chainsmask_g.p3d.jpg"
-  },
-  {
-    "objectName": "chainsmask_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/chainsmask_m.p3d.jpg"
-  },
-  {
-    "objectName": "crookednose_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/crookednose_f.p3d.jpg"
+    "searchTags": "face, masks, protection, bank robbery, loot",
+    "image": "images/characters/masks/paydaymask_chains/paydaymask_chains.jpg"
   },
   {
     "objectName": "crookednose_g.p3d",
@@ -9828,28 +9718,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/crookednose_g.p3d.jpg"
-  },
-  {
-    "objectName": "crookednose_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/crookednose_m.p3d.jpg"
-  },
-  {
-    "objectName": "dallasmask_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/dallasmask_f.p3d.jpg"
+    "searchTags": "masks, halloween, witch, seasonal, loot",
+    "image": "images/characters/masks/crookednose/crookednose.jpg"
   },
   {
     "objectName": "dallasmask_g.p3d",
@@ -9858,28 +9728,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/dallasmask_g.p3d.jpg"
-  },
-  {
-    "objectName": "dallasmask_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/dallasmask_m.p3d.jpg"
-  },
-  {
-    "objectName": "facecover_improvised_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/facecover_improvised_f.p3d.jpg"
+    "searchTags": "face, masks, protection, bank robbery, loot",
+    "image": "images/characters/masks/paydaymask_dallas/paydaymask_dallas.jpg"
   },
   {
     "objectName": "facecover_improvised_g.p3d",
@@ -9888,28 +9738,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/facecover_improvised_g.p3d.jpg"
-  },
-  {
-    "objectName": "facecover_improvised_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/facecover_improvised_m.p3d.jpg"
-  },
-  {
-    "objectName": "gasmask_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/gasmask_f.p3d.jpg"
+    "searchTags": "masks, wrapping, rags, loot",
+    "image": "images/characters/masks/facecover_improvised/facecover_improvised.jpg"
   },
   {
     "objectName": "gasmask_g.p3d",
@@ -9918,28 +9748,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/gasmask_g.p3d.jpg"
-  },
-  {
-    "objectName": "gasmask_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/gasmask_m.p3d.jpg"
-  },
-  {
-    "objectName": "gp5gasmask_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/gp5gasmask_f.p3d.jpg"
+    "searchTags": "combat, face, fuel, masks, protection, station, loot",
+    "image": "images/characters/masks/gasmask/gasmask.jpg"
   },
   {
     "objectName": "gp5gasmask_filter.p3d",
@@ -9958,28 +9768,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/gp5gasmask_g.p3d.jpg"
-  },
-  {
-    "objectName": "gp5gasmask_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/gp5gasmask_m.p3d.jpg"
-  },
-  {
-    "objectName": "hoxtonmask_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/hoxtonmask_f.p3d.jpg"
+    "searchTags": "face, fuel, masks, protection, NBC, respirator, loot",
+    "image": "images/characters/masks/gp5gasmask/gp5gasmask.jpg"
   },
   {
     "objectName": "hoxtonmask_g.p3d",
@@ -9988,28 +9778,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/hoxtonmask_g.p3d.jpg"
-  },
-  {
-    "objectName": "hoxtonmask_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/hoxtonmask_m.p3d.jpg"
-  },
-  {
-    "objectName": "mimemask_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/mimemask_f.p3d.jpg"
+    "searchTags": "face, masks, protection, bank robbery, loot",
+    "image": "images/characters/masks/paydaymask_hoxton/paydaymask_hoxton.jpg"
   },
   {
     "objectName": "mimemask_g.p3d",
@@ -10018,18 +9788,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/mimemask_g.p3d.jpg"
-  },
-  {
-    "objectName": "mimemask_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/mimemask_m.p3d.jpg"
+    "searchTags": "face, masks, protection, creepy, loot",
+    "image": "images/characters/masks/mimemask_male/mimemask_male.jpg"
   },
   {
     "objectName": "mouth_rags.p3d",
@@ -10042,44 +9802,14 @@
     "image": "images/characters/masks/mouth_rags.p3d.jpg"
   },
   {
-    "objectName": "nioshfacemask_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/nioshfacemask_f.p3d.jpg"
-  },
-  {
     "objectName": "nioshfacemask_g.p3d",
     "inGameName": "Dust Mask",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/nioshfacemask_g.p3d.jpg"
-  },
-  {
-    "objectName": "nioshfacemask_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/nioshfacemask_m.p3d.jpg"
-  },
-  {
-    "objectName": "santasbeard_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/santasbeard_f.p3d.jpg"
+    "searchTags": "dust, masks, protection, loot",
+    "image": "images/characters/masks/nioshfacemask/nioshfacemask.jpg"
   },
   {
     "objectName": "santasbeard_g.p3d",
@@ -10088,28 +9818,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/santasbeard_g.p3d.jpg"
-  },
-  {
-    "objectName": "santasbeard_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/santasbeard_m.p3d.jpg"
-  },
-  {
-    "objectName": "surgical_mask_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/surgical_mask_f.p3d.jpg"
+    "searchTags": "masks, santa, festive, seasonal christmas, loot",
+    "image": "images/characters/masks/santasbeard/santasbeard.jpg"
   },
   {
     "objectName": "surgical_mask_g.p3d",
@@ -10118,28 +9828,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/surgical_mask_g.p3d.jpg"
-  },
-  {
-    "objectName": "surgical_mask_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/surgical_mask_m.p3d.jpg"
-  },
-  {
-    "objectName": "vintagehockeymask_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/vintagehockeymask_f.p3d.jpg"
+    "searchTags": "face, masks, protection, medical, covering, covid, loot",
+    "image": "images/characters/masks/surgicalmask/surgicalmask.jpg"
   },
   {
     "objectName": "vintagehockeymask_g.p3d",
@@ -10148,28 +9838,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/vintagehockeymask_g.p3d.jpg"
-  },
-  {
-    "objectName": "vintagehockeymask_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/vintagehockeymask_m.p3d.jpg"
-  },
-  {
-    "objectName": "welding_mask_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/welding_mask_f.p3d.jpg"
+    "searchTags": "face, masks, protection, sports, loot",
+    "image": "images/characters/masks/hockeymask/hockeymask.jpg"
   },
   {
     "objectName": "welding_mask_g.p3d",
@@ -10178,28 +9848,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/welding_mask_g.p3d.jpg"
-  },
-  {
-    "objectName": "welding_mask_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/welding_mask_m.p3d.jpg"
-  },
-  {
-    "objectName": "wolfmask_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/wolfmask_f.p3d.jpg"
+    "searchTags": "face, masks, protection, loot",
+    "image": "images/characters/masks/weldingmask/weldingmask.jpg"
   },
   {
     "objectName": "wolfmask_g.p3d",
@@ -10208,18 +9858,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/wolfmask_g.p3d.jpg"
-  },
-  {
-    "objectName": "wolfmask_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/wolfmask_m.p3d.jpg"
+    "searchTags": "face, masks, protection, bank robbery, loot",
+    "image": "images/characters/masks/paydaymask_wolf/paydaymask_wolf.jpg"
   },
   {
     "objectName": "MimeMask_Female",
@@ -10229,7 +9869,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, creepy, loot",
-    "image": "images/characters/masks/mimemask_male.jpg"
+    "image": "images/characters/masks/mimemask_female/mimemask_female.jpg"
   },
   {
     "objectName": "MaleLegs_Base",
@@ -10249,7 +9889,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, shorts, underwear, bodies, player, pc, loot, trousers",
-    "image": "images/characters/pants/femalelegs_base.jpg"
+    "image": "images/characters/pants/femalelegs_base/femalelegs_base.jpg"
   },
   {
     "objectName": "Jeans_Black",
@@ -10369,7 +10009,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "combat, clothing, clothes, military, loot, trousers",
-    "image": "images/characters/pants/ttskopants.jpg"
+    "image": "images/characters/pants/ttskopants/ttskopants.jpg"
   },
   {
     "objectName": "HunterPants_Autumn",
@@ -10879,7 +10519,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, shorts, underwear, player, pc, bodies, loot, trousers",
-    "image": "images/characters/pants/malelegsabove.jpg"
+    "image": "images/characters/pants/malelegsabove/malelegsabove.jpg"
   },
   {
     "objectName": "FemaleLegsAbove",
@@ -10889,17 +10529,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, shorts, underwear, player, pc, bodies, loot, trousers",
-    "image": "images/characters/pants/femalelegsabove.jpg"
-  },
-  {
-    "objectName": "bdu_pants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/bdu_pants_f.p3d.jpg"
+    "image": "images/characters/pants/femalelegsabove/femalelegsabove.jpg"
   },
   {
     "objectName": "bdu_pants_g.p3d",
@@ -10909,27 +10539,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/bdu_pants_g.p3d.jpg"
-  },
-  {
-    "objectName": "bdu_pants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/bdu_pants_m.p3d.jpg"
-  },
-  {
-    "objectName": "breechesf_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/breechesf_f.p3d.jpg"
+    "image": "images/characters/pants/bdupants/bdupants.jpg"
   },
   {
     "objectName": "breechesf_g.p3d",
@@ -10939,27 +10549,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/breechesf_g.p3d.jpg"
-  },
-  {
-    "objectName": "breechesf_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/breechesf_m.p3d.jpg"
-  },
-  {
-    "objectName": "canvaspants_long_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/canvaspants_long_f.p3d.jpg"
+    "image": "images/characters/pants/breeches_beetcheck/breeches_beetcheck.jpg"
   },
   {
     "objectName": "canvaspants_long_g.p3d",
@@ -10969,27 +10559,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/canvaspants_long_g.p3d.jpg"
-  },
-  {
-    "objectName": "canvaspants_long_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/canvaspants_long_m.p3d.jpg"
-  },
-  {
-    "objectName": "canvaspants_midi_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/canvaspants_midi_f.p3d.jpg"
+    "image": "images/characters/pants/canvaspants_beige/canvaspants_beige.jpg"
   },
   {
     "objectName": "canvaspants_midi_g.p3d",
@@ -10999,27 +10569,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/canvaspants_midi_g.p3d.jpg"
-  },
-  {
-    "objectName": "canvaspants_midi_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/canvaspants_midi_m.p3d.jpg"
-  },
-  {
-    "objectName": "cargopants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/cargopants_f.p3d.jpg"
+    "image": "images/characters/pants/canvaspantsmidi_beige/canvaspantsmidi_beige.jpg"
   },
   {
     "objectName": "cargopants_g.p3d",
@@ -11029,27 +10579,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/cargopants_g.p3d.jpg"
-  },
-  {
-    "objectName": "cargopants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/cargopants_m.p3d.jpg"
-  },
-  {
-    "objectName": "chainmail_leggings_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/chainmail_leggings_f.p3d.jpg"
+    "image": "images/characters/pants/cargopants_beige/cargopants_beige.jpg"
   },
   {
     "objectName": "chainmail_leggings_g.p3d",
@@ -11059,27 +10589,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/chainmail_leggings_g.p3d.jpg"
-  },
-  {
-    "objectName": "chainmail_leggings_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/chainmail_leggings_m.p3d.jpg"
-  },
-  {
-    "objectName": "firefighter_pants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/firefighter_pants_f.p3d.jpg"
+    "image": "images/characters/pants/chainmail_leggings/chainmail_leggings.jpg"
   },
   {
     "objectName": "firefighter_pants_g.p3d",
@@ -11089,27 +10599,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/firefighter_pants_g.p3d.jpg"
-  },
-  {
-    "objectName": "firefighter_pants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/firefighter_pants_m.p3d.jpg"
-  },
-  {
-    "objectName": "gorka_pants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/gorka_pants_f.p3d.jpg"
+    "image": "images/characters/pants/firefighterspants_beige/firefighterspants_beige.jpg"
   },
   {
     "objectName": "gorka_pants_g.p3d",
@@ -11119,27 +10609,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/gorka_pants_g.p3d.jpg"
-  },
-  {
-    "objectName": "gorka_pants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/gorka_pants_m.p3d.jpg"
-  },
-  {
-    "objectName": "hunterpants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/hunterpants_f.p3d.jpg"
+    "image": "images/characters/pants/gorkapants_autumn/gorkapants_autumn.jpg"
   },
   {
     "objectName": "hunterpants_g.p3d",
@@ -11149,27 +10619,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/hunterpants_g.p3d.jpg"
-  },
-  {
-    "objectName": "hunterpants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/hunterpants_m.p3d.jpg"
-  },
-  {
-    "objectName": "jeans_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/jeans_f.p3d.jpg"
+    "image": "images/characters/pants/hunterpants_autumn/hunterpants_autumn.jpg"
   },
   {
     "objectName": "jeans_ground.p3d",
@@ -11179,17 +10629,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/jeans_ground.p3d.jpg"
-  },
-  {
-    "objectName": "jeans_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/jeans_m.p3d.jpg"
+    "image": "images/characters/pants/jeans_black/jeans_black.jpg"
   },
   {
     "objectName": "jeans_m_above0.p3d",
@@ -11199,17 +10639,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/jeans_m_above0.p3d.jpg"
-  },
-  {
-    "objectName": "jumpsuit_pants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/jumpsuit_pants_f.p3d.jpg"
+    "image": "images/characters/pants/jeans_black/jeans_black.jpg"
   },
   {
     "objectName": "jumpsuit_pants_g.p3d",
@@ -11219,27 +10649,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/jumpsuit_pants_g.p3d.jpg"
-  },
-  {
-    "objectName": "jumpsuit_pants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/jumpsuit_pants_m.p3d.jpg"
-  },
-  {
-    "objectName": "legcover_improvised_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/legcover_improvised_f.p3d.jpg"
+    "image": "images/characters/pants/jumpsuitpants_blue/jumpsuitpants_blue.jpg"
   },
   {
     "objectName": "legcover_improvised_g.p3d",
@@ -11249,57 +10659,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/legcover_improvised_g.p3d.jpg"
-  },
-  {
-    "objectName": "legcover_improvised_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/legcover_improvised_m.p3d.jpg"
-  },
-  {
-    "objectName": "legs3_f.p3d",
-    "inGameName": "Underwear shorts above female",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/legs3_f.p3d.jpg"
-  },
-  {
-    "objectName": "legs3_m.p3d",
-    "inGameName": "Underwear shorts above",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/legs3_m.p3d.jpg"
-  },
-  {
-    "objectName": "legs_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/legs_f.p3d.jpg"
-  },
-  {
-    "objectName": "legs_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/legs_m.p3d.jpg"
+    "image": "images/characters/pants/legscover_improvised/legscover_improvised.jpg"
   },
   {
     "objectName": "legs_m_above0.p3d",
@@ -11309,27 +10669,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/legs_m_above0.p3d.jpg"
-  },
-  {
-    "objectName": "legs_new_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/legs_new_m.p3d.jpg"
-  },
-  {
-    "objectName": "medicalscrubs_pants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/medicalscrubs_pants_f.p3d.jpg"
+    "image": "images/characters/pants/malelegs_base/malelegs_base.jpg"
   },
   {
     "objectName": "medicalscrubs_pants_g.p3d",
@@ -11339,27 +10679,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/medicalscrubs_pants_g.p3d.jpg"
-  },
-  {
-    "objectName": "medicalscrubs_pants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/medicalscrubs_pants_m.p3d.jpg"
-  },
-  {
-    "objectName": "nbc_pants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/nbc_pants_f.p3d.jpg"
+    "image": "images/characters/pants/medicalscrubspants_blue/medicalscrubspants_blue.jpg"
   },
   {
     "objectName": "nbc_pants_g.p3d",
@@ -11369,27 +10689,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/nbc_pants_g.p3d.jpg"
-  },
-  {
-    "objectName": "nbc_pants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/nbc_pants_m.p3d.jpg"
-  },
-  {
-    "objectName": "pants_leatherpants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/pants_leatherpants_f.p3d.jpg"
+    "image": "images/characters/pants/nbcpantsgray/nbcpantsgray.jpg"
   },
   {
     "objectName": "pants_leatherpants_g.p3d",
@@ -11399,27 +10699,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/pants_leatherpants_g.p3d.jpg"
-  },
-  {
-    "objectName": "pants_leatherpants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/pants_leatherpants_m.p3d.jpg"
-  },
-  {
-    "objectName": "paramedic_pants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/paramedic_pants_f.p3d.jpg"
+    "image": "images/characters/pants/leatherpants_beige/leatherpants_beige.jpg"
   },
   {
     "objectName": "paramedic_pants_g.p3d",
@@ -11429,27 +10709,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/paramedic_pants_g.p3d.jpg"
-  },
-  {
-    "objectName": "paramedic_pants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/paramedic_pants_m.p3d.jpg"
-  },
-  {
-    "objectName": "policepants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/policepants_f.p3d.jpg"
+    "image": "images/characters/pants/paramedicpants_blue/paramedicpants_blue.jpg"
   },
   {
     "objectName": "policepants_g.p3d",
@@ -11459,27 +10719,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/policepants_g.p3d.jpg"
-  },
-  {
-    "objectName": "policepants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/policepants_m.p3d.jpg"
-  },
-  {
-    "objectName": "prison_pants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/prison_pants_f.p3d.jpg"
+    "image": "images/characters/pants/policepants/policepants.jpg"
   },
   {
     "objectName": "prison_pants_g.p3d",
@@ -11489,27 +10729,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/prison_pants_g.p3d.jpg"
-  },
-  {
-    "objectName": "prison_pants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/prison_pants_m.p3d.jpg"
-  },
-  {
-    "objectName": "shortjeans_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/shortjeans_f.p3d.jpg"
+    "image": "images/characters/pants/prisonuniformpants/prisonuniformpants.jpg"
   },
   {
     "objectName": "shortjeans_g.p3d",
@@ -11519,27 +10739,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/shortjeans_g.p3d.jpg"
-  },
-  {
-    "objectName": "shortjeans_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/shortjeans_m.p3d.jpg"
-  },
-  {
-    "objectName": "skirt_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/skirt_f.p3d.jpg"
+    "image": "images/characters/pants/shortjeans_black/shortjeans_black.jpg"
   },
   {
     "objectName": "skirt_g.p3d",
@@ -11549,27 +10749,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/skirt_g.p3d.jpg"
-  },
-  {
-    "objectName": "skirt_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/skirt_m.p3d.jpg"
-  },
-  {
-    "objectName": "slacks_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/slacks_f.p3d.jpg"
+    "image": "images/characters/pants/skirt_blue/skirt_blue.jpg"
   },
   {
     "objectName": "slacks_g.p3d",
@@ -11579,27 +10759,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/slacks_g.p3d.jpg"
-  },
-  {
-    "objectName": "slacks_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/slacks_m.p3d.jpg"
-  },
-  {
-    "objectName": "tracksuit_pants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/tracksuit_pants_f.p3d.jpg"
+    "image": "images/characters/pants/slackspants_beige/slackspants_beige.jpg"
   },
   {
     "objectName": "tracksuit_pants_g.p3d",
@@ -11609,27 +10769,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/tracksuit_pants_g.p3d.jpg"
-  },
-  {
-    "objectName": "tracksuit_pants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/tracksuit_pants_m.p3d.jpg"
-  },
-  {
-    "objectName": "ttsko_pants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/ttsko_pants_f.p3d.jpg"
+    "image": "images/characters/pants/tracksuitpants_black/tracksuitpants_black.jpg"
   },
   {
     "objectName": "ttsko_pants_g.p3d",
@@ -11639,27 +10779,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/ttsko_pants_g.p3d.jpg"
-  },
-  {
-    "objectName": "ttsko_pants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/ttsko_pants_m.p3d.jpg"
-  },
-  {
-    "objectName": "usmc_pants_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/usmc_pants_f.p3d.jpg"
+    "image": "images/characters/pants/ttskopants/ttskopants.jpg"
   },
   {
     "objectName": "usmc_pants_g.p3d",
@@ -11669,17 +10789,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": false,
     "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/usmc_pants_g.p3d.jpg"
-  },
-  {
-    "objectName": "usmc_pants_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/pants",
-    "usableOnConsole": false,
-    "searchTags": "[ MATCH TO CONFIG], loot, trousers",
-    "image": "images/characters/pants/usmc_pants_m.p3d.jpg"
+    "image": "images/characters/pants/usmcpants_desert/usmcpants_desert.jpg"
   },
   {
     "objectName": "Breeches_Beetcheck",
@@ -11689,7 +10799,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "bdu, pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/bdupants.jpg"
+    "image": "images/characters/pants/breeches_beetcheck/breeches_beetcheck.jpg"
   },
   {
     "objectName": "Breeches_Beige",
@@ -11699,7 +10809,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "bdu, pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/bdupants.jpg"
+    "image": "images/characters/pants/breeches_beige/breeches_beige.jpg"
   },
   {
     "objectName": "Breeches_Black",
@@ -11709,7 +10819,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "bdu, pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/bdupants.jpg"
+    "image": "images/characters/pants/breeches_black/breeches_black.jpg"
   },
   {
     "objectName": "Breeches_Blackcheck",
@@ -11719,7 +10829,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "bdu, pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/bdupants.jpg"
+    "image": "images/characters/pants/breeches_blackcheck/breeches_blackcheck.jpg"
   },
   {
     "objectName": "Breeches_Blue",
@@ -11729,7 +10839,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "bdu, pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/bdupants.jpg"
+    "image": "images/characters/pants/breeches_blue/breeches_blue.jpg"
   },
   {
     "objectName": "Breeches_Browncheck",
@@ -11739,7 +10849,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "bdu, pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/bdupants.jpg"
+    "image": "images/characters/pants/breeches_browncheck/breeches_browncheck.jpg"
   },
   {
     "objectName": "Breeches_Green",
@@ -11749,7 +10859,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "bdu, pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/bdupants.jpg"
+    "image": "images/characters/pants/breeches_green/breeches_green.jpg"
   },
   {
     "objectName": "Breeches_Pink",
@@ -11759,7 +10869,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "bdu, pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/bdupants.jpg"
+    "image": "images/characters/pants/breeches_pink/breeches_pink.jpg"
   },
   {
     "objectName": "Breeches_Red",
@@ -11769,7 +10879,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "bdu, pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/bdupants.jpg"
+    "image": "images/characters/pants/breeches_red/breeches_red.jpg"
   },
   {
     "objectName": "Breeches_White",
@@ -11779,7 +10889,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "bdu, pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/bdupants.jpg"
+    "image": "images/characters/pants/breeches_white/breeches_white.jpg"
   },
   {
     "objectName": "NBCPantsGray",
@@ -11789,7 +10899,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "shorts, NBC, protection, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/nbcpantsgray/nbcpantsgray.jpg"
   },
   {
     "objectName": "NBCPantsWhite",
@@ -11799,7 +10909,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "shorts, NBC, protection, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/nbcpantswhite/nbcpantswhite.jpg"
   },
   {
     "objectName": "NBCPantsYellow",
@@ -11809,7 +10919,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "shorts, NBC, protection, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/nbcpantsyellow/nbcpantsyellow.jpg"
   },
   {
     "objectName": "NavyUniformPants",
@@ -11819,7 +10929,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "shorts, military, workware, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/navyuniformpants/navyuniformpants.jpg"
   },
   {
     "objectName": "ShortJeans_Black",
@@ -11829,7 +10939,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, shorts, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/shortjeans_black/shortjeans_black.jpg"
   },
   {
     "objectName": "ShortJeans_Blue",
@@ -11839,7 +10949,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, shorts, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/shortjeans_blue/shortjeans_blue.jpg"
   },
   {
     "objectName": "ShortJeans_Brown",
@@ -11849,7 +10959,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, shorts, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/shortjeans_brown/shortjeans_brown.jpg"
   },
   {
     "objectName": "ShortJeans_Darkblue",
@@ -11859,7 +10969,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, shorts, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/shortjeans_darkblue/shortjeans_darkblue.jpg"
   },
   {
     "objectName": "ShortJeans_Green",
@@ -11869,7 +10979,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, shorts, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/shortjeans_green/shortjeans_green.jpg"
   },
   {
     "objectName": "ShortJeans_Red",
@@ -11879,7 +10989,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, shorts, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/shortjeans_red/shortjeans_red.jpg"
   },
   {
     "objectName": "Skirt_Blue",
@@ -11889,7 +10999,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, short, skirt, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/skirt_blue/skirt_blue.jpg"
   },
   {
     "objectName": "Skirt_Red",
@@ -11899,7 +11009,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, short, skirt, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/skirt_red/skirt_red.jpg"
   },
   {
     "objectName": "Skirt_White",
@@ -11909,7 +11019,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, short, skirt, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/skirt_white/skirt_white.jpg"
   },
   {
     "objectName": "Skirt_Yellow",
@@ -11919,7 +11029,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, short, skirt, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/skirt_yellow/skirt_yellow.jpg"
   },
   {
     "objectName": "SlacksPants_Beige",
@@ -11929,7 +11039,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "underwear, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base/malelegs_base.jpg"
+    "image": "images/characters/pants/slackspants_beige/slackspants_beige.jpg"
   },
   {
     "objectName": "SlacksPants_Black",
@@ -11939,7 +11049,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "underwear, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/slackspants_black/slackspants_black.jpg"
   },
   {
     "objectName": "SlacksPants_Blue",
@@ -11949,7 +11059,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "underwear, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/slackspants_blue/slackspants_blue.jpg"
   },
   {
     "objectName": "SlacksPants_Brown",
@@ -11959,7 +11069,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "underwear, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/slackspants_brown/slackspants_brown.jpg"
   },
   {
     "objectName": "SlacksPants_DarkGrey",
@@ -11969,7 +11079,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "underwear, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/slackspants_darkgrey/slackspants_darkgrey.jpg"
   },
   {
     "objectName": "SlacksPants_Khaki",
@@ -11979,7 +11089,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "underwear, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/slackspants_khaki/slackspants_khaki.jpg"
   },
   {
     "objectName": "SlacksPants_LightGrey",
@@ -11989,7 +11099,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "underwear, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/slackspants_lightgrey/slackspants_lightgrey.jpg"
   },
   {
     "objectName": "SlacksPants_White",
@@ -11999,7 +11109,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "underwear, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base/malelegs_base.jpg"
+    "image": "images/characters/pants/slackspants_white/slackspants_white.jpg"
   },
   {
     "objectName": "MaleFeet_Base",
@@ -12019,7 +11129,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "bare, feet, pc, player, survivor, loot, footware",
-    "image": "images/characters/shoes/femalefeet_base.jpg"
+    "image": "images/characters/shoes/femalefeet_base/femalefeet_base.jpg"
   },
   {
     "objectName": "AthleticShoes_Black",
@@ -12299,7 +11409,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "smart, fancy, formal, loot, footware",
-    "image": "images/characters/shoes/dressshoes_colorbase.jpg"
+    "image": "images/characters/shoes/dressshoes_brown/dressshoes_brown.jpg"
   },
   {
     "objectName": "DressShoes_Sunburst",
@@ -12309,7 +11419,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "smart, fancy, formal, loot, footware",
-    "image": "images/characters/shoes/dressshoes_colorbase.jpg"
+    "image": "images/characters/shoes/dressshoes_sunburst/dressshoes_sunburst.jpg"
   },
   {
     "objectName": "DressShoes_White",
@@ -12319,7 +11429,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "smart, fancy, formal, loot, footware",
-    "image": "images/characters/shoes/dressshoes_colorbase.jpg"
+    "image": "images/characters/shoes/dressshoes_white/dressshoes_white.jpg"
   },
   {
     "objectName": "MilitaryBoots_Beige",
@@ -12329,7 +11439,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "assault, shoes, combat, military, army, loot, footware",
-    "image": "images/characters/shoes/militaryboots_colorbase.jpg"
+    "image": "images/characters/shoes/militaryboots_beige/militaryboots_beige.jpg"
   },
   {
     "objectName": "MilitaryBoots_Black",
@@ -12339,7 +11449,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "assault, shoes, combat, military, army, loot, footware",
-    "image": "images/characters/shoes/militaryboots_colorbase.jpg"
+    "image": "images/characters/shoes/militaryboots_black/militaryboots_black.jpg"
   },
   {
     "objectName": "MilitaryBoots_Bluerock",
@@ -12349,7 +11459,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "assault, shoes, combat, military, army, loot, footware",
-    "image": "images/characters/shoes/militaryboots_colorbase.jpg"
+    "image": "images/characters/shoes/militaryboots_bluerock/militaryboots_bluerock.jpg"
   },
   {
     "objectName": "MilitaryBoots_Brown",
@@ -12359,7 +11469,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "assault, shoes, combat, military, army, loot, footware",
-    "image": "images/characters/shoes/militaryboots_colorbase.jpg"
+    "image": "images/characters/shoes/militaryboots_brown/militaryboots_brown.jpg"
   },
   {
     "objectName": "MilitaryBoots_Redpunk",
@@ -12369,7 +11479,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "assault, shoes, combat, military, army, loot, footware",
-    "image": "images/characters/shoes/militaryboots_colorbase.jpg"
+    "image": "images/characters/shoes/militaryboots_redpunk/militaryboots_redpunk.jpg"
   },
   {
     "objectName": "CombatBoots_Beige",
@@ -12379,7 +11489,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "assault, shoes, combat, military, army, loot, footware",
-    "image": "images/characters/shoes/combatboots_colorbase.jpg"
+    "image": "images/characters/shoes/combatboots_beige/combatboots_beige.jpg"
   },
   {
     "objectName": "CombatBoots_Black",
@@ -12389,7 +11499,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "assault, shoes, combat, military, army, loot, footware",
-    "image": "images/characters/shoes/combatboots_colorbase.jpg"
+    "image": "images/characters/shoes/combatboots_black/combatboots_black.jpg"
   },
   {
     "objectName": "CombatBoots_Brown",
@@ -12399,7 +11509,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "assault, shoes, combat, military, army, loot, footware",
-    "image": "images/characters/shoes/combatboots_colorbase.jpg"
+    "image": "images/characters/shoes/combatboots_brown/combatboots_brown.jpg"
   },
   {
     "objectName": "CombatBoots_Green",
@@ -12409,7 +11519,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "assault, shoes, combat, military, army, loot, footware",
-    "image": "images/characters/shoes/combatboots_colorbase.jpg"
+    "image": "images/characters/shoes/combatboots_green/combatboots_green.jpg"
   },
   {
     "objectName": "CombatBoots_Grey",
@@ -12419,7 +11529,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "assault, shoes, combat, military, army, loot, footware",
-    "image": "images/characters/shoes/combatboots_colorbase.jpg"
+    "image": "images/characters/shoes/combatboots_grey/combatboots_grey.jpg"
   },
   {
     "objectName": "JoggingShoes_Black",
@@ -12429,7 +11539,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "running, sports, training, loot, footware",
-    "image": "images/characters/shoes/joggingshoes_colorbase.jpg"
+    "image": "images/characters/shoes/joggingshoes_black/joggingshoes_black.jpg"
   },
   {
     "objectName": "JoggingShoes_Blue",
@@ -12439,7 +11549,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "running, sports, training, loot, footware",
-    "image": "images/characters/shoes/joggingshoes_colorbase.jpg"
+    "image": "images/characters/shoes/joggingshoes_blue/joggingshoes_blue.jpg"
   },
   {
     "objectName": "JoggingShoes_Red",
@@ -12449,7 +11559,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "running, sports, training, loot, footware",
-    "image": "images/characters/shoes/joggingshoes_colorbase.jpg"
+    "image": "images/characters/shoes/joggingshoes_red/joggingshoes_red.jpg"
   },
   {
     "objectName": "JoggingShoes_Violet",
@@ -12459,7 +11569,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "running, sports, training, loot, footware",
-    "image": "images/characters/shoes/joggingshoes_colorbase.jpg"
+    "image": "images/characters/shoes/joggingshoes_violet/joggingshoes_violet.jpg"
   },
   {
     "objectName": "JoggingShoes_White",
@@ -12469,7 +11579,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "running, sports, training, loot, footware",
-    "image": "images/characters/shoes/joggingshoes_colorbase.jpg"
+    "image": "images/characters/shoes/joggingshoes_white/joggingshoes_white.jpg"
   },
   {
     "objectName": "LeatherShoes_Beige",
@@ -12479,7 +11589,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "crafted, loot, footware",
-    "image": "images/characters/shoes/leathershoes_colorbase.jpg"
+    "image": "images/characters/shoes/leathershoes_beige/leathershoes_beige.jpg"
   },
   {
     "objectName": "LeatherShoes_Black",
@@ -12489,7 +11599,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "crafted, loot, footware",
-    "image": "images/characters/shoes/leathershoes_colorbase.jpg"
+    "image": "images/characters/shoes/leathershoes_black/leathershoes_black.jpg"
   },
   {
     "objectName": "LeatherShoes_Brown",
@@ -12499,7 +11609,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "crafted, loot, footware",
-    "image": "images/characters/shoes/leathershoes_colorbase.jpg"
+    "image": "images/characters/shoes/leathershoes_brown/leathershoes_brown.jpg"
   },
   {
     "objectName": "LeatherShoes_Natural",
@@ -12509,7 +11619,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "crafted, loot, footware",
-    "image": "images/characters/shoes/leathershoes_colorbase.jpg"
+    "image": "images/characters/shoes/leathershoes_natural/leathershoes_natural.jpg"
   },
   {
     "objectName": "Sneakers_Black",
@@ -12519,7 +11629,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, sports, trainers, loot, footware",
-    "image": "images/characters/shoes/sneakers_colorbase.jpg"
+    "image": "images/characters/shoes/sneakers_black/sneakers_black.jpg"
   },
   {
     "objectName": "Sneakers_Gray",
@@ -12529,7 +11639,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, sports, trainers, loot, footware",
-    "image": "images/characters/shoes/sneakers_colorbase.jpg"
+    "image": "images/characters/shoes/sneakers_gray/sneakers_gray.jpg"
   },
   {
     "objectName": "Sneakers_Green",
@@ -12539,7 +11649,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, sports, trainers, loot, footware",
-    "image": "images/characters/shoes/sneakers_colorbase.jpg"
+    "image": "images/characters/shoes/sneakers_green/sneakers_green.jpg"
   },
   {
     "objectName": "Sneakers_Red",
@@ -12549,7 +11659,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, sports, trainers, loot, footware",
-    "image": "images/characters/shoes/sneakers_colorbase.jpg"
+    "image": "images/characters/shoes/sneakers_red/sneakers_red.jpg"
   },
   {
     "objectName": "Sneakers_White",
@@ -12559,7 +11669,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, sports, trainers, loot, footware",
-    "image": "images/characters/shoes/sneakers_colorbase.jpg"
+    "image": "images/characters/shoes/sneakers_white/sneakers_white.jpg"
   },
   {
     "objectName": "Ballerinas_Blue",
@@ -12569,7 +11679,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "flat, shoes, dance, dancing, loot, footware",
-    "image": "images/characters/shoes/ballerinas_colorbase.jpg"
+    "image": "images/characters/shoes/ballerinas_blue/ballerinas_blue.jpg"
   },
   {
     "objectName": "Ballerinas_Red",
@@ -12579,7 +11689,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "flat, shoes, dance, dancing, loot, footware",
-    "image": "images/characters/shoes/ballerinas_colorbase.jpg"
+    "image": "images/characters/shoes/ballerinas_red/ballerinas_red.jpg"
   },
   {
     "objectName": "Ballerinas_White",
@@ -12589,7 +11699,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "flat, shoes, dance, dancing, loot, footware",
-    "image": "images/characters/shoes/ballerinas_colorbase.jpg"
+    "image": "images/characters/shoes/ballerinas_white/ballerinas_white.jpg"
   },
   {
     "objectName": "Ballerinas_Yellow",
@@ -12599,7 +11709,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "flat, shoes, dance, dancing, loot, footware",
-    "image": "images/characters/shoes/ballerinas_colorbase.jpg"
+    "image": "images/characters/shoes/ballerinas_yellow/ballerinas_yellow.jpg"
   },
   {
     "objectName": "FeetCover_Improvised",
@@ -12632,16 +11742,6 @@
     "image": "images/characters/shoes/medievalboots/medievalboots.jpg"
   },
   {
-    "objectName": "athleticshoes_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/athleticshoes_f.p3d.jpg"
-  },
-  {
     "objectName": "athleticshoes_ground.p3d",
     "inGameName": "Athletic Shoes",
     "category": "characters",
@@ -12650,16 +11750,6 @@
     "usableOnConsole": false,
     "searchTags": "[MATCH TO CONFIG], loot, footware",
     "image": "images/characters/shoes/athleticshoes_ground.p3d.jpg"
-  },
-  {
-    "objectName": "athleticshoes_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/athleticshoes_m.p3d.jpg"
   },
   {
     "objectName": "athleticshoes_m_above0.p3d",
@@ -12672,16 +11762,6 @@
     "image": "images/characters/shoes/athleticshoes_m_above0.p3d.jpg"
   },
   {
-    "objectName": "ballerinas_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/ballerinas_f.p3d.jpg"
-  },
-  {
     "objectName": "ballerinas_ground.p3d",
     "inGameName": "Flat Shoes",
     "category": "characters",
@@ -12690,26 +11770,6 @@
     "usableOnConsole": false,
     "searchTags": "[MATCH TO CONFIG], loot, footware",
     "image": "images/characters/shoes/ballerinas_ground.p3d.jpg"
-  },
-  {
-    "objectName": "ballerinas_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/ballerinas_m.p3d.jpg"
-  },
-  {
-    "objectName": "combatboots_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/combatboots_f.p3d.jpg"
   },
   {
     "objectName": "combatboots_ground.p3d",
@@ -12722,84 +11782,14 @@
     "image": "images/characters/shoes/combatboots_ground.p3d.jpg"
   },
   {
-    "objectName": "combatboots_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/combatboots_m.p3d.jpg"
-  },
-  {
-    "objectName": "feet3_f.p3d",
-    "inGameName": "Bare feet new",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/feet3_f.p3d.jpg"
-  },
-  {
-    "objectName": "feet3_m.p3d",
-    "inGameName": "Bare feet new",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/feet3_m.p3d.jpg"
-  },
-  {
-    "objectName": "feetcover_improvised_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/feetcover_improvised_f.p3d.jpg"
-  },
-  {
     "objectName": "feetcover_improvised_g.p3d",
     "inGameName": "Improvised Feet Wrapping",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/shoes",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/feetcover_improvised_g.p3d.jpg"
-  },
-  {
-    "objectName": "feetcover_improvised_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/feetcover_improvised_m.p3d.jpg"
-  },
-  {
-    "objectName": "feet_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/feet_f.p3d.jpg"
-  },
-  {
-    "objectName": "feet_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/feet_m.p3d.jpg"
+    "searchTags": "bare, feet, pc, player, survivor, loot, footware",
+    "image": "images/characters/shoes/malefeet_base/malefeet_base.jpg"
   },
   {
     "objectName": "feet_m_above0.p3d",
@@ -12812,26 +11802,6 @@
     "image": "images/characters/shoes/feet_m_above0.p3d.jpg"
   },
   {
-    "objectName": "feet_new_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/feet_new_m.p3d.jpg"
-  },
-  {
-    "objectName": "hikingboots_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/hikingboots_f.p3d.jpg"
-  },
-  {
     "objectName": "hikingboots_ground.p3d",
     "inGameName": "Hiking Boots",
     "category": "characters",
@@ -12840,16 +11810,6 @@
     "usableOnConsole": false,
     "searchTags": "[MATCH TO CONFIG], loot, footware",
     "image": "images/characters/shoes/hikingboots_ground.p3d.jpg"
-  },
-  {
-    "objectName": "hikingboots_low_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/hikingboots_low_f.p3d.jpg"
   },
   {
     "objectName": "hikingboots_low_ground.p3d",
@@ -12862,36 +11822,6 @@
     "image": "images/characters/shoes/hikingboots_low_ground.p3d.jpg"
   },
   {
-    "objectName": "hikingboots_low_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/hikingboots_low_m.p3d.jpg"
-  },
-  {
-    "objectName": "hikingboots_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/hikingboots_m.p3d.jpg"
-  },
-  {
-    "objectName": "joggingshoes_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/joggingshoes_f.p3d.jpg"
-  },
-  {
     "objectName": "joggingshoes_ground.p3d",
     "inGameName": "Running Shoes",
     "category": "characters",
@@ -12900,26 +11830,6 @@
     "usableOnConsole": false,
     "searchTags": "[MATCH TO CONFIG], loot, footware",
     "image": "images/characters/shoes/joggingshoes_ground.p3d.jpg"
-  },
-  {
-    "objectName": "joggingshoes_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/joggingshoes_m.p3d.jpg"
-  },
-  {
-    "objectName": "jungleboots_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/jungleboots_f.p3d.jpg"
   },
   {
     "objectName": "jungleboots_ground.p3d",
@@ -12932,26 +11842,6 @@
     "image": "images/characters/shoes/jungleboots_ground.p3d.jpg"
   },
   {
-    "objectName": "jungleboots_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/jungleboots_m.p3d.jpg"
-  },
-  {
-    "objectName": "leathershoes_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/leathershoes_f.p3d.jpg"
-  },
-  {
     "objectName": "leathershoes_ground.p3d",
     "inGameName": "Dress Shoes",
     "category": "characters",
@@ -12962,54 +11852,14 @@
     "image": "images/characters/shoes/leathershoes_ground.p3d.jpg"
   },
   {
-    "objectName": "leathershoes_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/leathershoes_m.p3d.jpg"
-  },
-  {
-    "objectName": "medievalboots_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/medievalboots_f.p3d.jpg"
-  },
-  {
     "objectName": "medievalboots_g.p3d",
     "inGameName": "Medieval Boots",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/shoes",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/medievalboots_g.p3d.jpg"
-  },
-  {
-    "objectName": "medievalboots_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/medievalboots_m.p3d.jpg"
-  },
-  {
-    "objectName": "militaryboots_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/militaryboots_f.p3d.jpg"
+    "searchTags": "shoes, armour, armor, castle, medieval, loot, footware",
+    "image": "images/characters/shoes/medievalboots/medievalboots.jpg"
   },
   {
     "objectName": "militaryboots_ground.p3d",
@@ -13022,54 +11872,14 @@
     "image": "images/characters/shoes/militaryboots_ground.p3d.jpg"
   },
   {
-    "objectName": "militaryboots_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/militaryboots_m.p3d.jpg"
-  },
-  {
-    "objectName": "nbc_boots_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/nbc_boots_f.p3d.jpg"
-  },
-  {
     "objectName": "nbc_boots_g.p3d",
     "inGameName": "-",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/shoes",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/nbc_boots_g.p3d.jpg"
-  },
-  {
-    "objectName": "nbc_boots_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/nbc_boots_m.p3d.jpg"
-  },
-  {
-    "objectName": "shoes_leathermoccasins_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/shoes_leathermoccasins_f.p3d.jpg"
+    "searchTags": "NBC, protection, shoes, loot, footware",
+    "image": "images/characters/shoes/nbcbootsgray/nbcbootsgray.jpg"
   },
   {
     "objectName": "shoes_leathermoccasins_g.p3d",
@@ -13082,54 +11892,14 @@
     "image": "images/characters/shoes/shoes_leathermoccasins_g.p3d.jpg"
   },
   {
-    "objectName": "shoes_leathermoccasins_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/shoes_leathermoccasins_m.p3d.jpg"
-  },
-  {
-    "objectName": "sneakers_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/sneakers_f.p3d.jpg"
-  },
-  {
     "objectName": "sneakers_g.p3d",
     "inGameName": "Sneakers",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/shoes",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/sneakers_g.p3d.jpg"
-  },
-  {
-    "objectName": "sneakers_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/sneakers_m.p3d.jpg"
-  },
-  {
-    "objectName": "ttsko_boots_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/ttsko_boots_f.p3d.jpg"
+    "searchTags": "shoes, sports, trainers, loot, footware",
+    "image": "images/characters/shoes/sneakers_black/sneakers_black.jpg"
   },
   {
     "objectName": "ttsko_boots_g.p3d",
@@ -13138,28 +11908,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/shoes",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/ttsko_boots_g.p3d.jpg"
-  },
-  {
-    "objectName": "ttsko_boots_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/ttsko_boots_m.p3d.jpg"
-  },
-  {
-    "objectName": "wellies_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/wellies_f.p3d.jpg"
+    "searchTags": "combat, shoes, wrapping, rags, loot, footware",
+    "image": "images/characters/shoes/ttskoboots/ttskoboots.jpg"
   },
   {
     "objectName": "wellies_ground.p3d",
@@ -13172,26 +11922,6 @@
     "image": "images/characters/shoes/wellies_ground.p3d.jpg"
   },
   {
-    "objectName": "wellies_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/wellies_m.p3d.jpg"
-  },
-  {
-    "objectName": "workingboots_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/workingboots_f.p3d.jpg"
-  },
-  {
     "objectName": "workingboots_ground.p3d",
     "inGameName": "Working Boots",
     "category": "characters",
@@ -13202,16 +11932,6 @@
     "image": "images/characters/shoes/workingboots_ground.p3d.jpg"
   },
   {
-    "objectName": "workingboots_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/shoes",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, footware",
-    "image": "images/characters/shoes/workingboots_m.p3d.jpg"
-  },
-  {
     "objectName": "NBCBootsGray",
     "inGameName": "Bare feet new",
     "category": "characters",
@@ -13219,7 +11939,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "NBC, protection, shoes, loot, footware",
-    "image": "images/characters/shoes/malefeet_base/malefeet_base.jpg"
+    "image": "images/characters/shoes/nbcbootsgray/nbcbootsgray.jpg"
   },
   {
     "objectName": "NBCBootsWhite",
@@ -13229,7 +11949,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "NBC, protection, shoes, loot, footware",
-    "image": "images/characters/shoes/malefeet_base/malefeet_base.jpg"
+    "image": "images/characters/shoes/nbcbootswhite/nbcbootswhite.jpg"
   },
   {
     "objectName": "NBCBootsYellow",
@@ -13239,7 +11959,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "NBC, protection, shoes, loot, footware",
-    "image": "images/characters/shoes/malefeet_base/malefeet_base.jpg"
+    "image": "images/characters/shoes/nbcbootsyellow/nbcbootsyellow.jpg"
   },
   {
     "objectName": "MaleTorso_Base",
