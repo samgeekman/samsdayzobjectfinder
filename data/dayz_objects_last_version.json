@@ -3112,36 +3112,6 @@
     ]
   },
   {
-    "objectName": "Animal_BosTaurus_Brown",
-    "inGameName": "Bull",
-    "category": "animal",
-    "modelType": "Config",
-    "path": "dz/animals/bos_taurus",
-    "usableOnConsole": true,
-    "searchTags": "bull, cow, farmyard, brown, male",
-    "image": "images/animals/bos_taurus/animal_bostaurus_brown/animal_bostaurus_brown.jpg"
-  },
-  {
-    "objectName": "Animal_BosTaurus_Spotted",
-    "inGameName": "Bull",
-    "category": "animal",
-    "modelType": "Config",
-    "path": "dz/animals/bos_taurus",
-    "usableOnConsole": true,
-    "searchTags": "bull, cow, farmyard, spotted, male",
-    "image": "images/animals/bos_taurus/animal_bostaurus_spotted/animal_bostaurus_spotted.jpg"
-  },
-  {
-    "objectName": "Animal_BosTaurus_White",
-    "inGameName": "Bull",
-    "category": "animal",
-    "modelType": "Config",
-    "path": "dz/animals/bos_taurus",
-    "usableOnConsole": true,
-    "searchTags": "bull, cow, farmyard, white, male",
-    "image": "images/animals/bos_taurus/animal_bostaurus_white/animal_bostaurus_white.jpg"
-  },
-  {
     "objectName": "Animal_BosTaurusF_Brown",
     "inGameName": "Cow",
     "category": "animal",
@@ -5750,106 +5720,6 @@
     "usableOnConsole": false,
     "searchTags": "gloves, working, leather, protective, labor",
     "image": "images/characters/gloves/working_gloves_beige.jpg"
-  },
-  {
-    "objectName": "SurgicalGloves_Blue",
-    "inGameName": "Surgival Gloves",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": true,
-    "searchTags": "gloves, surgical, medical, sterile, disposable",
-    "image": "images/characters/gloves/surgical_gloves_blue.jpg"
-  },
-  {
-    "objectName": "SurgicalGloves_Green",
-    "inGameName": "Surgival Gloves",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": true,
-    "searchTags": "gloves, surgical, medical, sterile, disposable",
-    "image": "images/characters/gloves/surgical_gloves_blue.jpg"
-  },
-  {
-    "objectName": "SurgicalGloves_LightBlue",
-    "inGameName": "Surgival Gloves",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": true,
-    "searchTags": "gloves, surgical, medical, sterile, disposable",
-    "image": "images/characters/gloves/surgical_gloves_blue.jpg"
-  },
-  {
-    "objectName": "SurgicalGloves_White",
-    "inGameName": "Surgival Gloves",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": true,
-    "searchTags": "gloves, surgical, medical, sterile, disposable",
-    "image": "images/characters/gloves/surgical_gloves_blue.jpg"
-  },
-  {
-    "objectName": "WoolGlovesFingerless_Black",
-    "inGameName": "Wool Gloves",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": true,
-    "searchTags": "gloves, wool, knitted, warm, winter",
-    "image": "images/characters/gloves/wool_gloves_green.jpg"
-  },
-  {
-    "objectName": "WoolGlovesFingerless_ChristmasBlue",
-    "inGameName": "Wool Gloves",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": true,
-    "searchTags": "gloves, wool, knitted, warm, winter",
-    "image": "images/characters/gloves/wool_gloves_green.jpg"
-  },
-  {
-    "objectName": "WoolGlovesFingerless_ChristmasRed",
-    "inGameName": "Wool Gloves",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": true,
-    "searchTags": "gloves, wool, knitted, warm, winter",
-    "image": "images/characters/gloves/wool_gloves_green.jpg"
-  },
-  {
-    "objectName": "WoolGlovesFingerless_Green",
-    "inGameName": "Wool Gloves",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": true,
-    "searchTags": "gloves, wool, knitted, warm, winter",
-    "image": "images/characters/gloves/wool_gloves_green.jpg"
-  },
-  {
-    "objectName": "WoolGlovesFingerless_Tan",
-    "inGameName": "Wool Gloves",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": true,
-    "searchTags": "gloves, wool, knitted, warm, winter",
-    "image": "images/characters/gloves/wool_gloves_green.jpg"
-  },
-  {
-    "objectName": "WoolGlovesFingerless_White",
-    "inGameName": "Wool Gloves",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/gloves",
-    "usableOnConsole": true,
-    "searchTags": "gloves, wool, knitted, warm, winter",
-    "image": "images/characters/gloves/wool_gloves_green.jpg"
   },
   {
     "objectName": "GorkaHelmetVisor",
@@ -9499,7 +9369,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, loot",
-    "image": "images/characters/masks/weldingmask.jpg"
+    "image": "images/characters/masks/weldingmask/weldingmask.jpg"
   },
   {
     "objectName": "GasMask",
@@ -9509,7 +9379,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "combat, face, fuel, masks, protection, station, loot",
-    "image": "images/characters/masks/gasmask.jpg"
+    "image": "images/characters/masks/gasmask/gasmask.jpg"
   },
   {
     "objectName": "NioshFaceMask",
@@ -9519,7 +9389,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "dust, masks, protection, loot",
-    "image": "images/characters/masks/nioshfacemask.jpg"
+    "image": "images/characters/masks/nioshfacemask/nioshfacemask.jpg"
   },
   {
     "objectName": "BalaclavaMask_BDU",
@@ -9529,7 +9399,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, ski, bank robbery, loot",
-    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+    "image": "images/characters/masks/balaclavamask_bdu/balaclavamask_bdu.jpg"
   },
   {
     "objectName": "BalaclavaMask_Beige",
@@ -9539,7 +9409,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, ski, bank robbery, loot",
-    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+    "image": "images/characters/masks/balaclavamask_beige/balaclavamask_beige.jpg"
   },
   {
     "objectName": "BalaclavaMask_Black",
@@ -9549,7 +9419,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, ski, bank robbery, loot",
-    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+    "image": "images/characters/masks/balaclavamask_black/balaclavamask_black.jpg"
   },
   {
     "objectName": "BalaclavaMask_Blackskull",
@@ -9559,7 +9429,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, ski, bank robbery, loot",
-    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+    "image": "images/characters/masks/balaclavamask_blackskull/balaclavamask_blackskull.jpg"
   },
   {
     "objectName": "BalaclavaMask_Blue",
@@ -9569,7 +9439,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, ski, bank robbery, loot",
-    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+    "image": "images/characters/masks/balaclavamask_blue/balaclavamask_blue.jpg"
   },
   {
     "objectName": "BalaclavaMask_Chain",
@@ -9579,7 +9449,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, ski, bank robbery, loot",
-    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+    "image": "images/characters/masks/balaclavamask_chain/balaclavamask_chain.jpg"
   },
   {
     "objectName": "BalaclavaMask_Green",
@@ -9599,7 +9469,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, ski, bank robbery, loot",
-    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+    "image": "images/characters/masks/balaclavamask_pig/balaclavamask_pig.jpg"
   },
   {
     "objectName": "BalaclavaMask_Pink",
@@ -9609,7 +9479,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, ski, bank robbery, loot",
-    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+    "image": "images/characters/masks/balaclavamask_pink/balaclavamask_pink.jpg"
   },
   {
     "objectName": "BalaclavaMask_White",
@@ -9619,7 +9489,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, ski, bank robbery, loot",
-    "image": "images/characters/masks/balaclavamask_colorbase.jpg"
+    "image": "images/characters/masks/balaclavamask_white/balaclavamask_white.jpg"
   },
   {
     "objectName": "PaydayMask_Dallas",
@@ -9629,7 +9499,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, bank robbery, loot",
-    "image": "images/characters/masks/paydaymask_dallas.jpg"
+    "image": "images/characters/masks/paydaymask_dallas/paydaymask_dallas.jpg"
   },
   {
     "objectName": "PaydayMask_Hoxton",
@@ -9639,7 +9509,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, bank robbery, loot",
-    "image": "images/characters/masks/paydaymask_hoxton.jpg"
+    "image": "images/characters/masks/paydaymask_hoxton/paydaymask_hoxton.jpg"
   },
   {
     "objectName": "PaydayMask_Wolf",
@@ -9649,7 +9519,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, bank robbery, loot",
-    "image": "images/characters/masks/paydaymask_wolf.jpg"
+    "image": "images/characters/masks/paydaymask_wolf/paydaymask_wolf.jpg"
   },
   {
     "objectName": "PaydayMask_Chains",
@@ -9659,7 +9529,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, bank robbery, loot",
-    "image": "images/characters/masks/paydaymask_chains.jpg"
+    "image": "images/characters/masks/paydaymask_chains/paydaymask_chains.jpg"
   },
   {
     "objectName": "GP5GasMask",
@@ -9669,7 +9539,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, fuel, masks, protection, NBC, respirator, loot",
-    "image": "images/characters/masks/gp5gasmask.jpg"
+    "image": "images/characters/masks/gp5gasmask/gp5gasmask.jpg"
   },
   {
     "objectName": "AirborneMask",
@@ -9679,7 +9549,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, nbc, protection, respirator, loot",
-    "image": "images/characters/masks/airbornemask.jpg"
+    "image": "images/characters/masks/airbornemask/airbornemask.jpg"
   },
   {
     "objectName": "Balaclava3Holes_Beige",
@@ -9689,7 +9559,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "masks, bank robbery, loot",
-    "image": "images/characters/masks/balaclava3holes_colorbase.jpg"
+    "image": "images/characters/masks/balaclava3holes_beige/balaclava3holes_beige.jpg"
   },
   {
     "objectName": "Balaclava3Holes_Black",
@@ -9699,7 +9569,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "masks, bank robbery, loot",
-    "image": "images/characters/masks/balaclava3holes_colorbase.jpg"
+    "image": "images/characters/masks/balaclava3holes_black/balaclava3holes_black.jpg"
   },
   {
     "objectName": "Balaclava3Holes_Blue",
@@ -9709,7 +9579,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "masks, bank robbery, loot",
-    "image": "images/characters/masks/balaclava3holes_colorbase.jpg"
+    "image": "images/characters/masks/balaclava3holes_blue/balaclava3holes_blue.jpg"
   },
   {
     "objectName": "Balaclava3Holes_Green",
@@ -9719,7 +9589,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "masks, bank robbery, loot",
-    "image": "images/characters/masks/balaclava3holes_colorbase.jpg"
+    "image": "images/characters/masks/balaclava3holes_green/balaclava3holes_green.jpg"
   },
   {
     "objectName": "Balaclava3Holes_White",
@@ -9729,7 +9599,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "masks, bank robbery, loot",
-    "image": "images/characters/masks/balaclava3holes_colorbase.jpg"
+    "image": "images/characters/masks/balaclava3holes_white/balaclava3holes_white.jpg"
   },
   {
     "objectName": "SantasBeard",
@@ -9739,7 +9609,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "masks, santa, festive, seasonal christmas, loot",
-    "image": "images/characters/masks/santasbeard.jpg"
+    "image": "images/characters/masks/santasbeard/santasbeard.jpg"
   },
   {
     "objectName": "SurgicalMask",
@@ -9749,7 +9619,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, medical, covering, covid, loot",
-    "image": "images/characters/masks/surgicalmask.jpg"
+    "image": "images/characters/masks/surgicalmask/surgicalmask.jpg"
   },
   {
     "objectName": "HockeyMask",
@@ -9759,7 +9629,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, sports, loot",
-    "image": "images/characters/masks/hockeymask.jpg"
+    "image": "images/characters/masks/hockeymask/hockeymask.jpg"
   },
   {
     "objectName": "MimeMask_Male",
@@ -9769,7 +9639,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "face, masks, protection, creepy, loot",
-    "image": "images/characters/masks/mimemask_male.jpg"
+    "image": "images/characters/masks/mimemask_male/mimemask_male.jpg"
   },
   {
     "objectName": "CrookedNose",
@@ -9779,7 +9649,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "masks, halloween, witch, seasonal, loot",
-    "image": "images/characters/masks/crookednose.jpg"
+    "image": "images/characters/masks/crookednose/crookednose.jpg"
   },
   {
     "objectName": "FaceCover_Improvised",
@@ -9789,7 +9659,7 @@
     "path": "dz/characters/masks",
     "usableOnConsole": true,
     "searchTags": "masks, wrapping, rags, loot",
-    "image": "images/characters/masks/facecover_improvised.jpg"
+    "image": "images/characters/masks/facecover_improvised/facecover_improvised.jpg"
   },
   {
     "objectName": "airborne_mask_f.p3d",
@@ -10369,7 +10239,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, shorts, underwear, bodies, player, pc, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/malelegs_base/malelegs_base.jpg"
   },
   {
     "objectName": "FemaleLegs_Base",
@@ -10389,7 +10259,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/jeans_colorbase.jpg"
+    "image": "images/characters/pants/jeans_black/jeans_black.jpg"
   },
   {
     "objectName": "Jeans_Blue",
@@ -10399,7 +10269,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/jeans_colorbase.jpg"
+    "image": "images/characters/pants/jeans_blue/jeans_blue.jpg"
   },
   {
     "objectName": "Jeans_BlueDark",
@@ -10409,7 +10279,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/jeans_colorbase.jpg"
+    "image": "images/characters/pants/jeans_bluedark/jeans_bluedark.jpg"
   },
   {
     "objectName": "Jeans_Brown",
@@ -10419,7 +10289,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/jeans_colorbase.jpg"
+    "image": "images/characters/pants/jeans_brown/jeans_brown.jpg"
   },
   {
     "objectName": "Jeans_Green",
@@ -10429,7 +10299,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/jeans_colorbase.jpg"
+    "image": "images/characters/pants/jeans_green/jeans_green.jpg"
   },
   {
     "objectName": "Jeans_Grey",
@@ -10439,7 +10309,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/jeans_colorbase.jpg"
+    "image": "images/characters/pants/jeans_grey/jeans_grey.jpg"
   },
   {
     "objectName": "CargoPants_Beige",
@@ -10449,7 +10319,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "workware, clothing, loot, trousers",
-    "image": "images/characters/pants/cargopants_colorbase.jpg"
+    "image": "images/characters/pants/cargopants_beige/cargopants_beige.jpg"
   },
   {
     "objectName": "CargoPants_Black",
@@ -10459,7 +10329,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "workware, clothing, loot, trousers",
-    "image": "images/characters/pants/cargopants_colorbase.jpg"
+    "image": "images/characters/pants/cargopants_black/cargopants_black.jpg"
   },
   {
     "objectName": "CargoPants_Blue",
@@ -10469,7 +10339,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "workware, clothing, loot, trousers",
-    "image": "images/characters/pants/cargopants_colorbase.jpg"
+    "image": "images/characters/pants/cargopants_blue/cargopants_blue.jpg"
   },
   {
     "objectName": "CargoPants_Green",
@@ -10479,7 +10349,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "workware, clothing, loot, trousers",
-    "image": "images/characters/pants/cargopants_colorbase.jpg"
+    "image": "images/characters/pants/cargopants_green/cargopants_green.jpg"
   },
   {
     "objectName": "CargoPants_Grey",
@@ -10489,7 +10359,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "workware, clothing, loot, trousers",
-    "image": "images/characters/pants/cargopants_colorbase.jpg"
+    "image": "images/characters/pants/cargopants_grey/cargopants_grey.jpg"
   },
   {
     "objectName": "TTSKOPants",
@@ -10509,7 +10379,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "hunting, woodsman, weather, trail, loot, trousers",
-    "image": "images/characters/pants/hunterpants_colorbase.jpg"
+    "image": "images/characters/pants/hunterpants_autumn/hunterpants_autumn.jpg"
   },
   {
     "objectName": "HunterPants_Brown",
@@ -10519,7 +10389,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "hunting, woodsman, weather, trail, loot, trousers",
-    "image": "images/characters/pants/hunterpants_colorbase.jpg"
+    "image": "images/characters/pants/hunterpants_brown/hunterpants_brown.jpg"
   },
   {
     "objectName": "HunterPants_Spring",
@@ -10529,7 +10399,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "hunting, woodsman, weather, trail, loot, trousers",
-    "image": "images/characters/pants/hunterpants_colorbase.jpg"
+    "image": "images/characters/pants/hunterpants_spring/hunterpants_spring.jpg"
   },
   {
     "objectName": "HunterPants_Summer",
@@ -10539,7 +10409,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "hunting, woodsman, weather, trail, loot, trousers",
-    "image": "images/characters/pants/hunterpants_colorbase.jpg"
+    "image": "images/characters/pants/hunterpants_summer/hunterpants_summer.jpg"
   },
   {
     "objectName": "HunterPants_Winter",
@@ -10549,7 +10419,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "hunting, woodsman, weather, trail, snow, loot, trousers",
-    "image": "images/characters/pants/hunterpants_colorbase.jpg"
+    "image": "images/characters/pants/hunterpants_winter/hunterpants_winter.jpg"
   },
   {
     "objectName": "CanvasPants_Beige",
@@ -10559,7 +10429,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "hiking, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/canvaspants_colorbase.jpg"
+    "image": "images/characters/pants/canvaspants_beige/canvaspants_beige.jpg"
   },
   {
     "objectName": "CanvasPants_Blue",
@@ -10569,7 +10439,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "hiking, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/canvaspants_colorbase.jpg"
+    "image": "images/characters/pants/canvaspants_blue/canvaspants_blue.jpg"
   },
   {
     "objectName": "CanvasPants_Grey",
@@ -10579,7 +10449,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "hiking, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/canvaspants_colorbase.jpg"
+    "image": "images/characters/pants/canvaspants_grey/canvaspants_grey.jpg"
   },
   {
     "objectName": "CanvasPants_Red",
@@ -10589,7 +10459,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "hiking, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/canvaspants_colorbase.jpg"
+    "image": "images/characters/pants/canvaspants_red/canvaspants_red.jpg"
   },
   {
     "objectName": "CanvasPants_Violet",
@@ -10599,7 +10469,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "hiking, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/canvaspants_colorbase.jpg"
+    "image": "images/characters/pants/canvaspants_violet/canvaspants_violet.jpg"
   },
   {
     "objectName": "CanvasPantsMidi_Beige",
@@ -10609,7 +10479,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "crop, hiking, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/canvaspantsmidi_colorbase.jpg"
+    "image": "images/characters/pants/canvaspantsmidi_beige/canvaspantsmidi_beige.jpg"
   },
   {
     "objectName": "CanvasPantsMidi_Blue",
@@ -10619,7 +10489,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "crop, hiking, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/canvaspantsmidi_colorbase.jpg"
+    "image": "images/characters/pants/canvaspantsmidi_blue/canvaspantsmidi_blue.jpg"
   },
   {
     "objectName": "CanvasPantsMidi_Grey",
@@ -10629,7 +10499,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "crop, hiking, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/canvaspantsmidi_colorbase.jpg"
+    "image": "images/characters/pants/canvaspantsmidi_grey/canvaspantsmidi_grey.jpg"
   },
   {
     "objectName": "CanvasPantsMidi_Red",
@@ -10639,7 +10509,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "crop, hiking, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/canvaspantsmidi_colorbase.jpg"
+    "image": "images/characters/pants/canvaspantsmidi_red/canvaspantsmidi_red.jpg"
   },
   {
     "objectName": "CanvasPantsMidi_Violet",
@@ -10649,7 +10519,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "crop, hiking, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/canvaspantsmidi_colorbase.jpg"
+    "image": "images/characters/pants/canvaspantsmidi_violet/canvaspantsmidi_violet.jpg"
   },
   {
     "objectName": "TrackSuitPants_Black",
@@ -10659,7 +10529,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "tracksuit, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/tracksuitpants_colorbase.jpg"
+    "image": "images/characters/pants/tracksuitpants_black/tracksuitpants_black.jpg"
   },
   {
     "objectName": "TrackSuitPants_Blue",
@@ -10669,7 +10539,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "tracksuit, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/tracksuitpants_colorbase.jpg"
+    "image": "images/characters/pants/tracksuitpants_blue/tracksuitpants_blue.jpg"
   },
   {
     "objectName": "TrackSuitPants_Green",
@@ -10679,7 +10549,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "tracksuit, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/tracksuitpants_colorbase.jpg"
+    "image": "images/characters/pants/tracksuitpants_green/tracksuitpants_green.jpg"
   },
   {
     "objectName": "TrackSuitPants_LightBlue",
@@ -10689,7 +10559,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "tracksuit, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/tracksuitpants_colorbase.jpg"
+    "image": "images/characters/pants/tracksuitpants_lightblue/tracksuitpants_lightblue.jpg"
   },
   {
     "objectName": "TrackSuitPants_Red",
@@ -10699,7 +10569,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "tracksuit, loot, trousers",
-    "image": "images/characters/pants/tracksuitpants_colorbase.jpg"
+    "image": "images/characters/pants/tracksuitpants_red/tracksuitpants_red.jpg"
   },
   {
     "objectName": "GorkaPants_Autumn",
@@ -10709,7 +10579,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "patrol, combat, military, loot, trousers",
-    "image": "images/characters/pants/gorkapants_colorbase.jpg"
+    "image": "images/characters/pants/gorkapants_autumn/gorkapants_autumn.jpg"
   },
   {
     "objectName": "GorkaPants_Flat",
@@ -10719,7 +10589,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "patrol, combat, military, loot, trousers",
-    "image": "images/characters/pants/gorkapants_colorbase.jpg"
+    "image": "images/characters/pants/gorkapants_flat/gorkapants_flat.jpg"
   },
   {
     "objectName": "GorkaPants_PautRev",
@@ -10729,7 +10599,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "patrol, combat, military, loot, trousers",
-    "image": "images/characters/pants/gorkapants_colorbase.jpg"
+    "image": "images/characters/pants/gorkapants_pautrev/gorkapants_pautrev.jpg"
   },
   {
     "objectName": "GorkaPants_Summer",
@@ -10739,7 +10609,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "patrol, combat, military, loot, trousers",
-    "image": "images/characters/pants/gorkapants_colorbase.jpg"
+    "image": "images/characters/pants/gorkapants_summer/gorkapants_summer.jpg"
   },
   {
     "objectName": "GorkaPants_Winter",
@@ -10749,7 +10619,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "patrol, combat, military, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/gorkapants_colorbase.jpg"
+    "image": "images/characters/pants/gorkapants_winter/gorkapants_winter.jpg"
   },
   {
     "objectName": "PolicePants",
@@ -10759,7 +10629,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "law enforcement, workware, clohthing, clothes, loot, trousers",
-    "image": "images/characters/pants/policepants.jpg"
+    "image": "images/characters/pants/policepants/policepants.jpg"
   },
   {
     "objectName": "PolicePantsOrel",
@@ -10769,7 +10639,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "law enforcement, workware, clohthing, clothes, loot, trousers",
-    "image": "images/characters/pants/policepantsorel.jpg"
+    "image": "images/characters/pants/policepantsorel/policepantsorel.jpg"
   },
   {
     "objectName": "ParamedicPants_Blue",
@@ -10779,7 +10649,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "ambulance, workware, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/paramedicpants_colorbase.jpg"
+    "image": "images/characters/pants/paramedicpants_blue/paramedicpants_blue.jpg"
   },
   {
     "objectName": "ParamedicPants_Crimson",
@@ -10789,7 +10659,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "ambulance, workware, clothing, clothes, hospital, loot, trousers",
-    "image": "images/characters/pants/paramedicpants_colorbase.jpg"
+    "image": "images/characters/pants/paramedicpants_crimson/paramedicpants_crimson.jpg"
   },
   {
     "objectName": "ParamedicPants_Green",
@@ -10799,7 +10669,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "ambulance, workware, clothing, clothes, hospital, loot, trousers",
-    "image": "images/characters/pants/paramedicpants_colorbase.jpg"
+    "image": "images/characters/pants/paramedicpants_green/paramedicpants_green.jpg"
   },
   {
     "objectName": "FirefightersPants_Beige",
@@ -10809,7 +10679,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "firefighter, workware, clothing, clothes, fire, loot, trousers",
-    "image": "images/characters/pants/firefighterspants_colorbase.jpg"
+    "image": "images/characters/pants/firefighterspants_beige/firefighterspants_beige.jpg"
   },
   {
     "objectName": "FirefightersPants_Black",
@@ -10819,7 +10689,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "firefighter, workware, clothing, clothes, fire, loot, trousers",
-    "image": "images/characters/pants/firefighterspants_colorbase.jpg"
+    "image": "images/characters/pants/firefighterspants_black/firefighterspants_black.jpg"
   },
   {
     "objectName": "PrisonUniformPants",
@@ -10829,7 +10699,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "prisoner, gulag, inmate, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/prisonuniformpants.jpg"
+    "image": "images/characters/pants/prisonuniformpants/prisonuniformpants.jpg"
   },
   {
     "objectName": "LeatherPants_Beige",
@@ -10839,7 +10709,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/leatherpants_colorbase.jpg"
+    "image": "images/characters/pants/leatherpants_beige/leatherpants_beige.jpg"
   },
   {
     "objectName": "LeatherPants_Black",
@@ -10849,7 +10719,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/leatherpants_colorbase.jpg"
+    "image": "images/characters/pants/leatherpants_black/leatherpants_black.jpg"
   },
   {
     "objectName": "LeatherPants_Brown",
@@ -10859,7 +10729,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/leatherpants_colorbase.jpg"
+    "image": "images/characters/pants/leatherpants_brown/leatherpants_brown.jpg"
   },
   {
     "objectName": "LeatherPants_Natural",
@@ -10869,7 +10739,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/leatherpants_colorbase.jpg"
+    "image": "images/characters/pants/leatherpants_natural/leatherpants_natural.jpg"
   },
   {
     "objectName": "MedicalScrubsPants_Blue",
@@ -10879,7 +10749,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "health, hospital, scrub, workware, ambulance, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/medicalscrubspants_colorbase.jpg"
+    "image": "images/characters/pants/medicalscrubspants_blue/medicalscrubspants_blue.jpg"
   },
   {
     "objectName": "MedicalScrubsPants_Green",
@@ -10889,7 +10759,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "health, hospital, scrub, workware, ambulance, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/medicalscrubspants_colorbase.jpg"
+    "image": "images/characters/pants/medicalscrubspants_green/medicalscrubspants_green.jpg"
   },
   {
     "objectName": "MedicalScrubsPants_White",
@@ -10899,7 +10769,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "health, hospital, scrub, workware, ambulance, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/medicalscrubspants_colorbase.jpg"
+    "image": "images/characters/pants/medicalscrubspants_white/medicalscrubspants_white.jpg"
   },
   {
     "objectName": "USMCPants_Desert",
@@ -10909,7 +10779,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "cuu, combat, military, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/usmcpants_colorbase.jpg"
+    "image": "images/characters/pants/usmcpants_desert/usmcpants_desert.jpg"
   },
   {
     "objectName": "USMCPants_Woodland",
@@ -10919,7 +10789,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "cuu, combat, military, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/usmcpants_colorbase.jpg"
+    "image": "images/characters/pants/usmcpants_woodland/usmcpants_woodland.jpg"
   },
   {
     "objectName": "OMKPants_Navy",
@@ -10929,7 +10799,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "cuu, combat, military, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/omkpants_colorbase.jpg"
+    "image": "images/characters/pants/omkpants_navy/omkpants_navy.jpg"
   },
   {
     "objectName": "BDUPants",
@@ -10939,7 +10809,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "cuu, combat, military, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/bdupants.jpg"
+    "image": "images/characters/pants/bdupants/bdupants.jpg"
   },
   {
     "objectName": "JumpsuitPants_Blue",
@@ -10949,7 +10819,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/jumpsuitpants_colorbase.jpg"
+    "image": "images/characters/pants/jumpsuitpants_blue/jumpsuitpants_blue.jpg"
   },
   {
     "objectName": "JumpsuitPants_Green",
@@ -10959,7 +10829,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/jumpsuitpants_colorbase.jpg"
+    "image": "images/characters/pants/jumpsuitpants_green/jumpsuitpants_green.jpg"
   },
   {
     "objectName": "JumpsuitPants_Grey",
@@ -10969,7 +10839,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/jumpsuitpants_colorbase.jpg"
+    "image": "images/characters/pants/jumpsuitpants_grey/jumpsuitpants_grey.jpg"
   },
   {
     "objectName": "JumpsuitPants_Red",
@@ -10979,7 +10849,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/jumpsuitpants_colorbase.jpg"
+    "image": "images/characters/pants/jumpsuitpants_red/jumpsuitpants_red.jpg"
   },
   {
     "objectName": "LegsCover_Improvised",
@@ -10989,7 +10859,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, wrapping, rags, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/legscover_improvised.jpg"
+    "image": "images/characters/pants/legscover_improvised/legscover_improvised.jpg"
   },
   {
     "objectName": "Chainmail_Leggings",
@@ -10999,7 +10869,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, medieval, castle, armour, armor, loot, trousers",
-    "image": "images/characters/pants/chainmail_leggings.jpg"
+    "image": "images/characters/pants/chainmail_leggings/chainmail_leggings.jpg"
   },
   {
     "objectName": "MaleLegsAbove",
@@ -12059,7 +11929,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "underwear, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/malelegs_base/malelegs_base.jpg"
   },
   {
     "objectName": "SlacksPants_Black",
@@ -12129,7 +11999,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "underwear, clothing, clothes, loot, trousers",
-    "image": "images/characters/pants/malelegs_base.jpg"
+    "image": "images/characters/pants/malelegs_base/malelegs_base.jpg"
   },
   {
     "objectName": "MaleFeet_Base",
@@ -12139,7 +12009,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "bare, feet, pc, player, survivor, loot, footware",
-    "image": "images/characters/shoes/malefeet_base.jpg"
+    "image": "images/characters/shoes/malefeet_base/malefeet_base.jpg"
   },
   {
     "objectName": "FemaleFeet_Base",
@@ -12159,7 +12029,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "sports, trainers, loot, footware",
-    "image": "images/characters/shoes/athleticshoes_colorbase.jpg"
+    "image": "images/characters/shoes/athleticshoes_black/athleticshoes_black.jpg"
   },
   {
     "objectName": "AthleticShoes_Blue",
@@ -12169,7 +12039,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "sports, trainers, loot, footware",
-    "image": "images/characters/shoes/athleticshoes_colorbase.jpg"
+    "image": "images/characters/shoes/athleticshoes_blue/athleticshoes_blue.jpg"
   },
   {
     "objectName": "AthleticShoes_Brown",
@@ -12179,7 +12049,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "sports, trainers, loot, footware",
-    "image": "images/characters/shoes/athleticshoes_colorbase.jpg"
+    "image": "images/characters/shoes/athleticshoes_brown/athleticshoes_brown.jpg"
   },
   {
     "objectName": "AthleticShoes_Green",
@@ -12189,7 +12059,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "sports, trainers, loot, footware",
-    "image": "images/characters/shoes/athleticshoes_colorbase.jpg"
+    "image": "images/characters/shoes/athleticshoes_green/athleticshoes_green.jpg"
   },
   {
     "objectName": "AthleticShoes_Grey",
@@ -12199,7 +12069,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "sports, trainers, loot, footware",
-    "image": "images/characters/shoes/athleticshoes_colorbase.jpg"
+    "image": "images/characters/shoes/athleticshoes_grey/athleticshoes_grey.jpg"
   },
   {
     "objectName": "HikingBoots_Black",
@@ -12209,7 +12079,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, trail, woods, walking, loot, footware",
-    "image": "images/characters/shoes/hikingboots_colorbase.jpg"
+    "image": "images/characters/shoes/hikingboots_black/hikingboots_black.jpg"
   },
   {
     "objectName": "HikingBoots_Brown",
@@ -12219,7 +12089,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, trail, woods, walking, loot, footware",
-    "image": "images/characters/shoes/hikingboots_colorbase.jpg"
+    "image": "images/characters/shoes/hikingboots_brown/hikingboots_brown.jpg"
   },
   {
     "objectName": "HikingBootsLow_Beige",
@@ -12229,7 +12099,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, trail, woods, walking, loot, footware",
-    "image": "images/characters/shoes/hikingbootslow_colorbase.jpg"
+    "image": "images/characters/shoes/hikingbootslow_beige/hikingbootslow_beige.jpg"
   },
   {
     "objectName": "HikingBootsLow_Black",
@@ -12239,7 +12109,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, trail, woods, walking, loot, footware",
-    "image": "images/characters/shoes/hikingbootslow_colorbase.jpg"
+    "image": "images/characters/shoes/hikingbootslow_black/hikingbootslow_black.jpg"
   },
   {
     "objectName": "HikingBootsLow_Blue",
@@ -12249,7 +12119,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, trail, woods, walking, loot, footware",
-    "image": "images/characters/shoes/hikingbootslow_colorbase.jpg"
+    "image": "images/characters/shoes/hikingbootslow_blue/hikingbootslow_blue.jpg"
   },
   {
     "objectName": "HikingBootsLow_Grey",
@@ -12259,7 +12129,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, trail, woods, walking, loot, footware",
-    "image": "images/characters/shoes/hikingbootslow_colorbase.jpg"
+    "image": "images/characters/shoes/hikingbootslow_grey/hikingbootslow_grey.jpg"
   },
   {
     "objectName": "Wellies_Black",
@@ -12269,7 +12139,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, waterpoof, wellington, loot, footware",
-    "image": "images/characters/shoes/wellies_colorbase.jpg"
+    "image": "images/characters/shoes/wellies_black/wellies_black.jpg"
   },
   {
     "objectName": "Wellies_Brown",
@@ -12279,7 +12149,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, waterpoof, wellington, loot, footware",
-    "image": "images/characters/shoes/wellies_colorbase.jpg"
+    "image": "images/characters/shoes/wellies_brown/wellies_brown.jpg"
   },
   {
     "objectName": "Wellies_Green",
@@ -12289,7 +12159,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, waterpoof, wellington, loot, footware",
-    "image": "images/characters/shoes/wellies_colorbase.jpg"
+    "image": "images/characters/shoes/wellies_green/wellies_green.jpg"
   },
   {
     "objectName": "Wellies_Grey",
@@ -12299,7 +12169,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, waterpoof, wellington, loot, footware",
-    "image": "images/characters/shoes/wellies_colorbase.jpg"
+    "image": "images/characters/shoes/wellies_grey/wellies_grey.jpg"
   },
   {
     "objectName": "WorkingBoots_Beige",
@@ -12309,7 +12179,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, steel toe cap, loot, footware",
-    "image": "images/characters/shoes/workingboots_colorbase.jpg"
+    "image": "images/characters/shoes/workingboots_beige/workingboots_beige.jpg"
   },
   {
     "objectName": "WorkingBoots_Brown",
@@ -12319,7 +12189,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, steel toe cap, loot, footware",
-    "image": "images/characters/shoes/workingboots_colorbase.jpg"
+    "image": "images/characters/shoes/workingboots_brown/workingboots_brown.jpg"
   },
   {
     "objectName": "WorkingBoots_Green",
@@ -12329,7 +12199,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, steel toe cap, loot, footware",
-    "image": "images/characters/shoes/workingboots_colorbase.jpg"
+    "image": "images/characters/shoes/workingboots_green/workingboots_green.jpg"
   },
   {
     "objectName": "WorkingBoots_Grey",
@@ -12339,7 +12209,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, steel toe cap, loot, footware",
-    "image": "images/characters/shoes/workingboots_colorbase.jpg"
+    "image": "images/characters/shoes/workingboots_grey/workingboots_grey.jpg"
   },
   {
     "objectName": "WorkingBoots_Yellow",
@@ -12349,7 +12219,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, steel toe cap, loot, footware",
-    "image": "images/characters/shoes/workingboots_colorbase.jpg"
+    "image": "images/characters/shoes/workingboots_yellow/workingboots_yellow.jpg"
   },
   {
     "objectName": "JungleBoots_Beige",
@@ -12359,7 +12229,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, steel toe cap, military, army, combat, loot, footware",
-    "image": "images/characters/shoes/jungleboots_colorbase.jpg"
+    "image": "images/characters/shoes/jungleboots_beige/jungleboots_beige.jpg"
   },
   {
     "objectName": "JungleBoots_Black",
@@ -12369,7 +12239,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, steel toe cap, military, army, combat, loot, footware",
-    "image": "images/characters/shoes/jungleboots_colorbase.jpg"
+    "image": "images/characters/shoes/jungleboots_black/jungleboots_black.jpg"
   },
   {
     "objectName": "JungleBoots_Brown",
@@ -12379,7 +12249,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, steel toe cap, military, army, combat, loot, footware",
-    "image": "images/characters/shoes/jungleboots_colorbase.jpg"
+    "image": "images/characters/shoes/jungleboots_brown/jungleboots_brown.jpg"
   },
   {
     "objectName": "JungleBoots_Green",
@@ -12389,7 +12259,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, steel toe cap, military, army, combat, loot, footware",
-    "image": "images/characters/shoes/jungleboots_colorbase.jpg"
+    "image": "images/characters/shoes/jungleboots_green/jungleboots_green.jpg"
   },
   {
     "objectName": "JungleBoots_Olive",
@@ -12399,7 +12269,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, steel toe cap, military, army, combat, loot, footware",
-    "image": "images/characters/shoes/jungleboots_colorbase.jpg"
+    "image": "images/characters/shoes/jungleboots_olive/jungleboots_olive.jpg"
   },
   {
     "objectName": "DressShoes_Beige",
@@ -12409,7 +12279,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "smart, fancy, formal, loot, footware",
-    "image": "images/characters/shoes/dressshoes_colorbase.jpg"
+    "image": "images/characters/shoes/dressshoes_beige/dressshoes_beige.jpg"
   },
   {
     "objectName": "DressShoes_Black",
@@ -12419,7 +12289,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "smart, fancy, formal, loot, footware",
-    "image": "images/characters/shoes/dressshoes_colorbase.jpg"
+    "image": "images/characters/shoes/dressshoes_black/dressshoes_black.jpg"
   },
   {
     "objectName": "DressShoes_Brown",
@@ -12739,7 +12609,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, wrapping, loot, footware",
-    "image": "images/characters/shoes/feetcover_improvised.jpg"
+    "image": "images/characters/shoes/feetcover_improvised/feetcover_improvised.jpg"
   },
   {
     "objectName": "TTSKOBoots",
@@ -12749,7 +12619,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "combat, shoes, wrapping, rags, loot, footware",
-    "image": "images/characters/shoes/ttskoboots.jpg"
+    "image": "images/characters/shoes/ttskoboots/ttskoboots.jpg"
   },
   {
     "objectName": "MedievalBoots",
@@ -12759,7 +12629,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "shoes, armour, armor, castle, medieval, loot, footware",
-    "image": "images/characters/shoes/medievalboots.jpg"
+    "image": "images/characters/shoes/medievalboots/medievalboots.jpg"
   },
   {
     "objectName": "athleticshoes_f.p3d",
@@ -13349,7 +13219,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "NBC, protection, shoes, loot, footware",
-    "image": "images/characters/shoes/malefeet_base.jpg"
+    "image": "images/characters/shoes/malefeet_base/malefeet_base.jpg"
   },
   {
     "objectName": "NBCBootsWhite",
@@ -13359,7 +13229,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "NBC, protection, shoes, loot, footware",
-    "image": "images/characters/shoes/malefeet_base.jpg"
+    "image": "images/characters/shoes/malefeet_base/malefeet_base.jpg"
   },
   {
     "objectName": "NBCBootsYellow",
@@ -13369,7 +13239,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "NBC, protection, shoes, loot, footware",
-    "image": "images/characters/shoes/malefeet_base.jpg"
+    "image": "images/characters/shoes/malefeet_base/malefeet_base.jpg"
   },
   {
     "objectName": "MaleTorso_Base",
@@ -117312,7 +117182,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_stanag30.jpg"
+    "image": "images/weapons/attachments/magazine/mag_stanag_30rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_PMAG_10",
@@ -117322,7 +117192,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_pmag_10.jpg"
+    "image": "images/weapons/attachments/magazine/mag_cmag_10rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_PMAG_20",
@@ -117332,7 +117202,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_pmag_20.jpg"
+    "image": "images/weapons/attachments/magazine/mag_cmag_20rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_PMAG_30",
@@ -117342,7 +117212,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_pmag_30.jpg"
+    "image": "images/weapons/attachments/magazine/mag_cmag_30rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_PMAG_40",
@@ -117352,7 +117222,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_pmag_40.jpg"
+    "image": "images/weapons/attachments/magazine/mag_cmag_40rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_FNP45",
@@ -117362,7 +117232,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_fnp45.jpg"
+    "image": "images/weapons/attachments/magazine/mag_fnx45_15rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_ruger1022_10",
@@ -117372,7 +117242,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ruger1022_10.jpg"
+    "image": "images/weapons/attachments/magazine/mag_ruger1022_10rnd.jpg"
   },
   {
     "objectName": "Proxymagazine_ruger1022_15",
@@ -117382,7 +117252,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ruger1022_15.jpg"
+    "image": "images/weapons/attachments/magazine/mag_ruger1022_15rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_ruger1022_30",
@@ -117392,7 +117262,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ruger1022_30.jpg"
+    "image": "images/weapons/attachments/magazine/mag_ruger1022_30rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_mk2",
@@ -117402,7 +117272,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_mk2.jpg"
+    "image": "images/weapons/attachments/magazine/mag_mkii_10rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_1911",
@@ -117412,7 +117282,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_1911.jpg"
+    "image": "images/weapons/attachments/magazine/mag_1911_7rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_CZ75",
@@ -117422,7 +117292,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_cz75.jpg"
+    "image": "images/weapons/attachments/magazine/mag_cz75_15rnd.jpg"
   },
   {
     "objectName": "Proxymagazine_p1",
@@ -117432,7 +117302,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_p1.jpg"
+    "image": "images/weapons/attachments/magazine/mag_p1_8rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_akm_30rnd",
@@ -117442,7 +117312,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_akm_30rnd.jpg"
+    "image": "images/weapons/attachments/magazine/mag_akm_30rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_akm_drum",
@@ -117452,7 +117322,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_akm_drum.jpg"
+    "image": "images/weapons/attachments/magazine/mag_akm_drum75rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_akm_palm30",
@@ -117462,7 +117332,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_akm_palm30.jpg"
+    "image": "images/weapons/attachments/magazine/mag_akm_palm30rnd.jpg"
   },
   {
     "objectName": "ProxyArrow_Composite",
@@ -117472,7 +117342,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxyarrow_composite.jpg"
+    "image": "images/weapons/attachments/magazine/mag_arrows_quiver.jpg"
   },
   {
     "objectName": "ProxyMagazine_mp5_15rnd",
@@ -117482,7 +117352,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_mp5_15rnd.jpg"
+    "image": "images/weapons/attachments/magazine/mag_mp5_15rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_mp5_30rnd",
@@ -117492,7 +117362,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_mp5_30rnd.jpg"
+    "image": "images/weapons/attachments/magazine/mag_mp5_30rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_pm73_15rnd",
@@ -117502,7 +117372,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_pm73_15rnd.jpg"
+    "image": "images/weapons/attachments/magazine/mag_pm73_15rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_pm73_25rnd",
@@ -117512,7 +117382,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_pm73_25rnd.jpg"
+    "image": "images/weapons/attachments/magazine/mag_pm73_25rnd.jpg"
   },
   {
     "objectName": "Proxymagazine_cz527",
@@ -117522,7 +117392,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_cz527.jpg"
+    "image": "images/weapons/attachments/magazine/mag_cz527_5rnd.jpg"
   },
   {
     "objectName": "Proxymagazine_cz550_10rnd",
@@ -117532,7 +117402,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_cz550_10rnd.jpg"
+    "image": "images/weapons/attachments/magazine/mag_cz550_10rnd.jpg"
   },
   {
     "objectName": "Proxymagazine_cz550_4rnd",
@@ -117542,7 +117412,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_cz550_4rnd.jpg"
+    "image": "images/weapons/attachments/magazine/mag_cz550_4rnd.jpg"
   },
   {
     "objectName": "Proxymagazine_ij70",
@@ -117552,7 +117422,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ij70.jpg"
+    "image": "images/weapons/attachments/magazine/mag_ij70_8rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_ak101_30rnd",
@@ -117562,7 +117432,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ak101_30rnd.jpg"
+    "image": "images/weapons/attachments/magazine/mag_ak101_30rnd.jpg"
   },
   {
     "objectName": "Proxymagazine_ak74_30rnd",
@@ -117572,7 +117442,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ak74_30rnd.jpg"
+    "image": "images/weapons/attachments/magazine/mag_ak74_30rnd.jpg"
   },
   {
     "objectName": "Proxymagazine_aug30",
@@ -117582,7 +117452,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_aug30.jpg"
+    "image": "images/weapons/attachments/magazine/mag_aug_30rnd.jpg"
   },
   {
     "objectName": "Proxymagazine_svd",
@@ -117592,7 +117462,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_svd.jpg"
+    "image": "images/weapons/attachments/magazine/mag_svd_10rnd.jpg"
   },
   {
     "objectName": "Proxymagazine_Vss",
@@ -117602,7 +117472,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_vss.jpg"
+    "image": "images/weapons/attachments/magazine/mag_vss_10rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_DE",
@@ -117612,7 +117482,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_de.jpg"
+    "image": "images/weapons/attachments/magazine/mag_deagle_9rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_ump45_25rnd",
@@ -117622,7 +117492,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ump45_25rnd.jpg"
+    "image": "images/weapons/attachments/magazine/mag_ump_25rnd.jpg"
   },
   {
     "objectName": "Proxymagazine_glock19",
@@ -117632,7 +117502,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_glock19.jpg"
+    "image": "images/weapons/attachments/magazine/mag_glock_15rnd.jpg"
   },
   {
     "objectName": "Proxymagazine_fal",
@@ -117642,7 +117512,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_fal.jpg"
+    "image": "images/weapons/attachments/magazine/mag_fal_20rnd.jpg"
   },
   {
     "objectName": "Proxyshockpistol_cartridge",
@@ -117652,7 +117522,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxyshockpistol_cartridge.jpg"
+    "image": "images/weapons/attachments/magazine/mag_shockcartridge.jpg"
   },
   {
     "objectName": "ProxyShotgunShell_slug",
@@ -117672,7 +117542,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_saiga_mag5.jpg"
+    "image": "images/weapons/attachments/magazine/mag_saiga_5rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_saiga_mag8",
@@ -117682,7 +117552,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_saiga_mag8.jpg"
+    "image": "images/weapons/attachments/magazine/mag_saiga_8rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_saiga_drum",
@@ -117692,7 +117562,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_saiga_drum.jpg"
+    "image": "images/weapons/attachments/magazine/mag_saiga_drum20rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_m249_ammobox",
@@ -117702,7 +117572,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_m249_ammobox.jpg"
+    "image": "images/weapons/attachments/magazine/mag_m249_box200rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_scout",
@@ -117712,7 +117582,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_scout.jpg"
+    "image": "images/weapons/attachments/magazine/mag_scout_5rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_ots14",
@@ -117722,7 +117592,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ots14.jpg"
+    "image": "images/weapons/attachments/magazine/mag_groza_20rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_cz61",
@@ -117732,7 +117602,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_cz61.jpg"
+    "image": "images/weapons/attachments/magazine/mag_cz61_20rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_famas",
@@ -117742,7 +117612,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_famas.jpg"
+    "image": "images/weapons/attachments/magazine/mag_famas_25rnd.jpg"
   },
   {
     "objectName": "ProxyMagazine_PP19",
@@ -117752,7 +117622,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_pp19.jpg"
+    "image": "images/weapons/attachments/magazine/mag_pp19_64rnd.jpg"
   },
   {
     "objectName": "Proxymagazine_SV98_10Rnd",
@@ -117762,7 +117632,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_sv98_10rnd.jpg"
+    "image": "images/weapons/attachments/magazine/mag_sv98_10rnd.jpg"
   },
   {
     "objectName": "357_speedloader.p3d",
