@@ -7388,7 +7388,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "woolen, scarf, facewrap headgear, insulated, ushanka, white, winter",
+    "searchTags": "woolen, scarf, facewrap, headgear, insulated, winter",
     "image": "images/characters/headgear/shemag_brown/shemag_brown.jpg"
   },
   {
@@ -7398,7 +7398,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "woolen, scarf, facewrap headgear, insulated, green, winter",
+    "searchTags": "woolen, scarf, facewrap, headgear, insulated, green, winter",
     "image": "images/characters/headgear/shemag_green/shemag_green.jpg"
   },
   {
@@ -7408,7 +7408,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "woolen, scarf, facewrap headgear, insulated, red, winter",
+    "searchTags": "woolen, scarf, facewrap, headgear, insulated, red, winter",
     "image": "images/characters/headgear/shemag_red/shemag_red.jpg"
   },
   {
@@ -7418,7 +7418,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "woolen, scarf, facewrap headgear, insulated, ushanka, white, winter",
+    "searchTags": "woolen, scarf, facewrap, headgear, insulated, white, winter",
     "image": "images/characters/headgear/shemag_white/shemag_white.jpg"
   },
   {
@@ -8192,36 +8192,6 @@
     "image": "images/characters/headgear/zmijovkacap_black/zmijovkacap_black.jpg"
   },
   {
-    "objectName": "Bandana_Camopattern",
-    "inGameName": "Bandana",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/headgear",
-    "usableOnConsole": true,
-    "searchTags": "armored, black, headgear, helmet, military, protective",
-    "image": "images/characters/headgear/bandana_blue/bandana_blue.jpg"
-  },
-  {
-    "objectName": "Bandana_Polkapattern",
-    "inGameName": "Bandana",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/headgear",
-    "usableOnConsole": true,
-    "searchTags": "armored, black, headgear, helmet, military, protective",
-    "image": "images/characters/headgear/bandana_polkapattern/bandana_polkapattern.jpg"
-  },
-  {
-    "objectName": "Bandana_Redpattern",
-    "inGameName": "Bandana",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/headgear",
-    "usableOnConsole": true,
-    "searchTags": "armored, black, headgear, helmet, military, protective",
-    "image": "images/characters/headgear/bandana_redpattern/bandana_redpattern.jpg"
-  },
-  {
     "objectName": "DarkMotoHelmet_Black",
     "inGameName": "Motorbike Helmet",
     "category": "characters",
@@ -8350,36 +8320,6 @@
     "usableOnConsole": true,
     "searchTags": "cap, civilian, headgear, uniform",
     "image": "images/characters/headgear/officerhat/officerhat.jpg"
-  },
-  {
-    "objectName": "PetushokHat_Black",
-    "inGameName": "Petushok",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/headgear",
-    "usableOnConsole": true,
-    "searchTags": "black, headgear, insulated, knit, winter",
-    "image": "images/characters/headgear/petushokhat_black/petushokhat_black.jpg"
-  },
-  {
-    "objectName": "PetushokHat_Green",
-    "inGameName": "Petushok",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/headgear",
-    "usableOnConsole": true,
-    "searchTags": "black, headgear, insulated, knit, winter",
-    "image": "images/characters/headgear/petushokhat_black/petushokhat_black.jpg"
-  },
-  {
-    "objectName": "PetushokHat_Yellow",
-    "inGameName": "Petushok",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/headgear",
-    "usableOnConsole": true,
-    "searchTags": "black, headgear, insulated, knit, winter",
-    "image": "images/characters/headgear/petushokhat_black/petushokhat_black.jpg"
   },
   {
     "objectName": "WitchHoodCoif_Black",
@@ -8759,296 +8699,6 @@
     "path": "dz/characters/heads",
     "usableOnConsole": true,
     "searchTags": "survivor, faces, heads, player, character, pc",
-    "image": "images/characters/bodies/survivorm_taiki.jpeg"
-  },
-  {
-    "objectName": "FemaleFridaHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/bodies/survivorf_frida.jpeg"
-  },
-  {
-    "objectName": "FemaleGabiHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/bodies/survivorf_gabi.jpeg"
-  },
-  {
-    "objectName": "FemaleHelgaHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/bodies/survivorf_helga.jpeg"
-  },
-  {
-    "objectName": "FemaleIrenaHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/bodies/survivorf_irena.jpeg"
-  },
-  {
-    "objectName": "FemaleJudyHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/bodies/survivorf_judy.jpeg"
-  },
-  {
-    "objectName": "FemaleKeikoHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/bodies/survivorf_keiko.jpeg"
-  },
-  {
-    "objectName": "FemaleLindaHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/bodies/survivorf_linda.jpeg"
-  },
-  {
-    "objectName": "FemaleMariaHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/bodies/survivorf_maria.jpeg"
-  },
-  {
-    "objectName": "FemaleNaomiHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/bodies/survivorf_naomi.jpeg"
-  },
-  {
-    "objectName": "FemaleEvaHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, woman, loot",
-    "image": "images/characters/bodies/survivorf_eva.jpeg"
-  },
-  {
-    "objectName": "MaleBorisHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_boris.jpeg"
-  },
-  {
-    "objectName": "MaleCyrilHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_cyril.jpeg"
-  },
-  {
-    "objectName": "MaleDenisHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_denis.jpeg"
-  },
-  {
-    "objectName": "MaleEliasHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_elias.jpeg"
-  },
-  {
-    "objectName": "MaleFrancisHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_francis.jpeg"
-  },
-  {
-    "objectName": "MaleGuoHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_guo.jpeg"
-  },
-  {
-    "objectName": "MaleHassanHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_hassan.jpeg"
-  },
-  {
-    "objectName": "MaleIndarHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_indar.jpeg"
-  },
-  {
-    "objectName": "MaleJoseHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_jose.jpeg"
-  },
-  {
-    "objectName": "MaleKaitoHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_kaito.jpeg"
-  },
-  {
-    "objectName": "MaleLewisHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_lewis.jpeg"
-  },
-  {
-    "objectName": "MaleManuaHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_manua.jpeg"
-  },
-  {
-    "objectName": "MaleNikiHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_niki.jpeg"
-  },
-  {
-    "objectName": "MaleOliverHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_oliver.jpeg"
-  },
-  {
-    "objectName": "MalePeterHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_peter.jpeg"
-  },
-  {
-    "objectName": "MaleQuinnHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_quinn.jpeg"
-  },
-  {
-    "objectName": "MaleRolfHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_rolf.jpeg"
-  },
-  {
-    "objectName": "MaleSethHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
-    "image": "images/characters/bodies/survivorm_seth.jpeg"
-  },
-  {
-    "objectName": "MaleTaikiHead",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/heads",
-    "usableOnConsole": true,
-    "searchTags": "heads, face, character, pc, player, man, loot",
     "image": "images/characters/bodies/survivorm_taiki.jpeg"
   },
   {
@@ -11989,7 +11639,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, warm, coat, winter, loot, clothing, clothes",
-    "image": "images/characters/tops/downjacket_colorbase.jpg"
+    "image": "images/characters/tops/downjacket_blue/downjacket_blue.jpg"
   },
   {
     "objectName": "DownJacket_Green",
@@ -11999,7 +11649,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, warm, coat, winter, loot, clothing, clothes",
-    "image": "images/characters/tops/downjacket_colorbase.jpg"
+    "image": "images/characters/tops/downjacket_green/downjacket_green.jpg"
   },
   {
     "objectName": "DownJacket_Orange",
@@ -12009,7 +11659,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, warm, coat, winter, loot, clothing, clothes",
-    "image": "images/characters/tops/downjacket_colorbase.jpg"
+    "image": "images/characters/tops/downjacket_orange/downjacket_orange.jpg"
   },
   {
     "objectName": "DownJacket_Red",
@@ -12019,7 +11669,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, warm, coat, winter, loot, clothing, clothes",
-    "image": "images/characters/tops/downjacket_colorbase.jpg"
+    "image": "images/characters/tops/downjacket_red/downjacket_red.jpg"
   },
   {
     "objectName": "Armband_Altis",
@@ -12029,7 +11679,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_altis/armband_altis.jpg"
   },
   {
     "objectName": "Armband_APA",
@@ -12039,7 +11689,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_apa/armband_apa.jpg"
   },
   {
     "objectName": "Armband_BabyDeer",
@@ -12049,7 +11699,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_babydeer/armband_babydeer.jpg"
   },
   {
     "objectName": "Armband_Bear",
@@ -12059,7 +11709,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_bear/armband_bear.jpg"
   },
   {
     "objectName": "Armband_Black",
@@ -12069,7 +11719,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_black/armband_black.jpg"
   },
   {
     "objectName": "Armband_Blue",
@@ -12079,7 +11729,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_blue/armband_blue.jpg"
   },
   {
     "objectName": "Armband_Bohemia",
@@ -12089,7 +11739,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_bohemia/armband_bohemia.jpg"
   },
   {
     "objectName": "Armband_BrainZ",
@@ -12099,7 +11749,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_brainz/armband_brainz.jpg"
   },
   {
     "objectName": "Armband_Cannibals",
@@ -12109,7 +11759,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_cannibals/armband_cannibals.jpg"
   },
   {
     "objectName": "Armband_CDF",
@@ -12119,7 +11769,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_cdf/armband_cdf.jpg"
   },
   {
     "objectName": "Armband_Chedaki",
@@ -12129,7 +11779,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_chedaki/armband_chedaki.jpg"
   },
   {
     "objectName": "Armband_CHEL",
@@ -12139,7 +11789,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_chel/armband_chel.jpg"
   },
   {
     "objectName": "Armband_Chernarus",
@@ -12149,7 +11799,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_chernarus/armband_chernarus.jpg"
   },
   {
     "objectName": "Armband_CMC",
@@ -12159,7 +11809,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_cmc/armband_cmc.jpg"
   },
   {
     "objectName": "Armband_Crook",
@@ -12169,7 +11819,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_crook/armband_crook.jpg"
   },
   {
     "objectName": "Armband_DayZ",
@@ -12179,7 +11829,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_dayz/armband_dayz.jpg"
   },
   {
     "objectName": "Armband_Green",
@@ -12189,7 +11839,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_green/armband_green.jpg"
   },
   {
     "objectName": "Armband_HunterZ",
@@ -12199,7 +11849,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_hunterz/armband_hunterz.jpg"
   },
   {
     "objectName": "Armband_Livonia",
@@ -12209,7 +11859,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_livonia/armband_livonia.jpg"
   },
   {
     "objectName": "Armband_LivoniaArmy",
@@ -12219,7 +11869,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_livoniaarmy/armband_livoniaarmy.jpg"
   },
   {
     "objectName": "Armband_LivoniaPolice",
@@ -12229,7 +11879,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_livoniapolice/armband_livoniapolice.jpg"
   },
   {
     "objectName": "Armband_NAPA",
@@ -12239,7 +11889,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_napa/armband_napa.jpg"
   },
   {
     "objectName": "Armband_NSahrani",
@@ -12249,7 +11899,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_nsahrani/armband_nsahrani.jpg"
   },
   {
     "objectName": "Armband_Orange",
@@ -12259,7 +11909,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_orange/armband_orange.jpg"
   },
   {
     "objectName": "Armband_Pink",
@@ -12269,7 +11919,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_pink/armband_pink.jpg"
   },
   {
     "objectName": "Armband_Pirates",
@@ -12279,7 +11929,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_pirates/armband_pirates.jpg"
   },
   {
     "objectName": "Armband_Red",
@@ -12289,7 +11939,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_red/armband_red.jpg"
   },
   {
     "objectName": "Armband_Refuge",
@@ -12299,7 +11949,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_refuge/armband_refuge.jpg"
   },
   {
     "objectName": "Armband_Rex",
@@ -12309,7 +11959,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_rex/armband_rex.jpg"
   },
   {
     "objectName": "Armband_Rooster",
@@ -12319,7 +11969,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_rooster/armband_rooster.jpg"
   },
   {
     "objectName": "Armband_RSTA",
@@ -12329,7 +11979,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_rsta/armband_rsta.jpg"
   },
   {
     "objectName": "Armband_Snake",
@@ -12339,7 +11989,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_snake/armband_snake.jpg"
   },
   {
     "objectName": "Armband_SSahrani",
@@ -12349,7 +11999,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_ssahrani/armband_ssahrani.jpg"
   },
   {
     "objectName": "Armband_TEC",
@@ -12359,7 +12009,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_tec/armband_tec.jpg"
   },
   {
     "objectName": "Armband_UEC",
@@ -12369,7 +12019,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_uec/armband_uec.jpg"
   },
   {
     "objectName": "Armband_White",
@@ -12379,7 +12029,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_white/armband_white.jpg"
   },
   {
     "objectName": "Armband_Wolf",
@@ -12389,7 +12039,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_wolf/armband_wolf.jpg"
   },
   {
     "objectName": "Armband_Yellow",
@@ -12399,7 +12049,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_yellow/armband_yellow.jpg"
   },
   {
     "objectName": "Armband_Zagorky",
@@ -12409,7 +12059,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_zagorky/armband_zagorky.jpg"
   },
   {
     "objectName": "Armband_Zenit",
@@ -12419,7 +12069,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "arm, team, loot, clothing, clothes",
-    "image": "images/characters/tops/armband_colorbase.jpg"
+    "image": "images/characters/tops/armband_zenit/armband_zenit.jpg"
   },
   {
     "objectName": "Sweater_Blue",
@@ -12429,7 +12079,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, jumper, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/sweater_colorbase.jpg"
+    "image": "images/characters/tops/sweater_blue/sweater_blue.jpg"
   },
   {
     "objectName": "Sweater_ChristmasColorbase",
@@ -12439,7 +12089,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, jumper, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/sweater_colorbase.jpg"
+    "image": "images/characters/tops/sweater_christmascolorbase/sweater_christmascolorbase.jpg"
   },
   {
     "objectName": "Sweater_Gray",
@@ -12449,7 +12099,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, jumper, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/sweater_colorbase.jpg"
+    "image": "images/characters/tops/sweater_gray/sweater_gray.jpg"
   },
   {
     "objectName": "Sweater_Green",
@@ -12459,7 +12109,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, jumper, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/sweater_colorbase.jpg"
+    "image": "images/characters/tops/sweater_green/sweater_green.jpg"
   },
   {
     "objectName": "Sweater_Red",
@@ -12469,7 +12119,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, jumper, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/sweater_colorbase.jpg"
+    "image": "images/characters/tops/sweater_red/sweater_red.jpg"
   },
   {
     "objectName": "Shirt_BlueCheck",
@@ -12479,7 +12129,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/shirt_colorbase.jpg"
+    "image": "images/characters/tops/shirt_bluecheck/shirt_bluecheck.jpg"
   },
   {
     "objectName": "Shirt_BlueCheckBright",
@@ -12489,7 +12139,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/shirt_colorbase.jpg"
+    "image": "images/characters/tops/shirt_bluecheckbright/shirt_bluecheckbright.jpg"
   },
   {
     "objectName": "Shirt_GreenCheck",
@@ -12499,7 +12149,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/shirt_colorbase.jpg"
+    "image": "images/characters/tops/shirt_greencheck/shirt_greencheck.jpg"
   },
   {
     "objectName": "Shirt_PlaneBlack",
@@ -12509,7 +12159,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/shirt_colorbase.jpg"
+    "image": "images/characters/tops/shirt_planeblack/shirt_planeblack.jpg"
   },
   {
     "objectName": "Shirt_RedCheck",
@@ -12519,7 +12169,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/shirt_colorbase.jpg"
+    "image": "images/characters/tops/shirt_redcheck/shirt_redcheck.jpg"
   },
   {
     "objectName": "Shirt_WhiteCheck",
@@ -12529,7 +12179,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/shirt_colorbase.jpg"
+    "image": "images/characters/tops/shirt_whitecheck/shirt_whitecheck.jpg"
   },
   {
     "objectName": "TShirt_10thAnniversary",
@@ -12539,7 +12189,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/tshirt_colorbase.jpg"
+    "image": "images/characters/tops/tshirt_10thanniversary/tshirt_10thanniversary.jpg"
   },
   {
     "objectName": "TShirt_Beige",
@@ -12549,7 +12199,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/tshirt_colorbase.jpg"
+    "image": "images/characters/tops/tshirt_beige/tshirt_beige.jpg"
   },
   {
     "objectName": "TShirt_Black",
@@ -12559,7 +12209,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/tshirt_colorbase.jpg"
+    "image": "images/characters/tops/tshirt_black/tshirt_black.jpg"
   },
   {
     "objectName": "TShirt_Blue",
@@ -12569,7 +12219,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/tshirt_colorbase.jpg"
+    "image": "images/characters/tops/tshirt_blue/tshirt_blue.jpg"
   },
   {
     "objectName": "TShirt_Dyed",
@@ -12579,7 +12229,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/tshirt_colorbase.jpg"
+    "image": "images/characters/tops/tshirt_dyed/tshirt_dyed.jpg"
   },
   {
     "objectName": "TShirt_Green",
@@ -12589,7 +12239,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/tshirt_colorbase.jpg"
+    "image": "images/characters/tops/tshirt_green/tshirt_green.jpg"
   },
   {
     "objectName": "TShirt_Grey",
@@ -12599,7 +12249,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/tshirt_colorbase.jpg"
+    "image": "images/characters/tops/tshirt_grey/tshirt_grey.jpg"
   },
   {
     "objectName": "TShirt_OrangeWhiteStripes",
@@ -12609,7 +12259,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/tshirt_colorbase.jpg"
+    "image": "images/characters/tops/tshirt_orangewhitestripes/tshirt_orangewhitestripes.jpg"
   },
   {
     "objectName": "TShirt_Red",
@@ -12619,7 +12269,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/tshirt_colorbase.jpg"
+    "image": "images/characters/tops/tshirt_red/tshirt_red.jpg"
   },
   {
     "objectName": "TShirt_RedBlackStripes",
@@ -12629,7 +12279,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/tshirt_colorbase.jpg"
+    "image": "images/characters/tops/tshirt_redblackstripes/tshirt_redblackstripes.jpg"
   },
   {
     "objectName": "TShirt_White",
@@ -12639,7 +12289,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/tshirt_colorbase.jpg"
+    "image": "images/characters/tops/tshirt_white/tshirt_white.jpg"
   },
   {
     "objectName": "Hoodie_Black",
@@ -12649,7 +12299,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, jumper, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/hoodie_colorbase.jpg"
+    "image": "images/characters/tops/hoodie_black/hoodie_black.jpg"
   },
   {
     "objectName": "Hoodie_Blue",
@@ -12659,7 +12309,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, jumper, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/hoodie_colorbase.jpg"
+    "image": "images/characters/tops/hoodie_blue/hoodie_blue.jpg"
   },
   {
     "objectName": "Hoodie_Brown",
@@ -12669,7 +12319,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, jumper, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/hoodie_colorbase.jpg"
+    "image": "images/characters/tops/hoodie_brown/hoodie_brown.jpg"
   },
   {
     "objectName": "Hoodie_Green",
@@ -12679,7 +12329,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, jumper, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/hoodie_colorbase.jpg"
+    "image": "images/characters/tops/hoodie_green/hoodie_green.jpg"
   },
   {
     "objectName": "Hoodie_Grey",
@@ -12689,7 +12339,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, jumper, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/hoodie_colorbase.jpg"
+    "image": "images/characters/tops/hoodie_grey/hoodie_grey.jpg"
   },
   {
     "objectName": "Hoodie_Red",
@@ -12699,7 +12349,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, jumper, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/hoodie_colorbase.jpg"
+    "image": "images/characters/tops/hoodie_red/hoodie_red.jpg"
   },
   {
     "objectName": "TacticalShirt_Black",
@@ -12709,7 +12359,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, military, army, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/tacticalshirt_colorbase.jpg"
+    "image": "images/characters/tops/tacticalshirt_black/tacticalshirt_black.jpg"
   },
   {
     "objectName": "TacticalShirt_Grey",
@@ -12719,7 +12369,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, military, army, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/tacticalshirt_colorbase.jpg"
+    "image": "images/characters/tops/tacticalshirt_grey/tacticalshirt_grey.jpg"
   },
   {
     "objectName": "TacticalShirt_Olive",
@@ -12729,7 +12379,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, military, army, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/tacticalshirt_colorbase.jpg"
+    "image": "images/characters/tops/tacticalshirt_olive/tacticalshirt_olive.jpg"
   },
   {
     "objectName": "TacticalShirt_Tan",
@@ -12739,7 +12389,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, military, army, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/tacticalshirt_colorbase.jpg"
+    "image": "images/characters/tops/tacticalshirt_tan/tacticalshirt_tan.jpg"
   },
   {
     "objectName": "HikingJacket_Black",
@@ -12749,7 +12399,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, trail, walking, woods, loot, clothing, clothes",
-    "image": "images/characters/tops/hikingjacket_colorbase.jpg"
+    "image": "images/characters/tops/hikingjacket_black/hikingjacket_black.jpg"
   },
   {
     "objectName": "HikingJacket_Blue",
@@ -12759,7 +12409,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, trail, walking, woods, loot, clothing, clothes",
-    "image": "images/characters/tops/hikingjacket_colorbase.jpg"
+    "image": "images/characters/tops/hikingjacket_blue/hikingjacket_blue.jpg"
   },
   {
     "objectName": "HikingJacket_Green",
@@ -12769,7 +12419,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, trail, walking, woods, loot, clothing, clothes",
-    "image": "images/characters/tops/hikingjacket_colorbase.jpg"
+    "image": "images/characters/tops/hikingjacket_green/hikingjacket_green.jpg"
   },
   {
     "objectName": "HikingJacket_Red",
@@ -12779,7 +12429,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, trail, walking, woods, loot, clothing, clothes",
-    "image": "images/characters/tops/hikingjacket_colorbase.jpg"
+    "image": "images/characters/tops/hikingjacket_red/hikingjacket_red.jpg"
   },
   {
     "objectName": "Raincoat_Black",
@@ -12789,7 +12439,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, waterproof, cagoule, loot, clothing, clothes",
-    "image": "images/characters/tops/raincoat_colorbase.jpg"
+    "image": "images/characters/tops/raincoat_black/raincoat_black.jpg"
   },
   {
     "objectName": "Raincoat_Blue",
@@ -12799,7 +12449,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, waterproof, cagoule, loot, clothing, clothes",
-    "image": "images/characters/tops/raincoat_colorbase.jpg"
+    "image": "images/characters/tops/raincoat_blue/raincoat_blue.jpg"
   },
   {
     "objectName": "Raincoat_Green",
@@ -12809,7 +12459,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, waterproof, cagoule, loot, clothing, clothes",
-    "image": "images/characters/tops/raincoat_colorbase.jpg"
+    "image": "images/characters/tops/raincoat_green/raincoat_green.jpg"
   },
   {
     "objectName": "Raincoat_Orange",
@@ -12819,7 +12469,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, waterproof, cagoule, loot, clothing, clothes",
-    "image": "images/characters/tops/raincoat_colorbase.jpg"
+    "image": "images/characters/tops/raincoat_orange/raincoat_orange.jpg"
   },
   {
     "objectName": "Raincoat_Pink",
@@ -12829,7 +12479,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, waterproof, cagoule, loot, clothing, clothes",
-    "image": "images/characters/tops/raincoat_colorbase.jpg"
+    "image": "images/characters/tops/raincoat_pink/raincoat_pink.jpg"
   },
   {
     "objectName": "Raincoat_Red",
@@ -12839,7 +12489,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, waterproof, cagoule, loot, clothing, clothes",
-    "image": "images/characters/tops/raincoat_colorbase.jpg"
+    "image": "images/characters/tops/raincoat_red/raincoat_red.jpg"
   },
   {
     "objectName": "Raincoat_Yellow",
@@ -12849,7 +12499,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, waterproof, cagoule, loot, clothing, clothes",
-    "image": "images/characters/tops/raincoat_colorbase.jpg"
+    "image": "images/characters/tops/raincoat_yellow/raincoat_yellow.jpg"
   },
   {
     "objectName": "TorsoCover_Improvised",
@@ -12869,7 +12519,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "field, tops, military, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/m65jacket_colorbase.jpg"
+    "image": "images/characters/tops/m65jacket_black/m65jacket_black.jpg"
   },
   {
     "objectName": "M65Jacket_Khaki",
@@ -12879,7 +12529,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "field, tops, military, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/m65jacket_colorbase.jpg"
+    "image": "images/characters/tops/m65jacket_khaki/m65jacket_khaki.jpg"
   },
   {
     "objectName": "M65Jacket_Olive",
@@ -12889,7 +12539,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "field, tops, military, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/m65jacket_colorbase.jpg"
+    "image": "images/characters/tops/m65jacket_olive/m65jacket_olive.jpg"
   },
   {
     "objectName": "M65Jacket_Tan",
@@ -12899,7 +12549,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "field, tops, military, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/m65jacket_colorbase.jpg"
+    "image": "images/characters/tops/m65jacket_tan/m65jacket_tan.jpg"
   },
   {
     "objectName": "TTsKOJacket_Camo",
@@ -12909,7 +12559,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "field, tops, military, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/ttskojacket_colorbase.jpg"
+    "image": "images/characters/tops/ttskojacket_camo/ttskojacket_camo.jpg"
   },
   {
     "objectName": "GorkaEJacket_Autumn",
@@ -12919,7 +12569,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "field, tops, military, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/gorkaejacket_colorbase.jpg"
+    "image": "images/characters/tops/gorkaejacket_autumn/gorkaejacket_autumn.jpg"
   },
   {
     "objectName": "GorkaEJacket_Flat",
@@ -12929,7 +12579,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "field, tops, military, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/gorkaejacket_colorbase.jpg"
+    "image": "images/characters/tops/gorkaejacket_flat/gorkaejacket_flat.jpg"
   },
   {
     "objectName": "GorkaEJacket_PautRev",
@@ -12939,7 +12589,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "field, tops, military, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/gorkaejacket_colorbase.jpg"
+    "image": "images/characters/tops/gorkaejacket_pautrev/gorkaejacket_pautrev.jpg"
   },
   {
     "objectName": "GorkaEJacket_Summer",
@@ -12949,7 +12599,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "field, tops, military, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/gorkaejacket_colorbase.jpg"
+    "image": "images/characters/tops/gorkaejacket_summer/gorkaejacket_summer.jpg"
   },
   {
     "objectName": "GorkaEJacket_Winter",
@@ -12959,7 +12609,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "field, tops, military, combat, snow, loot, clothing, clothes",
-    "image": "images/characters/tops/gorkaejacket_colorbase.jpg"
+    "image": "images/characters/tops/gorkaejacket_winter/gorkaejacket_winter.jpg"
   },
   {
     "objectName": "RidersJacket_Black",
@@ -12969,7 +12619,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "rider, tops, motorbike, leather, loot, clothing, clothes",
-    "image": "images/characters/tops/ridersjacket_colorbase.jpg"
+    "image": "images/characters/tops/ridersjacket_black/ridersjacket_black.jpg"
   },
   {
     "objectName": "NavyUniformJacket",
@@ -12979,7 +12629,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "coat, pea, tops, military, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+    "image": "images/characters/tops/navyuniformjacket/navyuniformjacket.jpg"
   },
   {
     "objectName": "WoolCoat_Beige",
@@ -12989,7 +12639,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "pea, tops, warm, woollen, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+    "image": "images/characters/tops/woolcoat_beige/woolcoat_beige.jpg"
   },
   {
     "objectName": "WoolCoat_Black",
@@ -12999,7 +12649,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "pea, tops, warm, woollen, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+    "image": "images/characters/tops/woolcoat_black/woolcoat_black.jpg"
   },
   {
     "objectName": "WoolCoat_BlackCheck",
@@ -13009,7 +12659,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "pea, tops, warm, woollen, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+    "image": "images/characters/tops/woolcoat_blackcheck/woolcoat_blackcheck.jpg"
   },
   {
     "objectName": "WoolCoat_Blue",
@@ -13019,7 +12669,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "pea, tops, warm, woollen, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+    "image": "images/characters/tops/woolcoat_blue/woolcoat_blue.jpg"
   },
   {
     "objectName": "WoolCoat_BlueCheck",
@@ -13029,7 +12679,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "pea, tops, warm, woollen, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+    "image": "images/characters/tops/woolcoat_bluecheck/woolcoat_bluecheck.jpg"
   },
   {
     "objectName": "WoolCoat_BrownCheck",
@@ -13039,7 +12689,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "pea, tops, warm, woollen, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+    "image": "images/characters/tops/woolcoat_browncheck/woolcoat_browncheck.jpg"
   },
   {
     "objectName": "WoolCoat_Green",
@@ -13049,7 +12699,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "pea, tops, warm, woollen, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+    "image": "images/characters/tops/woolcoat_green/woolcoat_green.jpg"
   },
   {
     "objectName": "WoolCoat_GreyCheck",
@@ -13059,7 +12709,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "pea, tops, warm, woollen, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+    "image": "images/characters/tops/woolcoat_greycheck/woolcoat_greycheck.jpg"
   },
   {
     "objectName": "WoolCoat_Red",
@@ -13069,7 +12719,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "pea, tops, warm, woollen, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+    "image": "images/characters/tops/woolcoat_red/woolcoat_red.jpg"
   },
   {
     "objectName": "WoolCoat_RedCheck",
@@ -13079,7 +12729,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "pea, tops, warm, woollen, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+    "image": "images/characters/tops/woolcoat_redcheck/woolcoat_redcheck.jpg"
   },
   {
     "objectName": "TrackSuitJacket_Black",
@@ -13089,7 +12739,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, tracksuit, loot, clothing, clothes",
-    "image": "images/characters/tops/tracksuitjacket_colorbase.jpg"
+    "image": "images/characters/tops/tracksuitjacket_black/tracksuitjacket_black.jpg"
   },
   {
     "objectName": "TrackSuitJacket_Blue",
@@ -13099,7 +12749,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, tracksuit, loot, clothing, clothes",
-    "image": "images/characters/tops/tracksuitjacket_colorbase.jpg"
+    "image": "images/characters/tops/tracksuitjacket_blue/tracksuitjacket_blue.jpg"
   },
   {
     "objectName": "TrackSuitJacket_Green",
@@ -13109,7 +12759,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, tracksuit, loot, clothing, clothes",
-    "image": "images/characters/tops/tracksuitjacket_colorbase.jpg"
+    "image": "images/characters/tops/tracksuitjacket_green/tracksuitjacket_green.jpg"
   },
   {
     "objectName": "TrackSuitJacket_LightBlue",
@@ -13119,7 +12769,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "lamp, lighting, tops, tracksuit, loot, clothing, clothes",
-    "image": "images/characters/tops/tracksuitjacket_colorbase.jpg"
+    "image": "images/characters/tops/tracksuitjacket_lightblue/tracksuitjacket_lightblue.jpg"
   },
   {
     "objectName": "TrackSuitJacket_Red",
@@ -13129,7 +12779,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, tracksuit, loot, clothing, clothes",
-    "image": "images/characters/tops/tracksuitjacket_colorbase.jpg"
+    "image": "images/characters/tops/tracksuitjacket_red/tracksuitjacket_red.jpg"
   },
   {
     "objectName": "PoliceJacket",
@@ -13159,7 +12809,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, law enforcement, workware, warm, coat, loot, clothing, clothes",
-    "image": "images/characters/tops/bushlatpolicejacket_colorbase.jpg"
+    "image": "images/characters/tops/bushlatpolicejacket_blue/bushlatpolicejacket_blue.jpg"
   },
   {
     "objectName": "ParamedicJacket_Blue",
@@ -13169,7 +12819,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, ambulance, hospital, loot, clothing, clothes",
-    "image": "images/characters/tops/paramedicjacket_colorbase.jpg"
+    "image": "images/characters/tops/paramedicjacket_blue/paramedicjacket_blue.jpg"
   },
   {
     "objectName": "ParamedicJacket_Crimson",
@@ -13179,7 +12829,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, ambulance, hospital, loot, clothing, clothes",
-    "image": "images/characters/tops/paramedicjacket_colorbase.jpg"
+    "image": "images/characters/tops/paramedicjacket_crimson/paramedicjacket_crimson.jpg"
   },
   {
     "objectName": "ParamedicJacket_Green",
@@ -13189,7 +12839,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, ambulance, hospital, loot, clothing, clothes",
-    "image": "images/characters/tops/paramedicjacket_colorbase.jpg"
+    "image": "images/characters/tops/paramedicjacket_green/paramedicjacket_green.jpg"
   },
   {
     "objectName": "FirefighterJacket_Beige",
@@ -13199,7 +12849,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, waorkware, fire, loot, clothing, clothes",
-    "image": "images/characters/tops/firefighterjacket_colorbase.jpg"
+    "image": "images/characters/tops/firefighterjacket_beige/firefighterjacket_beige.jpg"
   },
   {
     "objectName": "FirefighterJacket_Black",
@@ -13209,7 +12859,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, waorkware, fire, loot, clothing, clothes",
-    "image": "images/characters/tops/firefighterjacket_colorbase.jpg"
+    "image": "images/characters/tops/firefighterjacket_black/firefighterjacket_black.jpg"
   },
   {
     "objectName": "PrisonUniformJacket",
@@ -13229,7 +12879,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "collar, tops, loot, clothing, clothes",
-    "image": "images/characters/tops/minidress_colorbase.jpg"
+    "image": "images/characters/tops/minidress_bluechecker/minidress_bluechecker.jpg"
   },
   {
     "objectName": "MiniDress_BlueWithDots",
@@ -13239,7 +12889,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "collar, tops, loot, clothing, clothes",
-    "image": "images/characters/tops/minidress_colorbase.jpg"
+    "image": "images/characters/tops/minidress_bluewithdots/minidress_bluewithdots.jpg"
   },
   {
     "objectName": "MiniDress_BrownChecker",
@@ -13249,7 +12899,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "collar, tops, loot, clothing, clothes",
-    "image": "images/characters/tops/minidress_colorbase.jpg"
+    "image": "images/characters/tops/minidress_brownchecker/minidress_brownchecker.jpg"
   },
   {
     "objectName": "MiniDress_GreenChecker",
@@ -13259,7 +12909,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "collar, tops, loot, clothing, clothes",
-    "image": "images/characters/tops/minidress_colorbase.jpg"
+    "image": "images/characters/tops/minidress_greenchecker/minidress_greenchecker.jpg"
   },
   {
     "objectName": "MiniDress_Pink",
@@ -13269,7 +12919,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "collar, tops, loot, clothing, clothes",
-    "image": "images/characters/tops/minidress_colorbase.jpg"
+    "image": "images/characters/tops/minidress_pink/minidress_pink.jpg"
   },
   {
     "objectName": "MiniDress_PinkChecker",
@@ -13279,7 +12929,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "collar, tops, loot, clothing, clothes",
-    "image": "images/characters/tops/minidress_colorbase.jpg"
+    "image": "images/characters/tops/minidress_pinkchecker/minidress_pinkchecker.jpg"
   },
   {
     "objectName": "MiniDress_RedChecker",
@@ -13289,7 +12939,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "collar, tops, loot, clothing, clothes",
-    "image": "images/characters/tops/minidress_colorbase.jpg"
+    "image": "images/characters/tops/minidress_redchecker/minidress_redchecker.jpg"
   },
   {
     "objectName": "MiniDress_WhiteChecker",
@@ -13299,7 +12949,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "collar, tops, loot, clothing, clothes",
-    "image": "images/characters/tops/minidress_colorbase.jpg"
+    "image": "images/characters/tops/minidress_whitechecker/minidress_whitechecker.jpg"
   },
   {
     "objectName": "QuiltedJacket_Black",
@@ -13309,7 +12959,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coat, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/quiltedjacket_colorbase.jpg"
+    "image": "images/characters/tops/quiltedjacket_black/quiltedjacket_black.jpg"
   },
   {
     "objectName": "QuiltedJacket_Blue",
@@ -13319,7 +12969,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coat, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/quiltedjacket_colorbase.jpg"
+    "image": "images/characters/tops/quiltedjacket_blue/quiltedjacket_blue.jpg"
   },
   {
     "objectName": "QuiltedJacket_Green",
@@ -13329,7 +12979,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coat, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/quiltedjacket_colorbase.jpg"
+    "image": "images/characters/tops/quiltedjacket_green/quiltedjacket_green.jpg"
   },
   {
     "objectName": "QuiltedJacket_Grey",
@@ -13339,7 +12989,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coat, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/quiltedjacket_colorbase.jpg"
+    "image": "images/characters/tops/quiltedjacket_grey/quiltedjacket_grey.jpg"
   },
   {
     "objectName": "QuiltedJacket_Orange",
@@ -13349,7 +12999,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coat, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/quiltedjacket_colorbase.jpg"
+    "image": "images/characters/tops/quiltedjacket_orange/quiltedjacket_orange.jpg"
   },
   {
     "objectName": "QuiltedJacket_Red",
@@ -13359,7 +13009,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coat, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/quiltedjacket_colorbase.jpg"
+    "image": "images/characters/tops/quiltedjacket_red/quiltedjacket_red.jpg"
   },
   {
     "objectName": "QuiltedJacket_Violet",
@@ -13369,7 +13019,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coat, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/quiltedjacket_colorbase.jpg"
+    "image": "images/characters/tops/quiltedjacket_violet/quiltedjacket_violet.jpg"
   },
   {
     "objectName": "QuiltedJacket_Yellow",
@@ -13379,7 +13029,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coat, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/quiltedjacket_colorbase.jpg"
+    "image": "images/characters/tops/quiltedjacket_yellow/quiltedjacket_yellow.jpg"
   },
   {
     "objectName": "BomberJacket_Black",
@@ -13389,7 +13039,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coats, air, flying, loot, clothing, clothes",
-    "image": "images/characters/tops/bomberjacket_colorbase.jpg"
+    "image": "images/characters/tops/bomberjacket_black/bomberjacket_black.jpg"
   },
   {
     "objectName": "BomberJacket_Blue",
@@ -13399,7 +13049,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coats, air, flying, loot, clothing, clothes",
-    "image": "images/characters/tops/bomberjacket_colorbase.jpg"
+    "image": "images/characters/tops/bomberjacket_blue/bomberjacket_blue.jpg"
   },
   {
     "objectName": "BomberJacket_Brown",
@@ -13409,7 +13059,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coats, air, flying, loot, clothing, clothes",
-    "image": "images/characters/tops/bomberjacket_colorbase.jpg"
+    "image": "images/characters/tops/bomberjacket_brown/bomberjacket_brown.jpg"
   },
   {
     "objectName": "BomberJacket_Grey",
@@ -13419,7 +13069,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coats, air, flying, loot, clothing, clothes",
-    "image": "images/characters/tops/bomberjacket_colorbase.jpg"
+    "image": "images/characters/tops/bomberjacket_grey/bomberjacket_grey.jpg"
   },
   {
     "objectName": "BomberJacket_Maroon",
@@ -13429,7 +13079,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coats, air, flying, loot, clothing, clothes",
-    "image": "images/characters/tops/bomberjacket_colorbase.jpg"
+    "image": "images/characters/tops/bomberjacket_maroon/bomberjacket_maroon.jpg"
   },
   {
     "objectName": "BomberJacket_Olive",
@@ -13439,7 +13089,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coats, air, flying, loot, clothing, clothes",
-    "image": "images/characters/tops/bomberjacket_colorbase.jpg"
+    "image": "images/characters/tops/bomberjacket_olive/bomberjacket_olive.jpg"
   },
   {
     "objectName": "BomberJacket_SkyBlue",
@@ -13449,7 +13099,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coats, air, flying, loot, clothing, clothes",
-    "image": "images/characters/tops/bomberjacket_colorbase.jpg"
+    "image": "images/characters/tops/bomberjacket_skyblue/bomberjacket_skyblue.jpg"
   },
   {
     "objectName": "LeatherJacket_Beige",
@@ -13459,7 +13109,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, crafted, coats, loot, clothing, clothes",
-    "image": "images/characters/tops/leatherjacket_colorbase.jpg"
+    "image": "images/characters/tops/leatherjacket_beige/leatherjacket_beige.jpg"
   },
   {
     "objectName": "LeatherJacket_Black",
@@ -13469,7 +13119,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, crafted, loot, clothing, clothes",
-    "image": "images/characters/tops/leatherjacket_colorbase.jpg"
+    "image": "images/characters/tops/leatherjacket_black/leatherjacket_black.jpg"
   },
   {
     "objectName": "LeatherJacket_Brown",
@@ -13479,7 +13129,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, crafted, loot, clothing, clothes",
-    "image": "images/characters/tops/leatherjacket_colorbase.jpg"
+    "image": "images/characters/tops/leatherjacket_brown/leatherjacket_brown.jpg"
   },
   {
     "objectName": "LeatherJacket_Natural",
@@ -13489,7 +13139,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, crafted, loot, clothing, clothes",
-    "image": "images/characters/tops/leatherjacket_colorbase.jpg"
+    "image": "images/characters/tops/leatherjacket_natural/leatherjacket_natural.jpg"
   },
   {
     "objectName": "HuntingJacket_Autumn",
@@ -13499,7 +13149,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "hunter, tops, trail, woods, loot, clothing, clothes",
-    "image": "images/characters/tops/huntingjacket_colorbase.jpg"
+    "image": "images/characters/tops/huntingjacket_autumn/huntingjacket_autumn.jpg"
   },
   {
     "objectName": "HuntingJacket_Brown",
@@ -13509,7 +13159,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "hunter, tops, trail, woods, loot, clothing, clothes",
-    "image": "images/characters/tops/huntingjacket_colorbase.jpg"
+    "image": "images/characters/tops/huntingjacket_brown/huntingjacket_brown.jpg"
   },
   {
     "objectName": "HuntingJacket_Spring",
@@ -13519,7 +13169,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "hunter, tops, trail, woods, loot, clothing, clothes",
-    "image": "images/characters/tops/huntingjacket_colorbase.jpg"
+    "image": "images/characters/tops/huntingjacket_spring/huntingjacket_spring.jpg"
   },
   {
     "objectName": "HuntingJacket_Summer",
@@ -13529,7 +13179,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "hunter, tops, trail, woods, loot, clothing, clothes",
-    "image": "images/characters/tops/huntingjacket_colorbase.jpg"
+    "image": "images/characters/tops/huntingjacket_summer/huntingjacket_summer.jpg"
   },
   {
     "objectName": "HuntingJacket_Winter",
@@ -13539,7 +13189,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "hunter, tops, trail, woods, loot, clothing, clothes",
-    "image": "images/characters/tops/huntingjacket_colorbase.jpg"
+    "image": "images/characters/tops/huntingjacket_winter/huntingjacket_winter.jpg"
   },
   {
     "objectName": "MedicalScrubsShirt_Blue",
@@ -13549,7 +13199,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "health, hospital, scrub, ambulance, workware, loot, clothing, clothes",
-    "image": "images/characters/tops/medicalscrubsshirt_colorbase.jpg"
+    "image": "images/characters/tops/medicalscrubsshirt_blue/medicalscrubsshirt_blue.jpg"
   },
   {
     "objectName": "MedicalScrubsShirt_Green",
@@ -13559,7 +13209,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "health, hospital, scrub, ambulance, workware, loot, clothing, clothes",
-    "image": "images/characters/tops/medicalscrubsshirt_colorbase.jpg"
+    "image": "images/characters/tops/medicalscrubsshirt_green/medicalscrubsshirt_green.jpg"
   },
   {
     "objectName": "MedicalScrubsShirt_White",
@@ -13569,7 +13219,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "health, hospital, scrub, ambulance, workware, loot, clothing, clothes",
-    "image": "images/characters/tops/medicalscrubsshirt_colorbase.jpg"
+    "image": "images/characters/tops/medicalscrubsshirt_white/medicalscrubsshirt_white.jpg"
   },
   {
     "objectName": "LabCoat",
@@ -13589,7 +13239,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, workfare, medical, ambulance, hospital, loot, clothing, clothes",
-    "image": "images/characters/tops/nursedress_colorbase.jpg"
+    "image": "images/characters/tops/nursedress_blue/nursedress_blue.jpg"
   },
   {
     "objectName": "NurseDress_White",
@@ -13599,7 +13249,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, workfare, medical, ambulance, hospital, loot, clothing, clothes",
-    "image": "images/characters/tops/nursedress_colorbase.jpg"
+    "image": "images/characters/tops/nursedress_white/nursedress_white.jpg"
   },
   {
     "objectName": "USMCJacket_Desert",
@@ -13609,7 +13259,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "cuu, tops, military, army, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/usmcjacket_colorbase.jpg"
+    "image": "images/characters/tops/usmcjacket_desert/usmcjacket_desert.jpg"
   },
   {
     "objectName": "USMCJacket_Woodland",
@@ -13619,7 +13269,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "cuu, tops, military, army, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/usmcjacket_colorbase.jpg"
+    "image": "images/characters/tops/usmcjacket_woodland/usmcjacket_woodland.jpg"
   },
   {
     "objectName": "OMKJacket_Navy",
@@ -13629,7 +13279,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "cuu, tops, military, army, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/omkjacket_colorbase.jpg"
+    "image": "images/characters/tops/omkjacket_navy/omkjacket_navy.jpg"
   },
   {
     "objectName": "Blouse_Blue",
@@ -13639,7 +13289,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, loot, clothing, clothes",
-    "image": "images/characters/tops/blouse_colorbase.jpg"
+    "image": "images/characters/tops/blouse_blue/blouse_blue.jpg"
   },
   {
     "objectName": "Blouse_Green",
@@ -13649,7 +13299,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, loot, clothing, clothes",
-    "image": "images/characters/tops/blouse_colorbase.jpg"
+    "image": "images/characters/tops/blouse_green/blouse_green.jpg"
   },
   {
     "objectName": "Blouse_Violet",
@@ -13659,7 +13309,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, loot, clothing, clothes",
-    "image": "images/characters/tops/blouse_colorbase.jpg"
+    "image": "images/characters/tops/blouse_violet/blouse_violet.jpg"
   },
   {
     "objectName": "Blouse_White",
@@ -13669,7 +13319,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, loot, clothing, clothes",
-    "image": "images/characters/tops/blouse_colorbase.jpg"
+    "image": "images/characters/tops/blouse_white/blouse_white.jpg"
   },
   {
     "objectName": "DenimJacket",
@@ -13709,7 +13359,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coat, loot, clothing, clothes",
-    "image": "images/characters/tops/jumpsuitjacket_colorbase.jpg"
+    "image": "images/characters/tops/jumpsuitjacket_blue/jumpsuitjacket_blue.jpg"
   },
   {
     "objectName": "JumpsuitJacket_Gray",
@@ -13719,7 +13369,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coat, loot, clothing, clothes",
-    "image": "images/characters/tops/jumpsuitjacket_colorbase.jpg"
+    "image": "images/characters/tops/jumpsuitjacket_gray/jumpsuitjacket_gray.jpg"
   },
   {
     "objectName": "JumpsuitJacket_Green",
@@ -13729,7 +13379,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coat, loot, clothing, clothes",
-    "image": "images/characters/tops/jumpsuitjacket_colorbase.jpg"
+    "image": "images/characters/tops/jumpsuitjacket_green/jumpsuitjacket_green.jpg"
   },
   {
     "objectName": "JumpsuitJacket_Red",
@@ -13739,7 +13389,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, coat, loot, clothing, clothes",
-    "image": "images/characters/tops/jumpsuitjacket_colorbase.jpg"
+    "image": "images/characters/tops/jumpsuitjacket_red/jumpsuitjacket_red.jpg"
   },
   {
     "objectName": "BDUJacket",
@@ -13759,7 +13409,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, mens, tops, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/mansuit_colorbase.jpg"
+    "image": "images/characters/tops/mansuit_beige/mansuit_beige.jpg"
   },
   {
     "objectName": "ManSuit_Black",
@@ -13769,7 +13419,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, mens, tops, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/mansuit_colorbase.jpg"
+    "image": "images/characters/tops/mansuit_black/mansuit_black.jpg"
   },
   {
     "objectName": "ManSuit_Blue",
@@ -13779,7 +13429,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, mens, tops, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/mansuit_colorbase.jpg"
+    "image": "images/characters/tops/mansuit_blue/mansuit_blue.jpg"
   },
   {
     "objectName": "ManSuit_Brown",
@@ -13789,7 +13439,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, mens, tops, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/mansuit_colorbase.jpg"
+    "image": "images/characters/tops/mansuit_brown/mansuit_brown.jpg"
   },
   {
     "objectName": "ManSuit_DarkGrey",
@@ -13799,7 +13449,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, mens, tops, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/mansuit_colorbase.jpg"
+    "image": "images/characters/tops/mansuit_darkgrey/mansuit_darkgrey.jpg"
   },
   {
     "objectName": "ManSuit_Khaki",
@@ -13809,7 +13459,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, mens, tops, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/mansuit_colorbase.jpg"
+    "image": "images/characters/tops/mansuit_khaki/mansuit_khaki.jpg"
   },
   {
     "objectName": "ManSuit_LightGrey",
@@ -13819,7 +13469,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, mens, tops, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/mansuit_colorbase.jpg"
+    "image": "images/characters/tops/mansuit_lightgrey/mansuit_lightgrey.jpg"
   },
   {
     "objectName": "ManSuit_White",
@@ -13829,7 +13479,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, mens, tops, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/mansuit_colorbase.jpg"
+    "image": "images/characters/tops/mansuit_white/mansuit_white.jpg"
   },
   {
     "objectName": "WomanSuit_Beige",
@@ -13839,7 +13489,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, tops, womens, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/womansuit_colorbase.jpg"
+    "image": "images/characters/tops/womansuit_beige/womansuit_beige.jpg"
   },
   {
     "objectName": "WomanSuit_Black",
@@ -13849,7 +13499,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, tops, womens, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/womansuit_colorbase.jpg"
+    "image": "images/characters/tops/womansuit_black/womansuit_black.jpg"
   },
   {
     "objectName": "WomanSuit_Blue",
@@ -13859,7 +13509,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, tops, womens, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/womansuit_colorbase.jpg"
+    "image": "images/characters/tops/womansuit_blue/womansuit_blue.jpg"
   },
   {
     "objectName": "WomanSuit_Brown",
@@ -13869,7 +13519,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, tops, womens, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/womansuit_colorbase.jpg"
+    "image": "images/characters/tops/womansuit_brown/womansuit_brown.jpg"
   },
   {
     "objectName": "WomanSuit_DarkGrey",
@@ -13879,7 +13529,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, tops, womens, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/womansuit_colorbase.jpg"
+    "image": "images/characters/tops/womansuit_darkgrey/womansuit_darkgrey.jpg"
   },
   {
     "objectName": "WomanSuit_Khaki",
@@ -13889,7 +13539,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, tops, womens, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/womansuit_colorbase.jpg"
+    "image": "images/characters/tops/womansuit_khaki/womansuit_khaki.jpg"
   },
   {
     "objectName": "WomanSuit_LightGrey",
@@ -13899,7 +13549,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, tops, womens, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/womansuit_colorbase.jpg"
+    "image": "images/characters/tops/womansuit_lightgrey/womansuit_lightgrey.jpg"
   },
   {
     "objectName": "WomanSuit_White",
@@ -13909,7 +13559,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "jacket, tops, womens, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/womansuit_colorbase.jpg"
+    "image": "images/characters/tops/womansuit_white/womansuit_white.jpg"
   },
   {
     "objectName": "LeatherShirt_Natural",
@@ -13919,7 +13569,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, crafted, loot, clothing, clothes",
-    "image": "images/characters/tops/leathershirt_colorbase.jpg"
+    "image": "images/characters/tops/leathershirt_natural/leathershirt_natural.jpg"
   },
   {
     "objectName": "Chainmail",
@@ -15319,7 +14969,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, NBC, protection, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+    "image": "images/characters/tops/nbcjacketgray/nbcjacketgray.jpg"
   },
   {
     "objectName": "NBCJacketWhite",
@@ -15329,7 +14979,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, NBC, protection, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+    "image": "images/characters/tops/nbcjacketwhite/nbcjacketwhite.jpg"
   },
   {
     "objectName": "NBCJacketYellow",
@@ -15339,7 +14989,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, NBC, protection, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_colorbase.jpg"
+    "image": "images/characters/tops/nbcjacketyellow/nbcjacketyellow.jpg"
   },
   {
     "objectName": "Sweater_ChristmasBlue",
@@ -15349,7 +14999,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, festive, santa, christmas, loot, clothing, clothes",
-    "image": "images/characters/tops/sweater_colorbase.jpg"
+    "image": "images/characters/tops/sweater_christmasblue/sweater_christmasblue.jpg"
   },
   {
     "objectName": "Sweater_ChristmasGreen",
@@ -15359,7 +15009,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, festive, santa, christmas, loot, clothing, clothes",
-    "image": "images/characters/tops/sweater_colorbase.jpg"
+    "image": "images/characters/tops/sweater_christmasgreen/sweater_christmasgreen.jpg"
   },
   {
     "objectName": "Sweater_ChristmasRed",
@@ -15369,7 +15019,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, festive, santa, christmas, loot, clothing, clothes",
-    "image": "images/characters/tops/sweater_colorbase.jpg"
+    "image": "images/characters/tops/sweater_christmasred/sweater_christmasred.jpg"
   },
   {
     "objectName": "Tshirt_10thAnniversary",
@@ -15379,7 +15029,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": true,
     "searchTags": "tops, bohemia interactive, loot, clothing, clothes",
-    "image": "images/characters/tops/tshirt_colorbase.jpg"
+    "image": "images/characters/tops/tshirt_10thanniversary/tshirt_10thanniversary.jpg"
   },
   {
     "objectName": "PlateCarrierPouches",
@@ -15419,7 +15069,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, ballistic, protection, vests, military, journalist, loot",
-    "image": "images/characters/vests/pressvest_colorbase.jpg"
+    "image": "images/characters/vests/pressvest_blue/pressvest_blue.jpg"
   },
   {
     "objectName": "PressVest_LightBlue",
@@ -15429,7 +15079,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, ballistic, protection, vests, military, journalist, loot",
-    "image": "images/characters/vests/pressvest_colorbase.jpg"
+    "image": "images/characters/vests/pressvest_lightblue/pressvest_lightblue.jpg"
   },
   {
     "objectName": "UKAssVest_Black",
@@ -15439,7 +15089,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, field, vests, storage, loot",
-    "image": "images/characters/vests/ukassvest_colorbase.jpg"
+    "image": "images/characters/vests/ukassvest_black/ukassvest_black.jpg"
   },
   {
     "objectName": "UKAssVest_Camo",
@@ -15449,7 +15099,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, field, vests, storage, loot",
-    "image": "images/characters/vests/ukassvest_colorbase.jpg"
+    "image": "images/characters/vests/ukassvest_camo/ukassvest_camo.jpg"
   },
   {
     "objectName": "UKAssVest_Khaki",
@@ -15459,7 +15109,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, field, vests, storage, loot",
-    "image": "images/characters/vests/ukassvest_colorbase.jpg"
+    "image": "images/characters/vests/ukassvest_khaki/ukassvest_khaki.jpg"
   },
   {
     "objectName": "UKAssVest_Olive",
@@ -15469,7 +15119,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, field, vests, storage, loot",
-    "image": "images/characters/vests/ukassvest_colorbase.jpg"
+    "image": "images/characters/vests/ukassvest_olive/ukassvest_olive.jpg"
   },
   {
     "objectName": "UKAssVest_Winter",
@@ -15479,7 +15129,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, field, vests, storage, loot",
-    "image": "images/characters/vests/ukassvest_colorbase.jpg"
+    "image": "images/characters/vests/ukassvest_winter/ukassvest_winter.jpg"
   },
   {
     "objectName": "PoliceVest",
@@ -15519,7 +15169,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, protection, tactical, vests, storage, loot",
-    "image": "images/characters/vests/highcapacityvest_colorbase.jpg"
+    "image": "images/characters/vests/highcapacityvest_black/highcapacityvest_black.jpg"
   },
   {
     "objectName": "HighCapacityVest_Olive",
@@ -15529,7 +15179,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, protection, tactical, vests, storage, loot",
-    "image": "images/characters/vests/highcapacityvest_colorbase.jpg"
+    "image": "images/characters/vests/highcapacityvest_olive/highcapacityvest_olive.jpg"
   },
   {
     "objectName": "LeatherStorageVest_Beige",
@@ -15539,7 +15189,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, protection, tactical, vests, storage, loot",
-    "image": "images/characters/vests/leatherstoragevest_colorbase.jpg"
+    "image": "images/characters/vests/leatherstoragevest_beige/leatherstoragevest_beige.jpg"
   },
   {
     "objectName": "LeatherStorageVest_Black",
@@ -15549,7 +15199,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, protection, tactical, vests, storage, loot",
-    "image": "images/characters/vests/leatherstoragevest_colorbase.jpg"
+    "image": "images/characters/vests/leatherstoragevest_black/leatherstoragevest_black.jpg"
   },
   {
     "objectName": "LeatherStorageVest_Brown",
@@ -15559,7 +15209,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, protection, tactical, vests, storage, loot",
-    "image": "images/characters/vests/leatherstoragevest_colorbase.jpg"
+    "image": "images/characters/vests/leatherstoragevest_brown/leatherstoragevest_brown.jpg"
   },
   {
     "objectName": "LeatherStorageVest_Natural",
@@ -15569,7 +15219,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, protection, tactical, vests, storage, loot",
-    "image": "images/characters/vests/leatherstoragevest_colorbase.jpg"
+    "image": "images/characters/vests/leatherstoragevest_natural/leatherstoragevest_natural.jpg"
   },
   {
     "objectName": "HuntingVest",
@@ -20567,7 +20217,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
     "searchTags": "gear, spraypaint",
-    "image": "images/gear/consumables/spraycan_colorbase.jpg"
+    "image": "images/gear/consumables/spraycan_black/spraycan_black.jpg"
   },
   {
     "objectName": "Spraycan_Green",
@@ -20577,7 +20227,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
     "searchTags": "gear, spraypaint",
-    "image": "images/gear/consumables/spraycan_colorbase.jpg"
+    "image": "images/gear/consumables/spraycan_green/spraycan_green.jpg"
   },
   {
     "objectName": "Matchbox",
@@ -20627,7 +20277,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
     "searchTags": "gear, glow, stick, lights",
-    "image": "images/gear/consumables/chemlight_colorbase.jpg"
+    "image": "images/gear/consumables/chemlight_blue/chemlight_blue.jpg"
   },
   {
     "objectName": "Chemlight_Green",
@@ -20637,7 +20287,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
     "searchTags": "gear, glow, stick, lights",
-    "image": "images/gear/consumables/chemlight_colorbase.jpg"
+    "image": "images/gear/consumables/chemlight_green/chemlight_green.jpg"
   },
   {
     "objectName": "Chemlight_Red",
@@ -20647,7 +20297,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
     "searchTags": "gear, glow, stick, lights",
-    "image": "images/gear/consumables/chemlight_colorbase.jpg"
+    "image": "images/gear/consumables/chemlight_red/chemlight_red.jpg"
   },
   {
     "objectName": "Chemlight_White",
@@ -20657,7 +20307,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
     "searchTags": "gear, glow, stick, lights",
-    "image": "images/gear/consumables/chemlight_colorbase.jpg"
+    "image": "images/gear/consumables/chemlight_white/chemlight_white.jpg"
   },
   {
     "objectName": "Chemlight_Yellow",
@@ -20667,7 +20317,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
     "searchTags": "gear, glow, stick, lights",
-    "image": "images/gear/consumables/chemlight_colorbase.jpg"
+    "image": "images/gear/consumables/chemlight_yellow/chemlight_yellow.jpg"
   },
   {
     "objectName": "WildboarPelt",
@@ -21627,7 +21277,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": true,
     "searchTags": "container, containers, drum, gear, storage, base building, oil",
-    "image": "images/gear/containers/barrel_colorbase.jpg"
+    "image": "images/gear/containers/barrel_blue/barrel_blue.jpg"
   },
   {
     "objectName": "Barrel_Green",
@@ -21637,7 +21287,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": true,
     "searchTags": "container, containers, drum, gear, storage, base building, oil",
-    "image": "images/gear/containers/barrel_colorbase.jpg"
+    "image": "images/gear/containers/barrel_green/barrel_green.jpg"
   },
   {
     "objectName": "Barrel_Red",
@@ -21647,7 +21297,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": true,
     "searchTags": "container, containers, drum, gear, storage, base building, oil",
-    "image": "images/gear/containers/barrel_colorbase.jpg"
+    "image": "images/gear/containers/barrel_red/barrel_red.jpg"
   },
   {
     "objectName": "Barrel_Yellow",
@@ -21657,7 +21307,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": true,
     "searchTags": "container, containers, drum, gear, storage, base building, oil",
-    "image": "images/gear/containers/barrel_colorbase.jpg"
+    "image": "images/gear/containers/barrel_yellow/barrel_yellow.jpg"
   },
   {
     "objectName": "RefrigeratorMinsk",
@@ -21717,7 +21367,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": true,
     "searchTags": "containers, gear, teddy, brian, storage",
-    "image": "images/gear/containers/bear_colorbase.jpg"
+    "image": "images/gear/containers/bear_beige/bear_beige.jpg"
   },
   {
     "objectName": "Bear_Dark",
@@ -21727,7 +21377,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": true,
     "searchTags": "containers, gear, teddy, brian, storage",
-    "image": "images/gear/containers/bear_colorbase.jpg"
+    "image": "images/gear/containers/bear_dark/bear_dark.jpg"
   },
   {
     "objectName": "Bear_Pink",
@@ -21737,7 +21387,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": true,
     "searchTags": "containers, gear, teddy, brian, storage",
-    "image": "images/gear/containers/bear_colorbase.jpg"
+    "image": "images/gear/containers/bear_pink/bear_pink.jpg"
   },
   {
     "objectName": "Bear_White",
@@ -21747,7 +21397,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": true,
     "searchTags": "containers, gear, teddy, brian, storage",
-    "image": "images/gear/containers/bear_colorbase.jpg"
+    "image": "images/gear/containers/bear_white/bear_white.jpg"
   },
   {
     "objectName": "WaterproofBag_Green",
@@ -21757,7 +21407,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": true,
     "searchTags": "backpack, containers, drysack, gear, storage",
-    "image": "images/gear/containers/waterproofbag_colorbase.jpg"
+    "image": "images/gear/containers/waterproofbag_green/waterproofbag_green.jpg"
   },
   {
     "objectName": "WaterproofBag_Orange",
@@ -21767,7 +21417,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": true,
     "searchTags": "backpack, containers, drysack, gear, storage",
-    "image": "images/gear/containers/waterproofbag_colorbase.jpg"
+    "image": "images/gear/containers/waterproofbag_orange/waterproofbag_orange.jpg"
   },
   {
     "objectName": "WaterproofBag_Yellow",
@@ -21777,7 +21427,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": true,
     "searchTags": "backpack, containers, drysack, gear, storage",
-    "image": "images/gear/containers/waterproofbag_colorbase.jpg"
+    "image": "images/gear/containers/waterproofbag_yellow/waterproofbag_yellow.jpg"
   },
   {
     "objectName": "GiftBox_Medium",
@@ -22147,7 +21797,7 @@
     "path": "dz/gear/cooking",
     "usableOnConsole": true,
     "searchTags": "container, cooking, drum, effect, fire, flame, gear, storage, base building, oil",
-    "image": "images/gear/cooking/barrelholes_colorbase.jpg"
+    "image": "images/gear/cooking/barrelholes_blue/barrelholes_blue.jpg"
   },
   {
     "objectName": "BarrelHoles_Green",
@@ -22157,7 +21807,7 @@
     "path": "dz/gear/cooking",
     "usableOnConsole": true,
     "searchTags": "container, cooking, drum, effect, fire, flame, gear, storage, base building, oil",
-    "image": "images/gear/cooking/barrelholes_colorbase.jpg"
+    "image": "images/gear/cooking/barrelholes_green/barrelholes_green.jpg"
   },
   {
     "objectName": "BarrelHoles_Red",
@@ -22167,7 +21817,7 @@
     "path": "dz/gear/cooking",
     "usableOnConsole": true,
     "searchTags": "container, cooking, drum, effect, fire, flame, gear, storage, base building, oil",
-    "image": "images/gear/cooking/barrelholes_colorbase.jpg"
+    "image": "images/gear/cooking/barrelholes_red/barrelholes_red.jpg"
   },
   {
     "objectName": "BarrelHoles_Yellow",
@@ -22177,7 +21827,7 @@
     "path": "dz/gear/cooking",
     "usableOnConsole": true,
     "searchTags": "container, cooking, drum, effect, fire, flame, gear, storage, base building, oil",
-    "image": "images/gear/cooking/barrelholes_colorbase.jpg"
+    "image": "images/gear/cooking/barrelholes_yellow/barrelholes_yellow.jpg"
   },
   {
     "objectName": "Pot",
@@ -23130,16 +22780,6 @@
     "image": "images/gear/cultivation/plant_zucchini.jpg"
   },
   {
-    "objectName": "Plant_Cannabis",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/cultivation",
-    "usableOnConsole": true,
-    "searchTags": "cultivation, gear, growing, gardening",
-    "image": "images/gear/cultivation/plant_cannabis.jpg"
-  },
-  {
     "objectName": "GardenPlotGreenhouse",
     "inGameName": "-",
     "category": "gear",
@@ -23488,7 +23128,7 @@
     "path": "dz/gear/drinks",
     "usableOnConsole": true,
     "searchTags": "drinks, gear, water, drinking, bottle, leather",
-    "image": "images/gear/drinks/waterpouch_colorbase.jpg"
+    "image": "images/gear/drinks/waterpouch_natural/waterpouch_natural.jpg"
   },
   {
     "objectName": "WellBottle_loop",
@@ -23518,7 +23158,7 @@
     "path": "dz/gear/drinks",
     "usableOnConsole": true,
     "searchTags": "drinks, gear, pop, fizzy, coke",
-    "image": "images/gear/drinks/sodacan_colorbase.jpg"
+    "image": "images/gear/drinks/sodacan_cola/sodacan_cola.jpg"
   },
   {
     "objectName": "SodaCan_Fronta",
@@ -23528,7 +23168,7 @@
     "path": "dz/gear/drinks",
     "usableOnConsole": true,
     "searchTags": "drinks, gear, pop, fizzy, fanta",
-    "image": "images/gear/drinks/sodacan_colorbase.jpg"
+    "image": "images/gear/drinks/sodacan_fronta/sodacan_fronta.jpg"
   },
   {
     "objectName": "SodaCan_Kvass",
@@ -23538,7 +23178,7 @@
     "path": "dz/gear/drinks",
     "usableOnConsole": true,
     "searchTags": "drinks, gear, pop, fizzy, beer, ale",
-    "image": "images/gear/drinks/sodacan_colorbase.jpg"
+    "image": "images/gear/drinks/sodacan_kvass/sodacan_kvass.jpg"
   },
   {
     "objectName": "SodaCan_Pipsi",
@@ -23548,7 +23188,7 @@
     "path": "dz/gear/drinks",
     "usableOnConsole": true,
     "searchTags": "drinks, gear, pop, fizzy, pepsi",
-    "image": "images/gear/drinks/sodacan_colorbase.jpg"
+    "image": "images/gear/drinks/sodacan_pipsi/sodacan_pipsi.jpg"
   },
   {
     "objectName": "SodaCan_Spite",
@@ -23558,7 +23198,7 @@
     "path": "dz/gear/drinks",
     "usableOnConsole": true,
     "searchTags": "drinks, gear, pop, fizzy, sprite",
-    "image": "images/gear/drinks/sodacan_colorbase.jpg"
+    "image": "images/gear/drinks/sodacan_spite/sodacan_spite.jpg"
   },
   {
     "objectName": "SodaCan_Empty",
@@ -23768,7 +23408,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/zagorky_colorbase.jpg"
+    "image": "images/gear/food/zagorky/zagorky.jpg"
   },
   {
     "objectName": "ZagorkyChocolate",
@@ -23778,7 +23418,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/zagorky_colorbase.jpg"
+    "image": "images/gear/food/zagorkychocolate/zagorkychocolate.jpg"
   },
   {
     "objectName": "ZagorkyPeanuts",
@@ -23788,7 +23428,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/zagorky_colorbase.jpg"
+    "image": "images/gear/food/zagorkypeanuts/zagorkypeanuts.jpg"
   },
   {
     "objectName": "Chips",
@@ -23798,7 +23438,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/gear/food/snack_colorbase.jpg"
+    "image": "images/gear/food/chips/chips.jpg"
   },
   {
     "objectName": "Crackers",
@@ -23808,7 +23448,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/gear/food/snack_colorbase.jpg"
+    "image": "images/gear/food/crackers/crackers.jpg"
   },
   {
     "objectName": "SaltySticks",
@@ -23818,27 +23458,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear, crisps, snacks",
-    "image": "images/gear/food/snack_colorbase.jpg"
-  },
-  {
-    "objectName": "Crackers",
-    "inGameName": "Crackers",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/food",
-    "usableOnConsole": true,
-    "searchTags": "food, gear, crisps, snacks",
-    "image": "images/gear/food/crackers.jpg"
-  },
-  {
-    "objectName": "Chips",
-    "inGameName": "Chips",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/food",
-    "usableOnConsole": true,
-    "searchTags": "food, gear, crisps, snacks",
-    "image": "images/gear/food/chips.jpg"
+    "image": "images/gear/food/saltysticks/saltysticks.jpg"
   },
   {
     "objectName": "Candycane_Green",
@@ -23848,7 +23468,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/gear/food/candycane_colorbase.jpg"
+    "image": "images/gear/food/candycane_green/candycane_green.jpg"
   },
   {
     "objectName": "Candycane_Red",
@@ -23858,7 +23478,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/gear/food/candycane_colorbase.jpg"
+    "image": "images/gear/food/candycane_red/candycane_red.jpg"
   },
   {
     "objectName": "Candycane_RedGreen",
@@ -23868,7 +23488,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/gear/food/candycane_colorbase.jpg"
+    "image": "images/gear/food/candycane_redgreen/candycane_redgreen.jpg"
   },
   {
     "objectName": "Candycane_Yellow",
@@ -23878,47 +23498,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/gear/food/candycane_colorbase.jpg"
-  },
-  {
-    "objectName": "Candycane_Green",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/food",
-    "usableOnConsole": true,
-    "searchTags": "candy, cane, food, gear, seasonal, festive, santa, christmas",
-    "image": "images/gear/food/candycane_green.jpg"
-  },
-  {
-    "objectName": "Candycane_Red",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/food",
-    "usableOnConsole": true,
-    "searchTags": "candy, cane, food, gear, seasonal, festive, santa, christmas",
-    "image": "images/gear/food/candycane_red.jpg"
-  },
-  {
-    "objectName": "Candycane_RedGreen",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/food",
-    "usableOnConsole": true,
-    "searchTags": "candy, cane, food, gear, seasonal, festive, santa, christmas",
-    "image": "images/gear/food/candycane_redgreen.jpg"
-  },
-  {
-    "objectName": "Candycane_Yellow",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/food",
-    "usableOnConsole": true,
-    "searchTags": "candy, cane, food, gear, seasonal, festive, santa, christmas",
-    "image": "images/gear/food/candycane_yellow.jpg"
+    "image": "images/gear/food/candycane_yellow/candycane_yellow.jpg"
   },
   {
     "objectName": "BakedBeansCan",
@@ -24048,7 +23628,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_colorbase.jpg"
+    "image": "images/gear/food/catfoodcan/catfoodcan.jpg"
   },
   {
     "objectName": "CrabCan",
@@ -24058,7 +23638,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_colorbase.jpg"
+    "image": "images/gear/food/crabcan/crabcan.jpg"
   },
   {
     "objectName": "DogFoodCan",
@@ -24068,7 +23648,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_colorbase.jpg"
+    "image": "images/gear/food/dogfoodcan/dogfoodcan.jpg"
   },
   {
     "objectName": "Lunchmeat",
@@ -24078,7 +23658,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_colorbase.jpg"
+    "image": "images/gear/food/lunchmeat/lunchmeat.jpg"
   },
   {
     "objectName": "PorkCan",
@@ -24088,7 +23668,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_colorbase.jpg"
+    "image": "images/gear/food/porkcan/porkcan.jpg"
   },
   {
     "objectName": "CatFoodCan_Opened",
@@ -24098,7 +23678,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_opened_colorbase.jpg"
+    "image": "images/gear/food/catfoodcan_opened/catfoodcan_opened.jpg"
   },
   {
     "objectName": "CrabCan_Opened",
@@ -24108,7 +23688,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_opened_colorbase.jpg"
+    "image": "images/gear/food/crabcan_opened/crabcan_opened.jpg"
   },
   {
     "objectName": "DogFoodCan_Opened",
@@ -24118,7 +23698,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_opened_colorbase.jpg"
+    "image": "images/gear/food/dogfoodcan_opened/dogfoodcan_opened.jpg"
   },
   {
     "objectName": "Lunchmeat_Opened",
@@ -24128,7 +23708,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_opened_colorbase.jpg"
+    "image": "images/gear/food/lunchmeat_opened/lunchmeat_opened.jpg"
   },
   {
     "objectName": "PorkCan_Opened",
@@ -24138,7 +23718,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_opened_colorbase.jpg"
+    "image": "images/gear/food/porkcan_opened/porkcan_opened.jpg"
   },
   {
     "objectName": "UnknownFoodCan",
@@ -24168,7 +23748,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/foodcan_100g_colorbase.jpg"
+    "image": "images/gear/food/brisketspread/brisketspread.jpg"
   },
   {
     "objectName": "Pajka",
@@ -24178,7 +23758,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/foodcan_100g_colorbase.jpg"
+    "image": "images/gear/food/pajka/pajka.jpg"
   },
   {
     "objectName": "Pate",
@@ -24188,7 +23768,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/foodcan_100g_colorbase.jpg"
+    "image": "images/gear/food/pate/pate.jpg"
   },
   {
     "objectName": "BrisketSpread_Opened",
@@ -24198,7 +23778,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/foodcan_100g_opened_colorbase.jpg"
+    "image": "images/gear/food/brisketspread_opened/brisketspread_opened.jpg"
   },
   {
     "objectName": "Pajka_Opened",
@@ -24208,7 +23788,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/foodcan_100g_opened_colorbase.jpg"
+    "image": "images/gear/food/pajka_opened/pajka_opened.jpg"
   },
   {
     "objectName": "Pate_Opened",
@@ -24218,7 +23798,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/foodcan_100g_opened_colorbase.jpg"
+    "image": "images/gear/food/pate_opened/pate_opened.jpg"
   },
   {
     "objectName": "Apple",
@@ -26128,7 +25708,7 @@
     "path": "dz/gear/medical",
     "usableOnConsole": true,
     "searchTags": "cigarettes, gear, health",
-    "image": "images/gear/medical/cigarettepack_colorbase.jpg"
+    "image": "images/gear/medical/cigarettepack_chernamorka/cigarettepack_chernamorka.jpg"
   },
   {
     "objectName": "CigarettePack_Merkur",
@@ -26138,7 +25718,7 @@
     "path": "dz/gear/medical",
     "usableOnConsole": true,
     "searchTags": "cigarettes, gear, health",
-    "image": "images/gear/medical/cigarettepack_colorbase.jpg"
+    "image": "images/gear/medical/cigarettepack_merkur/cigarettepack_merkur.jpg"
   },
   {
     "objectName": "CigarettePack_Partyzanka",
@@ -26148,7 +25728,7 @@
     "path": "dz/gear/medical",
     "usableOnConsole": true,
     "searchTags": "cigarettes, gear, health",
-    "image": "images/gear/medical/cigarettepack_colorbase.jpg"
+    "image": "images/gear/medical/cigarettepack_partyzanka/cigarettepack_partyzanka.jpg"
   },
   {
     "objectName": "Proxyimprovised_fixture",
@@ -26868,7 +26448,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": true,
     "searchTags": "gear, tools, writing, notes",
-    "image": "images/gear/tools/pen_colorbase.jpg"
+    "image": "images/gear/tools/pen_black/pen_black.jpg"
   },
   {
     "objectName": "Pen_Blue",
@@ -26878,7 +26458,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": true,
     "searchTags": "gear, tools, writing, notes",
-    "image": "images/gear/tools/pen_colorbase.jpg"
+    "image": "images/gear/tools/pen_blue/pen_blue.jpg"
   },
   {
     "objectName": "Pen_Green",
@@ -26888,7 +26468,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": true,
     "searchTags": "gear, tools, writing, notes",
-    "image": "images/gear/tools/pen_colorbase.jpg"
+    "image": "images/gear/tools/pen_green/pen_green.jpg"
   },
   {
     "objectName": "Pen_Red",
@@ -26898,7 +26478,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": true,
     "searchTags": "gear, tools, writing, notes",
-    "image": "images/gear/tools/pen_colorbase.jpg"
+    "image": "images/gear/tools/pen_red/pen_red.jpg"
   },
   {
     "objectName": "CanOpener",
@@ -27109,16 +26689,6 @@
     "usableOnConsole": true,
     "searchTags": "gear, tools",
     "image": "images/gear/tools/meattenderizer.jpg"
-  },
-  {
-    "objectName": "MinningBuilding",
-    "inGameName": "Wrench",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "gear, meat, tenderizer, tools",
-    "image": "images/gear/tools/minningbuilding.jpg"
   },
   {
     "objectName": "Wrench",
@@ -91409,16 +90979,6 @@
     "image": "images/structures_sakhal/residential/misc/land_outsidethermometer_1.jpg"
   },
   {
-    "objectName": "ThermoGauge",
-    "inGameName": "-",
-    "category": "structures_sakhal",
-    "modelType": "Config",
-    "path": "dz/structures_sakhal/residential/misc",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/structures_sakhal/residential/misc/thermogauge.jpg"
-  },
-  {
     "objectName": "Land_OutsideThermometer_2",
     "inGameName": "-",
     "category": "structures_sakhal",
@@ -91427,16 +90987,6 @@
     "usableOnConsole": true,
     "searchTags": "misc, residential, sakhal",
     "image": "images/structures_sakhal/residential/misc/land_outsidethermometer_2.jpg"
-  },
-  {
-    "objectName": "ThermoGauge",
-    "inGameName": "-",
-    "category": "structures_sakhal",
-    "modelType": "Config",
-    "path": "dz/structures_sakhal/residential/misc",
-    "usableOnConsole": true,
-    "searchTags": "misc, residential, sakhal",
-    "image": "images/structures_sakhal/residential/misc/thermogauge.jpg"
   },
   {
     "objectName": "Land_OutsideThermometer_2_wall",
@@ -96065,16 +95615,6 @@
     "image": "images/vehicles/parts/headlighth7_box.jpg"
   },
   {
-    "objectName": "HeadlightH7",
-    "inGameName": "Spark Plug",
-    "category": "vehicles",
-    "modelType": "Config",
-    "path": "dz/vehicles/parts",
-    "usableOnConsole": true,
-    "searchTags": "bulb, parts, transport, vehicle, vehicles",
-    "image": "images/vehicles/parts/headlighth7.jpg"
-  },
-  {
     "objectName": "SparkPlug",
     "inGameName": "Spark Plug",
     "category": "vehicles",
@@ -96482,7 +96022,7 @@
     "path": "dz/vehicles/water/boat_01",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/vehicles/water/boat_01/boat_01_colorbase.jpg"
+    "image": "images/vehicles/water/boat_01/boat_01_black/boat_01_black.jpg"
   },
   {
     "objectName": "Boat_01_Blue",
@@ -96492,7 +96032,7 @@
     "path": "dz/vehicles/water/boat_01",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/vehicles/water/boat_01/boat_01_colorbase.jpg"
+    "image": "images/vehicles/water/boat_01/boat_01_blue/boat_01_blue.jpg"
   },
   {
     "objectName": "Boat_01_Camo",
@@ -96502,7 +96042,7 @@
     "path": "dz/vehicles/water/boat_01",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/vehicles/water/boat_01/boat_01_colorbase.jpg"
+    "image": "images/vehicles/water/boat_01/boat_01_camo/boat_01_camo.jpg"
   },
   {
     "objectName": "Boat_01_Orange",
@@ -96512,7 +96052,7 @@
     "path": "dz/vehicles/water/boat_01",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/vehicles/water/boat_01/boat_01_colorbase.jpg"
+    "image": "images/vehicles/water/boat_01/boat_01_orange/boat_01_orange.jpg"
   },
   {
     "objectName": "boat_01.p3d",
@@ -118442,7 +117982,7 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, firearm, gun, rifle, support, weapon, weapons, wrap",
-    "image": "images/weapons/attachments/support/ghillieatt_colorbase.jpg"
+    "image": "images/weapons/attachments/support/ghillieatt_mossy/ghillieatt_mossy.jpg"
   },
   {
     "objectName": "GhillieAtt_Tan",
@@ -118452,7 +117992,7 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, firearm, gun, rifle, support, weapon, weapons, wrap",
-    "image": "images/weapons/attachments/support/ghillieatt_colorbase.jpg"
+    "image": "images/weapons/attachments/support/ghillieatt_tan/ghillieatt_tan.jpg"
   },
   {
     "objectName": "GhillieAtt_Winter",
@@ -118462,7 +118002,7 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, firearm, gun, rifle, support, weapon, weapons, wrap",
-    "image": "images/weapons/attachments/support/ghillieatt_colorbase.jpg"
+    "image": "images/weapons/attachments/support/ghillieatt_winter/ghillieatt_winter.jpg"
   },
   {
     "objectName": "GhillieAtt_Woodland",
@@ -118472,7 +118012,7 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, firearm, gun, rifle, support, weapon, weapons, wrap",
-    "image": "images/weapons/attachments/support/ghillieatt_colorbase.jpg"
+    "image": "images/weapons/attachments/support/ghillieatt_woodland/ghillieatt_woodland.jpg"
   },
   {
     "objectName": "ProxyButtstock_M4_OE",
@@ -119282,7 +118822,7 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "effect, explosives, m8, particle, weapon, weapons",
-    "image": "images/weapons/explosives/m18smokegrenade_colorbase.jpg"
+    "image": "images/weapons/explosives/m18smokegrenade_green/m18smokegrenade_green.jpg"
   },
   {
     "objectName": "M18SmokeGrenade_Purple",
@@ -119292,7 +118832,7 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "effect, explosives, m8, particle, weapon, weapons",
-    "image": "images/weapons/explosives/m18smokegrenade_colorbase.jpg"
+    "image": "images/weapons/explosives/m18smokegrenade_purple/m18smokegrenade_purple.jpg"
   },
   {
     "objectName": "M18SmokeGrenade_Red",
@@ -119302,7 +118842,7 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "effect, explosives, m8, particle, weapon, weapons",
-    "image": "images/weapons/explosives/m18smokegrenade_colorbase.jpg"
+    "image": "images/weapons/explosives/m18smokegrenade_red/m18smokegrenade_red.jpg"
   },
   {
     "objectName": "M18SmokeGrenade_White",
@@ -119312,7 +118852,7 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "effect, explosives, m8, particle, weapon, weapons",
-    "image": "images/weapons/explosives/m18smokegrenade_colorbase.jpg"
+    "image": "images/weapons/explosives/m18smokegrenade_white/m18smokegrenade_white.jpg"
   },
   {
     "objectName": "M18SmokeGrenade_Yellow",
@@ -119322,7 +118862,7 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "effect, explosives, m8, particle, weapon, weapons",
-    "image": "images/weapons/explosives/m18smokegrenade_colorbase.jpg"
+    "image": "images/weapons/explosives/m18smokegrenade_yellow/m18smokegrenade_yellow.jpg"
   },
   {
     "objectName": "RDG2SmokeGrenade_Black",
@@ -119332,7 +118872,7 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "effect, egd, explosives, particle, weapon, weapons",
-    "image": "images/weapons/explosives/rdg2smokegrenade_colorbase.jpg"
+    "image": "images/weapons/explosives/rdg2smokegrenade_black/rdg2smokegrenade_black.jpg"
   },
   {
     "objectName": "RDG2SmokeGrenade_White",
@@ -119342,7 +118882,7 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "effect, egd, explosives, particle, weapon, weapons",
-    "image": "images/weapons/explosives/rdg2smokegrenade_colorbase.jpg"
+    "image": "images/weapons/explosives/rdg2smokegrenade_white/rdg2smokegrenade_white.jpg"
   },
   {
     "objectName": "FlashGrenade",
@@ -121382,7 +120922,7 @@
     "path": "dz/weapons/melee/blunt",
     "usableOnConsole": true,
     "searchTags": "blunt, melee, weapon, weapons",
-    "image": "images/weapons/melee/blunt/brassknuckles_colorbase.jpg"
+    "image": "images/weapons/melee/blunt/brassknuckles_dull/brassknuckles_dull.jpg"
   },
   {
     "objectName": "BrassKnuckles_Shiny",
@@ -121392,7 +120932,7 @@
     "path": "dz/weapons/melee/blunt",
     "usableOnConsole": true,
     "searchTags": "blunt, melee, weapon, weapons",
-    "image": "images/weapons/melee/blunt/brassknuckles_colorbase.jpg"
+    "image": "images/weapons/melee/blunt/brassknuckles_shiny/brassknuckles_shiny.jpg"
   },
   {
     "objectName": "TelescopicBaton",

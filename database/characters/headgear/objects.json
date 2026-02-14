@@ -1666,7 +1666,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "woolen, scarf, facewrap headgear, insulated, ushanka, white, winter",
+    "searchTags": "woolen, scarf, facewrap, headgear, insulated, winter",
     "image": "images/characters/headgear/shemag_brown/shemag_brown.jpg"
   },
   {
@@ -1676,7 +1676,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "woolen, scarf, facewrap headgear, insulated, green, winter",
+    "searchTags": "woolen, scarf, facewrap, headgear, insulated, green, winter",
     "image": "images/characters/headgear/shemag_green/shemag_green.jpg"
   },
   {
@@ -1686,7 +1686,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "woolen, scarf, facewrap headgear, insulated, red, winter",
+    "searchTags": "woolen, scarf, facewrap, headgear, insulated, red, winter",
     "image": "images/characters/headgear/shemag_red/shemag_red.jpg"
   },
   {
@@ -1696,7 +1696,7 @@
     "modelType": "Config",
     "path": "dz/characters/headgear",
     "usableOnConsole": true,
-    "searchTags": "woolen, scarf, facewrap headgear, insulated, ushanka, white, winter",
+    "searchTags": "woolen, scarf, facewrap, headgear, insulated, white, winter",
     "image": "images/characters/headgear/shemag_white/shemag_white.jpg"
   },
   {
@@ -2470,36 +2470,6 @@
     "image": "images/characters/headgear/zmijovkacap_black/zmijovkacap_black.jpg"
   },
   {
-    "objectName": "Bandana_Camopattern",
-    "inGameName": "Bandana",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/headgear",
-    "usableOnConsole": true,
-    "searchTags": "armored, black, headgear, helmet, military, protective",
-    "image": "images/characters/headgear/bandana_blue/bandana_blue.jpg"
-  },
-  {
-    "objectName": "Bandana_Polkapattern",
-    "inGameName": "Bandana",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/headgear",
-    "usableOnConsole": true,
-    "searchTags": "armored, black, headgear, helmet, military, protective",
-    "image": "images/characters/headgear/bandana_polkapattern/bandana_polkapattern.jpg"
-  },
-  {
-    "objectName": "Bandana_Redpattern",
-    "inGameName": "Bandana",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/headgear",
-    "usableOnConsole": true,
-    "searchTags": "armored, black, headgear, helmet, military, protective",
-    "image": "images/characters/headgear/bandana_redpattern/bandana_redpattern.jpg"
-  },
-  {
     "objectName": "DarkMotoHelmet_Black",
     "inGameName": "Motorbike Helmet",
     "category": "characters",
@@ -2628,36 +2598,6 @@
     "usableOnConsole": true,
     "searchTags": "cap, civilian, headgear, uniform",
     "image": "images/characters/headgear/officerhat/officerhat.jpg"
-  },
-  {
-    "objectName": "PetushokHat_Black",
-    "inGameName": "Petushok",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/headgear",
-    "usableOnConsole": true,
-    "searchTags": "black, headgear, insulated, knit, winter",
-    "image": "images/characters/headgear/petushokhat_black/petushokhat_black.jpg"
-  },
-  {
-    "objectName": "PetushokHat_Green",
-    "inGameName": "Petushok",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/headgear",
-    "usableOnConsole": true,
-    "searchTags": "black, headgear, insulated, knit, winter",
-    "image": "images/characters/headgear/petushokhat_black/petushokhat_black.jpg"
-  },
-  {
-    "objectName": "PetushokHat_Yellow",
-    "inGameName": "Petushok",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/headgear",
-    "usableOnConsole": true,
-    "searchTags": "black, headgear, insulated, knit, winter",
-    "image": "images/characters/headgear/petushokhat_black/petushokhat_black.jpg"
   },
   {
     "objectName": "WitchHoodCoif_Black",

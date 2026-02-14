@@ -107,7 +107,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/zagorky_colorbase.jpg"
+    "image": "images/gear/food/zagorky/zagorky.jpg"
   },
   {
     "objectName": "ZagorkyChocolate",
@@ -117,7 +117,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/zagorky_colorbase.jpg"
+    "image": "images/gear/food/zagorkychocolate/zagorkychocolate.jpg"
   },
   {
     "objectName": "ZagorkyPeanuts",
@@ -127,7 +127,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/zagorky_colorbase.jpg"
+    "image": "images/gear/food/zagorkypeanuts/zagorkypeanuts.jpg"
   },
   {
     "objectName": "Chips",
@@ -137,7 +137,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/gear/food/snack_colorbase.jpg"
+    "image": "images/gear/food/chips/chips.jpg"
   },
   {
     "objectName": "Crackers",
@@ -147,7 +147,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/gear/food/snack_colorbase.jpg"
+    "image": "images/gear/food/crackers/crackers.jpg"
   },
   {
     "objectName": "SaltySticks",
@@ -157,27 +157,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear, crisps, snacks",
-    "image": "images/gear/food/snack_colorbase.jpg"
-  },
-  {
-    "objectName": "Crackers",
-    "inGameName": "Crackers",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/food",
-    "usableOnConsole": true,
-    "searchTags": "food, gear, crisps, snacks",
-    "image": "images/gear/food/crackers.jpg"
-  },
-  {
-    "objectName": "Chips",
-    "inGameName": "Chips",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/food",
-    "usableOnConsole": true,
-    "searchTags": "food, gear, crisps, snacks",
-    "image": "images/gear/food/chips.jpg"
+    "image": "images/gear/food/saltysticks/saltysticks.jpg"
   },
   {
     "objectName": "Candycane_Green",
@@ -187,7 +167,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/gear/food/candycane_colorbase.jpg"
+    "image": "images/gear/food/candycane_green/candycane_green.jpg"
   },
   {
     "objectName": "Candycane_Red",
@@ -197,7 +177,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/gear/food/candycane_colorbase.jpg"
+    "image": "images/gear/food/candycane_red/candycane_red.jpg"
   },
   {
     "objectName": "Candycane_RedGreen",
@@ -207,7 +187,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/gear/food/candycane_colorbase.jpg"
+    "image": "images/gear/food/candycane_redgreen/candycane_redgreen.jpg"
   },
   {
     "objectName": "Candycane_Yellow",
@@ -217,47 +197,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/gear/food/candycane_colorbase.jpg"
-  },
-  {
-    "objectName": "Candycane_Green",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/food",
-    "usableOnConsole": true,
-    "searchTags": "candy, cane, food, gear, seasonal, festive, santa, christmas",
-    "image": "images/gear/food/candycane_green.jpg"
-  },
-  {
-    "objectName": "Candycane_Red",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/food",
-    "usableOnConsole": true,
-    "searchTags": "candy, cane, food, gear, seasonal, festive, santa, christmas",
-    "image": "images/gear/food/candycane_red.jpg"
-  },
-  {
-    "objectName": "Candycane_RedGreen",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/food",
-    "usableOnConsole": true,
-    "searchTags": "candy, cane, food, gear, seasonal, festive, santa, christmas",
-    "image": "images/gear/food/candycane_redgreen.jpg"
-  },
-  {
-    "objectName": "Candycane_Yellow",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/food",
-    "usableOnConsole": true,
-    "searchTags": "candy, cane, food, gear, seasonal, festive, santa, christmas",
-    "image": "images/gear/food/candycane_yellow.jpg"
+    "image": "images/gear/food/candycane_yellow/candycane_yellow.jpg"
   },
   {
     "objectName": "BakedBeansCan",
@@ -387,7 +327,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_colorbase.jpg"
+    "image": "images/gear/food/catfoodcan/catfoodcan.jpg"
   },
   {
     "objectName": "CrabCan",
@@ -397,7 +337,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_colorbase.jpg"
+    "image": "images/gear/food/crabcan/crabcan.jpg"
   },
   {
     "objectName": "DogFoodCan",
@@ -407,7 +347,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_colorbase.jpg"
+    "image": "images/gear/food/dogfoodcan/dogfoodcan.jpg"
   },
   {
     "objectName": "Lunchmeat",
@@ -417,7 +357,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_colorbase.jpg"
+    "image": "images/gear/food/lunchmeat/lunchmeat.jpg"
   },
   {
     "objectName": "PorkCan",
@@ -427,7 +367,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_colorbase.jpg"
+    "image": "images/gear/food/porkcan/porkcan.jpg"
   },
   {
     "objectName": "CatFoodCan_Opened",
@@ -437,7 +377,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_opened_colorbase.jpg"
+    "image": "images/gear/food/catfoodcan_opened/catfoodcan_opened.jpg"
   },
   {
     "objectName": "CrabCan_Opened",
@@ -447,7 +387,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_opened_colorbase.jpg"
+    "image": "images/gear/food/crabcan_opened/crabcan_opened.jpg"
   },
   {
     "objectName": "DogFoodCan_Opened",
@@ -457,7 +397,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_opened_colorbase.jpg"
+    "image": "images/gear/food/dogfoodcan_opened/dogfoodcan_opened.jpg"
   },
   {
     "objectName": "Lunchmeat_Opened",
@@ -467,7 +407,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_opened_colorbase.jpg"
+    "image": "images/gear/food/lunchmeat_opened/lunchmeat_opened.jpg"
   },
   {
     "objectName": "PorkCan_Opened",
@@ -477,7 +417,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/foodcan_250g_opened_colorbase.jpg"
+    "image": "images/gear/food/porkcan_opened/porkcan_opened.jpg"
   },
   {
     "objectName": "UnknownFoodCan",
@@ -507,7 +447,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/foodcan_100g_colorbase.jpg"
+    "image": "images/gear/food/brisketspread/brisketspread.jpg"
   },
   {
     "objectName": "Pajka",
@@ -517,7 +457,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/foodcan_100g_colorbase.jpg"
+    "image": "images/gear/food/pajka/pajka.jpg"
   },
   {
     "objectName": "Pate",
@@ -527,7 +467,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/foodcan_100g_colorbase.jpg"
+    "image": "images/gear/food/pate/pate.jpg"
   },
   {
     "objectName": "BrisketSpread_Opened",
@@ -537,7 +477,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/foodcan_100g_opened_colorbase.jpg"
+    "image": "images/gear/food/brisketspread_opened/brisketspread_opened.jpg"
   },
   {
     "objectName": "Pajka_Opened",
@@ -547,7 +487,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/foodcan_100g_opened_colorbase.jpg"
+    "image": "images/gear/food/pajka_opened/pajka_opened.jpg"
   },
   {
     "objectName": "Pate_Opened",
@@ -557,7 +497,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear",
-    "image": "images/gear/food/foodcan_100g_opened_colorbase.jpg"
+    "image": "images/gear/food/pate_opened/pate_opened.jpg"
   },
   {
     "objectName": "Apple",
