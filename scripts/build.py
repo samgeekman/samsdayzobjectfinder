@@ -23,6 +23,8 @@ TYPES_XML = DATA_DIR / "types_aggregated.xml"
 STATIC_TYPES_XML = STATIC_DATA_DIR / "types_aggregated.xml"
 OVERRIDES_JSON = DATA_DIR / "object_overrides.json"
 TOMBSTONES_JSON = DATA_DIR / "id_tombstones.json"
+API_ROOT = STATIC_DIR / "api" / "v1"
+API_SEARCH_DIR = API_ROOT / "search"
 ID_RE = re.compile(r"^dzobj_[a-z0-9]{10}$")
 ID_PREFIX = "dzobj_"
 ID_CHARS = "abcdefghijklmnopqrstuvwxyz0123456789"
@@ -55,7 +57,7 @@ def load_json_file(path: Path) -> Optional[object]:
 
 
 def get_row_id(row: dict) -> str:
-    for key in ("objectId", "id"):
+    for key in ("id",):
         value = row.get(key)
         if isinstance(value, str) and value.strip():
             return value.strip()
@@ -120,7 +122,7 @@ def apply_sidecar_overrides(objects: List[dict]) -> Dict[str, int]:
             unknown += 1
             continue
         for key, value in patch.items():
-            if key in {"id", "objectId"}:
+            if key == "id":
                 continue
             target[key] = value
         applied += 1
@@ -389,8 +391,85 @@ def ensure_explicit_ids(objects: List[dict]) -> int:
                 f"objectName={obj.get('objectName')} path={obj.get('path')}."
             )
         seen_ids.add(object_id)
-        obj["objectId"] = object_id
+        obj["id"] = object_id
+        if "objectId" in obj:
+            del obj["objectId"]
     return len(seen_ids)
+
+
+def slim_search_record(obj: dict) -> dict:
+    return {
+        "id": obj.get("id", ""),
+        "objectName": obj.get("objectName", ""),
+        "inGameName": obj.get("inGameName", ""),
+        "category": obj.get("category", ""),
+        "path": obj.get("path", ""),
+        "searchTags": obj.get("searchTags", ""),
+    }
+
+
+def write_json(path: Path, payload: object) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def generate_static_api(objects: List[dict]) -> Dict[str, int]:
+    if API_ROOT.exists():
+        shutil.rmtree(API_ROOT)
+    API_ROOT.mkdir(parents=True, exist_ok=True)
+    API_SEARCH_DIR.mkdir(parents=True, exist_ok=True)
+
+    sorted_objects = sorted(objects, key=lambda obj: str(obj.get("id", "")))
+    generated_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+    write_json(API_ROOT / "objects.full.json", sorted_objects)
+
+    search_records = [slim_search_record(obj) for obj in sorted_objects]
+    write_json(
+        API_SEARCH_DIR / "index.json",
+        {
+            "apiVersion": "v1",
+            "generatedAt": generated_at,
+            "totalObjects": len(sorted_objects),
+            "records": search_records,
+        },
+    )
+
+    write_json(
+        API_ROOT / "meta.json",
+        {
+            "apiVersion": "v1",
+            "schemaVersion": 1,
+            "generatedAt": generated_at,
+            "objectCount": len(sorted_objects),
+            "endpoints": {
+                "meta": "/api/v1/meta.json",
+                "fullDataset": "/api/v1/objects.full.json",
+                "searchIndex": "/api/v1/search/index.json",
+            },
+        },
+    )
+
+    # Integrity checks for generated API.
+    meta_raw = load_json_file(API_ROOT / "meta.json")
+    if not isinstance(meta_raw, dict):
+        raise SystemExit("API validation failed: meta.json is not valid JSON object.")
+    if int(meta_raw.get("objectCount", -1)) != len(sorted_objects):
+        raise SystemExit("API validation failed: meta.objectCount mismatch.")
+    full_raw = load_json_file(API_ROOT / "objects.full.json")
+    if not isinstance(full_raw, list) or len(full_raw) != len(sorted_objects):
+        raise SystemExit("API validation failed: objects.full.json missing or mismatched count.")
+    search_raw = load_json_file(API_SEARCH_DIR / "index.json")
+    if not isinstance(search_raw, dict):
+        raise SystemExit("API validation failed: search/index.json is invalid.")
+    records = search_raw.get("records")
+    if not isinstance(records, list) or len(records) != len(sorted_objects):
+        raise SystemExit("API validation failed: search/index.json record count mismatch.")
+
+    return {
+        "full_rows": len(sorted_objects),
+        "search_records": len(search_records),
+    }
 
 
 def export_database_zip() -> None:
@@ -438,6 +517,7 @@ def main() -> None:
     override_stats = apply_sidecar_overrides(all_objects)
     unique_ids = ensure_explicit_ids(all_objects)
     tombstone_stats = update_id_tombstones(previous_index, all_objects)
+    api_stats = generate_static_api(all_objects)
 
     if OUTPUT_JSON.exists():
         shutil.copyfile(OUTPUT_JSON, BACKUP_JSON)
@@ -472,6 +552,11 @@ def main() -> None:
         f"{tombstone_stats['new_tombstones']} newly added "
         f"({tombstone_stats['removed_in_build']} removed this build, "
         f"{tombstone_stats['total_tombstones']} total)."
+    )
+    print(
+        "API: "
+        f"{api_stats['full_rows']} full rows, "
+        f"{api_stats['search_records']} search records."
     )
     print(f"Validated explicit object IDs: {unique_ids}.")
     if OUTPUT_JSON.exists():

@@ -1233,7 +1233,7 @@
       return row.objectName || row.name || row.Name || '';
     };
     var getObjectId = function(row) {
-      return row.objectId || '';
+      return row.id || '';
     };
     var getConsoleFlag = function(row) {
       return row.usableOnConsole ? '✅' : '❌';
@@ -1339,7 +1339,7 @@
             return type === 'display' ? escapeHtml(getSearchTags(row)) : getSearchTags(row);
           }
         },
-        { data: 'objectId', defaultContent: '' }
+        { data: 'id', defaultContent: '' }
       ],
       columnDefs: [
         { targets: 0, orderable: false, className: 'dtr-control min-desktop' },
@@ -1686,7 +1686,7 @@
       objectFocusEl.classList.remove('focus-empty');
       updateLayoutForSidebar();
       var objName = objData.objName || '';
-      var objectId = objData.objectId || '';
+      var objectId = objData.id || '';
       var imgPath = objData.imgPath;
       var p3dPath = objData.p3dPath;
       var modelType = objData.modelType;
@@ -1699,7 +1699,7 @@
       currentObjectName = objName;
       currentObjectData = {
         objName: objName,
-        objectId: objectId,
+        id: objectId,
         imgPath: imgPath,
         p3dPath: p3dPath,
         modelType: modelType,
@@ -1765,7 +1765,7 @@
       return {
         type: 'object',
         objName: $td.data('object') || '',
-        objectId: $td.data('objectid') || '',
+        id: $td.data('objectid') || '',
         imgPath: $td.data('image'),
         p3dPath: $td.data('p3d'),
         modelType: $td.data('modeltype'),
@@ -1783,7 +1783,7 @@
       return {
         type: 'object',
         objName: objName,
-        objectId: getObjectId(rowData),
+        id: getObjectId(rowData),
         imgPath: rowData.image || '',
         p3dPath: rowData.path || '',
         modelType: rowData.modelType || '',
@@ -2037,7 +2037,7 @@
           }
           setObjectFocusData({
             objName: item.objName,
-            objectId: item.objectId,
+            id: item.id,
             imgPath: item.imgPath,
             p3dPath: item.p3dPath,
             modelType: item.modelType,
@@ -2281,7 +2281,7 @@
       }
       setObjectFocusData({
         objName: $td.data('object') || '',
-        objectId: $td.data('objectid') || '',
+        id: $td.data('objectid') || '',
         imgPath: $td.data('image'),
         p3dPath: $td.data('p3d'),
         modelType: $td.data('modeltype'),
@@ -2594,7 +2594,7 @@
         var zip = new JSZip();
         var csvRows = [];
         csvRows.push([
-          'objectId',
+          'id',
           'className',
           'inGameName',
           'category',
@@ -2609,7 +2609,7 @@
         var imagePromises = entries.map(function(item) {
           var imageFound = item.imgPath ? 'Yes' : 'No';
           csvRows.push([
-            csvEscape(item.objectId || ''),
+            csvEscape(item.id || ''),
             csvEscape(item.objName),
             csvEscape(item.inGame),
             csvEscape(item.category),
@@ -2671,7 +2671,7 @@
       var zip = new JSZip();
       var csvRows = [];
       csvRows.push([
-        'objectId',
+        'id',
         'className',
         'inGameName',
         'category',
@@ -2686,7 +2686,7 @@
       var imagePromises = entries.map(function(item) {
         var imageFound = item.imgPath ? 'Yes' : 'No';
         csvRows.push([
-          csvEscape(item.objectId || ''),
+          csvEscape(item.id || ''),
           csvEscape(item.objName),
           csvEscape(item.inGame),
           csvEscape(item.category),
@@ -2900,7 +2900,7 @@
         var cell = rowEl ? rowEl.querySelector('.object-name-cell') : null;
         if (!cell) return;
         rows.push({
-          objectId: cell.getAttribute('data-objectid') || '',
+          id: cell.getAttribute('data-objectid') || '',
           className: cell.getAttribute('data-object') || '',
           inGameName: cell.getAttribute('data-ingame') || '',
           category: cell.getAttribute('data-category') || '',
@@ -2933,7 +2933,7 @@
       if (!rows.length) return;
       var csvRows = [];
       csvRows.push([
-        'objectId',
+        'id',
         'className',
         'inGameName',
         'category',
@@ -2944,7 +2944,7 @@
       ].join(','));
       rows.forEach(function(item) {
         csvRows.push([
-          csvEscape(item.objectId),
+          csvEscape(item.id),
           csvEscape(item.className),
           csvEscape(item.inGameName),
           csvEscape(item.category),
@@ -2964,7 +2964,7 @@
       if (!rows.length) return;
       var data = rows.map(function(item) {
         return {
-          objectId: item.objectId,
+          id: item.id,
           className: item.className,
           inGameName: item.inGameName,
           category: item.category,

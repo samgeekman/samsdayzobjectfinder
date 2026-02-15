@@ -1,0 +1,11 @@
+{
+  "apiVersion": "v1",
+  "schemaVersion": 1,
+  "generatedAt": "2026-02-15T14:53:31Z",
+  "objectCount": 12064,
+  "endpoints": {
+    "meta": "/api/v1/meta.json",
+    "fullDataset": "/api/v1/objects.full.json",
+    "searchIndex": "/api/v1/search/index.json"
+  }
+}
