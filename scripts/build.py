@@ -425,7 +425,33 @@ def generate_static_api(objects: List[dict]) -> Dict[str, int]:
         row["imageUrl"] = build_image_url(row.get("image"))
         api_objects.append(row)
 
+    object_names = sorted(
+        [
+            {
+                "id": str(row.get("id", "")).strip(),
+                "objectName": str(row.get("objectName", "")).strip(),
+            }
+            for row in api_objects
+            if not is_blank(row.get("id")) and not is_blank(row.get("objectName"))
+        ],
+        key=lambda item: (item["objectName"].lower(), item["id"]),
+    )
+    ingame_objects = [
+        {
+            "id": str(row.get("id", "")).strip(),
+            "objectName": str(row.get("objectName", "")).strip(),
+            "inGameName": str(row.get("inGameName", "")).strip(),
+        }
+        for row in api_objects
+        if str(row.get("modelType", "")).strip() == "Config"
+        and not is_blank(row.get("id"))
+        and not is_blank(row.get("inGameName"))
+        and not is_blank(row.get("objectName"))
+    ]
+
     write_json(API_ROOT / "objects.full.json", api_objects)
+    write_json(API_ROOT / "object-names.json", object_names)
+    write_json(API_ROOT / "objects.ingame.json", ingame_objects)
 
     write_json(
         API_ROOT / "meta.json",
@@ -434,9 +460,13 @@ def generate_static_api(objects: List[dict]) -> Dict[str, int]:
             "schemaVersion": 1,
             "generatedAt": generated_at,
             "objectCount": len(api_objects),
+            "objectNameCount": len(object_names),
+            "inGameObjectCount": len(ingame_objects),
             "endpoints": {
                 "meta": "/api/v1/meta.json",
                 "fullDataset": "/api/v1/objects.full.json",
+                "objectNames": "/api/v1/object-names.json",
+                "inGameObjects": "/api/v1/objects.ingame.json",
             },
         },
     )
@@ -450,8 +480,16 @@ def generate_static_api(objects: List[dict]) -> Dict[str, int]:
     full_raw = load_json_file(API_ROOT / "objects.full.json")
     if not isinstance(full_raw, list) or len(full_raw) != len(api_objects):
         raise SystemExit("API validation failed: objects.full.json missing or mismatched count.")
+    names_raw = load_json_file(API_ROOT / "object-names.json")
+    if not isinstance(names_raw, list) or len(names_raw) != len(object_names):
+        raise SystemExit("API validation failed: object-names.json missing or mismatched count.")
+    ingame_raw = load_json_file(API_ROOT / "objects.ingame.json")
+    if not isinstance(ingame_raw, list) or len(ingame_raw) != len(ingame_objects):
+        raise SystemExit("API validation failed: objects.ingame.json missing or mismatched count.")
     return {
         "full_rows": len(api_objects),
+        "name_rows": len(object_names),
+        "ingame_rows": len(ingame_objects),
     }
 
 
@@ -538,7 +576,9 @@ def main() -> None:
     )
     print(
         "API: "
-        f"{api_stats['full_rows']} full rows."
+        f"{api_stats['full_rows']} full rows, "
+        f"{api_stats['name_rows']} object names, "
+        f"{api_stats['ingame_rows']} in-game rows."
     )
     print(f"Validated explicit object IDs: {unique_ids}.")
     if OUTPUT_JSON.exists():
