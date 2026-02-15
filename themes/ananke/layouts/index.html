@@ -2594,6 +2594,7 @@
         var zip = new JSZip();
         var csvRows = [];
         csvRows.push([
+          'objectId',
           'className',
           'inGameName',
           'category',
@@ -2608,6 +2609,7 @@
         var imagePromises = entries.map(function(item) {
           var imageFound = item.imgPath ? 'Yes' : 'No';
           csvRows.push([
+            csvEscape(item.objectId || ''),
             csvEscape(item.objName),
             csvEscape(item.inGame),
             csvEscape(item.category),
@@ -2669,6 +2671,7 @@
       var zip = new JSZip();
       var csvRows = [];
       csvRows.push([
+        'objectId',
         'className',
         'inGameName',
         'category',
@@ -2683,6 +2686,7 @@
       var imagePromises = entries.map(function(item) {
         var imageFound = item.imgPath ? 'Yes' : 'No';
         csvRows.push([
+          csvEscape(item.objectId || ''),
           csvEscape(item.objName),
           csvEscape(item.inGame),
           csvEscape(item.category),
@@ -2896,8 +2900,8 @@
         var cell = rowEl ? rowEl.querySelector('.object-name-cell') : null;
         if (!cell) return;
         rows.push({
-          className: cell.getAttribute('data-object') || '',
           objectId: cell.getAttribute('data-objectid') || '',
+          className: cell.getAttribute('data-object') || '',
           inGameName: cell.getAttribute('data-ingame') || '',
           category: cell.getAttribute('data-category') || '',
           path: cell.getAttribute('data-p3d') || '',
@@ -2929,6 +2933,7 @@
       if (!rows.length) return;
       var csvRows = [];
       csvRows.push([
+        'objectId',
         'className',
         'inGameName',
         'category',
@@ -2939,6 +2944,7 @@
       ].join(','));
       rows.forEach(function(item) {
         csvRows.push([
+          csvEscape(item.objectId),
           csvEscape(item.className),
           csvEscape(item.inGameName),
           csvEscape(item.category),
@@ -2958,6 +2964,7 @@
       if (!rows.length) return;
       var data = rows.map(function(item) {
         return {
+          objectId: item.objectId,
           className: item.className,
           inGameName: item.inGameName,
           category: item.category,

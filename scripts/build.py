@@ -5,9 +5,10 @@ import json
 import re
 import secrets
 import shutil
+from datetime import datetime, timezone
 from collections import OrderedDict
 from pathlib import Path, PurePosixPath
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DB_DIR = BASE_DIR / "database"
@@ -20,6 +21,8 @@ STATIC_OUTPUT_JSON = STATIC_DATA_DIR / "dayz_objects.json"
 DB_ZIP = STATIC_DIR / "dayz_objects_latest.zip"
 TYPES_XML = DATA_DIR / "types_aggregated.xml"
 STATIC_TYPES_XML = STATIC_DATA_DIR / "types_aggregated.xml"
+OVERRIDES_JSON = DATA_DIR / "object_overrides.json"
+TOMBSTONES_JSON = DATA_DIR / "id_tombstones.json"
 ID_RE = re.compile(r"^dzobj_[a-z0-9]{10}$")
 ID_PREFIX = "dzobj_"
 ID_CHARS = "abcdefghijklmnopqrstuvwxyz0123456789"
@@ -40,6 +43,127 @@ def load_objects(path: Path) -> List[dict]:
     else:
         items = []
     return [obj for obj in items if isinstance(obj, dict)]
+
+
+def load_json_file(path: Path) -> Optional[object]:
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+
+
+def get_row_id(row: dict) -> str:
+    for key in ("objectId", "id"):
+        value = row.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+    return ""
+
+
+def summarize_row(row: dict) -> dict:
+    return {
+        "objectName": row.get("objectName", ""),
+        "inGameName": row.get("inGameName", ""),
+        "category": row.get("category", ""),
+        "path": row.get("path", ""),
+        "image": row.get("image", ""),
+    }
+
+
+def previous_export_index() -> Dict[str, dict]:
+    raw = load_json_file(OUTPUT_JSON)
+    if not isinstance(raw, list):
+        return {}
+    index: Dict[str, dict] = {}
+    for row in raw:
+        if not isinstance(row, dict):
+            continue
+        row_id = get_row_id(row)
+        if not row_id:
+            continue
+        index[row_id] = summarize_row(row)
+    return index
+
+
+def ensure_sidecar_overrides_file() -> None:
+    if OVERRIDES_JSON.exists():
+        return
+    OVERRIDES_JSON.write_text(
+        json.dumps({"byId": {}}, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+
+
+def load_overrides_by_id() -> Dict[str, dict]:
+    ensure_sidecar_overrides_file()
+    raw = load_json_file(OVERRIDES_JSON)
+    if isinstance(raw, dict):
+        if "byId" in raw and isinstance(raw.get("byId"), dict):
+            return {k: v for k, v in raw["byId"].items() if isinstance(v, dict)}
+        return {k: v for k, v in raw.items() if isinstance(v, dict)}
+    return {}
+
+
+def apply_sidecar_overrides(objects: List[dict]) -> Dict[str, int]:
+    overrides = load_overrides_by_id()
+    if not overrides:
+        return {"applied": 0, "unknown_ids": 0}
+
+    by_id = {str(obj.get("id", "")).strip(): obj for obj in objects if isinstance(obj.get("id"), str)}
+    applied = 0
+    unknown = 0
+    for row_id, patch in overrides.items():
+        target = by_id.get(row_id)
+        if target is None:
+            unknown += 1
+            continue
+        for key, value in patch.items():
+            if key in {"id", "objectId"}:
+                continue
+            target[key] = value
+        applied += 1
+    return {"applied": applied, "unknown_ids": unknown}
+
+
+def update_id_tombstones(previous_index: Dict[str, dict], current_objects: List[dict]) -> Dict[str, int]:
+    current_ids = {
+        str(obj.get("id", "")).strip()
+        for obj in current_objects
+        if isinstance(obj.get("id"), str) and obj.get("id").strip()
+    }
+    removed_ids = sorted(row_id for row_id in previous_index.keys() if row_id not in current_ids)
+
+    raw = load_json_file(TOMBSTONES_JSON)
+    if not isinstance(raw, list):
+        raw = []
+    tombstones = [row for row in raw if isinstance(row, dict)]
+    existing_ids = {
+        str(row.get("id", "")).strip()
+        for row in tombstones
+        if isinstance(row.get("id"), str) and row.get("id").strip()
+    }
+
+    added = 0
+    now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    for row_id in removed_ids:
+        if row_id in existing_ids:
+            continue
+        details = previous_index.get(row_id, {})
+        tombstones.append(
+            {
+                "id": row_id,
+                "removedAt": now,
+                "lastKnown": details,
+            }
+        )
+        existing_ids.add(row_id)
+        added += 1
+
+    tombstones.sort(key=lambda item: str(item.get("id", "")))
+    TOMBSTONES_JSON.write_text(json.dumps(tombstones, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return {"removed_in_build": len(removed_ids), "new_tombstones": added, "total_tombstones": len(tombstones)}
 
 
 def source_json_files() -> List[Path]:
@@ -284,6 +408,7 @@ def main() -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     STATIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
+    previous_index = previous_export_index()
     id_stats = ensure_source_ids()
 
     all_objects: List[dict] = []
@@ -310,7 +435,9 @@ def main() -> None:
         all_objects.extend(normalize_object(obj) for obj in objs)
 
     all_objects, dedupe_stats = collapse_case_duplicates(all_objects)
+    override_stats = apply_sidecar_overrides(all_objects)
     unique_ids = ensure_explicit_ids(all_objects)
+    tombstone_stats = update_id_tombstones(previous_index, all_objects)
 
     if OUTPUT_JSON.exists():
         shutil.copyfile(OUTPUT_JSON, BACKUP_JSON)
@@ -334,6 +461,17 @@ def main() -> None:
         "Case-duplicate merge: "
         f"{dedupe_stats['groups_collapsed']} groups, "
         f"{dedupe_stats['rows_removed']} rows removed."
+    )
+    print(
+        "Overrides: "
+        f"{override_stats['applied']} applied, "
+        f"{override_stats['unknown_ids']} unknown IDs."
+    )
+    print(
+        "Tombstones: "
+        f"{tombstone_stats['new_tombstones']} newly added "
+        f"({tombstone_stats['removed_in_build']} removed this build, "
+        f"{tombstone_stats['total_tombstones']} total)."
     )
     print(f"Validated explicit object IDs: {unique_ids}.")
     if OUTPUT_JSON.exists():
