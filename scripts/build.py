@@ -24,6 +24,7 @@ STATIC_TYPES_XML = STATIC_DATA_DIR / "types_aggregated.xml"
 OVERRIDES_JSON = DATA_DIR / "object_overrides.json"
 TOMBSTONES_JSON = DATA_DIR / "id_tombstones.json"
 API_ROOT = STATIC_DIR / "api" / "v1"
+API_IMAGE_BASE_URL = "https://samsobjectfinder.com"
 ID_RE = re.compile(r"^dzobj_[a-z0-9]{10}$")
 ID_PREFIX = "dzobj_"
 ID_CHARS = "abcdefghijklmnopqrstuvwxyz0123456789"
@@ -401,6 +402,15 @@ def write_json(path: Path, payload: object) -> None:
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
+def build_image_url(image_path: object) -> str:
+    if not isinstance(image_path, str):
+        return ""
+    cleaned = image_path.strip()
+    if not cleaned:
+        return ""
+    return f"{API_IMAGE_BASE_URL.rstrip('/')}/{cleaned.lstrip('/')}"
+
+
 def generate_static_api(objects: List[dict]) -> Dict[str, int]:
     if API_ROOT.exists():
         shutil.rmtree(API_ROOT)
@@ -409,7 +419,13 @@ def generate_static_api(objects: List[dict]) -> Dict[str, int]:
     sorted_objects = sorted(objects, key=lambda obj: str(obj.get("id", "")))
     generated_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
-    write_json(API_ROOT / "objects.full.json", sorted_objects)
+    api_objects: List[dict] = []
+    for obj in sorted_objects:
+        row = dict(obj)
+        row["imageUrl"] = build_image_url(row.get("image"))
+        api_objects.append(row)
+
+    write_json(API_ROOT / "objects.full.json", api_objects)
 
     write_json(
         API_ROOT / "meta.json",
@@ -417,7 +433,7 @@ def generate_static_api(objects: List[dict]) -> Dict[str, int]:
             "apiVersion": "v1",
             "schemaVersion": 1,
             "generatedAt": generated_at,
-            "objectCount": len(sorted_objects),
+            "objectCount": len(api_objects),
             "endpoints": {
                 "meta": "/api/v1/meta.json",
                 "fullDataset": "/api/v1/objects.full.json",
@@ -429,13 +445,13 @@ def generate_static_api(objects: List[dict]) -> Dict[str, int]:
     meta_raw = load_json_file(API_ROOT / "meta.json")
     if not isinstance(meta_raw, dict):
         raise SystemExit("API validation failed: meta.json is not valid JSON object.")
-    if int(meta_raw.get("objectCount", -1)) != len(sorted_objects):
+    if int(meta_raw.get("objectCount", -1)) != len(api_objects):
         raise SystemExit("API validation failed: meta.objectCount mismatch.")
     full_raw = load_json_file(API_ROOT / "objects.full.json")
-    if not isinstance(full_raw, list) or len(full_raw) != len(sorted_objects):
+    if not isinstance(full_raw, list) or len(full_raw) != len(api_objects):
         raise SystemExit("API validation failed: objects.full.json missing or mismatched count.")
     return {
-        "full_rows": len(sorted_objects),
+        "full_rows": len(api_objects),
     }
 
 
