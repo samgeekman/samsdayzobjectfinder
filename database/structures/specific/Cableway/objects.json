@@ -7,7 +7,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": true,
     "searchTags": "cableway, ski_lift, base_station, station, building, support, terminal",
-    "image": "images/structures/specific/cableway/land_cableway_base.jpg"
+    "image": "images/structures/specific/cableway/land_cableway_base.jpg",
+    "id": "dzobj_fqoeqq1k07"
   },
   {
     "objectName": "Land_Cableway_Tower",
@@ -17,7 +18,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": true,
     "searchTags": "cableway, ski_lift, tower, pylon, support, vertical, mast",
-    "image": "images/structures/specific/cableway/land_cableway_tower.jpg"
+    "image": "images/structures/specific/cableway/land_cableway_tower.jpg",
+    "id": "dzobj_4w53poerkr"
   },
   {
     "objectName": "Land_Cableway_Tower_Slope",
@@ -27,7 +29,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": true,
     "searchTags": "cableway, ski_lift, tower, pylon, slope, angled, support, mast",
-    "image": "images/structures/specific/cableway/land_cableway_tower_slope.jpg"
+    "image": "images/structures/specific/cableway/land_cableway_tower_slope.jpg",
+    "id": "dzobj_x02fwsro3f"
   },
   {
     "objectName": "Land_Cableway_Cart",
@@ -37,7 +40,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": true,
     "searchTags": "cableway, ski_lift, cart, gondola, cabin, chairlift, vehicle",
-    "image": "images/structures/specific/cableway/land_cableway_cart.jpg"
+    "image": "images/structures/specific/cableway/land_cableway_cart.jpg",
+    "id": "dzobj_1g97au3euk"
   },
   {
     "objectName": "Land_Cableway_Cart2",
@@ -47,7 +51,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": true,
     "searchTags": "cableway, ski_lift, cart, gondola, cabin, variant, chairlift",
-    "image": "images/structures/specific/cableway/land_cableway_cart2.jpg"
+    "image": "images/structures/specific/cableway/land_cableway_cart2.jpg",
+    "id": "dzobj_rtv6kxovhg"
   },
   {
     "objectName": "Land_Cableway_Cart3",
@@ -57,7 +62,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": true,
     "searchTags": "cableway, ski_lift, cart, gondola, cabin, variant, ski_resort",
-    "image": "images/structures/specific/cableway/land_cableway_cart3.jpg"
+    "image": "images/structures/specific/cableway/land_cableway_cart3.jpg",
+    "id": "dzobj_zey21ugxve"
   },
   {
     "objectName": "StaticObj_Cableway_Base_Rope1",
@@ -67,7 +73,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": true,
     "searchTags": "cableway, ski_lift, base_station, rope, cable, attachment, support",
-    "image": "images/structures/specific/cableway/staticobj_cableway_base_rope1.jpg"
+    "image": "images/structures/specific/cableway/staticobj_cableway_base_rope1.jpg",
+    "id": "dzobj_nmafdrwiv8"
   },
   {
     "objectName": "StaticObj_Cableway_Base_Rope2",
@@ -77,7 +84,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": true,
     "searchTags": "cableway, ski_lift, base_station, rope, cable, attachment, support, variant",
-    "image": "images/structures/specific/cableway/staticobj_cableway_base_rope2.jpg"
+    "image": "images/structures/specific/cableway/staticobj_cableway_base_rope2.jpg",
+    "id": "dzobj_0i8jmt2ugw"
   },
   {
     "objectName": "StaticObj_Cableway_Rope",
@@ -87,7 +95,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": true,
     "searchTags": "cableway, ski_lift, rope, cable, span, line, overhead",
-    "image": "images/structures/specific/cableway/staticobj_cableway_rope.jpg"
+    "image": "images/structures/specific/cableway/staticobj_cableway_rope.jpg",
+    "id": "dzobj_e3rvs0439q"
   },
   {
     "objectName": "cableway_base.p3d",
@@ -97,7 +106,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": false,
     "searchTags": "specific",
-    "image": "images/structures/specific/cableway/cableway_base.p3d.jpg"
+    "image": "images/structures/specific/cableway/cableway_base.p3d.jpg",
+    "id": "dzobj_cfccr5lfup"
   },
   {
     "objectName": "cableway_base_rope1.p3d",
@@ -107,7 +117,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": false,
     "searchTags": "specific",
-    "image": "images/structures/specific/cableway/cableway_base_rope1.p3d.jpg"
+    "image": "images/structures/specific/cableway/cableway_base_rope1.p3d.jpg",
+    "id": "dzobj_dvoahxvktt"
   },
   {
     "objectName": "cableway_base_rope2.p3d",
@@ -117,7 +128,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": false,
     "searchTags": "specific",
-    "image": "images/structures/specific/cableway/cableway_base_rope2.p3d.jpg"
+    "image": "images/structures/specific/cableway/cableway_base_rope2.p3d.jpg",
+    "id": "dzobj_iyjrq8zgy0"
   },
   {
     "objectName": "cableway_cart.p3d",
@@ -127,7 +139,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": false,
     "searchTags": "specific",
-    "image": "images/structures/specific/cableway/cableway_cart.p3d.jpg"
+    "image": "images/structures/specific/cableway/cableway_cart.p3d.jpg",
+    "id": "dzobj_q8c8b3ytc0"
   },
   {
     "objectName": "cableway_cart2.p3d",
@@ -137,7 +150,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": false,
     "searchTags": "specific",
-    "image": "images/structures/specific/cableway/cableway_cart2.p3d.jpg"
+    "image": "images/structures/specific/cableway/cableway_cart2.p3d.jpg",
+    "id": "dzobj_vuyore8nhe"
   },
   {
     "objectName": "cableway_cart3.p3d",
@@ -147,7 +161,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": false,
     "searchTags": "specific",
-    "image": "images/structures/specific/cableway/cableway_cart3.p3d.jpg"
+    "image": "images/structures/specific/cableway/cableway_cart3.p3d.jpg",
+    "id": "dzobj_t1ingf4rin"
   },
   {
     "objectName": "cableway_rope.p3d",
@@ -157,7 +172,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": false,
     "searchTags": "specific",
-    "image": "images/structures/specific/cableway/cableway_rope.p3d.jpg"
+    "image": "images/structures/specific/cableway/cableway_rope.p3d.jpg",
+    "id": "dzobj_rf1zla73sp"
   },
   {
     "objectName": "cableway_tower.p3d",
@@ -167,7 +183,8 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": false,
     "searchTags": "specific, watch",
-    "image": "images/structures/specific/cableway/cableway_tower.p3d.jpg"
+    "image": "images/structures/specific/cableway/cableway_tower.p3d.jpg",
+    "id": "dzobj_tzxj25k88v"
   },
   {
     "objectName": "cableway_tower_slope.p3d",
@@ -177,6 +194,7 @@
     "path": "dz/structures/specific/cableway",
     "usableOnConsole": false,
     "searchTags": "specific, watch",
-    "image": "images/structures/specific/cableway/cableway_tower_slope.p3d.jpg"
+    "image": "images/structures/specific/cableway/cableway_tower_slope.p3d.jpg",
+    "id": "dzobj_4x9vgvywkt"
   }
 ]

@@ -7,7 +7,8 @@
     "path": "dz/structures/industrial/coalplant",
     "usableOnConsole": true,
     "searchTags": "large, factory, ramp",
-    "image": "images/structures/industrial/coalplant/staticobj_coalplant_conveyor.jpg"
+    "image": "images/structures/industrial/coalplant/staticobj_coalplant_conveyor.jpg",
+    "id": "dzobj_la89t041ov"
   },
   {
     "objectName": "StaticObj_CoalPlant_LoadingHouse",
@@ -17,7 +18,8 @@
     "path": "dz/structures/industrial/coalplant",
     "usableOnConsole": true,
     "searchTags": "large, factory, car crusher",
-    "image": "images/structures/industrial/coalplant/staticobj_coalplant_loadinghouse.jpg"
+    "image": "images/structures/industrial/coalplant/staticobj_coalplant_loadinghouse.jpg",
+    "id": "dzobj_xnsux2zbaq"
   },
   {
     "objectName": "coalplant_conveyor.p3d",
@@ -27,7 +29,8 @@
     "path": "dz/structures/industrial/coalplant",
     "usableOnConsole": false,
     "searchTags": "large, factory, ramp",
-    "image": "images/structures/industrial/coalplant/staticobj_coalplant_conveyor.jpg"
+    "image": "images/structures/industrial/coalplant/staticobj_coalplant_conveyor.jpg",
+    "id": "dzobj_61mwam1h6y"
   },
   {
     "objectName": "coalplant_loadinghouse.p3d",
@@ -37,7 +40,8 @@
     "path": "dz/structures/industrial/coalplant",
     "usableOnConsole": false,
     "searchTags": "large, factory",
-    "image": "images/structures/industrial/coalplant/staticobj_coalplant_loadinghouse.jpg"
+    "image": "images/structures/industrial/coalplant/staticobj_coalplant_loadinghouse.jpg",
+    "id": "dzobj_bfvytz2i1z"
   },
   {
     "objectName": "coalplant_main.p3d",
@@ -46,7 +50,8 @@
     "path": "dz/structures/industrial/coalplant",
     "usableOnConsole": false,
     "searchTags": "large, factory, mural",
-    "image": "images/structures/industrial/coalplant/land_coalplant_main.jpg"
+    "image": "images/structures/industrial/coalplant/land_coalplant_main.jpg",
+    "id": "dzobj_4kg0wehaoe"
   },
   {
     "objectName": "Land_CoalPlant_Main",
@@ -55,6 +60,7 @@
     "path": "dz/structures/industrial/coalplant",
     "usableOnConsole": true,
     "searchTags": "large, factory, mural",
-    "image": "images/structures/industrial/coalplant/land_coalplant_main.jpg"
+    "image": "images/structures/industrial/coalplant/land_coalplant_main.jpg",
+    "id": "dzobj_xw1c2cvojg"
   }
 ]

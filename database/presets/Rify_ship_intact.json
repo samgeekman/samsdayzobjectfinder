@@ -1,112 +1,115 @@
-{
-  "objectName": "Rify ship intact",
-  "inGameName": "-",
-  "category": "Editor Preset",
-  "modelType": "Preset",
-  "path": "-",
-  "usableOnConsole": true,
-  "searchTags": "ship, boat, rify, oil tanker, preset",
-  "image": "images/presets/rify_boat_preset.jpg",
-  "editorJson": [
-    {
-      "Type": "Land_Ship_Big_FrontB",
-      "DisplayName": "Land_Ship_Big_FrontB",
-      "Position": [
-        8805.65625,
-        28.57248306274414,
-        1778.184326171875
-      ],
-      "Orientation": [
-        -3.390757001398015e-06,
-        -0.4515979290008545,
-        2.754156014361797e-08
-      ],
-      "Scale": 0.9996976256370544,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\ships\\ship_big_frontb.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Ship_Big_FrontA",
-      "DisplayName": "Land_Ship_Big_FrontA",
-      "Position": [
-        8825.541015625,
-        30.056686401367188,
-        1780.5126953125
-      ],
-      "Orientation": [
-        -3.4229992706968915e-06,
-        -0.469308465719223,
-        2.779630747795636e-08
-      ],
-      "Scale": 0.9997892379760742,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\ships\\ship_big_fronta.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Ship_Big_BackA",
-      "DisplayName": "Land_Ship_Big_BackA",
-      "Position": [
-        8770.158203125,
-        30.035930633544922,
-        1776.982177734375
-      ],
-      "Orientation": [
-        -3.4157267236878397e-06,
-        -0.4653136432170868,
-        2.7739581298646954e-08
-      ],
-      "Scale": 0.9996975064277649,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\ships\\ship_big_backa.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Wreck_Ship_Big_Castle",
-      "DisplayName": "StaticObj_Wreck_Ship_Big_Castle",
-      "Position": [
-        8761.7744140625,
-        38.68409729003906,
-        1777.3182373046875
-      ],
-      "Orientation": [
-        -3.420881512283813e-06,
-        -0.46815064549446106,
-        2.7773763733307533e-08
-      ],
-      "Scale": 0.9997602701187134,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\ships\\ship_big_castle.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Wreck_Ship_Big_BackB",
-      "DisplayName": "StaticObj_Wreck_Ship_Big_BackB",
-      "Position": [
-        8750.4814453125,
-        28.507205963134766,
-        1777.51318359375
-      ],
-      "Orientation": [
-        -3.415725814193138e-06,
-        -0.4653119444847107,
-        2.7739574193219596e-08
-      ],
-      "Scale": 0.9996947646141052,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\ships\\ship_big_backb.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    }
-  ]
-}
+[
+  {
+    "objectName": "Rify ship intact",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "ship, boat, rify, oil tanker, preset",
+    "image": "images/presets/rify_boat_preset.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Ship_Big_FrontB",
+        "DisplayName": "Land_Ship_Big_FrontB",
+        "Position": [
+          8805.65625,
+          28.57248306274414,
+          1778.184326171875
+        ],
+        "Orientation": [
+          -3.390757001398015e-06,
+          -0.4515979290008545,
+          2.754156014361797e-08
+        ],
+        "Scale": 0.9996976256370544,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_frontb.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Ship_Big_FrontA",
+        "DisplayName": "Land_Ship_Big_FrontA",
+        "Position": [
+          8825.541015625,
+          30.056686401367188,
+          1780.5126953125
+        ],
+        "Orientation": [
+          -3.4229992706968915e-06,
+          -0.469308465719223,
+          2.779630747795636e-08
+        ],
+        "Scale": 0.9997892379760742,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_fronta.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Ship_Big_BackA",
+        "DisplayName": "Land_Ship_Big_BackA",
+        "Position": [
+          8770.158203125,
+          30.035930633544922,
+          1776.982177734375
+        ],
+        "Orientation": [
+          -3.4157267236878397e-06,
+          -0.4653136432170868,
+          2.7739581298646954e-08
+        ],
+        "Scale": 0.9996975064277649,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_backa.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Wreck_Ship_Big_Castle",
+        "DisplayName": "StaticObj_Wreck_Ship_Big_Castle",
+        "Position": [
+          8761.7744140625,
+          38.68409729003906,
+          1777.3182373046875
+        ],
+        "Orientation": [
+          -3.420881512283813e-06,
+          -0.46815064549446106,
+          2.7773763733307533e-08
+        ],
+        "Scale": 0.9997602701187134,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_castle.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Wreck_Ship_Big_BackB",
+        "DisplayName": "StaticObj_Wreck_Ship_Big_BackB",
+        "Position": [
+          8750.4814453125,
+          28.507205963134766,
+          1777.51318359375
+        ],
+        "Orientation": [
+          -3.415725814193138e-06,
+          -0.4653119444847107,
+          2.7739574193219596e-08
+        ],
+        "Scale": 0.9996947646141052,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\ships\\ship_big_backb.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ],
+    "id": "dzobj_g8dhbyd1au"
+  }
+]

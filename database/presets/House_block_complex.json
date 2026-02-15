@@ -1,312 +1,315 @@
-{
-  "objectName": "House block complex",
-  "inGameName": "-",
-  "category": "Editor Preset",
-  "modelType": "Preset",
-  "path": "-",
-  "usableOnConsole": true,
-  "searchTags": "bus, car, crash, traffic, accident, emergency, roadblock",
-  "image": "images/presets/house_block_complex.jpg",
-  "editorJson": [
-    {
-      "Type": "Land_HouseBlock_2F4",
-      "DisplayName": "Land_HouseBlock_2F4",
-      "Position": [
-        6908.419921875,
-        23.799236297607422,
-        3043.978515625
-      ],
-      "Orientation": [
-        129.92254638671875,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999998807907104,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_HouseBlock_2F_Corner",
-      "DisplayName": "Land_HouseBlock_2F_Corner",
-      "Position": [
-        6917.35693359375,
-        23.690902709960938,
-        3056.8798828125
-      ],
-      "Orientation": [
-        -140.68499755859375,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999998807907104,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f_corner.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_HouseBlock_2F4",
-      "DisplayName": "Land_HouseBlock_2F4",
-      "Position": [
-        6928.546875,
-        23.69748306274414,
-        3045.976318359375
-      ],
-      "Orientation": [
-        -140.01600646972656,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_HouseBlock_1F1",
-      "DisplayName": "Land_HouseBlock_1F1",
-      "Position": [
-        6937.841796875,
-        21.018306732177734,
-        3038.24658203125
-      ],
-      "Orientation": [
-        -140.01600646972656,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f1.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_HouseBlock_1F_Corner",
-      "DisplayName": "Land_HouseBlock_1F_Corner",
-      "Position": [
-        6947.1328125,
-        22.37173843383789,
-        3026.8603515625
-      ],
-      "Orientation": [
-        -50.1459846496582,
-        0.0,
-        0.0
-      ],
-      "Scale": 0.9999998807907104,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f_corner.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_HouseBlock_2F5",
-      "DisplayName": "Land_HouseBlock_2F5",
-      "Position": [
-        6943.271484375,
-        23.35955047607422,
-        3013.873046875
-      ],
-      "Orientation": [
-        -49.407325744628906,
-        0.0,
-        0.0
-      ],
-      "Scale": 0.9999998807907104,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f5.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_HouseBlock_2F4",
-      "DisplayName": "Land_HouseBlock_2F4",
-      "Position": [
-        6934.22314453125,
-        23.581554412841797,
-        3007.4541015625
-      ],
-      "Orientation": [
-        -50.06875991821289,
-        0.0,
-        0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_HouseBlock_2F2",
-      "DisplayName": "Land_HouseBlock_2F2",
-      "Position": [
-        6924.5908203125,
-        23.230388641357422,
-        2997.27783203125
-      ],
-      "Orientation": [
-        -50.04618835449219,
-        0.0,
-        0.0
-      ],
-      "Scale": 0.9999998807907104,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f2.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_HouseBlock_2F1",
-      "DisplayName": "Land_HouseBlock_2F1",
-      "Position": [
-        6916.0849609375,
-        22.847410202026367,
-        2985.75634765625
-      ],
-      "Orientation": [
-        -49.98497009277344,
-        0.0,
-        0.0
-      ],
-      "Scale": 0.9999998807907104,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f1.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_HouseBlock_2F_Corner",
-      "DisplayName": "Land_HouseBlock_2F_Corner",
-      "Position": [
-        6907.25537109375,
-        23.62146759033203,
-        2973.155517578125
-      ],
-      "Orientation": [
-        39.92953109741211,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999998807907104,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f_corner.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_HouseBlock_2F2",
-      "DisplayName": "Land_HouseBlock_2F2",
-      "Position": [
-        6895.4658203125,
-        23.386348724365234,
-        2985.625244140625
-      ],
-      "Orientation": [
-        39.787776947021484,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f2.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_HouseBlock_2F3",
-      "DisplayName": "Land_HouseBlock_2F3",
-      "Position": [
-        6880.31982421875,
-        23.6668643951416,
-        2997.016845703125
-      ],
-      "Orientation": [
-        39.624656677246094,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999998807907104,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f3.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_HouseBlock_1F2",
-      "DisplayName": "Land_HouseBlock_1F2",
-      "Position": [
-        6886.36962890625,
-        21.20720100402832,
-        3017.754150390625
-      ],
-      "Orientation": [
-        128.5271759033203,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999998807907104,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f2.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_HouseBlock_1F1",
-      "DisplayName": "Land_HouseBlock_1F1",
-      "Position": [
-        6895.38818359375,
-        21.042781829833984,
-        3028.03857421875
-      ],
-      "Orientation": [
-        128.9207763671875,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f1.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_HouseBlock_1F3",
-      "DisplayName": "Land_HouseBlock_1F3",
-      "Position": [
-        6901.89990234375,
-        21.680133819580078,
-        3035.838134765625
-      ],
-      "Orientation": [
-        129.58834838867188,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999998807907104,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f3.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    }
-  ]
-}
+[
+  {
+    "objectName": "House block complex",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "bus, car, crash, traffic, accident, emergency, roadblock",
+    "image": "images/presets/house_block_complex.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_HouseBlock_2F4",
+        "DisplayName": "Land_HouseBlock_2F4",
+        "Position": [
+          6908.419921875,
+          23.799236297607422,
+          3043.978515625
+        ],
+        "Orientation": [
+          129.92254638671875,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F_Corner",
+        "DisplayName": "Land_HouseBlock_2F_Corner",
+        "Position": [
+          6917.35693359375,
+          23.690902709960938,
+          3056.8798828125
+        ],
+        "Orientation": [
+          -140.68499755859375,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f_corner.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F4",
+        "DisplayName": "Land_HouseBlock_2F4",
+        "Position": [
+          6928.546875,
+          23.69748306274414,
+          3045.976318359375
+        ],
+        "Orientation": [
+          -140.01600646972656,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_1F1",
+        "DisplayName": "Land_HouseBlock_1F1",
+        "Position": [
+          6937.841796875,
+          21.018306732177734,
+          3038.24658203125
+        ],
+        "Orientation": [
+          -140.01600646972656,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f1.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_1F_Corner",
+        "DisplayName": "Land_HouseBlock_1F_Corner",
+        "Position": [
+          6947.1328125,
+          22.37173843383789,
+          3026.8603515625
+        ],
+        "Orientation": [
+          -50.1459846496582,
+          0.0,
+          0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f_corner.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F5",
+        "DisplayName": "Land_HouseBlock_2F5",
+        "Position": [
+          6943.271484375,
+          23.35955047607422,
+          3013.873046875
+        ],
+        "Orientation": [
+          -49.407325744628906,
+          0.0,
+          0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f5.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F4",
+        "DisplayName": "Land_HouseBlock_2F4",
+        "Position": [
+          6934.22314453125,
+          23.581554412841797,
+          3007.4541015625
+        ],
+        "Orientation": [
+          -50.06875991821289,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f4.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F2",
+        "DisplayName": "Land_HouseBlock_2F2",
+        "Position": [
+          6924.5908203125,
+          23.230388641357422,
+          2997.27783203125
+        ],
+        "Orientation": [
+          -50.04618835449219,
+          0.0,
+          0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f2.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F1",
+        "DisplayName": "Land_HouseBlock_2F1",
+        "Position": [
+          6916.0849609375,
+          22.847410202026367,
+          2985.75634765625
+        ],
+        "Orientation": [
+          -49.98497009277344,
+          0.0,
+          0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f1.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F_Corner",
+        "DisplayName": "Land_HouseBlock_2F_Corner",
+        "Position": [
+          6907.25537109375,
+          23.62146759033203,
+          2973.155517578125
+        ],
+        "Orientation": [
+          39.92953109741211,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f_corner.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F2",
+        "DisplayName": "Land_HouseBlock_2F2",
+        "Position": [
+          6895.4658203125,
+          23.386348724365234,
+          2985.625244140625
+        ],
+        "Orientation": [
+          39.787776947021484,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f2.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_2F3",
+        "DisplayName": "Land_HouseBlock_2F3",
+        "Position": [
+          6880.31982421875,
+          23.6668643951416,
+          2997.016845703125
+        ],
+        "Orientation": [
+          39.624656677246094,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_2f3.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_1F2",
+        "DisplayName": "Land_HouseBlock_1F2",
+        "Position": [
+          6886.36962890625,
+          21.20720100402832,
+          3017.754150390625
+        ],
+        "Orientation": [
+          128.5271759033203,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f2.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_1F1",
+        "DisplayName": "Land_HouseBlock_1F1",
+        "Position": [
+          6895.38818359375,
+          21.042781829833984,
+          3028.03857421875
+        ],
+        "Orientation": [
+          128.9207763671875,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f1.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_HouseBlock_1F3",
+        "DisplayName": "Land_HouseBlock_1F3",
+        "Position": [
+          6901.89990234375,
+          21.680133819580078,
+          3035.838134765625
+        ],
+        "Orientation": [
+          129.58834838867188,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\houseblocks\\houseblock_1f3.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ],
+    "id": "dzobj_2ih9onfp6k"
+  }
+]

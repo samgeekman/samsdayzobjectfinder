@@ -7,7 +7,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": true,
     "searchTags": "bus, station, wall, waiting, green, tiled, spawns, loot, public, transport",
-    "image": "images/structures/residential/bus/land_busstation_wall_bench.jpg"
+    "image": "images/structures/residential/bus/land_busstation_wall_bench.jpg",
+    "id": "dzobj_n8fpl58bvs"
   },
   {
     "objectName": "Land_BusStop_City",
@@ -17,7 +18,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": true,
     "searchTags": "bus, stop, city, transport, public, shelter, waiting, public, transport, metal ",
-    "image": "images/structures/residential/bus/land_busstop_city.jpg"
+    "image": "images/structures/residential/bus/land_busstop_city.jpg",
+    "id": "dzobj_t6cccz0410"
   },
   {
     "objectName": "StaticObj_BusStation_Corner",
@@ -27,7 +29,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": true,
     "searchTags": "bus, station, curved, public, shelter, terminal, ticket, office, green, tiled, public, transport",
-    "image": "images/structures/residential/bus/staticobj_busstation_corner.jpg"
+    "image": "images/structures/residential/bus/staticobj_busstation_corner.jpg",
+    "id": "dzobj_00qz3bau5z"
   },
   {
     "objectName": "StaticObj_BusStation_roof_big",
@@ -37,7 +40,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": true,
     "searchTags": "bus, station, transport, public, shelter, terminal, ticket, office, green, tiled, public, transport, large",
-    "image": "images/structures/residential/bus/staticobj_busstation_roof_big.jpg"
+    "image": "images/structures/residential/bus/staticobj_busstation_roof_big.jpg",
+    "id": "dzobj_p1hsynq8w0"
   },
   {
     "objectName": "StaticObj_BusStation_roof_long",
@@ -47,7 +51,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": true,
     "searchTags": "bus, station, roof, long, cover, shelter, public, public, transport",
-    "image": "images/structures/residential/bus/staticobj_busstation_roof_long.jpg"
+    "image": "images/structures/residential/bus/staticobj_busstation_roof_long.jpg",
+    "id": "dzobj_g3fcxuq4ko"
   },
   {
     "objectName": "StaticObj_BusStation_wall",
@@ -57,7 +62,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": true,
     "searchTags": "bus, station, wall, structure, shelter, public, public, transport",
-    "image": "images/structures/residential/bus/staticobj_busstation_wall.jpg"
+    "image": "images/structures/residential/bus/staticobj_busstation_wall.jpg",
+    "id": "dzobj_6jqv9xwufb"
   },
   {
     "objectName": "StaticObj_BusStop_Village",
@@ -67,7 +73,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": true,
     "searchTags": "bus, stop, village, rural, shelter, waiting, transport, small, public, transport",
-    "image": "images/structures/residential/bus/staticobj_busstop_village.jpg"
+    "image": "images/structures/residential/bus/staticobj_busstop_village.jpg",
+    "id": "dzobj_1ndrbqvswj"
   },
   {
     "objectName": "busstation_corner.p3d",
@@ -77,7 +84,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": false,
     "searchTags": "bus, station, curved, public, shelter, terminal, ticket, office, green, tiled, public, transport",
-    "image": "images/structures/residential/bus/staticobj_busstation_corner.jpg"
+    "image": "images/structures/residential/bus/staticobj_busstation_corner.jpg",
+    "id": "dzobj_kx8zzrmrg0"
   },
   {
     "objectName": "busstation_roof_big.p3d",
@@ -87,7 +95,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": false,
     "searchTags": "bus, station, transport, public, shelter, terminal, public, transport",
-    "image": "images/structures/residential/bus/staticobj_busstation_roof_big.jpg"
+    "image": "images/structures/residential/bus/staticobj_busstation_roof_big.jpg",
+    "id": "dzobj_mx45uvm6mn"
   },
   {
     "objectName": "busstation_roof_long.p3d",
@@ -97,7 +106,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": false,
     "searchTags": "bus, station, roof, long, cover, shelter, public, public, transport",
-    "image": "images/structures/residential/bus/staticobj_busstation_roof_long.jpg"
+    "image": "images/structures/residential/bus/staticobj_busstation_roof_long.jpg",
+    "id": "dzobj_q4v5frxb2o"
   },
   {
     "objectName": "busstation_wall.p3d",
@@ -107,7 +117,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": false,
     "searchTags": "bus, station, wall, structure, shelter, public, public, transport",
-    "image": "images/structures/residential/bus/staticobj_busstation_wall.jpg"
+    "image": "images/structures/residential/bus/staticobj_busstation_wall.jpg",
+    "id": "dzobj_q4vvedqo1a"
   },
   {
     "objectName": "busstation_wall_bench.p3d",
@@ -117,7 +128,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": false,
     "searchTags": "bus, station, wall, waiting, green, tiled, spawns, loot, public, transport",
-    "image": "images/structures/residential/bus/land_busstation_wall_bench.jpg"
+    "image": "images/structures/residential/bus/land_busstation_wall_bench.jpg",
+    "id": "dzobj_b4fdiuuu9n"
   },
   {
     "objectName": "busstop_city.p3d",
@@ -127,7 +139,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": false,
     "searchTags": "bus, stop, city, transport, public, shelter, waiting, public, transport, metal ",
-    "image": "images/structures/residential/bus/land_busstop_city.jpg"
+    "image": "images/structures/residential/bus/land_busstop_city.jpg",
+    "id": "dzobj_mdju8jcs36"
   },
   {
     "objectName": "busstop_city_sign.p3d",
@@ -137,7 +150,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": false,
     "searchTags": "bus, marker, notice, residential, transport, vehicle",
-    "image": "images/structures/residential/bus/busstop_city_sign.p3d.jpg"
+    "image": "images/structures/residential/bus/busstop_city_sign.p3d.jpg",
+    "id": "dzobj_ahd8ukkrjt"
   },
   {
     "objectName": "busstop_village.p3d",
@@ -147,7 +161,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": false,
     "searchTags": "bus, stop, village, rural, shelter, waiting, transport, small, public, transport",
-    "image": "images/structures/residential/bus/staticobj_busstop_village.jpg"
+    "image": "images/structures/residential/bus/staticobj_busstop_village.jpg",
+    "id": "dzobj_6tp6ad6sfl"
   },
   {
     "objectName": "busstop_village_sign.p3d",
@@ -157,7 +172,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": false,
     "searchTags": "bus, marker, notice, residential, transport, vehicle",
-    "image": "images/structures/residential/bus/busstop_village_sign.p3d.jpg"
+    "image": "images/structures/residential/bus/busstop_village_sign.p3d.jpg",
+    "id": "dzobj_psh8dryb43"
   },
   {
     "objectName": "busstation_building.p3d",
@@ -166,7 +182,8 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": false,
     "searchTags": "bus, station, transport, public, shelter, terminal, ticket, office, green, tiled, public, transport",
-    "image": "images/structures/residential/bus/land_busstation_building.jpg"
+    "image": "images/structures/residential/bus/land_busstation_building.jpg",
+    "id": "dzobj_rd7kpc5uvi"
   },
   {
     "objectName": "Land_BusStation_building",
@@ -175,6 +192,7 @@
     "path": "dz/structures/residential/bus",
     "usableOnConsole": true,
     "searchTags": "bus, station, transport, public, shelter, terminal, ticket, office, green, tiled, public, transport",
-    "image": "images/structures/residential/bus/land_busstation_building.jpg"
+    "image": "images/structures/residential/bus/land_busstation_building.jpg",
+    "id": "dzobj_egmi5ber36"
   }
 ]

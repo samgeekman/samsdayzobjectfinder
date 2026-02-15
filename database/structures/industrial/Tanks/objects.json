@@ -7,7 +7,8 @@
     "path": "dz/structures/industrial/tanks",
     "usableOnConsole": true,
     "searchTags": "tank, fuel, container, big, storage, industrial, liquid, gas, oil",
-    "image": "images/structures/industrial/tanks/land_tank_big.jpg"
+    "image": "images/structures/industrial/tanks/land_tank_big.jpg",
+    "id": "dzobj_twr4b0qnyw"
   },
   {
     "objectName": "Land_Tank_Medium_Stairs",
@@ -17,7 +18,8 @@
     "path": "dz/structures/industrial/tanks",
     "usableOnConsole": true,
     "searchTags": "tank, fuel, container, medium, storage, industrial, liquid, gas, oil, stairs, access",
-    "image": "images/structures/industrial/tanks/land_tank_medium_stairs.jpg"
+    "image": "images/structures/industrial/tanks/land_tank_medium_stairs.jpg",
+    "id": "dzobj_ua50b6muxo"
   },
   {
     "objectName": "StaticObj_Tank_Medium",
@@ -27,7 +29,8 @@
     "path": "dz/structures/industrial/tanks",
     "usableOnConsole": true,
     "searchTags": "tank, fuel, container, medium, storage, industrial, liquid, gas, oil",
-    "image": "images/structures/industrial/tanks/staticobj_tank_medium.jpg"
+    "image": "images/structures/industrial/tanks/staticobj_tank_medium.jpg",
+    "id": "dzobj_o6g7yobff5"
   },
   {
     "objectName": "StaticObj_Tank_Small_Gas",
@@ -37,7 +40,8 @@
     "path": "dz/structures/industrial/tanks",
     "usableOnConsole": true,
     "searchTags": "tank, fuel, gas, propane, container, storage, industrial, cylinder",
-    "image": "images/structures/industrial/tanks/staticobj_tank_small_gas.jpg"
+    "image": "images/structures/industrial/tanks/staticobj_tank_small_gas.jpg",
+    "id": "dzobj_yob7y3crai"
   },
   {
     "objectName": "StaticObj_Tank_Small_Rusty",
@@ -47,7 +51,8 @@
     "path": "dz/structures/industrial/tanks",
     "usableOnConsole": true,
     "searchTags": "tank, fuel, container, rusty, storage, industrial, liquid, gas, oil",
-    "image": "images/structures/industrial/tanks/staticobj_tank_small_rusty.jpg"
+    "image": "images/structures/industrial/tanks/staticobj_tank_small_rusty.jpg",
+    "id": "dzobj_p3q2n4vhsu"
   },
   {
     "objectName": "StaticObj_Tank_Small_White",
@@ -57,7 +62,8 @@
     "path": "dz/structures/industrial/tanks",
     "usableOnConsole": true,
     "searchTags": "tank, fuel, container, white, storage, industrial, liquid, gas, oil",
-    "image": "images/structures/industrial/tanks/staticobj_tank_small_white.jpg"
+    "image": "images/structures/industrial/tanks/staticobj_tank_small_white.jpg",
+    "id": "dzobj_hsamnaislh"
   },
   {
     "objectName": "tank_big.p3d",
@@ -67,7 +73,8 @@
     "path": "dz/structures/industrial/tanks",
     "usableOnConsole": false,
     "searchTags": "tank, fuel, container, big, storage, industrial, liquid, gas, oil",
-    "image": "images/structures/industrial/tanks/land_tank_big.jpg"
+    "image": "images/structures/industrial/tanks/land_tank_big.jpg",
+    "id": "dzobj_9jvdt1oig2"
   },
   {
     "objectName": "tank_medium.p3d",
@@ -77,7 +84,8 @@
     "path": "dz/structures/industrial/tanks",
     "usableOnConsole": false,
     "searchTags": "tank, fuel, container, medium, storage, industrial, liquid, gas, oil",
-    "image": "images/structures/industrial/tanks/staticobj_tank_medium.jpg"
+    "image": "images/structures/industrial/tanks/staticobj_tank_medium.jpg",
+    "id": "dzobj_pr7i4vk9d0"
   },
   {
     "objectName": "tank_medium_stairs.p3d",
@@ -87,7 +95,8 @@
     "path": "dz/structures/industrial/tanks",
     "usableOnConsole": false,
     "searchTags": "tank, fuel, container, medium, storage, industrial, liquid, gas, oil, stairs, access",
-    "image": "images/structures/industrial/tanks/land_tank_medium_stairs.jpg"
+    "image": "images/structures/industrial/tanks/land_tank_medium_stairs.jpg",
+    "id": "dzobj_fio4fge4iu"
   },
   {
     "objectName": "tank_small_gas.p3d",
@@ -97,7 +106,8 @@
     "path": "dz/structures/industrial/tanks",
     "usableOnConsole": false,
     "searchTags": "tank, fuel, gas, propane, container, storage, industrial, cylinder",
-    "image": "images/structures/industrial/tanks/staticobj_tank_small_gas.jpg"
+    "image": "images/structures/industrial/tanks/staticobj_tank_small_gas.jpg",
+    "id": "dzobj_w3hrgkx8tc"
   },
   {
     "objectName": "tank_small_rusty.p3d",
@@ -107,7 +117,8 @@
     "path": "dz/structures/industrial/tanks",
     "usableOnConsole": false,
     "searchTags": "tank, fuel, container, rusty, storage, industrial, liquid, gas, oil",
-    "image": "images/structures/industrial/tanks/staticobj_tank_small_rusty.jpg"
+    "image": "images/structures/industrial/tanks/staticobj_tank_small_rusty.jpg",
+    "id": "dzobj_qca9uqmo2e"
   },
   {
     "objectName": "tank_small_white.p3d",
@@ -117,6 +128,7 @@
     "path": "dz/structures/industrial/tanks",
     "usableOnConsole": false,
     "searchTags": "tank, fuel, container, white, storage, industrial, liquid, gas, oil",
-    "image": "images/structures/industrial/tanks/staticobj_tank_small_white.jpg"
+    "image": "images/structures/industrial/tanks/staticobj_tank_small_white.jpg",
+    "id": "dzobj_9pcae0ewtu"
   }
 ]

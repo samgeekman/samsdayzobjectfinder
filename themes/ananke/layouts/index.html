@@ -1232,6 +1232,9 @@
     var getObjectName = function(row) {
       return row.objectName || row.name || row.Name || '';
     };
+    var getObjectId = function(row) {
+      return row.objectId || '';
+    };
     var getConsoleFlag = function(row) {
       return row.usableOnConsole ? '✅' : '❌';
     };
@@ -1335,7 +1338,8 @@
           render: function(data, type, row) {
             return type === 'display' ? escapeHtml(getSearchTags(row)) : getSearchTags(row);
           }
-        }
+        },
+        { data: 'objectId', defaultContent: '' }
       ],
       columnDefs: [
         { targets: 0, orderable: false, className: 'dtr-control min-desktop' },
@@ -1355,6 +1359,7 @@
             td.setAttribute('data-console', consoleFlag);
             td.setAttribute('data-tags', getSearchTags(rowData));
             td.setAttribute('data-image', rowData.image || '');
+            td.setAttribute('data-objectid', getObjectId(rowData));
             td.setAttribute('data-editorjson', editorJson);
           }
         },
@@ -1363,7 +1368,8 @@
         { targets: 5, className: 'min-desktop path-cell' },
         { targets: 6, className: 'min-wide' },
         { targets: 7, className: 'min-wide' },
-        { targets: 8, className: 'min-wide' }
+        { targets: 8, className: 'min-wide' },
+        { targets: 9, visible: false, searchable: true }
       ],
       dom: '<"top-bar"lfr>tip',
       language: {
@@ -1552,6 +1558,7 @@
 
     var buildRowDetailsHtml = function($cell) {
       var objName = $cell.data('object') || '';
+      var objectId = $cell.data('objectid') || '';
       var imgPath = $cell.data('image') || '';
       var p3dPath = $cell.data('p3d') || '';
       var inGame = $cell.data('ingame') || '';
@@ -1571,6 +1578,7 @@
           '</div>' +
           (imgHtml ? imgHtml : '') +
           '<div class="row-detail__meta">' +
+            '<div>Object ID: ' + escapeHtml(objectId || '—') + '</div>' +
             '<div>Path: ' + escapeHtml(p3dPath || '—') + '</div>' +
             '<div>In-game name: ' + escapeHtml(inGame || '—') + '</div>' +
             '<div>Category: ' + escapeHtml(category || '—') + '</div>' +
@@ -1678,6 +1686,7 @@
       objectFocusEl.classList.remove('focus-empty');
       updateLayoutForSidebar();
       var objName = objData.objName || '';
+      var objectId = objData.objectId || '';
       var imgPath = objData.imgPath;
       var p3dPath = objData.p3dPath;
       var modelType = objData.modelType;
@@ -1690,6 +1699,7 @@
       currentObjectName = objName;
       currentObjectData = {
         objName: objName,
+        objectId: objectId,
         imgPath: imgPath,
         p3dPath: p3dPath,
         modelType: modelType,
@@ -1703,6 +1713,7 @@
       objectFocusPathEl.textContent = p3dPath ? ('Path: ' + p3dPath) : '';
       if (objectFocusMetaEl) {
         objectFocusMetaEl.innerHTML =
+          '<div><span>Object ID:</span> ' + (objectId || '—') + '</div>' +
           '<div><span>In-game name:</span> ' + (inGame || '—') + '</div>' +
           '<div><span>Category:</span> ' + (category || '—') + '</div>' +
           '<div><span>Model type:</span> ' + (modelType || '—') + '</div>' +
@@ -1754,6 +1765,7 @@
       return {
         type: 'object',
         objName: $td.data('object') || '',
+        objectId: $td.data('objectid') || '',
         imgPath: $td.data('image'),
         p3dPath: $td.data('p3d'),
         modelType: $td.data('modeltype'),
@@ -1771,6 +1783,7 @@
       return {
         type: 'object',
         objName: objName,
+        objectId: getObjectId(rowData),
         imgPath: rowData.image || '',
         p3dPath: rowData.path || '',
         modelType: rowData.modelType || '',
@@ -2024,6 +2037,7 @@
           }
           setObjectFocusData({
             objName: item.objName,
+            objectId: item.objectId,
             imgPath: item.imgPath,
             p3dPath: item.p3dPath,
             modelType: item.modelType,
@@ -2267,6 +2281,7 @@
       }
       setObjectFocusData({
         objName: $td.data('object') || '',
+        objectId: $td.data('objectid') || '',
         imgPath: $td.data('image'),
         p3dPath: $td.data('p3d'),
         modelType: $td.data('modeltype'),
@@ -2882,6 +2897,7 @@
         if (!cell) return;
         rows.push({
           className: cell.getAttribute('data-object') || '',
+          objectId: cell.getAttribute('data-objectid') || '',
           inGameName: cell.getAttribute('data-ingame') || '',
           category: cell.getAttribute('data-category') || '',
           path: cell.getAttribute('data-p3d') || '',

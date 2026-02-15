@@ -1,172 +1,175 @@
-{
-  "objectName": "Cement works",
-  "inGameName": "-",
-  "category": "Editor Preset",
-  "modelType": "Preset",
-  "path": "-",
-  "usableOnConsole": true,
-  "searchTags": "cement, industrial, silo, factory, building",
-  "image": "images/presets/cement_works.jpg",
-  "editorJson": [
-    {
-      "Type": "StaticObj_Misc_ConcretePanels",
-      "DisplayName": "StaticObj_Misc_ConcretePanels",
-      "Position": [
-        7252.64697265625,
-        7.302845001220703,
-        1997.629638671875
-      ],
-      "Orientation": [
-        74.49027252197266,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_CementWorks_SiloBig1Bridge",
-      "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
-      "Position": [
-        7139.240234375,
-        68.57177734375,
-        2470.53173828125
-      ],
-      "Orientation": [
-        164.74893188476562,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
-      "Flags": 1054,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_CementWorks_SiloBig1B",
-      "DisplayName": "Land_CementWorks_SiloBig1B",
-      "Position": [
-        7347.17333984375,
-        25.688209533691406,
-        2010.895263671875
-      ],
-      "Orientation": [
-        -15.251004219055176,
-        0.0,
-        0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1b.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_CementWorks_SiloBig1A",
-      "DisplayName": "Land_CementWorks_SiloBig1A",
-      "Position": [
-        7310.8642578125,
-        31.258209228515625,
-        2000.580322265625
-      ],
-      "Orientation": [
-        -15.251004219055176,
-        0.0,
-        0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1a.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_CementWorks_SiloBig1Bridge",
-      "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
-      "Position": [
-        7320.564453125,
-        41.857093811035156,
-        2004.07568359375
-      ],
-      "Orientation": [
-        -15.251004219055176,
-        0.0,
-        0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_CementWorks_SiloBig1B",
-      "DisplayName": "Land_CementWorks_SiloBig1B",
-      "Position": [
-        7265.9248046875,
-        25.72919464111328,
-        1990.154541015625
-      ],
-      "Orientation": [
-        164.4405975341797,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1b.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_CementWorks_SiloBig1Bridge",
-      "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
-      "Position": [
-        7292.6396484375,
-        41.857093811035156,
-        1996.814697265625
-      ],
-      "Orientation": [
-        166.74578857421875,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Misc_ConcretePanels",
-      "DisplayName": "StaticObj_Misc_ConcretePanels",
-      "Position": [
-        7360.55517578125,
-        7.252708435058594,
-        2003.079345703125
-      ],
-      "Orientation": [
-        74.49027252197266,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    }
-  ]
-}
+[
+  {
+    "objectName": "Cement works",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "cement, industrial, silo, factory, building",
+    "image": "images/presets/cement_works.jpg",
+    "editorJson": [
+      {
+        "Type": "StaticObj_Misc_ConcretePanels",
+        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Position": [
+          7252.64697265625,
+          7.302845001220703,
+          1997.629638671875
+        ],
+        "Orientation": [
+          74.49027252197266,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_CementWorks_SiloBig1Bridge",
+        "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
+        "Position": [
+          7139.240234375,
+          68.57177734375,
+          2470.53173828125
+        ],
+        "Orientation": [
+          164.74893188476562,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
+        "Flags": 1054,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_CementWorks_SiloBig1B",
+        "DisplayName": "Land_CementWorks_SiloBig1B",
+        "Position": [
+          7347.17333984375,
+          25.688209533691406,
+          2010.895263671875
+        ],
+        "Orientation": [
+          -15.251004219055176,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1b.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_CementWorks_SiloBig1A",
+        "DisplayName": "Land_CementWorks_SiloBig1A",
+        "Position": [
+          7310.8642578125,
+          31.258209228515625,
+          2000.580322265625
+        ],
+        "Orientation": [
+          -15.251004219055176,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1a.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_CementWorks_SiloBig1Bridge",
+        "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
+        "Position": [
+          7320.564453125,
+          41.857093811035156,
+          2004.07568359375
+        ],
+        "Orientation": [
+          -15.251004219055176,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_CementWorks_SiloBig1B",
+        "DisplayName": "Land_CementWorks_SiloBig1B",
+        "Position": [
+          7265.9248046875,
+          25.72919464111328,
+          1990.154541015625
+        ],
+        "Orientation": [
+          164.4405975341797,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1b.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_CementWorks_SiloBig1Bridge",
+        "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
+        "Position": [
+          7292.6396484375,
+          41.857093811035156,
+          1996.814697265625
+        ],
+        "Orientation": [
+          166.74578857421875,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\cementworks\\cementworks_silobig1bridge.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_ConcretePanels",
+        "DisplayName": "StaticObj_Misc_ConcretePanels",
+        "Position": [
+          7360.55517578125,
+          7.252708435058594,
+          2003.079345703125
+        ],
+        "Orientation": [
+          74.49027252197266,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\misc\\misc_concretepanels.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ],
+    "id": "dzobj_v1yi3k16pi"
+  }
+]

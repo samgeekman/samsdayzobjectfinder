@@ -1,252 +1,255 @@
-{
-  "objectName": "Gas station",
-  "inGameName": "-",
-  "category": "Editor Preset",
-  "modelType": "Preset",
-  "path": "-",
-  "usableOnConsole": true,
-  "searchTags": "petrol, gas station, fuel, cars, vehicles",
-  "image": "images/presets/gas_station.jpg",
-  "editorJson": [
-    {
-      "Type": "StaticObj_FueldStation_Shed",
-      "DisplayName": "StaticObj_FueldStation_Shed",
-      "Position": [
-        3647.75439453125,
-        314.3646240234375,
-        8991.099609375
-      ],
-      "Orientation": [
-        -49.458168029785156,
-        0.0,
-        0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_shed.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Tank_Small_Gas",
-      "DisplayName": "StaticObj_Tank_Small_Gas",
-      "Position": [
-        3662.29541015625,
-        312.0242004394531,
-        9000.5576171875
-      ],
-      "Orientation": [
-        39.99999237060547,
-        -0.0,
-        -0.0
-      ],
-      "Scale": 0.9999999403953552,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\industrial\\tanks\\tank_small_gas.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_FuelStation_Feed",
-      "DisplayName": "Land_FuelStation_Feed",
-      "Position": [
-        3642.203369140625,
-        312.37353515625,
-        8986.6904296875
-      ],
-      "Orientation": [
-        131.1173095703125,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_FuelStation_Feed",
-      "DisplayName": "Land_FuelStation_Feed",
-      "Position": [
-        3644.16357421875,
-        312.37353515625,
-        8985.001953125
-      ],
-      "Orientation": [
-        129.86082458496094,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_FuelStation_Feed",
-      "DisplayName": "Land_FuelStation_Feed",
-      "Position": [
-        3646.630859375,
-        312.37353515625,
-        8991.9873046875
-      ],
-      "Orientation": [
-        131.1173095703125,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0000001192092896,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_FuelStation_Feed",
-      "DisplayName": "Land_FuelStation_Feed",
-      "Position": [
-        3648.591064453125,
-        312.37353515625,
-        8990.298828125
-      ],
-      "Orientation": [
-        129.86082458496094,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_FuelStation_Feed",
-      "DisplayName": "Land_FuelStation_Feed",
-      "Position": [
-        3651.158935546875,
-        312.37353515625,
-        8997.1748046875
-      ],
-      "Orientation": [
-        131.1173095703125,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0000001192092896,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_FuelStation_Feed",
-      "DisplayName": "Land_FuelStation_Feed",
-      "Position": [
-        3653.119140625,
-        312.37353515625,
-        8995.486328125
-      ],
-      "Orientation": [
-        129.86082458496094,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_FuelStation_Build",
-      "DisplayName": "Land_FuelStation_Build",
-      "Position": [
-        3659.656005859375,
-        313.0489807128906,
-        9003.974609375
-      ],
-      "Orientation": [
-        39.99999237060547,
-        -0.0,
-        -0.0
-      ],
-      "Scale": 0.9999999403953552,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_build.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Lamp_City1",
-      "DisplayName": "StaticObj_Lamp_City1",
-      "Position": [
-        3655.15771484375,
-        315.6287536621094,
-        9004.1416015625
-      ],
-      "Orientation": [
-        0.0,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\misc\\lamp_city1.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Garbage_Bin",
-      "DisplayName": "StaticObj_Garbage_Bin",
-      "Position": [
-        3655.4375,
-        311.9817810058594,
-        9004.7509765625
-      ],
-      "Orientation": [
-        39.99999237060547,
-        -0.0,
-        -0.0
-      ],
-      "Scale": 0.9999999403953552,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\misc\\garbage_bin.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Misc_Bench2",
-      "DisplayName": "StaticObj_Misc_Bench2",
-      "Position": [
-        3659.505615234375,
-        311.7927551269531,
-        8999.943359375
-      ],
-      "Orientation": [
-        -139.9999542236328,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999999403953552,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\misc\\misc_bench2.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    }
-  ]
-}
+[
+  {
+    "objectName": "Gas station",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "petrol, gas station, fuel, cars, vehicles",
+    "image": "images/presets/gas_station.jpg",
+    "editorJson": [
+      {
+        "Type": "StaticObj_FueldStation_Shed",
+        "DisplayName": "StaticObj_FueldStation_Shed",
+        "Position": [
+          3647.75439453125,
+          314.3646240234375,
+          8991.099609375
+        ],
+        "Orientation": [
+          -49.458168029785156,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_shed.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Tank_Small_Gas",
+        "DisplayName": "StaticObj_Tank_Small_Gas",
+        "Position": [
+          3662.29541015625,
+          312.0242004394531,
+          9000.5576171875
+        ],
+        "Orientation": [
+          39.99999237060547,
+          -0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\industrial\\tanks\\tank_small_gas.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_FuelStation_Feed",
+        "DisplayName": "Land_FuelStation_Feed",
+        "Position": [
+          3642.203369140625,
+          312.37353515625,
+          8986.6904296875
+        ],
+        "Orientation": [
+          131.1173095703125,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_FuelStation_Feed",
+        "DisplayName": "Land_FuelStation_Feed",
+        "Position": [
+          3644.16357421875,
+          312.37353515625,
+          8985.001953125
+        ],
+        "Orientation": [
+          129.86082458496094,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_FuelStation_Feed",
+        "DisplayName": "Land_FuelStation_Feed",
+        "Position": [
+          3646.630859375,
+          312.37353515625,
+          8991.9873046875
+        ],
+        "Orientation": [
+          131.1173095703125,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0000001192092896,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_FuelStation_Feed",
+        "DisplayName": "Land_FuelStation_Feed",
+        "Position": [
+          3648.591064453125,
+          312.37353515625,
+          8990.298828125
+        ],
+        "Orientation": [
+          129.86082458496094,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_FuelStation_Feed",
+        "DisplayName": "Land_FuelStation_Feed",
+        "Position": [
+          3651.158935546875,
+          312.37353515625,
+          8997.1748046875
+        ],
+        "Orientation": [
+          131.1173095703125,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0000001192092896,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_FuelStation_Feed",
+        "DisplayName": "Land_FuelStation_Feed",
+        "Position": [
+          3653.119140625,
+          312.37353515625,
+          8995.486328125
+        ],
+        "Orientation": [
+          129.86082458496094,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_feed.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_FuelStation_Build",
+        "DisplayName": "Land_FuelStation_Build",
+        "Position": [
+          3659.656005859375,
+          313.0489807128906,
+          9003.974609375
+        ],
+        "Orientation": [
+          39.99999237060547,
+          -0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\fuelstation\\fuelstation_build.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Lamp_City1",
+        "DisplayName": "StaticObj_Lamp_City1",
+        "Position": [
+          3655.15771484375,
+          315.6287536621094,
+          9004.1416015625
+        ],
+        "Orientation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\misc\\lamp_city1.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Garbage_Bin",
+        "DisplayName": "StaticObj_Garbage_Bin",
+        "Position": [
+          3655.4375,
+          311.9817810058594,
+          9004.7509765625
+        ],
+        "Orientation": [
+          39.99999237060547,
+          -0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\misc\\garbage_bin.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Misc_Bench2",
+        "DisplayName": "StaticObj_Misc_Bench2",
+        "Position": [
+          3659.505615234375,
+          311.7927551269531,
+          8999.943359375
+        ],
+        "Orientation": [
+          -139.9999542236328,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\misc\\misc_bench2.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ],
+    "id": "dzobj_4pib6gcgvk"
+  }
+]

@@ -7,7 +7,8 @@
     "path": "dz/weapons/launchers/law",
     "usableOnConsole": true,
     "searchTags": "ammunition, launchers, m72, rounds, warhead, weapon, weapons",
-    "image": "images/weapons/launchers/law/ammo_law_he.jpg"
+    "image": "images/weapons/launchers/law/ammo_law_he.jpg",
+    "id": "dzobj_sy9crqugzc"
   },
   {
     "objectName": "LAWBase",
@@ -17,7 +18,8 @@
     "path": "dz/weapons/launchers/law",
     "usableOnConsole": true,
     "searchTags": "launchers, weapon, weapons",
-    "image": "images/weapons/launchers/law/lawbase.jpg"
+    "image": "images/weapons/launchers/law/lawbase.jpg",
+    "id": "dzobj_irun4ik7zi"
   },
   {
     "objectName": "LAW",
@@ -27,7 +29,8 @@
     "path": "dz/weapons/launchers/law",
     "usableOnConsole": true,
     "searchTags": "launchers, m72, weapon, weapons",
-    "image": "images/weapons/launchers/law/law.jpg"
+    "image": "images/weapons/launchers/law/law.jpg",
+    "id": "dzobj_3dnfl6b3k8"
   },
   {
     "objectName": "law.p3d",
@@ -37,7 +40,8 @@
     "path": "dz/weapons/launchers/law",
     "usableOnConsole": false,
     "searchTags": "launchers, m72, weapon, weapons",
-    "image": "images/weapons/launchers/law/law.p3d.jpg"
+    "image": "images/weapons/launchers/law/law.p3d.jpg",
+    "id": "dzobj_dim8dnsyp0"
   },
   {
     "objectName": "law_rocket.p3d",
@@ -47,6 +51,7 @@
     "path": "dz/weapons/launchers/law",
     "usableOnConsole": false,
     "searchTags": "launchers, m72, warhead, weapon, weapons",
-    "image": "images/weapons/launchers/law/law_rocket.p3d.jpg"
+    "image": "images/weapons/launchers/law/law_rocket.p3d.jpg",
+    "id": "dzobj_tr9qh6vowx"
   }
 ]

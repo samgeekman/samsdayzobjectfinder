@@ -1,412 +1,415 @@
-{
-  "objectName": "Double gate castle",
-  "inGameName": "-",
-  "category": "Editor Preset",
-  "modelType": "Preset",
-  "path": "-",
-  "usableOnConsole": true,
-  "searchTags": "castle, fortress, medieval, building, wall, gate",
-  "image": "images/presets/castle.jpg",
-  "editorJson": [
-    {
-      "Type": "Land_Castle_Wall1_20_Turn",
-      "DisplayName": "Land_Castle_Wall1_20_Turn",
-      "Position": [
-        4537.38427734375,
-        342.19598388671875,
-        10022.095703125
-      ],
-      "Orientation": [
-        -115.03988647460938,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_wall1_20_turn.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Bergfrit",
-      "DisplayName": "Land_Castle_Bergfrit",
-      "Position": [
-        4570.2255859375,
-        352.055908203125,
-        10043.2294921875
-      ],
-      "Orientation": [
-        -116.99989318847656,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_bergfrit.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Gate",
-      "DisplayName": "Land_Castle_Gate",
-      "Position": [
-        4583.9765625,
-        342.1314392089844,
-        10020.2138671875
-      ],
-      "Orientation": [
-        -26.999990463256836,
-        0.0,
-        0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_gate.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Bastion",
-      "DisplayName": "Land_Castle_Bastion",
-      "Position": [
-        4571.29736328125,
-        342.2825927734375,
-        10000.4560546875
-      ],
-      "Orientation": [
-        152.99990844726562,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_bastion.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Wall1_20",
-      "DisplayName": "Land_Castle_Wall1_20",
-      "Position": [
-        4608.39453125,
-        342.3302307128906,
-        10038.4931640625
-      ],
-      "Orientation": [
-        61.53891372680664,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999999403953552,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_wall1_20.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_WallS_10_nolc",
-      "DisplayName": "Land_Castle_WallS_10_nolc",
-      "Position": [
-        4557.15771484375,
-        339.7037048339844,
-        10029.4296875
-      ],
-      "Orientation": [
-        -26.999988555908203,
-        0.0,
-        0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_walls_10_nolc.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Bastion",
-      "DisplayName": "Land_Castle_Bastion",
-      "Position": [
-        4607.4072265625,
-        342.2825927734375,
-        10018.857421875
-      ],
-      "Orientation": [
-        152.99990844726562,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_bastion.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Stairs",
-      "DisplayName": "Land_Castle_Stairs",
-      "Position": [
-        4567.14501953125,
-        342.1938171386719,
-        10032.9189453125
-      ],
-      "Orientation": [
-        -27.0,
-        0.0,
-        0.0
-      ],
-      "Scale": 0.9999999403953552,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_stairs.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Wall2_30",
-      "DisplayName": "Land_Castle_Wall2_30",
-      "Position": [
-        4599.07275390625,
-        344.9978332519531,
-        10058.45703125
-      ],
-      "Orientation": [
-        62.99997329711914,
-        -0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_wall2_30.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Wall1_20_Turn",
-      "DisplayName": "Land_Castle_Wall1_20_Turn",
-      "Position": [
-        4584.35009765625,
-        342.4037780761719,
-        10073.67578125
-      ],
-      "Orientation": [
-        35.99998474121094,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999999403953552,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_wall1_20_turn.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Wall1_20_Turn_nolc",
-      "DisplayName": "Land_Castle_Wall1_20_Turn_nolc",
-      "Position": [
-        4565.59375,
-        342.35858154296875,
-        10080.244140625
-      ],
-      "Orientation": [
-        18.000001907348633,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_wall1_20_turn_nolc.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Wall2_End2",
-      "DisplayName": "Land_Castle_Wall2_End2",
-      "Position": [
-        4563.9189453125,
-        344.9944152832031,
-        10064.2177734375
-      ],
-      "Orientation": [
-        63.000030517578125,
-        -0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_wall2_end2.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Wall1_Corner2",
-      "DisplayName": "Land_Castle_Wall1_Corner2",
-      "Position": [
-        4552.533203125,
-        342.2533264160156,
-        10050.2724609375
-      ],
-      "Orientation": [
-        -143.99989318847656,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999999403953552,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_wall1_corner2.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Gate",
-      "DisplayName": "Land_Castle_Gate",
-      "Position": [
-        4549.60986328125,
-        342.3105163574219,
-        10074.205078125
-      ],
-      "Orientation": [
-        -27.0,
-        0.0,
-        0.0
-      ],
-      "Scale": 0.9999999403953552,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_gate.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_WallS_10_nolc",
-      "DisplayName": "Land_Castle_WallS_10_nolc",
-      "Position": [
-        4545.91650390625,
-        339.74365234375,
-        10060.779296875
-      ],
-      "Orientation": [
-        62.99997329711914,
-        -0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_walls_10_nolc.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Donjon",
-      "DisplayName": "Land_Castle_Donjon",
-      "Position": [
-        4538.2861328125,
-        348.2808837890625,
-        10026.23828125
-      ],
-      "Orientation": [
-        62.99994659423828,
-        -0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_donjon.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Wall1_20_Turn",
-      "DisplayName": "Land_Castle_Wall1_20_Turn",
-      "Position": [
-        4534.83740234375,
-        342.394775390625,
-        10064.2490234375
-      ],
-      "Orientation": [
-        -53.999996185302734,
-        0.0,
-        0.0
-      ],
-      "Scale": 0.9999999403953552,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_wall1_20_turn.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Wall1_20_Turn",
-      "DisplayName": "Land_Castle_Wall1_20_Turn",
-      "Position": [
-        4529.841796875,
-        342.41607666015625,
-        10045.7109375
-      ],
-      "Orientation": [
-        -80.9999771118164,
-        0.0,
-        0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_wall1_20_turn.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Wall1_20_Turn",
-      "DisplayName": "Land_Castle_Wall1_20_Turn",
-      "Position": [
-        4550.7490234375,
-        342.2166442871094,
-        10008.2177734375
-      ],
-      "Orientation": [
-        -136.178466796875,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999998807907104,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_wall1_20_turn.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Castle_Wall1_20_Turn",
-      "DisplayName": "Land_Castle_Wall1_20_Turn",
-      "Position": [
-        4534.21533203125,
-        342.4510192871094,
-        10027.18359375
-      ],
-      "Orientation": [
-        -110.17744445800781,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\castles\\castle_wall1_20_turn.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    }
-  ]
-}
+[
+  {
+    "objectName": "Double gate castle",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "castle, fortress, medieval, building, wall, gate",
+    "image": "images/presets/castle.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Castle_Wall1_20_Turn",
+        "DisplayName": "Land_Castle_Wall1_20_Turn",
+        "Position": [
+          4537.38427734375,
+          342.19598388671875,
+          10022.095703125
+        ],
+        "Orientation": [
+          -115.03988647460938,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_wall1_20_turn.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Bergfrit",
+        "DisplayName": "Land_Castle_Bergfrit",
+        "Position": [
+          4570.2255859375,
+          352.055908203125,
+          10043.2294921875
+        ],
+        "Orientation": [
+          -116.99989318847656,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_bergfrit.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Gate",
+        "DisplayName": "Land_Castle_Gate",
+        "Position": [
+          4583.9765625,
+          342.1314392089844,
+          10020.2138671875
+        ],
+        "Orientation": [
+          -26.999990463256836,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_gate.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Bastion",
+        "DisplayName": "Land_Castle_Bastion",
+        "Position": [
+          4571.29736328125,
+          342.2825927734375,
+          10000.4560546875
+        ],
+        "Orientation": [
+          152.99990844726562,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_bastion.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Wall1_20",
+        "DisplayName": "Land_Castle_Wall1_20",
+        "Position": [
+          4608.39453125,
+          342.3302307128906,
+          10038.4931640625
+        ],
+        "Orientation": [
+          61.53891372680664,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_wall1_20.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_WallS_10_nolc",
+        "DisplayName": "Land_Castle_WallS_10_nolc",
+        "Position": [
+          4557.15771484375,
+          339.7037048339844,
+          10029.4296875
+        ],
+        "Orientation": [
+          -26.999988555908203,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_walls_10_nolc.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Bastion",
+        "DisplayName": "Land_Castle_Bastion",
+        "Position": [
+          4607.4072265625,
+          342.2825927734375,
+          10018.857421875
+        ],
+        "Orientation": [
+          152.99990844726562,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_bastion.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Stairs",
+        "DisplayName": "Land_Castle_Stairs",
+        "Position": [
+          4567.14501953125,
+          342.1938171386719,
+          10032.9189453125
+        ],
+        "Orientation": [
+          -27.0,
+          0.0,
+          0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_stairs.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Wall2_30",
+        "DisplayName": "Land_Castle_Wall2_30",
+        "Position": [
+          4599.07275390625,
+          344.9978332519531,
+          10058.45703125
+        ],
+        "Orientation": [
+          62.99997329711914,
+          -0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_wall2_30.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Wall1_20_Turn",
+        "DisplayName": "Land_Castle_Wall1_20_Turn",
+        "Position": [
+          4584.35009765625,
+          342.4037780761719,
+          10073.67578125
+        ],
+        "Orientation": [
+          35.99998474121094,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_wall1_20_turn.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Wall1_20_Turn_nolc",
+        "DisplayName": "Land_Castle_Wall1_20_Turn_nolc",
+        "Position": [
+          4565.59375,
+          342.35858154296875,
+          10080.244140625
+        ],
+        "Orientation": [
+          18.000001907348633,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_wall1_20_turn_nolc.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Wall2_End2",
+        "DisplayName": "Land_Castle_Wall2_End2",
+        "Position": [
+          4563.9189453125,
+          344.9944152832031,
+          10064.2177734375
+        ],
+        "Orientation": [
+          63.000030517578125,
+          -0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_wall2_end2.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Wall1_Corner2",
+        "DisplayName": "Land_Castle_Wall1_Corner2",
+        "Position": [
+          4552.533203125,
+          342.2533264160156,
+          10050.2724609375
+        ],
+        "Orientation": [
+          -143.99989318847656,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_wall1_corner2.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Gate",
+        "DisplayName": "Land_Castle_Gate",
+        "Position": [
+          4549.60986328125,
+          342.3105163574219,
+          10074.205078125
+        ],
+        "Orientation": [
+          -27.0,
+          0.0,
+          0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_gate.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_WallS_10_nolc",
+        "DisplayName": "Land_Castle_WallS_10_nolc",
+        "Position": [
+          4545.91650390625,
+          339.74365234375,
+          10060.779296875
+        ],
+        "Orientation": [
+          62.99997329711914,
+          -0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_walls_10_nolc.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Donjon",
+        "DisplayName": "Land_Castle_Donjon",
+        "Position": [
+          4538.2861328125,
+          348.2808837890625,
+          10026.23828125
+        ],
+        "Orientation": [
+          62.99994659423828,
+          -0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_donjon.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Wall1_20_Turn",
+        "DisplayName": "Land_Castle_Wall1_20_Turn",
+        "Position": [
+          4534.83740234375,
+          342.394775390625,
+          10064.2490234375
+        ],
+        "Orientation": [
+          -53.999996185302734,
+          0.0,
+          0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_wall1_20_turn.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Wall1_20_Turn",
+        "DisplayName": "Land_Castle_Wall1_20_Turn",
+        "Position": [
+          4529.841796875,
+          342.41607666015625,
+          10045.7109375
+        ],
+        "Orientation": [
+          -80.9999771118164,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_wall1_20_turn.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Wall1_20_Turn",
+        "DisplayName": "Land_Castle_Wall1_20_Turn",
+        "Position": [
+          4550.7490234375,
+          342.2166442871094,
+          10008.2177734375
+        ],
+        "Orientation": [
+          -136.178466796875,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999998807907104,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_wall1_20_turn.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Castle_Wall1_20_Turn",
+        "DisplayName": "Land_Castle_Wall1_20_Turn",
+        "Position": [
+          4534.21533203125,
+          342.4510192871094,
+          10027.18359375
+        ],
+        "Orientation": [
+          -110.17744445800781,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\castles\\castle_wall1_20_turn.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ],
+    "id": "dzobj_gifll5o778"
+  }
+]

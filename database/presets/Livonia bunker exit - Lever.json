@@ -1,68 +1,69 @@
-{
-  "objectName": "Livonia bunker exit - lever",
-  "inGameName": "-",
-  "category": "Editor Preset",
-  "modelType": "Preset",
-  "path": "-",
-  "usableOnConsole": true,
-  "searchTags": "livonia, bunker",
-  "image": "images/presets/bunker_exit.jpg",
-  "editorJson": 
- [
-    {
+[
+  {
+    "objectName": "Livonia bunker exit - lever",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "livonia, bunker",
+    "image": "images/presets/bunker_exit.jpg",
+    "editorJson": [
+      {
         "Type": "Land_Underground_Stairs_Exit",
         "DisplayName": "Land_Underground_Stairs_Exit",
         "Position": [
-            4320.27294921875,
-            338.0639953613281,
-            10499.2373046875
+          4320.27294921875,
+          338.0639953613281,
+          10499.2373046875
         ],
         "Orientation": [
-            63.0,
-            0.0,
-            -0.0
+          63.0,
+          0.0,
+          -0.0
         ],
         "Scale": 0.9999999403953552,
         "AttachmentMap": {},
         "Model": "dz\\structures_bliss\\underground\\stairs\\underground_stairs_exit.p3d",
         "Flags": 30
-    },
-    {
+      },
+      {
         "Type": "Land_Underground_Panel_Lever",
         "DisplayName": "Land_Underground_Panel_Lever",
         "Position": [
-            4325.0458984375,
-            340.3938903808594,
-            10496.826171875
+          4325.0458984375,
+          340.3938903808594,
+          10496.826171875
         ],
         "Orientation": [
-            152.98291015625,
-            0.0,
-            -0.0
+          152.98291015625,
+          0.0,
+          -0.0
         ],
         "Scale": 1.0,
         "AttachmentMap": {},
         "Model": "dz\\structures_bliss\\underground\\entrance\\underground_panel_lever.p3d",
         "Flags": 30
-    },
-    {
+      },
+      {
         "Type": "Land_Underground_Panel_Lever",
         "DisplayName": "Land_Underground_Panel_Lever",
         "Position": [
-            4324.0859375,
-            340.3938903808594,
-            10498.708984375
+          4324.0859375,
+          340.3938903808594,
+          10498.708984375
         ],
         "Orientation": [
-            152.98289489746095,
-            0.0,
-            -0.0
+          152.98289489746094,
+          0.0,
+          -0.0
         ],
         "Scale": 1.0,
         "AttachmentMap": {},
         "Model": "dz\\structures_bliss\\underground\\entrance\\underground_panel_lever.p3d",
         "Flags": 30
-    }
+      }
+    ],
+    "id": "dzobj_0eu60mholc"
+  }
 ]
-  
-}

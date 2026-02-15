@@ -7,7 +7,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "airfield, hangar, storage, aircraft, plane, building, green, military, metal",
-    "image": "images/structures/military/airfield/land_airfield_hangar_green.jpg"
+    "image": "images/structures/military/airfield/land_airfield_hangar_green.jpg",
+    "id": "dzobj_gde6ms6spy"
   },
   {
     "objectName": "Land_Airfield_Radar_Tall",
@@ -17,7 +18,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "airfield, radar, tall, tower, surveillance, communication, military, metal, red, NWAF",
-    "image": "images/structures/military/airfield/land_airfield_radar_tall.jpg"
+    "image": "images/structures/military/airfield/land_airfield_radar_tall.jpg",
+    "id": "dzobj_h01xe2ifkw"
   },
   {
     "objectName": "Land_Mil_ReinforcedTank1",
@@ -27,7 +29,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, reinforced, tank, bunker, cover, fortification, terrain, grass, cover, ground, dirt, oil, gas",
-    "image": "images/structures/military/airfield/land_mil_reinforcedtank1.jpg"
+    "image": "images/structures/military/airfield/land_mil_reinforcedtank1.jpg",
+    "id": "dzobj_av8ulmlbwn"
   },
   {
     "objectName": "Land_Mil_Radar_Mobile1",
@@ -37,7 +40,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer, dish, satellite, metal",
-    "image": "images/structures/military/airfield/land_mil_radar_mobile1.jpg"
+    "image": "images/structures/military/airfield/land_mil_radar_mobile1.jpg",
+    "id": "dzobj_9hitvmwym4"
   },
   {
     "objectName": "Land_Mil_Radar_Mobile2",
@@ -47,7 +51,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer, metal, dish, satellite",
-    "image": "images/structures/military/airfield/land_mil_radar_mobile2.jpg"
+    "image": "images/structures/military/airfield/land_mil_radar_mobile2.jpg",
+    "id": "dzobj_0s8s97i3ux"
   },
   {
     "objectName": "Land_Mil_Radar_Mobile3",
@@ -57,7 +62,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer, dish, satellite",
-    "image": "images/structures/military/airfield/land_mil_radar_mobile3.jpg"
+    "image": "images/structures/military/airfield/land_mil_radar_mobile3.jpg",
+    "id": "dzobj_q2ej49oiy1"
   },
   {
     "objectName": "StaticObj_Mil_AircraftShelter_Door_L",
@@ -67,7 +73,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "aircraft, shelter, hangar, door, left, military, bunker, NWAF",
-    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_door_l.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_door_l.jpg",
+    "id": "dzobj_ad4yyem949"
   },
   {
     "objectName": "StaticObj_Mil_AircraftShelter_Door_R",
@@ -77,7 +84,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "aircraft, shelter, hangar, door, right, military, bunker, NWAF",
-    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_door_r.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_door_r.jpg",
+    "id": "dzobj_glqku92ciy"
   },
   {
     "objectName": "StaticObj_Mil_AircraftShelter_Grass_L",
@@ -87,7 +95,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "aircraft, shelter, hangar, grass, cover, left, camouflage, NWAF, bunker, terrain",
-    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_grass_l.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_grass_l.jpg",
+    "id": "dzobj_t46qxu60ap"
   },
   {
     "objectName": "StaticObj_Mil_AircraftShelter_Grass_R",
@@ -97,7 +106,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "aircraft, shelter, hangar, grass, cover, right, camouflage, NWAF, bunker, terrain",
-    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_grass_r.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_grass_r.jpg",
+    "id": "dzobj_cwg80y4fr4"
   },
   {
     "objectName": "StaticObj_Mil_BlastCover1",
@@ -107,7 +117,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, blast_cover, bunker, fortification, small, terrain, grass, cover, ground, dirt",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover1.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover1.jpg",
+    "id": "dzobj_qv7iy6swrl"
   },
   {
     "objectName": "StaticObj_Mil_BlastCover1_Grass",
@@ -117,7 +128,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, small, NWAF, bunker, terrain",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover1_grass.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover1_grass.jpg",
+    "id": "dzobj_ycilwdyujs"
   },
   {
     "objectName": "StaticObj_Mil_BlastCover2",
@@ -127,7 +139,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, blast_cover, bunker, fortification, medium, terrain, grass, cover, ground, dirt",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover2.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover2.jpg",
+    "id": "dzobj_p4ykp0c941"
   },
   {
     "objectName": "StaticObj_Mil_BlastCover2_Grass",
@@ -137,7 +150,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, medium, grass, terrain",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover2_grass.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover2_grass.jpg",
+    "id": "dzobj_evk9kvq1jz"
   },
   {
     "objectName": "StaticObj_Mil_BlastCover3",
@@ -147,7 +161,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, blast_cover, bunker, fortification, large, terrain, grass, cover, ground, dirt",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover3.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover3.jpg",
+    "id": "dzobj_98i5j2yae7"
   },
   {
     "objectName": "StaticObj_Mil_BlastCover3_Grass",
@@ -157,7 +172,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, large, terrain, grass",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover3_grass.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover3_grass.jpg",
+    "id": "dzobj_ipaatng1pe"
   },
   {
     "objectName": "StaticObj_Mil_BlastCover4",
@@ -167,7 +183,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, blast_cover, bunker, fortification, large, terrain, grass, cover, ground, dirt",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover4.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover4.jpg",
+    "id": "dzobj_oudkdjun0d"
   },
   {
     "objectName": "StaticObj_Mil_BlastCover4_Grass_L",
@@ -177,7 +194,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, left, terrain",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover4_grass_l.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover4_grass_l.jpg",
+    "id": "dzobj_se0gnov3oh"
   },
   {
     "objectName": "StaticObj_Mil_BlastCover4_Grass_R",
@@ -187,7 +205,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, right, terrain",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover4_grass_r.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover4_grass_r.jpg",
+    "id": "dzobj_i8wnqsol0o"
   },
   {
     "objectName": "StaticObj_Mil_Radar_Mobile1",
@@ -197,7 +216,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer",
-    "image": "images/structures/military/airfield/staticobj_mil_radar_mobile1.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_radar_mobile1.jpg",
+    "id": "dzobj_qmbxi1ea16"
   },
   {
     "objectName": "StaticObj_Mil_Radar_Mobile2",
@@ -207,7 +227,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer",
-    "image": "images/structures/military/airfield/staticobj_mil_radar_mobile2.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_radar_mobile2.jpg",
+    "id": "dzobj_k1pkur25f4"
   },
   {
     "objectName": "StaticObj_Mil_Radar_Mobile3",
@@ -217,7 +238,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer",
-    "image": "images/structures/military/airfield/staticobj_mil_radar_mobile3.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_radar_mobile3.jpg",
+    "id": "dzobj_q7mwartdi1"
   },
   {
     "objectName": "StaticObj_Mil_ReinforcedTank1",
@@ -227,7 +249,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, reinforced, tank, bunker, cover, fortification",
-    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank1.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank1.jpg",
+    "id": "dzobj_7toxfw0me4"
   },
   {
     "objectName": "StaticObj_Mil_ReinforcedTank1_Grass",
@@ -237,7 +260,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "airfield, military, oil, gas",
-    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank1_grass.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank1_grass.jpg",
+    "id": "dzobj_1dtfq7c0f4"
   },
   {
     "objectName": "StaticObj_Mil_ReinforcedTank2",
@@ -247,7 +271,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, reinforced, tank, bunker, cover, fortification",
-    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2.jpg",
+    "id": "dzobj_0mtw8zi505"
   },
   {
     "objectName": "StaticObj_Mil_ReinforcedTank2_Grass_L",
@@ -257,7 +282,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, reinforced, tank, bunker, cover, fortification, grass, camouflage, left",
-    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_l.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_l.jpg",
+    "id": "dzobj_yjgsdotoqh"
   },
   {
     "objectName": "StaticObj_Mil_ReinforcedTank2_Grass_R",
@@ -267,7 +293,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, reinforced, tank, bunker, cover, fortification, grass, camouflage, right",
-    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_r.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_r.jpg",
+    "id": "dzobj_sicohvahy9"
   },
   {
     "objectName": "StaticObj_Mil_ReinforcedTank2_Grass_Top",
@@ -277,7 +304,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, reinforced, tank, bunker, cover, fortification, grass, camouflage, top",
-    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_top.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_top.jpg",
+    "id": "dzobj_peizevxd3i"
   },
   {
     "objectName": "airfield_hangar_green.p3d",
@@ -287,7 +315,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "airfield, hangar, storage, aircraft, plane, building, green, military, metal",
-    "image": "images/structures/military/airfield/land_airfield_hangar_green.jpg"
+    "image": "images/structures/military/airfield/land_airfield_hangar_green.jpg",
+    "id": "dzobj_2wn613243o"
   },
   {
     "objectName": "airfield_radar_tall.p3d",
@@ -297,7 +326,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "airfield, radar, tall, tower, surveillance, communication, military, metal, red, NWAF",
-    "image": "images/structures/military/airfield/land_airfield_radar_tall.jpg"
+    "image": "images/structures/military/airfield/land_airfield_radar_tall.jpg",
+    "id": "dzobj_2s84pfwx9y"
   },
   {
     "objectName": "mil_aircraftshelter_door_l.p3d",
@@ -307,7 +337,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "aircraft, shelter, hangar, door, left, military, bunker, NWAF",
-    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_door_l.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_door_l.jpg",
+    "id": "dzobj_pdcki02dwq"
   },
   {
     "objectName": "mil_aircraftshelter_door_r.p3d",
@@ -317,7 +348,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "aircraft, shelter, hangar, door, right, military, bunker, NWAF",
-    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_door_r.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_door_r.jpg",
+    "id": "dzobj_7ws4ywlkel"
   },
   {
     "objectName": "mil_aircraftshelter_grass_l.p3d",
@@ -327,7 +359,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "aircraft, shelter, hangar, grass, cover, left, camouflage, NWAF, bunker, terrain",
-    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_grass_l.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_grass_l.jpg",
+    "id": "dzobj_kbpj41wdvx"
   },
   {
     "objectName": "mil_aircraftshelter_grass_r.p3d",
@@ -337,7 +370,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "aircraft, shelter, hangar, grass, cover, right, camouflage, NWAF, bunker, terrain",
-    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_grass_r.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_aircraftshelter_grass_r.jpg",
+    "id": "dzobj_6yparfwijg"
   },
   {
     "objectName": "mil_blastcover1.p3d",
@@ -347,7 +381,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, blast_cover, bunker, fortification, small, terrain, grass, cover, ground, dirt",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover1.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover1.jpg",
+    "id": "dzobj_o59nuwj633"
   },
   {
     "objectName": "mil_blastcover1_grass.p3d",
@@ -357,7 +392,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, small, NWAF, bunker, terrain",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover1_grass.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover1_grass.jpg",
+    "id": "dzobj_i80n0lz7u2"
   },
   {
     "objectName": "mil_blastcover2.p3d",
@@ -367,7 +403,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, blast_cover, bunker, fortification, medium, terrain, grass, cover, ground, dirt",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover2.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover2.jpg",
+    "id": "dzobj_pgh1ato66i"
   },
   {
     "objectName": "mil_blastcover2_grass.p3d",
@@ -377,7 +414,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, medium, grass, terrain",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover2_grass.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover2_grass.jpg",
+    "id": "dzobj_m7q4en43p6"
   },
   {
     "objectName": "mil_blastcover3.p3d",
@@ -387,7 +425,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, blast_cover, bunker, fortification, large, terrain, grass, cover, ground, dirt",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover3.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover3.jpg",
+    "id": "dzobj_etpykh72pw"
   },
   {
     "objectName": "mil_blastcover3_grass.p3d",
@@ -397,7 +436,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, large, terrain, grass",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover3_grass.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover3_grass.jpg",
+    "id": "dzobj_5yn45g2buy"
   },
   {
     "objectName": "mil_blastcover4.p3d",
@@ -407,7 +447,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, blast_cover, bunker, fortification, large, terrain, grass, cover, ground, dirt",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover4.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover4.jpg",
+    "id": "dzobj_3b0we7ymzf"
   },
   {
     "objectName": "mil_blastcover4_grass_l.p3d",
@@ -417,7 +458,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, left, terrain",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover4_grass_l.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover4_grass_l.jpg",
+    "id": "dzobj_rbe36rtssr"
   },
   {
     "objectName": "mil_blastcover4_grass_r.p3d",
@@ -427,7 +469,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, blast_cover, bunker, fortification, grass, camouflage, right, terrain",
-    "image": "images/structures/military/airfield/staticobj_mil_blastcover4_grass_r.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_blastcover4_grass_r.jpg",
+    "id": "dzobj_74vtg7hxfy"
   },
   {
     "objectName": "mil_radar_mobile1.p3d",
@@ -437,7 +480,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer, dish, satellite, metal",
-    "image": "images/structures/military/airfield/land_mil_radar_mobile1.jpg"
+    "image": "images/structures/military/airfield/land_mil_radar_mobile1.jpg",
+    "id": "dzobj_p9osx3suoe"
   },
   {
     "objectName": "mil_radar_mobile2.p3d",
@@ -447,7 +491,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer, metal, dish, satellite",
-    "image": "images/structures/military/airfield/land_mil_radar_mobile2.jpg"
+    "image": "images/structures/military/airfield/land_mil_radar_mobile2.jpg",
+    "id": "dzobj_w0umznvodf"
   },
   {
     "objectName": "mil_radar_mobile3.p3d",
@@ -457,7 +502,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, radar, mobile, surveillance, communication, vehicle, trailer, dish, satellite",
-    "image": "images/structures/military/airfield/land_mil_radar_mobile3.jpg"
+    "image": "images/structures/military/airfield/land_mil_radar_mobile3.jpg",
+    "id": "dzobj_yu7bp6q7vq"
   },
   {
     "objectName": "mil_reinforcedtank1.p3d",
@@ -467,7 +513,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, reinforced, tank, bunker, cover, fortification, terrain, grass, cover, ground, dirt, oil, gas",
-    "image": "images/structures/military/airfield/land_mil_reinforcedtank1.jpg"
+    "image": "images/structures/military/airfield/land_mil_reinforcedtank1.jpg",
+    "id": "dzobj_z37ezr4fqo"
   },
   {
     "objectName": "mil_reinforcedtank1_grass.p3d",
@@ -477,7 +524,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, reinforced, tank, bunker, cover, fortification, terrain, grass, cover, ground, dirt, oil, gas",
-    "image": "images/structures/military/airfield/land_mil_reinforcedtank1.jpg"
+    "image": "images/structures/military/airfield/land_mil_reinforcedtank1.jpg",
+    "id": "dzobj_6tnb2gs0kf"
   },
   {
     "objectName": "mil_reinforcedtank2.p3d",
@@ -487,7 +535,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, reinforced, tank, bunker, cover, fortification, terrain, grass, cover, ground, dirt, oil, gas, NWAF",
-    "image": "images/structures/military/airfield/land_mil_reinforcedtank2.jpg"
+    "image": "images/structures/military/airfield/land_mil_reinforcedtank2.jpg",
+    "id": "dzobj_darqu3r433"
   },
   {
     "objectName": "mil_reinforcedtank2_grass_l.p3d",
@@ -497,7 +546,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, reinforced, tank, bunker, cover, fortification, grass, camouflage, left",
-    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_l.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_l.jpg",
+    "id": "dzobj_nckkk5m1ot"
   },
   {
     "objectName": "mil_reinforcedtank2_grass_r.p3d",
@@ -507,7 +557,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, reinforced, tank, bunker, cover, fortification, grass, camouflage, right",
-    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_r.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_r.jpg",
+    "id": "dzobj_h5j6008wrp"
   },
   {
     "objectName": "mil_reinforcedtank2_grass_top.p3d",
@@ -517,7 +568,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, reinforced, tank, bunker, cover, fortification, grass, camouflage, top",
-    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_top.jpg"
+    "image": "images/structures/military/airfield/staticobj_mil_reinforcedtank2_grass_top.jpg",
+    "id": "dzobj_3z68uukgve"
   },
   {
     "objectName": "Land_Mil_AircraftShelter",
@@ -526,7 +578,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, aircraft, shelter, hangar, cover, reinforced, bunker, terrain, grass, cover, ground, dirt",
-    "image": "images/structures/military/airfield/land_mil_aircraftshelter.jpg"
+    "image": "images/structures/military/airfield/land_mil_aircraftshelter.jpg",
+    "id": "dzobj_ihtudhr9cw"
   },
   {
     "objectName": "Land_Mil_Airfield_HQ",
@@ -535,7 +588,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, HQ, airfield, building, headquarters, command, control",
-    "image": "images/structures/military/airfield/land_mil_airfield_hq.jpg"
+    "image": "images/structures/military/airfield/land_mil_airfield_hq.jpg",
+    "id": "dzobj_g3zi0u286o"
   },
   {
     "objectName": "Land_Mil_ATC_Big",
@@ -544,7 +598,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, airfield, ATC, tower, big, control, aviation, communication, air traffic contorl, camo",
-    "image": "images/structures/military/airfield/land_mil_atc_big.jpg"
+    "image": "images/structures/military/airfield/land_mil_atc_big.jpg",
+    "id": "dzobj_eriiisg8sj"
   },
   {
     "objectName": "Land_Mil_ATC_Small",
@@ -553,7 +608,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, airfield, ATC, tower, small, control, aviation, communication, air traffic contorl, camo",
-    "image": "images/structures/military/airfield/land_mil_atc_small.jpg"
+    "image": "images/structures/military/airfield/land_mil_atc_small.jpg",
+    "id": "dzobj_5oaafdzdsp"
   },
   {
     "objectName": "mil_aircraftshelter.p3d",
@@ -562,7 +618,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, aircraft, shelter, hangar, cover, reinforced, bunker, terrain, grass, cover, ground, dirt",
-    "image": "images/structures/military/airfield/land_mil_aircraftshelter.jpg"
+    "image": "images/structures/military/airfield/land_mil_aircraftshelter.jpg",
+    "id": "dzobj_olsnbwcz0d"
   },
   {
     "objectName": "mil_airfield_hq.p3d",
@@ -571,7 +628,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, HQ, airfield, building, headquarters, command, control",
-    "image": "images/structures/military/airfield/land_mil_airfield_hq.jpg"
+    "image": "images/structures/military/airfield/land_mil_airfield_hq.jpg",
+    "id": "dzobj_sorjewfv3r"
   },
   {
     "objectName": "mil_atc_big.p3d",
@@ -580,7 +638,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, airfield, ATC, tower, big, control, aviation, communication, air traffic contorl, camo",
-    "image": "images/structures/military/airfield/land_mil_atc_big.jpg"
+    "image": "images/structures/military/airfield/land_mil_atc_big.jpg",
+    "id": "dzobj_sluwlv3mlm"
   },
   {
     "objectName": "mil_atc_small.p3d",
@@ -589,7 +648,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "military, airfield, ATC, tower, small, control, aviation, communication, air traffic contorl, camo",
-    "image": "images/structures/military/airfield/land_mil_atc_small.jpg"
+    "image": "images/structures/military/airfield/land_mil_atc_small.jpg",
+    "id": "dzobj_i73zg3er9j"
   },
   {
     "objectName": "airfield_servicehangar_l.p3d",
@@ -598,7 +658,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "airfield, hangar, left, service, building, maintenance, aircraft, metal, NWAF",
-    "image": "images/structures/military/airfield/land_airfield_servicehangar_l.jpg"
+    "image": "images/structures/military/airfield/land_airfield_servicehangar_l.jpg",
+    "id": "dzobj_kqhrm80kh3"
   },
   {
     "objectName": "airfield_servicehangar_r.p3d",
@@ -607,7 +668,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": false,
     "searchTags": "airfield, hangar, right, service, building, maintenance, aircraft, metal, NWAF",
-    "image": "images/structures/military/airfield/land_airfield_servicehangar_r.jpg"
+    "image": "images/structures/military/airfield/land_airfield_servicehangar_r.jpg",
+    "id": "dzobj_babnm19htd"
   },
   {
     "objectName": "Land_Airfield_ServiceHangar_L",
@@ -616,7 +678,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "airfield, hangar, left, service, building, maintenance, aircraft, metal, NWAF",
-    "image": "images/structures/military/airfield/land_airfield_servicehangar_l.jpg"
+    "image": "images/structures/military/airfield/land_airfield_servicehangar_l.jpg",
+    "id": "dzobj_ecidt5p6i6"
   },
   {
     "objectName": "Land_Airfield_ServiceHangar_R",
@@ -625,7 +688,8 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "airfield, hangar, right, service, building, maintenance, aircraft, metal, NWAF",
-    "image": "images/structures/military/airfield/land_airfield_servicehangar_r.jpg"
+    "image": "images/structures/military/airfield/land_airfield_servicehangar_r.jpg",
+    "id": "dzobj_kwzzkkjr0q"
   },
   {
     "objectName": "Land_Mil_ReinforcedTank2",
@@ -634,6 +698,7 @@
     "path": "dz/structures/military/airfield",
     "usableOnConsole": true,
     "searchTags": "military, reinforced, tank, bunker, cover, fortification, terrain, grass, cover, ground, dirt, oil, gas, NWAF",
-    "image": "images/structures/military/airfield/land_mil_reinforcedtank2.jpg"
+    "image": "images/structures/military/airfield/land_mil_reinforcedtank2.jpg",
+    "id": "dzobj_2nxfoh0256"
   }
 ]

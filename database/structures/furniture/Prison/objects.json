@@ -7,7 +7,8 @@
     "path": "dz/structures/furniture/prison",
     "usableOnConsole": true,
     "searchTags": "bathroom, wash",
-    "image": "images/structures/furniture/prison/staticobj_furniture_prison_sink.jpg"
+    "image": "images/structures/furniture/prison/staticobj_furniture_prison_sink.jpg",
+    "id": "dzobj_4v36mpwy77"
   },
   {
     "objectName": "StaticObj_Furniture_prison_toilet",
@@ -17,7 +18,8 @@
     "path": "dz/structures/furniture/prison",
     "usableOnConsole": true,
     "searchTags": "bathroom, restroom",
-    "image": "images/structures/furniture/prison/staticobj_furniture_prison_toilet.jpg"
+    "image": "images/structures/furniture/prison/staticobj_furniture_prison_toilet.jpg",
+    "id": "dzobj_y5flwutvwu"
   },
   {
     "objectName": "prison_sink.p3d",
@@ -27,7 +29,8 @@
     "path": "dz/structures/furniture/prison",
     "usableOnConsole": false,
     "searchTags": "bathroom, furniture, wash",
-    "image": "images/structures/furniture/prison/prison_sink.p3d.jpg"
+    "image": "images/structures/furniture/prison/prison_sink.p3d.jpg",
+    "id": "dzobj_0nqdvkn5un"
   },
   {
     "objectName": "prison_toilet.p3d",
@@ -37,6 +40,7 @@
     "path": "dz/structures/furniture/prison",
     "usableOnConsole": false,
     "searchTags": "bathroom, furniture, restroom",
-    "image": "images/structures/furniture/prison/prison_toilet.p3d.jpg"
+    "image": "images/structures/furniture/prison/prison_toilet.p3d.jpg",
+    "id": "dzobj_h56v321fs9"
   }
 ]

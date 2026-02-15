@@ -1,72 +1,75 @@
-{
-  "objectName": "Radio tower",
-  "inGameName": "-",
-  "category": "Editor Preset",
-  "modelType": "Preset",
-  "path": "-",
-  "usableOnConsole": true,
-  "searchTags": "radio, tower, preset",
-  "image": "images/presets/radio_tower.jpg",
-  "editorJson": [
-    {
-      "Type": "Land_Tower_TC4_Base",
-      "DisplayName": "Land_Tower_TC4_Base",
-      "Position": [
-        -350.01947021484375,
-        32.2001953125,
-        3126.7666015625
-      ],
-      "Orientation": [
-        0.0,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\towers\\tower_tc4_base.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Tower_TC4_Mid",
-      "DisplayName": "Land_Tower_TC4_Mid",
-      "Position": [
-        -349.90618896484375,
-        75.85259246826172,
-        3126.6923828125
-      ],
-      "Orientation": [
-        0.0,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\towers\\tower_tc4_mid.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Tower_TC4_Top",
-      "DisplayName": "Land_Tower_TC4_Top",
-      "Position": [
-        -350.0517578125,
-        116.351806640625,
-        3126.793212890625
-      ],
-      "Orientation": [
-        0.0,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\specific\\towers\\tower_tc4_top.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    }
-  ]
-}
+[
+  {
+    "objectName": "Radio tower",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "radio, tower, preset",
+    "image": "images/presets/radio_tower.jpg",
+    "editorJson": [
+      {
+        "Type": "Land_Tower_TC4_Base",
+        "DisplayName": "Land_Tower_TC4_Base",
+        "Position": [
+          -350.01947021484375,
+          32.2001953125,
+          3126.7666015625
+        ],
+        "Orientation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\towers\\tower_tc4_base.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Tower_TC4_Mid",
+        "DisplayName": "Land_Tower_TC4_Mid",
+        "Position": [
+          -349.90618896484375,
+          75.85259246826172,
+          3126.6923828125
+        ],
+        "Orientation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\towers\\tower_tc4_mid.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Tower_TC4_Top",
+        "DisplayName": "Land_Tower_TC4_Top",
+        "Position": [
+          -350.0517578125,
+          116.351806640625,
+          3126.793212890625
+        ],
+        "Orientation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\specific\\towers\\tower_tc4_top.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ],
+    "id": "dzobj_24q2h34ydf"
+  }
+]

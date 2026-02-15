@@ -7,7 +7,8 @@
     "path": "dz/animals/bos_taurus",
     "usableOnConsole": true,
     "searchTags": "bull, cow, farmyard, brown, male",
-    "image": "images/animals/bos_taurus/animal_bostaurus_brown.jpg"
+    "image": "images/animals/bos_taurus/animal_bostaurus_brown.jpg",
+    "id": "dzobj_kjnifhzq5o"
   },
   {
     "objectName": "Animal_BosTaurus_Spotted",
@@ -16,10 +17,9 @@
     "modelType": "Config",
     "path": "dz/animals/bos_taurus",
     "usableOnConsole": true,
-    "searchTags": "bull, cow, farmyard, brown, male",
-    "image": "images/animals/bos_taurus/animal_bostaurus_spotted.jpg"
     "searchTags": "bull, cow, farmyard, spotted, male",
-    "image": "images/animals/bos_taurus/animal_bostaurus_spotted/animal_bostaurus_spotted.jpg"
+    "image": "images/animals/bos_taurus/animal_bostaurus_spotted.jpg",
+    "id": "dzobj_lt4erhh49k"
   },
   {
     "objectName": "Animal_BosTaurus_White",
@@ -28,9 +28,8 @@
     "modelType": "Config",
     "path": "dz/animals/bos_taurus",
     "usableOnConsole": true,
-    "searchTags": "bull, cow, farmyard, brown, male",
-    "image": "images/animals/bos_taurus/animal_bostaurus_white.jpg",
     "searchTags": "bull, cow, farmyard, white, male",
-    "image": "images/animals/bos_taurus/animal_bostaurus_white/animal_bostaurus_white.jpg"
+    "image": "images/animals/bos_taurus/animal_bostaurus_white.jpg",
+    "id": "dzobj_1y1djh6lu8"
   }
 ]

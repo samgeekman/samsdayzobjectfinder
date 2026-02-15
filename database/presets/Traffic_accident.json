@@ -1,472 +1,475 @@
-{
-  "objectName": "Traffic accident",
-  "inGameName": "-",
-  "category": "Editor Preset",
-  "modelType": "Preset",
-  "path": "-",
-  "usableOnConsole": true,
-  "searchTags": "bus, car, crash, traffic, accident, emergency, roadblock",
-  "image": "images/presets/traffic_crash.jpg",
-  "editorJson": [
-    {
-      "Type": "StaticObj_EmergencyBlanket_discarded",
-      "DisplayName": "StaticObj_EmergencyBlanket_discarded",
-      "Position": [
-        9807.8037109375,
-        12.109408378601074,
-        10560.740234375
-      ],
-      "Orientation": [
-        -62.99997329711914,
-        0.0,
-        0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\medical\\emergencyblanket_discarded.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Roadblock_Wood_Long",
-      "DisplayName": "StaticObj_Roadblock_Wood_Long",
-      "Position": [
-        9822.6337890625,
-        12.01256275177002,
-        10566.8916015625
-      ],
-      "Orientation": [
-        -89.99995422363281,
-        74.31834411621094,
-        -179.9999542236328
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\military\\improvised\\roadblock_wood_long.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_wreck_truck01_aban2_firetruck",
-      "DisplayName": "Land_wreck_truck01_aban2_firetruck",
-      "Position": [
-        9812.892578125,
-        12.013140678405762,
-        10562.0751953125
-      ],
-      "Orientation": [
-        98.99993133544922,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\vehicles\\wreck_truck01_aban2_firetruck.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Roadblock_Wood_Long",
-      "DisplayName": "StaticObj_Roadblock_Wood_Long",
-      "Position": [
-        9792.927734375,
-        12.786846160888672,
-        10563.048828125
-      ],
-      "Orientation": [
-        80.99995422363281,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999999403953552,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\military\\improvised\\roadblock_wood_long.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Stretcher_Red",
-      "DisplayName": "StaticObj_Stretcher_Red",
-      "Position": [
-        9800.9375,
-        12.368040084838867,
-        10560.9453125
-      ],
-      "Orientation": [
-        26.999990463256836,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\furniture\\beds\\stretcher_red.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Stretcher_Red_Folded",
-      "DisplayName": "StaticObj_Stretcher_Red_Folded",
-      "Position": [
-        9802.65234375,
-        12.174956321716309,
-        10560.72265625
-      ],
-      "Orientation": [
-        -18.0,
-        0.0,
-        0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\furniture\\beds\\stretcher_red_folded.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Stretcher_Red_Folded",
-      "DisplayName": "StaticObj_Stretcher_Red_Folded",
-      "Position": [
-        9794.697265625,
-        12.751453399658203,
-        10565.6572265625
-      ],
-      "Orientation": [
-        27.0,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999999403953552,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\furniture\\beds\\stretcher_red_folded.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Stretcher_Red_Folded",
-      "DisplayName": "StaticObj_Stretcher_Red_Folded",
-      "Position": [
-        9794.349609375,
-        12.747661590576172,
-        10565.8203125
-      ],
-      "Orientation": [
-        35.999996185302734,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\furniture\\beds\\stretcher_red_folded.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Wreck_Ikarus",
-      "DisplayName": "Land_Wreck_Ikarus",
-      "Position": [
-        9806.7197265625,
-        13.510860443115234,
-        10566.6611328125
-      ],
-      "Orientation": [
-        -98.99993133544922,
-        0.1666097790002823,
-        -0.41311025619506836
-      ],
-      "Scale": 0.9999898672103882,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\vehicles\\wreck_ikarus.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Wreck_Volha_Blue",
-      "DisplayName": "Land_Wreck_Volha_Blue",
-      "Position": [
-        9799.9716796875,
-        12.89264965057373,
-        10565.92578125
-      ],
-      "Orientation": [
-        -36.00004959106445,
-        0.0,
-        0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\vehicles\\wreck_volha_blue.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Wreck_sed01_aban1_black",
-      "DisplayName": "Land_Wreck_sed01_aban1_black",
-      "Position": [
-        9796.59765625,
-        12.9317626953125,
-        10561.3681640625
-      ],
-      "Orientation": [
-        -99.00003814697266,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\vehicles\\wreck_sed01_aban1_black.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Wreck_hb02_aban2_black",
-      "DisplayName": "Land_Wreck_hb02_aban2_black",
-      "Position": [
-        9814.7919921875,
-        12.70937728881836,
-        10566.591796875
-      ],
-      "Orientation": [
-        -107.99993896484375,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\vehicles\\wreck_hb02_aban2_black.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Wreck_hb01_aban1_green",
-      "DisplayName": "Land_Wreck_hb01_aban1_green",
-      "Position": [
-        9808.8623046875,
-        12.771371841430664,
-        10564.94140625
-      ],
-      "Orientation": [
-        -98.99993133544922,
-        0.0,
-        -91.35478973388672
-      ],
-      "Scale": 1.0000001192092896,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\vehicles\\wreck_hb01_aban1_green.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Wreck_Decal_Big_DE",
-      "DisplayName": "StaticObj_Wreck_Decal_Big_DE",
-      "Position": [
-        9813.953125,
-        12.002625465393066,
-        10562.21484375
-      ],
-      "Orientation": [
-        89.99995422363281,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\vehicles\\wreck_decal_big.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Wreck_sed02_aban1_grey",
-      "DisplayName": "Land_Wreck_sed02_aban1_grey",
-      "Position": [
-        9804.5283203125,
-        12.931324005126953,
-        10561.150390625
-      ],
-      "Orientation": [
-        -144.0,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\vehicles\\wreck_sed02_aban1_grey.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Wreck_sed01_aban1_police",
-      "DisplayName": "Land_Wreck_sed01_aban1_police",
-      "Position": [
-        9819.513671875,
-        12.611099243164062,
-        10564.212890625
-      ],
-      "Orientation": [
-        152.9999542236328,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\vehicles\\wreck_sed01_aban1_police.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Roadblock_Wood_Long",
-      "DisplayName": "StaticObj_Roadblock_Wood_Long",
-      "Position": [
-        9822.173828125,
-        12.370218276977539,
-        10562.1474609375
-      ],
-      "Orientation": [
-        116.62586975097656,
-        3.32022609654814e-05,
-        -9.702932584332302e-05
-      ],
-      "Scale": 1.000000238418579,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\military\\improvised\\roadblock_wood_long.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "Land_Wreck_S1023_Medic_Beige",
-      "DisplayName": "Land_Wreck_S1023_Medic_Beige",
-      "Position": [
-        9794.767578125,
-        12.217846870422363,
-        10565.9140625
-      ],
-      "Orientation": [
-        -53.99998474121094,
-        0.0,
-        0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\wrecks\\vehicles\\wreck_s1023_medic.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Rubble_Glass",
-      "DisplayName": "StaticObj_Rubble_Glass",
-      "Position": [
-        9801.498046875,
-        12.149150848388672,
-        10563.5625
-      ],
-      "Orientation": [
-        0.0,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\ruins\\rubble_glass.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Rubble_Glass",
-      "DisplayName": "StaticObj_Rubble_Glass",
-      "Position": [
-        9809.4794921875,
-        12.048596382141113,
-        10563.6220703125
-      ],
-      "Orientation": [
-        0.0,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\ruins\\rubble_glass.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_Rubble_Glass",
-      "DisplayName": "StaticObj_Rubble_Glass",
-      "Position": [
-        9806.193359375,
-        12.08796215057373,
-        10564.8330078125
-      ],
-      "Orientation": [
-        27.0,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999999403953552,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\ruins\\rubble_glass.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_EmergencyBlanket_discarded",
-      "DisplayName": "StaticObj_EmergencyBlanket_discarded",
-      "Position": [
-        9816.390625,
-        12.034330368041992,
-        10565.2001953125
-      ],
-      "Orientation": [
-        27.0,
-        0.0,
-        -0.0
-      ],
-      "Scale": 0.9999999403953552,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\medical\\emergencyblanket_discarded.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    },
-    {
-      "Type": "StaticObj_EmergencyBlanket_discarded",
-      "DisplayName": "StaticObj_EmergencyBlanket_discarded",
-      "Position": [
-        9799.2578125,
-        12.210442543029785,
-        10561.3671875
-      ],
-      "Orientation": [
-        0.0,
-        0.0,
-        -0.0
-      ],
-      "Scale": 1.0,
-      "AttachmentMap": {},
-      "Model": "dz\\structures\\residential\\medical\\emergencyblanket_discarded.p3d",
-      "Flags": 30,
-      "m_LowBits": 0,
-      "m_HighBits": 0
-    }
-  ]
-}
+[
+  {
+    "objectName": "Traffic accident",
+    "inGameName": "-",
+    "category": "Editor Preset",
+    "modelType": "Preset",
+    "path": "-",
+    "usableOnConsole": true,
+    "searchTags": "bus, car, crash, traffic, accident, emergency, roadblock",
+    "image": "images/presets/traffic_crash.jpg",
+    "editorJson": [
+      {
+        "Type": "StaticObj_EmergencyBlanket_discarded",
+        "DisplayName": "StaticObj_EmergencyBlanket_discarded",
+        "Position": [
+          9807.8037109375,
+          12.109408378601074,
+          10560.740234375
+        ],
+        "Orientation": [
+          -62.99997329711914,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\medical\\emergencyblanket_discarded.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Roadblock_Wood_Long",
+        "DisplayName": "StaticObj_Roadblock_Wood_Long",
+        "Position": [
+          9822.6337890625,
+          12.01256275177002,
+          10566.8916015625
+        ],
+        "Orientation": [
+          -89.99995422363281,
+          74.31834411621094,
+          -179.9999542236328
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\improvised\\roadblock_wood_long.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_wreck_truck01_aban2_firetruck",
+        "DisplayName": "Land_wreck_truck01_aban2_firetruck",
+        "Position": [
+          9812.892578125,
+          12.013140678405762,
+          10562.0751953125
+        ],
+        "Orientation": [
+          98.99993133544922,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_truck01_aban2_firetruck.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Roadblock_Wood_Long",
+        "DisplayName": "StaticObj_Roadblock_Wood_Long",
+        "Position": [
+          9792.927734375,
+          12.786846160888672,
+          10563.048828125
+        ],
+        "Orientation": [
+          80.99995422363281,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\improvised\\roadblock_wood_long.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Stretcher_Red",
+        "DisplayName": "StaticObj_Stretcher_Red",
+        "Position": [
+          9800.9375,
+          12.368040084838867,
+          10560.9453125
+        ],
+        "Orientation": [
+          26.999990463256836,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\furniture\\beds\\stretcher_red.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Stretcher_Red_Folded",
+        "DisplayName": "StaticObj_Stretcher_Red_Folded",
+        "Position": [
+          9802.65234375,
+          12.174956321716309,
+          10560.72265625
+        ],
+        "Orientation": [
+          -18.0,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\furniture\\beds\\stretcher_red_folded.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Stretcher_Red_Folded",
+        "DisplayName": "StaticObj_Stretcher_Red_Folded",
+        "Position": [
+          9794.697265625,
+          12.751453399658203,
+          10565.6572265625
+        ],
+        "Orientation": [
+          27.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\furniture\\beds\\stretcher_red_folded.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Stretcher_Red_Folded",
+        "DisplayName": "StaticObj_Stretcher_Red_Folded",
+        "Position": [
+          9794.349609375,
+          12.747661590576172,
+          10565.8203125
+        ],
+        "Orientation": [
+          35.999996185302734,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\furniture\\beds\\stretcher_red_folded.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Wreck_Ikarus",
+        "DisplayName": "Land_Wreck_Ikarus",
+        "Position": [
+          9806.7197265625,
+          13.510860443115234,
+          10566.6611328125
+        ],
+        "Orientation": [
+          -98.99993133544922,
+          0.1666097790002823,
+          -0.41311025619506836
+        ],
+        "Scale": 0.9999898672103882,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_ikarus.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Wreck_Volha_Blue",
+        "DisplayName": "Land_Wreck_Volha_Blue",
+        "Position": [
+          9799.9716796875,
+          12.89264965057373,
+          10565.92578125
+        ],
+        "Orientation": [
+          -36.00004959106445,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_volha_blue.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Wreck_sed01_aban1_black",
+        "DisplayName": "Land_Wreck_sed01_aban1_black",
+        "Position": [
+          9796.59765625,
+          12.9317626953125,
+          10561.3681640625
+        ],
+        "Orientation": [
+          -99.00003814697266,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_sed01_aban1_black.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Wreck_hb02_aban2_black",
+        "DisplayName": "Land_Wreck_hb02_aban2_black",
+        "Position": [
+          9814.7919921875,
+          12.70937728881836,
+          10566.591796875
+        ],
+        "Orientation": [
+          -107.99993896484375,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_hb02_aban2_black.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Wreck_hb01_aban1_green",
+        "DisplayName": "Land_Wreck_hb01_aban1_green",
+        "Position": [
+          9808.8623046875,
+          12.771371841430664,
+          10564.94140625
+        ],
+        "Orientation": [
+          -98.99993133544922,
+          0.0,
+          -91.35478973388672
+        ],
+        "Scale": 1.0000001192092896,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_hb01_aban1_green.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Wreck_Decal_Big_DE",
+        "DisplayName": "StaticObj_Wreck_Decal_Big_DE",
+        "Position": [
+          9813.953125,
+          12.002625465393066,
+          10562.21484375
+        ],
+        "Orientation": [
+          89.99995422363281,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_decal_big.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Wreck_sed02_aban1_grey",
+        "DisplayName": "Land_Wreck_sed02_aban1_grey",
+        "Position": [
+          9804.5283203125,
+          12.931324005126953,
+          10561.150390625
+        ],
+        "Orientation": [
+          -144.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_sed02_aban1_grey.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Wreck_sed01_aban1_police",
+        "DisplayName": "Land_Wreck_sed01_aban1_police",
+        "Position": [
+          9819.513671875,
+          12.611099243164062,
+          10564.212890625
+        ],
+        "Orientation": [
+          152.9999542236328,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_sed01_aban1_police.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Roadblock_Wood_Long",
+        "DisplayName": "StaticObj_Roadblock_Wood_Long",
+        "Position": [
+          9822.173828125,
+          12.370218276977539,
+          10562.1474609375
+        ],
+        "Orientation": [
+          116.62586975097656,
+          3.32022609654814e-05,
+          -9.702932584332302e-05
+        ],
+        "Scale": 1.000000238418579,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\military\\improvised\\roadblock_wood_long.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "Land_Wreck_S1023_Medic_Beige",
+        "DisplayName": "Land_Wreck_S1023_Medic_Beige",
+        "Position": [
+          9794.767578125,
+          12.217846870422363,
+          10565.9140625
+        ],
+        "Orientation": [
+          -53.99998474121094,
+          0.0,
+          0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\wrecks\\vehicles\\wreck_s1023_medic.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Rubble_Glass",
+        "DisplayName": "StaticObj_Rubble_Glass",
+        "Position": [
+          9801.498046875,
+          12.149150848388672,
+          10563.5625
+        ],
+        "Orientation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\ruins\\rubble_glass.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Rubble_Glass",
+        "DisplayName": "StaticObj_Rubble_Glass",
+        "Position": [
+          9809.4794921875,
+          12.048596382141113,
+          10563.6220703125
+        ],
+        "Orientation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\ruins\\rubble_glass.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_Rubble_Glass",
+        "DisplayName": "StaticObj_Rubble_Glass",
+        "Position": [
+          9806.193359375,
+          12.08796215057373,
+          10564.8330078125
+        ],
+        "Orientation": [
+          27.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\ruins\\rubble_glass.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_EmergencyBlanket_discarded",
+        "DisplayName": "StaticObj_EmergencyBlanket_discarded",
+        "Position": [
+          9816.390625,
+          12.034330368041992,
+          10565.2001953125
+        ],
+        "Orientation": [
+          27.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 0.9999999403953552,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\medical\\emergencyblanket_discarded.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      },
+      {
+        "Type": "StaticObj_EmergencyBlanket_discarded",
+        "DisplayName": "StaticObj_EmergencyBlanket_discarded",
+        "Position": [
+          9799.2578125,
+          12.210442543029785,
+          10561.3671875
+        ],
+        "Orientation": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "Scale": 1.0,
+        "AttachmentMap": {},
+        "Model": "dz\\structures\\residential\\medical\\emergencyblanket_discarded.p3d",
+        "Flags": 30,
+        "m_LowBits": 0,
+        "m_HighBits": 0
+      }
+    ],
+    "id": "dzobj_v0qyaxc738"
+  }
+]

@@ -7,7 +7,8 @@
     "path": "dz/structures/specific/radio",
     "usableOnConsole": true,
     "searchTags": "radio, panel, console, equipment, controls, broadcast, electronics, rack, PA_system, pa system, amp, loudspeaker, public_address, announcement",
-    "image": "images/structures/specific/radio/land_radio_panelbig.jpg"
+    "image": "images/structures/specific/radio/land_radio_panelbig.jpg",
+    "id": "dzobj_b7ogtaotgx"
   },
   {
     "objectName": "Land_Radio_PanelPAS",
@@ -17,7 +18,8 @@
     "path": "dz/structures/specific/radio",
     "usableOnConsole": true,
     "searchTags": "radio, panel, PA_system, loudspeaker, public_address, announcement, communication, pa system, amp",
-    "image": "images/structures/specific/radio/land_radio_panelpas.jpg"
+    "image": "images/structures/specific/radio/land_radio_panelpas.jpg",
+    "id": "dzobj_044oiht1b4"
   },
   {
     "objectName": "radio_panelbig.p3d",
@@ -27,7 +29,8 @@
     "path": "dz/structures/specific/radio",
     "usableOnConsole": false,
     "searchTags": "radio, panel, console, equipment, controls, broadcast, electronics, rack, PA_system, pa system, amp, loudspeaker, public_address, announcement",
-    "image": "images/structures/specific/radio/land_radio_panelbig.jpg"
+    "image": "images/structures/specific/radio/land_radio_panelbig.jpg",
+    "id": "dzobj_hdnv8rnv3r"
   },
   {
     "objectName": "radio_panelpas.p3d",
@@ -37,7 +40,8 @@
     "path": "dz/structures/specific/radio",
     "usableOnConsole": false,
     "searchTags": "radio, panel, PA_system, loudspeaker, public_address, announcement, communication, pa system, amp",
-    "image": "images/structures/specific/radio/land_radio_panelpas.jpg"
+    "image": "images/structures/specific/radio/land_radio_panelpas.jpg",
+    "id": "dzobj_yunkxcv9ew"
   },
   {
     "objectName": "Land_Radio_building",
@@ -46,7 +50,8 @@
     "path": "dz/structures/specific/radio",
     "usableOnConsole": true,
     "searchTags": "radio, building, station, broadcast, communication, control_room, antenna, PA_system, pa system, amp, loudspeaker, public_address, announcement",
-    "image": "images/structures/specific/radio/land_radio_building.jpg"
+    "image": "images/structures/specific/radio/land_radio_building.jpg",
+    "id": "dzobj_ldojsjchvl"
   },
   {
     "objectName": "radio_building.p3d",
@@ -55,6 +60,7 @@
     "path": "dz/structures/specific/radio",
     "usableOnConsole": false,
     "searchTags": "radio, building, station, broadcast, communication, control_room, antenna, PA_system, pa system, amp, loudspeaker, public_address, announcement",
-    "image": "images/structures/specific/radio/land_radio_building.jpg"
+    "image": "images/structures/specific/radio/land_radio_building.jpg",
+    "id": "dzobj_rc08t1gvh5"
   }
 ]

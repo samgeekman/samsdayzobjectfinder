@@ -1,13 +1,14 @@
 [
   {
-    "objectName": "LongHorn",
+    "objectName": "Longhorn",
     "inGameName": "Longhorn",
     "category": "weapons",
     "modelType": "Config",
     "path": "dz/weapons/pistols/longhorn",
     "usableOnConsole": true,
     "searchTags": "pistols, weapon, weapons",
-    "image": "images/weapons/pistols/longhorn/longhorn.jpg"
+    "image": "images/weapons/pistols/longhorn/longhorn.jpg",
+    "id": "dzobj_95iajajq71"
   },
   {
     "objectName": "ProxyLongHorn",
@@ -17,7 +18,8 @@
     "path": "dz/weapons/pistols/longhorn",
     "usableOnConsole": true,
     "searchTags": "longhorn, pistols, weapon, weapons",
-    "image": "images/weapons/pistols/longhorn/proxylonghorn.jpg"
+    "image": "images/weapons/pistols/longhorn/proxylonghorn.jpg",
+    "id": "dzobj_zmb869tdl8"
   },
   {
     "objectName": "longhorn.p3d",
@@ -27,16 +29,7 @@
     "path": "dz/weapons/pistols/longhorn",
     "usableOnConsole": false,
     "searchTags": "pistols, weapon, weapons",
-    "image": "images/weapons/pistols/longhorn/longhorn.p3d.jpg"
-  },
-  {
-    "objectName": "Longhorn",
-    "inGameName": "Longhorn",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/pistols/longhorn",
-    "usableOnConsole": true,
-    "searchTags": "pistols, weapon, weapons",
-    "image": "images/weapons/pistols/longhorn/longhorn.jpg"
+    "image": "images/weapons/pistols/longhorn/longhorn.p3d.jpg",
+    "id": "dzobj_0icw2b5x1v"
   }
 ]

@@ -7,7 +7,8 @@
     "path": "dz/structures/specific/prison",
     "usableOnConsole": true,
     "searchTags": "prison, side_building, annex, jail, detention, concrete, office, storeroom, high_security",
-    "image": "images/structures/specific/prison/land_prison_side.jpg"
+    "image": "images/structures/specific/prison/land_prison_side.jpg",
+    "id": "dzobj_mpt9cqomsf"
   },
   {
     "objectName": "Land_Prison_Wall_Large",
@@ -17,7 +18,8 @@
     "path": "dz/structures/specific/prison",
     "usableOnConsole": true,
     "searchTags": "prison, wall, perimeter, concrete, barrier, security, high_security, fortified, fence",
-    "image": "images/structures/specific/prison/land_prison_wall_large.jpg"
+    "image": "images/structures/specific/prison/land_prison_wall_large.jpg",
+    "id": "dzobj_y5fj2iua64"
   },
   {
     "objectName": "prison_side.p3d",
@@ -27,7 +29,8 @@
     "path": "dz/structures/specific/prison",
     "usableOnConsole": false,
     "searchTags": "prison, walkway, fence",
-    "image": "images/structures/specific/prison/prison_side.p3d.jpg"
+    "image": "images/structures/specific/prison/prison_side.p3d.jpg",
+    "id": "dzobj_ok21slcbih"
   },
   {
     "objectName": "prison_wall_large.p3d",
@@ -37,7 +40,8 @@
     "path": "dz/structures/specific/prison",
     "usableOnConsole": false,
     "searchTags": "barrier, specific, prison, wall",
-    "image": "images/structures/specific/prison/prison_wall_large.p3d.jpg"
+    "image": "images/structures/specific/prison/prison_wall_large.p3d.jpg",
+    "id": "dzobj_htnkfz48wz"
   },
   {
     "objectName": "prison_wall_small.p3d",
@@ -47,7 +51,8 @@
     "path": "dz/structures/specific/prison",
     "usableOnConsole": false,
     "searchTags": "barrier, specific, prison, wall",
-    "image": "images/structures/specific/prison/prison_wall_small.p3d.jpg"
+    "image": "images/structures/specific/prison/prison_wall_small.p3d.jpg",
+    "id": "dzobj_zf480shpou"
   },
   {
     "objectName": "Land_Prison_Main",
@@ -56,7 +61,8 @@
     "path": "dz/structures/specific/prison",
     "usableOnConsole": true,
     "searchTags": "prison, main_building, jail, detention, concrete, multi_storey, high_security, fortified",
-    "image": "images/structures/specific/prison/land_prison_main.jpg"
+    "image": "images/structures/specific/prison/land_prison_main.jpg",
+    "id": "dzobj_9oreuj1dc6"
   },
   {
     "objectName": "prison_main.p3d",
@@ -65,6 +71,7 @@
     "path": "dz/structures/specific/prison",
     "usableOnConsole": false,
     "searchTags": "prison, livoniaa, chernarus",
-    "image": "images/structures/specific/prison/prison_main.p3d.jpg"
+    "image": "images/structures/specific/prison/prison_main.p3d.jpg",
+    "id": "dzobj_n90ms7jc8e"
   }
 ]
