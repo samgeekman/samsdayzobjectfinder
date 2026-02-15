@@ -24,7 +24,6 @@ STATIC_TYPES_XML = STATIC_DATA_DIR / "types_aggregated.xml"
 OVERRIDES_JSON = DATA_DIR / "object_overrides.json"
 TOMBSTONES_JSON = DATA_DIR / "id_tombstones.json"
 API_ROOT = STATIC_DIR / "api" / "v1"
-API_SEARCH_DIR = API_ROOT / "search"
 ID_RE = re.compile(r"^dzobj_[a-z0-9]{10}$")
 ID_PREFIX = "dzobj_"
 ID_CHARS = "abcdefghijklmnopqrstuvwxyz0123456789"
@@ -397,17 +396,6 @@ def ensure_explicit_ids(objects: List[dict]) -> int:
     return len(seen_ids)
 
 
-def slim_search_record(obj: dict) -> dict:
-    return {
-        "id": obj.get("id", ""),
-        "objectName": obj.get("objectName", ""),
-        "inGameName": obj.get("inGameName", ""),
-        "category": obj.get("category", ""),
-        "path": obj.get("path", ""),
-        "searchTags": obj.get("searchTags", ""),
-    }
-
-
 def write_json(path: Path, payload: object) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -417,23 +405,11 @@ def generate_static_api(objects: List[dict]) -> Dict[str, int]:
     if API_ROOT.exists():
         shutil.rmtree(API_ROOT)
     API_ROOT.mkdir(parents=True, exist_ok=True)
-    API_SEARCH_DIR.mkdir(parents=True, exist_ok=True)
 
     sorted_objects = sorted(objects, key=lambda obj: str(obj.get("id", "")))
     generated_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
     write_json(API_ROOT / "objects.full.json", sorted_objects)
-
-    search_records = [slim_search_record(obj) for obj in sorted_objects]
-    write_json(
-        API_SEARCH_DIR / "index.json",
-        {
-            "apiVersion": "v1",
-            "generatedAt": generated_at,
-            "totalObjects": len(sorted_objects),
-            "records": search_records,
-        },
-    )
 
     write_json(
         API_ROOT / "meta.json",
@@ -445,7 +421,6 @@ def generate_static_api(objects: List[dict]) -> Dict[str, int]:
             "endpoints": {
                 "meta": "/api/v1/meta.json",
                 "fullDataset": "/api/v1/objects.full.json",
-                "searchIndex": "/api/v1/search/index.json",
             },
         },
     )
@@ -459,16 +434,8 @@ def generate_static_api(objects: List[dict]) -> Dict[str, int]:
     full_raw = load_json_file(API_ROOT / "objects.full.json")
     if not isinstance(full_raw, list) or len(full_raw) != len(sorted_objects):
         raise SystemExit("API validation failed: objects.full.json missing or mismatched count.")
-    search_raw = load_json_file(API_SEARCH_DIR / "index.json")
-    if not isinstance(search_raw, dict):
-        raise SystemExit("API validation failed: search/index.json is invalid.")
-    records = search_raw.get("records")
-    if not isinstance(records, list) or len(records) != len(sorted_objects):
-        raise SystemExit("API validation failed: search/index.json record count mismatch.")
-
     return {
         "full_rows": len(sorted_objects),
-        "search_records": len(search_records),
     }
 
 
@@ -555,8 +522,7 @@ def main() -> None:
     )
     print(
         "API: "
-        f"{api_stats['full_rows']} full rows, "
-        f"{api_stats['search_records']} search records."
+        f"{api_stats['full_rows']} full rows."
     )
     print(f"Validated explicit object IDs: {unique_ids}.")
     if OUTPUT_JSON.exists():
