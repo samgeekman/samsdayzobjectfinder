@@ -369,8 +369,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/bandanaface_g.p3d.jpg",
+    "searchTags": "bandana, face, masks, protection, bank robbery, loot",
+    "image": "images/characters/headgear/bandana_blackpattern/bandana_blackpattern.jpg",
     "id": "dzobj_z4425wum6d"
   },
   {
@@ -380,7 +380,7 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "face, masks, protection, bank robbery, loot",
+    "searchTags": "face, masks, protection, bank robbery, loot, bandana",
     "image": "images/characters/masks/paydaymask_chains/paydaymask_chains.jpg",
     "id": "dzobj_xkmg2dy534"
   },
@@ -435,8 +435,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/masks",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/gp5gasmask_filter.p3d.jpg",
+    "searchTags": "face, fuel, masks, protection, NBC, respirator, loot",
+    "image": "images/characters/masks/gp5gasmask/gp5gasmask.jpg",
     "id": "dzobj_l3kitwnjth"
   },
   {
@@ -471,17 +471,6 @@
     "searchTags": "face, masks, protection, creepy, loot",
     "image": "images/characters/masks/mimemask_male/mimemask_male.jpg",
     "id": "dzobj_wqvkhxb807"
-  },
-  {
-    "objectName": "mouth_rags.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/masks",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/masks/mouth_rags.p3d.jpg",
-    "id": "dzobj_dose4lps16"
   },
   {
     "objectName": "nioshfacemask_g.p3d",
