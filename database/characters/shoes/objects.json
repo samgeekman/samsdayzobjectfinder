@@ -12,13 +12,13 @@
   },
   {
     "objectName": "FemaleFeet_Base",
-    "inGameName": "Bare feet new",
+    "inGameName": "",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/shoes",
     "usableOnConsole": true,
     "searchTags": "bare, feet, pc, player, survivor, loot, footware",
-    "image": "images/characters/shoes/femalefeet_base/femalefeet_base.jpg",
+    "image": "images/characters/shoes/malefeet_base/malefeet_base.jpg",
     "id": "dzobj_00tepvd2x5"
   },
   {
@@ -705,13 +705,13 @@
   },
   {
     "objectName": "athleticshoes_m_above0.p3d",
-    "inGameName": "-",
+    "inGameName": "Athletic Shoes",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/shoes",
     "usableOnConsole": false,
     "searchTags": "sports, trainers, loot, footware",
-    "image": "images/characters/shoes/athleticshoes_m_above0.p3d.jpg",
+    "image": "images/characters/shoes/athleticshoes_black/athleticshoes_black.jpg",
     "id": "dzobj_fzvv3ciljv"
   },
   {
@@ -755,7 +755,7 @@
     "path": "dz/characters/shoes",
     "usableOnConsole": false,
     "searchTags": "bare, feet, pc, player, survivor, loot, footware",
-    "image": "images/characters/shoes/feet_m_above0.p3d.jpg",
+    "image": "images/characters/shoes/malefeet_base/malefeet_base.jpg",
     "id": "dzobj_lt95p586r4"
   },
   {

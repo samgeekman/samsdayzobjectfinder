@@ -1,7 +1,7 @@
 [
   {
     "objectName": "MaleLegs_Base",
-    "inGameName": "Underwear shorts",
+    "inGameName": "",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/pants",
@@ -18,7 +18,7 @@
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, shorts, underwear, bodies, player, pc, loot, trousers",
-    "image": "images/characters/pants/femalelegs_base/femalelegs_base.jpg",
+    "image": "images/characters/pants/malelegs_base/malelegs_base.jpg",
     "id": "dzobj_te8oncbt5r"
   },
   {
@@ -705,24 +705,24 @@
   },
   {
     "objectName": "MaleLegsAbove",
-    "inGameName": "Underwear shorts above",
+    "inGameName": "-",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, shorts, underwear, player, pc, bodies, loot, trousers",
-    "image": "images/characters/pants/malelegsabove/malelegsabove.jpg",
+    "image": "images/characters/pants/malelegs_base/malelegs_base.jpg",
     "id": "dzobj_0hrgj7pn61"
   },
   {
     "objectName": "FemaleLegsAbove",
-    "inGameName": "Underwear shorts above female",
+    "inGameName": "-",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/pants",
     "usableOnConsole": true,
     "searchTags": "pants, shorts, underwear, player, pc, bodies, loot, trousers",
-    "image": "images/characters/pants/femalelegsabove/femalelegsabove.jpg",
+    "image": "images/characters/pants/malelegs_base/malelegs_base.jpg",
     "id": "dzobj_4h5jsr6489"
   },
   {
@@ -958,7 +958,7 @@
   },
   {
     "objectName": "slacks_g.p3d",
-    "inGameName": "Slacks Pants",
+    "inGameName": "Suit Pants",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/pants",
@@ -980,7 +980,7 @@
   },
   {
     "objectName": "ttsko_pants_g.p3d",
-    "inGameName": "OREL Police Pants",
+    "inGameName": "Combat Pants",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/pants",
@@ -991,7 +991,7 @@
   },
   {
     "objectName": "usmc_pants_g.p3d",
-    "inGameName": "OMK Pants",
+    "inGameName": "CCU Pants",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/pants",
