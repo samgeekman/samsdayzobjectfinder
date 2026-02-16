@@ -517,17 +517,6 @@
     "id": "dzobj_i72f7o8dsv"
   },
   {
-    "objectName": "Sweater_ChristmasColorbase",
-    "inGameName": "Sweater",
-    "category": "characters",
-    "modelType": "Config",
-    "path": "dz/characters/tops",
-    "usableOnConsole": true,
-    "searchTags": "tops, jumper, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/sweater_christmascolorbase/sweater_christmascolorbase.jpg",
-    "id": "dzobj_9davmb51ay"
-  },
-  {
     "objectName": "Sweater_Gray",
     "inGameName": "Sweater",
     "category": "characters",
@@ -2168,13 +2157,13 @@
   },
   {
     "objectName": "armbends_g.p3d",
-    "inGameName": "-",
+    "inGameName": "Armband",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/tops",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, clothing, clothes",
-    "image": "images/characters/tops/armbends_g.p3d.jpg",
+    "searchTags": "arm, team, loot, clothing, clothes",
+    "image": "images/characters/tops/armband_altis/armband_altis.jpg",
     "id": "dzobj_wkihznjrde"
   },
   {
@@ -2184,8 +2173,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/tops",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, clothing, clothes",
-    "image": "images/characters/tops/armbend_g.p3d.jpg",
+    "searchTags": "arm, team, loot, clothing, clothes",
+    "image": "images/characters/tops/armband_altis/armband_altis.jpg",
     "id": "dzobj_5j8ds5l6h2"
   },
   {
@@ -2196,7 +2185,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, coat, loot, clothing, clothes",
-    "image": "images/characters/tops/bdu_jacket_g.p3d.jpg",
+    "image": "images/characters/tops/bdujacket/bdujacket.jpg",
     "id": "dzobj_597w8rcqyk"
   },
   {
@@ -2207,7 +2196,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, loot, clothing, clothes",
-    "image": "images/characters/tops/blouse_g.p3d.jpg",
+    "image": "images/characters/tops/blouse_blue/blouse_blue.jpg",
     "id": "dzobj_2zz327b2ck"
   },
   {
@@ -2218,7 +2207,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, coats, air, flying, loot, clothing, clothes",
-    "image": "images/characters/tops/bomberjacket_g.p3d.jpg",
+    "image": "images/characters/tops/bomberjacket_black/bomberjacket_black.jpg",
     "id": "dzobj_etzbog5a7o"
   },
   {
@@ -2229,7 +2218,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, law enforcement, workware, loot, clothing, clothes",
-    "image": "images/characters/tops/bushlatpolicejacket_g.p3d.jpg",
+    "image": "images/characters/tops/policejacket/policejacket.jpg",
     "id": "dzobj_wzagv1vxd3"
   },
   {
@@ -2240,7 +2229,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, medieval, castle, armour, armor, loot, clothing, clothes",
-    "image": "images/characters/tops/chainmail_g.p3d.jpg",
+    "image": "images/characters/tops/chainmail/chainmail.jpg",
     "id": "dzobj_i0uajt691a"
   },
   {
@@ -2251,7 +2240,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "sports, tops, fitness, athletic, loot, clothing, clothes",
-    "image": "images/characters/tops/chernarus_sport_shirt_g.p3d.jpg",
+    "image": "images/characters/tops/chernarussportshirt/chernarussportshirt.jpg",
     "id": "dzobj_g0jm31nacl"
   },
   {
@@ -2262,7 +2251,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, loot, clothing, clothes",
-    "image": "images/characters/tops/denim_jacket_g.p3d.jpg",
+    "image": "images/characters/tops/denimjacket/denimjacket.jpg",
     "id": "dzobj_z6vyt2r2bu"
   },
   {
@@ -2273,7 +2262,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, warm, coat, winter, loot, clothing, clothes",
-    "image": "images/characters/tops/downjacket_g.p3d.jpg",
+    "image": "images/characters/tops/downjacket_blue/downjacket_blue.jpg",
     "id": "dzobj_u6940vpuol"
   },
   {
@@ -2284,7 +2273,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, waorkware, fire, loot, clothing, clothes",
-    "image": "images/characters/tops/firefighter_g.p3d.jpg",
+    "image": "images/characters/tops/firefighterjacket_beige/firefighterjacket_beige.jpg",
     "id": "dzobj_lp98wetsxy"
   },
   {
@@ -2294,8 +2283,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/tops",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, clothing, clothes",
-    "image": "images/characters/tops/gorka_up_g.p3d.jpg",
+    "searchTags": "field, tops, military, combat, loot, clothing, clothes",
+    "image": "images/characters/tops/gorkaejacket_autumn/gorkaejacket_autumn.jpg",
     "id": "dzobj_mc3kwwtpvb"
   },
   {
@@ -2306,18 +2295,18 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, jumper, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/hoodie_ground.p3d.jpg",
+    "image": "images/characters/tops/hoodie_black/hoodie_black.jpg",
     "id": "dzobj_abehb7z7j7"
   },
   {
     "objectName": "hoodie_g_new.p3d",
-    "inGameName": "-",
+    "inGameName": "Hoodie",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/tops",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, clothing, clothes",
-    "image": "images/characters/tops/hoodie_g_new.p3d.jpg",
+    "searchTags": "tops, jumper, warm, loot, clothing, clothes",
+    "image": "images/characters/tops/hoodie_black/hoodie_black.jpg",
     "id": "dzobj_y4ww8mtyw5"
   },
   {
@@ -2328,7 +2317,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "hunter, tops, trail, woods, loot, clothing, clothes",
-    "image": "images/characters/tops/hunting_jacket_g.p3d.jpg",
+    "image": "images/characters/tops/huntingjacket_autumn/huntingjacket_autumn.jpg",
     "id": "dzobj_lmmwhoxxt0"
   },
   {
@@ -2338,8 +2327,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/tops",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, clothing, clothes",
-    "image": "images/characters/tops/jumpsuit_top_g.p3d.jpg",
+    "searchTags": "tops, coat, loot, clothing, clothes",
+    "image": "images/characters/tops/jumpsuitjacket_blue/jumpsuitjacket_blue.jpg",
     "id": "dzobj_h8xuoqxpq9"
   },
   {
@@ -2350,7 +2339,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, scientist, workfare, medical, ambulance, hospital, loot, clothing, clothes",
-    "image": "images/characters/tops/labcoat_g.p3d.jpg",
+    "image": "images/characters/tops/labcoat/labcoat.jpg",
     "id": "dzobj_hj88c4cvxc"
   },
   {
@@ -2360,8 +2349,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/tops",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, clothing, clothes",
-    "image": "images/characters/tops/long_sleeve_shirt_g.p3d.jpg",
+    "searchTags": "tops, crafted, loot, clothing, clothes",
+    "image": "images/characters/tops/leathershirt_natural/leathershirt_natural.jpg",
     "id": "dzobj_u3gb78cnlu"
   },
   {
@@ -2372,7 +2361,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "field, tops, military, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/m65_jacket_g.p3d.jpg",
+    "image": "images/characters/tops/m65jacket_black/m65jacket_black.jpg",
     "id": "dzobj_q8ay5bv1pa"
   },
   {
@@ -2383,7 +2372,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "jacket, mens, tops, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/man_suit_g.p3d.jpg",
+    "image": "images/characters/tops/mansuit_beige/mansuit_beige.jpg",
     "id": "dzobj_nwib0a8jvq"
   },
   {
@@ -2394,7 +2383,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "health, hospital, scrub, ambulance, workware, loot, clothing, clothes",
-    "image": "images/characters/tops/medicalscrubs_shirt_g.p3d.jpg",
+    "image": "images/characters/tops/medicalscrubsshirt_blue/medicalscrubsshirt_blue.jpg",
     "id": "dzobj_u18qz9op5e"
   },
   {
@@ -2405,7 +2394,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "collar, tops, loot, clothing, clothes",
-    "image": "images/characters/tops/minidress_g.p3d.jpg",
+    "image": "images/characters/tops/minidress_bluechecker/minidress_bluechecker.jpg",
     "id": "dzobj_r4ur6n0wxm"
   },
   {
@@ -2416,7 +2405,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, NBC, protection, loot, clothing, clothes",
-    "image": "images/characters/tops/nbc_jacket_g.p3d.jpg",
+    "image": "images/characters/tops/navyuniformjacket/navyuniformjacket.jpg",
     "id": "dzobj_22hka1v7cg"
   },
   {
@@ -2427,7 +2416,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, workfare, medical, ambulance, hospital, loot, clothing, clothes",
-    "image": "images/characters/tops/nursedress_g.p3d.jpg",
+    "image": "images/characters/tops/nursedress_blue/nursedress_blue.jpg",
     "id": "dzobj_1xmqb79c6w"
   },
   {
@@ -2438,18 +2427,18 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, ambulance, hospital, loot, clothing, clothes",
-    "image": "images/characters/tops/paramedic_jacket_g.p3d.jpg",
+    "image": "images/characters/tops/paramedicjacket_blue/paramedicjacket_blue.jpg",
     "id": "dzobj_txndw55qy0"
   },
   {
     "objectName": "pcu5jacket_f_nopatches.p3d",
-    "inGameName": "-",
+    "inGameName": "Hiking Jacket",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/tops",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, clothing, clothes",
-    "image": "images/characters/tops/pcu5jacket_f_nopatches.p3d.jpg",
+    "searchTags": "tops, trail, walking, woods, loot, clothing, clothes",
+    "image": "images/characters/tops/hikingjacket_black/hikingjacket_black.jpg",
     "id": "dzobj_ne38jve6ob"
   },
   {
@@ -2459,19 +2448,19 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/tops",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, clothing, clothes",
-    "image": "images/characters/tops/pcu5jacket_ground.p3d.jpg",
+    "searchTags": "tops, trail, walking, woods, loot, clothing, clothes",
+    "image": "images/characters/tops/hikingjacket_black/hikingjacket_black.jpg",
     "id": "dzobj_q7m8ha36ih"
   },
   {
     "objectName": "pcu5jacket_m_nopatches.p3d",
-    "inGameName": "-",
+    "inGameName": "Hiking Jacket",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/tops",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, clothing, clothes",
-    "image": "images/characters/tops/pcu5jacket_m_nopatches.p3d.jpg",
+    "searchTags": "tops, trail, walking, woods, loot, clothing, clothes",
+    "image": "images/characters/tops/hikingjacket_black/hikingjacket_black.jpg",
     "id": "dzobj_io42c9xf9g"
   },
   {
@@ -2482,7 +2471,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, law enforcement, workware, loot, clothing, clothes",
-    "image": "images/characters/tops/policejacket_g.p3d.jpg",
+    "image": "images/characters/tops/policejacket/policejacket.jpg",
     "id": "dzobj_9xumjw3kys"
   },
   {
@@ -2492,8 +2481,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/tops",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, clothing, clothes",
-    "image": "images/characters/tops/prison_top_g.p3d.jpg",
+    "searchTags": "prisoner, tops, inmate, loot, clothing, clothes",
+    "image": "images/characters/tops/prisonuniformjacket/prisonuniformjacket.jpg",
     "id": "dzobj_w1i489ytci"
   },
   {
@@ -2504,7 +2493,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, coat, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/quiltedjacket_g.p3d.jpg",
+    "image": "images/characters/tops/quiltedjacket_black/quiltedjacket_black.jpg",
     "id": "dzobj_roo0d7b0di"
   },
   {
@@ -2515,7 +2504,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, waterproof, cagoule, loot, clothing, clothes",
-    "image": "images/characters/tops/raincoat_g.p3d.jpg",
+    "image": "images/characters/tops/raincoat_black/raincoat_black.jpg",
     "id": "dzobj_utfv6k98ga"
   },
   {
@@ -2526,18 +2515,18 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "rider, tops, motorbike, leather, loot, clothing, clothes",
-    "image": "images/characters/tops/riders_jacket_g.p3d.jpg",
+    "image": "images/characters/tops/ridersjacket_black/ridersjacket_black.jpg",
     "id": "dzobj_xib058w99g"
   },
   {
     "objectName": "shirt_f_new_anim_system.p3d",
-    "inGameName": "-",
+    "inGameName": "Shirt",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/tops",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, clothing, clothes",
-    "image": "images/characters/tops/shirt_f_new_anim_system.p3d.jpg",
+    "searchTags": "tops, t shirt, clothing, clothes, loot",
+    "image": "images/characters/tops/shirt_bluecheck/shirt_bluecheck.jpg",
     "id": "dzobj_fpyfz59yf1"
   },
   {
@@ -2548,18 +2537,18 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, t shirt, clothing, clothes, loot",
-    "image": "images/characters/tops/shirt_ground.p3d.jpg",
+    "image": "images/characters/tops/shirt_bluecheck/shirt_bluecheck.jpg",
     "id": "dzobj_mg5pp5dacj"
   },
   {
     "objectName": "shirt_m_new_anim_system.p3d",
-    "inGameName": "-",
+    "inGameName": "Shirt",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/tops",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, clothing, clothes",
-    "image": "images/characters/tops/shirt_m_new_anim_system.p3d.jpg",
+    "searchTags": "tops, t shirt, clothing, clothes, loot",
+    "image": "images/characters/tops/shirt_bluecheck/shirt_bluecheck.jpg",
     "id": "dzobj_jrj48vz1zh"
   },
   {
@@ -2570,7 +2559,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, jumper, warm, loot, clothing, clothes",
-    "image": "images/characters/tops/sweater_g.p3d.jpg",
+    "image": "images/characters/tops/sweater_blue/sweater_blue.jpg",
     "id": "dzobj_4xivf83dkv"
   },
   {
@@ -2581,7 +2570,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, striped, loot, clothing, clothes",
-    "image": "images/characters/tops/telnyashka_g.p3d.jpg",
+    "image": "images/characters/tops/telnyashkashirt/telnyashkashirt.jpg",
     "id": "dzobj_0ckgz01uuh"
   },
   {
@@ -2591,8 +2580,8 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/tops",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot, clothing, clothes",
-    "image": "images/characters/tops/top_leatherjacket_g.p3d.jpg",
+    "searchTags": "tops, crafted, coats, loot, clothing, clothes",
+    "image": "images/characters/tops/leatherjacket_beige/leatherjacket_beige.jpg",
     "id": "dzobj_urjyoh83j0"
   },
   {
@@ -2603,7 +2592,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, wrapping, rags, loot, clothing, clothes",
-    "image": "images/characters/tops/torsocover_improvised_g.p3d.jpg",
+    "image": "images/characters/tops/torsocover_improvised/torsocover_improvised.jpg",
     "id": "dzobj_wuq99r1y88"
   },
   {
@@ -2614,7 +2603,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "player, pc, character, survivor, bodies, loot, clothing, clothes",
-    "image": "images/characters/tops/torso_m_above0.p3d.jpg",
+    "image": "images/characters/tops/maletorso_base/maletorso_base.jpg",
     "id": "dzobj_nvw8fvkyko"
   },
   {
@@ -2625,7 +2614,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, tracksuit, loot, clothing, clothes",
-    "image": "images/characters/tops/tracksuit_jacket_g.p3d.jpg",
+    "image": "images/characters/tops/tracksuitjacket_black/tracksuitjacket_black.jpg",
     "id": "dzobj_cgrw7emo3f"
   },
   {
@@ -2636,7 +2625,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, bohemia interactive, loot, clothing, clothes, t shirt",
-    "image": "images/characters/tops/tshirt_ground.p3d.jpg",
+    "image": "images/characters/tops/tshirt_10thanniversary/tshirt_10thanniversary.jpg",
     "id": "dzobj_hygbnh2kwy"
   },
   {
@@ -2647,7 +2636,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "tops, bohemia interactive, loot, clothing, clothes, t shirt",
-    "image": "images/characters/tops/tshirt_m_above0.p3d.jpg",
+    "image": "images/characters/tops/tshirt_10thanniversary/tshirt_10thanniversary.jpg",
     "id": "dzobj_z98sb0cp5k"
   },
   {
@@ -2658,7 +2647,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "field, tops, military, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/ttsko_jacket_g.p3d.jpg",
+    "image": "images/characters/tops/ttskojacket_camo/ttskojacket_camo.jpg",
     "id": "dzobj_2zno97g4mm"
   },
   {
@@ -2669,7 +2658,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "cuu, tops, military, army, combat, loot, clothing, clothes",
-    "image": "images/characters/tops/usmc_jacket_g.p3d.jpg",
+    "image": "images/characters/tops/usmcjacket_desert/usmcjacket_desert.jpg",
     "id": "dzobj_5fwkhc2eo1"
   },
   {
@@ -2680,7 +2669,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "jacket, tops, womens, formal, loot, clothing, clothes",
-    "image": "images/characters/tops/woman_suit_g.p3d.jpg",
+    "image": "images/characters/tops/womansuit_beige/womansuit_beige.jpg",
     "id": "dzobj_zv3wgdv4yc"
   },
   {
@@ -2691,7 +2680,7 @@
     "path": "dz/characters/tops",
     "usableOnConsole": false,
     "searchTags": "pea, tops, warm, woollen, loot, clothing, clothes",
-    "image": "images/characters/tops/woolcoat_g.p3d.jpg",
+    "image": "images/characters/tops/navyuniformjacket/navyuniformjacket.jpg",
     "id": "dzobj_i31m5ta3gc"
   },
   {
