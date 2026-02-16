@@ -7,7 +7,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, storage, military, combat, loot",
-    "image": "images/characters/vests/platecarrierpouches.jpg",
+    "image": "images/characters/vests/platecarrierpouches/platecarrierpouches.jpg",
     "id": "dzobj_h2602ybaly"
   },
   {
@@ -18,7 +18,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, protection, vests, military, storage, loot",
-    "image": "images/characters/vests/platecarriervest.jpg",
+    "image": "images/characters/vests/platecarriervest/platecarriervest.jpg",
     "id": "dzobj_hjg1v6nld9"
   },
   {
@@ -29,7 +29,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, assault, protection, vests, combat, military, loot",
-    "image": "images/characters/vests/smershvest.jpg",
+    "image": "images/characters/vests/smershvest/smershvest.jpg",
     "id": "dzobj_9c48isa30p"
   },
   {
@@ -117,7 +117,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, protection, stab, vests, law enforcement, loot",
-    "image": "images/characters/vests/policevest.jpg",
+    "image": "images/characters/vests/policevest/policevest.jpg",
     "id": "dzobj_4wpd0qvf9j"
   },
   {
@@ -128,7 +128,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, military, combat, protection, gun, loot",
-    "image": "images/characters/vests/platecarrierholster.jpg",
+    "image": "images/characters/vests/platecarrierholster/platecarrierholster.jpg",
     "id": "dzobj_z4b9xepe4v"
   },
   {
@@ -139,7 +139,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, military, combat, protection, gun, loot",
-    "image": "images/characters/vests/chestholster.jpg",
+    "image": "images/characters/vests/chestholster/chestholster.jpg",
     "id": "dzobj_g5ugotggzm"
   },
   {
@@ -216,7 +216,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, hunter, protection, vests, hunting, woods, trail, loot",
-    "image": "images/characters/vests/huntingvest.jpg",
+    "image": "images/characters/vests/huntingvest/huntingvest.jpg",
     "id": "dzobj_x689kileg3"
   },
   {
@@ -227,7 +227,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, protection, reflective, vests, loot",
-    "image": "images/characters/vests/reflexvest.jpg",
+    "image": "images/characters/vests/reflexvest/reflexvest.jpg",
     "id": "dzobj_ioaetsymae"
   },
   {
@@ -238,41 +238,30 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, castle, armour, armor, medieval, loot",
-    "image": "images/characters/vests/chestplate.jpg",
+    "image": "images/characters/vests/chestplate/chestplate.jpg",
     "id": "dzobj_yspr5l7biu"
   },
   {
     "objectName": "Proxyplate_carrier_pouches_g",
-    "inGameName": "-",
+    "inGameName": "Pouches",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/vests",
     "usableOnConsole": true,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/proxyplate_carrier_pouches_g.jpg",
+    "searchTags": "vests, storage, military, combat, loot",
+    "image": "images/characters/vests/platecarrierpouches/platecarrierpouches.jpg",
     "id": "dzobj_fzssgrz551"
   },
   {
     "objectName": "Proxyplate_carrier_holster_g",
-    "inGameName": "-",
+    "inGameName": "Holster",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/vests",
     "usableOnConsole": true,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/proxyplate_carrier_holster_g.jpg",
+    "searchTags": "vests, military, combat, protection, gun, loot",
+    "image": "images/characters/vests/platecarrierholster/platecarrierholster.jpg",
     "id": "dzobj_b7b0c1cxhm"
-  },
-  {
-    "objectName": "chestplate_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/chestplate_f.p3d.jpg",
-    "id": "dzobj_x3ftgqzk6j"
   },
   {
     "objectName": "chestplate_g.p3d",
@@ -281,31 +270,9 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/chestplate_g.p3d.jpg",
+    "searchTags": "vests, castle, armour, armor, medieval, loot",
+    "image": "images/characters/vests/chestplate/chestplate.jpg",
     "id": "dzobj_nffkp2n83a"
-  },
-  {
-    "objectName": "chestplate_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/chestplate_m.p3d.jpg",
-    "id": "dzobj_f4mco89qpu"
-  },
-  {
-    "objectName": "chest_holster_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/chest_holster_f.p3d.jpg",
-    "id": "dzobj_s7varfvxsx"
   },
   {
     "objectName": "chest_holster_g.p3d",
@@ -314,31 +281,9 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/chest_holster_g.p3d.jpg",
+    "searchTags": "vests, military, combat, protection, gun, loot",
+    "image": "images/characters/vests/chestholster/chestholster.jpg",
     "id": "dzobj_mkumqv5fe5"
-  },
-  {
-    "objectName": "chest_holster_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/chest_holster_m.p3d.jpg",
-    "id": "dzobj_u1ztnnxlr6"
-  },
-  {
-    "objectName": "hunter_vest_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/hunter_vest_f.p3d.jpg",
-    "id": "dzobj_5oe33djilq"
   },
   {
     "objectName": "hunter_vest_g.p3d",
@@ -347,31 +292,9 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/hunter_vest_g.p3d.jpg",
+    "searchTags": "armor, hunter, protection, vests, hunting, woods, trail, loot",
+    "image": "images/characters/vests/huntingvest/huntingvest.jpg",
     "id": "dzobj_0581hbml2f"
-  },
-  {
-    "objectName": "hunter_vest_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/hunter_vest_m.p3d.jpg",
-    "id": "dzobj_u7afmlnfar"
-  },
-  {
-    "objectName": "orange_vest_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/orange_vest_f.p3d.jpg",
-    "id": "dzobj_qqiqgzz4cr"
   },
   {
     "objectName": "orange_vest_g.p3d",
@@ -380,31 +303,9 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/orange_vest_g.p3d.jpg",
+    "searchTags": "armor, protection, reflective, vests, loot",
+    "image": "images/characters/vests/reflexvest/reflexvest.jpg",
     "id": "dzobj_1s9m2xercr"
-  },
-  {
-    "objectName": "orange_vest_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/orange_vest_m.p3d.jpg",
-    "id": "dzobj_s0tsmyp7n5"
-  },
-  {
-    "objectName": "plate_carrier_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/plate_carrier_f.p3d.jpg",
-    "id": "dzobj_n2o2io6uuc"
   },
   {
     "objectName": "plate_carrier_g.p3d",
@@ -413,53 +314,31 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/plate_carrier_g.p3d.jpg",
+    "searchTags": "armor, protection, vests, military, storage, loot",
+    "image": "images/characters/vests/platecarriervest/platecarriervest.jpg",
     "id": "dzobj_pcpltqsn8l"
   },
   {
     "objectName": "plate_carrier_holster_g.p3d",
-    "inGameName": "-",
+    "inGameName": "Holster",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/plate_carrier_holster_g.p3d.jpg",
+    "searchTags": "vests, military, combat, protection, gun, loot",
+    "image": "images/characters/vests/platecarrierholster/platecarrierholster.jpg",
     "id": "dzobj_x1tgfomhbl"
   },
   {
-    "objectName": "plate_carrier_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/plate_carrier_m.p3d.jpg",
-    "id": "dzobj_p5hir5sbij"
-  },
-  {
     "objectName": "plate_carrier_pouches_g.p3d",
-    "inGameName": "-",
+    "inGameName": "Pouches",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/plate_carrier_pouches_g.p3d.jpg",
+    "searchTags": "vests, storage, military, combat, loot",
+    "image": "images/characters/vests/platecarrierpouches/platecarrierpouches.jpg",
     "id": "dzobj_cvz4cngp4i"
-  },
-  {
-    "objectName": "policevest_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/policevest_f.p3d.jpg",
-    "id": "dzobj_94mjs9yjsa"
   },
   {
     "objectName": "policevest_g.p3d",
@@ -468,31 +347,9 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/policevest_g.p3d.jpg",
+    "searchTags": "armor, protection, stab, vests, law enforcement, loot",
+    "image": "images/characters/vests/policevest/policevest.jpg",
     "id": "dzobj_4wv22nltbi"
-  },
-  {
-    "objectName": "policevest_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/policevest_m.p3d.jpg",
-    "id": "dzobj_j9o0tisgec"
-  },
-  {
-    "objectName": "pressvest_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/pressvest_f.p3d.jpg",
-    "id": "dzobj_6cx7n04rkn"
   },
   {
     "objectName": "pressvest_g.p3d",
@@ -501,75 +358,31 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/pressvest_g.p3d.jpg",
+    "searchTags": "armor, ballistic, protection, vests, military, journalist, loot",
+    "image": "images/characters/vests/pressvest_blue/pressvest_blue.jpg",
     "id": "dzobj_zmoc5rrka8"
   },
   {
-    "objectName": "pressvest_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/pressvest_m.p3d.jpg",
-    "id": "dzobj_zia27wf7tn"
-  },
-  {
-    "objectName": "smersh_animated_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/smersh_animated_f.p3d.jpg",
-    "id": "dzobj_fng2nx089c"
-  },
-  {
     "objectName": "smersh_animated_g.p3d",
-    "inGameName": "-",
+    "inGameName": "Assault Vest",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/smersh_animated_g.p3d.jpg",
+    "searchTags": "armor, assault, protection, vests, combat, military, loot",
+    "image": "images/characters/vests/smershvest/smershvest.jpg",
     "id": "dzobj_c78b8giym4"
   },
   {
-    "objectName": "smersh_animated_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/smersh_animated_m.p3d.jpg",
-    "id": "dzobj_vd39rgyw88"
-  },
-  {
     "objectName": "smersh_buttpack.p3d",
-    "inGameName": "-",
+    "inGameName": "Assault Vest",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/smersh_buttpack.p3d.jpg",
+    "searchTags": "armor, assault, protection, vests, combat, military, loot",
+    "image": "images/characters/vests/smershvest/smershvest.jpg",
     "id": "dzobj_c3rlgdlywn"
-  },
-  {
-    "objectName": "smersh_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/smersh_f.p3d.jpg",
-    "id": "dzobj_ips17rum55"
   },
   {
     "objectName": "smersh_g.p3d",
@@ -578,64 +391,20 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/smersh_g.p3d.jpg",
+    "searchTags": "armor, assault, protection, vests, combat, military, loot",
+    "image": "images/characters/vests/smershvest/smershvest.jpg",
     "id": "dzobj_957mbq3jih"
   },
   {
-    "objectName": "smersh_light_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/smersh_light_f.p3d.jpg",
-    "id": "dzobj_ahskjaxg13"
-  },
-  {
     "objectName": "smersh_light_g.p3d",
-    "inGameName": "-",
+    "inGameName": "Assault Vest",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/smersh_light_g.p3d.jpg",
+    "searchTags": "armor, assault, protection, vests, combat, military, loot",
+    "image": "images/characters/vests/smershvest/smershvest.jpg",
     "id": "dzobj_0wjyuibdgf"
-  },
-  {
-    "objectName": "smersh_light_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/smersh_light_m.p3d.jpg",
-    "id": "dzobj_khl4lrhthh"
-  },
-  {
-    "objectName": "smersh_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/smersh_m.p3d.jpg",
-    "id": "dzobj_c5xkod50rz"
-  },
-  {
-    "objectName": "tacticalvest2_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/tacticalvest2_f.p3d.jpg",
-    "id": "dzobj_tkcnlkot61"
   },
   {
     "objectName": "tacticalvest2_g.p3d",
@@ -644,31 +413,9 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/tacticalvest2_g.p3d.jpg",
+    "searchTags": "armor, protection, tactical, vests, storage, loot",
+    "image": "images/characters/vests/highcapacityvest_black/highcapacityvest_black.jpg",
     "id": "dzobj_ruoj0fhjd4"
-  },
-  {
-    "objectName": "tacticalvest2_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/tacticalvest2_m.p3d.jpg",
-    "id": "dzobj_sz9nxo3f2r"
-  },
-  {
-    "objectName": "ukassvest_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/ukassvest_f.p3d.jpg",
-    "id": "dzobj_7k68xspp97"
   },
   {
     "objectName": "ukassvest_g.p3d",
@@ -677,53 +424,31 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/ukassvest_g.p3d.jpg",
+    "searchTags": "armor, field, vests, storage, loot",
+    "image": "images/characters/vests/ukassvest_black/ukassvest_black.jpg",
     "id": "dzobj_8u1rt4trxw"
   },
   {
-    "objectName": "ukassvest_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/ukassvest_m.p3d.jpg",
-    "id": "dzobj_s0rx5abrq3"
-  },
-  {
     "objectName": "vestholster.p3d",
-    "inGameName": "-",
+    "inGameName": "Holster",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/vestholster.p3d.jpg",
+    "searchTags": "vests, military, combat, protection, gun, loot",
+    "image": "images/characters/vests/platecarrierholster/platecarrierholster.jpg",
     "id": "dzobj_hr9z41q4zb"
   },
   {
     "objectName": "vestholster_g.p3d",
-    "inGameName": "-",
+    "inGameName": "Holster",
     "category": "characters",
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/vestholster_g.p3d.jpg",
+    "searchTags": "vests, military, combat, protection, gun, loot",
+    "image": "images/characters/vests/platecarrierholster/platecarrierholster.jpg",
     "id": "dzobj_os2kfi4054"
-  },
-  {
-    "objectName": "vest_leatherstorage_f.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/vest_leatherstorage_f.p3d.jpg",
-    "id": "dzobj_upccqcaong"
   },
   {
     "objectName": "vest_leatherstorage_g.p3d",
@@ -732,20 +457,9 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/vests",
     "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/vest_leatherstorage_g.p3d.jpg",
+    "searchTags": "armor, protection, tactical, vests, storage, loot",
+    "image": "images/characters/vests/leatherstoragevest_beige/leatherstoragevest_beige.jpg",
     "id": "dzobj_k6jpagu5wc"
-  },
-  {
-    "objectName": "vest_leatherstorage_m.p3d",
-    "inGameName": "-",
-    "category": "characters",
-    "modelType": "Raw P3D",
-    "path": "dz/characters/vests",
-    "usableOnConsole": false,
-    "searchTags": "[MATCH TO CONFIG], loot",
-    "image": "images/characters/vests/vest_leatherstorage_m.p3d.jpg",
-    "id": "dzobj_w9vs0ut16m"
   },
   {
     "objectName": "HuntingVest_Winter",
@@ -755,7 +469,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "armor, hunter, protection, vests, snow, storage, trail, loot",
-    "image": "images/characters/vests/huntingvest.jpg",
+    "image": "images/characters/vests/huntingvest/huntingvest.jpg",
     "id": "dzobj_maeg76ed8f"
   },
   {
@@ -766,7 +480,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, military, combat, protection, gun, loot",
-    "image": "images/characters/vests/platecarrierholster.jpg",
+    "image": "images/characters/vests/platecarrierholster/platecarrierholster.jpg",
     "id": "dzobj_f5royqvo5s"
   },
   {
@@ -777,7 +491,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, military, combat, protection, gun, loot",
-    "image": "images/characters/vests/platecarrierholster.jpg",
+    "image": "images/characters/vests/platecarrierholster/platecarrierholster.jpg",
     "id": "dzobj_or3rx4d3f8"
   },
   {
@@ -788,7 +502,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, military, combat, protection, gun, loot",
-    "image": "images/characters/vests/platecarrierholster.jpg",
+    "image": "images/characters/vests/platecarrierholster/platecarrierholster.jpg",
     "id": "dzobj_dpf99g55ct"
   },
   {
@@ -799,7 +513,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, military, combat, protection, gun, loot",
-    "image": "images/characters/vests/platecarrierholster.jpg",
+    "image": "images/characters/vests/platecarrierholster/platecarrierholster.jpg",
     "id": "dzobj_qlsfqgc1sq"
   },
   {
@@ -810,7 +524,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, military, combat, protection, storage, loot",
-    "image": "images/characters/vests/platecarrierpouches.jpg",
+    "image": "images/characters/vests/platecarrierpouches/platecarrierpouches.jpg",
     "id": "dzobj_vd0t0dqgce"
   },
   {
@@ -821,7 +535,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, military, combat, protection, storage, loot",
-    "image": "images/characters/vests/platecarrierpouches.jpg",
+    "image": "images/characters/vests/platecarrierpouches/platecarrierpouches.jpg",
     "id": "dzobj_12lp2usrzj"
   },
   {
@@ -832,7 +546,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, military, combat, protection, storage, loot",
-    "image": "images/characters/vests/platecarrierpouches.jpg",
+    "image": "images/characters/vests/platecarrierpouches/platecarrierpouches.jpg",
     "id": "dzobj_dwsd8inhqn"
   },
   {
@@ -843,7 +557,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, military, combat, protection, storage, snow, loot",
-    "image": "images/characters/vests/platecarrierpouches.jpg",
+    "image": "images/characters/vests/platecarrierpouches/platecarrierpouches.jpg",
     "id": "dzobj_v0z03vh10h"
   },
   {
@@ -854,7 +568,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, military, combat, protection, loot",
-    "image": "images/characters/vests/platecarriervest.jpg",
+    "image": "images/characters/vests/platecarriervest/platecarriervest.jpg",
     "id": "dzobj_7vilehsizg"
   },
   {
@@ -865,7 +579,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, military, combat, protection, loot",
-    "image": "images/characters/vests/platecarriervest.jpg",
+    "image": "images/characters/vests/platecarriervest/platecarriervest.jpg",
     "id": "dzobj_lg69vlixqo"
   },
   {
@@ -876,7 +590,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, military, combat, protection, loot",
-    "image": "images/characters/vests/platecarriervest.jpg",
+    "image": "images/characters/vests/platecarriervest/platecarriervest.jpg",
     "id": "dzobj_tzfrydel4e"
   },
   {
@@ -887,7 +601,7 @@
     "path": "dz/characters/vests",
     "usableOnConsole": true,
     "searchTags": "vests, military, combat, protection, loot",
-    "image": "images/characters/vests/platecarriervest.jpg",
+    "image": "images/characters/vests/platecarriervest/platecarriervest.jpg",
     "id": "dzobj_lz4j6cz6bq"
   }
 ]
