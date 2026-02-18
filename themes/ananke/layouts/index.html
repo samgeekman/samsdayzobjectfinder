@@ -1622,23 +1622,47 @@
       );
     };
 
-    var buildObjectUrl = function(objName) {
+    var objectIdPattern = /^dzobj_[a-z0-9]{10}$/;
+    var normalizeObjectId = function(value) {
+      if (value === null || value === undefined) return '';
+      var id = String(value).trim();
+      return objectIdPattern.test(id) ? id : '';
+    };
+
+    var buildObjectUrl = function(objectId, legacyObjectName) {
       var nextUrl = new URL(window.location);
-      if (objName) {
-        nextUrl.searchParams.set('object', objName);
+      var normalizedId = normalizeObjectId(objectId);
+      nextUrl.searchParams.delete('id');
+      if (normalizedId) {
+        nextUrl.searchParams.append('id', normalizedId);
+        nextUrl.searchParams.delete('object');
+      } else if (legacyObjectName) {
+        nextUrl.searchParams.set('object', legacyObjectName);
       } else {
         nextUrl.searchParams.delete('object');
       }
       return nextUrl.toString();
     };
-    var buildPinnedUrl = function(names) {
+    var buildPinnedUrl = function(entries) {
       var nextUrl = new URL(window.location);
-      if (Array.isArray(names) && names.length) {
-        nextUrl.searchParams.set('pinned', names.join('|'));
-      } else {
-        nextUrl.searchParams.delete('pinned');
+      var ids = [];
+      var seenIds = {};
+      if (Array.isArray(entries) && entries.length) {
+        entries.forEach(function(item) {
+          var normalizedId = normalizeObjectId(item && item.id);
+          if (normalizedId && !seenIds[normalizedId]) {
+            seenIds[normalizedId] = true;
+            ids.push(normalizedId);
+          }
+        });
       }
+      nextUrl.searchParams.delete('id');
       nextUrl.searchParams.delete('object');
+      nextUrl.searchParams.delete('pinned');
+      nextUrl.searchParams.delete('pinned_ids');
+      ids.forEach(function(id) {
+        nextUrl.searchParams.append('id', id);
+      });
       return nextUrl.toString();
     };
 
@@ -1773,8 +1797,8 @@
       }
       updateEmptyState();
 
-      if (updateUrl && objName) {
-        history.replaceState({}, '', buildObjectUrl(objName));
+      if (updateUrl) {
+        history.replaceState({}, '', buildObjectUrl(objectId, objName));
       }
     };
 
@@ -2022,9 +2046,14 @@
           linkBadge.addEventListener('click', function(e) {
             e.stopPropagation();
             if (!Array.isArray(item.items) || !item.items.length) return;
-            var names = item.items.map(function(entry) { return entry.objName; }).filter(Boolean);
-            if (!names.length) return;
-            navigator.clipboard.writeText(buildPinnedUrl(names));
+            var entries = item.items.map(function(entry) {
+              return {
+                id: entry.id || '',
+                objName: entry.objName || ''
+              };
+            }).filter(function(entry) { return entry.objName; });
+            if (!entries.length) return;
+            navigator.clipboard.writeText(buildPinnedUrl(entries));
             var original = linkBadge.textContent;
             linkBadge.textContent = '✔';
             setTimeout(function() { linkBadge.textContent = original; }, 900);
@@ -2371,7 +2400,7 @@
         }).first();
 
         if ($cell.length) {
-          showObjectFocus($cell, false);
+          showObjectFocus($cell, true);
           var rowEl = $cell.closest('tr').get(0);
           if (rowEl && rowEl.scrollIntoView) {
             rowEl.classList.add('flash');
@@ -2384,17 +2413,43 @@
       });
     };
 
+    var focusById = function(objectId) {
+      var normalizedId = normalizeObjectId(objectId);
+      if (!normalizedId) return;
+      table.column(9).search('^' + escapeRegex(normalizedId) + '$', true, false).draw();
+      table.one('draw', function() {
+        var $cell = $tableEl.find('tbody .object-name-cell').filter(function() {
+          var value = $(this).data('objectid');
+          return value && String(value).trim() === normalizedId;
+        }).first();
+        if ($cell.length) {
+          showObjectFocus($cell, false);
+          var rowEl = $cell.closest('tr').get(0);
+          if (rowEl && rowEl.scrollIntoView) {
+            rowEl.classList.add('flash');
+            rowEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            setTimeout(function() { rowEl.classList.remove('flash'); }, 1200);
+          }
+        } else {
+          showMissingObject(normalizedId);
+        }
+      });
+    };
+
     if (objectFocusClearEl) {
       objectFocusClearEl.addEventListener('click', function() {
         table.column(2).search('').draw();
         hideFocusDetails();
-        history.replaceState({}, '', buildObjectUrl(''));
+        history.replaceState({}, '', buildObjectUrl('', ''));
       });
     }
 
     if (objectFocusCopyEl) {
       objectFocusCopyEl.addEventListener('click', function() {
-        var link = buildObjectUrl(currentObjectName || objectFocusNameEl.textContent || '');
+        var link = buildObjectUrl(
+          currentObjectData ? currentObjectData.id : '',
+          currentObjectName || objectFocusNameEl.textContent || ''
+        );
         navigator.clipboard.writeText(link);
         var original = objectFocusCopyEl.textContent;
         objectFocusCopyEl.textContent = 'Copied';
@@ -2475,9 +2530,7 @@
       pinnedCopyLinkEl.addEventListener('click', function() {
         var entries = getPinnedEntries();
         if (!entries.length) return;
-        var names = entries.map(function(item) { return item.objName; }).filter(Boolean);
-        if (!names.length) return;
-        var link = buildPinnedUrl(names);
+        var link = buildPinnedUrl(entries);
         navigator.clipboard.writeText(link);
         var original = pinnedCopyLinkEl.textContent;
         pinnedCopyLinkEl.textContent = 'Copied';
@@ -2796,7 +2849,9 @@
     };
 
     var searchParams = new URLSearchParams(window.location.search);
-    var pinnedParam = searchParams.get('pinned');
+    var objectIdParams = searchParams.getAll('id').map(function(value) {
+      return normalizeObjectId(value);
+    }).filter(Boolean);
     var objectParam = searchParams.get('object');
     var appliedUrlState = false;
 
@@ -2804,30 +2859,28 @@
       if (appliedUrlState) return;
       appliedUrlState = true;
 
-      if (pinnedParam) {
-        var names = parsePinnedParam(pinnedParam);
-        if (names.length) {
-          pinnedItems = [];
-          var seen = {};
-          var data = Array.isArray(sourceData) ? sourceData : table.rows().data();
-          names.forEach(function(name) {
-            var key = name.toLowerCase();
-            if (seen[key]) return;
-            seen[key] = true;
-            var match = null;
-            for (var i = 0; i < data.length; i++) {
-              var row = data[i];
-              var objName = getObjectName(row);
-              if (objName && objName.toLowerCase() === key) {
-                match = row;
-                break;
-              }
+      if (objectIdParams.length > 1) {
+        pinnedItems = [];
+        var data = Array.isArray(sourceData) ? sourceData : table.rows().data();
+        var seenById = {};
+        objectIdParams.forEach(function(id) {
+          if (seenById[id]) return;
+          seenById[id] = true;
+          var match = null;
+          for (var i = 0; i < data.length; i++) {
+            var row = data[i];
+            if (normalizeObjectId(getObjectId(row)) === id) {
+              match = row;
+              break;
             }
-            var item = buildPinnedItemFromData(match);
-            if (item && item.objName) {
-              pinnedItems.push(item);
-            }
-          });
+          }
+          var item = buildPinnedItemFromData(match);
+          if (item && item.objName && !isPinned(item.objName)) {
+            pinnedItems.push(item);
+          }
+        });
+
+        if (pinnedItems.length) {
           updatePinnedUI();
           if (objectFocusEl) {
             objectFocusEl.classList.remove('collapsed');
@@ -2837,8 +2890,17 @@
         }
       }
 
-      if (objectParam) {
-        focusByName(objectParam);
+      if (objectIdParams.length === 1) {
+        focusById(objectIdParams[0]);
+      } else if (objectIdParams.length > 1) {
+        // Multi-ID links represent a pinned collection, no single focus target.
+      } else if (objectParam) {
+        var legacyAsId = normalizeObjectId(objectParam);
+        if (legacyAsId) {
+          focusById(legacyAsId);
+        } else {
+          focusByName(objectParam);
+        }
       }
     };
 
@@ -3182,12 +3244,16 @@
           rows.push(this);
         }
       });
-      var names = rows.map(function(rowEl) {
+      var entries = rows.map(function(rowEl) {
         var cell = rowEl.querySelector('.object-name-cell');
-        return cell ? cell.getAttribute('data-object') : null;
-      }).filter(Boolean);
-      if (!names.length) return;
-      navigator.clipboard.writeText(buildPinnedUrl(names));
+        if (!cell) return null;
+        return {
+          id: cell.getAttribute('data-objectid') || '',
+          objName: cell.getAttribute('data-object') || ''
+        };
+      }).filter(function(entry) { return entry && entry.objName; });
+      if (!entries.length) return;
+      navigator.clipboard.writeText(buildPinnedUrl(entries));
       var $btn = $(this);
       var original = $btn.text();
       $btn.text('✔');
@@ -3236,7 +3302,7 @@
       }
 
       if (action === 'link') {
-        navigator.clipboard.writeText(buildObjectUrl(objName));
+        navigator.clipboard.writeText(buildObjectUrl($cell.data('objectid'), objName));
         $action.text('✔');
         setTimeout(function() { $action.text('🔗 Copy link'); }, 900);
         return;
