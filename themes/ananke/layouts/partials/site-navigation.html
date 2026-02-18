@@ -18,6 +18,19 @@
             </a>
           </li>
           {{ end }}
+          <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
+            <a class="hover-white white-90 no-underline" href="{{ "/api/" | urls.RelURL }}" title="API">
+              API
+            </a>
+          </li>
+        </ul>
+      {{ else }}
+        <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
+          <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
+            <a class="hover-white white-90 no-underline" href="{{ "/api/" | urls.RelURL }}" title="API">
+              API
+            </a>
+          </li>
         </ul>
       {{ end }}
       {{ partials.IncludeCached "social/follow.html" . }}
