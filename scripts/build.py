@@ -21,6 +21,8 @@ STATIC_OUTPUT_JSON = STATIC_DATA_DIR / "dayz_objects.json"
 DB_ZIP = STATIC_DIR / "dayz_objects_latest.zip"
 TYPES_XML = DATA_DIR / "types_aggregated.xml"
 STATIC_TYPES_XML = STATIC_DATA_DIR / "types_aggregated.xml"
+MAPGROUPPROTO_XML = DATA_DIR / "mapgroupproto-merged.xml"
+STATIC_MAPGROUPPROTO_XML = STATIC_DATA_DIR / "mapgroupproto-merged.xml"
 OVERRIDES_JSON = DATA_DIR / "object_overrides.json"
 TOMBSTONES_JSON = DATA_DIR / "id_tombstones.json"
 API_ROOT = STATIC_DIR / "api" / "v1"
@@ -549,6 +551,10 @@ def main() -> None:
         shutil.copyfile(TYPES_XML, STATIC_TYPES_XML)
     else:
         print(f"Warning: types_aggregated.xml not found at {TYPES_XML}")
+    if MAPGROUPPROTO_XML.exists():
+        shutil.copyfile(MAPGROUPPROTO_XML, STATIC_MAPGROUPPROTO_XML)
+    elif not STATIC_MAPGROUPPROTO_XML.exists():
+        print(f"Warning: mapgroupproto-merged.xml not found at {MAPGROUPPROTO_XML}")
 
     print(f"Built {OUTPUT_JSON} with {len(all_objects)} objects from {len(object_files)} files.")
     print(

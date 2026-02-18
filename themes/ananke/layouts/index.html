@@ -1117,6 +1117,7 @@
         <div class="object-focus__secondary is-right">
           <a id="objectFocusLink" class="pill-button" href="#" download>↓ Download image</a>
           <a id="objectFocusTypesLink" class="pill-button" href="#" download>↓ Download types entry</a>
+          <a id="objectFocusMapGroupProtoLink" class="pill-button" href="#" download>↓ Download MapGroupProto</a>
         </div>
       </div>
     </div>
@@ -1409,6 +1410,7 @@
     var objectFocusImageEl = document.getElementById('objectFocusImage');
     var objectFocusLinkEl = document.getElementById('objectFocusLink');
     var objectFocusTypesLinkEl = document.getElementById('objectFocusTypesLink');
+    var objectFocusMapGroupProtoLinkEl = document.getElementById('objectFocusMapGroupProtoLink');
     var objectFocusClearEl = document.getElementById('objectFocusClear');
     var objectFocusCopyEl = document.getElementById('objectFocusCopy');
     var objectFocusEditorEl = document.getElementById('objectFocusEditor');
@@ -1420,6 +1422,8 @@
     var currentObjectRowEl = null;
     var typesEntryUrl = null;
     var typesEntryByName = {};
+    var mapGroupProtoEntryUrl = null;
+    var mapGroupProtoEntryByName = {};
     var pinnedObjectsEl = document.getElementById('pinnedObjects');
     var pinnedListEl = document.getElementById('pinnedList');
     var pinnedClearAllEl = document.getElementById('pinnedClearAll');
@@ -1525,6 +1529,30 @@
       objectFocusTypesLinkEl.href = typesEntryUrl;
       objectFocusTypesLinkEl.setAttribute('download', objName + '.xml');
       objectFocusTypesLinkEl.style.display = 'inline-flex';
+    };
+
+    var setMapGroupProtoEntry = function(objName) {
+      if (!objectFocusMapGroupProtoLinkEl) return;
+      if (mapGroupProtoEntryUrl) {
+        URL.revokeObjectURL(mapGroupProtoEntryUrl);
+        mapGroupProtoEntryUrl = null;
+      }
+      if (!objName) {
+        objectFocusMapGroupProtoLinkEl.style.display = 'none';
+        objectFocusMapGroupProtoLinkEl.removeAttribute('download');
+        return;
+      }
+      var entry = mapGroupProtoEntryByName[objName];
+      if (!entry) {
+        objectFocusMapGroupProtoLinkEl.style.display = 'none';
+        objectFocusMapGroupProtoLinkEl.removeAttribute('download');
+        return;
+      }
+      var blob = new Blob([entry + '\n'], { type: 'application/xml;charset=utf-8' });
+      mapGroupProtoEntryUrl = URL.createObjectURL(blob);
+      objectFocusMapGroupProtoLinkEl.href = mapGroupProtoEntryUrl;
+      objectFocusMapGroupProtoLinkEl.setAttribute('download', objName + '-mapgroupproto.xml');
+      objectFocusMapGroupProtoLinkEl.style.display = 'inline-flex';
     };
 
     if (objectFocusEl) {
@@ -1670,6 +1698,10 @@
         objectFocusTypesLinkEl.style.display = 'none';
         objectFocusTypesLinkEl.removeAttribute('download');
       }
+      if (objectFocusMapGroupProtoLinkEl) {
+        objectFocusMapGroupProtoLinkEl.style.display = 'none';
+        objectFocusMapGroupProtoLinkEl.removeAttribute('download');
+      }
       currentObjectName = null;
       currentObjectData = null;
       if (currentObjectRowEl) {
@@ -1733,6 +1765,7 @@
         objectFocusLinkEl.style.display = 'none';
       }
       setTypesEntry(objName);
+      setMapGroupProtoEntry(objName);
 
       objectFocusEl.classList.add('visible');
       if (objectFocusPinEl) {
@@ -1757,6 +1790,24 @@
           var nameAttr = node.getAttribute('name');
           if (!nameAttr) continue;
           typesEntryByName[nameAttr] = node.outerHTML;
+        }
+      })
+      .catch(function() {});
+
+    fetch('/data/mapgroupproto-merged.xml')
+      .then(function(resp) { return resp.ok ? resp.text() : ''; })
+      .then(function(text) {
+        if (!text) return;
+        var parser = new DOMParser();
+        var xml = parser.parseFromString(text, 'application/xml');
+        var nodes = xml.getElementsByTagName('group');
+        for (var i = 0; i < nodes.length; i++) {
+          var node = nodes[i];
+          var nameAttr = node.getAttribute('name');
+          if (!nameAttr) continue;
+          var key = nameAttr.trim();
+          if (!key || mapGroupProtoEntryByName[key]) continue;
+          mapGroupProtoEntryByName[key] = node.outerHTML;
         }
       })
       .catch(function() {});

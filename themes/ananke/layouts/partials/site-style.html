@@ -1,5 +1,9 @@
 {{ with partials.IncludeCached "func/style/GetMainCSS.html" "style/GetMainCSS" }}
+{{ if hugo.IsServer }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ else }}
 <link rel="stylesheet" href="{{ .Permalink }}" >
+{{ end }}
 {{ end }}
 
 
