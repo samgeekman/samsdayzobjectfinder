@@ -13,22 +13,32 @@
         <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
           {{ range .Site.Menus.main }}
           <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
-            <a class="hover-white white-90 no-underline" href="{{ .URL }}" title="{{ lang.Translate "pageTitle" . }}">
+            <a class="nav-menu-button no-underline" href="{{ .URL }}" title="{{ lang.Translate "pageTitle" . }}">
               {{ .Name }}
             </a>
           </li>
           {{ end }}
           <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
-            <a class="hover-white white-90 no-underline" href="{{ "/api/" | urls.RelURL }}" title="API">
+            <a class="nav-menu-button no-underline" href="{{ "/api/" | urls.RelURL }}" title="API">
               API
+            </a>
+          </li>
+          <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
+            <a class="nav-menu-button nav-menu-button--highlight no-underline" href="{{ "/?version=129" | urls.RelURL }}" title="New 1.29 Objects">
+              New 1.29 Objects
             </a>
           </li>
         </ul>
       {{ else }}
         <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
           <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
-            <a class="hover-white white-90 no-underline" href="{{ "/api/" | urls.RelURL }}" title="API">
+            <a class="nav-menu-button no-underline" href="{{ "/api/" | urls.RelURL }}" title="API">
               API
+            </a>
+          </li>
+          <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
+            <a class="nav-menu-button nav-menu-button--highlight no-underline" href="{{ "/?version=129" | urls.RelURL }}" title="New 1.29 Objects">
+              New 1.29 Objects
             </a>
           </li>
         </ul>

@@ -76,6 +76,11 @@ a:hover {
   background-color: var(--accent) !important;
 }
 
+header .pb1-m.pb1-l.bg-black {
+  padding-bottom: 0 !important;
+  border-bottom: 5px solid #EEB224;
+}
+
 :root.dark-mode .white,
 :root.dark-mode .white-90,
 :root.dark-mode .light-gray,
@@ -91,19 +96,56 @@ a:hover {
   align-items: center;
   gap: 6px;
   padding: 8px 12px;
-  border-radius: 4px;
+  border-radius: 3px;
   border: 1px solid var(--border);
   background-color: var(--card);
   color: var(--text);
   cursor: pointer;
   font-size: 0.95rem;
   font-weight: 600;
-  transition: transform 0.12s ease, box-shadow 0.18s ease, background-color 0.2s ease;
+  text-decoration: none;
+  transition: transform 0.12s ease, box-shadow 0.18s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .pill-button:hover {
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  background-color: #EEB224;
+  border-color: #cf9718;
+  color: #1f1f1f;
+}
+
+.nav-menu-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff !important;
+  background: transparent;
+  font-size: 0.92rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-menu-button:hover {
+  background-color: #EEB224;
+  border-color: #cf9718;
+  color: #1f1f1f !important;
+}
+
+.nav-menu-button--highlight {
+  position: relative;
+}
+
+.nav-menu-button--highlight::after {
+  content: "";
+  position: absolute;
+  left: -6px;
+  right: -6px;
+  bottom: -7px;
+  height: 3px;
+  background: #EEB224;
+  border-radius: 2px;
 }
 
 .theme-toggle {
