@@ -78,6 +78,33 @@
     background-color: var(--card);
     box-shadow: none;
   }
+  .version-filter-notice {
+    display: none;
+    width: fit-content;
+    max-width: 95%;
+    margin: 8px auto;
+    padding: 3px 7px;
+    border: 1px solid #e8cf6b;
+    border-radius: 4px;
+    background: #fff8cc;
+    color: #5f4b00;
+    font-weight: 500;
+    font-size: 0.78rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .version-filter-notice.visible {
+    display: block;
+  }
+  .version-filter-notice a {
+    color: #7a5a00;
+    text-decoration: underline;
+    margin-left: 4px;
+    font-weight: 600;
+  }
+  .version-filter-notice a:hover {
+    color: #5a4300;
+  }
   #filters label {
     font-weight: 600;
     color: var(--text);
@@ -379,6 +406,8 @@
     z-index: 6;
     flex: 0 0 390px;
     align-self: flex-start;
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
   }
   .object-focus.visible,
   .object-focus.has-pins {
@@ -395,6 +424,7 @@
     top: 135px;
     right: 2.5%;
     z-index: 6;
+    overflow: hidden;
   }
   .object-focus.collapsed .object-focus__image,
   .object-focus.collapsed .object-focus__details {
@@ -728,6 +758,10 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-height: calc(100vh - 370px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 4px;
   }
 
   .pinned-item {
@@ -1071,6 +1105,10 @@
 </div>
 
 <div id="statusMessage"></div>
+<div id="versionFilterNotice" class="version-filter-notice" role="status" aria-live="polite">
+  Filtering new 1.29 objects.
+  <a id="versionFilterResetLink" href="#">Reset filter</a>
+</div>
 
 <div class="objects-layout">
   <table id="dayzObjects" class="display nowrap" style="width:100%">
@@ -2916,7 +2954,13 @@
     }).filter(Boolean);
     var objectParam = searchParams.get('object');
     var versionParam = normalizeVersionParam(searchParams.get('version'));
+    var versionFilterNoticeEl = document.getElementById('versionFilterNotice');
+    var versionFilterResetLinkEl = document.getElementById('versionFilterResetLink');
     var appliedUrlState = false;
+
+    if (versionFilterNoticeEl && versionParam === '129') {
+      versionFilterNoticeEl.classList.add('visible');
+    }
 
     var applyUrlState = function(sourceData) {
       if (appliedUrlState) return;
@@ -2949,11 +2993,6 @@
 
           if (pinnedItems.length) {
             updatePinnedUI();
-            if (objectFocusEl) {
-              objectFocusEl.classList.remove('collapsed');
-              updateCollapseButtonLabel();
-              updateEmptyState();
-            }
           }
         }
       }
@@ -2981,11 +3020,6 @@
 
         if (pinnedItems.length) {
           updatePinnedUI();
-          if (objectFocusEl) {
-            objectFocusEl.classList.remove('collapsed');
-            updateCollapseButtonLabel();
-            updateEmptyState();
-          }
         }
       }
 
@@ -3045,25 +3079,15 @@
     var previousCategoryValue = "";
 
     var resetFilters = function() {
-      if (!table) return;
-      table.search('').columns().search('').draw();
-      $('#filterCategory').val('').trigger('change');
-      $('#filterConsole').val('').trigger('change');
-      if (presetsActive) {
-        presetsActive = false;
-        previousCategoryValue = '';
-        $('#togglePresets').removeClass('active').text('Show presets');
-      }
-      hideFocusDetails();
-      if (objectFocusEl) {
-        objectFocusEl.classList.add('visible', 'collapsed');
-        updateCollapseButtonLabel();
-        updateEmptyState();
-      }
-      var nextUrl = new URL(window.location);
-      nextUrl.searchParams.delete('object');
-      history.replaceState({}, '', nextUrl);
+      var defaultUrl = window.location.origin + window.location.pathname;
+      window.location.assign(defaultUrl);
     };
+    if (versionFilterResetLinkEl) {
+      versionFilterResetLinkEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        resetFilters();
+      });
+    }
 
     var togglePresets = function($btn) {
       if (!table) return;
