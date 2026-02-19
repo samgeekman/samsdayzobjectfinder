@@ -2847,17 +2847,116 @@
       }).first();
       return matchCell.length ? matchCell : null;
     };
+    var applyIdListFilter = function(ids) {
+      if (!table) return;
+      var normalized = (Array.isArray(ids) ? ids : []).map(function(value) {
+        return normalizeObjectId(value);
+      }).filter(Boolean);
+      if (!normalized.length) {
+        table.column(9).search('').draw();
+        return;
+      }
+      var seen = {};
+      var unique = normalized.filter(function(id) {
+        if (seen[id]) return false;
+        seen[id] = true;
+        return true;
+      });
+      var regex = '^(' + unique.map(function(id) { return escapeRegex(id); }).join('|') + ')$';
+      table.column(9).search(regex, true, false).draw();
+    };
+
+    var VERSION_PINNED_IDS = {
+      '129': [
+        'dzobj_p3gx59u4nn',
+        'dzobj_ets2of8kgf',
+        'dzobj_m95ob1ufjx',
+        'dzobj_zq3tvorl5c',
+        'dzobj_89qaewbqo5',
+        'dzobj_ke9bo29f1d',
+        'dzobj_bashyzvifv',
+        'dzobj_23ojxqcz9y',
+        'dzobj_vjmns1d8xl',
+        'dzobj_ljfydi39dc',
+        'dzobj_ofo73lx763',
+        'dzobj_9w2667kdiu',
+        'dzobj_0beszrwbmk',
+        'dzobj_3e64slj3rc',
+        'dzobj_a1ns0gulsg',
+        'dzobj_tlvv55vm2z',
+        'dzobj_ixb9vas3ix',
+        'dzobj_cpxrfdxjqa',
+        'dzobj_g17efemlk7',
+        'dzobj_xqtfbaiex3',
+        'dzobj_5dg8z1pyw0',
+        'dzobj_aetqwiyvvj',
+        'dzobj_vy3fjrcn7v',
+        'dzobj_uvu64vwe6z',
+        'dzobj_n8q1ny0zcn',
+        'dzobj_dkjbiicol3',
+        'dzobj_1yi6rh3ist',
+        'dzobj_iwxae7in51',
+        'dzobj_n7pd8pq4df',
+        'dzobj_dcznmwltuw',
+        'dzobj_xalhozts9w',
+        'dzobj_dqw4jclfpq'
+      ]
+    };
+    var normalizeVersionParam = function(value) {
+      if (value === null || value === undefined) return '';
+      var normalized = String(value).trim().toLowerCase();
+      if (!normalized) return '';
+      if (normalized === '1.29') return '129';
+      return normalized.replace(/[^\d]/g, '');
+    };
 
     var searchParams = new URLSearchParams(window.location.search);
     var objectIdParams = searchParams.getAll('id').map(function(value) {
       return normalizeObjectId(value);
     }).filter(Boolean);
     var objectParam = searchParams.get('object');
+    var versionParam = normalizeVersionParam(searchParams.get('version'));
     var appliedUrlState = false;
 
     var applyUrlState = function(sourceData) {
       if (appliedUrlState) return;
       appliedUrlState = true;
+
+      if (!objectIdParams.length && !objectParam && versionParam) {
+        var versionIds = VERSION_PINNED_IDS[versionParam] || [];
+        if (versionIds.length) {
+          applyIdListFilter(versionIds);
+          pinnedItems = [];
+          var dataForVersion = Array.isArray(sourceData) ? sourceData : table.rows().data();
+          var versionSeen = {};
+          versionIds.forEach(function(id) {
+            var normalizedVersionId = normalizeObjectId(id);
+            if (!normalizedVersionId || versionSeen[normalizedVersionId]) return;
+            versionSeen[normalizedVersionId] = true;
+            var versionMatch = null;
+            for (var v = 0; v < dataForVersion.length; v++) {
+              var versionRow = dataForVersion[v];
+              if (normalizeObjectId(getObjectId(versionRow)) === normalizedVersionId) {
+                versionMatch = versionRow;
+                break;
+              }
+            }
+            var versionItem = buildPinnedItemFromData(versionMatch);
+            if (versionItem && versionItem.objName && !isPinned(versionItem.objName)) {
+              pinnedItems.push(versionItem);
+            }
+          });
+
+          if (pinnedItems.length) {
+            updatePinnedUI();
+            if (objectFocusEl) {
+              objectFocusEl.classList.remove('collapsed');
+              updateCollapseButtonLabel();
+              updateEmptyState();
+            }
+          }
+        }
+      }
 
       if (objectIdParams.length > 1) {
         pinnedItems = [];

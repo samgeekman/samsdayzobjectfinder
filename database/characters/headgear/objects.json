@@ -2891,5 +2891,49 @@
     "searchTags": "black, festive, headgear, hood",
     "image": "images/characters/headgear/witchhoodcoif_red/witchhoodcoif_red.jpg",
     "id": "dzobj_6y79rpwz52"
+  },
+  {
+    "objectName": "Headdress_Bear",
+    "inGameName": "Headdress",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "animal, fur hat, trapper hat, 1.29, 129",
+    "image": "images/characters/headgear/headdress_bear/headdress_bear.jpg",
+    "id": "dzobj_ke9bo29f1d"
+  },
+  {
+    "objectName": "Headdress_Fox",
+    "inGameName": "Headdress",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "animal, fur hat, trapper hat, 1.29, 129",
+    "image": "images/characters/headgear/headdress_fox/headdress_fox.jpg",
+    "id": "dzobj_bashyzvifv"
+  },
+  {
+    "objectName": "bearheaddress_g.p3d",
+    "inGameName": "Headdress",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": false,
+    "searchTags": "animal, fur hat, trapper hat, 1.29, 129",
+    "image": "images/characters/headgear/headdress_bear/headdress_bear.jpg",
+    "id": "dzobj_23ojxqcz9y"
+  },
+  {
+    "objectName": "foxheaddress_g.p3d",
+    "inGameName": "Headdress",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": false,
+    "searchTags": "animal, fur hat, trapper hat, 1.29, 129",
+    "image": "images/characters/headgear/headdress_fox/headdress_fox.jpg",
+    "id": "dzobj_vjmns1d8xl"
   }
 ]

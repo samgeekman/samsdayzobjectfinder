@@ -1,0 +1,54 @@
+DayZ 1.29 Import Report
+
+Added object entries: 23
++ Armband_Sakhal -> database/characters/tops/objects.json | images/characters/tops/armband_sakhal/armband_sakhal.jpg
++ Attack2Bag_Black -> database/characters/backpacks/objects.json | images/characters/backpacks/attack2bag_black.jpg
++ Attack2Bag_Green -> database/characters/backpacks/objects.json | images/characters/backpacks/attack2bag_green.jpg
++ Attack2Bag_Ttsko -> database/characters/backpacks/objects.json | images/characters/backpacks/attack2bag_ttsko.jpg
++ Attack2Bag_Yeger -> database/characters/backpacks/objects.json | images/characters/backpacks/attack2bag_yeger.jpg
++ ColdOperationBoots_Camo -> database/characters/shoes/objects.json | images/characters/shoes/coldoperationboots_camo/coldoperationboots_camo.jpg
++ ColdOperationBoots_Green -> database/characters/shoes/objects.json | images/characters/shoes/coldoperationboots_green/coldoperationboots_green.jpg
++ ColdOperationBoots_Grey -> database/characters/shoes/objects.json | images/characters/shoes/coldoperationboots_grey/coldoperationboots_grey.jpg
++ Flag_Sakhal -> database/gear/camping/objects.json | images/gear/camping/flag_sakhal.jpg
++ GulagJacket_Grey -> database/characters/tops/objects.json | images/characters/tops/gulagjacket_grey/gulagjacket_grey.jpg
++ Headdress_Bear -> database/characters/headgear/objects.json | images/characters/headgear/headdress_bear/headdress_bear.jpg
++ Headdress_Fox -> database/characters/headgear/objects.json | images/characters/headgear/headdress_fox/headdress_fox.jpg
++ MilitarySweater_Chernarus -> database/characters/tops/objects.json | images/characters/tops/militarysweater_chernarus/militarysweater_chernarus.jpg
++ MilitarySweater_Livonia -> database/characters/tops/objects.json | images/characters/tops/militarysweater_livonia/militarysweater_livonia.jpg
++ MilitarySweater_NoPatch -> database/characters/tops/objects.json | images/characters/tops/militarysweater_nopatch/militarysweater_nopatch.jpg
++ PilotJacket_Black -> database/characters/tops/objects.json | images/characters/tops/pilotjacket_black/pilotjacket_black.jpg
++ PilotJacket_Brown -> database/characters/tops/objects.json | images/characters/tops/pilotjacket_brown/pilotjacket_brown.jpg
++ PilotJacket_Yellow -> database/characters/tops/objects.json | images/characters/tops/pilotjacket_yellow/pilotjacket_yellow.jpg
++ TraditionalBoots_Beige -> database/characters/shoes/objects.json | images/characters/shoes/traditionalboots_beige/traditionalboots_beige.jpg
++ TraditionalBoots_DarkBrown -> database/characters/shoes/objects.json | images/characters/shoes/traditionalboots_darkbrown/traditionalboots_darkbrown.jpg
++ WinterMilitaryCoat_Brown -> database/characters/tops/objects.json | images/characters/tops/wintermilitarycoat_brown/wintermilitarycoat_brown.jpg
++ WinterMilitaryCoat_DarkGrey -> database/characters/tops/objects.json | images/characters/tops/wintermilitarycoat_darkgrey/wintermilitarycoat_darkgrey.jpg
++ WinterMilitaryCoat_Grey -> database/characters/tops/objects.json | images/characters/tops/wintermilitarycoat_grey/wintermilitarycoat_grey.jpg
+
+Copied images: 20
++ Armband_Sakhal -> images/characters/tops/armband_sakhal/armband_sakhal.jpg
++ Attack2Bag_Green -> images/characters/backpacks/attack2bag_green.jpg
++ Attack2Bag_Ttsko -> images/characters/backpacks/attack2bag_ttsko.jpg
++ Attack2Bag_Yeger -> images/characters/backpacks/attack2bag_yeger.jpg
++ ColdOperationBoots_Camo -> images/characters/shoes/coldoperationboots_camo/coldoperationboots_camo.jpg
++ ColdOperationBoots_Green -> images/characters/shoes/coldoperationboots_green/coldoperationboots_green.jpg
++ ColdOperationBoots_Grey -> images/characters/shoes/coldoperationboots_grey/coldoperationboots_grey.jpg
++ Flag_Sakhal -> images/gear/camping/flag_sakhal.jpg
++ GulagJacket_Grey -> images/characters/tops/gulagjacket_grey/gulagjacket_grey.jpg
++ Headdress_Bear -> images/characters/headgear/headdress_bear/headdress_bear.jpg
++ Headdress_Fox -> images/characters/headgear/headdress_fox/headdress_fox.jpg
++ PilotJacket_Black -> images/characters/tops/pilotjacket_black/pilotjacket_black.jpg
++ PilotJacket_Brown -> images/characters/tops/pilotjacket_brown/pilotjacket_brown.jpg
++ PilotJacket_Yellow -> images/characters/tops/pilotjacket_yellow/pilotjacket_yellow.jpg
++ TraditionalBoots_Beige -> images/characters/shoes/traditionalboots_beige/traditionalboots_beige.jpg
++ TraditionalBoots_DarkBrown -> images/characters/shoes/traditionalboots_darkbrown/traditionalboots_darkbrown.jpg
++ WinterMilitaryCoat_Brown -> images/characters/tops/wintermilitarycoat_brown/wintermilitarycoat_brown.jpg
++ WinterMilitaryCoat_DarkGrey -> images/characters/tops/wintermilitarycoat_darkgrey/wintermilitarycoat_darkgrey.jpg
++ WinterMilitaryCoat_Grey -> images/characters/tops/wintermilitarycoat_grey/wintermilitarycoat_grey.jpg
++ AssaultBag_Black -> images/characters/backpacks/assault_bag_black.jpg
+
+Missing source images: 4
+! Attack2Bag_Black expected at data/129/Attack2Bag_Black.jpg -> images/characters/backpacks/attack2bag_black.jpg
+! MilitarySweater_Chernarus expected at data/129/MilitarySweater_Chernarus.jpg -> images/characters/tops/militarysweater_chernarus/militarysweater_chernarus.jpg
+! MilitarySweater_Livonia expected at data/129/MilitarySweater_Livonia.jpg -> images/characters/tops/militarysweater_livonia/militarysweater_livonia.jpg
+! MilitarySweater_NoPatch expected at data/129/MilitarySweater_NoPatch.jpg -> images/characters/tops/militarysweater_nopatch/militarysweater_nopatch.jpg
