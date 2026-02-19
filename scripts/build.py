@@ -27,6 +27,12 @@ OVERRIDES_JSON = DATA_DIR / "object_overrides.json"
 TOMBSTONES_JSON = DATA_DIR / "id_tombstones.json"
 API_ROOT = STATIC_DIR / "api" / "v1"
 API_IMAGE_BASE_URL = "https://samsobjectfinder.com"
+BBOX_BY_ID_CANDIDATES = [
+    DATA_DIR / "object_bbox_by_id.json",
+    STATIC_DATA_DIR / "object_bbox_by_id.json",
+    STATIC_DIR / "data" / "object_bbox_by_id.json",
+    BASE_DIR / "public" / "data" / "object_bbox_by_id.json",
+]
 ID_RE = re.compile(r"^dzobj_[a-z0-9]{10}$")
 ID_PREFIX = "dzobj_"
 ID_CHARS = "abcdefghijklmnopqrstuvwxyz0123456789"
@@ -495,6 +501,273 @@ def generate_static_api(objects: List[dict]) -> Dict[str, int]:
     }
 
 
+def _as_float3(value: object) -> Optional[Tuple[float, float, float]]:
+    if not isinstance(value, list) or len(value) != 3:
+        return None
+    out: List[float] = []
+    for part in value:
+        if not isinstance(part, (int, float)):
+            return None
+        out.append(float(part))
+    return out[0], out[1], out[2]
+
+
+def estimate_dimensions_from_tags(tags: object) -> Tuple[float, float, float]:
+    text = tags.lower() if isinstance(tags, str) else ""
+    if "huge" in text:
+        return 8.0, 8.0, 8.0
+    if "large" in text:
+        return 4.5, 4.5, 4.5
+    if "small" in text:
+        return 1.2, 1.2, 1.2
+    if "medium" in text:
+        return 2.5, 2.5, 2.5
+    return 2.5, 2.5, 2.5
+
+
+def normalize_model_token(value: object) -> str:
+    token = str(value or "").strip().lower()
+    token = re.sub(r"\.[a-z0-9]+$", "", token)
+    for prefix in ("land_", "staticobj_", "wreck_", "misc_", "house_"):
+        if token.startswith(prefix):
+            token = token[len(prefix) :]
+    token = re.sub(r"[^a-z0-9]+", "", token)
+    return token
+
+
+def image_token(value: object) -> str:
+    image = str(value or "").strip().lower()
+    if not image:
+        return ""
+    base = PurePosixPath(image).name
+    base = re.sub(r"\.(jpg|jpeg|png|webp)$", "", base)
+    return normalize_model_token(base)
+
+
+def path_family(value: object) -> str:
+    path = str(value or "").strip().lower().strip("/")
+    if not path:
+        return ""
+    parts = [part for part in path.split("/") if part]
+    return "/".join(parts[:3])
+
+
+def _has_bbox_vectors(obj: dict) -> bool:
+    return (
+        isinstance(obj.get("bboxMinVisual"), list)
+        and len(obj["bboxMinVisual"]) == 3
+        and isinstance(obj.get("bboxMaxVisual"), list)
+        and len(obj["bboxMaxVisual"]) == 3
+    )
+
+
+def _append_index(index: Dict[str, List[dict]], key: str, obj: dict) -> None:
+    if not key:
+        return
+    index.setdefault(key, []).append(obj)
+
+
+def link_config_bbox_from_raw_p3d(objects: List[dict]) -> Dict[str, int]:
+    donors = [
+        obj
+        for obj in objects
+        if str(obj.get("modelType", "")).strip() == "Raw P3D" and _has_bbox_vectors(obj)
+    ]
+    if not donors:
+        return {"linked_configs": 0, "by_exact_image": 0, "by_object_token": 0, "by_image_token": 0}
+
+    by_exact_image: Dict[str, List[dict]] = {}
+    by_object_token: Dict[str, List[dict]] = {}
+    by_image_token: Dict[str, List[dict]] = {}
+    for donor in donors:
+        _append_index(by_exact_image, str(donor.get("image", "")).strip().lower(), donor)
+        _append_index(by_object_token, normalize_model_token(donor.get("objectName")), donor)
+        _append_index(by_image_token, image_token(donor.get("image")), donor)
+
+    linked_configs = 0
+    by_exact = 0
+    by_obj_token = 0
+    by_img_token = 0
+
+    for obj in objects:
+        if str(obj.get("modelType", "")).strip() != "Config":
+            continue
+        if _has_bbox_vectors(obj):
+            continue
+
+        obj_path_family = path_family(obj.get("path"))
+        exact_candidates = by_exact_image.get(str(obj.get("image", "")).strip().lower(), [])
+        object_token_candidates = by_object_token.get(normalize_model_token(obj.get("objectName")), [])
+        image_token_candidates = by_image_token.get(image_token(obj.get("image")), [])
+
+        donor: Optional[dict] = None
+        link_method = ""
+        if len(exact_candidates) == 1:
+            donor = exact_candidates[0]
+            link_method = "exact_image"
+        if donor is None:
+            same_family = [row for row in object_token_candidates if path_family(row.get("path")) == obj_path_family]
+            if len(same_family) == 1:
+                donor = same_family[0]
+                link_method = "object_token_path_family"
+        if donor is None:
+            same_family = [row for row in image_token_candidates if path_family(row.get("path")) == obj_path_family]
+            if len(same_family) == 1:
+                donor = same_family[0]
+                link_method = "image_token_path_family"
+        if donor is None and len(object_token_candidates) == 1:
+            donor = object_token_candidates[0]
+            link_method = "object_token"
+        if donor is None and len(image_token_candidates) == 1:
+            donor = image_token_candidates[0]
+            link_method = "image_token"
+        if donor is None:
+            continue
+
+        bbmin = _as_float3(donor.get("bboxMinVisual"))
+        bbmax = _as_float3(donor.get("bboxMaxVisual"))
+        if bbmin is None or bbmax is None:
+            continue
+
+        obj["bboxMinVisual"] = [bbmin[0], bbmin[1], bbmin[2]]
+        obj["bboxMaxVisual"] = [bbmax[0], bbmax[1], bbmax[2]]
+        obj["dimensionsVisual"] = [bbmax[0] - bbmin[0], bbmax[1] - bbmin[1], bbmax[2] - bbmin[2]]
+        obj["dimensionsSource"] = "bbox_linked_p3d"
+        obj["bboxStatus"] = "linked_from_raw_p3d"
+        obj["bboxLinkedFromId"] = str(donor.get("id", "")).strip()
+        obj["bboxLinkedFromObject"] = str(donor.get("objectName", "")).strip()
+        obj["bboxLinkMethod"] = link_method
+        linked_configs += 1
+        if link_method == "exact_image":
+            by_exact += 1
+        elif link_method in {"object_token_path_family", "object_token"}:
+            by_obj_token += 1
+        elif link_method in {"image_token_path_family", "image_token"}:
+            by_img_token += 1
+
+    return {
+        "linked_configs": linked_configs,
+        "by_exact_image": by_exact,
+        "by_object_token": by_obj_token,
+        "by_image_token": by_img_token,
+    }
+
+
+def load_bbox_by_id() -> Dict[str, dict]:
+    path_used: Optional[Path] = None
+    raw: Optional[object] = None
+    for candidate in BBOX_BY_ID_CANDIDATES:
+        loaded = load_json_file(candidate)
+        if isinstance(loaded, dict):
+            raw = loaded
+            path_used = candidate
+            break
+
+    if not isinstance(raw, dict):
+        print("Warning: bbox mapping not found; skipping dimension enrichment.")
+        return {}
+
+    index: Dict[str, dict] = {}
+    for key, value in raw.items():
+        if not isinstance(key, str) or not key.strip():
+            continue
+        if not isinstance(value, dict):
+            continue
+        index[key.strip()] = value
+
+    print(f"Loaded bbox mapping for {len(index)} IDs from {path_used}.")
+    return index
+
+
+def apply_bbox_dimensions(objects: List[dict]) -> Dict[str, int]:
+    bbox_by_id = load_bbox_by_id()
+    if not bbox_by_id:
+        estimated_rows = 0
+        for obj in objects:
+            est = estimate_dimensions_from_tags(obj.get("searchTags"))
+            obj["bboxStatus"] = "unmapped"
+            obj["dimensionsVisual"] = [est[0], est[1], est[2]]
+            obj["dimensionsSource"] = "estimated_tags"
+            estimated_rows += 1
+        return {
+            "mapped_rows": 0,
+            "rows_with_bbox": 0,
+            "rows_with_dimensions": 0,
+            "rows_missing_map": len(objects),
+            "rows_estimated": estimated_rows,
+        }
+
+    mapped_rows = 0
+    rows_with_bbox = 0
+    rows_with_dimensions = 0
+    rows_missing_map = 0
+    rows_estimated = 0
+
+    for obj in objects:
+        object_id = str(obj.get("id", "")).strip()
+        if not object_id:
+            rows_missing_map += 1
+            est = estimate_dimensions_from_tags(obj.get("searchTags"))
+            obj["bboxStatus"] = "unmapped"
+            obj["dimensionsVisual"] = [est[0], est[1], est[2]]
+            obj["dimensionsSource"] = "estimated_tags"
+            rows_estimated += 1
+            continue
+        bbox = bbox_by_id.get(object_id)
+        if not isinstance(bbox, dict):
+            rows_missing_map += 1
+            est = estimate_dimensions_from_tags(obj.get("searchTags"))
+            obj["bboxStatus"] = "unmapped"
+            obj["dimensionsVisual"] = [est[0], est[1], est[2]]
+            obj["dimensionsSource"] = "estimated_tags"
+            rows_estimated += 1
+            continue
+
+        mapped_rows += 1
+        status = bbox.get("bboxStatus")
+        if isinstance(status, str) and status.strip():
+            obj["bboxStatus"] = status.strip()
+
+        bbmin = _as_float3(bbox.get("bboxMinVisual"))
+        bbmax = _as_float3(bbox.get("bboxMaxVisual"))
+        if bbmin is None or bbmax is None:
+            continue
+
+        obj["bboxMinVisual"] = [bbmin[0], bbmin[1], bbmin[2]]
+        obj["bboxMaxVisual"] = [bbmax[0], bbmax[1], bbmax[2]]
+        rows_with_bbox += 1
+
+        size_x = bbmax[0] - bbmin[0]
+        size_y = bbmax[1] - bbmin[1]
+        size_z = bbmax[2] - bbmin[2]
+        obj["dimensionsVisual"] = [size_x, size_y, size_z]
+        obj["dimensionsSource"] = "bbox_visual"
+        rows_with_dimensions += 1
+
+    linked_stats = link_config_bbox_from_raw_p3d(objects)
+
+    # Fill estimates for mapped rows that have status but no bbox vectors.
+    for obj in objects:
+        if "dimensionsVisual" in obj:
+            continue
+        est = estimate_dimensions_from_tags(obj.get("searchTags"))
+        obj["dimensionsVisual"] = [est[0], est[1], est[2]]
+        obj["dimensionsSource"] = "estimated_tags"
+        rows_estimated += 1
+
+    return {
+        "mapped_rows": mapped_rows,
+        "rows_with_bbox": rows_with_bbox + linked_stats["linked_configs"],
+        "rows_with_dimensions": rows_with_dimensions + linked_stats["linked_configs"],
+        "rows_missing_map": rows_missing_map,
+        "rows_estimated": rows_estimated,
+        "rows_linked_from_p3d": linked_stats["linked_configs"],
+        "rows_linked_exact_image": linked_stats["by_exact_image"],
+        "rows_linked_object_token": linked_stats["by_object_token"],
+        "rows_linked_image_token": linked_stats["by_image_token"],
+    }
+
+
 def export_database_zip() -> None:
     """Export the current database folder as a zip in the static root."""
     STATIC_DIR.mkdir(parents=True, exist_ok=True)
@@ -538,6 +811,7 @@ def main() -> None:
 
     all_objects, dedupe_stats = collapse_case_duplicates(all_objects)
     override_stats = apply_sidecar_overrides(all_objects)
+    bbox_stats = apply_bbox_dimensions(all_objects)
     unique_ids = ensure_explicit_ids(all_objects)
     tombstone_stats = update_id_tombstones(previous_index, all_objects)
     api_stats = generate_static_api(all_objects)
@@ -573,6 +847,18 @@ def main() -> None:
         "Overrides: "
         f"{override_stats['applied']} applied, "
         f"{override_stats['unknown_ids']} unknown IDs."
+    )
+    print(
+        "Dimensions: "
+        f"{bbox_stats['mapped_rows']} mapped, "
+        f"{bbox_stats['rows_with_bbox']} with bbox, "
+        f"{bbox_stats['rows_with_dimensions']} with dimensions, "
+        f"{bbox_stats['rows_linked_from_p3d']} linked from raw p3d "
+        f"(exact image {bbox_stats['rows_linked_exact_image']}, "
+        f"object token {bbox_stats['rows_linked_object_token']}, "
+        f"image token {bbox_stats['rows_linked_image_token']}), "
+        f"{bbox_stats['rows_estimated']} estimated, "
+        f"{bbox_stats['rows_missing_map']} without mapping."
     )
     print(
         "Tombstones: "
