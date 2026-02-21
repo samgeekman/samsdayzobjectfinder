@@ -29,7 +29,7 @@
     "path": "dz/structures_sakhal/military/storage",
     "usableOnConsole": true,
     "searchTags": "military, sakhal, bunker, underground, v1.29",
-    "image": "images/structures_sakhal/military/storage/land_warheadstorage_facility.jpg",
+    "image": "images/structures_sakhal/military/storage/land_warheadstorage_bunker_facility.jpg",
     "id": "dzobj_9dk4zt8fwd"
   },
   {
@@ -130,6 +130,17 @@
     "searchTags": "military, sakhal, bunker, underground",
     "image": "images/structures_sakhal/military/storage/warheadstorage_entrance_roof.p3d.jpg",
     "id": "dzobj_c03qx05kcs"
+  },
+  {
+    "objectName": "warheadstorage_bunker_facility.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/military/storage",
+    "usableOnConsole": false,
+    "searchTags": "military, sakhal, bunker, underground, v1.29",
+    "image": "images/structures_sakhal/military/storage/land_warheadstorage_bunker_facility.jpg",
+    "id": "dzobj_r3zk936cho"
   },
   {
     "objectName": "warheadstorage_entrance_roof_detail1.p3d",
