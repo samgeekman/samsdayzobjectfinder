@@ -1106,7 +1106,7 @@
 
 <div id="statusMessage"></div>
 <div id="versionFilterNotice" class="version-filter-notice" role="status" aria-live="polite">
-  Filtering new 1.29 objects.
+  <span id="versionFilterNoticeText">Filtering version objects.</span>
   <a id="versionFilterResetLink" href="#">Reset filter</a>
 </div>
 <div id="linkedFilterNotice" class="version-filter-notice" role="status" aria-live="polite">
@@ -2908,48 +2908,32 @@
       table.column(9).search(regex, true, false).draw();
     };
 
-    var VERSION_PINNED_IDS = {
-      '129': [
-        'dzobj_p3gx59u4nn',
-        'dzobj_ets2of8kgf',
-        'dzobj_m95ob1ufjx',
-        'dzobj_zq3tvorl5c',
-        'dzobj_89qaewbqo5',
-        'dzobj_ke9bo29f1d',
-        'dzobj_bashyzvifv',
-        'dzobj_23ojxqcz9y',
-        'dzobj_vjmns1d8xl',
-        'dzobj_ljfydi39dc',
-        'dzobj_ofo73lx763',
-        'dzobj_9w2667kdiu',
-        'dzobj_0beszrwbmk',
-        'dzobj_3e64slj3rc',
-        'dzobj_a1ns0gulsg',
-        'dzobj_tlvv55vm2z',
-        'dzobj_ixb9vas3ix',
-        'dzobj_cpxrfdxjqa',
-        'dzobj_g17efemlk7',
-        'dzobj_xqtfbaiex3',
-        'dzobj_5dg8z1pyw0',
-        'dzobj_aetqwiyvvj',
-        'dzobj_vy3fjrcn7v',
-        'dzobj_uvu64vwe6z',
-        'dzobj_n8q1ny0zcn',
-        'dzobj_dkjbiicol3',
-        'dzobj_1yi6rh3ist',
-        'dzobj_iwxae7in51',
-        'dzobj_n7pd8pq4df',
-        'dzobj_dcznmwltuw',
-        'dzobj_xalhozts9w',
-        'dzobj_dqw4jclfpq'
-      ]
+    var getDataArray = function(sourceData) {
+      if (Array.isArray(sourceData)) return sourceData;
+      if (sourceData && typeof sourceData.toArray === 'function') return sourceData.toArray();
+      return table ? table.rows().data().toArray() : [];
     };
     var normalizeVersionParam = function(value) {
       if (value === null || value === undefined) return '';
       var normalized = String(value).trim().toLowerCase();
       if (!normalized) return '';
-      if (normalized === '1.29') return '129';
-      return normalized.replace(/[^\d]/g, '');
+      if (/^v1\.\d+$/.test(normalized)) return normalized;
+      if (/^1\.\d+$/.test(normalized)) return 'v' + normalized;
+      if (/^1\d{2}$/.test(normalized)) {
+        return 'v1.' + normalized.slice(1);
+      }
+      return '';
+    };
+    var rowHasVersionTag = function(row, versionKey) {
+      if (!versionKey) return false;
+      var rawTags = String((row && row.searchTags) || '');
+      if (!rawTags) return false;
+      var parts = rawTags.split(',');
+      for (var i = 0; i < parts.length; i++) {
+        var token = normalizeVersionParam(parts[i]);
+        if (token && token === versionKey) return true;
+      }
+      return false;
     };
 
     var searchParams = new URLSearchParams(window.location.search);
@@ -2959,12 +2943,16 @@
     var objectParam = searchParams.get('object');
     var versionParam = normalizeVersionParam(searchParams.get('version'));
     var versionFilterNoticeEl = document.getElementById('versionFilterNotice');
+    var versionFilterNoticeTextEl = document.getElementById('versionFilterNoticeText');
     var versionFilterResetLinkEl = document.getElementById('versionFilterResetLink');
     var linkedFilterNoticeEl = document.getElementById('linkedFilterNotice');
     var linkedFilterResetLinkEl = document.getElementById('linkedFilterResetLink');
     var appliedUrlState = false;
 
-    if (versionFilterNoticeEl && versionParam === '129') {
+    if (versionFilterNoticeEl && versionParam) {
+      if (versionFilterNoticeTextEl) {
+        versionFilterNoticeTextEl.textContent = 'Filtering ' + versionParam + ' objects.';
+      }
       versionFilterNoticeEl.classList.add('visible');
     }
     if (linkedFilterNoticeEl && objectIdParams.length > 1) {
@@ -2976,25 +2964,24 @@
       appliedUrlState = true;
 
       if (!objectIdParams.length && !objectParam && versionParam) {
-        var versionIds = VERSION_PINNED_IDS[versionParam] || [];
-        if (versionIds.length) {
+        var dataForVersion = getDataArray(sourceData);
+        var versionMatches = dataForVersion.filter(function(row) {
+          return rowHasVersionTag(row, versionParam);
+        });
+        if (versionMatches.length) {
+          var versionIds = versionMatches.map(function(row) {
+            return normalizeObjectId(getObjectId(row));
+          }).filter(Boolean);
           applyIdListFilter(versionIds);
           pinnedItems = [];
-          var dataForVersion = Array.isArray(sourceData) ? sourceData : table.rows().data();
           var versionSeen = {};
-          versionIds.forEach(function(id) {
-            var normalizedVersionId = normalizeObjectId(id);
-            if (!normalizedVersionId || versionSeen[normalizedVersionId]) return;
-            versionSeen[normalizedVersionId] = true;
-            var versionMatch = null;
-            for (var v = 0; v < dataForVersion.length; v++) {
-              var versionRow = dataForVersion[v];
-              if (normalizeObjectId(getObjectId(versionRow)) === normalizedVersionId) {
-                versionMatch = versionRow;
-                break;
-              }
+          versionMatches.forEach(function(versionRow) {
+            var normalizedVersionId = normalizeObjectId(getObjectId(versionRow));
+            if (normalizedVersionId && versionSeen[normalizedVersionId]) return;
+            if (normalizedVersionId) {
+              versionSeen[normalizedVersionId] = true;
             }
-            var versionItem = buildPinnedItemFromData(versionMatch);
+            var versionItem = buildPinnedItemFromData(versionRow);
             if (versionItem && versionItem.objName && !isPinned(versionItem.objName)) {
               pinnedItems.push(versionItem);
             }
