@@ -1109,6 +1109,10 @@
   Filtering new 1.29 objects.
   <a id="versionFilterResetLink" href="#">Reset filter</a>
 </div>
+<div id="linkedFilterNotice" class="version-filter-notice" role="status" aria-live="polite">
+  Filtering linked objects.
+  <a id="linkedFilterResetLink" href="#">Reset filter</a>
+</div>
 
 <div class="objects-layout">
   <table id="dayzObjects" class="display nowrap" style="width:100%">
@@ -2956,10 +2960,15 @@
     var versionParam = normalizeVersionParam(searchParams.get('version'));
     var versionFilterNoticeEl = document.getElementById('versionFilterNotice');
     var versionFilterResetLinkEl = document.getElementById('versionFilterResetLink');
+    var linkedFilterNoticeEl = document.getElementById('linkedFilterNotice');
+    var linkedFilterResetLinkEl = document.getElementById('linkedFilterResetLink');
     var appliedUrlState = false;
 
     if (versionFilterNoticeEl && versionParam === '129') {
       versionFilterNoticeEl.classList.add('visible');
+    }
+    if (linkedFilterNoticeEl && objectIdParams.length > 1) {
+      linkedFilterNoticeEl.classList.add('visible');
     }
 
     var applyUrlState = function(sourceData) {
@@ -2998,6 +3007,7 @@
       }
 
       if (objectIdParams.length > 1) {
+        applyIdListFilter(objectIdParams);
         pinnedItems = [];
         var data = Array.isArray(sourceData) ? sourceData : table.rows().data();
         var seenById = {};
@@ -3084,6 +3094,12 @@
     };
     if (versionFilterResetLinkEl) {
       versionFilterResetLinkEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        resetFilters();
+      });
+    }
+    if (linkedFilterResetLinkEl) {
+      linkedFilterResetLinkEl.addEventListener('click', function(e) {
         e.preventDefault();
         resetFilters();
       });
