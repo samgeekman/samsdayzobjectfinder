@@ -3190,21 +3190,8 @@
     var versionFilterResetLinkEl = document.getElementById('versionFilterResetLink');
     var appliedUrlState = false;
 
-    var showFilterNotice = function(messageText) {
-      if (!versionFilterNoticeEl) return;
-      versionFilterNoticeEl.innerHTML = escapeHtml(messageText) + ' - <a id="versionFilterResetLink" href="#">Reset filter</a>';
+    if (versionFilterNoticeEl && versionParam === '129') {
       versionFilterNoticeEl.classList.add('visible');
-      versionFilterResetLinkEl = document.getElementById('versionFilterResetLink');
-    };
-
-    if (versionFilterNoticeEl) {
-      if (objectIdParams.length === 1) {
-        showFilterNotice('Filtering linked object');
-      } else if (objectIdParams.length > 1) {
-        showFilterNotice('Filtering linked objects');
-      } else if (versionParam === '129') {
-        showFilterNotice('Filtering new 1.29 objects');
-      }
     }
 
     var applyUrlState = function(sourceData) {
