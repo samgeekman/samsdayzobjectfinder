@@ -623,6 +623,66 @@
   .object-focus__meta span {
     color: var(--muted);
   }
+  .object-focus__links {
+    display: none;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 6px;
+    margin-top: 4px;
+  }
+  .object-focus__links.visible {
+    display: block;
+  }
+  .object-focus__links-toggle {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: var(--text);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+    padding: 2px 4px;
+  }
+  .object-focus__links-body {
+    display: none;
+    margin-top: 6px;
+    gap: 8px;
+  }
+  .object-focus__links.is-open .object-focus__links-body {
+    display: grid;
+  }
+  .object-focus__links-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.72rem;
+  }
+  .object-focus__links-label {
+    color: var(--muted);
+    font-weight: 700;
+    text-transform: lowercase;
+  }
+  .object-focus__link-pill {
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.7rem;
+    line-height: 1.2;
+    padding: 3px 8px;
+    cursor: pointer;
+  }
+  .object-focus__link-pill:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .object-focus__links-more {
+    color: var(--muted);
+    font-size: 0.7rem;
+  }
 
   .pinned-objects {
     background: var(--card);
@@ -1155,6 +1215,7 @@
       </div>
       <div id="objectFocusPath" class="object-focus__path"></div>
       <div class="object-focus__meta" id="objectFocusMeta"></div>
+      <div id="objectFocusLinks" class="object-focus__links"></div>
       <div class="object-focus__actions">
         <div class="object-focus__secondary is-right">
           <a id="objectFocusLink" class="pill-button" href="#" download>↓ Download image</a>
@@ -1277,6 +1338,23 @@
     };
     var getObjectId = function(row) {
       return row.id || '';
+    };
+    var parseLinkedIds = function(value) {
+      if (value === null || value === undefined) return [];
+      if (Array.isArray(value)) {
+        return value.filter(Boolean).map(function(item) { return String(item).trim(); }).filter(Boolean);
+      }
+      var text = String(value).trim();
+      if (!text) return [];
+      if (text.charAt(0) === '[') {
+        try {
+          var parsed = JSON.parse(text);
+          if (Array.isArray(parsed)) {
+            return parsed.filter(Boolean).map(function(item) { return String(item).trim(); }).filter(Boolean);
+          }
+        } catch (err) {}
+      }
+      return [text];
     };
     var getConsoleFlag = function(row) {
       return row.usableOnConsole ? '✅' : '❌';
@@ -1404,6 +1482,9 @@
             td.setAttribute('data-image', rowData.image || '');
             td.setAttribute('data-objectid', getObjectId(rowData));
             td.setAttribute('data-editorjson', editorJson);
+            td.setAttribute('data-linked-p3d', rowData['linked-p3d'] || '');
+            td.setAttribute('data-linked-config', JSON.stringify(parseLinkedIds(rowData['linked-config'])));
+            td.setAttribute('data-linked-variant', JSON.stringify(parseLinkedIds(rowData['linked-variant'])));
           }
         },
         { targets: 3, className: 'min-desktop' },
@@ -1458,6 +1539,7 @@
     var objectFocusEditorEl = document.getElementById('objectFocusEditor');
     var objectFocusNameCopyEl = document.getElementById('objectFocusNameCopy');
     var objectFocusMetaEl = document.getElementById('objectFocusMeta');
+    var objectFocusLinksEl = document.getElementById('objectFocusLinks');
     var objectFocusEmptyEl = document.getElementById('objectFocusEmpty');
     var currentObjectName = null;
     var currentObjectData = null;
@@ -1466,6 +1548,9 @@
     var typesEntryByName = {};
     var mapGroupProtoEntryUrl = null;
     var mapGroupProtoEntryByName = {};
+    var objectNameById = {};
+    var objectDataByName = {};
+    var objectFocusLinksExpanded = false;
     var pinnedObjectsEl = document.getElementById('pinnedObjects');
     var pinnedListEl = document.getElementById('pinnedList');
     var pinnedClearAllEl = document.getElementById('pinnedClearAll');
@@ -1623,6 +1708,28 @@
         openImageOverlay('/' + currentObjectData.imgPath, currentObjectData.objName);
       });
     }
+    if (objectFocusLinksEl) {
+      objectFocusLinksEl.addEventListener('click', function(e) {
+        var toggle = e.target.closest('.object-focus__links-toggle');
+        if (toggle) {
+          objectFocusLinksExpanded = !objectFocusLinksExpanded;
+          objectFocusLinksEl.classList.toggle('is-open', objectFocusLinksExpanded);
+          toggle.setAttribute('aria-expanded', objectFocusLinksExpanded ? 'true' : 'false');
+          toggle.textContent = (objectFocusLinksExpanded ? '▴ ' : '▾ ') + 'Linked objects';
+          return;
+        }
+        var pill = e.target.closest('.object-focus__link-pill');
+        if (!pill) return;
+        var linkedName = pill.getAttribute('data-linked-name') || '';
+        if (!focusSidebarByName(linkedName)) {
+          var linkedId = normalizeObjectId(pill.getAttribute('data-linked-id') || '');
+          if (linkedId) {
+            var directName = getLinkedDisplayName(linkedId);
+            focusSidebarByName(directName);
+          }
+        }
+      });
+    }
     window.addEventListener('resize', updateMobileView);
     updateMobileView();
 
@@ -1669,6 +1776,54 @@
       if (value === null || value === undefined) return '';
       var id = String(value).trim();
       return objectIdPattern.test(id) ? id : '';
+    };
+    var updateObjectNameLookup = function(sourceData) {
+      if (!Array.isArray(sourceData)) return;
+      objectNameById = {};
+      objectDataByName = {};
+      sourceData.forEach(function(row) {
+        var id = normalizeObjectId(getObjectId(row));
+        var name = getObjectName(row);
+        if (id && name) {
+          objectNameById[id] = name;
+        }
+        if (name) {
+          var key = String(name).toLowerCase();
+          if (!objectDataByName[key]) {
+            objectDataByName[key] = row;
+          }
+        }
+      });
+    };
+    var getLinkedDisplayName = function(id) {
+      var normalizedId = normalizeObjectId(id);
+      if (!normalizedId) return String(id || '').trim();
+      return objectNameById[normalizedId] || normalizedId;
+    };
+    var focusSidebarByName = function(objName) {
+      if (!objName) return false;
+      var rowData = objectDataByName[String(objName).toLowerCase()] || null;
+      if (!rowData) return false;
+      if (currentObjectRowEl) {
+        currentObjectRowEl.classList.remove('object-selected');
+        currentObjectRowEl = null;
+      }
+      setObjectFocusData({
+        objName: getObjectName(rowData),
+        id: getObjectId(rowData),
+        imgPath: rowData.image || '',
+        p3dPath: rowData.path || '',
+        modelType: rowData.modelType || '',
+        category: rowData.category || '',
+        inGame: rowData.inGameName || '',
+        consoleFlag: getConsoleFlag(rowData),
+        tags: rowData.searchTags || '',
+        editorJsonRaw: rowData.editorJson ? JSON.stringify(rowData.editorJson) : '',
+        linkedP3D: normalizeObjectId(rowData['linked-p3d']),
+        linkedConfig: parseLinkedIds(rowData['linked-config']),
+        linkedVariant: parseLinkedIds(rowData['linked-variant'])
+      }, false);
+      return true;
     };
 
     var buildObjectUrl = function(objectId, legacyObjectName) {
@@ -1752,6 +1907,10 @@
       if (objectFocusMetaEl) {
         objectFocusMetaEl.innerHTML = '';
       }
+      if (objectFocusLinksEl) {
+        objectFocusLinksEl.innerHTML = '';
+        objectFocusLinksEl.classList.remove('visible', 'is-open');
+      }
       if (objectFocusImageEl) {
         objectFocusImageEl.innerHTML =
           '<span class="object-focus__missing">Select an object to preview its image.</span>';
@@ -1793,6 +1952,9 @@
       var consoleFlag = objData.consoleFlag;
       var tags = objData.tags;
       var editorJsonRaw = objData.editorJsonRaw;
+      var linkedP3D = normalizeObjectId(objData.linkedP3D);
+      var linkedConfig = parseLinkedIds(objData.linkedConfig).map(normalizeObjectId).filter(Boolean);
+      var linkedVariant = parseLinkedIds(objData.linkedVariant).map(normalizeObjectId).filter(Boolean);
 
       currentObjectName = objName;
       currentObjectData = {
@@ -1805,7 +1967,10 @@
         category: category,
         inGame: inGame,
         consoleFlag: consoleFlag,
-        tags: tags
+        tags: tags,
+        linkedP3D: linkedP3D,
+        linkedConfig: linkedConfig,
+        linkedVariant: linkedVariant
       };
       objectFocusNameEl.textContent = objName;
       objectFocusPathEl.textContent = p3dPath ? ('Path: ' + p3dPath) : '';
@@ -1817,6 +1982,61 @@
           '<div><span>Model type:</span> ' + (modelType || '—') + '</div>' +
           '<div><span>Console:</span> ' + (consoleFlag || '—') + '</div>' +
           '<div><span>Tags:</span> ' + (tags || '—') + '</div>';
+      }
+      if (objectFocusLinksEl) {
+        var buildLinkedButtons = function(ids, maxVisible) {
+          var limit = typeof maxVisible === 'number' ? maxVisible : 5;
+          var safeIds = (Array.isArray(ids) ? ids : []).map(normalizeObjectId).filter(Boolean);
+          var visible = safeIds.slice(0, limit);
+          var buttonsHtml = visible.map(function(id) {
+            var name = getLinkedDisplayName(id);
+            return '<button class="object-focus__link-pill" type="button" title="' + escapeHtml(id) + '" data-linked-id="' + escapeHtml(id) + '" data-linked-name="' + escapeHtml(name) + '">' + escapeHtml(name) + '</button>';
+          }).join('');
+          var remainder = safeIds.length - visible.length;
+          var moreHtml = remainder > 0 ? ('<span class="object-focus__links-more">+' + remainder + ' others</span>') : '';
+          return buttonsHtml + moreHtml;
+        };
+        var linkRows = [];
+        if (linkedP3D) {
+          var linkedP3DName = getLinkedDisplayName(linkedP3D);
+          linkRows.push(
+            '<div class="object-focus__links-row">' +
+              '<span class="object-focus__links-label">linked-p3d:</span>' +
+              '<button class="object-focus__link-pill" type="button" title="' + escapeHtml(linkedP3D) + '" data-linked-id="' + escapeHtml(linkedP3D) + '" data-linked-name="' + escapeHtml(linkedP3DName) + '">' + escapeHtml(linkedP3DName) + '</button>' +
+            '</div>'
+          );
+        }
+        if (linkedConfig.length) {
+          linkRows.push(
+            '<div class="object-focus__links-row">' +
+              '<span class="object-focus__links-label">linked-config:</span>' +
+              buildLinkedButtons(linkedConfig, 5) +
+            '</div>'
+          );
+        }
+        if (linkedVariant.length) {
+          linkRows.push(
+            '<div class="object-focus__links-row">' +
+              '<span class="object-focus__links-label">linked-variant:</span>' +
+              buildLinkedButtons(linkedVariant, 5) +
+            '</div>'
+          );
+        }
+        if (linkRows.length) {
+          objectFocusLinksEl.innerHTML =
+            '<button class="object-focus__links-toggle" type="button" aria-expanded="false">▾ Linked objects</button>' +
+            '<div class="object-focus__links-body">' + linkRows.join('') + '</div>';
+          objectFocusLinksEl.classList.add('visible');
+          objectFocusLinksEl.classList.toggle('is-open', objectFocusLinksExpanded);
+          var toggleBtn = objectFocusLinksEl.querySelector('.object-focus__links-toggle');
+          if (toggleBtn) {
+            toggleBtn.setAttribute('aria-expanded', objectFocusLinksExpanded ? 'true' : 'false');
+            toggleBtn.textContent = (objectFocusLinksExpanded ? '▴ ' : '▾ ') + 'Linked objects';
+          }
+        } else {
+          objectFocusLinksEl.innerHTML = '';
+          objectFocusLinksEl.classList.remove('visible', 'is-open');
+        }
       }
 
       if (imgPath) {
@@ -1890,7 +2110,10 @@
         category: $td.data('category'),
         inGame: $td.data('ingame'),
         consoleFlag: $td.data('console'),
-        tags: $td.data('tags')
+        tags: $td.data('tags'),
+        linkedP3D: normalizeObjectId($td.attr('data-linked-p3d') || ''),
+        linkedConfig: parseLinkedIds($td.attr('data-linked-config')),
+        linkedVariant: parseLinkedIds($td.attr('data-linked-variant'))
       };
     };
     var buildPinnedItemFromData = function(rowData) {
@@ -1908,7 +2131,10 @@
         category: rowData.category || '',
         inGame: rowData.inGameName || '',
         consoleFlag: getConsoleFlag(rowData),
-        tags: rowData.searchTags || ''
+        tags: rowData.searchTags || '',
+        linkedP3D: normalizeObjectId(rowData['linked-p3d']),
+        linkedConfig: parseLinkedIds(rowData['linked-config']),
+        linkedVariant: parseLinkedIds(rowData['linked-variant'])
       };
     };
 
@@ -2167,7 +2393,10 @@
             category: item.category,
             inGame: item.inGame,
             consoleFlag: item.consoleFlag,
-            tags: item.tags
+            tags: item.tags,
+            linkedP3D: item.linkedP3D,
+            linkedConfig: item.linkedConfig,
+            linkedVariant: item.linkedVariant
           }, false);
         });
 
@@ -2411,7 +2640,10 @@
         inGame: $td.data('ingame'),
         consoleFlag: $td.data('console'),
         tags: $td.data('tags'),
-        editorJsonRaw: $td.attr('data-editorjson')
+        editorJsonRaw: $td.attr('data-editorjson'),
+        linkedP3D: normalizeObjectId($td.attr('data-linked-p3d') || ''),
+        linkedConfig: parseLinkedIds($td.attr('data-linked-config')),
+        linkedVariant: parseLinkedIds($td.attr('data-linked-variant'))
       }, updateUrl);
     };
 
@@ -3059,6 +3291,7 @@
       });
     };
     table.on('xhr.dt', function(e, settings, json) {
+      updateObjectNameLookup(json);
       populateCategories(json);
       applyUrlState(json);
     });

@@ -535,6 +535,60 @@ def normalize_model_token(value: object) -> str:
     return token
 
 
+def split_model_tokens(value: object) -> List[str]:
+    token = str(value or "").strip()
+    token = re.sub(r"\.[a-z0-9]+$", "", token, flags=re.IGNORECASE)
+    token = re.sub(r"^(land_|staticobj_|wreck_|misc_|house_)", "", token, flags=re.IGNORECASE)
+    # Split CamelCase and acronym boundaries so color/variant suffixes can be detected.
+    token = re.sub(r"([A-Z]+)([A-Z][a-z])", r"\1 \2", token)
+    token = re.sub(r"([a-z0-9])([A-Z])", r"\1 \2", token)
+    token = token.lower()
+    token = re.sub(r"[^a-z0-9]+", " ", token).strip()
+    return [part for part in token.split(" ") if part]
+
+
+VARIANT_TOKENS = {
+    "black",
+    "white",
+    "blue",
+    "green",
+    "red",
+    "yellow",
+    "orange",
+    "brown",
+    "grey",
+    "gray",
+    "tan",
+    "beige",
+    "pink",
+    "purple",
+    "violet",
+    "olive",
+    "khaki",
+    "camo",
+    "woodland",
+    "desert",
+    "winter",
+    "summer",
+    "autumn",
+    "fall",
+    "dark",
+    "light",
+    "de",
+    "chernarus",
+    "livonia",
+    "sakhal",
+    "ttsko",
+}
+
+
+def base_variant_key(value: object) -> str:
+    parts = split_model_tokens(value)
+    kept = [part for part in parts if part not in VARIANT_TOKENS]
+    chosen = kept if kept else parts
+    return "".join(chosen)
+
+
 def image_token(value: object) -> str:
     image = str(value or "").strip().lower()
     if not image:
@@ -768,6 +822,153 @@ def apply_bbox_dimensions(objects: List[dict]) -> Dict[str, int]:
     }
 
 
+def apply_compact_link_fields(objects: List[dict]) -> Dict[str, int]:
+    by_id: Dict[str, dict] = {}
+    for obj in objects:
+        object_id = str(obj.get("id", "")).strip()
+        if object_id:
+            by_id[object_id] = obj
+
+    # Config variant siblings (color/style groups).
+    config_groups: Dict[str, List[str]] = {}
+    for obj in objects:
+        if str(obj.get("modelType", "")).strip() != "Config":
+            continue
+        object_id = str(obj.get("id", "")).strip()
+        if not object_id:
+            continue
+        key = f"{path_family(obj.get('path'))}|{base_variant_key(obj.get('objectName'))}"
+        config_groups.setdefault(key, []).append(object_id)
+
+    linked_variant_rows = 0
+    for group_ids in config_groups.values():
+        unique_group = sorted({obj_id for obj_id in group_ids if obj_id in by_id})
+        if len(unique_group) <= 1:
+            continue
+        for obj_id in unique_group:
+            others = [other_id for other_id in unique_group if other_id != obj_id]
+            if not others:
+                continue
+            by_id[obj_id]["linked-variant"] = others
+            linked_variant_rows += 1
+
+    # Config -> Raw P3D links from established provenance.
+    # First pass: direct links from bbox linking and any existing linked-p3d hints.
+    config_to_p3d: Dict[str, str] = {}
+    direct_bbox_links = 0
+    direct_existing_links = 0
+    for obj in objects:
+        if str(obj.get("modelType", "")).strip() != "Config":
+            continue
+        cfg_id = str(obj.get("id", "")).strip()
+        if not cfg_id:
+            continue
+        donor_id = str(obj.get("bboxLinkedFromId", "")).strip()
+        if donor_id and donor_id in by_id and str(by_id[donor_id].get("modelType", "")).strip() == "Raw P3D":
+            config_to_p3d[cfg_id] = donor_id
+            direct_bbox_links += 1
+            continue
+        donor_id = str(obj.get("linked-p3d", "")).strip()
+        if donor_id and donor_id in by_id and str(by_id[donor_id].get("modelType", "")).strip() == "Raw P3D":
+            config_to_p3d[cfg_id] = donor_id
+            direct_existing_links += 1
+
+    # Second pass: inherit donor from variant siblings when exactly one donor exists in group.
+    inherited_variant_links = 0
+    for group_ids in config_groups.values():
+        unique_group = sorted({obj_id for obj_id in group_ids if obj_id in by_id})
+        if len(unique_group) <= 1:
+            continue
+        donors_in_group = sorted({config_to_p3d[obj_id] for obj_id in unique_group if obj_id in config_to_p3d})
+        if len(donors_in_group) != 1:
+            continue
+        donor_id = donors_in_group[0]
+        for cfg_id in unique_group:
+            if cfg_id in config_to_p3d:
+                continue
+            config_to_p3d[cfg_id] = donor_id
+            inherited_variant_links += 1
+
+    # Third pass: inherit donor by in-game family when exactly one donor exists in group.
+    # This is conservative and only applies if all linked siblings in that family agree.
+    ingame_groups: Dict[str, List[str]] = {}
+    for obj in objects:
+        if str(obj.get("modelType", "")).strip() != "Config":
+            continue
+        cfg_id = str(obj.get("id", "")).strip()
+        if not cfg_id:
+            continue
+        path_key = str(obj.get("path", "")).strip().lower()
+        ingame_key = str(obj.get("inGameName", "")).strip().lower()
+        if not path_key or not ingame_key:
+            continue
+        ingame_groups.setdefault(f"{path_key}|{ingame_key}", []).append(cfg_id)
+
+    inherited_ingame_links = 0
+    for group_ids in ingame_groups.values():
+        unique_group = sorted({obj_id for obj_id in group_ids if obj_id in by_id})
+        if len(unique_group) <= 1:
+            continue
+        donors_in_group = sorted({config_to_p3d[obj_id] for obj_id in unique_group if obj_id in config_to_p3d})
+        if len(donors_in_group) != 1:
+            continue
+        donor_id = donors_in_group[0]
+        for cfg_id in unique_group:
+            if cfg_id in config_to_p3d:
+                continue
+            config_to_p3d[cfg_id] = donor_id
+            inherited_ingame_links += 1
+
+    # Apply linked-p3d and build reverse linked-config.
+    reverse_raw_to_configs: Dict[str, List[str]] = {}
+    for cfg_id, donor_id in config_to_p3d.items():
+        cfg = by_id.get(cfg_id)
+        if not cfg:
+            continue
+        cfg["linked-p3d"] = donor_id
+        reverse_raw_to_configs.setdefault(donor_id, []).append(cfg_id)
+
+    linked_p3d_count = 0
+    for obj in objects:
+        if str(obj.get("modelType", "")).strip() == "Config" and isinstance(obj.get("linked-p3d"), str) and obj.get("linked-p3d"):
+            linked_p3d_count += 1
+
+    linked_config_count = 0
+    for raw_id, config_ids in reverse_raw_to_configs.items():
+        raw = by_id.get(raw_id)
+        if not raw:
+            continue
+        unique = sorted({cfg_id for cfg_id in config_ids if cfg_id and cfg_id in by_id})
+        if not unique:
+            continue
+        raw["linked-config"] = unique
+        linked_config_count += 1
+
+    # Trim heavy bbox payload/provenance to keep output size low.
+    for obj in objects:
+        for key in (
+            "dimensionsSource",
+            "bboxMinVisual",
+            "bboxMaxVisual",
+            "bboxStatus",
+            "bboxLinkedFromId",
+            "bboxLinkedFromObject",
+            "bboxLinkMethod",
+        ):
+            if key in obj:
+                del obj[key]
+
+    return {
+        "config_rows_with_linked_p3d": linked_p3d_count,
+        "raw_rows_with_linked_config": linked_config_count,
+        "config_rows_with_linked_variant": linked_variant_rows,
+        "config_rows_linked_p3d_direct_bbox": direct_bbox_links,
+        "config_rows_linked_p3d_direct_existing": direct_existing_links,
+        "config_rows_linked_p3d_inherited_from_variant": inherited_variant_links,
+        "config_rows_linked_p3d_inherited_from_ingame": inherited_ingame_links,
+    }
+
+
 def export_database_zip() -> None:
     """Export the current database folder as a zip in the static root."""
     STATIC_DIR.mkdir(parents=True, exist_ok=True)
@@ -812,6 +1013,7 @@ def main() -> None:
     all_objects, dedupe_stats = collapse_case_duplicates(all_objects)
     override_stats = apply_sidecar_overrides(all_objects)
     bbox_stats = apply_bbox_dimensions(all_objects)
+    link_stats = apply_compact_link_fields(all_objects)
     unique_ids = ensure_explicit_ids(all_objects)
     tombstone_stats = update_id_tombstones(previous_index, all_objects)
     api_stats = generate_static_api(all_objects)
@@ -859,6 +1061,16 @@ def main() -> None:
         f"image token {bbox_stats['rows_linked_image_token']}), "
         f"{bbox_stats['rows_estimated']} estimated, "
         f"{bbox_stats['rows_missing_map']} without mapping."
+    )
+    print(
+        "Links: "
+        f"{link_stats['config_rows_with_linked_p3d']} config rows with linked-p3d, "
+        f"{link_stats['raw_rows_with_linked_config']} raw rows with linked-config, "
+        f"{link_stats['config_rows_with_linked_variant']} config rows with linked-variant "
+        f"(direct bbox {link_stats['config_rows_linked_p3d_direct_bbox']}, "
+        f"direct existing {link_stats['config_rows_linked_p3d_direct_existing']}, "
+        f"inherited variant {link_stats['config_rows_linked_p3d_inherited_from_variant']}, "
+        f"inherited ingame {link_stats['config_rows_linked_p3d_inherited_from_ingame']})."
     )
     print(
         "Tombstones: "
