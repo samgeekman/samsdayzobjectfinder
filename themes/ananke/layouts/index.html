@@ -1862,28 +1862,6 @@
       });
       return nextUrl.toString();
     };
-    var toAbsoluteImageUrl = function(imgPath) {
-      if (!imgPath) return '';
-      var cleanedPath = String(imgPath).trim();
-      if (!cleanedPath) return '';
-      if (/^https?:\/\//i.test(cleanedPath)) return cleanedPath;
-      return new URL('/' + cleanedPath.replace(/^\/+/, ''), window.location.origin).toString();
-    };
-    var buildImageShareText = function(entries, fallbackUrl) {
-      var urls = [];
-      var seen = {};
-      if (Array.isArray(entries) && entries.length) {
-        entries.forEach(function(entry) {
-          var imgUrl = toAbsoluteImageUrl(entry && entry.imgPath);
-          if (imgUrl && !seen[imgUrl]) {
-            seen[imgUrl] = true;
-            urls.push(imgUrl);
-          }
-        });
-      }
-      if (urls.length) return urls.join('\n');
-      return fallbackUrl || '';
-    };
 
     var buildEditorJson = function(editorJsonRaw, objName, modelType, p3dPath) {
       if (editorJsonRaw && editorJsonRaw.trim() !== "") {
@@ -2339,14 +2317,11 @@
             var entries = item.items.map(function(entry) {
               return {
                 id: entry.id || '',
-                objName: entry.objName || '',
-                imgPath: entry.imgPath || ''
+                objName: entry.objName || ''
               };
             }).filter(function(entry) { return entry.objName; });
             if (!entries.length) return;
-            var pathLink = buildPinnedUrl(entries);
-            var shareText = buildImageShareText(entries, pathLink);
-            navigator.clipboard.writeText(shareText || pathLink);
+            navigator.clipboard.writeText(buildPinnedUrl(entries));
             var original = linkBadge.textContent;
             linkBadge.textContent = '✔';
             setTimeout(function() { linkBadge.textContent = original; }, 900);
@@ -2749,10 +2724,7 @@
           currentObjectData ? currentObjectData.id : '',
           currentObjectName || objectFocusNameEl.textContent || ''
         );
-        var shareText = buildImageShareText([
-          { imgPath: currentObjectData ? currentObjectData.imgPath : '' }
-        ], link);
-        navigator.clipboard.writeText(shareText || link);
+        navigator.clipboard.writeText(link);
         var original = objectFocusCopyEl.textContent;
         objectFocusCopyEl.textContent = 'Copied';
         setTimeout(function() { objectFocusCopyEl.textContent = original; }, 1200);
@@ -2833,8 +2805,7 @@
         var entries = getPinnedEntries();
         if (!entries.length) return;
         var link = buildPinnedUrl(entries);
-        var shareText = buildImageShareText(entries, link);
-        navigator.clipboard.writeText(shareText || link);
+        navigator.clipboard.writeText(link);
         var original = pinnedCopyLinkEl.textContent;
         pinnedCopyLinkEl.textContent = 'Copied';
         setTimeout(function() { pinnedCopyLinkEl.textContent = original; }, 1200);
@@ -3643,14 +3614,11 @@
         if (!cell) return null;
         return {
           id: cell.getAttribute('data-objectid') || '',
-          objName: cell.getAttribute('data-object') || '',
-          imgPath: cell.getAttribute('data-image') || ''
+          objName: cell.getAttribute('data-object') || ''
         };
       }).filter(function(entry) { return entry && entry.objName; });
       if (!entries.length) return;
-      var pathLink = buildPinnedUrl(entries);
-      var shareText = buildImageShareText(entries, pathLink);
-      navigator.clipboard.writeText(shareText || pathLink);
+      navigator.clipboard.writeText(buildPinnedUrl(entries));
       var $btn = $(this);
       var original = $btn.text();
       $btn.text('✔');
@@ -3699,11 +3667,7 @@
       }
 
       if (action === 'link') {
-        var objectLink = buildObjectUrl($cell.data('objectid'), objName);
-        var shareText = buildImageShareText([
-          { imgPath: $cell.data('image') }
-        ], objectLink);
-        navigator.clipboard.writeText(shareText || objectLink);
+        navigator.clipboard.writeText(buildObjectUrl($cell.data('objectid'), objName));
         $action.text('✔');
         setTimeout(function() { $action.text('🔗 Copy link'); }, 900);
         return;
