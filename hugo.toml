@@ -1,6 +1,6 @@
 baseURL = 'https://samsobjectfinder.com/'
 languageCode = 'en-us'
-title = 'Sams DayZ Object Finder'
+title = 'Sam's DayZ Object Finder'
 theme = 'ananke'
 
 relativeURLs = false
@@ -14,6 +14,6 @@ canonifyURLs = true
 unsafe = true
 
 [params]
-description = "A searchable database of every DayZ object for modders and map makers."
+description = "A searchable, exportable database of every DayZ object for modders and map makers."
 favicon = "favicon.png"
 images = ["images/logo.png"]
