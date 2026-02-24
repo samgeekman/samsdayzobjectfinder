@@ -1,0 +1,63 @@
+<style>
+  .nested-copy-line-height p.linked-image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .nested-copy-line-height p.linked-image-grid.linked-image-grid--single {
+    grid-template-columns: minmax(0, 420px);
+  }
+
+  .nested-copy-line-height a.linked-image-preview {
+    display: block;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    line-height: 0;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  }
+
+  .nested-copy-line-height a.linked-image-preview:hover,
+  .nested-copy-line-height a.linked-image-preview:focus-visible {
+    border-color: #eea700;
+    box-shadow: 0 0 0 2px rgba(238, 167, 0, 0.22);
+    outline: none;
+  }
+
+  .nested-copy-line-height a.linked-image-preview img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 160px;
+    max-height: 360px;
+    object-fit: cover;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var paragraphs = document.querySelectorAll('.nested-copy-line-height p');
+    paragraphs.forEach(function (paragraph) {
+      var childElements = Array.prototype.slice.call(paragraph.children);
+      if (!childElements.length) return;
+
+      var previewLinks = childElements.filter(function (child) {
+        return child.tagName === 'A' && child.classList.contains('linked-image-preview');
+      });
+      if (!previewLinks.length || previewLinks.length !== childElements.length) return;
+
+      var hasTextNodes = Array.prototype.slice.call(paragraph.childNodes).some(function (node) {
+        return node.nodeType === 3 && node.textContent.trim().length > 0;
+      });
+      if (hasTextNodes) return;
+
+      paragraph.classList.add('linked-image-grid');
+      if (previewLinks.length === 1) {
+        paragraph.classList.add('linked-image-grid--single');
+      }
+    });
+  });
+</script>

@@ -12,3 +12,8 @@ canonifyURLs = true
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[params]
+description = "A searchable database of every DayZ object for modders and map makers."
+favicon = "favicon.png"
+images = ["images/logo.png"]

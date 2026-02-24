@@ -1,0 +1,22 @@
+{{- $destination := .Destination -}}
+{{- $normalizedDestination := lower (replaceRE `[#?].*$` "" $destination) -}}
+{{- $isImageLink := or
+  (strings.HasSuffix $normalizedDestination ".png")
+  (strings.HasSuffix $normalizedDestination ".jpg")
+  (strings.HasSuffix $normalizedDestination ".jpeg")
+  (strings.HasSuffix $normalizedDestination ".gif")
+  (strings.HasSuffix $normalizedDestination ".webp")
+  (strings.HasSuffix $normalizedDestination ".avif")
+  (strings.HasSuffix $normalizedDestination ".svg")
+-}}
+{{- if $isImageLink -}}
+  {{- $altText := .PlainText | strings.TrimSpace -}}
+  {{- if not $altText -}}
+    {{- $altText = "Image preview" -}}
+  {{- end -}}
+  <a class="linked-image-preview" href="{{ $destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>
+    <img src="{{ $destination | safeURL }}" alt="{{ $altText }}" loading="lazy" decoding="async">
+  </a>
+{{- else -}}
+  <a href="{{ $destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- end -}}
