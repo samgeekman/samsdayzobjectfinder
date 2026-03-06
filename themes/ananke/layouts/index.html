@@ -1138,6 +1138,35 @@
     gap: 8px;
     margin-bottom: 10px;
   }
+  @keyframes export-empty-flash {
+    0%, 100% {
+      background: var(--card);
+      color: var(--text);
+      border-color: var(--border);
+      opacity: 1;
+    }
+    12% {
+      background: #f59e0b;
+      color: #111827;
+      border-color: #f59e0b;
+      opacity: 1;
+    }
+    24%, 36%, 48%, 60% {
+      opacity: 0.45;
+    }
+    30%, 42%, 54%, 66% {
+      opacity: 1;
+    }
+    80% {
+      background: #f59e0b;
+      color: #111827;
+      border-color: #f59e0b;
+      opacity: 1;
+    }
+  }
+  .export-panel__actions .pill-button.export-empty-flash {
+    animation: export-empty-flash 3s ease-in-out;
+  }
   .export-panel__suggestions {
     margin-bottom: 10px;
     color: var(--text);
@@ -1178,6 +1207,8 @@
       <button id="exportCsv" class="pill-button" type="button">Download CSV</button>
       <button id="exportXlsx" class="pill-button" type="button">Download XLSX</button>
       <button id="exportJson" class="pill-button" type="button">Download JSON</button>
+      <button id="exportTypes" class="pill-button" type="button">Download types</button>
+      <button id="exportMapGroupPos" class="pill-button" type="button">Download mapgrouppos</button>
     </div>
     <div class="export-panel__images">
       Want all the images? <a href="https://drive.google.com/drive/folders/1Hg82OAu-Br5VPSF4NxGvifG_IeF6Iw-u?usp=share_link" target="_blank" rel="noopener">Download here.</a>
@@ -3553,6 +3584,63 @@
       if (!rows.length) return;
       downloadTextFile(JSON.stringify(rows, null, 2), 'dayz_objects_view.json', 'application/json;charset=utf-8');
     };
+    var getCurrentViewClassNames = function() {
+      var rows = getCurrentViewRows();
+      if (!rows.length) return [];
+      var seen = {};
+      var names = [];
+      rows.forEach(function(row) {
+        var className = row && row.className ? String(row.className).trim() : '';
+        if (!className || seen[className]) return;
+        seen[className] = true;
+        names.push(className);
+      });
+      return names;
+    };
+    var collectEntriesByName = function(names, entryMap) {
+      if (!Array.isArray(names) || !names.length || !entryMap) return [];
+      var entries = [];
+      names.forEach(function(name) {
+        var entry = entryMap[name];
+        if (entry) entries.push(entry);
+      });
+      return entries;
+    };
+    var exportCurrentViewTypes = function() {
+      var names = getCurrentViewClassNames();
+      if (!names.length) return false;
+      var entries = collectEntriesByName(names, typesEntryByName);
+      if (!entries.length) return false;
+      downloadTextFile(entries.join('\n\n') + '\n', 'dayz_objects_view_types.txt', 'text/plain;charset=utf-8');
+      return true;
+    };
+    var exportCurrentViewMapGroupPos = function() {
+      var names = getCurrentViewClassNames();
+      if (!names.length) return false;
+      var entries = collectEntriesByName(names, mapGroupProtoEntryByName);
+      if (!entries.length) return false;
+      downloadTextFile(entries.join('\n\n') + '\n', 'dayz_objects_view_mapgrouppos.txt', 'text/plain;charset=utf-8');
+      return true;
+    };
+    var flashNoEntriesButton = function(buttonEl) {
+      if (!buttonEl) return;
+      if (!buttonEl.dataset.originalText) {
+        buttonEl.dataset.originalText = buttonEl.textContent || '';
+      }
+      if (buttonEl._noEntriesTimer) {
+        clearTimeout(buttonEl._noEntriesTimer);
+      }
+      buttonEl.textContent = 'No entries in current view';
+      buttonEl.classList.remove('export-empty-flash');
+      // Restart animation on repeated clicks.
+      void buttonEl.offsetWidth;
+      buttonEl.classList.add('export-empty-flash');
+      buttonEl._noEntriesTimer = setTimeout(function() {
+        buttonEl.classList.remove('export-empty-flash');
+        buttonEl.textContent = buttonEl.dataset.originalText || buttonEl.textContent;
+        buttonEl._noEntriesTimer = null;
+      }, 3000);
+    };
 
     $(document).on('click', '#exportCsv', function() {
       exportCurrentViewCsv();
@@ -3564,6 +3652,18 @@
 
     $(document).on('click', '#exportJson', function() {
       exportCurrentViewJson();
+    });
+    $(document).on('click', '#exportTypes', function() {
+      var ok = exportCurrentViewTypes();
+      if (!ok) {
+        flashNoEntriesButton(this);
+      }
+    });
+    $(document).on('click', '#exportMapGroupPos', function() {
+      var ok = exportCurrentViewMapGroupPos();
+      if (!ok) {
+        flashNoEntriesButton(this);
+      }
     });
 
     $('#dayzObjects tbody')
