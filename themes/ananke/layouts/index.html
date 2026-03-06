@@ -414,10 +414,10 @@
     display: flex;
   }
   .object-focus.collapsed {
-    width: 52px;
-    min-width: 52px;
-    max-width: 52px;
-    flex: 0 0 52px;
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    flex: 0 0 60px;
     padding: 8px 6px;
     justify-content: center;
     position: fixed;
@@ -719,6 +719,10 @@
     gap: 8px;
     align-items: center;
   }
+  .pinned-copy__row--actions {
+    gap: 4px;
+    flex-wrap: nowrap;
+  }
   .pinned-copy__row--between {
     justify-content: space-between;
     width: 100%;
@@ -734,8 +738,10 @@
     accent-color: var(--accent);
   }
   .pinned-copy .pill-button {
-    font-size: 0.7rem;
-    padding: 3px 6px;
+    font-size: 0.64rem;
+    line-height: 1.15;
+    padding: 2px 5px;
+    white-space: nowrap;
   }
   .pinned-copy .pill-button.copied {
     background-color: var(--accent);
@@ -813,6 +819,12 @@
   #pinnedDownloadAll.visible {
     display: inline-flex;
   }
+  #pinnedDownloadTypesAll {
+    display: none;
+  }
+  #pinnedDownloadTypesAll.visible {
+    display: inline-flex;
+  }
 
   .pinned-list {
     display: flex;
@@ -861,8 +873,14 @@
     align-items: center;
     margin-bottom: 6px;
   }
+  .pinned-path-row--actions {
+    flex-wrap: nowrap;
+  }
   .pinned-path-row--between {
     justify-content: space-between;
+  }
+  .pinned-path-btn--push-right {
+    margin-left: auto;
   }
   .pinned-path-row--right {
     justify-content: flex-end;
@@ -882,9 +900,10 @@
     background: var(--bg-soft);
     color: var(--text);
     border-radius: 4px;
-    padding: 2px 6px;
+    padding: 2px 5px;
     cursor: pointer;
-    font-size: 0.7rem;
+    font-size: 0.64rem;
+    line-height: 1.15;
     transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
   }
   .pinned-path-btn:hover {
@@ -1011,10 +1030,12 @@
 
   .object-focus.collapsed .pinned-objects {
     width: 100%;
-    padding: 4px;
+    padding: 4px 2px;
     border: none;
     box-shadow: none;
     background: transparent;
+    display: flex;
+    justify-content: center;
   }
 
   .object-focus.collapsed .pinned-header {
@@ -1024,15 +1045,18 @@
   .object-focus.collapsed .pinned-list {
     gap: 6px;
     align-items: center;
+    width: 100%;
   }
 
   .object-focus.collapsed .pinned-item {
     grid-template-columns: 1fr;
+    width: 100%;
     padding: 0;
     border: none;
     background: transparent;
     cursor: pointer;
     justify-items: center;
+    justify-content: center;
   }
   .object-focus.collapsed .pinned-actions {
     display: none;
@@ -1041,8 +1065,9 @@
     display: none;
   }
   .object-focus.collapsed .pinned-thumb {
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
+    margin: 0 auto;
   }
 
   .object-focus.collapsed .pinned-name,
@@ -1236,9 +1261,10 @@
               <button id="pinnedCopyLink" class="pill-button" type="button" title="Copy link to pinned collection">🔗</button>
             </div>
           </div>
-          <div class="pinned-copy__row">
-            <button id="pinnedCopyAllLayout" class="pill-button" type="button" title="Copy pinned objects with layout">Copy to Editor as...</button>
-            <button id="pinnedDownloadAll" class="pill-button" type="button" title="Download all">↓ Download all</button>
+          <div class="pinned-copy__row pinned-copy__row--actions">
+            <button id="pinnedCopyAllLayout" class="pill-button" type="button" title="Copy pinned objects with layout">🏗️ Copy as...</button>
+            <button id="pinnedDownloadAll" class="pill-button" type="button" title="Download all">↓ All data</button>
+            <button id="pinnedDownloadTypesAll" class="pill-button" type="button" title="Download all types.xml">↓ Types</button>
             <button id="pinnedClearAll" class="pill-button" type="button" title="Unpin all">Unpin all</button>
           </div>
           <div id="pinnedBulkPanel" class="pinned-path-panel pinned-bulk-panel">
@@ -1560,6 +1586,7 @@
     var pinnedCopyNamesEl = document.getElementById('pinnedCopyNames');
     var pinnedCopyLinkEl = document.getElementById('pinnedCopyLink');
     var pinnedDownloadAllEl = document.getElementById('pinnedDownloadAll');
+    var pinnedDownloadTypesAllEl = document.getElementById('pinnedDownloadTypesAll');
     var pinnedIncludePathsEl = document.getElementById('pinnedIncludePaths');
     var pinnedBulkPanelEl = document.getElementById('pinnedBulkPanel');
     var pinnedBulkCopyConfirmEl = document.getElementById('pinnedBulkCopyConfirm');
@@ -2412,10 +2439,10 @@
           panel.className = 'pinned-path-panel';
 
           var rowActions = document.createElement('div');
-          rowActions.className = 'pinned-path-row pinned-path-row--between';
+          rowActions.className = 'pinned-path-row pinned-path-row--actions';
           var copyBtn = document.createElement('button');
           copyBtn.className = 'pinned-path-btn pinned-path-cta';
-          copyBtn.textContent = '🏗️ Copy to Editor';
+          copyBtn.textContent = '🏗️ Copy as...';
           copyBtn.addEventListener('click', function(e) {
             e.stopPropagation();
             copyPinnedPath(item);
@@ -2424,8 +2451,8 @@
             setTimeout(function() { copyBtn.textContent = originalText; }, 900);
           });
           var downloadBtn = document.createElement('button');
-          downloadBtn.className = 'pinned-path-btn pinned-path-cta';
-          downloadBtn.textContent = '↓ Download all';
+          downloadBtn.className = 'pinned-path-btn pinned-path-cta pinned-path-btn--push-right';
+          downloadBtn.textContent = '↓ All data';
           downloadBtn.addEventListener('click', function(e) {
             e.stopPropagation();
             downloadPinnedPath(item);
@@ -2433,8 +2460,20 @@
             downloadBtn.textContent = '✔';
             setTimeout(function() { downloadBtn.textContent = originalText; }, 900);
           });
+          var downloadTypesBtn = document.createElement('button');
+          downloadTypesBtn.className = 'pinned-path-btn pinned-path-cta';
+          downloadTypesBtn.textContent = '↓ Types';
+          downloadTypesBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            var downloaded = downloadTypesEntries(item.items, sanitizePathFolder(item.p3dPath || item.objName || 'path') + '_types.txt');
+            if (!downloaded) return;
+            var originalText = downloadTypesBtn.textContent;
+            downloadTypesBtn.textContent = '✔';
+            setTimeout(function() { downloadTypesBtn.textContent = originalText; }, 900);
+          });
           rowActions.appendChild(copyBtn);
           rowActions.appendChild(downloadBtn);
+          rowActions.appendChild(downloadTypesBtn);
 
           var rowLayout = document.createElement('div');
           rowLayout.className = 'pinned-path-row';
@@ -2545,6 +2584,9 @@
 
       if (pinnedDownloadAllEl) {
         pinnedDownloadAllEl.classList.toggle('visible', hasPins);
+      }
+      if (pinnedDownloadTypesAllEl) {
+        pinnedDownloadTypesAllEl.classList.toggle('visible', hasPins);
       }
 
       if (pinnedClearAllEl) {
@@ -2962,6 +3004,39 @@
         obj.Position[2] += offsetZ;
       });
     };
+    var getUniqueTypeNames = function(items) {
+      if (!Array.isArray(items) || !items.length) return [];
+      var seen = {};
+      var names = [];
+      items.forEach(function(item) {
+        if (!item || !item.objName) return;
+        var key = String(item.objName).trim();
+        if (!key || seen[key]) return;
+        seen[key] = true;
+        names.push(key);
+      });
+      return names;
+    };
+    var buildTypesEntriesText = function(items) {
+      var names = getUniqueTypeNames(items);
+      if (!names.length) return '';
+      var entries = [];
+      names.forEach(function(name) {
+        var entry = typesEntryByName[name];
+        if (entry) {
+          entries.push(entry);
+        }
+      });
+      return entries.join('\n\n');
+    };
+    var downloadTypesEntries = function(items, filename) {
+      if (typeof saveAs === 'undefined') return false;
+      var text = buildTypesEntriesText(items);
+      if (!text) return false;
+      var blob = new Blob([text + '\n'], { type: 'text/plain;charset=utf-8' });
+      saveAs(blob, filename || 'pinned_types.txt');
+      return true;
+    };
 
     if (pinnedDownloadAllEl) {
       pinnedDownloadAllEl.addEventListener('click', function() {
@@ -3023,6 +3098,17 @@
         }).then(function(content) {
           saveAs(content, 'dayz_objects.zip');
         }).catch(function() {});
+      });
+    }
+    if (pinnedDownloadTypesAllEl) {
+      pinnedDownloadTypesAllEl.addEventListener('click', function() {
+        var entries = getPinnedEntries();
+        if (!entries.length) return;
+        var downloaded = downloadTypesEntries(entries, 'pinned_types.txt');
+        if (!downloaded) return;
+        var originalText = pinnedDownloadTypesAllEl.textContent;
+        pinnedDownloadTypesAllEl.textContent = '✔';
+        setTimeout(function() { pinnedDownloadTypesAllEl.textContent = originalText; }, 900);
       });
     }
 
