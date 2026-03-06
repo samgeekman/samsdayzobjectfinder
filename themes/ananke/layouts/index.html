@@ -3489,23 +3489,22 @@
 
     var getCurrentViewRows = function() {
       if (!table) return [];
-      var rows = [];
-      table.rows({ search: 'applied' }).every(function() {
-        var rowEl = this.node();
-        var cell = rowEl ? rowEl.querySelector('.object-name-cell') : null;
-        if (!cell) return;
-        rows.push({
-          id: cell.getAttribute('data-objectid') || '',
-          className: cell.getAttribute('data-object') || '',
-          inGameName: cell.getAttribute('data-ingame') || '',
-          category: cell.getAttribute('data-category') || '',
-          path: cell.getAttribute('data-p3d') || '',
-          console: cell.getAttribute('data-console') || '',
-          type: cell.getAttribute('data-modeltype') || '',
-          tags: cell.getAttribute('data-tags') || ''
+      return table
+        .rows({ search: 'applied', order: 'applied', page: 'all' })
+        .data()
+        .toArray()
+        .map(function(row) {
+          return {
+            id: getObjectId(row) || '',
+            className: getObjectName(row) || '',
+            inGameName: row && row.inGameName ? row.inGameName : '',
+            category: row && row.category ? row.category : '',
+            path: row && row.path ? row.path : '',
+            console: getConsoleFlag(row),
+            type: row && row.modelType ? row.modelType : '',
+            tags: getSearchTags(row)
+          };
         });
-      });
-      return rows;
     };
 
     var downloadTextFile = function(content, filename, mimeType) {
