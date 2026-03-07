@@ -1307,10 +1307,10 @@
             </div>
             <div class="pinned-path-row">
               <span class="pinned-path-label">Spacing:</span>
+              <button class="pinned-path-btn pinned-bulk-spacing" type="button" data-spacing="auto">Auto</button>
               <button class="pinned-path-btn pinned-bulk-spacing" type="button" data-spacing="small">Small (1m)</button>
-              <button class="pinned-path-btn pinned-bulk-spacing" type="button" data-spacing="medium">Medium (5m)</button>
-              <button class="pinned-path-btn pinned-bulk-spacing" type="button" data-spacing="large">Large (10m)</button>
-              <button class="pinned-path-btn pinned-bulk-spacing" type="button" data-spacing="huge">Huge (25m)</button>
+              <button class="pinned-path-btn pinned-bulk-spacing" type="button" data-spacing="medium">Medium (10m)</button>
+              <button class="pinned-path-btn pinned-bulk-spacing" type="button" data-spacing="large">Large (25m)</button>
             </div>
             <div class="pinned-path-row">
               <label class="pinned-copy__toggle" for="pinnedIncludePaths">
@@ -1412,6 +1412,28 @@
         } catch (err) {}
       }
       return [text];
+    };
+    var parseDimensionsVisual = function(value) {
+      if (Array.isArray(value) && value.length >= 3) {
+        return value.slice(0, 3).map(function(n) {
+          var parsed = parseFloat(n);
+          return isFinite(parsed) ? Math.abs(parsed) : 0;
+        });
+      }
+      if (typeof value === 'string') {
+        var text = value.trim();
+        if (!text) return [];
+        try {
+          var parsed = JSON.parse(text);
+          if (Array.isArray(parsed) && parsed.length >= 3) {
+            return parsed.slice(0, 3).map(function(n) {
+              var num = parseFloat(n);
+              return isFinite(num) ? Math.abs(num) : 0;
+            });
+          }
+        } catch (_) {}
+      }
+      return [];
     };
     var getConsoleFlag = function(row) {
       return row.usableOnConsole ? '✅' : '❌';
@@ -1542,6 +1564,7 @@
             td.setAttribute('data-linked-p3d', rowData['linked-p3d'] || '');
             td.setAttribute('data-linked-config', JSON.stringify(parseLinkedIds(rowData['linked-config'])));
             td.setAttribute('data-linked-variant', JSON.stringify(parseLinkedIds(rowData['linked-variant'])));
+            td.setAttribute('data-dimensions', JSON.stringify(parseDimensionsVisual(rowData.dimensionsVisual)));
           }
         },
         { targets: 3, className: 'min-desktop' },
@@ -1876,6 +1899,7 @@
         inGame: rowData.inGameName || '',
         consoleFlag: getConsoleFlag(rowData),
         tags: rowData.searchTags || '',
+        dimensionsVisual: parseDimensionsVisual(rowData.dimensionsVisual),
         editorJsonRaw: rowData.editorJson ? JSON.stringify(rowData.editorJson) : '',
         linkedP3D: normalizeObjectId(rowData['linked-p3d']),
         linkedConfig: parseLinkedIds(rowData['linked-config']),
@@ -2009,6 +2033,7 @@
       var inGame = objData.inGame;
       var consoleFlag = objData.consoleFlag;
       var tags = objData.tags;
+      var dimensionsVisual = parseDimensionsVisual(objData.dimensionsVisual);
       var editorJsonRaw = objData.editorJsonRaw;
       var linkedP3D = normalizeObjectId(objData.linkedP3D);
       var linkedConfig = parseLinkedIds(objData.linkedConfig).map(normalizeObjectId).filter(Boolean);
@@ -2026,6 +2051,7 @@
         inGame: inGame,
         consoleFlag: consoleFlag,
         tags: tags,
+        dimensionsVisual: dimensionsVisual,
         linkedP3D: linkedP3D,
         linkedConfig: linkedConfig,
         linkedVariant: linkedVariant
@@ -2169,6 +2195,7 @@
         inGame: $td.data('ingame'),
         consoleFlag: $td.data('console'),
         tags: $td.data('tags'),
+        dimensionsVisual: parseDimensionsVisual($td.attr('data-dimensions')),
         linkedP3D: normalizeObjectId($td.attr('data-linked-p3d') || ''),
         linkedConfig: parseLinkedIds($td.attr('data-linked-config')),
         linkedVariant: parseLinkedIds($td.attr('data-linked-variant'))
@@ -2190,6 +2217,7 @@
         inGame: rowData.inGameName || '',
         consoleFlag: getConsoleFlag(rowData),
         tags: rowData.searchTags || '',
+        dimensionsVisual: parseDimensionsVisual(rowData.dimensionsVisual),
         linkedP3D: normalizeObjectId(rowData['linked-p3d']),
         linkedConfig: parseLinkedIds(rowData['linked-config']),
         linkedVariant: parseLinkedIds(rowData['linked-variant'])
@@ -2236,7 +2264,7 @@
         items: items,
         count: items.length,
         layout: 'line',
-        spacing: 5,
+        spacing: 'auto',
         mode: 'P3D',
         expanded: false
       });
@@ -2302,11 +2330,11 @@
     };
 
     var getSpacingValue = function(label) {
+      if (label === 'auto') return 'auto';
       if (label === 'small') return 1;
-      if (label === 'medium') return 5;
-      if (label === 'large') return 10;
-      if (label === 'huge') return 25;
-      return 5;
+      if (label === 'medium') return 10;
+      if (label === 'large') return 25;
+      return 'auto';
     };
 
     var updatePinnedUI = function() {
@@ -2316,6 +2344,14 @@
       pinnedItems.forEach(function(item) {
         if (item.type === 'path' && !item.count && Array.isArray(item.items)) {
           item.count = item.items.length;
+        }
+        if (item.type === 'path') {
+          var spacingValue = item.spacing;
+          var numericSpacing = parseFloat(spacingValue);
+          var validSpacing = spacingValue === 'auto' || numericSpacing === 1 || numericSpacing === 10 || numericSpacing === 25;
+          if (!validSpacing) {
+            item.spacing = 'auto';
+          }
         }
         var wrapper = document.createElement('div');
         wrapper.className = 'pinned-item';
@@ -2532,10 +2568,10 @@
           spacingLabel.textContent = 'Spacing:';
           rowSpacing.appendChild(spacingLabel);
           [
+            { label: 'auto', text: 'Auto' },
             { label: 'small', text: 'Small (1m)' },
-            { label: 'medium', text: 'Medium (5m)' },
-            { label: 'large', text: 'Large (10m)' },
-            { label: 'huge', text: 'Huge (25m)' }
+            { label: 'medium', text: 'Medium (10m)' },
+            { label: 'large', text: 'Large (25m)' }
           ].forEach(function(opt) {
             var btn = document.createElement('button');
             btn.className = 'pinned-path-btn' + (item.spacing === getSpacingValue(opt.label) ? ' active' : '');
@@ -2629,7 +2665,7 @@
     };
 
     var pinnedBulkLayout = 'line';
-    var pinnedBulkSpacing = 5;
+    var pinnedBulkSpacing = 'auto';
     var pinnedBulkExpanded = false;
 
     pinnedItems = loadPinnedItems();
@@ -2713,6 +2749,7 @@
         inGame: $td.data('ingame'),
         consoleFlag: $td.data('console'),
         tags: $td.data('tags'),
+        dimensionsVisual: parseDimensionsVisual($td.attr('data-dimensions')),
         editorJsonRaw: $td.attr('data-editorjson'),
         linkedP3D: normalizeObjectId($td.attr('data-linked-p3d') || ''),
         linkedConfig: parseLinkedIds($td.attr('data-linked-config')),
@@ -2854,7 +2891,8 @@
           category: currentObjectData.category,
           inGame: currentObjectData.inGame,
           consoleFlag: currentObjectData.consoleFlag,
-          tags: currentObjectData.tags
+          tags: currentObjectData.tags,
+          dimensionsVisual: parseDimensionsVisual(currentObjectData.dimensionsVisual)
         });
         updatePinnedUI();
         hideFocusDetails();
@@ -2945,10 +2983,11 @@
         var includePaths = pinnedIncludePathsEl ? pinnedIncludePathsEl.checked : false;
         var entries = getPinnedObjectEntries(includePaths);
         if (!entries.length) return;
+        var spacing = resolveSpacingValue(entries, pinnedBulkLayout, pinnedBulkSpacing);
         var combined = [];
         entries.forEach(function(item, index) {
           var objects = buildEditorJsonArray(item);
-          applyLayoutOffsets(objects, index, entries.length, pinnedBulkLayout, pinnedBulkSpacing);
+          applyLayoutOffsets(objects, index, entries.length, pinnedBulkLayout, spacing);
           combined = combined.concat(objects);
         });
         if (!combined.length) return;
@@ -3034,6 +3073,38 @@
         obj.Position[1] += offsetY;
         obj.Position[2] += offsetZ;
       });
+    };
+    var getDimensionAxisValue = function(item, axis) {
+      var dims = parseDimensionsVisual(item && item.dimensionsVisual);
+      if (!dims.length) return 1;
+      var idx = axis === 'y' ? 1 : axis === 'z' ? 2 : 0;
+      var value = parseFloat(dims[idx]);
+      if (!isFinite(value) || value <= 0) return 1;
+      return value;
+    };
+    var resolveAutoSpacingValue = function(entries, layout) {
+      if (!Array.isArray(entries) || !entries.length) return 5;
+      var maxSpan = 1;
+      entries.forEach(function(item) {
+        var x = getDimensionAxisValue(item, 'x');
+        var y = getDimensionAxisValue(item, 'y');
+        var z = getDimensionAxisValue(item, 'z');
+        var span = layout === 'stacked' ? y : Math.max(x, z);
+        if (span > maxSpan) {
+          maxSpan = span;
+        }
+      });
+      return Math.max(1, Math.ceil(maxSpan + 1));
+    };
+    var resolveSpacingValue = function(entries, layout, spacingOption) {
+      if (spacingOption === 'auto') {
+        return resolveAutoSpacingValue(entries, layout);
+      }
+      var spacing = parseFloat(spacingOption);
+      if (!isFinite(spacing) || spacing <= 0) {
+        return resolveAutoSpacingValue(entries, layout);
+      }
+      return spacing;
     };
     var getUniqueTypeNames = function(items) {
       if (!Array.isArray(items) || !items.length) return [];
@@ -3147,9 +3218,9 @@
       if (!pathItem || !Array.isArray(pathItem.items) || !pathItem.items.length) return;
       var entries = pathItem.items;
       var combined = [];
-      var spacing = pathItem.spacing || 5;
       var layout = pathItem.layout || 'line';
       var mode = pathItem.mode || 'P3D';
+      var spacing = resolveSpacingValue(entries, layout, pathItem.spacing);
       entries.forEach(function(item, index) {
         var objects = buildEditorJsonArrayWithMode(item, mode);
         applyLayoutOffsets(objects, index, entries.length, layout, spacing);
