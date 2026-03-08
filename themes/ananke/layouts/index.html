@@ -1626,6 +1626,12 @@
     var currentObjectRowEl = null;
     var typesEntryUrl = null;
     var typesEntryByName = {};
+    var mapTypesByMap = {
+      chernarus: {},
+      livonia: {},
+      sakhal: {}
+    };
+    var activeTypesTagFilter = null;
     var mapGroupProtoEntryUrl = null;
     var mapGroupProtoEntryByName = {};
     var objectNameById = {};
@@ -1762,6 +1768,144 @@
       objectFocusMapGroupProtoLinkEl.setAttribute('download', objName + '-mapgroupproto.xml');
       objectFocusMapGroupProtoLinkEl.style.display = 'inline-flex';
     };
+    var buildMapLootMetaHtml = function(objName) {
+      var key = String(objName || '').trim().toLowerCase();
+      if (!key) return '';
+      var rows = [
+        { map: 'chernarus', label: 'Chernarus' },
+        { map: 'livonia', label: 'Livonia' },
+        { map: 'sakhal', label: 'Sakhal' }
+      ].map(function(def) {
+        var info = mapTypesByMap[def.map] && mapTypesByMap[def.map][key];
+        var usage = info && Array.isArray(info.usage) ? info.usage : [];
+        var value = info && Array.isArray(info.value) ? info.value : [];
+        var usageHtml = usage.length
+          ? usage.map(function(name) {
+              var safeName = escapeHtml(name);
+              return '<button class="object-focus__link-pill object-focus__types-pill" type="button" data-types-map="' + escapeHtml(def.map) + '" data-types-kind="usage" data-types-name="' + safeName + '">' + safeName + '</button>';
+            }).join(' ')
+          : '—';
+        var valueHtml = value.length
+          ? value.map(function(name) {
+              var safeName = escapeHtml(name);
+              return '<button class="object-focus__link-pill object-focus__types-pill" type="button" data-types-map="' + escapeHtml(def.map) + '" data-types-kind="value" data-types-name="' + safeName + '">' + safeName + '</button>';
+            }).join(' ')
+          : '—';
+        return '<div><span>' + def.label + ':</span> Usage: ' + usageHtml + ' · Value: ' + valueHtml + '</div>';
+      });
+      return rows.join('');
+    };
+    var updateObjectFocusMeta = function(objData) {
+      if (!objectFocusMetaEl || !objData) return;
+      var objectId = objData.id || '';
+      var inGame = objData.inGame || '';
+      var category = objData.category || '';
+      var modelType = objData.modelType || '';
+      var consoleFlag = objData.consoleFlag || '';
+      var tags = objData.tags || '';
+      var objName = objData.objName || '';
+      objectFocusMetaEl.innerHTML =
+        '<div><span>Object ID:</span> ' + (objectId || '—') + '</div>' +
+        '<div><span>In-game name:</span> ' + (inGame || '—') + '</div>' +
+        '<div><span>Category:</span> ' + (category || '—') + '</div>' +
+        '<div><span>Model type:</span> ' + (modelType || '—') + '</div>' +
+        '<div><span>Console:</span> ' + (consoleFlag || '—') + '</div>' +
+        '<div><span>Tags:</span> ' + (tags || '—') + '</div>' +
+        buildMapLootMetaHtml(objName);
+    };
+    var loadMapTypes = function(mapKey, url) {
+      return fetch(url)
+        .then(function(resp) { return resp.ok ? resp.text() : ''; })
+        .then(function(text) {
+          if (!text) return;
+          var parser = new DOMParser();
+          var xml = parser.parseFromString(text, 'application/xml');
+          var nodes = xml.getElementsByTagName('type');
+          var next = {};
+          for (var i = 0; i < nodes.length; i++) {
+            var node = nodes[i];
+            var nameAttr = node.getAttribute('name');
+            if (!nameAttr) continue;
+            var nameKey = String(nameAttr).trim().toLowerCase();
+            if (!nameKey) continue;
+            var usageNodes = node.getElementsByTagName('usage');
+            var valueNodes = node.getElementsByTagName('value');
+            var usage = [];
+            var value = [];
+            var uSeen = {};
+            var vSeen = {};
+            for (var u = 0; u < usageNodes.length; u++) {
+              var uName = String(usageNodes[u].getAttribute('name') || '').trim();
+              if (!uName || uSeen[uName]) continue;
+              uSeen[uName] = true;
+              usage.push(uName);
+            }
+            for (var v = 0; v < valueNodes.length; v++) {
+              var vName = String(valueNodes[v].getAttribute('name') || '').trim();
+              if (!vName || vSeen[vName]) continue;
+              vSeen[vName] = true;
+              value.push(vName);
+            }
+            next[nameKey] = { usage: usage, value: value };
+          }
+          mapTypesByMap[mapKey] = next;
+          if (currentObjectData && currentObjectData.objName) {
+            updateObjectFocusMeta(currentObjectData);
+          }
+        })
+        .catch(function() {});
+    };
+    var updateTypesTagFilterNotice = function() {
+      if (!linkedFilterNoticeEl || !linkedFilterNoticeTextEl) return;
+      if (activeTypesTagFilter && activeTypesTagFilter.name && activeTypesTagFilter.kind && activeTypesTagFilter.map) {
+        var kindLabel = activeTypesTagFilter.kind === 'value' ? 'Value' : 'Usage';
+        linkedFilterNoticeTextEl.textContent =
+          "Filtering Types.xml " + kindLabel + " tag '" + activeTypesTagFilter.name + "' loot -";
+        linkedFilterNoticeEl.classList.add('visible');
+        return;
+      }
+      var hasLinkedIds = new URL(window.location).searchParams.getAll('id').length > 0;
+      if (!hasLinkedIds) {
+        linkedFilterNoticeEl.classList.remove('visible');
+      }
+    };
+    var setTypesTagFilter = function(mapKey, tagKind, tagName) {
+      var map = String(mapKey || '').trim().toLowerCase();
+      var kind = String(tagKind || '').trim().toLowerCase();
+      var name = String(tagName || '').trim();
+      if (!map || !kind || !name) return;
+      if (kind !== 'usage' && kind !== 'value') return;
+      if (activeTypesTagFilter && activeTypesTagFilter.map === map && activeTypesTagFilter.kind === kind && activeTypesTagFilter.name === name) {
+        activeTypesTagFilter = null;
+      } else {
+        activeTypesTagFilter = { map: map, kind: kind, name: name };
+        if (table) {
+          table.search('').columns().search('');
+        }
+        $('#filterCategory').val('');
+        $('#filterConsole').val('');
+      }
+      if (table) {
+        table.draw();
+      }
+      updateTypesTagFilterNotice();
+    };
+    $.fn.dataTable.ext.search.push(function(settings, _data, dataIndex) {
+      if (!activeTypesTagFilter || !activeTypesTagFilter.map || !activeTypesTagFilter.kind || !activeTypesTagFilter.name) return true;
+      if (!table || settings.nTable !== $tableEl.get(0)) return true;
+      var rowData = table.row(dataIndex).data();
+      if (!rowData) return false;
+      var objKey = String(getObjectName(rowData) || '').trim().toLowerCase();
+      if (!objKey) return false;
+      var info = mapTypesByMap[activeTypesTagFilter.map] && mapTypesByMap[activeTypesTagFilter.map][objKey];
+      if (!info) return false;
+      var list = activeTypesTagFilter.kind === 'value' ? info.value : info.usage;
+      if (!Array.isArray(list) || !list.length) return false;
+      var needle = activeTypesTagFilter.name.toLowerCase();
+      return list.some(function(name) {
+        return String(name || '').trim().toLowerCase() === needle;
+      });
+    });
 
     if (objectFocusEl) {
       objectFocusEl.classList.add('visible', 'collapsed');
@@ -1809,6 +1953,19 @@
             focusSidebarByName(directName);
           }
         }
+      });
+    }
+    if (objectFocusMetaEl) {
+      objectFocusMetaEl.addEventListener('click', function(e) {
+        var typesPill = e.target.closest('.object-focus__types-pill');
+        if (!typesPill) return;
+        e.preventDefault();
+        e.stopPropagation();
+        setTypesTagFilter(
+          typesPill.getAttribute('data-types-map') || '',
+          typesPill.getAttribute('data-types-kind') || '',
+          typesPill.getAttribute('data-types-name') || ''
+        );
       });
     }
     window.addEventListener('resize', updateMobileView);
@@ -2058,15 +2215,7 @@
       };
       objectFocusNameEl.textContent = objName;
       objectFocusPathEl.textContent = p3dPath ? ('Path: ' + p3dPath) : '';
-      if (objectFocusMetaEl) {
-        objectFocusMetaEl.innerHTML =
-          '<div><span>Object ID:</span> ' + (objectId || '—') + '</div>' +
-          '<div><span>In-game name:</span> ' + (inGame || '—') + '</div>' +
-          '<div><span>Category:</span> ' + (category || '—') + '</div>' +
-          '<div><span>Model type:</span> ' + (modelType || '—') + '</div>' +
-          '<div><span>Console:</span> ' + (consoleFlag || '—') + '</div>' +
-          '<div><span>Tags:</span> ' + (tags || '—') + '</div>';
-      }
+      updateObjectFocusMeta(currentObjectData);
       if (objectFocusLinksEl) {
         var buildLinkedButtons = function(ids, maxVisible) {
           var limit = typeof maxVisible === 'number' ? maxVisible : 5;
@@ -2162,7 +2311,7 @@
           typesEntryByName[nameAttr] = node.outerHTML;
         }
       })
-      .catch(function() {});
+        .catch(function() {});
 
     fetch('/data/mapgroupproto-merged.xml')
       .then(function(resp) { return resp.ok ? resp.text() : ''; })
@@ -2181,6 +2330,9 @@
         }
       })
       .catch(function() {});
+    loadMapTypes('chernarus', '/data/types/types_chernarus.xml');
+    loadMapTypes('livonia', '/data/types/types_livonia.xml');
+    loadMapTypes('sakhal', '/data/types/types_sakhal.xml');
 
     var buildPinnedItemFromCell = function($td) {
       return {
@@ -3515,6 +3667,14 @@
     if (linkedFilterResetLinkEl) {
       linkedFilterResetLinkEl.addEventListener('click', function(e) {
         e.preventDefault();
+        if (activeTypesTagFilter) {
+          activeTypesTagFilter = null;
+          if (table) {
+            table.draw();
+          }
+          updateTypesTagFilterNotice();
+          return;
+        }
         resetFilters();
       });
     }
