@@ -1224,10 +1224,12 @@
 <div id="versionFilterNotice" class="version-filter-notice" role="status" aria-live="polite">
   <span id="versionFilterNoticeText">Filtering version objects.</span>
   <a id="versionFilterResetLink" href="#">Reset filter</a>
+  <a id="versionFilterCopyLink" href="#">Copy link</a>
 </div>
 <div id="linkedFilterNotice" class="version-filter-notice" role="status" aria-live="polite">
   <span id="linkedFilterNoticeText">Filtering linked objects.</span>
   <a id="linkedFilterResetLink" href="#">Reset filter</a>
+  <a id="linkedFilterCopyLink" href="#">Copy link</a>
 </div>
 
 <div class="objects-layout">
@@ -1896,6 +1898,47 @@
       if (!hasLinkedIds) {
         linkedFilterNoticeEl.classList.remove('visible');
       }
+    };
+    var buildVersionFilterUrl = function(version) {
+      var nextUrl = new URL(window.location);
+      nextUrl.searchParams.delete('id');
+      nextUrl.searchParams.delete('object');
+      nextUrl.searchParams.delete('types_map');
+      nextUrl.searchParams.delete('types_kind');
+      nextUrl.searchParams.delete('types_tag');
+      nextUrl.searchParams.delete('version');
+      if (version) {
+        nextUrl.searchParams.set('version', version);
+      }
+      return nextUrl.toString();
+    };
+    var buildIdFilterUrl = function(ids) {
+      var nextUrl = new URL(window.location);
+      nextUrl.searchParams.delete('version');
+      nextUrl.searchParams.delete('types_map');
+      nextUrl.searchParams.delete('types_kind');
+      nextUrl.searchParams.delete('types_tag');
+      nextUrl.searchParams.delete('object');
+      nextUrl.searchParams.delete('id');
+      (Array.isArray(ids) ? ids : []).forEach(function(id) {
+        if (id) nextUrl.searchParams.append('id', id);
+      });
+      return nextUrl.toString();
+    };
+    var buildTypesTagFilterUrl = function(filter) {
+      var nextUrl = new URL(window.location);
+      nextUrl.searchParams.delete('id');
+      nextUrl.searchParams.delete('object');
+      nextUrl.searchParams.delete('version');
+      nextUrl.searchParams.delete('types_map');
+      nextUrl.searchParams.delete('types_kind');
+      nextUrl.searchParams.delete('types_tag');
+      if (filter && filter.map && filter.kind && filter.name) {
+        nextUrl.searchParams.set('types_map', filter.map);
+        nextUrl.searchParams.set('types_kind', filter.kind);
+        nextUrl.searchParams.set('types_tag', filter.name);
+      }
+      return nextUrl.toString();
     };
     var setTypesTagFilter = function(mapKey, tagKind, tagName) {
       var map = String(mapKey || '').trim().toLowerCase();
@@ -3540,17 +3583,30 @@
     };
 
     var searchParams = new URLSearchParams(window.location.search);
+    var normalizeTypesMapParam = function(value) {
+      var key = String(value || '').trim().toLowerCase();
+      return (key === 'chernarus' || key === 'livonia' || key === 'sakhal') ? key : '';
+    };
+    var normalizeTypesKindParam = function(value) {
+      var key = String(value || '').trim().toLowerCase();
+      return (key === 'usage' || key === 'value') ? key : '';
+    };
     var objectIdParams = searchParams.getAll('id').map(function(value) {
       return normalizeObjectId(value);
     }).filter(Boolean);
     var objectParam = searchParams.get('object');
     var versionParam = normalizeVersionParam(searchParams.get('version'));
+    var typesMapParam = normalizeTypesMapParam(searchParams.get('types_map'));
+    var typesKindParam = normalizeTypesKindParam(searchParams.get('types_kind'));
+    var typesTagParam = String(searchParams.get('types_tag') || '').trim();
     var versionFilterNoticeEl = document.getElementById('versionFilterNotice');
     var versionFilterNoticeTextEl = document.getElementById('versionFilterNoticeText');
     var versionFilterResetLinkEl = document.getElementById('versionFilterResetLink');
+    var versionFilterCopyLinkEl = document.getElementById('versionFilterCopyLink');
     var linkedFilterNoticeEl = document.getElementById('linkedFilterNotice');
     var linkedFilterNoticeTextEl = document.getElementById('linkedFilterNoticeText');
     var linkedFilterResetLinkEl = document.getElementById('linkedFilterResetLink');
+    var linkedFilterCopyLinkEl = document.getElementById('linkedFilterCopyLink');
     var appliedUrlState = false;
 
     if (versionFilterNoticeEl && versionParam) {
@@ -3566,6 +3622,14 @@
           : 'Filtering linked objects.';
       }
       linkedFilterNoticeEl.classList.add('visible');
+    }
+    if (typesMapParam && typesKindParam && typesTagParam) {
+      activeTypesTagFilter = {
+        map: typesMapParam,
+        kind: typesKindParam,
+        name: typesTagParam
+      };
+      updateTypesTagFilterNotice();
     }
 
     var applyUrlState = function(sourceData) {
@@ -3695,6 +3759,16 @@
         resetFilters();
       });
     }
+    if (versionFilterCopyLinkEl) {
+      versionFilterCopyLinkEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        var link = buildVersionFilterUrl(versionParam);
+        navigator.clipboard.writeText(link);
+        var original = versionFilterCopyLinkEl.textContent;
+        versionFilterCopyLinkEl.textContent = 'Copied';
+        setTimeout(function() { versionFilterCopyLinkEl.textContent = original; }, 1200);
+      });
+    }
     if (linkedFilterResetLinkEl) {
       linkedFilterResetLinkEl.addEventListener('click', function(e) {
         e.preventDefault();
@@ -3708,6 +3782,21 @@
           return;
         }
         resetFilters();
+      });
+    }
+    if (linkedFilterCopyLinkEl) {
+      linkedFilterCopyLinkEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        var link = window.location.toString();
+        if (activeTypesTagFilter) {
+          link = buildTypesTagFilterUrl(activeTypesTagFilter);
+        } else if (objectIdParams.length) {
+          link = buildIdFilterUrl(objectIdParams);
+        }
+        navigator.clipboard.writeText(link);
+        var original = linkedFilterCopyLinkEl.textContent;
+        linkedFilterCopyLinkEl.textContent = 'Copied';
+        setTimeout(function() { linkedFilterCopyLinkEl.textContent = original; }, 1200);
       });
     }
 
