@@ -878,6 +878,23 @@
     gap: 4px;
     font-size: 0.72rem;
   }
+  .object-focus__location-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 6px;
+    width: 100%;
+  }
+  .object-focus__location-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    min-width: 0;
+  }
+  .object-focus__location-entry--push {
+    align-items: flex-start;
+  }
   .object-focus__location-text {
     color: var(--muted);
     font-weight: 700;
@@ -1664,8 +1681,8 @@
           </g>
         </svg>
         <div class="map-lightbox__meta">
-          <div id="chernarusMapLabel" class="map-lightbox__label">Chernarus map</div>
-          <div id="chernarusMapMeta" class="map-lightbox__subtle">Pan with drag, zoom with wheel</div>
+          <div id="chernarusMapLabel" class="map-lightbox__label">Map</div>
+          <div id="chernarusMapMeta" class="map-lightbox__subtle"></div>
           <div id="chernarusMapStatus" class="map-lightbox__status"></div>
         </div>
         <div id="chernarusMapToast" class="map-lightbox__toast" aria-live="polite"></div>
@@ -1969,7 +1986,7 @@
     var objectFocusEmptyEl = document.getElementById('objectFocusEmpty');
     var currentObjectName = null;
     var currentObjectData = null;
-    var currentObjectLocationData = null;
+    var currentObjectLocationData = {};
     var currentObjectRowEl = null;
     var typesEntryUrl = null;
     var typesEntryByName = {};
@@ -1992,6 +2009,18 @@
       types: true,
       location: true,
       links: true
+    };
+    var locationMapConfigs = {
+      chernarus: {
+        label: 'Chernarus',
+        dataFile: 'chernarus-viewer-data.json',
+        backdropDir: 'chernarus-backdrop-tiles'
+      },
+      livonia: {
+        label: 'Livonia',
+        dataFile: 'livonia-viewer-data.json',
+        backdropDir: 'livonia-backdrop-tiles'
+      }
     };
     var pinnedObjectsEl = document.getElementById('pinnedObjects');
     var pinnedListEl = document.getElementById('pinnedList');
@@ -2026,10 +2055,24 @@
     var chernarusMapStatusEl = document.getElementById('chernarusMapStatus');
     var chernarusMapToastEl = document.getElementById('chernarusMapToast');
     var chernarusMapState = {
+      activeMapKey: '',
+      viewers: {
+        chernarus: {
+          data: null,
+          error: null,
+          promise: null,
+          dataUrl: '',
+          backdropBaseUrl: ''
+        },
+        livonia: {
+          data: null,
+          error: null,
+          promise: null,
+          dataUrl: '',
+          backdropBaseUrl: ''
+        }
+      },
       data: null,
-      error: null,
-      promise: null,
-      dataUrl: '',
       backdropBaseUrl: '',
       selection: null,
       view: null,
@@ -2470,9 +2513,12 @@
           sectionToggle.textContent = (objectFocusSectionExpanded.location ? '▴ ' : '▾ ') + 'Count of object on map';
           return;
         }
-        var trigger = e.target.closest('[data-action="view-chernarus-map"]');
-        if (!trigger || !currentObjectData || !currentObjectLocationData || !currentObjectLocationData.count) return;
-        openChernarusMapLightbox(currentObjectData, currentObjectLocationData);
+        var trigger = e.target.closest('[data-action="view-location-map"]');
+        if (!trigger || !currentObjectData || !currentObjectLocationData) return;
+        var mapKey = trigger.getAttribute('data-map-key') || '';
+        var resolved = currentObjectLocationData[mapKey];
+        if (!mapKey || !resolved || !resolved.count) return;
+        openLocationMapLightbox(mapKey, currentObjectData, resolved);
       });
     }
     if (chernarusMapCloseEl) {
@@ -2680,9 +2726,10 @@
       });
       return matches;
     };
-    var buildResolvedLocationData = function(objData, viewerData) {
-      var cacheKey = getObjectLocationCacheKey(objData);
-      if (!cacheKey || !viewerData) return null;
+    var buildResolvedLocationData = function(objData, viewerData, mapKey) {
+      var objectCacheKey = getObjectLocationCacheKey(objData);
+      var cacheKey = (mapKey || 'map') + ':' + objectCacheKey;
+      if (!objectCacheKey || !viewerData) return null;
       if (objectLocationResolutionCache[cacheKey]) {
         return objectLocationResolutionCache[cacheKey];
       }
@@ -2745,12 +2792,13 @@
       if (!objectFocusLocationEl) return;
       var locationExpanded = objectFocusSectionExpanded.location !== false;
       if (!objData || !objData.objName) {
-        currentObjectLocationData = null;
+        currentObjectLocationData = {};
         objectFocusLocationEl.innerHTML = '';
         objectFocusLocationEl.classList.remove('visible');
         return;
       }
       var requestKey = getObjectLocationCacheKey(objData);
+      currentObjectLocationData = {};
       objectFocusLocationEl.classList.add('visible');
       objectFocusLocationEl.innerHTML =
         '<div class="object-focus__section-header">' +
@@ -2762,18 +2810,27 @@
           '</div>' +
         '</div>';
       objectFocusLocationEl.classList.toggle('is-open', locationExpanded);
-      ensureChernarusMapData()
-        .then(function(viewerData) {
+      Promise.allSettled(Object.keys(locationMapConfigs).map(function(mapKey) {
+        return ensureLocationMapData(mapKey).then(function(viewerData) {
+          return {
+            mapKey: mapKey,
+            resolved: buildResolvedLocationData(objData, viewerData, mapKey)
+          };
+        });
+      }))
+        .then(function(results) {
           if (!currentObjectData || getObjectLocationCacheKey(currentObjectData) !== requestKey) return;
-          var resolved = null;
-          try {
-            resolved = buildResolvedLocationData(objData, viewerData);
-          } catch (error) {
-            throw error;
-          }
-          currentObjectLocationData = resolved;
-          if (!resolved || !resolved.count) {
-            currentObjectLocationData = null;
+          currentObjectLocationData = {};
+          results.forEach(function(result) {
+            if (result.status !== 'fulfilled' || !result.value) return;
+            var mapKey = result.value.mapKey;
+            var resolved = result.value.resolved;
+            if (!mapKey || !resolved || !resolved.count) return;
+            currentObjectLocationData[mapKey] = resolved;
+          });
+          var availableMapKeys = Object.keys(currentObjectLocationData);
+          if (!availableMapKeys.length) {
+            currentObjectLocationData = {};
             objectFocusLocationEl.innerHTML = '';
             objectFocusLocationEl.classList.remove('visible', 'is-open');
             return;
@@ -2783,80 +2840,105 @@
             mapGroupActionHtml =
               '<a class="object-focus__link-pill object-focus__section-action" href="' + escapeHtml(objectFocusMapGroupProtoLinkEl.getAttribute('href') || '#') + '" download="' + escapeHtml(objectFocusMapGroupProtoLinkEl.getAttribute('download') || '') + '">↓ Download MapGroupProto</a>';
           }
-          var linkedText = resolved.typeCount > 1 ? ('Across ' + formatNumber(resolved.typeCount) + ' linked types') : '';
+          var orderedMapKeys = Object.keys(locationMapConfigs).filter(function(mapKey) {
+            return !!currentObjectLocationData[mapKey];
+          });
+          var locationRowsHtml = orderedMapKeys.map(function(mapKey, index) {
+            var resolved = currentObjectLocationData[mapKey];
+            var config = locationMapConfigs[mapKey] || {};
+            var linkedText = resolved.typeCount > 1 ? ('Across ' + formatNumber(resolved.typeCount) + ' linked types') : '';
+            return (
+              '<div class="object-focus__location-entry' + (index > 0 ? ' object-focus__location-entry--push' : '') + '">' +
+                '<button class="object-focus__link-pill object-focus__location-pill" type="button" data-action="view-location-map" data-map-key="' + escapeHtml(mapKey) + '">🗺️ ' + formatNumber(resolved.count) + ' on ' + escapeHtml(config.label || mapKey) + '</button>' +
+                (linkedText ? ('<span class="object-focus__location-status">' + escapeHtml(linkedText) + '</span>') : '') +
+              '</div>'
+            );
+          }).join('');
           objectFocusLocationEl.innerHTML =
             '<div class="object-focus__section-header">' +
               '<button class="object-focus__section-title object-focus__section-toggle object-focus__location-heading" type="button" data-section-toggle="location" data-section-title="Count of object on map" aria-expanded="' + (locationExpanded ? 'true' : 'false') + '">' + (locationExpanded ? '▴ ' : '▾ ') + 'Count of object on map</button>' +
               mapGroupActionHtml +
             '</div>' +
-            '<div class="object-focus__section-body">' +
-              '<div class="object-focus__location-row">' +
-                '<button class="object-focus__link-pill object-focus__location-pill" type="button" data-action="view-chernarus-map">🗺️ ' + formatNumber(resolved.count) + ' on Chernarus</button>' +
-                (linkedText ? ('<span class="object-focus__location-status">' + escapeHtml(linkedText) + '</span>') : '') +
-              '</div>' +
-            '</div>';
+            '<div class="object-focus__section-body"><div class="object-focus__location-actions">' + locationRowsHtml + '</div></div>';
           objectFocusLocationEl.classList.toggle('is-open', locationExpanded);
         })
         .catch(function(error) {
           if (!currentObjectData || getObjectLocationCacheKey(currentObjectData) !== requestKey) return;
-          currentObjectLocationData = null;
+          currentObjectLocationData = {};
           objectFocusLocationEl.innerHTML = '';
           objectFocusLocationEl.classList.remove('visible', 'is-open');
         });
     };
-    var ensureChernarusMapData = function() {
-      if (chernarusMapState.data) {
-        return Promise.resolve(chernarusMapState.data);
-      }
-      if (chernarusMapState.promise) {
-        return chernarusMapState.promise;
-      }
-      var buildChernarusAssetCandidates = function(fileName) {
-        var candidates = [];
-        var seen = {};
-        var pushCandidate = function(value) {
-          if (!value || seen[value]) return;
-          seen[value] = true;
-          candidates.push(value);
-        };
-        try {
-          pushCandidate(new URL('data/' + fileName, window.location.href).toString());
-        } catch (_) {}
-        try {
-          pushCandidate(new URL('./data/' + fileName, window.location.href).toString());
-        } catch (_) {}
-        try {
-          pushCandidate(new URL('/data/' + fileName, window.location.origin).toString());
-        } catch (_) {}
-        pushCandidate('/data/' + fileName);
-        return candidates;
+    var getLocationMapConfig = function(mapKey) {
+      return locationMapConfigs[mapKey] || null;
+    };
+    var getLocationMapLabel = function(mapKey) {
+      var config = getLocationMapConfig(mapKey);
+      return config && config.label ? config.label : 'Map';
+    };
+    var buildLocationAssetCandidates = function(fileName) {
+      var candidates = [];
+      var seen = {};
+      var pushCandidate = function(value) {
+        if (!value || seen[value]) return;
+        seen[value] = true;
+        candidates.push(value);
       };
-      var deriveBackdropBaseUrl = function(dataUrl) {
-        try {
-          return new URL('chernarus-backdrop-tiles/', dataUrl).toString();
-        } catch (_) {
-          return '/data/chernarus-backdrop-tiles/';
-        }
-      };
-      var fetchFirstAvailableJson = function(urls, index) {
-        if (index >= urls.length) {
-          return Promise.reject(new Error('Unable to load Chernarus map data asset.'));
-        }
-        var candidate = urls[index];
-        return fetch(candidate, { cache: 'no-store' })
-          .then(function(resp) {
-            if (!resp.ok) {
-              throw new Error('HTTP ' + resp.status + ' for ' + candidate);
-            }
-            return resp.json().then(function(data) {
-              return { data: data, url: candidate };
-            });
-          })
-          .catch(function() {
-            return fetchFirstAvailableJson(urls, index + 1);
+      try {
+        pushCandidate(new URL('data/' + fileName, window.location.href).toString());
+      } catch (_) {}
+      try {
+        pushCandidate(new URL('./data/' + fileName, window.location.href).toString());
+      } catch (_) {}
+      try {
+        pushCandidate(new URL('/data/' + fileName, window.location.origin).toString());
+      } catch (_) {}
+      pushCandidate('/data/' + fileName);
+      return candidates;
+    };
+    var deriveLocationBackdropBaseUrl = function(dataUrl, mapKey) {
+      var config = getLocationMapConfig(mapKey);
+      var backdropDir = config && config.backdropDir ? config.backdropDir : '';
+      try {
+        return new URL(backdropDir + '/', dataUrl).toString();
+      } catch (_) {
+        return backdropDir ? ('/data/' + backdropDir + '/') : '/data/';
+      }
+    };
+    var fetchFirstAvailableLocationJson = function(urls, index, mapKey) {
+      if (index >= urls.length) {
+        return Promise.reject(new Error('Unable to load ' + getLocationMapLabel(mapKey) + ' map data asset.'));
+      }
+      var candidate = urls[index];
+      return fetch(candidate, { cache: 'no-store' })
+        .then(function(resp) {
+          if (!resp.ok) {
+            throw new Error('HTTP ' + resp.status + ' for ' + candidate);
+          }
+          return resp.json().then(function(data) {
+            return { data: data, url: candidate };
           });
-      };
-      chernarusMapState.promise = fetchFirstAvailableJson(buildChernarusAssetCandidates('chernarus-viewer-data.json'), 0)
+        })
+        .catch(function() {
+          return fetchFirstAvailableLocationJson(urls, index + 1, mapKey);
+        });
+    };
+    var getLocationViewerState = function(mapKey) {
+      return chernarusMapState.viewers[mapKey] || null;
+    };
+    var ensureLocationMapData = function(mapKey) {
+      var config = getLocationMapConfig(mapKey);
+      var viewerState = getLocationViewerState(mapKey);
+      if (!config || !viewerState) {
+        return Promise.reject(new Error('Unknown map viewer: ' + mapKey));
+      }
+      if (viewerState.data) {
+        return Promise.resolve(viewerState.data);
+      }
+      if (viewerState.promise) {
+        return viewerState.promise;
+      }
+      viewerState.promise = fetchFirstAvailableLocationJson(buildLocationAssetCandidates(config.dataFile), 0, mapKey)
         .then(function(result) {
           var data = result.data;
           data.typesByPath = {};
@@ -2871,18 +2953,24 @@
               data.typesByFileName[fileKey] = type;
             }
           });
-          chernarusMapState.data = data;
-          chernarusMapState.dataUrl = result.url;
-          chernarusMapState.backdropBaseUrl = deriveBackdropBaseUrl(result.url);
-          chernarusMapState.error = null;
+          viewerState.data = data;
+          viewerState.dataUrl = result.url;
+          viewerState.backdropBaseUrl = deriveLocationBackdropBaseUrl(result.url, mapKey);
+          viewerState.error = null;
           return data;
         })
         .catch(function(error) {
-          chernarusMapState.promise = null;
-          chernarusMapState.error = error;
+          viewerState.promise = null;
+          viewerState.error = error;
           throw error;
         });
-      return chernarusMapState.promise;
+      return viewerState.promise;
+    };
+    var activateLocationMapData = function(mapKey, data) {
+      var viewerState = getLocationViewerState(mapKey);
+      chernarusMapState.activeMapKey = mapKey || '';
+      chernarusMapState.data = data || (viewerState ? viewerState.data : null);
+      chernarusMapState.backdropBaseUrl = viewerState ? viewerState.backdropBaseUrl : '';
     };
     var createLocationMapSvgElement = function(tagName) {
       return document.createElementNS('http://www.w3.org/2000/svg', tagName);
@@ -3119,7 +3207,7 @@
           if (chernarusMapState.backdropTileNodes.has(key)) continue;
           var tile = createLocationMapSvgElement('image');
           var rect = locationMapTileWorldRect(level, row, col);
-          var tileHref = (chernarusMapState.backdropBaseUrl || '/data/chernarus-backdrop-tiles/') + level.id + '/r' + row + '-c' + col + '.png';
+          var tileHref = (chernarusMapState.backdropBaseUrl || deriveLocationBackdropBaseUrl('', chernarusMapState.activeMapKey)) + level.id + '/r' + row + '-c' + col + '.png';
           tile.setAttribute('href', tileHref);
           tile.setAttribute('x', rect.x);
           tile.setAttribute('y', rect.y);
@@ -3243,16 +3331,17 @@
     };
     var updateLocationMapCopy = function() {
       var selection = chernarusMapState.selection;
+      var mapLabel = getLocationMapLabel(selection && selection.mapKey ? selection.mapKey : chernarusMapState.activeMapKey);
       if (!chernarusMapLabelEl || !chernarusMapMetaEl || !chernarusMapStatusEl) return;
       if (!selection) {
-        chernarusMapLabelEl.textContent = 'Chernarus map';
-        chernarusMapMetaEl.textContent = 'Pan with drag, zoom with wheel';
+        chernarusMapLabelEl.textContent = mapLabel + ' map';
+        chernarusMapMetaEl.textContent = '';
         updateLocationMapStatusText('');
         return;
       }
-      chernarusMapLabelEl.textContent = selection.name || 'Chernarus map';
+      chernarusMapLabelEl.textContent = selection.name || (mapLabel + ' map');
       chernarusMapMetaEl.textContent =
-        formatNumber(selection.count || 0) + ' placements on Chernarus' +
+        formatNumber(selection.count || 0) + ' placements on ' + mapLabel +
         (selection.typeCount > 1 ? (' across ' + selection.typeCount + ' linked types') : '');
       updateLocationMapStatusText('');
     };
@@ -3267,15 +3356,17 @@
         chernarusMapOverlayEl.classList.remove('dragging');
       }
     };
-    var openChernarusMapLightbox = function(objData, resolved) {
+    var openLocationMapLightbox = function(mapKey, objData, resolved) {
       if (!chernarusMapLightboxEl || !resolved || !resolved.count) return;
-      ensureChernarusMapData().then(function() {
+      ensureLocationMapData(mapKey).then(function(data) {
+        activateLocationMapData(mapKey, data);
         chernarusMapState.selection = {
-          name: objData.objName || 'Chernarus map',
+          mapKey: mapKey,
+          name: objData.objName || (getLocationMapLabel(mapKey) + ' map'),
           count: resolved.count,
           points: resolved.points.slice(),
           typeCount: resolved.typeCount || 0,
-          cacheKey: (getObjectLocationCacheKey(objData) || 'selection') + ':' + resolved.count
+          cacheKey: mapKey + ':' + (getObjectLocationCacheKey(objData) || 'selection') + ':' + resolved.count
         };
         updateLocationMapCopy();
         chernarusMapState.view = null;
@@ -3290,10 +3381,11 @@
         scheduleLocationMapLayout(true);
       }).catch(function(error) {
         chernarusMapState.selection = null;
+        activateLocationMapData(mapKey, null);
         updateLocationMapCopy();
         hideLocationMapToast();
         if (chernarusMapStatusEl) {
-          chernarusMapStatusEl.textContent = error && error.message ? error.message : 'Unable to load Chernarus map.';
+          chernarusMapStatusEl.textContent = error && error.message ? error.message : ('Unable to load ' + getLocationMapLabel(mapKey) + ' map.');
         }
       });
     };
@@ -3499,7 +3591,7 @@
       }
       currentObjectName = null;
       currentObjectData = null;
-      currentObjectLocationData = null;
+      currentObjectLocationData = {};
       if (currentObjectRowEl) {
         currentObjectRowEl.classList.remove('object-selected');
         currentObjectRowEl = null;
@@ -3545,7 +3637,7 @@
         linkedConfig: linkedConfig,
         linkedVariant: linkedVariant
       };
-      currentObjectLocationData = null;
+      currentObjectLocationData = {};
       objectFocusNameEl.textContent = objName;
       objectFocusPathEl.textContent = p3dPath ? ('Path: ' + p3dPath) : '';
       setTypesEntry(objName);
@@ -4272,7 +4364,7 @@
           '<span class="object-focus__location-text">0 on Chernarus</span>';
         objectFocusLocationEl.classList.add('visible');
       }
-      currentObjectLocationData = null;
+      currentObjectLocationData = {};
       if (objectFocusPreviewImgEl) {
         objectFocusPreviewImgEl.hidden = true;
         objectFocusPreviewImgEl.src = '';
