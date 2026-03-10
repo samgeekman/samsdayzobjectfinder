@@ -907,6 +907,11 @@
   .object-focus__location-pill {
     font-weight: 700;
   }
+  .object-focus__location-pill.is-flashing {
+    background: #fff0c2;
+    border-color: #d5a200;
+    color: #5f4500;
+  }
   .object-focus__location-status {
     color: var(--muted);
     font-size: 0.7rem;
@@ -1440,11 +1445,29 @@
     }
   }
 
+  .preview-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: min(400px, calc(100vw - 24px));
+    max-height: calc(100vh - 24px);
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    box-shadow: var(--shadow-soft);
+    pointer-events: none;
+    z-index: 1200;
+  }
   #imgPreview img {
     max-width: 400px;
-    max-height: 400px;
+    max-height: calc(100vh - 24px);
     display: block;
-    border-radius: 3px;
+    object-fit: contain;
+    border-radius: 0;
+  }
+  #imgPreview img.is-portrait {
+    max-width: 200px;
   }
 
   .export-panel {
@@ -2010,6 +2033,7 @@
       location: true,
       links: true
     };
+    var sakhalMapUiTimer = null;
     var locationMapConfigs = {
       chernarus: {
         label: 'Chernarus',
@@ -2020,6 +2044,11 @@
         label: 'Livonia',
         dataFile: 'livonia-viewer-data.json',
         backdropDir: 'livonia-backdrop-tiles'
+      },
+      sakhal: {
+        label: 'Sakhal',
+        dataFile: 'sakhal-viewer-data.json',
+        backdropDir: 'sakhal-backdrop-tiles'
       }
     };
     var pinnedObjectsEl = document.getElementById('pinnedObjects');
@@ -2065,6 +2094,13 @@
           backdropBaseUrl: ''
         },
         livonia: {
+          data: null,
+          error: null,
+          promise: null,
+          dataUrl: '',
+          backdropBaseUrl: ''
+        },
+        sakhal: {
           data: null,
           error: null,
           promise: null,
@@ -2117,6 +2153,21 @@
       } catch (_) {}
       var safeBase = (altText || 'object-image').toString().trim().replace(/[^\w.-]+/g, '_');
       return safeBase + '.jpg';
+    };
+    var syncPortraitImageClass = function(imgEl) {
+      if (!imgEl) return;
+      var apply = function() {
+        var naturalWidth = Number(imgEl.naturalWidth || 0);
+        var naturalHeight = Number(imgEl.naturalHeight || 0);
+        var isPortrait = naturalHeight > naturalWidth * 1.12;
+        imgEl.classList.toggle('is-portrait', isPortrait);
+      };
+      imgEl.onload = apply;
+      if (imgEl.complete && imgEl.naturalWidth) {
+        apply();
+      } else {
+        imgEl.classList.remove('is-portrait');
+      }
     };
     var openImageOverlay = function(src, altText) {
       if (!imageOverlayEl || !imageOverlayImgEl) return;
@@ -2223,11 +2274,18 @@
               return '<button class="object-focus__link-pill object-focus__types-pill" type="button" data-types-map="' + escapeHtml(def.map) + '" data-types-kind="value" data-types-name="' + safeName + '">' + safeName + '</button>';
             }).join(' ')
           : '—';
+        var detailsHtml = '—';
+        if (usage.length && value.length) {
+          detailsHtml = usageHtml + ' - ' + valueHtml;
+        } else if (usage.length) {
+          detailsHtml = usageHtml;
+        } else if (value.length) {
+          detailsHtml = valueHtml;
+        }
         return '' +
           '<div class="object-focus__types-row">' +
             '<span class="object-focus__types-map">' + def.label + ':</span>' +
-            '<span class="object-focus__types-key">Usage:</span>' + usageHtml +
-            '<span class="object-focus__types-key">· Value:</span>' + valueHtml +
+            detailsHtml +
           '</div>';
       });
       return '' +
@@ -2513,6 +2571,24 @@
           sectionToggle.textContent = (objectFocusSectionExpanded.location ? '▴ ' : '▾ ') + 'Count of object on map';
           return;
         }
+        var unavailableTrigger = e.target.closest('[data-action="view-location-map-unavailable"]');
+        if (unavailableTrigger) {
+          e.preventDefault();
+          e.stopPropagation();
+          if (sakhalMapUiTimer) {
+            window.clearTimeout(sakhalMapUiTimer);
+            sakhalMapUiTimer = null;
+          }
+          var defaultLabel = unavailableTrigger.getAttribute('data-default-label') || unavailableTrigger.textContent || '';
+          unavailableTrigger.textContent = 'No map yet';
+          unavailableTrigger.classList.add('is-flashing');
+          sakhalMapUiTimer = window.setTimeout(function() {
+            unavailableTrigger.textContent = defaultLabel;
+            unavailableTrigger.classList.remove('is-flashing');
+            sakhalMapUiTimer = null;
+          }, 1100);
+          return;
+        }
         var trigger = e.target.closest('[data-action="view-location-map"]');
         if (!trigger || !currentObjectData || !currentObjectLocationData) return;
         var mapKey = trigger.getAttribute('data-map-key') || '';
@@ -2703,23 +2779,50 @@
       objectLocationClusterCache[normalizedRoot] = out.slice();
       return out;
     };
-    var buildViewerPathKeyForRow = function(row) {
-      if (!row) return '';
-      var objName = String(getObjectName(row) || '').trim();
-      if (!objName) return '';
+    var buildViewerMatchKeysForRow = function(row) {
+      if (!row) return [];
+      var keys = [];
+      var seen = {};
+      var pushKey = function(value) {
+        var normalized = normalizeViewerPath(value || '');
+        if (!normalized || seen[normalized]) return;
+        seen[normalized] = true;
+        keys.push(normalized);
+      };
+      var objName = String(getObjectName(row) || '').trim().toLowerCase();
       var folder = normalizeViewerPath(row.path || '');
-      if (!folder) return objName.toLowerCase();
-      return folder + '/' + objName.toLowerCase();
+      if (!objName) return keys;
+      pushKey(objName);
+      if (folder) {
+        pushKey(folder + '/' + objName);
+      }
+      if (objName.slice(-4) === '.p3d') {
+        var stem = objName.slice(0, -4);
+        pushKey(stem);
+        pushKey('land_' + stem);
+        if (folder) {
+          pushKey(folder + '/' + stem);
+          pushKey(folder + '/' + stem + '.p3d');
+          pushKey(folder + '/land_' + stem);
+        }
+      }
+      if (objName.indexOf('land_') === 0) {
+        var landStem = objName.slice(5);
+        pushKey(landStem);
+        pushKey(landStem + '.p3d');
+        if (folder) {
+          pushKey(folder + '/' + landStem);
+          pushKey(folder + '/' + landStem + '.p3d');
+        }
+      }
+      return keys;
     };
     var getViewerTypesForRow = function(row, viewerData) {
       if (!row || !viewerData) return [];
       var matches = [];
       var seen = {};
-      var joinedKey = buildViewerPathKeyForRow(row);
-      var nameKey = String(getObjectName(row) || '').trim().toLowerCase();
-      var directType = joinedKey ? viewerData.typesByPath[joinedKey] : null;
-      var nameType = nameKey ? viewerData.typesByFileName[nameKey] : null;
-      [directType, nameType].forEach(function(type) {
+      buildViewerMatchKeysForRow(row).forEach(function(matchKey) {
+        var type = viewerData.typesByMatchKey ? viewerData.typesByMatchKey[matchKey] : null;
         if (!type || seen[type.id]) return;
         seen[type.id] = true;
         matches.push(type);
@@ -2847,9 +2950,12 @@
             var resolved = currentObjectLocationData[mapKey];
             var config = locationMapConfigs[mapKey] || {};
             var linkedText = resolved.typeCount > 1 ? ('Across ' + formatNumber(resolved.typeCount) + ' linked types') : '';
+            var isSakhal = mapKey === 'sakhal';
+            var actionName = isSakhal ? 'view-location-map-unavailable' : 'view-location-map';
+            var pillLabel = (isSakhal ? '' : '🗺️ ') + formatNumber(resolved.count) + ' on ' + escapeHtml(config.label || mapKey);
             return (
               '<div class="object-focus__location-entry' + (index > 0 ? ' object-focus__location-entry--push' : '') + '">' +
-                '<button class="object-focus__link-pill object-focus__location-pill" type="button" data-action="view-location-map" data-map-key="' + escapeHtml(mapKey) + '">🗺️ ' + formatNumber(resolved.count) + ' on ' + escapeHtml(config.label || mapKey) + '</button>' +
+                '<button class="object-focus__link-pill object-focus__location-pill" type="button" data-action="' + actionName + '" data-map-key="' + escapeHtml(mapKey) + '" data-default-label="' + escapeHtml(pillLabel) + '">' + pillLabel + '</button>' +
                 (linkedText ? ('<span class="object-focus__location-status">' + escapeHtml(linkedText) + '</span>') : '') +
               '</div>'
             );
@@ -2943,15 +3049,24 @@
           var data = result.data;
           data.typesByPath = {};
           data.typesByFileName = {};
+          data.typesByMatchKey = {};
           (Array.isArray(data.types) ? data.types : []).forEach(function(type) {
             var pathKey = normalizeViewerPath(type.path || '');
             var fileKey = pathKey.split('/').pop() || '';
+            var registerKey = function(key) {
+              var normalizedKey = normalizeViewerPath(key || '');
+              if (!normalizedKey || data.typesByMatchKey[normalizedKey]) return;
+              data.typesByMatchKey[normalizedKey] = type;
+            };
             if (pathKey && !data.typesByPath[pathKey]) {
               data.typesByPath[pathKey] = type;
             }
             if (fileKey && !data.typesByFileName[fileKey]) {
               data.typesByFileName[fileKey] = type;
             }
+            registerKey(pathKey);
+            registerKey(fileKey);
+            (Array.isArray(type.matchKeys) ? type.matchKeys : []).forEach(registerKey);
           });
           viewerState.data = data;
           viewerState.dataUrl = result.url;
@@ -5402,6 +5517,20 @@
       }
     });
 
+    var positionHoverPreview = function(clientX, clientY) {
+      var previewEl = document.getElementById('imgPreview');
+      if (!previewEl) return;
+      var offset = 14;
+      var margin = 12;
+      var rect = previewEl.getBoundingClientRect();
+      var maxLeft = window.innerWidth - rect.width - margin;
+      var maxTop = window.innerHeight - rect.height - margin;
+      var left = Math.min(Math.max(margin, clientX + offset), Math.max(margin, maxLeft));
+      var top = Math.min(Math.max(margin, clientY + offset), Math.max(margin, maxTop));
+      previewEl.style.left = left + 'px';
+      previewEl.style.top = top + 'px';
+    };
+
     $('#dayzObjects tbody')
       .on('mouseenter', '.object-name-cell', function(e) {
         if (isMobileView) return;
@@ -5413,11 +5542,12 @@
             '<img src="/' + imgPath + '" alt="Object preview">' +
           '</div>'
         );
-        $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });
+        syncPortraitImageClass(document.querySelector('#imgPreview img'));
+        positionHoverPreview(e.clientX, e.clientY);
       })
       .on('mousemove', '.object-name-cell', function(e) {
         if (isMobileView) return;
-        $('#imgPreview').css({ top: e.pageY + 10, left: e.pageX + 10 });
+        positionHoverPreview(e.clientX, e.clientY);
       })
       .on('mouseleave', '.object-name-cell', function() {
         if (isMobileView) return;
