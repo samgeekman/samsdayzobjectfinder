@@ -752,6 +752,11 @@
     flex-direction: column;
     gap: 4px;
   }
+  .object-focus__name-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+  }
   .object-focus__label {
     font-size: 0.85rem;
     text-transform: uppercase;
@@ -759,10 +764,19 @@
     color: var(--muted);
   }
   .object-focus__name {
+    flex: 1 1 auto;
     font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
     font-weight: 700;
     color: var(--text);
     word-break: break-word;
+  }
+  .object-focus__name-action {
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+  .object-focus__name-action.pill-button {
+    font-size: 0.7rem;
+    padding: 3px 6px;
   }
   .object-focus__path {
     font-family: monospace;
@@ -783,8 +797,10 @@
   .object-focus__secondary {
     display: flex;
     gap: 6px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
+    white-space: nowrap;
+    overflow-x: auto;
   }
   .object-focus__secondary.is-right {
     justify-content: flex-end;
@@ -814,11 +830,11 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    background: linear-gradient(180deg, #152132, #0f1726);
+    background: #2C3030;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
   :root.dark-mode .object-focus__section-header {
-    background: linear-gradient(180deg, #162238, #0c1322);
+    background: #2C3030;
     border-bottom-color: rgba(255, 255, 255, 0.06);
   }
   .object-focus__section-title {
@@ -1619,7 +1635,10 @@
       <a id="objectFocusLink" class="pill-button object-focus__image-download" href="#" download>↓ Download image</a>
     </div>
     <div class="object-focus__details">
-      <div id="objectFocusName" class="object-focus__name"></div>
+      <div class="object-focus__name-row">
+        <div id="objectFocusName" class="object-focus__name"></div>
+        <button id="objectFocusMarkdownCopy" class="pill-button object-focus__name-action" type="button">M↓</button>
+      </div>
       <div id="objectFocusEmpty" class="object-focus__empty">You can select or pin objects in this menu.</div>
       <div class="object-focus__actions">
         <div class="object-focus__secondary">
@@ -2068,6 +2087,7 @@
     var pinnedBulkSpacingButtons = document.querySelectorAll('.pinned-bulk-spacing');
     var isMobileView = window.matchMedia('(max-width: 768px)').matches;
     var objectFocusPinEl = document.getElementById('objectFocusPin');
+    var objectFocusMarkdownCopyEl = document.getElementById('objectFocusMarkdownCopy');
     var objectFocusCollapseEl = document.getElementById('objectFocusCollapse');
     var imageOverlayEl = document.getElementById('imageOverlay');
     var imageOverlayImgEl = document.getElementById('imageOverlayImg');
@@ -3607,6 +3627,12 @@
       }
       return nextUrl.toString();
     };
+    var buildObjectMarkdownLink = function(objectId, objectName) {
+      var normalizedId = normalizeObjectId(objectId);
+      var label = String(objectName || '').trim();
+      if (!normalizedId || !label) return '';
+      return '[' + label + '](https://samsobjectfinder.com/?id=' + normalizedId + ')';
+    };
     var buildPinnedUrl = function(entries) {
       var nextUrl = new URL(window.location);
       var ids = [];
@@ -3630,11 +3656,29 @@
       return nextUrl.toString();
     };
 
+    var normalizeEditorJsonEntries = function(entries) {
+      var list = Array.isArray(entries) ? entries : [entries];
+      return list.map(function(entry) {
+        if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+          return entry;
+        }
+        var next = Object.assign({}, entry);
+        var typeValue = String(next.Type || '').trim();
+        var displayName = String(next.DisplayName || '').trim();
+        var modelValue = String(next.Model || '').trim();
+        var isConfigEntry = !!typeValue && !modelValue && typeValue.indexOf('\\') === -1;
+        if (isConfigEntry && !displayName) {
+          next.DisplayName = typeValue;
+        }
+        return next;
+      });
+    };
+
     var buildEditorJson = function(editorJsonRaw, objName, modelType, p3dPath) {
       if (editorJsonRaw && editorJsonRaw.trim() !== "") {
         try {
           var parsed = JSON.parse(editorJsonRaw);
-          return JSON.stringify(parsed, null, 4);
+          return JSON.stringify(normalizeEditorJsonEntries(parsed), null, 4);
         } catch (err) {
           console.error("Invalid editorJson for row:", err);
         }
@@ -3646,7 +3690,7 @@
 
       var json = [{
         Type: typeValue,
-        DisplayName: "",
+        DisplayName: modelType === "Config" ? typeValue : "",
         Position: [0, 0, 0],
         Orientation: [0, 0, 0],
         Scale: 1.0,
@@ -4587,6 +4631,20 @@
         var original = objectFocusNameCopyEl.textContent;
         objectFocusNameCopyEl.textContent = 'Copied';
         setTimeout(function() { objectFocusNameCopyEl.textContent = original; }, 1200);
+      });
+    }
+
+    if (objectFocusMarkdownCopyEl) {
+      objectFocusMarkdownCopyEl.addEventListener('click', function() {
+        var markdownLink = buildObjectMarkdownLink(
+          currentObjectData ? currentObjectData.id : '',
+          currentObjectName || objectFocusNameEl.textContent || ''
+        );
+        if (!markdownLink) return;
+        navigator.clipboard.writeText(markdownLink);
+        var original = objectFocusMarkdownCopyEl.textContent;
+        objectFocusMarkdownCopyEl.textContent = '✔';
+        setTimeout(function() { objectFocusMarkdownCopyEl.textContent = original; }, 1200);
       });
     }
 
@@ -5749,7 +5807,7 @@
       if (predefined && predefined.trim() !== "") {
         try {
           var parsed = JSON.parse(predefined); 
-          jsonText = JSON.stringify(parsed, null, 4);
+          jsonText = JSON.stringify(normalizeEditorJsonEntries(parsed), null, 4);
         } catch (err) {
           console.error("Invalid editorJson for row:", err);
         }
@@ -5766,7 +5824,7 @@
 
         var json = [{
           Type: typeValue,
-          DisplayName: "",
+          DisplayName: modelType === "Config" ? typeValue : "",
           Position: [0, 0, 0],
           Orientation: [0, 0, 0],
           Scale: 1.0,
