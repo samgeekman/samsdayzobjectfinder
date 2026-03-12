@@ -307,8 +307,8 @@
     vertical-align: middle;
   }
   #dayzObjects tbody .thumb-img {
-    width: 45px;
-    height: 45px;
+    width: 38px;
+    height: 38px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 4px;
@@ -318,12 +318,14 @@
     margin: 0 auto;
   }
   #dayzObjects tbody tr {
-    height: 55px;
+    height: 47px;
   }
   #dayzObjects tbody td,
   #dayzObjects tbody th {
     vertical-align: middle;
-    line-height: 45px;
+    line-height: 1.2;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
   #dayzObjects tbody .thumb-cell {
     width: 49px;
@@ -527,12 +529,13 @@
   .folder-sidebar__bulk-sticky {
     position: absolute;
     right: 8px;
-    bottom: -19px;
+    top: 100%;
+    margin-top: 0;
     z-index: 4;
     display: flex;
     justify-content: flex-end;
     gap: 4px;
-    padding: 0;
+    padding: 2px 2px;
     margin: 0;
     border-bottom: none;
     background: transparent;
@@ -552,7 +555,7 @@
     font-weight: 700;
     color: var(--text);
     letter-spacing: 0.02em;
-    text-transform: uppercase;
+    text-transform: none;
   }
   .folder-sidebar__clear {
     border: 1px solid var(--border);
@@ -627,6 +630,9 @@
     color: #111;
     font-weight: 700;
   }
+  .folder-tree__folder.is-dim {
+    opacity: 0.42;
+  }
   .folder-tree__children[hidden] {
     display: none;
   }
@@ -666,13 +672,9 @@
   }
   .folder-tree__bulk-btn.is-hidden {
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
-    max-width: 0;
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0;
-    border-width: 0;
-    transform: translateY(-2px);
+    transform: none;
   }
   .folder-tree__leaf-spacer {
     width: 18px;
@@ -1884,6 +1886,12 @@
     gap: 8px;
     margin-bottom: 10px;
   }
+  .export-panel__actions .pill-button {
+    font-size: 0.7rem;
+    line-height: 1.2;
+    padding: 4px 8px;
+    border-radius: 3px;
+  }
   @keyframes export-empty-flash {
     0%, 100% {
       background: var(--card);
@@ -1954,6 +1962,15 @@
     gap: 10px;
     align-items: start;
   }
+  .types-explorer__footer {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+  }
   .types-explorer__side {
     border: 1px solid var(--border);
     border-radius: 6px;
@@ -2015,6 +2032,22 @@
     justify-content: center;
     flex: 0 0 18px;
   }
+  .object-focus__types-title-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    background: #2f7df6;
+    color: #fff;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.56rem;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-right: 6px;
+  }
   .types-explorer__section-title {
     display: block;
     font-size: 0.76rem;
@@ -2053,6 +2086,200 @@
     margin: 10px 0;
     border-top: 1px solid var(--border);
   }
+  .object-map {
+    display: none;
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card);
+    box-shadow: var(--shadow-soft);
+  }
+  .object-map.visible {
+    display: block;
+  }
+  .object-map__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .object-map__title {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 0.02em;
+  }
+  .object-map__title-icon {
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background: transparent;
+    color: var(--text);
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+  }
+  .object-map__toggles {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .object-map__controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .object-map__control {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1;
+    min-width: 24px;
+    height: 24px;
+    padding: 0 6px;
+    cursor: pointer;
+  }
+  .object-map__control:hover {
+    background: var(--bg-soft);
+  }
+  .object-map__toggle {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 3px 8px;
+    cursor: pointer;
+  }
+  .object-map__toggle:hover {
+    background: var(--bg-soft);
+  }
+  .object-map__toggle.is-active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #111;
+  }
+  .object-map__frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    min-height: 360px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--bg-soft);
+  }
+  .object-map__prompt {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    display: none;
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.74rem;
+    font-weight: 600;
+    box-shadow: var(--shadow-soft);
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  .object-map__prompt.visible {
+    display: block;
+  }
+  .object-map__overlay {
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: grab;
+    touch-action: none;
+  }
+  .object-map__overlay.dragging {
+    cursor: grabbing;
+  }
+  .object-map__overlay path,
+  .object-map__overlay image,
+  .object-map__overlay circle {
+    vector-effect: non-scaling-stroke;
+  }
+  .object-map__marker {
+    cursor: pointer;
+  }
+  .object-map__marker-halo {
+    fill: #7a8087;
+    opacity: 1;
+    pointer-events: none;
+  }
+  .object-map__marker-fill {
+    fill: #f3c51d;
+    stroke: #6f757d;
+    stroke-width: 1.4;
+    pointer-events: none;
+  }
+  .object-map__marker-hit {
+    fill: rgba(0, 0, 0, 0.001);
+    cursor: pointer;
+  }
+  .object-map__tooltip {
+    position: absolute;
+    z-index: 5;
+    transform: translate(-50%, calc(-100% - 8px));
+    pointer-events: none;
+    padding: 4px 7px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.72rem;
+    font-weight: 600;
+    white-space: nowrap;
+    box-shadow: var(--shadow-soft);
+    opacity: 0;
+    transition: opacity 120ms ease;
+  }
+  .object-map__tooltip.visible {
+    opacity: 1;
+  }
+  .object-map__status {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 4;
+    min-height: 18px;
+    padding: 4px 8px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.72rem;
+    font-weight: 600;
+    white-space: nowrap;
+    pointer-events: none;
+    box-shadow: var(--shadow-soft);
+  }
+  .object-map__note {
+    margin-top: 6px;
+    text-align: right;
+    color: var(--muted);
+    font-size: 0.7rem;
+  }
   @media (max-width: 1100px) {
     .types-explorer__layout {
       grid-template-columns: 1fr;
@@ -2072,6 +2299,25 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+  .folder-tree__app-logo {
+    width: 22px;
+    height: 22px;
+    border-radius: 3px;
+    object-fit: cover;
+    display: inline-block;
+  }
+  .folder-tree__row--presets .folder-tree__leaf-icon,
+  .folder-tree__row--object-map .folder-tree__leaf-icon {
+    width: 20px;
+    flex: 0 0 20px;
+    font-size: 0.9rem;
+  }
+  .folder-tree__row--database .folder-tree__folder,
+  .folder-tree__row--types-explorer .folder-tree__folder,
+  .folder-tree__row--presets .folder-tree__folder,
+  .folder-tree__row--object-map .folder-tree__folder {
+    font-weight: 700;
   }
 </style>
 
@@ -2111,7 +2357,6 @@
     <span class="types-explorer__title"><span class="types-explorer__title-icon" aria-hidden="true">&lt;/&gt;</span>Types Explorer</span>
     <div class="types-explorer__header-actions">
       <button id="typesExplorerReset" class="folder-sidebar__clear" type="button">Reset</button>
-      <button id="typesExplorerCopyLink" class="folder-sidebar__clear" type="button">Copy link</button>
     </div>
   </div>
   <div class="types-explorer__layout">
@@ -2134,6 +2379,37 @@
       </div>
     </aside>
   </div>
+  <div class="types-explorer__footer">
+    <button id="typesExplorerCopyLink" class="folder-sidebar__clear" type="button">Copy link</button>
+    <button id="typesExplorerDownloadCurrent" class="folder-sidebar__clear" type="button">↓ Download Types current view</button>
+  </div>
+</div>
+
+<div id="objectMapPanel" class="object-map" aria-live="polite">
+  <div class="object-map__header">
+    <span class="object-map__title"><span class="object-map__title-icon" aria-hidden="true">📍</span>Object Maps</span>
+    <div class="object-map__toggles">
+      <button id="objectMapToggleChernarus" class="object-map__toggle is-active" type="button" data-object-map="chernarus">Chernarus</button>
+      <button id="objectMapToggleLivonia" class="object-map__toggle" type="button" data-object-map="livonia">Livonia</button>
+      <div class="object-map__controls">
+        <button class="object-map__control" type="button" data-object-map-control="zoom-out" title="Zoom out">−</button>
+        <button class="object-map__control" type="button" data-object-map-control="zoom-in" title="Zoom in">+</button>
+        <button class="object-map__control" type="button" data-object-map-control="reset" title="Reset view">↺</button>
+      </div>
+    </div>
+  </div>
+  <div class="object-map__frame">
+    <svg id="objectMapOverlay" class="object-map__overlay" preserveAspectRatio="none" aria-hidden="true">
+      <g transform="scale(1,-1)">
+        <g id="objectMapBackdropGroup"></g>
+        <g id="objectMapMarkersGroup"></g>
+      </g>
+    </svg>
+    <div id="objectMapPrompt" class="object-map__prompt">Search or select folders to show on map</div>
+    <div id="objectMapStatus" class="object-map__status"></div>
+    <div id="objectMapTooltip" class="object-map__tooltip" aria-hidden="true"></div>
+  </div>
+  <div class="object-map__note">Excludes rocks and plants - large object counts may be slow.</div>
 </div>
 
 <div id="loadingIndicator">
@@ -2151,13 +2427,16 @@
   <a id="linkedFilterResetLink" href="#">Reset filter</a>
   <a id="linkedFilterCopyLink" href="#">Copy link</a>
 </div>
+<div id="presetsGuideNotice" class="version-filter-notice" role="status" aria-live="polite">
+  <span>Press the 🏗️ icon on a preset to copy it to your clipboard. Open DayZ Editor and press Ctrl+V to paste to your cursor.</span>
+</div>
 
 <div class="objects-layout">
   <aside id="folderSidebar" class="folder-sidebar" aria-label="Folder navigation">
     <div class="folder-sidebar__controls">
       <div class="folder-sidebar__header">
         <span id="folderSidebarTitle" class="folder-sidebar__title">0 objects</span>
-        <button id="folderSidebarClear" class="folder-sidebar__clear" type="button">Show all</button>
+        <button id="folderSidebarClear" class="folder-sidebar__clear" type="button">Reset view</button>
       </div>
       <div class="folder-sidebar__search">
         <input id="folderSidebarSearch" type="search" placeholder="Search objects...">
@@ -2521,6 +2800,69 @@
       walk(treeRoot);
       return branchKeys;
     };
+    var applyObjectMapFolderDimmingToDom = function() {
+      if (!folderTreeEl) return;
+      var shouldDimMap = activeCollectionFilter === 'object_map';
+      var shouldDimTypes = activeCollectionFilter === 'types_explorer' && Object.keys(typesExplorerByObject).length > 0;
+      var buttons = folderTreeEl.querySelectorAll('[data-folder-path]');
+      buttons.forEach(function(btn) {
+        var pathKey = normalizeFilterText(btn.getAttribute('data-folder-path') || '');
+        var isAppRow = pathKey.indexOf('__') === 0;
+        var keepVisibleForMap = pathKey.indexOf('dz/structures') === 0 || pathKey.indexOf('dz/structures_bliss') === 0;
+        var dim = false;
+        if (shouldDimMap) {
+          dim = pathKey && pathKey !== 'dz' && !isAppRow && !keepVisibleForMap;
+        } else if (shouldDimTypes) {
+          dim = pathKey && pathKey !== 'dz' && !isAppRow && !typesExplorerFolderPrefixIndex[pathKey];
+        }
+        btn.classList.toggle('is-dim', !!dim);
+      });
+    };
+    var positionFolderBulkWithAnimals = function(forceRecalc) {
+      if (!folderSidebarBulkEl || !folderSidebarControlsEl || !folderTreeEl) return;
+      if (!forceRecalc && folderBulkAnimalsTop !== null) {
+        folderSidebarBulkEl.style.top = folderBulkAnimalsTop + 'px';
+        folderSidebarBulkEl.style.marginTop = '0';
+        folderBulkMode = 'animals';
+        return;
+      }
+      var firstFolderBtn = folderTreeEl.querySelector('[data-folder-path]:not([data-folder-path^="__"])');
+      if (!firstFolderBtn) {
+        folderBulkAnimalsTop = null;
+        folderSidebarBulkEl.style.top = '100%';
+        folderSidebarBulkEl.style.marginTop = '8px';
+        folderBulkMode = 'animals';
+        return;
+      }
+      var controlsRect = folderSidebarControlsEl.getBoundingClientRect();
+      var rowRect = firstFolderBtn.getBoundingClientRect();
+      var bulkRect = folderSidebarBulkEl.getBoundingClientRect();
+      var targetTop = rowRect.top - controlsRect.top + ((rowRect.height - bulkRect.height) / 2);
+      folderBulkAnimalsTop = Math.max(controlsRect.height + 4, Math.round(targetTop));
+      folderSidebarBulkEl.style.top = folderBulkAnimalsTop + 'px';
+      folderSidebarBulkEl.style.marginTop = '0';
+      folderBulkMode = 'animals';
+    };
+    var syncFolderBulkStickyMode = function() {
+      if (!folderSidebarBulkEl || !folderSidebarControlsEl || !folderTreeEl) return;
+      if (folderBulkAnimalsTop === null) {
+        positionFolderBulkWithAnimals();
+      }
+      var animalsBtn = folderTreeEl.querySelector('[data-folder-path]:not([data-folder-path^="__"])');
+      if (!animalsBtn || folderBulkAnimalsTop === null) return;
+      var controlsRect = folderSidebarControlsEl.getBoundingClientRect();
+      var animalsRect = animalsBtn.getBoundingClientRect();
+      var animalsStillInNormalZone = animalsRect.top >= controlsRect.bottom - 2;
+      if (animalsStillInNormalZone) {
+        folderSidebarBulkEl.style.top = folderBulkAnimalsTop + 'px';
+        folderSidebarBulkEl.style.marginTop = '0';
+        folderBulkMode = 'animals';
+        return;
+      }
+      folderSidebarBulkEl.style.top = (Math.round(controlsRect.height) + 4) + 'px';
+      folderSidebarBulkEl.style.marginTop = '0';
+      folderBulkMode = 'search';
+    };
     var updateFolderSidebarTitle = function() {
       if (!folderSidebarTitleEl) return;
       var visibleCount = table ? table.rows({ search: 'applied' }).count() : 0;
@@ -2532,6 +2874,7 @@
       var treeRoot = (tree && tree.children && tree.children.dz) ? tree.children.dz : tree;
       var forceExpandForSearch = isFolderTreeInBroadFilterMode();
       var presetsActive = activeCollectionFilter === 'presets';
+      var databaseActive = activeCollectionFilter === '';
       var renderChildren = function(node) {
         var names = Object.keys(node.children || {}).sort(function(a, b) {
           return a.localeCompare(b);
@@ -2546,6 +2889,7 @@
           var isRootFolder = pathKey === 'dz';
           var isOpen = hasChildren ? (isRootFolder ? true : (forceExpandForSearch ? true : !!folderTreeExpanded[pathKey])) : false;
           var isActive = (activeFolderFilter && activeFolderFilter === pathKey) || (highlightedFolderPath && highlightedFolderPath === pathKey);
+          var isDimmedForMap = false;
           html += '<li>';
           html += '<div class="folder-tree__row">';
           if (isRootFolder) {
@@ -2555,7 +2899,7 @@
           } else {
             html += '<span class="folder-tree__leaf-icon" aria-hidden="true">▸</span>';
           }
-          html += '<button class="folder-tree__folder' + (isActive ? ' is-active' : '') + '" type="button" data-folder-path="' + escapeHtml(pathKey) + '" title="' + escapeHtml(child.path) + '">' + escapeHtml(child.name) + '</button>';
+          html += '<button class="folder-tree__folder' + (isActive ? ' is-active' : '') + (isDimmedForMap ? ' is-dim' : '') + '" type="button" data-folder-path="' + escapeHtml(pathKey) + '" title="' + escapeHtml(child.path) + '">' + escapeHtml(child.name) + '</button>';
           html += '</div>';
           if (hasChildren) {
             html += '<div class="folder-tree__children"' + (isOpen ? '' : ' hidden') + '>' + renderChildren(child) + '</div>';
@@ -2566,13 +2910,21 @@
         return html;
       };
       var presetsRow = ''
+        + '<div class="folder-tree__row folder-tree__row--database">'
+        + '<img class="folder-tree__app-logo" src="/images/logo-icon.jpg" alt="Object Finder">'
+        + '<button class="folder-tree__folder' + (databaseActive ? ' is-active' : '') + '" type="button" data-folder-path="__database__" title="Object Finder">Object Finder</button>'
+        + '</div>'
+        + '<div class="folder-tree__row folder-tree__row--types-explorer">'
+        + '<span class="folder-tree__types-icon" aria-hidden="true">&lt;/&gt;</span>'
+        + '<button class="folder-tree__folder' + (activeCollectionFilter === 'types_explorer' ? ' is-active' : '') + '" type="button" data-folder-path="__types_explorer__" title="Types Explorer">Types Explorer</button>'
+        + '</div>'
         + '<div class="folder-tree__row folder-tree__row--presets">'
         + '<span class="folder-tree__leaf-icon" aria-hidden="true">🏗️</span>'
         + '<button class="folder-tree__folder' + (presetsActive ? ' is-active' : '') + '" type="button" data-folder-path="__presets__" title="Editor Presets">Editor Presets</button>'
         + '</div>'
-        + '<div class="folder-tree__row folder-tree__row--types-explorer">'
-        + '<span class="folder-tree__types-icon" aria-hidden="true">&lt;/&gt;</span>'
-        + '<button class="folder-tree__folder' + (activeCollectionFilter === 'types_explorer' ? ' is-active' : '') + '" type="button" data-folder-path="__types_explorer__" title="Types Explorer">&lt;/&gt; Types Explorer</button>'
+        + '<div class="folder-tree__row folder-tree__row--object-map">'
+        + '<span class="folder-tree__leaf-icon" aria-hidden="true">📍</span>'
+        + '<button class="folder-tree__folder' + (activeCollectionFilter === 'object_map' ? ' is-active' : '') + '" type="button" data-folder-path="__object_map__" title="Object Maps">Object Maps</button>'
         + '</div>'
         + '<div class="folder-tree__divider" aria-hidden="true"></div>';
       var branchKeys = getVisibleFolderBranchKeys();
@@ -2592,6 +2944,12 @@
       folderTreeEl.innerHTML = presetsRow + renderChildren(treeRoot);
       updateFolderSidebarTitle();
       updateTypesExplorerPanelVisibility();
+      updateObjectMapPanelVisibility();
+      updatePresetsGuideNotice();
+      applyObjectMapFolderDimmingToDom();
+      var canRecalcBulk = !folderSidebarEl || (folderSidebarEl.scrollTop <= 1);
+      positionFolderBulkWithAnimals(canRecalcBulk);
+      syncFolderBulkStickyMode();
     };
     var setActiveFolderFilter = function(value, shouldDraw) {
       activeFolderFilter = normalizeFilterText(value || '');
@@ -2600,6 +2958,10 @@
       if (shouldDraw !== false && table) {
         table.draw();
       }
+    };
+    var updatePresetsGuideNotice = function() {
+      if (!presetsGuideNoticeEl) return;
+      presetsGuideNoticeEl.classList.toggle('visible', activeCollectionFilter === 'presets');
     };
     var populateFolderFilter = function(sourceData) {
       var seen = {};
@@ -2653,7 +3015,15 @@
       if (collectionKey === 'houses') {
         return has('house') || has('residential') || has('building');
       }
+      if (collectionKey === 'types_explorer') {
+        return !!typesExplorerByObject[objName];
+      }
       return true;
+    };
+    var isPresetRow = function(row) {
+      if (!row) return false;
+      var category = normalizeFilterText(row.category || '');
+      return category.indexOf('preset') !== -1;
     };
 
     var showContent = function() {
@@ -2822,6 +3192,7 @@
    
     $("#filters").insertBefore("#dayzObjects_wrapper .top-bar");
     $("#dayzObjects_wrapper .dataTables_length").prependTo("#filters");
+    $("#objectMapPanel").prependTo("#dayzObjects_wrapper");
     $("#typesExplorerPanel").prependTo("#dayzObjects_wrapper");
     syncSidebarTopOffset();
 
@@ -2832,6 +3203,8 @@
         table.responsive.recalc();
       }
       syncSidebarTopOffset();
+      positionFolderBulkWithAnimals(true);
+      syncFolderBulkStickyMode();
     });
 
     var logoLink = document.querySelector('nav a');
@@ -2859,6 +3232,7 @@
     var objectFocusEditorEl = document.getElementById('objectFocusEditor');
     var objectFocusNameCopyEl = document.getElementById('objectFocusNameCopy');
     var folderSidebarEl = document.getElementById('folderSidebar');
+    var folderSidebarControlsEl = folderSidebarEl ? folderSidebarEl.querySelector('.folder-sidebar__controls') : null;
     var folderTreeEl = document.getElementById('folderTree');
     var folderSidebarTitleEl = document.getElementById('folderSidebarTitle');
     var folderSidebarClearEl = document.getElementById('folderSidebarClear');
@@ -2871,6 +3245,16 @@
     var typesExplorerScopeEl = document.getElementById('typesExplorerScope');
     var typesExplorerResetEl = document.getElementById('typesExplorerReset');
     var typesExplorerCopyLinkEl = document.getElementById('typesExplorerCopyLink');
+    var typesExplorerDownloadCurrentEl = document.getElementById('typesExplorerDownloadCurrent');
+    var objectMapPanelEl = document.getElementById('objectMapPanel');
+    var objectMapOverlayEl = document.getElementById('objectMapOverlay');
+    var objectMapBackdropGroupEl = document.getElementById('objectMapBackdropGroup');
+    var objectMapMarkersGroupEl = document.getElementById('objectMapMarkersGroup');
+    var objectMapStatusEl = document.getElementById('objectMapStatus');
+    var objectMapPromptEl = document.getElementById('objectMapPrompt');
+    var objectMapTooltipEl = document.getElementById('objectMapTooltip');
+    var objectMapToggleChernarusEl = document.getElementById('objectMapToggleChernarus');
+    var objectMapToggleLivoniaEl = document.getElementById('objectMapToggleLivonia');
     var objectFocusMetaEl = document.getElementById('objectFocusMeta');
     var objectFocusLocationEl = document.getElementById('objectFocusLocation');
     var objectFocusLinksEl = document.getElementById('objectFocusLinks');
@@ -2906,6 +3290,22 @@
     var mapGroupProtoEntryUrl = null;
     var mapGroupProtoEntryByName = {};
     var activeCollectionFilter = '';
+    var typesExplorerFolderPrefixIndex = {};
+    var folderSidebarSearchDebounceTimer = null;
+    var objectMapActiveMapKey = 'chernarus';
+    var objectMapPlacementPathIndex = {};
+    var objectMapSummaryText = '';
+    var objectMapRenderToken = 0;
+    var objectMapInteractionRefreshTimer = null;
+    var objectMapState = {
+      data: null,
+      view: null,
+      dragStart: null,
+      dragMoved: false,
+      placementsCache: null
+    };
+    var folderBulkAnimalsTop = null;
+    var folderBulkMode = 'animals';
     var activeFolderFilter = '';
     var highlightedFolderPath = '';
     var knownFolderPrefixes = [];
@@ -3207,11 +3607,19 @@
       return '' +
         '<div class="object-focus__section object-focus__section-accordion object-focus__types-section' + (typesExpanded ? ' is-open' : '') + '">' +
           '<div class="object-focus__section-header">' +
-            '<button class="object-focus__section-title object-focus__section-toggle" type="button" data-section-toggle="types" data-section-title="Types usage/values" aria-expanded="' + (typesExpanded ? 'true' : 'false') + '">' + (typesExpanded ? '▴ ' : '▾ ') + 'Types usage/values</button>' +
+            '<button class="object-focus__section-title object-focus__section-toggle" type="button" data-section-toggle="types" data-section-title="Types Explorer" aria-expanded="' + (typesExpanded ? 'true' : 'false') + '">' + (typesExpanded ? '▴ ' : '▾ ') + '<span class="object-focus__types-title-icon" aria-hidden="true">&lt;/&gt;</span>Types Explorer</button>' +
             typesActionHtml +
           '</div>' +
           '<div class="object-focus__section-body object-focus__types">' + rows.join('') + '</div>' +
         '</div>';
+    };
+    var buildObjectFocusSectionToggleHtml = function(sectionKey, sectionTitle, isExpanded) {
+      var arrow = isExpanded ? '▴ ' : '▾ ';
+      var safeTitle = escapeHtml(sectionTitle || '');
+      if (sectionKey === 'types') {
+        return arrow + '<span class="object-focus__types-title-icon" aria-hidden="true">&lt;/&gt;</span>' + safeTitle;
+      }
+      return arrow + safeTitle;
     };
     var updateObjectFocusMeta = function(objData) {
       if (!objectFocusMetaEl || !objData) return;
@@ -3302,6 +3710,8 @@
             if (table) {
               table.draw(false);
             }
+          } else if (activeCollectionFilter === 'types_explorer' && table) {
+            table.draw(false);
           }
         })
         .catch(function() {});
@@ -3329,6 +3739,34 @@
     };
     var hasTypesExplorerSelection = function() {
       return (typesExplorerState.usage && typesExplorerState.usage.length) || (typesExplorerState.value && typesExplorerState.value.length);
+    };
+    var rebuildTypesExplorerFolderPrefixIndex = function() {
+      var next = {};
+      var sourceIndex = null;
+      if (hasTypesExplorerSelection()) {
+        sourceIndex = activeTypesExplorerMatchByName || buildTypesExplorerMatchIndex() || {};
+      }
+      if (sourceIndex) {
+        Object.keys(sourceIndex).forEach(function(objKey) {
+          if (!sourceIndex[objKey]) return;
+          var row = objectDataByName[objKey];
+          if (!row) return;
+          extractPathPrefixes(row.path || '').forEach(function(prefix) {
+            var key = normalizeFilterText(prefix);
+            if (key) next[key] = true;
+          });
+        });
+      } else {
+        Object.keys(typesExplorerByObject).forEach(function(objKey) {
+          var row = objectDataByName[objKey];
+          if (!row) return;
+          extractPathPrefixes(row.path || '').forEach(function(prefix) {
+            var key = normalizeFilterText(prefix);
+            if (key) next[key] = true;
+          });
+        });
+      }
+      typesExplorerFolderPrefixIndex = next;
     };
     var rebuildTypesExplorerData = function() {
       var usageSeen = {};
@@ -3367,6 +3805,7 @@
       typesExplorerState.value = (typesExplorerState.value || []).filter(function(tag) {
         return valueSeen[tag];
       });
+      rebuildTypesExplorerFolderPrefixIndex();
     };
     var updateTypesExplorerScopeButtons = function() {
       if (!typesExplorerScopeEl) return;
@@ -3439,6 +3878,7 @@
       current.sort(function(a, b) { return a.localeCompare(b); });
       typesExplorerState[key] = current;
       activeTypesExplorerMatchByName = buildTypesExplorerMatchIndex();
+      rebuildTypesExplorerFolderPrefixIndex();
       if (activeTypesTagFilter) {
         activeTypesTagFilter = null;
         activeTypesTagMatchByName = null;
@@ -3453,6 +3893,592 @@
       if (!typesExplorerPanelEl) return;
       var visible = activeCollectionFilter === 'types_explorer' || hasTypesExplorerSelection();
       typesExplorerPanelEl.classList.toggle('visible', !!visible);
+    };
+    var updateObjectMapPanelVisibility = function() {
+      if (!objectMapPanelEl) return;
+      var visible = activeCollectionFilter === 'object_map';
+      objectMapPanelEl.classList.toggle('visible', !!visible);
+      if (!visible) {
+        if (objectMapInteractionRefreshTimer) {
+          clearTimeout(objectMapInteractionRefreshTimer);
+          objectMapInteractionRefreshTimer = null;
+        }
+        objectMapRenderToken += 1;
+        objectMapPlacementPathIndex = {};
+        objectMapSummaryText = '';
+        objectMapState.dragStart = null;
+        objectMapState.dragMoved = false;
+        objectMapState.placementsCache = null;
+        if (objectMapOverlayEl) {
+          objectMapOverlayEl.classList.remove('dragging');
+        }
+        hideObjectMapTooltip();
+        setObjectMapPromptVisible(false);
+        setObjectMapStatus('');
+        applyObjectMapFolderDimmingToDom();
+      }
+    };
+    var updateObjectMapToggleButtons = function() {
+      if (objectMapToggleChernarusEl) {
+        objectMapToggleChernarusEl.classList.toggle('is-active', objectMapActiveMapKey === 'chernarus');
+      }
+      if (objectMapToggleLivoniaEl) {
+        objectMapToggleLivoniaEl.classList.toggle('is-active', objectMapActiveMapKey === 'livonia');
+      }
+    };
+    var setObjectMapStatus = function(text) {
+      if (!objectMapStatusEl) return;
+      objectMapStatusEl.textContent = text || '';
+    };
+    var hideObjectMapTooltip = function() {
+      if (!objectMapTooltipEl) return;
+      objectMapTooltipEl.classList.remove('visible');
+      objectMapTooltipEl.setAttribute('aria-hidden', 'true');
+      objectMapTooltipEl.textContent = '';
+    };
+    var setObjectMapPromptVisible = function(visible, text) {
+      if (!objectMapPromptEl) return;
+      objectMapPromptEl.classList.toggle('visible', !!visible);
+      if (text) {
+        objectMapPromptEl.textContent = text;
+      }
+    };
+    var showObjectMapTooltip = function(text, clientX, clientY) {
+      if (!objectMapTooltipEl || !objectMapPanelEl || !text) return;
+      var frame = objectMapPanelEl.querySelector('.object-map__frame');
+      if (!frame) return;
+      var frameRect = frame.getBoundingClientRect();
+      objectMapTooltipEl.textContent = text;
+      objectMapTooltipEl.style.left = (clientX - frameRect.left) + 'px';
+      objectMapTooltipEl.style.top = (clientY - frameRect.top) + 'px';
+      objectMapTooltipEl.classList.add('visible');
+      objectMapTooltipEl.setAttribute('aria-hidden', 'false');
+    };
+    var setObjectMapActiveMap = function(mapKey) {
+      var normalized = String(mapKey || '').trim().toLowerCase();
+      if (normalized !== 'chernarus' && normalized !== 'livonia') {
+        normalized = 'chernarus';
+      }
+      if (objectMapActiveMapKey !== normalized) {
+        objectMapActiveMapKey = normalized;
+        objectMapState.view = null;
+        objectMapState.placementsCache = null;
+      }
+      updateObjectMapToggleButtons();
+      renderObjectMapFromTable();
+    };
+    var clearObjectMapSvg = function() {
+      if (objectMapBackdropGroupEl) {
+        objectMapBackdropGroupEl.replaceChildren();
+      }
+      if (objectMapMarkersGroupEl) {
+        objectMapMarkersGroupEl.replaceChildren();
+      }
+      hideObjectMapTooltip();
+    };
+    var objectMapViewportRect = function() {
+      return objectMapOverlayEl ? objectMapOverlayEl.getBoundingClientRect() : { width: 1, height: 1, left: 0, top: 0 };
+    };
+    var canMeasureObjectMap = function() {
+      var rect = objectMapViewportRect();
+      return !!(rect && rect.width > 40 && rect.height > 40);
+    };
+    var objectMapViewportAspect = function() {
+      var rect = objectMapViewportRect();
+      return (rect.width || 1) / (rect.height || 1);
+    };
+    var fitObjectMapToBounds = function() {
+      if (!objectMapState.data || !objectMapState.data.bounds || !canMeasureObjectMap()) return;
+      var bounds = objectMapState.data.bounds;
+      var padding = 0.04;
+      var width = (bounds.width || 1) * (1 + padding * 2);
+      var height = (bounds.height || 1) * (1 + padding * 2);
+      var viewportAspect = objectMapViewportAspect();
+      var worldAspect = width / height;
+      if (worldAspect > viewportAspect) {
+        height = width / viewportAspect;
+      } else {
+        width = height * viewportAspect;
+      }
+      var centerX = (bounds.minX + bounds.maxX) / 2;
+      var centerY = (bounds.minY + bounds.maxY) / 2;
+      objectMapState.view = {
+        minX: centerX - width / 2,
+        maxX: centerX + width / 2,
+        minY: centerY - height / 2,
+        maxY: centerY + height / 2
+      };
+    };
+    var normalizeObjectMapViewAspect = function(view) {
+      if (!view || !canMeasureObjectMap()) return view;
+      var width = Math.max(view.maxX - view.minX, 1);
+      var height = Math.max(view.maxY - view.minY, 1);
+      var viewportAspect = objectMapViewportAspect();
+      var centerX = (view.minX + view.maxX) / 2;
+      var centerY = (view.minY + view.maxY) / 2;
+      if (width / height > viewportAspect) {
+        height = width / viewportAspect;
+      } else {
+        width = height * viewportAspect;
+      }
+      return {
+        minX: centerX - width / 2,
+        maxX: centerX + width / 2,
+        minY: centerY - height / 2,
+        maxY: centerY + height / 2
+      };
+    };
+    var syncObjectMapViewBox = function() {
+      if (!objectMapOverlayEl || !objectMapState.view) return;
+      objectMapState.view = normalizeObjectMapViewAspect(objectMapState.view);
+      var viewWidth = objectMapState.view.maxX - objectMapState.view.minX;
+      var viewHeight = objectMapState.view.maxY - objectMapState.view.minY;
+      objectMapOverlayEl.setAttribute(
+        'viewBox',
+        objectMapState.view.minX + ' ' + (-objectMapState.view.maxY) + ' ' + viewWidth + ' ' + viewHeight
+      );
+    };
+    var screenToObjectMapWorld = function(view, screenX, screenY) {
+      var rect = objectMapViewportRect();
+      return {
+        x: view.minX + (screenX / (rect.width || 1)) * (view.maxX - view.minX),
+        y: view.maxY - (screenY / (rect.height || 1)) * (view.maxY - view.minY)
+      };
+    };
+    var zoomObjectMapViewAt = function(view, screenX, screenY, factor) {
+      if (!objectMapState.data || !objectMapState.data.bounds) return view;
+      var anchor = screenToObjectMapWorld(view, screenX, screenY);
+      var currentWidth = view.maxX - view.minX;
+      var currentHeight = view.maxY - view.minY;
+      var viewportAspect = objectMapViewportAspect();
+      var newWidth = currentWidth * factor;
+      var xRatio = (anchor.x - view.minX) / currentWidth;
+      var yRatio = (anchor.y - view.minY) / currentHeight;
+      var bounds = objectMapState.data.bounds;
+      var minimumWidth = Math.max(bounds.width * 0.02, bounds.height * 0.02 * viewportAspect);
+      var maximumWidth = Math.min(bounds.width * 1.8, bounds.height * 1.8 * viewportAspect);
+      var clampedWidth = clampNumber(newWidth, minimumWidth, maximumWidth);
+      var clampedHeight = clampedWidth / viewportAspect;
+      return normalizeObjectMapViewAspect({
+        minX: anchor.x - clampedWidth * xRatio,
+        maxX: anchor.x - clampedWidth * xRatio + clampedWidth,
+        minY: anchor.y - clampedHeight * yRatio,
+        maxY: anchor.y - clampedHeight * yRatio + clampedHeight
+      });
+    };
+    var renderObjectMapBackdrop = function(data, mapKey) {
+      if (!objectMapBackdropGroupEl || !data || !data.backdrop || !Array.isArray(data.backdrop.levels) || !data.backdrop.levels.length) return;
+      var bounds = data.bounds;
+      if (!bounds) return;
+      var tileSize = Number(data.backdrop.tileSize || 512);
+      var level = data.backdrop.levels[0];
+      var baseUrl = deriveLocationBackdropBaseUrl('', mapKey);
+      for (var row = 0; row < level.rows; row += 1) {
+        for (var col = 0; col < level.cols; col += 1) {
+          var pixelX = col * tileSize;
+          var pixelY = row * tileSize;
+          var pixelWidth = Math.min(tileSize, level.width - pixelX);
+          var pixelHeight = Math.min(tileSize, level.height - pixelY);
+          var rect = {
+            x: bounds.minX + (pixelX / level.width) * bounds.width,
+            y: bounds.minY + (pixelY / level.height) * bounds.height,
+            width: (pixelWidth / level.width) * bounds.width,
+            height: (pixelHeight / level.height) * bounds.height
+          };
+          var tile = createLocationMapSvgElement('image');
+          tile.setAttribute('href', baseUrl + level.id + '/r' + row + '-c' + col + '.png');
+          tile.setAttribute('x', rect.x);
+          tile.setAttribute('y', rect.y);
+          tile.setAttribute('width', rect.width);
+          tile.setAttribute('height', rect.height);
+          tile.setAttribute('preserveAspectRatio', 'none');
+          objectMapBackdropGroupEl.appendChild(tile);
+        }
+      }
+    };
+    var getObjectMapRows = function() {
+      if (!table) return [];
+      return table.rows({ search: 'applied', order: 'applied', page: 'all' }).data().toArray();
+    };
+    var shouldRenderObjectMapPlacements = function() {
+      if (!table) return false;
+      var hasSearch = getCurrentTableSearchValue().length > 0;
+      var hasFolder = !!activeFolderFilter;
+      if (hasSearch) return true;
+      if (!hasFolder) return false;
+      var hasChildFolders = knownFolderPrefixes.some(function(prefix) {
+        var normalized = normalizeFilterText(prefix);
+        return normalized.indexOf(activeFolderFilter + '/') === 0;
+      });
+      return !hasChildFolders;
+    };
+    var OBJECT_MAP_MAX_MARKERS = 100000;
+    var OBJECT_MAP_CLUSTERING_ENABLED = false;
+    var objectMapYieldToMain = function() {
+      return new Promise(function(resolve) {
+        if (typeof requestAnimationFrame === 'function') {
+          requestAnimationFrame(function() { resolve(); });
+          return;
+        }
+        setTimeout(resolve, 0);
+      });
+    };
+    var gatherObjectMapPlacementsAsync = function(rows, viewerData, mapKey, token) {
+      return new Promise(function(resolve) {
+        var placements = [];
+        var nextPathIndex = {};
+        var pointSeen = {};
+        var representedPlacements = 0;
+        var rowIndex = 0;
+        var chunkSize = 24;
+        var processChunk = function() {
+          if (token !== objectMapRenderToken) {
+            resolve(null);
+            return;
+          }
+          var end = Math.min(rowIndex + chunkSize, rows.length);
+          for (; rowIndex < end; rowIndex += 1) {
+            var row = rows[rowIndex];
+            var objName = String(getObjectName(row) || '').trim();
+            if (!objName) continue;
+            var resolved = buildResolvedLocationData({
+              id: getObjectId(row),
+              objName: objName,
+              p3dPath: row.path || '',
+              modelType: row.modelType || '',
+              linkedP3D: row['linked-p3d'] || '',
+              linkedConfig: row['linked-config'] || [],
+              linkedVariant: row['linked-variant'] || []
+            }, viewerData, mapKey || objectMapActiveMapKey);
+            if (!resolved || !resolved.count || !Array.isArray(resolved.points) || resolved.points.length < 2) continue;
+            var objId = normalizeObjectId(getObjectId(row));
+            representedPlacements += Math.floor(resolved.points.length / 2);
+            extractPathPrefixes(row.path || '').forEach(function(prefix) {
+              var key = normalizeFilterText(prefix);
+              if (key) nextPathIndex[key] = true;
+            });
+            for (var pointIndex = 0; pointIndex < resolved.points.length; pointIndex += 2) {
+              var x = resolved.points[pointIndex];
+              var y = resolved.points[pointIndex + 1];
+              var pointKey = objName + '|' + x + ',' + y;
+              if (pointSeen[pointKey]) continue;
+              pointSeen[pointKey] = true;
+              placements.push({ x: x, y: y, objName: objName, objId: objId });
+            }
+          }
+          if (rowIndex >= rows.length) {
+            resolve({
+              placements: placements,
+              representedPlacements: representedPlacements,
+              pathIndex: nextPathIndex
+            });
+            return;
+          }
+          objectMapYieldToMain().then(processChunk);
+        };
+        processChunk();
+      });
+    };
+    var objectMapWorldRadiusForPixels = function(radiusPx, viewerData) {
+      var rect = objectMapViewportRect();
+      var view = objectMapState.view || (viewerData ? viewerData.bounds : null);
+      if (!view || !rect.width) return Math.max(radiusPx, 1);
+      var viewWidth = Math.max((view.maxX || 0) - (view.minX || 0), 1);
+      return Math.max((radiusPx * viewWidth) / (rect.width || 1), 1);
+    };
+    var objectMapCurrentZoomFactor = function(viewerData) {
+      if (!viewerData || !viewerData.bounds) return 1;
+      var view = objectMapState.view || viewerData.bounds;
+      var bounds = viewerData.bounds;
+      var viewWidth = Math.max((view.maxX || 0) - (view.minX || 0), 1);
+      var viewHeight = Math.max((view.maxY || 0) - (view.minY || 0), 1);
+      return Math.max(bounds.width / viewWidth, bounds.height / viewHeight);
+    };
+    var objectMapScaledMarkerPixels = function(basePixels, viewerData) {
+      var zoom = objectMapCurrentZoomFactor(viewerData);
+      var zoomScale = Math.pow(Math.max(zoom, 0.12), 0.55);
+      return basePixels * Math.max(0.38, Math.min(2.8, zoomScale));
+    };
+    var appendObjectMapMarker = function(x, y, radiusPx, label, clickTarget, viewerData) {
+      var radius = objectMapWorldRadiusForPixels(radiusPx, viewerData);
+      var markerGroup = createLocationMapSvgElement('g');
+      markerGroup.setAttribute('class', 'object-map__marker');
+      var halo = createLocationMapSvgElement('circle');
+      halo.setAttribute('class', 'object-map__marker-halo');
+      halo.setAttribute('cx', x);
+      halo.setAttribute('cy', y);
+      halo.setAttribute('r', radius * 1.45);
+      markerGroup.appendChild(halo);
+      var fill = createLocationMapSvgElement('circle');
+      fill.setAttribute('class', 'object-map__marker-fill');
+      fill.setAttribute('cx', x);
+      fill.setAttribute('cy', y);
+      fill.setAttribute('r', radius);
+      markerGroup.appendChild(fill);
+      var hit = createLocationMapSvgElement('circle');
+      hit.setAttribute('class', 'object-map__marker-hit');
+      hit.setAttribute('cx', x);
+      hit.setAttribute('cy', y);
+      hit.setAttribute('r', radius * 2.1);
+      hit.setAttribute('tabindex', '0');
+      hit.setAttribute('role', 'button');
+      hit.setAttribute('aria-label', label);
+      hit.setAttribute('title', label);
+      hit.addEventListener('mouseenter', function(event) {
+        showObjectMapTooltip(label, event.clientX, event.clientY);
+      });
+      hit.addEventListener('mousemove', function(event) {
+        showObjectMapTooltip(label, event.clientX, event.clientY);
+      });
+      hit.addEventListener('mouseleave', function() {
+        hideObjectMapTooltip();
+      });
+      hit.addEventListener('focus', function(event) {
+        var rect = event.target.getBoundingClientRect();
+        showObjectMapTooltip(label, rect.left + (rect.width / 2), rect.top);
+      });
+      hit.addEventListener('blur', function() {
+        hideObjectMapTooltip();
+      });
+      hit.addEventListener('pointerdown', function(event) {
+        event.stopPropagation();
+      });
+      if (clickTarget && (clickTarget.id || clickTarget.name)) {
+        var openedByPointerAt = 0;
+        var openFocus = function() {
+          if (objectMapInteractionRefreshTimer) {
+            clearTimeout(objectMapInteractionRefreshTimer);
+            objectMapInteractionRefreshTimer = null;
+          }
+          objectMapRenderToken += 1;
+          var resolvedId = normalizeObjectId(clickTarget.id || '');
+          var resolvedName = String(clickTarget.name || '').trim();
+          if (resolvedId && focusSidebarById(resolvedId)) {
+            return;
+          }
+          if (resolvedName && focusSidebarByName(resolvedName)) {
+            return;
+          }
+          if (resolvedId) {
+            focusById(resolvedId);
+            return;
+          }
+          if (resolvedName) {
+            focusByName(resolvedName);
+          }
+        };
+        hit.addEventListener('pointerup', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          openedByPointerAt = Date.now();
+          openFocus();
+        });
+        hit.addEventListener('click', function(event) {
+          if (Date.now() - openedByPointerAt < 450) return;
+          event.preventDefault();
+          event.stopPropagation();
+          openFocus();
+        });
+        hit.addEventListener('keydown', function(event) {
+          if (event.key !== 'Enter' && event.key !== ' ') return;
+          event.preventDefault();
+          event.stopPropagation();
+          openFocus();
+        });
+      }
+      markerGroup.appendChild(hit);
+      objectMapMarkersGroupEl.appendChild(markerGroup);
+    };
+    var renderObjectMapMarkersRawAsync = function(placements, viewerData, token) {
+      return new Promise(function(resolve) {
+        var radiusPx = objectMapScaledMarkerPixels(4.8, viewerData);
+        var rendered = 0;
+        var index = 0;
+        var chunkSize = 300;
+        var processChunk = function() {
+          if (token !== objectMapRenderToken) {
+            resolve(null);
+            return;
+          }
+          var end = Math.min(index + chunkSize, placements.length);
+          for (; index < end; index += 1) {
+            if (rendered >= OBJECT_MAP_MAX_MARKERS) break;
+            var point = placements[index];
+            appendObjectMapMarker(
+              point.x,
+              point.y,
+              radiusPx,
+              point.objName,
+              { id: point.objId || '', name: point.objName || '' },
+              viewerData
+            );
+            rendered += 1;
+          }
+          if (rendered >= OBJECT_MAP_MAX_MARKERS || index >= placements.length) {
+            resolve({
+              rendered: rendered,
+              clustered: false,
+              truncated: placements.length > rendered
+            });
+            return;
+          }
+          objectMapYieldToMain().then(processChunk);
+        };
+        processChunk();
+      });
+    };
+    var renderObjectMapMarkersClustered = function(placements, viewerData) {
+      var view = objectMapState.view || viewerData.bounds;
+      var rect = objectMapViewportRect();
+      var viewWidth = Math.max((view.maxX || 0) - (view.minX || 0), 1);
+      var viewHeight = Math.max((view.maxY || 0) - (view.minY || 0), 1);
+      var cellPx = 14;
+      var cellW = (viewWidth / Math.max(rect.width || 1, 1)) * cellPx;
+      var cellH = (viewHeight / Math.max(rect.height || 1, 1)) * cellPx;
+      var buckets = {};
+      placements.forEach(function(point) {
+        var col = Math.floor((point.x - view.minX) / Math.max(cellW, 1e-9));
+        var row = Math.floor((point.y - view.minY) / Math.max(cellH, 1e-9));
+        var key = col + ':' + row;
+        var bucket = buckets[key];
+        if (!bucket) {
+          bucket = { count: 0, sumX: 0, sumY: 0, names: {} };
+          buckets[key] = bucket;
+        }
+        bucket.count += 1;
+        bucket.sumX += point.x;
+        bucket.sumY += point.y;
+        bucket.names[point.objName] = (bucket.names[point.objName] || 0) + 1;
+      });
+      var bucketList = Object.keys(buckets).map(function(key) { return buckets[key]; });
+      bucketList.sort(function(a, b) { return b.count - a.count; });
+      var rendered = 0;
+      for (var i = 0; i < bucketList.length; i += 1) {
+        if (rendered >= OBJECT_MAP_MAX_MARKERS) break;
+        var bucket = bucketList[i];
+        var x = bucket.sumX / Math.max(bucket.count, 1);
+        var y = bucket.sumY / Math.max(bucket.count, 1);
+        var topName = '';
+        var topCount = 0;
+        Object.keys(bucket.names).forEach(function(name) {
+          var nameCount = bucket.names[name];
+          if (nameCount > topCount) {
+            topCount = nameCount;
+            topName = name;
+          }
+        });
+        var distinct = Object.keys(bucket.names).length;
+        var label = bucket.count === 1
+          ? topName
+          : (formatNumber(bucket.count) + ' placements' + (distinct > 1 ? (' (' + distinct + ' objects)') : (' (' + topName + ')')));
+        var clickTarget = bucket.count === 1 ? { id: '', name: topName } : { id: '', name: topName || '' };
+        var radiusPx = objectMapScaledMarkerPixels(4.4, viewerData) + Math.min(6, Math.sqrt(bucket.count) * 0.45);
+        appendObjectMapMarker(x, y, radiusPx, label, clickTarget, viewerData);
+        rendered += 1;
+      }
+      return {
+        rendered: rendered,
+        clustered: true,
+        totalBuckets: bucketList.length,
+        truncated: bucketList.length > rendered
+      };
+    };
+    var renderObjectMapMarkers = function(rows, viewerData, gatheredOverride, token, mapKey) {
+      if (!objectMapMarkersGroupEl || !viewerData || !viewerData.bounds) return Promise.resolve(null);
+      var resolvedMapKey = mapKey || objectMapActiveMapKey;
+      var gatheredPromise = gatheredOverride
+        ? Promise.resolve(gatheredOverride)
+        : gatherObjectMapPlacementsAsync(rows, viewerData, resolvedMapKey, token);
+      return gatheredPromise.then(function(gathered) {
+        if (!gathered || token !== objectMapRenderToken) return null;
+        objectMapPlacementPathIndex = gathered.pathIndex;
+        var resultPromise = OBJECT_MAP_CLUSTERING_ENABLED
+          ? Promise.resolve(renderObjectMapMarkersClustered(gathered.placements, viewerData))
+          : renderObjectMapMarkersRawAsync(gathered.placements, viewerData, token);
+        return resultPromise.then(function(result) {
+          if (!result || token !== objectMapRenderToken) return null;
+          if (result.clustered) {
+            objectMapSummaryText = formatNumber(result.rendered) + ' clusters shown on ' + getLocationMapLabel(resolvedMapKey)
+              + ' from ' + formatNumber(gathered.placements.length) + ' placements';
+          } else {
+            objectMapSummaryText = formatNumber(result.rendered) + ' placements shown on ' + getLocationMapLabel(resolvedMapKey);
+          }
+          if (result.truncated) {
+            objectMapSummaryText += ' (capped at ' + formatNumber(OBJECT_MAP_MAX_MARKERS) + ')';
+          }
+          setObjectMapStatus(objectMapSummaryText);
+          return gathered;
+        });
+      });
+    };
+    var renderObjectMapFromTable = function(reuseCachedPlacements) {
+      if (!objectMapPanelEl || !objectMapPanelEl.classList.contains('visible')) return;
+      var renderToken = ++objectMapRenderToken;
+      var mapKey = objectMapActiveMapKey;
+      updateObjectMapToggleButtons();
+      clearObjectMapSvg();
+      var rows = getObjectMapRows();
+      if (!rows.length) {
+        objectMapPlacementPathIndex = {};
+        objectMapState.placementsCache = null;
+        setObjectMapPromptVisible(true, 'Search or select folders to show on map');
+        setObjectMapStatus('No objects in current view.');
+        applyObjectMapFolderDimmingToDom();
+        return;
+      }
+      ensureLocationMapData(mapKey).then(function(viewerData) {
+        if (renderToken !== objectMapRenderToken) return;
+        if (!objectMapPanelEl || !objectMapPanelEl.classList.contains('visible')) return;
+        objectMapState.data = viewerData;
+        if (!objectMapState.view) {
+          fitObjectMapToBounds();
+        }
+        syncObjectMapViewBox();
+        renderObjectMapBackdrop(viewerData, mapKey);
+        if (!shouldRenderObjectMapPlacements()) {
+          objectMapPlacementPathIndex = {};
+          objectMapState.placementsCache = null;
+          objectMapSummaryText = '';
+          setObjectMapPromptVisible(true, 'Search or select folders to show on map');
+          setObjectMapStatus('');
+          applyObjectMapFolderDimmingToDom();
+          return;
+        }
+        var gathered = null;
+        var cache = objectMapState.placementsCache;
+        if (reuseCachedPlacements && cache && cache.mapKey === mapKey) {
+          gathered = cache.gathered;
+        }
+        setObjectMapPromptVisible(false);
+        setObjectMapStatus('Loading placements...');
+        renderObjectMapMarkers(rows, viewerData, gathered, renderToken, mapKey).then(function(finalGathered) {
+          if (!finalGathered || renderToken !== objectMapRenderToken) return;
+          if (!gathered) {
+            objectMapState.placementsCache = {
+              mapKey: mapKey,
+              gathered: finalGathered
+            };
+          }
+          applyObjectMapFolderDimmingToDom();
+        });
+      }).catch(function(error) {
+        if (renderToken !== objectMapRenderToken) return;
+        objectMapPlacementPathIndex = {};
+        objectMapState.placementsCache = null;
+        clearObjectMapSvg();
+        setObjectMapStatus(error && error.message ? error.message : ('Unable to load ' + getLocationMapLabel(mapKey) + ' map.'));
+        applyObjectMapFolderDimmingToDom();
+      });
+    };
+    var scheduleObjectMapInteractionRefresh = function(delayMs) {
+      if (objectMapInteractionRefreshTimer) {
+        clearTimeout(objectMapInteractionRefreshTimer);
+        objectMapInteractionRefreshTimer = null;
+      }
+      objectMapInteractionRefreshTimer = setTimeout(function() {
+        objectMapInteractionRefreshTimer = null;
+        renderObjectMapFromTable(true);
+      }, Math.max(0, Number(delayMs) || 120));
     };
     var renderTypesExplorerTags = function() {
       if (!typesExplorerUsageTagsEl || !typesExplorerValueTagsEl) return;
@@ -3566,6 +4592,8 @@
       nextUrl.searchParams.delete('id');
       nextUrl.searchParams.delete('object');
       nextUrl.searchParams.delete('version');
+      nextUrl.searchParams.delete('maps');
+      nextUrl.searchParams.delete('presets');
       nextUrl.searchParams.delete('types_map');
       nextUrl.searchParams.delete('types_kind');
       nextUrl.searchParams.delete('types_tag');
@@ -3573,6 +4601,14 @@
       nextUrl.searchParams.delete('types_maps');
       nextUrl.searchParams.delete('types_usage');
       nextUrl.searchParams.delete('types_value');
+      if (activeCollectionFilter === 'object_map') {
+        nextUrl.searchParams.set('maps', '1');
+        return nextUrl.toString();
+      }
+      if (activeCollectionFilter === 'presets') {
+        nextUrl.searchParams.set('presets', '1');
+        return nextUrl.toString();
+      }
       var hasTypesExplorer = activeCollectionFilter === 'types_explorer' || hasTypesExplorerSelection();
       if (!hasTypesExplorer) {
         return nextUrl.toString();
@@ -3698,12 +4734,15 @@
     });
     $.fn.dataTable.ext.search.push(function(settings, _data, dataIndex) {
       if (!table || settings.nTable !== $tableEl.get(0)) return true;
-      if (!activeCollectionFilter && !activeFolderFilter) return true;
       var rowData = settings.aoData && settings.aoData[dataIndex] ? settings.aoData[dataIndex]._aData : null;
       if (!rowData) {
         rowData = table.row(dataIndex).data();
       }
       if (!rowData) return false;
+      if (!activeCollectionFilter && isPresetRow(rowData)) {
+        return false;
+      }
+      if (!activeCollectionFilter && !activeFolderFilter) return true;
       if (activeCollectionFilter && !rowMatchesCollection(activeCollectionFilter, rowData)) {
         return false;
       }
@@ -3785,8 +4824,16 @@
             sectionEl.classList.toggle('is-open', objectFocusSectionExpanded[sectionKey]);
           }
           var sectionTitle = sectionToggle.getAttribute('data-section-title') || '';
+          var sectionTitlePrefix = '';
+          if (sectionKey === 'types') {
+            sectionTitlePrefix = '';
+          }
           sectionToggle.setAttribute('aria-expanded', objectFocusSectionExpanded[sectionKey] ? 'true' : 'false');
-          sectionToggle.textContent = (objectFocusSectionExpanded[sectionKey] ? '▴ ' : '▾ ') + sectionTitle;
+          sectionToggle.innerHTML = buildObjectFocusSectionToggleHtml(
+            sectionKey,
+            sectionTitlePrefix + sectionTitle,
+            objectFocusSectionExpanded[sectionKey]
+          );
           return;
         }
         var typesPill = e.target.closest('.object-focus__types-pill');
@@ -3824,7 +4871,7 @@
           saveObjectFocusSectionPrefs();
           objectFocusLocationEl.classList.toggle('is-open', objectFocusSectionExpanded.location);
           sectionToggle.setAttribute('aria-expanded', objectFocusSectionExpanded.location ? 'true' : 'false');
-          sectionToggle.textContent = (objectFocusSectionExpanded.location ? '▴ ' : '▾ ') + 'Count of object on map';
+          sectionToggle.textContent = (objectFocusSectionExpanded.location ? '▴ ' : '▾ ') + '📍 Object Maps';
           return;
         }
         var unavailableTrigger = e.target.closest('[data-action="view-location-map-unavailable"]');
@@ -4161,7 +5208,7 @@
       objectFocusLocationEl.classList.add('visible');
       objectFocusLocationEl.innerHTML =
         '<div class="object-focus__section-header">' +
-          '<button class="object-focus__section-title object-focus__section-toggle object-focus__location-heading" type="button" data-section-toggle="location" data-section-title="Count of object on map" aria-expanded="' + (locationExpanded ? 'true' : 'false') + '">' + (locationExpanded ? '▴ ' : '▾ ') + 'Count of object on map</button>' +
+          '<button class="object-focus__section-title object-focus__section-toggle object-focus__location-heading" type="button" data-section-toggle="location" data-section-title="Object Maps" aria-expanded="' + (locationExpanded ? 'true' : 'false') + '">' + (locationExpanded ? '▴ ' : '▾ ') + '📍 Object Maps</button>' +
         '</div>' +
         '<div class="object-focus__section-body">' +
           '<div class="object-focus__location-row">' +
@@ -4208,7 +5255,15 @@
             var linkedText = resolved.typeCount > 1 ? ('Across ' + formatNumber(resolved.typeCount) + ' linked types') : '';
             var isSakhal = mapKey === 'sakhal';
             var actionName = isSakhal ? 'view-location-map-unavailable' : 'view-location-map';
-            var pillLabel = (isSakhal ? '' : '🗺️ ') + formatNumber(resolved.count) + ' on ' + escapeHtml(config.label || mapKey);
+            var iconPrefix = '';
+            if (mapKey === 'chernarus') {
+              iconPrefix = '🍂 ';
+            } else if (mapKey === 'livonia') {
+              iconPrefix = '🌲 ';
+            } else if (!isSakhal) {
+              iconPrefix = '🗺️ ';
+            }
+            var pillLabel = iconPrefix + formatNumber(resolved.count) + ' on ' + escapeHtml(config.label || mapKey);
             return (
               '<div class="object-focus__location-entry' + (index > 0 ? ' object-focus__location-entry--push' : '') + '">' +
                 '<button class="object-focus__link-pill object-focus__location-pill" type="button" data-action="' + actionName + '" data-map-key="' + escapeHtml(mapKey) + '" data-default-label="' + escapeHtml(pillLabel) + '">' + pillLabel + '</button>' +
@@ -4218,7 +5273,7 @@
           }).join('');
           objectFocusLocationEl.innerHTML =
             '<div class="object-focus__section-header">' +
-              '<button class="object-focus__section-title object-focus__section-toggle object-focus__location-heading" type="button" data-section-toggle="location" data-section-title="Count of object on map" aria-expanded="' + (locationExpanded ? 'true' : 'false') + '">' + (locationExpanded ? '▴ ' : '▾ ') + 'Count of object on map</button>' +
+              '<button class="object-focus__section-title object-focus__section-toggle object-focus__location-heading" type="button" data-section-toggle="location" data-section-title="Object Maps" aria-expanded="' + (locationExpanded ? 'true' : 'false') + '">' + (locationExpanded ? '▴ ' : '▾ ') + '📍 Object Maps</button>' +
               mapGroupActionHtml +
             '</div>' +
             '<div class="object-focus__section-body"><div class="object-focus__location-actions">' + locationRowsHtml + '</div></div>';
@@ -4816,11 +5871,19 @@
           addObjectLink(id, targetId);
         });
       });
+      rebuildTypesExplorerFolderPrefixIndex();
     };
     var getLinkedDisplayName = function(id) {
       var normalizedId = normalizeObjectId(id);
       if (!normalizedId) return String(id || '').trim();
       return objectNameById[normalizedId] || normalizedId;
+    };
+    var focusSidebarById = function(objectId) {
+      var normalizedId = normalizeObjectId(objectId);
+      if (!normalizedId) return false;
+      var rowData = objectDataById[normalizedId] || null;
+      if (!rowData) return false;
+      return focusSidebarByName(getObjectName(rowData));
     };
     var focusSidebarByName = function(objName) {
       if (!objName) return false;
@@ -5171,6 +6234,7 @@
     loadMapTypes('livonia', '/data/types/types_livonia.xml');
     loadMapTypes('sakhal', '/data/types/types_sakhal.xml');
     renderTypesExplorerTags();
+    updateObjectMapToggleButtons();
 
     var buildPinnedItemFromCell = function($td) {
       return {
@@ -6399,6 +7463,8 @@
     var objectIdParams = searchParams.getAll('id').map(function(value) {
       return normalizeObjectId(value);
     }).filter(Boolean);
+    var mapsAppParam = ['1', 'true', 'yes'].indexOf(String(searchParams.get('maps') || '').trim().toLowerCase()) !== -1;
+    var presetsAppParam = ['1', 'true', 'yes'].indexOf(String(searchParams.get('presets') || '').trim().toLowerCase()) !== -1;
     var objectParam = searchParams.get('object');
     var versionParam = normalizeVersionParam(searchParams.get('version'));
     var typesMapParam = normalizeTypesMapParam(searchParams.get('types_map'));
@@ -6412,6 +7478,7 @@
     var linkedFilterNoticeTextEl = document.getElementById('linkedFilterNoticeText');
     var linkedFilterResetLinkEl = document.getElementById('linkedFilterResetLink');
     var linkedFilterCopyLinkEl = document.getElementById('linkedFilterCopyLink');
+    var presetsGuideNoticeEl = document.getElementById('presetsGuideNotice');
     var appliedUrlState = false;
 
     if (versionFilterNoticeEl && versionParam) {
@@ -6531,7 +7598,16 @@
       } else {
         treatIdListAsSearchFolders = false;
         highlightedFolderPath = '';
-        if (isTypesExplorerPath) {
+        if (mapsAppParam) {
+          activeCollectionFilter = 'object_map';
+          setActiveFolderFilter('', false);
+          updateObjectMapPanelVisibility();
+        } else if (presetsAppParam) {
+          activeCollectionFilter = 'presets';
+          setActiveFolderFilter('', false);
+          updateTypesExplorerPanelVisibility();
+          updateObjectMapPanelVisibility();
+        } else if (isTypesExplorerPath) {
           activeCollectionFilter = 'types_explorer';
           if (typesExplorerMapsParam.length) {
             Object.keys(typesExplorerMaps).forEach(function(key) {
@@ -6568,6 +7644,8 @@
         updateFilteredFolderPrefixes();
       }
       renderFolderTree();
+      objectMapState.placementsCache = null;
+      renderObjectMapFromTable();
       if (folderSidebarSearchEl && folderSidebarSearchEl.value !== table.search()) {
         folderSidebarSearchEl.value = table.search();
       }
@@ -6603,6 +7681,13 @@
           syncTypesExplorerPath();
           return;
         }
+        if (nextPath === '__database__') {
+          activeCollectionFilter = '';
+          setActiveFolderFilter('', true);
+          syncTypesExplorerPath();
+          updateObjectMapPanelVisibility();
+          return;
+        }
         if (nextPath === '__types_explorer__') {
           activeCollectionFilter = activeCollectionFilter === 'types_explorer' ? '' : 'types_explorer';
           setActiveFolderFilter('', true);
@@ -6610,12 +7695,25 @@
           syncTypesExplorerPath();
           return;
         }
-        activeCollectionFilter = '';
+        if (nextPath === '__object_map__') {
+          activeCollectionFilter = activeCollectionFilter === 'object_map' ? '' : 'object_map';
+          setActiveFolderFilter('', true);
+          syncTypesExplorerPath();
+          updateObjectMapPanelVisibility();
+          return;
+        }
+        if (activeCollectionFilter !== 'object_map' && activeCollectionFilter !== 'types_explorer') {
+          activeCollectionFilter = '';
+        }
         if (nextPath && nextPath !== 'dz') {
           var rowEl = folderBtn.closest('.folder-tree__row');
           var rowToggle = rowEl ? rowEl.querySelector('[data-folder-toggle]') : null;
           if (rowToggle) {
             folderTreeExpanded[nextPath] = !folderTreeExpanded[nextPath];
+            if (activeCollectionFilter === 'object_map' || activeCollectionFilter === 'types_explorer') {
+              renderFolderTree();
+              return;
+            }
           }
         }
         syncTypesExplorerPath();
@@ -6640,9 +7738,14 @@
         renderFolderTree();
       });
     }
+    if (folderSidebarEl) {
+      folderSidebarEl.addEventListener('scroll', function() {
+        syncFolderBulkStickyMode();
+      }, { passive: true });
+    }
     if (folderSidebarClearEl) {
       folderSidebarClearEl.addEventListener('click', function() {
-        var keepAppCollection = activeCollectionFilter === 'presets' || activeCollectionFilter === 'types_explorer';
+        var keepAppCollection = activeCollectionFilter === 'presets' || activeCollectionFilter === 'types_explorer' || activeCollectionFilter === 'object_map';
         if (!keepAppCollection) {
           activeCollectionFilter = '';
         }
@@ -6680,21 +7783,44 @@
         var cleanUrl = window.location.origin + window.location.pathname;
         window.history.replaceState(null, '', cleanUrl);
         syncTypesExplorerPath();
+        updateObjectMapPanelVisibility();
       });
     }
     if (folderSidebarSearchEl) {
-      var applyFolderSidebarSearch = function() {
-        if (!table) return;
-        var query = String(folderSidebarSearchEl.value || '');
-        if (!query.trim() && (activeFolderFilter || activeCollectionFilter)) {
-          activeCollectionFilter = '';
-          syncTypesExplorerPath();
-          setActiveFolderFilter('', false);
+      var applyFolderSidebarSearch = function(options) {
+        var opts = options || {};
+        var runSearch = function() {
+          folderSidebarSearchDebounceTimer = null;
+          if (!table) return;
+          var query = String(folderSidebarSearchEl.value || '');
+          if (!query.trim() && (activeFolderFilter || activeCollectionFilter)) {
+            var keepAppCollection = activeCollectionFilter === 'presets' || activeCollectionFilter === 'types_explorer' || activeCollectionFilter === 'object_map';
+            if (!keepAppCollection) {
+              activeCollectionFilter = '';
+            }
+            syncTypesExplorerPath();
+            setActiveFolderFilter('', false);
+          }
+          table.search(query).draw();
+        };
+        var shouldDebounceForMap = activeCollectionFilter === 'object_map' && !opts.forceImmediate;
+        if (shouldDebounceForMap) {
+          if (folderSidebarSearchDebounceTimer) {
+            clearTimeout(folderSidebarSearchDebounceTimer);
+          }
+          folderSidebarSearchDebounceTimer = setTimeout(runSearch, 220);
+          return;
         }
-        table.search(query).draw();
+        if (folderSidebarSearchDebounceTimer) {
+          clearTimeout(folderSidebarSearchDebounceTimer);
+          folderSidebarSearchDebounceTimer = null;
+        }
+        runSearch();
       };
       folderSidebarSearchEl.addEventListener('input', applyFolderSidebarSearch);
-      folderSidebarSearchEl.addEventListener('search', applyFolderSidebarSearch);
+      folderSidebarSearchEl.addEventListener('search', function() {
+        applyFolderSidebarSearch({ forceImmediate: true });
+      });
     }
     if (typesExplorerPanelEl) {
       typesExplorerPanelEl.addEventListener('click', function(e) {
@@ -6735,6 +7861,123 @@
         typesExplorerCopyLinkEl.textContent = 'Copied';
         setTimeout(function() { typesExplorerCopyLinkEl.textContent = original; }, 1200);
       });
+    }
+    if (typesExplorerDownloadCurrentEl) {
+      typesExplorerDownloadCurrentEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        var downloaded = downloadCurrentViewTypesEntries();
+        var original = typesExplorerDownloadCurrentEl.textContent;
+        typesExplorerDownloadCurrentEl.textContent = downloaded ? 'Downloaded' : 'No types in view';
+        setTimeout(function() { typesExplorerDownloadCurrentEl.textContent = original; }, 1200);
+      });
+    }
+    if (objectMapPanelEl) {
+      objectMapPanelEl.addEventListener('click', function(e) {
+        var toggle = e.target.closest('[data-object-map]');
+        if (toggle) {
+          e.preventDefault();
+          setObjectMapActiveMap(toggle.getAttribute('data-object-map') || 'chernarus');
+          return;
+        }
+        var control = e.target.closest('[data-object-map-control]');
+        if (!control) return;
+        e.preventDefault();
+        var action = String(control.getAttribute('data-object-map-control') || '');
+        if (action === 'reset') {
+          objectMapState.view = null;
+          fitObjectMapToBounds();
+          syncObjectMapViewBox();
+          renderObjectMapFromTable(true);
+          return;
+        }
+        if (!objectMapState.view) {
+          fitObjectMapToBounds();
+        }
+        if (!objectMapState.view) return;
+        var rect = objectMapViewportRect();
+        var centerX = (rect.width || 1) / 2;
+        var centerY = (rect.height || 1) / 2;
+        if (action === 'zoom-in') {
+          objectMapState.view = zoomObjectMapViewAt(objectMapState.view, centerX, centerY, 0.84);
+          syncObjectMapViewBox();
+          scheduleObjectMapInteractionRefresh(140);
+          return;
+        }
+        if (action === 'zoom-out') {
+          objectMapState.view = zoomObjectMapViewAt(objectMapState.view, centerX, centerY, 1.16);
+          syncObjectMapViewBox();
+          scheduleObjectMapInteractionRefresh(140);
+        }
+      });
+    }
+    if (objectMapOverlayEl) {
+      objectMapOverlayEl.addEventListener('wheel', function(event) {
+        if (!objectMapPanelEl || !objectMapPanelEl.classList.contains('visible') || !objectMapState.data || !objectMapState.view) return;
+        event.preventDefault();
+        hideObjectMapTooltip();
+        var rect = objectMapViewportRect();
+        var factor = event.deltaY > 0 ? 1.12 : 0.88;
+        objectMapState.view = zoomObjectMapViewAt(
+          objectMapState.view,
+          event.clientX - rect.left,
+          event.clientY - rect.top,
+          factor
+        );
+        syncObjectMapViewBox();
+        scheduleObjectMapInteractionRefresh(160);
+      }, { passive: false });
+      objectMapOverlayEl.addEventListener('pointerdown', function(event) {
+        if (!objectMapPanelEl || !objectMapPanelEl.classList.contains('visible') || !objectMapState.view) return;
+        hideObjectMapTooltip();
+        objectMapState.dragStart = {
+          x: event.clientX,
+          y: event.clientY,
+          view: {
+            minX: objectMapState.view.minX,
+            maxX: objectMapState.view.maxX,
+            minY: objectMapState.view.minY,
+            maxY: objectMapState.view.maxY
+          }
+        };
+        objectMapState.dragMoved = false;
+        objectMapOverlayEl.classList.add('dragging');
+        objectMapOverlayEl.setPointerCapture(event.pointerId);
+      });
+      objectMapOverlayEl.addEventListener('pointermove', function(event) {
+        if (!objectMapState.dragStart || !objectMapState.view) return;
+        if (!objectMapState.dragMoved) {
+          var travelX = Math.abs(event.clientX - objectMapState.dragStart.x);
+          var travelY = Math.abs(event.clientY - objectMapState.dragStart.y);
+          if (travelX > 2 || travelY > 2) {
+            objectMapState.dragMoved = true;
+          }
+        }
+        var rect = objectMapViewportRect();
+        var dx = ((event.clientX - objectMapState.dragStart.x) / (rect.width || 1)) *
+          (objectMapState.dragStart.view.maxX - objectMapState.dragStart.view.minX);
+        var dy = ((event.clientY - objectMapState.dragStart.y) / (rect.height || 1)) *
+          (objectMapState.dragStart.view.maxY - objectMapState.dragStart.view.minY);
+        objectMapState.view.minX = objectMapState.dragStart.view.minX - dx;
+        objectMapState.view.maxX = objectMapState.dragStart.view.maxX - dx;
+        objectMapState.view.minY = objectMapState.dragStart.view.minY + dy;
+        objectMapState.view.maxY = objectMapState.dragStart.view.maxY + dy;
+        syncObjectMapViewBox();
+      });
+      var endObjectMapDrag = function(event) {
+        if (!objectMapState.dragStart) return;
+        var shouldRefresh = !!objectMapState.dragMoved;
+        if (objectMapState.dragStart && objectMapOverlayEl.hasPointerCapture(event.pointerId)) {
+          objectMapOverlayEl.releasePointerCapture(event.pointerId);
+        }
+        objectMapState.dragStart = null;
+        objectMapState.dragMoved = false;
+        objectMapOverlayEl.classList.remove('dragging');
+        if (shouldRefresh) {
+          scheduleObjectMapInteractionRefresh(80);
+        }
+      };
+      objectMapOverlayEl.addEventListener('pointerup', endObjectMapDrag);
+      objectMapOverlayEl.addEventListener('pointercancel', endObjectMapDrag);
     }
 
     var resetFilters = function() {
@@ -6824,6 +8067,22 @@
             tags: getSearchTags(row)
           };
         });
+    };
+    var downloadCurrentViewTypesEntries = function() {
+      if (!table) return false;
+      var seen = {};
+      var items = table
+        .rows({ search: 'applied', order: 'applied', page: 'all' })
+        .data()
+        .toArray()
+        .reduce(function(acc, row) {
+          var objName = String(getObjectName(row) || '').trim();
+          if (!objName || seen[objName]) return acc;
+          seen[objName] = true;
+          acc.push({ objName: objName });
+          return acc;
+        }, []);
+      return downloadTypesEntries(items, 'types_current_view.xml');
     };
 
     var downloadTextFile = function(content, filename, mimeType) {
