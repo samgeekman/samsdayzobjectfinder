@@ -1923,6 +1923,156 @@
   .export-panel__images {
     color: var(--text);
   }
+  .types-explorer {
+    display: none;
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card);
+    box-shadow: var(--shadow-soft);
+  }
+  .types-explorer.visible {
+    display: block;
+  }
+  .types-explorer__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .types-explorer__header-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .types-explorer__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: 10px;
+    align-items: start;
+  }
+  .types-explorer__side {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-soft);
+    padding: 8px;
+  }
+  .types-explorer__scope-title {
+    display: block;
+    font-size: 0.74rem;
+    font-weight: 700;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .types-explorer__scope-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .types-explorer__scope-btn {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 3px 7px;
+    cursor: pointer;
+  }
+  .types-explorer__scope-btn:hover {
+    background: var(--bg-soft);
+  }
+  .types-explorer__scope-btn.is-active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #111;
+  }
+  .types-explorer__title {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 0.02em;
+  }
+  .types-explorer__title-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    background: #2f7df6;
+    color: #fff;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.56rem;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 18px;
+  }
+  .types-explorer__section-title {
+    display: block;
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .types-explorer__section--value {
+    padding-top: 8px;
+  }
+  .types-explorer__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .types-explorer__tag {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 3px 8px;
+    cursor: pointer;
+  }
+  .types-explorer__tag:hover {
+    background: var(--bg-soft);
+  }
+  .types-explorer__tag.is-active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #111;
+  }
+  .types-explorer__divider {
+    margin: 10px 0;
+    border-top: 1px solid var(--border);
+  }
+  @media (max-width: 1100px) {
+    .types-explorer__layout {
+      grid-template-columns: 1fr;
+    }
+  }
+  .folder-tree__types-icon {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    border-radius: 999px;
+    background: #2f7df6;
+    color: #fff;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.56rem;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 </style>
 
 <div id="filters">
@@ -1953,6 +2103,36 @@
     <div class="export-panel__images">
       Want all the images? <a href="https://drive.google.com/drive/folders/1Hg82OAu-Br5VPSF4NxGvifG_IeF6Iw-u?usp=share_link" target="_blank" rel="noopener">Download here.</a>
     </div>
+  </div>
+</div>
+
+<div id="typesExplorerPanel" class="types-explorer" aria-live="polite">
+  <div class="types-explorer__header">
+    <span class="types-explorer__title"><span class="types-explorer__title-icon" aria-hidden="true">&lt;/&gt;</span>Types Explorer</span>
+    <div class="types-explorer__header-actions">
+      <button id="typesExplorerReset" class="folder-sidebar__clear" type="button">Reset</button>
+      <button id="typesExplorerCopyLink" class="folder-sidebar__clear" type="button">Copy link</button>
+    </div>
+  </div>
+  <div class="types-explorer__layout">
+    <div class="types-explorer__main">
+      <div class="types-explorer__section">
+        <span class="types-explorer__section-title">Usage tags:</span>
+        <div id="typesExplorerUsageTags" class="types-explorer__tags"></div>
+      </div>
+      <div class="types-explorer__section types-explorer__section--value">
+        <span class="types-explorer__section-title">Value tags:</span>
+        <div id="typesExplorerValueTags" class="types-explorer__tags"></div>
+      </div>
+    </div>
+    <aside class="types-explorer__side" aria-label="Types map scope">
+      <span class="types-explorer__scope-title">Show Types for:</span>
+      <div id="typesExplorerScope" class="types-explorer__scope-options">
+        <button class="types-explorer__scope-btn is-active" type="button" data-types-scope="chernarus">Chernarus</button>
+        <button class="types-explorer__scope-btn is-active" type="button" data-types-scope="livonia">Livonia</button>
+        <button class="types-explorer__scope-btn is-active" type="button" data-types-scope="sakhal">Sakhal</button>
+      </div>
+    </aside>
   </div>
 </div>
 
@@ -2260,7 +2440,7 @@
       return String(table.search() || '').trim();
     };
     var isFolderTreeInBroadFilterMode = function() {
-      return getCurrentTableSearchValue().length > 0 || treatIdListAsSearchFolders || !!activeTypesTagFilter;
+      return getCurrentTableSearchValue().length > 0 || treatIdListAsSearchFolders || !!activeTypesTagFilter || hasTypesExplorerSelection();
     };
     var getDeepestPathPrefix = function(pathValue) {
       var prefixes = extractPathPrefixes(pathValue || '');
@@ -2390,6 +2570,10 @@
         + '<span class="folder-tree__leaf-icon" aria-hidden="true">🏗️</span>'
         + '<button class="folder-tree__folder' + (presetsActive ? ' is-active' : '') + '" type="button" data-folder-path="__presets__" title="Editor Presets">Editor Presets</button>'
         + '</div>'
+        + '<div class="folder-tree__row folder-tree__row--types-explorer">'
+        + '<span class="folder-tree__types-icon" aria-hidden="true">&lt;/&gt;</span>'
+        + '<button class="folder-tree__folder' + (activeCollectionFilter === 'types_explorer' ? ' is-active' : '') + '" type="button" data-folder-path="__types_explorer__" title="Types Explorer">&lt;/&gt; Types Explorer</button>'
+        + '</div>'
         + '<div class="folder-tree__divider" aria-hidden="true"></div>';
       var branchKeys = getVisibleFolderBranchKeys();
       var openCount = branchKeys.filter(function(key) { return !!folderTreeExpanded[key]; }).length;
@@ -2407,6 +2591,7 @@
       }
       folderTreeEl.innerHTML = presetsRow + renderChildren(treeRoot);
       updateFolderSidebarTitle();
+      updateTypesExplorerPanelVisibility();
     };
     var setActiveFolderFilter = function(value, shouldDraw) {
       activeFolderFilter = normalizeFilterText(value || '');
@@ -2637,6 +2822,7 @@
    
     $("#filters").insertBefore("#dayzObjects_wrapper .top-bar");
     $("#dayzObjects_wrapper .dataTables_length").prependTo("#filters");
+    $("#typesExplorerPanel").prependTo("#dayzObjects_wrapper");
     syncSidebarTopOffset();
 
     $tableEl.addClass('dtr-column');
@@ -2679,6 +2865,12 @@
     var folderSidebarBulkEl = document.getElementById('folderSidebarBulk');
     var folderSidebarSearchEl = document.getElementById('folderSidebarSearch');
     var filterConsoleEl = document.getElementById('filterConsole');
+    var typesExplorerPanelEl = document.getElementById('typesExplorerPanel');
+    var typesExplorerUsageTagsEl = document.getElementById('typesExplorerUsageTags');
+    var typesExplorerValueTagsEl = document.getElementById('typesExplorerValueTags');
+    var typesExplorerScopeEl = document.getElementById('typesExplorerScope');
+    var typesExplorerResetEl = document.getElementById('typesExplorerReset');
+    var typesExplorerCopyLinkEl = document.getElementById('typesExplorerCopyLink');
     var objectFocusMetaEl = document.getElementById('objectFocusMeta');
     var objectFocusLocationEl = document.getElementById('objectFocusLocation');
     var objectFocusLinksEl = document.getElementById('objectFocusLinks');
@@ -2696,6 +2888,21 @@
     };
     var activeTypesTagFilter = null;
     var activeTypesTagMatchByName = null;
+    var typesExplorerState = {
+      usage: [],
+      value: []
+    };
+    var typesExplorerMaps = {
+      chernarus: true,
+      livonia: true,
+      sakhal: true
+    };
+    var typesExplorerTags = {
+      usage: [],
+      value: []
+    };
+    var typesExplorerByObject = {};
+    var activeTypesExplorerMatchByName = null;
     var mapGroupProtoEntryUrl = null;
     var mapGroupProtoEntryByName = {};
     var activeCollectionFilter = '';
@@ -3079,11 +3286,19 @@
             next[nameKey] = { usage: usage, value: value };
           }
           mapTypesByMap[mapKey] = next;
+          rebuildTypesExplorerData();
+          renderTypesExplorerTags();
           if (currentObjectData && currentObjectData.objName) {
             updateObjectFocusMeta(currentObjectData);
           }
           if (activeTypesTagFilter && activeTypesTagFilter.map === mapKey) {
             activeTypesTagMatchByName = buildTypesTagMatchIndex(activeTypesTagFilter);
+            if (table) {
+              table.draw(false);
+            }
+          }
+          if (hasTypesExplorerSelection()) {
+            activeTypesExplorerMatchByName = buildTypesExplorerMatchIndex();
             if (table) {
               table.draw(false);
             }
@@ -3111,6 +3326,170 @@
         }
       });
       return match;
+    };
+    var hasTypesExplorerSelection = function() {
+      return (typesExplorerState.usage && typesExplorerState.usage.length) || (typesExplorerState.value && typesExplorerState.value.length);
+    };
+    var rebuildTypesExplorerData = function() {
+      var usageSeen = {};
+      var valueSeen = {};
+      var byObject = {};
+      ['chernarus', 'livonia', 'sakhal'].forEach(function(mapKey) {
+        if (!typesExplorerMaps[mapKey]) return;
+        var mapData = mapTypesByMap[mapKey] || {};
+        Object.keys(mapData).forEach(function(objKey) {
+          var info = mapData[objKey] || {};
+          var bucket = byObject[objKey];
+          if (!bucket) {
+            bucket = { usage: {}, value: {} };
+            byObject[objKey] = bucket;
+          }
+          (Array.isArray(info.usage) ? info.usage : []).forEach(function(tag) {
+            var key = String(tag || '').trim();
+            if (!key) return;
+            usageSeen[key] = true;
+            bucket.usage[key] = true;
+          });
+          (Array.isArray(info.value) ? info.value : []).forEach(function(tag) {
+            var key = String(tag || '').trim();
+            if (!key) return;
+            valueSeen[key] = true;
+            bucket.value[key] = true;
+          });
+        });
+      });
+      typesExplorerByObject = byObject;
+      typesExplorerTags.usage = Object.keys(usageSeen).sort(function(a, b) { return a.localeCompare(b); });
+      typesExplorerTags.value = Object.keys(valueSeen).sort(function(a, b) { return a.localeCompare(b); });
+      typesExplorerState.usage = (typesExplorerState.usage || []).filter(function(tag) {
+        return usageSeen[tag];
+      });
+      typesExplorerState.value = (typesExplorerState.value || []).filter(function(tag) {
+        return valueSeen[tag];
+      });
+    };
+    var updateTypesExplorerScopeButtons = function() {
+      if (!typesExplorerScopeEl) return;
+      var buttons = typesExplorerScopeEl.querySelectorAll('[data-types-scope]');
+      buttons.forEach(function(btn) {
+        var key = String(btn.getAttribute('data-types-scope') || '').toLowerCase();
+        btn.classList.toggle('is-active', !!typesExplorerMaps[key]);
+      });
+    };
+    var toggleTypesExplorerMap = function(mapKey) {
+      var key = String(mapKey || '').trim().toLowerCase();
+      if (!typesExplorerMaps.hasOwnProperty(key)) return;
+      var activeCount = Object.keys(typesExplorerMaps).filter(function(name) { return !!typesExplorerMaps[name]; }).length;
+      if (typesExplorerMaps[key] && activeCount <= 1) return;
+      typesExplorerMaps[key] = !typesExplorerMaps[key];
+      rebuildTypesExplorerData();
+      activeTypesExplorerMatchByName = buildTypesExplorerMatchIndex();
+      renderTypesExplorerTags();
+      updateTypesExplorerScopeButtons();
+      if (table) {
+        table.draw();
+      }
+      syncTypesExplorerPath();
+    };
+    var buildTypesExplorerMatchIndex = function() {
+      if (!hasTypesExplorerSelection()) return null;
+      var requiredUsage = {};
+      var requiredValue = {};
+      (typesExplorerState.usage || []).forEach(function(tag) {
+        requiredUsage[String(tag)] = true;
+      });
+      (typesExplorerState.value || []).forEach(function(tag) {
+        requiredValue[String(tag)] = true;
+      });
+      var match = {};
+      Object.keys(typesExplorerByObject).forEach(function(objKey) {
+        var info = typesExplorerByObject[objKey];
+        if (!info) return;
+        var ok = true;
+        var usageKeys = Object.keys(requiredUsage);
+        for (var i = 0; i < usageKeys.length; i += 1) {
+          if (!info.usage[usageKeys[i]]) {
+            ok = false;
+            break;
+          }
+        }
+        if (!ok) return;
+        var valueKeys = Object.keys(requiredValue);
+        for (var j = 0; j < valueKeys.length; j += 1) {
+          if (!info.value[valueKeys[j]]) {
+            ok = false;
+            break;
+          }
+        }
+        if (ok) {
+          match[objKey] = true;
+        }
+      });
+      return match;
+    };
+    var toggleTypesExplorerTag = function(kind, tagName) {
+      var key = kind === 'value' ? 'value' : 'usage';
+      var current = Array.isArray(typesExplorerState[key]) ? typesExplorerState[key].slice() : [];
+      var index = current.indexOf(tagName);
+      if (index >= 0) {
+        current.splice(index, 1);
+      } else {
+        current.push(tagName);
+      }
+      current.sort(function(a, b) { return a.localeCompare(b); });
+      typesExplorerState[key] = current;
+      activeTypesExplorerMatchByName = buildTypesExplorerMatchIndex();
+      if (activeTypesTagFilter) {
+        activeTypesTagFilter = null;
+        activeTypesTagMatchByName = null;
+        history.replaceState({}, '', buildTypesTagFilterUrl(null));
+      }
+      if (table) {
+        table.draw();
+      }
+      syncTypesExplorerPath();
+    };
+    var updateTypesExplorerPanelVisibility = function() {
+      if (!typesExplorerPanelEl) return;
+      var visible = activeCollectionFilter === 'types_explorer' || hasTypesExplorerSelection();
+      typesExplorerPanelEl.classList.toggle('visible', !!visible);
+    };
+    var renderTypesExplorerTags = function() {
+      if (!typesExplorerUsageTagsEl || !typesExplorerValueTagsEl) return;
+      var usageSelected = {};
+      var valueSelected = {};
+      (typesExplorerState.usage || []).forEach(function(tag) { usageSelected[tag] = true; });
+      (typesExplorerState.value || []).forEach(function(tag) { valueSelected[tag] = true; });
+      typesExplorerUsageTagsEl.innerHTML = typesExplorerTags.usage.map(function(tag) {
+        var active = usageSelected[tag] ? ' is-active' : '';
+        return '<button class="types-explorer__tag' + active + '" type="button" data-types-explorer-kind="usage" data-types-explorer-tag="' + escapeHtml(tag) + '">' + escapeHtml(tag) + '</button>';
+      }).join('');
+      typesExplorerValueTagsEl.innerHTML = typesExplorerTags.value.map(function(tag) {
+        var active = valueSelected[tag] ? ' is-active' : '';
+        return '<button class="types-explorer__tag' + active + '" type="button" data-types-explorer-kind="value" data-types-explorer-tag="' + escapeHtml(tag) + '">' + escapeHtml(tag) + '</button>';
+      }).join('');
+      updateTypesExplorerScopeButtons();
+      updateTypesExplorerPanelVisibility();
+    };
+    var resetTypesExplorerFilter = function() {
+      typesExplorerMaps.chernarus = true;
+      typesExplorerMaps.livonia = true;
+      typesExplorerMaps.sakhal = true;
+      typesExplorerState.usage = [];
+      typesExplorerState.value = [];
+      activeTypesExplorerMatchByName = null;
+      rebuildTypesExplorerData();
+      if (activeTypesTagFilter) {
+        activeTypesTagFilter = null;
+        activeTypesTagMatchByName = null;
+        history.replaceState({}, '', buildTypesTagFilterUrl(null));
+      }
+      if (table) {
+        table.draw();
+      }
+      updateTypesTagFilterNotice();
+      renderTypesExplorerTags();
+      syncTypesExplorerPath();
     };
     var updateTypesTagFilterNotice = function() {
       if (!linkedFilterNoticeEl || !linkedFilterNoticeTextEl) return;
@@ -3167,6 +3546,61 @@
       }
       return nextUrl.toString();
     };
+    var parseTypesExplorerList = function(rawValue) {
+      if (!rawValue) return [];
+      var seen = {};
+      return String(rawValue)
+        .split(',')
+        .map(function(part) { return part.trim(); })
+        .filter(function(part) {
+          if (!part) return false;
+          var key = part.toLowerCase();
+          if (seen[key]) return false;
+          seen[key] = true;
+          return true;
+        });
+    };
+    var buildTypesExplorerUrl = function() {
+      var nextUrl = new URL(window.location.toString());
+      nextUrl.pathname = '/';
+      nextUrl.searchParams.delete('id');
+      nextUrl.searchParams.delete('object');
+      nextUrl.searchParams.delete('version');
+      nextUrl.searchParams.delete('types_map');
+      nextUrl.searchParams.delete('types_kind');
+      nextUrl.searchParams.delete('types_tag');
+      nextUrl.searchParams.delete('types');
+      nextUrl.searchParams.delete('types_maps');
+      nextUrl.searchParams.delete('types_usage');
+      nextUrl.searchParams.delete('types_value');
+      var hasTypesExplorer = activeCollectionFilter === 'types_explorer' || hasTypesExplorerSelection();
+      if (!hasTypesExplorer) {
+        return nextUrl.toString();
+      }
+      nextUrl.searchParams.set('types', '1');
+      var activeMaps = Object.keys(typesExplorerMaps).filter(function(key) { return !!typesExplorerMaps[key]; });
+      if (activeMaps.length && activeMaps.length < 3) {
+        nextUrl.searchParams.set('types_maps', activeMaps.join(','));
+      }
+      if (typesExplorerState.usage && typesExplorerState.usage.length) {
+        nextUrl.searchParams.set('types_usage', typesExplorerState.usage.join(','));
+      }
+      if (typesExplorerState.value && typesExplorerState.value.length) {
+        nextUrl.searchParams.set('types_value', typesExplorerState.value.join(','));
+      }
+      return nextUrl.toString();
+    };
+    var normalizePathname = function(pathname) {
+      var path = String(pathname || '/').trim();
+      if (!path) path = '/';
+      if (path.length > 1) {
+        path = path.replace(/\/+$/, '');
+      }
+      return path;
+    };
+    var syncTypesExplorerPath = function() {
+      history.replaceState({}, '', buildTypesExplorerUrl());
+    };
     var snapToTopOfMainView = function() {
       window.scrollTo({ top: 0, behavior: 'auto' });
     };
@@ -3181,6 +3615,12 @@
         activeTypesTagMatchByName = null;
         history.replaceState({}, '', buildTypesTagFilterUrl(null));
       } else {
+        if (hasTypesExplorerSelection()) {
+          typesExplorerState.usage = [];
+          typesExplorerState.value = [];
+          activeTypesExplorerMatchByName = null;
+          renderTypesExplorerTags();
+        }
         activeTypesTagFilter = { map: map, kind: kind, name: name };
         activeTypesTagMatchByName = buildTypesTagMatchIndex(activeTypesTagFilter);
         if (table) {
@@ -3197,9 +3637,39 @@
       }
       updateTypesTagFilterNotice();
     };
+    var openTypesExplorerFromTag = function(mapKey, tagKind, tagName, shouldSnapToTop) {
+      var map = String(mapKey || '').trim().toLowerCase();
+      var kind = String(tagKind || '').trim().toLowerCase();
+      var name = String(tagName || '').trim();
+      if (!map || !name) return;
+      if (kind !== 'usage' && kind !== 'value') return;
+      activeTypesTagFilter = null;
+      activeTypesTagMatchByName = null;
+      history.replaceState({}, '', buildTypesTagFilterUrl(null));
+      activeCollectionFilter = 'types_explorer';
+      setActiveFolderFilter('', false);
+      Object.keys(typesExplorerMaps).forEach(function(key) {
+        typesExplorerMaps[key] = key === map;
+      });
+      rebuildTypesExplorerData();
+      typesExplorerState.usage = kind === 'usage' ? [name] : [];
+      typesExplorerState.value = kind === 'value' ? [name] : [];
+      activeTypesExplorerMatchByName = buildTypesExplorerMatchIndex();
+      renderTypesExplorerTags();
+      syncTypesExplorerPath();
+      if (shouldSnapToTop) {
+        snapToTopOfMainView();
+      }
+      if (table) {
+        table.draw();
+      }
+      updateTypesTagFilterNotice();
+    };
     $.fn.dataTable.ext.search.push(function(settings, _data, dataIndex) {
-      if (!activeTypesTagFilter || !activeTypesTagFilter.map || !activeTypesTagFilter.kind || !activeTypesTagFilter.name) return true;
       if (!table || settings.nTable !== $tableEl.get(0)) return true;
+      var hasSingleTag = !!(activeTypesTagFilter && activeTypesTagFilter.map && activeTypesTagFilter.kind && activeTypesTagFilter.name);
+      var hasExplorerTags = hasTypesExplorerSelection();
+      if (!hasSingleTag && !hasExplorerTags) return true;
       var rowData = settings.aoData && settings.aoData[dataIndex] ? settings.aoData[dataIndex]._aData : null;
       if (!rowData) {
         rowData = table.row(dataIndex).data();
@@ -3207,12 +3677,24 @@
       if (!rowData) return false;
       var objKey = String(getObjectName(rowData) || '').trim().toLowerCase();
       if (!objKey) return false;
-      if (activeTypesTagMatchByName) {
-        return !!activeTypesTagMatchByName[objKey];
+      if (hasSingleTag) {
+        if (!activeTypesTagMatchByName) {
+          var fallback = buildTypesTagMatchIndex(activeTypesTagFilter);
+          activeTypesTagMatchByName = fallback || {};
+        }
+        if (!activeTypesTagMatchByName[objKey]) {
+          return false;
+        }
       }
-      var fallback = buildTypesTagMatchIndex(activeTypesTagFilter);
-      activeTypesTagMatchByName = fallback || {};
-      return !!activeTypesTagMatchByName[objKey];
+      if (hasExplorerTags) {
+        if (!activeTypesExplorerMatchByName) {
+          activeTypesExplorerMatchByName = buildTypesExplorerMatchIndex() || {};
+        }
+        if (!activeTypesExplorerMatchByName[objKey]) {
+          return false;
+        }
+      }
+      return true;
     });
     $.fn.dataTable.ext.search.push(function(settings, _data, dataIndex) {
       if (!table || settings.nTable !== $tableEl.get(0)) return true;
@@ -3311,12 +3793,12 @@
         if (typesPill) {
           e.preventDefault();
           e.stopPropagation();
-        setTypesTagFilter(
-          typesPill.getAttribute('data-types-map') || '',
-          typesPill.getAttribute('data-types-kind') || '',
-          typesPill.getAttribute('data-types-name') || '',
-          true
-        );
+          openTypesExplorerFromTag(
+            typesPill.getAttribute('data-types-map') || '',
+            typesPill.getAttribute('data-types-kind') || '',
+            typesPill.getAttribute('data-types-name') || '',
+            true
+          );
           return;
         }
         var pathTrigger = e.target.closest('[data-action="focus-folder-path"]');
@@ -4688,6 +5170,7 @@
     loadMapTypes('chernarus', '/data/types/types_chernarus.xml');
     loadMapTypes('livonia', '/data/types/types_livonia.xml');
     loadMapTypes('sakhal', '/data/types/types_sakhal.xml');
+    renderTypesExplorerTags();
 
     var buildPinnedItemFromCell = function($td) {
       return {
@@ -5897,6 +6380,14 @@
     };
 
     var searchParams = new URLSearchParams(window.location.search);
+    var typesExplorerMapsParam = parseTypesExplorerList(searchParams.get('types_maps'));
+    var typesExplorerUsageParam = parseTypesExplorerList(searchParams.get('types_usage'));
+    var typesExplorerValueParam = parseTypesExplorerList(searchParams.get('types_value'));
+    var isTypesExplorerPath = searchParams.has('types')
+      || typesExplorerMapsParam.length > 0
+      || typesExplorerUsageParam.length > 0
+      || typesExplorerValueParam.length > 0
+      || normalizePathname(window.location.pathname) === '/types-explorer';
     var normalizeTypesMapParam = function(value) {
       var key = String(value || '').trim().toLowerCase();
       return (key === 'chernarus' || key === 'livonia' || key === 'sakhal') ? key : '';
@@ -6040,6 +6531,29 @@
       } else {
         treatIdListAsSearchFolders = false;
         highlightedFolderPath = '';
+        if (isTypesExplorerPath) {
+          activeCollectionFilter = 'types_explorer';
+          if (typesExplorerMapsParam.length) {
+            Object.keys(typesExplorerMaps).forEach(function(key) {
+              typesExplorerMaps[key] = typesExplorerMapsParam.indexOf(key) !== -1;
+            });
+            if (!Object.keys(typesExplorerMaps).some(function(key) { return !!typesExplorerMaps[key]; })) {
+              typesExplorerMaps.chernarus = true;
+              typesExplorerMaps.livonia = true;
+              typesExplorerMaps.sakhal = true;
+            }
+          }
+          if (typesExplorerUsageParam.length || typesExplorerValueParam.length) {
+            typesExplorerState.usage = typesExplorerUsageParam.slice();
+            typesExplorerState.value = typesExplorerValueParam.slice();
+          }
+          rebuildTypesExplorerData();
+          activeTypesExplorerMatchByName = buildTypesExplorerMatchIndex();
+          renderTypesExplorerTags();
+          setActiveFolderFilter('', false);
+          updateTypesExplorerPanelVisibility();
+          syncTypesExplorerPath();
+        }
       }
     };
 
@@ -6085,6 +6599,15 @@
         if (nextPath === '__presets__') {
           activeCollectionFilter = activeCollectionFilter === 'presets' ? '' : 'presets';
           setActiveFolderFilter('', true);
+          updateTypesExplorerPanelVisibility();
+          syncTypesExplorerPath();
+          return;
+        }
+        if (nextPath === '__types_explorer__') {
+          activeCollectionFilter = activeCollectionFilter === 'types_explorer' ? '' : 'types_explorer';
+          setActiveFolderFilter('', true);
+          updateTypesExplorerPanelVisibility();
+          syncTypesExplorerPath();
           return;
         }
         activeCollectionFilter = '';
@@ -6095,6 +6618,7 @@
             folderTreeExpanded[nextPath] = !folderTreeExpanded[nextPath];
           }
         }
+        syncTypesExplorerPath();
         setActiveFolderFilter(nextPath, true);
       });
     }
@@ -6118,12 +6642,27 @@
     }
     if (folderSidebarClearEl) {
       folderSidebarClearEl.addEventListener('click', function() {
-        activeCollectionFilter = '';
+        var keepAppCollection = activeCollectionFilter === 'presets' || activeCollectionFilter === 'types_explorer';
+        if (!keepAppCollection) {
+          activeCollectionFilter = '';
+        }
         activeFolderFilter = '';
         highlightedFolderPath = '';
         treatIdListAsSearchFolders = false;
         activeTypesTagFilter = null;
         activeTypesTagMatchByName = null;
+        if (activeCollectionFilter === 'types_explorer') {
+          typesExplorerState.usage = [];
+          typesExplorerState.value = [];
+          activeTypesExplorerMatchByName = null;
+          rebuildTypesExplorerData();
+          renderTypesExplorerTags();
+        } else if (!keepAppCollection) {
+          typesExplorerState.usage = [];
+          typesExplorerState.value = [];
+          activeTypesExplorerMatchByName = null;
+          renderTypesExplorerTags();
+        }
         if (folderSidebarSearchEl) {
           folderSidebarSearchEl.value = '';
         }
@@ -6140,6 +6679,7 @@
         if (linkedFilterNoticeEl) linkedFilterNoticeEl.classList.remove('visible');
         var cleanUrl = window.location.origin + window.location.pathname;
         window.history.replaceState(null, '', cleanUrl);
+        syncTypesExplorerPath();
       });
     }
     if (folderSidebarSearchEl) {
@@ -6148,12 +6688,53 @@
         var query = String(folderSidebarSearchEl.value || '');
         if (!query.trim() && (activeFolderFilter || activeCollectionFilter)) {
           activeCollectionFilter = '';
+          syncTypesExplorerPath();
           setActiveFolderFilter('', false);
         }
         table.search(query).draw();
       };
       folderSidebarSearchEl.addEventListener('input', applyFolderSidebarSearch);
       folderSidebarSearchEl.addEventListener('search', applyFolderSidebarSearch);
+    }
+    if (typesExplorerPanelEl) {
+      typesExplorerPanelEl.addEventListener('click', function(e) {
+        var scopeBtn = e.target.closest('[data-types-scope]');
+        if (scopeBtn) {
+          e.preventDefault();
+          var mapKey = String(scopeBtn.getAttribute('data-types-scope') || '').toLowerCase();
+          toggleTypesExplorerMap(mapKey);
+          return;
+        }
+        var tagBtn = e.target.closest('[data-types-explorer-kind][data-types-explorer-tag]');
+        if (!tagBtn) return;
+        e.preventDefault();
+        var kind = String(tagBtn.getAttribute('data-types-explorer-kind') || '').toLowerCase();
+        var tagName = String(tagBtn.getAttribute('data-types-explorer-tag') || '').trim();
+        if (!tagName) return;
+        if (activeCollectionFilter !== 'types_explorer') {
+          activeCollectionFilter = 'types_explorer';
+          setActiveFolderFilter('', false);
+          syncTypesExplorerPath();
+        }
+        toggleTypesExplorerTag(kind, tagName);
+        renderTypesExplorerTags();
+      });
+    }
+    if (typesExplorerResetEl) {
+      typesExplorerResetEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        resetTypesExplorerFilter();
+      });
+    }
+    if (typesExplorerCopyLinkEl) {
+      typesExplorerCopyLinkEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        syncTypesExplorerPath();
+        navigator.clipboard.writeText(buildTypesExplorerUrl());
+        var original = typesExplorerCopyLinkEl.textContent;
+        typesExplorerCopyLinkEl.textContent = 'Copied';
+        setTimeout(function() { typesExplorerCopyLinkEl.textContent = original; }, 1200);
+      });
     }
 
     var resetFilters = function() {
