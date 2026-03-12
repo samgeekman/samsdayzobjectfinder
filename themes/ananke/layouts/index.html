@@ -7745,27 +7745,20 @@
     }
     if (folderSidebarClearEl) {
       folderSidebarClearEl.addEventListener('click', function() {
-        var keepAppCollection = activeCollectionFilter === 'presets' || activeCollectionFilter === 'types_explorer' || activeCollectionFilter === 'object_map';
-        if (!keepAppCollection) {
-          activeCollectionFilter = '';
-        }
+        var currentAppCollection = activeCollectionFilter;
+        var keepAppCollection = currentAppCollection === 'presets' || currentAppCollection === 'types_explorer' || currentAppCollection === 'object_map';
+        activeCollectionFilter = keepAppCollection ? currentAppCollection : '';
         activeFolderFilter = '';
         highlightedFolderPath = '';
+        folderTreeExpanded = { dz: true };
         treatIdListAsSearchFolders = false;
         activeTypesTagFilter = null;
         activeTypesTagMatchByName = null;
-        if (activeCollectionFilter === 'types_explorer') {
-          typesExplorerState.usage = [];
-          typesExplorerState.value = [];
-          activeTypesExplorerMatchByName = null;
-          rebuildTypesExplorerData();
-          renderTypesExplorerTags();
-        } else if (!keepAppCollection) {
-          typesExplorerState.usage = [];
-          typesExplorerState.value = [];
-          activeTypesExplorerMatchByName = null;
-          renderTypesExplorerTags();
-        }
+        typesExplorerState.usage = [];
+        typesExplorerState.value = [];
+        activeTypesExplorerMatchByName = null;
+        rebuildTypesExplorerData();
+        renderTypesExplorerTags();
         if (folderSidebarSearchEl) {
           folderSidebarSearchEl.value = '';
         }
