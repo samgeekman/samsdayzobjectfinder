@@ -2516,6 +2516,11 @@
   <a id="linkedFilterResetLink" href="#">Reset filter</a>
   <a id="linkedFilterCopyLink" href="#">Copy link</a>
 </div>
+<div id="pathFilterNotice" class="version-filter-notice" role="status" aria-live="polite">
+  <span id="pathFilterNoticeText">Filtering linked paths -</span>
+  <a id="pathFilterResetLink" href="#">Reset filter</a>
+  <a id="pathFilterCopyLink" href="#">Copy link</a>
+</div>
 <div id="presetsGuideNotice" class="version-filter-notice" role="status" aria-live="polite">
   <span>Press the 🏗️ icon on a preset to copy it to your clipboard. Open DayZ Editor and press Ctrl+V to paste to your cursor.</span>
 </div>
@@ -3050,6 +3055,7 @@
       if (shouldDraw !== false && table) {
         table.draw();
       }
+      updatePathFilterNotice();
     };
     var updatePresetsGuideNotice = function() {
       if (!presetsGuideNoticeEl) return;
@@ -4216,6 +4222,7 @@
           objectMapBackdropGroupEl.appendChild(tile);
         }
       }
+      updatePathFilterNotice();
     };
     var getObjectMapRows = function() {
       if (!table) return [];
@@ -4651,6 +4658,15 @@
       var hasLinkedIds = new URL(window.location).searchParams.getAll('id').length > 0;
       if (!hasLinkedIds) {
         linkedFilterNoticeEl.classList.remove('visible');
+      }
+    };
+    var updatePathFilterNotice = function() {
+      if (!pathFilterNoticeEl || !pathFilterNoticeTextEl) return;
+      if (activeFolderFilter) {
+        pathFilterNoticeTextEl.textContent = 'Filtering linked paths -';
+        pathFilterNoticeEl.classList.add('visible');
+      } else {
+        pathFilterNoticeEl.classList.remove('visible');
       }
     };
     var buildVersionFilterUrl = function(version) {
@@ -7635,6 +7651,10 @@
     var linkedFilterNoticeTextEl = document.getElementById('linkedFilterNoticeText');
     var linkedFilterResetLinkEl = document.getElementById('linkedFilterResetLink');
     var linkedFilterCopyLinkEl = document.getElementById('linkedFilterCopyLink');
+    var pathFilterNoticeEl = document.getElementById('pathFilterNotice');
+    var pathFilterNoticeTextEl = document.getElementById('pathFilterNoticeText');
+    var pathFilterResetLinkEl = document.getElementById('pathFilterResetLink');
+    var pathFilterCopyLinkEl = document.getElementById('pathFilterCopyLink');
     var presetsGuideNoticeEl = document.getElementById('presetsGuideNotice');
     var appliedUrlState = false;
 
@@ -7918,40 +7938,44 @@
         syncFolderBulkStickyMode();
       }, { passive: true });
     }
+    var runResetView = function() {
+      var currentAppCollection = activeCollectionFilter;
+      var keepAppCollection = currentAppCollection === 'presets' || currentAppCollection === 'types_explorer' || currentAppCollection === 'object_map';
+      activeCollectionFilter = keepAppCollection ? currentAppCollection : '';
+      activeFolderFilter = '';
+      highlightedFolderPath = '';
+      folderTreeExpanded = { dz: true };
+      treatIdListAsSearchFolders = false;
+      activeTypesTagFilter = null;
+      activeTypesTagMatchByName = null;
+      typesExplorerState.usage = [];
+      typesExplorerState.value = [];
+      activeTypesExplorerMatchByName = null;
+      rebuildTypesExplorerData();
+      renderTypesExplorerTags();
+      if (folderSidebarSearchEl) {
+        folderSidebarSearchEl.value = '';
+      }
+      if (filterConsoleEl) {
+        filterConsoleEl.value = 'all';
+      }
+      if (table) {
+        table.search('');
+        table.columns().search('');
+        table.draw();
+      }
+      updateTypesTagFilterNotice();
+      if (versionFilterNoticeEl) versionFilterNoticeEl.classList.remove('visible');
+      if (linkedFilterNoticeEl) linkedFilterNoticeEl.classList.remove('visible');
+      if (pathFilterNoticeEl) pathFilterNoticeEl.classList.remove('visible');
+      var cleanUrl = window.location.origin + window.location.pathname;
+      window.history.replaceState(null, '', cleanUrl);
+      syncTypesExplorerPath();
+      updateObjectMapPanelVisibility();
+    };
     if (folderSidebarClearEl) {
       folderSidebarClearEl.addEventListener('click', function() {
-        var currentAppCollection = activeCollectionFilter;
-        var keepAppCollection = currentAppCollection === 'presets' || currentAppCollection === 'types_explorer' || currentAppCollection === 'object_map';
-        activeCollectionFilter = keepAppCollection ? currentAppCollection : '';
-        activeFolderFilter = '';
-        highlightedFolderPath = '';
-        folderTreeExpanded = { dz: true };
-        treatIdListAsSearchFolders = false;
-        activeTypesTagFilter = null;
-        activeTypesTagMatchByName = null;
-        typesExplorerState.usage = [];
-        typesExplorerState.value = [];
-        activeTypesExplorerMatchByName = null;
-        rebuildTypesExplorerData();
-        renderTypesExplorerTags();
-        if (folderSidebarSearchEl) {
-          folderSidebarSearchEl.value = '';
-        }
-        if (filterConsoleEl) {
-          filterConsoleEl.value = 'all';
-        }
-        if (table) {
-          table.search('');
-          table.columns().search('');
-          table.draw();
-        }
-        updateTypesTagFilterNotice();
-        if (versionFilterNoticeEl) versionFilterNoticeEl.classList.remove('visible');
-        if (linkedFilterNoticeEl) linkedFilterNoticeEl.classList.remove('visible');
-        var cleanUrl = window.location.origin + window.location.pathname;
-        window.history.replaceState(null, '', cleanUrl);
-        syncTypesExplorerPath();
-        updateObjectMapPanelVisibility();
+        runResetView();
       });
     }
     if (folderSidebarSearchEl) {
@@ -8160,14 +8184,10 @@
       objectMapOverlayEl.addEventListener('pointercancel', endObjectMapDrag);
     }
 
-    var resetFilters = function() {
-      var defaultUrl = window.location.origin + window.location.pathname;
-      window.location.assign(defaultUrl);
-    };
     if (versionFilterResetLinkEl) {
       versionFilterResetLinkEl.addEventListener('click', function(e) {
         e.preventDefault();
-        resetFilters();
+        runResetView();
       });
     }
     if (versionFilterCopyLinkEl) {
@@ -8183,17 +8203,7 @@
     if (linkedFilterResetLinkEl) {
       linkedFilterResetLinkEl.addEventListener('click', function(e) {
         e.preventDefault();
-        if (activeTypesTagFilter) {
-          activeTypesTagFilter = null;
-          activeTypesTagMatchByName = null;
-          history.replaceState({}, '', buildTypesTagFilterUrl(null));
-          if (table) {
-            table.draw();
-          }
-          updateTypesTagFilterNotice();
-          return;
-        }
-        resetFilters();
+        runResetView();
       });
     }
     if (linkedFilterCopyLinkEl) {
@@ -8209,6 +8219,22 @@
         var original = linkedFilterCopyLinkEl.textContent;
         linkedFilterCopyLinkEl.textContent = 'Copied';
         setTimeout(function() { linkedFilterCopyLinkEl.textContent = original; }, 1200);
+      });
+    }
+    if (pathFilterResetLinkEl) {
+      pathFilterResetLinkEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        runResetView();
+      });
+    }
+    if (pathFilterCopyLinkEl) {
+      pathFilterCopyLinkEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        var link = buildFolderPathUrl(activeFolderFilter);
+        navigator.clipboard.writeText(link);
+        var original = pathFilterCopyLinkEl.textContent;
+        pathFilterCopyLinkEl.textContent = 'Copied';
+        setTimeout(function() { pathFilterCopyLinkEl.textContent = original; }, 1200);
       });
     }
 
