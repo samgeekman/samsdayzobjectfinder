@@ -2813,7 +2813,8 @@
       return String(table.search() || '').trim();
     };
     var isFolderTreeInBroadFilterMode = function() {
-      return getCurrentTableSearchValue().length > 0 || treatIdListAsSearchFolders || !!activeTypesTagFilter || hasTypesExplorerSelection();
+      var hasActiveTypesExplorerFilter = activeCollectionFilter === 'types_explorer' && hasTypesExplorerSelection();
+      return getCurrentTableSearchValue().length > 0 || treatIdListAsSearchFolders || !!activeTypesTagFilter || hasActiveTypesExplorerFilter;
     };
     var getDeepestPathPrefix = function(pathValue) {
       var prefixes = extractPathPrefixes(pathValue || '');
@@ -3996,7 +3997,7 @@
     };
     var updateTypesExplorerPanelVisibility = function() {
       if (!typesExplorerPanelEl) return;
-      var visible = activeCollectionFilter === 'types_explorer' || hasTypesExplorerSelection();
+      var visible = activeCollectionFilter === 'types_explorer';
       typesExplorerPanelEl.classList.toggle('visible', !!visible);
     };
     var updateObjectMapPanelVisibility = function() {
@@ -4646,6 +4647,13 @@
       renderTypesExplorerTags();
       syncTypesExplorerPath();
     };
+    var clearTypesExplorerSelections = function() {
+      typesExplorerState.usage = [];
+      typesExplorerState.value = [];
+      activeTypesExplorerMatchByName = null;
+      rebuildTypesExplorerData();
+      renderTypesExplorerTags();
+    };
     var updateTypesTagFilterNotice = function() {
       if (!linkedFilterNoticeEl || !linkedFilterNoticeTextEl) return;
       if (activeTypesTagFilter && activeTypesTagFilter.name && activeTypesTagFilter.kind && activeTypesTagFilter.map) {
@@ -4749,7 +4757,7 @@
         nextUrl.searchParams.set('presets', '1');
         return nextUrl.toString();
       }
-      var hasTypesExplorer = activeCollectionFilter === 'types_explorer' || hasTypesExplorerSelection();
+      var hasTypesExplorer = activeCollectionFilter === 'types_explorer';
       if (!hasTypesExplorer) {
         return nextUrl.toString();
       }
@@ -4866,7 +4874,7 @@
     $.fn.dataTable.ext.search.push(function(settings, _data, dataIndex) {
       if (!table || settings.nTable !== $tableEl.get(0)) return true;
       var hasSingleTag = !!(activeTypesTagFilter && activeTypesTagFilter.map && activeTypesTagFilter.kind && activeTypesTagFilter.name);
-      var hasExplorerTags = hasTypesExplorerSelection();
+      var hasExplorerTags = activeCollectionFilter === 'types_explorer' && hasTypesExplorerSelection();
       if (!hasSingleTag && !hasExplorerTags) return true;
       var rowData = settings.aoData && settings.aoData[dataIndex] ? settings.aoData[dataIndex]._aData : null;
       if (!rowData) {
@@ -7874,6 +7882,9 @@
         e.preventDefault();
         var nextPath = normalizeFilterText(folderBtn.getAttribute('data-folder-path') || '');
         if (nextPath === '__presets__') {
+          if (activeCollectionFilter === 'types_explorer') {
+            clearTypesExplorerSelections();
+          }
           activeCollectionFilter = activeCollectionFilter === 'presets' ? '' : 'presets';
           setActiveFolderFilter('', true);
           updateTypesExplorerPanelVisibility();
@@ -7881,6 +7892,9 @@
           return;
         }
         if (nextPath === '__database__') {
+          if (activeCollectionFilter === 'types_explorer') {
+            clearTypesExplorerSelections();
+          }
           activeCollectionFilter = '';
           setActiveFolderFilter('', true);
           syncTypesExplorerPath();
@@ -7888,6 +7902,9 @@
           return;
         }
         if (nextPath === '__types_explorer__') {
+          if (activeCollectionFilter === 'types_explorer') {
+            clearTypesExplorerSelections();
+          }
           activeCollectionFilter = activeCollectionFilter === 'types_explorer' ? '' : 'types_explorer';
           setActiveFolderFilter('', true);
           updateTypesExplorerPanelVisibility();
@@ -7895,11 +7912,18 @@
           return;
         }
         if (nextPath === '__object_map__') {
+          if (activeCollectionFilter === 'types_explorer') {
+            clearTypesExplorerSelections();
+          }
           activeCollectionFilter = activeCollectionFilter === 'object_map' ? '' : 'object_map';
           setActiveFolderFilter('', true);
           syncTypesExplorerPath();
           updateObjectMapPanelVisibility();
           return;
+        }
+        if (activeCollectionFilter === 'types_explorer') {
+          clearTypesExplorerSelections();
+          activeCollectionFilter = '';
         }
         if (activeCollectionFilter !== 'object_map' && activeCollectionFilter !== 'types_explorer') {
           activeCollectionFilter = '';
