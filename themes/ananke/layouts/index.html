@@ -624,6 +624,29 @@
   .folder-tree__folder:hover {
     background: var(--bg-soft);
   }
+  .folder-tree__copy-link {
+    margin-left: auto;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.64rem;
+    line-height: 1;
+    padding: 2px 4px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 120ms ease, background-color 120ms ease, border-color 120ms ease;
+    flex: 0 0 auto;
+  }
+  .folder-tree__row:hover .folder-tree__copy-link,
+  .folder-tree__row:focus-within .folder-tree__copy-link {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .folder-tree__copy-link:hover {
+    background: var(--bg-soft);
+  }
   .folder-tree__folder.is-active {
     background: var(--accent);
     border-color: var(--accent);
@@ -1170,6 +1193,32 @@
   }
   .object-focus__meta-path:hover {
     color: var(--accent);
+  }
+  .object-focus__meta-path-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 100%;
+  }
+  .object-focus__meta-path-copy {
+    display: none;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.66rem;
+    font-weight: 600;
+    line-height: 1.15;
+    padding: 2px 6px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .object-focus__meta-row:hover .object-focus__meta-path-copy,
+  .object-focus__meta-path-wrap:focus-within .object-focus__meta-path-copy {
+    display: inline-flex;
+  }
+  .object-focus__meta-path-copy:hover {
+    background: var(--bg-soft);
   }
   .object-focus__section {
     border: 1px solid var(--border);
@@ -2037,7 +2086,7 @@
     height: 18px;
     border-radius: 999px;
     background: #2f7df6;
-    color: #fff;
+    color: #fff !important;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 0.56rem;
     font-weight: 700;
@@ -2274,6 +2323,45 @@
     pointer-events: none;
     box-shadow: var(--shadow-soft);
   }
+  .object-map__copy-coords {
+    position: absolute;
+    top: 38px;
+    right: 8px;
+    z-index: 4;
+    display: none;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.68rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 3px 7px;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.12s ease, box-shadow 0.18s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    opacity: 1 !important;
+  }
+  .object-map__copy-coords.visible {
+    display: inline-flex;
+  }
+  .object-map__copy-coords:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    background-color: var(--accent) !important;
+    color: #1f1f1f !important;
+    border-color: var(--accent) !important;
+    opacity: 1 !important;
+  }
+  .object-map__copy-coords:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    background-color: var(--accent) !important;
+    color: #1f1f1f !important;
+    border-color: var(--accent) !important;
+    opacity: 1 !important;
+  }
   .object-map__note {
     margin-top: 6px;
     text-align: right;
@@ -2407,6 +2495,7 @@
     </svg>
     <div id="objectMapPrompt" class="object-map__prompt">Search or select folders to show on map</div>
     <div id="objectMapStatus" class="object-map__status"></div>
+    <button id="objectMapCopyCoords" class="object-map__copy-coords" type="button">Copy coordinates</button>
     <div id="objectMapTooltip" class="object-map__tooltip" aria-hidden="true"></div>
   </div>
   <div class="object-map__note">Excludes rocks and plants - large object counts may be slow.</div>
@@ -2900,6 +2989,9 @@
             html += '<span class="folder-tree__leaf-icon" aria-hidden="true">▸</span>';
           }
           html += '<button class="folder-tree__folder' + (isActive ? ' is-active' : '') + (isDimmedForMap ? ' is-dim' : '') + '" type="button" data-folder-path="' + escapeHtml(pathKey) + '" title="' + escapeHtml(child.path) + '">' + escapeHtml(child.name) + '</button>';
+          if (pathKey && pathKey !== 'dz') {
+            html += '<button class="folder-tree__copy-link" type="button" data-folder-copy-link="' + escapeHtml(pathKey) + '" title="Copy folder link">🔗</button>';
+          }
           html += '</div>';
           if (hasChildren) {
             html += '<div class="folder-tree__children"' + (isOpen ? '' : ' hidden') + '>' + renderChildren(child) + '</div>';
@@ -3182,7 +3274,8 @@
       language: {
         lengthMenu: "Show _MENU_ objects",
         search: "Search: ",
-        searchPlaceholder: "'large snow rock', '308 rifles'"
+        searchPlaceholder: "'large snow rock', '308 rifles'",
+        zeroRecords: "No matching objects found."
       }
     });
     
@@ -3251,6 +3344,7 @@
     var objectMapBackdropGroupEl = document.getElementById('objectMapBackdropGroup');
     var objectMapMarkersGroupEl = document.getElementById('objectMapMarkersGroup');
     var objectMapStatusEl = document.getElementById('objectMapStatus');
+    var objectMapCopyCoordsEl = document.getElementById('objectMapCopyCoords');
     var objectMapPromptEl = document.getElementById('objectMapPrompt');
     var objectMapTooltipEl = document.getElementById('objectMapTooltip');
     var objectMapToggleChernarusEl = document.getElementById('objectMapToggleChernarus');
@@ -3295,6 +3389,7 @@
     var objectMapActiveMapKey = 'chernarus';
     var objectMapPlacementPathIndex = {};
     var objectMapSummaryText = '';
+    var objectMapSelectedCoordsText = '';
     var objectMapRenderToken = 0;
     var objectMapInteractionRefreshTimer = null;
     var objectMapState = {
@@ -3641,7 +3736,11 @@
       ].map(function(row) {
         var valueHtml = escapeHtml(row.value);
         if (row.label === 'Path' && p3dPath) {
-          valueHtml = '<button class="object-focus__meta-path" type="button" data-action="focus-folder-path" data-folder-path="' + escapeHtml(p3dPath) + '" title="Open folder in tree">' + escapeHtml(p3dPath) + '</button>';
+          valueHtml = ''
+            + '<span class="object-focus__meta-path-wrap">'
+            + '<button class="object-focus__meta-path" type="button" data-action="focus-folder-path" data-folder-path="' + escapeHtml(p3dPath) + '" title="Open folder in tree">' + escapeHtml(p3dPath) + '</button>'
+            + '<button class="object-focus__meta-path-copy" type="button" data-action="copy-folder-link" data-folder-path="' + escapeHtml(p3dPath) + '">Copy link</button>'
+            + '</span>';
         }
         return '' +
           '<div class="object-focus__meta-row">' +
@@ -3930,6 +4029,27 @@
       if (!objectMapStatusEl) return;
       objectMapStatusEl.textContent = text || '';
     };
+    var formatObjectMapCoord = function(value) {
+      var num = Number(value);
+      if (!isFinite(num)) return '0';
+      var rounded = Math.round(num * 100) / 100;
+      if (Math.abs(rounded - Math.round(rounded)) < 0.0001) {
+        return String(Math.round(rounded));
+      }
+      return rounded.toFixed(2).replace(/\.?0+$/, '');
+    };
+    var clearObjectMapSelectedCoords = function() {
+      objectMapSelectedCoordsText = '';
+      if (!objectMapCopyCoordsEl) return;
+      objectMapCopyCoordsEl.classList.remove('visible');
+      objectMapCopyCoordsEl.textContent = 'Copy coordinates';
+    };
+    var setObjectMapSelectedCoords = function(x, y) {
+      objectMapSelectedCoordsText = formatObjectMapCoord(x) + ', ' + formatObjectMapCoord(y);
+      if (!objectMapCopyCoordsEl) return;
+      objectMapCopyCoordsEl.textContent = 'Copy coordinates';
+      objectMapCopyCoordsEl.classList.add('visible');
+    };
     var hideObjectMapTooltip = function() {
       if (!objectMapTooltipEl) return;
       objectMapTooltipEl.classList.remove('visible');
@@ -3974,6 +4094,7 @@
       if (objectMapMarkersGroupEl) {
         objectMapMarkersGroupEl.replaceChildren();
       }
+      clearObjectMapSelectedCoords();
       hideObjectMapTooltip();
     };
     var objectMapViewportRect = function() {
@@ -4251,6 +4372,7 @@
             objectMapInteractionRefreshTimer = null;
           }
           objectMapRenderToken += 1;
+          setObjectMapSelectedCoords(x, y);
           var resolvedId = normalizeObjectId(clickTarget.id || '');
           var resolvedName = String(clickTarget.name || '').trim();
           if (resolvedId && focusSidebarById(resolvedId)) {
@@ -4626,6 +4748,28 @@
       }
       return nextUrl.toString();
     };
+    var buildFolderPathUrl = function(pathValue) {
+      var nextUrl = new URL(window.location.toString());
+      nextUrl.pathname = '/';
+      nextUrl.searchParams.delete('id');
+      nextUrl.searchParams.delete('object');
+      nextUrl.searchParams.delete('version');
+      nextUrl.searchParams.delete('maps');
+      nextUrl.searchParams.delete('presets');
+      nextUrl.searchParams.delete('types');
+      nextUrl.searchParams.delete('types_maps');
+      nextUrl.searchParams.delete('types_usage');
+      nextUrl.searchParams.delete('types_value');
+      nextUrl.searchParams.delete('types_map');
+      nextUrl.searchParams.delete('types_kind');
+      nextUrl.searchParams.delete('types_tag');
+      nextUrl.searchParams.delete('path');
+      var normalizedPath = normalizeFilterText(pathValue || '');
+      if (normalizedPath) {
+        nextUrl.searchParams.set('path', normalizedPath);
+      }
+      return nextUrl.toString();
+    };
     var normalizePathname = function(pathname) {
       var path = String(pathname || '/').trim();
       if (!path) path = '/';
@@ -4849,6 +4993,18 @@
           return;
         }
         var pathTrigger = e.target.closest('[data-action="focus-folder-path"]');
+        var copyPathTrigger = e.target.closest('[data-action="copy-folder-link"]');
+        if (copyPathTrigger) {
+          e.preventDefault();
+          e.stopPropagation();
+          var copyPath = String(copyPathTrigger.getAttribute('data-folder-path') || '');
+          var link = buildFolderPathUrl(copyPath);
+          navigator.clipboard.writeText(link);
+          var originalText = copyPathTrigger.textContent;
+          copyPathTrigger.textContent = 'Copied';
+          setTimeout(function() { copyPathTrigger.textContent = originalText; }, 1200);
+          return;
+        }
         if (pathTrigger) {
           e.preventDefault();
           e.stopPropagation();
@@ -7463,6 +7619,7 @@
     var objectIdParams = searchParams.getAll('id').map(function(value) {
       return normalizeObjectId(value);
     }).filter(Boolean);
+    var folderPathParam = normalizeFilterText(searchParams.get('path') || '');
     var mapsAppParam = ['1', 'true', 'yes'].indexOf(String(searchParams.get('maps') || '').trim().toLowerCase()) !== -1;
     var presetsAppParam = ['1', 'true', 'yes'].indexOf(String(searchParams.get('presets') || '').trim().toLowerCase()) !== -1;
     var objectParam = searchParams.get('object');
@@ -7586,6 +7743,12 @@
         focusById(objectIdParams[0]);
       } else if (objectIdParams.length > 1) {
         // Multi-ID links represent a pinned collection, no single focus target.
+      } else if (folderPathParam) {
+        treatIdListAsSearchFolders = false;
+        activeCollectionFilter = '';
+        highlightedFolderPath = folderPathParam;
+        expandFolderTreeForPath(folderPathParam);
+        setActiveFolderFilter(folderPathParam, true);
       } else if (objectParam) {
         treatIdListAsSearchFolders = false;
         highlightedFolderPath = '';
@@ -7661,6 +7824,18 @@
     });
     if (folderTreeEl) {
       folderTreeEl.addEventListener('click', function(e) {
+        var copyLinkBtn = e.target.closest('[data-folder-copy-link]');
+        if (copyLinkBtn) {
+          e.preventDefault();
+          e.stopPropagation();
+          var copyPath = normalizeFilterText(copyLinkBtn.getAttribute('data-folder-copy-link') || '');
+          if (!copyPath) return;
+          navigator.clipboard.writeText(buildFolderPathUrl(copyPath));
+          var original = copyLinkBtn.textContent;
+          copyLinkBtn.textContent = '✔';
+          setTimeout(function() { copyLinkBtn.textContent = original; }, 900);
+          return;
+        }
         var toggleBtn = e.target.closest('[data-folder-toggle]');
         if (toggleBtn) {
           e.preventDefault();
@@ -7862,6 +8037,18 @@
         var original = typesExplorerDownloadCurrentEl.textContent;
         typesExplorerDownloadCurrentEl.textContent = downloaded ? 'Downloaded' : 'No types in view';
         setTimeout(function() { typesExplorerDownloadCurrentEl.textContent = original; }, 1200);
+      });
+    }
+    if (objectMapCopyCoordsEl) {
+      objectMapCopyCoordsEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (!objectMapSelectedCoordsText) return;
+        navigator.clipboard.writeText(objectMapSelectedCoordsText);
+        var original = objectMapCopyCoordsEl.textContent;
+        objectMapCopyCoordsEl.textContent = 'Copied';
+        setTimeout(function() {
+          objectMapCopyCoordsEl.textContent = original;
+        }, 1200);
       });
     }
     if (objectMapPanelEl) {
