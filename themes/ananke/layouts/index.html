@@ -78,6 +78,68 @@
     background-color: var(--card);
     box-shadow: none;
   }
+  .collections-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card);
+    box-shadow: var(--shadow-soft);
+  }
+  .collections-nav__label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .collections-nav__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    flex: 1 1 auto;
+  }
+  .collections-nav__btn {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  .collections-nav__btn:hover {
+    background: var(--bg-soft);
+  }
+  .collections-nav__btn.is-active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #111;
+  }
+  .collections-nav__folder {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 260px;
+    margin-left: auto;
+  }
+  .collections-nav__folder label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .collections-nav__folder select {
+    min-width: 220px;
+    max-width: min(440px, 45vw);
+    border-radius: 4px;
+  }
   .version-filter-notice {
     display: none;
     width: fit-content;
@@ -115,6 +177,11 @@
     align-items: center;
     gap: 10px;
   }
+  #filters .dataTables_length {
+    float: none !important;
+    text-align: left;
+    margin-right: 0;
+  }
   .dataTables_length label,
   .dataTables_filter label {
     display: inline-flex;
@@ -136,6 +203,13 @@
   .dataTables_info {
     border: none !important;
   }
+  #dayzObjects_wrapper .dataTables_filter {
+    display: none !important;
+  }
+  #dayzObjects_wrapper .dataTables_length {
+    float: none !important;
+    text-align: left;
+  }
   #dayzObjects_filter input {
     width: 250px;
     max-width: 100%;
@@ -147,6 +221,18 @@
     #filters {
       flex-direction: column;
       align-items: stretch;
+    }
+    .collections-nav {
+      align-items: stretch;
+    }
+    .collections-nav__folder {
+      margin-left: 0;
+      width: 100%;
+    }
+    .collections-nav__folder select {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
     }
     #filters label,
     #filters select {
@@ -328,20 +414,6 @@
     cursor: pointer;
     font-size: 0.7rem;
   }
-
-  
-  #togglePresets {
-    padding: 8px 12px;
-    font-size: 0.95rem;
-  }
-
-  #togglePresets.active {
-    background-color: var(--accent);
-    color: #111;
-    border-color: var(--accent);
-  }
-
-  
   @keyframes flash-highlight {
     0% { background-color: rgba(242, 183, 0, 0.28); }
     100% { background-color: transparent; }
@@ -377,15 +449,201 @@
     gap: 14px;
     align-items: flex-start;
     padding-right: 404px;
+    padding-left: 236px;
   }
   .objects-layout.sidebar-collapsed {
     padding-right: 70px;
+    padding-left: 236px;
   }
 
   .objects-layout #dayzObjects_wrapper {
     flex: 1;
     width: auto !important;
     margin: 0;
+  }
+  .folder-sidebar {
+    width: 220px;
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card);
+    box-shadow: var(--shadow-soft);
+    position: fixed;
+    top: 135px;
+    left: 2.5%;
+    flex: 0 0 220px;
+    z-index: 5;
+  }
+  .folder-sidebar__controls {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: var(--card);
+    overflow: visible;
+  }
+  .folder-sidebar__controls::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -14px;
+    height: 14px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(20, 26, 34, 0.16), rgba(20, 26, 34, 0));
+  }
+  .folder-sidebar__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-soft);
+  }
+  .folder-sidebar__search {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    background: var(--card);
+  }
+  .folder-sidebar__console {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-soft);
+  }
+  .folder-sidebar__console label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .folder-sidebar__console select {
+    flex: 1;
+    width: 100%;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    background: var(--input-bg);
+    color: var(--text);
+    font-size: 0.72rem;
+    padding: 4px 6px;
+  }
+  .folder-sidebar__actions {
+    display: flex;
+    gap: 6px;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    background: var(--card);
+  }
+  .folder-sidebar__actions .folder-sidebar__clear {
+    flex: 1;
+    text-align: center;
+  }
+  .folder-sidebar__search input {
+    width: 100%;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    background: var(--input-bg);
+    color: var(--text);
+    font-size: 0.76rem;
+    padding: 6px 8px;
+  }
+  .folder-sidebar__title {
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .folder-sidebar__clear {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    cursor: pointer;
+  }
+  .folder-sidebar__clear:hover {
+    background: var(--bg-soft);
+  }
+  .folder-tree {
+    padding: 6px 6px 10px 4px;
+  }
+  .folder-tree ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+  }
+  .folder-tree > ul {
+    padding-left: 0;
+  }
+  .folder-tree__row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 2px 0;
+  }
+  .folder-tree__toggle {
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: var(--card);
+    color: var(--muted);
+    font-size: 0.72rem;
+    line-height: 1;
+    padding: 0;
+    cursor: pointer;
+    flex: 0 0 18px;
+  }
+  .folder-tree__folder {
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--text);
+    font-size: 0.84rem;
+    text-align: left;
+    padding: 2px 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .folder-tree__folder:hover {
+    background: var(--bg-soft);
+  }
+  .folder-tree__folder.is-active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #111;
+    font-weight: 700;
+  }
+  .folder-tree__children[hidden] {
+    display: none;
+  }
+  .folder-tree__divider {
+    margin: 6px 0 6px 22px;
+    border-top: 1px solid var(--border);
+  }
+  .folder-tree__leaf-spacer {
+    width: 18px;
+    flex: 0 0 18px;
+  }
+  .folder-tree__leaf-icon {
+    width: 18px;
+    flex: 0 0 18px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.72rem;
+    line-height: 1;
   }
 
   .object-focus {
@@ -1409,19 +1667,35 @@
     .objects-layout {
       flex-direction: column;
       padding-right: 0;
+      padding-left: 0;
+    }
+    .folder-sidebar {
+      width: 100%;
+      min-height: 0;
+      position: static;
+      top: auto;
+      flex: 0 0 auto;
+      order: 0;
+      max-height: 340px;
+      overflow: auto;
+    }
+    .folder-sidebar__controls {
+      position: sticky;
+      top: 0;
     }
     .object-focus {
       width: 100%;
       position: sticky;
       top: auto;
-      order: 2;
+      order: 3;
     }
     .objects-layout #dayzObjects_wrapper {
-      order: 1;
+      order: 2;
       width: 100% !important;
     }
     .objects-layout.sidebar-collapsed {
       padding-right: 0;
+      padding-left: 0;
     }
     .object-focus.collapsed {
       display: none !important;
@@ -1552,21 +1826,7 @@
 </style>
 
 <div id="filters">
-  <label for="filterCategory">Category:</label>
-  <select id="filterCategory">
-    <option value="">All</option>
-  </select>
-
-  <label for="filterConsole">Usable on Console:</label>
-  <select id="filterConsole">
-    <option value="">All</option>
-    <option value="✅">Yes</option>
-    <option value="❌">No</option>
-  </select>
-  <button id="resetFilters" class="pill-button" type="button">Reset filters</button>
-
   <div class="filter-actions">
-    <button id="togglePresets" class="pill-button" type="button">Show presets</button>
     <button id="exportToggle" class="pill-button" type="button" aria-expanded="false" aria-controls="exportPanel">Export data</button>
     <button id="themeToggle" class="pill-button theme-toggle" type="button" aria-live="polite">
       Dark mode
@@ -1605,6 +1865,31 @@
 </div>
 
 <div class="objects-layout">
+  <aside id="folderSidebar" class="folder-sidebar" aria-label="Folder navigation">
+    <div class="folder-sidebar__controls">
+      <div class="folder-sidebar__header">
+        <span id="folderSidebarTitle" class="folder-sidebar__title">0 objects</span>
+        <button id="folderSidebarClear" class="folder-sidebar__clear" type="button">Show all</button>
+      </div>
+      <div class="folder-sidebar__console">
+        <label for="filterConsole">Usable on Console</label>
+        <select id="filterConsole">
+          <option value="">All</option>
+          <option value="✅">Yes</option>
+          <option value="❌">No</option>
+        </select>
+      </div>
+      <div class="folder-sidebar__search">
+        <input id="folderSidebarSearch" type="search" placeholder="Search objects...">
+      </div>
+      <div class="folder-sidebar__actions">
+        <button id="folderSidebarExpandAll" class="folder-sidebar__clear" type="button">Expand all</button>
+        <button id="folderSidebarCollapseAll" class="folder-sidebar__clear" type="button">Collapse all</button>
+      </div>
+    </div>
+    <div id="folderTree" class="folder-tree"></div>
+  </aside>
+
   <table id="dayzObjects" class="display nowrap" style="width:100%">
     <thead>
       <tr>
@@ -1843,6 +2128,216 @@
     var getSearchTags = function(row) {
       return row.searchTags || '';
     };
+    var normalizeFilterText = function(value) {
+      return String(value || '').toLowerCase();
+    };
+    var extractPathPrefixes = function(pathValue) {
+      var normalized = String(pathValue || '').replace(/\\/g, '/').replace(/^\/+|\/+$/g, '');
+      if (!normalized) return [];
+      var parts = normalized.split('/').filter(Boolean);
+      var prefixes = [];
+      var current = '';
+      for (var i = 0; i < parts.length; i += 1) {
+        current = current ? (current + '/' + parts[i]) : parts[i];
+        prefixes.push(current);
+      }
+      return prefixes;
+    };
+    var buildFolderTreeData = function(prefixes) {
+      var root = { path: '', name: '', children: {} };
+      (Array.isArray(prefixes) ? prefixes : []).forEach(function(prefix) {
+        var parts = String(prefix || '').split('/').filter(Boolean);
+        var node = root;
+        var currentPath = '';
+        parts.forEach(function(part) {
+          currentPath = currentPath ? (currentPath + '/' + part) : part;
+          if (!node.children[part]) {
+            node.children[part] = { path: currentPath, name: part, children: {} };
+          }
+          node = node.children[part];
+        });
+      });
+      return root;
+    };
+    var getCurrentTableSearchValue = function() {
+      if (!table || typeof table.search !== 'function') return '';
+      return String(table.search() || '').trim();
+    };
+    var updateFilteredFolderPrefixes = function() {
+      if (!table) {
+        filteredFolderPrefixes = knownFolderPrefixes.slice();
+        return;
+      }
+      var rows = [];
+      ignoreActiveFolderFilterForTree = true;
+      try {
+        rows = table.rows({ search: 'applied', order: 'applied', page: 'all' }).data().toArray();
+      } finally {
+        ignoreActiveFolderFilterForTree = false;
+      }
+      var seen = {};
+      var next = [];
+      rows.forEach(function(row) {
+        extractPathPrefixes(row && row.path ? row.path : '').forEach(function(prefix) {
+          var key = prefix.toLowerCase();
+          if (seen[key]) return;
+          seen[key] = true;
+          next.push(prefix);
+        });
+      });
+      next.sort(function(a, b) { return a.localeCompare(b); });
+      filteredFolderPrefixes = next;
+    };
+    var getFolderTreeSourcePrefixes = function() {
+      var hasSearch = getCurrentTableSearchValue().length > 0;
+      var base = hasSearch ? filteredFolderPrefixes : knownFolderPrefixes;
+      var list = Array.isArray(base) ? base.slice() : [];
+      if (activeFolderFilter) {
+        var hasActive = list.some(function(prefix) {
+          return normalizeFilterText(prefix) === activeFolderFilter;
+        });
+        if (!hasActive) {
+          list.push(activeFolderFilter);
+        }
+      }
+      return list;
+    };
+    var folderIsInActivePath = function(pathKey) {
+      if (!activeFolderFilter || !pathKey) return false;
+      return activeFolderFilter === pathKey || activeFolderFilter.indexOf(pathKey + '/') === 0;
+    };
+    var getVisibleFolderBranchKeys = function() {
+      var tree = buildFolderTreeData(getFolderTreeSourcePrefixes());
+      var treeRoot = (tree && tree.children && tree.children.dz) ? tree.children.dz : tree;
+      var branchKeys = [];
+      var walk = function(node) {
+        var names = Object.keys((node && node.children) || {});
+        names.forEach(function(name) {
+          var child = node.children[name];
+          var pathKey = normalizeFilterText(child.path);
+          if (pathKey && pathKey !== 'dz' && Object.keys(child.children || {}).length) {
+            branchKeys.push(pathKey);
+          }
+          walk(child);
+        });
+      };
+      walk(treeRoot);
+      return branchKeys;
+    };
+    var updateFolderSidebarTitle = function() {
+      if (!folderSidebarTitleEl) return;
+      var visibleCount = table ? table.rows({ search: 'applied' }).count() : 0;
+      folderSidebarTitleEl.textContent = visibleCount.toLocaleString() + ' objects';
+    };
+    var renderFolderTree = function() {
+      if (!folderTreeEl) return;
+      var tree = buildFolderTreeData(getFolderTreeSourcePrefixes());
+      var treeRoot = (tree && tree.children && tree.children.dz) ? tree.children.dz : tree;
+      var forceExpandForSearch = getCurrentTableSearchValue().length > 0;
+      var presetsActive = activeCollectionFilter === 'presets';
+      var renderChildren = function(node) {
+        var names = Object.keys(node.children || {}).sort(function(a, b) {
+          return a.localeCompare(b);
+        });
+        if (!names.length) return '';
+        var html = '<ul>';
+        names.forEach(function(name) {
+          var child = node.children[name];
+          var pathKey = normalizeFilterText(child.path);
+          var childNames = Object.keys(child.children || {});
+          var hasChildren = childNames.length > 0;
+          var isRootFolder = pathKey === 'dz';
+          var isOpen = hasChildren ? (isRootFolder ? true : (forceExpandForSearch ? true : !!folderTreeExpanded[pathKey])) : false;
+          var isActive = activeFolderFilter && activeFolderFilter === pathKey;
+          html += '<li>';
+          html += '<div class="folder-tree__row">';
+          if (isRootFolder) {
+            html += '<span class="folder-tree__leaf-spacer" aria-hidden="true"></span>';
+          } else if (hasChildren) {
+            html += '<button class="folder-tree__toggle" type="button" data-folder-toggle="' + escapeHtml(pathKey) + '" aria-expanded="' + (isOpen ? 'true' : 'false') + '">' + (isOpen ? '−' : '+') + '</button>';
+          } else {
+            html += '<span class="folder-tree__leaf-icon" aria-hidden="true">▸</span>';
+          }
+          html += '<button class="folder-tree__folder' + (isActive ? ' is-active' : '') + '" type="button" data-folder-path="' + escapeHtml(pathKey) + '" title="' + escapeHtml(child.path) + '">' + escapeHtml(child.name) + '</button>';
+          html += '</div>';
+          if (hasChildren) {
+            html += '<div class="folder-tree__children"' + (isOpen ? '' : ' hidden') + '>' + renderChildren(child) + '</div>';
+          }
+          html += '</li>';
+        });
+        html += '</ul>';
+        return html;
+      };
+      var presetsRow = ''
+        + '<div class="folder-tree__row">'
+        + '<span class="folder-tree__leaf-spacer" aria-hidden="true"></span>'
+        + '<button class="folder-tree__folder' + (presetsActive ? ' is-active' : '') + '" type="button" data-folder-path="__presets__" title="Editor Presets">presets</button>'
+        + '</div>'
+        + '<div class="folder-tree__divider" aria-hidden="true"></div>';
+      folderTreeEl.innerHTML = presetsRow + renderChildren(treeRoot);
+      updateFolderSidebarTitle();
+    };
+    var setActiveFolderFilter = function(value, shouldDraw) {
+      activeFolderFilter = normalizeFilterText(value || '');
+      renderFolderTree();
+      if (shouldDraw !== false && table) {
+        table.draw();
+      }
+    };
+    var populateFolderFilter = function(sourceData) {
+      var seen = {};
+      var folders = [];
+      (Array.isArray(sourceData) ? sourceData : []).forEach(function(row) {
+        extractPathPrefixes(row && row.path ? row.path : '').forEach(function(prefix) {
+          var key = prefix.toLowerCase();
+          if (seen[key]) return;
+          seen[key] = true;
+          folders.push(prefix);
+        });
+      });
+      folders.sort(function(a, b) { return a.localeCompare(b); });
+      knownFolderPrefixes = folders;
+      updateFilteredFolderPrefixes();
+      renderFolderTree();
+    };
+    var rowMatchesCollection = function(collectionKey, row) {
+      if (!collectionKey || !row) return true;
+      var objName = normalizeFilterText(getObjectName(row));
+      var inGame = normalizeFilterText(row.inGameName || '');
+      var category = normalizeFilterText(row.category || '');
+      var path = normalizeFilterText(row.path || '');
+      var tags = normalizeFilterText(getSearchTags(row));
+      var blob = [objName, inGame, category, path, tags].join(' ');
+      var has = function(term) { return blob.indexOf(term) !== -1; };
+      if (collectionKey === 'presets') {
+        return category.indexOf('preset') !== -1;
+      }
+      if (collectionKey === 'weapons') {
+        return has('weapon') || path.indexOf('/weapons/') !== -1;
+      }
+      if (collectionKey === 'vehicles') {
+        return has('vehicle') || path.indexOf('/vehicles/') !== -1 || has('car') || has('truck');
+      }
+      if (collectionKey === 'clothing') {
+        return has('clothing') || has('apparel') || path.indexOf('/characters/') !== -1 || path.indexOf('/clothes/') !== -1;
+      }
+      if (collectionKey === 'military_structures') {
+        return path.indexOf('/structures/') !== -1 && (has('military') || has('barracks') || has('army') || has('checkpoint') || has('watchtower') || has('guard'));
+      }
+      if (collectionKey === 'bunkers') {
+        return has('bunker');
+      }
+      if (collectionKey === 'rocks') {
+        return path.indexOf('/rocks/') !== -1 || has('rock') || has('boulder');
+      }
+      if (collectionKey === 'trees') {
+        return has('tree') || has('spruce') || has('birch') || has('oak') || has('pine') || has('fir');
+      }
+      if (collectionKey === 'houses') {
+        return has('house') || has('residential') || has('building');
+      }
+      return true;
+    };
 
     var showContent = function() {
       $('#dayzObjects, #dayzObjects_wrapper').css('visibility', 'visible');
@@ -1989,6 +2484,7 @@
     }
    
     $("#filters").insertBefore("#dayzObjects_wrapper .top-bar");
+    $("#dayzObjects_wrapper .dataTables_length").prependTo("#filters");
 
     $tableEl.addClass('dtr-column');
     $(window).on('resize', function() {
@@ -2022,6 +2518,14 @@
     var objectFocusCopyEl = document.getElementById('objectFocusCopy');
     var objectFocusEditorEl = document.getElementById('objectFocusEditor');
     var objectFocusNameCopyEl = document.getElementById('objectFocusNameCopy');
+    var folderSidebarEl = document.getElementById('folderSidebar');
+    var folderTreeEl = document.getElementById('folderTree');
+    var folderSidebarTitleEl = document.getElementById('folderSidebarTitle');
+    var folderSidebarClearEl = document.getElementById('folderSidebarClear');
+    var folderSidebarExpandAllEl = document.getElementById('folderSidebarExpandAll');
+    var folderSidebarCollapseAllEl = document.getElementById('folderSidebarCollapseAll');
+    var folderSidebarSearchEl = document.getElementById('folderSidebarSearch');
+    var filterConsoleEl = document.getElementById('filterConsole');
     var objectFocusMetaEl = document.getElementById('objectFocusMeta');
     var objectFocusLocationEl = document.getElementById('objectFocusLocation');
     var objectFocusLinksEl = document.getElementById('objectFocusLinks');
@@ -2041,6 +2545,12 @@
     var activeTypesTagMatchByName = null;
     var mapGroupProtoEntryUrl = null;
     var mapGroupProtoEntryByName = {};
+    var activeCollectionFilter = '';
+    var activeFolderFilter = '';
+    var knownFolderPrefixes = [];
+    var filteredFolderPrefixes = [];
+    var ignoreActiveFolderFilterForTree = false;
+    var folderTreeExpanded = { dz: true };
     var objectNameById = {};
     var objectDataById = {};
     var objectDataByName = {};
@@ -2474,7 +2984,6 @@
         if (table) {
           table.search('').columns().search('');
         }
-        $('#filterCategory').val('');
         $('#filterConsole').val('');
       }
       if (table) {
@@ -2498,6 +3007,28 @@
       var fallback = buildTypesTagMatchIndex(activeTypesTagFilter);
       activeTypesTagMatchByName = fallback || {};
       return !!activeTypesTagMatchByName[objKey];
+    });
+    $.fn.dataTable.ext.search.push(function(settings, _data, dataIndex) {
+      if (!table || settings.nTable !== $tableEl.get(0)) return true;
+      if (!activeCollectionFilter && !activeFolderFilter) return true;
+      var rowData = settings.aoData && settings.aoData[dataIndex] ? settings.aoData[dataIndex]._aData : null;
+      if (!rowData) {
+        rowData = table.row(dataIndex).data();
+      }
+      if (!rowData) return false;
+      if (activeCollectionFilter && !rowMatchesCollection(activeCollectionFilter, rowData)) {
+        return false;
+      }
+      if (activeFolderFilter) {
+        if (ignoreActiveFolderFilterForTree) {
+          return true;
+        }
+        var pathValue = normalizeFilterText((rowData && rowData.path) || '').replace(/\\/g, '/');
+        if (!pathValue || pathValue.indexOf(activeFolderFilter) !== 0) {
+          return false;
+        }
+      }
+      return true;
     });
 
     if (objectFocusEl) {
@@ -5265,47 +5796,103 @@
       }
     };
 
-
-    var populateCategories = function(sourceData) {
-      var categories = [];
-      if (Array.isArray(sourceData)) {
-        sourceData.forEach(function(item) {
-          var value = item && item.category ? String(item.category) : '';
-          if (value && categories.indexOf(value) === -1) {
-            categories.push(value);
-          }
-        });
-      } else if (table) {
-        table.column(4).data().each(function(value) {
-          if (value && categories.indexOf(value) === -1) {
-            categories.push(value);
-          }
-        });
-      }
-      categories.sort();
-      var $select = $('#filterCategory');
-      $select.find('option:not([value=""])').remove();
-      categories.forEach(function(cat) {
-        $select.append('<option value="' + cat + '">' + cat + '</option>');
-      });
-    };
     table.on('xhr.dt', function(e, settings, json) {
       updateObjectNameLookup(json);
-      populateCategories(json);
+      populateFolderFilter(json);
       applyUrlState(json);
     });
-
-    $('#filterCategory').on('change', function() {
-      table.column(4).search(this.value).draw();
+    table.on('draw.dt', function() {
+      var hasSearch = getCurrentTableSearchValue().length > 0;
+      var keepBroadSearchFolders = hasSearch && !!activeFolderFilter && filteredFolderPrefixes.length > 0;
+      if (!keepBroadSearchFolders) {
+        updateFilteredFolderPrefixes();
+      }
+      renderFolderTree();
+      if (folderSidebarSearchEl && folderSidebarSearchEl.value !== table.search()) {
+        folderSidebarSearchEl.value = table.search();
+      }
     });
-
     $('#filterConsole').on('change', function() {
       table.column(6).search(this.value).draw();
     });
-
-    var presetsCategoryValue = "Editor Preset";
-    var presetsActive = false;
-    var previousCategoryValue = "";
+    if (folderTreeEl) {
+      folderTreeEl.addEventListener('click', function(e) {
+        var toggleBtn = e.target.closest('[data-folder-toggle]');
+        if (toggleBtn) {
+          e.preventDefault();
+          var pathKey = normalizeFilterText(toggleBtn.getAttribute('data-folder-toggle') || '');
+          if (!pathKey) return;
+          activeCollectionFilter = '';
+          folderTreeExpanded[pathKey] = !folderTreeExpanded[pathKey];
+          setActiveFolderFilter(pathKey, true);
+          return;
+        }
+        var folderBtn = e.target.closest('[data-folder-path]');
+        if (!folderBtn) return;
+        e.preventDefault();
+        var nextPath = normalizeFilterText(folderBtn.getAttribute('data-folder-path') || '');
+        if (nextPath === '__presets__') {
+          activeCollectionFilter = activeCollectionFilter === 'presets' ? '' : 'presets';
+          setActiveFolderFilter('', true);
+          return;
+        }
+        activeCollectionFilter = '';
+        if (nextPath && nextPath !== 'dz') {
+          var rowEl = folderBtn.closest('.folder-tree__row');
+          var rowToggle = rowEl ? rowEl.querySelector('[data-folder-toggle]') : null;
+          if (rowToggle) {
+            folderTreeExpanded[nextPath] = !folderTreeExpanded[nextPath];
+          }
+        }
+        setActiveFolderFilter(nextPath, true);
+      });
+    }
+    if (folderSidebarClearEl) {
+      folderSidebarClearEl.addEventListener('click', function() {
+        activeCollectionFilter = '';
+        activeFolderFilter = '';
+        if (folderSidebarSearchEl) {
+          folderSidebarSearchEl.value = '';
+        }
+        if (filterConsoleEl) {
+          filterConsoleEl.value = '';
+        }
+        if (table) {
+          table.search('');
+          table.column(6).search('');
+        }
+        setActiveFolderFilter('', true);
+      });
+    }
+    if (folderSidebarExpandAllEl) {
+      folderSidebarExpandAllEl.addEventListener('click', function() {
+        getVisibleFolderBranchKeys().forEach(function(key) {
+          folderTreeExpanded[key] = true;
+        });
+        renderFolderTree();
+      });
+    }
+    if (folderSidebarCollapseAllEl) {
+      folderSidebarCollapseAllEl.addEventListener('click', function() {
+        getVisibleFolderBranchKeys().forEach(function(key) {
+          folderTreeExpanded[key] = false;
+        });
+        renderFolderTree();
+      });
+    }
+    if (folderSidebarSearchEl) {
+      var applyFolderSidebarSearch = function() {
+        if (!table) return;
+        var query = String(folderSidebarSearchEl.value || '');
+        if (!query.trim() && (activeFolderFilter || activeCollectionFilter)) {
+          activeCollectionFilter = '';
+          setActiveFolderFilter('', false);
+        }
+        table.search(query).draw();
+      };
+      folderSidebarSearchEl.addEventListener('input', applyFolderSidebarSearch);
+      folderSidebarSearchEl.addEventListener('search', applyFolderSidebarSearch);
+    }
 
     var resetFilters = function() {
       var defaultUrl = window.location.origin + window.location.pathname;
@@ -5357,28 +5944,6 @@
         setTimeout(function() { linkedFilterCopyLinkEl.textContent = original; }, 1200);
       });
     }
-
-    var togglePresets = function($btn) {
-      if (!table) return;
-      if (!presetsActive) {
-        previousCategoryValue = $('#filterCategory').val();
-        $('#filterCategory').val(presetsCategoryValue).trigger('change');
-        presetsActive = true;
-        $btn.addClass('active').text('Show all');
-      } else {
-        $('#filterCategory').val(previousCategoryValue).trigger('change');
-        presetsActive = false;
-        $btn.removeClass('active').text('Show presets');
-      }
-    };
-
-    $(document).on('click', '#resetFilters', function() {
-      resetFilters();
-    });
-
-    $(document).on('click', '#togglePresets', function() {
-      togglePresets($(this));
-    });
 
     var exportPanelEl = document.getElementById('exportPanel');
     var exportToggleEl = document.getElementById('exportToggle');
@@ -5588,11 +6153,20 @@
       previewEl.style.left = left + 'px';
       previewEl.style.top = top + 'px';
     };
+    var getHoverPreviewPath = function(cellEl) {
+      if (!cellEl) return '';
+      var $cell = $(cellEl);
+      var direct = $cell.data('image');
+      if (direct) return String(direct);
+      if (!table) return '';
+      var rowData = table.row($cell.closest('tr')).data();
+      return rowData && rowData.image ? String(rowData.image) : '';
+    };
 
     $('#dayzObjects tbody')
-      .on('mouseenter', '.object-name-cell', function(e) {
+      .on('mouseenter', '.object-name-cell, .thumb-cell', function(e) {
         if (isMobileView) return;
-        var imgPath = $(this).data('image');
+        var imgPath = getHoverPreviewPath(this);
         if (!imgPath) return;
 
         $('body').append(
@@ -5603,11 +6177,11 @@
         syncPortraitImageClass(document.querySelector('#imgPreview img'));
         positionHoverPreview(e.clientX, e.clientY);
       })
-      .on('mousemove', '.object-name-cell', function(e) {
+      .on('mousemove', '.object-name-cell, .thumb-cell', function(e) {
         if (isMobileView) return;
         positionHoverPreview(e.clientX, e.clientY);
       })
-      .on('mouseleave', '.object-name-cell', function() {
+      .on('mouseleave', '.object-name-cell, .thumb-cell', function() {
         if (isMobileView) return;
         $('#imgPreview').remove();
       });
