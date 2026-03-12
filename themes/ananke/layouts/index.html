@@ -173,15 +173,15 @@
     margin-left: auto;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
   .top-console {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
   }
   .top-console__label {
-    font-size: 0.8rem;
+    font-size: 0.82rem;
     font-weight: 600;
     color: var(--text);
     white-space: nowrap;
@@ -190,9 +190,11 @@
     background-color: var(--input-bg);
     color: var(--text);
     border: 1px solid var(--input-border);
-    border-radius: 6px;
-    font-size: 0.95rem;
-    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.82rem;
+    line-height: 1.25;
+    min-height: 28px;
+    padding: 3px 8px;
   }
   #filters .dataTables_length {
     float: none !important;
@@ -203,19 +205,26 @@
   .dataTables_filter label {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     font-weight: 600;
     color: var(--text);
-    font-size: 0.95rem;
+    font-size: 0.82rem;
   }
   .dataTables_length select,
   .dataTables_filter input {
-    border-radius: 6px;
-  }
-  .dataTables_length select {
+    border-radius: 4px;
+    border: 1px solid var(--input-border);
     background-color: var(--input-bg);
     color: var(--text);
-    border: 1px solid var(--input-border);
+    font-size: 0.82rem;
+    line-height: 1.25;
+    min-height: 28px;
+    padding: 3px 8px;
+  }
+  .filter-actions .pill-button {
+    font-size: 0.72rem;
+    line-height: 1.2;
+    padding: 3px 7px;
   }
   .dataTables_info {
     border: none !important;
@@ -720,6 +729,7 @@
     flex: 0 0 60px;
     padding: 6px 4px;
     justify-content: center;
+    align-items: center;
     position: fixed;
     top: var(--sidebars-top-offset);
     right: 2.5%;
@@ -738,6 +748,8 @@
   }
   .object-focus.collapsed .object-focus__pin-hint {
     display: block;
+    width: 100%;
+    text-align: center;
   }
 
   .object-focus__header {
@@ -749,6 +761,12 @@
   }
   .object-focus.collapsed .object-focus__clear {
     display: none;
+  }
+  .object-focus.collapsed .object-focus__header {
+    justify-content: center;
+  }
+  .object-focus.collapsed .object-focus__collapse {
+    margin: 0 auto;
   }
 
   .object-focus__collapse {
@@ -765,25 +783,12 @@
     background: var(--bg-soft);
   }
 
-  .object-focus__clear {
-    border: 1px solid var(--border);
-    background: var(--card);
-    color: var(--text);
-    border-radius: 6px;
-    padding: 6px 8px;
-    cursor: pointer;
-    font-weight: 700;
-    line-height: 1;
-  }
-  .object-focus__clear:hover {
-    background: var(--bg-soft);
-  }
   .object-focus__image {
     position: relative;
     width: 100%;
     height: 220px;
-    border: 2px solid var(--border);
-    border-radius: 3px;
+    border: none;
+    border-radius: 8px;
     background: var(--input-bg);
     display: flex;
     align-items: center;
@@ -794,6 +799,7 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    border-radius: 8px;
     cursor: pointer;
   }
   .object-focus__image-download {
@@ -1071,8 +1077,9 @@
     word-break: break-word;
   }
   .object-focus__name-action {
-    flex: 0 0 auto;
     margin-left: auto;
+    flex: 0 0 auto;
+    white-space: nowrap;
   }
   .object-focus__name-action.pill-button {
     font-size: 0.7rem;
@@ -1096,7 +1103,7 @@
   }
   .object-focus__secondary {
     display: flex;
-    gap: 6px;
+    gap: 4px;
     flex-wrap: nowrap;
     justify-content: flex-start;
     white-space: nowrap;
@@ -1119,8 +1126,51 @@
   .object-focus__meta span {
     color: var(--muted);
   }
+  .object-focus__meta-list {
+    display: grid;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .object-focus__meta-row {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    padding: 4px 6px;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.74rem;
+    line-height: 1.25;
+  }
+  .object-focus__meta-row:last-child {
+    border-bottom: none;
+  }
+  .object-focus__meta-label {
+    color: var(--muted);
+    font-weight: 700;
+    flex: 0 0 auto;
+  }
+  .object-focus__meta-value {
+    color: var(--text);
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .object-focus__meta-path {
+    border: none;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    padding: 0;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .object-focus__meta-path:hover {
+    color: var(--accent);
+  }
   .object-focus__section {
-    border: 2px solid var(--border);
+    border: 1px solid var(--border);
     border-radius: 3px;
     background: var(--card);
     box-shadow: none;
@@ -1130,22 +1180,18 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    background: #2C3030;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
-  :root.dark-mode .object-focus__section-header {
-    background: #2C3030;
-    border-bottom-color: rgba(255, 255, 255, 0.06);
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--border);
   }
   .object-focus__section-title {
     display: block;
     flex: 1 1 auto;
     width: auto;
-    padding: 5px 8px;
+    padding: 4px 6px;
     border: none;
     background: transparent;
-    color: #fff;
-    font-size: 0.74rem;
+    color: var(--text);
+    font-size: 0.84rem;
     font-weight: 700;
     text-align: left;
     letter-spacing: 0.01em;
@@ -1157,7 +1203,7 @@
   .object-focus__section-body {
     display: grid;
     gap: 6px;
-    padding: 6px 8px;
+    padding: 6px;
     background: var(--card);
   }
   .object-focus__section-toggle {
@@ -1172,7 +1218,7 @@
   .object-focus__location,
   .object-focus__links,
   .object-focus__types-section {
-    border: 2px solid var(--border);
+    border: 1px solid var(--border);
     border-radius: 3px;
     background: var(--card);
     box-shadow: none;
@@ -1256,7 +1302,6 @@
   .object-focus__links-label {
     color: var(--muted);
     font-weight: 700;
-    text-transform: lowercase;
   }
   .object-focus__link-pill {
     display: inline-flex;
@@ -1298,6 +1343,18 @@
     color: var(--text);
     overflow-x: auto;
     white-space: nowrap;
+    padding: 3px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .object-focus__types-row:last-child {
+    border-bottom: none;
+  }
+  .object-focus__links-row {
+    padding: 3px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .object-focus__links-row:last-child {
+    border-bottom: none;
   }
   .object-focus__types-line {
     display: flex;
@@ -1676,11 +1733,12 @@
     gap: 6px;
     align-items: center;
     width: 100%;
+    padding-right: 0;
   }
 
   .object-focus.collapsed .pinned-item {
     grid-template-columns: 1fr;
-    width: 100%;
+    width: auto;
     padding: 0;
     border: none;
     background: transparent;
@@ -1869,7 +1927,7 @@
 
 <div id="filters">
   <div class="top-console">
-    <span class="top-console__label">usable on console:</span>
+    <span class="top-console__label">Usable on console:</span>
     <select id="filterConsole" class="top-console__select">
       <option value="all">All</option>
       <option value="yes">Yes</option>
@@ -1936,7 +1994,6 @@
         <th aria-label="Thumbnail"></th>
         <th>Class name</th>
         <th>In-game name</th>
-        <th>Category</th>
         <th>Path</th>
         <th>Console</th>
         <th>Type</th>
@@ -1951,7 +2008,7 @@
     <div class="object-focus__pin-hint" aria-hidden="true">📌</div>
     <div class="object-focus__header">
       <button id="objectFocusCollapse" class="object-focus__collapse" type="button" aria-label="Collapse sidebar">&gt;&gt;</button>
-      <button id="objectFocusClear" class="object-focus__clear" type="button" aria-label="Deselect object" title="Deselect object">🆇</button>
+      <button id="objectFocusClear" class="object-focus__clear folder-sidebar__clear" type="button" aria-label="Deselect object" title="Deselect object">Deselect object</button>
     </div>
     <div class="object-focus__image" id="objectFocusImage">
       <img id="objectFocusPreviewImg" class="object-focus__preview" src="" alt="" hidden>
@@ -1961,15 +2018,15 @@
     <div class="object-focus__details">
       <div class="object-focus__name-row">
         <div id="objectFocusName" class="object-focus__name"></div>
-        <button id="objectFocusMarkdownCopy" class="pill-button object-focus__name-action" type="button">M↓</button>
+        <button id="objectFocusPin" class="pill-button object-focus__name-action" type="button">📌 Pin</button>
       </div>
       <div id="objectFocusEmpty" class="object-focus__empty">You can select or pin objects in this menu.</div>
       <div class="object-focus__actions">
         <div class="object-focus__secondary">
-          <button id="objectFocusPin" class="pill-button" type="button">📌 Pin</button>
           <button id="objectFocusCopy" class="pill-button" type="button">🔗 Copy link</button>
           <button id="objectFocusEditor" class="pill-button" type="button">🏗️ Copy to Editor</button>
           <button id="objectFocusNameCopy" class="pill-button" type="button">📋 Copy name</button>
+          <button id="objectFocusMarkdownCopy" class="pill-button" type="button">🔗 M↓</button>
         </div>
       </div>
       <div id="objectFocusPath" class="object-focus__path"></div>
@@ -2202,6 +2259,9 @@
       if (!table || typeof table.search !== 'function') return '';
       return String(table.search() || '').trim();
     };
+    var isFolderTreeInBroadFilterMode = function() {
+      return getCurrentTableSearchValue().length > 0 || treatIdListAsSearchFolders || !!activeTypesTagFilter;
+    };
     var getDeepestPathPrefix = function(pathValue) {
       var prefixes = extractPathPrefixes(pathValue || '');
       if (!prefixes.length) return '';
@@ -2246,8 +2306,8 @@
       filteredFolderPrefixes = next;
     };
     var getFolderTreeSourcePrefixes = function() {
-      var hasSearch = getCurrentTableSearchValue().length > 0 || treatIdListAsSearchFolders;
-      var base = hasSearch ? filteredFolderPrefixes : knownFolderPrefixes;
+      var hasBroadFilter = isFolderTreeInBroadFilterMode();
+      var base = hasBroadFilter ? filteredFolderPrefixes : knownFolderPrefixes;
       var list = Array.isArray(base) ? base.slice() : [];
       if (activeFolderFilter) {
         var hasActive = list.some(function(prefix) {
@@ -2290,7 +2350,7 @@
       if (!folderTreeEl) return;
       var tree = buildFolderTreeData(getFolderTreeSourcePrefixes());
       var treeRoot = (tree && tree.children && tree.children.dz) ? tree.children.dz : tree;
-      var forceExpandForSearch = getCurrentTableSearchValue().length > 0 || treatIdListAsSearchFolders;
+      var forceExpandForSearch = isFolderTreeInBroadFilterMode();
       var presetsActive = activeCollectionFilter === 'presets';
       var renderChildren = function(node) {
         var names = Object.keys(node.children || {}).sort(function(a, b) {
@@ -2425,10 +2485,19 @@
         document.documentElement.style.setProperty('--sidebars-top-offset', '135px');
         return;
       }
+      var navEl = document.querySelector('nav');
+      var wrapperEl = document.querySelector('.objects-layout #dayzObjects_wrapper');
       var layoutEl = document.querySelector('.objects-layout');
-      if (!layoutEl) return;
-      var rect = layoutEl.getBoundingClientRect();
-      var topOffset = Math.max(90, Math.round(rect.top));
+      if (!wrapperEl && !layoutEl) return;
+      var navBottom = 0;
+      if (navEl && typeof navEl.getBoundingClientRect === 'function') {
+        var navRect = navEl.getBoundingClientRect();
+        navBottom = Math.max(0, Math.round(navRect.bottom || 0));
+      }
+      var contentTop = wrapperEl
+        ? Math.round(wrapperEl.getBoundingClientRect().top)
+        : Math.round(layoutEl.getBoundingClientRect().top);
+      var topOffset = Math.max(navBottom + 8, contentTop);
       document.documentElement.style.setProperty('--sidebars-top-offset', topOffset + 'px');
     };
     
@@ -2488,7 +2557,6 @@
           }
         },
         { data: 'inGameName', defaultContent: '' },
-        { data: 'category', defaultContent: '' },
         {
           data: null,
           render: function(data, type, row) {
@@ -2549,12 +2617,11 @@
           }
         },
         { targets: 3, className: 'min-desktop' },
-        { targets: 4, className: 'min-desktop' },
-        { targets: 5, className: 'min-desktop path-cell' },
+        { targets: 4, className: 'min-desktop path-cell' },
+        { targets: 5, className: 'min-wide' },
         { targets: 6, className: 'min-wide' },
         { targets: 7, className: 'min-wide' },
-        { targets: 8, className: 'min-wide' },
-        { targets: 9, visible: false, searchable: true }
+        { targets: 8, visible: false, searchable: true }
       ],
       dom: '<"top-bar"lfr>tip',
       language: {
@@ -2646,10 +2713,31 @@
     var objectLocationClusterCache = {};
     var objectLocationResolutionCache = {};
     var objectFocusSectionExpanded = {
+      details: true,
       types: true,
       location: true,
       links: true
     };
+    var objectFocusSectionPrefsKey = 'dayzObjectFocusSections';
+    var loadObjectFocusSectionPrefs = function() {
+      try {
+        var raw = localStorage.getItem(objectFocusSectionPrefsKey);
+        if (!raw) return;
+        var parsed = JSON.parse(raw);
+        if (!parsed || typeof parsed !== 'object') return;
+        ['details', 'types', 'location', 'links'].forEach(function(key) {
+          if (typeof parsed[key] === 'boolean') {
+            objectFocusSectionExpanded[key] = parsed[key];
+          }
+        });
+      } catch (_) {}
+    };
+    var saveObjectFocusSectionPrefs = function() {
+      try {
+        localStorage.setItem(objectFocusSectionPrefsKey, JSON.stringify(objectFocusSectionExpanded));
+      } catch (_) {}
+    };
+    loadObjectFocusSectionPrefs();
     var sakhalMapUiTimer = null;
     var locationMapConfigs = {
       chernarus: {
@@ -2747,7 +2835,7 @@
     var updateCollapseButtonLabel = function() {
       if (!objectFocusCollapseEl || !objectFocusEl) return;
       var isCollapsed = objectFocusEl.classList.contains('collapsed');
-      objectFocusCollapseEl.textContent = isCollapsed ? '>>' : '<<';
+      objectFocusCollapseEl.textContent = isCollapsed ? '<<' : '>>';
       objectFocusCollapseEl.setAttribute('aria-label', isCollapsed ? 'Expand sidebar' : 'Collapse sidebar');
     };
     var updateEmptyState = function() {
@@ -2756,6 +2844,9 @@
       var isCollapsed = objectFocusEl.classList.contains('collapsed');
       objectFocusEl.classList.toggle('empty-state', !hasSelection && !isCollapsed);
       objectFocusEl.classList.toggle('no-selection', !hasSelection);
+      if (objectFocusClearEl) {
+        objectFocusClearEl.style.display = (hasSelection && !isCollapsed) ? 'inline-flex' : 'none';
+      }
     };
     var updateLayoutForSidebar = function() {
       if (!objectsLayoutEl || !objectFocusEl) return;
@@ -2919,18 +3010,37 @@
       if (!objectFocusMetaEl || !objData) return;
       var objectId = objData.id || '';
       var inGame = objData.inGame || '';
-      var category = objData.category || '';
       var modelType = objData.modelType || '';
       var consoleFlag = objData.consoleFlag || '';
       var tags = objData.tags || '';
       var objName = objData.objName || '';
+      var p3dPath = objData.p3dPath || '';
+      var detailsExpanded = objectFocusSectionExpanded.details !== false;
+      var detailsRows = [
+        { label: 'Path', value: p3dPath || '—' },
+        { label: 'In-game name', value: inGame || '—' },
+        { label: 'Model type', value: modelType || '—' },
+        { label: 'Console', value: consoleFlag || '—' },
+        { label: 'Object ID', value: objectId || '—' },
+        { label: 'Tags', value: tags || '—' }
+      ].map(function(row) {
+        var valueHtml = escapeHtml(row.value);
+        if (row.label === 'Path' && p3dPath) {
+          valueHtml = '<button class="object-focus__meta-path" type="button" data-action="focus-folder-path" data-folder-path="' + escapeHtml(p3dPath) + '" title="Open folder in tree">' + escapeHtml(p3dPath) + '</button>';
+        }
+        return '' +
+          '<div class="object-focus__meta-row">' +
+            '<span class="object-focus__meta-label">' + escapeHtml(row.label) + ':</span>' +
+            '<span class="object-focus__meta-value">' + valueHtml + '</span>' +
+          '</div>';
+      }).join('');
       objectFocusMetaEl.innerHTML =
-        '<div><span>Object ID:</span> ' + (objectId || '—') + '</div>' +
-        '<div><span>In-game name:</span> ' + (inGame || '—') + '</div>' +
-        '<div><span>Category:</span> ' + (category || '—') + '</div>' +
-        '<div><span>Model type:</span> ' + (modelType || '—') + '</div>' +
-        '<div><span>Console:</span> ' + (consoleFlag || '—') + '</div>' +
-        '<div><span>Tags:</span> ' + (tags || '—') + '</div>' +
+        '<div class="object-focus__section object-focus__section-accordion object-focus__meta-section' + (detailsExpanded ? ' is-open' : '') + '">' +
+          '<div class="object-focus__section-header">' +
+            '<button class="object-focus__section-title object-focus__section-toggle" type="button" data-section-toggle="details" data-section-title="Object details" aria-expanded="' + (detailsExpanded ? 'true' : 'false') + '">' + (detailsExpanded ? '▴ ' : '▾ ') + 'Object details</button>' +
+          '</div>' +
+          '<div class="object-focus__section-body object-focus__meta-list">' + detailsRows + '</div>' +
+        '</div>' +
         buildMapLootMetaHtml(objName);
     };
     var loadMapTypes = function(mapKey, url) {
@@ -3057,7 +3167,10 @@
       }
       return nextUrl.toString();
     };
-    var setTypesTagFilter = function(mapKey, tagKind, tagName) {
+    var snapToTopOfMainView = function() {
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    };
+    var setTypesTagFilter = function(mapKey, tagKind, tagName, shouldSnapToTop) {
       var map = String(mapKey || '').trim().toLowerCase();
       var kind = String(tagKind || '').trim().toLowerCase();
       var name = String(tagName || '').trim();
@@ -3066,6 +3179,7 @@
       if (activeTypesTagFilter && activeTypesTagFilter.map === map && activeTypesTagFilter.kind === kind && activeTypesTagFilter.name === name) {
         activeTypesTagFilter = null;
         activeTypesTagMatchByName = null;
+        history.replaceState({}, '', buildTypesTagFilterUrl(null));
       } else {
         activeTypesTagFilter = { map: map, kind: kind, name: name };
         activeTypesTagMatchByName = buildTypesTagMatchIndex(activeTypesTagFilter);
@@ -3073,6 +3187,10 @@
           table.search('').columns().search('');
         }
         $('#filterConsole').val('all');
+        history.replaceState({}, '', buildTypesTagFilterUrl(activeTypesTagFilter));
+      }
+      if (shouldSnapToTop) {
+        snapToTopOfMainView();
       }
       if (table) {
         table.draw();
@@ -3152,6 +3270,7 @@
           e.preventDefault();
           e.stopPropagation();
           objectFocusSectionExpanded.links = !objectFocusSectionExpanded.links;
+          saveObjectFocusSectionPrefs();
           objectFocusLinksEl.classList.toggle('is-open', objectFocusSectionExpanded.links);
           toggle.setAttribute('aria-expanded', objectFocusSectionExpanded.links ? 'true' : 'false');
           toggle.textContent = (objectFocusSectionExpanded.links ? '▴ ' : '▾ ') + 'Linked objects';
@@ -3178,6 +3297,7 @@
           var sectionKey = sectionToggle.getAttribute('data-section-toggle') || '';
           if (!sectionKey) return;
           objectFocusSectionExpanded[sectionKey] = !(objectFocusSectionExpanded[sectionKey] !== false);
+          saveObjectFocusSectionPrefs();
           var sectionEl = sectionToggle.closest('.object-focus__section-accordion');
           if (sectionEl) {
             sectionEl.classList.toggle('is-open', objectFocusSectionExpanded[sectionKey]);
@@ -3188,14 +3308,28 @@
           return;
         }
         var typesPill = e.target.closest('.object-focus__types-pill');
-        if (!typesPill) return;
-        e.preventDefault();
-        e.stopPropagation();
+        if (typesPill) {
+          e.preventDefault();
+          e.stopPropagation();
         setTypesTagFilter(
           typesPill.getAttribute('data-types-map') || '',
           typesPill.getAttribute('data-types-kind') || '',
-          typesPill.getAttribute('data-types-name') || ''
+          typesPill.getAttribute('data-types-name') || '',
+          true
         );
+          return;
+        }
+        var pathTrigger = e.target.closest('[data-action="focus-folder-path"]');
+        if (pathTrigger) {
+          e.preventDefault();
+          e.stopPropagation();
+          var rawPath = String(pathTrigger.getAttribute('data-folder-path') || '');
+          var targetPath = getDeepestPathPrefix(rawPath);
+          if (!targetPath) return;
+          expandFolderTreeForPath(rawPath);
+          activeCollectionFilter = '';
+          setActiveFolderFilter(targetPath, true);
+        }
       });
     }
     if (objectFocusLocationEl) {
@@ -3205,6 +3339,7 @@
           e.preventDefault();
           e.stopPropagation();
           objectFocusSectionExpanded.location = !objectFocusSectionExpanded.location;
+          saveObjectFocusSectionPrefs();
           objectFocusLocationEl.classList.toggle('is-open', objectFocusSectionExpanded.location);
           sectionToggle.setAttribute('aria-expanded', objectFocusSectionExpanded.location ? 'true' : 'false');
           sectionToggle.textContent = (objectFocusSectionExpanded.location ? '▴ ' : '▾ ') + 'Count of object on map';
@@ -4417,7 +4552,7 @@
       };
       currentObjectLocationData = {};
       objectFocusNameEl.textContent = objName;
-      objectFocusPathEl.textContent = p3dPath ? ('Path: ' + p3dPath) : '';
+      objectFocusPathEl.textContent = '';
       setTypesEntry(objName);
       setMapGroupProtoEntry(objName);
       updateObjectFocusMeta(currentObjectData);
@@ -4440,7 +4575,7 @@
           var linkedP3DName = getLinkedDisplayName(linkedP3D);
           linkRows.push(
             '<div class="object-focus__links-row">' +
-              '<span class="object-focus__links-label">linked-p3d:</span>' +
+              '<span class="object-focus__links-label">Linked P3D:</span>' +
               '<button class="object-focus__link-pill" type="button" title="' + escapeHtml(linkedP3D) + '" data-linked-id="' + escapeHtml(linkedP3D) + '" data-linked-name="' + escapeHtml(linkedP3DName) + '">' + escapeHtml(linkedP3DName) + '</button>' +
             '</div>'
           );
@@ -4448,7 +4583,7 @@
         if (linkedConfig.length) {
           linkRows.push(
             '<div class="object-focus__links-row">' +
-              '<span class="object-focus__links-label">linked-config:</span>' +
+              '<span class="object-focus__links-label">Linked config:</span>' +
               buildLinkedButtons(linkedConfig, 5) +
             '</div>'
           );
@@ -4456,7 +4591,7 @@
         if (linkedVariant.length) {
           linkRows.push(
             '<div class="object-focus__links-row">' +
-              '<span class="object-focus__links-label">linked-variant:</span>' +
+              '<span class="object-focus__links-label">Linked variant:</span>' +
               buildLinkedButtons(linkedVariant, 5) +
             '</div>'
           );
@@ -5185,7 +5320,7 @@
     var focusById = function(objectId) {
       var normalizedId = normalizeObjectId(objectId);
       if (!normalizedId) return;
-      table.column(9).search('^' + escapeRegex(normalizedId) + '$', true, false).draw();
+      table.column(8).search('^' + escapeRegex(normalizedId) + '$', true, false).draw();
       table.one('draw', function() {
         var $cell = $tableEl.find('tbody .object-name-cell').filter(function() {
           var value = $(this).data('objectid');
@@ -5298,7 +5433,9 @@
           linkedVariant: currentObjectData.linkedVariant
         });
         updatePinnedUI();
-        hideFocusDetails();
+        if (objectFocusPinEl) {
+          objectFocusPinEl.textContent = '📌 Unpin';
+        }
       });
     }
 
@@ -5718,7 +5855,7 @@
         return normalizeObjectId(value);
       }).filter(Boolean);
       if (!normalized.length) {
-        table.column(9).search('').draw();
+        table.column(8).search('').draw();
         return;
       }
       var seen = {};
@@ -5728,7 +5865,7 @@
         return true;
       });
       var regex = '^(' + unique.map(function(id) { return escapeRegex(id); }).join('|') + ')$';
-      table.column(9).search(regex, true, false).draw();
+      table.column(8).search(regex, true, false).draw();
     };
 
     var getDataArray = function(sourceData) {
@@ -5912,8 +6049,7 @@
       applyUrlState(json);
     });
     table.on('draw.dt', function() {
-      var hasSearch = getCurrentTableSearchValue().length > 0;
-      var keepBroadSearchFolders = (hasSearch || treatIdListAsSearchFolders) && !!activeFolderFilter && filteredFolderPrefixes.length > 0;
+      var keepBroadSearchFolders = isFolderTreeInBroadFilterMode() && !!activeFolderFilter && filteredFolderPrefixes.length > 0;
       if (!keepBroadSearchFolders) {
         updateFilteredFolderPrefixes();
       }
@@ -5929,7 +6065,7 @@
       return '';
     };
     $('#filterConsole').on('change', function() {
-      table.column(6).search(mapConsoleFilterValue(this.value)).draw();
+      table.column(5).search(mapConsoleFilterValue(this.value)).draw();
     });
     if (folderTreeEl) {
       folderTreeEl.addEventListener('click', function(e) {
@@ -6046,6 +6182,7 @@
         if (activeTypesTagFilter) {
           activeTypesTagFilter = null;
           activeTypesTagMatchByName = null;
+          history.replaceState({}, '', buildTypesTagFilterUrl(null));
           if (table) {
             table.draw();
           }
