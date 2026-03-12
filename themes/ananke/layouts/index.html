@@ -4662,7 +4662,8 @@
     };
     var updatePathFilterNotice = function() {
       if (!pathFilterNoticeEl || !pathFilterNoticeTextEl) return;
-      if (activeFolderFilter) {
+      var urlPathParam = normalizeFilterText(new URL(window.location.toString()).searchParams.get('path') || '');
+      if (urlPathParam) {
         pathFilterNoticeTextEl.textContent = 'Filtering linked paths -';
         pathFilterNoticeEl.classList.add('visible');
       } else {
@@ -4730,6 +4731,7 @@
       nextUrl.searchParams.delete('id');
       nextUrl.searchParams.delete('object');
       nextUrl.searchParams.delete('version');
+      nextUrl.searchParams.delete('path');
       nextUrl.searchParams.delete('maps');
       nextUrl.searchParams.delete('presets');
       nextUrl.searchParams.delete('types_map');
@@ -4910,7 +4912,9 @@
         if (ignoreActiveFolderFilterForTree) {
           return true;
         }
-        var pathValue = normalizeFilterText((rowData && rowData.path) || '').replace(/\\/g, '/');
+        var pathValue = normalizeFilterText((rowData && rowData.path) || '')
+          .replace(/\\/g, '/')
+          .replace(/^\/+/, '');
         if (!pathValue || pathValue.indexOf(activeFolderFilter) !== 0) {
           return false;
         }
