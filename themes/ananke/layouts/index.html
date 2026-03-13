@@ -916,6 +916,36 @@
     max-height: calc(100vh - var(--sidebars-top-offset) - var(--sidebars-bottom-gap));
     overflow-y: auto;
   }
+  .object-focus__pane-title {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 0.02em;
+    text-transform: none;
+    margin: 0;
+    padding: 0 0 6px;
+    text-align: center;
+  }
+  .object-focus__topbar {
+    position: relative;
+    width: 100%;
+    min-height: 28px;
+    padding-bottom: 6px;
+  }
+  .object-focus__topbar .object-focus__pane-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    padding: 0;
+    pointer-events: none;
+  }
+  .object-focus__pane-title--pinned {
+    display: none;
+    padding: 12px 0 6px;
+  }
   .folder-sidebar {
     font-size: 0.9rem;
     line-height: 1.4;
@@ -945,7 +975,8 @@
     overflow: hidden;
   }
   .object-focus.collapsed .object-focus__image,
-  .object-focus.collapsed .object-focus__details {
+  .object-focus.collapsed .object-focus__details,
+  .object-focus.collapsed .object-focus__pane-title {
     display: none;
   }
   .object-focus__pin-hint {
@@ -962,12 +993,16 @@
 
   .object-focus__header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 4px;
     width: 100%;
+    margin-left: 0;
     padding-top: 0;
     padding-bottom: 0;
+  }
+  .object-focus__clear {
+    margin-left: auto;
   }
   .object-focus.collapsed .object-focus__clear {
     display: none;
@@ -1681,6 +1716,12 @@
     text-transform: uppercase;
     font-size: 0.75rem;
     color: var(--text);
+  }
+  .object-focus.has-pins .object-focus__pane-title--pinned {
+    display: block;
+  }
+  .object-focus.collapsed .object-focus__pane-title--pinned {
+    display: none;
   }
 
   #pinnedCopyAll {
@@ -2854,11 +2895,14 @@
   </table>
 
   <div id="objectFocus" class="object-focus" aria-live="polite">
-    <div class="object-focus__pin-hint" aria-hidden="true">📌</div>
-    <div class="object-focus__header">
-      <button id="objectFocusCollapse" class="object-focus__collapse" type="button" aria-label="Collapse sidebar">&gt;&gt;</button>
-      <button id="objectFocusClear" class="object-focus__clear folder-sidebar__clear" type="button" aria-label="Deselect object" title="Deselect object">Deselect object</button>
+    <div class="object-focus__topbar">
+      <div class="object-focus__pane-title">Object viewer</div>
+      <div class="object-focus__header">
+        <button id="objectFocusCollapse" class="object-focus__collapse" type="button" aria-label="Collapse sidebar">&gt;&gt;</button>
+        <button id="objectFocusClear" class="object-focus__clear folder-sidebar__clear" type="button" aria-label="Deselect object" title="Deselect object">Deselect object</button>
+      </div>
     </div>
+    <div class="object-focus__pin-hint" aria-hidden="true">📌</div>
     <div class="object-focus__image" id="objectFocusImage">
       <img id="objectFocusPreviewImg" class="object-focus__preview" src="" alt="" hidden>
       <span id="objectFocusImageMissing" class="object-focus__missing">Select an object to preview its image.</span>
@@ -2887,11 +2931,11 @@
         <a id="objectFocusMapGroupProtoLink" class="pill-button" href="#" download>↓ Download MapGroupProto</a>
       </div>
     </div>
+    <div class="object-focus__pane-title object-focus__pane-title--pinned">Pinned objects</div>
     <div id="pinnedObjects" class="pinned-objects is-empty" aria-live="polite">
       <div class="pinned-header">
         <div class="pinned-copy">
           <div id="pinnedCopyAllLayoutRow" class="pinned-copy__row pinned-copy__row--between">
-            <span class="pinned-title">Pinned</span>
             <div class="pinned-copy__row">
               <span>Copy all:</span>
               <button id="pinnedCopyAll" class="pill-button" type="button" title="Copy all to Editor">🏗️</button>
