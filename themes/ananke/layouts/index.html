@@ -607,6 +607,43 @@
   .path-cell:hover .path-link-btn {
     opacity: 1;
   }
+  #dayzObjects tbody .preset-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: nowrap;
+  }
+  #dayzObjects tbody .preset-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    padding: 0 6px;
+    border: 1px solid var(--ui-button-border);
+    border-radius: 3px;
+    background: transparent;
+    color: var(--ui-button-text);
+    font-size: 0.68rem;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  #dayzObjects tbody .preset-action-btn:hover {
+    background: #EDA700 !important;
+    color: #1f1f1f !important;
+  }
+  #dayzObjects tbody .preset-action-btn.is-soon {
+    opacity: 0.45;
+    border-style: dashed;
+  }
+  #dayzObjects tbody .preset-action-btn.is-soon:hover {
+    background: transparent !important;
+    color: var(--ui-button-text) !important;
+  }
+  #dayzObjects tbody .preset-description {
+    color: var(--text);
+  }
 
   .copy-btn:hover {
     background-color: #EDA700 !important;
@@ -3550,6 +3587,13 @@
       if (!presetsGuideNoticeEl) return;
       presetsGuideNoticeEl.classList.toggle('visible', activeCollectionFilter === 'presets');
     };
+    var updateTableColumnLabels = function() {
+      var headerCells = document.querySelectorAll('#dayzObjects thead th');
+      if (!headerCells || headerCells.length < 5) return;
+      var isPresetsMode = activeCollectionFilter === 'presets';
+      headerCells[3].textContent = isPresetsMode ? 'Description' : 'In-game name';
+      headerCells[4].textContent = isPresetsMode ? 'Export' : 'Path';
+    };
     var populateFolderFilter = function(sourceData) {
       var seen = {};
       var folders = [];
@@ -3611,6 +3655,16 @@
       if (!row) return false;
       var category = normalizeFilterText(row.category || '');
       return category.indexOf('preset') !== -1;
+    };
+    var getPresetDescription = function(row) {
+      if (!row) return '';
+      var direct = String(row.description || '').trim();
+      if (direct && direct !== '-') return direct;
+      var inGame = String(row.inGameName || '').trim();
+      if (inGame && inGame !== '-') return inGame;
+      var tags = String(row.searchTags || '').trim();
+      if (tags && tags !== '-') return tags;
+      return 'Copyable build for DayZ Editor';
     };
 
     var showContent = function() {
@@ -3706,10 +3760,31 @@
             );
           }
         },
-        { data: 'inGameName', defaultContent: '' },
         {
           data: null,
           render: function(data, type, row) {
+            var preset = isPresetRow(row);
+            var description = preset ? getPresetDescription(row) : (row.inGameName || '');
+            if (type !== 'display') return description;
+            return preset
+              ? ('<span class="preset-description">' + escapeHtml(description) + '</span>')
+              : escapeHtml(description);
+          }
+        },
+        {
+          data: null,
+          render: function(data, type, row) {
+            var preset = isPresetRow(row);
+            if (preset) {
+              if (type !== 'display') return 'preset copy export';
+              return (
+                '<div class="preset-actions">' +
+                  '<button class="preset-action-btn preset-copy-btn" type="button" title="Copy to Editor">🏗️ Copy</button>' +
+                  '<button class="preset-action-btn preset-export-btn" type="button" title="Download JSON">↓ JSON</button>' +
+                  '<button class="preset-action-btn preset-dze-btn is-soon" type="button" title="DZE export coming soon">↓ DZE</button>' +
+                '</div>'
+              );
+            }
             var pathValue = row.path || '';
             if (type !== 'display') return pathValue;
             var safePath = escapeHtml(pathValue);
@@ -6831,6 +6906,45 @@
 
       return JSON.stringify(json, null, 4);
     };
+    var buildPresetObjectPackage = function(editorJsonRaw, objName, modelType, p3dPath) {
+      var editorJsonText = buildEditorJson(editorJsonRaw, objName, modelType, p3dPath);
+      var entries = [];
+      try {
+        var parsed = JSON.parse(editorJsonText);
+        if (Array.isArray(parsed)) {
+          entries = parsed;
+        }
+      } catch (_) {}
+      var toNum = function(value, fallback) {
+        var n = Number(value);
+        return isFinite(n) ? n : fallback;
+      };
+      var toVec3 = function(value, fallback) {
+        if (!Array.isArray(value) || value.length < 3) return fallback.slice();
+        return [
+          toNum(value[0], fallback[0]),
+          toNum(value[1], fallback[1]),
+          toNum(value[2], fallback[2])
+        ];
+      };
+      var objects = entries.map(function(entry) {
+        var item = entry && typeof entry === 'object' ? entry : {};
+        return {
+          name: String(item.Type || objName || '').trim(),
+          pos: toVec3(item.Position, [0, 0, 0]),
+          ypr: toVec3(item.Orientation, [0, 0, 0]),
+          scale: toNum(item.Scale, 1),
+          enableCEPersistency: 0,
+          customString: ''
+        };
+      }).filter(function(item) {
+        return !!item.name;
+      });
+      return JSON.stringify({
+        createLocation: '',
+        Objects: objects
+      }, null, 2);
+    };
 
     var hideFocusDetails = function() {
       if (objectFocusEl) {
@@ -8509,6 +8623,7 @@
       applyUrlState(json);
     });
     table.on('draw.dt', function() {
+      updateTableColumnLabels();
       var keepBroadSearchFolders = isFolderTreeInBroadFilterMode() && !!activeFolderFilter && filteredFolderPrefixes.length > 0;
       if (!keepBroadSearchFolders) {
         updateFilteredFolderPrefixes();
@@ -8522,6 +8637,7 @@
       updateSearchShareLinkVisibility();
       scheduleSidebarTopOffsetSync();
     });
+    updateTableColumnLabels();
     var mapConsoleFilterValue = function(value) {
       var key = String(value || '').toLowerCase();
       if (key === 'yes') return 'Console ✓';
@@ -9367,6 +9483,51 @@
       var original = $btn.text();
       $btn.text('✔');
       setTimeout(function() { $btn.text(original); }, 900);
+    });
+
+    $('#dayzObjects tbody').on('click', '.preset-copy-btn', function(e) {
+      e.stopPropagation();
+      var $row = $(this).closest('tr');
+      var rowData = table.row($row).data();
+      if (!rowData) return;
+      var jsonText = buildPresetObjectPackage(
+        rowData.editorJson ? JSON.stringify(rowData.editorJson) : '',
+        getObjectName(rowData),
+        rowData.modelType || '',
+        rowData.path || ''
+      );
+      navigator.clipboard.writeText(jsonText);
+      var $btn = $(this);
+      var original = $btn.text();
+      $btn.text('✔');
+      setTimeout(function() { $btn.text(original); }, 900);
+    });
+
+    $('#dayzObjects tbody').on('click', '.preset-export-btn', function(e) {
+      e.stopPropagation();
+      var $row = $(this).closest('tr');
+      var rowData = table.row($row).data();
+      if (!rowData) return;
+      var jsonText = buildPresetObjectPackage(
+        rowData.editorJson ? JSON.stringify(rowData.editorJson) : '',
+        getObjectName(rowData),
+        rowData.modelType || '',
+        rowData.path || ''
+      );
+      var fileName = sanitizePathFolder(getObjectName(rowData) || 'preset') + '_preset.json';
+      downloadTextFile(jsonText, fileName, 'application/json;charset=utf-8');
+      var $btn = $(this);
+      var original = $btn.text();
+      $btn.text('✔');
+      setTimeout(function() { $btn.text(original); }, 900);
+    });
+
+    $('#dayzObjects tbody').on('click', '.preset-dze-btn', function(e) {
+      e.stopPropagation();
+      var $btn = $(this);
+      var original = $btn.text();
+      $btn.text('Soon');
+      setTimeout(function() { $btn.text(original); }, 1000);
     });
 
     $('#dayzObjects tbody').on('click', '.row-detail__action', function(e) {
