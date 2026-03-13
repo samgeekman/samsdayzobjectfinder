@@ -3040,7 +3040,7 @@
 </div>
 <div id="chipInfoTooltip" class="chip-info-tooltip" role="status" aria-live="polite"></div>
 <div id="presetsGuideNotice" class="version-filter-notice" role="status" aria-live="polite">
-  <span>Press the 🏗️ icon on a preset to copy it to your clipboard. Open DayZ Editor and press Ctrl+V to paste to your cursor.</span>
+  <span>Free to use and attributed builds for DayZ Editor. Press the 🏗️ icon on a preset to copy it to your clipboard and Ctrl+V in Editor, or download the JSON / DZE files.</span>
 </div>
 
 <div class="objects-layout">
@@ -3591,7 +3591,7 @@
       var headerCells = document.querySelectorAll('#dayzObjects thead th');
       if (!headerCells || headerCells.length < 5) return;
       var isPresetsMode = activeCollectionFilter === 'presets';
-      headerCells[3].textContent = isPresetsMode ? 'Description' : 'In-game name';
+      headerCells[3].textContent = isPresetsMode ? 'Builder' : 'In-game name';
       headerCells[4].textContent = isPresetsMode ? 'Export' : 'Path';
     };
     var populateFolderFilter = function(sourceData) {
@@ -3656,15 +3656,10 @@
       var category = normalizeFilterText(row.category || '');
       return category.indexOf('preset') !== -1;
     };
-    var getPresetDescription = function(row) {
-      if (!row) return '';
-      var direct = String(row.description || '').trim();
-      if (direct && direct !== '-') return direct;
-      var inGame = String(row.inGameName || '').trim();
-      if (inGame && inGame !== '-') return inGame;
-      var tags = String(row.searchTags || '').trim();
-      if (tags && tags !== '-') return tags;
-      return 'Copyable build for DayZ Editor';
+    var getPresetBuilder = function(row) {
+      if (!row) return 'samgeekman';
+      var direct = String(row.builder || '').trim();
+      return direct || 'samgeekman';
     };
 
     var showContent = function() {
@@ -3764,7 +3759,7 @@
           data: null,
           render: function(data, type, row) {
             var preset = isPresetRow(row);
-            var description = preset ? getPresetDescription(row) : (row.inGameName || '');
+            var description = preset ? getPresetBuilder(row) : (row.inGameName || '');
             if (type !== 'display') return description;
             return preset
               ? ('<span class="preset-description">' + escapeHtml(description) + '</span>')
