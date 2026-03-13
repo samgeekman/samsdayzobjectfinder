@@ -9334,12 +9334,16 @@
       var rowData = table.row($cell.closest('tr')).data();
       return rowData && rowData.image ? String(rowData.image) : '';
     };
+    var removeHoverPreview = function() {
+      $('#imgPreview').remove();
+    };
 
     $('#dayzObjects tbody')
       .on('mouseenter', '.object-name-cell, .thumb-cell', function(e) {
         if (isMobileView) return;
         var imgPath = getHoverPreviewPath(this);
         if (!imgPath) return;
+        removeHoverPreview();
 
         $('body').append(
           '<div id="imgPreview" class="preview-card">' +
@@ -9355,8 +9359,23 @@
       })
       .on('mouseleave', '.object-name-cell, .thumb-cell', function() {
         if (isMobileView) return;
-        $('#imgPreview').remove();
+        removeHoverPreview();
       });
+    $('#dayzObjects tbody').on('mouseleave', function() {
+      if (isMobileView) return;
+      removeHoverPreview();
+    });
+    $(document).on('scroll', function() {
+      removeHoverPreview();
+    });
+    $(window).on('blur', function() {
+      removeHoverPreview();
+    });
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        removeHoverPreview();
+      }
+    });
 
     var closeOtherRowDetails = function($keepRow) {
       if (!table) return;
