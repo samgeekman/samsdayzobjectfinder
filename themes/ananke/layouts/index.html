@@ -19,7 +19,7 @@
     --sidebars-top-offset: 135px;
     --sidebars-bottom-gap: 24px;
     --tree-pane-width: 220px;
-    --focus-pane-width: 390px;
+    --focus-pane-width: 330px;
     --collapsed-focus-pane-width: 60px;
     --pane-gap: 8.5px;
     --pane-divider: var(--border);
@@ -372,6 +372,20 @@
   #dayzObjects tbody .path-cell {
     position: relative;
   }
+  #dayzObjects tbody .path-cell__value {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  #dayzObjects tbody .path-cell__text--full {
+    display: none;
+  }
+  #dayzObjects tbody .path-cell__value.is-truncated:hover .path-cell__text--short {
+    display: none;
+  }
+  #dayzObjects tbody .path-cell__value.is-truncated:hover .path-cell__text--full {
+    display: inline;
+  }
   #dayzObjects tbody .thumb-cell {
     width: 49px;
     text-align: center;
@@ -595,17 +609,9 @@
   .copy-btn.pin-btn {
     right: 52px;
   }
-  .path-cell .path-pin-btn {
-    right: 4px;
-    opacity: 0;
-  }
+  .path-cell .path-pin-btn,
   .path-cell .path-link-btn {
-    right: 28px;
-    opacity: 0;
-  }
-  .path-cell:hover .path-pin-btn,
-  .path-cell:hover .path-link-btn {
-    opacity: 1;
+    display: none !important;
   }
   #dayzObjects tbody .preset-actions {
     display: inline-flex;
@@ -657,6 +663,7 @@
     color: #1f1f1f !important;
     box-shadow: 0 0 0 1px color-mix(in srgb, #EDA700 45%, transparent);
   }
+  .folder-tree__pin-link,
   .folder-tree__copy-link {
     display: inline-flex;
     align-items: center;
@@ -671,6 +678,7 @@
     color: var(--ui-button-text) !important;
     box-sizing: border-box;
   }
+  .folder-tree__pin-link:hover,
   .folder-tree__copy-link:hover {
     background-color: #EDA700 !important;
     border-color: #EDA700 !important;
@@ -678,6 +686,7 @@
     transform: none !important;
     box-shadow: none !important;
   }
+  .folder-tree__pin-link:focus-visible,
   .folder-tree__copy-link:focus-visible {
     outline: none;
     background-color: #EDA700 !important;
@@ -996,8 +1005,8 @@
   .folder-tree__folder:hover {
     background: var(--bg-soft);
   }
+  .folder-tree__pin-link,
   .folder-tree__copy-link {
-    margin-left: auto;
     border: 1px solid var(--border);
     border-radius: 3px;
     background: var(--card);
@@ -1011,11 +1020,20 @@
     transition: opacity 120ms ease, background-color 120ms ease, border-color 120ms ease;
     flex: 0 0 auto;
   }
+  .folder-tree__pin-link {
+    margin-left: auto;
+  }
+  .folder-tree__copy-link {
+    margin-left: 0;
+  }
+  .folder-tree__row:hover .folder-tree__pin-link,
   .folder-tree__row:hover .folder-tree__copy-link,
+  .folder-tree__row:focus-within .folder-tree__pin-link,
   .folder-tree__row:focus-within .folder-tree__copy-link {
     opacity: 1;
     pointer-events: auto;
   }
+  .folder-tree__pin-link:hover,
   .folder-tree__copy-link:hover {
     background: var(--bg-soft);
   }
@@ -1542,6 +1560,12 @@
     white-space: nowrap;
     overflow-x: auto;
   }
+  .object-focus__secondary--top {
+    margin-bottom: 2px;
+  }
+  .object-focus__secondary--bottom {
+    margin-top: 0;
+  }
   .object-focus__secondary.is-right {
     justify-content: flex-end;
   }
@@ -1634,6 +1658,7 @@
     background: var(--card);
     box-shadow: none;
     overflow: hidden;
+    margin-top: 4px;
   }
   .object-focus__section-header {
     display: flex;
@@ -2787,6 +2812,7 @@
   .pill-button,
   .folder-sidebar__clear,
   .folder-tree__toggle,
+  .folder-tree__pin-link,
   .folder-tree__copy-link,
   .folder-tree__bulk-btn,
   .object-focus__collapse,
@@ -2817,6 +2843,7 @@
   .pill-button:hover,
   .folder-sidebar__clear:hover,
   .folder-tree__toggle:hover,
+  .folder-tree__pin-link:hover,
   .folder-tree__copy-link:hover,
   .folder-tree__bulk-btn:hover,
   .object-focus__collapse:hover,
@@ -2843,6 +2870,7 @@
   .pill-button:focus-visible,
   .folder-sidebar__clear:focus-visible,
   .folder-tree__toggle:focus-visible,
+  .folder-tree__pin-link:focus-visible,
   .folder-tree__copy-link:focus-visible,
   .folder-tree__bulk-btn:focus-visible,
   .object-focus__collapse:focus-visible,
@@ -3084,7 +3112,7 @@
       <div class="object-focus__pane-title">Object viewer</div>
       <div class="object-focus__header">
         <button id="objectFocusCollapse" class="object-focus__collapse" type="button" aria-label="Collapse sidebar">&gt;&gt;</button>
-        <button id="objectFocusClear" class="object-focus__clear folder-sidebar__clear" type="button" aria-label="Deselect object" title="Deselect object">Deselect object</button>
+        <button id="objectFocusClear" class="object-focus__clear folder-sidebar__clear" type="button" aria-label="Deselect" title="Deselect">Deselect</button>
       </div>
     </div>
     <div class="object-focus__pin-hint" aria-hidden="true">📌</div>
@@ -3096,13 +3124,15 @@
     <div class="object-focus__details">
       <div class="object-focus__name-row">
         <div id="objectFocusName" class="object-focus__name"></div>
-        <button id="objectFocusPin" class="pill-button object-focus__name-action" type="button">📌 Pin</button>
       </div>
       <div id="objectFocusEmpty" class="object-focus__empty">You can select or pin objects in this menu.</div>
       <div class="object-focus__actions">
-        <div class="object-focus__secondary">
+        <div class="object-focus__secondary object-focus__secondary--top">
+          <button id="objectFocusPin" class="pill-button" type="button">📌 Pin</button>
           <button id="objectFocusCopy" class="pill-button" type="button">🔗 Copy link</button>
           <button id="objectFocusEditor" class="pill-button" type="button">🏗️ Copy to Editor</button>
+        </div>
+        <div class="object-focus__secondary object-focus__secondary--bottom">
           <button id="objectFocusNameCopy" class="pill-button" type="button">📋 Copy name</button>
           <button id="objectFocusMarkdownCopy" class="pill-button" type="button">🔗 M↓</button>
         </div>
@@ -3522,6 +3552,7 @@
           }
           html += '<button class="folder-tree__folder' + (isActive ? ' is-active' : '') + (isDimmedForMap ? ' is-dim' : '') + '" type="button" data-folder-path="' + escapeHtml(pathKey) + '" title="' + escapeHtml(child.path) + '">' + escapeHtml(child.name) + '</button>';
           if (pathKey && pathKey !== 'dz') {
+            html += '<button class="folder-tree__pin-link" type="button" data-folder-pin-link="' + escapeHtml(pathKey) + '" title="Pin folder objects">📌</button>';
             html += '<button class="folder-tree__copy-link" type="button" data-folder-copy-link="' + escapeHtml(pathKey) + '" title="Copy folder link">🔗</button>';
           }
           html += '</div>';
@@ -3786,14 +3817,22 @@
             var pathValue = row.path || '';
             if (type !== 'display') return pathValue;
             var safePath = escapeHtml(pathValue);
-            var buttons = '';
-            if (pathValue && pathValue !== '-') {
-              buttons = (
-                '<button class="copy-btn path-link-btn" title="Copy link to path">🔗</button>' +
-                '<button class="copy-btn path-pin-btn" title="Pin path">📌</button>'
-              );
+            var isPathTruncated = pathValue.length > 30;
+            var shortPath = pathValue;
+            if (isPathTruncated) {
+              var pathParts = pathValue.split('/').filter(function(part) { return part.length > 0; });
+              if (pathParts.length >= 2) {
+                shortPath = pathParts[0] + '/.../' + pathParts[pathParts.length - 1];
+              } else {
+                shortPath = pathValue.slice(0, 14) + '…' + pathValue.slice(-15);
+              }
             }
-            return safePath + buttons;
+            var safeShortPath = escapeHtml(shortPath);
+            var pathTextHtml = '<span class="path-cell__value' + (isPathTruncated ? ' is-truncated' : '') + '"' + (isPathTruncated ? ' title="' + safePath + '"' : '') + '>'
+              + '<span class="path-cell__text path-cell__text--short">' + safeShortPath + '</span>'
+              + (isPathTruncated ? ('<span class="path-cell__text path-cell__text--full">' + safePath + '</span>') : '')
+              + '</span>';
+            return pathTextHtml;
           }
         },
         {
@@ -3841,6 +3880,14 @@
             return chipsHtml;
           }
         },
+        {
+          data: null,
+          render: function(data, type, row) {
+            var tags = getSearchTags(row) || '';
+            if (type !== 'display') return tags;
+            return '';
+          }
+        },
         { data: 'id', defaultContent: '' }
       ],
       columnDefs: [
@@ -3872,7 +3919,8 @@
         { targets: 3, className: 'min-desktop' },
         { targets: 4, className: 'min-desktop path-cell' },
         { targets: 5, className: 'min-wide info-cell' },
-        { targets: 6, visible: false, searchable: true }
+        { targets: 6, visible: false, searchable: true },
+        { targets: 7, visible: false, searchable: true }
       ],
       dom: '<"top-bar"lfr>tip',
       language: {
@@ -4433,7 +4481,6 @@
           valueHtml = ''
             + '<span class="object-focus__meta-path-wrap">'
             + '<button class="object-focus__meta-path" type="button" data-action="focus-folder-path" data-folder-path="' + escapeHtml(p3dPath) + '" title="Open folder in tree">' + escapeHtml(p3dPath) + '</button>'
-            + '<button class="object-focus__meta-path-copy" type="button" data-action="copy-folder-link" data-folder-path="' + escapeHtml(p3dPath) + '">Copy link</button>'
             + '</span>';
         }
         return '' +
@@ -5739,18 +5786,6 @@
           return;
         }
         var pathTrigger = e.target.closest('[data-action="focus-folder-path"]');
-        var copyPathTrigger = e.target.closest('[data-action="copy-folder-link"]');
-        if (copyPathTrigger) {
-          e.preventDefault();
-          e.stopPropagation();
-          var copyPath = String(copyPathTrigger.getAttribute('data-folder-path') || '');
-          var link = buildFolderPathUrl(copyPath);
-          navigator.clipboard.writeText(link);
-          var originalText = copyPathTrigger.textContent;
-          copyPathTrigger.textContent = 'Copied';
-          setTimeout(function() { copyPathTrigger.textContent = originalText; }, 1200);
-          return;
-        }
         if (pathTrigger) {
           e.preventDefault();
           e.stopPropagation();
@@ -7255,8 +7290,13 @@
         updatePinnedUI();
         return;
       }
-      var items = rows.map(function(rowEl) {
-        var item = buildPinnedItemFromRow(rowEl);
+      var items = rows.map(function(rowEntry) {
+        var item = null;
+        if (rowEntry && rowEntry.nodeType === 1) {
+          item = buildPinnedItemFromRow(rowEntry);
+        } else if (rowEntry && typeof rowEntry === 'object') {
+          item = buildPinnedItemFromData(rowEntry);
+        }
         if (item) {
           item.sourcePath = pathValue;
         }
@@ -8647,6 +8687,25 @@
     });
     if (folderTreeEl) {
       folderTreeEl.addEventListener('click', function(e) {
+        var pinLinkBtn = e.target.closest('[data-folder-pin-link]');
+        if (pinLinkBtn) {
+          e.preventDefault();
+          e.stopPropagation();
+          var pinPath = normalizeFilterText(pinLinkBtn.getAttribute('data-folder-pin-link') || '');
+          if (!pinPath || pinPath === 'dz') return;
+          var sourceRows = getDataArray();
+          var rows = sourceRows.filter(function(rowData) {
+            var rowPath = normalizeFilterText((rowData && rowData.path) || '');
+            if (!rowPath) return;
+            return rowPath === pinPath || rowPath.indexOf(pinPath + '/') === 0;
+          });
+          if (!rows.length) return;
+          addPinnedPathItem(pinPath, rows);
+          var originalPin = pinLinkBtn.textContent;
+          pinLinkBtn.textContent = '✔';
+          setTimeout(function() { pinLinkBtn.textContent = originalPin; }, 900);
+          return;
+        }
         var copyLinkBtn = e.target.closest('[data-folder-copy-link]');
         if (copyLinkBtn) {
           e.preventDefault();
@@ -9425,7 +9484,7 @@
       showObjectFocus($(this), false);
     });
 
-    $('#dayzObjects tbody').on('click', '.copy-btn:not(.editor-copy-btn):not(.pin-btn):not(.path-link-btn)', function(e) {
+    $('#dayzObjects tbody').on('click', '.copy-btn:not(.editor-copy-btn):not(.pin-btn)', function(e) {
       e.stopPropagation();
       var text = $(this).closest('td').data('object');
       navigator.clipboard.writeText(text);
@@ -9445,59 +9504,6 @@
       } else {
         addPinnedItem(item);
       }
-      $btn.text('✔');
-      setTimeout(function() { $btn.text(original); }, 900);
-    });
-
-    $('#dayzObjects tbody').on('click', '.path-pin-btn', function(e) {
-      e.stopPropagation();
-      var $cell = $(this).closest('td');
-      var $row = $cell.closest('tr');
-      var $nameCell = $row.find('.object-name-cell');
-      var pathValue = $nameCell.data('p3d') || $cell.text().trim();
-      if (!pathValue) return;
-      var rows = [];
-      $(table.rows().nodes()).each(function() {
-        var cell = this.querySelector('.object-name-cell');
-        if (!cell) return;
-        if (cell.getAttribute('data-p3d') === pathValue) {
-          rows.push(this);
-        }
-      });
-      addPinnedPathItem(pathValue, rows);
-      var $btn = $(this);
-      var original = $btn.text();
-      $btn.text('✔');
-      setTimeout(function() { $btn.text(original); }, 900);
-    });
-
-    $('#dayzObjects tbody').on('click', '.path-link-btn', function(e) {
-      e.stopPropagation();
-      var $cell = $(this).closest('td');
-      var $row = $cell.closest('tr');
-      var $nameCell = $row.find('.object-name-cell');
-      var pathValue = $nameCell.data('p3d') || $cell.text().trim();
-      if (!pathValue) return;
-      var rows = [];
-      $(table.rows().nodes()).each(function() {
-        var cell = this.querySelector('.object-name-cell');
-        if (!cell) return;
-        if (cell.getAttribute('data-p3d') === pathValue) {
-          rows.push(this);
-        }
-      });
-      var entries = rows.map(function(rowEl) {
-        var cell = rowEl.querySelector('.object-name-cell');
-        if (!cell) return null;
-        return {
-          id: cell.getAttribute('data-objectid') || '',
-          objName: cell.getAttribute('data-object') || ''
-        };
-      }).filter(function(entry) { return entry && entry.objName; });
-      if (!entries.length) return;
-      navigator.clipboard.writeText(buildPinnedUrl(entries));
-      var $btn = $(this);
-      var original = $btn.text();
       $btn.text('✔');
       setTimeout(function() { $btn.text(original); }, 900);
     });
