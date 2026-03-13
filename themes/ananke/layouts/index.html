@@ -812,8 +812,10 @@
   .folder-sidebar__controls {
     position: sticky;
     top: 0;
-    z-index: 2;
-    background: var(--pane-controls-bg);
+    z-index: 12;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 6px 10px -10px rgba(0, 0, 0, 0.35);
     overflow: visible;
   }
   .folder-sidebar__controls::after { display: none; }
@@ -824,13 +826,13 @@
     gap: 8px;
     padding: 10px 10px 6px;
     border-bottom: none;
-    background: var(--pane-controls-bg);
+    background: var(--card);
   }
   .folder-sidebar__search {
     position: relative;
     padding: 6px 10px 10px;
     border-bottom: none;
-    background: var(--pane-controls-bg);
+    background: var(--card);
   }
   .folder-sidebar__bulk-sticky {
     position: absolute;
