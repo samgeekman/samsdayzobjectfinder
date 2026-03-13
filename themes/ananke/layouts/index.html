@@ -389,6 +389,153 @@
     display: block;
     margin: 0 auto;
   }
+  #dayzObjects tbody .info-chips {
+    display: inline-grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-auto-flow: column;
+    align-items: start;
+    gap: 3px;
+    margin-right: 0;
+    vertical-align: middle;
+  }
+  #dayzObjects tbody .info-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    height: clamp(11px, 0.95vw, 13px);
+    padding: 0 clamp(2px, 0.28vw, 4px);
+    border-radius: 3px;
+    font-size: clamp(6.6px, 0.33vw, 7.5px);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: 0.02em;
+    color: #f7f9fb;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    text-transform: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.68;
+    filter: saturate(0.78) brightness(0.9);
+    transition: opacity 0.14s ease, filter 0.14s ease;
+  }
+  .chip-info-tooltip .info-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    height: clamp(11px, 0.95vw, 13px);
+    padding: 0 clamp(2px, 0.28vw, 4px);
+    border-radius: 3px;
+    font-size: clamp(6.6px, 0.33vw, 7.5px);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: 0.02em;
+    color: #f7f9fb;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    text-transform: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    user-select: none;
+  }
+  #dayzObjects tbody tr:hover .info-chip,
+  #dayzObjects tbody tr:focus-within .info-chip,
+  #dayzObjects tbody .info-chip:hover {
+    opacity: 1;
+    filter: none;
+  }
+  #dayzObjects tbody .info-chip:focus-visible {
+    opacity: 1;
+    filter: none;
+  }
+  .chip-info-tooltip {
+    position: fixed;
+    z-index: 2200;
+    max-width: min(720px, 92vw);
+    padding: 6px 9px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.74rem;
+    font-weight: 600;
+    line-height: 1.25;
+    box-shadow: var(--shadow-soft);
+    opacity: 0;
+    transform: translate(-50%, -8px);
+    pointer-events: none;
+    transition: opacity 0.14s ease, transform 0.14s ease;
+  }
+  .chip-info-tooltip.visible {
+    opacity: 1;
+    transform: translate(-50%, -4px);
+  }
+  .chip-info-tooltip__row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .chip-info-tooltip__row + .chip-info-tooltip__row {
+    margin-top: 3px;
+  }
+  .chip-info-tooltip__row .info-chip {
+    flex: 0 0 auto;
+    cursor: default;
+  }
+  .chip-info-tooltip__text {
+    white-space: nowrap;
+  }
+  #dayzObjects tbody .info-chip--cfg {
+    background: #136fcb;
+  }
+  .chip-info-tooltip .info-chip--cfg {
+    background: #136fcb;
+  }
+  #dayzObjects tbody .info-chip--p3d {
+    background: #7a431b;
+  }
+  .chip-info-tooltip .info-chip--p3d {
+    background: #7a431b;
+  }
+  #dayzObjects tbody .info-chip--preset {
+    background: #EDA700;
+    color: #f7f9fb;
+    border-color: rgba(31, 41, 55, 0.35);
+  }
+  .chip-info-tooltip .info-chip--preset {
+    background: #EDA700;
+    color: #f7f9fb;
+    border-color: rgba(31, 41, 55, 0.35);
+  }
+  #dayzObjects tbody .info-chip--types {
+    background: #0ea5a8;
+  }
+  .chip-info-tooltip .info-chip--types {
+    background: #0ea5a8;
+  }
+  #dayzObjects tbody .info-chip--proto {
+    background: #7c3aed;
+  }
+  .chip-info-tooltip .info-chip--proto {
+    background: #7c3aed;
+  }
+  #dayzObjects tbody .info-chip--console-yes,
+  #dayzObjects tbody .info-chip--console-all {
+    background: #3d8f49;
+  }
+  .chip-info-tooltip .info-chip--console-yes,
+  .chip-info-tooltip .info-chip--console-all {
+    background: #3d8f49;
+  }
+  #dayzObjects tbody .info-chip--console-no {
+    background: #b33b3b;
+  }
+  .chip-info-tooltip .info-chip--console-no {
+    background: #b33b3b;
+  }
   #dayzObjects tbody tr {
     height: 47px;
   }
@@ -2854,6 +3001,7 @@
   <a id="searchFilterResetLink" href="#">Reset filter</a>
   <a id="searchFilterCopyLink" href="#">Copy link</a>
 </div>
+<div id="chipInfoTooltip" class="chip-info-tooltip" role="status" aria-live="polite"></div>
 <div id="presetsGuideNotice" class="version-filter-notice" role="status" aria-live="polite">
   <span>Press the 🏗️ icon on a preset to copy it to your clipboard. Open DayZ Editor and press Ctrl+V to paste to your cursor.</span>
 </div>
@@ -2885,9 +3033,7 @@
         <th>Class name</th>
         <th>In-game name</th>
         <th>Path</th>
-        <th>Console</th>
-        <th>Type</th>
-        <th>Search Tags</th>
+        <th>Info</th>
       </tr>
     </thead>
     <tbody>
@@ -3552,8 +3698,6 @@
           render: function(data, type, row) {
             var objName = getObjectName(row);
             if (type !== 'display') return objName;
-            var consoleFlag = getConsoleFlag(row);
-            var editorJson = row.editorJson ? JSON.stringify(row.editorJson) : '';
             return (
               escapeHtml(objName) +
               '<button class="copy-btn pin-btn" title="Pin object">📌</button>' +
@@ -3582,16 +3726,46 @@
         {
           data: null,
           render: function(data, type, row) {
-            var flag = getConsoleFlag(row);
-            if (type !== 'display') return flag;
-            return flag;
-          }
-        },
-        { data: 'modelType', defaultContent: '' },
-        {
-          data: null,
-          render: function(data, type, row) {
-            return type === 'display' ? escapeHtml(getSearchTags(row)) : getSearchTags(row);
+            var modelType = String(row.modelType || '').toLowerCase();
+            var hasConfig = modelType === 'config';
+            var hasP3d = modelType === 'raw p3d' || modelType === 'p3d';
+            var isPreset = modelType === 'preset';
+            var objName = String(getObjectName(row) || '').trim();
+            var objNameKey = normalizeFilterText(objName);
+            var hasTypesEntry = !!typesEntryByName[objName] || !!typesEntryByNameLower[objNameKey];
+            var hasProtoEntry = !!mapGroupProtoEntryByName[objName] || !!mapGroupProtoEntryByNameLower[objNameKey];
+            var consoleFlag = getConsoleFlag(row);
+            var isConsoleFriendly = consoleFlag === '✅';
+            var consoleClass = 'info-chip--console-no';
+            if (isConsoleFriendly) consoleClass = 'info-chip--console-yes';
+            var consoleText = 'Console';
+            var infoSearchText =
+              (hasConfig ? 'config ' : '') +
+              (hasP3d ? 'p3d ' : '') +
+              (isPreset ? 'preset ' : '') +
+              (hasTypesEntry ? 'types ' : '') +
+              (hasProtoEntry ? 'proto ' : '') +
+              consoleText.toLowerCase();
+            if (type !== 'display') return infoSearchText;
+            var chipsHtml = '<span class="info-chips">';
+            chipsHtml += '<span class="info-chip ' + consoleClass + '" data-chip-kind="' + (isConsoleFriendly ? 'console_yes' : 'console_no') + '" title="Usable on console">' + consoleText + '</span>';
+            if (hasConfig) {
+              chipsHtml += '<span class="info-chip info-chip--cfg" data-chip-kind="config" title="Config">Config</span>';
+            }
+            if (hasP3d) {
+              chipsHtml += '<span class="info-chip info-chip--p3d" data-chip-kind="p3d" title="Raw P3D">P3D</span>';
+            }
+            if (isPreset) {
+              chipsHtml += '<span class="info-chip info-chip--preset" data-chip-kind="preset" title="Preset">Preset</span>';
+            }
+            if (hasProtoEntry) {
+              chipsHtml += '<span class="info-chip info-chip--proto" data-chip-kind="proto" title="Has mapgroupproto entry">Proto</span>';
+            }
+            if (hasTypesEntry) {
+              chipsHtml += '<span class="info-chip info-chip--types" data-chip-kind="types" title="Has types entry">Types</span>';
+            }
+            chipsHtml += '</span>';
+            return chipsHtml;
           }
         },
         { data: 'id', defaultContent: '' }
@@ -3624,10 +3798,8 @@
         },
         { targets: 3, className: 'min-desktop' },
         { targets: 4, className: 'min-desktop path-cell' },
-        { targets: 5, className: 'min-wide' },
-        { targets: 6, className: 'min-wide' },
-        { targets: 7, className: 'min-wide' },
-        { targets: 8, visible: false, searchable: true }
+        { targets: 5, className: 'min-wide info-cell' },
+        { targets: 6, visible: false, searchable: true }
       ],
       dom: '<"top-bar"lfr>tip',
       language: {
@@ -3637,6 +3809,91 @@
         zeroRecords: "No matching objects found."
       }
     });
+
+    var chipInfoHideTimer = null;
+    var showChipInfoTooltip = function(targetEl, html) {
+      if (!chipInfoTooltipEl || !targetEl || !html) return;
+      chipInfoTooltipEl.innerHTML = html;
+      var rect = targetEl.getBoundingClientRect();
+      var left = rect.left + (rect.width / 2);
+      var top = rect.top - 8;
+      var safeLeft = Math.max(12, Math.min(left, window.innerWidth - 12));
+      var safeTop = Math.max(12, top);
+      chipInfoTooltipEl.style.left = safeLeft + 'px';
+      chipInfoTooltipEl.style.top = safeTop + 'px';
+      chipInfoTooltipEl.classList.add('visible');
+      if (chipInfoHideTimer) {
+        clearTimeout(chipInfoHideTimer);
+      }
+      chipInfoHideTimer = setTimeout(function() {
+        chipInfoTooltipEl.classList.remove('visible');
+      }, 2600);
+    };
+    var hideChipInfoTooltip = function() {
+      if (!chipInfoTooltipEl) return;
+      chipInfoTooltipEl.classList.remove('visible');
+    };
+    var buildChipSummaryItems = function(rowData) {
+      if (!rowData) return [];
+      var modelType = String(rowData.modelType || '').toLowerCase();
+      var hasConfig = modelType === 'config';
+      var hasP3d = modelType === 'raw p3d' || modelType === 'p3d';
+      var isPreset = modelType === 'preset';
+      var objName = String(getObjectName(rowData) || '').trim();
+      var objNameKey = normalizeFilterText(objName);
+      var hasTypesEntry = !!typesEntryByName[objName] || !!typesEntryByNameLower[objNameKey];
+      var hasProtoEntry = !!mapGroupProtoEntryByName[objName] || !!mapGroupProtoEntryByNameLower[objNameKey];
+      var isConsoleFriendly = getConsoleFlag(rowData) === '✅';
+      var item = function(label, chipClass, explanation) {
+        return { label: label, chipClass: chipClass, explanation: explanation };
+      };
+      var items = [];
+      if (hasConfig) items.push(item('Config', 'info-chip--cfg', 'Is a classed object'));
+      if (hasP3d) items.push(item('P3D', 'info-chip--p3d', 'Raw P3D model entry from the object database.'));
+      if (isPreset) items.push(item('Preset', 'info-chip--preset', 'Copyable build for DayZ Editor'));
+      if (hasTypesEntry) items.push(item('Types', 'info-chip--types', 'Has a Types.xml entry'));
+      if (hasProtoEntry) items.push(item('Proto', 'info-chip--proto', 'Has a MapGroupProto.xml entry'));
+      items.push(isConsoleFriendly
+        ? item('Console', 'info-chip--console-yes', 'Will work on console')
+        : item('Console', 'info-chip--console-no', 'Will not work on console'));
+      return items;
+    };
+    var renderChipSummaryHtml = function(items) {
+      if (!Array.isArray(items) || !items.length) return '';
+      return items.map(function(entry) {
+        return '<div class="chip-info-tooltip__row">'
+          + '<span class="info-chip ' + escapeHtml(entry.chipClass || '') + '">' + escapeHtml(entry.label || '') + '</span>'
+          + '<span class="chip-info-tooltip__text">' + escapeHtml(entry.explanation || '') + '</span>'
+          + '</div>';
+      }).join('');
+    };
+    var chipInfoHoverTimer = null;
+    $tableEl.on('mouseenter', 'td.info-cell', function() {
+      var cellEl = this;
+      if (chipInfoHoverTimer) {
+        clearTimeout(chipInfoHoverTimer);
+      }
+      chipInfoHoverTimer = setTimeout(function() {
+        var $tr = $(cellEl).closest('tr');
+        if ($tr.hasClass('child')) {
+          $tr = $tr.prev();
+        }
+        var rowData = table.row($tr).data();
+        var items = buildChipSummaryItems(rowData);
+        if (!items.length) return;
+        showChipInfoTooltip(cellEl, renderChipSummaryHtml(items));
+      }, 500);
+    });
+    $tableEl.on('mouseleave', 'td.info-cell', function() {
+      if (chipInfoHoverTimer) {
+        clearTimeout(chipInfoHoverTimer);
+        chipInfoHoverTimer = null;
+      }
+      hideChipInfoTooltip();
+    });
+    window.addEventListener('scroll', function() {
+      hideChipInfoTooltip();
+    }, { passive: true });
     
     if (table.settings()[0]._bInitComplete) {
       showContent();
@@ -3720,6 +3977,7 @@
     var currentObjectRowEl = null;
     var typesEntryUrl = null;
     var typesEntryByName = {};
+    var typesEntryByNameLower = {};
     var mapTypesByMap = {
       chernarus: {},
       livonia: {},
@@ -3744,6 +4002,7 @@
     var activeTypesExplorerMatchByName = null;
     var mapGroupProtoEntryUrl = null;
     var mapGroupProtoEntryByName = {};
+    var mapGroupProtoEntryByNameLower = {};
     var activeCollectionFilter = '';
     var typesExplorerFolderPrefixIndex = {};
     var folderSidebarSearchDebounceTimer = null;
@@ -3982,7 +4241,8 @@
         objectFocusTypesLinkEl.removeAttribute('download');
         return;
       }
-      var entry = typesEntryByName[objName];
+      var normalizedName = String(objName || '').trim();
+      var entry = typesEntryByName[normalizedName] || typesEntryByNameLower[normalizedName.toLowerCase()];
       if (!entry) {
         objectFocusTypesLinkEl.style.display = 'none';
         objectFocusTypesLinkEl.removeAttribute('download');
@@ -4021,7 +4281,7 @@
     var buildMapLootMetaHtml = function(objName) {
       var key = String(objName || '').trim().toLowerCase();
       if (!key) return '';
-      var hasTypesEntry = !!typesEntryByName[objName];
+      var hasTypesEntry = !!typesEntryByName[objName] || !!typesEntryByNameLower[key];
       if (!hasTypesEntry || !objectFocusTypesLinkEl || !objectFocusTypesLinkEl.getAttribute('href')) return '';
       var typesExpanded = objectFocusSectionExpanded.types !== false;
       var typesActionHtml =
@@ -4159,18 +4419,25 @@
           if (currentObjectData && currentObjectData.objName) {
             updateObjectFocusMeta(currentObjectData);
           }
+          var didDrawForTypesState = false;
           if (activeTypesTagFilter && activeTypesTagFilter.map === mapKey) {
             activeTypesTagMatchByName = buildTypesTagMatchIndex(activeTypesTagFilter);
             if (table) {
               table.draw(false);
+              didDrawForTypesState = true;
             }
           }
           if (hasTypesExplorerSelection()) {
             activeTypesExplorerMatchByName = buildTypesExplorerMatchIndex();
             if (table) {
               table.draw(false);
+              didDrawForTypesState = true;
             }
           } else if (activeCollectionFilter === 'types_explorer' && table) {
+            table.draw(false);
+            didDrawForTypesState = true;
+          }
+          if (table && !didDrawForTypesState) {
             table.draw(false);
           }
         })
@@ -6770,7 +7037,13 @@
           var node = nodes[i];
           var nameAttr = node.getAttribute('name');
           if (!nameAttr) continue;
-          typesEntryByName[nameAttr] = node.outerHTML;
+          var key = nameAttr.trim();
+          if (!key) continue;
+          typesEntryByName[key] = node.outerHTML;
+          typesEntryByNameLower[key.toLowerCase()] = node.outerHTML;
+        }
+        if (table) {
+          table.draw(false);
         }
       })
         .catch(function() {});
@@ -6789,6 +7062,10 @@
           var key = nameAttr.trim();
           if (!key || mapGroupProtoEntryByName[key]) continue;
           mapGroupProtoEntryByName[key] = node.outerHTML;
+          mapGroupProtoEntryByNameLower[key.toLowerCase()] = node.outerHTML;
+        }
+        if (table) {
+          table.draw(false);
         }
       })
       .catch(function() {});
@@ -7429,7 +7706,7 @@
     var focusById = function(objectId) {
       var normalizedId = normalizeObjectId(objectId);
       if (!normalizedId) return;
-      table.column(8).search('^' + escapeRegex(normalizedId) + '$', true, false).draw();
+        table.column(6).search('^' + escapeRegex(normalizedId) + '$', true, false).draw();
       table.one('draw', function() {
         var $cell = $tableEl.find('tbody .object-name-cell').filter(function() {
           var value = $(this).data('objectid');
@@ -7773,7 +8050,8 @@
       if (!names.length) return '';
       var entries = [];
       names.forEach(function(name) {
-        var entry = typesEntryByName[name];
+        var normalized = String(name || '').trim();
+        var entry = typesEntryByName[normalized] || typesEntryByNameLower[normalized.toLowerCase()];
         if (entry) {
           entries.push(entry);
         }
@@ -7964,7 +8242,7 @@
         return normalizeObjectId(value);
       }).filter(Boolean);
       if (!normalized.length) {
-        table.column(8).search('').draw();
+      table.column(6).search('').draw();
         return;
       }
       var seen = {};
@@ -7974,7 +8252,7 @@
         return true;
       });
       var regex = '^(' + unique.map(function(id) { return escapeRegex(id); }).join('|') + ')$';
-      table.column(8).search(regex, true, false).draw();
+      table.column(6).search(regex, true, false).draw();
     };
 
     var getDataArray = function(sourceData) {
@@ -8050,6 +8328,7 @@
     var searchFilterNoticeTextEl = document.getElementById('searchFilterNoticeText');
     var searchFilterResetLinkEl = document.getElementById('searchFilterResetLink');
     var searchFilterCopyLinkEl = document.getElementById('searchFilterCopyLink');
+    var chipInfoTooltipEl = document.getElementById('chipInfoTooltip');
     var presetsGuideNoticeEl = document.getElementById('presetsGuideNotice');
     var appliedUrlState = false;
 
@@ -8245,8 +8524,8 @@
     });
     var mapConsoleFilterValue = function(value) {
       var key = String(value || '').toLowerCase();
-      if (key === 'yes') return '✅';
-      if (key === 'no') return '❌';
+      if (key === 'yes') return 'Console ✓';
+      if (key === 'no') return 'Console ✕';
       return '';
     };
     $('#filterConsole').on('change', function() {
