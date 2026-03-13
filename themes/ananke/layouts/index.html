@@ -2689,6 +2689,12 @@
     margin: 8px -10px 10px;
     border-top: 1px solid var(--pane-divider);
   }
+  .folder-tree__empty {
+    padding: 6px 4px;
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-style: normal;
+  }
 </style>
 
 <div id="filters">
@@ -2801,6 +2807,11 @@
   <span id="pathFilterNoticeText">Filtering linked paths -</span>
   <a id="pathFilterResetLink" href="#">Reset filter</a>
   <a id="pathFilterCopyLink" href="#">Copy link</a>
+</div>
+<div id="searchFilterNotice" class="version-filter-notice" role="status" aria-live="polite">
+  <span id="searchFilterNoticeText">Linked to search term ''.</span>
+  <a id="searchFilterResetLink" href="#">Reset filter</a>
+  <a id="searchFilterCopyLink" href="#">Copy link</a>
 </div>
 <div id="presetsGuideNotice" class="version-filter-notice" role="status" aria-live="polite">
   <span>Press the 🏗️ icon on a preset to copy it to your clipboard. Open DayZ Editor and press Ctrl+V to paste to your cursor.</span>
@@ -3246,13 +3257,14 @@
     var updateFolderSidebarTitle = function() {
       if (!folderSidebarTitleEl) return;
       var visibleCount = table ? table.rows({ search: 'applied' }).count() : 0;
-      folderSidebarTitleEl.textContent = visibleCount.toLocaleString() + ' Objects';
+      folderSidebarTitleEl.textContent = visibleCount.toLocaleString() + ' objects';
     };
     var renderFolderTree = function() {
       if (!folderTreeEl) return;
       var tree = buildFolderTreeData(getFolderTreeSourcePrefixes());
       var treeRoot = (tree && tree.children && tree.children.dz) ? tree.children.dz : tree;
       var forceExpandForSearch = isFolderTreeInBroadFilterMode();
+      var hasVisibleFolders = !!Object.keys((treeRoot && treeRoot.children) || {}).length;
       var presetsActive = activeCollectionFilter === 'presets';
       var databaseActive = activeCollectionFilter === '';
       var renderChildren = function(node) {
@@ -3309,7 +3321,8 @@
         + '<span class="folder-tree__leaf-icon" aria-hidden="true">📍</span>'
         + '<button class="folder-tree__folder' + (activeCollectionFilter === 'object_map' ? ' is-active' : '') + '" type="button" data-folder-path="__object_map__" title="Object Maps">Object Maps</button>'
         + '</div>'
-        + '<div class="folder-tree__apps-divider" aria-hidden="true"></div>';
+        + '<div class="folder-tree__apps-divider" aria-hidden="true"></div>'
+        + (!hasVisibleFolders && forceExpandForSearch ? '<div class="folder-tree__empty">No matching folders found.</div>' : '');
       var branchKeys = getVisibleFolderBranchKeys();
       var openCount = branchKeys.filter(function(key) { return !!folderTreeExpanded[key]; }).length;
       if (folderSidebarBulkEl) {
@@ -7989,6 +8002,10 @@
     var pathFilterNoticeTextEl = document.getElementById('pathFilterNoticeText');
     var pathFilterResetLinkEl = document.getElementById('pathFilterResetLink');
     var pathFilterCopyLinkEl = document.getElementById('pathFilterCopyLink');
+    var searchFilterNoticeEl = document.getElementById('searchFilterNotice');
+    var searchFilterNoticeTextEl = document.getElementById('searchFilterNoticeText');
+    var searchFilterResetLinkEl = document.getElementById('searchFilterResetLink');
+    var searchFilterCopyLinkEl = document.getElementById('searchFilterCopyLink');
     var presetsGuideNoticeEl = document.getElementById('presetsGuideNotice');
     var appliedUrlState = false;
 
@@ -8013,6 +8030,12 @@
         name: typesTagParam
       };
       updateTypesTagFilterNotice();
+    }
+    if (searchFilterNoticeEl && searchQueryParam) {
+      if (searchFilterNoticeTextEl) {
+        searchFilterNoticeTextEl.textContent = "Linked to search term '" + searchQueryParam + "'.";
+      }
+      searchFilterNoticeEl.classList.add('visible');
     }
 
     var applyUrlState = function(sourceData) {
@@ -8327,6 +8350,7 @@
       if (versionFilterNoticeEl) versionFilterNoticeEl.classList.remove('visible');
       if (linkedFilterNoticeEl) linkedFilterNoticeEl.classList.remove('visible');
       if (pathFilterNoticeEl) pathFilterNoticeEl.classList.remove('visible');
+      if (searchFilterNoticeEl) searchFilterNoticeEl.classList.remove('visible');
       var cleanUrl = window.location.origin + window.location.pathname;
       window.history.replaceState(null, '', cleanUrl);
       syncTypesExplorerPath();
@@ -8619,6 +8643,26 @@
         var original = pathFilterCopyLinkEl.textContent;
         pathFilterCopyLinkEl.textContent = 'Copied';
         setTimeout(function() { pathFilterCopyLinkEl.textContent = original; }, 1200);
+      });
+    }
+    if (searchFilterResetLinkEl) {
+      searchFilterResetLinkEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        runResetView();
+      });
+    }
+    if (searchFilterCopyLinkEl) {
+      searchFilterCopyLinkEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        var query = searchQueryParam;
+        if (!query && table && typeof table.search === 'function') {
+          query = String(table.search() || '').trim();
+        }
+        if (!query) return;
+        navigator.clipboard.writeText(buildSearchShareUrl(query));
+        var original = searchFilterCopyLinkEl.textContent;
+        searchFilterCopyLinkEl.textContent = 'Copied';
+        setTimeout(function() { searchFilterCopyLinkEl.textContent = original; }, 1200);
       });
     }
 
