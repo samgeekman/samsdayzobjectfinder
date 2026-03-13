@@ -3701,6 +3701,7 @@
         syncSidebarTopOffset();
       });
     };
+    window.addEventListener('scroll', scheduleSidebarTopOffsetSync, { passive: true });
     
     $tableEl.one('init.dt', showContent);
 
