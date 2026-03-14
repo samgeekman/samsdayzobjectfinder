@@ -377,13 +377,7 @@
     max-width: 100%;
     vertical-align: middle;
   }
-  #dayzObjects tbody .path-cell__text--full {
-    display: none;
-  }
-  #dayzObjects tbody .path-cell__value.is-truncated:hover .path-cell__text--short {
-    display: none;
-  }
-  #dayzObjects tbody .path-cell__value.is-truncated:hover .path-cell__text--full {
+  #dayzObjects tbody .path-cell__text {
     display: inline;
   }
   #dayzObjects tbody .thumb-cell {
@@ -502,6 +496,13 @@
   .chip-info-tooltip__text {
     white-space: nowrap;
   }
+  .chip-info-tooltip__plain {
+    display: block;
+    max-width: min(520px, 82vw);
+    white-space: normal;
+    font-weight: 600;
+    line-height: 1.3;
+  }
   #dayzObjects tbody .info-chip--cfg {
     background: #136fcb;
   }
@@ -549,6 +550,30 @@
   }
   .chip-info-tooltip .info-chip--console-no {
     background: #b33b3b;
+  }
+  .path-hover-tooltip {
+    position: fixed;
+    z-index: 2210;
+    max-width: min(720px, calc(100vw - 24px));
+    padding: 7px 9px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background: var(--card);
+    color: var(--text);
+    box-shadow: var(--shadow-soft);
+    font-size: 0.72rem;
+    line-height: 1.28;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, -8px);
+    transition: opacity 0.14s ease, transform 0.14s ease;
+  }
+  .path-hover-tooltip.visible {
+    opacity: 1;
+    transform: translate(-50%, -4px);
   }
   #dayzObjects tbody tr {
     height: 47px;
@@ -1601,10 +1626,42 @@
   .object-focus__meta-row:last-child {
     border-bottom: none;
   }
+  .object-focus__meta-value--with-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
   .object-focus__meta-label {
     color: var(--muted);
     font-weight: 700;
     flex: 0 0 auto;
+  }
+  .object-focus__meta-label-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .object-focus__meta-info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--muted);
+    cursor: help;
+    line-height: 1;
+  }
+  .object-focus__meta-info svg {
+    width: 12px;
+    height: 12px;
+    display: block;
+  }
+  .object-focus__meta-info:hover {
+    color: var(--accent);
   }
   .object-focus__meta-value {
     color: var(--text);
@@ -3069,6 +3126,7 @@
   <a id="searchFilterCopyLink" href="#">Copy link</a>
 </div>
 <div id="chipInfoTooltip" class="chip-info-tooltip" role="status" aria-live="polite"></div>
+<div id="pathHoverTooltip" class="path-hover-tooltip" role="status" aria-live="polite"></div>
 <div id="presetsGuideNotice" class="version-filter-notice" role="status" aria-live="polite">
   <span>Free to use and attributed builds for DayZ Editor. Press the 🏗️ icon on a preset to copy it to your clipboard and Ctrl+V in Editor, or download the JSON / DZE files.</span>
 </div>
@@ -3828,9 +3886,11 @@
               }
             }
             var safeShortPath = escapeHtml(shortPath);
-            var pathTextHtml = '<span class="path-cell__value' + (isPathTruncated ? ' is-truncated' : '') + '"' + (isPathTruncated ? ' title="' + safePath + '"' : '') + '>'
+            var pathTextHtml = '<span class="path-cell__value' + (isPathTruncated ? ' is-truncated' : '') + '"'
+              + (isPathTruncated ? (' data-full-path="' + safePath + '"') : '')
+              + (isPathTruncated ? ' title="' + safePath + '"' : '')
+              + '>'
               + '<span class="path-cell__text path-cell__text--short">' + safeShortPath + '</span>'
-              + (isPathTruncated ? ('<span class="path-cell__text path-cell__text--full">' + safePath + '</span>') : '')
               + '</span>';
             return pathTextHtml;
           }
@@ -3932,7 +3992,7 @@
     });
 
     var chipInfoHideTimer = null;
-    var showChipInfoTooltip = function(targetEl, html) {
+    var showChipInfoTooltip = function(targetEl, html, autoHideMs) {
       if (!chipInfoTooltipEl || !targetEl || !html) return;
       chipInfoTooltipEl.innerHTML = html;
       var rect = targetEl.getBoundingClientRect();
@@ -3945,14 +4005,39 @@
       chipInfoTooltipEl.classList.add('visible');
       if (chipInfoHideTimer) {
         clearTimeout(chipInfoHideTimer);
+        chipInfoHideTimer = null;
       }
-      chipInfoHideTimer = setTimeout(function() {
-        chipInfoTooltipEl.classList.remove('visible');
-      }, 2600);
+      var duration = Number(autoHideMs);
+      if (!isFinite(duration)) {
+        duration = 2600;
+      }
+      if (duration > 0) {
+        chipInfoHideTimer = setTimeout(function() {
+          chipInfoTooltipEl.classList.remove('visible');
+          chipInfoHideTimer = null;
+        }, duration);
+      }
     };
     var hideChipInfoTooltip = function() {
       if (!chipInfoTooltipEl) return;
       chipInfoTooltipEl.classList.remove('visible');
+    };
+    var showPathHoverTooltip = function(targetEl, fullPath) {
+      if (!pathHoverTooltipEl || !targetEl || !fullPath) return;
+      pathHoverTooltipEl.textContent = fullPath;
+      var rect = targetEl.getBoundingClientRect();
+      var left = rect.left + (rect.width / 2);
+      var top = rect.top - 8;
+      var safeLeft = Math.max(12, Math.min(left, window.innerWidth - 12));
+      var safeTop = Math.max(12, top);
+      pathHoverTooltipEl.style.left = safeLeft + 'px';
+      pathHoverTooltipEl.style.top = safeTop + 'px';
+      pathHoverTooltipEl.classList.add('visible');
+    };
+    var hidePathHoverTooltip = function() {
+      if (!pathHoverTooltipEl) return;
+      pathHoverTooltipEl.classList.remove('visible');
+      pathHoverTooltipEl.textContent = '';
     };
     var buildChipSummaryItems = function(rowData) {
       if (!rowData) return [];
@@ -3970,7 +4055,7 @@
       };
       var items = [];
       if (hasConfig) items.push(item('Config', 'info-chip--cfg', 'Is a classed object'));
-      if (hasP3d) items.push(item('P3D', 'info-chip--p3d', 'Raw P3D model entry from the object database.'));
+      if (hasP3d) items.push(item('P3D', 'info-chip--p3d', 'Raw P3D model'));
       if (isPreset) items.push(item('Preset', 'info-chip--preset', 'Copyable build for DayZ Editor'));
       if (hasTypesEntry) items.push(item('Types', 'info-chip--types', 'Has a Types.xml entry'));
       if (hasProtoEntry) items.push(item('Proto', 'info-chip--proto', 'Has a MapGroupProto.xml entry'));
@@ -4012,8 +4097,17 @@
       }
       hideChipInfoTooltip();
     });
+    $tableEl.on('mouseenter', 'td.path-cell .path-cell__value.is-truncated', function() {
+      var fullPath = String(this.getAttribute('data-full-path') || '').trim();
+      if (!fullPath) return;
+      showPathHoverTooltip(this, fullPath);
+    });
+    $tableEl.on('mouseleave', 'td.path-cell .path-cell__value.is-truncated', function() {
+      hidePathHoverTooltip();
+    });
     window.addEventListener('scroll', function() {
       hideChipInfoTooltip();
+      hidePathHoverTooltip();
     }, { passive: true });
     
     if (table.settings()[0]._bInitComplete) {
@@ -4477,15 +4571,30 @@
         { label: 'Tags', value: tags || '—' }
       ].map(function(row) {
         var valueHtml = escapeHtml(row.value);
+        var labelHtml = escapeHtml(row.label) + ':';
+        var rowClass = 'object-focus__meta-row';
         if (row.label === 'Path' && p3dPath) {
           valueHtml = ''
             + '<span class="object-focus__meta-path-wrap">'
             + '<button class="object-focus__meta-path" type="button" data-action="focus-folder-path" data-folder-path="' + escapeHtml(p3dPath) + '" title="Open folder in tree">' + escapeHtml(p3dPath) + '</button>'
             + '</span>';
         }
+        if (row.label === 'Object ID') {
+          valueHtml = ''
+            + '<span class="object-focus__meta-value--with-info">'
+            + escapeHtml(row.value)
+            + '<button class="object-focus__meta-info" type="button" data-action="object-id-info" aria-label="Object ID info">'
+            + '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
+            + '<circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"></circle>'
+            + '<path d="M12 10.4v6.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>'
+            + '<circle cx="12" cy="7.2" r="1.1" fill="currentColor"></circle>'
+            + '</svg>'
+            + '</button>'
+            + '</span>';
+        }
         return '' +
-          '<div class="object-focus__meta-row">' +
-            '<span class="object-focus__meta-label">' + escapeHtml(row.label) + ':</span>' +
+          '<div class="' + rowClass + '">' +
+            '<span class="object-focus__meta-label">' + labelHtml + '</span>' +
             '<span class="object-focus__meta-value">' + valueHtml + '</span>' +
           '</div>';
       }).join('');
@@ -4497,6 +4606,19 @@
           '<div class="object-focus__section-body object-focus__meta-list">' + detailsRows + '</div>' +
         '</div>' +
         buildMapLootMetaHtml(objName);
+      var objectIdInfoBtn = objectFocusMetaEl.querySelector('[data-action="object-id-info"]');
+      if (objectIdInfoBtn) {
+        objectIdInfoBtn.addEventListener('mouseenter', function() {
+          showChipInfoTooltip(
+            objectIdInfoBtn,
+            '<span class="chip-info-tooltip__plain">Each object on the database has a unique ID - these are not used in the game itself.</span>',
+            0
+          );
+        });
+        objectIdInfoBtn.addEventListener('mouseleave', function() {
+          hideChipInfoTooltip();
+        });
+      }
     };
     var loadMapTypes = function(mapKey, url) {
       return fetch(url)
@@ -8481,6 +8603,7 @@
     var searchFilterResetLinkEl = document.getElementById('searchFilterResetLink');
     var searchFilterCopyLinkEl = document.getElementById('searchFilterCopyLink');
     var chipInfoTooltipEl = document.getElementById('chipInfoTooltip');
+    var pathHoverTooltipEl = document.getElementById('pathHoverTooltip');
     var presetsGuideNoticeEl = document.getElementById('presetsGuideNotice');
     var appliedUrlState = false;
 
@@ -8662,6 +8785,7 @@
     });
     table.on('draw.dt', function() {
       updateTableColumnLabels();
+      hidePathHoverTooltip();
       var keepBroadSearchFolders = isFolderTreeInBroadFilterMode() && !!activeFolderFilter && filteredFolderPrefixes.length > 0;
       if (!keepBroadSearchFolders) {
         updateFilteredFolderPrefixes();
