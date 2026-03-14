@@ -382,8 +382,8 @@ def load_preset_rows_from_folders(presets_dir: Path) -> Tuple[List[dict], int]:
                 f"Preset metadata missing required 'id' in folder: {folder}. "
                 "Add metadata file with id and author before running build."
             )
-        object_name = str(metadata.get("objectName") or metadata.get("name") or folder.name).strip()
-        in_game_name = str(metadata.get("inGameName") or object_name).strip()
+        object_name = str(folder.name).strip()
+        in_game_name = str(folder.name).strip()
         builder = str(metadata.get("builder") or metadata.get("author") or "samgeekman").strip()
         image = str(metadata.get("image") or "").strip()
         search_tags = str(metadata.get("searchTags") or "preset").strip()

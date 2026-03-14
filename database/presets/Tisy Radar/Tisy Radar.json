@@ -1,36 +1,36 @@
 {
-  "Objects": [
-    {
-      "name": "Land_Tisy_RadarB_Base",
-      "pos": [
-        -211.7570343017578,
-        10.000003814697266,
-        3310.91015625
-      ],
-      "ypr": [
-        0.0,
-        0.0,
-        -0.0
-      ],
-      "scale": 1.0,
-      "enableCEPersistency": 0,
-      "customString": ""
-    },
-    {
-      "name": "Land_Tisy_RadarB_Antenna",
-      "pos": [
-        -203.5809783935547,
-        10.010910034179688,
-        3315.685546875
-      ],
-      "ypr": [
-        62.87129211425781,
-        0.0,
-        -0.0
-      ],
-      "scale": 1.0,
-      "enableCEPersistency": 0,
-      "customString": ""
-    }
-  ]
+    "Objects": [
+        {
+            "name": "Land_Tisy_RadarB_Base",
+            "pos": [
+                5310.08447265625,
+                15.392349243164063,
+                3810.408447265625
+            ],
+            "ypr": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "scale": 0.9999998807907105,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "Land_Tisy_RadarB_Antenna",
+            "pos": [
+                5318.26025390625,
+                15.403255462646485,
+                3815.183837890625
+            ],
+            "ypr": [
+                62.87129211425781,
+                0.0,
+                0.0
+            ],
+            "scale": 0.9999999403953552,
+            "enableCEPersistency": 0,
+            "customString": ""
+        }
+    ]
 }

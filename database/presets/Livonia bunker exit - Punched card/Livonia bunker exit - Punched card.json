@@ -1,52 +1,180 @@
 {
-  "Objects": [
-    {
-      "name": "Land_Underground_Stairs_Exit",
-      "pos": [
-        4320.27294921875,
-        338.0639953613281,
-        10499.2373046875
-      ],
-      "ypr": [
-        63.0,
-        0.0,
-        -0.0
-      ],
-      "scale": 0.9999999403953552,
-      "enableCEPersistency": 0,
-      "customString": ""
-    },
-    {
-      "name": "Land_Underground_Panel",
-      "pos": [
-        4325.0458984375,
-        340.3938903808594,
-        10496.826171875
-      ],
-      "ypr": [
-        152.98291015625,
-        0.0,
-        -0.0
-      ],
-      "scale": 1.0,
-      "enableCEPersistency": 0,
-      "customString": ""
-    },
-    {
-      "name": "Land_Underground_Panel",
-      "pos": [
-        4324.0859375,
-        340.3938903808594,
-        10498.708984375
-      ],
-      "ypr": [
-        152.98289489746094,
-        0.0,
-        -0.0
-      ],
-      "scale": 1.0,
-      "enableCEPersistency": 0,
-      "customString": ""
-    }
-  ]
+    "Objects": [
+        {
+            "name": "StaticObj_Pier_Concrete2_End",
+            "pos": [
+                -5781.59765625,
+                185.9548797607422,
+                3031.566650390625
+            ],
+            "ypr": [
+                -90.00006866455078,
+                0.0,
+                -0.0
+            ],
+            "scale": 0.9999998211860657,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "StaticObj_Pier_Tube_Small",
+            "pos": [
+                -5991.63330078125,
+                152.1009979248047,
+                2931.106689453125
+            ],
+            "ypr": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "scale": 1.0,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "StaticObj_Pier_Wooden1_End",
+            "pos": [
+                -6023.83203125,
+                138.4621124267578,
+                2951.285400390625
+            ],
+            "ypr": [
+                -135.0,
+                0.0,
+                -0.0
+            ],
+            "scale": 1.0,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "StaticObj_Pier_Wooden1_Pillars",
+            "pos": [
+                -6030.96240234375,
+                143.60452270507813,
+                2968.708251953125
+            ],
+            "ypr": [
+                44.99999237060547,
+                0.0,
+                -0.0
+            ],
+            "scale": 0.9999995231628418,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "StaticObj_Ice_Sea_Triangle_1",
+            "pos": [
+                -347.27752685546877,
+                1.8464258909225464,
+                -442.0172119140625
+            ],
+            "ypr": [
+                80.99992370605469,
+                -0.0,
+                -0.0
+            ],
+            "scale": 1.0,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "StaticObj_Ice_Sea_Triangle_2",
+            "pos": [
+                -317.1026916503906,
+                1.9127634763717652,
+                -425.187744140625
+            ],
+            "ypr": [
+                -53.99995803833008,
+                0.0,
+                0.0
+            ],
+            "scale": 1.0,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "DZ\\rocks_sakhal\\rock_wallh7_tall.p3d",
+            "pos": [
+                -1630.768310546875,
+                15.798635482788086,
+                -36.5286750793457
+            ],
+            "ypr": [
+                -0.4712388813495636,
+                0.0,
+                0.0
+            ],
+            "scale": 0.9999996423721314,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "DZ\\rocks_sakhal\\rock_monolith5_int.p3d",
+            "pos": [
+                -9615.076171875,
+                28.24597930908203,
+                -6300.96142578125
+            ],
+            "ypr": [
+                -0.3141592741012573,
+                0.0,
+                0.0
+            ],
+            "scale": 1.0,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "Land_Underground_Stairs_Exit",
+            "pos": [
+                8576.455078125,
+                46.84331512451172,
+                1598.2275390625
+            ],
+            "ypr": [
+                63.0,
+                0.0,
+                -0.0
+            ],
+            "scale": 0.9999999403953552,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "Land_Underground_Panel",
+            "pos": [
+                8581.228515625,
+                49.173213958740237,
+                1595.81640625
+            ],
+            "ypr": [
+                152.98289489746095,
+                0.0,
+                -0.0
+            ],
+            "scale": 1.0,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "Land_Underground_Panel",
+            "pos": [
+                8580.2685546875,
+                49.173213958740237,
+                1597.69921875
+            ],
+            "ypr": [
+                152.98287963867188,
+                0.0,
+                -0.0
+            ],
+            "scale": 1.0,
+            "enableCEPersistency": 0,
+            "customString": ""
+        }
+    ]
 }

@@ -1,36 +1,36 @@
 {
-  "Objects": [
-    {
-      "name": "Land_Underground_Entrance",
-      "pos": [
-        4272.23486328125,
-        257.00653076171875,
-        4895.14111328125
-      ],
-      "ypr": [
-        9.0,
-        0.0,
-        -0.0
-      ],
-      "scale": 1.0,
-      "enableCEPersistency": 0,
-      "customString": ""
-    },
-    {
-      "name": "Land_Underground_Panel_Lever",
-      "pos": [
-        4268.42138671875,
-        258.4884948730469,
-        4888.4794921875
-      ],
-      "ypr": [
-        9.0,
-        0.0,
-        -0.0
-      ],
-      "scale": 1.0,
-      "enableCEPersistency": 0,
-      "customString": ""
-    }
-  ]
+    "Objects": [
+        {
+            "name": "Land_Underground_Entrance",
+            "pos": [
+                5350.0751953125,
+                11.526744842529297,
+                3598.962158203125
+            ],
+            "ypr": [
+                9.0,
+                0.0,
+                -0.0
+            ],
+            "scale": 1.0,
+            "enableCEPersistency": 0,
+            "customString": ""
+        },
+        {
+            "name": "Land_Underground_Panel_Lever",
+            "pos": [
+                5346.26171875,
+                13.008708953857422,
+                3592.300537109375
+            ],
+            "ypr": [
+                9.0,
+                0.0,
+                0.0
+            ],
+            "scale": 1.0,
+            "enableCEPersistency": 0,
+            "customString": ""
+        }
+    ]
 }

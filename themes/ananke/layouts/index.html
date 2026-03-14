@@ -3864,11 +3864,13 @@
             var preset = isPresetRow(row);
             if (preset) {
               if (type !== 'display') return 'preset copy export';
+              var dzePath = String(row.presetDzePath || '').trim();
+              var hasDze = !!dzePath;
               return (
                 '<div class="preset-actions">' +
                   '<button class="preset-action-btn preset-copy-btn" type="button" title="Copy to Editor">🏗️ Copy</button>' +
                   '<button class="preset-action-btn preset-export-btn" type="button" title="Download JSON">↓ JSON</button>' +
-                  '<button class="preset-action-btn preset-dze-btn" type="button" title="DZE export coming soon">↓ DZE</button>' +
+                  '<button class="preset-action-btn preset-dze-btn' + (hasDze ? '' : ' is-soon') + '" type="button" title="' + (hasDze ? 'Download DZE' : 'DZE export coming soon') + '">↓ DZE</button>' +
                 '</div>'
               );
             }
@@ -3911,13 +3913,14 @@
             var consoleClass = 'info-chip--console-no';
             if (isConsoleFriendly) consoleClass = 'info-chip--console-yes';
             var consoleText = 'Console';
+            var consoleSearchText = isConsoleFriendly ? 'console yes' : 'console no';
             var infoSearchText =
               (hasConfig ? 'config ' : '') +
               (hasP3d ? 'p3d ' : '') +
               (isPreset ? 'preset ' : '') +
               (hasTypesEntry ? 'types ' : '') +
               (hasProtoEntry ? 'proto ' : '') +
-              consoleText.toLowerCase();
+              consoleSearchText;
             if (type !== 'display') return infoSearchText;
             var chipsHtml = '<span class="info-chips">';
             chipsHtml += '<span class="info-chip ' + consoleClass + '" data-chip-kind="' + (isConsoleFriendly ? 'console_yes' : 'console_no') + '" title="Usable on console">' + consoleText + '</span>';
@@ -8802,8 +8805,8 @@
     updateTableColumnLabels();
     var mapConsoleFilterValue = function(value) {
       var key = String(value || '').toLowerCase();
-      if (key === 'yes') return 'Console ✓';
-      if (key === 'no') return 'Console ✕';
+      if (key === 'yes') return 'console yes';
+      if (key === 'no') return 'console no';
       return '';
     };
     $('#filterConsole').on('change', function() {
@@ -9672,6 +9675,24 @@
     $('#dayzObjects tbody').on('click', '.preset-dze-btn', function(e) {
       e.stopPropagation();
       var $btn = $(this);
+      var $row = $(this).closest('tr');
+      var rowData = table.row($row).data();
+      var dzePath = rowData ? String(rowData.presetDzePath || '').trim() : '';
+      if (dzePath) {
+        var normalizedPath = dzePath.replace(/^\/+/, '');
+        var fileName = normalizedPath.split('/').pop() || (sanitizePathFolder(getObjectName(rowData) || 'preset') + '.dze');
+        var link = document.createElement('a');
+        link.href = '/' + encodeURI(normalizedPath);
+        link.setAttribute('download', fileName);
+        link.rel = 'noopener';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        var okText = $btn.text();
+        $btn.text('✔');
+        setTimeout(function() { $btn.text(okText); }, 900);
+        return;
+      }
       var original = $btn.text();
       $btn.text('Soon');
       setTimeout(function() { $btn.text(original); }, 1000);
