@@ -3868,7 +3868,7 @@
                 '<div class="preset-actions">' +
                   '<button class="preset-action-btn preset-copy-btn" type="button" title="Copy to Editor">🏗️ Copy</button>' +
                   '<button class="preset-action-btn preset-export-btn" type="button" title="Download JSON">↓ JSON</button>' +
-                  '<button class="preset-action-btn preset-dze-btn is-soon" type="button" title="DZE export coming soon">↓ DZE</button>' +
+                  '<button class="preset-action-btn preset-dze-btn" type="button" title="DZE export coming soon">↓ DZE</button>' +
                 '</div>'
               );
             }
@@ -9637,7 +9637,7 @@
       var $row = $(this).closest('tr');
       var rowData = table.row($row).data();
       if (!rowData) return;
-      var jsonText = buildPresetObjectPackage(
+      var jsonText = buildEditorJson(
         rowData.editorJson ? JSON.stringify(rowData.editorJson) : '',
         getObjectName(rowData),
         rowData.modelType || '',

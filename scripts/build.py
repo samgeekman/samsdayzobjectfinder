@@ -260,6 +260,160 @@ def normalize_object(obj: dict) -> dict:
     return obj
 
 
+def parse_bool(value: object, default: bool = False) -> bool:
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, (int, float)):
+        return bool(value)
+    if isinstance(value, str):
+        key = value.strip().lower()
+        if key in {"1", "true", "yes", "y", "on"}:
+            return True
+        if key in {"0", "false", "no", "n", "off"}:
+            return False
+    return default
+
+
+def read_preset_metadata(folder: Path) -> dict:
+    candidates = sorted(
+        [p for p in folder.iterdir() if p.is_file() and p.suffix.lower() == ".txt" and ("meta" in p.name.lower())]
+    )
+    default_path = folder / "metadata.txt"
+    if default_path.exists() and default_path not in candidates:
+        candidates.insert(0, default_path)
+    for candidate in candidates:
+        text = candidate.read_text(encoding="utf-8", errors="ignore").strip()
+        if not text:
+            continue
+        if text.startswith("{"):
+            try:
+                parsed = json.loads(text)
+                if isinstance(parsed, dict):
+                    return {str(k).strip(): v for k, v in parsed.items()}
+            except json.JSONDecodeError:
+                pass
+        out: Dict[str, object] = {}
+        for raw_line in text.splitlines():
+            line = raw_line.strip()
+            if not line or line.startswith("#"):
+                continue
+            if ":" in line:
+                key, value = line.split(":", 1)
+            elif "=" in line:
+                key, value = line.split("=", 1)
+            else:
+                continue
+            key = key.strip()
+            value = value.strip()
+            if not key:
+                continue
+            out[key] = value
+        if out:
+            return out
+    return {}
+
+
+def to_editor_json_from_objects_payload(payload: dict) -> List[dict]:
+    raw_objects = payload.get("Objects")
+    if not isinstance(raw_objects, list):
+        return []
+    out: List[dict] = []
+    for item in raw_objects:
+        if not isinstance(item, dict):
+            continue
+        name = str(item.get("name", "")).strip()
+        if not name:
+            continue
+        pos = item.get("pos")
+        ypr = item.get("ypr")
+        if not isinstance(pos, list) or len(pos) < 3:
+            pos = [0, 0, 0]
+        if not isinstance(ypr, list) or len(ypr) < 3:
+            ypr = [0, 0, 0]
+        scale = item.get("scale", 1.0)
+        try:
+            scale = float(scale)
+        except (TypeError, ValueError):
+            scale = 1.0
+        out.append(
+            {
+                "Type": name,
+                "DisplayName": name,
+                "Position": [pos[0], pos[1], pos[2]],
+                "Orientation": [ypr[0], ypr[1], ypr[2]],
+                "Scale": scale,
+                "AttachmentMap": {},
+                "Model": "",
+                "Flags": 30,
+                "m_LowBits": 0,
+                "m_HighBits": 0,
+            }
+        )
+    return out
+
+
+def load_preset_payload_json(folder: Path) -> Optional[dict]:
+    for json_path in sorted(folder.glob("*.json")):
+        name_key = json_path.name.lower()
+        if "copy and pasteable" in name_key:
+            continue
+        try:
+            parsed = json.loads(json_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        if isinstance(parsed, dict) and isinstance(parsed.get("Objects"), list):
+            return parsed
+    return None
+
+
+def load_preset_rows_from_folders(presets_dir: Path) -> Tuple[List[dict], int]:
+    rows: List[dict] = []
+    folder_count = 0
+    if not presets_dir.exists():
+        return rows, folder_count
+    for folder in sorted([p for p in presets_dir.iterdir() if p.is_dir()]):
+        payload = load_preset_payload_json(folder)
+        if not payload:
+            continue
+        metadata = read_preset_metadata(folder)
+        object_id = str(metadata.get("id", "")).strip()
+        if not object_id:
+            raise SystemExit(
+                f"Preset metadata missing required 'id' in folder: {folder}. "
+                "Add metadata file with id and author before running build."
+            )
+        object_name = str(metadata.get("objectName") or metadata.get("name") or folder.name).strip()
+        in_game_name = str(metadata.get("inGameName") or object_name).strip()
+        builder = str(metadata.get("builder") or metadata.get("author") or "samgeekman").strip()
+        image = str(metadata.get("image") or "").strip()
+        search_tags = str(metadata.get("searchTags") or "preset").strip()
+        path = str(metadata.get("path") or ("dz/presets/" + folder.name.replace(" ", "_").lower())).strip()
+        category = str(metadata.get("category") or "Preset").strip()
+        model_type = str(metadata.get("modelType") or "Preset").strip()
+        usable_on_console = parse_bool(metadata.get("usableOnConsole"), default=True)
+        editor_json = to_editor_json_from_objects_payload(payload)
+        row = {
+            "id": object_id,
+            "objectName": object_name,
+            "inGameName": in_game_name,
+            "category": category,
+            "modelType": model_type,
+            "path": path,
+            "usableOnConsole": usable_on_console,
+            "searchTags": search_tags,
+            "image": image,
+            "editorJson": editor_json,
+            "builder": builder,
+        }
+        # Keep location for user-managed DZE files discoverable without changing current UI contract.
+        dze_files = sorted(folder.glob("*.dze"))
+        if dze_files:
+            row["presetDzePath"] = str(dze_files[0].relative_to(BASE_DIR)).replace("\\", "/")
+        rows.append(normalize_object(row))
+        folder_count += 1
+    return rows, folder_count
+
+
 def split_tags(tags: str) -> List[str]:
     return [part.strip() for part in tags.split(",") if part.strip()]
 
@@ -993,17 +1147,16 @@ def main() -> None:
     presets_dir = DB_DIR / "presets"
     presets_file = DB_DIR / "presets.json"
 
-    if presets_dir.exists():
-        preset_files = sorted(presets_dir.glob("*.json"))
-        if preset_files:
-            for preset_path in preset_files:
-                all_objects.extend(normalize_object(obj) for obj in load_objects(preset_path))
-        else:
-            print(f"Warning: presets folder has no json files: {presets_dir}")
+    preset_folder_rows, preset_folder_count = load_preset_rows_from_folders(presets_dir)
+    if preset_folder_rows:
+        all_objects.extend(preset_folder_rows)
     elif presets_file.exists():
         all_objects.extend(normalize_object(obj) for obj in load_objects(presets_file))
     else:
-        print(f"Warning: presets not found: {presets_dir} or {presets_file}")
+        print(
+            f"Warning: presets not found (folder format with metadata + json) at {presets_dir} "
+            f"or legacy file {presets_file}"
+        )
 
     object_files = sorted(DB_DIR.rglob("objects.json"))
     for obj_file in object_files:
@@ -1040,7 +1193,10 @@ def main() -> None:
     elif not STATIC_MAPGROUPPROTO_XML.exists():
         print(f"Warning: mapgroupproto-merged.xml not found at {MAPGROUPPROTO_XML}")
 
-    print(f"Built {OUTPUT_JSON} with {len(all_objects)} objects from {len(object_files)} files.")
+    print(
+        f"Built {OUTPUT_JSON} with {len(all_objects)} objects "
+        f"from {len(object_files)} files and {preset_folder_count} preset folders."
+    )
     print(
         "ID sync: "
         f"{id_stats['ids_added_missing']} added, "
