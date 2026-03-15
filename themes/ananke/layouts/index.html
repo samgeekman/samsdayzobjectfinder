@@ -8238,7 +8238,7 @@
     var focusById = function(objectId) {
       var normalizedId = normalizeObjectId(objectId);
       if (!normalizedId) return;
-        table.column(6).search('^' + escapeRegex(normalizedId) + '$', true, false).draw();
+        table.column(7).search('^' + escapeRegex(normalizedId) + '$', true, false).draw();
       table.one('draw', function() {
         var $cell = $tableEl.find('tbody .object-name-cell').filter(function() {
           var value = $(this).data('objectid');
@@ -8774,7 +8774,7 @@
         return normalizeObjectId(value);
       }).filter(Boolean);
       if (!normalized.length) {
-      table.column(6).search('').draw();
+      table.column(7).search('').draw();
         return;
       }
       var seen = {};
@@ -8784,7 +8784,7 @@
         return true;
       });
       var regex = '^(' + unique.map(function(id) { return escapeRegex(id); }).join('|') + ')$';
-      table.column(6).search(regex, true, false).draw();
+      table.column(7).search(regex, true, false).draw();
     };
 
     var getDataArray = function(sourceData) {
