@@ -1278,6 +1278,34 @@
     border-radius: 8px;
     cursor: pointer;
   }
+  .object-focus__gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: color-mix(in srgb, var(--card) 88%, transparent);
+    color: var(--text);
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .object-focus__gallery-nav.is-visible {
+    display: inline-flex;
+  }
+  .object-focus__gallery-nav--prev {
+    left: 6px;
+  }
+  .object-focus__gallery-nav--next {
+    right: 6px;
+  }
   .object-focus__image-download {
     position: absolute;
     right: 8px;
@@ -1331,6 +1359,34 @@
     color: #fff;
     font-weight: 700;
     cursor: pointer;
+  }
+  .image-overlay__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(20, 25, 30, 0.9);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+  .image-overlay__nav.is-visible {
+    display: inline-flex;
+  }
+  .image-overlay__nav--prev {
+    left: 10px;
+  }
+  .image-overlay__nav--next {
+    right: 10px;
   }
   .image-overlay__download {
     position: absolute;
@@ -3130,7 +3186,7 @@
 <div id="chipInfoTooltip" class="chip-info-tooltip" role="status" aria-live="polite"></div>
 <div id="pathHoverTooltip" class="path-hover-tooltip" role="status" aria-live="polite"></div>
 <div id="presetsGuideNotice" class="version-filter-notice" role="status" aria-live="polite">
-  <span>Free to use and attributed builds for DayZ Editor. Press the 🏗️ icon on a preset to copy it to your clipboard and Ctrl+V in Editor, or download the JSON / DZE files.</span>
+  <span>Free to use and attributed builds for DayZ Editor. Press the 🏗️ icon on a build to copy it to your clipboard and Ctrl+V in Editor, or download the JSON / DZE files.</span>
 </div>
 
 <div class="objects-layout">
@@ -3177,7 +3233,9 @@
     </div>
     <div class="object-focus__pin-hint" aria-hidden="true">📌</div>
     <div class="object-focus__image" id="objectFocusImage">
+      <button id="objectFocusImagePrev" class="object-focus__gallery-nav object-focus__gallery-nav--prev" type="button" aria-label="Previous image">‹</button>
       <img id="objectFocusPreviewImg" class="object-focus__preview" src="" alt="" hidden>
+      <button id="objectFocusImageNext" class="object-focus__gallery-nav object-focus__gallery-nav--next" type="button" aria-label="Next image">›</button>
       <span id="objectFocusImageMissing" class="object-focus__missing">Select an object to preview its image.</span>
       <a id="objectFocusLink" class="pill-button object-focus__image-download" href="#" download>↓ Download image</a>
     </div>
@@ -3253,13 +3311,15 @@
       <div id="pinnedList" class="pinned-list"></div>
     </div>
   </div>
-  <div id="imageOverlay" class="image-overlay" aria-hidden="true">
-    <div class="image-overlay__content">
+<div id="imageOverlay" class="image-overlay" aria-hidden="true">
+  <div class="image-overlay__content">
+      <button id="imageOverlayPrev" class="image-overlay__nav image-overlay__nav--prev" type="button" aria-label="Previous image">‹</button>
       <button id="imageOverlayClose" class="image-overlay__close" type="button" aria-label="Close image">🆇</button>
       <img id="imageOverlayImg" class="image-overlay__img" src="" alt="">
+      <button id="imageOverlayNext" class="image-overlay__nav image-overlay__nav--next" type="button" aria-label="Next image">›</button>
       <a id="imageOverlayDownload" class="image-overlay__download" href="#" download aria-label="Download image">Download image</a>
-    </div>
   </div>
+</div>
   <div id="chernarusMapLightbox" class="map-lightbox" aria-hidden="true">
     <div class="map-lightbox__content">
       <button id="chernarusMapReset" class="map-lightbox__reset" type="button">Reset view</button>
@@ -3635,7 +3695,7 @@
         + '</div>'
         + '<div class="folder-tree__row folder-tree__row--presets">'
         + '<span class="folder-tree__leaf-icon" aria-hidden="true">🏗️</span>'
-        + '<button class="folder-tree__folder' + (presetsActive ? ' is-active' : '') + '" type="button" data-folder-path="__presets__" title="Editor Presets">Editor Presets</button>'
+        + '<button class="folder-tree__folder' + (presetsActive ? ' is-active' : '') + '" type="button" data-folder-path="__presets__" title="Editor Builds">Editor Builds</button>'
         + '</div>'
         + '<div class="folder-tree__row folder-tree__row--object-map">'
         + '<span class="folder-tree__leaf-icon" aria-hidden="true">📍</span>'
@@ -3713,7 +3773,7 @@
       var blob = [objName, inGame, category, path, tags].join(' ');
       var has = function(term) { return blob.indexOf(term) !== -1; };
       if (collectionKey === 'presets') {
-        return category.indexOf('preset') !== -1;
+        return category.indexOf('preset') !== -1 || category.indexOf('build') !== -1;
       }
       if (collectionKey === 'weapons') {
         return has('weapon') || path.indexOf('/weapons/') !== -1;
@@ -3747,7 +3807,9 @@
     var isPresetRow = function(row) {
       if (!row) return false;
       var category = normalizeFilterText(row.category || '');
-      return category.indexOf('preset') !== -1;
+      if (category.indexOf('preset') !== -1 || category.indexOf('build') !== -1) return true;
+      var modelType = normalizeFilterText(row.modelType || '');
+      return modelType.indexOf('preset') !== -1 || modelType.indexOf('build') !== -1;
     };
     var getPresetBuilder = function(row) {
       if (!row) return 'samgeekman';
@@ -3827,9 +3889,22 @@
         {
           data: null,
           render: function(data, type, row) {
-            if (type !== 'display') return row.image || '';
-            if (row.image) {
-              var safeImg = escapeHtml(row.image);
+            var imageList = [];
+            var rawImages = row && row.images;
+            if (Array.isArray(rawImages)) {
+              imageList = rawImages.map(function(item) { return String(item || '').trim(); }).filter(Boolean);
+            } else if (typeof rawImages === 'string' && rawImages.trim()) {
+              try {
+                var parsed = JSON.parse(rawImages);
+                if (Array.isArray(parsed)) {
+                  imageList = parsed.map(function(item) { return String(item || '').trim(); }).filter(Boolean);
+                }
+              } catch (_) {}
+            }
+            var imagePath = imageList.length ? imageList[0] : (row.image || '');
+            if (type !== 'display') return imagePath;
+            if (imagePath) {
+              var safeImg = escapeHtml(imagePath);
               var safeName = escapeHtml(getObjectName(row));
               return '<img class="thumb-img" src="/' + safeImg + '" alt="' + safeName + ' thumbnail" loading="lazy">';
             }
@@ -3905,7 +3980,7 @@
             var modelType = String(row.modelType || '').toLowerCase();
             var hasConfig = modelType === 'config';
             var hasP3d = modelType === 'raw p3d' || modelType === 'p3d';
-            var isPreset = modelType === 'preset';
+            var isPreset = modelType === 'preset' || modelType === 'build';
             var objName = String(getObjectName(row) || '').trim();
             var objNameKey = normalizeFilterText(objName);
             var hasTypesEntry = !!typesEntryByName[objName] || !!typesEntryByNameLower[objNameKey];
@@ -3933,7 +4008,7 @@
               chipsHtml += '<span class="info-chip info-chip--p3d" data-chip-kind="p3d" title="Raw P3D">P3D</span>';
             }
             if (isPreset) {
-              chipsHtml += '<span class="info-chip info-chip--preset" data-chip-kind="preset" title="Preset">Preset</span>';
+              chipsHtml += '<span class="info-chip info-chip--preset" data-chip-kind="preset" title="Build">Build</span>';
             }
             if (hasProtoEntry) {
               chipsHtml += '<span class="info-chip info-chip--proto" data-chip-kind="proto" title="Has mapgroupproto entry">Proto</span>';
@@ -3972,7 +4047,24 @@
             td.setAttribute('data-category', rowData.category || '');
             td.setAttribute('data-console', consoleFlag);
             td.setAttribute('data-tags', getSearchTags(rowData));
-            td.setAttribute('data-image', rowData.image || '');
+            var imageList = [];
+            var rawImages = rowData && rowData.images;
+            if (Array.isArray(rawImages)) {
+              imageList = rawImages.map(function(item) { return String(item || '').trim(); }).filter(Boolean);
+            } else if (typeof rawImages === 'string' && rawImages.trim()) {
+              try {
+                var parsed = JSON.parse(rawImages);
+                if (Array.isArray(parsed)) {
+                  imageList = parsed.map(function(item) { return String(item || '').trim(); }).filter(Boolean);
+                }
+              } catch (_) {}
+            }
+            var primaryImage = imageList.length ? imageList[0] : (rowData.image || '');
+            if (primaryImage && imageList.indexOf(primaryImage) === -1) {
+              imageList.unshift(primaryImage);
+            }
+            td.setAttribute('data-image', primaryImage);
+            td.setAttribute('data-images', JSON.stringify(imageList));
             td.setAttribute('data-objectid', getObjectId(rowData));
             td.setAttribute('data-editorjson', editorJson);
             td.setAttribute('data-linked-p3d', rowData['linked-p3d'] || '');
@@ -4049,7 +4141,7 @@
       var modelType = String(rowData.modelType || '').toLowerCase();
       var hasConfig = modelType === 'config';
       var hasP3d = modelType === 'raw p3d' || modelType === 'p3d';
-      var isPreset = modelType === 'preset';
+      var isPreset = modelType === 'preset' || modelType === 'build';
       var objName = String(getObjectName(rowData) || '').trim();
       var objNameKey = normalizeFilterText(objName);
       var hasTypesEntry = !!typesEntryByName[objName] || !!typesEntryByNameLower[objNameKey];
@@ -4061,7 +4153,7 @@
       var items = [];
       if (hasConfig) items.push(item('Config', 'info-chip--cfg', 'Is a classed object'));
       if (hasP3d) items.push(item('P3D', 'info-chip--p3d', 'Raw P3D model'));
-      if (isPreset) items.push(item('Preset', 'info-chip--preset', 'Copyable build for DayZ Editor'));
+      if (isPreset) items.push(item('Build', 'info-chip--preset', 'Copyable build for DayZ Editor'));
       if (hasTypesEntry) items.push(item('Types', 'info-chip--types', 'Has a Types.xml entry'));
       if (hasProtoEntry) items.push(item('Proto', 'info-chip--proto', 'Has a MapGroupProto.xml entry'));
       items.push(isConsoleFriendly
@@ -4319,6 +4411,8 @@
     var objectFocusCollapseEl = document.getElementById('objectFocusCollapse');
     var imageOverlayEl = document.getElementById('imageOverlay');
     var imageOverlayImgEl = document.getElementById('imageOverlayImg');
+    var imageOverlayPrevEl = document.getElementById('imageOverlayPrev');
+    var imageOverlayNextEl = document.getElementById('imageOverlayNext');
     var imageOverlayCloseEl = document.getElementById('imageOverlayClose');
     var imageOverlayDownloadEl = document.getElementById('imageOverlayDownload');
     var chernarusMapLightboxEl = document.getElementById('chernarusMapLightbox');
@@ -4331,6 +4425,8 @@
     var chernarusMapMetaEl = document.getElementById('chernarusMapMeta');
     var chernarusMapStatusEl = document.getElementById('chernarusMapStatus');
     var chernarusMapToastEl = document.getElementById('chernarusMapToast');
+    var objectFocusImagePrevEl = document.getElementById('objectFocusImagePrev');
+    var objectFocusImageNextEl = document.getElementById('objectFocusImageNext');
     var chernarusMapState = {
       activeMapKey: '',
       viewers: {
@@ -4371,6 +4467,14 @@
       }
     };
     var pinnedItems = [];
+    var currentObjectImages = [];
+    var currentObjectImageIndex = 0;
+    var imageOverlayImages = [];
+    var imageOverlayIndex = 0;
+    var hoverPreviewTimer = null;
+    var hoverPreviewImages = [];
+    var hoverPreviewIndex = 0;
+    var hoverPreviewCell = null;
     var isPinned = function(objName) {
       return pinnedItems.some(function(item) { return item.objName === objName; });
     };
@@ -4420,15 +4524,102 @@
         imgEl.classList.remove('is-portrait');
       }
     };
-    var openImageOverlay = function(src, altText) {
-      if (!imageOverlayEl || !imageOverlayImgEl) return;
-      if (!src) return;
+    var parseImageList = function(value) {
+      if (Array.isArray(value)) {
+        return value.map(function(item) { return String(item || '').trim(); }).filter(Boolean);
+      }
+      if (typeof value === 'string') {
+        var text = value.trim();
+        if (!text) return [];
+        try {
+          var parsed = JSON.parse(text);
+          if (Array.isArray(parsed)) {
+            return parsed.map(function(item) { return String(item || '').trim(); }).filter(Boolean);
+          }
+        } catch (_) {}
+      }
+      return [];
+    };
+    var resolveRowImageList = function(rowData, fallbackImage) {
+      var list = parseImageList(rowData && rowData.images);
+      var fallback = String(fallbackImage || (rowData && rowData.image) || '').trim();
+      if (fallback && list.indexOf(fallback) === -1) {
+        list.unshift(fallback);
+      }
+      return list.filter(Boolean);
+    };
+    var setObjectFocusImageByIndex = function(index) {
+      if (!objectFocusPreviewImgEl) return;
+      if (!Array.isArray(currentObjectImages) || !currentObjectImages.length) {
+        objectFocusPreviewImgEl.hidden = true;
+        objectFocusPreviewImgEl.src = '';
+        objectFocusPreviewImgEl.alt = '';
+        if (objectFocusLinkEl) {
+          objectFocusLinkEl.style.display = 'none';
+        }
+        if (objectFocusImagePrevEl) objectFocusImagePrevEl.classList.remove('is-visible');
+        if (objectFocusImageNextEl) objectFocusImageNextEl.classList.remove('is-visible');
+        return;
+      }
+      var len = currentObjectImages.length;
+      currentObjectImageIndex = ((Number(index) || 0) % len + len) % len;
+      var imagePath = currentObjectImages[currentObjectImageIndex];
+      var src = '/' + String(imagePath || '').replace(/^\/+/, '');
+      objectFocusPreviewImgEl.src = src;
+      objectFocusPreviewImgEl.alt = (currentObjectName || 'Object') + ' preview';
+      objectFocusPreviewImgEl.hidden = false;
+      syncPortraitImageClass(objectFocusPreviewImgEl);
+      if (objectFocusLinkEl) {
+        objectFocusLinkEl.href = src;
+        objectFocusLinkEl.setAttribute('download', getImageDownloadName(src, currentObjectName || 'object'));
+        objectFocusLinkEl.style.display = 'inline-flex';
+      }
+      var showGalleryNav = len > 1;
+      if (objectFocusImagePrevEl) objectFocusImagePrevEl.classList.toggle('is-visible', showGalleryNav);
+      if (objectFocusImageNextEl) objectFocusImageNextEl.classList.toggle('is-visible', showGalleryNav);
+    };
+    var stepObjectFocusImage = function(delta) {
+      if (!Array.isArray(currentObjectImages) || !currentObjectImages.length) return;
+      setObjectFocusImageByIndex(currentObjectImageIndex + (Number(delta) || 0));
+    };
+    var refreshImageOverlay = function() {
+      if (!imageOverlayImgEl) return;
+      if (!Array.isArray(imageOverlayImages) || !imageOverlayImages.length) {
+        closeImageOverlay();
+        return;
+      }
+      var len = imageOverlayImages.length;
+      imageOverlayIndex = ((Number(imageOverlayIndex) || 0) % len + len) % len;
+      var src = imageOverlayImages[imageOverlayIndex];
       imageOverlayImgEl.src = src;
-      imageOverlayImgEl.alt = altText || 'Object image';
+      imageOverlayImgEl.alt = currentObjectName || 'Object image';
       if (imageOverlayDownloadEl) {
         imageOverlayDownloadEl.href = src;
-        imageOverlayDownloadEl.setAttribute('download', getImageDownloadName(src, altText));
+        imageOverlayDownloadEl.setAttribute('download', getImageDownloadName(src, currentObjectName || 'object'));
       }
+      var hasMultiple = len > 1;
+      if (imageOverlayPrevEl) imageOverlayPrevEl.classList.toggle('is-visible', hasMultiple);
+      if (imageOverlayNextEl) imageOverlayNextEl.classList.toggle('is-visible', hasMultiple);
+    };
+    var stepImageOverlay = function(delta) {
+      if (!Array.isArray(imageOverlayImages) || !imageOverlayImages.length) return;
+      imageOverlayIndex += (Number(delta) || 0);
+      refreshImageOverlay();
+    };
+    var openImageOverlay = function(src, altText, images, index) {
+      if (!imageOverlayEl || !imageOverlayImgEl) return;
+      if (!src) return;
+      var list = parseImageList(images).map(function(item) {
+        return '/' + String(item || '').replace(/^\/+/, '');
+      }).filter(Boolean);
+      if (!list.length) {
+        list = [src];
+      } else if (list.indexOf(src) === -1) {
+        list.unshift(src);
+      }
+      imageOverlayImages = list;
+      imageOverlayIndex = isFinite(Number(index)) ? Number(index) : Math.max(0, list.indexOf(src));
+      refreshImageOverlay();
       imageOverlayEl.classList.add('is-open');
       imageOverlayEl.setAttribute('aria-hidden', 'false');
     };
@@ -4438,10 +4629,14 @@
       imageOverlayEl.setAttribute('aria-hidden', 'true');
       imageOverlayImgEl.src = '';
       imageOverlayImgEl.alt = '';
+      imageOverlayImages = [];
+      imageOverlayIndex = 0;
       if (imageOverlayDownloadEl) {
         imageOverlayDownloadEl.href = '#';
         imageOverlayDownloadEl.removeAttribute('download');
       }
+      if (imageOverlayPrevEl) imageOverlayPrevEl.classList.remove('is-visible');
+      if (imageOverlayNextEl) imageOverlayNextEl.classList.remove('is-visible');
     };
     var updateMobileView = function() {
       isMobileView = window.matchMedia('(max-width: 768px)').matches;
@@ -5844,8 +6039,37 @@
     if (objectFocusImageEl) {
       objectFocusImageEl.addEventListener('click', function(e) {
         var imgEl = e.target.closest('img');
-        if (!imgEl || !currentObjectData || !currentObjectData.imgPath) return;
-        openImageOverlay('/' + currentObjectData.imgPath, currentObjectData.objName);
+        if (!imgEl || !currentObjectData || !Array.isArray(currentObjectImages) || !currentObjectImages.length) return;
+        var openSrc = imgEl.getAttribute('src') || ('/' + String(currentObjectImages[currentObjectImageIndex] || '').replace(/^\/+/, ''));
+        openImageOverlay(openSrc, currentObjectData.objName, currentObjectImages, currentObjectImageIndex);
+      });
+    }
+    if (objectFocusImagePrevEl) {
+      objectFocusImagePrevEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        stepObjectFocusImage(-1);
+      });
+    }
+    if (objectFocusImageNextEl) {
+      objectFocusImageNextEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        stepObjectFocusImage(1);
+      });
+    }
+    if (imageOverlayPrevEl) {
+      imageOverlayPrevEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        stepImageOverlay(-1);
+      });
+    }
+    if (imageOverlayNextEl) {
+      imageOverlayNextEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        stepImageOverlay(1);
       });
     }
     if (objectFocusLinksEl) {
@@ -6030,6 +6254,22 @@
       chernarusMapOverlayEl.addEventListener('pointercancel', endLocationMapDrag);
     }
     window.addEventListener('keydown', function(event) {
+      if (imageOverlayEl && imageOverlayEl.classList.contains('is-open')) {
+        if (event.key === 'Escape') {
+          closeImageOverlay();
+          return;
+        }
+        if (event.key === 'ArrowLeft') {
+          event.preventDefault();
+          stepImageOverlay(-1);
+          return;
+        }
+        if (event.key === 'ArrowRight') {
+          event.preventDefault();
+          stepImageOverlay(1);
+          return;
+        }
+      }
       if (event.key === 'Escape' && chernarusMapLightboxEl && chernarusMapLightboxEl.classList.contains('is-open')) {
         closeChernarusMapLightbox();
       }
@@ -7142,6 +7382,10 @@
         objectFocusLinkEl.href = '#';
         objectFocusLinkEl.removeAttribute('download');
       }
+      currentObjectImages = [];
+      currentObjectImageIndex = 0;
+      if (objectFocusImagePrevEl) objectFocusImagePrevEl.classList.remove('is-visible');
+      if (objectFocusImageNextEl) objectFocusImageNextEl.classList.remove('is-visible');
       if (objectFocusTypesLinkEl) {
         objectFocusTypesLinkEl.style.display = 'none';
         objectFocusTypesLinkEl.removeAttribute('download');
@@ -7177,6 +7421,7 @@
       var tags = objData.tags;
       var dimensionsVisual = parseDimensionsVisual(objData.dimensionsVisual);
       var editorJsonRaw = objData.editorJsonRaw;
+      var imageList = resolveRowImageList(objData, imgPath);
       var linkedP3D = normalizeObjectId(objData.linkedP3D);
       var linkedConfig = parseLinkedIds(objData.linkedConfig).map(normalizeObjectId).filter(Boolean);
       var linkedVariant = parseLinkedIds(objData.linkedVariant).map(normalizeObjectId).filter(Boolean);
@@ -7194,6 +7439,7 @@
         consoleFlag: consoleFlag,
         tags: tags,
         dimensionsVisual: dimensionsVisual,
+        images: imageList,
         linkedP3D: linkedP3D,
         linkedConfig: linkedConfig,
         linkedVariant: linkedVariant
@@ -7264,18 +7510,13 @@
         }
       }
 
-      if (imgPath) {
-        if (objectFocusPreviewImgEl) {
-          objectFocusPreviewImgEl.src = '/' + imgPath;
-          objectFocusPreviewImgEl.alt = objName + ' preview';
-          objectFocusPreviewImgEl.hidden = false;
-        }
+      currentObjectImages = imageList.slice();
+      currentObjectImageIndex = 0;
+      if (currentObjectImages.length) {
+        setObjectFocusImageByIndex(0);
         if (objectFocusImageMissingEl) {
           objectFocusImageMissingEl.hidden = true;
         }
-        objectFocusLinkEl.href = '/' + imgPath;
-        objectFocusLinkEl.setAttribute('download', objName ? (objName + '.png') : '');
-        objectFocusLinkEl.style.display = 'inline-flex';
       } else {
         if (objectFocusPreviewImgEl) {
           objectFocusPreviewImgEl.hidden = true;
@@ -7287,6 +7528,8 @@
           objectFocusImageMissingEl.hidden = false;
         }
         objectFocusLinkEl.style.display = 'none';
+        if (objectFocusImagePrevEl) objectFocusImagePrevEl.classList.remove('is-visible');
+        if (objectFocusImageNextEl) objectFocusImageNextEl.classList.remove('is-visible');
       }
 
       objectFocusEl.classList.add('visible');
@@ -7350,11 +7593,17 @@
     updateObjectMapToggleButtons();
 
     var buildPinnedItemFromCell = function($td) {
+      var cellImages = parseImageList($td.attr('data-images'));
+      var primaryImage = String($td.data('image') || '').trim();
+      if (primaryImage && cellImages.indexOf(primaryImage) === -1) {
+        cellImages.unshift(primaryImage);
+      }
       return {
         type: 'object',
         objName: $td.data('object') || '',
         id: $td.data('objectid') || '',
-        imgPath: $td.data('image'),
+        imgPath: primaryImage,
+        images: cellImages,
         p3dPath: $td.data('p3d'),
         modelType: $td.data('modeltype'),
         editorJsonRaw: $td.attr('data-editorjson'),
@@ -7372,11 +7621,13 @@
       if (!rowData) return null;
       var objName = getObjectName(rowData);
       if (!objName) return null;
+      var rowImages = resolveRowImageList(rowData, rowData.image || '');
       return {
         type: 'object',
         objName: objName,
         id: getObjectId(rowData),
-        imgPath: rowData.image || '',
+        imgPath: rowImages.length ? rowImages[0] : '',
+        images: rowImages,
         p3dPath: rowData.path || '',
         modelType: rowData.modelType || '',
         editorJsonRaw: rowData.editorJson ? JSON.stringify(rowData.editorJson) : '',
@@ -7653,6 +7904,7 @@
             objName: item.objName,
             id: item.id,
             imgPath: item.imgPath,
+            images: Array.isArray(item.images) ? item.images.slice() : [],
             p3dPath: item.p3dPath,
             modelType: item.modelType,
             editorJsonRaw: item.editorJsonRaw,
@@ -7915,6 +8167,7 @@
         objName: $td.data('object') || '',
         id: $td.data('objectid') || '',
         imgPath: $td.data('image'),
+        images: parseImageList($td.attr('data-images')),
         p3dPath: $td.data('p3d'),
         modelType: $td.data('modeltype'),
         category: $td.data('category'),
@@ -9515,33 +9768,74 @@
       previewEl.style.left = left + 'px';
       previewEl.style.top = top + 'px';
     };
-    var getHoverPreviewPath = function(cellEl) {
-      if (!cellEl) return '';
+    var getHoverPreviewList = function(cellEl) {
+      if (!cellEl) return [];
       var $cell = $(cellEl);
-      var direct = $cell.data('image');
-      if (direct) return String(direct);
-      if (!table) return '';
+      var imagesAttr = $cell.attr('data-images');
+      var parsed = parseImageList(imagesAttr);
+      if (parsed.length) {
+        var direct = String($cell.data('image') || '').trim();
+        if (direct && parsed.indexOf(direct) === -1) parsed.unshift(direct);
+        return parsed;
+      }
+      var directImage = String($cell.data('image') || '').trim();
+      if (directImage) return [directImage];
+      if (!table) return [];
       var rowData = table.row($cell.closest('tr')).data();
-      return rowData && rowData.image ? String(rowData.image) : '';
+      return resolveRowImageList(rowData, rowData && rowData.image);
     };
     var removeHoverPreview = function() {
+      if (hoverPreviewTimer) {
+        clearInterval(hoverPreviewTimer);
+        hoverPreviewTimer = null;
+      }
+      hoverPreviewImages = [];
+      hoverPreviewIndex = 0;
+      hoverPreviewCell = null;
       $('#imgPreview').remove();
     };
 
     $('#dayzObjects tbody')
       .on('mouseenter', '.object-name-cell, .thumb-cell', function(e) {
         if (isMobileView) return;
-        var imgPath = getHoverPreviewPath(this);
-        if (!imgPath) return;
+        var imgList = getHoverPreviewList(this);
+        if (!Array.isArray(imgList) || !imgList.length) return;
+        var isSameCell = hoverPreviewCell === this && document.getElementById('imgPreview');
+        hoverPreviewImages = imgList;
+        if (isSameCell) {
+          if (!hoverPreviewTimer && hoverPreviewImages.length > 1) {
+            hoverPreviewTimer = setInterval(function() {
+              var previewImg = document.querySelector('#imgPreview img');
+              if (!previewImg || !hoverPreviewImages.length) return;
+              hoverPreviewIndex = (hoverPreviewIndex + 1) % hoverPreviewImages.length;
+              previewImg.src = '/' + hoverPreviewImages[hoverPreviewIndex];
+              syncPortraitImageClass(previewImg);
+            }, 900);
+          }
+          positionHoverPreview(e.clientX, e.clientY);
+          return;
+        }
         removeHoverPreview();
+        hoverPreviewCell = this;
+        hoverPreviewImages = imgList.slice();
+        hoverPreviewIndex = 0;
 
         $('body').append(
           '<div id="imgPreview" class="preview-card">' +
-            '<img src="/' + imgPath + '" alt="Object preview">' +
+            '<img src="/' + hoverPreviewImages[0] + '" alt="Object preview">' +
           '</div>'
         );
         syncPortraitImageClass(document.querySelector('#imgPreview img'));
         positionHoverPreview(e.clientX, e.clientY);
+        if (hoverPreviewImages.length > 1) {
+          hoverPreviewTimer = setInterval(function() {
+            var previewImg = document.querySelector('#imgPreview img');
+            if (!previewImg || !hoverPreviewImages.length) return;
+            hoverPreviewIndex = (hoverPreviewIndex + 1) % hoverPreviewImages.length;
+            previewImg.src = '/' + hoverPreviewImages[hoverPreviewIndex];
+            syncPortraitImageClass(previewImg);
+          }, 900);
+        }
       })
       .on('mousemove', '.object-name-cell, .thumb-cell', function(e) {
         if (isMobileView) return;

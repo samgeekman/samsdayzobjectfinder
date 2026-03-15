@@ -180,6 +180,9 @@ def update_id_tombstones(previous_index: Dict[str, dict], current_objects: List[
 
 def source_json_files() -> List[Path]:
     paths: List[Path] = []
+    builds_dir = DB_DIR / "builds"
+    if builds_dir.exists():
+        paths.extend(sorted(builds_dir.glob("*.json")))
     presets_dir = DB_DIR / "presets"
     if presets_dir.exists():
         paths.extend(sorted(presets_dir.glob("*.json")))
@@ -257,6 +260,15 @@ def normalize_object(obj: dict) -> dict:
     if isinstance(image, str):
         parts = PurePosixPath(image).parts
         obj["image"] = "/".join(part.lower() for part in parts)
+    images = obj.get("images")
+    if isinstance(images, list):
+        normalized_images = []
+        for item in images:
+            if not isinstance(item, str):
+                continue
+            parts = PurePosixPath(item).parts
+            normalized_images.append("/".join(part.lower() for part in parts))
+        obj["images"] = normalized_images
     return obj
 
 
@@ -366,6 +378,34 @@ def load_preset_payload_json(folder: Path) -> Optional[dict]:
     return None
 
 
+def discover_build_images(folder: Path) -> List[str]:
+    exts = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
+    candidates: List[Path] = []
+    screenshots_dir = folder / "screenshots"
+    if screenshots_dir.exists() and screenshots_dir.is_dir():
+        candidates.extend(sorted([p for p in screenshots_dir.rglob("*") if p.is_file() and p.suffix.lower() in exts]))
+    root_images = sorted(
+        [
+            p
+            for p in folder.iterdir()
+            if p.is_file()
+            and p.suffix.lower() in exts
+            and "copy and pasteable" not in p.name.lower()
+        ]
+    )
+    candidates.extend(root_images)
+    out: List[str] = []
+    seen = set()
+    for image_path in candidates:
+        rel = str(image_path.relative_to(BASE_DIR)).replace("\\", "/")
+        key = rel.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(rel)
+    return out
+
+
 def load_preset_rows_from_folders(presets_dir: Path) -> Tuple[List[dict], int]:
     rows: List[dict] = []
     folder_count = 0
@@ -386,10 +426,15 @@ def load_preset_rows_from_folders(presets_dir: Path) -> Tuple[List[dict], int]:
         in_game_name = str(folder.name).strip()
         builder = str(metadata.get("builder") or metadata.get("author") or "samgeekman").strip()
         image = str(metadata.get("image") or "").strip()
-        search_tags = str(metadata.get("searchTags") or "preset").strip()
-        path = str(metadata.get("path") or ("dz/presets/" + folder.name.replace(" ", "_").lower())).strip()
-        category = str(metadata.get("category") or "Preset").strip()
-        model_type = str(metadata.get("modelType") or "Preset").strip()
+        image_list = discover_build_images(folder)
+        if image and image not in image_list:
+            image_list.insert(0, image)
+        if not image and image_list:
+            image = image_list[0]
+        search_tags = str(metadata.get("searchTags") or "build").strip()
+        path = str(metadata.get("path") or ("dz/builds/" + folder.name.replace(" ", "_").lower())).strip()
+        category = str(metadata.get("category") or "Build").strip()
+        model_type = str(metadata.get("modelType") or "Build").strip()
         usable_on_console = parse_bool(metadata.get("usableOnConsole"), default=True)
         editor_json = to_editor_json_from_objects_payload(payload)
         row = {
@@ -402,6 +447,7 @@ def load_preset_rows_from_folders(presets_dir: Path) -> Tuple[List[dict], int]:
             "usableOnConsole": usable_on_console,
             "searchTags": search_tags,
             "image": image,
+            "images": image_list,
             "editorJson": editor_json,
             "builder": builder,
         }
@@ -1144,17 +1190,28 @@ def main() -> None:
     id_stats = ensure_source_ids()
 
     all_objects: List[dict] = []
+    builds_dir = DB_DIR / "builds"
     presets_dir = DB_DIR / "presets"
     presets_file = DB_DIR / "presets.json"
 
-    preset_folder_rows, preset_folder_count = load_preset_rows_from_folders(presets_dir)
-    if preset_folder_rows:
+    build_folder_rows: List[dict] = []
+    build_folder_count = 0
+    if builds_dir.exists():
+        build_folder_rows, build_folder_count = load_preset_rows_from_folders(builds_dir)
+    preset_folder_rows: List[dict] = []
+    preset_folder_count = 0
+    if presets_dir.exists():
+        preset_folder_rows, preset_folder_count = load_preset_rows_from_folders(presets_dir)
+    if build_folder_rows:
+        all_objects.extend(build_folder_rows)
+    elif preset_folder_rows:
         all_objects.extend(preset_folder_rows)
     elif presets_file.exists():
         all_objects.extend(normalize_object(obj) for obj in load_objects(presets_file))
     else:
         print(
-            f"Warning: presets not found (folder format with metadata + json) at {presets_dir} "
+            f"Warning: builds not found (folder format with metadata + json) at {builds_dir} "
+            f"or presets folder {presets_dir} "
             f"or legacy file {presets_file}"
         )
 
@@ -1195,7 +1252,7 @@ def main() -> None:
 
     print(
         f"Built {OUTPUT_JSON} with {len(all_objects)} objects "
-        f"from {len(object_files)} files and {preset_folder_count} preset folders."
+        f"from {len(object_files)} files and {build_folder_count or preset_folder_count} build folders."
     )
     print(
         "ID sync: "
