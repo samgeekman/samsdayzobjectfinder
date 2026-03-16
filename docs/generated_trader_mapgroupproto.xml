@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<prototype>
+    <group name="TraderTableBandage_1" lootmax="1">
+        <usage name="Town" />
+        <container name="loot" lootmax="1">
+            <category name="medical" />
+        </container>
+        <dispatch>
+            <proxy type="BandageDressing" pos="-0.844727 0.482956 -0.150391" rpy="0.000000 0.000000 -89.382736" />
+        </dispatch>
+    </group>
+</prototype>

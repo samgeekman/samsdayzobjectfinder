@@ -1,0 +1,191 @@
+Original prompt: I have added a sakhal.json file that has a partial object locations - but not trees which we can use to great the underlay map like with chernarus and livonia. However I do have a 4000px map. Explore how we can crrate a similar solution to our exisit maps - the aim is to not use the image as a background but make a simialr version as the existing ones
+
+- Built a dedicated Sakhal generator in `scripts/build_sakhal_viewer_data.py` because `sakhal.json` is a class-based marker dataset, not a WRP object placement dump.
+- The Sakhal builder reads `sakhal.json` marker icons for object positions, converts the normalized marker coordinates into the `15360` world size from `info.size`, and outputs `static/data/sakhal-viewer-data.json`.
+- The Sakhal underlay is hybrid-generated instead of using `sakhal mao.webp` as a raw runtime background: the builder derives water, vegetation, and rock masks from the image, combines them with real structure density from the marker positions, and writes tiled PNG levels to `static/data/sakhal-backdrop-tiles/`.
+- Extended the shared viewer matcher in `themes/ananke/layouts/index.html` so viewer datasets can register `matchKeys`. This lets Sakhal `land_*` class names resolve from both config objects like `Land_Tisy_Garages2_Sakhal` and linked raw P3D rows.
+- Added Sakhal to the shared `locationMapConfigs` map loader in `themes/ananke/layouts/index.html`, so the existing `Count of object on map` UI and lightbox now support Sakhal without a separate codepath.
+- Fixed the first Sakhal build after visual verification showed the map was vertically inverted. The final builder flips the image-derived grids and marker Y transform together so the Sakhal island orientation matches the source map while keeping markers aligned.
+- Follow-up fix: rotated the Sakhal marker transform by 90 degrees counterclockwise so the icon-derived placements line up with the generated Sakhal coastline instead of landing on the wrong diagonal.
+- Follow-up fix: switched the Sakhal marker transform again using `Land_Lighthouse` as the reference object. The final mapping now places the single lighthouse near the top-centre band and the remaining lighthouse cluster across the southern edge much closer to the expected Sakhal layout.
+- Verification passed:
+  - `python3 -m py_compile scripts/build_sakhal_viewer_data.py`
+  - `node --check` on the inline page script
+  - `hugo --destination /tmp/sdof-hugo-check`
+  - Playwright verified `Land_Tisy_Garages2_Sakhal` (`dzobj_70ub1mlkf0`) shows `12 on Sakhal` in the sidebar and opens the Sakhal lightbox correctly.
+- Browser artifacts:
+  - `output/web-game/sakhal-focus/shot-0.png`
+  - `output/web-game/sakhal-map-fixed/shot-0.png`
+  - `output/web-game/sakhal-map-rotated/shot-0.png`
+  - `output/web-game/sakhal-lighthouse-map/shot-0.png`
+- Reverted portrait-specific scaling for the sidebar object image and the full image lightbox in `themes/ananke/layouts/index.html`.
+- Portrait downscaling now applies only to the hover preview card (`#imgPreview img.is-portrait`), with portrait previews capped to `200px` wide while keeping the existing viewport clamp for tall images.
+- Verification passed:
+  - `node --check /tmp/sdof-inline-check.js`
+  - `hugo --destination /tmp/sdof-hugo-check`
+- Folder sidebar updated so the tree starts below a new sidebar search strip, aligning the tree start with the table top controls area (`Show 50` row).
+- Added sidebar search input (`folderSidebarSearch`) that drives the same global DataTables search as the existing top search box (kept in place).
+- Folder tree now adapts to active search results by rebuilding from filtered rows (`table.rows({ search: 'applied' })`) so only relevant folders are shown while searching.
+- Sidebar search and the existing DataTables search input are synchronized on draw.
+- Verification passed:
+  - `node --check /tmp/sdof-inline-check.js`
+  - `hugo --destination /tmp/sdof-hugo-check`
+- Added a vertical, expandable folder sidebar in `themes/ananke/layouts/index.html` with nested folder nodes and `+/-` toggles.
+- Sidebar folder clicks now drive the main table view by setting the same folder-prefix filter as the top `Go to folder` dropdown.
+- Added synchronization so sidebar selection and dropdown selection stay in sync; selecting an active folder again clears it.
+- Added an `All` button in the sidebar header to clear folder filtering quickly.
+- Verification passed:
+  - `node --check /tmp/sdof-inline-check.js`
+  - `hugo --destination /tmp/sdof-hugo-check`
+- Added a new top-of-home collections menu in `themes/ananke/layouts/index.html` with buttons for:
+  - Presets, Weapons, Vehicles, Clothing, Military structures, Bunkers, Rocks, Trees, Houses
+- Added a `Go to folder` dropdown populated from discovered `dz/...` folder prefixes derived from object paths, covering the full folder hierarchy seen in the loaded dataset.
+- Wired both controls into DataTables filtering via custom search hooks so collection buttons and folder selection navigate/filter the table immediately.
+- Verification passed:
+  - `node --check /tmp/sdof-inline-check.js`
+  - `hugo --destination /tmp/sdof-hugo-check`
+- Normalized editor export JSON for config objects in `themes/ananke/layouts/index.html` so empty `DisplayName` fields are backfilled from `Type` during single-object copy, row-detail copy, and pinned bulk `Copy all to Editor`.
+- P3D-style editor entries are intentionally unchanged; only config-like entries without a model path are patched.
+- Renamed the object-focus types section heading in `themes/ananke/layouts/index.html` from `Types values/usage` to `Types usage / values`.
+- Added `scripts/apply_backdrop_water_mask.py` and used `chernarus sea.webp` as an offline water mask source to tint the generated Chernarus backdrop tiles in `static/data/chernarus-backdrop-tiles/` blue without changing the runtime viewer structure.
+- Verification passed:
+  - `python3 -m py_compile scripts/apply_backdrop_water_mask.py`
+  - `node --check /tmp/sdof-inline-check.js`
+  - `hugo --destination /tmp/sdof-hugo-check`
+- Added a first procedural-layout prototype to the object focus sidebar in `themes/ananke/layouts/index.html`.
+- New `Procedural layout` section includes controls for archetype, size, complexity, style, and seed, plus actions for generate, remix, copy layout JSON, and download layout JSON.
+- Implemented a deterministic generator seeded from object ID/name + controls, using name/category/tag/dimension heuristics to pick compatible supporting objects and place them around the selected anchor.
+- Added an inline 2D mini-preview and summary metrics (theme, object count, footprint estimate, role mix, sample object list).
+- Hooked generator lifecycle into object focus updates and reset paths; it now regenerates on selection/control changes and hides cleanly for missing-object focus states.
+- Added fallback candidate sourcing from current DataTable rows when xhr-cached source rows are unavailable.
+- Verification passed:
+  - `node --check /tmp/sdof-inline-check.js`
+  - `hugo --destination /tmp/sdof-hugo-check`
+- Playwright browser verification could not run in this sandbox due Chromium launch permission denial (`bootstrap_check_in ... Permission denied (1100)`), so this pass is build-verified but not browser-click-verified.
+- Procedural generator constraints updated: candidate pool now only uses objects whose path contains `/structures/`, `/structures_bliss/`, or `/structures_sakhal/`.
+- Added usage-tag enrichment from loaded `types.xml` maps (`mapTypesByMap`) and integrated usage overlap/archetype bias into procedural scoring.
+- Archetype auto-detection now also considers usage tags (`military`, `industrial`/`police`, `village`/`town`/`farm`, `hunting`) before falling back to token theme heuristics.
+- Verification passed:
+  - `node --check /tmp/sdof-inline-check.js`
+  - `hugo --destination /tmp/sdof-hugo-check`
+- Replaced the broad procedural experiment with a container-specific `Container dock layout` section on object focus cards.
+- Added only two controls (3-point scales): `Size (1-3)` and `Density (1-3)`, plus generate/remix/copy/download actions.
+- Integrated `container patterns.jpg` as an inline reference and shifted generator patterns toward dock rows + cluster pockets + waterfront strip.
+- Generator now only uses container objects from structure paths (`/structures/`, `/structures_bliss/`, `/structures_sakhal/`) and explicitly excludes variants ending `_DE`.
+- Candidate scoring now uses `types.xml` usage-tag overlap with the selected anchor container to bias container mix selection.
+- Verification passed:
+  - `node --check /tmp/sdof-inline-check.js`
+  - `hugo --destination /tmp/sdof-hugo-check`
+- Updated preset `👁 Preview` behavior in `themes/ananke/layouts/index.html` to open the external Web Editor (`https://samgeekman.github.io/WebObjects/`) in a new tab instead of opening the inline preview panel.
+- Added `openPresetInWebEditor(rowData)` helper and kept existing preset payload generation for future handoff, writing payload to local storage key `sams_objectfinder_preset_import_v1` before opening the editor URL.
+- Verification passed:
+  - `hugo --destination /tmp/sdof-hugo-check`
+- Reworked preset preview from new-tab behavior into an in-page overlay modal in `themes/ananke/layouts/index.html`.
+- `👁 Preview` now opens a lightbox-style overlay, parses the preset JSON payload (`buildPresetObjectPackage`), and renders a top-down object placement preview from imported `Objects[].pos` coordinates.
+- Added overlay controls in-modal (`🏗️ Copy`, `↓ JSON`, `↓ DZE/Soon`, `Close`) plus backdrop-click and `Esc` close behavior; URL `preview=<id>` state is still supported.
+- Verification passed:
+  - `hugo --destination /tmp/sdof-hugo-check`
+- Presets data pipeline reworked for folder-first workflow in `scripts/build.py`:
+  - New loader reads preset folders under `database/presets/*` using `metadata*.txt` + canonical `<preset>.json` payload shaped as `{ "Objects": [...] }`.
+  - Build now converts `Objects` payloads into `editorJson` rows expected by the table/export UI, preserving Datatables integration with no front-end contract changes.
+  - Metadata parsing supports key/value text files (including current `metadeta` filename typo pattern) and requires explicit preset `id`.
+- Migrated legacy root preset JSON files into folder structure:
+  - Created `metadata.txt` + canonical JSON payload per preset folder.
+  - Removed legacy `database/presets/*.json` root files so workflow is now folder-based.
+- Verification passed:
+  - `python3 scripts/build.py`
+  - `hugo --destination /tmp/sdof-hugo-check`
+
+- Added a new app mode: `Build Generator` in `themes/ananke/layouts/index.html`, integrated into the folder-app switcher and URL routing (`?generator=1`) alongside existing apps.
+- Added a full `Build Generator` panel above the table with controls: mode (`Traffic jam`, `Forest`, `Shanty town`), size, density, seed, plus `Generate`, `Remix`, `🏗️ Copy`, and `↓ JSON`.
+- Added deterministic seeded generator logic:
+  - Traffic jam uses vehicle/wreck candidates with spacing informed by `dimensionsVisual`, producing tight but varied realistic queues.
+  - Forest mixes tree candidates with spacing collision checks and size/density scaling.
+  - Shanty town pulls from `structures_bliss/residential/slums` and generates clustered settlements with configurable density.
+- Added overhead SVG preview renderer for generated layouts (no Web Editor embed), with object rectangles sized/rotated from dimensions and orientation.
+- Added export behavior for generator output as DayZ editor JSON entries, and clipboard copy of the current generated layout.
+- Added runtime loader for the car reference file by copying `all cars on flat plane.txt` to `static/data/all-cars-on-flat-plane.txt` and parsing its `Type` list to strengthen traffic candidate selection.
+- App/reset/search routing updated so `Build Generator` behaves like other apps in sidebar reset/search link flows.
+- Verification passed:
+  - `hugo --destination /tmp/sdof-hugo-check`
+- Note:
+  - Existing `/tmp/sdof-inline-check.js` syntax check target failed with `Unexpected end of input` because that temp file is stale/incomplete, not from the new template changes.
+
+- Build Generator pools were corrected to use only the new user-provided reference files:
+  - `static/data/wrecks-ref.txt` for Traffic jam
+  - `static/data/tree-ref.txt` for Forest
+  - `static/data/slum-ref.txt` for Shanty town
+- Removed heuristic pool expansion (no fallback pulls from unrelated dataset folders for generation sources).
+- Orientation now comes directly from reference entries (`Orientation` in ref files) when creating generated objects, so generated objects keep the known-correct upright orientation basis.
+- Kept spacing realism by still using `dimensionsVisual` lookups from the catalog where available, but only for placement spacing/footprint math.
+- Verification passed:
+  - `node --check /tmp/sdof-inline-check-new.js`
+  - `hugo --destination /tmp/sdof-hugo-check`
+
+- WIP saved (not pushed): Trader Table app split + advanced selection layout in `themes/ananke/layouts/index.html`.
+- New app routing/state:
+  - Added separate sidebar app entry `Trader Table` (`__trader_table__`).
+  - Added URL app state `/?trader=1`.
+  - Shared generator panel now supports both app modes:
+    - `build_generator` (normal multi-mode)
+    - `trader_table` (locks mode to trader, hides mode selector, updates title/icon).
+- Trader selection UI (left panel) added:
+  - `Select table` dropdown (`#traderTableSelect`)
+  - `Add objects` search (`#traderObjectSearch`) + results list (`#traderObjectResults`)
+  - `Selected objects` list (`#traderSelectedObjects`) with quantity controls (`− / + / remove`)
+  - Search/add/remove/quantity events all wired and regenerate output immediately.
+- Trader generation logic:
+  - Pools are derived from live rows (`buildTraderPoolsFromRows`): tables + `/gear/` objects.
+  - Selected table + selected object counts drive placement.
+  - Layout stays even-grid and table-rotation aware.
+- Bandage calibration (from user-provided known-good sample):
+  - Kept for **orientation/height/scale** only, not XY positioning.
+  - Current constants:
+    - offset Y: `0.4829559326171875` (stored in `BANDAGE_CALIBRATION.offset[1]`)
+    - orientation: `[0, 0, -89.38273620605469]`
+    - scale: `0.9999993443489075`
+  - XY offset from calibration was intentionally removed to avoid bottom-left drift.
+- Preview improvements:
+  - Generator preview boxes render object image when available.
+  - Hover tooltip shows object name.
+  - Rotation display chooses stronger of orientation Y/Z for legacy data consistency.
+- Static reference files currently used in build:
+  - `static/data/wrecks-ref.txt`
+  - `static/data/tree-ref.txt`
+  - `static/data/slum-ref.txt`
+- Resume points if reapplying later:
+  1. Confirm `Trader Table` app state (`/?trader=1`) still toggles correctly in folder tree click handler and URL sync.
+  2. Re-check trader selection pane rendering via:
+     - `renderTraderSelectionLayout`
+     - `buildTraderPoolsFromRows`
+  3. Re-check `generateTraderTableLayout` for:
+     - centered even grid
+     - table yaw rotation
+     - bandage orientation/height/scale calibration.
+  4. Validate with:
+     - `node --check /tmp/sdof-inline-check-new.js`
+     - `hugo --destination /tmp/sdof-hugo-check`
+
+- Reapply checklist (ordered):
+  1. Restore ref files from `docs/build-generator-refs/` into both locations:
+     - root: `tree ref.txt`, `slum ref.txt`, `wrecks ref.txt`
+     - static: `static/data/tree-ref.txt`, `static/data/slum-ref.txt`, `static/data/wrecks-ref.txt`
+  2. Re-apply Build Generator app/panel logic in `themes/ananke/layouts/index.html`:
+     - app state `build_generator`
+     - URL param `generator=1`
+     - panel controls + preview + export/copy behavior.
+  3. Re-apply Trader Table app split:
+     - sidebar node `__trader_table__`
+     - URL param `trader=1`
+     - shared panel locked in trader mode when trader app is active.
+  4. Re-apply Trader selection layout + handlers:
+     - `#traderTableLayout`, `#traderTableSelect`, `#traderObjectSearch`, `#traderObjectResults`, `#traderSelectedObjects`
+     - `buildTraderPoolsFromRows`, `renderTraderSelectionLayout`
+     - add/remove/quantity/search event bindings.
+  5. Re-apply trader generation rules:
+     - selected table + selected object counts drive placement
+     - even XY grid, table-yaw aware
+     - bandage calibration only for orientation/height/scale.
+  6. Run validation:
+     - `node --check /tmp/sdof-inline-check-new.js`
+     - `hugo --destination /tmp/sdof-hugo-check`

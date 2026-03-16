@@ -3532,6 +3532,7 @@
       var seen = {};
       var next = [];
       rows.forEach(function(row) {
+        if (isPresetRow(row)) return;
         extractPathPrefixes(row && row.path ? row.path : '').forEach(function(prefix) {
           var key = prefix.toLowerCase();
           if (seen[key]) return;
@@ -3652,8 +3653,8 @@
       var treeRoot = (tree && tree.children && tree.children.dz) ? tree.children.dz : tree;
       var forceExpandForSearch = isFolderTreeInBroadFilterMode();
       var hasVisibleFolders = !!Object.keys((treeRoot && treeRoot.children) || {}).length;
-      var presetsActive = activeCollectionFilter === 'presets';
       var databaseActive = activeCollectionFilter === '';
+      var presetsActive = activeCollectionFilter === 'presets';
       var renderChildren = function(node) {
         var names = Object.keys(node.children || {}).sort(function(a, b) {
           return a.localeCompare(b);
@@ -3759,6 +3760,7 @@
       var seen = {};
       var folders = [];
       (Array.isArray(sourceData) ? sourceData : []).forEach(function(row) {
+        if (isPresetRow(row)) return;
         extractPathPrefixes(row && row.path ? row.path : '').forEach(function(prefix) {
           var key = prefix.toLowerCase();
           if (seen[key]) return;
@@ -3914,9 +3916,9 @@
             if (imagePath) {
               var safeImg = escapeHtml(imagePath);
               var safeName = escapeHtml(getObjectName(row));
-              return '<img class="thumb-img" src="/' + safeImg + '" alt="' + safeName + ' thumbnail" loading="lazy">';
+              return '<img class="thumb-img" src="/' + safeImg + '" alt="' + safeName + ' thumbnail" loading="lazy" onerror="this.outerHTML=\'<span class=&quot;thumb-fallback&quot;>-</span>\';">';
             }
-            return '<span class="thumb-fallback">—</span>';
+            return '<span class="thumb-fallback">-</span>';
           }
         },
         {
@@ -9059,6 +9061,7 @@
           activeCollectionFilter = 'presets';
           setActiveFolderFilter('', false);
           updateTypesExplorerPanelVisibility();
+          updateProxyVisualizerPanelVisibility();
           updateObjectMapPanelVisibility();
         } else if (isTypesExplorerPath) {
           activeCollectionFilter = 'types_explorer';
@@ -9216,17 +9219,6 @@
         }
         if (activeCollectionFilter !== 'object_map' && activeCollectionFilter !== 'types_explorer') {
           activeCollectionFilter = '';
-        }
-        if (nextPath && nextPath !== 'dz') {
-          var rowEl = folderBtn.closest('.folder-tree__row');
-          var rowToggle = rowEl ? rowEl.querySelector('[data-folder-toggle]') : null;
-          if (rowToggle) {
-            folderTreeExpanded[nextPath] = !folderTreeExpanded[nextPath];
-            if (activeCollectionFilter === 'object_map' || activeCollectionFilter === 'types_explorer') {
-              renderFolderTree();
-              return;
-            }
-          }
         }
         syncTypesExplorerPath();
         setActiveFolderFilter(nextPath, true);
