@@ -1481,6 +1481,9 @@
     box-shadow: var(--shadow-soft);
     transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.12s ease;
   }
+  .map-lightbox__open-object-map {
+    right: 162px;
+  }
   .map-lightbox__close:hover,
   .map-lightbox__reset:hover {
     background: var(--accent);
@@ -2440,6 +2443,9 @@
       right: 54px;
       padding: 7px 10px;
     }
+    .map-lightbox__open-object-map {
+      right: 148px;
+    }
   }
 
   .preview-card {
@@ -3136,6 +3142,7 @@
     <div class="object-map__toggles">
       <button id="objectMapToggleChernarus" class="object-map__toggle is-active" type="button" data-object-map="chernarus">Chernarus</button>
       <button id="objectMapToggleLivonia" class="object-map__toggle" type="button" data-object-map="livonia">Livonia</button>
+      <button id="objectMapExportCurrent" class="object-map__toggle" type="button">Export current view</button>
       <div class="object-map__controls">
         <button class="object-map__control" type="button" data-object-map-control="zoom-out" title="Zoom out">−</button>
         <button class="object-map__control" type="button" data-object-map-control="zoom-in" title="Zoom in">+</button>
@@ -3322,6 +3329,7 @@
 </div>
   <div id="chernarusMapLightbox" class="map-lightbox" aria-hidden="true">
     <div class="map-lightbox__content">
+      <button id="chernarusMapOpenObjectMap" class="map-lightbox__reset map-lightbox__open-object-map" type="button">Open in Object Map</button>
       <button id="chernarusMapReset" class="map-lightbox__reset" type="button">Reset view</button>
       <button id="chernarusMapClose" class="map-lightbox__close" type="button" aria-label="Close map">🆇</button>
       <div class="map-lightbox__frame">
@@ -4279,6 +4287,7 @@
     var objectMapTooltipEl = document.getElementById('objectMapTooltip');
     var objectMapToggleChernarusEl = document.getElementById('objectMapToggleChernarus');
     var objectMapToggleLivoniaEl = document.getElementById('objectMapToggleLivonia');
+    var objectMapExportCurrentEl = document.getElementById('objectMapExportCurrent');
     var objectFocusMetaEl = document.getElementById('objectFocusMeta');
     var objectFocusLocationEl = document.getElementById('objectFocusLocation');
     var objectFocusLinksEl = document.getElementById('objectFocusLinks');
@@ -4421,6 +4430,7 @@
     var chernarusMapSelectionGroupEl = document.getElementById('chernarusMapSelectionGroup');
     var chernarusMapCloseEl = document.getElementById('chernarusMapClose');
     var chernarusMapResetEl = document.getElementById('chernarusMapReset');
+    var chernarusMapOpenObjectMapEl = document.getElementById('chernarusMapOpenObjectMap');
     var chernarusMapLabelEl = document.getElementById('chernarusMapLabel');
     var chernarusMapMetaEl = document.getElementById('chernarusMapMeta');
     var chernarusMapStatusEl = document.getElementById('chernarusMapStatus');
@@ -5323,8 +5333,9 @@
         var representedPlacements = 0;
         var rowIndex = 0;
         var chunkSize = 24;
+        var hasToken = token !== null && token !== undefined;
         var processChunk = function() {
-          if (token !== objectMapRenderToken) {
+          if (hasToken && token !== objectMapRenderToken) {
             resolve(null);
             return;
           }
@@ -6204,6 +6215,18 @@
     if (chernarusMapResetEl) {
       chernarusMapResetEl.addEventListener('click', function() {
         scheduleLocationMapLayout(true);
+      });
+    }
+    if (chernarusMapOpenObjectMapEl) {
+      chernarusMapOpenObjectMapEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var selection = chernarusMapState.selection || {};
+        var preferredMapKey = selection.mapKey || chernarusMapState.activeMapKey || '';
+        var objId = (currentObjectData && currentObjectData.id) ? currentObjectData.id : '';
+        var objName = (currentObjectData && currentObjectData.objName) ? currentObjectData.objName : (selection.name || '');
+        closeChernarusMapLightbox();
+        openObjectInObjectMapView(objId, objName, preferredMapKey);
       });
     }
     if (chernarusMapOverlayEl) {
@@ -8257,6 +8280,40 @@
         }
       });
     };
+    var openObjectInObjectMapView = function(objectId, objectName, preferredMapKey) {
+      if (!table) return;
+      var normalizedId = normalizeObjectId(objectId);
+      var normalizedName = String(objectName || '').trim();
+      var preferredMap = String(preferredMapKey || '').trim().toLowerCase();
+      if (preferredMap === 'chernarus' || preferredMap === 'livonia') {
+        objectMapActiveMapKey = preferredMap;
+      }
+      activeCollectionFilter = 'object_map';
+      setActiveFolderFilter('', false);
+      updateTypesExplorerPanelVisibility();
+      updateObjectMapPanelVisibility();
+      updatePresetsGuideNotice();
+      renderFolderTree();
+      // Use global search so "clear search"/"reset view" fully clears this state.
+      table.columns().search('');
+      if (normalizedName) {
+        table.search(normalizedName).draw();
+        return;
+      }
+      if (normalizedId) {
+        var matchedName = '';
+        var data = table.rows().data().toArray();
+        for (var i = 0; i < data.length; i += 1) {
+          if (normalizeObjectId(getObjectId(data[i])) === normalizedId) {
+            matchedName = String(getObjectName(data[i]) || '').trim();
+            break;
+          }
+        }
+        table.search(matchedName || normalizedId).draw();
+        return;
+      }
+      table.search('').draw();
+    };
 
     if (objectFocusClearEl) {
       objectFocusClearEl.addEventListener('click', function() {
@@ -9361,6 +9418,12 @@
         }, 1200);
       });
     }
+    if (objectMapExportCurrentEl) {
+      objectMapExportCurrentEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        exportObjectMapCurrentView();
+      });
+    }
     if (objectMapPanelEl) {
       objectMapPanelEl.addEventListener('click', function(e) {
         var toggle = e.target.closest('[data-object-map]');
@@ -9710,6 +9773,60 @@
       if (!entries.length) return false;
       downloadTextFile(entries.join('\n\n') + '\n', 'dayz_objects_view_mapgrouppos.txt', 'text/plain;charset=utf-8');
       return true;
+    };
+    var exportObjectMapCurrentView = function() {
+      if (!table) return;
+      var mapKey = objectMapActiveMapKey || 'chernarus';
+      var rows = getObjectMapRows();
+      if (!rows.length) {
+        setObjectMapStatus('No objects in current view.');
+        return;
+      }
+      if (!shouldRenderObjectMapPlacements()) {
+        setObjectMapStatus('Search or select folders to show on map before exporting.');
+        return;
+      }
+      var finishExport = function(gathered) {
+        if (!gathered || !Array.isArray(gathered.placements) || !gathered.placements.length) {
+          setObjectMapStatus('No map placements in current view.');
+          return;
+        }
+        var payload = {
+          map: mapKey,
+          mapLabel: getLocationMapLabel(mapKey),
+          generatedAt: new Date().toISOString(),
+          objectCountInView: rows.length,
+          placementCount: gathered.placements.length,
+          placements: gathered.placements.map(function(point) {
+            return {
+              id: point.objId || '',
+              name: point.objName || '',
+              x: point.x,
+              y: point.y
+            };
+          })
+        };
+        var stamp = payload.generatedAt.replace(/[-:]/g, '').replace(/\.\d+Z$/, 'Z');
+        downloadTextFile(
+          JSON.stringify(payload, null, 2),
+          'object_map_' + mapKey + '_' + stamp + '.json',
+          'application/json;charset=utf-8'
+        );
+        setObjectMapStatus(formatNumber(payload.placementCount) + ' placements exported from ' + payload.mapLabel + '.');
+      };
+      var cached = objectMapState.placementsCache;
+      if (cached && cached.mapKey === mapKey && cached.gathered) {
+        finishExport(cached.gathered);
+        return;
+      }
+      setObjectMapStatus('Preparing export...');
+      ensureLocationMapData(mapKey).then(function(viewerData) {
+        return gatherObjectMapPlacementsAsync(rows, viewerData, mapKey, null);
+      }).then(function(gathered) {
+        finishExport(gathered);
+      }).catch(function(error) {
+        setObjectMapStatus(error && error.message ? error.message : 'Unable to export current map view.');
+      });
     };
     var flashNoEntriesButton = function(buttonEl) {
       if (!buttonEl) return;
