@@ -2784,6 +2784,58 @@
     border-color: var(--accent);
     color: #111;
   }
+  .object-map__toggle:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .object-map__export-accordion {
+    position: relative;
+    display: inline-block;
+  }
+  .object-map__export-summary {
+    list-style: none;
+  }
+  .object-map__export-summary::-webkit-details-marker {
+    display: none;
+  }
+  .object-map__export-accordion[open] .object-map__export-summary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #111;
+  }
+  .object-map__export-actions {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    z-index: 8;
+    display: grid;
+    gap: 5px;
+    min-width: 248px;
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card);
+    box-shadow: var(--shadow-soft);
+  }
+  .object-map__export-action {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: left;
+    padding: 5px 8px;
+    cursor: pointer;
+  }
+  .object-map__export-action:hover {
+    background: var(--bg-soft);
+  }
+  .object-map__export-action:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
   .object-map__frame {
     position: relative;
     width: 100%;
@@ -2822,8 +2874,14 @@
     cursor: grab;
     touch-action: none;
   }
+  .object-map__overlay.area-select {
+    cursor: crosshair;
+  }
   .object-map__overlay.dragging {
     cursor: grabbing;
+  }
+  .object-map__overlay.area-select.dragging {
+    cursor: crosshair;
   }
   .object-map__overlay path,
   .object-map__overlay image,
@@ -2847,6 +2905,13 @@
   .object-map__marker-hit {
     fill: rgba(0, 0, 0, 0.001);
     cursor: pointer;
+  }
+  .object-map__area-rect {
+    fill: rgba(237, 167, 0, 0.18);
+    stroke: #eda700;
+    stroke-width: 2;
+    stroke-dasharray: 10 7;
+    pointer-events: none;
   }
   .object-map__tooltip {
     position: absolute;
@@ -3142,7 +3207,17 @@
     <div class="object-map__toggles">
       <button id="objectMapToggleChernarus" class="object-map__toggle is-active" type="button" data-object-map="chernarus">Chernarus</button>
       <button id="objectMapToggleLivonia" class="object-map__toggle" type="button" data-object-map="livonia">Livonia</button>
-      <button id="objectMapExportCurrent" class="object-map__toggle" type="button">Export current view</button>
+      <button id="objectMapAreaSelectToggle" class="object-map__toggle" type="button">Area select</button>
+      <button id="objectMapClearArea" class="object-map__toggle" type="button" disabled>Clear area</button>
+      <details id="objectMapExportAccordion" class="object-map__export-accordion">
+        <summary class="object-map__toggle object-map__export-summary">Export options</summary>
+        <div class="object-map__export-actions">
+          <button id="objectMapExportCurrent" class="object-map__export-action" type="button">Current export (placements JSON)</button>
+          <button id="objectMapCopyArea" class="object-map__export-action" type="button" disabled>Copy area to editor</button>
+          <button id="objectMapDownloadAreaEditor" class="object-map__export-action" type="button" disabled>↓ Download editor JSON</button>
+          <button id="objectMapDownloadAreaMapGroupProto" class="object-map__export-action" type="button" disabled>↓ Download MapGroupProto</button>
+        </div>
+      </details>
       <div class="object-map__controls">
         <button class="object-map__control" type="button" data-object-map-control="zoom-out" title="Zoom out">−</button>
         <button class="object-map__control" type="button" data-object-map-control="zoom-in" title="Zoom in">+</button>
@@ -3155,6 +3230,7 @@
       <g transform="scale(1,-1)">
         <g id="objectMapBackdropGroup"></g>
         <g id="objectMapMarkersGroup"></g>
+        <g id="objectMapSelectionGroup"></g>
       </g>
     </svg>
     <div id="objectMapPrompt" class="object-map__prompt">Search or select folders to show on map</div>
@@ -4283,12 +4359,19 @@
     var objectMapOverlayEl = document.getElementById('objectMapOverlay');
     var objectMapBackdropGroupEl = document.getElementById('objectMapBackdropGroup');
     var objectMapMarkersGroupEl = document.getElementById('objectMapMarkersGroup');
+    var objectMapSelectionGroupEl = document.getElementById('objectMapSelectionGroup');
     var objectMapStatusEl = document.getElementById('objectMapStatus');
     var objectMapCopyCoordsEl = document.getElementById('objectMapCopyCoords');
     var objectMapPromptEl = document.getElementById('objectMapPrompt');
     var objectMapTooltipEl = document.getElementById('objectMapTooltip');
     var objectMapToggleChernarusEl = document.getElementById('objectMapToggleChernarus');
     var objectMapToggleLivoniaEl = document.getElementById('objectMapToggleLivonia');
+    var objectMapExportAccordionEl = document.getElementById('objectMapExportAccordion');
+    var objectMapAreaSelectToggleEl = document.getElementById('objectMapAreaSelectToggle');
+    var objectMapCopyAreaEl = document.getElementById('objectMapCopyArea');
+    var objectMapDownloadAreaEditorEl = document.getElementById('objectMapDownloadAreaEditor');
+    var objectMapDownloadAreaMapGroupProtoEl = document.getElementById('objectMapDownloadAreaMapGroupProto');
+    var objectMapClearAreaEl = document.getElementById('objectMapClearArea');
     var objectMapExportCurrentEl = document.getElementById('objectMapExportCurrent');
     var objectFocusMetaEl = document.getElementById('objectFocusMeta');
     var objectFocusLocationEl = document.getElementById('objectFocusLocation');
@@ -4340,7 +4423,11 @@
       view: null,
       dragStart: null,
       dragMoved: false,
-      placementsCache: null
+      placementsCache: null,
+      areaMode: false,
+      areaDrag: null,
+      areaBounds: null,
+      areaPlacements: []
     };
     var folderBulkAnimalsTop = null;
     var folderBulkMode = 'animals';
@@ -5090,13 +5177,20 @@
         objectMapState.dragStart = null;
         objectMapState.dragMoved = false;
         objectMapState.placementsCache = null;
+        objectMapState.areaMode = false;
+        clearObjectMapAreaSelection();
         if (objectMapOverlayEl) {
           objectMapOverlayEl.classList.remove('dragging');
+        }
+        if (objectMapExportAccordionEl) {
+          objectMapExportAccordionEl.open = false;
         }
         hideObjectMapTooltip();
         setObjectMapPromptVisible(false);
         setObjectMapStatus('');
         applyObjectMapFolderDimmingToDom();
+      } else {
+        updateObjectMapAreaControls();
       }
     };
     var updateObjectMapToggleButtons = function() {
@@ -5110,6 +5204,327 @@
     var setObjectMapStatus = function(text) {
       if (!objectMapStatusEl) return;
       objectMapStatusEl.textContent = text || '';
+    };
+    var updateObjectMapAreaControls = function() {
+      if (objectMapAreaSelectToggleEl) {
+        objectMapAreaSelectToggleEl.classList.toggle('is-active', !!objectMapState.areaMode);
+      }
+      var hasSelection = !!(objectMapState.areaBounds && Array.isArray(objectMapState.areaPlacements) && objectMapState.areaPlacements.length);
+      if (objectMapCopyAreaEl) {
+        objectMapCopyAreaEl.disabled = !hasSelection;
+      }
+      if (objectMapClearAreaEl) {
+        objectMapClearAreaEl.disabled = !objectMapState.areaBounds;
+      }
+      if (objectMapDownloadAreaEditorEl) {
+        objectMapDownloadAreaEditorEl.disabled = !hasSelection;
+      }
+      if (objectMapDownloadAreaMapGroupProtoEl) {
+        objectMapDownloadAreaMapGroupProtoEl.disabled = !hasSelection;
+      }
+      if (objectMapOverlayEl) {
+        objectMapOverlayEl.classList.toggle('area-select', !!objectMapState.areaMode);
+      }
+    };
+    var renderObjectMapAreaRect = function() {
+      if (!objectMapSelectionGroupEl) return;
+      objectMapSelectionGroupEl.replaceChildren();
+      var bounds = objectMapState.areaBounds;
+      if (!bounds) return;
+      var width = Math.max(0, Number(bounds.maxX || 0) - Number(bounds.minX || 0));
+      var height = Math.max(0, Number(bounds.maxY || 0) - Number(bounds.minY || 0));
+      if (width <= 0 || height <= 0) return;
+      var rect = createLocationMapSvgElement('rect');
+      rect.setAttribute('class', 'object-map__area-rect');
+      rect.setAttribute('x', Number(bounds.minX || 0));
+      rect.setAttribute('y', Number(bounds.minY || 0));
+      rect.setAttribute('width', width);
+      rect.setAttribute('height', height);
+      objectMapSelectionGroupEl.appendChild(rect);
+    };
+    var clearObjectMapAreaSelection = function() {
+      objectMapState.areaDrag = null;
+      objectMapState.areaBounds = null;
+      objectMapState.areaPlacements = [];
+      renderObjectMapAreaRect();
+      updateObjectMapAreaControls();
+    };
+    var getObjectMapBoundsFromPoints = function(a, b) {
+      if (!a || !b) return null;
+      var minX = Math.min(Number(a.x || 0), Number(b.x || 0));
+      var maxX = Math.max(Number(a.x || 0), Number(b.x || 0));
+      var minY = Math.min(Number(a.y || 0), Number(b.y || 0));
+      var maxY = Math.max(Number(a.y || 0), Number(b.y || 0));
+      if (!isFinite(minX) || !isFinite(maxX) || !isFinite(minY) || !isFinite(maxY)) return null;
+      if ((maxX - minX) <= 0.5 || (maxY - minY) <= 0.5) return null;
+      return { minX: minX, minY: minY, maxX: maxX, maxY: maxY };
+    };
+    var filterObjectMapPlacementsByBounds = function(placements, bounds) {
+      if (!Array.isArray(placements) || !placements.length || !bounds) return [];
+      var minX = Number(bounds.minX || 0);
+      var maxX = Number(bounds.maxX || 0);
+      var minY = Number(bounds.minY || 0);
+      var maxY = Number(bounds.maxY || 0);
+      return placements.filter(function(point) {
+        var x = Number(point && point.x);
+        var y = Number(point && point.y);
+        if (!isFinite(x) || !isFinite(y)) return false;
+        return x >= minX && x <= maxX && y >= minY && y <= maxY;
+      });
+    };
+    var resolveObjectMapGatheredPlacements = function() {
+      var mapKey = objectMapActiveMapKey || 'chernarus';
+      var cached = objectMapState.placementsCache;
+      if (cached && cached.mapKey === mapKey && cached.gathered) {
+        return Promise.resolve(cached.gathered);
+      }
+      if (!table || !shouldRenderObjectMapPlacements()) {
+        return Promise.resolve(null);
+      }
+      var rows = getObjectMapRows();
+      if (!rows.length) return Promise.resolve(null);
+      return ensureLocationMapData(mapKey).then(function(viewerData) {
+        return gatherObjectMapPlacementsAsync(rows, viewerData, mapKey, null);
+      }).then(function(gathered) {
+        if (gathered) {
+          objectMapState.placementsCache = {
+            mapKey: mapKey,
+            gathered: gathered
+          };
+        }
+        return gathered;
+      });
+    };
+    var applyObjectMapAreaBounds = function(bounds) {
+      objectMapState.areaBounds = bounds || null;
+      renderObjectMapAreaRect();
+      if (!bounds) {
+        objectMapState.areaPlacements = [];
+        updateObjectMapAreaControls();
+        return Promise.resolve([]);
+      }
+      return resolveObjectMapGatheredPlacements().then(function(gathered) {
+        var placements = gathered && Array.isArray(gathered.placements) ? gathered.placements : [];
+        objectMapState.areaPlacements = filterObjectMapPlacementsByBounds(placements, bounds);
+        updateObjectMapAreaControls();
+        if (objectMapState.areaPlacements.length) {
+          setObjectMapStatus(formatNumber(objectMapState.areaPlacements.length) + ' placements selected in area.');
+        } else {
+          setObjectMapStatus('No placements inside selected area.');
+        }
+        return objectMapState.areaPlacements.slice();
+      });
+    };
+    var getObjectMapAreaPlacementsForExport = function() {
+      if (!objectMapState.areaBounds) {
+        return Promise.resolve([]);
+      }
+      if (Array.isArray(objectMapState.areaPlacements) && objectMapState.areaPlacements.length) {
+        return Promise.resolve(objectMapState.areaPlacements.slice());
+      }
+      return applyObjectMapAreaBounds(objectMapState.areaBounds);
+    };
+    var collectUniqueAreaObjectNames = function(placements) {
+      var seen = {};
+      var names = [];
+      (Array.isArray(placements) ? placements : []).forEach(function(point) {
+        var name = String(point && point.objName || '').trim();
+        if (!name) return;
+        var key = name.toLowerCase();
+        if (seen[key]) return;
+        seen[key] = true;
+        names.push(name);
+      });
+      return names;
+    };
+    var buildMapGroupLookupKeys = function(name) {
+      var raw = String(name || '').trim();
+      if (!raw) return [];
+      var lower = raw.toLowerCase();
+      var keys = [];
+      var seen = {};
+      var push = function(value) {
+        var key = String(value || '').trim();
+        if (!key) return;
+        var n = key.toLowerCase();
+        if (seen[n]) return;
+        seen[n] = true;
+        keys.push(key);
+      };
+      push(raw);
+      push(lower);
+      if (lower.indexOf('staticobj_') === 0) {
+        push('Land_' + raw.slice(10));
+        push('land_' + lower.slice(10));
+      }
+      if (lower.indexOf('land_') === 0) {
+        push(raw.slice(5));
+        push(lower.slice(5));
+      }
+      if (lower.slice(-4) === '.p3d') {
+        var stemRaw = raw.slice(0, -4);
+        var stemLower = lower.slice(0, -4);
+        push(stemRaw);
+        push(stemLower);
+        push('Land_' + stemRaw);
+        push('land_' + stemLower);
+      }
+      return keys;
+    };
+    var buildAreaMapGroupProtoEntries = function(placements) {
+      var names = collectUniqueAreaObjectNames(placements);
+      var entries = [];
+      names.forEach(function(name) {
+        var entry = null;
+        var keys = buildMapGroupLookupKeys(name);
+        for (var i = 0; i < keys.length; i += 1) {
+          var key = keys[i];
+          entry = mapGroupProtoEntryByName[key] || mapGroupProtoEntryByNameLower[key.toLowerCase()];
+          if (entry) break;
+        }
+        if (!entry) return;
+        entries.push(entry.trim());
+      });
+      return entries;
+    };
+    var buildObjectMapAreaEditorObjects = function(placements) {
+      var output = [];
+      (Array.isArray(placements) ? placements : []).forEach(function(point) {
+        var objName = String(point && point.objName || '').trim();
+        if (!objName) return;
+        var rowData = null;
+        var objId = normalizeObjectId(point && point.objId || '');
+        if (objId) {
+          rowData = objectDataById[objId] || null;
+        }
+        if (!rowData) {
+          rowData = objectDataByName[objName.toLowerCase()] || null;
+        }
+        var item = {
+          editorJsonRaw: String(point && point.editorJsonRaw || (rowData && rowData.editorJson) || ''),
+          objName: objName,
+          modelType: String(point && point.modelType || (rowData && rowData.modelType) || 'Config'),
+          p3dPath: String(point && point.p3dPath || (rowData && rowData.path) || '')
+        };
+        var objects = buildEditorJsonArray(item);
+        if (!Array.isArray(objects) || !objects.length) return;
+        var mapX = Number(point && point.x);
+        var mapZ = Number(point && point.y);
+        if (!isFinite(mapX) || !isFinite(mapZ)) return;
+        objects.forEach(function(entry) {
+          if (!entry || typeof entry !== 'object' || Array.isArray(entry)) return;
+          var cloned = Object.assign({}, entry);
+          var posY = 0;
+          if (Array.isArray(entry.Position) && entry.Position.length >= 2) {
+            var existingY = Number(entry.Position[1]);
+            if (isFinite(existingY)) posY = existingY;
+          }
+          cloned.Position = [mapX, posY, mapZ];
+          if (!Array.isArray(cloned.Orientation) || cloned.Orientation.length < 3) {
+            cloned.Orientation = [0, 0, 0];
+          }
+          if (typeof cloned.Scale !== 'number' || !isFinite(cloned.Scale) || cloned.Scale <= 0) {
+            cloned.Scale = 1.0;
+          }
+          if (!cloned.AttachmentMap || typeof cloned.AttachmentMap !== 'object' || Array.isArray(cloned.AttachmentMap)) {
+            cloned.AttachmentMap = {};
+          }
+          if (typeof cloned.Model !== 'string') {
+            cloned.Model = '';
+          }
+          if (!isFinite(Number(cloned.Flags))) {
+            cloned.Flags = 30;
+          }
+          if (!isFinite(Number(cloned.m_LowBits))) {
+            cloned.m_LowBits = 0;
+          }
+          if (!isFinite(Number(cloned.m_HighBits))) {
+            cloned.m_HighBits = 0;
+          }
+          output.push(cloned);
+        });
+      });
+      return normalizeEditorJsonEntries(output);
+    };
+    var copyObjectMapAreaSelection = function() {
+      var bounds = objectMapState.areaBounds;
+      if (!bounds) {
+        setObjectMapStatus('Select an area on the map first.');
+        return;
+      }
+      var doCopy = function(placements) {
+        if (!Array.isArray(placements) || !placements.length) {
+          setObjectMapStatus('No placements inside selected area.');
+          return;
+        }
+        var editorObjects = buildObjectMapAreaEditorObjects(placements);
+        if (!editorObjects.length) {
+          setObjectMapStatus('No valid editor objects inside selected area.');
+          return;
+        }
+        navigator.clipboard.writeText(JSON.stringify(editorObjects, null, 4));
+        if (objectMapCopyAreaEl) {
+          var original = objectMapCopyAreaEl.textContent;
+          objectMapCopyAreaEl.textContent = 'Copied';
+          setTimeout(function() {
+            objectMapCopyAreaEl.textContent = original;
+          }, 1000);
+        }
+        setObjectMapStatus(formatNumber(editorObjects.length) + ' editor objects copied from selected area.');
+      };
+      var existing = Array.isArray(objectMapState.areaPlacements) ? objectMapState.areaPlacements.slice() : [];
+      if (existing.length) {
+        doCopy(existing);
+        return;
+      }
+      applyObjectMapAreaBounds(bounds).then(doCopy).catch(function(error) {
+        setObjectMapStatus(error && error.message ? error.message : 'Unable to copy selected area.');
+      });
+    };
+    var buildExportTimestamp = function() {
+      return new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+Z$/, 'Z');
+    };
+    var downloadObjectMapAreaEditorJson = function() {
+      if (!objectMapState.areaBounds) {
+        setObjectMapStatus('Select an area on the map first.');
+        return;
+      }
+      getObjectMapAreaPlacementsForExport().then(function(placements) {
+        var editorObjects = buildObjectMapAreaEditorObjects(placements);
+        if (!editorObjects.length) {
+          setObjectMapStatus('No valid editor objects inside selected area.');
+          return;
+        }
+        var mapKey = objectMapActiveMapKey || 'chernarus';
+        var filename = 'object_map_area_editor_' + mapKey + '_' + buildExportTimestamp() + '.json';
+        downloadTextFile(JSON.stringify(editorObjects, null, 4), filename, 'application/json;charset=utf-8');
+        setObjectMapStatus(formatNumber(editorObjects.length) + ' editor objects downloaded from selected area.');
+      }).catch(function(error) {
+        setObjectMapStatus(error && error.message ? error.message : 'Unable to download area editor JSON.');
+      });
+    };
+    var downloadObjectMapAreaMapGroupProto = function() {
+      if (!objectMapState.areaBounds) {
+        setObjectMapStatus('Select an area on the map first.');
+        return;
+      }
+      getObjectMapAreaPlacementsForExport().then(function(placements) {
+        var entries = buildAreaMapGroupProtoEntries(placements);
+        if (!entries.length) {
+          setObjectMapStatus('No MapGroupProto entries found for selected area objects.');
+          return;
+        }
+        var xml = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>', '<prototype>']
+          .concat(entries.map(function(entry) { return '  ' + entry; }))
+          .concat(['</prototype>', ''])
+          .join('\n');
+        var mapKey = objectMapActiveMapKey || 'chernarus';
+        var filename = 'object_map_area_mapgroupproto_' + mapKey + '_' + buildExportTimestamp() + '.xml';
+        downloadTextFile(xml, filename, 'application/xml;charset=utf-8');
+        setObjectMapStatus(formatNumber(entries.length) + ' MapGroupProto entries downloaded.');
+      }).catch(function(error) {
+        setObjectMapStatus(error && error.message ? error.message : 'Unable to download MapGroupProto entries.');
+      });
     };
     var formatObjectMapCoord = function(value) {
       var num = Number(value);
@@ -5165,6 +5580,7 @@
         objectMapActiveMapKey = normalized;
         objectMapState.view = null;
         objectMapState.placementsCache = null;
+        clearObjectMapAreaSelection();
       }
       updateObjectMapToggleButtons();
       renderObjectMapFromTable();
@@ -5368,7 +5784,15 @@
               var pointKey = objName + '|' + x + ',' + y;
               if (pointSeen[pointKey]) continue;
               pointSeen[pointKey] = true;
-              placements.push({ x: x, y: y, objName: objName, objId: objId });
+              placements.push({
+                x: x,
+                y: y,
+                objName: objName,
+                objId: objId,
+                modelType: String(row.modelType || ''),
+                p3dPath: String(row.path || ''),
+                editorJsonRaw: String(row.editorJson || '')
+              });
             }
           }
           if (rowIndex >= rows.length) {
@@ -5451,6 +5875,7 @@
       if (clickTarget && (clickTarget.id || clickTarget.name)) {
         var openedByPointerAt = 0;
         var openFocus = function() {
+          if (objectMapState.areaMode) return;
           if (objectMapInteractionRefreshTimer) {
             clearTimeout(objectMapInteractionRefreshTimer);
             objectMapInteractionRefreshTimer = null;
@@ -5621,12 +6046,14 @@
       if (!objectMapPanelEl || !objectMapPanelEl.classList.contains('visible')) return;
       var renderToken = ++objectMapRenderToken;
       var mapKey = objectMapActiveMapKey;
+      updateObjectMapAreaControls();
       updateObjectMapToggleButtons();
       clearObjectMapSvg();
       var rows = getObjectMapRows();
       if (!rows.length) {
         objectMapPlacementPathIndex = {};
         objectMapState.placementsCache = null;
+        clearObjectMapAreaSelection();
         setObjectMapPromptVisible(true, 'Search or select folders to show on map');
         setObjectMapStatus('No objects in current view.');
         applyObjectMapFolderDimmingToDom();
@@ -5645,6 +6072,7 @@
           objectMapPlacementPathIndex = {};
           objectMapState.placementsCache = null;
           objectMapSummaryText = '';
+          clearObjectMapAreaSelection();
           setObjectMapPromptVisible(true, 'Search or select folders to show on map');
           setObjectMapStatus('');
           applyObjectMapFolderDimmingToDom();
@@ -5665,12 +6093,18 @@
               gathered: finalGathered
             };
           }
+          if (objectMapState.areaBounds) {
+            applyObjectMapAreaBounds(objectMapState.areaBounds).catch(function() {});
+          } else {
+            updateObjectMapAreaControls();
+          }
           applyObjectMapFolderDimmingToDom();
         });
       }).catch(function(error) {
         if (renderToken !== objectMapRenderToken) return;
         objectMapPlacementPathIndex = {};
         objectMapState.placementsCache = null;
+        clearObjectMapAreaSelection();
         clearObjectMapSvg();
         setObjectMapStatus(error && error.message ? error.message : ('Unable to load ' + getLocationMapLabel(mapKey) + ' map.'));
         applyObjectMapFolderDimmingToDom();
@@ -9282,6 +9716,11 @@
       window.history.replaceState(null, '', cleanUrl);
       syncTypesExplorerPath();
       updateObjectMapPanelVisibility();
+      if (activeCollectionFilter === 'object_map') {
+        objectMapState.areaMode = false;
+        clearObjectMapAreaSelection();
+        updateObjectMapAreaControls();
+      }
       updateSearchShareLinkVisibility();
       scheduleSidebarTopOffsetSync();
     };
@@ -9416,6 +9855,56 @@
         exportObjectMapCurrentView();
       });
     }
+    if (objectMapDownloadAreaEditorEl) {
+      objectMapDownloadAreaEditorEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        downloadObjectMapAreaEditorJson();
+      });
+    }
+    if (objectMapDownloadAreaMapGroupProtoEl) {
+      objectMapDownloadAreaMapGroupProtoEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        downloadObjectMapAreaMapGroupProto();
+      });
+    }
+    if (objectMapAreaSelectToggleEl) {
+      objectMapAreaSelectToggleEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        objectMapState.areaMode = !objectMapState.areaMode;
+        objectMapState.areaDrag = null;
+        if (objectMapOverlayEl) {
+          objectMapOverlayEl.classList.remove('dragging');
+        }
+        updateObjectMapAreaControls();
+        if (objectMapState.areaMode) {
+          setObjectMapStatus('Area select enabled. Drag on the map to select a region.');
+        } else if (objectMapState.areaBounds && objectMapState.areaPlacements.length) {
+          setObjectMapStatus(formatNumber(objectMapState.areaPlacements.length) + ' placements selected in area.');
+        } else {
+          setObjectMapStatus(objectMapSummaryText || '');
+        }
+      });
+    }
+    if (objectMapCopyAreaEl) {
+      objectMapCopyAreaEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        copyObjectMapAreaSelection();
+      });
+    }
+    if (objectMapExportAccordionEl) {
+      document.addEventListener('click', function(event) {
+        if (!objectMapExportAccordionEl.open) return;
+        if (objectMapExportAccordionEl.contains(event.target)) return;
+        objectMapExportAccordionEl.open = false;
+      });
+    }
+    if (objectMapClearAreaEl) {
+      objectMapClearAreaEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        clearObjectMapAreaSelection();
+        setObjectMapStatus(objectMapSummaryText || 'Area selection cleared.');
+      });
+    }
     if (objectMapPanelEl) {
       objectMapPanelEl.addEventListener('click', function(e) {
         var toggle = e.target.closest('[data-object-map]');
@@ -9458,6 +9947,7 @@
     if (objectMapOverlayEl) {
       objectMapOverlayEl.addEventListener('wheel', function(event) {
         if (!objectMapPanelEl || !objectMapPanelEl.classList.contains('visible') || !objectMapState.data || !objectMapState.view) return;
+        if (objectMapState.areaMode) return;
         event.preventDefault();
         hideObjectMapTooltip();
         var rect = objectMapViewportRect();
@@ -9474,6 +9964,24 @@
       objectMapOverlayEl.addEventListener('pointerdown', function(event) {
         if (!objectMapPanelEl || !objectMapPanelEl.classList.contains('visible') || !objectMapState.view) return;
         hideObjectMapTooltip();
+        if (objectMapState.areaMode) {
+          var rect = objectMapViewportRect();
+          var start = screenToObjectMapWorld(
+            objectMapState.view,
+            event.clientX - rect.left,
+            event.clientY - rect.top
+          );
+          objectMapState.areaDrag = {
+            start: start,
+            current: start
+          };
+          objectMapState.dragStart = null;
+          objectMapState.dragMoved = false;
+          applyObjectMapAreaBounds(getObjectMapBoundsFromPoints(start, start));
+          objectMapOverlayEl.classList.add('dragging');
+          objectMapOverlayEl.setPointerCapture(event.pointerId);
+          return;
+        }
         objectMapState.dragStart = {
           x: event.clientX,
           y: event.clientY,
@@ -9489,6 +9997,19 @@
         objectMapOverlayEl.setPointerCapture(event.pointerId);
       });
       objectMapOverlayEl.addEventListener('pointermove', function(event) {
+        if (objectMapState.areaMode && objectMapState.areaDrag && objectMapState.view) {
+          var rect = objectMapViewportRect();
+          var current = screenToObjectMapWorld(
+            objectMapState.view,
+            event.clientX - rect.left,
+            event.clientY - rect.top
+          );
+          objectMapState.areaDrag.current = current;
+          objectMapState.areaBounds = getObjectMapBoundsFromPoints(objectMapState.areaDrag.start, current);
+          renderObjectMapAreaRect();
+          updateObjectMapAreaControls();
+          return;
+        }
         if (!objectMapState.dragStart || !objectMapState.view) return;
         if (!objectMapState.dragMoved) {
           var travelX = Math.abs(event.clientX - objectMapState.dragStart.x);
@@ -9509,6 +10030,21 @@
         syncObjectMapViewBox();
       });
       var endObjectMapDrag = function(event) {
+        if (objectMapState.areaMode && objectMapState.areaDrag) {
+          if (objectMapOverlayEl.hasPointerCapture(event.pointerId)) {
+            objectMapOverlayEl.releasePointerCapture(event.pointerId);
+          }
+          var bounds = getObjectMapBoundsFromPoints(
+            objectMapState.areaDrag.start,
+            objectMapState.areaDrag.current
+          );
+          objectMapState.areaDrag = null;
+          objectMapOverlayEl.classList.remove('dragging');
+          applyObjectMapAreaBounds(bounds).catch(function(error) {
+            setObjectMapStatus(error && error.message ? error.message : 'Unable to apply area selection.');
+          });
+          return;
+        }
         if (!objectMapState.dragStart) return;
         var shouldRefresh = !!objectMapState.dragMoved;
         if (objectMapState.dragStart && objectMapOverlayEl.hasPointerCapture(event.pointerId)) {
@@ -9524,6 +10060,7 @@
       objectMapOverlayEl.addEventListener('pointerup', endObjectMapDrag);
       objectMapOverlayEl.addEventListener('pointercancel', endObjectMapDrag);
     }
+    updateObjectMapAreaControls();
 
     if (versionFilterResetLinkEl) {
       versionFilterResetLinkEl.addEventListener('click', function(e) {
