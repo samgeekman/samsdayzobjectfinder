@@ -7,19 +7,8 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "bones, food, gear",
-    "image": "images/gear/food/bone.jpg",
+    "image": "images/gear/consumables/bone/bone.jpg",
     "id": "dzobj_4l355xnlq3"
-  },
-  {
-    "objectName": "ProxyMeat_steak",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/food",
-    "usableOnConsole": true,
-    "searchTags": "food, gear",
-    "image": "images/gear/food/proxymeat_steak.jpg",
-    "id": "dzobj_sv0xja8z3t"
   },
   {
     "objectName": "PotatoSeed",
@@ -29,7 +18,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": true,
     "searchTags": "food, gear, gardening growing",
-    "image": "images/gear/food/potatoseed.jpg",
+    "image": "images/gear/cultivation/potatoseed/potatoseed.jpg",
     "id": "dzobj_knvkkshr92"
   },
   {
@@ -1228,7 +1217,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, fruit, vegetable",
-    "image": "images/gear/food/apple_fresh.p3d.jpg",
+    "image": "images/gear/food/apple/apple.jpg",
     "id": "dzobj_zxhnjt91zh"
   },
   {
@@ -1239,7 +1228,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, fruit, vegetable",
-    "image": "images/gear/food/apple_rotten.p3d.jpg",
+    "image": "images/gear/food/apple/apple.jpg",
     "id": "dzobj_ee1n12nibj"
   },
   {
@@ -1261,7 +1250,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/bakedbeans.p3d.jpg",
+    "image": "images/gear/food/bakedbeanscan/bakedbeanscan.jpg",
     "id": "dzobj_m9be6tkiyf"
   },
   {
@@ -1294,7 +1283,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, fruit, vegetable",
-    "image": "images/gear/food/banana_rottem.p3d.jpg",
+    "image": "images/gear/food/banana/banana.jpg",
     "id": "dzobj_w157ojzl1w"
   },
   {
@@ -1338,7 +1327,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "candy, cane, food, gear, seasonal, festive, santa, christmas",
-    "image": "images/gear/food/candycane.p3d.jpg",
+    "image": "images/gear/food/candycane_green/candycane_green.jpg",
     "id": "dzobj_irlc555lr4"
   },
   {
@@ -1371,7 +1360,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, meat, fishing",
-    "image": "images/gear/food/can_sardines.p3d.jpg",
+    "image": "images/gear/food/sardines/sardines.jpg",
     "id": "dzobj_82poot9rzz"
   },
   {
@@ -1382,7 +1371,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, meat, fishing",
-    "image": "images/gear/food/can_sardines_open.p3d.jpg",
+    "image": "images/gear/food/sardines/sardines.jpg",
     "id": "dzobj_blrbgbdm9y"
   },
   {
@@ -1404,7 +1393,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, meat, fishing",
-    "image": "images/gear/food/carp_fillet_burnt.p3d.jpg",
+    "image": "images/gear/food/carp/carp.jpg",
     "id": "dzobj_v4ypu99tca"
   },
   {
@@ -1415,7 +1404,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, meat, fishing",
-    "image": "images/gear/food/carp_fillet_cooked.p3d.jpg",
+    "image": "images/gear/food/carp/carp.jpg",
     "id": "dzobj_z3g138mffc"
   },
   {
@@ -1426,7 +1415,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, meat, fishing",
-    "image": "images/gear/food/carp_fillet_raw.p3d.jpg",
+    "image": "images/gear/food/carp/carp.jpg",
     "id": "dzobj_wbkys4v3i3"
   },
   {
@@ -1437,7 +1426,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, meat, fishing",
-    "image": "images/gear/food/carp_fillet_rotten.p3d.jpg",
+    "image": "images/gear/food/carp/carp.jpg",
     "id": "dzobj_72dw3af2mj"
   },
   {
@@ -1602,7 +1591,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, fruit, vegetable",
-    "image": "images/gear/food/kiwi_rotten.p3d.jpg",
+    "image": "images/gear/food/kiwi/kiwi.jpg",
     "id": "dzobj_kxc0iksgdf"
   },
   {
@@ -1646,7 +1635,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, meat, fishing",
-    "image": "images/gear/food/mackerel_fillet_cooked.p3d.jpg",
+    "image": "images/gear/food/mackerel/mackerel.jpg",
     "id": "dzobj_umd53ruq6k"
   },
   {
@@ -1657,7 +1646,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, meat, fishing",
-    "image": "images/gear/food/mackerel_fillet_raw.p3d.jpg",
+    "image": "images/gear/food/mackerel/mackerel.jpg",
     "id": "dzobj_rqmc6362tj"
   },
   {
@@ -1833,7 +1822,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, fruit, vegetable",
-    "image": "images/gear/food/orange_rotten.p3d.jpg",
+    "image": "images/gear/food/orange/orange.jpg",
     "id": "dzobj_54ng0vfc64"
   },
   {
@@ -1866,7 +1855,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/gear/food/pepper_green_rotten.p3d.jpg",
+    "image": "images/gear/food/candycane_green/candycane_green.jpg",
     "id": "dzobj_s9ibskfh1e"
   },
   {
@@ -1877,7 +1866,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/gear/food/bone.jpg",
+    "image": "images/gear/consumables/bone/bone.jpg",
     "id": "dzobj_8m96uie1od"
   },
   {
@@ -1899,7 +1888,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, fruit, vegetable",
-    "image": "images/gear/food/potato/potato.jpg",
+    "image": "images/gear/cultivation/potatoseed/potatoseed.jpg",
     "id": "dzobj_369yhnrvk0"
   },
   {
@@ -1976,7 +1965,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, fruit, vegetable",
-    "image": "images/gear/food/pumpkin_fresh_open.p3d.jpg",
+    "image": "images/gear/food/pumpkin/pumpkin.jpg",
     "id": "dzobj_2wjhps8l5b"
   },
   {
@@ -1987,7 +1976,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, fruit, vegetable",
-    "image": "images/gear/food/pumpkin_rotten.p3d.jpg",
+    "image": "images/gear/food/pumpkin/pumpkin.jpg",
     "id": "dzobj_zf4ujdcn3e"
   },
   {
@@ -1998,7 +1987,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, fruit, vegetable",
-    "image": "images/gear/food/pumpkin_rotten_open.p3d.jpg",
+    "image": "images/gear/food/pumpkin/pumpkin.jpg",
     "id": "dzobj_jv1evofgbx"
   },
   {
@@ -2097,7 +2086,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, meat, fishing",
-    "image": "images/gear/food/sardines_open.p3d.jpg",
+    "image": "images/gear/food/sardines/sardines.jpg",
     "id": "dzobj_rpv6lhmy61"
   },
   {
@@ -2119,7 +2108,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/spaghetti.p3d.jpg",
+    "image": "images/gear/food/spaghettican/spaghettican.jpg",
     "id": "dzobj_78jgb18mq8"
   },
   {
@@ -2141,7 +2130,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, meat, fishing",
-    "image": "images/gear/food/steelhead_trout_cooked.p3d.jpg",
+    "image": "images/gear/food/steelheadtrout/steelheadtrout.jpg",
     "id": "dzobj_g1ib6d4k8b"
   },
   {
@@ -2174,7 +2163,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, meat, fishing",
-    "image": "images/gear/food/steelhead_trout_raw.p3d.jpg",
+    "image": "images/gear/food/steelheadtrout/steelheadtrout.jpg",
     "id": "dzobj_3qh38j6fha"
   },
   {
@@ -2196,7 +2185,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/tuna.p3d.jpg",
+    "image": "images/gear/food/tunacan/tunacan.jpg",
     "id": "dzobj_afmuqebged"
   },
   {
@@ -2229,7 +2218,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, meat, fishing",
-    "image": "images/gear/food/walleye_pollock_cooked.p3d.jpg",
+    "image": "images/gear/food/walleyepollock/walleyepollock.jpg",
     "id": "dzobj_hdjc3o73fo"
   },
   {
@@ -2262,7 +2251,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, meat, fishing",
-    "image": "images/gear/food/walleye_pollock_raw.p3d.jpg",
+    "image": "images/gear/food/walleyepollock/walleyepollock.jpg",
     "id": "dzobj_zivchgu4uu"
   },
   {
@@ -2295,7 +2284,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, fruit, vegetable",
-    "image": "images/gear/food/zucchini_fresh.p3d.jpg",
+    "image": "images/gear/food/zucchini/zucchini.jpg",
     "id": "dzobj_ub0z4zm7l8"
   },
   {
@@ -2306,7 +2295,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "food, gear, fruit, vegetable",
-    "image": "images/gear/food/zucchini_rotten.p3d.jpg",
+    "image": "images/gear/food/zucchini/zucchini.jpg",
     "id": "dzobj_vyepujyew6"
   }
 ]

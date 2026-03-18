@@ -13,7 +13,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 import tkinter as tk
-from tkinter import filedialog, messagebox
+from tkinter import filedialog, messagebox, ttk
 
 from PIL import Image, ImageTk
 
@@ -35,6 +35,7 @@ class QuickCropApp:
 
         self.images: list[Path] = []
         self.index = 0
+        self.finished_announced = False
 
         self.current_path: Path | None = None
         self.current_image: Image.Image | None = None
@@ -67,8 +68,26 @@ class QuickCropApp:
 
         self.status_label = tk.Label(meta, text="No folder loaded", anchor="w")
         self.status_label.pack(side="left", fill="x", expand=True)
-        self.help_label = tk.Label(meta, text="Drag to crop | S: skip | O: open folder | Q: quit", anchor="e")
+        self.help_label = tk.Label(
+            meta,
+            text="Drag to crop | Back/Next buttons | S: next | O: open folder | Q: quit",
+            anchor="e",
+        )
         self.help_label.pack(side="right")
+
+        controls = tk.Frame(self.root)
+        controls.pack(fill="x", padx=10, pady=(8, 0))
+
+        self.back_btn = tk.Button(controls, text="Back", command=self.prev_image, state="disabled", width=10)
+        self.back_btn.pack(side="left")
+        self.next_btn = tk.Button(controls, text="Next", command=self.skip_image, state="disabled", width=10)
+        self.next_btn.pack(side="left", padx=(8, 16))
+
+        self.count_label = tk.Label(controls, text="0/0", width=12, anchor="w")
+        self.count_label.pack(side="left")
+
+        self.progress = ttk.Progressbar(controls, mode="determinate", maximum=100)
+        self.progress.pack(side="left", fill="x", expand=True)
 
         canvas_wrap = tk.Frame(self.root)
         canvas_wrap.pack(fill="both", expand=True, padx=10, pady=10)
@@ -102,11 +121,20 @@ class QuickCropApp:
 
     def load_folder(self, folder: Path) -> None:
         folder = folder.resolve()
+        self.status_label.config(text="Loading folder...")
+        self.progress.config(mode="indeterminate")
+        self.progress.start(10)
+        self.root.update_idletasks()
+
         images = [p for p in folder.rglob("*") if p.is_file() and p.suffix.lower() in SUPPORTED_EXTS]
         images.sort()
+
+        self.progress.stop()
+        self.progress.config(mode="determinate")
         self.folder = folder
         self.images = images
         self.index = 0
+        self.finished_announced = False
         self.current_path = None
         self.current_image = None
 
@@ -114,17 +142,22 @@ class QuickCropApp:
         if not images:
             self.status_label.config(text="No supported images found")
             self.canvas.delete("all")
+            self.update_progress_ui()
             return
         self.show_current_image()
 
     def show_current_image(self) -> None:
         if not self.images:
             self.status_label.config(text="No images")
+            self.update_progress_ui()
             return
         if self.index >= len(self.images):
             self.status_label.config(text="Done. All images processed.")
             self.canvas.delete("all")
-            messagebox.showinfo("Quick Crop Queue", "Finished all images in folder.")
+            self.update_progress_ui(done=True)
+            if not self.finished_announced:
+                self.finished_announced = True
+                messagebox.showinfo("Quick Crop Queue", "Finished all images in folder.")
             return
 
         self.current_path = self.images[self.index]
@@ -155,6 +188,7 @@ class QuickCropApp:
 
         rel = self.current_path.relative_to(self.folder) if self.folder else self.current_path
         self.status_label.config(text=f"{self.index + 1}/{len(self.images)}  {rel}")
+        self.update_progress_ui()
 
     def clamp_to_preview(self, x: float, y: float) -> tuple[float, float]:
         x = max(self.preview_offset_x, min(x, self.preview_offset_x + self.preview_w))
@@ -225,11 +259,41 @@ class QuickCropApp:
         self.index += 1
         self.show_current_image()
 
+    def prev_image(self) -> None:
+        if not self.images:
+            return
+        if self.index <= 0:
+            return
+        self.index -= 1
+        self.finished_announced = False
+        self.show_current_image()
+
     def skip_image(self) -> None:
         if not self.images or self.index >= len(self.images):
             return
         self.index += 1
         self.show_current_image()
+
+    def update_progress_ui(self, done: bool = False) -> None:
+        total = len(self.images)
+        if total <= 0:
+            self.count_label.config(text="0/0")
+            self.progress["value"] = 0
+            self.back_btn.config(state="disabled")
+            self.next_btn.config(state="disabled")
+            return
+
+        if done:
+            current = total
+            value = 100.0
+        else:
+            current = min(self.index + 1, total)
+            value = (current / total) * 100.0
+
+        self.count_label.config(text=f"{current}/{total}")
+        self.progress["value"] = value
+        self.back_btn.config(state="normal" if self.index > 0 else "disabled")
+        self.next_btn.config(state="normal" if self.index < total else "disabled")
 
 
 def parse_args() -> argparse.Namespace:
@@ -243,8 +307,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     root = tk.Tk()
-    app = QuickCropApp(root=root, folder=args.folder, output=args.output, overwrite=args.overwrite)
-    app.show_current_image()
+    QuickCropApp(root=root, folder=args.folder, output=args.output, overwrite=args.overwrite)
     root.mainloop()
 
 

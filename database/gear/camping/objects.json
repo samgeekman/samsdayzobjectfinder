@@ -18,7 +18,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "3x3, camping, gear, shelter",
-    "image": "images/gear/camping/mediumtentcluttercutter.jpg",
+    "image": "images/gear/camping/mediumtent/mediumtent.jpg",
     "id": "dzobj_bfl8jslxxo"
   },
   {
@@ -40,7 +40,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "3x3, camping, gear, shelter",
-    "image": "images/gear/camping/largetentcluttercutter.jpg",
+    "image": "images/gear/camping/largetent/largetent.jpg",
     "id": "dzobj_sjh7dphitf"
   },
   {
@@ -73,19 +73,8 @@
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "camping, gear, shelter",
-    "image": "images/gear/camping/staticobj_partytent.jpg",
+    "image": "images/gear/camping/partytent/partytent.jpg",
     "id": "dzobj_b277nv7csm"
-  },
-  {
-    "objectName": "CamoNetShelter",
-    "inGameName": "Camo net shelter",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/camping",
-    "usableOnConsole": true,
-    "searchTags": "camping, gear",
-    "image": "images/gear/camping/camonetshelter/camonetshelter.jpg",
-    "id": "dzobj_15zw0rr3a9"
   },
   {
     "objectName": "FenceKit",
@@ -132,17 +121,6 @@
     "id": "dzobj_7fqk9s0qc2"
   },
   {
-    "objectName": "Material2",
-    "inGameName": "Barbed Wire",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/camping",
-    "usableOnConsole": true,
-    "searchTags": "barbed, camping, gear, wire",
-    "image": "images/gear/camping/material2.jpg",
-    "id": "dzobj_htf9v0h9ir"
-  },
-  {
     "objectName": "BarbedWire",
     "inGameName": "Barbed Wire",
     "category": "gear",
@@ -183,7 +161,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/barbedwirelocked.jpg",
+    "image": "images/gear/camping/barbedwire/barbedwire.jpg",
     "id": "dzobj_ym6roky7it"
   },
   {
@@ -425,7 +403,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "camping, gear, tree, cut, base building",
-    "image": "images/gear/camping/woodenlog.jpg",
+    "image": "images/gear/consumables/woodenlog/woodenlog.jpg",
     "id": "dzobj_eao2eo8rd8"
   },
   {
@@ -447,7 +425,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/barbedwirelocked.jpg",
+    "image": "images/gear/camping/barbedwire/barbedwire.jpg",
     "id": "dzobj_w00t4e5ub2"
   },
   {
@@ -546,7 +524,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, dial, gear, base building",
-    "image": "images/gear/camping/combination_lock3.p3d.jpg",
+    "image": "images/gear/camping/combinationlock/combinationlock.jpg",
     "id": "dzobj_1169qer6ea"
   },
   {
@@ -568,7 +546,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, dial, gear, base building",
-    "image": "images/gear/camping/combination_lock_proxied.p3d.jpg",
+    "image": "images/gear/camping/combinationlock/combinationlock.jpg",
     "id": "dzobj_f0tltswunz"
   },
   {
@@ -590,7 +568,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, tarp",
-    "image": "images/gear/camping/fabric_ground.p3d.jpg",
+    "image": "images/gear/camping/fabric/fabric.jpg",
     "id": "dzobj_7ew15hz9ni"
   },
   {
@@ -612,7 +590,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/fence_deployed.p3d.jpg",
+    "image": "images/gear/camping/fence/fence.jpg",
     "id": "dzobj_n88uwci7ry"
   },
   {
@@ -623,7 +601,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/fence_folded.p3d.jpg",
+    "image": "images/gear/camping/fence/fence.jpg",
     "id": "dzobj_3g5ivz89by"
   },
   {
@@ -645,7 +623,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/fence_kit_deployed.p3d.jpg",
+    "image": "images/gear/camping/fence/fence.jpg",
     "id": "dzobj_87ly28mb1h"
   },
   {
@@ -656,7 +634,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/fence_kit_deployed_orig.p3d.jpg",
+    "image": "images/gear/camping/fence/fence.jpg",
     "id": "dzobj_0s7073ekwr"
   },
   {
@@ -667,7 +645,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/fence_kit_folded.p3d.jpg",
+    "image": "images/gear/camping/fence/fence.jpg",
     "id": "dzobj_rx6zrhfrdn"
   },
   {
@@ -788,7 +766,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, shelter",
-    "image": "images/gear/camping/largetentcluttercutter.jpg",
+    "image": "images/gear/camping/largetent/largetent.jpg",
     "id": "dzobj_3wltfu1367"
   },
   {
@@ -799,7 +777,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, shelter",
-    "image": "images/gear/camping/large_tent_backpack.p3d.jpg",
+    "image": "images/gear/camping/largetent/largetent.jpg",
     "id": "dzobj_7dmqll7wzo"
   },
   {
@@ -821,7 +799,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, shelter",
-    "image": "images/gear/camping/mediumtentcluttercutter.jpg",
+    "image": "images/gear/camping/mediumtent/mediumtent.jpg",
     "id": "dzobj_ffq1rl6lzv"
   },
   {
@@ -832,7 +810,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, canopy, gear, shelter",
-    "image": "images/gear/camping/party_tent.p3d.jpg",
+    "image": "images/gear/camping/partytent/partytent.jpg",
     "id": "dzobj_pqwpecfh53"
   },
   {
@@ -843,7 +821,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, canopy, gear, shelter",
-    "image": "images/gear/camping/party_tent_g.p3d.jpg",
+    "image": "images/gear/camping/partytent/partytent.jpg",
     "id": "dzobj_us5ondjxqz"
   },
   {
@@ -854,7 +832,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, canopy, gear, shelter",
-    "image": "images/gear/camping/party_tent_static.p3d.jpg",
+    "image": "images/gear/camping/partytent/partytent.jpg",
     "id": "dzobj_ow4u8jmyi0"
   },
   {
@@ -942,7 +920,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, storage",
-    "image": "images/gear/camping/shelter_kit_deployed.p3d.jpg",
+    "image": "images/gear/camping/shelterkit/shelterkit.jpg",
     "id": "dzobj_fhqh5ww2db"
   },
   {
@@ -953,7 +931,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, storage",
-    "image": "images/gear/camping/shelter_kit_folded.p3d.jpg",
+    "image": "images/gear/camping/shelterkit/shelterkit.jpg",
     "id": "dzobj_7staywu4oy"
   },
   {
@@ -1151,7 +1129,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/watchtower_deployed.p3d.jpg",
+    "image": "images/gear/camping/watchtower/watchtower.jpg",
     "id": "dzobj_jnk5iozcm7"
   },
   {
@@ -1162,7 +1140,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/watchtower_folded.p3d.jpg",
+    "image": "images/gear/camping/watchtower/watchtower.jpg",
     "id": "dzobj_95u8nteg11"
   },
   {
@@ -1184,7 +1162,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/watchtower_kit_deployed.p3d.jpg",
+    "image": "images/gear/camping/watchtower/watchtower.jpg",
     "id": "dzobj_kdbe6h4hlr"
   },
   {
@@ -1195,7 +1173,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/watchtower_kit_deployed_orig.p3d.jpg",
+    "image": "images/gear/camping/watchtower/watchtower.jpg",
     "id": "dzobj_vyktshbqey"
   },
   {
@@ -1206,7 +1184,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/watchtower_kit_folded.p3d.jpg",
+    "image": "images/gear/camping/watchtower/watchtower.jpg",
     "id": "dzobj_igwz2nd2dq"
   },
   {
@@ -1217,7 +1195,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/watchtower_no_proxy.p3d.jpg",
+    "image": "images/gear/camping/watchtower/watchtower.jpg",
     "id": "dzobj_k42w8z74fx"
   },
   {
@@ -1239,7 +1217,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, tree, cut, base building",
-    "image": "images/gear/camping/woodenlog.jpg",
+    "image": "images/gear/consumables/woodenlog/woodenlog.jpg",
     "id": "dzobj_d5v00ddisj"
   },
   {
@@ -1249,7 +1227,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "camping, gear, shelter",
-    "image": "images/gear/camping/mediumtentplacing.jpg",
+    "image": "images/gear/camping/mediumtent/mediumtent.jpg",
     "editorJson": null,
     "configClass": "MediumTentPlacing",
     "id": "dzobj_u9lu30tl79"
@@ -1261,7 +1239,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "camping, gear, shelter",
-    "image": "images/gear/camping/largetentplacing.jpg",
+    "image": "images/gear/camping/largetent/largetent.jpg",
     "editorJson": null,
     "configClass": "LargeTentPlacing",
     "id": "dzobj_t0mim0iq22"
@@ -1273,7 +1251,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "camping, gear, shelter, transport, vehicle",
-    "image": "images/gear/camping/cartentplacing.jpg",
+    "image": "images/gear/camping/cartent/cartent.jpg",
     "editorJson": null,
     "configClass": "CarTentPlacing",
     "id": "dzobj_ze7x4whrkr"
@@ -1285,34 +1263,10 @@
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "camping, canopy, gear, shelter",
-    "image": "images/gear/camping/partytentplacing.jpg",
+    "image": "images/gear/camping/partytent/partytent.jpg",
     "editorJson": null,
     "configClass": "PartyTentPlacing",
     "id": "dzobj_z6u616ain4"
-  },
-  {
-    "objectName": "FenceKitPlacing",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/camping",
-    "usableOnConsole": true,
-    "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/fencekitplacing.jpg",
-    "editorJson": null,
-    "configClass": "FenceKitPlacing",
-    "id": "dzobj_gojtj45d4x"
-  },
-  {
-    "objectName": "WatchtowerKitPlacing",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/camping",
-    "usableOnConsole": true,
-    "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/watchtowerkitplacing.jpg",
-    "editorJson": null,
-    "configClass": "WatchtowerKitPlacing",
-    "id": "dzobj_bvwjdblncw"
   },
   {
     "objectName": "ShelterKitPlacing",
@@ -1321,22 +1275,10 @@
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "camping, gear, storage",
-    "image": "images/gear/camping/shelterkitplacing.jpg",
+    "image": "images/gear/camping/shelterkit/shelterkit.jpg",
     "editorJson": null,
     "configClass": "ShelterKitPlacing",
     "id": "dzobj_g8rkkswdhn"
-  },
-  {
-    "objectName": "TerritoryFlagKitPlacing",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/camping",
-    "usableOnConsole": true,
-    "searchTags": "banner, camping, gear, pole, signal",
-    "image": "images/gear/camping/territoryflagkitplacing.jpg",
-    "editorJson": null,
-    "configClass": "TerritoryFlagKitPlacing",
-    "id": "dzobj_baxzyvhmoi"
   },
   {
     "objectName": "cartentplacing.p3d",
@@ -1345,7 +1287,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, shelter, transport, vehicle",
-    "image": "images/gear/camping/cartentplacing.jpg",
+    "image": "images/gear/camping/cartent/cartent.jpg",
     "editorJson": null,
     "id": "dzobj_bk9rln1wu2"
   },
@@ -1356,7 +1298,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/fencekitplacing.jpg",
+    "image": "images/gear/camping/fence/fence.jpg",
     "editorJson": null,
     "id": "dzobj_l2fjqcj295"
   },
@@ -1367,7 +1309,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, shelter",
-    "image": "images/gear/camping/largetentplacing.jpg",
+    "image": "images/gear/camping/largetent/largetent.jpg",
     "editorJson": null,
     "id": "dzobj_nhgw1bfmsd"
   },
@@ -1378,7 +1320,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, shelter",
-    "image": "images/gear/camping/mediumtentplacing.jpg",
+    "image": "images/gear/camping/mediumtent/mediumtent.jpg",
     "editorJson": null,
     "id": "dzobj_4kta24hnw4"
   },
@@ -1389,7 +1331,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, canopy, gear, shelter",
-    "image": "images/gear/camping/partytentplacing.jpg",
+    "image": "images/gear/camping/partytent/partytent.jpg",
     "editorJson": null,
     "id": "dzobj_8qggat8ali"
   },
@@ -1400,7 +1342,7 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, storage",
-    "image": "images/gear/camping/shelterkitplacing.jpg",
+    "image": "images/gear/camping/shelterkit/shelterkit.jpg",
     "editorJson": null,
     "id": "dzobj_zx18uozh9o"
   },
@@ -1422,371 +1364,371 @@
     "path": "dz/gear/camping",
     "usableOnConsole": false,
     "searchTags": "camping, gear, base building",
-    "image": "images/gear/camping/watchtowerkitplacing.jpg",
+    "image": "images/gear/camping/watchtower/watchtower.jpg",
     "editorJson": null,
     "id": "dzobj_c8mgrg0ace"
   },
   {
     "objectName": "Flag_APA",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_apa/flag_apa.jpg",
     "id": "dzobj_h1y2jcvivb"
   },
   {
     "objectName": "Flag_Altis",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_altis/flag_altis.jpg",
     "id": "dzobj_86f1cr17vc"
   },
   {
     "objectName": "Flag_BabyDeer",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_babydeer/flag_babydeer.jpg",
     "id": "dzobj_2o8ehnirv9"
   },
   {
     "objectName": "Flag_Bear",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_bear/flag_bear.jpg",
     "id": "dzobj_ay6bucy9rd"
   },
   {
     "objectName": "Flag_Bohemia",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_bohemia/flag_bohemia.jpg",
     "id": "dzobj_m7qxi0s761"
   },
   {
     "objectName": "Flag_BrainZ",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_brainz/flag_brainz.jpg",
     "id": "dzobj_q6u9nryrn6"
   },
   {
     "objectName": "Flag_CDF",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_cdf/flag_cdf.jpg",
     "id": "dzobj_dx8ztp6rw0"
   },
   {
     "objectName": "Flag_CHEL",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_chel/flag_chel.jpg",
     "id": "dzobj_nlkq5ojx5j"
   },
   {
     "objectName": "Flag_CMC",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_cmc/flag_cmc.jpg",
     "id": "dzobj_rkns0gwclh"
   },
   {
     "objectName": "Flag_Cannibals",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_cannibals/flag_cannibals.jpg",
     "id": "dzobj_t40tmktqol"
   },
   {
     "objectName": "Flag_Chedaki",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_chedaki/flag_chedaki.jpg",
     "id": "dzobj_kfpcj57vm2"
   },
   {
     "objectName": "Flag_Chernarus",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_chernarus/flag_chernarus.jpg",
     "id": "dzobj_jf9ns2yjhj"
   },
   {
     "objectName": "Flag_Crook",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_crook/flag_crook.jpg",
     "id": "dzobj_gh0xllygh8"
   },
   {
     "objectName": "Flag_DayZ",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_dayz/flag_dayz.jpg",
     "id": "dzobj_uudmv8w7jk"
   },
   {
     "objectName": "Flag_HunterZ",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_hunterz/flag_hunterz.jpg",
     "id": "dzobj_d35bc5mt50"
   },
   {
     "objectName": "Flag_Livonia",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_livonia/flag_livonia.jpg",
     "id": "dzobj_0sbws3rhws"
   },
   {
     "objectName": "Flag_LivoniaArmy",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_livoniaarmy/flag_livoniaarmy.jpg",
     "id": "dzobj_bie5qzgcc5"
   },
   {
     "objectName": "Flag_LivoniaPolice",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_livoniapolice/flag_livoniapolice.jpg",
     "id": "dzobj_z8o71czqet"
   },
   {
     "objectName": "Flag_NAPA",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_napa/flag_napa.jpg",
     "id": "dzobj_qom0qzxrvb"
   },
   {
     "objectName": "Flag_NSahrani",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_nsahrani/flag_nsahrani.jpg",
     "id": "dzobj_03inah8987"
   },
   {
     "objectName": "Flag_Pirates",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_pirates/flag_pirates.jpg",
     "id": "dzobj_c4nnk7oip1"
   },
   {
     "objectName": "Flag_RSTA",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_rsta/flag_rsta.jpg",
     "id": "dzobj_broz7redtm"
   },
   {
     "objectName": "Flag_Refuge",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_refuge/flag_refuge.jpg",
     "id": "dzobj_sr0nan2o1a"
   },
   {
     "objectName": "Flag_Rex",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_rex/flag_rex.jpg",
     "id": "dzobj_ic66hrhned"
   },
   {
     "objectName": "Flag_Rooster",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_rooster/flag_rooster.jpg",
     "id": "dzobj_xt5jxyib18"
   },
   {
     "objectName": "Flag_SSahrani",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_ssahrani/flag_ssahrani.jpg",
     "id": "dzobj_gp8bsy3nbu"
   },
   {
     "objectName": "Flag_Snake",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_snake/flag_snake.jpg",
     "id": "dzobj_la1qi4zk33"
   },
   {
     "objectName": "Flag_TEC",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_tec/flag_tec.jpg",
     "id": "dzobj_h0bcdd7kxr"
   },
   {
     "objectName": "Flag_UEC",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_uec/flag_uec.jpg",
     "id": "dzobj_w7roq1tf7k"
   },
   {
     "objectName": "Flag_White",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_white/flag_white.jpg",
     "id": "dzobj_7489ykkknq"
   },
   {
     "objectName": "Flag_Wolf",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_wolf/flag_wolf.jpg",
     "id": "dzobj_5kcox2klse"
   },
   {
     "objectName": "Flag_Zagorky",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_zagorky/flag_zagorky.jpg",
     "id": "dzobj_gkeh92qjvb"
   },
   {
     "objectName": "Flag_Zenit",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",
     "usableOnConsole": true,
     "searchTags": "banner, signal, base building, territory",
-    "image": "images/gear/camping/fencekit/fencekit.jpg",
+    "image": "images/gear/camping/flag_zenit/flag_zenit.jpg",
     "id": "dzobj_ko6dieq3cc"
   },
   {
@@ -1846,7 +1788,7 @@
   },
   {
     "objectName": "Flag_Sakhal",
-    "inGameName": "Fence Kit",
+    "inGameName": "Flag",
     "category": "gear",
     "modelType": "Config",
     "path": "dz/gear/camping",

@@ -7,30 +7,8 @@
     "path": "dz/gear/cooking",
     "usableOnConsole": true,
     "searchTags": "cooking, gear, fire, tree, wood, timber, warm",
-    "image": "images/gear/cooking/firewood.jpg",
+    "image": "images/gear/consumables/firewood/firewood.jpg",
     "id": "dzobj_d1jygb9uyl"
-  },
-  {
-    "objectName": "ClutterCutterFireplace",
-    "inGameName": "Fireplace Clutter Cutter",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/cooking",
-    "usableOnConsole": true,
-    "searchTags": "cooking, gear, fire, tree, wood, timber, warm",
-    "image": "images/gear/cooking/cluttercutterfireplace.jpg",
-    "id": "dzobj_vxqybzkxpf"
-  },
-  {
-    "objectName": "NoiseFireplaceSpecial",
-    "inGameName": "Fireplace",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/cooking",
-    "usableOnConsole": true,
-    "searchTags": "cooking, gear, fire, tree, wood, timber, warm",
-    "image": "images/gear/cooking/noisefireplacespecial.jpg",
-    "id": "dzobj_dow6kfnc15"
   },
   {
     "objectName": "Fireplace",
@@ -51,7 +29,7 @@
     "path": "dz/gear/cooking",
     "usableOnConsole": true,
     "searchTags": "cooking, gear, fire, tree, wood, timber, warm, melt, sakhal",
-    "image": "images/gear/cooking/staticobj_fireplace_spot_snow.jpg",
+    "image": "images/gear/cooking/fireplace/fireplace.jpg",
     "id": "dzobj_af0929xmj2"
   },
   {
@@ -75,17 +53,6 @@
     "searchTags": "container, cooking, drum, effect, flame, gear",
     "image": "images/gear/cooking/fireplacefirebarrel/fireplacefirebarrel.jpg",
     "id": "dzobj_g6rh32v3w5"
-  },
-  {
-    "objectName": "OvenIndoor",
-    "inGameName": "Fireplace",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/cooking",
-    "usableOnConsole": true,
-    "searchTags": "cooking, fireplace, gear",
-    "image": "images/gear/cooking/ovenindoor/ovenindoor.jpg",
-    "id": "dzobj_qk9isk8kqn"
   },
   {
     "objectName": "BarrelHoles_Blue",
@@ -238,7 +205,7 @@
     "path": "dz/gear/cooking",
     "usableOnConsole": false,
     "searchTags": "container, cooking, drum, effect, fire, flame, gear, storage, base building, oil",
-    "image": "images/gear/cooking/barrel_holes.p3d.jpg",
+    "image": "images/gear/cooking/barrelholes_blue/barrelholes_blue.jpg",
     "id": "dzobj_s32rr2w9yf"
   },
   {
@@ -304,7 +271,7 @@
     "path": "dz/gear/cooking",
     "usableOnConsole": false,
     "searchTags": "cooking, gear, fire, tree, wood, timber, warm",
-    "image": "images/gear/cooking/fireplace_backup.p3d.jpg",
+    "image": "images/gear/cooking/fireplace/fireplace.jpg",
     "id": "dzobj_tg67yks3ub"
   },
   {
@@ -315,7 +282,7 @@
     "path": "dz/gear/cooking",
     "usableOnConsole": false,
     "searchTags": "cooking, gear, fire, tree, wood, timber, warm",
-    "image": "images/gear/cooking/cluttercutterfireplace.jpg",
+    "image": "images/gear/cooking/fireplace/fireplace.jpg",
     "id": "dzobj_glygjw5g0q"
   },
   {
@@ -326,7 +293,7 @@
     "path": "dz/gear/cooking",
     "usableOnConsole": false,
     "searchTags": "cooking, gear, fire, tree, wood, timber, warm",
-    "image": "images/gear/cooking/staticobj_fireplace_spot_snow.jpg",
+    "image": "images/gear/cooking/fireplace/fireplace.jpg",
     "id": "dzobj_jaezll76sf"
   },
   {
@@ -370,7 +337,7 @@
     "path": "dz/gear/cooking",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/gear/cooking/firewood.jpg",
+    "image": "images/gear/consumables/firewood/firewood.jpg",
     "id": "dzobj_0tvwsmc1l5"
   },
   {

@@ -7,7 +7,7 @@
     "path": "dz/gear/medical",
     "usableOnConsole": true,
     "searchTags": "gear, health, hospital, insecticide, medical",
-    "image": "images/gear/medical/antipestsspray.jpg",
+    "image": "images/gear/cultivation/antipestsspray/antipestsspray.jpg",
     "id": "dzobj_2wr8bv6zix"
   },
   {
@@ -20,17 +20,6 @@
     "searchTags": "gear, health, hospital, medical",
     "image": "images/gear/medical/bandagedressing/bandagedressing.jpg",
     "id": "dzobj_10xmk8d2ee"
-  },
-  {
-    "objectName": "Bandage_end",
-    "inGameName": "Disinfectant Spray",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/medical",
-    "usableOnConsole": true,
-    "searchTags": "disinfectant, gear, health, hospital, medical, spray",
-    "image": "images/gear/medical/bandage_end.jpg",
-    "id": "dzobj_2g32641zii"
   },
   {
     "objectName": "DisinfectantSpray",
@@ -363,17 +352,6 @@
     "id": "dzobj_5clyzz1fd8"
   },
   {
-    "objectName": "Proxyimprovised_fixture",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/medical",
-    "usableOnConsole": true,
-    "searchTags": "cigarettes, gear, health",
-    "image": "images/gear/medical/proxyimprovised_fixture.jpg",
-    "id": "dzobj_p2c8ep4e52"
-  },
-  {
     "objectName": "alfa.p3d",
     "inGameName": "Alcoholic Tincture",
     "category": "gear",
@@ -392,7 +370,7 @@
     "path": "dz/gear/medical",
     "usableOnConsole": false,
     "searchTags": "disinfectant, gear, health, hospital, medical, spray",
-    "image": "images/gear/medical/bandage_end.jpg",
+    "image": "images/gear/medical/bandagedressing/bandagedressing.jpg",
     "id": "dzobj_kcixz8ptrf"
   },
   {
@@ -502,7 +480,7 @@
     "path": "dz/gear/medical",
     "usableOnConsole": false,
     "searchTags": "cigarettes, gear, health",
-    "image": "images/gear/medical/cigarette_pack.p3d.jpg",
+    "image": "images/gear/medical/cigarettepack_chernamorka/cigarettepack_chernamorka.jpg",
     "id": "dzobj_vil2dt8qwi"
   },
   {
@@ -667,7 +645,7 @@
     "path": "dz/gear/medical",
     "usableOnConsole": false,
     "searchTags": "gear, health, hospital, medical",
-    "image": "images/gear/medical/syringe_empty.p3d.jpg",
+    "image": "images/gear/medical/syringe/syringe.jpg",
     "id": "dzobj_dbsydl3sqe"
   },
   {
@@ -678,7 +656,7 @@
     "path": "dz/gear/medical",
     "usableOnConsole": false,
     "searchTags": "gear, health, hospital, medical",
-    "image": "images/gear/medical/syringe_full.p3d.jpg",
+    "image": "images/gear/medical/syringe/syringe.jpg",
     "id": "dzobj_qztsg4z0p2"
   },
   {

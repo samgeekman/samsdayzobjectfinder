@@ -1,16 +1,5 @@
 [
   {
-    "objectName": "flame",
-    "inGameName": "Cattle Prod",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "fire",
-    "image": "images/gear/tools/flame.jpg",
-    "id": "dzobj_htevwzovzb"
-  },
-  {
     "objectName": "CattleProd",
     "inGameName": "Cattle Prod",
     "category": "gear",
@@ -29,7 +18,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": true,
     "searchTags": "gear, tools",
-    "image": "images/gear/tools/candle.jpg",
+    "image": "images/gear/cooking/candle/candle.jpg",
     "id": "dzobj_n512jgtumb"
   },
   {
@@ -62,7 +51,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": true,
     "searchTags": "gear, raycast, scanner, tools",
-    "image": "images/gear/tools/attack_flashlight_heavy2.jpg",
+    "image": "images/gear/tools/flashlight/flashlight.jpg",
     "id": "dzobj_h90revw1oe"
   },
   {
@@ -216,7 +205,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": true,
     "searchTags": "by, gear, restrained, tools",
-    "image": "images/gear/tools/handcuffslocked/handcuffslocked.jpg",
+    "image": "images/gear/tools/handcuffs/handcuffs.jpg",
     "id": "dzobj_kkg7vf9wz4"
   },
   {
@@ -275,17 +264,6 @@
     "id": "dzobj_0bfixnnn8t"
   },
   {
-    "objectName": "DigSecondary",
-    "inGameName": "Crowbar",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "gear, tools, digging, spade, base building",
-    "image": "images/gear/tools/digsecondary.jpg",
-    "id": "dzobj_jodf36msya"
-  },
-  {
     "objectName": "Crowbar",
     "inGameName": "Crowbar",
     "category": "gear",
@@ -317,17 +295,6 @@
     "searchTags": "gear, tools, base building",
     "image": "images/gear/tools/hammer/hammer.jpg",
     "id": "dzobj_du0q8n9qyl"
-  },
-  {
-    "objectName": "MinningBuilding",
-    "inGameName": "Meat Tenderizer",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/tools",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/gear/tools/minningbuilding.jpg",
-    "id": "dzobj_jzqbokpjab"
   },
   {
     "objectName": "MeatTenderizer",
@@ -656,7 +623,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": false,
     "searchTags": "clock, timer",
-    "image": "images/gear/tools/alarmclock.p3d.jpg",
+    "image": "images/gear/tools/alarmclock_blue/alarmclock_blue.jpg",
     "id": "dzobj_sl859bywnc"
   },
   {
@@ -711,7 +678,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": false,
     "searchTags": "gear, tools",
-    "image": "images/gear/tools/candle.jpg",
+    "image": "images/gear/cooking/candle/candle.jpg",
     "id": "dzobj_8vd08q2fr3"
   },
   {
@@ -876,7 +843,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": false,
     "searchTags": "gear, tools",
-    "image": "images/gear/tools/fishing_rod_closed.p3d.jpg",
+    "image": "images/gear/tools/fishingrod/fishingrod.jpg",
     "id": "dzobj_hx7lcdf9sa"
   },
   {
@@ -887,7 +854,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": false,
     "searchTags": "gear, tools",
-    "image": "images/gear/tools/fishing_rod_open.p3d.jpg",
+    "image": "images/gear/tools/fishingrod/fishingrod.jpg",
     "id": "dzobj_ur4cnj4vk2"
   },
   {
@@ -953,7 +920,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": false,
     "searchTags": "gear, tools, police",
-    "image": "images/gear/tools/handcuffslocked/handcuffslocked.jpg",
+    "image": "images/gear/tools/handcuffs/handcuffs.jpg",
     "id": "dzobj_mhj6rplyz3"
   },
   {
@@ -1129,7 +1096,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": false,
     "searchTags": "gear, tools, writing, notes",
-    "image": "images/gear/tools/pen.p3d.jpg",
+    "image": "images/gear/tools/pen_black/pen_black.jpg",
     "id": "dzobj_il3qryikge"
   },
   {
@@ -1217,7 +1184,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": false,
     "searchTags": "sakhal, quest, locked",
-    "image": "images/gear/tools/shippingcontainerkeys.p3d.jpg",
+    "image": "images/gear/tools/shippingcontainerkeys_blue/shippingcontainerkeys_blue.jpg",
     "id": "dzobj_smg8hd1khr"
   },
   {
@@ -1305,7 +1272,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": true,
     "searchTags": "clock, timer",
-    "image": "images/gear/tools/attack_flashlight_heavy2.jpg",
+    "image": "images/gear/tools/alarmclock_blue/alarmclock_blue.jpg",
     "id": "dzobj_0rp300xkzl"
   },
   {
@@ -1316,7 +1283,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": true,
     "searchTags": "clock, timer",
-    "image": "images/gear/tools/attack_flashlight_heavy2.jpg",
+    "image": "images/gear/tools/alarmclock_green/alarmclock_green.jpg",
     "id": "dzobj_sul8u6yuet"
   },
   {
@@ -1327,7 +1294,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": true,
     "searchTags": "clock, timer",
-    "image": "images/gear/tools/attack_flashlight_heavy2.jpg",
+    "image": "images/gear/tools/alarmclock_red/alarmclock_red.jpg",
     "id": "dzobj_bye0ws6jsl"
   },
   {
@@ -1338,7 +1305,7 @@
     "path": "dz/gear/tools",
     "usableOnConsole": true,
     "searchTags": "explosion, loud",
-    "image": "images/gear/tools/attack_flashlight_heavy2.jpg",
+    "image": "images/gear/tools/anniversary_fireworkslauncher/anniversary_fireworkslauncher.jpg",
     "id": "dzobj_mfxlzfws29"
   },
   {

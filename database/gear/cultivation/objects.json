@@ -11,28 +11,6 @@
     "id": "dzobj_0ka6xt4vn0"
   },
   {
-    "objectName": "ClutterCutter6x6",
-    "inGameName": "Clutter Cutter 3x3",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/cultivation",
-    "usableOnConsole": true,
-    "searchTags": "3x3, cultivation, gear",
-    "image": "images/gear/cultivation/cluttercutter6x6.jpg",
-    "id": "dzobj_64078ealip"
-  },
-  {
-    "objectName": "ClutterCutter2x2",
-    "inGameName": "Clutter Cutter 3x3",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/cultivation",
-    "usableOnConsole": true,
-    "searchTags": "3x3, cultivation, gear",
-    "image": "images/gear/cultivation/cluttercutter2x2.jpg",
-    "id": "dzobj_rqhkch61bo"
-  },
-  {
     "objectName": "TomatoSeeds",
     "inGameName": "Tomato Seeds",
     "category": "gear",
@@ -154,17 +132,6 @@
     "id": "dzobj_kcclkwelnx"
   },
   {
-    "objectName": "stake",
-    "inGameName": "Tomato Plant",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/cultivation",
-    "usableOnConsole": true,
-    "searchTags": "cultivation, gear, growing, gardening",
-    "image": "images/gear/cultivation/stake.jpg",
-    "id": "dzobj_8d72nfa9fg"
-  },
-  {
     "objectName": "Plant_Tomato",
     "inGameName": "Tomato Plant",
     "category": "gear",
@@ -218,28 +185,6 @@
     "searchTags": "cultivation, gear, growing, gardening",
     "image": "images/gear/cultivation/plant_zucchini.jpg",
     "id": "dzobj_vrojlcxmo6"
-  },
-  {
-    "objectName": "GardenPlotGreenhouse",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/cultivation",
-    "usableOnConsole": true,
-    "searchTags": "cultivation, gear, growing, gardening",
-    "image": "images/gear/cultivation/gardenplotgreenhouse.jpg",
-    "id": "dzobj_0tgc68knmu"
-  },
-  {
-    "objectName": "GardenPlotPolytunnel",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/cultivation",
-    "usableOnConsole": true,
-    "searchTags": "cultivation, gear, growing, gardening",
-    "image": "images/gear/cultivation/gardenplotpolytunnel.jpg",
-    "id": "dzobj_qh7xet28m3"
   },
   {
     "objectName": "GardenPlot",
@@ -526,18 +471,6 @@
     "searchTags": "cultivation, gear, growing, gardening",
     "image": "images/gear/cultivation/zucchiniseedspack/zucchiniseedspack.jpg",
     "id": "dzobj_l068zbsdfk"
-  },
-  {
-    "objectName": "GardenPlotPlacing",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/cultivation",
-    "usableOnConsole": true,
-    "searchTags": "cultivation, gear, growing, gardening",
-    "image": "images/gear/cultivation/gardenplotplacing.jpg",
-    "editorJson": null,
-    "configClass": "GardenPlotPlacing",
-    "id": "dzobj_1ccwq9yinm"
   },
   {
     "objectName": "garden_plot_outside_placing.p3d",

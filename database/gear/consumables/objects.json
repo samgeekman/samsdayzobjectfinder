@@ -51,7 +51,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
     "searchTags": "by, gear, restrained",
-    "image": "images/gear/consumables/ducttapelocked.jpg",
+    "image": "images/gear/consumables/ducttape/ducttape.jpg",
     "id": "dzobj_fbpahklfj6"
   },
   {
@@ -196,17 +196,6 @@
     "searchTags": "flare, gear, road, lights",
     "image": "images/gear/consumables/roadflare/roadflare.jpg",
     "id": "dzobj_vcu9r7zyuj"
-  },
-  {
-    "objectName": "Flare_open",
-    "inGameName": "Glow Stick",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/consumables",
-    "usableOnConsole": true,
-    "searchTags": "gear, glow, stick, lights",
-    "image": "images/gear/consumables/flare_open.jpg",
-    "id": "dzobj_pl524k0dow"
   },
   {
     "objectName": "Chemlight_Blue",
@@ -550,17 +539,6 @@
     "id": "dzobj_tqnkm7w4xp"
   },
   {
-    "objectName": "Proxyroad_flare",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/consumables",
-    "usableOnConsole": true,
-    "searchTags": "gear",
-    "image": "images/gear/consumables/proxyroad_flare.jpg",
-    "id": "dzobj_4xdkrgkw0f"
-  },
-  {
     "objectName": "ChickenFeather",
     "inGameName": "Chicken Feathers",
     "category": "gear",
@@ -568,7 +546,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
     "searchTags": "feathers, gear, poultry, hunting, arrows, crossbow, bolt",
-    "image": "images/gear/consumables/chickenfeather.jpg",
+    "image": "images/gear/crafting/chickenfeather/chickenfeather.jpg",
     "id": "dzobj_ixawpab4ob"
   },
   {
@@ -579,7 +557,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": true,
     "searchTags": "gear, rock, crafting",
-    "image": "images/gear/consumables/stoneknife.jpg",
+    "image": "images/gear/tools/stoneknife/stoneknife.jpg",
     "id": "dzobj_ls1v26aojs"
   },
   {
@@ -612,7 +590,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/gear/consumables/chickenfeather.jpg",
+    "image": "images/gear/crafting/chickenfeather/chickenfeather.jpg",
     "id": "dzobj_w4t2lmtr74"
   },
   {
@@ -711,7 +689,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
     "searchTags": "gear, glow, stick, lights",
-    "image": "images/gear/consumables/chemlight.p3d.jpg",
+    "image": "images/gear/consumables/chemlight_blue/chemlight_blue.jpg",
     "id": "dzobj_2wdlu36rwx"
   },
   {
@@ -733,7 +711,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
     "searchTags": "gear, repair, clothing",
-    "image": "images/gear/consumables/ducttapelocked.jpg",
+    "image": "images/gear/consumables/ducttape/ducttape.jpg",
     "id": "dzobj_ifzzjnthit"
   },
   {
@@ -755,7 +733,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/gear/consumables/firewood.p3d.jpg",
+    "image": "images/gear/consumables/firewood/firewood.jpg",
     "id": "dzobj_tiri9pjj03"
   },
   {
@@ -1239,7 +1217,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
     "searchTags": "gear, spraypaint",
-    "image": "images/gear/consumables/spraycan.p3d.jpg",
+    "image": "images/gear/consumables/spraycan_black/spraycan_black.jpg",
     "id": "dzobj_slzrull5xc"
   },
   {
@@ -1261,7 +1239,7 @@
     "path": "dz/gear/consumables",
     "usableOnConsole": false,
     "searchTags": "gear",
-    "image": "images/gear/consumables/stoneknife.jpg",
+    "image": "images/gear/tools/stoneknife/stoneknife.jpg",
     "id": "dzobj_w1cf4wt34d"
   },
   {

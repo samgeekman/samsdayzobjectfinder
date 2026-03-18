@@ -1,0 +1,51 @@
+section,configObjectName,configInGameName,markColD,recommendedP3DAction,configImagePath,rawP3DObjectName,rawP3DInGameName,rawP3DImagePath,matchScore,matchReason
+books,ProxyBook_kniga,-,k,retain,images/gear/books/proxybook_kniga.jpg,book_kniga.p3d,-,images/gear/books/book_kniga.p3d.jpg,67,"norm_contains,token_overlap_1"
+camping,CamoNetShelter,Camo net shelter,,remove,images/gear/camping/camonetshelter/camonetshelter.jpg,camo_net_shelter.p3d,Camo net shelter,images/gear/camping/camonetshelter/camonetshelter.jpg,190,"norm_exact,ingame_exact,same_image"
+camping,Material2,Barbed Wire,,remove,images/gear/camping/material2.jpg,barbed_wire.p3d,Barbed Wire,images/gear/camping/barbedwire/barbedwire.jpg,50,ingame_exact
+camping,Camonet,Camo net shelter,k,retain,images/gear/camping/camonetshelter/camonetshelter.jpg,camo_net_shelter.p3d,Camo net shelter,images/gear/camping/camonetshelter/camonetshelter.jpg,150,"norm_contains,ingame_exact,same_image"
+camping,FenceKitPlacing,,,remove,images/gear/camping/fencekitplacing.jpg,fence_kit_placing.p3d,,images/gear/camping/fence/fence.jpg,100,norm_exact
+camping,WatchtowerKitPlacing,,,remove,images/gear/camping/watchtowerkitplacing.jpg,watchtower_kit_placing.p3d,,images/gear/camping/watchtower/watchtower.jpg,100,norm_exact
+camping,TerritoryFlagKitPlacing,,,remove,images/gear/camping/territoryflagkitplacing.jpg,territory_flag_kit_placing.p3d,,images/gear/camping/territoryflagkitplacing.jpg,140,"norm_exact,same_image"
+camping,Flag_Sakhal,Fence Kit,k,retain,images/gear/camping/flag_sakhal/flag_sakhal.jpg,fence_kit.p3d,Fence Kit,images/gear/camping/fencekit/fencekit.jpg,50,ingame_exact
+consumables,Stone,Large Stone,k,retain,images/gear/consumables/stone.jpg,stone.p3d,-,images/gear/consumables/stone.jpg,147,"norm_exact,token_overlap_1,same_image"
+consumables,Proxyroad_flare,-,,remove,images/gear/consumables/proxyroad_flare.jpg,road_flare.p3d,-,images/gear/consumables/roadflare/roadflare.jpg,67,"norm_contains,token_overlap_1"
+consumables,MouthRag,Rag,k,retain,images/gear/consumables/mouthrag.jpg,rags.p3d,Rag,images/gear/consumables/rag/rag.jpg,50,ingame_exact
+containers,christmas_lights,Christmas Lights,,remove,images/gear/containers/christmas_lights.jpg,,,,0,no_match
+cooking,ClutterCutterFireplace,Fireplace Clutter Cutter,,remove,images/gear/cooking/cluttercutterfireplace.jpg,fireplace.p3d,Fireplace,images/gear/cooking/fireplace/fireplace.jpg,60,norm_contains
+cooking,ClutterCutterFireplace,Fireplace Clutter Cutter,,remove,images/gear/cooking/cluttercutterfireplace.jpg,fireplace_cluttercutter.p3d,Fireplace Clutter Cutter,images/gear/cooking/fireplace/fireplace.jpg,50,ingame_exact
+cooking,NoiseFireplaceSpecial,Fireplace,,remove,images/gear/cooking/noisefireplacespecial.jpg,fireplace.p3d,Fireplace,images/gear/cooking/fireplace/fireplace.jpg,110,"norm_contains,ingame_exact"
+cooking,OvenIndoor,Fireplace,,remove,images/gear/cooking/ovenindoor/ovenindoor.jpg,ovenindoor.p3d,Fireplace,images/gear/cooking/ovenindoor/ovenindoor.jpg,197,"norm_exact,ingame_exact,token_overlap_1,same_image"
+cooking,LighterZippo,,k,retain,images/gear/cooking/lighterzippo.jpg,,,,0,no_match
+cultivation,ClutterCutter6x6,Clutter Cutter 3x3,,remove,images/gear/cultivation/cluttercutter6x6.jpg,clutter_cutter_2m_x_2m.p3d,Clutter Cutter 3x3,images/gear/cultivation/clutter_cutter_2m_x_2m.p3d.jpg,50,ingame_exact
+cultivation,ClutterCutter6x6,Clutter Cutter 3x3,,remove,images/gear/cultivation/cluttercutter6x6.jpg,clutter_cutter_6m_x_6m.p3d,Clutter Cutter 3x3,images/gear/cultivation/clutter_cutter_6m_x_6m.p3d.jpg,50,ingame_exact
+cultivation,ClutterCutter2x2,Clutter Cutter 3x3,,remove,images/gear/cultivation/cluttercutter2x2.jpg,clutter_cutter_2m_x_2m.p3d,Clutter Cutter 3x3,images/gear/cultivation/clutter_cutter_2m_x_2m.p3d.jpg,50,ingame_exact
+cultivation,ClutterCutter2x2,Clutter Cutter 3x3,,remove,images/gear/cultivation/cluttercutter2x2.jpg,clutter_cutter_6m_x_6m.p3d,Clutter Cutter 3x3,images/gear/cultivation/clutter_cutter_6m_x_6m.p3d.jpg,50,ingame_exact
+cultivation,stake,Tomato Plant,,remove,images/gear/cultivation/stake.jpg,tomato_plant.p3d,Tomato Plant,images/gear/cultivation/tomato_plant.p3d.jpg,50,ingame_exact
+cultivation,Plant_Tomato,Tomato Plant,k,retain,images/gear/cultivation/plant_tomato.jpg,tomato_plant.p3d,Tomato Plant,images/gear/cultivation/tomato_plant.p3d.jpg,64,"ingame_exact,token_overlap_2"
+cultivation,Plant_Pepper,Pepper Plant,k,retain,images/gear/cultivation/plant_pepper.jpg,pepper_plant.p3d,Pepper Plant,images/gear/cultivation/plant_pepper.jpg,104,"ingame_exact,token_overlap_2,same_image"
+cultivation,Plant_Potato,Potato Plant,k,retain,images/gear/cultivation/plant_potato.jpg,potato_plant.p3d,Potato Plant,images/gear/cultivation/plant_potato.jpg,104,"ingame_exact,token_overlap_2,same_image"
+cultivation,Plant_Pumpkin,Pumpkin Plant,k,retain,images/gear/cultivation/plant_pumpkin.jpg,pumpkin_plant.p3d,Pumpkin Plant,images/gear/cultivation/plant_pumpkin.jpg,104,"ingame_exact,token_overlap_2,same_image"
+cultivation,Plant_Zucchini,Zucchini Plant,k,retain,images/gear/cultivation/plant_zucchini.jpg,zucchini_plant.p3d,Zucchini Plant,images/gear/cultivation/plant_zucchini.jpg,104,"ingame_exact,token_overlap_2,same_image"
+cultivation,GardenPlotGreenhouse,-,,remove,images/gear/cultivation/gardenplotgreenhouse.jpg,garden_plot_greenhouse.p3d,-,images/gear/cultivation/gardenplotgreenhouse.jpg,140,"norm_exact,same_image"
+cultivation,GardenPlotPolytunnel,-,,remove,images/gear/cultivation/gardenplotpolytunnel.jpg,garden_plot_polytunnel.p3d,-,images/gear/cultivation/gardenplotpolytunnel.jpg,140,"norm_exact,same_image"
+cultivation,GardenPlot,-,k,retain,images/gear/cultivation/gardenplot.jpg,garden_plot_greenhouse.p3d,-,images/gear/cultivation/gardenplotgreenhouse.jpg,60,norm_contains
+cultivation,GardenPlot,-,k,retain,images/gear/cultivation/gardenplot.jpg,garden_plot_outside.p3d,-,images/gear/cultivation/garden_plot_outside.p3d.jpg,60,norm_contains
+cultivation,GardenPlot,-,k,retain,images/gear/cultivation/gardenplot.jpg,garden_plot_outside_placing.p3d,,images/gear/cultivation/garden_plot_outside_placing.p3d.jpg,60,norm_contains
+cultivation,GardenPlot,-,k,retain,images/gear/cultivation/gardenplot.jpg,garden_plot_polytunnel.p3d,-,images/gear/cultivation/gardenplotpolytunnel.jpg,60,norm_contains
+cultivation,GardenPlotPlacing,,,remove,images/gear/cultivation/gardenplotplacing.jpg,,,,0,no_match
+drinks,TestObject,-,k,retain,images/gear/drinks/testobject.jpg,,,,0,no_match
+drinks,WellBottle_loop,Filtering Bottle,,remove,images/gear/drinks/wellbottle_loop.jpg,filteringbottle.p3d,Filtering Bottle,images/gear/drinks/filteringbottle/filteringbottle.jpg,50,ingame_exact
+drinks,ProxySodaCan_Used,-,,remove,images/gear/drinks/proxysodacan_used.jpg,sodacan_used.p3d,-,images/gear/drinks/sodacan_used.p3d.jpg,67,"norm_contains,token_overlap_1"
+drinks,ProxySodaCan_Used,-,,remove,images/gear/drinks/proxysodacan_used.jpg,sodacan.p3d,-,images/gear/drinks/sodacan_cola/sodacan_cola.jpg,60,norm_contains
+food,ProxyMeat_steak,-,,remove,images/gear/food/proxymeat_steak.jpg,meat_steak.p3d,Fox Steak,images/gear/food/foxsteakmeat/foxsteakmeat.jpg,67,"norm_contains,token_overlap_1"
+food,ProxyMeat_steak,-,,remove,images/gear/food/proxymeat_steak.jpg,meat.p3d,-,images/gear/food/meat.p3d.jpg,60,norm_contains
+food,Potato,Peeled Potato,k,retain,images/gear/food/potato/potato.jpg,potato_prepared.p3d,Peeled Potato,images/gear/food/potato/potato.jpg,157,"norm_contains,ingame_exact,token_overlap_1,same_image"
+medical,Bandage_end,Disinfectant Spray,,remove,images/gear/medical/bandage_end.jpg,bandage.p3d,-,images/gear/medical/bandagedressing/bandagedressing.jpg,67,"norm_contains,token_overlap_1"
+medical,Bandage_end,Disinfectant Spray,,remove,images/gear/medical/bandage_end.jpg,disinfectantspray.p3d,Disinfectant Spray,images/gear/medical/disinfectantspray/disinfectantspray.jpg,50,ingame_exact
+medical,Proxyimprovised_fixture,-,,remove,images/gear/medical/proxyimprovised_fixture.jpg,improvised_fixture.p3d,-,images/gear/medical/improvised_fixture.p3d.jpg,67,"norm_contains,token_overlap_1"
+navigation,map_opened,Compass,,remove,images/gear/navigation/map_opened.jpg,compass.p3d,Compass,images/gear/navigation/compass/compass.jpg,50,ingame_exact
+radio,Absolute90s,-,k,retain,images/gear/radio/absolute90s.jpg,,,,0,no_match
+tools,flame,Cattle Prod,,remove,images/gear/tools/flame.jpg,catle_prod.p3d,Cattle Prod,images/gear/tools/catle_prod.p3d.jpg,50,ingame_exact
+tools,CattleProd,Cattle Prod,k,retain,images/gear/tools/cattleprod.jpg,catle_prod.p3d,Cattle Prod,images/gear/tools/catle_prod.p3d.jpg,50,ingame_exact
+tools,DigSecondary,Crowbar,,remove,images/gear/tools/digsecondary.jpg,crowbar.p3d,Crowbar,images/gear/tools/crowbar/crowbar.jpg,50,ingame_exact
+tools,MinningBuilding,Meat Tenderizer,,remove,images/gear/tools/minningbuilding.jpg,meat_tenderizer.p3d,Meat Tenderizer,images/gear/tools/meattenderizer/meattenderizer.jpg,50,ingame_exact
