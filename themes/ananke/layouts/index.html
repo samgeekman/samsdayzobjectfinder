@@ -2582,6 +2582,13 @@
     justify-content: flex-end;
     gap: 8px;
   }
+  .types-explorer__note {
+    margin-top: 6px;
+    text-align: right;
+    font-size: 0.68rem;
+    color: var(--muted);
+    opacity: 0.9;
+  }
   .types-explorer__side {
     border: 1px solid var(--border);
     border-radius: 6px;
@@ -3053,6 +3060,14 @@
     border-color: var(--accent) !important;
     color: #1f1f1f !important;
   }
+  .types-explorer__scope-btn.is-active,
+  .types-explorer__scope-btn.is-active:hover,
+  .types-explorer__tag.is-active,
+  .types-explorer__tag.is-active:hover {
+    background-color: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: #111 !important;
+  }
   .pill-button:focus-visible,
   .folder-sidebar__clear:focus-visible,
   .folder-tree__toggle:focus-visible,
@@ -3193,6 +3208,7 @@
         <button class="types-explorer__scope-btn is-active" type="button" data-types-scope="livonia">Livonia</button>
         <button class="types-explorer__scope-btn is-active" type="button" data-types-scope="sakhal">Sakhal</button>
       </div>
+      <div class="types-explorer__note">Based on v1.28 Types.xml</div>
     </aside>
   </div>
   <div class="types-explorer__footer">
