@@ -404,6 +404,7 @@
     display: inline;
   }
   #dayzObjects tbody .path-cell__text--short {
+    font-size: 0.68rem;
     transition: opacity 0.12s ease;
   }
   #dayzObjects tbody .path-cell__text--full {
@@ -419,14 +420,16 @@
     color: inherit;
     font: inherit;
     line-height: inherit;
-    padding: 1px 7px;
-    border: 1.5px solid color-mix(in srgb, var(--ui-button-border) 80%, var(--text) 20%);
+    padding: 0 5px;
+    border: 1.25px solid color-mix(in srgb, var(--ui-button-border) 80%, var(--text) 20%);
     border-radius: 3px;
     background: var(--card);
     box-sizing: border-box;
     max-width: none;
     overflow: visible;
     text-overflow: clip;
+    font-size: 0.66rem;
+    line-height: 1.1;
     transition: opacity 0.14s ease, transform 0.16s ease;
   }
   #dayzObjects tbody .path-cell:hover .path-cell__value.is-truncated .path-cell__text--short,
@@ -614,14 +617,14 @@
     position: fixed;
     z-index: 2210;
     max-width: min(720px, calc(100vw - 24px));
-    padding: 7px 9px 1px;
+    padding: 5px 7px 1px;
     border: 1px solid var(--border);
     border-radius: 5px;
     background: var(--card);
     color: var(--text);
     box-shadow: var(--shadow-soft);
-    font-size: 0.72rem;
-    line-height: 1.28;
+    font-size: 0.64rem;
+    line-height: 1.18;
     white-space: normal;
     word-break: break-word;
     overflow-wrap: anywhere;
@@ -632,9 +635,9 @@
   }
   .path-hover-tooltip.is-rich {
     max-width: min(860px, calc(100vw - 20px));
-    padding: 10px 12px 2px;
-    font-size: 0.78rem;
-    line-height: 1.35;
+    padding: 7px 9px 2px;
+    font-size: 0.68rem;
+    line-height: 1.2;
   }
   .path-hover-tooltip__path {
     display: block;
