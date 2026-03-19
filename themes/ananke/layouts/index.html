@@ -381,6 +381,12 @@
   }
   #dayzObjects tbody .path-cell {
     position: relative;
+    overflow: visible !important;
+    z-index: 1;
+  }
+  #dayzObjects tbody .path-cell:hover,
+  #dayzObjects tbody .path-cell:focus-within {
+    z-index: 30;
   }
   #dayzObjects tbody .object-name-cell__value,
   #dayzObjects tbody .path-cell__value {
@@ -389,10 +395,48 @@
     vertical-align: middle;
     padding-right: var(--hover-action-space);
     box-sizing: border-box;
+    position: relative;
+    overflow: visible;
+    z-index: 1;
   }
   #dayzObjects tbody .object-name-cell__text,
   #dayzObjects tbody .path-cell__text {
     display: inline;
+  }
+  #dayzObjects tbody .path-cell__text--short {
+    transition: opacity 0.12s ease;
+  }
+  #dayzObjects tbody .path-cell__text--full {
+    position: fixed;
+    left: 68vw;
+    right: auto;
+    top: -9999px;
+    transform: translate(-50%, -50%) scale(0.985);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 34;
+    white-space: nowrap;
+    color: inherit;
+    font: inherit;
+    line-height: inherit;
+    padding: 1px 7px;
+    border: 1.5px solid color-mix(in srgb, var(--ui-button-border) 80%, var(--text) 20%);
+    border-radius: 3px;
+    background: var(--card);
+    box-sizing: border-box;
+    max-width: none;
+    overflow: visible;
+    text-overflow: clip;
+    transition: opacity 0.14s ease, transform 0.16s ease;
+  }
+  #dayzObjects tbody .path-cell:hover .path-cell__value.is-truncated .path-cell__text--short,
+  #dayzObjects tbody .path-cell:focus-within .path-cell__value.is-truncated .path-cell__text--short {
+    opacity: 0;
+  }
+  #dayzObjects tbody .path-cell:hover .path-cell__value.is-truncated .path-cell__text--full,
+  #dayzObjects tbody .path-cell:focus-within .path-cell__value.is-truncated .path-cell__text--full {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
   }
   #dayzObjects tbody .thumb-cell {
     width: 49px;
@@ -566,6 +610,7 @@
     background: #b33b3b;
   }
   .path-hover-tooltip {
+    display: none !important;
     position: fixed;
     z-index: 2210;
     max-width: min(720px, calc(100vw - 24px));
@@ -701,6 +746,7 @@
     gap: var(--hover-action-gap);
     opacity: 0;
     pointer-events: none;
+    z-index: 40;
   }
   #dayzObjects tbody .cell-action-grid .copy-btn {
     position: static;
@@ -3597,8 +3643,8 @@
     var getObjectId = function(row) {
       return row.id || '';
     };
-    var PATH_FILTER_ICON_ENTITY = '&#119064;';
-    var PATH_FILTER_ICON_TEXT = String.fromCodePoint(119064);
+    var PATH_FILTER_ICON_ENTITY = '&#9776;';
+    var PATH_FILTER_ICON_TEXT = '☰';
     var parseLinkedIds = function(value) {
       if (value === null || value === undefined) return [];
       if (Array.isArray(value)) {
@@ -4127,10 +4173,10 @@
                 '<span class="object-name-cell__text">' + escapeHtml(objName) + '</span>' +
               '</span>' +
               '<span class="cell-action-grid cell-action-grid--classname">' +
-                '<button class="copy-btn editor-copy-btn" type="button" title="Copy DayZ Editor JSON">🏗️</button>' +
-                '<button class="copy-btn copy-name-btn" type="button" title="Copy object name">📋</button>' +
                 '<button class="copy-btn copy-link-btn" type="button" title="Copy object link">🔗</button>' +
                 '<button class="copy-btn pin-btn" type="button" title="Pin object">📌</button>' +
+                '<button class="copy-btn copy-name-btn" type="button" title="Copy object name">📋</button>' +
+                '<button class="copy-btn editor-copy-btn" type="button" title="Copy DayZ Editor JSON">🏗️</button>' +
               '</span>'
             );
           }
@@ -4185,6 +4231,7 @@
               + (isPathTruncated ? (' data-full-path="' + safePath + '"') : '')
               + '>'
               + '<span class="path-cell__text path-cell__text--short">' + safeShortPath + '</span>'
+              + (isPathTruncated ? ('<span class="path-cell__text path-cell__text--full">' + safePath + '</span>') : '')
               + '</span>';
             var pathActionsHtml = '<span class="cell-action-grid cell-action-grid--path">'
               + '<button class="copy-btn path-action-btn path-copy-link-btn" type="button" title="Copy path link">🔗</button>'
@@ -4376,9 +4423,16 @@
       var rawPath = String(rowData.path || '');
       var targetPath = getDeepestPathPrefix(rawPath);
       if (!targetPath) return false;
+      if (table) {
+        table.column(7).search('');
+      }
+      treatIdListAsSearchFolders = false;
       expandFolderTreeForPath(rawPath);
       activeCollectionFilter = '';
       setActiveFolderFilter(targetPath, true);
+      history.replaceState({}, '', buildFolderPathUrl(targetPath));
+      updatePathFilterNotice();
+      updateTypesTagFilterNotice();
       return true;
     };
     var resolvePathActionTarget = function(rowData) {
@@ -4388,6 +4442,15 @@
       var targetPath = getDeepestPathPrefix(rawPath);
       if (!targetPath) return null;
       return { rawPath: rawPath, targetPath: targetPath };
+    };
+    var positionExpandedPathText = function(pathValueEl) {
+      if (!pathValueEl || !pathValueEl.querySelector) return;
+      var fullTextEl = pathValueEl.querySelector('.path-cell__text--full');
+      if (!fullTextEl) return;
+      var valueRect = pathValueEl.getBoundingClientRect();
+      var rowCenterY = valueRect.top + (valueRect.height / 2);
+      fullTextEl.style.left = '68vw';
+      fullTextEl.style.top = rowCenterY + 'px';
     };
     var pinPathForRow = function(rowData) {
       var target = resolvePathActionTarget(rowData);
@@ -4403,31 +4466,7 @@
       return true;
     };
     var showPathHoverTooltip = function(targetEl, rowData, options) {
-      if (!pathHoverTooltipEl || !targetEl || !rowData) return;
-      var opts = options || {};
-      var fullPath = String(opts.fullPath || rowData.path || '').trim();
-      var isTruncated = !!opts.isTruncated;
-      if (!isTruncated || !fullPath) return;
-      pathHoverTooltipRowData = rowData;
-      pathHoverTooltipEl.innerHTML = ''
-        + '<div class="path-hover-tooltip__layout">'
-        +   '<span class="path-hover-tooltip__path">' + escapeHtml(fullPath) + '</span>'
-        +   '<span class="path-hover-tooltip__actions">'
-        +     '<button class="path-hover-tooltip__btn path-tooltip-copy-link-btn" type="button" title="Copy path link">🔗</button>'
-        +     '<button class="path-hover-tooltip__btn path-tooltip-pin-btn" type="button" title="Pin path">📌</button>'
-        +     '<button class="path-hover-tooltip__btn path-tooltip-copy-name-btn" type="button" title="Copy path">📋</button>'
-        +     '<button class="path-hover-tooltip__btn path-tooltip-filter-btn" type="button" title="Filter to this path">' + PATH_FILTER_ICON_ENTITY + '</button>'
-        +   '</span>'
-        + '</div>';
-      pathHoverTooltipEl.classList.toggle('is-rich', isTruncated);
-      var rect = targetEl.getBoundingClientRect();
-      var left = rect.left + (rect.width / 2);
-      var top = rect.top - 8;
-      var safeLeft = Math.max(12, Math.min(left, window.innerWidth - 12));
-      var safeTop = Math.max(12, top);
-      pathHoverTooltipEl.style.left = safeLeft + 'px';
-      pathHoverTooltipEl.style.top = safeTop + 'px';
-      pathHoverTooltipEl.classList.add('visible');
+      return;
     };
     var hidePathHoverTooltip = function() {
       if (!pathHoverTooltipEl) return;
@@ -4510,6 +4549,7 @@
       scheduleHideChipInfoTooltip(delay);
     });
     $tableEl.on('mouseenter', 'td.path-cell .path-cell__value', function() {
+      positionExpandedPathText(this);
       if (pathHoverHideTimer) {
         clearTimeout(pathHoverHideTimer);
         pathHoverHideTimer = null;
@@ -4536,6 +4576,9 @@
         hidePathHoverTooltip();
         pathHoverHideTimer = null;
       }, 100);
+    });
+    $tableEl.on('mousemove', 'td.path-cell .path-cell__value', function() {
+      positionExpandedPathText(this);
     });
     $tableEl.on('mouseenter', 'td.path-cell .cell-action-grid', function() {
       if (pathHoverHideTimer) {
@@ -6445,8 +6488,10 @@
         linkedFilterNoticeEl.classList.add('visible');
         return;
       }
-      var hasLinkedIds = new URL(window.location).searchParams.getAll('id').length > 0;
-      if (!hasLinkedIds) {
+      var linkedParams = new URL(window.location);
+      var hasLinkedIds = linkedParams.searchParams.getAll('id').length > 0;
+      var hasLegacyObject = !!String(linkedParams.searchParams.get('object') || '').trim();
+      if (!hasLinkedIds && !hasLegacyObject) {
         linkedFilterNoticeEl.classList.remove('visible');
       }
     };
@@ -7954,6 +7999,17 @@
     var buildObjectUrl = function(objectId, legacyObjectName) {
       var nextUrl = new URL(window.location);
       var normalizedId = normalizeObjectId(objectId);
+      nextUrl.searchParams.delete('path');
+      nextUrl.searchParams.delete('maps');
+      nextUrl.searchParams.delete('presets');
+      nextUrl.searchParams.delete('types');
+      nextUrl.searchParams.delete('types_maps');
+      nextUrl.searchParams.delete('types_usage');
+      nextUrl.searchParams.delete('types_value');
+      nextUrl.searchParams.delete('types_map');
+      nextUrl.searchParams.delete('types_kind');
+      nextUrl.searchParams.delete('types_tag');
+      nextUrl.searchParams.delete('q');
       nextUrl.searchParams.delete('id');
       if (normalizedId) {
         nextUrl.searchParams.append('id', normalizedId);
@@ -9640,11 +9696,11 @@
       }
       versionFilterNoticeEl.classList.add('visible');
     }
-    if (linkedFilterNoticeEl && objectIdParams.length) {
+    if (linkedFilterNoticeEl && (objectIdParams.length || objectParam)) {
       if (linkedFilterNoticeTextEl) {
-        linkedFilterNoticeTextEl.textContent = objectIdParams.length === 1
-          ? 'Filtering linked object.'
-          : 'Filtering linked objects.';
+        linkedFilterNoticeTextEl.textContent = objectIdParams.length > 1
+          ? 'Filtering linked objects.'
+          : 'Filtering linked object.';
       }
       linkedFilterNoticeEl.classList.add('visible');
     }
