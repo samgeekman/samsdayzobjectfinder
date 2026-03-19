@@ -29,6 +29,8 @@
     --ui-button-border: var(--border);
     --ui-button-text: var(--text);
     --ui-button-radius: 3px;
+    --page-edge-gutter: 0.75%;
+    --page-content-width: 98.5%;
   }
   html,
   body {
@@ -39,9 +41,13 @@
     background-color: var(--card);
     color: var(--text);
     padding: 6px 8px;
-    margin: 2px;
+    margin: 2px var(--page-edge-gutter);
     border: 1px solid var(--border);
     box-shadow: var(--shadow-soft);
+  }
+  header nav.pv3.ph3.ph4-ns {
+    padding-left: var(--page-edge-gutter) !important;
+    padding-right: var(--page-edge-gutter) !important;
   }
   footer[role="contentinfo"] {
     display: none !important;
@@ -49,7 +55,7 @@
 
   
   #dayzObjects_wrapper {
-    width: 95% !important;
+    width: var(--page-content-width) !important;
     margin: 20px auto;
     overflow-x: hidden;
     max-width: 100%;
@@ -341,9 +347,7 @@
     #dayzObjects th {
       padding: 6px 8px;
     }
-    .copy-btn,
-    .path-cell .path-pin-btn,
-    .path-cell .path-link-btn {
+    .copy-btn {
       display: none !important;
     }
   }
@@ -364,6 +368,12 @@
   }
 
   
+  :root {
+    --hover-action-size: 20px;
+    --hover-action-gap: 2px;
+    --hover-action-grid-width: calc((var(--hover-action-size) * 2) + var(--hover-action-gap));
+    --hover-action-space: calc(var(--hover-action-grid-width) + 10px);
+  }
   #dayzObjects tbody .object-name-cell {
     position: relative;
     cursor: pointer;
@@ -372,11 +382,15 @@
   #dayzObjects tbody .path-cell {
     position: relative;
   }
+  #dayzObjects tbody .object-name-cell__value,
   #dayzObjects tbody .path-cell__value {
     display: inline-block;
     max-width: 100%;
     vertical-align: middle;
+    padding-right: var(--hover-action-space);
+    box-sizing: border-box;
   }
+  #dayzObjects tbody .object-name-cell__text,
   #dayzObjects tbody .path-cell__text {
     display: inline;
   }
@@ -555,7 +569,7 @@
     position: fixed;
     z-index: 2210;
     max-width: min(720px, calc(100vw - 24px));
-    padding: 7px 9px;
+    padding: 7px 9px 1px;
     border: 1px solid var(--border);
     border-radius: 5px;
     background: var(--card);
@@ -571,9 +585,63 @@
     transform: translate(-50%, -8px);
     transition: opacity 0.14s ease, transform 0.14s ease;
   }
+  .path-hover-tooltip.is-rich {
+    max-width: min(860px, calc(100vw - 20px));
+    padding: 10px 12px 2px;
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+  .path-hover-tooltip__path {
+    display: block;
+    margin-bottom: 0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.76rem;
+    color: var(--text);
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
   .path-hover-tooltip.visible {
     opacity: 1;
     transform: translate(-50%, -4px);
+    pointer-events: auto;
+  }
+  .path-hover-tooltip__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    gap: 10px;
+  }
+  .path-hover-tooltip__actions {
+    display: grid;
+    grid-template-columns: repeat(2, var(--hover-action-size));
+    grid-template-rows: repeat(2, var(--hover-action-size));
+    gap: var(--hover-action-gap);
+    align-content: start;
+  }
+  .path-hover-tooltip__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--hover-action-size);
+    height: var(--hover-action-size);
+    cursor: pointer;
+    border: 1.5px solid color-mix(in srgb, var(--ui-button-border) 80%, var(--text) 20%);
+    background: transparent;
+    color: var(--ui-button-text);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  .path-hover-tooltip__btn:hover,
+  .path-hover-tooltip__btn:focus-visible {
+    outline: none;
+    background-color: #EDA700 !important;
+    border-color: #EDA700 !important;
+    color: #1f1f1f !important;
   }
   #dayzObjects tbody tr {
     height: 47px;
@@ -610,7 +678,7 @@
     width: 22px;
     height: 22px;
     cursor: pointer;
-    border: 1px solid var(--ui-button-border);
+    border: 1.5px solid color-mix(in srgb, var(--ui-button-border) 80%, var(--text) 20%);
     background-color: transparent;
     color: var(--ui-button-text);
     font-size: 1.02rem;
@@ -622,22 +690,31 @@
     border-radius: 3px;
     box-sizing: border-box;
   }
-
-  
-  #dayzObjects tbody .object-name-cell:hover .copy-btn {
+  #dayzObjects tbody .cell-action-grid {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    width: var(--hover-action-grid-width);
+    display: grid;
+    grid-template-columns: repeat(2, var(--hover-action-size));
+    grid-template-rows: repeat(2, var(--hover-action-size));
+    gap: var(--hover-action-gap);
+    opacity: 0;
+    pointer-events: none;
+  }
+  #dayzObjects tbody .cell-action-grid .copy-btn {
+    position: static;
+    width: var(--hover-action-size);
+    height: var(--hover-action-size);
+    font-size: 0.9rem;
     opacity: 1;
   }
-
-  
-  .copy-btn.editor-copy-btn {
-    right: 28px;
-  }
-  .copy-btn.pin-btn {
-    right: 52px;
-  }
-  .path-cell .path-pin-btn,
-  .path-cell .path-link-btn {
-    display: none !important;
+  #dayzObjects tbody .object-name-cell:hover .cell-action-grid,
+  #dayzObjects tbody .object-name-cell:focus-within .cell-action-grid,
+  #dayzObjects tbody .path-cell:hover .cell-action-grid,
+  #dayzObjects tbody .path-cell:focus-within .cell-action-grid {
+    opacity: 1;
+    pointer-events: auto;
   }
   #dayzObjects tbody .preset-actions {
     display: inline-flex;
@@ -823,7 +900,7 @@
   }
 
   .objects-layout {
-    width: 95%;
+    width: var(--page-content-width);
     margin: 14px auto 0;
     display: flex;
     gap: 14px;
@@ -852,7 +929,7 @@
     box-shadow: var(--shadow-soft);
     position: fixed;
     top: var(--sidebars-top-offset);
-    left: 2.5%;
+    left: var(--page-edge-gutter);
     flex: 0 0 var(--tree-pane-width);
     z-index: 5;
   }
@@ -1151,7 +1228,7 @@
     align-items: flex-start;
     position: fixed;
     top: var(--sidebars-top-offset);
-    right: 2.5%;
+    right: var(--page-edge-gutter);
     z-index: 6;
     flex: 0 0 var(--focus-pane-width);
     align-self: flex-start;
@@ -1212,7 +1289,7 @@
     align-items: center;
     position: fixed;
     top: var(--sidebars-top-offset);
-    right: 2.5%;
+    right: var(--page-edge-gutter);
     z-index: 6;
     overflow: hidden;
   }
@@ -1669,33 +1746,6 @@
   .object-focus__secondary .pill-button {
     font-size: 0.7rem;
     padding: 3px 6px;
-  }
-  .object-focus__quick-action {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 22px;
-    min-width: 24px;
-    padding: 0 6px;
-    border: 1px solid var(--ui-button-border);
-    border-radius: 3px;
-    background: transparent;
-    color: var(--ui-button-text);
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1;
-  }
-  .object-focus__quick-action:hover {
-    background: #EDA700 !important;
-    color: #1f1f1f !important;
-    border-color: #EDA700 !important;
-  }
-  .object-focus__quick-action:focus-visible {
-    outline: none;
-    background: #EDA700 !important;
-    color: #1f1f1f !important;
-    border-color: #EDA700 !important;
-    box-shadow: 0 0 0 1px color-mix(in srgb, #EDA700 45%, transparent);
   }
   .object-focus__meta {
     display: flex;
@@ -3385,12 +3435,12 @@
       <div id="objectFocusEmpty" class="object-focus__empty">You can select or pin objects in this menu.</div>
       <div class="object-focus__actions">
         <div class="object-focus__secondary object-focus__secondary--top">
-          <button id="objectFocusPin" class="pill-button object-focus__quick-action" type="button" title="Pin object">📌</button>
-          <button id="objectFocusCopy" class="pill-button object-focus__quick-action" type="button" title="Copy link">🔗</button>
-          <button id="objectFocusEditor" class="pill-button object-focus__quick-action" type="button" title="Copy to Editor">🏗️</button>
+          <button id="objectFocusPin" class="pill-button" type="button">📌 Pin</button>
+          <button id="objectFocusCopy" class="pill-button" type="button">🔗 Copy link</button>
+          <button id="objectFocusEditor" class="pill-button" type="button">🏗️ Copy to Editor</button>
         </div>
         <div class="object-focus__secondary object-focus__secondary--bottom">
-          <button id="objectFocusNameCopy" class="pill-button object-focus__quick-action" type="button" title="Copy name">📋</button>
+          <button id="objectFocusNameCopy" class="pill-button" type="button">📋 Copy name</button>
           <button id="objectFocusMarkdownCopy" class="pill-button" type="button">🔗 M↓</button>
         </div>
       </div>
@@ -3547,6 +3597,8 @@
     var getObjectId = function(row) {
       return row.id || '';
     };
+    var PATH_FILTER_ICON_ENTITY = '&#119064;';
+    var PATH_FILTER_ICON_TEXT = String.fromCodePoint(119064);
     var parseLinkedIds = function(value) {
       if (value === null || value === undefined) return [];
       if (Array.isArray(value)) {
@@ -4071,10 +4123,15 @@
             var objName = getObjectName(row);
             if (type !== 'display') return objName;
             return (
-              escapeHtml(objName) +
-              '<button class="copy-btn pin-btn" title="Pin object">📌</button>' +
-              '<button class="copy-btn" title="Copy object name">📋</button>' +
-              '<button class="copy-btn editor-copy-btn" title="Copy DayZ Editor JSON">🏗️</button>'
+              '<span class="object-name-cell__value">' +
+                '<span class="object-name-cell__text">' + escapeHtml(objName) + '</span>' +
+              '</span>' +
+              '<span class="cell-action-grid cell-action-grid--classname">' +
+                '<button class="copy-btn editor-copy-btn" type="button" title="Copy DayZ Editor JSON">🏗️</button>' +
+                '<button class="copy-btn copy-name-btn" type="button" title="Copy object name">📋</button>' +
+                '<button class="copy-btn copy-link-btn" type="button" title="Copy object link">🔗</button>' +
+                '<button class="copy-btn pin-btn" type="button" title="Pin object">📌</button>' +
+              '</span>'
             );
           }
         },
@@ -4126,11 +4183,16 @@
             var safeShortPath = escapeHtml(shortPath);
             var pathTextHtml = '<span class="path-cell__value' + (isPathTruncated ? ' is-truncated' : '') + '"'
               + (isPathTruncated ? (' data-full-path="' + safePath + '"') : '')
-              + (isPathTruncated ? ' title="' + safePath + '"' : '')
               + '>'
               + '<span class="path-cell__text path-cell__text--short">' + safeShortPath + '</span>'
               + '</span>';
-            return pathTextHtml;
+            var pathActionsHtml = '<span class="cell-action-grid cell-action-grid--path">'
+              + '<button class="copy-btn path-action-btn path-copy-link-btn" type="button" title="Copy path link">🔗</button>'
+              + '<button class="copy-btn path-action-btn path-pin-btn" type="button" title="Pin path">📌</button>'
+              + '<button class="copy-btn path-action-btn path-copy-name-btn" type="button" title="Copy path">📋</button>'
+              + '<button class="copy-btn path-action-btn path-filter-btn" type="button" title="Filter to this path">' + PATH_FILTER_ICON_ENTITY + '</button>'
+              + '</span>';
+            return pathTextHtml + pathActionsHtml;
           }
         },
         {
@@ -4159,21 +4221,21 @@
               consoleSearchText;
             if (type !== 'display') return infoSearchText;
             var chipsHtml = '<span class="info-chips">';
-            chipsHtml += '<span class="info-chip ' + consoleClass + '" data-chip-kind="' + (isConsoleFriendly ? 'console_yes' : 'console_no') + '" title="Usable on console">' + consoleText + '</span>';
+            chipsHtml += '<span class="info-chip ' + consoleClass + '" data-chip-kind="' + (isConsoleFriendly ? 'console_yes' : 'console_no') + '">' + consoleText + '</span>';
             if (hasConfig) {
-              chipsHtml += '<span class="info-chip info-chip--cfg" data-chip-kind="config" title="Config">Config</span>';
+              chipsHtml += '<span class="info-chip info-chip--cfg" data-chip-kind="config">Config</span>';
             }
             if (hasP3d) {
-              chipsHtml += '<span class="info-chip info-chip--p3d" data-chip-kind="p3d" title="Raw P3D">P3D</span>';
+              chipsHtml += '<span class="info-chip info-chip--p3d" data-chip-kind="p3d">P3D</span>';
             }
             if (isPreset) {
-              chipsHtml += '<span class="info-chip info-chip--preset" data-chip-kind="preset" title="Build">Build</span>';
+              chipsHtml += '<span class="info-chip info-chip--preset" data-chip-kind="preset">Build</span>';
             }
             if (hasProtoEntry) {
-              chipsHtml += '<span class="info-chip info-chip--proto" data-chip-kind="proto" title="Has mapgroupproto entry">Proto</span>';
+              chipsHtml += '<span class="info-chip info-chip--proto" data-chip-kind="proto">Proto</span>';
             }
             if (hasTypesEntry) {
-              chipsHtml += '<span class="info-chip info-chip--types" data-chip-kind="types" title="Has types entry">Types</span>';
+              chipsHtml += '<span class="info-chip info-chip--types" data-chip-kind="types">Types</span>';
             }
             chipsHtml += '</span>';
             return chipsHtml;
@@ -4248,6 +4310,7 @@
     });
 
     var chipInfoHideTimer = null;
+    var chipInfoLockUntil = 0;
     var showChipInfoTooltip = function(targetEl, html, autoHideMs) {
       if (!chipInfoTooltipEl || !targetEl || !html) return;
       chipInfoTooltipEl.innerHTML = html;
@@ -4259,14 +4322,13 @@
       chipInfoTooltipEl.style.left = safeLeft + 'px';
       chipInfoTooltipEl.style.top = safeTop + 'px';
       chipInfoTooltipEl.classList.add('visible');
+      chipInfoLockUntil = Date.now() + 5000;
       if (chipInfoHideTimer) {
         clearTimeout(chipInfoHideTimer);
         chipInfoHideTimer = null;
       }
       var duration = Number(autoHideMs);
-      if (!isFinite(duration)) {
-        duration = 2600;
-      }
+      if (!isFinite(duration)) duration = 0;
       if (duration > 0) {
         chipInfoHideTimer = setTimeout(function() {
           chipInfoTooltipEl.classList.remove('visible');
@@ -4278,9 +4340,86 @@
       if (!chipInfoTooltipEl) return;
       chipInfoTooltipEl.classList.remove('visible');
     };
-    var showPathHoverTooltip = function(targetEl, fullPath) {
-      if (!pathHoverTooltipEl || !targetEl || !fullPath) return;
-      pathHoverTooltipEl.textContent = fullPath;
+    var pathHoverHideTimer = null;
+    var pathHoverTooltipRowData = null;
+    var flashIconButton = function($btn, resetText) {
+      if (!$btn || !$btn.length) return;
+      $btn.text('✔');
+      setTimeout(function() { $btn.text(resetText); }, 900);
+    };
+    var copyEditorJsonForRow = function(rowData) {
+      if (!rowData) return false;
+      var editorJsonRaw = rowData.editorJson ? JSON.stringify(rowData.editorJson) : '';
+      var jsonText = buildEditorJson(
+        editorJsonRaw,
+        getObjectName(rowData),
+        rowData.modelType || '',
+        rowData.path || ''
+      );
+      if (!jsonText) return false;
+      navigator.clipboard.writeText(jsonText);
+      return true;
+    };
+    var togglePinnedForRow = function(rowData) {
+      if (!rowData) return false;
+      var item = buildPinnedItemFromData(rowData);
+      if (!item || !item.objName) return false;
+      if (isPinned(item.objName)) {
+        removePinnedItemByName(item.objName);
+      } else {
+        addPinnedItem(item);
+      }
+      return true;
+    };
+    var applyPathFilterForRow = function(rowData) {
+      if (!rowData) return false;
+      var rawPath = String(rowData.path || '');
+      var targetPath = getDeepestPathPrefix(rawPath);
+      if (!targetPath) return false;
+      expandFolderTreeForPath(rawPath);
+      activeCollectionFilter = '';
+      setActiveFolderFilter(targetPath, true);
+      return true;
+    };
+    var resolvePathActionTarget = function(rowData) {
+      if (!rowData) return null;
+      var rawPath = String(rowData.path || '').trim();
+      if (!rawPath) return null;
+      var targetPath = getDeepestPathPrefix(rawPath);
+      if (!targetPath) return null;
+      return { rawPath: rawPath, targetPath: targetPath };
+    };
+    var pinPathForRow = function(rowData) {
+      var target = resolvePathActionTarget(rowData);
+      if (!target) return false;
+      var sourceRows = getDataArray();
+      var rows = sourceRows.filter(function(rowItem) {
+        var rowPath = normalizeFilterText((rowItem && rowItem.path) || '');
+        if (!rowPath) return false;
+        return rowPath === target.targetPath || rowPath.indexOf(target.targetPath + '/') === 0;
+      });
+      if (!rows.length) return false;
+      addPinnedPathItem(target.targetPath, rows);
+      return true;
+    };
+    var showPathHoverTooltip = function(targetEl, rowData, options) {
+      if (!pathHoverTooltipEl || !targetEl || !rowData) return;
+      var opts = options || {};
+      var fullPath = String(opts.fullPath || rowData.path || '').trim();
+      var isTruncated = !!opts.isTruncated;
+      if (!isTruncated || !fullPath) return;
+      pathHoverTooltipRowData = rowData;
+      pathHoverTooltipEl.innerHTML = ''
+        + '<div class="path-hover-tooltip__layout">'
+        +   '<span class="path-hover-tooltip__path">' + escapeHtml(fullPath) + '</span>'
+        +   '<span class="path-hover-tooltip__actions">'
+        +     '<button class="path-hover-tooltip__btn path-tooltip-copy-link-btn" type="button" title="Copy path link">🔗</button>'
+        +     '<button class="path-hover-tooltip__btn path-tooltip-pin-btn" type="button" title="Pin path">📌</button>'
+        +     '<button class="path-hover-tooltip__btn path-tooltip-copy-name-btn" type="button" title="Copy path">📋</button>'
+        +     '<button class="path-hover-tooltip__btn path-tooltip-filter-btn" type="button" title="Filter to this path">' + PATH_FILTER_ICON_ENTITY + '</button>'
+        +   '</span>'
+        + '</div>';
+      pathHoverTooltipEl.classList.toggle('is-rich', isTruncated);
       var rect = targetEl.getBoundingClientRect();
       var left = rect.left + (rect.width / 2);
       var top = rect.top - 8;
@@ -4293,7 +4432,9 @@
     var hidePathHoverTooltip = function() {
       if (!pathHoverTooltipEl) return;
       pathHoverTooltipEl.classList.remove('visible');
+      pathHoverTooltipEl.classList.remove('is-rich');
       pathHoverTooltipEl.textContent = '';
+      pathHoverTooltipRowData = null;
     };
     var buildChipSummaryItems = function(rowData) {
       if (!rowData) return [];
@@ -4310,14 +4451,14 @@
         return { label: label, chipClass: chipClass, explanation: explanation };
       };
       var items = [];
+      items.push(isConsoleFriendly
+        ? item('Console', 'info-chip--console-yes', 'Will work on console')
+        : item('Console', 'info-chip--console-no', 'Will not work on console'));
       if (hasConfig) items.push(item('Config', 'info-chip--cfg', 'Is a classed object'));
       if (hasP3d) items.push(item('P3D', 'info-chip--p3d', 'Raw P3D model'));
       if (isPreset) items.push(item('Build', 'info-chip--preset', 'Copyable build for DayZ Editor'));
       if (hasTypesEntry) items.push(item('Types', 'info-chip--types', 'Has a Types.xml entry'));
       if (hasProtoEntry) items.push(item('Proto', 'info-chip--proto', 'Has a MapGroupProto.xml entry'));
-      items.push(isConsoleFriendly
-        ? item('Console', 'info-chip--console-yes', 'Will work on console')
-        : item('Console', 'info-chip--console-no', 'Will not work on console'));
       return items;
     };
     var renderChipSummaryHtml = function(items) {
@@ -4330,10 +4471,23 @@
       }).join('');
     };
     var chipInfoHoverTimer = null;
+    var scheduleHideChipInfoTooltip = function(delayMs) {
+      if (chipInfoHideTimer) {
+        clearTimeout(chipInfoHideTimer);
+        chipInfoHideTimer = null;
+      }
+      chipInfoHideTimer = setTimeout(function() {
+        hideChipInfoTooltip();
+      }, Math.max(40, Number(delayMs) || 80));
+    };
     $tableEl.on('mouseenter', 'td.info-cell', function() {
       var cellEl = this;
       if (chipInfoHoverTimer) {
         clearTimeout(chipInfoHoverTimer);
+      }
+      if (chipInfoHideTimer) {
+        clearTimeout(chipInfoHideTimer);
+        chipInfoHideTimer = null;
       }
       chipInfoHoverTimer = setTimeout(function() {
         var $tr = $(cellEl).closest('tr');
@@ -4351,16 +4505,61 @@
         clearTimeout(chipInfoHoverTimer);
         chipInfoHoverTimer = null;
       }
-      hideChipInfoTooltip();
+      var now = Date.now();
+      var delay = chipInfoLockUntil > now ? (chipInfoLockUntil - now) : 0;
+      scheduleHideChipInfoTooltip(delay);
     });
-    $tableEl.on('mouseenter', 'td.path-cell .path-cell__value.is-truncated', function() {
-      var fullPath = String(this.getAttribute('data-full-path') || '').trim();
-      if (!fullPath) return;
-      showPathHoverTooltip(this, fullPath);
+    $tableEl.on('mouseenter', 'td.path-cell .path-cell__value', function() {
+      if (pathHoverHideTimer) {
+        clearTimeout(pathHoverHideTimer);
+        pathHoverHideTimer = null;
+      }
+      var $tr = $(this).closest('tr');
+      if ($tr.hasClass('child')) {
+        $tr = $tr.prev();
+      }
+      var rowData = table.row($tr).data();
+      if (!rowData) return;
+      var isTruncated = this.classList.contains('is-truncated');
+      var fullPath = String(this.getAttribute('data-full-path') || rowData.path || '').trim();
+      if (isTruncated && fullPath) {
+        showPathHoverTooltip(this, rowData, {
+          isTruncated: isTruncated,
+          fullPath: fullPath
+        });
+      } else {
+        hidePathHoverTooltip();
+      }
     });
-    $tableEl.on('mouseleave', 'td.path-cell .path-cell__value.is-truncated', function() {
-      hidePathHoverTooltip();
+    $tableEl.on('mouseleave', 'td.path-cell .path-cell__value', function() {
+      pathHoverHideTimer = setTimeout(function() {
+        hidePathHoverTooltip();
+        pathHoverHideTimer = null;
+      }, 100);
     });
+    $tableEl.on('mouseenter', 'td.path-cell .cell-action-grid', function() {
+      if (pathHoverHideTimer) {
+        clearTimeout(pathHoverHideTimer);
+        pathHoverHideTimer = null;
+      }
+    });
+    if (pathHoverTooltipEl) {
+      pathHoverTooltipEl.addEventListener('mouseenter', function() {
+        if (pathHoverHideTimer) {
+          clearTimeout(pathHoverHideTimer);
+          pathHoverHideTimer = null;
+        }
+      });
+      pathHoverTooltipEl.addEventListener('mouseleave', function() {
+        if (pathHoverHideTimer) {
+          clearTimeout(pathHoverHideTimer);
+        }
+        pathHoverHideTimer = setTimeout(function() {
+          hidePathHoverTooltip();
+          pathHoverHideTimer = null;
+        }, 80);
+      });
+    }
     window.addEventListener('scroll', function() {
       hideChipInfoTooltip();
       hidePathHoverTooltip();
@@ -6530,7 +6729,11 @@
         var pathValue = normalizeFilterText((rowData && rowData.path) || '')
           .replace(/\\/g, '/')
           .replace(/^\/+/, '');
-        if (!pathValue || pathValue.indexOf(activeFolderFilter) !== 0) {
+        var matchesPath = pathValue && (
+          pathValue === activeFolderFilter ||
+          pathValue.indexOf(activeFolderFilter + '/') === 0
+        );
+        if (!matchesPath) {
           return false;
         }
       }
@@ -8066,7 +8269,7 @@
 
       objectFocusEl.classList.add('visible');
       if (objectFocusPinEl) {
-        objectFocusPinEl.textContent = '📌';
+        objectFocusPinEl.textContent = isPinned(objName) ? '📌 Unpin' : '📌 Pin';
       }
       updateEmptyState();
 
@@ -8840,7 +9043,7 @@
         );
         navigator.clipboard.writeText(link);
         var original = objectFocusCopyEl.textContent;
-        objectFocusCopyEl.textContent = '✔';
+        objectFocusCopyEl.textContent = 'Copied';
         setTimeout(function() { objectFocusCopyEl.textContent = original; }, 1200);
       });
     }
@@ -8856,7 +9059,7 @@
         );
         navigator.clipboard.writeText(jsonText);
         var original = objectFocusEditorEl.textContent;
-        objectFocusEditorEl.textContent = '✔';
+        objectFocusEditorEl.textContent = 'Copied';
         setTimeout(function() { objectFocusEditorEl.textContent = original; }, 1200);
       });
     }
@@ -8867,7 +9070,7 @@
         if (!nameText) return;
         navigator.clipboard.writeText(nameText);
         var original = objectFocusNameCopyEl.textContent;
-        objectFocusNameCopyEl.textContent = '✔';
+        objectFocusNameCopyEl.textContent = 'Copied';
         setTimeout(function() { objectFocusNameCopyEl.textContent = original; }, 1200);
       });
     }
@@ -8896,7 +9099,7 @@
           });
           updatePinnedUI();
           if (objectFocusPinEl) {
-            objectFocusPinEl.textContent = '📌';
+            objectFocusPinEl.textContent = '📌 Pin';
           }
           return;
         }
@@ -8918,7 +9121,7 @@
         });
         updatePinnedUI();
         if (objectFocusPinEl) {
-          objectFocusPinEl.textContent = '📌';
+          objectFocusPinEl.textContent = '📌 Unpin';
         }
       });
     }
@@ -9028,7 +9231,7 @@
         pinnedItems = [];
         updatePinnedUI();
         if (objectFocusPinEl && currentObjectName) {
-          objectFocusPinEl.textContent = '📌';
+          objectFocusPinEl.textContent = '📌 Pin';
         }
       });
     }
@@ -9603,10 +9806,28 @@
       updateSearchShareLinkVisibility();
     };
 
+    var bootstrapDataAndUrlState = function(sourceData) {
+      if (!Array.isArray(sourceData) || !sourceData.length) return;
+      updateObjectNameLookup(sourceData);
+      populateFolderFilter(sourceData);
+      applyUrlState(sourceData);
+    };
     table.on('xhr.dt', function(e, settings, json) {
-      updateObjectNameLookup(json);
-      populateFolderFilter(json);
-      applyUrlState(json);
+      bootstrapDataAndUrlState(json);
+    });
+    table.on('init.dt', function() {
+      if (appliedUrlState) return;
+      var ajaxJson = table && table.ajax && typeof table.ajax.json === 'function'
+        ? table.ajax.json()
+        : null;
+      if (Array.isArray(ajaxJson) && ajaxJson.length) {
+        bootstrapDataAndUrlState(ajaxJson);
+        return;
+      }
+      var currentRows = getDataArray();
+      if (Array.isArray(currentRows) && currentRows.length) {
+        bootstrapDataAndUrlState(currentRows);
+      }
     });
     table.on('draw.dt', function() {
       updateTableColumnLabels();
@@ -10626,13 +10847,71 @@
       showObjectFocus($(this), false);
     });
 
-    $('#dayzObjects tbody').on('click', '.copy-btn:not(.editor-copy-btn):not(.pin-btn)', function(e) {
+    $('#dayzObjects tbody').on('click', '.copy-name-btn', function(e) {
       e.stopPropagation();
       var text = $(this).closest('td').data('object');
       navigator.clipboard.writeText(text);
-      var $btn = $(this);
-      $btn.text('✔');
-      setTimeout(function() { $btn.text('📋'); }, 1000);
+      flashIconButton($(this), '📋');
+    });
+
+    $('#dayzObjects tbody').on('click', '.copy-link-btn', function(e) {
+      e.stopPropagation();
+      var $td = $(this).closest('td');
+      navigator.clipboard.writeText(buildObjectUrl($td.data('objectid'), $td.data('object')));
+      flashIconButton($(this), '🔗');
+    });
+
+    $('#dayzObjects tbody').on('click', '.path-pin-btn', function(e) {
+      e.stopPropagation();
+      var $row = $(this).closest('tr');
+      if ($row.hasClass('child')) {
+        $row = $row.prev();
+      }
+      var rowData = table.row($row).data();
+      if (!rowData) return;
+      if (!pinPathForRow(rowData)) return;
+      flashIconButton($(this), '📌');
+    });
+
+    $('#dayzObjects tbody').on('click', '.path-copy-link-btn', function(e) {
+      e.stopPropagation();
+      var $row = $(this).closest('tr');
+      if ($row.hasClass('child')) {
+        $row = $row.prev();
+      }
+      var rowData = table.row($row).data();
+      if (!rowData) return;
+      var target = resolvePathActionTarget(rowData);
+      if (!target) return;
+      navigator.clipboard.writeText(buildFolderPathUrl(target.targetPath));
+      flashIconButton($(this), '🔗');
+    });
+
+    $('#dayzObjects tbody').on('click', '.path-copy-name-btn', function(e) {
+      e.stopPropagation();
+      var $row = $(this).closest('tr');
+      if ($row.hasClass('child')) {
+        $row = $row.prev();
+      }
+      var rowData = table.row($row).data();
+      if (!rowData) return;
+      var target = resolvePathActionTarget(rowData);
+      if (!target) return;
+      navigator.clipboard.writeText(target.rawPath);
+      flashIconButton($(this), '📋');
+    });
+
+    $('#dayzObjects tbody').on('click', '.path-filter-btn', function(e) {
+      e.stopPropagation();
+      var $row = $(this).closest('tr');
+      if ($row.hasClass('child')) {
+        $row = $row.prev();
+      }
+      var rowData = table.row($row).data();
+      if (!rowData) return;
+      if (!applyPathFilterForRow(rowData)) return;
+      hidePathHoverTooltip();
+      flashIconButton($(this), PATH_FILTER_ICON_TEXT);
     });
 
     $('#dayzObjects tbody').on('click', '.pin-btn', function(e) {
@@ -10646,8 +10925,7 @@
       } else {
         addPinnedItem(item);
       }
-      $btn.text('✔');
-      setTimeout(function() { $btn.text(original); }, 900);
+      flashIconButton($btn, original);
     });
 
     $('#dayzObjects tbody').on('click', '.preset-copy-btn', async function(e) {
@@ -10847,9 +11125,33 @@
 
       navigator.clipboard.writeText(jsonText);
 
-      var $btn = $(this);
-      $btn.text('✔');
-      setTimeout(function() { $btn.text('🏗️'); }, 1000);
+      flashIconButton($(this), '🏗️');
+    });
+
+    $(document).on('click', '.path-tooltip-pin-btn', function(e) {
+      e.stopPropagation();
+      if (!pinPathForRow(pathHoverTooltipRowData)) return;
+      flashIconButton($(this), '📌');
+    });
+    $(document).on('click', '.path-tooltip-copy-link-btn', function(e) {
+      e.stopPropagation();
+      var target = resolvePathActionTarget(pathHoverTooltipRowData);
+      if (!target) return;
+      navigator.clipboard.writeText(buildFolderPathUrl(target.targetPath));
+      flashIconButton($(this), '🔗');
+    });
+    $(document).on('click', '.path-tooltip-copy-name-btn', function(e) {
+      e.stopPropagation();
+      var target = resolvePathActionTarget(pathHoverTooltipRowData);
+      if (!target) return;
+      navigator.clipboard.writeText(target.rawPath);
+      flashIconButton($(this), '📋');
+    });
+    $(document).on('click', '.path-tooltip-filter-btn', function(e) {
+      e.stopPropagation();
+      if (!applyPathFilterForRow(pathHoverTooltipRowData)) return;
+      hidePathHoverTooltip();
+      flashIconButton($(this), PATH_FILTER_ICON_TEXT);
     });
   });
 </script>
