@@ -5,6 +5,7 @@ import json
 import re
 import secrets
 import shutil
+import unicodedata
 from datetime import datetime, timezone
 from collections import OrderedDict
 from pathlib import Path, PurePosixPath
@@ -286,43 +287,25 @@ def parse_bool(value: object, default: bool = False) -> bool:
     return default
 
 
-def read_preset_metadata(folder: Path) -> dict:
-    candidates = sorted(
-        [p for p in folder.iterdir() if p.is_file() and p.suffix.lower() == ".txt" and ("meta" in p.name.lower())]
-    )
-    default_path = folder / "metadata.txt"
-    if default_path.exists() and default_path not in candidates:
-        candidates.insert(0, default_path)
-    for candidate in candidates:
-        text = candidate.read_text(encoding="utf-8", errors="ignore").strip()
-        if not text:
-            continue
-        if text.startswith("{"):
-            try:
-                parsed = json.loads(text)
-                if isinstance(parsed, dict):
-                    return {str(k).strip(): v for k, v in parsed.items()}
-            except json.JSONDecodeError:
-                pass
-        out: Dict[str, object] = {}
-        for raw_line in text.splitlines():
-            line = raw_line.strip()
-            if not line or line.startswith("#"):
-                continue
-            if ":" in line:
-                key, value = line.split(":", 1)
-            elif "=" in line:
-                key, value = line.split("=", 1)
-            else:
-                continue
-            key = key.strip()
-            value = value.strip()
-            if not key:
-                continue
-            out[key] = value
-        if out:
-            return out
-    return {}
+def slugify_token(value: object, default: str = "build") -> str:
+    text = str(value or "").strip()
+    if not text:
+        return default
+    normalized = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
+    normalized = normalized.lower()
+    normalized = re.sub(r"[^a-z0-9]+", "_", normalized)
+    normalized = normalized.strip("_")
+    return normalized or default
+
+
+def load_preset_object_row(folder: Path) -> Optional[dict]:
+    objects_path = folder / "objects.json"
+    if not objects_path.exists():
+        return None
+    rows = load_objects(objects_path)
+    if not rows:
+        return None
+    return dict(rows[0])
 
 
 def to_editor_json_from_objects_payload(payload: dict) -> List[dict]:
@@ -364,21 +347,54 @@ def to_editor_json_from_objects_payload(payload: dict) -> List[dict]:
     return out
 
 
-def load_preset_payload_json(folder: Path) -> Optional[dict]:
-    for json_path in sorted(folder.glob("*.json")):
-        name_key = json_path.name.lower()
-        if "copy and pasteable" in name_key:
-            continue
-        try:
-            parsed = json.loads(json_path.read_text(encoding="utf-8"))
-        except json.JSONDecodeError:
-            continue
-        if isinstance(parsed, dict) and isinstance(parsed.get("Objects"), list):
-            return parsed
-    return None
+def to_rel_base_path(path: Path) -> str:
+    return str(path.relative_to(BASE_DIR)).replace("\\", "/")
 
 
-def discover_build_images(folder: Path) -> List[str]:
+def discover_preset_artifacts(folder: Path) -> Dict[str, object]:
+    import_json_path = ""
+    import_payload = None
+    copyable_path = ""
+    dze_path = ""
+
+    for dze_file in sorted(folder.glob("*.dze")):
+        dze_path = to_rel_base_path(dze_file)
+        break
+
+    for file_path in sorted([p for p in folder.iterdir() if p.is_file()]):
+        name_key = file_path.name.lower()
+        if name_key == "objects.json":
+            continue
+        is_copyable_name = ("copyable" in name_key) or ("copy" in name_key and "paste" in name_key)
+
+        if file_path.suffix.lower() == ".json":
+            try:
+                parsed = json.loads(file_path.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                parsed = None
+            if (
+                import_payload is None
+                and isinstance(parsed, dict)
+                and isinstance(parsed.get("Objects"), list)
+            ):
+                import_payload = parsed
+                import_json_path = to_rel_base_path(file_path)
+            if is_copyable_name and not copyable_path:
+                copyable_path = to_rel_base_path(file_path)
+            continue
+
+        if file_path.suffix.lower() in {".txt", ".json"} and is_copyable_name and not copyable_path:
+            copyable_path = to_rel_base_path(file_path)
+
+    return {
+        "import_payload": import_payload,
+        "import_json_path": import_json_path,
+        "copyable_path": copyable_path,
+        "dze_path": dze_path,
+    }
+
+
+def discover_build_image_files(folder: Path) -> List[Path]:
     exts = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
     candidates: List[Path] = []
     screenshots_dir = folder / "screenshots"
@@ -394,16 +410,52 @@ def discover_build_images(folder: Path) -> List[str]:
         ]
     )
     candidates.extend(root_images)
-    out: List[str] = []
+    out: List[Path] = []
     seen = set()
     for image_path in candidates:
-        rel = str(image_path.relative_to(BASE_DIR)).replace("\\", "/")
-        key = rel.lower()
+        key = str(image_path.resolve()).lower()
         if key in seen:
             continue
         seen.add(key)
-        out.append(rel)
+        out.append(image_path)
     return out
+
+
+def copy_build_images(folder: Path, object_name: str, preferred_image: str = "") -> Tuple[str, List[str]]:
+    source_images = discover_build_image_files(folder)
+    if not source_images:
+        return "", []
+
+    preferred = preferred_image.strip()
+    if preferred:
+        preferred_candidates = [
+            folder / preferred,
+            BASE_DIR / preferred,
+            folder / Path(preferred).name,
+        ]
+        for pref in preferred_candidates:
+            if pref.exists() and pref.is_file():
+                source_images = [pref] + [img for img in source_images if img.resolve() != pref.resolve()]
+                break
+
+    folder_slug = slugify_token(folder.name, default="build")
+    object_token = slugify_token(object_name, default="build")
+    out_dir = STATIC_DIR / "images" / "builds" / folder_slug
+    if out_dir.exists():
+        shutil.rmtree(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    out_rel_paths: List[str] = []
+    for index, image_path in enumerate(source_images, start=1):
+        ext = image_path.suffix.lower()
+        out_ext = ".jpg" if ext in {".jpg", ".jpeg"} else ext
+        out_name = f"{object_token}_{index}{out_ext}"
+        out_path = out_dir / out_name
+        shutil.copy2(image_path, out_path)
+        rel = (Path("images") / "builds" / folder_slug / out_name).as_posix()
+        out_rel_paths.append(rel)
+
+    return out_rel_paths[0], out_rel_paths
 
 
 def load_preset_rows_from_folders(presets_dir: Path) -> Tuple[List[dict], int]:
@@ -412,31 +464,35 @@ def load_preset_rows_from_folders(presets_dir: Path) -> Tuple[List[dict], int]:
     if not presets_dir.exists():
         return rows, folder_count
     for folder in sorted([p for p in presets_dir.iterdir() if p.is_dir()]):
-        payload = load_preset_payload_json(folder)
-        if not payload:
+        preset_row = load_preset_object_row(folder)
+        if not preset_row:
             continue
-        metadata = read_preset_metadata(folder)
-        object_id = str(metadata.get("id", "")).strip()
-        if not object_id:
-            raise SystemExit(
-                f"Preset metadata missing required 'id' in folder: {folder}. "
-                "Add metadata file with id and author before running build."
-            )
-        object_name = str(folder.name).strip()
-        in_game_name = str(folder.name).strip()
-        builder = str(metadata.get("builder") or metadata.get("author") or "samgeekman").strip()
-        image = str(metadata.get("image") or "").strip()
-        image_list = discover_build_images(folder)
-        if image and image not in image_list:
-            image_list.insert(0, image)
-        if not image and image_list:
-            image = image_list[0]
-        search_tags = str(metadata.get("searchTags") or "build").strip()
-        path = str(metadata.get("path") or ("dz/builds/" + folder.name.replace(" ", "_").lower())).strip()
-        category = str(metadata.get("category") or "Build").strip()
-        model_type = str(metadata.get("modelType") or "Build").strip()
-        usable_on_console = parse_bool(metadata.get("usableOnConsole"), default=True)
-        editor_json = to_editor_json_from_objects_payload(payload)
+        if parse_bool(preset_row.get("template"), default=False):
+            continue
+        artifacts = discover_preset_artifacts(folder)
+        payload = artifacts.get("import_payload")
+        import_json_path = str(artifacts.get("import_json_path") or "").strip()
+        copyable_path = str(artifacts.get("copyable_path") or "").strip()
+        dze_path = str(artifacts.get("dze_path") or "").strip()
+        has_any_artifact = bool(payload) or bool(import_json_path) or bool(copyable_path) or bool(dze_path)
+        if not has_any_artifact:
+            continue
+        object_id = str(preset_row.get("id", "")).strip()
+        object_name = str(preset_row.get("objectName") or folder.name).strip()
+        in_game_name = str(preset_row.get("inGameName") or object_name).strip()
+        builder = str(preset_row.get("builder") or preset_row.get("author") or "samgeekman").strip()
+        preferred_image = str(preset_row.get("image") or "").strip()
+        image, image_list = copy_build_images(folder, object_name, preferred_image=preferred_image)
+        if not image and preferred_image:
+            image = preferred_image
+            image_list = [preferred_image]
+        search_tags = str(preset_row.get("searchTags") or "build").strip()
+        default_path = "dz/builds/" + slugify_token(folder.name, default="build")
+        path = str(preset_row.get("path") or default_path).strip()
+        category = str(preset_row.get("category") or "Preset").strip()
+        model_type = str(preset_row.get("modelType") or "Preset").strip()
+        usable_on_console = parse_bool(preset_row.get("usableOnConsole"), default=True)
+        editor_json = to_editor_json_from_objects_payload(payload) if isinstance(payload, dict) else []
         row = {
             "id": object_id,
             "objectName": object_name,
@@ -451,13 +507,25 @@ def load_preset_rows_from_folders(presets_dir: Path) -> Tuple[List[dict], int]:
             "editorJson": editor_json,
             "builder": builder,
         }
-        # Keep location for user-managed DZE files discoverable without changing current UI contract.
-        dze_files = sorted(folder.glob("*.dze"))
-        if dze_files:
-            row["presetDzePath"] = str(dze_files[0].relative_to(BASE_DIR)).replace("\\", "/")
+        if import_json_path:
+            row["presetImportJsonPath"] = import_json_path
+        if copyable_path:
+            row["presetCopyablePath"] = copyable_path
+        if dze_path:
+            row["presetDzePath"] = dze_path
         rows.append(normalize_object(row))
         folder_count += 1
     return rows, folder_count
+
+
+def is_build_folder_object_file(path: Path) -> bool:
+    if path.name != "objects.json":
+        return False
+    if path.parent.parent == DB_DIR / "presets":
+        return True
+    if path.parent.parent == DB_DIR / "builds":
+        return True
+    return False
 
 
 def split_tags(tags: str) -> List[str]:
@@ -1210,13 +1278,15 @@ def main() -> None:
         all_objects.extend(normalize_object(obj) for obj in load_objects(presets_file))
     else:
         print(
-            f"Warning: builds not found (folder format with metadata + json) at {builds_dir} "
+            f"Warning: builds not found (folder format with objects.json + preset json) at {builds_dir} "
             f"or presets folder {presets_dir} "
             f"or legacy file {presets_file}"
         )
 
     object_files = sorted(DB_DIR.rglob("objects.json"))
     for obj_file in object_files:
+        if is_build_folder_object_file(obj_file):
+            continue
         objs = load_objects(obj_file)
         if not objs:
             continue

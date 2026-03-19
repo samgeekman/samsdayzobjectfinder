@@ -607,18 +607,19 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     cursor: pointer;
     border: 1px solid var(--ui-button-border);
     background-color: transparent;
     color: var(--ui-button-text);
-    font-size: 0.95rem;
+    font-size: 1.02rem;
+    font-weight: 600;
     line-height: 1;
     opacity: 0;
     transition: opacity 0.15s ease;
     padding: 0;
-    border-radius: 2px;
+    border-radius: 3px;
     box-sizing: border-box;
   }
 
@@ -669,6 +670,18 @@
     border-style: dashed;
   }
   #dayzObjects tbody .preset-action-btn.is-soon:hover {
+    background: transparent !important;
+    color: var(--ui-button-text) !important;
+  }
+  #dayzObjects tbody .preset-action-btn.is-disabled,
+  #dayzObjects tbody .preset-action-btn:disabled {
+    opacity: 0.4;
+    border-style: dashed;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  #dayzObjects tbody .preset-action-btn.is-disabled:hover,
+  #dayzObjects tbody .preset-action-btn:disabled:hover {
     background: transparent !important;
     color: var(--ui-button-text) !important;
   }
@@ -1656,6 +1669,33 @@
   .object-focus__secondary .pill-button {
     font-size: 0.7rem;
     padding: 3px 6px;
+  }
+  .object-focus__quick-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    min-width: 24px;
+    padding: 0 6px;
+    border: 1px solid var(--ui-button-border);
+    border-radius: 3px;
+    background: transparent;
+    color: var(--ui-button-text);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .object-focus__quick-action:hover {
+    background: #EDA700 !important;
+    color: #1f1f1f !important;
+    border-color: #EDA700 !important;
+  }
+  .object-focus__quick-action:focus-visible {
+    outline: none;
+    background: #EDA700 !important;
+    color: #1f1f1f !important;
+    border-color: #EDA700 !important;
+    box-shadow: 0 0 0 1px color-mix(in srgb, #EDA700 45%, transparent);
   }
   .object-focus__meta {
     display: flex;
@@ -3345,12 +3385,12 @@
       <div id="objectFocusEmpty" class="object-focus__empty">You can select or pin objects in this menu.</div>
       <div class="object-focus__actions">
         <div class="object-focus__secondary object-focus__secondary--top">
-          <button id="objectFocusPin" class="pill-button" type="button">📌 Pin</button>
-          <button id="objectFocusCopy" class="pill-button" type="button">🔗 Copy link</button>
-          <button id="objectFocusEditor" class="pill-button" type="button">🏗️ Copy to Editor</button>
+          <button id="objectFocusPin" class="pill-button object-focus__quick-action" type="button" title="Pin object">📌</button>
+          <button id="objectFocusCopy" class="pill-button object-focus__quick-action" type="button" title="Copy link">🔗</button>
+          <button id="objectFocusEditor" class="pill-button object-focus__quick-action" type="button" title="Copy to Editor">🏗️</button>
         </div>
         <div class="object-focus__secondary object-focus__secondary--bottom">
-          <button id="objectFocusNameCopy" class="pill-button" type="button">📋 Copy name</button>
+          <button id="objectFocusNameCopy" class="pill-button object-focus__quick-action" type="button" title="Copy name">📋</button>
           <button id="objectFocusMarkdownCopy" class="pill-button" type="button">🔗 M↓</button>
         </div>
       </div>
@@ -3918,6 +3958,18 @@
       var direct = String(row.builder || '').trim();
       return direct || 'samgeekman';
     };
+    var hasPresetEditorJson = function(row) {
+      return !!(row && Array.isArray(row.editorJson) && row.editorJson.length > 0);
+    };
+    var getPresetImportJsonPath = function(row) {
+      return row ? String(row.presetImportJsonPath || '').trim() : '';
+    };
+    var getPresetCopyablePath = function(row) {
+      return row ? String(row.presetCopyablePath || '').trim() : '';
+    };
+    var getPresetDzePath = function(row) {
+      return row ? String(row.presetDzePath || '').trim() : '';
+    };
 
     var showContent = function() {
       $('#dayzObjects, #dayzObjects_wrapper').css('visibility', 'visible');
@@ -4042,14 +4094,19 @@
           render: function(data, type, row) {
             var preset = isPresetRow(row);
             if (preset) {
-              if (type !== 'display') return 'preset copy export';
-              var dzePath = String(row.presetDzePath || '').trim();
+              var importJsonPath = getPresetImportJsonPath(row);
+              var copyablePath = getPresetCopyablePath(row);
+              var dzePath = getPresetDzePath(row);
+              var hasEditorJson = hasPresetEditorJson(row);
+              var hasCopy = !!copyablePath || hasEditorJson;
+              var hasJson = !!importJsonPath || hasEditorJson;
               var hasDze = !!dzePath;
+              if (type !== 'display') return 'preset ' + (hasCopy ? 'copy ' : '') + (hasJson ? 'json ' : '') + (hasDze ? 'dze' : '');
               return (
                 '<div class="preset-actions">' +
-                  '<button class="preset-action-btn preset-copy-btn" type="button" title="Copy to Editor">🏗️ Copy</button>' +
-                  '<button class="preset-action-btn preset-export-btn" type="button" title="Download JSON">↓ JSON</button>' +
-                  '<button class="preset-action-btn preset-dze-btn' + (hasDze ? '' : ' is-soon') + '" type="button" title="' + (hasDze ? 'Download DZE' : 'DZE export coming soon') + '">↓ DZE</button>' +
+                  '<button class="preset-action-btn preset-copy-btn' + (hasCopy ? '' : ' is-disabled') + '" type="button" ' + (hasCopy ? '' : 'disabled ') + 'title="' + (hasCopy ? 'Copy to Editor' : 'Copy source not available') + '">🏗️ Copy</button>' +
+                  '<button class="preset-action-btn preset-export-btn' + (hasJson ? '' : ' is-disabled') + '" type="button" ' + (hasJson ? '' : 'disabled ') + 'title="' + (hasJson ? 'Download JSON' : 'Import JSON not available') + '">↓ JSON</button>' +
+                  '<button class="preset-action-btn preset-dze-btn' + (hasDze ? '' : ' is-disabled') + '" type="button" ' + (hasDze ? '' : 'disabled ') + 'title="' + (hasDze ? 'Download DZE' : 'DZE not available') + '">↓ DZE</button>' +
                 '</div>'
               );
             }
@@ -8009,7 +8066,7 @@
 
       objectFocusEl.classList.add('visible');
       if (objectFocusPinEl) {
-        objectFocusPinEl.textContent = isPinned(objName) ? '📌 Unpin' : '📌 Pin';
+        objectFocusPinEl.textContent = '📌';
       }
       updateEmptyState();
 
@@ -8689,7 +8746,6 @@
       if (!objName) return;
       var normalized = objName.trim();
       if (!normalized) return;
-      table.column(2).search('^' + escapeRegex(normalized), true, false).draw();
       table.one('draw', function() {
         var $cell = $tableEl.find('tbody .object-name-cell').filter(function() {
           var value = $(this).data('object');
@@ -8708,12 +8764,12 @@
           showMissingObject(normalized);
         }
       });
+      table.column(2).search('^' + escapeRegex(normalized), true, false).draw();
     };
 
     var focusById = function(objectId) {
       var normalizedId = normalizeObjectId(objectId);
       if (!normalizedId) return;
-        table.column(7).search('^' + escapeRegex(normalizedId) + '$', true, false).draw();
       table.one('draw', function() {
         var $cell = $tableEl.find('tbody .object-name-cell').filter(function() {
           var value = $(this).data('objectid');
@@ -8731,6 +8787,7 @@
           showMissingObject(normalizedId);
         }
       });
+      table.column(7).search('^' + escapeRegex(normalizedId) + '$', true, false).draw();
     };
     var openObjectInObjectMapView = function(objectId, objectName, preferredMapKey) {
       if (!table) return;
@@ -8783,7 +8840,7 @@
         );
         navigator.clipboard.writeText(link);
         var original = objectFocusCopyEl.textContent;
-        objectFocusCopyEl.textContent = 'Copied';
+        objectFocusCopyEl.textContent = '✔';
         setTimeout(function() { objectFocusCopyEl.textContent = original; }, 1200);
       });
     }
@@ -8799,7 +8856,7 @@
         );
         navigator.clipboard.writeText(jsonText);
         var original = objectFocusEditorEl.textContent;
-        objectFocusEditorEl.textContent = 'Copied';
+        objectFocusEditorEl.textContent = '✔';
         setTimeout(function() { objectFocusEditorEl.textContent = original; }, 1200);
       });
     }
@@ -8810,7 +8867,7 @@
         if (!nameText) return;
         navigator.clipboard.writeText(nameText);
         var original = objectFocusNameCopyEl.textContent;
-        objectFocusNameCopyEl.textContent = 'Copied';
+        objectFocusNameCopyEl.textContent = '✔';
         setTimeout(function() { objectFocusNameCopyEl.textContent = original; }, 1200);
       });
     }
@@ -8839,7 +8896,7 @@
           });
           updatePinnedUI();
           if (objectFocusPinEl) {
-            objectFocusPinEl.textContent = '📌 Pin';
+            objectFocusPinEl.textContent = '📌';
           }
           return;
         }
@@ -8861,7 +8918,7 @@
         });
         updatePinnedUI();
         if (objectFocusPinEl) {
-          objectFocusPinEl.textContent = '📌 Unpin';
+          objectFocusPinEl.textContent = '📌';
         }
       });
     }
@@ -8971,7 +9028,7 @@
         pinnedItems = [];
         updatePinnedUI();
         if (objectFocusPinEl && currentObjectName) {
-          objectFocusPinEl.textContent = '📌 Pin';
+          objectFocusPinEl.textContent = '📌';
         }
       });
     }
@@ -10593,19 +10650,34 @@
       setTimeout(function() { $btn.text(original); }, 900);
     });
 
-    $('#dayzObjects tbody').on('click', '.preset-copy-btn', function(e) {
+    $('#dayzObjects tbody').on('click', '.preset-copy-btn', async function(e) {
       e.stopPropagation();
+      var $btn = $(this);
+      if ($btn.prop('disabled')) return;
       var $row = $(this).closest('tr');
       var rowData = table.row($row).data();
       if (!rowData) return;
-      var jsonText = buildEditorJson(
-        rowData.editorJson ? JSON.stringify(rowData.editorJson) : '',
-        getObjectName(rowData),
-        rowData.modelType || '',
-        rowData.path || ''
-      );
-      navigator.clipboard.writeText(jsonText);
-      var $btn = $(this);
+      var copyablePath = getPresetCopyablePath(rowData);
+      var textToCopy = '';
+      if (copyablePath) {
+        try {
+          var normalizedCopyPath = copyablePath.replace(/^\/+/, '');
+          var copyResp = await fetch('/' + encodeURI(normalizedCopyPath), { cache: 'no-store' });
+          if (copyResp.ok) {
+            textToCopy = await copyResp.text();
+          }
+        } catch (err) {}
+      }
+      if (!textToCopy && hasPresetEditorJson(rowData)) {
+        textToCopy = buildEditorJson(
+          rowData.editorJson ? JSON.stringify(rowData.editorJson) : '',
+          getObjectName(rowData),
+          rowData.modelType || '',
+          rowData.path || ''
+        );
+      }
+      if (!textToCopy) return;
+      await navigator.clipboard.writeText(textToCopy);
       var original = $btn.text();
       $btn.text('✔');
       setTimeout(function() { $btn.text(original); }, 900);
@@ -10613,18 +10685,34 @@
 
     $('#dayzObjects tbody').on('click', '.preset-export-btn', function(e) {
       e.stopPropagation();
+      var $btn = $(this);
+      if ($btn.prop('disabled')) return;
       var $row = $(this).closest('tr');
       var rowData = table.row($row).data();
       if (!rowData) return;
-      var jsonText = buildPresetObjectPackage(
-        rowData.editorJson ? JSON.stringify(rowData.editorJson) : '',
-        getObjectName(rowData),
-        rowData.modelType || '',
-        rowData.path || ''
-      );
-      var fileName = sanitizePathFolder(getObjectName(rowData) || 'preset') + '_preset.json';
-      downloadTextFile(jsonText, fileName, 'application/json;charset=utf-8');
-      var $btn = $(this);
+      var importPath = getPresetImportJsonPath(rowData);
+      if (importPath) {
+        var normalizedImportPath = importPath.replace(/^\/+/, '');
+        var importFileName = normalizedImportPath.split('/').pop() || (sanitizePathFolder(getObjectName(rowData) || 'preset') + '.json');
+        var importLink = document.createElement('a');
+        importLink.href = '/' + encodeURI(normalizedImportPath);
+        importLink.setAttribute('download', importFileName);
+        importLink.rel = 'noopener';
+        document.body.appendChild(importLink);
+        importLink.click();
+        document.body.removeChild(importLink);
+      } else if (hasPresetEditorJson(rowData)) {
+        var jsonText = buildPresetObjectPackage(
+          rowData.editorJson ? JSON.stringify(rowData.editorJson) : '',
+          getObjectName(rowData),
+          rowData.modelType || '',
+          rowData.path || ''
+        );
+        var fileName = sanitizePathFolder(getObjectName(rowData) || 'preset') + '_preset.json';
+        downloadTextFile(jsonText, fileName, 'application/json;charset=utf-8');
+      } else {
+        return;
+      }
       var original = $btn.text();
       $btn.text('✔');
       setTimeout(function() { $btn.text(original); }, 900);
@@ -10633,9 +10721,10 @@
     $('#dayzObjects tbody').on('click', '.preset-dze-btn', function(e) {
       e.stopPropagation();
       var $btn = $(this);
+      if ($btn.prop('disabled')) return;
       var $row = $(this).closest('tr');
       var rowData = table.row($row).data();
-      var dzePath = rowData ? String(rowData.presetDzePath || '').trim() : '';
+      var dzePath = getPresetDzePath(rowData);
       if (dzePath) {
         var normalizedPath = dzePath.replace(/^\/+/, '');
         var fileName = normalizedPath.split('/').pop() || (sanitizePathFolder(getObjectName(rowData) || 'preset') + '.dze');
@@ -10651,9 +10740,6 @@
         setTimeout(function() { $btn.text(okText); }, 900);
         return;
       }
-      var original = $btn.text();
-      $btn.text('Soon');
-      setTimeout(function() { $btn.text(original); }, 1000);
     });
 
     $('#dayzObjects tbody').on('click', '.row-detail__action', function(e) {
