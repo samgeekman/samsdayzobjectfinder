@@ -9789,13 +9789,21 @@
       if (objectIdParams.length === 1) {
         treatIdListAsSearchFolders = false;
         var singleData = getDataArray(sourceData);
+        var singleMatch = null;
         for (var si = 0; si < singleData.length; si += 1) {
           var singleRow = singleData[si];
           if (normalizeObjectId(getObjectId(singleRow)) === objectIdParams[0]) {
+            singleMatch = singleRow;
             highlightedFolderPath = getDeepestPathPrefix(singleRow.path || '');
             expandFolderTreeForPath(singleRow.path || '');
             break;
           }
+        }
+        if (singleMatch && isPresetRow(singleMatch)) {
+          activeCollectionFilter = 'presets';
+          setActiveFolderFilter('', false);
+          updateTypesExplorerPanelVisibility();
+          updateObjectMapPanelVisibility();
         }
         renderFolderTree();
         focusById(objectIdParams[0]);
@@ -9827,7 +9835,6 @@
           activeCollectionFilter = 'presets';
           setActiveFolderFilter('', false);
           updateTypesExplorerPanelVisibility();
-          updateProxyVisualizerPanelVisibility();
           updateObjectMapPanelVisibility();
         } else if (isTypesExplorerPath) {
           activeCollectionFilter = 'types_explorer';
