@@ -1,0 +1,14 @@
+{
+  "bounds": {
+    "minX": -16.0,
+    "maxX": 15376.0,
+    "minZ": -16.0,
+    "maxZ": 15376.0
+  },
+  "tileSize": 512,
+  "format": "webp",
+  "minZoom": 0,
+  "maxZoom": 5,
+  "template": "./tiles/z{z}/{x}/{y}.webp",
+  "notes": "Core32 sat pyramid derived from metadata-placed S_*_lco source tiles."
+}

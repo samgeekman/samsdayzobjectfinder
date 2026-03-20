@@ -1725,6 +1725,35 @@
     opacity: 1;
     transform: translate(-50%, 0);
   }
+  .object-map--v2 {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    margin: 0 0 10px;
+  }
+  .object-map--v2 .object-map__header,
+  .object-map--v2 .object-map__note {
+    display: none;
+  }
+  .object-map-v2__frame {
+    position: relative;
+    width: 100%;
+    min-height: min(80vh, 980px);
+    border: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #596050;
+    box-shadow: none;
+  }
+  .object-map-v2__iframe {
+    display: block;
+    width: 100%;
+    min-height: min(80vh, 980px);
+    border: 0;
+    background: #596050;
+  }
   .object-focus__details {
     flex: 1;
     min-width: 220px;
@@ -3356,44 +3385,14 @@
   </div>
 </div>
 
-<div id="objectMapPanel" class="object-map" aria-live="polite">
+<div id="objectMapPanel" class="object-map object-map--v2" aria-live="polite">
   <div class="object-map__header">
     <span class="object-map__title"><span class="object-map__title-icon" aria-hidden="true">📍</span>Object Maps</span>
-    <div class="object-map__toggles">
-      <button id="objectMapToggleChernarus" class="object-map__toggle is-active" type="button" data-object-map="chernarus">Chernarus</button>
-      <button id="objectMapToggleLivonia" class="object-map__toggle" type="button" data-object-map="livonia">Livonia</button>
-      <button id="objectMapAreaSelectToggle" class="object-map__toggle" type="button">Area select</button>
-      <button id="objectMapClearArea" class="object-map__toggle" type="button" disabled>Clear area</button>
-      <details id="objectMapExportAccordion" class="object-map__export-accordion">
-        <summary class="object-map__toggle object-map__export-summary">Export options</summary>
-        <div class="object-map__export-actions">
-          <button id="objectMapExportCurrent" class="object-map__export-action" type="button">Current export (placements JSON)</button>
-          <button id="objectMapCopyArea" class="object-map__export-action" type="button" disabled>Copy area to editor</button>
-          <button id="objectMapDownloadAreaEditor" class="object-map__export-action" type="button" disabled>↓ Download editor JSON</button>
-          <button id="objectMapDownloadAreaMapGroupProto" class="object-map__export-action" type="button" disabled>↓ Download MapGroupProto</button>
-        </div>
-      </details>
-      <div class="object-map__controls">
-        <button class="object-map__control" type="button" data-object-map-control="zoom-out" title="Zoom out">−</button>
-        <button class="object-map__control" type="button" data-object-map-control="zoom-in" title="Zoom in">+</button>
-        <button class="object-map__control" type="button" data-object-map-control="reset" title="Reset view">↺</button>
-      </div>
-    </div>
   </div>
-  <div class="object-map__frame">
-    <svg id="objectMapOverlay" class="object-map__overlay" preserveAspectRatio="none" aria-hidden="true">
-      <g transform="scale(1,-1)">
-        <g id="objectMapBackdropGroup"></g>
-        <g id="objectMapMarkersGroup"></g>
-        <g id="objectMapSelectionGroup"></g>
-      </g>
-    </svg>
-    <div id="objectMapPrompt" class="object-map__prompt">Search or select folders to show on map</div>
-    <div id="objectMapStatus" class="object-map__status"></div>
-    <button id="objectMapCopyCoords" class="object-map__copy-coords" type="button">Copy coordinates</button>
-    <div id="objectMapTooltip" class="object-map__tooltip" aria-hidden="true"></div>
+  <div class="object-map-v2__frame">
+    <iframe id="objectMapV2Frame" class="object-map-v2__iframe" src="about:blank" data-src="/object-map-v2/?embedded=1" title="Object Map V2" loading="lazy"></iframe>
   </div>
-  <div class="object-map__note">Excludes rocks and plants - large object counts may be slow.</div>
+  <div class="object-map__note">Object Map V2 replaces the legacy inline Chernarus map here.</div>
 </div>
 
 <div id="loadingIndicator">
@@ -3971,8 +3970,11 @@
     };
     var setActiveFolderFilter = function(value, shouldDraw) {
       activeFolderFilter = normalizeFilterText(value || '');
+      objectMapExactSearchQuery = '';
+      objectMapSearchMode = '';
       highlightedFolderPath = '';
       renderFolderTree();
+      dispatchObjectMapV2SearchState();
       if (shouldDraw !== false && table) {
         table.draw();
       }
@@ -4079,6 +4081,7 @@
       if (statusMessageEl) {
         statusMessageEl.style.display = 'none';
       }
+      ensureObjectMapV2FrameLoaded();
       syncSidebarTopOffset();
     };
     var syncSidebarTopOffset = function() {
@@ -4112,7 +4115,7 @@
       });
     };
     window.addEventListener('scroll', scheduleSidebarTopOffsetSync, { passive: true });
-    
+
     $tableEl.one('init.dt', showContent);
 
     var table = $tableEl.DataTable({
@@ -4682,6 +4685,7 @@
     var objectMapCopyCoordsEl = document.getElementById('objectMapCopyCoords');
     var objectMapPromptEl = document.getElementById('objectMapPrompt');
     var objectMapTooltipEl = document.getElementById('objectMapTooltip');
+    var objectMapV2FrameEl = document.getElementById('objectMapV2Frame');
     var objectMapToggleChernarusEl = document.getElementById('objectMapToggleChernarus');
     var objectMapToggleLivoniaEl = document.getElementById('objectMapToggleLivonia');
     var objectMapExportAccordionEl = document.getElementById('objectMapExportAccordion');
@@ -4736,6 +4740,10 @@
     var objectMapSelectedCoordsText = '';
     var objectMapRenderToken = 0;
     var objectMapInteractionRefreshTimer = null;
+    var useObjectMapV2 = true;
+    var objectMapV2FrameLoaded = false;
+    var objectMapExactSearchQuery = '';
+    var objectMapSearchMode = '';
     var objectMapState = {
       data: null,
       view: null,
@@ -5484,6 +5492,9 @@
       if (!objectMapPanelEl) return;
       var visible = activeCollectionFilter === 'object_map';
       objectMapPanelEl.classList.toggle('visible', !!visible);
+      if (visible) {
+        ensureObjectMapV2FrameLoaded();
+      }
       if (!visible) {
         if (objectMapInteractionRefreshTimer) {
           clearTimeout(objectMapInteractionRefreshTimer);
@@ -5511,6 +5522,76 @@
         updateObjectMapAreaControls();
       }
     };
+    var ensureObjectMapV2FrameLoaded = function() {
+      if (!objectMapV2FrameEl || objectMapV2FrameLoaded) return;
+      var src = objectMapV2FrameEl.getAttribute('data-src') || '';
+      if (!src) return;
+      objectMapV2FrameEl.setAttribute('src', src);
+      objectMapV2FrameLoaded = true;
+    };
+    var applyObjectMapExactSearch = function(objectName) {
+      var normalized = String(objectName || '').trim();
+      objectMapExactSearchQuery = normalized;
+      objectMapSearchMode = normalized ? 'exact_object' : '';
+      if (folderSidebarSearchEl) {
+        folderSidebarSearchEl.value = normalized;
+      }
+      if (!table) return;
+      table.search('');
+      table.columns().search('');
+      if (normalized) {
+        table.column(2).search('^' + escapeRegex(normalized) + '$', true, false).draw();
+      } else {
+        table.draw();
+      }
+    };
+    var dispatchObjectMapV2SearchState = function() {
+      if (!objectMapV2FrameEl || !objectMapV2FrameLoaded || !objectMapV2FrameEl.contentWindow || !table) return;
+      var searchQuery = objectMapExactSearchQuery || '';
+      var activePathFilter = '';
+      var searchMode = objectMapSearchMode || '';
+      if (!searchQuery && folderSidebarSearchEl) {
+        searchQuery = String(folderSidebarSearchEl.value || '').trim();
+      }
+      if (typeof activeFolderFilter === 'string') {
+        activePathFilter = String(activeFolderFilter || '').trim();
+      }
+      if (!searchQuery && !activePathFilter) {
+        try {
+          objectMapV2FrameEl.contentWindow.postMessage({
+            type: 'object-map-search-state',
+            query: '',
+            pathFilter: '',
+            mode: '',
+            rows: []
+          }, window.location.origin);
+        } catch (error) {}
+        return;
+      }
+      var rowsApi = table.rows({ filter: 'applied' });
+      var rows = rowsApi && typeof rowsApi.data === 'function'
+        ? rowsApi.data().toArray().map(function(row) {
+            return {
+              objectName: row && row.objectName ? String(row.objectName) : '',
+              path: row && row.path ? String(row.path) : ''
+            };
+          })
+        : [];
+      try {
+        objectMapV2FrameEl.contentWindow.postMessage({
+          type: 'object-map-search-state',
+          query: searchQuery,
+          pathFilter: activePathFilter,
+          mode: searchMode,
+          rows: rows
+        }, window.location.origin);
+      } catch (error) {}
+    };
+    if (objectMapV2FrameEl) {
+      objectMapV2FrameEl.addEventListener('load', function() {
+        dispatchObjectMapV2SearchState();
+      });
+    }
     var updateObjectMapToggleButtons = function() {
       if (objectMapToggleChernarusEl) {
         objectMapToggleChernarusEl.classList.toggle('is-active', objectMapActiveMapKey === 'chernarus');
@@ -6361,6 +6442,7 @@
       });
     };
     var renderObjectMapFromTable = function(reuseCachedPlacements) {
+      if (useObjectMapV2) return;
       if (!objectMapPanelEl || !objectMapPanelEl.classList.contains('visible')) return;
       var renderToken = ++objectMapRenderToken;
       var mapKey = objectMapActiveMapKey;
@@ -9596,6 +9678,21 @@
       }).first();
       return matchCell.length ? matchCell : null;
     };
+    window.addEventListener('message', function(event) {
+      if (!event || !event.data || event.origin !== window.location.origin) return;
+      if (event.data.type === 'object-map-focus-object') {
+        var focusObjectName = String(event.data.objectName || '').trim();
+        if (!focusObjectName) return;
+        if (typeof focusByName === 'function') {
+          focusByName(focusObjectName);
+        }
+        return;
+      }
+      if (event.data.type === 'object-map-filter-object') {
+        var filterObjectName = String(event.data.objectName || '').trim();
+        applyObjectMapExactSearch(filterObjectName);
+      }
+    });
     var applyIdListFilter = function(ids) {
       if (!table) return;
       var normalized = (Array.isArray(ids) ? ids : []).map(function(value) {
@@ -9905,9 +10002,13 @@
       renderFolderTree();
       objectMapState.placementsCache = null;
       renderObjectMapFromTable();
-      if (folderSidebarSearchEl && folderSidebarSearchEl.value !== table.search()) {
-        folderSidebarSearchEl.value = table.search();
+      if (folderSidebarSearchEl) {
+        var desiredSearchValue = objectMapExactSearchQuery || table.search();
+        if (folderSidebarSearchEl.value !== desiredSearchValue) {
+          folderSidebarSearchEl.value = desiredSearchValue;
+        }
       }
+      dispatchObjectMapV2SearchState();
       updateSearchShareLinkVisibility();
       scheduleSidebarTopOffsetSync();
     });
@@ -10063,6 +10164,8 @@
         filterConsoleEl.value = 'all';
       }
       if (table) {
+        objectMapExactSearchQuery = '';
+        objectMapSearchMode = '';
         table.search('');
         table.columns().search('');
         table.draw();
@@ -10095,6 +10198,8 @@
         var runSearch = function() {
           folderSidebarSearchDebounceTimer = null;
           if (!table) return;
+          objectMapExactSearchQuery = '';
+          objectMapSearchMode = '';
           var query = String(folderSidebarSearchEl.value || '');
           if (!query.trim() && (activeFolderFilter || activeCollectionFilter)) {
             var keepAppCollection = activeCollectionFilter === 'presets' || activeCollectionFilter === 'types_explorer' || activeCollectionFilter === 'object_map';

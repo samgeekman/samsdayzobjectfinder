@@ -1,0 +1,1731 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Object Map V2</title>
+  <style>
+    :root {
+      --panel: rgba(245,241,232,0.95);
+      --ink: #132028;
+      --border: rgba(19,32,40,0.18);
+      --accent: #cc6b2c;
+      --site-card: #ffffff;
+      --site-panel-text: #132028;
+      --site-panel-border: rgba(19,32,40,0.18);
+      --site-button-bg: #ffffff;
+      --site-button-border: rgba(19,32,40,0.18);
+      --site-button-text: #132028;
+      --site-muted: rgba(19,32,40,0.75);
+      --site-panel-bg: color-mix(in srgb, var(--site-card) 94%, transparent);
+      --site-divider: color-mix(in srgb, var(--site-button-text) 10%, transparent);
+      --site-subtle-bg: color-mix(in srgb, var(--site-button-text) 8%, transparent);
+      --site-subtle-bg-2: color-mix(in srgb, var(--site-button-text) 3%, transparent);
+      --site-button-hover-bg: var(--accent);
+      --site-button-hover-border: var(--accent);
+      --site-button-hover-text: var(--site-button-text);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 14px/1.45 system-ui, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #d5d0c2 0%, #c0b9aa 100%);
+    }
+    .shell {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      min-height: 100vh;
+    }
+    .sidebar {
+      overflow: auto;
+      padding: 18px;
+      border-right: 1px solid var(--border);
+      background: linear-gradient(180deg, #f6f1e4 0%, #e7ddcb 100%);
+    }
+    .sidebar h1 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+    .stat, .control {
+      margin: 10px 0;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--panel);
+    }
+    .control label {
+      display: block;
+      margin: 6px 0;
+    }
+    .hint {
+      font-size: 12px;
+      opacity: 0.82;
+    }
+    .viewer {
+      position: relative;
+      overflow: hidden;
+      background: #596050;
+      cursor: grab;
+    }
+    .viewer.dragging { cursor: grabbing; }
+    .viewer.area-mode { cursor: crosshair; }
+    canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .hud {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      z-index: 3;
+      min-width: 260px;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(246,241,232,0.92);
+      backdrop-filter: blur(8px);
+    }
+    .btn {
+      width: 100%;
+      margin-top: 8px;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #fff;
+      cursor: pointer;
+      text-align: left;
+    }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    code {
+      background: rgba(19,32,40,0.06);
+      border-radius: 4px;
+      padding: 1px 4px;
+    }
+  
+    .shell {
+      display: block;
+      min-height: 100vh;
+      position: relative;
+    }
+    .viewer {
+      min-height: 100vh;
+    }
+    .sidebar {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      z-index: 4;
+      width: min(320px, calc(100vw - 28px));
+      max-height: calc(100vh - 28px);
+      overflow: auto;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: rgba(246,241,232,0.9);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 10px 28px rgba(19,32,40,0.18);
+    }
+    .sidebar h1,
+    .sidebar > p {
+      display: none;
+    }
+    .sidebar .control:first-of-type,
+    .sidebar .stat:first-of-type {
+      margin-top: 0;
+    }
+    @media (max-width: 900px) {
+      .sidebar {
+        width: min(280px, calc(100vw - 28px));
+        max-height: min(58vh, calc(100vh - 28px));
+      }
+      .hud {
+        right: 10px;
+        top: 10px;
+      }
+    }
+    .sidebar,
+    .hud {
+      display: none !important;
+    }
+    .map-topbar {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      right: 14px;
+      z-index: 5;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      pointer-events: none;
+    }
+    .map-topbar > * {
+      pointer-events: auto;
+    }
+    .map-panel {
+      border: 1px solid var(--site-panel-border);
+      border-radius: 3px;
+      background: var(--site-panel-bg);
+      color: var(--site-panel-text);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    }
+    .map-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0;
+      background: transparent;
+      backdrop-filter: none;
+      box-shadow: none;
+    }
+    .map-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 28px;
+      height: 28px;
+      padding: 4px 8px;
+      border: 1px solid var(--site-button-border) !important;
+      border-radius: var(--site-button-radius, 3px) !important;
+      background: var(--site-button-bg) !important;
+      color: var(--site-button-text) !important;
+      font: inherit;
+      font-weight: 600;
+      font-size: 0.7rem;
+      line-height: 1.2;
+      box-shadow: none !important;
+      text-decoration: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: transform 0.12s ease, box-shadow 0.18s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+    .map-btn:hover:not(:disabled),
+    .map-btn:focus-visible:not(:disabled) {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06) !important;
+      background-color: var(--site-button-hover-bg) !important;
+      border-color: var(--site-button-hover-border) !important;
+      color: var(--site-button-hover-text) !important;
+      outline: none;
+    }
+    .map-btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+    .map-btn.is-active,
+    .map-btn.is-active:hover {
+      background-color: var(--site-button-hover-bg) !important;
+      border-color: var(--site-button-hover-border) !important;
+      color: var(--site-button-hover-text) !important;
+    }
+    .map-btn.is-hidden {
+      display: none;
+    }
+    .hover-card {
+      position: relative;
+      min-width: 288px;
+      max-width: min(342px, calc(100vw - 28px));
+      padding: 5px 7px;
+      color: var(--site-button-text);
+    }
+    .hover-card__close {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      border: 1px solid var(--site-button-border) !important;
+      border-radius: var(--site-button-radius, 3px) !important;
+      background: var(--site-button-bg) !important;
+      color: var(--site-button-text) !important;
+      font: inherit;
+      font-size: 12px;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .hover-card__close.is-visible {
+      display: inline-flex;
+    }
+    .hover-card__close:hover,
+    .hover-card__close:focus-visible {
+      background-color: var(--site-button-hover-bg) !important;
+      border-color: var(--site-button-hover-border) !important;
+      color: var(--site-button-hover-text) !important;
+      outline: none;
+    }
+    .hover-card__top {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      align-items: stretch;
+    }
+    .hover-card__eyebrow {
+      display: none;
+    }
+    .hover-card__name {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.2;
+      min-height: 0;
+    }
+    .hover-card__name-btn {
+      display: inline;
+      padding: 0;
+      border: 0;
+      background: none;
+      color: inherit;
+      font: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      text-align: left;
+      cursor: pointer;
+    }
+    .hover-card__name-btn:hover,
+    .hover-card__name-btn:focus-visible {
+      color: var(--accent);
+      text-decoration: underline;
+      outline: none;
+    }
+    .hover-card__name-btn:disabled {
+      cursor: default;
+      text-decoration: none;
+      color: inherit;
+      opacity: 1;
+    }
+    .hover-card__meta,
+    .hover-card__status {
+      font-size: 12px;
+      color: var(--site-muted);
+    }
+    .hover-card__meta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 28px;
+      height: 28px;
+      padding: 4px 8px;
+      border: 1px solid var(--site-button-border) !important;
+      border-radius: var(--site-button-radius, 3px) !important;
+      background: var(--site-button-bg) !important;
+      color: var(--site-button-text) !important;
+      font: inherit;
+      font-size: 0.7rem;
+      font-weight: 600;
+      line-height: 1.2;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: none !important;
+      transition: transform 0.12s ease, box-shadow 0.18s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+    .hover-card__meta-btn:disabled {
+      cursor: default;
+      opacity: 0.55;
+    }
+    .hover-card__meta-btn:hover,
+    .hover-card__meta-btn:focus-visible {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06) !important;
+      background-color: var(--site-button-hover-bg) !important;
+      border-color: var(--site-button-hover-border) !important;
+      color: var(--site-button-hover-text) !important;
+      outline: none;
+    }
+    .hover-card__name-btn.is-active {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .hover-card__thumb {
+      width: 100%;
+      height: 135px;
+      border: 0;
+      border-radius: 0;
+      background: var(--site-subtle-bg);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hover-card__thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      background: var(--site-subtle-bg-2);
+    }
+    .hover-card__thumb.is-empty::before {
+      content: "";
+    }
+    .hover-card__thumb.is-empty {
+      display: none;
+    }
+    .map-controls {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 7px;
+      margin-top: 5px;
+      padding-top: 5px;
+      border-top: 1px solid var(--site-divider);
+      flex-wrap: wrap;
+    }
+    .map-controls .hover-card__meta-btn {
+      width: auto;
+      flex: 0 0 auto;
+    }
+    .hover-card.is-clickable {
+      cursor: pointer;
+    }
+    @media (max-width: 900px) {
+      .map-topbar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .hover-card {
+        min-width: 0;
+        max-width: none;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <h1>Object Map V2</h1>
+      <p>Object Map V2 is area-select first. Land_ objects preload for context, mixed Land_ + p3d objects load on demand for the selected area, and export uses the Editor-safe placement format.</p>
+      <div class="stat"><strong>Core tiles:</strong> <span id="tile-count">loading</span></div>
+      <div class="stat"><strong>Pack rows:</strong> <span id="pack-count">loading</span></div>
+      <div class="stat"><strong>Unique models:</strong> <span id="model-count">loading</span></div>
+      <div class="stat"><strong>Loaded rows:</strong> <span id="loaded-count">0</span></div>
+      <div class="stat"><strong>Hovered:</strong> <span id="hover-readout">none</span></div>
+
+      <div class="control">
+        <strong>Layers</strong>
+        <label><input type="checkbox" id="show-tiles" checked> Sat tiles</label>
+        <label><input type="checkbox" id="show-centers"> Object centers</label>
+        <label><input type="checkbox" id="show-footprints" checked> Footprints</label>
+        <label><input type="checkbox" id="show-labels" checked> Settlement labels</label>
+      </div>
+
+      <div class="control">
+        <strong>Area Load</strong>
+        <label><input type="checkbox" id="area-mode"> Draw area rectangle</label>
+        <div><strong>Area:</strong> <span id="area-readout">none</span></div>
+        <div><strong>Chunk estimate:</strong> <span id="chunk-estimate">0</span></div>
+        <button class="btn" id="load-area-btn" disabled>Load Objects In Selected Area</button>
+        <button class="btn" id="clear-area-btn" disabled>Clear Area / Loaded Objects</button>
+        <div class="hint">Objects only render after you load a selected area.</div>
+      </div>
+
+      <div class="control">
+        <strong>Export</strong>
+        <button class="btn" id="export-btn" disabled>Export Loaded Area To DayZ Editor JSON</button>
+        <div class="hint">Export uses corrected DayZ Editor orientation order and resolves metadata via the shared model table.</div>
+      </div>
+    </aside>
+
+    <main class="viewer" id="viewer">
+      <div class="map-topbar">
+        <div class="map-panel map-actions">
+          <button class="map-btn" id="area-mode-btn" type="button">Area Select</button>
+          <button class="map-btn is-hidden" id="copy-area-btn" type="button">Copy to Editor</button>
+          <button class="map-btn is-hidden" id="download-area-btn" type="button">Download JSON</button>
+        </div>
+        <div class="map-panel hover-card" id="hover-card">
+          <button class="hover-card__close" id="hover-close-btn" type="button" aria-label="Clear selected object">×</button>
+          <div class="hover-card__top">
+            <div>
+              <div class="hover-card__eyebrow">Hovered Object</div>
+              <div class="hover-card__name"><button class="hover-card__name-btn" id="hover-name" type="button" disabled>Hover an object</button></div>
+              <div class="hover-card__status" id="status-readout"></div>
+            </div>
+            <div class="hover-card__thumb is-empty" id="hover-thumb">
+              <img id="hover-thumb-img" alt="" hidden>
+            </div>
+          </div>
+          <div class="map-controls">
+            <button class="hover-card__meta-btn" id="hover-meta" type="button" disabled>Show 0 on map</button>
+            <button class="map-btn" id="toggle-labels-btn" type="button">Hide Labels</button>
+            <button class="map-btn" id="reset-view-btn" type="button">Reset Camera</button>
+          </div>
+        </div>
+      </div>
+      <canvas id="tile-layer"></canvas>
+      <canvas id="overlay-layer"></canvas>
+      <canvas id="selection-layer"></canvas>
+    </main>
+  </div>
+
+  <script>
+    const tileManifestUrl = "../data/object-map-v2/tile-pyramid/manifest.json";
+    const rawTileManifestUrl = null;
+    const tileManifestBaseUrl = new URL(tileManifestUrl, window.location.href);
+    tileManifestBaseUrl.pathname = tileManifestBaseUrl.pathname.replace(/[^/]+$/, "");
+    const rawTileManifestBaseUrl = null;
+    const objectManifestUrl = "../data/object-map-v2/object_pack/manifest.json";
+    const landManifestUrl = "../data/object-map-v2/land_only_pack/manifest.json";
+    const objectManifestBaseUrl = new URL(objectManifestUrl, window.location.href);
+    objectManifestBaseUrl.pathname = objectManifestBaseUrl.pathname.replace(/[^/]+$/, "");
+    const landManifestBaseUrl = new URL(landManifestUrl, window.location.href);
+    landManifestBaseUrl.pathname = landManifestBaseUrl.pathname.replace(/[^/]+$/, "");
+    const locationsUrl = "../data/object-map-v2/locations.json";
+
+    const P = {
+      id: 0,
+      modelId: 1,
+      x: 2,
+      y: 3,
+      z: 4,
+      yaw: 5,
+      pitch: 6,
+      roll: 7,
+      sourceKind: 8,
+    };
+
+    const M = {
+      id: 0,
+      type: 1,
+      model: 2,
+      shapePath: 3,
+      sourceKind: 4,
+      bboxMinX: 5,
+      bboxMinZ: 6,
+      bboxMaxX: 7,
+      bboxMaxZ: 8,
+      bboxWidth: 9,
+      bboxDepth: 10,
+      bboxSource: 11,
+      image: 12,
+      label: 13,
+      count: 14,
+    };
+
+    const viewer = document.getElementById("viewer");
+    const tileCanvas = document.getElementById("tile-layer");
+    const overlayCanvas = document.getElementById("overlay-layer");
+    const selectionCanvas = document.getElementById("selection-layer");
+    const tileCtx = tileCanvas.getContext("2d");
+    const overlayCtx = overlayCanvas.getContext("2d");
+    const selectionCtx = selectionCanvas.getContext("2d");
+
+    const tileCountEl = document.getElementById("tile-count");
+    const packCountEl = document.getElementById("pack-count");
+    const modelCountEl = document.getElementById("model-count");
+    const loadedCountEl = document.getElementById("loaded-count");
+    const hoverReadout = document.getElementById("hover-readout");
+    const areaReadout = document.getElementById("area-readout");
+    const chunkEstimateEl = document.getElementById("chunk-estimate");
+    const statusReadout = document.getElementById("status-readout");
+    const exportBtn = document.getElementById("export-btn");
+    const loadAreaBtn = document.getElementById("load-area-btn");
+    const clearAreaBtn = document.getElementById("clear-area-btn");
+    const areaMode = document.getElementById("area-mode");
+    const showTiles = document.getElementById("show-tiles");
+    const showCenters = document.getElementById("show-centers");
+    const showFootprints = document.getElementById("show-footprints");
+    const showLabels = document.getElementById("show-labels");
+    const areaModeBtn = document.getElementById("area-mode-btn");
+    const copyAreaBtn = document.getElementById("copy-area-btn");
+    const downloadAreaBtn = document.getElementById("download-area-btn");
+    const mapTopbarEl = document.querySelector(".map-topbar");
+    const hoverCardEl = document.getElementById("hover-card");
+    const hoverNameEl = document.getElementById("hover-name");
+    const hoverMetaEl = document.getElementById("hover-meta");
+    const hoverThumbEl = document.getElementById("hover-thumb");
+    const hoverThumbImgEl = document.getElementById("hover-thumb-img");
+    const hoverCloseBtn = document.getElementById("hover-close-btn");
+    const resetViewBtn = document.getElementById("reset-view-btn");
+    const toggleLabelsBtn = document.getElementById("toggle-labels-btn");
+
+    areaMode.checked = false;
+
+    let bounds = null;
+    let satPyramid = null;
+    let rawTileManifest = null;
+    let locations = [];
+    let objectManifest = null;
+    let landManifest = null;
+    let models = [];
+    let landModels = [];
+    let scale = 0.06;
+    let offsetX = 0;
+    let offsetY = 0;
+    let panStart = null;
+    let areaStart = null;
+    let areaRect = null;
+    let areaWorld = null;
+    let hoverPlacement = null;
+    let pinnedPlacement = null;
+    let searchQuery = "";
+    let searchPathFilter = "";
+    let searchMode = "";
+    let searchModelIds = new Set();
+    let searchLandModelIds = new Set();
+    let loadedPlacements = [];
+    let startupLandPlacements = [];
+    let startupLandGrid = new Map();
+    let renderQueued = false;
+    let isAreaMode = false;
+    let pointerDownPoint = null;
+    let pointerDownOnUi = false;
+
+    const STARTUP_GRID_SIZE = 480;
+    const STARTUP_POINT_SCALE = 0.05;
+    const STARTUP_POINT_FADE_OUT_SCALE = 0.24;
+    const STARTUP_FOOTPRINT_SCALE = 0.16;
+    const LOADED_FOOTPRINT_SCALE = 0.12;
+    const MIN_SCALE = STARTUP_POINT_SCALE;
+    const MAX_SCALE = 8;
+
+    const tileImages = new Map();
+    const chunkCache = new Map();
+    let resizeObserver = null;
+
+    function worldToScreenX(x) {
+      return offsetX + (x - bounds.minX) * scale;
+    }
+
+    function worldToScreenY(z) {
+      return offsetY + (bounds.maxZ - z) * scale;
+    }
+
+    function screenToWorldX(px) {
+      return bounds.minX + (px - offsetX) / scale;
+    }
+
+    function screenToWorldZ(py) {
+      return bounds.maxZ - (py - offsetY) / scale;
+    }
+
+    function eventPoint(event) {
+      const rect = viewer.getBoundingClientRect();
+      return { x: event.clientX - rect.left, y: event.clientY - rect.top };
+    }
+
+    function scheduleRender() {
+      if (renderQueued) return;
+      renderQueued = true;
+      requestAnimationFrame(() => {
+        renderQueued = false;
+        render();
+      });
+    }
+
+    function scaleToSliderValue(value) {
+      const t = (Math.log(value) - Math.log(MIN_SCALE)) / (Math.log(MAX_SCALE) - Math.log(MIN_SCALE));
+      return Math.round(Math.max(0, Math.min(100, t * 100)));
+    }
+
+    function sliderValueToScale(value) {
+      const t = Math.max(0, Math.min(1, Number(value) / 100));
+      return Math.exp(Math.log(MIN_SCALE) + t * (Math.log(MAX_SCALE) - Math.log(MIN_SCALE)));
+    }
+
+    function placementGridKey(x, z) {
+      return `${Math.floor(x / STARTUP_GRID_SIZE)},${Math.floor(z / STARTUP_GRID_SIZE)}`;
+    }
+
+    function buildStartupLandGrid() {
+      startupLandGrid = new Map();
+      for (const placement of startupLandPlacements) {
+        const key = placementGridKey(placement[P.x], placement[P.z]);
+        let bucket = startupLandGrid.get(key);
+        if (!bucket) {
+          bucket = [];
+          startupLandGrid.set(key, bucket);
+        }
+        bucket.push(placement);
+      }
+    }
+
+    function visibleWorldBounds(paddingPx = 0) {
+      const viewW = overlayCanvas.width / devicePixelRatio;
+      const viewH = overlayCanvas.height / devicePixelRatio;
+      return {
+        minX: screenToWorldX(-paddingPx),
+        maxX: screenToWorldX(viewW + paddingPx),
+        maxZ: screenToWorldZ(-paddingPx),
+        minZ: screenToWorldZ(viewH + paddingPx),
+      };
+    }
+
+    function placementsInBounds(index, boundsWorld) {
+      const minGX = Math.floor(boundsWorld.minX / STARTUP_GRID_SIZE);
+      const maxGX = Math.floor(boundsWorld.maxX / STARTUP_GRID_SIZE);
+      const minGZ = Math.floor(boundsWorld.minZ / STARTUP_GRID_SIZE);
+      const maxGZ = Math.floor(boundsWorld.maxZ / STARTUP_GRID_SIZE);
+      const results = [];
+      for (let gx = minGX; gx <= maxGX; gx += 1) {
+        for (let gz = minGZ; gz <= maxGZ; gz += 1) {
+          const bucket = index.get(`${gx},${gz}`);
+          if (!bucket) continue;
+          for (const placement of bucket) {
+            if (
+              placement[P.x] >= boundsWorld.minX &&
+              placement[P.x] <= boundsWorld.maxX &&
+              placement[P.z] >= boundsWorld.minZ &&
+              placement[P.z] <= boundsWorld.maxZ
+            ) {
+              results.push(placement);
+            }
+          }
+        }
+      }
+      return results;
+    }
+
+    function fitViewToBounds() {
+      if (!bounds) return;
+      const rect = viewer.getBoundingClientRect();
+      const worldWidth = bounds.maxX - bounds.minX;
+      const worldHeight = bounds.maxZ - bounds.minZ;
+      scale = Math.max(
+        MIN_SCALE,
+        Math.min(rect.width / worldWidth, rect.height / worldHeight) * 1.02
+      );
+      offsetX = (rect.width - worldWidth * scale) / 2;
+      offsetY = (rect.height - worldHeight * scale) / 2;
+    }
+
+    function resizeCanvas(preserveView = true) {
+      const rect = viewer.getBoundingClientRect();
+      let centerWorldX = null;
+      let centerWorldZ = null;
+      if (bounds && preserveView) {
+        centerWorldX = screenToWorldX((overlayCanvas.width / devicePixelRatio) / 2);
+        centerWorldZ = screenToWorldZ((overlayCanvas.height / devicePixelRatio) / 2);
+      }
+      for (const canvas of [tileCanvas, overlayCanvas, selectionCanvas]) {
+        canvas.width = rect.width * devicePixelRatio;
+        canvas.height = rect.height * devicePixelRatio;
+        canvas.style.width = rect.width + "px";
+        canvas.style.height = rect.height + "px";
+      }
+      tileCtx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+      overlayCtx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+      selectionCtx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+      if (bounds) {
+        if (preserveView && centerWorldX != null && centerWorldZ != null) {
+          offsetX = rect.width / 2 - (centerWorldX - bounds.minX) * scale;
+          offsetY = rect.height / 2 - (bounds.maxZ - centerWorldZ) * scale;
+        } else {
+          fitViewToBounds();
+        }
+      }
+      render();
+    }
+
+    async function loadJson(url) {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`Failed to load ${url}`);
+      return response.json();
+    }
+
+    function normalizeSearchKey(value) {
+      return String(value || "").trim().toLowerCase();
+    }
+
+    function basenameForSearch(value) {
+      const normalized = normalizeSearchKey(value).replace(/\\/g, "/");
+      if (!normalized) return "";
+      const parts = normalized.split("/");
+      return parts[parts.length - 1] || "";
+    }
+
+    function dirnameForSearch(value) {
+      const normalized = normalizeSearchKey(value).replace(/\\/g, "/");
+      if (!normalized || normalized.indexOf("/") === -1) return "";
+      return normalized.replace(/\/[^/]*$/, "");
+    }
+
+    function modelSearchKeys(model) {
+      const keys = new Set();
+      [
+        normalizeSearchKey(model?.[M.type]),
+        normalizeSearchKey(model?.[M.label]),
+        normalizeSearchKey(model?.[M.shapePath]),
+        normalizeSearchKey(model?.[M.model]),
+        basenameForSearch(model?.[M.shapePath]),
+        basenameForSearch(model?.[M.model]),
+        dirnameForSearch(model?.[M.shapePath]),
+        dirnameForSearch(model?.[M.model]),
+      ].forEach((value) => {
+        if (value) keys.add(value);
+      });
+      return keys;
+    }
+
+    function refreshSearchMatches(rows, query, pathFilter, mode) {
+      searchQuery = String(query || "").trim();
+      searchPathFilter = String(pathFilter || "").trim();
+      searchMode = String(mode || "").trim();
+      searchModelIds = new Set();
+      searchLandModelIds = new Set();
+      if (!searchQuery && !searchPathFilter) {
+        scheduleRender();
+        return;
+      }
+      const names = new Set();
+      const paths = new Set();
+      if (searchMode === "exact_object" && searchQuery) {
+        names.add(normalizeSearchKey(searchQuery));
+      } else {
+        if (!Array.isArray(rows) || !rows.length) {
+          scheduleRender();
+          return;
+        }
+        rows.forEach((row) => {
+          const objectName = normalizeSearchKey(row?.objectName);
+          const path = normalizeSearchKey(row?.path);
+          if (objectName) names.add(objectName);
+          if (path && path !== "-") paths.add(path);
+        });
+      }
+      landModels.forEach((model, index) => {
+        const keys = modelSearchKeys(model);
+        for (const key of keys) {
+          if (names.has(key) || paths.has(key)) {
+            searchLandModelIds.add(index);
+            break;
+          }
+        }
+      });
+      models.forEach((model, index) => {
+        const keys = modelSearchKeys(model);
+        for (const key of keys) {
+          if (names.has(key) || paths.has(key)) {
+            searchModelIds.add(index);
+            break;
+          }
+        }
+      });
+      scheduleRender();
+    }
+
+    function getModel(modelId) {
+      return models[modelId] || null;
+    }
+
+    function getLandModel(modelId) {
+      return landModels[modelId] || null;
+    }
+
+    function getPlacementModel(placement) {
+      return placement && placement._modelTable === "land"
+        ? getLandModel(placement[P.modelId])
+        : getModel(placement[P.modelId]);
+    }
+
+    function activePlacement() {
+      return pinnedPlacement || hoverPlacement;
+    }
+
+    function setHoverThumb(src) {
+      if (!src) {
+        hoverThumbEl.classList.add("is-empty");
+        hoverThumbImgEl.hidden = true;
+        hoverThumbImgEl.removeAttribute("src");
+        return;
+      }
+      hoverThumbEl.classList.remove("is-empty");
+      hoverThumbImgEl.hidden = false;
+      hoverThumbImgEl.src = "/" + String(src).replace(/^\/+/, "");
+    }
+
+    function updateHoverCard() {
+      const placement = activePlacement();
+      hoverCardEl.classList.toggle("is-clickable", !!placement);
+      hoverNameEl.disabled = !placement;
+      hoverMetaEl.disabled = !placement;
+      hoverCloseBtn.classList.toggle("is-visible", !!pinnedPlacement);
+      if (!placement) {
+        hoverNameEl.textContent = "Hover an object";
+        hoverNameEl.classList.remove("is-active");
+        hoverMetaEl.textContent = "Show 0 on map";
+        hoverCardEl.classList.remove("is-clickable");
+        setHoverThumb("");
+        return;
+      }
+      const model = getPlacementModel(placement);
+      const name = model?.[M.label] || model?.[M.type] || model?.[M.shapePath] || "unknown";
+      const count = model?.[M.count];
+      const countLabel = typeof count === "number" ? count.toLocaleString() : "0";
+      hoverNameEl.textContent = name;
+      hoverNameEl.classList.add("is-active");
+      hoverMetaEl.textContent = isActivePlacementFiltered()
+        ? `Hide ${countLabel} on map`
+        : `Show ${countLabel} on map`;
+      setHoverThumb(model?.[M.image] || "");
+    }
+
+    function syncThemeFromParent() {
+      try {
+        if (!window.parent || window.parent === window || !window.parent.document) return;
+        const parentDoc = window.parent.document;
+        const parentStyles = window.parent.getComputedStyle(parentDoc.documentElement);
+        const parentCardEl = parentDoc.querySelector("#dayzObjects_wrapper, .object-focus, .folder-sidebar");
+        const parentButtonEl = parentDoc.querySelector(".pill-button, .folder-sidebar__clear, .row-detail__action, button");
+        const cardStyles = parentCardEl ? window.parent.getComputedStyle(parentCardEl) : null;
+        const buttonStyles = parentButtonEl ? window.parent.getComputedStyle(parentButtonEl) : null;
+        const card = parentStyles.getPropertyValue("--card").trim();
+        const border = parentStyles.getPropertyValue("--border").trim();
+        const text = parentStyles.getPropertyValue("--text").trim();
+        const accent = parentStyles.getPropertyValue("--accent").trim();
+        const bgSoft = parentStyles.getPropertyValue("--bg-soft").trim();
+        const shadowSoft = parentStyles.getPropertyValue("--shadow-soft").trim();
+        const resolvedCardBg = (cardStyles && cardStyles.backgroundColor) || card;
+        const resolvedCardBorder = (cardStyles && cardStyles.borderColor) || border;
+        const resolvedCardText = (cardStyles && cardStyles.color) || text;
+        const resolvedButtonBg = (buttonStyles && buttonStyles.backgroundColor) || resolvedCardBg;
+        const resolvedButtonBorder = (buttonStyles && buttonStyles.borderColor) || resolvedCardBorder;
+        const resolvedButtonText = (buttonStyles && buttonStyles.color) || resolvedCardText;
+        const resolvedButtonRadius = buttonStyles ? buttonStyles.borderRadius : "3px";
+        document.documentElement.classList.toggle("dark-mode", parentDoc.documentElement.classList.contains("dark-mode"));
+        if (resolvedCardBg) {
+          document.documentElement.style.setProperty("--site-card", resolvedCardBg);
+          document.documentElement.style.setProperty("--site-panel-bg", resolvedCardBg);
+        }
+        if (resolvedCardText) {
+          document.documentElement.style.setProperty("--site-panel-text", resolvedCardText);
+          document.body.style.color = resolvedCardText;
+        }
+        if (resolvedCardBorder) {
+          document.documentElement.style.setProperty("--site-panel-border", resolvedCardBorder);
+          document.documentElement.style.setProperty("--site-divider", resolvedCardBorder);
+        }
+        if (resolvedCardText) {
+          document.documentElement.style.setProperty("--site-muted", resolvedCardText);
+          document.documentElement.style.setProperty("--site-subtle-bg", `color-mix(in srgb, ${resolvedCardText} 8%, transparent)`);
+          document.documentElement.style.setProperty("--site-subtle-bg-2", `color-mix(in srgb, ${resolvedCardText} 3%, transparent)`);
+        }
+        if (resolvedButtonBg) document.documentElement.style.setProperty("--site-button-bg", resolvedButtonBg);
+        if (resolvedButtonBorder) document.documentElement.style.setProperty("--site-button-border", resolvedButtonBorder);
+        if (resolvedButtonText) {
+          document.documentElement.style.setProperty("--site-button-text", resolvedButtonText);
+          document.documentElement.style.setProperty("--site-button-hover-text", resolvedButtonText);
+        }
+        if (resolvedButtonRadius) document.documentElement.style.setProperty("--site-button-radius", resolvedButtonRadius);
+        if (accent) document.documentElement.style.setProperty("--accent", accent);
+        if (bgSoft) document.body.style.background = bgSoft;
+        if (shadowSoft) {
+          document.querySelectorAll(".map-panel").forEach((panel) => {
+            panel.style.boxShadow = shadowSoft;
+          });
+        }
+      } catch (error) {
+      }
+    }
+
+    function focusHoveredObjectInParent() {
+      const placement = activePlacement();
+      if (!placement) return;
+      const model = getPlacementModel(placement);
+      const objectName = model?.[M.type] || model?.[M.label] || model?.[M.shapePath] || "";
+      if (!objectName) return;
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({
+          type: "object-map-focus-object",
+          objectName
+        }, window.location.origin);
+      }
+    }
+
+    function filterHoveredObjectInParent() {
+      const placement = activePlacement();
+      if (!placement) return;
+      const model = getPlacementModel(placement);
+      const objectName = model?.[M.type] || model?.[M.label] || model?.[M.shapePath] || "";
+      if (objectName) {
+        refreshSearchMatches([], objectName, "", "exact_object");
+      }
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({
+          type: "object-map-filter-object",
+          objectName
+        }, window.location.origin);
+      }
+    }
+
+    function isActivePlacementFiltered() {
+      const placement = activePlacement();
+      if (!placement || !searchQuery) return false;
+      const model = getPlacementModel(placement);
+      const objectName = normalizeSearchKey(model?.[M.type] || model?.[M.label] || model?.[M.shapePath] || "");
+      return !!objectName && objectName === normalizeSearchKey(searchQuery);
+    }
+
+    function clearParentObjectFilter() {
+      refreshSearchMatches([], "", "", "");
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({
+          type: "object-map-filter-object",
+          objectName: ""
+        }, window.location.origin);
+      }
+    }
+
+    async function copyTextToClipboard(text) {
+      const value = String(text || "");
+      if (!value) return false;
+      try {
+        if (navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
+          await navigator.clipboard.writeText(value);
+          return true;
+        }
+      } catch (error) {
+      }
+      try {
+        const textarea = document.createElement("textarea");
+        textarea.value = value;
+        textarea.setAttribute("readonly", "");
+        textarea.style.position = "fixed";
+        textarea.style.opacity = "0";
+        textarea.style.pointerEvents = "none";
+        textarea.style.left = "-9999px";
+        document.body.appendChild(textarea);
+        textarea.focus();
+        textarea.select();
+        textarea.setSelectionRange(0, textarea.value.length);
+        const ok = document.execCommand("copy");
+        document.body.removeChild(textarea);
+        return !!ok;
+      } catch (error) {
+        return false;
+      }
+    }
+
+    function objectFootprint(placement, modelTable) {
+      const model = modelTable[placement[P.modelId]] || null;
+      if (!model) return null;
+      const minX = model[M.bboxMinX];
+      const minZ = model[M.bboxMinZ];
+      const maxX = model[M.bboxMaxX];
+      const maxZ = model[M.bboxMaxZ];
+      if (minX == null || minZ == null || maxX == null || maxZ == null) return null;
+      const yaw = (placement[P.yaw] || 0) * Math.PI / 180;
+      const cos = Math.cos(yaw);
+      const sin = Math.sin(yaw);
+      const locals = [
+        [minX, minZ],
+        [maxX, minZ],
+        [maxX, maxZ],
+        [minX, maxZ],
+      ];
+      return locals.map(([lx, lz]) => {
+        const wx = placement[P.x] + lx * cos + lz * sin;
+        const wz = placement[P.z] - lx * sin + lz * cos;
+        return [worldToScreenX(wx), worldToScreenY(wz)];
+      });
+    }
+
+    function zoomFade(scaleValue, low, high, minAlpha, maxAlpha) {
+      if (scaleValue <= low) return minAlpha;
+      if (scaleValue >= high) return maxAlpha;
+      const t = (scaleValue - low) / (high - low);
+      return minAlpha + (maxAlpha - minAlpha) * t;
+    }
+
+    function allVisiblePlacements() {
+      return startupLandPlacements.concat(loadedPlacements);
+    }
+
+    function renderRawTiles() {
+      if (!rawTileManifest?.tiles?.length) return false;
+      const visible = {
+        minX: screenToWorldX(0),
+        maxX: screenToWorldX(tileCanvas.width / devicePixelRatio),
+        maxZ: screenToWorldZ(0),
+        minZ: screenToWorldZ(tileCanvas.height / devicePixelRatio),
+      };
+      let drew = false;
+      for (const tile of rawTileManifest.tiles) {
+        if (tile.worldMaxX < visible.minX || tile.worldMinX > visible.maxX || tile.worldMaxZ < visible.minZ || tile.worldMinZ > visible.maxZ) continue;
+        const src = new URL(tile.src, rawTileManifestBaseUrl).toString();
+        let image = tileImages.get(src);
+        if (!image) {
+          image = new Image();
+          image.src = src;
+          image.onload = scheduleRender;
+          tileImages.set(src, image);
+        }
+        if (!image.complete || !image.naturalWidth) continue;
+        const left = worldToScreenX(tile.worldMinX);
+        const top = worldToScreenY(tile.worldMaxZ);
+        const width = (tile.worldMaxX - tile.worldMinX) * scale;
+        const height = (tile.worldMaxZ - tile.worldMinZ) * scale;
+        tileCtx.drawImage(image, left, top, width, height);
+        drew = true;
+      }
+      return drew;
+    }
+
+    function renderPyramidTiles() {
+      tileCtx.clearRect(0, 0, tileCanvas.width, tileCanvas.height);
+      if (!showTiles.checked || !satPyramid) return;
+      const viewW = tileCanvas.width / devicePixelRatio;
+      const viewH = tileCanvas.height / devicePixelRatio;
+      const worldWidth = bounds.maxX - bounds.minX;
+      const pxPerMeterAtMax = (512 * Math.pow(2, satPyramid.maxZoom)) / worldWidth;
+      const desiredRatio = Math.max(scale / pxPerMeterAtMax, 1 / Math.pow(2, satPyramid.maxZoom));
+      const relative = Math.ceil(Math.log2(desiredRatio));
+      const z = Math.max(satPyramid.minZoom, Math.min(satPyramid.maxZoom, satPyramid.maxZoom + relative));
+      const grid = Math.pow(2, z);
+      const tileWorldW = (bounds.maxX - bounds.minX) / grid;
+      const tileWorldH = (bounds.maxZ - bounds.minZ) / grid;
+      const minWX = screenToWorldX(0);
+      const maxWX = screenToWorldX(viewW);
+      const maxWZ = screenToWorldZ(0);
+      const minWZ = screenToWorldZ(viewH);
+      const minTX = Math.max(0, Math.floor((minWX - bounds.minX) / tileWorldW));
+      const maxTX = Math.min(grid - 1, Math.floor((maxWX - bounds.minX) / tileWorldW));
+      const minTY = Math.max(0, Math.floor((bounds.maxZ - maxWZ) / tileWorldH));
+      const maxTY = Math.min(grid - 1, Math.floor((bounds.maxZ - minWZ) / tileWorldH));
+      for (let tx = minTX; tx <= maxTX; tx += 1) {
+        for (let ty = minTY; ty <= maxTY; ty += 1) {
+          const worldMinX = bounds.minX + tx * tileWorldW;
+          const worldMaxX = worldMinX + tileWorldW;
+          const worldMaxZ = bounds.maxZ - ty * tileWorldH;
+          const worldMinZ = worldMaxZ - tileWorldH;
+          const left = worldToScreenX(worldMinX);
+          const top = worldToScreenY(worldMaxZ);
+          const width = (worldMaxX - worldMinX) * scale;
+          const height = (worldMaxZ - worldMinZ) * scale;
+          const src = new URL(
+            satPyramid.template
+              .replace("{z}", z)
+              .replace("{x}", tx)
+              .replace("{y}", ty),
+            tileManifestBaseUrl
+          ).toString();
+          let image = tileImages.get(src);
+          if (!image) {
+            image = new Image();
+            image.src = src;
+            image.onload = scheduleRender;
+            tileImages.set(src, image);
+          }
+          if (image.complete && image.naturalWidth) {
+            tileCtx.drawImage(image, left, top, width, height);
+          } else {
+            for (let fallbackZ = z - 1; fallbackZ >= satPyramid.minZoom; fallbackZ -= 1) {
+              const divisor = 2 ** (z - fallbackZ);
+              const fallbackX = Math.floor(tx / divisor);
+              const fallbackY = Math.floor(ty / divisor);
+              const fallbackSrc = new URL(
+                satPyramid.template
+                  .replace("{z}", fallbackZ)
+                  .replace("{x}", fallbackX)
+                  .replace("{y}", fallbackY),
+                tileManifestBaseUrl
+              ).toString();
+              let fallbackImage = tileImages.get(fallbackSrc);
+              if (!fallbackImage) {
+                fallbackImage = new Image();
+                fallbackImage.src = fallbackSrc;
+                fallbackImage.onload = scheduleRender;
+                tileImages.set(fallbackSrc, fallbackImage);
+              }
+              if (!fallbackImage.complete || !fallbackImage.naturalWidth) continue;
+              const tileSpan = 2 ** (z - fallbackZ);
+              const subX = tx % tileSpan;
+              const subY = ty % tileSpan;
+              const srcTileW = fallbackImage.naturalWidth / tileSpan;
+              const srcTileH = fallbackImage.naturalHeight / tileSpan;
+              tileCtx.drawImage(
+                fallbackImage,
+                subX * srcTileW,
+                subY * srcTileH,
+                srcTileW,
+                srcTileH,
+                left,
+                top,
+                width,
+                height
+              );
+              break;
+            }
+          }
+        }
+      }
+    }
+
+    function renderTiles() {
+      tileCtx.clearRect(0, 0, tileCanvas.width, tileCanvas.height);
+      if (!showTiles.checked) return;
+      if (false && scale >= 0.22 && renderRawTiles()) return;
+      renderPyramidTiles();
+    }
+
+    function renderOverlay() {
+      overlayCtx.clearRect(0, 0, overlayCanvas.width, overlayCanvas.height);
+      const visiblePlacements = placementsInBounds(startupLandGrid, visibleWorldBounds(40));
+
+      if (showFootprints.checked && scale >= STARTUP_FOOTPRINT_SCALE) {
+        const startupFillAlpha = zoomFade(scale, STARTUP_FOOTPRINT_SCALE, 0.35, 0.006, 0.08);
+        const startupStrokeAlpha = zoomFade(scale, STARTUP_FOOTPRINT_SCALE, 0.35, 0.10, 0.92);
+        for (const placement of visiblePlacements) {
+          const points = objectFootprint(placement, landModels);
+          if (!points) continue;
+          overlayCtx.beginPath();
+          overlayCtx.moveTo(points[0][0], points[0][1]);
+          for (let i = 1; i < points.length; i += 1) overlayCtx.lineTo(points[i][0], points[i][1]);
+          overlayCtx.closePath();
+          overlayCtx.fillStyle = `rgba(255,255,255,${startupFillAlpha.toFixed(3)})`;
+          overlayCtx.strokeStyle = `rgba(255,255,255,${startupStrokeAlpha.toFixed(3)})`;
+          overlayCtx.lineWidth = scale > 0.35 ? 1.1 : 1;
+          overlayCtx.fill();
+          overlayCtx.stroke();
+        }
+      }
+
+      if (showFootprints.checked && scale >= LOADED_FOOTPRINT_SCALE) {
+        const loadedFillAlpha = zoomFade(scale, LOADED_FOOTPRINT_SCALE, 0.35, 0.008, 0.1);
+        const loadedStrokeAlpha = zoomFade(scale, LOADED_FOOTPRINT_SCALE, 0.35, 0.12, 0.94);
+        for (const placement of loadedPlacements) {
+          const points = objectFootprint(placement, models);
+          if (!points) continue;
+          overlayCtx.beginPath();
+          overlayCtx.moveTo(points[0][0], points[0][1]);
+          for (let i = 1; i < points.length; i += 1) overlayCtx.lineTo(points[i][0], points[i][1]);
+          overlayCtx.closePath();
+          overlayCtx.fillStyle = `rgba(255,255,255,${loadedFillAlpha.toFixed(3)})`;
+          overlayCtx.strokeStyle = `rgba(255,255,255,${loadedStrokeAlpha.toFixed(3)})`;
+          overlayCtx.lineWidth = scale > 0.35 ? 1.2 : 1;
+          overlayCtx.fill();
+          overlayCtx.stroke();
+        }
+      }
+
+      if (showCenters.checked || scale < STARTUP_POINT_FADE_OUT_SCALE) {
+        const startupPointAlpha = zoomFade(scale, STARTUP_POINT_SCALE, STARTUP_POINT_FADE_OUT_SCALE, 0.34, 0.96);
+        overlayCtx.fillStyle = `rgba(255,255,255,${startupPointAlpha.toFixed(3)})`;
+        for (const placement of visiblePlacements) {
+          if (scale < STARTUP_POINT_SCALE) continue;
+          overlayCtx.beginPath();
+          overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(1.2, Math.min(3.2, scale * 7)), 0, Math.PI * 2);
+          overlayCtx.fill();
+        }
+      }
+
+      if (showCenters.checked || scale < 0.2) {
+        const loadedPointAlpha = zoomFade(scale, STARTUP_POINT_SCALE, 0.2, 0.38, 0.98);
+        overlayCtx.fillStyle = `rgba(255,255,255,${loadedPointAlpha.toFixed(3)})`;
+        for (const placement of loadedPlacements) {
+          overlayCtx.beginPath();
+          overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(1.4, Math.min(3.4, scale * 7)), 0, Math.PI * 2);
+          overlayCtx.fill();
+        }
+      }
+
+      if (showLabels.checked) {
+        const dimLabelsForHighlights = !!(searchQuery || searchPathFilter);
+        for (const location of locations) {
+          const px = worldToScreenX(location.x);
+          const py = worldToScreenY(location.z);
+          if (px < -120 || px > overlayCanvas.width / devicePixelRatio + 120 || py < -80 || py > overlayCanvas.height / devicePixelRatio + 80) continue;
+          const size = location.kind === "Capital" ? 17 : location.kind === "City" ? 14 : 12;
+          const labelAlpha = dimLabelsForHighlights
+            ? zoomFade(scale, STARTUP_POINT_SCALE, 0.22, 0.58, 0.88)
+            : 0.95;
+          if (scale * 480 < 12 && location.kind === "Village") continue;
+          if (scale * 480 < 6 && location.kind === "City") continue;
+          overlayCtx.beginPath();
+          overlayCtx.arc(px, py, location.kind === "Capital" ? 4 : 3, 0, Math.PI * 2);
+          overlayCtx.fillStyle = `rgba(255,246,188,${Math.min(0.95, labelAlpha + 0.05).toFixed(3)})`;
+          overlayCtx.fill();
+          overlayCtx.strokeStyle = `rgba(17,25,32,${Math.min(0.8, labelAlpha + 0.2).toFixed(3)})`;
+          overlayCtx.lineWidth = 1;
+          overlayCtx.stroke();
+          overlayCtx.font = `600 ${size}px system-ui, sans-serif`;
+          overlayCtx.textAlign = "left";
+          overlayCtx.textBaseline = "middle";
+          overlayCtx.lineWidth = Math.max(3, size / 5);
+          overlayCtx.strokeStyle = `rgba(237,167,0,${Math.min(0.72, labelAlpha).toFixed(3)})`;
+          overlayCtx.strokeText(location.name, px + 8, py - 1);
+          overlayCtx.fillStyle = `rgba(23,35,43,${Math.min(0.95, labelAlpha + 0.18).toFixed(3)})`;
+          overlayCtx.fillText(location.name, px + 8, py - 1);
+        }
+      }
+
+      if (searchQuery || searchPathFilter) {
+        const searchRingAlpha = scale >= STARTUP_FOOTPRINT_SCALE ? 0.9 : 0.72;
+        overlayCtx.strokeStyle = `rgba(0,122,255,${searchRingAlpha.toFixed(2)})`;
+        overlayCtx.lineWidth = scale >= STARTUP_FOOTPRINT_SCALE ? 2 : 1.6;
+        for (const placement of visiblePlacements) {
+          if (!searchLandModelIds.has(placement[P.modelId])) continue;
+          overlayCtx.beginPath();
+          overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(4.5, Math.min(8, scale * 12)), 0, Math.PI * 2);
+          overlayCtx.stroke();
+        }
+        for (const placement of loadedPlacements) {
+          if (!searchModelIds.has(placement[P.modelId])) continue;
+          overlayCtx.beginPath();
+          overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(4.5, Math.min(8, scale * 12)), 0, Math.PI * 2);
+          overlayCtx.stroke();
+        }
+      }
+
+      if (pinnedPlacement) {
+        overlayCtx.beginPath();
+        overlayCtx.arc(worldToScreenX(pinnedPlacement[P.x]), worldToScreenY(pinnedPlacement[P.z]), 7, 0, Math.PI * 2);
+        overlayCtx.strokeStyle = "rgba(220,38,38,0.95)";
+        overlayCtx.lineWidth = 2;
+        overlayCtx.stroke();
+      }
+      if (hoverPlacement) {
+        overlayCtx.beginPath();
+        overlayCtx.arc(worldToScreenX(hoverPlacement[P.x]), worldToScreenY(hoverPlacement[P.z]), 7, 0, Math.PI * 2);
+        overlayCtx.strokeStyle = "rgba(255,244,127,0.98)";
+        overlayCtx.lineWidth = 2;
+        overlayCtx.stroke();
+      }
+    }
+
+    function renderSelection() {
+      selectionCtx.clearRect(0, 0, selectionCanvas.width, selectionCanvas.height);
+      if (!areaWorld) return;
+      const selectionRect = {
+        x: worldToScreenX(areaWorld.minX),
+        y: worldToScreenY(areaWorld.maxZ),
+        w: worldToScreenX(areaWorld.maxX) - worldToScreenX(areaWorld.minX),
+        h: worldToScreenY(areaWorld.minZ) - worldToScreenY(areaWorld.maxZ),
+      };
+      selectionCtx.strokeStyle = "rgba(204,107,44,0.95)";
+      selectionCtx.fillStyle = "rgba(204,107,44,0.15)";
+      selectionCtx.lineWidth = 2;
+      selectionCtx.strokeRect(selectionRect.x, selectionRect.y, selectionRect.w, selectionRect.h);
+      selectionCtx.fillRect(selectionRect.x, selectionRect.y, selectionRect.w, selectionRect.h);
+    }
+
+    function syncAreaModeUi() {
+      areaMode.checked = isAreaMode;
+      areaModeBtn.classList.toggle("is-active", isAreaMode);
+      areaModeBtn.textContent = areaWorld && !isAreaMode ? "Deselect Area" : "Area Select";
+      viewer.classList.toggle("area-mode", isAreaMode);
+    }
+
+    function updateHud() {
+      loadedCountEl.textContent = (startupLandPlacements.length + loadedPlacements.length).toLocaleString();
+      exportBtn.disabled = loadedPlacements.length === 0;
+      clearAreaBtn.disabled = !areaWorld && loadedPlacements.length === 0;
+      toggleLabelsBtn.textContent = showLabels.checked ? "Hide Labels" : "Show Labels";
+      syncAreaModeUi();
+      if (!areaWorld) {
+        areaReadout.textContent = "none";
+        chunkEstimateEl.textContent = "0";
+        loadAreaBtn.disabled = true;
+        copyAreaBtn.classList.add("is-hidden");
+        downloadAreaBtn.classList.add("is-hidden");
+      } else {
+        areaReadout.textContent = `x=${areaWorld.minX.toFixed(1)}..${areaWorld.maxX.toFixed(1)}, z=${areaWorld.minZ.toFixed(1)}..${areaWorld.maxZ.toFixed(1)}`;
+        const estimate = objectManifest.chunks.filter((chunk) => !(chunk.maxX < areaWorld.minX || chunk.minX > areaWorld.maxX || chunk.maxZ < areaWorld.minZ || chunk.minZ > areaWorld.maxZ)).length;
+        chunkEstimateEl.textContent = estimate.toString();
+        loadAreaBtn.disabled = false;
+        copyAreaBtn.classList.remove("is-hidden");
+        downloadAreaBtn.classList.remove("is-hidden");
+        copyAreaBtn.disabled = loadedPlacements.length === 0;
+        downloadAreaBtn.disabled = loadedPlacements.length === 0;
+      }
+      updateHoverCard();
+    }
+
+    function render() {
+      renderTiles();
+      renderOverlay();
+      renderSelection();
+      updateHud();
+    }
+
+    function nearestPlacement(point) {
+      const wx = screenToWorldX(point.x);
+      const wz = screenToWorldZ(point.y);
+      let best = null;
+      let bestDist = Infinity;
+      const radius = 18 / scale;
+      const hoverBounds = {
+        minX: wx - radius,
+        maxX: wx + radius,
+        minZ: wz - radius,
+        maxZ: wz + radius,
+      };
+      for (const placement of placementsInBounds(startupLandGrid, hoverBounds)) {
+        const dx = placement[P.x] - wx;
+        const dz = placement[P.z] - wz;
+        const dist = Math.hypot(dx, dz);
+        if (dist < radius && dist < bestDist) {
+          best = placement;
+          bestDist = dist;
+        }
+      }
+      for (const placement of loadedPlacements) {
+        const dx = placement[P.x] - wx;
+        const dz = placement[P.z] - wz;
+        const dist = Math.hypot(dx, dz);
+        if (dist < radius && dist < bestDist) {
+          best = placement;
+          bestDist = dist;
+        }
+      }
+      return best;
+    }
+
+    async function loadAreaObjects() {
+      if (!areaWorld || !objectManifest) return;
+      statusReadout.textContent = "loading area…";
+      const chunks = objectManifest.chunks.filter((chunk) => !(chunk.maxX < areaWorld.minX || chunk.minX > areaWorld.maxX || chunk.maxZ < areaWorld.minZ || chunk.minZ > areaWorld.maxZ));
+      const allPlacements = [];
+      for (const chunk of chunks) {
+        const chunkUrl = new URL(chunk.path, objectManifestBaseUrl).toString();
+        let payload = chunkCache.get(chunkUrl);
+        if (!payload) {
+          payload = await loadJson(chunkUrl);
+          chunkCache.set(chunkUrl, payload);
+        }
+        for (const placement of payload.placements || []) {
+          if (placement[P.x] >= areaWorld.minX && placement[P.x] <= areaWorld.maxX && placement[P.z] >= areaWorld.minZ && placement[P.z] <= areaWorld.maxZ) {
+            placement._modelTable = "main";
+            allPlacements.push(placement);
+          }
+        }
+      }
+      loadedPlacements = allPlacements;
+      statusReadout.textContent = loadedPlacements.length ? `Loaded ${loadedPlacements.length.toLocaleString()} rows` : "";
+      scheduleRender();
+    }
+
+    function clearArea() {
+      areaRect = null;
+      areaWorld = null;
+      loadedPlacements = [];
+      hoverPlacement = null;
+      hoverReadout.textContent = "none";
+      statusReadout.textContent = "";
+      scheduleRender();
+    }
+
+    function clearAreaSelection(keepLoadedPlacements = false) {
+      areaRect = null;
+      areaWorld = null;
+      areaStart = null;
+      panStart = null;
+      if (!keepLoadedPlacements) {
+        loadedPlacements = [];
+      }
+      scheduleRender();
+    }
+
+    function resetAreaState() {
+      clearAreaSelection(false);
+      isAreaMode = false;
+      pinnedPlacement = null;
+      hoverPlacement = null;
+      hoverReadout.textContent = "none";
+      statusReadout.textContent = "";
+      scheduleRender();
+    }
+
+    function downloadSelection() {
+      const payload = loadedPlacements.map((placement) => {
+        const model = getModel(placement[P.modelId]);
+        const shapePath = model?.[M.shapePath] || "";
+        const typeName = model?.[M.type] || "";
+        const isP3D = !!shapePath && !typeName.startsWith("Land_");
+        if (isP3D) {
+          return {
+            Type: shapePath,
+            DisplayName: shapePath,
+            Position: [placement[P.x], placement[P.y], placement[P.z]],
+            Orientation: [placement[P.yaw], placement[P.pitch], placement[P.roll]],
+            Scale: 1.0,
+            AttachmentMap: {},
+            Model: shapePath,
+            Flags: 30
+          };
+        }
+        const displayName = typeName || shapePath || "";
+        return {
+          Type: displayName,
+          DisplayName: displayName,
+          Position: [placement[P.x], placement[P.y], placement[P.z]],
+          Orientation: [placement[P.yaw], placement[P.pitch], placement[P.roll]],
+          Scale: 1.0,
+          AttachmentMap: {},
+          Model: shapePath || "",
+          Flags: 30
+        };
+      });
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = "chernarus_loaded_area_dayz_editor.json";
+      anchor.click();
+      URL.revokeObjectURL(url);
+    }
+
+    loadAreaBtn.addEventListener("click", loadAreaObjects);
+    clearAreaBtn.addEventListener("click", clearArea);
+    exportBtn.addEventListener("click", downloadSelection);
+    [showTiles, showCenters, showFootprints, showLabels].forEach((input) => input.addEventListener("change", scheduleRender));
+
+    viewer.addEventListener("wheel", (event) => {
+      event.preventDefault();
+      const point = eventPoint(event);
+      const worldX = screenToWorldX(point.x);
+      const worldZ = screenToWorldZ(point.y);
+      const factor = event.deltaY < 0 ? 1.14 : 1 / 1.14;
+      scale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, scale * factor));
+      offsetX = point.x - (worldX - bounds.minX) * scale;
+      offsetY = point.y - (bounds.maxZ - worldZ) * scale;
+      scheduleRender();
+    }, { passive: false });
+
+    viewer.addEventListener("pointerdown", (event) => {
+      pointerDownOnUi = !!(event.target && event.target.closest(".map-topbar"));
+      if (pointerDownOnUi) {
+        return;
+      }
+      const point = eventPoint(event);
+      pointerDownPoint = point;
+      if (isAreaMode) {
+        areaStart = point;
+        areaRect = { x: point.x, y: point.y, w: 0, h: 0 };
+      } else {
+        panStart = { x: point.x, y: point.y, offsetX, offsetY };
+        viewer.classList.add("dragging");
+      }
+      viewer.setPointerCapture(event.pointerId);
+    });
+
+    viewer.addEventListener("pointermove", (event) => {
+      const point = eventPoint(event);
+      if (panStart) {
+        offsetX = panStart.offsetX + (point.x - panStart.x);
+        offsetY = panStart.offsetY + (point.y - panStart.y);
+        scheduleRender();
+        return;
+      }
+      if (areaStart) {
+        areaRect = {
+          x: Math.min(areaStart.x, point.x),
+          y: Math.min(areaStart.y, point.y),
+          w: Math.abs(point.x - areaStart.x),
+          h: Math.abs(point.y - areaStart.y),
+        };
+        areaWorld = {
+          minX: screenToWorldX(areaRect.x),
+          maxX: screenToWorldX(areaRect.x + areaRect.w),
+          maxZ: screenToWorldZ(areaRect.y),
+          minZ: screenToWorldZ(areaRect.y + areaRect.h),
+        };
+        scheduleRender();
+        return;
+      }
+      const nextHover = nearestPlacement(point);
+      if (nextHover !== hoverPlacement) {
+        hoverPlacement = nextHover;
+        if (hoverPlacement) {
+          const model = getPlacementModel(hoverPlacement);
+          hoverReadout.textContent = `${model?.[M.type] || model?.[M.shapePath] || 'unknown'} @ x=${hoverPlacement[P.x].toFixed(1)}, z=${hoverPlacement[P.z].toFixed(1)}`;
+        } else {
+          hoverReadout.textContent = "none";
+        }
+        scheduleRender();
+      } else if (!hoverPlacement) {
+        hoverReadout.textContent = "none";
+      }
+    });
+
+    viewer.addEventListener("pointerup", (event) => {
+      if (pointerDownOnUi || (event.target && event.target.closest(".map-topbar"))) {
+        pointerDownOnUi = false;
+        panStart = null;
+        pointerDownPoint = null;
+        areaStart = null;
+        viewer.classList.remove("dragging");
+        return;
+      }
+      const hadAreaSelection = !!areaStart && !!areaWorld;
+      const point = eventPoint(event);
+      const clickDistance = pointerDownPoint ? Math.hypot(point.x - pointerDownPoint.x, point.y - pointerDownPoint.y) : Infinity;
+      panStart = null;
+      pointerDownPoint = null;
+      pointerDownOnUi = false;
+      areaStart = null;
+      viewer.classList.remove("dragging");
+      if (hadAreaSelection) {
+        isAreaMode = false;
+        loadAreaObjects();
+      } else if (!isAreaMode && clickDistance <= 5) {
+        pinnedPlacement = nearestPlacement(point);
+        hoverPlacement = pinnedPlacement;
+      }
+      scheduleRender();
+    });
+
+    window.addEventListener("resize", resizeCanvas);
+    areaModeBtn.addEventListener("click", () => {
+      if (areaWorld && !isAreaMode) {
+        resetAreaState();
+        return;
+      }
+      const nextEnabled = !isAreaMode;
+      if (nextEnabled) {
+        clearAreaSelection(false);
+        isAreaMode = true;
+        pinnedPlacement = null;
+        statusReadout.textContent = "Area select enabled";
+      } else {
+        isAreaMode = false;
+        areaRect = null;
+        statusReadout.textContent = loadedPlacements.length
+          ? `Loaded ${loadedPlacements.length.toLocaleString()} rows`
+          : "";
+      }
+      scheduleRender();
+    });
+    copyAreaBtn.addEventListener("click", async () => {
+      if (!loadedPlacements.length) return;
+      const payload = loadedPlacements.map((placement) => {
+        const model = getModel(placement[P.modelId]);
+        const shapePath = model?.[M.shapePath] || "";
+        const typeName = model?.[M.type] || "";
+        const isP3D = !!shapePath && !typeName.startsWith("Land_");
+        if (isP3D) {
+          return {
+            Type: shapePath,
+            DisplayName: shapePath,
+            Position: [placement[P.x], placement[P.y], placement[P.z]],
+            Orientation: [placement[P.yaw], placement[P.pitch], placement[P.roll]],
+            Scale: 1.0,
+            AttachmentMap: {},
+            Model: shapePath,
+            Flags: 30
+          };
+        }
+        const displayName = typeName || shapePath || "";
+        return {
+          Type: displayName,
+          DisplayName: displayName,
+          Position: [placement[P.x], placement[P.y], placement[P.z]],
+          Orientation: [placement[P.yaw], placement[P.pitch], placement[P.roll]],
+          Scale: 1.0,
+          AttachmentMap: {},
+          Model: shapePath || "",
+          Flags: 30
+        };
+      });
+      const copied = await copyTextToClipboard(JSON.stringify(payload, null, 2));
+      statusReadout.textContent = copied
+        ? `Copied ${payload.length.toLocaleString()} rows to clipboard`
+        : "Clipboard copy failed";
+    });
+    hoverNameEl.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      focusHoveredObjectInParent();
+    });
+    hoverMetaEl.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      if (isActivePlacementFiltered()) {
+        clearParentObjectFilter();
+      } else {
+        const placement = activePlacement();
+        if (placement) {
+          pinnedPlacement = placement;
+        }
+        filterHoveredObjectInParent();
+        scheduleRender();
+      }
+    });
+    hoverCloseBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      const shouldClearSearch = isActivePlacementFiltered();
+      pinnedPlacement = null;
+      if (shouldClearSearch) clearParentObjectFilter();
+      scheduleRender();
+    });
+    toggleLabelsBtn.addEventListener("click", () => {
+      showLabels.checked = !showLabels.checked;
+      scheduleRender();
+    });
+    downloadAreaBtn.addEventListener("click", downloadSelection);
+    resetViewBtn.addEventListener("click", () => {
+      fitViewToBounds();
+      render();
+    });
+
+    ["pointerdown", "pointerup", "pointermove", "click", "wheel"].forEach((eventName) => {
+      if (!mapTopbarEl) return;
+      mapTopbarEl.addEventListener(eventName, (event) => {
+        event.stopPropagation();
+      }, { passive: eventName === "wheel" ? false : true });
+    });
+
+    window.addEventListener("message", (event) => {
+      if (event.origin !== window.location.origin || !event.data || event.data.type !== "object-map-search-state") return;
+      refreshSearchMatches(event.data.rows || [], event.data.query || "", event.data.pathFilter || "", event.data.mode || "");
+    });
+
+    Promise.all([
+      loadJson(tileManifestUrl),
+      loadJson(objectManifestUrl),
+      Promise.resolve(null),
+      loadJson(landManifestUrl),
+      loadJson(locationsUrl),
+    ]).then(async ([tileManifest, manifest, rawManifest, landPack, locs]) => {
+      satPyramid = tileManifest;
+      rawTileManifest = rawManifest || null;
+      bounds = tileManifest.bounds;
+      objectManifest = manifest;
+      landManifest = landPack;
+      locations = locs;
+      const modelPayload = await loadJson(new URL(objectManifest.modelsPath, objectManifestBaseUrl).toString());
+      models = modelPayload.models || [];
+      const landModelPayload = await loadJson(new URL(landManifest.modelsPath, landManifestBaseUrl).toString());
+      landModels = landModelPayload.models || [];
+      const landPlacementPayload = await loadJson(new URL(landManifest.allPlacementsPath, landManifestBaseUrl).toString());
+      const startupPlacements = landPlacementPayload.placements || [];
+      for (const placement of startupPlacements) placement._modelTable = "land";
+      startupLandPlacements = startupPlacements;
+      buildStartupLandGrid();
+      tileCountEl.textContent = `${Math.pow(2, satPyramid.maxZoom)} x ${Math.pow(2, satPyramid.maxZoom)}`;
+      packCountEl.textContent = objectManifest.counts.rows.toLocaleString();
+      modelCountEl.textContent = `${objectManifest.counts.models.toLocaleString()} mixed / ${landManifest.counts.models.toLocaleString()} land`;
+      statusReadout.textContent = "";
+      syncThemeFromParent();
+      setInterval(syncThemeFromParent, 1000);
+      resizeCanvas(false);
+      requestAnimationFrame(() => render());
+      setTimeout(() => render(), 0);
+      setTimeout(() => render(), 50);
+      setTimeout(() => resizeCanvas(true), 120);
+      setTimeout(() => resizeCanvas(true), 300);
+      if (window.ResizeObserver) {
+        resizeObserver = new ResizeObserver(() => {
+          resizeCanvas(true);
+        });
+        resizeObserver.observe(viewer);
+      }
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(() => resizeCanvas(true)).catch(() => {});
+      }
+    }).catch((error) => {
+      console.error(error);
+      statusReadout.textContent = "Load failed";
+    });
+  </script>
+</body>
+</html>
