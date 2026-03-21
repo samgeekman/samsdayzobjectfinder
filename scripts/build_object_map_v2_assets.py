@@ -6,6 +6,8 @@ import json
 import shutil
 from pathlib import Path
 
+from PIL import Image
+
 
 REPO_ROOT = Path(r"C:\Users\Samjo\OneDrive\Documents\GitHub\samsdayzobjectfinder")
 
@@ -15,6 +17,8 @@ SOURCE_TILE_PYRAMID = Path(r"P:\2026-03-20\chernarus_map_poc\chernarus_core32_ti
 SOURCE_LAND_PACK = Path(r"P:\2026-03-20\world_object_export\chernarus_shape_variants\land_only_pack")
 SOURCE_OBJECT_PACK = Path(r"P:\2026-03-20\world_object_export\chernarus_shape_variants\no_foliage_or_rocks_or_roads_pack")
 SOURCE_DAYZ_OBJECTS = REPO_ROOT / "static" / "data" / "dayz_objects.json"
+SOURCE_FOOTPRINTS = REPO_ROOT / "reports" / "land_model_footprints.json"
+SOURCE_ROOF_AVERAGES = REPO_ROOT / "reports" / "land_roof_average_manifest.json"
 
 OUT_PAGE_DIR = REPO_ROOT / "static" / "object-map-v2"
 OUT_DATA_DIR = REPO_ROOT / "static" / "data" / "object-map-v2"
@@ -43,6 +47,164 @@ def load_json(path: Path):
 
 def write_json(path: Path, payload) -> None:
     path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
+
+def clean_p3d_name(shape_path: str | None) -> str:
+    basename = Path(str(shape_path or "").replace("\\", "/")).name.strip()
+    basename = basename.lstrip(",").strip()
+    if not basename:
+        return ""
+    lowered = basename.lower()
+    if lowered.startswith("unknown") or basename.startswith("*"):
+        return ""
+    return basename
+
+
+def sanitize_manifest(pack_dir: Path) -> None:
+    manifest_path = pack_dir / "manifest.json"
+    if not manifest_path.exists():
+        return
+    payload = load_json(manifest_path)
+    model_fields = payload.get("modelFields")
+    if isinstance(model_fields, list):
+        payload["modelFields"] = [field for field in model_fields if field != "bbox_source"]
+    write_json(manifest_path, payload)
+
+
+def recalc_chunk_bounds(placements: list[list]) -> dict[str, float | int]:
+    xs = [float(row[2]) for row in placements]
+    zs = [float(row[4]) for row in placements]
+    return {
+        "count": len(placements),
+        "minX": min(xs),
+        "maxX": max(xs),
+        "minZ": min(zs),
+        "maxZ": max(zs),
+    }
+
+
+def sanitize_pack(pack_dir: Path) -> None:
+    manifest_path = pack_dir / "manifest.json"
+    models_path = pack_dir / "models.json"
+    if not manifest_path.exists() or not models_path.exists():
+        return
+
+    manifest = load_json(manifest_path)
+    model_payload = load_json(models_path)
+    source_models = model_payload.get("models", [])
+
+    old_to_new: dict[int, int] = {}
+    sanitized_models: list[list] = []
+    source_kind_by_model: dict[int, int] = {}
+    for row in source_models:
+        old_id = int(row[0])
+        type_name = str(row[1] or "").strip()
+        shape_path = str(row[3] or "").strip()
+        clean_name = clean_p3d_name(shape_path)
+        if not type_name.startswith("Land_") and not clean_name:
+            continue
+        new_row = list(row)
+        new_id = len(sanitized_models)
+        new_row[0] = new_id
+        old_to_new[old_id] = new_id
+        sanitized_models.append(new_row)
+        source_kind_by_model[new_id] = int(new_row[4] or 0)
+
+    model_payload["models"] = sanitized_models
+    write_json(models_path, model_payload)
+
+    total_rows = 0
+    total_land = 0
+    total_p3d = 0
+
+    all_placements_path = manifest.get("allPlacementsPath")
+    if all_placements_path:
+      payload_path = pack_dir / Path(all_placements_path).name
+      placement_payload = load_json(payload_path)
+      sanitized = []
+      for placement in placement_payload.get("placements", []):
+          old_model_id = int(placement[1])
+          if old_model_id not in old_to_new:
+              continue
+          new_placement = list(placement)
+          new_placement[1] = old_to_new[old_model_id]
+          sanitized.append(new_placement)
+          total_rows += 1
+          if source_kind_by_model[new_placement[1]] == 1:
+              total_p3d += 1
+          else:
+              total_land += 1
+      placement_payload["placements"] = sanitized
+      write_json(payload_path, placement_payload)
+    else:
+      updated_chunks = []
+      for chunk in manifest.get("chunks", []):
+          chunk_path = pack_dir / Path(chunk["path"])
+          chunk_payload = load_json(chunk_path)
+          sanitized = []
+          for placement in chunk_payload.get("placements", []):
+              old_model_id = int(placement[1])
+              if old_model_id not in old_to_new:
+                  continue
+              new_placement = list(placement)
+              new_placement[1] = old_to_new[old_model_id]
+              sanitized.append(new_placement)
+              total_rows += 1
+              if source_kind_by_model[new_placement[1]] == 1:
+                  total_p3d += 1
+              else:
+                  total_land += 1
+          chunk_payload["placements"] = sanitized
+          write_json(chunk_path, chunk_payload)
+          if sanitized:
+              chunk_meta = dict(chunk)
+              chunk_meta.update(recalc_chunk_bounds(sanitized))
+              updated_chunks.append(chunk_meta)
+      manifest["chunks"] = updated_chunks
+
+    if isinstance(manifest.get("counts"), dict):
+        manifest["counts"]["rows"] = total_rows
+        manifest["counts"]["models"] = len(sanitized_models)
+        manifest["counts"]["land"] = total_land
+        manifest["counts"]["p3d"] = total_p3d
+
+    write_json(manifest_path, manifest)
+
+
+def average_png_color(path: Path | None):
+    if not path or not path.exists():
+        return None
+    try:
+        img = Image.open(path).convert("RGBA").resize((16, 16), Image.Resampling.BOX)
+        pixels = [img.getpixel((x, y)) for y in range(img.height) for x in range(img.width)]
+        weighted = [px for px in pixels if px[3] > 10]
+        if not weighted:
+            return None
+        total_alpha = sum(px[3] for px in weighted)
+        if total_alpha <= 0:
+            return None
+        return [
+            round(sum(px[0] * px[3] for px in weighted) / total_alpha),
+            round(sum(px[1] * px[3] for px in weighted) / total_alpha),
+            round(sum(px[2] * px[3] for px in weighted) / total_alpha),
+            round(sum(px[3] for px in weighted) / len(weighted)),
+        ]
+    except Exception:
+        return None
+
+
+def load_footprint_cache() -> dict[str, dict]:
+    if not SOURCE_FOOTPRINTS.exists():
+        return {}
+    payload = load_json(SOURCE_FOOTPRINTS)
+    return payload.get("footprints", {})
+
+
+def load_roof_average_cache() -> dict[str, dict]:
+    if not SOURCE_ROOF_AVERAGES.exists():
+        return {}
+    payload = load_json(SOURCE_ROOF_AVERAGES)
+    return payload.get("previews", {})
 
 
 def build_object_catalog_index() -> dict[str, dict]:
@@ -99,7 +261,12 @@ def resolve_catalog_entry(model_row: list, catalog_index: dict[str, dict]) -> di
     return None
 
 
-def enrich_models(pack_dir: Path, catalog_index: dict[str, dict]) -> None:
+def enrich_models(
+    pack_dir: Path,
+    catalog_index: dict[str, dict],
+    footprint_cache: dict[str, dict],
+    roof_average_cache: dict[str, dict],
+) -> None:
     models_path = pack_dir / "models.json"
     payload = load_json(models_path)
     models = payload.get("models", [])
@@ -107,15 +274,36 @@ def enrich_models(pack_dir: Path, catalog_index: dict[str, dict]) -> None:
     for model_row in models:
         entry = resolve_catalog_entry(model_row, catalog_index)
         image = ""
-        label = str(model_row[1] or "").strip() or Path(str(model_row[3] or "")).name
+        type_name = str(model_row[1] or "").strip()
+        clean_shape_name = clean_p3d_name(model_row[3] if len(model_row) > 3 else "")
+        label = type_name or clean_shape_name
+        shape_path = str(model_row[3] or "").strip().replace("\\", "/").lower()
+        footprint_entry = footprint_cache.get(shape_path)
+        roof_entry = roof_average_cache.get(shape_path)
         if entry:
             image = str(entry.get("image") or "").strip()
         count = counts.get(int(model_row[0]), 0)
-        while len(model_row) < 15:
+        while len(model_row) < 20:
             model_row.append(None)
+        # Strip source metadata so it does not surface anywhere in the site payloads.
+        model_row[11] = None
         model_row[12] = image
         model_row[13] = label
         model_row[14] = count
+        model_row[15] = footprint_entry.get("points") if footprint_entry else None
+        model_row[16] = None
+        if roof_entry:
+            roof_png = str(roof_entry.get("png") or "").replace("\\", "/")
+            marker = "/static/"
+            if marker in roof_png:
+                roof_png = roof_png.split(marker, 1)[1]
+            model_row[17] = f"/{roof_png.lstrip('/')}" if roof_png else None
+            model_row[18] = roof_entry.get("bounds")
+            model_row[19] = average_png_color(Path(str(roof_entry.get("png") or "")))
+        else:
+            model_row[17] = None
+            model_row[18] = None
+            model_row[19] = None
     write_json(models_path, payload)
 
 
@@ -225,10 +413,16 @@ def main() -> None:
     copy_tree(SOURCE_LAND_PACK, OUT_LAND_PACK)
     copy_tree(SOURCE_OBJECT_PACK, OUT_OBJECT_PACK)
     shutil.copy2(SOURCE_LOCATIONS, OUT_LOCATIONS)
+    sanitize_pack(OUT_LAND_PACK)
+    sanitize_pack(OUT_OBJECT_PACK)
+    sanitize_manifest(OUT_LAND_PACK)
+    sanitize_manifest(OUT_OBJECT_PACK)
 
     catalog_index = build_object_catalog_index()
-    enrich_models(OUT_LAND_PACK, catalog_index)
-    enrich_models(OUT_OBJECT_PACK, catalog_index)
+    footprint_cache = load_footprint_cache()
+    roof_average_cache = load_roof_average_cache()
+    enrich_models(OUT_LAND_PACK, catalog_index, footprint_cache, roof_average_cache)
+    enrich_models(OUT_OBJECT_PACK, catalog_index, footprint_cache, roof_average_cache)
 
     OUT_HTML.write_text(build_html(), encoding="utf-8")
 

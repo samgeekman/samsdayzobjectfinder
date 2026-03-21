@@ -189,9 +189,9 @@
       min-height: 28px;
       height: 28px;
       padding: 4px 8px;
-      border: 1px solid var(--site-button-border) !important;
+      border: 1px solid transparent !important;
       border-radius: var(--site-button-radius, 3px) !important;
-      background: var(--site-button-bg) !important;
+      background: var(--site-button-bg, var(--site-card, #ffffff)) !important;
       color: var(--site-button-text) !important;
       font: inherit;
       font-weight: 600;
@@ -225,6 +225,11 @@
     .map-btn.is-hidden {
       display: none;
     }
+    .dark-mode .map-btn,
+    .dark-mode .hover-card__close,
+    .dark-mode .hover-card__meta-btn {
+      color: #ffffff !important;
+    }
     .hover-card {
       position: relative;
       min-width: 288px;
@@ -242,9 +247,9 @@
       width: 20px;
       height: 20px;
       padding: 0;
-      border: 1px solid var(--site-button-border) !important;
+      border: 1px solid transparent !important;
       border-radius: var(--site-button-radius, 3px) !important;
-      background: var(--site-button-bg) !important;
+      background: var(--site-button-bg, var(--site-card, #ffffff)) !important;
       color: var(--site-button-text) !important;
       font: inherit;
       font-size: 12px;
@@ -313,9 +318,9 @@
       min-height: 28px;
       height: 28px;
       padding: 4px 8px;
-      border: 1px solid var(--site-button-border) !important;
+      border: 1px solid transparent !important;
       border-radius: var(--site-button-radius, 3px) !important;
-      background: var(--site-button-bg) !important;
+      background: var(--site-button-bg, var(--site-card, #ffffff)) !important;
       color: var(--site-button-text) !important;
       font: inherit;
       font-size: 0.7rem;
@@ -350,17 +355,16 @@
       border: 0;
       border-radius: 0;
       background: var(--site-subtle-bg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
     }
     .hover-card__thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;
-      background: var(--site-subtle-bg-2);
+      display: none;
     }
     .hover-card__thumb.is-empty::before {
       content: "";
@@ -437,9 +441,10 @@
     <main class="viewer" id="viewer">
       <div class="map-topbar">
         <div class="map-panel map-actions">
-          <button class="map-btn" id="area-mode-btn" type="button">Area Select</button>
-          <button class="map-btn is-hidden" id="copy-area-btn" type="button">Copy to Editor</button>
+          <button class="map-btn" id="area-mode-btn" type="button">Select area</button>
+          <button class="map-btn is-hidden" id="copy-area-btn" type="button">🏗️ Copy to Editor</button>
           <button class="map-btn is-hidden" id="download-area-btn" type="button">Download JSON</button>
+          <button class="map-btn is-hidden" id="export-locations-btn" type="button">Export locations</button>
         </div>
         <div class="map-panel hover-card" id="hover-card">
           <button class="hover-card__close" id="hover-close-btn" type="button" aria-label="Clear selected object">×</button>
@@ -508,6 +513,11 @@
       image: 12,
       label: 13,
       count: 14,
+      footprint: 15,
+      footprintSource: 16,
+      roofImage: 17,
+      roofBounds: 18,
+      roofColor: 19,
     };
 
     const viewer = document.getElementById("viewer");
@@ -537,6 +547,7 @@
     const areaModeBtn = document.getElementById("area-mode-btn");
     const copyAreaBtn = document.getElementById("copy-area-btn");
     const downloadAreaBtn = document.getElementById("download-area-btn");
+    const exportLocationsBtn = document.getElementById("export-locations-btn");
     const mapTopbarEl = document.querySelector(".map-topbar");
     const hoverCardEl = document.getElementById("hover-card");
     const hoverNameEl = document.getElementById("hover-name");
@@ -754,11 +765,8 @@
         normalizeSearchKey(model?.[M.type]),
         normalizeSearchKey(model?.[M.label]),
         normalizeSearchKey(model?.[M.shapePath]),
-        normalizeSearchKey(model?.[M.model]),
         basenameForSearch(model?.[M.shapePath]),
-        basenameForSearch(model?.[M.model]),
         dirnameForSearch(model?.[M.shapePath]),
-        dirnameForSearch(model?.[M.model]),
       ].forEach((value) => {
         if (value) keys.add(value);
       });
@@ -777,24 +785,27 @@
       }
       const names = new Set();
       const paths = new Set();
+      const broadQuery = normalizeSearchKey(searchQuery);
       if (searchMode === "exact_object" && searchQuery) {
         names.add(normalizeSearchKey(searchQuery));
       } else {
-        if (!Array.isArray(rows) || !rows.length) {
-          scheduleRender();
-          return;
+        if (Array.isArray(rows) && rows.length) {
+          rows.forEach((row) => {
+            const objectName = normalizeSearchKey(row?.objectName);
+            const path = normalizeSearchKey(row?.path);
+            if (objectName) names.add(objectName);
+            if (path && path !== "-") paths.add(path);
+          });
         }
-        rows.forEach((row) => {
-          const objectName = normalizeSearchKey(row?.objectName);
-          const path = normalizeSearchKey(row?.path);
-          if (objectName) names.add(objectName);
-          if (path && path !== "-") paths.add(path);
-        });
       }
       landModels.forEach((model, index) => {
         const keys = modelSearchKeys(model);
         for (const key of keys) {
-          if (names.has(key) || paths.has(key)) {
+          if (
+            names.has(key) ||
+            paths.has(key) ||
+            (searchMode !== "exact_object" && broadQuery && key.includes(broadQuery))
+          ) {
             searchLandModelIds.add(index);
             break;
           }
@@ -803,7 +814,11 @@
       models.forEach((model, index) => {
         const keys = modelSearchKeys(model);
         for (const key of keys) {
-          if (names.has(key) || paths.has(key)) {
+          if (
+            names.has(key) ||
+            paths.has(key) ||
+            (searchMode !== "exact_object" && broadQuery && key.includes(broadQuery))
+          ) {
             searchModelIds.add(index);
             break;
           }
@@ -833,13 +848,21 @@
     function setHoverThumb(src) {
       if (!src) {
         hoverThumbEl.classList.add("is-empty");
+        hoverThumbEl.style.display = "none";
+        hoverThumbEl.style.backgroundImage = "";
         hoverThumbImgEl.hidden = true;
+        hoverThumbImgEl.setAttribute("hidden", "");
         hoverThumbImgEl.removeAttribute("src");
         return;
       }
       hoverThumbEl.classList.remove("is-empty");
+      hoverThumbEl.style.display = "flex";
+      hoverThumbEl.style.backgroundImage = `url("${"/" + String(src).replace(/^\/+/, "")}")`;
       hoverThumbImgEl.hidden = false;
-      hoverThumbImgEl.src = "/" + String(src).replace(/^\/+/, "");
+      hoverThumbImgEl.removeAttribute("hidden");
+      hoverThumbImgEl.setAttribute("hidden", "");
+      hoverThumbImgEl.hidden = true;
+      hoverThumbImgEl.removeAttribute("src");
     }
 
     function updateHoverCard() {
@@ -851,7 +874,7 @@
       if (!placement) {
         hoverNameEl.textContent = "Hover an object";
         hoverNameEl.classList.remove("is-active");
-        hoverMetaEl.textContent = "Show 0 on map";
+        hoverMetaEl.textContent = "Search 0 on map";
         hoverCardEl.classList.remove("is-clickable");
         setHoverThumb("");
         return;
@@ -864,7 +887,7 @@
       hoverNameEl.classList.add("is-active");
       hoverMetaEl.textContent = isActivePlacementFiltered()
         ? `Hide ${countLabel} on map`
-        : `Show ${countLabel} on map`;
+        : `Search ${countLabel} on map`;
       setHoverThumb(model?.[M.image] || "");
     }
 
@@ -886,7 +909,13 @@
         const resolvedCardBg = (cardStyles && cardStyles.backgroundColor) || card;
         const resolvedCardBorder = (cardStyles && cardStyles.borderColor) || border;
         const resolvedCardText = (cardStyles && cardStyles.color) || text;
-        const resolvedButtonBg = (buttonStyles && buttonStyles.backgroundColor) || resolvedCardBg;
+        const rawButtonBg = (buttonStyles && buttonStyles.backgroundColor) || "";
+        const resolvedButtonBg = (
+          rawButtonBg &&
+          rawButtonBg !== "transparent" &&
+          rawButtonBg !== "rgba(0, 0, 0, 0)" &&
+          rawButtonBg !== "rgba(0,0,0,0)"
+        ) ? rawButtonBg : resolvedCardBg;
         const resolvedButtonBorder = (buttonStyles && buttonStyles.borderColor) || resolvedCardBorder;
         const resolvedButtonText = (buttonStyles && buttonStyles.color) || resolvedCardText;
         const resolvedButtonRadius = buttonStyles ? buttonStyles.borderRadius : "3px";
@@ -1007,6 +1036,19 @@
     function objectFootprint(placement, modelTable) {
       const model = modelTable[placement[P.modelId]] || null;
       if (!model) return null;
+      const polygon = model[M.footprint];
+      if (Array.isArray(polygon) && polygon.length >= 3) {
+        const yaw = (placement[P.yaw] || 0) * Math.PI / 180;
+        const cos = Math.cos(yaw);
+        const sin = Math.sin(yaw);
+        return polygon.map((point) => {
+          const lx = Number(point[0]);
+          const lz = Number(point[1]);
+          const wx = placement[P.x] + lx * cos + lz * sin;
+          const wz = placement[P.z] - lx * sin + lz * cos;
+          return [worldToScreenX(wx), worldToScreenY(wz)];
+        });
+      }
       const minX = model[M.bboxMinX];
       const minZ = model[M.bboxMinZ];
       const maxX = model[M.bboxMaxX];
@@ -1026,6 +1068,23 @@
         const wz = placement[P.z] - lx * sin + lz * cos;
         return [worldToScreenX(wx), worldToScreenY(wz)];
       });
+    }
+
+    function placementRoofFill(model) {
+      const roofColor = model?.[M.roofColor];
+      if (Array.isArray(roofColor) && roofColor.length >= 3) {
+        const r = Number(roofColor[0] || 0);
+        const g = Number(roofColor[1] || 0);
+        const b = Number(roofColor[2] || 0);
+        const avg = (r + g + b) / 3;
+        const boost = 1.75;
+        return [
+          Math.max(0, Math.min(255, Math.round(avg + (r - avg) * boost))),
+          Math.max(0, Math.min(255, Math.round(avg + (g - avg) * boost))),
+          Math.max(0, Math.min(255, Math.round(avg + (b - avg) * boost))),
+        ];
+      }
+      return null;
     }
 
     function zoomFade(scaleValue, low, high, minAlpha, maxAlpha) {
@@ -1174,13 +1233,17 @@
         const startupFillAlpha = zoomFade(scale, STARTUP_FOOTPRINT_SCALE, 0.35, 0.006, 0.08);
         const startupStrokeAlpha = zoomFade(scale, STARTUP_FOOTPRINT_SCALE, 0.35, 0.10, 0.92);
         for (const placement of visiblePlacements) {
+          const model = landModels[placement[P.modelId]] || null;
           const points = objectFootprint(placement, landModels);
           if (!points) continue;
+          const roofColor = placementRoofFill(model);
           overlayCtx.beginPath();
           overlayCtx.moveTo(points[0][0], points[0][1]);
           for (let i = 1; i < points.length; i += 1) overlayCtx.lineTo(points[i][0], points[i][1]);
           overlayCtx.closePath();
-          overlayCtx.fillStyle = `rgba(255,255,255,${startupFillAlpha.toFixed(3)})`;
+          overlayCtx.fillStyle = roofColor
+            ? `rgba(${roofColor[0]},${roofColor[1]},${roofColor[2]},${Math.max(0.72, startupFillAlpha * 5.0).toFixed(3)})`
+            : `rgba(255,255,255,${startupFillAlpha.toFixed(3)})`;
           overlayCtx.strokeStyle = `rgba(255,255,255,${startupStrokeAlpha.toFixed(3)})`;
           overlayCtx.lineWidth = scale > 0.35 ? 1.1 : 1;
           overlayCtx.fill();
@@ -1192,13 +1255,17 @@
         const loadedFillAlpha = zoomFade(scale, LOADED_FOOTPRINT_SCALE, 0.35, 0.008, 0.1);
         const loadedStrokeAlpha = zoomFade(scale, LOADED_FOOTPRINT_SCALE, 0.35, 0.12, 0.94);
         for (const placement of loadedPlacements) {
+          const model = models[placement[P.modelId]] || null;
           const points = objectFootprint(placement, models);
           if (!points) continue;
+          const roofColor = placementRoofFill(model);
           overlayCtx.beginPath();
           overlayCtx.moveTo(points[0][0], points[0][1]);
           for (let i = 1; i < points.length; i += 1) overlayCtx.lineTo(points[i][0], points[i][1]);
           overlayCtx.closePath();
-          overlayCtx.fillStyle = `rgba(255,255,255,${loadedFillAlpha.toFixed(3)})`;
+          overlayCtx.fillStyle = roofColor
+            ? `rgba(${roofColor[0]},${roofColor[1]},${roofColor[2]},${Math.max(0.76, loadedFillAlpha * 5.0).toFixed(3)})`
+            : `rgba(255,255,255,${loadedFillAlpha.toFixed(3)})`;
           overlayCtx.strokeStyle = `rgba(255,255,255,${loadedStrokeAlpha.toFixed(3)})`;
           overlayCtx.lineWidth = scale > 0.35 ? 1.2 : 1;
           overlayCtx.fill();
@@ -1310,7 +1377,7 @@
     function syncAreaModeUi() {
       areaMode.checked = isAreaMode;
       areaModeBtn.classList.toggle("is-active", isAreaMode);
-      areaModeBtn.textContent = areaWorld && !isAreaMode ? "Deselect Area" : "Area Select";
+      areaModeBtn.textContent = areaWorld && !isAreaMode ? "Deselect area" : "Select area";
       viewer.classList.toggle("area-mode", isAreaMode);
     }
 
@@ -1326,6 +1393,7 @@
         loadAreaBtn.disabled = true;
         copyAreaBtn.classList.add("is-hidden");
         downloadAreaBtn.classList.add("is-hidden");
+        exportLocationsBtn.classList.add("is-hidden");
       } else {
         areaReadout.textContent = `x=${areaWorld.minX.toFixed(1)}..${areaWorld.maxX.toFixed(1)}, z=${areaWorld.minZ.toFixed(1)}..${areaWorld.maxZ.toFixed(1)}`;
         const estimate = objectManifest.chunks.filter((chunk) => !(chunk.maxX < areaWorld.minX || chunk.minX > areaWorld.maxX || chunk.maxZ < areaWorld.minZ || chunk.minZ > areaWorld.maxZ)).length;
@@ -1333,10 +1401,29 @@
         loadAreaBtn.disabled = false;
         copyAreaBtn.classList.remove("is-hidden");
         downloadAreaBtn.classList.remove("is-hidden");
+        exportLocationsBtn.classList.remove("is-hidden");
         copyAreaBtn.disabled = loadedPlacements.length === 0;
         downloadAreaBtn.disabled = loadedPlacements.length === 0;
+        exportLocationsBtn.disabled = loadedPlacements.length === 0;
       }
       updateHoverCard();
+    }
+
+    function pointInPolygon(point, polygon) {
+      if (!Array.isArray(polygon) || polygon.length < 3) return false;
+      let inside = false;
+      const x = point.x;
+      const y = point.y;
+      for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i, i += 1) {
+        const xi = polygon[i][0];
+        const yi = polygon[i][1];
+        const xj = polygon[j][0];
+        const yj = polygon[j][1];
+        const intersects = ((yi > y) !== (yj > y))
+          && (x < ((xj - xi) * (y - yi)) / ((yj - yi) || 1e-9) + xi);
+        if (intersects) inside = !inside;
+      }
+      return inside;
     }
 
     function render() {
@@ -1349,6 +1436,7 @@
     function nearestPlacement(point) {
       const wx = screenToWorldX(point.x);
       const wz = screenToWorldZ(point.y);
+      const polygonCandidates = [];
       let best = null;
       let bestDist = Infinity;
       const radius = 18 / scale;
@@ -1359,6 +1447,10 @@
         maxZ: wz + radius,
       };
       for (const placement of placementsInBounds(startupLandGrid, hoverBounds)) {
+        const polygon = objectFootprint(placement, landModels);
+        if (polygon && pointInPolygon(point, polygon)) {
+          polygonCandidates.push(placement);
+        }
         const dx = placement[P.x] - wx;
         const dz = placement[P.z] - wz;
         const dist = Math.hypot(dx, dz);
@@ -1368,6 +1460,10 @@
         }
       }
       for (const placement of loadedPlacements) {
+        const polygon = objectFootprint(placement, models);
+        if (polygon && pointInPolygon(point, polygon)) {
+          polygonCandidates.push(placement);
+        }
         const dx = placement[P.x] - wx;
         const dz = placement[P.z] - wz;
         const dist = Math.hypot(dx, dz);
@@ -1375,6 +1471,28 @@
           best = placement;
           bestDist = dist;
         }
+      }
+      if (polygonCandidates.length) {
+        let polygonBest = polygonCandidates[0];
+        let polygonBestArea = Infinity;
+        for (const placement of polygonCandidates) {
+          const modelTable = placement && placement._modelTable === "main" ? models : landModels;
+          const polygon = objectFootprint(placement, modelTable);
+          if (!polygon) continue;
+          let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+          for (const [px, py] of polygon) {
+            if (px < minX) minX = px;
+            if (py < minY) minY = py;
+            if (px > maxX) maxX = px;
+            if (py > maxY) maxY = py;
+          }
+          const area = Math.max(1, (maxX - minX) * (maxY - minY));
+          if (area < polygonBestArea) {
+            polygonBestArea = area;
+            polygonBest = placement;
+          }
+        }
+        return polygonBest;
       }
       return best;
     }
@@ -1434,8 +1552,8 @@
       scheduleRender();
     }
 
-    function downloadSelection() {
-      const payload = loadedPlacements.map((placement) => {
+    function buildEditorSelectionPayload() {
+      return loadedPlacements.map((placement) => {
         const model = getModel(placement[P.modelId]);
         const shapePath = model?.[M.shapePath] || "";
         const typeName = model?.[M.type] || "";
@@ -1464,11 +1582,76 @@
           Flags: 30
         };
       });
+    }
+
+    function downloadSelection() {
+      const payload = buildEditorSelectionPayload();
       const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
       const url = URL.createObjectURL(blob);
       const anchor = document.createElement("a");
       anchor.href = url;
       anchor.download = "chernarus_loaded_area_dayz_editor.json";
+      anchor.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function csvEscape(value) {
+      const stringValue = String(value == null ? "" : value);
+      if (/[",\r\n]/.test(stringValue)) {
+        return `"${stringValue.replace(/"/g, '""')}"`;
+      }
+      return stringValue;
+    }
+
+    function cleanExportName(model) {
+      const typeName = String(model?.[M.type] || "").trim();
+      if (typeName.startsWith("Land_")) return typeName;
+      const shapePath = String(model?.[M.shapePath] || "").replace(/\\/g, "/");
+      let basename = shapePath.split("/").pop() || "";
+      basename = basename.replace(/^,+/, "").trim();
+      if (!basename) return "";
+      const lowered = basename.toLowerCase();
+      if (lowered.startsWith("unknown") || basename.startsWith("*")) return "";
+      return basename;
+    }
+
+    function buildSelectionLocationsCsv() {
+      const header = [
+        "name",
+        "path",
+        "x",
+        "y",
+        "z",
+        "yaw",
+        "pitch",
+        "roll"
+      ];
+      const rows = loadedPlacements.map((placement) => {
+        const model = getModel(placement[P.modelId]) || null;
+        const cleanName = cleanExportName(model);
+        if (!cleanName) return null;
+        const shapePath = String(model?.[M.shapePath] || "");
+        return [
+          cleanName,
+          shapePath,
+          placement[P.x],
+          placement[P.y],
+          placement[P.z],
+          placement[P.yaw],
+          placement[P.pitch],
+          placement[P.roll]
+        ].map(csvEscape).join(",");
+      }).filter(Boolean);
+      return [header.join(","), ...rows].join("\r\n");
+    }
+
+    function downloadSelectionLocations() {
+      const csvText = buildSelectionLocationsCsv();
+      const blob = new Blob([csvText], { type: "text/csv;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = "chernarus_loaded_area_locations.csv";
       anchor.click();
       URL.revokeObjectURL(url);
     }
@@ -1596,35 +1779,7 @@
     });
     copyAreaBtn.addEventListener("click", async () => {
       if (!loadedPlacements.length) return;
-      const payload = loadedPlacements.map((placement) => {
-        const model = getModel(placement[P.modelId]);
-        const shapePath = model?.[M.shapePath] || "";
-        const typeName = model?.[M.type] || "";
-        const isP3D = !!shapePath && !typeName.startsWith("Land_");
-        if (isP3D) {
-          return {
-            Type: shapePath,
-            DisplayName: shapePath,
-            Position: [placement[P.x], placement[P.y], placement[P.z]],
-            Orientation: [placement[P.yaw], placement[P.pitch], placement[P.roll]],
-            Scale: 1.0,
-            AttachmentMap: {},
-            Model: shapePath,
-            Flags: 30
-          };
-        }
-        const displayName = typeName || shapePath || "";
-        return {
-          Type: displayName,
-          DisplayName: displayName,
-          Position: [placement[P.x], placement[P.y], placement[P.z]],
-          Orientation: [placement[P.yaw], placement[P.pitch], placement[P.roll]],
-          Scale: 1.0,
-          AttachmentMap: {},
-          Model: shapePath || "",
-          Flags: 30
-        };
-      });
+      const payload = buildEditorSelectionPayload();
       const copied = await copyTextToClipboard(JSON.stringify(payload, null, 2));
       statusReadout.textContent = copied
         ? `Copied ${payload.length.toLocaleString()} rows to clipboard`
@@ -1662,6 +1817,7 @@
       scheduleRender();
     });
     downloadAreaBtn.addEventListener("click", downloadSelection);
+    exportLocationsBtn.addEventListener("click", downloadSelectionLocations);
     resetViewBtn.addEventListener("click", () => {
       fitViewToBounds();
       render();

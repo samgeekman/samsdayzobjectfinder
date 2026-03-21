@@ -34,16 +34,16 @@
     var toggle = document.getElementById("themeToggle");
     if (!toggle) return;
 
-    toggle.textContent = mode === "dark" ? "Light mode" : "Dark mode";
+    toggle.textContent = "◐";
     toggle.setAttribute("aria-pressed", mode === "dark");
   }
 
   window.addEventListener("DOMContentLoaded", function() {
     applyTheme(initial);
-    var toggle = document.getElementById("themeToggle");
-    if (!toggle) return;
-
-    toggle.addEventListener("click", function() {
+    document.addEventListener("click", function(event) {
+      var toggle = event.target && event.target.closest ? event.target.closest("#themeToggle") : null;
+      if (!toggle) return;
+      event.preventDefault();
       var next = root.classList.contains("dark-mode") ? "light" : "dark";
       applyTheme(next);
     });

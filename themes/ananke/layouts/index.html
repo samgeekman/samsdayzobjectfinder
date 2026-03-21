@@ -182,6 +182,57 @@
   .version-filter-notice a:hover {
     color: #5a4300;
   }
+  .version-filter-notice--guide {
+    align-items: center;
+    gap: 10px;
+  }
+  .version-filter-notice--guide span {
+    flex: 1 1 auto;
+  }
+  .version-filter-notice__close {
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0 2px;
+  }
+  .version-filter-notice__close:hover {
+    opacity: 0.75;
+  }
+  .folder-tree__folder-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+  }
+  .folder-tree__folder-help {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0;
+    opacity: 0.8;
+  }
+  .folder-tree__folder-help:hover {
+    opacity: 1;
+    color: var(--text);
+  }
+  .folder-tree__folder-wrap:hover .folder-tree__folder-help,
+  .folder-tree__folder.is-active + .folder-tree__folder-help {
+    display: inline-flex;
+  }
   #filters label {
     font-weight: 600;
     color: var(--text);
@@ -289,8 +340,7 @@
   }
   #folderSidebarClear,
   #objectFocusClear,
-  #exportToggle,
-  #themeToggle {
+  #exportToggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -2885,6 +2935,14 @@
   .object-map.visible {
     display: block;
   }
+  #dayzObjects_wrapper.object-map-mode #dayzObjects,
+  #dayzObjects_wrapper.object-map-mode .dataTables_info,
+  #dayzObjects_wrapper.object-map-mode .dataTables_paginate,
+  #dayzObjects_wrapper.object-map-mode .dataTables_length,
+  #dayzObjects_wrapper.object-map-mode .dataTables_filter,
+  #dayzObjects_wrapper.object-map-mode .top-bar {
+    display: none !important;
+  }
   .object-map__header {
     display: flex;
     align-items: center;
@@ -3306,7 +3364,8 @@
   .folder-tree__row--database .folder-tree__folder,
   .folder-tree__row--types-explorer .folder-tree__folder,
   .folder-tree__row--presets .folder-tree__folder,
-  .folder-tree__row--object-map .folder-tree__folder {
+  .folder-tree__row--object-map .folder-tree__folder,
+  .folder-tree__row--theme .folder-tree__folder {
     font-weight: 700;
   }
   .folder-tree__apps-divider {
@@ -3332,9 +3391,6 @@
   </div>
   <div class="filter-actions">
     <button id="exportToggle" class="pill-button" type="button" aria-expanded="false" aria-controls="exportPanel">Export data</button>
-    <button id="themeToggle" class="pill-button theme-toggle" type="button" aria-live="polite">
-      Dark mode
-    </button>
   </div>
   <div id="exportPanel" class="export-panel" aria-hidden="true">
     <div class="export-panel__intro">Export the current filtered view (images excluded).</div>
@@ -3424,6 +3480,19 @@
 <div id="pathHoverTooltip" class="path-hover-tooltip" role="status" aria-live="polite"></div>
 <div id="presetsGuideNotice" class="version-filter-notice" role="status" aria-live="polite">
   <span>Free to use and attributed builds for DayZ Editor. Press the 🏗️ icon on a build to copy it to your clipboard and Ctrl+V in Editor, or download the JSON / DZE files.</span>
+  <button id="presetsGuideClose" class="version-filter-notice__close" type="button" aria-label="Dismiss Editor Builds help">✕</button>
+</div>
+<div id="objectFinderGuideNotice" class="version-filter-notice version-filter-notice--guide" role="status" aria-live="polite">
+  <span>Every placeable DayZ object - click one for more detail. Search for 'humvee', 'green bag', or browse the folder tree + pin your favourites.</span>
+  <button id="objectFinderGuideClose" class="version-filter-notice__close" type="button" aria-label="Dismiss Object Finder help">✕</button>
+</div>
+<div id="typesExplorerGuideNotice" class="version-filter-notice version-filter-notice--guide" role="status" aria-live="polite">
+  <span>See the Types entries for every object across maps, export or click on object to get its single Types entry.</span>
+  <button id="typesExplorerGuideClose" class="version-filter-notice__close" type="button" aria-label="Dismiss Types Explorer help">✕</button>
+</div>
+<div id="objectMapGuideNotice" class="version-filter-notice version-filter-notice--guide" role="status" aria-live="polite">
+  <span>View the location of Land_ objects - Use <strong>Select area</strong> to export full location data or Copy all objects directly to Editor.</span>
+  <button id="objectMapGuideClose" class="version-filter-notice__close" type="button" aria-label="Dismiss Object Maps help">✕</button>
 </div>
 
 <div class="objects-layout">
@@ -3925,22 +3994,29 @@
         html += '</ul>';
         return html;
       };
+      var renderGuideHelpBtn = function(appKey, title) {
+        return '<button class="folder-tree__folder-help" type="button" data-guide-app="' + appKey + '" title="' + title + '">?</button>';
+      };
       var presetsRow = ''
         + '<div class="folder-tree__row folder-tree__row--database">'
         + '<img class="folder-tree__app-logo" src="/favicon.png" alt="Object Finder">'
         + '<button class="folder-tree__folder' + (databaseActive ? ' is-active' : '') + '" type="button" data-folder-path="__database__" title="Object Finder">Object Finder</button>'
+        + (databaseActive ? renderGuideHelpBtn('database', 'Show Object Finder help') : '')
         + '</div>'
         + '<div class="folder-tree__row folder-tree__row--types-explorer">'
         + '<span class="folder-tree__types-icon" aria-hidden="true">&lt;/&gt;</span>'
         + '<button class="folder-tree__folder' + (activeCollectionFilter === 'types_explorer' ? ' is-active' : '') + '" type="button" data-folder-path="__types_explorer__" title="Types Explorer">Types Explorer</button>'
+        + (activeCollectionFilter === 'types_explorer' ? renderGuideHelpBtn('types_explorer', 'Show Types Explorer help') : '')
         + '</div>'
         + '<div class="folder-tree__row folder-tree__row--presets">'
         + '<span class="folder-tree__leaf-icon" aria-hidden="true">🏗️</span>'
         + '<button class="folder-tree__folder' + (presetsActive ? ' is-active' : '') + '" type="button" data-folder-path="__presets__" title="Editor Builds">Editor Builds</button>'
+        + (presetsActive ? renderGuideHelpBtn('presets', 'Show Editor Builds help') : '')
         + '</div>'
         + '<div class="folder-tree__row folder-tree__row--object-map">'
         + '<span class="folder-tree__leaf-icon" aria-hidden="true">📍</span>'
         + '<button class="folder-tree__folder' + (activeCollectionFilter === 'object_map' ? ' is-active' : '') + '" type="button" data-folder-path="__object_map__" title="Object Maps">Object Maps</button>'
+        + (activeCollectionFilter === 'object_map' ? renderGuideHelpBtn('object_map', 'Show Object Maps help') : '')
         + '</div>'
         + '<div class="folder-tree__apps-divider" aria-hidden="true"></div>'
         + (!hasVisibleFolders && forceExpandForSearch ? '<div class="folder-tree__empty">No matching folders found.</div>' : '');
@@ -3981,8 +4057,7 @@
       updatePathFilterNotice();
     };
     var updatePresetsGuideNotice = function() {
-      if (!presetsGuideNoticeEl) return;
-      presetsGuideNoticeEl.classList.toggle('visible', activeCollectionFilter === 'presets');
+      updateAppGuideNotices();
     };
     var updateTableColumnLabels = function() {
       var headerCells = document.querySelectorAll('#dayzObjects thead th');
@@ -5492,8 +5567,15 @@
       if (!objectMapPanelEl) return;
       var visible = activeCollectionFilter === 'object_map';
       objectMapPanelEl.classList.toggle('visible', !!visible);
+      if ($('#dayzObjects_wrapper').length) {
+        $('#dayzObjects_wrapper').toggleClass('object-map-mode', !!visible);
+      }
       if (visible) {
         ensureObjectMapV2FrameLoaded();
+        dispatchObjectMapV2SearchState();
+        setTimeout(function() {
+          dispatchObjectMapV2SearchState();
+        }, 120);
       }
       if (!visible) {
         if (objectMapInteractionRefreshTimer) {
@@ -5537,7 +5619,7 @@
         folderSidebarSearchEl.value = normalized;
       }
       if (!table) return;
-      table.search('');
+      table.search(normalized);
       table.columns().search('');
       if (normalized) {
         table.column(2).search('^' + escapeRegex(normalized) + '$', true, false).draw();
@@ -5550,6 +5632,9 @@
       var searchQuery = objectMapExactSearchQuery || '';
       var activePathFilter = '';
       var searchMode = objectMapSearchMode || '';
+      if (!searchQuery && table && typeof table.search === 'function') {
+        searchQuery = String(table.search() || '').trim();
+      }
       if (!searchQuery && folderSidebarSearchEl) {
         searchQuery = String(folderSidebarSearchEl.value || '').trim();
       }
@@ -7038,6 +7123,16 @@
         var mapKey = trigger.getAttribute('data-map-key') || '';
         var resolved = currentObjectLocationData[mapKey];
         if (!mapKey || !resolved || !resolved.count) return;
+        if (String(mapKey).toLowerCase() === 'chernarus') {
+          e.preventDefault();
+          e.stopPropagation();
+          openObjectInObjectMapView(
+            currentObjectData.id || '',
+            currentObjectData.objName || '',
+            'chernarus'
+          );
+          return;
+        }
         openLocationMapLightbox(mapKey, currentObjectData, resolved);
       });
     }
@@ -7928,6 +8023,9 @@
       var selection = chernarusMapState.selection;
       var mapLabel = getLocationMapLabel(selection && selection.mapKey ? selection.mapKey : chernarusMapState.activeMapKey);
       if (!chernarusMapLabelEl || !chernarusMapMetaEl || !chernarusMapStatusEl) return;
+      if (chernarusMapOpenObjectMapEl) {
+        chernarusMapOpenObjectMapEl.hidden = !(selection && String(selection.mapKey || '').toLowerCase() === 'chernarus');
+      }
       if (!selection) {
         chernarusMapLabelEl.textContent = mapLabel + ' map';
         chernarusMapMetaEl.textContent = '';
@@ -9783,11 +9881,53 @@
     var pathFilterCopyLinkEl = document.getElementById('pathFilterCopyLink');
     var searchFilterNoticeEl = document.getElementById('searchFilterNotice');
     var searchFilterNoticeTextEl = document.getElementById('searchFilterNoticeText');
+    var presetsGuideCloseEl = document.getElementById('presetsGuideClose');
+    var objectFinderGuideNoticeEl = document.getElementById('objectFinderGuideNotice');
+    var objectFinderGuideCloseEl = document.getElementById('objectFinderGuideClose');
+    var typesExplorerGuideNoticeEl = document.getElementById('typesExplorerGuideNotice');
+    var typesExplorerGuideCloseEl = document.getElementById('typesExplorerGuideClose');
+    var objectMapGuideNoticeEl = document.getElementById('objectMapGuideNotice');
+    var objectMapGuideCloseEl = document.getElementById('objectMapGuideClose');
     var searchFilterResetLinkEl = document.getElementById('searchFilterResetLink');
     var searchFilterCopyLinkEl = document.getElementById('searchFilterCopyLink');
     var chipInfoTooltipEl = document.getElementById('chipInfoTooltip');
     var pathHoverTooltipEl = document.getElementById('pathHoverTooltip');
     var presetsGuideNoticeEl = document.getElementById('presetsGuideNotice');
+    var appGuideCookiePrefix = 'samsobjectfinder_guide_';
+
+    var readCookie = function(name) {
+      var escaped = String(name).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      var match = document.cookie.match(new RegExp('(?:^|; )' + escaped + '=([^;]*)'));
+      return match ? decodeURIComponent(match[1]) : '';
+    };
+    var writeCookie = function(name, value, days) {
+      var maxAge = Math.max(1, Number(days) || 365) * 24 * 60 * 60;
+      document.cookie = name + '=' + encodeURIComponent(String(value)) + '; path=/; max-age=' + maxAge + '; SameSite=Lax';
+    };
+    var isGuideDismissed = function(appKey) {
+      return readCookie(appGuideCookiePrefix + appKey) === '1';
+    };
+    var setGuideDismissed = function(appKey, dismissed) {
+      writeCookie(appGuideCookiePrefix + appKey, dismissed ? '1' : '0', 365);
+    };
+    var showGuideNotice = function(appKey) {
+      setGuideDismissed(appKey, false);
+      updateAppGuideNotices();
+    };
+    var updateAppGuideNotices = function() {
+      if (presetsGuideNoticeEl) {
+        presetsGuideNoticeEl.classList.toggle('visible', activeCollectionFilter === 'presets' && !isGuideDismissed('presets'));
+      }
+      if (objectFinderGuideNoticeEl) {
+        objectFinderGuideNoticeEl.classList.toggle('visible', activeCollectionFilter === '' && !isGuideDismissed('database'));
+      }
+      if (typesExplorerGuideNoticeEl) {
+        typesExplorerGuideNoticeEl.classList.toggle('visible', activeCollectionFilter === 'types_explorer' && !isGuideDismissed('types_explorer'));
+      }
+      if (objectMapGuideNoticeEl) {
+        objectMapGuideNoticeEl.classList.toggle('visible', activeCollectionFilter === 'object_map' && !isGuideDismissed('object_map'));
+      }
+    };
     var appliedUrlState = false;
 
     if (versionFilterNoticeEl && versionParam) {
@@ -10024,6 +10164,13 @@
     });
     if (folderTreeEl) {
       folderTreeEl.addEventListener('click', function(e) {
+        var guideBtn = e.target.closest('[data-guide-app]');
+        if (guideBtn) {
+          e.preventDefault();
+          e.stopPropagation();
+          showGuideNotice(String(guideBtn.getAttribute('data-guide-app') || ''));
+          return;
+        }
         var pinLinkBtn = e.target.closest('[data-folder-pin-link]');
         if (pinLinkBtn) {
           e.preventDefault();
@@ -10141,6 +10288,30 @@
       folderSidebarEl.addEventListener('scroll', function() {
         syncFolderBulkStickyMode();
       }, { passive: true });
+    }
+    if (presetsGuideCloseEl) {
+      presetsGuideCloseEl.addEventListener('click', function() {
+        setGuideDismissed('presets', true);
+        updateAppGuideNotices();
+      });
+    }
+    if (objectFinderGuideCloseEl) {
+      objectFinderGuideCloseEl.addEventListener('click', function() {
+        setGuideDismissed('database', true);
+        updateAppGuideNotices();
+      });
+    }
+    if (typesExplorerGuideCloseEl) {
+      typesExplorerGuideCloseEl.addEventListener('click', function() {
+        setGuideDismissed('types_explorer', true);
+        updateAppGuideNotices();
+      });
+    }
+    if (objectMapGuideCloseEl) {
+      objectMapGuideCloseEl.addEventListener('click', function() {
+        setGuideDismissed('object_map', true);
+        updateAppGuideNotices();
+      });
     }
     var runResetView = function() {
       var currentAppCollection = activeCollectionFilter;

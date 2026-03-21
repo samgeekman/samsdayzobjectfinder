@@ -28,6 +28,11 @@
               New 1.29 Objects
             </a>
           </li>
+          <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
+            <button id="themeToggle" class="nav-menu-button nav-menu-button--theme no-underline" type="button" aria-live="polite" aria-pressed="false" title="Toggle dark or light mode" aria-label="Toggle dark or light mode">
+              ◐
+            </button>
+          </li>
         </ul>
       {{ else }}
         <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
@@ -41,6 +46,11 @@
               New 1.29 Objects
             </a>
           </li>
+          <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
+            <button id="themeToggle" class="nav-menu-button nav-menu-button--theme no-underline" type="button" aria-live="polite" aria-pressed="false" title="Toggle dark or light mode" aria-label="Toggle dark or light mode">
+              ◐
+            </button>
+          </li>
         </ul>
       {{ end }}
       {{ partials.IncludeCached "social/follow.html" . }}
@@ -49,6 +59,12 @@
 </nav>
 
 <style>
+
+.nav-menu-button--theme {
+  appearance: none;
+  -webkit-appearance: none;
+  min-width: 1.2em;
+}
 
 .bg-black {
   background-color: #EEA700 !important; 
