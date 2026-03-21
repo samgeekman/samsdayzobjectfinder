@@ -3446,7 +3446,7 @@
     <span class="object-map__title"><span class="object-map__title-icon" aria-hidden="true">📍</span>Object Maps</span>
   </div>
   <div class="object-map-v2__frame">
-    <iframe id="objectMapV2Frame" class="object-map-v2__iframe" src="about:blank" data-src="/object-map-v2/?embedded=1" title="Object Map V2" loading="lazy"></iframe>
+    <iframe id="objectMapV2Frame" class="object-map-v2__iframe" src="about:blank" data-map-path="/object-map-v2/?embedded=1" title="Object Map V2" loading="lazy"></iframe>
   </div>
   <div class="object-map__note">Object Map V2 replaces the legacy inline Chernarus map here.</div>
 </div>
@@ -3483,7 +3483,7 @@
   <button id="presetsGuideClose" class="version-filter-notice__close" type="button" aria-label="Dismiss Editor Builds help">✕</button>
 </div>
 <div id="objectFinderGuideNotice" class="version-filter-notice version-filter-notice--guide" role="status" aria-live="polite">
-  <span>Every placeable DayZ object - click one for more detail. Search for 'humvee', 'green bag', or browse the folder tree + pin your favourites.</span>
+  <span>Every placeable DayZ object - click one for more detail. Search for 'large industrial', 'green bag', or browse the folder tree + pin your favourites.</span>
   <button id="objectFinderGuideClose" class="version-filter-notice__close" type="button" aria-label="Dismiss Object Finder help">✕</button>
 </div>
 <div id="typesExplorerGuideNotice" class="version-filter-notice version-filter-notice--guide" role="status" aria-live="polite">
@@ -5616,7 +5616,15 @@
     };
     var ensureObjectMapV2FrameLoaded = function() {
       if (!objectMapV2FrameEl || objectMapV2FrameLoaded) return;
-      var src = objectMapV2FrameEl.getAttribute('data-src') || '';
+      var mapPath = objectMapV2FrameEl.getAttribute('data-map-path') || '';
+      var src = '';
+      if (mapPath) {
+        try {
+          src = new URL(mapPath, window.location.origin).toString();
+        } catch (error) {
+          src = mapPath;
+        }
+      }
       if (!src) return;
       objectMapV2FrameEl.setAttribute('src', src);
       objectMapV2FrameLoaded = true;
