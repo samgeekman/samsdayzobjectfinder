@@ -4013,6 +4013,11 @@
         + '<button class="folder-tree__folder' + (databaseActive ? ' is-active' : '') + '" type="button" data-folder-path="__database__" title="Object Finder">Object Finder</button>'
         + (databaseActive ? renderGuideHelpBtn('database', 'Show Object Finder help') : '')
         + '</div>'
+        + '<div class="folder-tree__row folder-tree__row--object-map">'
+        + '<span class="folder-tree__leaf-icon" aria-hidden="true">📍</span>'
+        + '<button class="folder-tree__folder' + (activeCollectionFilter === 'object_map' ? ' is-active' : '') + '" type="button" data-folder-path="__object_map__" title="Object Maps">Object Maps</button>'
+        + (activeCollectionFilter === 'object_map' ? renderGuideHelpBtn('object_map', 'Show Object Maps help') : '')
+        + '</div>'
         + '<div class="folder-tree__row folder-tree__row--types-explorer">'
         + '<span class="folder-tree__types-icon" aria-hidden="true">&lt;/&gt;</span>'
         + '<button class="folder-tree__folder' + (activeCollectionFilter === 'types_explorer' ? ' is-active' : '') + '" type="button" data-folder-path="__types_explorer__" title="Types Explorer">Types Explorer</button>'
@@ -4022,11 +4027,6 @@
         + '<span class="folder-tree__leaf-icon" aria-hidden="true">🏗️</span>'
         + '<button class="folder-tree__folder' + (presetsActive ? ' is-active' : '') + '" type="button" data-folder-path="__presets__" title="Editor Builds">Editor Builds</button>'
         + (presetsActive ? renderGuideHelpBtn('presets', 'Show Editor Builds help') : '')
-        + '</div>'
-        + '<div class="folder-tree__row folder-tree__row--object-map">'
-        + '<span class="folder-tree__leaf-icon" aria-hidden="true">📍</span>'
-        + '<button class="folder-tree__folder' + (activeCollectionFilter === 'object_map' ? ' is-active' : '') + '" type="button" data-folder-path="__object_map__" title="Object Maps">Object Maps</button>'
-        + (activeCollectionFilter === 'object_map' ? renderGuideHelpBtn('object_map', 'Show Object Maps help') : '')
         + '</div>'
         + '<div class="folder-tree__apps-divider" aria-hidden="true"></div>'
         + (!hasVisibleFolders && forceExpandForSearch ? '<div class="folder-tree__empty">No matching folders found.</div>' : '');
