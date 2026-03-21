@@ -225,6 +225,13 @@
     .map-btn.is-hidden {
       display: none;
     }
+    :root:not(.dark-mode) .map-btn,
+    :root:not(.dark-mode) .hover-card,
+    :root:not(.dark-mode) .hover-card__close,
+    :root:not(.dark-mode) .hover-card__meta-btn,
+    :root:not(.dark-mode) .hover-card__name-btn {
+      color: #132028 !important;
+    }
     .dark-mode .map-btn,
     .dark-mode .hover-card__close,
     .dark-mode .hover-card__meta-btn {
@@ -577,6 +584,7 @@
     let areaWorld = null;
     let hoverPlacement = null;
     let pinnedPlacement = null;
+    let searchRows = [];
     let searchQuery = "";
     let searchPathFilter = "";
     let searchMode = "";
@@ -708,6 +716,50 @@
       offsetY = (rect.height - worldHeight * scale) / 2;
     }
 
+    function fitViewToWorldRect(minX, minZ, maxX, maxZ) {
+      if (!bounds) return;
+      const rect = viewer.getBoundingClientRect();
+      const width = Math.max(40, Number(maxX) - Number(minX));
+      const height = Math.max(40, Number(maxZ) - Number(minZ));
+      const padding = Math.max(60, Math.min(rect.width, rect.height) * 0.12);
+      const fitScale = Math.min(
+        (rect.width - padding * 2) / width,
+        (rect.height - padding * 2) / height
+      );
+      scale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, fitScale));
+      const centerX = (Number(minX) + Number(maxX)) / 2;
+      const centerZ = (Number(minZ) + Number(maxZ)) / 2;
+      offsetX = rect.width / 2 - (centerX - bounds.minX) * scale;
+      offsetY = rect.height / 2 - (bounds.maxZ - centerZ) * scale;
+    }
+
+    function fitViewToSearchMatches() {
+      if (searchMode !== "exact_object") return;
+      let minX = Infinity;
+      let minZ = Infinity;
+      let maxX = -Infinity;
+      let maxZ = -Infinity;
+      let count = 0;
+      for (const placement of startupLandPlacements) {
+        if (!searchLandModelIds.has(placement[P.modelId])) continue;
+        minX = Math.min(minX, placement[P.x]);
+        minZ = Math.min(minZ, placement[P.z]);
+        maxX = Math.max(maxX, placement[P.x]);
+        maxZ = Math.max(maxZ, placement[P.z]);
+        count += 1;
+      }
+      for (const placement of loadedPlacements) {
+        if (!searchModelIds.has(placement[P.modelId])) continue;
+        minX = Math.min(minX, placement[P.x]);
+        minZ = Math.min(minZ, placement[P.z]);
+        maxX = Math.max(maxX, placement[P.x]);
+        maxZ = Math.max(maxZ, placement[P.z]);
+        count += 1;
+      }
+      if (!count) return;
+      fitViewToWorldRect(minX, minZ, maxX, maxZ);
+    }
+
     function resizeCanvas(preserveView = true) {
       const rect = viewer.getBoundingClientRect();
       let centerWorldX = null;
@@ -774,6 +826,7 @@
     }
 
     function refreshSearchMatches(rows, query, pathFilter, mode) {
+      searchRows = Array.isArray(rows) ? rows : [];
       searchQuery = String(query || "").trim();
       searchPathFilter = String(pathFilter || "").trim();
       searchMode = String(mode || "").trim();
@@ -789,8 +842,8 @@
       if (searchMode === "exact_object" && searchQuery) {
         names.add(normalizeSearchKey(searchQuery));
       } else {
-        if (Array.isArray(rows) && rows.length) {
-          rows.forEach((row) => {
+        if (searchRows.length) {
+          searchRows.forEach((row) => {
             const objectName = normalizeSearchKey(row?.objectName);
             const path = normalizeSearchKey(row?.path);
             if (objectName) names.add(objectName);
@@ -824,6 +877,7 @@
           }
         }
       });
+      fitViewToSearchMatches();
       scheduleRender();
     }
 
@@ -1077,7 +1131,7 @@
         const g = Number(roofColor[1] || 0);
         const b = Number(roofColor[2] || 0);
         const avg = (r + g + b) / 3;
-        const boost = 1.75;
+        const boost = 3.9375;
         return [
           Math.max(0, Math.min(255, Math.round(avg + (r - avg) * boost))),
           Math.max(0, Math.min(255, Math.round(avg + (g - avg) * boost))),
@@ -1857,6 +1911,7 @@
       for (const placement of startupPlacements) placement._modelTable = "land";
       startupLandPlacements = startupPlacements;
       buildStartupLandGrid();
+      refreshSearchMatches(searchRows, searchQuery, searchPathFilter, searchMode);
       tileCountEl.textContent = `${Math.pow(2, satPyramid.maxZoom)} x ${Math.pow(2, satPyramid.maxZoom)}`;
       packCountEl.textContent = objectManifest.counts.rows.toLocaleString();
       modelCountEl.textContent = `${objectManifest.counts.models.toLocaleString()} mixed / ${landManifest.counts.models.toLocaleString()} land`;

@@ -3945,6 +3945,16 @@
     };
     var updateFolderSidebarTitle = function() {
       if (!folderSidebarTitleEl) return;
+      if (
+        activeCollectionFilter === 'object_map' &&
+        objectMapSearchMode === 'exact_object' &&
+        objectMapExactSearchQuery
+      ) {
+        var chernarusResolved = currentObjectLocationData && currentObjectLocationData.chernarus;
+        var mapCount = chernarusResolved && typeof chernarusResolved.count === 'number' ? chernarusResolved.count : 0;
+        folderSidebarTitleEl.textContent = mapCount.toLocaleString() + ' objects';
+        return;
+      }
       var visibleCount = table ? table.rows({ search: 'applied' }).count() : 0;
       folderSidebarTitleEl.textContent = visibleCount.toLocaleString() + ' objects';
     };
@@ -6732,6 +6742,9 @@
     };
     var buildTypesExplorerUrl = function() {
       var nextUrl = new URL(window.location.toString());
+      var focusedObjectId = normalizeObjectId(
+        (currentObjectData && currentObjectData.id) ? currentObjectData.id : (objectIdParams.length === 1 ? objectIdParams[0] : '')
+      );
       nextUrl.pathname = '/';
       nextUrl.searchParams.delete('id');
       nextUrl.searchParams.delete('object');
@@ -6748,6 +6761,9 @@
       nextUrl.searchParams.delete('types_value');
       if (activeCollectionFilter === 'object_map') {
         nextUrl.searchParams.set('maps', '1');
+        if (focusedObjectId) {
+          nextUrl.searchParams.set('id', focusedObjectId);
+        }
         return nextUrl.toString();
       }
       if (activeCollectionFilter === 'presets') {
@@ -7465,6 +7481,7 @@
         currentObjectLocationData = {};
         objectFocusLocationEl.innerHTML = '';
         objectFocusLocationEl.classList.remove('visible');
+        updateFolderSidebarTitle();
         return;
       }
       var requestKey = getObjectLocationCacheKey(objData);
@@ -7503,6 +7520,7 @@
             currentObjectLocationData = {};
             objectFocusLocationEl.innerHTML = '';
             objectFocusLocationEl.classList.remove('visible', 'is-open');
+            updateFolderSidebarTitle();
             return;
           }
           var mapGroupActionHtml = '';
@@ -7542,12 +7560,14 @@
             '</div>' +
             '<div class="object-focus__section-body"><div class="object-focus__location-actions">' + locationRowsHtml + '</div></div>';
           objectFocusLocationEl.classList.toggle('is-open', locationExpanded);
+          updateFolderSidebarTitle();
         })
         .catch(function(error) {
           if (!currentObjectData || getObjectLocationCacheKey(currentObjectData) !== requestKey) return;
           currentObjectLocationData = {};
           objectFocusLocationEl.innerHTML = '';
           objectFocusLocationEl.classList.remove('visible', 'is-open');
+          updateFolderSidebarTitle();
         });
     };
     var getLocationMapConfig = function(mapKey) {
@@ -9226,7 +9246,9 @@
             setTimeout(function() { rowEl.classList.remove('flash'); }, 1200);
           }
         } else {
-          showMissingObject(normalizedId);
+          if (!focusSidebarById(normalizedId)) {
+            showMissingObject(normalizedId);
+          }
         }
       });
       table.column(7).search('^' + escapeRegex(normalizedId) + '$', true, false).draw();
@@ -9235,6 +9257,9 @@
       if (!table) return;
       var normalizedId = normalizeObjectId(objectId);
       var normalizedName = String(objectName || '').trim();
+      if (!normalizedName && normalizedId) {
+        normalizedName = String(resolveObjectNameById(normalizedId) || '').trim();
+      }
       var preferredMap = String(preferredMapKey || '').trim().toLowerCase();
       if (preferredMap === 'chernarus' || preferredMap === 'livonia') {
         objectMapActiveMapKey = preferredMap;
@@ -9245,7 +9270,8 @@
       updateObjectMapPanelVisibility();
       updatePresetsGuideNotice();
       renderFolderTree();
-      // Use global search so "clear search"/"reset view" fully clears this state.
+      objectMapExactSearchQuery = normalizedName;
+      objectMapSearchMode = normalizedName ? 'exact_object' : '';
       table.columns().search('');
       if (normalizedName) {
         table.search(normalizedName).draw();
@@ -9260,9 +9286,13 @@
             break;
           }
         }
+        objectMapExactSearchQuery = matchedName || normalizedId;
+        objectMapSearchMode = objectMapExactSearchQuery ? 'exact_object' : '';
         table.search(matchedName || normalizedId).draw();
         return;
       }
+      objectMapExactSearchQuery = '';
+      objectMapSearchMode = '';
       table.search('').draw();
     };
 
@@ -9914,6 +9944,11 @@
       setGuideDismissed(appKey, false);
       updateAppGuideNotices();
     };
+    var toggleGuideNotice = function(appKey) {
+      if (!appKey) return;
+      setGuideDismissed(appKey, !isGuideDismissed(appKey));
+      updateAppGuideNotices();
+    };
     var updateAppGuideNotices = function() {
       if (presetsGuideNoticeEl) {
         presetsGuideNoticeEl.classList.toggle('visible', activeCollectionFilter === 'presets' && !isGuideDismissed('presets'));
@@ -10047,8 +10082,14 @@
         }
         renderFolderTree();
         focusById(objectIdParams[0]);
+        if (mapsAppParam && singleMatch && !isPresetRow(singleMatch)) {
+          openObjectInObjectMapView(
+            objectIdParams[0],
+            getObjectName(singleMatch) || '',
+            'chernarus'
+          );
+        }
       } else if (objectIdParams.length > 1) {
-        // Multi-ID links represent a pinned collection, no single focus target.
       } else if (folderPathParam) {
         treatIdListAsSearchFolders = false;
         activeCollectionFilter = '';
@@ -10168,7 +10209,7 @@
         if (guideBtn) {
           e.preventDefault();
           e.stopPropagation();
-          showGuideNotice(String(guideBtn.getAttribute('data-guide-app') || ''));
+          toggleGuideNotice(String(guideBtn.getAttribute('data-guide-app') || ''));
           return;
         }
         var pinLinkBtn = e.target.closest('[data-folder-pin-link]');
@@ -11003,7 +11044,6 @@
       }
       buttonEl.textContent = 'No entries in current view';
       buttonEl.classList.remove('export-empty-flash');
-      // Restart animation on repeated clicks.
       void buttonEl.offsetWidth;
       buttonEl.classList.add('export-empty-flash');
       buttonEl._noEntriesTimer = setTimeout(function() {
