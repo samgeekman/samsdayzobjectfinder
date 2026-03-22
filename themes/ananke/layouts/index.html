@@ -2943,6 +2943,11 @@
   #dayzObjects_wrapper.object-map-mode .top-bar {
     display: none !important;
   }
+  #filters.object-map-mode .top-console,
+  #filters.object-map-mode .filter-actions,
+  #filters.object-map-mode #exportPanel {
+    display: none !important;
+  }
   .object-map__header {
     display: flex;
     align-items: center;
@@ -4753,6 +4758,7 @@
     var folderSidebarSearchEl = document.getElementById('folderSidebarSearch');
     var folderSidebarSearchLinkEl = document.getElementById('folderSidebarSearchLink');
     var folderSidebarSearchClearEl = document.getElementById('folderSidebarSearchClear');
+    var filtersEl = document.getElementById('filters');
     var filterConsoleEl = document.getElementById('filterConsole');
     var typesExplorerPanelEl = document.getElementById('typesExplorerPanel');
     var typesExplorerUsageTagsEl = document.getElementById('typesExplorerUsageTags');
@@ -5579,6 +5585,9 @@
       objectMapPanelEl.classList.toggle('visible', !!visible);
       if ($('#dayzObjects_wrapper').length) {
         $('#dayzObjects_wrapper').toggleClass('object-map-mode', !!visible);
+      }
+      if (filtersEl) {
+        filtersEl.classList.toggle('object-map-mode', !!visible);
       }
       if (visible) {
         ensureObjectMapV2FrameLoaded();
