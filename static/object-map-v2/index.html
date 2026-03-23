@@ -82,6 +82,37 @@
     .viewer__loading.is-visible {
       display: flex;
     }
+    .viewer__arcade-hud {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      z-index: 6;
+      display: none;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border: 1px solid var(--site-panel-border);
+      border-radius: 3px;
+      background: var(--site-panel-bg);
+      color: var(--site-panel-text);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    }
+    .viewer__arcade-hud.is-visible {
+      display: inline-flex;
+    }
+    .viewer__arcade-label {
+      opacity: 0.72;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 0.08em;
+    }
+    .viewer__arcade-value {
+      font-size: 15px;
+    }
     .viewer__loading-wheel {
       width: 42px;
       height: 42px;
@@ -523,6 +554,10 @@
       <div class="viewer__loading" id="viewer-loading" aria-hidden="true">
         <div class="viewer__loading-wheel" aria-hidden="true"></div>
       </div>
+      <div class="viewer__arcade-hud" id="arcade-hud" aria-live="polite">
+        <span class="viewer__arcade-label">Zombies killed</span>
+        <span class="viewer__arcade-value" id="arcade-kills">0</span>
+      </div>
     </main>
   </div>
 
@@ -623,6 +658,8 @@
     const overlayCtx = overlayCanvas.getContext("2d");
     const selectionCtx = selectionCanvas.getContext("2d");
     const viewerLoadingEl = document.getElementById("viewer-loading");
+    const arcadeHudEl = document.getElementById("arcade-hud");
+    const arcadeKillsEl = document.getElementById("arcade-kills");
 
     const tileCountEl = document.getElementById("tile-count");
     const packCountEl = document.getElementById("pack-count");
@@ -694,6 +731,19 @@
     let isAreaLoading = false;
     let hoverCheckTimer = 0;
     let pendingHoverPoint = null;
+    let controlledShip = null;
+    let controlledPlane = null;
+    let planeBombs = [];
+    let planeKills = 0;
+    let lastRenderTime = 0;
+
+    const controlledShipKeys = {
+      KeyW: false,
+      KeyA: false,
+      KeyS: false,
+      KeyD: false,
+      Space: false,
+    };
 
     const STARTUP_GRID_SIZE = 480;
     const STARTUP_POINT_SCALE = 0.05;
@@ -708,6 +758,21 @@
     const WHEEL_ZOOM_FACTOR_MIN = 0.92;
     const WHEEL_ZOOM_FACTOR_MAX = 1.08;
     const HOVER_THROTTLE_MS = 60;
+    const SHIP_THRUST = 85;
+    const SHIP_TURN_ACCEL = 180;
+    const SHIP_LINEAR_DRAG = 0.84;
+    const SHIP_ANGULAR_DRAG = 0.72;
+    const PLANE_THRUST = 120;
+    const PLANE_TURN_ACCEL = 95;
+    const PLANE_LINEAR_DRAG = 0.93;
+    const PLANE_ANGULAR_DRAG = 0.86;
+    const PLANE_ALTITUDE = 320;
+    const PLANE_MIN_ALTITUDE = 18;
+    const PLANE_TAKEOFF_SPEED = 26;
+    const PLANE_MAX_SPEED = 130;
+    const PLANE_AIR_ZOOM_OUT = 0.12;
+    const PLANE_BOMB_DROP_TIME = 0.9;
+    const PLANE_BOMB_FIRE_TIME = 0.85;
 
     const tileImages = new Map();
     const chunkCache = new Map();
@@ -748,8 +813,9 @@
       if (nextHover !== hoverPlacement) {
         hoverPlacement = nextHover;
         if (hoverPlacement) {
-          const model = getPlacementModel(hoverPlacement);
-          hoverReadout.textContent = `${model?.[M.type] || model?.[M.shapePath] || 'unknown'} @ x=${hoverPlacement[P.x].toFixed(1)}, z=${hoverPlacement[P.z].toFixed(1)}`;
+          const displayPlacement = effectivePlacement(hoverPlacement);
+          const model = getPlacementModel(displayPlacement);
+          hoverReadout.textContent = `${model?.[M.type] || model?.[M.shapePath] || 'unknown'} @ x=${displayPlacement[P.x].toFixed(1)}, z=${displayPlacement[P.z].toFixed(1)}`;
         } else {
           hoverReadout.textContent = "none";
         }
@@ -1058,8 +1124,239 @@
         : getModel(placement[P.modelId]);
     }
 
+    function isControllableShipPlacement(placement) {
+      const model = getPlacementModel(placement);
+      return worldKey === "sakhal" && String(model?.[M.type] || "") === "Land_Ship_Medium2";
+    }
+
+    function isControllablePlanePlacement(placement) {
+      const model = getPlacementModel(placement);
+      return worldKey === "chernarus" && String(model?.[M.type] || "") === "Land_Wreck_C130J_2";
+    }
+
+    function effectivePlacement(placement) {
+      if (
+        controlledShip &&
+        placement &&
+        placement === controlledShip.sourcePlacement
+      ) {
+        return controlledShip.runtimePlacement;
+      }
+      if (
+        controlledPlane &&
+        placement &&
+        placement === controlledPlane.sourcePlacement
+      ) {
+        return controlledPlane.runtimePlacement;
+      }
+      return placement || null;
+    }
+
+    function controlledPlacementInBounds(controlledState, boundsWorld) {
+      if (!controlledState || !boundsWorld) return null;
+      const placement = controlledState.runtimePlacement;
+      if (
+        placement[P.x] < boundsWorld.minX ||
+        placement[P.x] > boundsWorld.maxX ||
+        placement[P.z] < boundsWorld.minZ ||
+        placement[P.z] > boundsWorld.maxZ
+      ) {
+        return null;
+      }
+      return placement;
+    }
+
+    function placementsWithControlled(placements, boundsWorld) {
+      if (!controlledShip && !controlledPlane) return placements;
+      const filtered = placements.slice();
+      for (const controlledState of [controlledShip, controlledPlane]) {
+        const runtimePlacement = controlledPlacementInBounds(controlledState, boundsWorld);
+        if (!runtimePlacement) continue;
+        const sourcePlacement = controlledState.sourcePlacement;
+        const sourceIndex = filtered.indexOf(sourcePlacement);
+        if (sourceIndex >= 0) filtered.splice(sourceIndex, 1);
+        filtered.push(runtimePlacement);
+      }
+      return filtered;
+    }
+
+    function isSuppressedControlledPlanePlacement(placement) {
+      if (!controlledPlane || !placement) return false;
+      return placement === controlledPlane.sourcePlacement || placement === controlledPlane.runtimePlacement;
+    }
+
     function activePlacement() {
-      return pinnedPlacement || hoverPlacement;
+      return effectivePlacement(pinnedPlacement || hoverPlacement);
+    }
+
+    function centerViewOnWorld(x, z) {
+      const rect = viewer.getBoundingClientRect();
+      offsetX = rect.width / 2 - (x - bounds.minX) * scale;
+      offsetY = rect.height / 2 - (bounds.maxZ - z) * scale;
+    }
+
+    function setViewScaleAroundCenter(nextScale) {
+      if (!bounds) return;
+      const rect = viewer.getBoundingClientRect();
+      const centerWorldX = screenToWorldX(rect.width / 2);
+      const centerWorldZ = screenToWorldZ(rect.height / 2);
+      scale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, nextScale));
+      offsetX = rect.width / 2 - (centerWorldX - bounds.minX) * scale;
+      offsetY = rect.height / 2 - (bounds.maxZ - centerWorldZ) * scale;
+    }
+
+    function activateControlledShip(placement) {
+      if (!placement || !isControllableShipPlacement(placement) || !bounds) return;
+      controlledPlane = null;
+      const runtimePlacement = placement.slice();
+      runtimePlacement._modelTable = placement._modelTable;
+      controlledShip = {
+        sourcePlacement: placement,
+        runtimePlacement,
+        velocityX: 0,
+        velocityZ: 0,
+        angularVelocity: 0,
+      };
+      pinnedPlacement = placement;
+      hoverPlacement = placement;
+      centerViewOnWorld(runtimePlacement[P.x], runtimePlacement[P.z]);
+      statusReadout.textContent = "Ship control active · WASD · Esc";
+      scheduleRender();
+    }
+
+    function activateControlledPlane(placement) {
+      if (!placement || !isControllablePlanePlacement(placement) || !bounds) return;
+      controlledShip = null;
+      const runtimePlacement = placement.slice();
+      runtimePlacement._modelTable = placement._modelTable;
+      controlledPlane = {
+        sourcePlacement: placement,
+        runtimePlacement,
+        velocityX: 0,
+        velocityZ: 0,
+        angularVelocity: 0,
+        altitude: PLANE_MIN_ALTITUDE,
+        baseScale: scale,
+      };
+      planeKills = 0;
+      planeBombs = [];
+      pinnedPlacement = placement;
+      hoverPlacement = placement;
+      centerViewOnWorld(runtimePlacement[P.x], runtimePlacement[P.z]);
+      statusReadout.textContent = "Plane control active · S/W thrust · A/D turn · Space bombs · Esc";
+      scheduleRender();
+    }
+
+    function releaseControlledShip() {
+      if (controlledPlane && Number.isFinite(controlledPlane.baseScale)) {
+        setViewScaleAroundCenter(controlledPlane.baseScale);
+      }
+      controlledShip = null;
+      controlledPlane = null;
+      planeBombs = [];
+      Object.keys(controlledShipKeys).forEach((code) => {
+        controlledShipKeys[code] = false;
+      });
+      if (!isAreaLoading) {
+        statusReadout.textContent = loadedPlacements.length
+          ? `Loaded ${loadedPlacements.length.toLocaleString()} objects`
+          : "";
+      }
+      scheduleRender();
+    }
+
+    function updateControlledShip(now) {
+      if (!controlledShip || !bounds) return false;
+      if (!lastRenderTime) return true;
+      const dt = Math.max(0, Math.min(0.05, (now - lastRenderTime) / 1000));
+      const placement = controlledShip.runtimePlacement;
+      const yawRad = (Number(placement[P.yaw]) || 0) * Math.PI / 180;
+      const forwardX = Math.sin(yawRad);
+      const forwardZ = Math.cos(yawRad);
+      let thrust = 0;
+      if (controlledShipKeys.KeyS) thrust += SHIP_THRUST;
+      if (controlledShipKeys.KeyW) thrust -= SHIP_THRUST * 0.7;
+      if (controlledShipKeys.KeyA) controlledShip.angularVelocity -= SHIP_TURN_ACCEL * dt;
+      if (controlledShipKeys.KeyD) controlledShip.angularVelocity += SHIP_TURN_ACCEL * dt;
+      controlledShip.velocityX += forwardX * thrust * dt;
+      controlledShip.velocityZ += forwardZ * thrust * dt;
+      controlledShip.angularVelocity *= Math.pow(SHIP_ANGULAR_DRAG, dt * 10);
+      controlledShip.velocityX *= Math.pow(SHIP_LINEAR_DRAG, dt * 10);
+      controlledShip.velocityZ *= Math.pow(SHIP_LINEAR_DRAG, dt * 10);
+      placement[P.yaw] = ((Number(placement[P.yaw]) || 0) + controlledShip.angularVelocity * dt + 360) % 360;
+      placement[P.x] += controlledShip.velocityX * dt;
+      placement[P.z] += controlledShip.velocityZ * dt;
+      const worldWidth = bounds.maxX - bounds.minX;
+      const worldHeight = bounds.maxZ - bounds.minZ;
+      while (placement[P.x] < bounds.minX) placement[P.x] += worldWidth;
+      while (placement[P.x] > bounds.maxX) placement[P.x] -= worldWidth;
+      while (placement[P.z] < bounds.minZ) placement[P.z] += worldHeight;
+      while (placement[P.z] > bounds.maxZ) placement[P.z] -= worldHeight;
+      centerViewOnWorld(placement[P.x], placement[P.z]);
+      statusReadout.textContent = "Ship control active · WASD · Esc";
+      return true;
+    }
+
+    function updateControlledPlane(now) {
+      if (!controlledPlane || !bounds) return false;
+      if (!lastRenderTime) return true;
+      const dt = Math.max(0, Math.min(0.05, (now - lastRenderTime) / 1000));
+      const placement = controlledPlane.runtimePlacement;
+      const yawRad = (Number(placement[P.yaw]) || 0) * Math.PI / 180;
+      const forwardX = Math.sin(yawRad);
+      const forwardZ = Math.cos(yawRad);
+      let thrust = 0;
+      if (controlledShipKeys.KeyS) thrust += PLANE_THRUST;
+      if (controlledShipKeys.KeyW) thrust -= PLANE_THRUST * 0.55;
+      if (controlledShipKeys.KeyA) controlledPlane.angularVelocity -= PLANE_TURN_ACCEL * dt;
+      if (controlledShipKeys.KeyD) controlledPlane.angularVelocity += PLANE_TURN_ACCEL * dt;
+      controlledPlane.velocityX += forwardX * thrust * dt;
+      controlledPlane.velocityZ += forwardZ * thrust * dt;
+      controlledPlane.angularVelocity *= Math.pow(PLANE_ANGULAR_DRAG, dt * 10);
+      controlledPlane.velocityX *= Math.pow(PLANE_LINEAR_DRAG, dt * 10);
+      controlledPlane.velocityZ *= Math.pow(PLANE_LINEAR_DRAG, dt * 10);
+      placement[P.yaw] = ((Number(placement[P.yaw]) || 0) + controlledPlane.angularVelocity * dt + 360) % 360;
+      placement[P.x] += controlledPlane.velocityX * dt;
+      placement[P.z] += controlledPlane.velocityZ * dt;
+      const speed = Math.hypot(controlledPlane.velocityX, controlledPlane.velocityZ);
+      const takeoffT = Math.max(0, Math.min(1, (speed - PLANE_TAKEOFF_SPEED) / Math.max(1, PLANE_MAX_SPEED - PLANE_TAKEOFF_SPEED)));
+      const targetAltitude = PLANE_MIN_ALTITUDE + (PLANE_ALTITUDE - PLANE_MIN_ALTITUDE) * Math.pow(takeoffT, 0.78);
+      controlledPlane.altitude += (targetAltitude - controlledPlane.altitude) * Math.min(1, dt * 2.6);
+      const zoomOutT = Math.max(0, Math.min(1, (controlledPlane.altitude - PLANE_MIN_ALTITUDE) / Math.max(1, PLANE_ALTITUDE - PLANE_MIN_ALTITUDE)));
+      if (Number.isFinite(controlledPlane.baseScale) && controlledPlane.baseScale > 0) {
+        const targetScale = controlledPlane.baseScale * (1 - PLANE_AIR_ZOOM_OUT * zoomOutT);
+        setViewScaleAroundCenter(targetScale);
+      }
+      if (planeBombs.length) {
+        planeBombs = planeBombs.flatMap((bomb) => {
+          const next = { ...bomb, elapsed: bomb.elapsed + dt };
+          if (next.phase === "drop") {
+            if (next.elapsed >= PLANE_BOMB_DROP_TIME) {
+              planeKills += bombLandHitScore(next.x, next.z);
+              return [{
+                x: next.x,
+                z: next.z,
+                phase: "fire",
+                elapsed: 0,
+              }];
+            }
+            return [next];
+          }
+          if (next.elapsed < PLANE_BOMB_FIRE_TIME) {
+            return [next];
+          }
+          return [];
+        });
+      }
+      const worldWidth = bounds.maxX - bounds.minX;
+      const worldHeight = bounds.maxZ - bounds.minZ;
+      while (placement[P.x] < bounds.minX) placement[P.x] += worldWidth;
+      while (placement[P.x] > bounds.maxX) placement[P.x] -= worldWidth;
+      while (placement[P.z] < bounds.minZ) placement[P.z] += worldHeight;
+      while (placement[P.z] > bounds.maxZ) placement[P.z] -= worldHeight;
+      centerViewOnWorld(placement[P.x], placement[P.z]);
+      statusReadout.textContent = "Plane control active · S/W thrust · A/D turn · Space bombs · Esc";
+      return true;
     }
 
     function setHoverThumb(src) {
@@ -1319,6 +1616,200 @@
       });
     }
 
+    function placementWorldPolygon(placement, modelTable) {
+      const model = modelTable[placement[P.modelId]] || null;
+      if (!model) return null;
+      const polygon = model[M.footprint];
+      const yaw = (placement[P.yaw] || 0) * Math.PI / 180;
+      const cos = Math.cos(yaw);
+      const sin = Math.sin(yaw);
+      if (Array.isArray(polygon) && polygon.length >= 3) {
+        return polygon.map((point) => {
+          const lx = Number(point[0]);
+          const lz = Number(point[1]);
+          return [
+            placement[P.x] + lx * cos + lz * sin,
+            placement[P.z] - lx * sin + lz * cos
+          ];
+        });
+      }
+      const minX = model[M.bboxMinX];
+      const minZ = model[M.bboxMinZ];
+      const maxX = model[M.bboxMaxX];
+      const maxZ = model[M.bboxMaxZ];
+      if (minX == null || minZ == null || maxX == null || maxZ == null) return null;
+      return [
+        [placement[P.x] + minX * cos + minZ * sin, placement[P.z] - minX * sin + minZ * cos],
+        [placement[P.x] + maxX * cos + minZ * sin, placement[P.z] - maxX * sin + minZ * cos],
+        [placement[P.x] + maxX * cos + maxZ * sin, placement[P.z] - maxX * sin + maxZ * cos],
+        [placement[P.x] + minX * cos + maxZ * sin, placement[P.z] - minX * sin + maxZ * cos],
+      ];
+    }
+
+    function pointInWorldPolygon(x, z, polygon) {
+      if (!Array.isArray(polygon) || polygon.length < 3) return false;
+      let inside = false;
+      for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i, i += 1) {
+        const xi = polygon[i][0];
+        const zi = polygon[i][1];
+        const xj = polygon[j][0];
+        const zj = polygon[j][1];
+        const intersects = ((zi > z) !== (zj > z))
+          && (x < ((xj - xi) * (z - zi)) / ((zj - zi) || 1e-9) + xi);
+        if (intersects) inside = !inside;
+      }
+      return inside;
+    }
+
+    function bombLandHitScore(x, z) {
+      const impactBounds = {
+        minX: x - 18,
+        maxX: x + 18,
+        minZ: z - 18,
+        maxZ: z + 18,
+      };
+      for (const placement of placementsInBounds(startupLandGrid, impactBounds)) {
+        const model = getPlacementModel(placement);
+        if (!isLandType(model)) continue;
+        const polygon = placementWorldPolygon(placement, landModels);
+        if (polygon && pointInWorldPolygon(x, z, polygon)) {
+          return 8 + Math.round((model?.[M.count] ? 2 : 0) + Math.random() * 6);
+        }
+      }
+      for (const placement of placementsInBounds(loadedPlacementGrid, impactBounds)) {
+        const model = getPlacementModel(placement);
+        if (!isLandType(model)) continue;
+        const polygon = placementWorldPolygon(placement, models);
+        if (polygon && pointInWorldPolygon(x, z, polygon)) {
+          return 8 + Math.round((model?.[M.count] ? 2 : 0) + Math.random() * 6);
+        }
+      }
+      return 0;
+    }
+
+    function updateArcadeHud() {
+      if (!arcadeHudEl || !arcadeKillsEl) return;
+      const visible = !!controlledPlane;
+      arcadeHudEl.classList.toggle("is-visible", visible);
+      arcadeKillsEl.textContent = planeKills.toLocaleString();
+    }
+
+    function renderControlledPlaneEffect() {
+      if (!controlledPlane) return;
+      const placement = controlledPlane.runtimePlacement;
+      const modelTable = placement._modelTable === "land" ? landModels : models;
+      const basePoints = objectFootprint(placement, modelTable);
+      const cx = worldToScreenX(placement[P.x]);
+      const cy = worldToScreenY(placement[P.z]);
+      const altitude = Number(controlledPlane.altitude || PLANE_ALTITUDE);
+      const yawRad = (Number(placement[P.yaw]) || 0) * Math.PI / 180;
+      const altitudeRatio = Math.max(0, Math.min(1, altitude / Math.max(1, PLANE_ALTITUDE)));
+      const shadowVisibility = Math.max(0, Math.min(1, (scale - 0.09) / 0.18));
+      const shadowOffsetX = Math.sin(yawRad + Math.PI / 2) * (12 + altitudeRatio * 14);
+      const shadowOffsetY = Math.cos(yawRad + Math.PI / 2) * (8 + altitudeRatio * 10) + 10 + altitudeRatio * 8;
+      const liftOffsetX = -Math.sin(yawRad + Math.PI / 2) * (6 + altitudeRatio * 4);
+      const liftOffsetY = -Math.cos(yawRad + Math.PI / 2) * (4 + altitudeRatio * 3) - Math.max(10, altitude * 0.055);
+      const shrink = Math.max(0.62, 1 - altitude * 0.00082);
+      const shadowScale = Math.max(0.34, 0.68 - altitudeRatio * 0.18);
+      const shadowFill = (0.12 + altitudeRatio * 0.05) * shadowVisibility;
+      const shadowStroke = (0.18 + altitudeRatio * 0.07) * shadowVisibility;
+      if (basePoints && basePoints.length >= 3) {
+        const shadowPoints = basePoints.map(([px, py]) => [cx + (px - cx) * shadowScale + shadowOffsetX, cy + (py - cy) * shadowScale + shadowOffsetY]);
+        if (shadowVisibility > 0.02) {
+          overlayCtx.beginPath();
+          overlayCtx.moveTo(shadowPoints[0][0], shadowPoints[0][1]);
+          for (let i = 1; i < shadowPoints.length; i += 1) overlayCtx.lineTo(shadowPoints[i][0], shadowPoints[i][1]);
+          overlayCtx.closePath();
+          overlayCtx.fillStyle = `rgba(17,25,32,${shadowFill.toFixed(3)})`;
+          overlayCtx.strokeStyle = `rgba(17,25,32,${shadowStroke.toFixed(3)})`;
+          overlayCtx.lineWidth = 1.2 + altitudeRatio * 0.6;
+          overlayCtx.fill();
+          overlayCtx.stroke();
+        }
+
+        const liftedPoints = basePoints.map(([px, py]) => [cx + (px - cx) * shrink + liftOffsetX, cy + (py - cy) * shrink + liftOffsetY]);
+        overlayCtx.beginPath();
+        overlayCtx.moveTo(liftedPoints[0][0], liftedPoints[0][1]);
+        for (let i = 1; i < liftedPoints.length; i += 1) overlayCtx.lineTo(liftedPoints[i][0], liftedPoints[i][1]);
+        overlayCtx.closePath();
+        overlayCtx.fillStyle = "rgba(148,156,168,1)";
+        overlayCtx.strokeStyle = "rgba(199,205,214,1)";
+        overlayCtx.lineWidth = 1.3;
+        overlayCtx.fill();
+        overlayCtx.stroke();
+      }
+    }
+
+    function dropControlledPlaneBomb() {
+      if (!controlledPlane) return;
+      const placement = controlledPlane.runtimePlacement;
+      planeBombs.push({
+        x: placement[P.x],
+        z: placement[P.z],
+        phase: "drop",
+        elapsed: 0,
+      });
+      statusReadout.textContent = "Plane control active · S/W thrust · A/D turn · Space bombs · Esc";
+      scheduleRender();
+    }
+
+    function renderPlaneBombSight() {
+      if (!controlledPlane) return;
+      const placement = controlledPlane.runtimePlacement;
+      const px = worldToScreenX(placement[P.x]);
+      const py = worldToScreenY(placement[P.z]);
+      overlayCtx.save();
+      overlayCtx.strokeStyle = "rgba(255,174,48,0.92)";
+      overlayCtx.lineWidth = 1.2;
+      overlayCtx.beginPath();
+      overlayCtx.arc(px, py, 11, 0, Math.PI * 2);
+      overlayCtx.stroke();
+      overlayCtx.beginPath();
+      overlayCtx.moveTo(px - 16, py);
+      overlayCtx.lineTo(px - 6, py);
+      overlayCtx.moveTo(px + 6, py);
+      overlayCtx.lineTo(px + 16, py);
+      overlayCtx.moveTo(px, py - 16);
+      overlayCtx.lineTo(px, py - 6);
+      overlayCtx.moveTo(px, py + 6);
+      overlayCtx.lineTo(px, py + 16);
+      overlayCtx.stroke();
+      overlayCtx.restore();
+    }
+
+    function renderPlaneBombs() {
+      if (!planeBombs.length || !controlledPlane) return;
+      const altitude = Number(controlledPlane.altitude || PLANE_ALTITUDE);
+      for (const bomb of planeBombs) {
+        const px = worldToScreenX(bomb.x);
+        const py = worldToScreenY(bomb.z);
+        if (bomb.phase === "drop") {
+          const t = Math.max(0, Math.min(1, bomb.elapsed / PLANE_BOMB_DROP_TIME));
+          const yOffset = altitude * 0.06 * (1 - t);
+          overlayCtx.beginPath();
+          overlayCtx.arc(px, py - yOffset, 3.2, 0, Math.PI * 2);
+          overlayCtx.fillStyle = "rgba(72,78,86,1)";
+          overlayCtx.fill();
+          continue;
+        }
+        const t = Math.max(0, Math.min(1, bomb.elapsed / PLANE_BOMB_FIRE_TIME));
+        const coreRadius = 7 + t * 18;
+        const flameRadius = 14 + t * 34;
+        overlayCtx.beginPath();
+        overlayCtx.arc(px, py, flameRadius, 0, Math.PI * 2);
+        overlayCtx.fillStyle = `rgba(255,122,24,${(0.52 * (1 - t * 0.8)).toFixed(3)})`;
+        overlayCtx.fill();
+        overlayCtx.beginPath();
+        overlayCtx.arc(px, py, coreRadius, 0, Math.PI * 2);
+        overlayCtx.fillStyle = `rgba(255,196,84,${(0.98 * (1 - t * 0.45)).toFixed(3)})`;
+        overlayCtx.fill();
+        overlayCtx.beginPath();
+        overlayCtx.arc(px, py, Math.max(2.6, coreRadius * 0.46), 0, Math.PI * 2);
+        overlayCtx.fillStyle = `rgba(255,246,214,${(1.0 * (1 - t * 0.6)).toFixed(3)})`;
+        overlayCtx.fill();
+      }
+    }
+
     function placementRoofFill(model) {
       const roofColor = model?.[M.roofColor];
       if (Array.isArray(roofColor) && roofColor.length >= 3) {
@@ -1512,8 +2003,9 @@
 
     function renderOverlay() {
       overlayCtx.clearRect(0, 0, overlayCanvas.width, overlayCanvas.height);
-      const visiblePlacements = placementsInBounds(startupLandGrid, visibleWorldBounds(40));
-      const visibleLoaded = visibleLoadedPlacements(40);
+      const viewBounds = visibleWorldBounds(40);
+      const visiblePlacements = placementsWithControlled(placementsInBounds(startupLandGrid, viewBounds), viewBounds);
+      const visibleLoaded = placementsWithControlled(visibleLoadedPlacements(40), viewBounds);
       const loadedFootprintScale = loadedFootprintScaleThreshold();
       const loadedPointFadeOutScale = loadedPointFadeOutScaleThreshold();
 
@@ -1521,6 +2013,7 @@
         const startupFillAlpha = zoomFade(scale, STARTUP_FOOTPRINT_SCALE, 0.35, 0.006, 0.08);
         const startupStrokeAlpha = zoomFade(scale, STARTUP_FOOTPRINT_SCALE, 0.35, 0.10, 0.92);
         for (const placement of visiblePlacements) {
+          if (isSuppressedControlledPlanePlacement(placement)) continue;
           const model = landModels[placement[P.modelId]] || null;
           const points = objectFootprint(placement, landModels);
           if (!points) continue;
@@ -1590,6 +2083,7 @@
         const startupPointAlpha = zoomFade(scale, STARTUP_POINT_SCALE, STARTUP_POINT_FADE_OUT_SCALE, 0.34, 0.96);
         overlayCtx.fillStyle = zoomedOutPointFill(startupPointAlpha);
         for (const placement of visiblePlacements) {
+          if (isSuppressedControlledPlanePlacement(placement)) continue;
           if (scale < STARTUP_POINT_SCALE) continue;
           overlayCtx.beginPath();
           overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(1.2, Math.min(3.2, scale * 7)), 0, Math.PI * 2);
@@ -1600,6 +2094,7 @@
       if (showCenters.checked || scale < loadedPointFadeOutScale) {
         const loadedPointAlpha = zoomFade(scale, STARTUP_POINT_SCALE, loadedPointFadeOutScale, 0.38, 0.98);
         for (const placement of visibleLoaded) {
+          if (isSuppressedControlledPlanePlacement(placement)) continue;
           const model = models[placement[P.modelId]] || null;
           const p3dStyle = loadedP3dStyle(model, loadedPointAlpha, loadedPointAlpha);
           overlayCtx.fillStyle = p3dStyle ? p3dStyle.point : zoomedOutPointFill(loadedPointAlpha);
@@ -1644,6 +2139,7 @@
         overlayCtx.strokeStyle = `rgba(0,122,255,${searchRingAlpha.toFixed(2)})`;
         overlayCtx.lineWidth = scale >= STARTUP_FOOTPRINT_SCALE ? 2 : 1.6;
         for (const placement of visiblePlacements) {
+          if (isSuppressedControlledPlanePlacement(placement)) continue;
           if (!searchLandModelIds.has(placement[P.modelId])) continue;
           overlayCtx.beginPath();
           overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(4.5, Math.min(8, scale * 12)), 0, Math.PI * 2);
@@ -1657,16 +2153,32 @@
         }
       }
 
-      if (pinnedPlacement) {
+      renderControlledPlaneEffect();
+      renderPlaneBombSight();
+      renderPlaneBombs();
+
+      const pinnedDrawPlacement = effectivePlacement(pinnedPlacement);
+      const suppressPlaneSelectionRing = !!(
+        controlledPlane &&
+        pinnedPlacement &&
+        pinnedPlacement === controlledPlane.sourcePlacement
+      );
+      if (pinnedDrawPlacement && !suppressPlaneSelectionRing) {
         overlayCtx.beginPath();
-        overlayCtx.arc(worldToScreenX(pinnedPlacement[P.x]), worldToScreenY(pinnedPlacement[P.z]), 7, 0, Math.PI * 2);
+        overlayCtx.arc(worldToScreenX(pinnedDrawPlacement[P.x]), worldToScreenY(pinnedDrawPlacement[P.z]), 7, 0, Math.PI * 2);
         overlayCtx.strokeStyle = "rgba(220,38,38,0.95)";
         overlayCtx.lineWidth = 2;
         overlayCtx.stroke();
       }
-      if (hoverPlacement) {
+      const hoverDrawPlacement = effectivePlacement(hoverPlacement);
+      const suppressPlaneHoverRing = !!(
+        controlledPlane &&
+        hoverPlacement &&
+        hoverPlacement === controlledPlane.sourcePlacement
+      );
+      if (hoverDrawPlacement && !suppressPlaneHoverRing) {
         overlayCtx.beginPath();
-        overlayCtx.arc(worldToScreenX(hoverPlacement[P.x]), worldToScreenY(hoverPlacement[P.z]), 7, 0, Math.PI * 2);
+        overlayCtx.arc(worldToScreenX(hoverDrawPlacement[P.x]), worldToScreenY(hoverDrawPlacement[P.z]), 7, 0, Math.PI * 2);
         overlayCtx.strokeStyle = "rgba(255,244,127,0.98)";
         overlayCtx.lineWidth = 2;
         overlayCtx.stroke();
@@ -1721,6 +2233,7 @@
         downloadAreaBtn.disabled = loadedPlacements.length === 0;
         exportLocationsBtn.disabled = loadedPlacements.length === 0;
       }
+      updateArcadeHud();
       updateHoverCard();
     }
 
@@ -1742,10 +2255,17 @@
     }
 
     function render() {
+      const now = performance.now();
+      updateControlledShip(now);
+      updateControlledPlane(now);
+      lastRenderTime = now;
       renderTiles();
       renderOverlay();
       renderSelection();
       updateHud();
+      if (controlledShip || controlledPlane) {
+        scheduleRender();
+      }
     }
 
     function nearestPlacement(point) {
@@ -1762,12 +2282,13 @@
         maxZ: wz + radius,
       };
       for (const placement of placementsInBounds(startupLandGrid, hoverBounds)) {
-        const polygon = objectFootprint(placement, landModels);
+        const candidatePlacement = effectivePlacement(placement);
+        const polygon = objectFootprint(candidatePlacement, landModels);
         if (polygon && pointInPolygon(point, polygon)) {
           polygonCandidates.push(placement);
         }
-        const dx = placement[P.x] - wx;
-        const dz = placement[P.z] - wz;
+        const dx = candidatePlacement[P.x] - wx;
+        const dz = candidatePlacement[P.z] - wz;
         const dist = Math.hypot(dx, dz);
         if (dist < radius && dist < bestDist) {
           best = placement;
@@ -1775,24 +2296,44 @@
         }
       }
       for (const placement of placementsInBounds(loadedPlacementGrid, hoverBounds)) {
-        const polygon = objectFootprint(placement, models);
+        const candidatePlacement = effectivePlacement(placement);
+        const polygon = objectFootprint(candidatePlacement, models);
         if (polygon && pointInPolygon(point, polygon)) {
           polygonCandidates.push(placement);
         }
-        const dx = placement[P.x] - wx;
-        const dz = placement[P.z] - wz;
+        const dx = candidatePlacement[P.x] - wx;
+        const dz = candidatePlacement[P.z] - wz;
         const dist = Math.hypot(dx, dz);
         if (dist < radius && dist < bestDist) {
           best = placement;
           bestDist = dist;
         }
       }
+      for (const controlledState of [controlledShip, controlledPlane]) {
+        if (!controlledState) continue;
+        const candidatePlacement = controlledPlacementInBounds(controlledState, hoverBounds);
+        if (candidatePlacement) {
+          const modelTable = candidatePlacement._modelTable === "land" ? landModels : models;
+          const polygon = objectFootprint(candidatePlacement, modelTable);
+          if (polygon && pointInPolygon(point, polygon)) {
+            polygonCandidates.push(controlledState.sourcePlacement);
+          }
+          const dx = candidatePlacement[P.x] - wx;
+          const dz = candidatePlacement[P.z] - wz;
+          const dist = Math.hypot(dx, dz);
+          if (dist < radius && dist < bestDist) {
+            best = controlledState.sourcePlacement;
+            bestDist = dist;
+          }
+        }
+      }
       if (polygonCandidates.length) {
         let polygonBest = polygonCandidates[0];
         let polygonBestArea = Infinity;
         for (const placement of polygonCandidates) {
-          const modelTable = placement && placement._modelTable === "main" ? models : landModels;
-          const polygon = objectFootprint(placement, modelTable);
+          const resolvedPlacement = effectivePlacement(placement);
+          const modelTable = resolvedPlacement && resolvedPlacement._modelTable === "main" ? models : landModels;
+          const polygon = objectFootprint(resolvedPlacement, modelTable);
           if (!polygon) continue;
           let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
           for (const [px, py] of polygon) {
@@ -1843,6 +2384,8 @@
     }
 
     function clearArea() {
+      controlledShip = null;
+      controlledPlane = null;
       areaRect = null;
       areaWorld = null;
       loadedPlacements = [];
@@ -1868,6 +2411,8 @@
     }
 
     function resetAreaState() {
+      controlledShip = null;
+      controlledPlane = null;
       clearAreaSelection(false);
       isAreaMode = false;
       pinnedPlacement = null;
@@ -1997,6 +2542,10 @@
       scale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, scale * factor));
       offsetX = point.x - (worldX - bounds.minX) * scale;
       offsetY = point.y - (bounds.maxZ - worldZ) * scale;
+      if (controlledPlane) {
+        const altitudeRatio = Math.max(0, Math.min(1, (controlledPlane.altitude - PLANE_MIN_ALTITUDE) / Math.max(1, PLANE_ALTITUDE - PLANE_MIN_ALTITUDE)));
+        controlledPlane.baseScale = scale / Math.max(0.2, 1 - PLANE_AIR_ZOOM_OUT * altitudeRatio);
+      }
       scheduleRender();
     }, { passive: false });
 
@@ -2071,7 +2620,47 @@
       scheduleRender();
     });
 
+    viewer.addEventListener("dblclick", (event) => {
+      if (event.target && event.target.closest(".map-topbar")) return;
+      const placement = nearestPlacement(eventPoint(event));
+      event.preventDefault();
+      if (isControllableShipPlacement(placement)) {
+        activateControlledShip(placement);
+        return;
+      }
+      if (isControllablePlanePlacement(placement)) {
+        activateControlledPlane(placement);
+      }
+    });
+
     window.addEventListener("resize", resizeCanvas);
+    window.addEventListener("keydown", (event) => {
+      if (!controlledShip && !controlledPlane) return;
+      if (event.code === "Escape") {
+        event.preventDefault();
+        releaseControlledShip();
+        return;
+      }
+      if (controlledPlane && event.code === "Space") {
+        if (!controlledShipKeys.Space) {
+          controlledShipKeys.Space = true;
+          dropControlledPlaneBomb();
+        }
+        event.preventDefault();
+        return;
+      }
+      if (Object.prototype.hasOwnProperty.call(controlledShipKeys, event.code)) {
+        controlledShipKeys[event.code] = true;
+        event.preventDefault();
+      }
+    });
+    window.addEventListener("keyup", (event) => {
+      if (!controlledShip && !controlledPlane) return;
+      if (Object.prototype.hasOwnProperty.call(controlledShipKeys, event.code)) {
+        controlledShipKeys[event.code] = false;
+        event.preventDefault();
+      }
+    });
     areaModeBtn.addEventListener("click", () => {
       if (areaWorld && !isAreaMode) {
         resetAreaState();
