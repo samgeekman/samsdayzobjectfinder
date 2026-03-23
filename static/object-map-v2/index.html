@@ -70,6 +70,30 @@
     }
     .viewer.dragging { cursor: grabbing; }
     .viewer.area-mode { cursor: crosshair; }
+    .viewer__loading {
+      position: absolute;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 6;
+      pointer-events: none;
+    }
+    .viewer__loading.is-visible {
+      display: flex;
+    }
+    .viewer__loading-wheel {
+      width: 42px;
+      height: 42px;
+      border-radius: 999px;
+      border: 3px solid rgba(255, 255, 255, 0.28);
+      border-top-color: rgba(255, 255, 255, 0.96);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.16);
+      animation: viewer-spin 0.8s linear infinite;
+    }
+    @keyframes viewer-spin {
+      to { transform: rotate(360deg); }
+    }
     canvas {
       position: absolute;
       inset: 0;
@@ -496,6 +520,9 @@
       <canvas id="tile-layer"></canvas>
       <canvas id="overlay-layer"></canvas>
       <canvas id="selection-layer"></canvas>
+      <div class="viewer__loading" id="viewer-loading" aria-hidden="true">
+        <div class="viewer__loading-wheel" aria-hidden="true"></div>
+      </div>
     </main>
   </div>
 
@@ -595,6 +622,7 @@
     const tileCtx = tileCanvas.getContext("2d");
     const overlayCtx = overlayCanvas.getContext("2d");
     const selectionCtx = selectionCanvas.getContext("2d");
+    const viewerLoadingEl = document.getElementById("viewer-loading");
 
     const tileCountEl = document.getElementById("tile-count");
     const packCountEl = document.getElementById("pack-count");
@@ -656,23 +684,30 @@
     let searchModelIds = new Set();
     let searchLandModelIds = new Set();
     let loadedPlacements = [];
+    let loadedPlacementGrid = new Map();
     let startupLandPlacements = [];
     let startupLandGrid = new Map();
     let renderQueued = false;
     let isAreaMode = false;
     let pointerDownPoint = null;
     let pointerDownOnUi = false;
+    let isAreaLoading = false;
+    let hoverCheckTimer = 0;
+    let pendingHoverPoint = null;
 
     const STARTUP_GRID_SIZE = 480;
     const STARTUP_POINT_SCALE = 0.05;
     const STARTUP_POINT_FADE_OUT_SCALE = 0.24;
     const STARTUP_FOOTPRINT_SCALE = 0.16;
     const LOADED_FOOTPRINT_SCALE = 0.12;
+    const AREA_LOADED_FOOTPRINT_SCALE = 0.82;
+    const LOADED_TRANSITION_WIDTH = 0.08;
     const MIN_SCALE = STARTUP_POINT_SCALE;
     const MAX_SCALE = 8;
     const WHEEL_ZOOM_SENSITIVITY = 0.0012;
     const WHEEL_ZOOM_FACTOR_MIN = 0.92;
     const WHEEL_ZOOM_FACTOR_MAX = 1.08;
+    const HOVER_THROTTLE_MS = 60;
 
     const tileImages = new Map();
     const chunkCache = new Map();
@@ -708,6 +743,41 @@
       });
     }
 
+    function applyHoverPoint(point) {
+      const nextHover = nearestPlacement(point);
+      if (nextHover !== hoverPlacement) {
+        hoverPlacement = nextHover;
+        if (hoverPlacement) {
+          const model = getPlacementModel(hoverPlacement);
+          hoverReadout.textContent = `${model?.[M.type] || model?.[M.shapePath] || 'unknown'} @ x=${hoverPlacement[P.x].toFixed(1)}, z=${hoverPlacement[P.z].toFixed(1)}`;
+        } else {
+          hoverReadout.textContent = "none";
+        }
+        scheduleRender();
+      } else if (!hoverPlacement) {
+        hoverReadout.textContent = "none";
+      }
+    }
+
+    function scheduleHoverCheck(point) {
+      pendingHoverPoint = point;
+      if (hoverCheckTimer) return;
+      hoverCheckTimer = window.setTimeout(() => {
+        hoverCheckTimer = 0;
+        const nextPoint = pendingHoverPoint;
+        pendingHoverPoint = null;
+        if (nextPoint) applyHoverPoint(nextPoint);
+      }, HOVER_THROTTLE_MS);
+    }
+
+    function setAreaLoading(nextLoading) {
+      isAreaLoading = !!nextLoading;
+      if (viewerLoadingEl) {
+        viewerLoadingEl.classList.toggle("is-visible", isAreaLoading);
+        viewerLoadingEl.setAttribute("aria-hidden", isAreaLoading ? "false" : "true");
+      }
+    }
+
     function scaleToSliderValue(value) {
       const t = (Math.log(value) - Math.log(MIN_SCALE)) / (Math.log(MAX_SCALE) - Math.log(MIN_SCALE));
       return Math.round(Math.max(0, Math.min(100, t * 100)));
@@ -733,6 +803,25 @@
         }
         bucket.push(placement);
       }
+    }
+
+    function buildPlacementGrid(placements) {
+      const grid = new Map();
+      for (const placement of placements) {
+        const key = placementGridKey(placement[P.x], placement[P.z]);
+        let bucket = grid.get(key);
+        if (!bucket) {
+          bucket = [];
+          grid.set(key, bucket);
+        }
+        bucket.push(placement);
+      }
+      return grid;
+    }
+
+    function visibleLoadedPlacements(paddingPx = 0) {
+      if (!loadedPlacements.length) return [];
+      return placementsInBounds(loadedPlacementGrid, visibleWorldBounds(paddingPx));
     }
 
     function visibleWorldBounds(paddingPx = 0) {
@@ -1282,6 +1371,14 @@
       return minAlpha + (maxAlpha - minAlpha) * t;
     }
 
+    function loadedFootprintScaleThreshold() {
+      return areaWorld && loadedPlacements.length ? AREA_LOADED_FOOTPRINT_SCALE : LOADED_FOOTPRINT_SCALE;
+    }
+
+    function loadedPointFadeOutScaleThreshold() {
+      return loadedFootprintScaleThreshold() + LOADED_TRANSITION_WIDTH;
+    }
+
     function allVisiblePlacements() {
       return startupLandPlacements.concat(loadedPlacements);
     }
@@ -1416,6 +1513,9 @@
     function renderOverlay() {
       overlayCtx.clearRect(0, 0, overlayCanvas.width, overlayCanvas.height);
       const visiblePlacements = placementsInBounds(startupLandGrid, visibleWorldBounds(40));
+      const visibleLoaded = visibleLoadedPlacements(40);
+      const loadedFootprintScale = loadedFootprintScaleThreshold();
+      const loadedPointFadeOutScale = loadedPointFadeOutScaleThreshold();
 
       if (showFootprints.checked && scale >= STARTUP_FOOTPRINT_SCALE) {
         const startupFillAlpha = zoomFade(scale, STARTUP_FOOTPRINT_SCALE, 0.35, 0.006, 0.08);
@@ -1442,10 +1542,10 @@
         }
       }
 
-      if (showFootprints.checked && scale >= LOADED_FOOTPRINT_SCALE) {
-        const loadedFillAlpha = zoomFade(scale, LOADED_FOOTPRINT_SCALE, 0.35, 0.008, 0.1);
-        const loadedStrokeAlpha = zoomFade(scale, LOADED_FOOTPRINT_SCALE, 0.35, 0.12, 0.94);
-        for (const placement of loadedPlacements) {
+      if (showFootprints.checked && scale >= loadedFootprintScale) {
+        const loadedFillAlpha = zoomFade(scale, loadedFootprintScale, 0.35, 0.008, 0.1);
+        const loadedStrokeAlpha = zoomFade(scale, loadedFootprintScale, 0.35, 0.12, 0.94);
+        for (const placement of visibleLoaded) {
           const model = models[placement[P.modelId]] || null;
           const points = objectFootprint(placement, models);
           const p3dStyle = loadedP3dStyle(model, loadedFillAlpha, loadedStrokeAlpha);
@@ -1497,9 +1597,9 @@
         }
       }
 
-      if (showCenters.checked || scale < 0.2) {
-        const loadedPointAlpha = zoomFade(scale, STARTUP_POINT_SCALE, 0.2, 0.38, 0.98);
-        for (const placement of loadedPlacements) {
+      if (showCenters.checked || scale < loadedPointFadeOutScale) {
+        const loadedPointAlpha = zoomFade(scale, STARTUP_POINT_SCALE, loadedPointFadeOutScale, 0.38, 0.98);
+        for (const placement of visibleLoaded) {
           const model = models[placement[P.modelId]] || null;
           const p3dStyle = loadedP3dStyle(model, loadedPointAlpha, loadedPointAlpha);
           overlayCtx.fillStyle = p3dStyle ? p3dStyle.point : zoomedOutPointFill(loadedPointAlpha);
@@ -1549,7 +1649,7 @@
           overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(4.5, Math.min(8, scale * 12)), 0, Math.PI * 2);
           overlayCtx.stroke();
         }
-        for (const placement of loadedPlacements) {
+        for (const placement of visibleLoaded) {
           if (!searchModelIds.has(placement[P.modelId])) continue;
           overlayCtx.beginPath();
           overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(4.5, Math.min(8, scale * 12)), 0, Math.PI * 2);
@@ -1674,7 +1774,7 @@
           bestDist = dist;
         }
       }
-      for (const placement of loadedPlacements) {
+      for (const placement of placementsInBounds(loadedPlacementGrid, hoverBounds)) {
         const polygon = objectFootprint(placement, models);
         if (polygon && pointInPolygon(point, polygon)) {
           polygonCandidates.push(placement);
@@ -1714,32 +1814,40 @@
 
     async function loadAreaObjects() {
       if (!areaWorld || !objectManifest) return;
+      setAreaLoading(true);
       statusReadout.textContent = "loading area…";
-      const chunks = objectManifest.chunks.filter((chunk) => !(chunk.maxX < areaWorld.minX || chunk.minX > areaWorld.maxX || chunk.maxZ < areaWorld.minZ || chunk.minZ > areaWorld.maxZ));
-      const allPlacements = [];
-      for (const chunk of chunks) {
-        const chunkUrl = new URL(chunk.path, objectManifestBaseUrl).toString();
-        let payload = chunkCache.get(chunkUrl);
-        if (!payload) {
-          payload = await loadJson(chunkUrl);
-          chunkCache.set(chunkUrl, payload);
-        }
-        for (const placement of payload.placements || []) {
-          if (placement[P.x] >= areaWorld.minX && placement[P.x] <= areaWorld.maxX && placement[P.z] >= areaWorld.minZ && placement[P.z] <= areaWorld.maxZ) {
-            placement._modelTable = "main";
-            allPlacements.push(placement);
+      try {
+        const chunks = objectManifest.chunks.filter((chunk) => !(chunk.maxX < areaWorld.minX || chunk.minX > areaWorld.maxX || chunk.maxZ < areaWorld.minZ || chunk.minZ > areaWorld.maxZ));
+        const allPlacements = [];
+        for (const chunk of chunks) {
+          const chunkUrl = new URL(chunk.path, objectManifestBaseUrl).toString();
+          let payload = chunkCache.get(chunkUrl);
+          if (!payload) {
+            payload = await loadJson(chunkUrl);
+            chunkCache.set(chunkUrl, payload);
+          }
+          for (const placement of payload.placements || []) {
+            if (placement[P.x] >= areaWorld.minX && placement[P.x] <= areaWorld.maxX && placement[P.z] >= areaWorld.minZ && placement[P.z] <= areaWorld.maxZ) {
+              placement._modelTable = "main";
+              allPlacements.push(placement);
+            }
           }
         }
+        loadedPlacements = allPlacements;
+        loadedPlacementGrid = buildPlacementGrid(loadedPlacements);
+        statusReadout.textContent = loadedPlacements.length ? `Loaded ${loadedPlacements.length.toLocaleString()} objects` : "";
+        scheduleRender();
+      } finally {
+        setAreaLoading(false);
       }
-      loadedPlacements = allPlacements;
-      statusReadout.textContent = loadedPlacements.length ? `Loaded ${loadedPlacements.length.toLocaleString()} objects` : "";
-      scheduleRender();
     }
 
     function clearArea() {
       areaRect = null;
       areaWorld = null;
       loadedPlacements = [];
+      loadedPlacementGrid = new Map();
+      setAreaLoading(false);
       hoverPlacement = null;
       hoverReadout.textContent = "none";
       statusReadout.textContent = "";
@@ -1753,6 +1861,8 @@
       panStart = null;
       if (!keepLoadedPlacements) {
         loadedPlacements = [];
+        loadedPlacementGrid = new Map();
+        setAreaLoading(false);
       }
       scheduleRender();
     }
@@ -1763,6 +1873,7 @@
       pinnedPlacement = null;
       hoverPlacement = null;
       hoverReadout.textContent = "none";
+      setAreaLoading(false);
       statusReadout.textContent = "";
       scheduleRender();
     }
@@ -1930,19 +2041,7 @@
         scheduleRender();
         return;
       }
-      const nextHover = nearestPlacement(point);
-      if (nextHover !== hoverPlacement) {
-        hoverPlacement = nextHover;
-        if (hoverPlacement) {
-          const model = getPlacementModel(hoverPlacement);
-          hoverReadout.textContent = `${model?.[M.type] || model?.[M.shapePath] || 'unknown'} @ x=${hoverPlacement[P.x].toFixed(1)}, z=${hoverPlacement[P.z].toFixed(1)}`;
-        } else {
-          hoverReadout.textContent = "none";
-        }
-        scheduleRender();
-      } else if (!hoverPlacement) {
-        hoverReadout.textContent = "none";
-      }
+      scheduleHoverCheck(point);
     });
 
     viewer.addEventListener("pointerup", (event) => {
@@ -2115,6 +2214,7 @@
       }
     }).catch((error) => {
       console.error(error);
+      setAreaLoading(false);
       statusReadout.textContent = "Load failed";
     });
   </script>
