@@ -6,15 +6,15 @@ draft: false
 
 **Sam’s DayZ Object Finder is a searchable, exportable database of every object in the game for map makers and modders.**
 
-The site is lightweight and fast with search of every placeable object in the /DZ folder - complete with images, console compatibility, approximate size, and search tags.
+The site is lightweight and fast with more than 11,000 objects listed - (most) complete with images and search tags - e.g. `large industrial` or `green bag`.
 
-As well as the database, you can copy and paste objects directly to DayZ Editor. Click on the 🏗️ icon to copy the object to your clipboard and ctrl+v into Editor in one click.
+As well as the database, you can copy and paste objects directly to DayZ Editor. Click on the 🏗️ icon to copy the object to your clipboard and ctrl+v into Editor instantly.
 
 The site also includes:
 
-- [Object Maps](https://samsobjectfinder.com/?maps=1) shows the location of every object on Chernarus, Livonia, or Sakhal - and with Select Area you can copy objects exactly as they are on the map to use in Editor.
-- [Types Explorer,](https://samsobjectfinder.com/?types=1) lets you explore the vanilla types.xml to see which objects spawn where.
-- [Editor Builds](https://samsobjectfinder.com/?presets=1) has many quick presets and free-to-use builds from attributed builders. 
+- [Object Maps](https://samsobjectfinder.com/?maps=1) shows the location of every object on Chernarus, Livonia, or Sakhal - and with `Select Area` you can copy objects exactly as they are on the map to use in Editor or export.
+- [Types Explorer](https://samsobjectfinder.com/?types=1) lets you check the vanilla types.xml to see what loots spawn where.
+- [Editor Builds](https://samsobjectfinder.com/?presets=1) has many quick presets and free-to-use designs from attributed builders. 
 
 This tool is entirely free and always will be. Developed by samgeekman.
 
