@@ -227,13 +227,11 @@
     }
     :root:not(.dark-mode) .map-btn,
     :root:not(.dark-mode) .hover-card,
-    :root:not(.dark-mode) .hover-card__close,
     :root:not(.dark-mode) .hover-card__meta-btn,
     :root:not(.dark-mode) .hover-card__name-btn {
       color: #132028 !important;
     }
     .dark-mode .map-btn,
-    .dark-mode .hover-card__close,
     .dark-mode .hover-card__meta-btn {
       color: #ffffff !important;
     }
@@ -243,35 +241,6 @@
       max-width: min(342px, calc(100vw - 28px));
       padding: 5px 7px;
       color: var(--site-button-text);
-    }
-    .hover-card__close {
-      position: absolute;
-      top: 6px;
-      right: 6px;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      width: 20px;
-      height: 20px;
-      padding: 0;
-      border: 1px solid transparent !important;
-      border-radius: var(--site-button-radius, 3px) !important;
-      background: var(--site-button-bg, var(--site-card, #ffffff)) !important;
-      color: var(--site-button-text) !important;
-      font: inherit;
-      font-size: 12px;
-      line-height: 1;
-      cursor: pointer;
-    }
-    .hover-card__close.is-visible {
-      display: inline-flex;
-    }
-    .hover-card__close:hover,
-    .hover-card__close:focus-visible {
-      background-color: var(--site-button-hover-bg) !important;
-      border-color: var(--site-button-hover-border) !important;
-      color: var(--site-button-hover-text) !important;
-      outline: none;
     }
     .hover-card__top {
       display: flex;
@@ -369,9 +338,56 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
     }
     .hover-card__thumb img {
       display: none;
+    }
+    .hover-card__thumb-actions {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+      gap: 4px;
+      z-index: 2;
+    }
+    .hover-card__thumb-actions.is-hidden {
+      display: none;
+    }
+    .hover-card__thumb-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 30px;
+      min-height: 24px;
+      padding: 3px 6px;
+      border: 1px solid var(--site-divider, rgba(0, 0, 0, 0.12)) !important;
+      border-radius: 3px !important;
+      background: var(--site-card, #ffffff) !important;
+      color: var(--site-text, #132028) !important;
+      font: inherit;
+      font-size: 0.7rem;
+      font-weight: 600;
+      line-height: 1.2;
+      box-shadow: none !important;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.18s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+    .hover-card__thumb-action:hover,
+    .hover-card__thumb-action:focus-visible {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06) !important;
+      background-color: var(--site-accent, #ffd54f) !important;
+      border-color: var(--site-accent, #ffd54f) !important;
+      color: #1f1f1f !important;
+      outline: none;
+    }
+    .hover-card__thumb-action.is-active {
+      background-color: var(--site-accent, #ffd54f) !important;
+      border-color: var(--site-accent, #ffd54f) !important;
+      color: #1f1f1f !important;
     }
     .hover-card__thumb.is-empty::before {
       content: "";
@@ -417,7 +433,7 @@
       <div class="stat"><strong>Core tiles:</strong> <span id="tile-count">loading</span></div>
       <div class="stat"><strong>Pack rows:</strong> <span id="pack-count">loading</span></div>
       <div class="stat"><strong>Unique models:</strong> <span id="model-count">loading</span></div>
-      <div class="stat"><strong>Loaded rows:</strong> <span id="loaded-count">0</span></div>
+      <div class="stat"><strong>Loaded objects:</strong> <span id="loaded-count">0</span></div>
       <div class="stat"><strong>Hovered:</strong> <span id="hover-readout">none</span></div>
 
       <div class="control">
@@ -454,7 +470,6 @@
           <button class="map-btn is-hidden" id="export-locations-btn" type="button">Export locations</button>
         </div>
         <div class="map-panel hover-card" id="hover-card">
-          <button class="hover-card__close" id="hover-close-btn" type="button" aria-label="Clear selected object">×</button>
           <div class="hover-card__top">
             <div>
               <div class="hover-card__eyebrow">Hovered Object</div>
@@ -462,13 +477,19 @@
               <div class="hover-card__status" id="status-readout"></div>
             </div>
             <div class="hover-card__thumb is-empty" id="hover-thumb">
+              <div class="hover-card__thumb-actions is-hidden" id="hover-thumb-actions">
+                <button class="hover-card__thumb-action" id="hover-thumb-link" type="button" title="Copy link" aria-label="Copy link">🔗</button>
+                <button class="hover-card__thumb-action" id="hover-thumb-pin" type="button" title="Pin object" aria-label="Pin object">📌</button>
+                <button class="hover-card__thumb-action" id="hover-thumb-name" type="button" title="Copy name" aria-label="Copy name">📋</button>
+                <button class="hover-card__thumb-action" id="hover-thumb-editor" type="button" title="Copy to Editor" aria-label="Copy to Editor">🏗️</button>
+              </div>
               <img id="hover-thumb-img" alt="" hidden>
             </div>
           </div>
           <div class="map-controls">
             <button class="hover-card__meta-btn" id="hover-meta" type="button" disabled>Show 0 on map</button>
-            <button class="map-btn" id="toggle-labels-btn" type="button">Hide Labels</button>
-            <button class="map-btn" id="reset-view-btn" type="button">Reset Camera</button>
+            <button class="map-btn" id="toggle-labels-btn" type="button">Hide labels</button>
+            <button class="map-btn" id="reset-view-btn" type="button">Reset zoom</button>
           </div>
         </div>
       </div>
@@ -479,18 +500,58 @@
   </div>
 
   <script>
-    const tileManifestUrl = "../data/object-map-v2/tile-pyramid/manifest.json";
+    const normalizeWorldKey = (value) => {
+      const normalized = String(value || "").trim().toLowerCase();
+      return normalized === "livonia" || normalized === "sakhal" ? normalized : "chernarus";
+    };
+    const worldKey = normalizeWorldKey(new URLSearchParams(window.location.search).get("world"));
+    const worldConfigs = {
+      chernarus: {
+        key: "chernarus",
+        label: "Chernarus",
+        exportStem: "chernarus",
+        dataRoot: "../data/object-map-v2"
+      },
+      livonia: {
+        key: "livonia",
+        label: "Livonia",
+        exportStem: "livonia",
+        dataRoot: "../data/object-map-v2/worlds/livonia"
+      },
+      sakhal: {
+        key: "sakhal",
+        label: "Sakhal",
+        exportStem: "sakhal",
+        dataRoot: "../data/object-map-v2/worlds/sakhal"
+      }
+    };
+    const activeWorld = worldConfigs[worldKey] || worldConfigs.chernarus;
+    const dataRoot = activeWorld.dataRoot.replace(/\/+$/, "");
+    const tileManifestUrl = `${dataRoot}/tile-pyramid/manifest.json`;
     const rawTileManifestUrl = null;
     const tileManifestBaseUrl = new URL(tileManifestUrl, window.location.href);
     tileManifestBaseUrl.pathname = tileManifestBaseUrl.pathname.replace(/[^/]+$/, "");
     const rawTileManifestBaseUrl = null;
-    const objectManifestUrl = "../data/object-map-v2/object_pack/manifest.json";
-    const landManifestUrl = "../data/object-map-v2/land_only_pack/manifest.json";
+    const objectManifestUrl = `${dataRoot}/object_pack/manifest.json`;
+    const landManifestUrl = `${dataRoot}/land_only_pack/manifest.json`;
     const objectManifestBaseUrl = new URL(objectManifestUrl, window.location.href);
     objectManifestBaseUrl.pathname = objectManifestBaseUrl.pathname.replace(/[^/]+$/, "");
     const landManifestBaseUrl = new URL(landManifestUrl, window.location.href);
     landManifestBaseUrl.pathname = landManifestBaseUrl.pathname.replace(/[^/]+$/, "");
-    const locationsUrl = "../data/object-map-v2/locations.json";
+    const locationsUrl = `${dataRoot}/locations.json`;
+
+    function fallbackFootprintStyle(fillAlpha, strokeAlpha) {
+      if (worldKey === "sakhal") {
+        return {
+          fill: `rgba(190,36,36,${Math.max(0.20, fillAlpha * 0.72).toFixed(3)})`,
+          stroke: `rgba(214,48,48,${Math.max(0.58, strokeAlpha).toFixed(3)})`,
+        };
+      }
+      return {
+        fill: `rgba(210,194,158,${Math.max(0.18, fillAlpha * 0.78).toFixed(3)})`,
+        stroke: `rgba(56,64,72,${Math.max(0.52, strokeAlpha).toFixed(3)})`,
+      };
+    }
 
     const P = {
       id: 0,
@@ -561,7 +622,11 @@
     const hoverMetaEl = document.getElementById("hover-meta");
     const hoverThumbEl = document.getElementById("hover-thumb");
     const hoverThumbImgEl = document.getElementById("hover-thumb-img");
-    const hoverCloseBtn = document.getElementById("hover-close-btn");
+    const hoverThumbActionsEl = document.getElementById("hover-thumb-actions");
+    const hoverThumbLinkEl = document.getElementById("hover-thumb-link");
+    const hoverThumbPinEl = document.getElementById("hover-thumb-pin");
+    const hoverThumbNameEl = document.getElementById("hover-thumb-name");
+    const hoverThumbEditorEl = document.getElementById("hover-thumb-editor");
     const resetViewBtn = document.getElementById("reset-view-btn");
     const toggleLabelsBtn = document.getElementById("toggle-labels-btn");
 
@@ -842,15 +907,21 @@
       const names = new Set();
       const paths = new Set();
       const broadQuery = normalizeSearchKey(searchQuery);
+      const useBroadFallback = searchMode !== "exact_object" && !searchRows.length;
       if (searchMode === "exact_object" && searchQuery) {
         names.add(normalizeSearchKey(searchQuery));
       } else {
         if (searchRows.length) {
           searchRows.forEach((row) => {
             const objectName = normalizeSearchKey(row?.objectName);
-            const path = normalizeSearchKey(row?.path);
-            if (objectName) names.add(objectName);
-            if (path && path !== "-") paths.add(path);
+            const matchesBroadRow = !broadQuery
+              || (!!objectName && objectName.includes(broadQuery))
+              || (!!row?.path && normalizeSearchKey(row.path).includes(broadQuery));
+            if (objectName && matchesBroadRow) names.add(objectName);
+            if (searchPathFilter) {
+              const path = normalizeSearchKey(row?.path);
+              if (path && path !== "-") paths.add(path);
+            }
           });
         }
       }
@@ -860,7 +931,7 @@
           if (
             names.has(key) ||
             paths.has(key) ||
-            (searchMode !== "exact_object" && broadQuery && key.includes(broadQuery))
+            (useBroadFallback && broadQuery && key.includes(broadQuery))
           ) {
             searchLandModelIds.add(index);
             break;
@@ -873,7 +944,7 @@
           if (
             names.has(key) ||
             paths.has(key) ||
-            (searchMode !== "exact_object" && broadQuery && key.includes(broadQuery))
+            (useBroadFallback && broadQuery && key.includes(broadQuery))
           ) {
             searchModelIds.add(index);
             break;
@@ -907,6 +978,7 @@
         hoverThumbEl.classList.add("is-empty");
         hoverThumbEl.style.display = "none";
         hoverThumbEl.style.backgroundImage = "";
+        hoverThumbActionsEl.classList.add("is-hidden");
         hoverThumbImgEl.hidden = true;
         hoverThumbImgEl.setAttribute("hidden", "");
         hoverThumbImgEl.removeAttribute("src");
@@ -915,6 +987,7 @@
       hoverThumbEl.classList.remove("is-empty");
       hoverThumbEl.style.display = "flex";
       hoverThumbEl.style.backgroundImage = `url("${"/" + String(src).replace(/^\/+/, "")}")`;
+      hoverThumbActionsEl.classList.remove("is-hidden");
       hoverThumbImgEl.hidden = false;
       hoverThumbImgEl.removeAttribute("hidden");
       hoverThumbImgEl.setAttribute("hidden", "");
@@ -927,7 +1000,6 @@
       hoverCardEl.classList.toggle("is-clickable", !!placement);
       hoverNameEl.disabled = !placement;
       hoverMetaEl.disabled = !placement;
-      hoverCloseBtn.classList.toggle("is-visible", !!pinnedPlacement);
       if (!placement) {
         hoverNameEl.textContent = "Hover an object";
         hoverNameEl.classList.remove("is-active");
@@ -946,6 +1018,7 @@
         ? `Hide ${countLabel} on map`
         : `Search ${countLabel} on map`;
       setHoverThumb(model?.[M.image] || "");
+      hoverThumbPinEl.classList.toggle("is-active", false);
     }
 
     function syncThemeFromParent() {
@@ -1017,13 +1090,43 @@
       if (!placement) return;
       const model = getPlacementModel(placement);
       const objectName = model?.[M.type] || model?.[M.label] || model?.[M.shapePath] || "";
+      const shapePath = model?.[M.shapePath] || "";
       if (!objectName) return;
       if (window.parent && window.parent !== window) {
         window.parent.postMessage({
           type: "object-map-focus-object",
-          objectName
+          objectName,
+          shapePath
         }, window.location.origin);
       }
+    }
+
+    function postActiveObjectAction(action) {
+      const placement = activePlacement();
+      if (!placement) return;
+      const model = getPlacementModel(placement);
+      const objectName = model?.[M.type] || model?.[M.label] || model?.[M.shapePath] || "";
+      const shapePath = model?.[M.shapePath] || "";
+      if (!objectName) return;
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({
+          type: "object-map-object-action",
+          action,
+          objectName,
+          shapePath
+        }, window.location.origin);
+      }
+    }
+
+    function flashThumbAction(button) {
+      if (!button) return;
+      const originalText = button.textContent;
+      button.textContent = "✔";
+      button.classList.add("is-active");
+      window.setTimeout(() => {
+        button.textContent = originalText;
+        button.classList.remove("is-active");
+      }, 900);
     }
 
     function filterHoveredObjectInParent() {
@@ -1142,6 +1245,34 @@
         ];
       }
       return null;
+    }
+
+    function isLandType(model) {
+      const typeName = String(model?.[M.type] || "").trim();
+      return typeName.startsWith("Land_");
+    }
+
+    function loadedP3dStyle(model, fillAlpha, strokeAlpha) {
+      if (isLandType(model)) return null;
+      if (worldKey !== "sakhal") {
+        return {
+          fill: `rgba(255,255,255,${Math.max(0.52, fillAlpha * 4.8).toFixed(3)})`,
+          stroke: `rgba(255,255,255,${Math.max(0.92, strokeAlpha).toFixed(3)})`,
+          point: "rgba(255,255,255,0.98)"
+        };
+      }
+      return {
+        fill: `rgba(214,58,58,${Math.max(0.24, fillAlpha * 2.8).toFixed(3)})`,
+        stroke: `rgba(232,88,88,${Math.max(0.82, strokeAlpha).toFixed(3)})`,
+        point: `rgba(232,88,88,0.96)`
+      };
+    }
+
+    function zoomedOutPointFill(alpha) {
+      if (worldKey === "sakhal") {
+        return `rgba(220,38,38,${alpha.toFixed(3)})`;
+      }
+      return `rgba(255,255,255,${alpha.toFixed(3)})`;
     }
 
     function zoomFade(scaleValue, low, high, minAlpha, maxAlpha) {
@@ -1298,10 +1429,13 @@
           overlayCtx.moveTo(points[0][0], points[0][1]);
           for (let i = 1; i < points.length; i += 1) overlayCtx.lineTo(points[i][0], points[i][1]);
           overlayCtx.closePath();
+          const fallbackStyle = fallbackFootprintStyle(startupFillAlpha, startupStrokeAlpha);
           overlayCtx.fillStyle = roofColor
             ? `rgba(${roofColor[0]},${roofColor[1]},${roofColor[2]},${Math.max(0.72, startupFillAlpha * 5.0).toFixed(3)})`
-            : `rgba(255,255,255,${startupFillAlpha.toFixed(3)})`;
-          overlayCtx.strokeStyle = `rgba(255,255,255,${startupStrokeAlpha.toFixed(3)})`;
+            : fallbackStyle.fill;
+          overlayCtx.strokeStyle = roofColor && worldKey !== "sakhal"
+            ? `rgba(255,255,255,${startupStrokeAlpha.toFixed(3)})`
+            : fallbackStyle.stroke;
           overlayCtx.lineWidth = scale > 0.35 ? 1.1 : 1;
           overlayCtx.fill();
           overlayCtx.stroke();
@@ -1314,25 +1448,47 @@
         for (const placement of loadedPlacements) {
           const model = models[placement[P.modelId]] || null;
           const points = objectFootprint(placement, models);
-          if (!points) continue;
+          const p3dStyle = loadedP3dStyle(model, loadedFillAlpha, loadedStrokeAlpha);
+          if (!points) {
+            if (p3dStyle) {
+              overlayCtx.beginPath();
+              overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(2.6, Math.min(4.8, scale * 5.6)), 0, Math.PI * 2);
+              overlayCtx.fillStyle = p3dStyle.point;
+              overlayCtx.fill();
+            }
+            continue;
+          }
           const roofColor = placementRoofFill(model);
           overlayCtx.beginPath();
           overlayCtx.moveTo(points[0][0], points[0][1]);
           for (let i = 1; i < points.length; i += 1) overlayCtx.lineTo(points[i][0], points[i][1]);
           overlayCtx.closePath();
-          overlayCtx.fillStyle = roofColor
+          const fallbackStyle = fallbackFootprintStyle(loadedFillAlpha, loadedStrokeAlpha);
+          overlayCtx.fillStyle = p3dStyle
+            ? p3dStyle.fill
+            : roofColor
             ? `rgba(${roofColor[0]},${roofColor[1]},${roofColor[2]},${Math.max(0.76, loadedFillAlpha * 5.0).toFixed(3)})`
-            : `rgba(255,255,255,${loadedFillAlpha.toFixed(3)})`;
-          overlayCtx.strokeStyle = `rgba(255,255,255,${loadedStrokeAlpha.toFixed(3)})`;
+            : fallbackStyle.fill;
+          overlayCtx.strokeStyle = p3dStyle
+            ? p3dStyle.stroke
+            : roofColor && worldKey !== "sakhal"
+            ? `rgba(255,255,255,${loadedStrokeAlpha.toFixed(3)})`
+            : fallbackStyle.stroke;
           overlayCtx.lineWidth = scale > 0.35 ? 1.2 : 1;
           overlayCtx.fill();
           overlayCtx.stroke();
+          if (p3dStyle) {
+            overlayCtx.beginPath();
+            overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(1.8, Math.min(3.2, scale * 4.2)), 0, Math.PI * 2);
+            overlayCtx.fillStyle = p3dStyle.point;
+            overlayCtx.fill();
+          }
         }
       }
 
       if (showCenters.checked || scale < STARTUP_POINT_FADE_OUT_SCALE) {
         const startupPointAlpha = zoomFade(scale, STARTUP_POINT_SCALE, STARTUP_POINT_FADE_OUT_SCALE, 0.34, 0.96);
-        overlayCtx.fillStyle = `rgba(255,255,255,${startupPointAlpha.toFixed(3)})`;
+        overlayCtx.fillStyle = zoomedOutPointFill(startupPointAlpha);
         for (const placement of visiblePlacements) {
           if (scale < STARTUP_POINT_SCALE) continue;
           overlayCtx.beginPath();
@@ -1343,8 +1499,10 @@
 
       if (showCenters.checked || scale < 0.2) {
         const loadedPointAlpha = zoomFade(scale, STARTUP_POINT_SCALE, 0.2, 0.38, 0.98);
-        overlayCtx.fillStyle = `rgba(255,255,255,${loadedPointAlpha.toFixed(3)})`;
         for (const placement of loadedPlacements) {
+          const model = models[placement[P.modelId]] || null;
+          const p3dStyle = loadedP3dStyle(model, loadedPointAlpha, loadedPointAlpha);
+          overlayCtx.fillStyle = p3dStyle ? p3dStyle.point : zoomedOutPointFill(loadedPointAlpha);
           overlayCtx.beginPath();
           overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(1.4, Math.min(3.4, scale * 7)), 0, Math.PI * 2);
           overlayCtx.fill();
@@ -1442,7 +1600,7 @@
       loadedCountEl.textContent = (startupLandPlacements.length + loadedPlacements.length).toLocaleString();
       exportBtn.disabled = loadedPlacements.length === 0;
       clearAreaBtn.disabled = !areaWorld && loadedPlacements.length === 0;
-      toggleLabelsBtn.textContent = showLabels.checked ? "Hide Labels" : "Show Labels";
+      toggleLabelsBtn.textContent = showLabels.checked ? "Hide labels" : "Show labels";
       syncAreaModeUi();
       if (!areaWorld) {
         areaReadout.textContent = "none";
@@ -1574,7 +1732,7 @@
         }
       }
       loadedPlacements = allPlacements;
-      statusReadout.textContent = loadedPlacements.length ? `Loaded ${loadedPlacements.length.toLocaleString()} rows` : "";
+      statusReadout.textContent = loadedPlacements.length ? `Loaded ${loadedPlacements.length.toLocaleString()} objects` : "";
       scheduleRender();
     }
 
@@ -1647,7 +1805,7 @@
       const url = URL.createObjectURL(blob);
       const anchor = document.createElement("a");
       anchor.href = url;
-      anchor.download = "chernarus_loaded_area_dayz_editor.json";
+      anchor.download = `${activeWorld.exportStem}_loaded_area_dayz_editor.json`;
       anchor.click();
       URL.revokeObjectURL(url);
     }
@@ -1708,7 +1866,7 @@
       const url = URL.createObjectURL(blob);
       const anchor = document.createElement("a");
       anchor.href = url;
-      anchor.download = "chernarus_loaded_area_locations.csv";
+      anchor.download = `${activeWorld.exportStem}_loaded_area_locations.csv`;
       anchor.click();
       URL.revokeObjectURL(url);
     }
@@ -1830,7 +1988,7 @@
         isAreaMode = false;
         areaRect = null;
         statusReadout.textContent = loadedPlacements.length
-          ? `Loaded ${loadedPlacements.length.toLocaleString()} rows`
+          ? `Loaded ${loadedPlacements.length.toLocaleString()} objects`
           : "";
       }
       scheduleRender();
@@ -1848,6 +2006,30 @@
       event.stopPropagation();
       focusHoveredObjectInParent();
     });
+    hoverThumbLinkEl.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      postActiveObjectAction("link");
+      flashThumbAction(hoverThumbLinkEl);
+    });
+    hoverThumbPinEl.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      postActiveObjectAction("pin");
+      flashThumbAction(hoverThumbPinEl);
+    });
+    hoverThumbNameEl.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      postActiveObjectAction("name");
+      flashThumbAction(hoverThumbNameEl);
+    });
+    hoverThumbEditorEl.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      postActiveObjectAction("editor");
+      flashThumbAction(hoverThumbEditorEl);
+    });
     hoverMetaEl.addEventListener("click", (event) => {
       event.preventDefault();
       event.stopPropagation();
@@ -1861,14 +2043,6 @@
         filterHoveredObjectInParent();
         scheduleRender();
       }
-    });
-    hoverCloseBtn.addEventListener("click", (event) => {
-      event.preventDefault();
-      event.stopPropagation();
-      const shouldClearSearch = isActivePlacementFiltered();
-      pinnedPlacement = null;
-      if (shouldClearSearch) clearParentObjectFilter();
-      scheduleRender();
     });
     toggleLabelsBtn.addEventListener("click", () => {
       showLabels.checked = !showLabels.checked;
@@ -1905,7 +2079,9 @@
       bounds = tileManifest.bounds;
       objectManifest = manifest;
       landManifest = landPack;
-      locations = locs;
+      locations = Array.isArray(locs)
+        ? locs
+        : (Array.isArray(locs?.locations) ? locs.locations : []);
       const modelPayload = await loadJson(new URL(objectManifest.modelsPath, objectManifestBaseUrl).toString());
       models = modelPayload.models || [];
       const landModelPayload = await loadJson(new URL(landManifest.modelsPath, landManifestBaseUrl).toString());

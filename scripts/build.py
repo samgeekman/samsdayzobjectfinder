@@ -35,6 +35,8 @@ OBJECT_MAP_V2_REQUIRED = [
     STATIC_DATA_DIR / "object-map-v2" / "land_only_pack" / "manifest.json",
     STATIC_DATA_DIR / "object-map-v2" / "object_pack" / "manifest.json",
     STATIC_DATA_DIR / "object-map-v2" / "locations.json",
+    STATIC_DATA_DIR / "object-map-v2" / "worlds" / "livonia" / "world_manifest.json",
+    STATIC_DATA_DIR / "object-map-v2" / "worlds" / "sakhal" / "world_manifest.json",
 ]
 OVERRIDES_JSON = DATA_DIR / "object_overrides.json"
 TOMBSTONES_JSON = DATA_DIR / "id_tombstones.json"

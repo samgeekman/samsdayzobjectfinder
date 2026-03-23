@@ -1787,6 +1787,18 @@
   .object-map--v2 .object-map__note {
     display: none;
   }
+  .object-map-v2__toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    margin: 0 0 8px;
+  }
+  .object-map-v2__scope {
+    display: inline-flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
   .object-map-v2__frame {
     position: relative;
     width: 100%;
@@ -3450,6 +3462,13 @@
   <div class="object-map__header">
     <span class="object-map__title"><span class="object-map__title-icon" aria-hidden="true">📍</span>Object Maps</span>
   </div>
+  <div class="object-map-v2__toolbar">
+    <div class="object-map-v2__scope" aria-label="Object Map world selector">
+      <button id="objectMapToggleChernarus" class="types-explorer__scope-btn is-active" type="button" data-object-map="chernarus">Chernarus</button>
+      <button id="objectMapToggleLivonia" class="types-explorer__scope-btn" type="button" data-object-map="livonia">Livonia</button>
+      <button id="objectMapToggleSakhal" class="types-explorer__scope-btn" type="button" data-object-map="sakhal">Sakhal</button>
+    </div>
+  </div>
   <div class="object-map-v2__frame">
     <iframe id="objectMapV2Frame" class="object-map-v2__iframe" src="about:blank" data-map-path="/object-map-v2/?embedded=1" title="Object Map V2" loading="lazy"></iframe>
   </div>
@@ -3955,8 +3974,9 @@
         objectMapSearchMode === 'exact_object' &&
         objectMapExactSearchQuery
       ) {
-        var chernarusResolved = currentObjectLocationData && currentObjectLocationData.chernarus;
-        var mapCount = chernarusResolved && typeof chernarusResolved.count === 'number' ? chernarusResolved.count : 0;
+        var resolvedMapKey = objectMapActiveMapKey || 'chernarus';
+        var resolvedMap = currentObjectLocationData && currentObjectLocationData[resolvedMapKey];
+        var mapCount = resolvedMap && typeof resolvedMap.count === 'number' ? resolvedMap.count : 0;
         folderSidebarTitleEl.textContent = mapCount.toLocaleString() + ' objects';
         return;
       }
@@ -4779,6 +4799,7 @@
     var objectMapV2FrameEl = document.getElementById('objectMapV2Frame');
     var objectMapToggleChernarusEl = document.getElementById('objectMapToggleChernarus');
     var objectMapToggleLivoniaEl = document.getElementById('objectMapToggleLivonia');
+    var objectMapToggleSakhalEl = document.getElementById('objectMapToggleSakhal');
     var objectMapExportAccordionEl = document.getElementById('objectMapExportAccordion');
     var objectMapAreaSelectToggleEl = document.getElementById('objectMapAreaSelectToggle');
     var objectMapCopyAreaEl = document.getElementById('objectMapCopyArea');
@@ -4833,6 +4854,7 @@
     var objectMapInteractionRefreshTimer = null;
     var useObjectMapV2 = true;
     var objectMapV2FrameLoaded = false;
+    var objectMapV2FrameWorldKey = '';
     var objectMapExactSearchQuery = '';
     var objectMapSearchMode = '';
     var objectMapState = {
@@ -4858,6 +4880,7 @@
     var objectNameById = {};
     var objectDataById = {};
     var objectDataByName = {};
+    var objectDataByMatchKey = {};
     var objectLinkGraph = {};
     var objectLocationClusterCache = {};
     var objectLocationResolutionCache = {};
@@ -5590,7 +5613,7 @@
         filtersEl.classList.toggle('object-map-mode', !!visible);
       }
       if (visible) {
-        ensureObjectMapV2FrameLoaded();
+        ensureObjectMapV2FrameLoaded(objectMapV2FrameWorldKey !== normalizeObjectMapKey(objectMapActiveMapKey));
         dispatchObjectMapV2SearchState();
         setTimeout(function() {
           dispatchObjectMapV2SearchState();
@@ -5623,20 +5646,31 @@
         updateObjectMapAreaControls();
       }
     };
-    var ensureObjectMapV2FrameLoaded = function() {
-      if (!objectMapV2FrameEl || objectMapV2FrameLoaded) return;
+    var normalizeObjectMapKey = function(value) {
+      var normalized = String(value || '').trim().toLowerCase();
+      return (normalized === 'chernarus' || normalized === 'livonia' || normalized === 'sakhal') ? normalized : 'chernarus';
+    };
+    var buildObjectMapV2FrameSrc = function() {
+      if (!objectMapV2FrameEl) return '';
       var mapPath = objectMapV2FrameEl.getAttribute('data-map-path') || '';
-      var src = '';
-      if (mapPath) {
-        try {
-          src = new URL(mapPath, window.location.origin).toString();
-        } catch (error) {
-          src = mapPath;
-        }
+      if (!mapPath) return '';
+      try {
+        var url = new URL(mapPath, window.location.origin);
+        url.searchParams.set('world', normalizeObjectMapKey(objectMapActiveMapKey));
+        return url.toString();
+      } catch (error) {
+        return mapPath;
       }
+    };
+    var ensureObjectMapV2FrameLoaded = function(forceReload) {
+      if (!objectMapV2FrameEl) return;
+      var src = buildObjectMapV2FrameSrc();
       if (!src) return;
-      objectMapV2FrameEl.setAttribute('src', src);
-      objectMapV2FrameLoaded = true;
+      if (forceReload || objectMapV2FrameEl.getAttribute('src') !== src) {
+        objectMapV2FrameEl.setAttribute('src', src);
+        objectMapV2FrameWorldKey = normalizeObjectMapKey(objectMapActiveMapKey);
+      }
+      objectMapV2FrameLoaded = objectMapV2FrameEl.getAttribute('src') !== 'about:blank';
     };
     var applyObjectMapExactSearch = function(objectName) {
       var normalized = String(objectName || '').trim();
@@ -5672,6 +5706,7 @@
         try {
           objectMapV2FrameEl.contentWindow.postMessage({
             type: 'object-map-search-state',
+            world: normalizeObjectMapKey(objectMapActiveMapKey),
             query: '',
             pathFilter: '',
             mode: '',
@@ -5692,6 +5727,7 @@
       try {
         objectMapV2FrameEl.contentWindow.postMessage({
           type: 'object-map-search-state',
+          world: normalizeObjectMapKey(objectMapActiveMapKey),
           query: searchQuery,
           pathFilter: activePathFilter,
           mode: searchMode,
@@ -5710,6 +5746,9 @@
       }
       if (objectMapToggleLivoniaEl) {
         objectMapToggleLivoniaEl.classList.toggle('is-active', objectMapActiveMapKey === 'livonia');
+      }
+      if (objectMapToggleSakhalEl) {
+        objectMapToggleSakhalEl.classList.toggle('is-active', objectMapActiveMapKey === 'sakhal');
       }
     };
     var setObjectMapStatus = function(text) {
@@ -6083,10 +6122,7 @@
       objectMapTooltipEl.setAttribute('aria-hidden', 'false');
     };
     var setObjectMapActiveMap = function(mapKey) {
-      var normalized = String(mapKey || '').trim().toLowerCase();
-      if (normalized !== 'chernarus' && normalized !== 'livonia') {
-        normalized = 'chernarus';
-      }
+      var normalized = normalizeObjectMapKey(mapKey);
       if (objectMapActiveMapKey !== normalized) {
         objectMapActiveMapKey = normalized;
         objectMapState.view = null;
@@ -6094,6 +6130,11 @@
         clearObjectMapAreaSelection();
       }
       updateObjectMapToggleButtons();
+      if (useObjectMapV2) {
+        ensureObjectMapV2FrameLoaded(objectMapV2FrameWorldKey !== normalized);
+        dispatchObjectMapV2SearchState();
+        return;
+      }
       renderObjectMapFromTable();
     };
     var clearObjectMapSvg = function() {
@@ -7156,17 +7197,13 @@
         var mapKey = trigger.getAttribute('data-map-key') || '';
         var resolved = currentObjectLocationData[mapKey];
         if (!mapKey || !resolved || !resolved.count) return;
-        if (String(mapKey).toLowerCase() === 'chernarus') {
-          e.preventDefault();
-          e.stopPropagation();
-          openObjectInObjectMapView(
-            currentObjectData.id || '',
-            currentObjectData.objName || '',
-            'chernarus'
-          );
-          return;
-        }
-        openLocationMapLightbox(mapKey, currentObjectData, resolved);
+        e.preventDefault();
+        e.stopPropagation();
+        openObjectInObjectMapView(
+          currentObjectData.id || '',
+          currentObjectData.objName || '',
+          mapKey
+        );
       });
     }
     if (chernarusMapCloseEl) {
@@ -7335,6 +7372,7 @@
     var resetObjectLocationGraph = function() {
       objectDataById = {};
       objectDataByName = {};
+      objectDataByMatchKey = {};
       objectNameById = {};
       objectLinkGraph = {};
       objectLocationClusterCache = {};
@@ -7552,20 +7590,20 @@
             var resolved = currentObjectLocationData[mapKey];
             var config = locationMapConfigs[mapKey] || {};
             var linkedText = resolved.typeCount > 1 ? ('Across ' + formatNumber(resolved.typeCount) + ' linked types') : '';
-            var isSakhal = mapKey === 'sakhal';
-            var actionName = isSakhal ? 'view-location-map-unavailable' : 'view-location-map';
             var iconPrefix = '';
             if (mapKey === 'chernarus') {
               iconPrefix = '🍂 ';
             } else if (mapKey === 'livonia') {
               iconPrefix = '🌲 ';
-            } else if (!isSakhal) {
+            } else if (mapKey === 'sakhal') {
+              iconPrefix = '❄️ ';
+            } else {
               iconPrefix = '🗺️ ';
             }
             var pillLabel = iconPrefix + formatNumber(resolved.count) + ' on ' + escapeHtml(config.label || mapKey);
             return (
               '<div class="object-focus__location-entry' + (index > 0 ? ' object-focus__location-entry--push' : '') + '">' +
-                '<button class="object-focus__link-pill object-focus__location-pill" type="button" data-action="' + actionName + '" data-map-key="' + escapeHtml(mapKey) + '" data-default-label="' + escapeHtml(pillLabel) + '">' + pillLabel + '</button>' +
+                '<button class="object-focus__link-pill object-focus__location-pill" type="button" data-action="view-location-map" data-map-key="' + escapeHtml(mapKey) + '" data-default-label="' + escapeHtml(pillLabel) + '">' + pillLabel + '</button>' +
                 (linkedText ? ('<span class="object-focus__location-status">' + escapeHtml(linkedText) + '</span>') : '') +
               '</div>'
             );
@@ -8163,6 +8201,11 @@
             objectDataByName[key] = row;
           }
         }
+        buildViewerMatchKeysForRow(row).forEach(function(matchKey) {
+          if (!objectDataByMatchKey[matchKey]) {
+            objectDataByMatchKey[matchKey] = row;
+          }
+        });
       });
       sourceData.forEach(function(row) {
         var id = normalizeObjectId(getObjectId(row));
@@ -8214,6 +8257,47 @@
         linkedVariant: parseLinkedIds(rowData['linked-variant'])
       }, false);
       return true;
+    };
+    var resolveSidebarRowByMatch = function(objName, shapePath) {
+      var candidates = [];
+      var pushCandidate = function(value) {
+        var normalized = normalizeViewerPath(value || '');
+        if (!normalized) return;
+        if (candidates.indexOf(normalized) === -1) {
+          candidates.push(normalized);
+        }
+      };
+      pushCandidate(objName);
+      pushCandidate(shapePath);
+      if (objName) {
+        var loweredName = String(objName).trim().toLowerCase();
+        if (loweredName.slice(-4) === '.p3d') {
+          pushCandidate(loweredName.slice(0, -4));
+          pushCandidate('land_' + loweredName.slice(0, -4));
+        } else if (loweredName.indexOf('land_') === 0) {
+          pushCandidate(loweredName.slice(5));
+          pushCandidate(loweredName.slice(5) + '.p3d');
+        }
+      }
+      if (shapePath) {
+        var normalizedPath = normalizeViewerPath(shapePath);
+        var pathStem = normalizedPath.split('/').pop() || '';
+        pushCandidate(pathStem);
+        if (pathStem.slice(-4) === '.p3d') {
+          pushCandidate(pathStem.slice(0, -4));
+          pushCandidate('land_' + pathStem.slice(0, -4));
+        }
+      }
+      for (var i = 0; i < candidates.length; i += 1) {
+        var rowData = objectDataByMatchKey[candidates[i]] || null;
+        if (rowData) return rowData;
+      }
+      return null;
+    };
+    var focusSidebarByMatch = function(objName, shapePath) {
+      var rowData = resolveSidebarRowByMatch(objName, shapePath);
+      if (!rowData) return false;
+      return focusSidebarByName(getObjectName(rowData));
     };
 
     var buildObjectUrl = function(objectId, legacyObjectName) {
@@ -9278,7 +9362,7 @@
         normalizedName = String(resolveObjectNameById(normalizedId) || '').trim();
       }
       var preferredMap = String(preferredMapKey || '').trim().toLowerCase();
-      if (preferredMap === 'chernarus' || preferredMap === 'livonia') {
+      if (preferredMap === 'chernarus' || preferredMap === 'livonia' || preferredMap === 'sakhal') {
         objectMapActiveMapKey = preferredMap;
       }
       activeCollectionFilter = 'object_map';
@@ -9827,9 +9911,57 @@
       if (!event || !event.data || event.origin !== window.location.origin) return;
       if (event.data.type === 'object-map-focus-object') {
         var focusObjectName = String(event.data.objectName || '').trim();
-        if (!focusObjectName) return;
+        var focusShapePath = String(event.data.shapePath || '').trim();
+        if (!focusObjectName && !focusShapePath) return;
+        var matchedRow = typeof resolveSidebarRowByMatch === 'function'
+          ? resolveSidebarRowByMatch(focusObjectName, focusShapePath)
+          : null;
+        if (
+          matchedRow &&
+          event.data.toggle &&
+          objectFocusEl &&
+          objectFocusEl.classList.contains('visible') &&
+          currentObjectName &&
+          String(getObjectName(matchedRow) || '').trim().toLowerCase() === String(currentObjectName || '').trim().toLowerCase()
+        ) {
+          hideFocusDetails();
+          return;
+        }
+        if (matchedRow && typeof focusSidebarByName === 'function' && focusSidebarByName(getObjectName(matchedRow))) {
+          return;
+        }
         if (typeof focusByName === 'function') {
           focusByName(focusObjectName);
+        }
+        return;
+      }
+      if (event.data.type === 'object-map-object-action') {
+        var actionObjectName = String(event.data.objectName || '').trim();
+        var actionShapePath = String(event.data.shapePath || '').trim();
+        var actionName = String(event.data.action || '').trim();
+        var actionRow = typeof resolveSidebarRowByMatch === 'function'
+          ? resolveSidebarRowByMatch(actionObjectName, actionShapePath)
+          : null;
+        if (!actionRow || !actionName) return;
+        if (actionName === 'link') {
+          navigator.clipboard.writeText(buildObjectUrl(getObjectId(actionRow), getObjectName(actionRow)));
+          return;
+        }
+        if (actionName === 'name') {
+          navigator.clipboard.writeText(String(getObjectName(actionRow) || '').trim());
+          return;
+        }
+        if (actionName === 'editor') {
+          navigator.clipboard.writeText(buildEditorJson(
+            actionRow.editorJson ? JSON.stringify(actionRow.editorJson) : '',
+            getObjectName(actionRow),
+            actionRow.modelType || '',
+            actionRow.path || ''
+          ));
+          return;
+        }
+        if (actionName === 'pin') {
+          togglePinnedForRow(actionRow);
         }
         return;
       }

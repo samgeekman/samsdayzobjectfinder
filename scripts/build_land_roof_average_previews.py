@@ -19,9 +19,13 @@ REPO_ROOT = Path(r"C:\Users\Samjo\OneDrive\Documents\GitHub\samsdayzobjectfinder
 CATALOG_ROOT = Path(r"P:\2026-03-17\dz_catalog_full")
 MLOD_ROOT = Path(r"P:\2026-03-17\mlod")
 DZ_ROOT = Path(r"P:\DZ")
-LAND_MODELS_PATH = REPO_ROOT / "static" / "data" / "object-map-v2" / "land_only_pack" / "models.json"
 OUTPUT_ROOT = REPO_ROOT / "static" / "data" / "object-map-v2" / "land_roof_average"
 MANIFEST_PATH = REPO_ROOT / "reports" / "land_roof_average_manifest.json"
+LAND_MODELS_PATHS = [
+    REPO_ROOT / "static" / "data" / "object-map-v2" / "land_only_pack" / "models.json",
+    REPO_ROOT / "static" / "data" / "object-map-v2" / "worlds" / "livonia" / "land_only_pack" / "models.json",
+    REPO_ROOT / "static" / "data" / "object-map-v2" / "worlds" / "sakhal" / "land_only_pack" / "models.json",
+]
 
 RVMAT_TEXTURE_RE = re.compile(r'texture\s*=\s*"([^"]+)"', re.IGNORECASE)
 
@@ -368,7 +372,19 @@ def render_preview(model_name: str, shape_path: str, tri_records: list[dict], ou
 
 
 def build_previews(limit: int | None, model_filter: str | None, size: int, top_threshold: float):
-    land_models = read_json(LAND_MODELS_PATH)["models"]
+    land_models = []
+    seen_shape_paths: set[str] = set()
+    for models_path in LAND_MODELS_PATHS:
+        if not models_path.exists():
+            continue
+        payload = read_json(models_path)
+        for row in payload.get("models", []):
+            type_name = str(row[1] if len(row) > 1 else "").strip()
+            shape_path = normalize_path(row[3] if len(row) > 3 else "")
+            if not type_name.startswith("Land_") or not shape_path or shape_path in seen_shape_paths:
+                continue
+            land_models.append(row)
+            seen_shape_paths.add(shape_path)
     catalog_lookup = build_catalog_lookup()
     results = {}
     missing = []

@@ -1,0 +1,61 @@
+{
+  "world": "enoch",
+  "label": "Livonia",
+  "worldBounds": {
+    "minX": 0.0,
+    "maxX": 12800.0,
+    "minZ": 0.0,
+    "maxZ": 12800.0
+  },
+  "sat": {
+    "manifestPath": "./tile-pyramid/manifest.json",
+    "bounds": {
+      "minX": 0.0,
+      "maxX": 12799.999693,
+      "minZ": 0.0,
+      "maxZ": 12799.999693
+    },
+    "maxZoom": 5,
+    "gridSize": 32
+  },
+  "packs": {
+    "landOnly": {
+      "manifestPath": "./land_only_pack/manifest.json",
+      "counts": {
+        "rows": 8516,
+        "land": 8516,
+        "p3d": 0,
+        "models": 330,
+        "chunks": 544
+      },
+      "bounds": {
+        "minX": 39.79,
+        "maxX": 12725.8,
+        "minZ": 278.17,
+        "maxZ": 12661.1
+      }
+    },
+    "object": {
+      "manifestPath": "./object_pack/manifest.json",
+      "counts": {
+        "rows": 188416,
+        "land": 8516,
+        "p3d": 179900,
+        "models": 2267,
+        "chunks": 715
+      },
+      "bounds": {
+        "minX": -5.65,
+        "maxX": 12815.5,
+        "minZ": -0.0,
+        "maxZ": 12795.5
+      }
+    }
+  },
+  "locationsPath": "./locations.json",
+  "locationCount": 60,
+  "locationSource": "P:\\DZ\\worlds\\enoch\\world\\config.cpp",
+  "notes": [
+    "Prepared in the same sat pyramid + compact pack shape as the Chernarus Object Map."
+  ]
+}

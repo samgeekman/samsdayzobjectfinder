@@ -1,0 +1,61 @@
+{
+  "world": "sakhal",
+  "label": "Sakhal",
+  "worldBounds": {
+    "minX": 0.0,
+    "maxX": 15360.0,
+    "minZ": 0.0,
+    "maxZ": 15360.0
+  },
+  "sat": {
+    "manifestPath": "./tile-pyramid/manifest.json",
+    "bounds": {
+      "minX": 0.0,
+      "maxX": 15360.0,
+      "minZ": 0.0,
+      "maxZ": 15360.0
+    },
+    "maxZoom": 5,
+    "gridSize": 32
+  },
+  "packs": {
+    "landOnly": {
+      "manifestPath": "./land_only_pack/manifest.json",
+      "counts": {
+        "rows": 11315,
+        "land": 11315,
+        "p3d": 0,
+        "models": 439,
+        "chunks": 423
+      },
+      "bounds": {
+        "minX": 644.2,
+        "maxX": 14746.8,
+        "minZ": 582.03,
+        "maxZ": 14574.9
+      }
+    },
+    "object": {
+      "manifestPath": "./object_pack/manifest.json",
+      "counts": {
+        "rows": 190126,
+        "land": 11315,
+        "p3d": 178811,
+        "models": 1617,
+        "chunks": 704
+      },
+      "bounds": {
+        "minX": 68.98,
+        "maxX": 14749.4,
+        "minZ": 466.12,
+        "maxZ": 15083.4
+      }
+    }
+  },
+  "locationsPath": "./locations.json",
+  "locationCount": 16,
+  "locationSource": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\DayZ\\scripts\\profile_fixed.cfg",
+  "notes": [
+    "Prepared in the same sat pyramid + compact pack shape as the Chernarus Object Map."
+  ]
+}

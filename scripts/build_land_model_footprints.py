@@ -6,15 +6,17 @@ import json
 import math
 from collections import defaultdict
 from pathlib import Path
-from typing import Iterable
-
 from PIL import Image, ImageDraw
 
 
 REPO_ROOT = Path(r"C:\Users\Samjo\OneDrive\Documents\GitHub\samsdayzobjectfinder")
 CATALOG_ROOT = Path(r"P:\2026-03-17\dz_catalog_full")
-LAND_PACK_MODELS = Path(r"P:\2026-03-20\world_object_export\chernarus_shape_variants\land_only_pack\models.json")
 OUTPUT_PATH = REPO_ROOT / "reports" / "land_model_footprints.json"
+LAND_MODELS_PATHS = [
+    REPO_ROOT / "static" / "data" / "object-map-v2" / "land_only_pack" / "models.json",
+    REPO_ROOT / "static" / "data" / "object-map-v2" / "worlds" / "livonia" / "land_only_pack" / "models.json",
+    REPO_ROOT / "static" / "data" / "object-map-v2" / "worlds" / "sakhal" / "land_only_pack" / "models.json",
+]
 
 
 def normalize_path(value: str | None) -> str:
@@ -247,11 +249,16 @@ def build_footprint_for_obj(obj_path: Path) -> dict | None:
 
 
 def target_shape_paths() -> set[str]:
-    payload = load_json(LAND_PACK_MODELS)
     targets: set[str] = set()
-    for model in payload.get("models", []):
-        shape_path = normalize_path(model[3] if len(model) > 3 else "")
-        if shape_path:
+    for models_path in LAND_MODELS_PATHS:
+        if not models_path.exists():
+            continue
+        payload = load_json(models_path)
+        for model in payload.get("models", []):
+            type_name = str(model[1] if len(model) > 1 else "").strip()
+            shape_path = normalize_path(model[3] if len(model) > 3 else "")
+            if not type_name.startswith("Land_") or not shape_path:
+                continue
             targets.add(shape_path)
     return targets
 

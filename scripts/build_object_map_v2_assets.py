@@ -22,11 +22,16 @@ SOURCE_ROOF_AVERAGES = REPO_ROOT / "reports" / "land_roof_average_manifest.json"
 
 OUT_PAGE_DIR = REPO_ROOT / "static" / "object-map-v2"
 OUT_DATA_DIR = REPO_ROOT / "static" / "data" / "object-map-v2"
+OUT_WORLDS_DIR = OUT_DATA_DIR / "worlds"
 OUT_TILE_PYRAMID = OUT_DATA_DIR / "tile-pyramid"
 OUT_LAND_PACK = OUT_DATA_DIR / "land_only_pack"
 OUT_OBJECT_PACK = OUT_DATA_DIR / "object_pack"
 OUT_LOCATIONS = OUT_DATA_DIR / "locations.json"
 OUT_HTML = OUT_PAGE_DIR / "index.html"
+SOURCE_WORLD_BUNDLES = {
+    "livonia": Path(r"P:\DayZ Object Exports\worlds\enoch\site_bundle\data\object-map-v2\worlds\enoch"),
+    "sakhal": Path(r"P:\DayZ Object Exports\worlds\sakhal\site_bundle\data\object-map-v2\worlds\sakhal"),
+}
 
 
 def replace_once(text: str, old: str, new: str) -> str:
@@ -408,21 +413,37 @@ def build_html() -> str:
 def main() -> None:
     OUT_PAGE_DIR.mkdir(parents=True, exist_ok=True)
     OUT_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    OUT_WORLDS_DIR.mkdir(parents=True, exist_ok=True)
 
     copy_tree(SOURCE_TILE_PYRAMID, OUT_TILE_PYRAMID)
     copy_tree(SOURCE_LAND_PACK, OUT_LAND_PACK)
     copy_tree(SOURCE_OBJECT_PACK, OUT_OBJECT_PACK)
     shutil.copy2(SOURCE_LOCATIONS, OUT_LOCATIONS)
-    sanitize_pack(OUT_LAND_PACK)
-    sanitize_pack(OUT_OBJECT_PACK)
-    sanitize_manifest(OUT_LAND_PACK)
-    sanitize_manifest(OUT_OBJECT_PACK)
+    for world_key, source_dir in SOURCE_WORLD_BUNDLES.items():
+        if source_dir.exists():
+            copy_tree(source_dir, OUT_WORLDS_DIR / world_key)
 
     catalog_index = build_object_catalog_index()
     footprint_cache = load_footprint_cache()
     roof_average_cache = load_roof_average_cache()
-    enrich_models(OUT_LAND_PACK, catalog_index, footprint_cache, roof_average_cache)
-    enrich_models(OUT_OBJECT_PACK, catalog_index, footprint_cache, roof_average_cache)
+
+    packs_to_process = [
+        OUT_LAND_PACK,
+        OUT_OBJECT_PACK,
+    ]
+    for world_key in SOURCE_WORLD_BUNDLES.keys():
+        world_root = OUT_WORLDS_DIR / world_key
+        packs_to_process.extend([
+            world_root / "land_only_pack",
+            world_root / "object_pack",
+        ])
+
+    for pack_dir in packs_to_process:
+        if not pack_dir.exists():
+            continue
+        sanitize_pack(pack_dir)
+        sanitize_manifest(pack_dir)
+        enrich_models(pack_dir, catalog_index, footprint_cache, roof_average_cache)
 
     OUT_HTML.write_text(build_html(), encoding="utf-8")
 

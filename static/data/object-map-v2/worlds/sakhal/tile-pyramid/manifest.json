@@ -1,0 +1,24 @@
+{
+  "world": "sakhal",
+  "bounds": {
+    "minX": 0.0,
+    "maxX": 15360.0,
+    "minZ": 0.0,
+    "maxZ": 15360.0
+  },
+  "rawBounds": {
+    "minX": -16.0,
+    "maxX": 15376.0,
+    "minZ": -16.0,
+    "maxZ": 15376.0
+  },
+  "tileSize": 512,
+  "format": "webp",
+  "minZoom": 0,
+  "maxZoom": 5,
+  "gridSize": 32,
+  "tileWorldSize": 512.0,
+  "edgeOverlapPx": 16,
+  "template": "./tiles/z{z}/{x}/{y}.webp",
+  "notes": "Sat pyramid derived from S_*_lco source tiles and per-tile rvmat TexGen metadata."
+}

@@ -1,0 +1,5485 @@
+{
+  "sourceCsv": "C:\\Users\\Samjo\\OneDrive\\Documents\\DayZ Projects\\DayZ Object Exports\\worlds\\enoch\\variants\\world_object_shapes_land_only.csv",
+  "gridSize": 480.0,
+  "placementFields": [
+    "id",
+    "model_id",
+    "x",
+    "y",
+    "z",
+    "yaw",
+    "pitch",
+    "roll",
+    "source_kind"
+  ],
+  "modelFields": [
+    "model_id",
+    "type",
+    "model",
+    "shape_path",
+    "source_kind",
+    "bbox_min_x",
+    "bbox_min_z",
+    "bbox_max_x",
+    "bbox_max_z",
+    "bbox_width",
+    "bbox_depth"
+  ],
+  "modelsPath": "./models.json",
+  "counts": {
+    "rows": 8516,
+    "land": 8516,
+    "p3d": 0,
+    "models": 330,
+    "chunks": 544
+  },
+  "bounds": {
+    "minX": 39.79,
+    "maxX": 12725.8,
+    "minZ": 278.17,
+    "maxZ": 12661.1
+  },
+  "chunks": [
+    {
+      "chunkX": 0,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_000_003.json",
+      "count": 3,
+      "minX": 417.58,
+      "maxX": 423.35,
+      "minZ": 1617.48,
+      "maxZ": 1790.32
+    },
+    {
+      "chunkX": 0,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_000_004.json",
+      "count": 1,
+      "minX": 287.75,
+      "maxX": 287.75,
+      "minZ": 2050.1,
+      "maxZ": 2050.1
+    },
+    {
+      "chunkX": 0,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_000_008.json",
+      "count": 2,
+      "minX": 39.79,
+      "maxX": 202.04,
+      "minZ": 4097.66,
+      "maxZ": 4198.92
+    },
+    {
+      "chunkX": 0,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_000_009.json",
+      "count": 1,
+      "minX": 404.63,
+      "maxX": 404.63,
+      "minZ": 4325.36,
+      "maxZ": 4325.36
+    },
+    {
+      "chunkX": 0,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_000_010.json",
+      "count": 2,
+      "minX": 336.81,
+      "maxX": 341.94,
+      "minZ": 5065.78,
+      "maxZ": 5081.61
+    },
+    {
+      "chunkX": 0,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_000_013.json",
+      "count": 1,
+      "minX": 451.69,
+      "maxX": 451.69,
+      "minZ": 6369.92,
+      "maxZ": 6369.92
+    },
+    {
+      "chunkX": 0,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_000_014.json",
+      "count": 3,
+      "minX": 175.24,
+      "maxX": 416.64,
+      "minZ": 6863.17,
+      "maxZ": 7146.28
+    },
+    {
+      "chunkX": 0,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_000_018.json",
+      "count": 1,
+      "minX": 185.16,
+      "maxX": 185.16,
+      "minZ": 8722.43,
+      "maxZ": 8722.43
+    },
+    {
+      "chunkX": 0,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_000_020.json",
+      "count": 7,
+      "minX": 426.57,
+      "maxX": 445.74,
+      "minZ": 10015.6,
+      "maxZ": 10036.1
+    },
+    {
+      "chunkX": 0,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_000_021.json",
+      "count": 1,
+      "minX": 225.9,
+      "maxX": 225.9,
+      "minZ": 10345.4,
+      "maxZ": 10345.4
+    },
+    {
+      "chunkX": 0,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_000_022.json",
+      "count": 1,
+      "minX": 363.32,
+      "maxX": 363.32,
+      "minZ": 10805.2,
+      "maxZ": 10805.2
+    },
+    {
+      "chunkX": 0,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_000_023.json",
+      "count": 3,
+      "minX": 303.17,
+      "maxX": 404.53,
+      "minZ": 11243.9,
+      "maxZ": 11323.0
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 0,
+      "path": "./chunks/chunk_001_000.json",
+      "count": 1,
+      "minX": 662.09,
+      "maxX": 662.09,
+      "minZ": 404.93,
+      "maxZ": 404.93
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_001_001.json",
+      "count": 3,
+      "minX": 558.51,
+      "maxX": 950.0,
+      "minZ": 900.11,
+      "maxZ": 944.74
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_001_002.json",
+      "count": 126,
+      "minX": 536.46,
+      "maxX": 874.05,
+      "minZ": 978.76,
+      "maxZ": 1232.01
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_001_004.json",
+      "count": 2,
+      "minX": 585.95,
+      "maxX": 787.49,
+      "minZ": 2113.55,
+      "maxZ": 2372.25
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_001_005.json",
+      "count": 7,
+      "minX": 564.05,
+      "maxX": 606.1,
+      "minZ": 2404.88,
+      "maxZ": 2815.95
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_001_006.json",
+      "count": 5,
+      "minX": 840.13,
+      "maxX": 848.04,
+      "minZ": 3282.0,
+      "maxZ": 3304.41
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_001_008.json",
+      "count": 2,
+      "minX": 670.47,
+      "maxX": 690.38,
+      "minZ": 4296.2,
+      "maxZ": 4303.87
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_001_009.json",
+      "count": 7,
+      "minX": 579.43,
+      "maxX": 941.27,
+      "minZ": 4324.19,
+      "maxZ": 4741.05
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_001_011.json",
+      "count": 82,
+      "minX": 674.87,
+      "maxX": 952.99,
+      "minZ": 5348.05,
+      "maxZ": 5725.98
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_001_012.json",
+      "count": 1,
+      "minX": 715.44,
+      "maxX": 715.44,
+      "minZ": 5926.1,
+      "maxZ": 5926.1
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_001_013.json",
+      "count": 1,
+      "minX": 697.51,
+      "maxX": 697.51,
+      "minZ": 6578.42,
+      "maxZ": 6578.42
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_001_014.json",
+      "count": 6,
+      "minX": 480.71,
+      "maxX": 774.73,
+      "minZ": 6743.59,
+      "maxZ": 7128.81
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_001_015.json",
+      "count": 3,
+      "minX": 739.88,
+      "maxX": 903.09,
+      "minZ": 7223.77,
+      "maxZ": 7623.64
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_001_016.json",
+      "count": 7,
+      "minX": 542.48,
+      "maxX": 803.65,
+      "minZ": 7684.54,
+      "maxZ": 8013.54
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_001_017.json",
+      "count": 9,
+      "minX": 564.08,
+      "maxX": 899.39,
+      "minZ": 8360.41,
+      "maxZ": 8629.17
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_001_018.json",
+      "count": 12,
+      "minX": 781.97,
+      "maxX": 908.69,
+      "minZ": 8640.07,
+      "maxZ": 9079.02
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_001_019.json",
+      "count": 4,
+      "minX": 868.61,
+      "maxX": 954.65,
+      "minZ": 9459.0,
+      "maxZ": 9547.46
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_001_020.json",
+      "count": 1,
+      "minX": 758.03,
+      "maxX": 758.03,
+      "minZ": 9812.1,
+      "maxZ": 9812.1
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_001_021.json",
+      "count": 2,
+      "minX": 816.64,
+      "maxX": 826.21,
+      "minZ": 10321.8,
+      "maxZ": 10511.7
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_001_024.json",
+      "count": 1,
+      "minX": 635.61,
+      "maxX": 635.61,
+      "minZ": 11922.4,
+      "maxZ": 11922.4
+    },
+    {
+      "chunkX": 1,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_001_025.json",
+      "count": 2,
+      "minX": 527.45,
+      "maxX": 577.17,
+      "minZ": 12033.1,
+      "maxZ": 12034.7
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_002_001.json",
+      "count": 2,
+      "minX": 1147.94,
+      "maxX": 1173.97,
+      "minZ": 810.88,
+      "maxZ": 940.96
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_002_002.json",
+      "count": 5,
+      "minX": 1038.76,
+      "maxX": 1319.84,
+      "minZ": 965.89,
+      "maxZ": 1364.65
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_002_003.json",
+      "count": 3,
+      "minX": 1001.22,
+      "maxX": 1346.45,
+      "minZ": 1572.24,
+      "maxZ": 1711.64
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_002_004.json",
+      "count": 1,
+      "minX": 1179.49,
+      "maxX": 1179.49,
+      "minZ": 2339.9,
+      "maxZ": 2339.9
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_002_009.json",
+      "count": 2,
+      "minX": 1008.36,
+      "maxX": 1367.54,
+      "minZ": 4552.18,
+      "maxZ": 4711.75
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_002_010.json",
+      "count": 23,
+      "minX": 1051.83,
+      "maxX": 1410.86,
+      "minZ": 4840.56,
+      "maxZ": 5248.82
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_002_011.json",
+      "count": 23,
+      "minX": 963.2,
+      "maxX": 1402.29,
+      "minZ": 5293.46,
+      "maxZ": 5755.13
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_002_012.json",
+      "count": 3,
+      "minX": 1051.06,
+      "maxX": 1191.64,
+      "minZ": 5765.78,
+      "maxZ": 6009.54
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_002_014.json",
+      "count": 36,
+      "minX": 1042.1,
+      "maxX": 1438.62,
+      "minZ": 6904.42,
+      "maxZ": 7199.7
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_002_015.json",
+      "count": 177,
+      "minX": 969.41,
+      "maxX": 1439.61,
+      "minZ": 7201.77,
+      "maxZ": 7677.47
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_002_016.json",
+      "count": 87,
+      "minX": 1192.53,
+      "maxX": 1434.6,
+      "minZ": 7682.41,
+      "maxZ": 8155.8
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_002_017.json",
+      "count": 15,
+      "minX": 1210.33,
+      "maxX": 1289.03,
+      "minZ": 8169.3,
+      "maxZ": 8237.7
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_002_018.json",
+      "count": 33,
+      "minX": 983.85,
+      "maxX": 1413.49,
+      "minZ": 8651.16,
+      "maxZ": 9037.2
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_002_019.json",
+      "count": 32,
+      "minX": 1026.88,
+      "maxX": 1427.32,
+      "minZ": 9400.66,
+      "maxZ": 9593.94
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_002_020.json",
+      "count": 38,
+      "minX": 1265.66,
+      "maxX": 1435.1,
+      "minZ": 9600.88,
+      "maxZ": 9800.77
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_002_021.json",
+      "count": 1,
+      "minX": 1418.95,
+      "maxX": 1418.95,
+      "minZ": 10539.8,
+      "maxZ": 10539.8
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_002_023.json",
+      "count": 3,
+      "minX": 1026.44,
+      "maxX": 1341.43,
+      "minZ": 11380.5,
+      "maxZ": 11411.2
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_002_024.json",
+      "count": 6,
+      "minX": 1368.71,
+      "maxX": 1419.54,
+      "minZ": 11701.2,
+      "maxZ": 11715.9
+    },
+    {
+      "chunkX": 2,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_002_025.json",
+      "count": 3,
+      "minX": 1109.67,
+      "maxX": 1277.83,
+      "minZ": 12010.5,
+      "maxZ": 12398.9
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_003_004.json",
+      "count": 8,
+      "minX": 1490.91,
+      "maxX": 1538.55,
+      "minZ": 2367.3,
+      "maxZ": 2385.34
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_003_005.json",
+      "count": 4,
+      "minX": 1444.79,
+      "maxX": 1504.11,
+      "minZ": 2453.87,
+      "maxZ": 2750.0
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_003_006.json",
+      "count": 2,
+      "minX": 1474.3,
+      "maxX": 1662.99,
+      "minZ": 3295.43,
+      "maxZ": 3344.04
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_003_007.json",
+      "count": 12,
+      "minX": 1653.0,
+      "maxX": 1682.55,
+      "minZ": 3362.55,
+      "maxZ": 3740.09
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_003_009.json",
+      "count": 3,
+      "minX": 1442.66,
+      "maxX": 1771.88,
+      "minZ": 4715.51,
+      "maxZ": 4774.0
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_003_010.json",
+      "count": 2,
+      "minX": 1612.0,
+      "maxX": 1811.78,
+      "minZ": 5098.09,
+      "maxZ": 5229.15
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_003_012.json",
+      "count": 1,
+      "minX": 1606.56,
+      "maxX": 1606.56,
+      "minZ": 5804.0,
+      "maxZ": 5804.0
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_003_013.json",
+      "count": 2,
+      "minX": 1740.5,
+      "maxX": 1762.37,
+      "minZ": 6497.95,
+      "maxZ": 6498.32
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_003_014.json",
+      "count": 75,
+      "minX": 1459.97,
+      "maxX": 1919.86,
+      "minZ": 6933.61,
+      "maxZ": 7199.55
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_003_015.json",
+      "count": 345,
+      "minX": 1440.0,
+      "maxX": 1919.83,
+      "minZ": 7203.91,
+      "maxZ": 7677.53
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_003_016.json",
+      "count": 14,
+      "minX": 1441.36,
+      "maxX": 1906.47,
+      "minZ": 7683.13,
+      "maxZ": 7870.53
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_003_018.json",
+      "count": 1,
+      "minX": 1603.81,
+      "maxX": 1603.81,
+      "minZ": 9115.22,
+      "maxZ": 9115.22
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_003_019.json",
+      "count": 25,
+      "minX": 1447.6,
+      "maxX": 1850.63,
+      "minZ": 9415.58,
+      "maxZ": 9599.18
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_003_020.json",
+      "count": 87,
+      "minX": 1441.97,
+      "maxX": 1867.24,
+      "minZ": 9602.31,
+      "maxZ": 9927.04
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_003_021.json",
+      "count": 3,
+      "minX": 1473.74,
+      "maxX": 1732.21,
+      "minZ": 10084.9,
+      "maxZ": 10369.2
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_003_022.json",
+      "count": 3,
+      "minX": 1468.8,
+      "maxX": 1817.2,
+      "minZ": 10630.0,
+      "maxZ": 10743.7
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_003_023.json",
+      "count": 4,
+      "minX": 1625.03,
+      "maxX": 1828.78,
+      "minZ": 11262.1,
+      "maxZ": 11462.5
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_003_024.json",
+      "count": 2,
+      "minX": 1454.07,
+      "maxX": 1711.61,
+      "minZ": 11670.1,
+      "maxZ": 11948.3
+    },
+    {
+      "chunkX": 3,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_003_025.json",
+      "count": 1,
+      "minX": 1717.62,
+      "maxX": 1717.62,
+      "minZ": 12000.1,
+      "maxZ": 12000.1
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_004_002.json",
+      "count": 1,
+      "minX": 2147.08,
+      "maxX": 2147.08,
+      "minZ": 1421.97,
+      "maxZ": 1421.97
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_004_003.json",
+      "count": 7,
+      "minX": 2009.55,
+      "maxX": 2133.47,
+      "minZ": 1611.32,
+      "maxZ": 1712.4
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_004_004.json",
+      "count": 5,
+      "minX": 2078.47,
+      "maxX": 2107.91,
+      "minZ": 2339.28,
+      "maxZ": 2365.79
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_004_005.json",
+      "count": 6,
+      "minX": 1926.41,
+      "maxX": 2363.49,
+      "minZ": 2528.65,
+      "maxZ": 2871.18
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_004_006.json",
+      "count": 2,
+      "minX": 2353.59,
+      "maxX": 2365.31,
+      "minZ": 2885.96,
+      "maxZ": 2891.72
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_004_007.json",
+      "count": 2,
+      "minX": 2126.08,
+      "maxX": 2128.32,
+      "minZ": 3506.32,
+      "maxZ": 3508.73
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_004_008.json",
+      "count": 1,
+      "minX": 2354.95,
+      "maxX": 2354.95,
+      "minZ": 4054.6,
+      "maxZ": 4054.6
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_004_009.json",
+      "count": 3,
+      "minX": 2018.39,
+      "maxX": 2186.98,
+      "minZ": 4555.95,
+      "maxZ": 4629.68
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_004_011.json",
+      "count": 3,
+      "minX": 2011.55,
+      "maxX": 2211.33,
+      "minZ": 5360.22,
+      "maxZ": 5584.21
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_004_012.json",
+      "count": 9,
+      "minX": 1925.83,
+      "maxX": 2399.97,
+      "minZ": 5868.82,
+      "maxZ": 6221.04
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_004_013.json",
+      "count": 32,
+      "minX": 1933.2,
+      "maxX": 2389.8,
+      "minZ": 6240.88,
+      "maxZ": 6709.97
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_004_014.json",
+      "count": 105,
+      "minX": 1921.83,
+      "maxX": 2256.27,
+      "minZ": 6744.52,
+      "maxZ": 7199.64
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_004_015.json",
+      "count": 100,
+      "minX": 1921.6,
+      "maxX": 2167.64,
+      "minZ": 7209.42,
+      "maxZ": 7668.65
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_004_016.json",
+      "count": 17,
+      "minX": 1937.39,
+      "maxX": 2106.52,
+      "minZ": 7707.32,
+      "maxZ": 7768.73
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_004_017.json",
+      "count": 1,
+      "minX": 2192.89,
+      "maxX": 2192.89,
+      "minZ": 8309.48,
+      "maxZ": 8309.48
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_004_019.json",
+      "count": 29,
+      "minX": 1946.13,
+      "maxX": 2153.12,
+      "minZ": 9364.83,
+      "maxZ": 9527.14
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_004_021.json",
+      "count": 4,
+      "minX": 1931.5,
+      "maxX": 2248.64,
+      "minZ": 10172.4,
+      "maxZ": 10475.6
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_004_022.json",
+      "count": 14,
+      "minX": 2098.66,
+      "maxX": 2306.07,
+      "minZ": 10571.3,
+      "maxZ": 11036.1
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_004_023.json",
+      "count": 22,
+      "minX": 2042.08,
+      "maxX": 2388.65,
+      "minZ": 11046.4,
+      "maxZ": 11479.5
+    },
+    {
+      "chunkX": 4,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_004_024.json",
+      "count": 1,
+      "minX": 2174.47,
+      "maxX": 2174.47,
+      "minZ": 11553.7,
+      "maxZ": 11553.7
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_005_002.json",
+      "count": 3,
+      "minX": 2414.22,
+      "maxX": 2849.38,
+      "minZ": 1308.58,
+      "maxZ": 1415.56
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_005_003.json",
+      "count": 1,
+      "minX": 2875.69,
+      "maxX": 2875.69,
+      "minZ": 1810.26,
+      "maxZ": 1810.26
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_005_006.json",
+      "count": 1,
+      "minX": 2806.72,
+      "maxX": 2806.72,
+      "minZ": 2945.25,
+      "maxZ": 2945.25
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_005_007.json",
+      "count": 6,
+      "minX": 2408.24,
+      "maxX": 2615.3,
+      "minZ": 3469.29,
+      "maxZ": 3825.13
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_005_008.json",
+      "count": 1,
+      "minX": 2773.57,
+      "maxX": 2773.57,
+      "minZ": 4102.8,
+      "maxZ": 4102.8
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_005_010.json",
+      "count": 9,
+      "minX": 2419.93,
+      "maxX": 2878.22,
+      "minZ": 4999.77,
+      "maxZ": 5259.55
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_005_011.json",
+      "count": 41,
+      "minX": 2411.1,
+      "maxX": 2859.37,
+      "minZ": 5307.11,
+      "maxZ": 5727.27
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_005_012.json",
+      "count": 2,
+      "minX": 2730.93,
+      "maxX": 2772.05,
+      "minZ": 5832.18,
+      "maxZ": 5996.42
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_005_014.json",
+      "count": 15,
+      "minX": 2497.64,
+      "maxX": 2864.68,
+      "minZ": 6725.07,
+      "maxZ": 7158.89
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_005_015.json",
+      "count": 23,
+      "minX": 2407.52,
+      "maxX": 2656.25,
+      "minZ": 7245.24,
+      "maxZ": 7530.31
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_005_016.json",
+      "count": 3,
+      "minX": 2424.38,
+      "maxX": 2558.78,
+      "minZ": 7707.2,
+      "maxZ": 8145.89
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_005_019.json",
+      "count": 2,
+      "minX": 2726.42,
+      "maxX": 2769.05,
+      "minZ": 9138.37,
+      "maxZ": 9293.46
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_005_020.json",
+      "count": 1,
+      "minX": 2576.08,
+      "maxX": 2576.08,
+      "minZ": 9701.03,
+      "maxZ": 9701.03
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_005_021.json",
+      "count": 1,
+      "minX": 2404.87,
+      "maxX": 2404.87,
+      "minZ": 10411.2,
+      "maxZ": 10411.2
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_005_022.json",
+      "count": 1,
+      "minX": 2445.62,
+      "maxX": 2445.62,
+      "minZ": 10891.8,
+      "maxZ": 10891.8
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_005_024.json",
+      "count": 2,
+      "minX": 2404.46,
+      "maxX": 2783.39,
+      "minZ": 11678.8,
+      "maxZ": 11913.6
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_005_025.json",
+      "count": 2,
+      "minX": 2720.88,
+      "maxX": 2723.68,
+      "minZ": 12069.1,
+      "maxZ": 12074.0
+    },
+    {
+      "chunkX": 5,
+      "chunkZ": 26,
+      "path": "./chunks/chunk_005_026.json",
+      "count": 1,
+      "minX": 2567.36,
+      "maxX": 2567.36,
+      "minZ": 12582.0,
+      "maxZ": 12582.0
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_006_001.json",
+      "count": 2,
+      "minX": 3166.13,
+      "maxX": 3252.69,
+      "minZ": 620.61,
+      "maxZ": 853.15
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_006_002.json",
+      "count": 12,
+      "minX": 2954.22,
+      "maxX": 3027.11,
+      "minZ": 1116.72,
+      "maxZ": 1159.76
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_006_004.json",
+      "count": 58,
+      "minX": 3114.93,
+      "maxX": 3352.41,
+      "minZ": 2015.37,
+      "maxZ": 2289.45
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_006_005.json",
+      "count": 2,
+      "minX": 3084.89,
+      "maxX": 3253.67,
+      "minZ": 2516.35,
+      "maxZ": 2538.55
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_006_006.json",
+      "count": 1,
+      "minX": 3138.29,
+      "maxX": 3138.29,
+      "minZ": 2939.7,
+      "maxZ": 2939.7
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_006_007.json",
+      "count": 19,
+      "minX": 3207.02,
+      "maxX": 3334.48,
+      "minZ": 3619.88,
+      "maxZ": 3721.04
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_006_009.json",
+      "count": 1,
+      "minX": 3296.7,
+      "maxX": 3296.7,
+      "minZ": 4650.92,
+      "maxZ": 4650.92
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_006_010.json",
+      "count": 86,
+      "minX": 3134.91,
+      "maxX": 3359.98,
+      "minZ": 4926.52,
+      "maxZ": 5139.56
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_006_011.json",
+      "count": 1,
+      "minX": 2897.48,
+      "maxX": 2897.48,
+      "minZ": 5318.02,
+      "maxZ": 5318.02
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_006_012.json",
+      "count": 3,
+      "minX": 2890.83,
+      "maxX": 3290.38,
+      "minZ": 5937.09,
+      "maxZ": 6199.22
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_006_013.json",
+      "count": 37,
+      "minX": 2887.26,
+      "maxX": 3333.12,
+      "minZ": 6556.66,
+      "maxZ": 6713.98
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_006_014.json",
+      "count": 154,
+      "minX": 2881.28,
+      "maxX": 3356.19,
+      "minZ": 6720.93,
+      "maxZ": 7095.69
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_006_015.json",
+      "count": 1,
+      "minX": 3035.65,
+      "maxX": 3035.65,
+      "minZ": 7662.38,
+      "maxZ": 7662.38
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_006_016.json",
+      "count": 2,
+      "minX": 3324.0,
+      "maxX": 3327.9,
+      "minZ": 7730.95,
+      "maxZ": 7734.62
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_006_017.json",
+      "count": 2,
+      "minX": 3311.04,
+      "maxX": 3314.68,
+      "minZ": 8427.24,
+      "maxZ": 8430.2
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_006_020.json",
+      "count": 1,
+      "minX": 3294.67,
+      "maxX": 3294.67,
+      "minZ": 9715.78,
+      "maxZ": 9715.78
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_006_021.json",
+      "count": 3,
+      "minX": 3073.89,
+      "maxX": 3089.65,
+      "minZ": 10502.6,
+      "maxZ": 10521.8
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_006_023.json",
+      "count": 2,
+      "minX": 3107.11,
+      "maxX": 3117.8,
+      "minZ": 11359.1,
+      "maxZ": 11376.9
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_006_024.json",
+      "count": 13,
+      "minX": 2912.42,
+      "maxX": 3264.2,
+      "minZ": 11696.2,
+      "maxZ": 11995.3
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_006_025.json",
+      "count": 33,
+      "minX": 2883.99,
+      "maxX": 3359.41,
+      "minZ": 12000.2,
+      "maxZ": 12393.5
+    },
+    {
+      "chunkX": 6,
+      "chunkZ": 26,
+      "path": "./chunks/chunk_006_026.json",
+      "count": 2,
+      "minX": 3000.42,
+      "maxX": 3265.34,
+      "minZ": 12518.6,
+      "maxZ": 12538.4
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_007_001.json",
+      "count": 2,
+      "minX": 3441.99,
+      "maxX": 3448.51,
+      "minZ": 812.63,
+      "maxZ": 822.87
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_007_002.json",
+      "count": 1,
+      "minX": 3802.18,
+      "maxX": 3802.18,
+      "minZ": 1140.73,
+      "maxZ": 1140.73
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_007_003.json",
+      "count": 5,
+      "minX": 3742.85,
+      "maxX": 3830.61,
+      "minZ": 1827.18,
+      "maxZ": 1907.19
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_007_004.json",
+      "count": 10,
+      "minX": 3362.32,
+      "maxX": 3710.45,
+      "minZ": 1927.77,
+      "maxZ": 2103.28
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_007_005.json",
+      "count": 4,
+      "minX": 3427.92,
+      "maxX": 3698.89,
+      "minZ": 2504.99,
+      "maxZ": 2665.17
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_007_007.json",
+      "count": 1,
+      "minX": 3673.59,
+      "maxX": 3673.59,
+      "minZ": 3414.0,
+      "maxZ": 3414.0
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_007_009.json",
+      "count": 1,
+      "minX": 3547.33,
+      "maxX": 3547.33,
+      "minZ": 4630.83,
+      "maxZ": 4630.83
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_007_010.json",
+      "count": 1,
+      "minX": 3361.47,
+      "maxX": 3361.47,
+      "minZ": 5064.96,
+      "maxZ": 5064.96
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_007_012.json",
+      "count": 2,
+      "minX": 3431.49,
+      "maxX": 3614.34,
+      "minZ": 5979.46,
+      "maxZ": 6167.78
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_007_013.json",
+      "count": 36,
+      "minX": 3361.47,
+      "maxX": 3771.41,
+      "minZ": 6330.29,
+      "maxZ": 6713.7
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_007_014.json",
+      "count": 1,
+      "minX": 3370.96,
+      "maxX": 3370.96,
+      "minZ": 6928.54,
+      "maxZ": 6928.54
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_007_015.json",
+      "count": 4,
+      "minX": 3463.2,
+      "maxX": 3590.28,
+      "minZ": 7289.49,
+      "maxZ": 7474.15
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_007_016.json",
+      "count": 2,
+      "minX": 3756.56,
+      "maxX": 3836.03,
+      "minZ": 7954.93,
+      "maxZ": 8029.07
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_007_017.json",
+      "count": 16,
+      "minX": 3705.45,
+      "maxX": 3831.92,
+      "minZ": 8400.29,
+      "maxZ": 8618.99
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_007_018.json",
+      "count": 25,
+      "minX": 3364.12,
+      "maxX": 3828.97,
+      "minZ": 8722.02,
+      "maxZ": 9070.19
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_007_019.json",
+      "count": 1,
+      "minX": 3806.68,
+      "maxX": 3806.68,
+      "minZ": 9158.75,
+      "maxZ": 9158.75
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_007_020.json",
+      "count": 1,
+      "minX": 3826.06,
+      "maxX": 3826.06,
+      "minZ": 9916.12,
+      "maxZ": 9916.12
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_007_021.json",
+      "count": 7,
+      "minX": 3584.92,
+      "maxX": 3836.41,
+      "minZ": 10249.8,
+      "maxZ": 10419.5
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_007_022.json",
+      "count": 1,
+      "minX": 3628.51,
+      "maxX": 3628.51,
+      "minZ": 10727.5,
+      "maxZ": 10727.5
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_007_023.json",
+      "count": 5,
+      "minX": 3462.8,
+      "maxX": 3788.57,
+      "minZ": 11116.5,
+      "maxZ": 11481.8
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_007_024.json",
+      "count": 149,
+      "minX": 3382.77,
+      "maxX": 3839.49,
+      "minZ": 11548.1,
+      "maxZ": 11998.6
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_007_025.json",
+      "count": 65,
+      "minX": 3368.05,
+      "maxX": 3776.71,
+      "minZ": 12006.7,
+      "maxZ": 12469.5
+    },
+    {
+      "chunkX": 7,
+      "chunkZ": 26,
+      "path": "./chunks/chunk_007_026.json",
+      "count": 2,
+      "minX": 3732.81,
+      "maxX": 3788.73,
+      "minZ": 12519.1,
+      "maxZ": 12556.7
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 0,
+      "path": "./chunks/chunk_008_000.json",
+      "count": 1,
+      "minX": 3952.42,
+      "maxX": 3952.42,
+      "minZ": 415.0,
+      "maxZ": 415.0
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_008_001.json",
+      "count": 1,
+      "minX": 3980.37,
+      "maxX": 3980.37,
+      "minZ": 742.23,
+      "maxZ": 742.23
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_008_002.json",
+      "count": 6,
+      "minX": 3887.59,
+      "maxX": 4168.87,
+      "minZ": 974.37,
+      "maxZ": 1410.13
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_008_003.json",
+      "count": 4,
+      "minX": 3844.03,
+      "maxX": 4069.12,
+      "minZ": 1495.32,
+      "maxZ": 1854.19
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_008_004.json",
+      "count": 2,
+      "minX": 3928.57,
+      "maxX": 4297.79,
+      "minZ": 2182.12,
+      "maxZ": 2254.56
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_008_006.json",
+      "count": 6,
+      "minX": 4024.06,
+      "maxX": 4047.94,
+      "minZ": 2896.49,
+      "maxZ": 3344.61
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_008_007.json",
+      "count": 3,
+      "minX": 4039.88,
+      "maxX": 4042.28,
+      "minZ": 3562.69,
+      "maxZ": 3768.14
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_008_008.json",
+      "count": 1,
+      "minX": 4231.7,
+      "maxX": 4231.7,
+      "minZ": 3855.26,
+      "maxZ": 3855.26
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_008_011.json",
+      "count": 3,
+      "minX": 4203.58,
+      "maxX": 4228.99,
+      "minZ": 5300.37,
+      "maxZ": 5750.71
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_008_012.json",
+      "count": 3,
+      "minX": 4196.07,
+      "maxX": 4227.46,
+      "minZ": 5768.5,
+      "maxZ": 5772.48
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_008_013.json",
+      "count": 3,
+      "minX": 3889.68,
+      "maxX": 4262.86,
+      "minZ": 6342.4,
+      "maxZ": 6592.38
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_008_014.json",
+      "count": 2,
+      "minX": 4087.98,
+      "maxX": 4287.61,
+      "minZ": 6725.63,
+      "maxZ": 6856.69
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_008_015.json",
+      "count": 2,
+      "minX": 3951.71,
+      "maxX": 3968.4,
+      "minZ": 7239.14,
+      "maxZ": 7341.38
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_008_016.json",
+      "count": 104,
+      "minX": 3841.95,
+      "maxX": 4171.66,
+      "minZ": 7774.28,
+      "maxZ": 8159.04
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_008_017.json",
+      "count": 28,
+      "minX": 3846.34,
+      "maxX": 3992.23,
+      "minZ": 8164.62,
+      "maxZ": 8577.86
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_008_018.json",
+      "count": 29,
+      "minX": 3861.23,
+      "maxX": 4313.29,
+      "minZ": 8810.65,
+      "maxZ": 9045.37
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_008_019.json",
+      "count": 4,
+      "minX": 3905.09,
+      "maxX": 4184.33,
+      "minZ": 9195.66,
+      "maxZ": 9429.13
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_008_020.json",
+      "count": 1,
+      "minX": 3855.47,
+      "maxX": 3855.47,
+      "minZ": 10010.6,
+      "maxZ": 10010.6
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_008_021.json",
+      "count": 66,
+      "minX": 3842.08,
+      "maxX": 4312.12,
+      "minZ": 10107.6,
+      "maxZ": 10509.8
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_008_023.json",
+      "count": 2,
+      "minX": 4108.7,
+      "maxX": 4317.86,
+      "minZ": 11432.2,
+      "maxZ": 11439.7
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_008_024.json",
+      "count": 33,
+      "minX": 3840.13,
+      "maxX": 4277.49,
+      "minZ": 11545.5,
+      "maxZ": 11849.7
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_008_025.json",
+      "count": 7,
+      "minX": 4013.29,
+      "maxX": 4287.75,
+      "minZ": 12045.0,
+      "maxZ": 12226.9
+    },
+    {
+      "chunkX": 8,
+      "chunkZ": 26,
+      "path": "./chunks/chunk_008_026.json",
+      "count": 1,
+      "minX": 3897.65,
+      "maxX": 3897.65,
+      "minZ": 12499.0,
+      "maxZ": 12499.0
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_009_001.json",
+      "count": 1,
+      "minX": 4588.41,
+      "maxX": 4588.41,
+      "minZ": 822.44,
+      "maxZ": 822.44
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_009_002.json",
+      "count": 1,
+      "minX": 4775.77,
+      "maxX": 4775.77,
+      "minZ": 964.08,
+      "maxZ": 964.08
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_009_004.json",
+      "count": 2,
+      "minX": 4667.23,
+      "maxX": 4796.2,
+      "minZ": 2091.22,
+      "maxZ": 2307.97
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_009_005.json",
+      "count": 1,
+      "minX": 4355.89,
+      "maxX": 4355.89,
+      "minZ": 2416.6,
+      "maxZ": 2416.6
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_009_006.json",
+      "count": 12,
+      "minX": 4388.97,
+      "maxX": 4795.83,
+      "minZ": 3003.56,
+      "maxZ": 3106.58
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_009_008.json",
+      "count": 2,
+      "minX": 4336.35,
+      "maxX": 4628.45,
+      "minZ": 4217.19,
+      "maxZ": 4286.0
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_009_009.json",
+      "count": 5,
+      "minX": 4474.86,
+      "maxX": 4537.99,
+      "minZ": 4678.58,
+      "maxZ": 4799.82
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_009_010.json",
+      "count": 5,
+      "minX": 4351.59,
+      "maxX": 4503.67,
+      "minZ": 4818.33,
+      "maxZ": 4827.6
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_009_011.json",
+      "count": 2,
+      "minX": 4600.35,
+      "maxX": 4700.09,
+      "minZ": 5438.26,
+      "maxZ": 5612.56
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_009_012.json",
+      "count": 2,
+      "minX": 4440.18,
+      "maxX": 4707.18,
+      "minZ": 6052.77,
+      "maxZ": 6118.97
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_009_013.json",
+      "count": 62,
+      "minX": 4383.83,
+      "maxX": 4794.04,
+      "minZ": 6266.91,
+      "maxZ": 6718.54
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_009_014.json",
+      "count": 11,
+      "minX": 4397.25,
+      "maxX": 4717.26,
+      "minZ": 6726.92,
+      "maxZ": 7125.22
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_009_015.json",
+      "count": 21,
+      "minX": 4452.66,
+      "maxX": 4796.83,
+      "minZ": 7228.88,
+      "maxZ": 7671.28
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_009_016.json",
+      "count": 2,
+      "minX": 4427.38,
+      "maxX": 4784.42,
+      "minZ": 7940.28,
+      "maxZ": 8148.42
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_009_018.json",
+      "count": 2,
+      "minX": 4355.37,
+      "maxX": 4719.42,
+      "minZ": 8851.92,
+      "maxZ": 9112.66
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_009_019.json",
+      "count": 1,
+      "minX": 4753.46,
+      "maxX": 4753.46,
+      "minZ": 9462.89,
+      "maxZ": 9462.89
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_009_020.json",
+      "count": 3,
+      "minX": 4354.87,
+      "maxX": 4786.86,
+      "minZ": 9842.39,
+      "maxZ": 10062.9
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_009_021.json",
+      "count": 31,
+      "minX": 4321.03,
+      "maxX": 4795.47,
+      "minZ": 10086.1,
+      "maxZ": 10522.6
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_009_022.json",
+      "count": 1,
+      "minX": 4681.26,
+      "maxX": 4681.26,
+      "minZ": 10669.1,
+      "maxZ": 10669.1
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_009_024.json",
+      "count": 2,
+      "minX": 4535.95,
+      "maxX": 4771.63,
+      "minZ": 11861.5,
+      "maxZ": 11880.4
+    },
+    {
+      "chunkX": 9,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_009_025.json",
+      "count": 3,
+      "minX": 4327.57,
+      "maxX": 4772.75,
+      "minZ": 12108.0,
+      "maxZ": 12403.2
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_010_001.json",
+      "count": 12,
+      "minX": 4806.11,
+      "maxX": 4948.23,
+      "minZ": 795.4,
+      "maxZ": 892.84
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_010_003.json",
+      "count": 2,
+      "minX": 5102.68,
+      "maxX": 5113.79,
+      "minZ": 1766.74,
+      "maxZ": 1792.74
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_010_004.json",
+      "count": 44,
+      "minX": 4832.15,
+      "maxX": 5271.03,
+      "minZ": 1937.85,
+      "maxZ": 2357.43
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_010_005.json",
+      "count": 3,
+      "minX": 4971.9,
+      "maxX": 5170.04,
+      "minZ": 2660.03,
+      "maxZ": 2775.61
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_010_006.json",
+      "count": 1,
+      "minX": 5052.3,
+      "maxX": 5052.3,
+      "minZ": 3051.06,
+      "maxZ": 3051.06
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_010_007.json",
+      "count": 15,
+      "minX": 4810.74,
+      "maxX": 5212.41,
+      "minZ": 3564.53,
+      "maxZ": 3665.86
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_010_009.json",
+      "count": 2,
+      "minX": 4923.68,
+      "maxX": 5089.85,
+      "minZ": 4328.85,
+      "maxZ": 4784.42
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_010_010.json",
+      "count": 12,
+      "minX": 4866.02,
+      "maxX": 5150.7,
+      "minZ": 4815.49,
+      "maxZ": 5270.59
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_010_011.json",
+      "count": 55,
+      "minX": 4842.24,
+      "maxX": 5279.26,
+      "minZ": 5284.5,
+      "maxZ": 5748.63
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_010_012.json",
+      "count": 2,
+      "minX": 4928.38,
+      "maxX": 5078.28,
+      "minZ": 5794.0,
+      "maxZ": 6116.11
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_010_013.json",
+      "count": 3,
+      "minX": 4800.53,
+      "maxX": 5028.94,
+      "minZ": 6329.52,
+      "maxZ": 6420.63
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_010_014.json",
+      "count": 3,
+      "minX": 4890.32,
+      "maxX": 5168.72,
+      "minZ": 7138.92,
+      "maxZ": 7190.15
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_010_015.json",
+      "count": 62,
+      "minX": 4801.64,
+      "maxX": 5081.35,
+      "minZ": 7262.92,
+      "maxZ": 7671.48
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_010_016.json",
+      "count": 45,
+      "minX": 4832.66,
+      "maxX": 5027.56,
+      "minZ": 7703.18,
+      "maxZ": 7994.25
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_010_017.json",
+      "count": 3,
+      "minX": 5081.16,
+      "maxX": 5216.55,
+      "minZ": 8195.92,
+      "maxZ": 8500.59
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_010_019.json",
+      "count": 15,
+      "minX": 4855.79,
+      "maxX": 5276.0,
+      "minZ": 9208.64,
+      "maxZ": 9591.36
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_010_020.json",
+      "count": 144,
+      "minX": 4812.33,
+      "maxX": 5263.56,
+      "minZ": 9603.1,
+      "maxZ": 10077.3
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_010_021.json",
+      "count": 69,
+      "minX": 4805.73,
+      "maxX": 5276.01,
+      "minZ": 10084.0,
+      "maxZ": 10541.9
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_010_022.json",
+      "count": 10,
+      "minX": 5057.53,
+      "maxX": 5270.69,
+      "minZ": 10575.8,
+      "maxZ": 10990.5
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_010_023.json",
+      "count": 2,
+      "minX": 5085.57,
+      "maxX": 5276.88,
+      "minZ": 11276.0,
+      "maxZ": 11478.5
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_010_024.json",
+      "count": 3,
+      "minX": 5043.5,
+      "maxX": 5268.74,
+      "minZ": 11666.7,
+      "maxZ": 11772.2
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_010_025.json",
+      "count": 5,
+      "minX": 4801.08,
+      "maxX": 4943.38,
+      "minZ": 12039.5,
+      "maxZ": 12475.2
+    },
+    {
+      "chunkX": 10,
+      "chunkZ": 26,
+      "path": "./chunks/chunk_010_026.json",
+      "count": 1,
+      "minX": 5120.58,
+      "maxX": 5120.58,
+      "minZ": 12495.4,
+      "maxZ": 12495.4
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_011_001.json",
+      "count": 1,
+      "minX": 5367.69,
+      "maxX": 5367.69,
+      "minZ": 790.86,
+      "maxZ": 790.86
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_011_002.json",
+      "count": 2,
+      "minX": 5545.41,
+      "maxX": 5554.67,
+      "minZ": 1108.42,
+      "maxZ": 1117.7
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_011_003.json",
+      "count": 1,
+      "minX": 5574.16,
+      "maxX": 5574.16,
+      "minZ": 1814.48,
+      "maxZ": 1814.48
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_011_004.json",
+      "count": 3,
+      "minX": 5370.51,
+      "maxX": 5581.95,
+      "minZ": 2195.5,
+      "maxZ": 2334.53
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_011_006.json",
+      "count": 2,
+      "minX": 5451.79,
+      "maxX": 5645.64,
+      "minZ": 2988.02,
+      "maxZ": 3106.23
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_011_007.json",
+      "count": 35,
+      "minX": 5311.39,
+      "maxX": 5753.17,
+      "minZ": 3604.51,
+      "maxZ": 3837.26
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_011_008.json",
+      "count": 43,
+      "minX": 5553.36,
+      "maxX": 5759.63,
+      "minZ": 3853.9,
+      "maxZ": 4247.36
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_011_009.json",
+      "count": 1,
+      "minX": 5689.83,
+      "maxX": 5689.83,
+      "minZ": 4772.46,
+      "maxZ": 4772.46
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_011_010.json",
+      "count": 4,
+      "minX": 5386.18,
+      "maxX": 5654.97,
+      "minZ": 4910.54,
+      "maxZ": 5075.25
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_011_011.json",
+      "count": 15,
+      "minX": 5281.24,
+      "maxX": 5595.51,
+      "minZ": 5446.06,
+      "maxZ": 5757.9
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_011_012.json",
+      "count": 1,
+      "minX": 5547.46,
+      "maxX": 5547.46,
+      "minZ": 6162.84,
+      "maxZ": 6162.84
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_011_013.json",
+      "count": 1,
+      "minX": 5754.76,
+      "maxX": 5754.76,
+      "minZ": 6671.47,
+      "maxZ": 6671.47
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_011_014.json",
+      "count": 4,
+      "minX": 5316.37,
+      "maxX": 5646.0,
+      "minZ": 6941.7,
+      "maxZ": 7175.24
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_011_016.json",
+      "count": 1,
+      "minX": 5370.77,
+      "maxX": 5370.77,
+      "minZ": 7808.15,
+      "maxZ": 7808.15
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_011_018.json",
+      "count": 26,
+      "minX": 5388.58,
+      "maxX": 5664.91,
+      "minZ": 8675.31,
+      "maxZ": 9119.03
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_011_019.json",
+      "count": 11,
+      "minX": 5314.25,
+      "maxX": 5693.94,
+      "minZ": 9328.59,
+      "maxZ": 9518.32
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_011_020.json",
+      "count": 7,
+      "minX": 5288.95,
+      "maxX": 5493.05,
+      "minZ": 9765.55,
+      "maxZ": 9993.44
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_011_021.json",
+      "count": 7,
+      "minX": 5307.94,
+      "maxX": 5721.02,
+      "minZ": 10133.3,
+      "maxZ": 10475.7
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_011_022.json",
+      "count": 2,
+      "minX": 5333.2,
+      "maxX": 5415.07,
+      "minZ": 10681.2,
+      "maxZ": 10766.3
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_011_023.json",
+      "count": 2,
+      "minX": 5397.14,
+      "maxX": 5614.21,
+      "minZ": 11261.5,
+      "maxZ": 11438.2
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_011_024.json",
+      "count": 3,
+      "minX": 5664.17,
+      "maxX": 5705.52,
+      "minZ": 11674.3,
+      "maxZ": 11703.3
+    },
+    {
+      "chunkX": 11,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_011_025.json",
+      "count": 1,
+      "minX": 5370.83,
+      "maxX": 5370.83,
+      "minZ": 12104.8,
+      "maxZ": 12104.8
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_012_001.json",
+      "count": 4,
+      "minX": 5980.07,
+      "maxX": 6013.93,
+      "minZ": 716.01,
+      "maxZ": 744.82
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_012_002.json",
+      "count": 1,
+      "minX": 6028.03,
+      "maxX": 6028.03,
+      "minZ": 1244.86,
+      "maxZ": 1244.86
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_012_003.json",
+      "count": 1,
+      "minX": 6093.88,
+      "maxX": 6093.88,
+      "minZ": 1491.65,
+      "maxZ": 1491.65
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_012_006.json",
+      "count": 1,
+      "minX": 5910.57,
+      "maxX": 5910.57,
+      "minZ": 3222.86,
+      "maxZ": 3222.86
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_012_007.json",
+      "count": 1,
+      "minX": 5773.14,
+      "maxX": 5773.14,
+      "minZ": 3546.08,
+      "maxZ": 3546.08
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_012_008.json",
+      "count": 269,
+      "minX": 5779.38,
+      "maxX": 6234.74,
+      "minZ": 3865.36,
+      "maxZ": 4317.68
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_012_009.json",
+      "count": 24,
+      "minX": 5772.42,
+      "maxX": 6142.64,
+      "minZ": 4321.41,
+      "maxZ": 4695.91
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_012_010.json",
+      "count": 23,
+      "minX": 5769.43,
+      "maxX": 6060.04,
+      "minZ": 4971.32,
+      "maxZ": 5274.09
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_012_011.json",
+      "count": 2,
+      "minX": 5806.55,
+      "maxX": 6079.48,
+      "minZ": 5344.49,
+      "maxZ": 5348.63
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_012_012.json",
+      "count": 3,
+      "minX": 5794.85,
+      "maxX": 5901.26,
+      "minZ": 5774.19,
+      "maxZ": 5831.22
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_012_013.json",
+      "count": 9,
+      "minX": 5765.98,
+      "maxX": 6052.93,
+      "minZ": 6454.69,
+      "maxZ": 6715.38
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_012_014.json",
+      "count": 26,
+      "minX": 5875.55,
+      "maxX": 6123.32,
+      "minZ": 6722.43,
+      "maxZ": 7195.87
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_012_015.json",
+      "count": 1,
+      "minX": 5928.68,
+      "maxX": 5928.68,
+      "minZ": 7216.86,
+      "maxZ": 7216.86
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_012_016.json",
+      "count": 32,
+      "minX": 5826.64,
+      "maxX": 6212.32,
+      "minZ": 7869.51,
+      "maxZ": 8150.24
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_012_017.json",
+      "count": 15,
+      "minX": 6012.0,
+      "maxX": 6220.02,
+      "minZ": 8161.74,
+      "maxZ": 8309.64
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_012_019.json",
+      "count": 5,
+      "minX": 6048.5,
+      "maxX": 6199.57,
+      "minZ": 9239.54,
+      "maxZ": 9288.96
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_012_020.json",
+      "count": 16,
+      "minX": 5772.68,
+      "maxX": 6220.05,
+      "minZ": 9750.73,
+      "maxZ": 10078.9
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_012_021.json",
+      "count": 46,
+      "minX": 5960.43,
+      "maxX": 6239.55,
+      "minZ": 10084.5,
+      "maxZ": 10532.5
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_012_023.json",
+      "count": 7,
+      "minX": 6050.96,
+      "maxX": 6238.61,
+      "minZ": 11209.2,
+      "maxZ": 11278.2
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_012_024.json",
+      "count": 6,
+      "minX": 5766.78,
+      "maxX": 5981.15,
+      "minZ": 11586.4,
+      "maxZ": 11995.4
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_012_025.json",
+      "count": 2,
+      "minX": 6000.69,
+      "maxX": 6137.5,
+      "minZ": 12165.6,
+      "maxZ": 12427.0
+    },
+    {
+      "chunkX": 12,
+      "chunkZ": 26,
+      "path": "./chunks/chunk_012_026.json",
+      "count": 1,
+      "minX": 6239.65,
+      "maxX": 6239.65,
+      "minZ": 12497.0,
+      "maxZ": 12497.0
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_013_001.json",
+      "count": 2,
+      "minX": 6403.3,
+      "maxX": 6532.65,
+      "minZ": 492.44,
+      "maxZ": 720.26
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_013_003.json",
+      "count": 3,
+      "minX": 6562.64,
+      "maxX": 6638.39,
+      "minZ": 1447.99,
+      "maxZ": 1655.02
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_013_005.json",
+      "count": 6,
+      "minX": 6267.0,
+      "maxX": 6322.99,
+      "minZ": 2413.29,
+      "maxZ": 2615.38
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_013_006.json",
+      "count": 1,
+      "minX": 6662.86,
+      "maxX": 6662.86,
+      "minZ": 3285.23,
+      "maxZ": 3285.23
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_013_007.json",
+      "count": 12,
+      "minX": 6409.1,
+      "maxX": 6548.73,
+      "minZ": 3496.65,
+      "maxZ": 3805.02
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_013_008.json",
+      "count": 59,
+      "minX": 6241.96,
+      "maxX": 6697.2,
+      "minZ": 3840.16,
+      "maxZ": 4312.28
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_013_009.json",
+      "count": 62,
+      "minX": 6255.44,
+      "maxX": 6602.63,
+      "minZ": 4365.16,
+      "maxZ": 4798.74
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_013_010.json",
+      "count": 7,
+      "minX": 6346.33,
+      "maxX": 6520.19,
+      "minZ": 4806.71,
+      "maxZ": 5182.5
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_013_012.json",
+      "count": 1,
+      "minX": 6571.73,
+      "maxX": 6571.73,
+      "minZ": 6170.79,
+      "maxZ": 6170.79
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_013_013.json",
+      "count": 5,
+      "minX": 6506.33,
+      "maxX": 6533.46,
+      "minZ": 6242.98,
+      "maxZ": 6271.37
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_013_014.json",
+      "count": 5,
+      "minX": 6293.04,
+      "maxX": 6337.46,
+      "minZ": 6806.32,
+      "maxZ": 6848.75
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_013_015.json",
+      "count": 3,
+      "minX": 6362.02,
+      "maxX": 6600.74,
+      "minZ": 7206.18,
+      "maxZ": 7421.36
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_013_016.json",
+      "count": 10,
+      "minX": 6267.0,
+      "maxX": 6439.75,
+      "minZ": 7952.62,
+      "maxZ": 8159.38
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_013_017.json",
+      "count": 14,
+      "minX": 6261.11,
+      "maxX": 6468.94,
+      "minZ": 8168.04,
+      "maxZ": 8424.01
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_013_018.json",
+      "count": 5,
+      "minX": 6460.57,
+      "maxX": 6527.56,
+      "minZ": 8828.19,
+      "maxZ": 9103.84
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_013_019.json",
+      "count": 9,
+      "minX": 6323.69,
+      "maxX": 6642.03,
+      "minZ": 9159.76,
+      "maxZ": 9583.01
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_013_020.json",
+      "count": 6,
+      "minX": 6279.46,
+      "maxX": 6647.98,
+      "minZ": 9895.28,
+      "maxZ": 10064.7
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_013_021.json",
+      "count": 99,
+      "minX": 6240.88,
+      "maxX": 6687.1,
+      "minZ": 10080.9,
+      "maxZ": 10554.1
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_013_022.json",
+      "count": 72,
+      "minX": 6244.97,
+      "maxX": 6642.52,
+      "minZ": 10565.3,
+      "maxZ": 11039.1
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_013_023.json",
+      "count": 172,
+      "minX": 6243.03,
+      "maxX": 6712.66,
+      "minZ": 11040.7,
+      "maxZ": 11516.4
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_013_024.json",
+      "count": 22,
+      "minX": 6244.03,
+      "maxX": 6690.07,
+      "minZ": 11521.2,
+      "maxZ": 11925.2
+    },
+    {
+      "chunkX": 13,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_013_025.json",
+      "count": 4,
+      "minX": 6255.06,
+      "maxX": 6697.43,
+      "minZ": 12205.7,
+      "maxZ": 12454.8
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_014_003.json",
+      "count": 1,
+      "minX": 6788.0,
+      "maxX": 6788.0,
+      "minZ": 1617.43,
+      "maxZ": 1617.43
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_014_004.json",
+      "count": 1,
+      "minX": 6961.26,
+      "maxX": 6961.26,
+      "minZ": 2305.72,
+      "maxZ": 2305.72
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_014_006.json",
+      "count": 2,
+      "minX": 6936.08,
+      "maxX": 6938.2,
+      "minZ": 3234.64,
+      "maxZ": 3241.55
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_014_007.json",
+      "count": 6,
+      "minX": 6726.99,
+      "maxX": 7172.99,
+      "minZ": 3360.68,
+      "maxZ": 3805.91
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_014_008.json",
+      "count": 13,
+      "minX": 6992.87,
+      "maxX": 7086.89,
+      "minZ": 3907.3,
+      "maxZ": 4047.53
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_014_009.json",
+      "count": 12,
+      "minX": 6811.13,
+      "maxX": 7151.69,
+      "minZ": 4442.54,
+      "maxZ": 4767.28
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_014_010.json",
+      "count": 6,
+      "minX": 6757.31,
+      "maxX": 7069.99,
+      "minZ": 4808.63,
+      "maxZ": 5027.59
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_014_012.json",
+      "count": 2,
+      "minX": 7174.13,
+      "maxX": 7187.28,
+      "minZ": 6223.75,
+      "maxZ": 6235.54
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_014_013.json",
+      "count": 2,
+      "minX": 7183.3,
+      "maxX": 7194.59,
+      "minZ": 6261.25,
+      "maxZ": 6407.55
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_014_015.json",
+      "count": 2,
+      "minX": 6839.45,
+      "maxX": 7078.15,
+      "minZ": 7226.81,
+      "maxZ": 7237.05
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_014_018.json",
+      "count": 1,
+      "minX": 6872.72,
+      "maxX": 6872.72,
+      "minZ": 8979.87,
+      "maxZ": 8979.87
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_014_019.json",
+      "count": 2,
+      "minX": 6808.79,
+      "maxX": 6900.24,
+      "minZ": 9374.86,
+      "maxZ": 9535.07
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_014_022.json",
+      "count": 2,
+      "minX": 6729.9,
+      "maxX": 6744.76,
+      "minZ": 10847.1,
+      "maxZ": 10861.1
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_014_023.json",
+      "count": 33,
+      "minX": 6727.09,
+      "maxX": 7077.92,
+      "minZ": 11114.0,
+      "maxZ": 11433.7
+    },
+    {
+      "chunkX": 14,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_014_024.json",
+      "count": 5,
+      "minX": 6919.24,
+      "maxX": 6997.82,
+      "minZ": 11613.5,
+      "maxZ": 11886.9
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_015_002.json",
+      "count": 1,
+      "minX": 7593.82,
+      "maxX": 7593.82,
+      "minZ": 1072.71,
+      "maxZ": 1072.71
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_015_004.json",
+      "count": 10,
+      "minX": 7404.03,
+      "maxX": 7672.1,
+      "minZ": 1992.48,
+      "maxZ": 2343.14
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_015_005.json",
+      "count": 91,
+      "minX": 7250.25,
+      "maxX": 7670.74,
+      "minZ": 2485.74,
+      "maxZ": 2878.38
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_015_006.json",
+      "count": 17,
+      "minX": 7235.63,
+      "maxX": 7666.02,
+      "minZ": 2909.99,
+      "maxZ": 3323.32
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_015_007.json",
+      "count": 3,
+      "minX": 7540.94,
+      "maxX": 7671.55,
+      "minZ": 3398.4,
+      "maxZ": 3576.82
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_015_008.json",
+      "count": 1,
+      "minX": 7394.7,
+      "maxX": 7394.7,
+      "minZ": 3911.16,
+      "maxZ": 3911.16
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_015_009.json",
+      "count": 2,
+      "minX": 7392.07,
+      "maxX": 7476.4,
+      "minZ": 4414.7,
+      "maxZ": 4592.8
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_015_010.json",
+      "count": 22,
+      "minX": 7384.97,
+      "maxX": 7679.48,
+      "minZ": 4987.93,
+      "maxZ": 5276.47
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_015_011.json",
+      "count": 19,
+      "minX": 7419.47,
+      "maxX": 7678.17,
+      "minZ": 5280.4,
+      "maxZ": 5717.03
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_015_012.json",
+      "count": 57,
+      "minX": 7202.41,
+      "maxX": 7676.71,
+      "minZ": 5769.2,
+      "maxZ": 6232.06
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_015_013.json",
+      "count": 42,
+      "minX": 7290.15,
+      "maxX": 7478.26,
+      "minZ": 6246.69,
+      "maxZ": 6658.77
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_015_015.json",
+      "count": 2,
+      "minX": 7316.96,
+      "maxX": 7555.66,
+      "minZ": 7244.74,
+      "maxZ": 7252.35
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_015_021.json",
+      "count": 5,
+      "minX": 7423.71,
+      "maxX": 7621.24,
+      "minZ": 10387.2,
+      "maxZ": 10479.5
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_015_022.json",
+      "count": 2,
+      "minX": 7234.27,
+      "maxX": 7310.97,
+      "minZ": 10638.2,
+      "maxZ": 10932.9
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_015_023.json",
+      "count": 6,
+      "minX": 7607.34,
+      "maxX": 7668.27,
+      "minZ": 11450.9,
+      "maxZ": 11516.5
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_015_024.json",
+      "count": 4,
+      "minX": 7594.2,
+      "maxX": 7671.63,
+      "minZ": 11524.5,
+      "maxZ": 11540.3
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_015_025.json",
+      "count": 5,
+      "minX": 7243.87,
+      "maxX": 7653.8,
+      "minZ": 12031.9,
+      "maxZ": 12365.3
+    },
+    {
+      "chunkX": 15,
+      "chunkZ": 26,
+      "path": "./chunks/chunk_015_026.json",
+      "count": 1,
+      "minX": 7229.3,
+      "maxX": 7229.3,
+      "minZ": 12566.0,
+      "maxZ": 12566.0
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_016_002.json",
+      "count": 1,
+      "minX": 7713.05,
+      "maxX": 7713.05,
+      "minZ": 1100.23,
+      "maxZ": 1100.23
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_016_003.json",
+      "count": 3,
+      "minX": 7892.21,
+      "maxX": 8111.72,
+      "minZ": 1751.14,
+      "maxZ": 1901.19
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_016_005.json",
+      "count": 9,
+      "minX": 7681.09,
+      "maxX": 7743.2,
+      "minZ": 2492.53,
+      "maxZ": 2835.96
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_016_006.json",
+      "count": 2,
+      "minX": 7702.3,
+      "maxX": 7722.66,
+      "minZ": 3024.78,
+      "maxZ": 3070.47
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_016_008.json",
+      "count": 2,
+      "minX": 7884.53,
+      "maxX": 8089.12,
+      "minZ": 3867.32,
+      "maxZ": 4221.33
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_016_010.json",
+      "count": 9,
+      "minX": 7702.83,
+      "maxX": 8143.92,
+      "minZ": 4971.59,
+      "maxZ": 5270.14
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_016_011.json",
+      "count": 14,
+      "minX": 7684.59,
+      "maxX": 8044.62,
+      "minZ": 5308.48,
+      "maxZ": 5668.77
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_016_012.json",
+      "count": 22,
+      "minX": 7699.82,
+      "maxX": 7862.96,
+      "minZ": 5788.99,
+      "maxZ": 6040.25
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_016_013.json",
+      "count": 2,
+      "minX": 7842.8,
+      "maxX": 7888.29,
+      "minZ": 6255.87,
+      "maxZ": 6317.2
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_016_014.json",
+      "count": 3,
+      "minX": 7689.05,
+      "maxX": 8095.48,
+      "minZ": 6758.61,
+      "maxZ": 7168.19
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_016_015.json",
+      "count": 2,
+      "minX": 7794.47,
+      "maxX": 8033.28,
+      "minZ": 7259.96,
+      "maxZ": 7267.57
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_016_016.json",
+      "count": 3,
+      "minX": 7947.88,
+      "maxX": 8136.63,
+      "minZ": 7740.04,
+      "maxZ": 8053.98
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_016_017.json",
+      "count": 23,
+      "minX": 7809.24,
+      "maxX": 8156.51,
+      "minZ": 8258.43,
+      "maxZ": 8637.39
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_016_018.json",
+      "count": 36,
+      "minX": 7704.85,
+      "maxX": 8156.53,
+      "minZ": 8645.72,
+      "maxZ": 9080.44
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_016_019.json",
+      "count": 2,
+      "minX": 7758.07,
+      "maxX": 7979.38,
+      "minZ": 9496.6,
+      "maxZ": 9510.56
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_016_020.json",
+      "count": 33,
+      "minX": 7795.09,
+      "maxX": 8086.02,
+      "minZ": 9658.96,
+      "maxZ": 10068.9
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_016_021.json",
+      "count": 10,
+      "minX": 7776.88,
+      "maxX": 7866.44,
+      "minZ": 10081.3,
+      "maxZ": 10136.4
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_016_022.json",
+      "count": 21,
+      "minX": 8093.95,
+      "maxX": 8158.45,
+      "minZ": 10783.4,
+      "maxZ": 10967.1
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_016_023.json",
+      "count": 16,
+      "minX": 7812.19,
+      "maxX": 8159.15,
+      "minZ": 11116.4,
+      "maxZ": 11512.4
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_016_024.json",
+      "count": 18,
+      "minX": 7726.79,
+      "maxX": 8077.88,
+      "minZ": 11573.8,
+      "maxZ": 11992.2
+    },
+    {
+      "chunkX": 16,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_016_025.json",
+      "count": 10,
+      "minX": 7707.23,
+      "maxX": 7864.84,
+      "minZ": 12000.2,
+      "maxZ": 12409.5
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_017_001.json",
+      "count": 1,
+      "minX": 8539.19,
+      "maxX": 8539.19,
+      "minZ": 909.16,
+      "maxZ": 909.16
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_017_003.json",
+      "count": 7,
+      "minX": 8190.56,
+      "maxX": 8360.31,
+      "minZ": 1495.55,
+      "maxZ": 1637.26
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_017_004.json",
+      "count": 3,
+      "minX": 8432.15,
+      "maxX": 8438.17,
+      "minZ": 2279.04,
+      "maxZ": 2303.94
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_017_006.json",
+      "count": 3,
+      "minX": 8349.9,
+      "maxX": 8361.37,
+      "minZ": 3177.68,
+      "maxZ": 3210.83
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_017_007.json",
+      "count": 3,
+      "minX": 8564.9,
+      "maxX": 8611.43,
+      "minZ": 3446.71,
+      "maxZ": 3622.97
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_017_008.json",
+      "count": 3,
+      "minX": 8508.04,
+      "maxX": 8573.29,
+      "minZ": 4094.19,
+      "maxZ": 4143.6
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_017_009.json",
+      "count": 3,
+      "minX": 8431.52,
+      "maxX": 8592.6,
+      "minZ": 4393.57,
+      "maxZ": 4573.15
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_017_010.json",
+      "count": 5,
+      "minX": 8294.76,
+      "maxX": 8529.91,
+      "minZ": 4829.34,
+      "maxZ": 5158.21
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_017_012.json",
+      "count": 1,
+      "minX": 8286.35,
+      "maxX": 8286.35,
+      "minZ": 5842.73,
+      "maxZ": 5842.73
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_017_013.json",
+      "count": 3,
+      "minX": 8545.0,
+      "maxX": 8612.26,
+      "minZ": 6471.9,
+      "maxZ": 6620.71
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_017_014.json",
+      "count": 28,
+      "minX": 8260.98,
+      "maxX": 8606.12,
+      "minZ": 6729.62,
+      "maxZ": 7186.53
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_017_015.json",
+      "count": 3,
+      "minX": 8272.19,
+      "maxX": 8597.42,
+      "minZ": 7275.19,
+      "maxZ": 7460.5
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_017_017.json",
+      "count": 6,
+      "minX": 8160.39,
+      "maxX": 8354.25,
+      "minZ": 8388.31,
+      "maxZ": 8638.24
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_017_018.json",
+      "count": 18,
+      "minX": 8164.31,
+      "maxX": 8589.87,
+      "minZ": 8645.26,
+      "maxZ": 8755.41
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_017_020.json",
+      "count": 8,
+      "minX": 8448.3,
+      "maxX": 8555.94,
+      "minZ": 9691.79,
+      "maxZ": 10074.1
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_017_022.json",
+      "count": 19,
+      "minX": 8162.0,
+      "maxX": 8621.56,
+      "minZ": 10595.8,
+      "maxZ": 10931.2
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_017_023.json",
+      "count": 21,
+      "minX": 8165.79,
+      "maxX": 8451.48,
+      "minZ": 11044.6,
+      "maxZ": 11274.2
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_017_024.json",
+      "count": 51,
+      "minX": 8219.7,
+      "maxX": 8556.37,
+      "minZ": 11522.1,
+      "maxZ": 11997.2
+    },
+    {
+      "chunkX": 17,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_017_025.json",
+      "count": 33,
+      "minX": 8202.89,
+      "maxX": 8557.33,
+      "minZ": 12005.6,
+      "maxZ": 12173.9
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_018_002.json",
+      "count": 5,
+      "minX": 8996.45,
+      "maxX": 9077.44,
+      "minZ": 1247.16,
+      "maxZ": 1438.11
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_018_004.json",
+      "count": 8,
+      "minX": 8895.09,
+      "maxX": 8946.52,
+      "minZ": 2037.8,
+      "maxZ": 2080.46
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_018_006.json",
+      "count": 1,
+      "minX": 8782.13,
+      "maxX": 8782.13,
+      "minZ": 3071.87,
+      "maxZ": 3071.87
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_018_007.json",
+      "count": 1,
+      "minX": 9029.62,
+      "maxX": 9029.62,
+      "minZ": 3534.7,
+      "maxZ": 3534.7
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_018_008.json",
+      "count": 2,
+      "minX": 8928.17,
+      "maxX": 9045.61,
+      "minZ": 4031.83,
+      "maxZ": 4218.12
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_018_009.json",
+      "count": 32,
+      "minX": 8846.09,
+      "maxX": 9119.83,
+      "minZ": 4373.46,
+      "maxZ": 4499.79
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_018_010.json",
+      "count": 1,
+      "minX": 9017.97,
+      "maxX": 9017.97,
+      "minZ": 5055.26,
+      "maxZ": 5055.26
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_018_011.json",
+      "count": 4,
+      "minX": 8663.68,
+      "maxX": 9061.17,
+      "minZ": 5363.2,
+      "maxZ": 5407.4
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_018_012.json",
+      "count": 1,
+      "minX": 8928.08,
+      "maxX": 8928.08,
+      "minZ": 5888.97,
+      "maxZ": 5888.97
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_018_013.json",
+      "count": 62,
+      "minX": 8679.9,
+      "maxX": 9116.99,
+      "minZ": 6495.51,
+      "maxZ": 6719.74
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_018_014.json",
+      "count": 11,
+      "minX": 8693.75,
+      "maxX": 9058.16,
+      "minZ": 6726.61,
+      "maxZ": 7158.03
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_018_015.json",
+      "count": 6,
+      "minX": 8749.63,
+      "maxX": 9022.5,
+      "minZ": 7211.09,
+      "maxZ": 7457.93
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_018_016.json",
+      "count": 1,
+      "minX": 8709.82,
+      "maxX": 8709.82,
+      "minZ": 8092.41,
+      "maxZ": 8092.41
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_018_017.json",
+      "count": 1,
+      "minX": 8737.68,
+      "maxX": 8737.68,
+      "minZ": 8582.73,
+      "maxZ": 8582.73
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_018_019.json",
+      "count": 2,
+      "minX": 9012.17,
+      "maxX": 9015.23,
+      "minZ": 9163.44,
+      "maxZ": 9209.65
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_018_021.json",
+      "count": 3,
+      "minX": 8813.1,
+      "maxX": 8822.06,
+      "minZ": 10181.2,
+      "maxZ": 10199.0
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_018_022.json",
+      "count": 8,
+      "minX": 8939.94,
+      "maxX": 9119.53,
+      "minZ": 10751.8,
+      "maxZ": 10961.0
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_018_023.json",
+      "count": 20,
+      "minX": 8740.97,
+      "maxX": 9115.31,
+      "minZ": 11056.7,
+      "maxZ": 11498.4
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_018_024.json",
+      "count": 3,
+      "minX": 8761.59,
+      "maxX": 8959.83,
+      "minZ": 11663.7,
+      "maxZ": 11734.6
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_018_025.json",
+      "count": 1,
+      "minX": 8654.91,
+      "maxX": 8654.91,
+      "minZ": 12372.7,
+      "maxZ": 12372.7
+    },
+    {
+      "chunkX": 18,
+      "chunkZ": 26,
+      "path": "./chunks/chunk_018_026.json",
+      "count": 4,
+      "minX": 8974.79,
+      "maxX": 9018.0,
+      "minZ": 12572.3,
+      "maxZ": 12635.7
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 0,
+      "path": "./chunks/chunk_019_000.json",
+      "count": 3,
+      "minX": 9142.33,
+      "maxX": 9156.67,
+      "minZ": 368.62,
+      "maxZ": 375.07
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_019_002.json",
+      "count": 9,
+      "minX": 9222.95,
+      "maxX": 9592.77,
+      "minZ": 1124.22,
+      "maxZ": 1421.41
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_019_003.json",
+      "count": 3,
+      "minX": 9175.74,
+      "maxX": 9263.97,
+      "minZ": 1460.8,
+      "maxZ": 1700.73
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_019_004.json",
+      "count": 1,
+      "minX": 9348.02,
+      "maxX": 9348.02,
+      "minZ": 2185.64,
+      "maxZ": 2185.64
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_019_006.json",
+      "count": 1,
+      "minX": 9342.53,
+      "maxX": 9342.53,
+      "minZ": 3347.02,
+      "maxZ": 3347.02
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_019_007.json",
+      "count": 2,
+      "minX": 9276.9,
+      "maxX": 9289.07,
+      "minZ": 3559.84,
+      "maxZ": 3760.01
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_019_008.json",
+      "count": 1,
+      "minX": 9303.8,
+      "maxX": 9303.8,
+      "minZ": 4233.06,
+      "maxZ": 4233.06
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_019_009.json",
+      "count": 11,
+      "minX": 9120.0,
+      "maxX": 9323.05,
+      "minZ": 4369.98,
+      "maxZ": 4633.99
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_019_010.json",
+      "count": 3,
+      "minX": 9488.46,
+      "maxX": 9542.83,
+      "minZ": 4819.36,
+      "maxZ": 5156.57
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_019_012.json",
+      "count": 3,
+      "minX": 9134.94,
+      "maxX": 9414.89,
+      "minZ": 5933.28,
+      "maxZ": 6079.6
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_019_013.json",
+      "count": 10,
+      "minX": 9131.08,
+      "maxX": 9537.64,
+      "minZ": 6399.02,
+      "maxZ": 6680.73
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_019_014.json",
+      "count": 1,
+      "minX": 9287.32,
+      "maxX": 9287.32,
+      "minZ": 6968.23,
+      "maxZ": 6968.23
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_019_015.json",
+      "count": 2,
+      "minX": 9227.28,
+      "maxX": 9466.1,
+      "minZ": 7305.63,
+      "maxZ": 7313.25
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_019_016.json",
+      "count": 2,
+      "minX": 9341.36,
+      "maxX": 9579.83,
+      "minZ": 8078.23,
+      "maxZ": 8149.29
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_019_017.json",
+      "count": 2,
+      "minX": 9352.19,
+      "maxX": 9410.88,
+      "minZ": 8400.84,
+      "maxZ": 8508.98
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_019_019.json",
+      "count": 1,
+      "minX": 9143.52,
+      "maxX": 9143.52,
+      "minZ": 9399.53,
+      "maxZ": 9399.53
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_019_020.json",
+      "count": 2,
+      "minX": 9277.03,
+      "maxX": 9322.24,
+      "minZ": 9642.87,
+      "maxZ": 9773.35
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_019_021.json",
+      "count": 78,
+      "minX": 9138.71,
+      "maxX": 9595.79,
+      "minZ": 10253.8,
+      "maxZ": 10541.9
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_019_022.json",
+      "count": 174,
+      "minX": 9120.7,
+      "maxX": 9599.34,
+      "minZ": 10561.4,
+      "maxZ": 11038.5
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_019_023.json",
+      "count": 31,
+      "minX": 9135.9,
+      "maxX": 9510.47,
+      "minZ": 11043.9,
+      "maxZ": 11460.7
+    },
+    {
+      "chunkX": 19,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_019_024.json",
+      "count": 5,
+      "minX": 9385.48,
+      "maxX": 9526.91,
+      "minZ": 11566.7,
+      "maxZ": 11769.3
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 0,
+      "path": "./chunks/chunk_020_000.json",
+      "count": 3,
+      "minX": 9878.65,
+      "maxX": 9901.82,
+      "minZ": 474.07,
+      "maxZ": 479.81
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_020_001.json",
+      "count": 1,
+      "minX": 9970.11,
+      "maxX": 9970.11,
+      "minZ": 891.72,
+      "maxZ": 891.72
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_020_002.json",
+      "count": 9,
+      "minX": 9600.63,
+      "maxX": 10024.1,
+      "minZ": 1109.29,
+      "maxZ": 1224.38
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_020_003.json",
+      "count": 1,
+      "minX": 9885.71,
+      "maxX": 9885.71,
+      "minZ": 1449.42,
+      "maxZ": 1449.42
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_020_005.json",
+      "count": 2,
+      "minX": 9846.84,
+      "maxX": 10068.0,
+      "minZ": 2477.67,
+      "maxZ": 2815.17
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_020_007.json",
+      "count": 24,
+      "minX": 9607.73,
+      "maxX": 10013.9,
+      "minZ": 3465.07,
+      "maxZ": 3812.46
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_020_010.json",
+      "count": 5,
+      "minX": 9637.04,
+      "maxX": 9638.8,
+      "minZ": 4962.3,
+      "maxZ": 4979.28
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_020_011.json",
+      "count": 1,
+      "minX": 9931.12,
+      "maxX": 9931.12,
+      "minZ": 5552.66,
+      "maxZ": 5552.66
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_020_014.json",
+      "count": 20,
+      "minX": 9672.12,
+      "maxX": 10039.7,
+      "minZ": 6830.77,
+      "maxZ": 7193.33
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_020_015.json",
+      "count": 5,
+      "minX": 9650.53,
+      "maxX": 9943.72,
+      "minZ": 7212.79,
+      "maxZ": 7328.47
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_020_016.json",
+      "count": 14,
+      "minX": 9619.27,
+      "maxX": 9829.22,
+      "minZ": 7988.79,
+      "maxZ": 8155.23
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_020_017.json",
+      "count": 96,
+      "minX": 9603.95,
+      "maxX": 10012.8,
+      "minZ": 8160.69,
+      "maxZ": 8636.12
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_020_018.json",
+      "count": 5,
+      "minX": 9644.01,
+      "maxX": 10070.7,
+      "minZ": 8642.3,
+      "maxZ": 8701.55
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_020_021.json",
+      "count": 26,
+      "minX": 9600.66,
+      "maxX": 9813.45,
+      "minZ": 10106.1,
+      "maxZ": 10540.9
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_020_022.json",
+      "count": 17,
+      "minX": 9606.47,
+      "maxX": 9958.49,
+      "minZ": 10560.2,
+      "maxZ": 10823.0
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_020_023.json",
+      "count": 4,
+      "minX": 9735.8,
+      "maxX": 9760.7,
+      "minZ": 11434.2,
+      "maxZ": 11492.8
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_020_024.json",
+      "count": 2,
+      "minX": 9610.57,
+      "maxX": 9937.23,
+      "minZ": 11572.7,
+      "maxZ": 11757.6
+    },
+    {
+      "chunkX": 20,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_020_025.json",
+      "count": 3,
+      "minX": 9711.97,
+      "maxX": 9769.5,
+      "minZ": 12269.4,
+      "maxZ": 12284.2
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 0,
+      "path": "./chunks/chunk_021_000.json",
+      "count": 1,
+      "minX": 10151.4,
+      "maxX": 10151.4,
+      "minZ": 475.81,
+      "maxZ": 475.81
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_021_001.json",
+      "count": 4,
+      "minX": 10248.0,
+      "maxX": 10429.1,
+      "minZ": 515.78,
+      "maxZ": 701.1
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_021_002.json",
+      "count": 2,
+      "minX": 10179.2,
+      "maxX": 10538.6,
+      "minZ": 1179.45,
+      "maxZ": 1429.37
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_021_003.json",
+      "count": 1,
+      "minX": 10153.0,
+      "maxX": 10153.0,
+      "minZ": 1846.31,
+      "maxZ": 1846.31
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_021_004.json",
+      "count": 10,
+      "minX": 10091.4,
+      "maxX": 10283.0,
+      "minZ": 2012.14,
+      "maxZ": 2292.87
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_021_005.json",
+      "count": 1,
+      "minX": 10266.5,
+      "maxX": 10266.5,
+      "minZ": 2707.55,
+      "maxZ": 2707.55
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_021_006.json",
+      "count": 5,
+      "minX": 10483.1,
+      "maxX": 10510.6,
+      "minZ": 3111.6,
+      "maxZ": 3148.95
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_021_007.json",
+      "count": 1,
+      "minX": 10357.3,
+      "maxX": 10357.3,
+      "minZ": 3712.77,
+      "maxZ": 3712.77
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_021_008.json",
+      "count": 6,
+      "minX": 10084.2,
+      "maxX": 10338.3,
+      "minZ": 4148.45,
+      "maxZ": 4269.43
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_021_010.json",
+      "count": 1,
+      "minX": 10444.4,
+      "maxX": 10444.4,
+      "minZ": 4999.67,
+      "maxZ": 4999.67
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_021_011.json",
+      "count": 2,
+      "minX": 10108.6,
+      "maxX": 10370.2,
+      "minZ": 5531.15,
+      "maxZ": 5641.19
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_021_012.json",
+      "count": 7,
+      "minX": 10105.6,
+      "maxX": 10420.2,
+      "minZ": 5780.68,
+      "maxZ": 5898.25
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_021_013.json",
+      "count": 5,
+      "minX": 10376.6,
+      "maxX": 10395.6,
+      "minZ": 6290.62,
+      "maxZ": 6331.78
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_021_014.json",
+      "count": 30,
+      "minX": 10095.8,
+      "maxX": 10516.7,
+      "minZ": 6722.61,
+      "maxZ": 7074.64
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_021_015.json",
+      "count": 2,
+      "minX": 10182.6,
+      "maxX": 10421.5,
+      "minZ": 7333.37,
+      "maxZ": 7338.28
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_021_016.json",
+      "count": 2,
+      "minX": 10318.0,
+      "maxX": 10321.0,
+      "minZ": 7749.83,
+      "maxZ": 7752.2
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_021_017.json",
+      "count": 5,
+      "minX": 10083.1,
+      "maxX": 10269.8,
+      "minZ": 8278.09,
+      "maxZ": 8611.9
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_021_018.json",
+      "count": 6,
+      "minX": 10093.2,
+      "maxX": 10171.2,
+      "minZ": 8663.65,
+      "maxZ": 8757.73
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_021_020.json",
+      "count": 1,
+      "minX": 10294.8,
+      "maxX": 10294.8,
+      "minZ": 9809.34,
+      "maxZ": 9809.34
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_021_021.json",
+      "count": 1,
+      "minX": 10470.7,
+      "maxX": 10470.7,
+      "minZ": 10149.4,
+      "maxZ": 10149.4
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_021_022.json",
+      "count": 9,
+      "minX": 10347.2,
+      "maxX": 10554.7,
+      "minZ": 10752.4,
+      "maxZ": 11034.2
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_021_023.json",
+      "count": 26,
+      "minX": 10196.8,
+      "maxX": 10556.0,
+      "minZ": 11047.2,
+      "maxZ": 11486.9
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_021_024.json",
+      "count": 2,
+      "minX": 10145.2,
+      "maxX": 10538.5,
+      "minZ": 11526.4,
+      "maxZ": 11750.5
+    },
+    {
+      "chunkX": 21,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_021_025.json",
+      "count": 3,
+      "minX": 10129.8,
+      "maxX": 10443.6,
+      "minZ": 12036.3,
+      "maxZ": 12293.5
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 0,
+      "path": "./chunks/chunk_022_000.json",
+      "count": 1,
+      "minX": 10898.3,
+      "maxX": 10898.3,
+      "minZ": 331.55,
+      "maxZ": 331.55
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_022_001.json",
+      "count": 21,
+      "minX": 10718.9,
+      "maxX": 11008.1,
+      "minZ": 727.66,
+      "maxZ": 959.62
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_022_002.json",
+      "count": 28,
+      "minX": 10608.6,
+      "maxX": 10879.4,
+      "minZ": 961.5,
+      "maxZ": 1371.74
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_022_003.json",
+      "count": 5,
+      "minX": 10590.4,
+      "maxX": 10977.0,
+      "minZ": 1471.19,
+      "maxZ": 1788.04
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_022_004.json",
+      "count": 12,
+      "minX": 10691.7,
+      "maxX": 11029.2,
+      "minZ": 1954.81,
+      "maxZ": 2283.23
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_022_005.json",
+      "count": 8,
+      "minX": 10776.2,
+      "maxX": 11033.9,
+      "minZ": 2511.88,
+      "maxZ": 2634.85
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_022_006.json",
+      "count": 1,
+      "minX": 10846.5,
+      "maxX": 10846.5,
+      "minZ": 2918.84,
+      "maxZ": 2918.84
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_022_007.json",
+      "count": 4,
+      "minX": 10649.5,
+      "maxX": 10881.2,
+      "minZ": 3549.98,
+      "maxZ": 3603.87
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_022_008.json",
+      "count": 33,
+      "minX": 10828.3,
+      "maxX": 11039.5,
+      "minZ": 4135.69,
+      "maxZ": 4319.17
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_022_009.json",
+      "count": 34,
+      "minX": 10579.0,
+      "maxX": 11034.4,
+      "minZ": 4322.6,
+      "maxZ": 4611.85
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_022_010.json",
+      "count": 2,
+      "minX": 10628.2,
+      "maxX": 10833.3,
+      "minZ": 4984.51,
+      "maxZ": 5077.24
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_022_012.json",
+      "count": 6,
+      "minX": 10578.7,
+      "maxX": 10750.2,
+      "minZ": 5983.22,
+      "maxZ": 6237.72
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_022_013.json",
+      "count": 4,
+      "minX": 10702.5,
+      "maxX": 11019.3,
+      "minZ": 6308.71,
+      "maxZ": 6643.11
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_022_014.json",
+      "count": 26,
+      "minX": 10605.7,
+      "maxX": 10993.9,
+      "minZ": 6765.87,
+      "maxZ": 7082.66
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_022_015.json",
+      "count": 5,
+      "minX": 10660.2,
+      "maxX": 10902.7,
+      "minZ": 7339.13,
+      "maxZ": 7518.63
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_022_016.json",
+      "count": 1,
+      "minX": 10734.6,
+      "maxX": 10734.6,
+      "minZ": 8137.28,
+      "maxZ": 8137.28
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_022_017.json",
+      "count": 3,
+      "minX": 10779.1,
+      "maxX": 10810.4,
+      "minZ": 8358.85,
+      "maxZ": 8505.48
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_022_018.json",
+      "count": 52,
+      "minX": 10583.0,
+      "maxX": 11035.8,
+      "minZ": 8858.96,
+      "maxZ": 9099.07
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_022_019.json",
+      "count": 4,
+      "minX": 10576.8,
+      "maxX": 11010.1,
+      "minZ": 9124.14,
+      "maxZ": 9361.07
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_022_021.json",
+      "count": 5,
+      "minX": 10599.6,
+      "maxX": 10982.8,
+      "minZ": 10138.9,
+      "maxZ": 10554.7
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_022_022.json",
+      "count": 109,
+      "minX": 10566.5,
+      "maxX": 10980.7,
+      "minZ": 10618.0,
+      "maxZ": 11039.4
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_022_023.json",
+      "count": 138,
+      "minX": 10560.5,
+      "maxX": 11020.8,
+      "minZ": 11044.5,
+      "maxZ": 11290.5
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_022_024.json",
+      "count": 4,
+      "minX": 10564.6,
+      "maxX": 11010.4,
+      "minZ": 11807.2,
+      "maxZ": 11906.3
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_022_025.json",
+      "count": 2,
+      "minX": 10673.1,
+      "maxX": 10679.6,
+      "minZ": 12441.7,
+      "maxZ": 12449.2
+    },
+    {
+      "chunkX": 22,
+      "chunkZ": 26,
+      "path": "./chunks/chunk_022_026.json",
+      "count": 14,
+      "minX": 10730.9,
+      "maxX": 10920.5,
+      "minZ": 12529.7,
+      "maxZ": 12661.1
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 0,
+      "path": "./chunks/chunk_023_000.json",
+      "count": 11,
+      "minX": 11433.8,
+      "maxX": 11519.6,
+      "minZ": 439.38,
+      "maxZ": 477.5
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_023_001.json",
+      "count": 88,
+      "minX": 11096.6,
+      "maxX": 11519.4,
+      "minZ": 490.19,
+      "maxZ": 943.23
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_023_002.json",
+      "count": 13,
+      "minX": 11104.5,
+      "maxX": 11506.5,
+      "minZ": 1121.36,
+      "maxZ": 1345.45
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_023_003.json",
+      "count": 1,
+      "minX": 11047.4,
+      "maxX": 11047.4,
+      "minZ": 1668.81,
+      "maxZ": 1668.81
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_023_004.json",
+      "count": 10,
+      "minX": 11072.8,
+      "maxX": 11386.8,
+      "minZ": 2058.69,
+      "maxZ": 2381.38
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_023_005.json",
+      "count": 36,
+      "minX": 11077.2,
+      "maxX": 11489.9,
+      "minZ": 2447.71,
+      "maxZ": 2878.9
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_023_006.json",
+      "count": 63,
+      "minX": 11394.8,
+      "maxX": 11517.6,
+      "minZ": 2880.25,
+      "maxZ": 3006.12
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_023_007.json",
+      "count": 10,
+      "minX": 11150.8,
+      "maxX": 11240.6,
+      "minZ": 3394.25,
+      "maxZ": 3804.09
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_023_008.json",
+      "count": 54,
+      "minX": 11041.6,
+      "maxX": 11399.4,
+      "minZ": 4096.83,
+      "maxZ": 4318.4
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_023_009.json",
+      "count": 138,
+      "minX": 11047.8,
+      "maxX": 11519.8,
+      "minZ": 4321.64,
+      "maxZ": 4724.74
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_023_010.json",
+      "count": 2,
+      "minX": 11471.1,
+      "maxX": 11493.2,
+      "minZ": 4892.87,
+      "maxZ": 5034.9
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_023_012.json",
+      "count": 3,
+      "minX": 11183.5,
+      "maxX": 11332.3,
+      "minZ": 6076.89,
+      "maxZ": 6210.89
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_023_013.json",
+      "count": 1,
+      "minX": 11332.1,
+      "maxX": 11332.1,
+      "minZ": 6643.38,
+      "maxZ": 6643.38
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_023_014.json",
+      "count": 19,
+      "minX": 11284.8,
+      "maxX": 11518.9,
+      "minZ": 6959.42,
+      "maxZ": 7191.8
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_023_015.json",
+      "count": 2,
+      "minX": 11116.2,
+      "maxX": 11149.7,
+      "minZ": 7223.17,
+      "maxZ": 7405.78
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_023_016.json",
+      "count": 14,
+      "minX": 11053.3,
+      "maxX": 11498.6,
+      "minZ": 7806.29,
+      "maxZ": 8087.29
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_023_017.json",
+      "count": 4,
+      "minX": 11063.6,
+      "maxX": 11473.8,
+      "minZ": 8244.66,
+      "maxZ": 8446.54
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_023_018.json",
+      "count": 31,
+      "minX": 11040.4,
+      "maxX": 11431.6,
+      "minZ": 8676.51,
+      "maxZ": 9098.35
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_023_019.json",
+      "count": 134,
+      "minX": 11132.4,
+      "maxX": 11519.3,
+      "minZ": 9301.03,
+      "maxZ": 9599.7
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_023_020.json",
+      "count": 83,
+      "minX": 11092.1,
+      "maxX": 11517.0,
+      "minZ": 9600.44,
+      "maxZ": 10070.4
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_023_021.json",
+      "count": 10,
+      "minX": 11321.0,
+      "maxX": 11496.5,
+      "minZ": 10155.8,
+      "maxZ": 10471.3
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_023_022.json",
+      "count": 1,
+      "minX": 11270.1,
+      "maxX": 11270.1,
+      "minZ": 10649.3,
+      "maxZ": 10649.3
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_023_023.json",
+      "count": 34,
+      "minX": 11043.4,
+      "maxX": 11275.1,
+      "minZ": 11134.3,
+      "maxZ": 11501.5
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_023_024.json",
+      "count": 11,
+      "minX": 11044.7,
+      "maxX": 11487.1,
+      "minZ": 11522.1,
+      "maxZ": 11868.1
+    },
+    {
+      "chunkX": 23,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_023_025.json",
+      "count": 1,
+      "minX": 11080.6,
+      "maxX": 11080.6,
+      "minZ": 12232.0,
+      "maxZ": 12232.0
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 0,
+      "path": "./chunks/chunk_024_000.json",
+      "count": 60,
+      "minX": 11522.5,
+      "maxX": 11937.4,
+      "minZ": 278.17,
+      "maxZ": 476.08
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_024_001.json",
+      "count": 11,
+      "minX": 11524.4,
+      "maxX": 11858.1,
+      "minZ": 482.28,
+      "maxZ": 916.33
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_024_002.json",
+      "count": 1,
+      "minX": 11978.2,
+      "maxX": 11978.2,
+      "minZ": 1070.72,
+      "maxZ": 1070.72
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_024_003.json",
+      "count": 1,
+      "minX": 11794.9,
+      "maxX": 11794.9,
+      "minZ": 1650.97,
+      "maxZ": 1650.97
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_024_004.json",
+      "count": 13,
+      "minX": 11591.9,
+      "maxX": 11784.8,
+      "minZ": 1943.83,
+      "maxZ": 2284.0
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_024_006.json",
+      "count": 1,
+      "minX": 11907.7,
+      "maxX": 11907.7,
+      "minZ": 3196.49,
+      "maxZ": 3196.49
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_024_007.json",
+      "count": 4,
+      "minX": 11571.7,
+      "maxX": 11968.2,
+      "minZ": 3546.54,
+      "maxZ": 3820.65
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_024_009.json",
+      "count": 57,
+      "minX": 11525.1,
+      "maxX": 11906.1,
+      "minZ": 4460.96,
+      "maxZ": 4796.59
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_024_010.json",
+      "count": 37,
+      "minX": 11568.8,
+      "maxX": 11998.1,
+      "minZ": 4818.03,
+      "maxZ": 5062.54
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 11,
+      "path": "./chunks/chunk_024_011.json",
+      "count": 13,
+      "minX": 11683.8,
+      "maxX": 11936.8,
+      "minZ": 5298.28,
+      "maxZ": 5514.26
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_024_013.json",
+      "count": 17,
+      "minX": 11860.3,
+      "maxX": 11898.3,
+      "minZ": 6540.17,
+      "maxZ": 6624.87
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 14,
+      "path": "./chunks/chunk_024_014.json",
+      "count": 34,
+      "minX": 11524.7,
+      "maxX": 11628.9,
+      "minZ": 6947.57,
+      "maxZ": 7194.14
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_024_015.json",
+      "count": 35,
+      "minX": 11548.3,
+      "maxX": 11958.2,
+      "minZ": 7217.38,
+      "maxZ": 7531.75
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_024_016.json",
+      "count": 4,
+      "minX": 11523.5,
+      "maxX": 11772.5,
+      "minZ": 7709.71,
+      "maxZ": 8061.96
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_024_017.json",
+      "count": 1,
+      "minX": 11741.0,
+      "maxX": 11741.0,
+      "minZ": 8332.32,
+      "maxZ": 8332.32
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_024_018.json",
+      "count": 6,
+      "minX": 11529.9,
+      "maxX": 11861.8,
+      "minZ": 8688.36,
+      "maxZ": 9071.37
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_024_019.json",
+      "count": 68,
+      "minX": 11521.4,
+      "maxX": 11977.5,
+      "minZ": 9180.59,
+      "maxZ": 9598.66
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_024_020.json",
+      "count": 64,
+      "minX": 11520.3,
+      "maxX": 11983.7,
+      "minZ": 9600.43,
+      "maxZ": 10072.7
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_024_021.json",
+      "count": 3,
+      "minX": 11591.9,
+      "maxX": 11723.0,
+      "minZ": 10296.7,
+      "maxZ": 10461.0
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_024_022.json",
+      "count": 21,
+      "minX": 11738.9,
+      "maxX": 11841.3,
+      "minZ": 10609.2,
+      "maxZ": 10916.0
+    },
+    {
+      "chunkX": 24,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_024_023.json",
+      "count": 2,
+      "minX": 11752.1,
+      "maxX": 11982.4,
+      "minZ": 11282.4,
+      "maxZ": 11319.0
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 1,
+      "path": "./chunks/chunk_025_001.json",
+      "count": 9,
+      "minX": 12062.0,
+      "maxX": 12153.7,
+      "minZ": 899.83,
+      "maxZ": 956.17
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 2,
+      "path": "./chunks/chunk_025_002.json",
+      "count": 1,
+      "minX": 12097.1,
+      "maxX": 12097.1,
+      "minZ": 998.78,
+      "maxZ": 998.78
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 3,
+      "path": "./chunks/chunk_025_003.json",
+      "count": 2,
+      "minX": 12398.2,
+      "maxX": 12447.6,
+      "minZ": 1749.28,
+      "maxZ": 1822.21
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 4,
+      "path": "./chunks/chunk_025_004.json",
+      "count": 4,
+      "minX": 12437.7,
+      "maxX": 12455.3,
+      "minZ": 2143.71,
+      "maxZ": 2155.0
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 5,
+      "path": "./chunks/chunk_025_005.json",
+      "count": 3,
+      "minX": 12108.0,
+      "maxX": 12281.9,
+      "minZ": 2484.07,
+      "maxZ": 2787.97
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 6,
+      "path": "./chunks/chunk_025_006.json",
+      "count": 10,
+      "minX": 12027.3,
+      "maxX": 12064.8,
+      "minZ": 3063.29,
+      "maxZ": 3103.09
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 7,
+      "path": "./chunks/chunk_025_007.json",
+      "count": 2,
+      "minX": 12076.9,
+      "maxX": 12088.8,
+      "minZ": 3536.42,
+      "maxZ": 3543.26
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 8,
+      "path": "./chunks/chunk_025_008.json",
+      "count": 3,
+      "minX": 12040.9,
+      "maxX": 12327.9,
+      "minZ": 3871.82,
+      "maxZ": 4087.71
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_025_009.json",
+      "count": 34,
+      "minX": 12000.8,
+      "maxX": 12409.4,
+      "minZ": 4399.68,
+      "maxZ": 4787.85
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 10,
+      "path": "./chunks/chunk_025_010.json",
+      "count": 14,
+      "minX": 12002.6,
+      "maxX": 12445.8,
+      "minZ": 4824.86,
+      "maxZ": 5225.82
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 12,
+      "path": "./chunks/chunk_025_012.json",
+      "count": 1,
+      "minX": 12428.9,
+      "maxX": 12428.9,
+      "minZ": 6153.16,
+      "maxZ": 6153.16
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_025_013.json",
+      "count": 5,
+      "minX": 12315.1,
+      "maxX": 12436.1,
+      "minZ": 6243.36,
+      "maxZ": 6626.12
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 15,
+      "path": "./chunks/chunk_025_015.json",
+      "count": 2,
+      "minX": 12174.2,
+      "maxX": 12180.2,
+      "minZ": 7345.3,
+      "maxZ": 7345.5
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_025_016.json",
+      "count": 4,
+      "minX": 12070.6,
+      "maxX": 12323.7,
+      "minZ": 7753.04,
+      "maxZ": 8030.35
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_025_017.json",
+      "count": 8,
+      "minX": 12102.3,
+      "maxX": 12209.7,
+      "minZ": 8548.6,
+      "maxZ": 8608.1
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_025_018.json",
+      "count": 1,
+      "minX": 12337.6,
+      "maxX": 12337.6,
+      "minZ": 8881.39,
+      "maxZ": 8881.39
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 19,
+      "path": "./chunks/chunk_025_019.json",
+      "count": 4,
+      "minX": 12053.7,
+      "maxX": 12273.9,
+      "minZ": 9150.9,
+      "maxZ": 9550.62
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 20,
+      "path": "./chunks/chunk_025_020.json",
+      "count": 3,
+      "minX": 12062.7,
+      "maxX": 12401.8,
+      "minZ": 9704.06,
+      "maxZ": 10072.4
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_025_021.json",
+      "count": 2,
+      "minX": 12138.4,
+      "maxX": 12163.1,
+      "minZ": 10293.6,
+      "maxZ": 10535.5
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 22,
+      "path": "./chunks/chunk_025_022.json",
+      "count": 9,
+      "minX": 12116.0,
+      "maxX": 12347.9,
+      "minZ": 10633.5,
+      "maxZ": 10998.4
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_025_023.json",
+      "count": 1,
+      "minX": 12322.2,
+      "maxX": 12322.2,
+      "minZ": 11217.3,
+      "maxZ": 11217.3
+    },
+    {
+      "chunkX": 25,
+      "chunkZ": 24,
+      "path": "./chunks/chunk_025_024.json",
+      "count": 4,
+      "minX": 12305.3,
+      "maxX": 12453.0,
+      "minZ": 11748.7,
+      "maxZ": 11977.1
+    },
+    {
+      "chunkX": 26,
+      "chunkZ": 9,
+      "path": "./chunks/chunk_026_009.json",
+      "count": 1,
+      "minX": 12507.1,
+      "maxX": 12507.1,
+      "minZ": 4560.4,
+      "maxZ": 4560.4
+    },
+    {
+      "chunkX": 26,
+      "chunkZ": 13,
+      "path": "./chunks/chunk_026_013.json",
+      "count": 1,
+      "minX": 12725.8,
+      "maxX": 12725.8,
+      "minZ": 6317.31,
+      "maxZ": 6317.31
+    },
+    {
+      "chunkX": 26,
+      "chunkZ": 16,
+      "path": "./chunks/chunk_026_016.json",
+      "count": 1,
+      "minX": 12493.1,
+      "maxX": 12493.1,
+      "minZ": 7718.08,
+      "maxZ": 7718.08
+    },
+    {
+      "chunkX": 26,
+      "chunkZ": 17,
+      "path": "./chunks/chunk_026_017.json",
+      "count": 1,
+      "minX": 12616.0,
+      "maxX": 12616.0,
+      "minZ": 8203.13,
+      "maxZ": 8203.13
+    },
+    {
+      "chunkX": 26,
+      "chunkZ": 18,
+      "path": "./chunks/chunk_026_018.json",
+      "count": 2,
+      "minX": 12486.0,
+      "maxX": 12494.0,
+      "minZ": 8809.1,
+      "maxZ": 8919.84
+    },
+    {
+      "chunkX": 26,
+      "chunkZ": 21,
+      "path": "./chunks/chunk_026_021.json",
+      "count": 1,
+      "minX": 12583.2,
+      "maxX": 12583.2,
+      "minZ": 10530.1,
+      "maxZ": 10530.1
+    },
+    {
+      "chunkX": 26,
+      "chunkZ": 23,
+      "path": "./chunks/chunk_026_023.json",
+      "count": 2,
+      "minX": 12522.3,
+      "maxX": 12719.3,
+      "minZ": 11354.9,
+      "maxZ": 11490.1
+    },
+    {
+      "chunkX": 26,
+      "chunkZ": 25,
+      "path": "./chunks/chunk_026_025.json",
+      "count": 2,
+      "minX": 12713.2,
+      "maxX": 12724.1,
+      "minZ": 12418.9,
+      "maxZ": 12436.7
+    }
+  ],
+  "allPlacementsPath": "./all_placements.json"
+}
