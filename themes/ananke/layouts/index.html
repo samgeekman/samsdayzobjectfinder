@@ -3618,6 +3618,7 @@
               <button class="pinned-path-btn pinned-bulk-layout" type="button" data-layout="grid">As grid</button>
               <button class="pinned-path-btn pinned-bulk-layout" type="button" data-layout="line">In line</button>
               <button class="pinned-path-btn pinned-bulk-layout" type="button" data-layout="stacked">Stacked</button>
+              <button class="pinned-path-btn pinned-bulk-layout" type="button" data-layout="random">Random</button>
             </div>
             <div class="pinned-path-row">
               <span class="pinned-path-label">Spacing:</span>
@@ -9067,10 +9068,16 @@
           layoutLabel.className = 'pinned-path-label';
           layoutLabel.textContent = 'Layout:';
           rowLayout.appendChild(layoutLabel);
-          ['grid', 'line', 'stacked'].forEach(function(mode) {
+          ['grid', 'line', 'stacked', 'random'].forEach(function(mode) {
             var btn = document.createElement('button');
             btn.className = 'pinned-path-btn' + (item.layout === mode ? ' active' : '');
-            btn.textContent = mode === 'grid' ? 'As grid' : mode === 'line' ? 'In line' : 'Stacked';
+            btn.textContent = mode === 'grid'
+              ? 'As grid'
+              : mode === 'line'
+                ? 'In line'
+                : mode === 'stacked'
+                  ? 'Stacked'
+                  : 'Random';
             btn.addEventListener('click', function(e) {
               e.stopPropagation();
               item.layout = mode;
@@ -9581,10 +9588,11 @@
         var entries = getPinnedObjectEntries(includePaths);
         if (!entries.length) return;
         var spacing = resolveSpacingValue(entries, pinnedBulkLayout, pinnedBulkSpacing);
+        var layoutContext = buildLayoutContext(entries.length, pinnedBulkLayout);
         var combined = [];
         entries.forEach(function(item, index) {
           var objects = buildEditorJsonArray(item);
-          applyLayoutOffsets(objects, index, entries.length, pinnedBulkLayout, spacing);
+          applyLayoutOffsets(objects, index, entries.length, pinnedBulkLayout, spacing, layoutContext);
           combined = combined.concat(objects);
         });
         if (!combined.length) return;
@@ -9646,7 +9654,47 @@
       }
       return buildEditorJsonArray(item);
     };
-    var applyLayoutOffsets = function(objects, index, count, layout, spacing) {
+    var buildLayoutContext = function(count, layout) {
+      if (layout !== 'random') return null;
+      var total = Math.max(0, Number(count) || 0);
+      var randomPositions = [];
+      if (!total) return { randomPositions: randomPositions };
+      var minDistance = 1;
+      var radiusStep = 1;
+      // Use rejection sampling in an expanding square so items are genuinely random
+      // while still respecting spacing as a minimum distance.
+      for (var i = 0; i < total; i += 1) {
+        var placed = false;
+        var radius = Math.max(1, Math.ceil(Math.sqrt(total)) * radiusStep);
+        for (var pass = 0; pass < 8 && !placed; pass += 1) {
+          var attempts = Math.max(30, total * 8);
+          for (var attempt = 0; attempt < attempts; attempt += 1) {
+            var px = (Math.random() * 2 - 1) * radius;
+            var pz = (Math.random() * 2 - 1) * radius;
+            var ok = true;
+            for (var k = 0; k < randomPositions.length; k += 1) {
+              var dx = px - randomPositions[k].x;
+              var dz = pz - randomPositions[k].z;
+              if (Math.hypot(dx, dz) < minDistance) {
+                ok = false;
+                break;
+              }
+            }
+            if (!ok) continue;
+            randomPositions.push({ x: px, z: pz });
+            placed = true;
+            break;
+          }
+          radius += Math.max(1, Math.ceil(Math.sqrt(total)) * radiusStep);
+        }
+        if (!placed) {
+          // Guaranteed fallback if rejection sampling gets crowded.
+          randomPositions.push({ x: i * minDistance, z: 0 });
+        }
+      }
+      return { randomPositions: randomPositions };
+    };
+    var applyLayoutOffsets = function(objects, index, count, layout, spacing, context) {
       if (!objects || !objects.length) return;
       var offsetX = 0;
       var offsetZ = 0;
@@ -9661,6 +9709,11 @@
         offsetZ = row * spacing;
       } else if (layout === 'stacked') {
         offsetY = index * spacing;
+      } else if (layout === 'random') {
+        var randomPositions = context && Array.isArray(context.randomPositions) ? context.randomPositions : null;
+        var position = randomPositions && randomPositions.length > index ? randomPositions[index] : { x: index, z: 0 };
+        offsetX = position.x * spacing;
+        offsetZ = position.z * spacing;
       }
       objects.forEach(function(obj) {
         if (!obj.Position || obj.Position.length < 3) {
@@ -9819,9 +9872,10 @@
       var layout = pathItem.layout || 'line';
       var mode = pathItem.mode || 'P3D';
       var spacing = resolveSpacingValue(entries, layout, pathItem.spacing);
+      var layoutContext = buildLayoutContext(entries.length, layout);
       entries.forEach(function(item, index) {
         var objects = buildEditorJsonArrayWithMode(item, mode);
-        applyLayoutOffsets(objects, index, entries.length, layout, spacing);
+        applyLayoutOffsets(objects, index, entries.length, layout, spacing, layoutContext);
         combined = combined.concat(objects);
       });
       if (!combined.length) return;
