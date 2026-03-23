@@ -28,16 +28,6 @@ TYPES_BY_MAP_DIR = DATA_DIR / "types"
 STATIC_TYPES_BY_MAP_DIR = STATIC_DATA_DIR / "types"
 MAPGROUPPROTO_XML = DATA_DIR / "mapgroupproto-merged.xml"
 STATIC_MAPGROUPPROTO_XML = STATIC_DATA_DIR / "mapgroupproto-merged.xml"
-OBJECT_MAP_V2_BUILD_SCRIPT = BASE_DIR / "scripts" / "build_object_map_v2_assets.py"
-OBJECT_MAP_V2_REQUIRED = [
-    STATIC_DIR / "object-map-v2" / "index.html",
-    STATIC_DATA_DIR / "object-map-v2" / "tile-pyramid" / "manifest.json",
-    STATIC_DATA_DIR / "object-map-v2" / "land_only_pack" / "manifest.json",
-    STATIC_DATA_DIR / "object-map-v2" / "object_pack" / "manifest.json",
-    STATIC_DATA_DIR / "object-map-v2" / "locations.json",
-    STATIC_DATA_DIR / "object-map-v2" / "worlds" / "livonia" / "world_manifest.json",
-    STATIC_DATA_DIR / "object-map-v2" / "worlds" / "sakhal" / "world_manifest.json",
-]
 OVERRIDES_JSON = DATA_DIR / "object_overrides.json"
 TOMBSTONES_JSON = DATA_DIR / "id_tombstones.json"
 API_ROOT = STATIC_DIR / "api" / "v1"
@@ -731,6 +721,7 @@ def generate_static_api(objects: List[dict]) -> Dict[str, int]:
             "id": str(row.get("id", "")).strip(),
             "objectName": str(row.get("objectName", "")).strip(),
             "inGameName": str(row.get("inGameName", "")).strip(),
+            "image": str(row.get("image", "")).strip(),
         }
         for row in api_objects
         if str(row.get("modelType", "")).strip() == "Config"
@@ -1259,14 +1250,6 @@ def export_database_zip() -> None:
     shutil.make_archive(DB_ZIP.with_suffix("").as_posix(), "zip", root_dir=DB_DIR)
 
 
-def build_object_map_v2_assets() -> None:
-    if not OBJECT_MAP_V2_BUILD_SCRIPT.exists():
-        raise SystemExit(f"Object Map V2 build script not found: {OBJECT_MAP_V2_BUILD_SCRIPT}")
-    subprocess.run([sys.executable, str(OBJECT_MAP_V2_BUILD_SCRIPT)], check=True, cwd=str(BASE_DIR))
-    missing = [str(path) for path in OBJECT_MAP_V2_REQUIRED if not path.exists()]
-    if missing:
-        raise SystemExit("Object Map V2 build incomplete, missing required files:\n" + "\n".join(missing))
-
 
 def main() -> None:
     if not DB_DIR.exists():
@@ -1403,8 +1386,6 @@ def main() -> None:
 
     export_database_zip()
     print(f"Database zip exported to {DB_ZIP}.")
-    build_object_map_v2_assets()
-    print("Object Map V2 assets built and verified.")
 
 
 if __name__ == "__main__":
