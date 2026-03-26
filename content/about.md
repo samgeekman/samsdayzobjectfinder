@@ -8,7 +8,7 @@ draft: false
 
 The site is lightweight and fast with more than 11,000 objects listed - (most) complete with images and search tags - e.g. `large industrial` or `green bag`.
 
-As well as the database, you can copy and paste objects directly to DayZ Editor. Click on the 🏗️ icon to copy the object to your clipboard and ctrl+v into Editor instantly.
+As well as the database, you can copy and paste objects directly to DayZ Editor. Click the Copy to Editor button to copy the object to your clipboard and ctrl+v into Editor instantly.
 
 The site also includes:
 
@@ -26,7 +26,7 @@ The data, images and anything else on this site are available for you to use in 
 - All of the images are available [here](https://drive.google.com/drive/folders/1FuV6C72ttaoeP-BrIykkYYIczisFyVkL?usp=share_link).
 - You can export the current table view as .csv, .xlsx, .json using the Export data menu.
 - Download the vanilla types.xml and mapgroupproto.xml entries for each object.
-- By pinning 📌 an object, you can export its data and images as a zip file. You can also pin entire paths [e.g. dz/characters/backpacks](https://samsobjectfinder.com/?path=dz%2Fcharacters%2Fbackpacks) 
+- By pinning an object, you can export its data and images as a zip file. You can also pin entire paths [e.g. dz/characters/backpacks](https://samsobjectfinder.com/?path=dz%2Fcharacters%2Fbackpacks) 
 - The repo is available on [github](https://github.com/samgeekman/samsdayzobjectfinder)
 - The latest objects.json export structure is available [here](/dayz_objects_latest.zip).
 

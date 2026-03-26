@@ -213,10 +213,10 @@
       min-height: 28px;
       height: 28px;
       padding: 4px 8px;
-      border: 1px solid transparent !important;
+      border: 1px solid var(--icon-outline) !important;
       border-radius: var(--site-button-radius, 3px) !important;
       background: var(--site-button-bg, var(--site-card, #ffffff)) !important;
-      color: var(--site-button-text) !important;
+      color: var(--icon-fg) !important;
       font: inherit;
       font-weight: 600;
       font-size: 0.7rem;
@@ -227,14 +227,86 @@
       white-space: nowrap;
       transition: transform 0.12s ease, box-shadow 0.18s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
     }
+    :root {
+      --icon-outline: #BBC0C8;
+      --icon-fg: #10121A;
+      --icon-hover-outline: #EDB125;
+      --icon-hover-fg: #10121A;
+    }
+    :root.dark-mode {
+      --icon-outline: #E4EDF7;
+      --icon-fg: #E4EDF7;
+      --icon-hover-outline: #EDB125;
+      --icon-hover-fg: #10121A;
+    }
+    .ui-icon {
+      width: 1.15em;
+      height: 1.15em;
+      display: inline-block;
+      vertical-align: middle;
+      background-color: currentColor;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      flex: 0 0 auto;
+    }
+    .ui-icon--link {
+      -webkit-mask-image: url('/icons/copy-link.svg');
+      mask-image: url('/icons/copy-link.svg');
+    }
+    .ui-icon--pin {
+      -webkit-mask-image: url('/icons/pin.svg');
+      mask-image: url('/icons/pin.svg');
+    }
+    .ui-icon--copy-name {
+      -webkit-mask-image: url('/icons/copy-name.svg');
+      mask-image: url('/icons/copy-name.svg');
+    }
+    .ui-icon--editor {
+      -webkit-mask-image: url('/icons/copy-editor.svg');
+      mask-image: url('/icons/copy-editor.svg');
+    }
+    .icon-action {
+      color: var(--icon-fg) !important;
+      border-color: var(--icon-outline) !important;
+    }
+    .icon-action:not(.icon-action-label) {
+      padding: 0 !important;
+      min-width: 28px;
+      width: 28px;
+      height: 28px;
+    }
+    .icon-action:hover:not(:disabled),
+    .icon-action:focus-visible:not(:disabled),
+    .hover-card__thumb-action.icon-action:hover,
+    .hover-card__thumb-action.icon-action:focus-visible,
+    .hover-card__thumb-action.icon-action.is-active {
+      background-color: var(--icon-hover-outline) !important;
+      border-color: var(--icon-hover-outline) !important;
+      color: var(--icon-hover-fg) !important;
+    }
+    .icon-action-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
     .map-btn:hover:not(:disabled),
     .map-btn:focus-visible:not(:disabled) {
       transform: translateY(-1px);
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06) !important;
-      background-color: var(--site-button-hover-bg) !important;
-      border-color: var(--site-button-hover-border) !important;
-      color: var(--site-button-hover-text) !important;
+      background-color: var(--icon-hover-outline) !important;
+      border-color: var(--icon-hover-outline) !important;
+      color: var(--icon-hover-fg) !important;
       outline: none;
+    }
+    .map-btn.icon-action:hover:not(:disabled),
+    .map-btn.icon-action:focus-visible:not(:disabled) {
+      background-color: var(--icon-hover-outline) !important;
+      border-color: var(--icon-hover-outline) !important;
+      color: var(--icon-hover-fg) !important;
     }
     .map-btn:disabled {
       opacity: 0.45;
@@ -242,9 +314,9 @@
     }
     .map-btn.is-active,
     .map-btn.is-active:hover {
-      background-color: var(--site-button-hover-bg) !important;
-      border-color: var(--site-button-hover-border) !important;
-      color: var(--site-button-hover-text) !important;
+      background-color: var(--icon-hover-outline) !important;
+      border-color: var(--icon-hover-outline) !important;
+      color: var(--icon-hover-fg) !important;
     }
     .map-btn.is-hidden {
       display: none;
@@ -318,10 +390,10 @@
       min-height: 28px;
       height: 28px;
       padding: 4px 8px;
-      border: 1px solid transparent !important;
+      border: 1px solid var(--icon-outline) !important;
       border-radius: var(--site-button-radius, 3px) !important;
       background: var(--site-button-bg, var(--site-card, #ffffff)) !important;
-      color: var(--site-button-text) !important;
+      color: var(--icon-fg) !important;
       font: inherit;
       font-size: 0.7rem;
       font-weight: 600;
@@ -339,9 +411,9 @@
     .hover-card__meta-btn:focus-visible {
       transform: translateY(-1px);
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06) !important;
-      background-color: var(--site-button-hover-bg) !important;
-      border-color: var(--site-button-hover-border) !important;
-      color: var(--site-button-hover-text) !important;
+      background-color: var(--icon-hover-outline) !important;
+      border-color: var(--icon-hover-outline) !important;
+      color: var(--icon-hover-fg) !important;
       outline: none;
     }
     .hover-card__name-btn.is-active {
@@ -489,7 +561,7 @@
       <div class="map-topbar">
         <div class="map-panel map-actions">
           <button class="map-btn" id="area-mode-btn" type="button">Select area</button>
-          <button class="map-btn is-hidden" id="copy-area-btn" type="button">🏗️ Copy to Editor</button>
+          <button class="map-btn is-hidden icon-action icon-action-label" id="copy-area-btn" type="button"><span class="ui-icon ui-icon--editor" aria-hidden="true"></span><span>Copy to Editor</span></button>
           <button class="map-btn is-hidden" id="download-area-btn" type="button">Download JSON</button>
           <button class="map-btn is-hidden" id="export-locations-btn" type="button">Export locations</button>
         </div>
@@ -502,10 +574,10 @@
             </div>
             <div class="hover-card__thumb is-empty" id="hover-thumb">
               <div class="hover-card__thumb-actions is-hidden" id="hover-thumb-actions">
-                <button class="hover-card__thumb-action" id="hover-thumb-link" type="button" title="Copy link" aria-label="Copy link">🔗</button>
-                <button class="hover-card__thumb-action" id="hover-thumb-pin" type="button" title="Pin object" aria-label="Pin object">📌</button>
-                <button class="hover-card__thumb-action" id="hover-thumb-name" type="button" title="Copy name" aria-label="Copy name">📋</button>
-                <button class="hover-card__thumb-action" id="hover-thumb-editor" type="button" title="Copy to Editor" aria-label="Copy to Editor">🏗️</button>
+                <button class="hover-card__thumb-action icon-action" id="hover-thumb-link" type="button" title="Copy link" aria-label="Copy link"><span class="ui-icon ui-icon--link" aria-hidden="true"></span></button>
+                <button class="hover-card__thumb-action icon-action" id="hover-thumb-pin" type="button" title="Pin object" aria-label="Pin object"><span class="ui-icon ui-icon--pin" aria-hidden="true"></span></button>
+                <button class="hover-card__thumb-action icon-action" id="hover-thumb-name" type="button" title="Copy name" aria-label="Copy name"><span class="ui-icon ui-icon--copy-name" aria-hidden="true"></span></button>
+                <button class="hover-card__thumb-action icon-action" id="hover-thumb-editor" type="button" title="Copy to Editor" aria-label="Copy to Editor"><span class="ui-icon ui-icon--editor" aria-hidden="true"></span></button>
               </div>
               <img id="hover-thumb-img" alt="" hidden>
             </div>
@@ -1209,11 +1281,11 @@
 
     function flashThumbAction(button) {
       if (!button) return;
-      const originalText = button.textContent;
+      const originalHtml = button.innerHTML;
       button.textContent = "✔";
       button.classList.add("is-active");
       window.setTimeout(() => {
-        button.textContent = originalText;
+        button.innerHTML = originalHtml;
         button.classList.remove("is-active");
       }, 900);
     }
