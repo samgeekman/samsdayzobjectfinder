@@ -3503,7 +3503,7 @@
 <div id="chipInfoTooltip" class="chip-info-tooltip" role="status" aria-live="polite"></div>
 <div id="pathHoverTooltip" class="path-hover-tooltip" role="status" aria-live="polite"></div>
 <div id="presetsGuideNotice" class="version-filter-notice" role="status" aria-live="polite">
-  <span>Free to use and attributed builds for DayZ Editor. Press the 🏗️ icon on a build to copy it to your clipboard and Ctrl+V in Editor, or download the JSON / DZE files.</span>
+  <span>Free to use and attributed builds for DayZ Editor. Press the 🏗️ icon on a build to copy it to your clipboard and Ctrl+V in Editor, or download the JSON file.</span>
   <button id="presetsGuideClose" class="version-filter-notice__close" type="button" aria-label="Dismiss Editor Builds help">✕</button>
 </div>
 <div id="objectFinderGuideNotice" class="version-filter-notice version-filter-notice--guide" role="status" aria-live="polite">
@@ -4181,10 +4181,6 @@
     var getPresetCopyablePath = function(row) {
       return row ? String(row.presetCopyablePath || '').trim() : '';
     };
-    var getPresetDzePath = function(row) {
-      return row ? String(row.presetDzePath || '').trim() : '';
-    };
-
     var showContent = function() {
       $('#dayzObjects, #dayzObjects_wrapper').css('visibility', 'visible');
       $('#loadingIndicator').hide();
@@ -4316,17 +4312,14 @@
             if (preset) {
               var importJsonPath = getPresetImportJsonPath(row);
               var copyablePath = getPresetCopyablePath(row);
-              var dzePath = getPresetDzePath(row);
               var hasEditorJson = hasPresetEditorJson(row);
               var hasCopy = !!copyablePath || hasEditorJson;
               var hasJson = !!importJsonPath || hasEditorJson;
-              var hasDze = !!dzePath;
-              if (type !== 'display') return 'preset ' + (hasCopy ? 'copy ' : '') + (hasJson ? 'json ' : '') + (hasDze ? 'dze' : '');
+              if (type !== 'display') return 'preset ' + (hasCopy ? 'copy ' : '') + (hasJson ? 'json ' : '');
               return (
                 '<div class="preset-actions">' +
                   '<button class="preset-action-btn preset-copy-btn' + (hasCopy ? '' : ' is-disabled') + '" type="button" ' + (hasCopy ? '' : 'disabled ') + 'title="' + (hasCopy ? 'Copy to Editor' : 'Copy source not available') + '">🏗️ Copy</button>' +
                   '<button class="preset-action-btn preset-export-btn' + (hasJson ? '' : ' is-disabled') + '" type="button" ' + (hasJson ? '' : 'disabled ') + 'title="' + (hasJson ? 'Download JSON' : 'Import JSON not available') + '">↓ JSON</button>' +
-                  '<button class="preset-action-btn preset-dze-btn' + (hasDze ? '' : ' is-disabled') + '" type="button" ' + (hasDze ? '' : 'disabled ') + 'title="' + (hasDze ? 'Download DZE' : 'DZE not available') + '">↓ DZE</button>' +
                 '</div>'
               );
             }
@@ -11579,30 +11572,6 @@
       var original = $btn.text();
       $btn.text('✔');
       setTimeout(function() { $btn.text(original); }, 900);
-    });
-
-    $('#dayzObjects tbody').on('click', '.preset-dze-btn', function(e) {
-      e.stopPropagation();
-      var $btn = $(this);
-      if ($btn.prop('disabled')) return;
-      var $row = $(this).closest('tr');
-      var rowData = table.row($row).data();
-      var dzePath = getPresetDzePath(rowData);
-      if (dzePath) {
-        var normalizedPath = dzePath.replace(/^\/+/, '');
-        var fileName = normalizedPath.split('/').pop() || (sanitizePathFolder(getObjectName(rowData) || 'preset') + '.dze');
-        var link = document.createElement('a');
-        link.href = '/' + encodeURI(normalizedPath);
-        link.setAttribute('download', fileName);
-        link.rel = 'noopener';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        var okText = $btn.text();
-        $btn.text('✔');
-        setTimeout(function() { $btn.text(okText); }, 900);
-        return;
-      }
     });
 
     $('#dayzObjects tbody').on('click', '.row-detail__action', function(e) {
