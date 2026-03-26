@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import csv
 import re
 import secrets
 import shutil
@@ -11,7 +12,7 @@ import unicodedata
 from datetime import datetime, timezone
 from collections import OrderedDict
 from pathlib import Path, PurePosixPath
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Set
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DB_DIR = BASE_DIR / "database"
@@ -32,6 +33,10 @@ OVERRIDES_JSON = DATA_DIR / "object_overrides.json"
 TOMBSTONES_JSON = DATA_DIR / "id_tombstones.json"
 API_ROOT = STATIC_DIR / "api" / "v1"
 API_IMAGE_BASE_URL = "https://samsobjectfinder.com"
+MODELS_CSV_CANDIDATES = [
+    BASE_DIR / "Task docs" / "models.csv",
+    BASE_DIR / "Task Docs" / "models.csv",
+]
 BBOX_BY_ID_CANDIDATES = [
     DATA_DIR / "object_bbox_by_id.json",
     STATIC_DATA_DIR / "object_bbox_by_id.json",
@@ -425,36 +430,37 @@ def discover_build_image_files(folder: Path) -> List[Path]:
 
 def copy_build_images(folder: Path, object_name: str, preferred_image: str = "") -> Tuple[str, List[str]]:
     source_images = discover_build_image_files(folder)
-    if not source_images:
-        return "", []
-
     preferred = preferred_image.strip()
     if preferred:
         preferred_candidates = [
             folder / preferred,
             BASE_DIR / preferred,
+            STATIC_DIR / preferred,
             folder / Path(preferred).name,
+            STATIC_DIR / "images" / "presets" / Path(preferred).name,
+            STATIC_DIR / "presets" / Path(preferred).name,
         ]
         for pref in preferred_candidates:
             if pref.exists() and pref.is_file():
                 source_images = [pref] + [img for img in source_images if img.resolve() != pref.resolve()]
                 break
 
+    if not source_images:
+        return "", []
+
     folder_slug = slugify_token(folder.name, default="build")
     object_token = slugify_token(object_name, default="build")
-    out_dir = STATIC_DIR / "images" / "builds" / folder_slug
-    if out_dir.exists():
-        shutil.rmtree(out_dir)
+    out_dir = STATIC_DIR / "presets"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     out_rel_paths: List[str] = []
     for index, image_path in enumerate(source_images, start=1):
         ext = image_path.suffix.lower()
         out_ext = ".jpg" if ext in {".jpg", ".jpeg"} else ext
-        out_name = f"{object_token}_{index}{out_ext}"
+        out_name = f"{folder_slug}_{object_token}_{index}{out_ext}"
         out_path = out_dir / out_name
         shutil.copy2(image_path, out_path)
-        rel = (Path("images") / "builds" / folder_slug / out_name).as_posix()
+        rel = (Path("presets") / out_name).as_posix()
         out_rel_paths.append(rel)
 
     return out_rel_paths[0], out_rel_paths
@@ -476,9 +482,6 @@ def load_preset_rows_from_folders(presets_dir: Path) -> Tuple[List[dict], int]:
         import_json_path = str(artifacts.get("import_json_path") or "").strip()
         copyable_path = str(artifacts.get("copyable_path") or "").strip()
         dze_path = str(artifacts.get("dze_path") or "").strip()
-        has_any_artifact = bool(payload) or bool(import_json_path) or bool(copyable_path) or bool(dze_path)
-        if not has_any_artifact:
-            continue
         object_id = str(preset_row.get("id", "")).strip()
         object_name = str(preset_row.get("objectName") or folder.name).strip()
         in_game_name = str(preset_row.get("inGameName") or object_name).strip()
@@ -1095,6 +1098,69 @@ def apply_bbox_dimensions(objects: List[dict]) -> Dict[str, int]:
     }
 
 
+def normalize_model_path(value: object) -> str:
+    text = str(value or "").strip()
+    if not text:
+        return ""
+    text = text.replace("\\", "/")
+    text = re.sub(r"^[a-zA-Z]:", "", text)
+    text = re.sub(r"/+", "/", text)
+    if not text.startswith("/"):
+        text = "/" + text
+    return text.lower()
+
+
+def resolve_models_csv_path() -> Optional[Path]:
+    for candidate in MODELS_CSV_CANDIDATES:
+        if candidate.exists():
+            return candidate
+    return None
+
+
+def load_models_csv_links() -> Dict[str, object]:
+    csv_path = resolve_models_csv_path()
+    if not csv_path:
+        return {
+            "path": "",
+            "classname_to_model": {},
+            "blank_resolved_rows": 0,
+            "rows_loaded": 0,
+        }
+
+    classname_to_model: Dict[str, str] = {}
+    blank_resolved_rows = 0
+    rows_loaded = 0
+    with csv_path.open("r", encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            if not isinstance(row, dict):
+                continue
+            classname = str(row.get("classname") or "").strip()
+            if not classname:
+                continue
+            resolved_model = normalize_model_path(row.get("resolved_model"))
+            if not resolved_model:
+                blank_resolved_rows += 1
+                continue
+            classname_to_model[classname.lower()] = resolved_model
+            rows_loaded += 1
+
+    return {
+        "path": str(csv_path),
+        "classname_to_model": classname_to_model,
+        "blank_resolved_rows": blank_resolved_rows,
+        "rows_loaded": rows_loaded,
+    }
+
+
+def raw_object_model_path(row: dict) -> str:
+    object_name = str(row.get("objectName") or "").strip()
+    path = str(row.get("path") or "").strip()
+    if not object_name:
+        return ""
+    return normalize_model_path(f"{path}/{object_name}")
+
+
 def apply_compact_link_fields(objects: List[dict]) -> Dict[str, int]:
     by_id: Dict[str, dict] = {}
     for obj in objects:
@@ -1102,19 +1168,54 @@ def apply_compact_link_fields(objects: List[dict]) -> Dict[str, int]:
         if object_id:
             by_id[object_id] = obj
 
-    # Config variant siblings (color/style groups).
-    config_groups: Dict[str, List[str]] = {}
     for obj in objects:
-        if str(obj.get("modelType", "")).strip() != "Config":
-            continue
+        obj.pop("linked-p3d", None)
+        obj.pop("linked-config", None)
+        obj.pop("linked-variant", None)
+
+    model_links = load_models_csv_links()
+    classname_to_model = model_links["classname_to_model"]
+
+    config_ids_by_classname: Dict[str, List[str]] = {}
+    raw_ids_by_model_path: Dict[str, List[str]] = {}
+    for obj in objects:
         object_id = str(obj.get("id", "")).strip()
         if not object_id:
             continue
-        key = f"{path_family(obj.get('path'))}|{base_variant_key(obj.get('objectName'))}"
-        config_groups.setdefault(key, []).append(object_id)
+        model_type = str(obj.get("modelType", "")).strip()
+        if model_type == "Config":
+            class_key = str(obj.get("objectName") or "").strip().lower()
+            if class_key:
+                config_ids_by_classname.setdefault(class_key, []).append(object_id)
+        elif model_type == "Raw P3D":
+            model_path = raw_object_model_path(obj)
+            if model_path:
+                raw_ids_by_model_path.setdefault(model_path, []).append(object_id)
+
+    config_to_p3d: Dict[str, str] = {}
+    config_model_groups: Dict[str, Set[str]] = {}
+    unmatched_classname_rows = 0
+    missing_raw_rows = 0
+    ambiguous_raw_rows = 0
+
+    for class_key, model_path in classname_to_model.items():
+        config_ids = sorted(set(config_ids_by_classname.get(class_key, [])))
+        if not config_ids:
+            unmatched_classname_rows += 1
+            continue
+        config_model_groups.setdefault(model_path, set()).update(config_ids)
+        raw_ids = sorted(set(raw_ids_by_model_path.get(model_path, [])))
+        if len(raw_ids) == 1:
+            donor_id = raw_ids[0]
+            for cfg_id in config_ids:
+                config_to_p3d[cfg_id] = donor_id
+        elif len(raw_ids) == 0:
+            missing_raw_rows += len(config_ids)
+        else:
+            ambiguous_raw_rows += len(config_ids)
 
     linked_variant_rows = 0
-    for group_ids in config_groups.values():
+    for group_ids in config_model_groups.values():
         unique_group = sorted({obj_id for obj_id in group_ids if obj_id in by_id})
         if len(unique_group) <= 1:
             continue
@@ -1124,73 +1225,6 @@ def apply_compact_link_fields(objects: List[dict]) -> Dict[str, int]:
                 continue
             by_id[obj_id]["linked-variant"] = others
             linked_variant_rows += 1
-
-    # Config -> Raw P3D links from established provenance.
-    # First pass: direct links from bbox linking and any existing linked-p3d hints.
-    config_to_p3d: Dict[str, str] = {}
-    direct_bbox_links = 0
-    direct_existing_links = 0
-    for obj in objects:
-        if str(obj.get("modelType", "")).strip() != "Config":
-            continue
-        cfg_id = str(obj.get("id", "")).strip()
-        if not cfg_id:
-            continue
-        donor_id = str(obj.get("bboxLinkedFromId", "")).strip()
-        if donor_id and donor_id in by_id and str(by_id[donor_id].get("modelType", "")).strip() == "Raw P3D":
-            config_to_p3d[cfg_id] = donor_id
-            direct_bbox_links += 1
-            continue
-        donor_id = str(obj.get("linked-p3d", "")).strip()
-        if donor_id and donor_id in by_id and str(by_id[donor_id].get("modelType", "")).strip() == "Raw P3D":
-            config_to_p3d[cfg_id] = donor_id
-            direct_existing_links += 1
-
-    # Second pass: inherit donor from variant siblings when exactly one donor exists in group.
-    inherited_variant_links = 0
-    for group_ids in config_groups.values():
-        unique_group = sorted({obj_id for obj_id in group_ids if obj_id in by_id})
-        if len(unique_group) <= 1:
-            continue
-        donors_in_group = sorted({config_to_p3d[obj_id] for obj_id in unique_group if obj_id in config_to_p3d})
-        if len(donors_in_group) != 1:
-            continue
-        donor_id = donors_in_group[0]
-        for cfg_id in unique_group:
-            if cfg_id in config_to_p3d:
-                continue
-            config_to_p3d[cfg_id] = donor_id
-            inherited_variant_links += 1
-
-    # Third pass: inherit donor by in-game family when exactly one donor exists in group.
-    # This is conservative and only applies if all linked siblings in that family agree.
-    ingame_groups: Dict[str, List[str]] = {}
-    for obj in objects:
-        if str(obj.get("modelType", "")).strip() != "Config":
-            continue
-        cfg_id = str(obj.get("id", "")).strip()
-        if not cfg_id:
-            continue
-        path_key = str(obj.get("path", "")).strip().lower()
-        ingame_key = str(obj.get("inGameName", "")).strip().lower()
-        if not path_key or not ingame_key:
-            continue
-        ingame_groups.setdefault(f"{path_key}|{ingame_key}", []).append(cfg_id)
-
-    inherited_ingame_links = 0
-    for group_ids in ingame_groups.values():
-        unique_group = sorted({obj_id for obj_id in group_ids if obj_id in by_id})
-        if len(unique_group) <= 1:
-            continue
-        donors_in_group = sorted({config_to_p3d[obj_id] for obj_id in unique_group if obj_id in config_to_p3d})
-        if len(donors_in_group) != 1:
-            continue
-        donor_id = donors_in_group[0]
-        for cfg_id in unique_group:
-            if cfg_id in config_to_p3d:
-                continue
-            config_to_p3d[cfg_id] = donor_id
-            inherited_ingame_links += 1
 
     # Apply linked-p3d and build reverse linked-config.
     reverse_raw_to_configs: Dict[str, List[str]] = {}
@@ -1235,10 +1269,16 @@ def apply_compact_link_fields(objects: List[dict]) -> Dict[str, int]:
         "config_rows_with_linked_p3d": linked_p3d_count,
         "raw_rows_with_linked_config": linked_config_count,
         "config_rows_with_linked_variant": linked_variant_rows,
-        "config_rows_linked_p3d_direct_bbox": direct_bbox_links,
-        "config_rows_linked_p3d_direct_existing": direct_existing_links,
-        "config_rows_linked_p3d_inherited_from_variant": inherited_variant_links,
-        "config_rows_linked_p3d_inherited_from_ingame": inherited_ingame_links,
+        "config_rows_linked_p3d_direct_bbox": 0,
+        "config_rows_linked_p3d_direct_existing": 0,
+        "config_rows_linked_p3d_inherited_from_variant": 0,
+        "config_rows_linked_p3d_inherited_from_ingame": 0,
+        "models_csv_rows_loaded": int(model_links["rows_loaded"]),
+        "models_csv_blank_resolved_rows": int(model_links["blank_resolved_rows"]),
+        "models_csv_unmatched_classname_rows": unmatched_classname_rows,
+        "models_csv_missing_raw_rows": missing_raw_rows,
+        "models_csv_ambiguous_raw_rows": ambiguous_raw_rows,
+        "models_csv_path_used": str(model_links["path"] or ""),
     }
 
 
@@ -1362,10 +1402,11 @@ def main() -> None:
         f"{link_stats['config_rows_with_linked_p3d']} config rows with linked-p3d, "
         f"{link_stats['raw_rows_with_linked_config']} raw rows with linked-config, "
         f"{link_stats['config_rows_with_linked_variant']} config rows with linked-variant "
-        f"(direct bbox {link_stats['config_rows_linked_p3d_direct_bbox']}, "
-        f"direct existing {link_stats['config_rows_linked_p3d_direct_existing']}, "
-        f"inherited variant {link_stats['config_rows_linked_p3d_inherited_from_variant']}, "
-        f"inherited ingame {link_stats['config_rows_linked_p3d_inherited_from_ingame']})."
+        f"from models.csv ({link_stats['models_csv_rows_loaded']} mapped rows, "
+        f"{link_stats['models_csv_blank_resolved_rows']} blank resolved_model rows ignored, "
+        f"{link_stats['models_csv_unmatched_classname_rows']} unmatched classnames, "
+        f"{link_stats['models_csv_missing_raw_rows']} missing raw-model matches, "
+        f"{link_stats['models_csv_ambiguous_raw_rows']} ambiguous raw-model matches)."
     )
     print(
         "Tombstones: "
