@@ -1543,7 +1543,8 @@
     position: relative;
     width: 100%;
     min-height: 28px;
-    padding-bottom: 6px;
+    padding-top: 4px;
+    padding-bottom: 5.1px;
   }
   .object-focus__topbar .object-focus__pane-title {
     position: absolute;
@@ -1591,18 +1592,6 @@
   .object-focus.collapsed .object-focus__pane-title {
     display: none;
   }
-  .object-focus__pin-hint {
-    display: none;
-    margin-top: 6px;
-    font-size: 1rem;
-    color: var(--muted);
-  }
-  .object-focus.collapsed .object-focus__pin-hint {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
   .object-focus__header {
     display: flex;
     justify-content: flex-start;
@@ -1633,13 +1622,45 @@
     background: var(--card);
     color: var(--text);
     border-radius: 6px;
-    padding: 6px 8px;
+    padding: 0;
+    min-width: 28px;
+    width: 28px;
+    height: 28px;
     cursor: pointer;
-    font-weight: 700;
-    line-height: 1;
+    line-height: 0;
   }
   .object-focus__collapse:hover {
     background: var(--bg-soft);
+  }
+  .object-focus__collapse-icon-stack {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .object-focus__collapse-icon-outline,
+  .object-focus__collapse-icon-main {
+    position: absolute;
+    inset: 0;
+  }
+  .object-focus__collapse-icon-outline {
+    color: var(--icon-outline);
+    transform: scale(1.16);
+    opacity: 0.9;
+  }
+  .object-focus__collapse:hover .object-focus__collapse-icon-outline,
+  .object-focus__collapse:focus-visible .object-focus__collapse-icon-outline {
+    color: var(--icon-hover-fg);
+  }
+  #objectFocusCollapse.is-active,
+  #objectFocusCollapse.is-active:hover,
+  #objectFocusCollapse.is-active:focus-visible {
+    background-color: var(--icon-hover-outline) !important;
+    border-color: var(--icon-hover-outline) !important;
+    color: var(--icon-hover-fg) !important;
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--icon-hover-outline) 45%, transparent);
   }
 
   .object-focus__image {
@@ -3540,7 +3561,6 @@
     border-color: var(--accent) !important;
     box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 45%, transparent);
   }
-  /* Tokenized color scheme for requested non-icon controls (no size changes). */
   #folderSidebarClear,
   #objectFocusCollapse,
   #objectFocusClear,
@@ -3968,11 +3988,15 @@
     <div class="object-focus__topbar">
       <div class="object-focus__pane-title"><span class="object-focus__pane-label"><span>Object viewer</span></span></div>
       <div class="object-focus__header">
-        <button id="objectFocusCollapse" class="object-focus__collapse ui-action-btn" type="button" aria-label="Collapse sidebar">&gt;&gt;</button>
+        <button id="objectFocusCollapse" class="object-focus__collapse ui-action-btn icon-action" type="button" aria-label="Collapse sidebar" title="Collapse sidebar">
+          <span class="object-focus__collapse-icon-stack" aria-hidden="true">
+            <span class="ui-icon ui-icon--pin object-focus__collapse-icon-outline"></span>
+            <span class="ui-icon ui-icon--pin object-focus__collapse-icon-main"></span>
+          </span>
+        </button>
         <button id="objectFocusClear" class="object-focus__clear folder-sidebar__clear ui-action-btn" type="button" aria-label="Deselect" title="Deselect">Deselect</button>
       </div>
     </div>
-    <div class="object-focus__pin-hint" aria-hidden="true"><span class="ui-icon ui-icon--pin"></span></div>
     <div class="object-focus__image" id="objectFocusImage">
       <button id="objectFocusImagePrev" class="object-focus__gallery-nav object-focus__gallery-nav--prev" type="button" aria-label="Previous image">‹</button>
       <img id="objectFocusPreviewImg" class="object-focus__preview" src="" alt="" hidden>
@@ -5577,8 +5601,12 @@
     var updateCollapseButtonLabel = function() {
       if (!objectFocusCollapseEl || !objectFocusEl) return;
       var isCollapsed = objectFocusEl.classList.contains('collapsed');
-      objectFocusCollapseEl.textContent = isCollapsed ? '<<' : '>>';
-      objectFocusCollapseEl.setAttribute('aria-label', isCollapsed ? 'Expand sidebar' : 'Collapse sidebar');
+      var isViewerActive = !isCollapsed;
+      var actionLabel = isCollapsed ? 'Expand sidebar' : 'Collapse sidebar';
+      objectFocusCollapseEl.setAttribute('aria-label', actionLabel);
+      objectFocusCollapseEl.setAttribute('title', actionLabel);
+      objectFocusCollapseEl.setAttribute('aria-pressed', (!isCollapsed).toString());
+      objectFocusCollapseEl.classList.toggle('is-active', isViewerActive);
     };
     var updateEmptyState = function() {
       if (!objectFocusEl || !objectFocusEmptyEl) return;
@@ -5589,6 +5617,7 @@
       if (objectFocusClearEl) {
         objectFocusClearEl.style.display = (hasSelection && !isCollapsed) ? 'inline-flex' : 'none';
       }
+      updateCollapseButtonLabel();
     };
     var updateLayoutForSidebar = function() {
       if (!objectsLayoutEl || !objectFocusEl) return;
@@ -10782,6 +10811,16 @@
     var pathHoverTooltipEl = document.getElementById('pathHoverTooltip');
     var presetsGuideNoticeEl = document.getElementById('presetsGuideNotice');
     var appGuideCookiePrefix = 'samsobjectfinder_guide_';
+    var scheduleGuideLayoutSync = function() {
+      if (typeof scheduleSidebarTopOffsetSync !== 'function') return;
+      scheduleSidebarTopOffsetSync();
+      setTimeout(function() {
+        scheduleSidebarTopOffsetSync();
+      }, 40);
+      setTimeout(function() {
+        scheduleSidebarTopOffsetSync();
+      }, 220);
+    };
 
     var readCookie = function(name) {
       var escaped = String(name).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -10820,6 +10859,7 @@
       if (objectMapGuideNoticeEl) {
         objectMapGuideNoticeEl.classList.toggle('visible', activeCollectionFilter === 'object_map' && !isGuideDismissed('object_map'));
       }
+      scheduleGuideLayoutSync();
     };
     var appliedUrlState = false;
 

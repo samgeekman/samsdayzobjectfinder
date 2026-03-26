@@ -459,10 +459,10 @@
       min-width: 30px;
       min-height: 24px;
       padding: 3px 6px;
-      border: 1px solid var(--site-divider, rgba(0, 0, 0, 0.12)) !important;
+      border: 1px solid var(--icon-outline) !important;
       border-radius: 3px !important;
-      background: var(--site-card, #ffffff) !important;
-      color: var(--site-text, #132028) !important;
+      background: var(--site-button-bg, var(--site-card, #ffffff)) !important;
+      color: var(--icon-fg) !important;
       font: inherit;
       font-size: 0.7rem;
       font-weight: 600;
@@ -475,15 +475,15 @@
     .hover-card__thumb-action:focus-visible {
       transform: translateY(-1px);
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06) !important;
-      background-color: var(--site-accent, #ffd54f) !important;
-      border-color: var(--site-accent, #ffd54f) !important;
-      color: #1f1f1f !important;
+      background-color: var(--icon-hover-outline) !important;
+      border-color: var(--icon-hover-outline) !important;
+      color: var(--icon-hover-fg) !important;
       outline: none;
     }
     .hover-card__thumb-action.is-active {
-      background-color: var(--site-accent, #ffd54f) !important;
-      border-color: var(--site-accent, #ffd54f) !important;
-      color: #1f1f1f !important;
+      background-color: var(--icon-hover-outline) !important;
+      border-color: var(--icon-hover-outline) !important;
+      color: var(--icon-hover-fg) !important;
     }
     .hover-card__thumb.is-empty::before {
       content: "";
@@ -510,12 +510,16 @@
     }
     @media (max-width: 900px) {
       .map-topbar {
-        flex-direction: column;
-        align-items: stretch;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
       }
       .hover-card {
-        min-width: 0;
-        max-width: none;
+        min-width: 260px;
+        max-width: min(342px, calc(100vw - 28px));
+        width: auto;
+        margin-left: auto;
+        flex: 0 1 auto;
       }
     }
   </style>
@@ -1210,7 +1214,7 @@
       hoverNameEl.disabled = !model;
       hoverMetaEl.disabled = !model;
       if (!model) {
-        hoverNameEl.textContent = "Hover an object";
+        hoverNameEl.textContent = "Hover over an object";
         hoverNameEl.classList.remove("is-active");
         hoverMetaEl.textContent = "Search 0 on map";
         hoverCardEl.classList.remove("is-clickable");
