@@ -1,84 +1,102 @@
-{
-    "Objects": [
-        {
-            "name": "Land_Ship_Big_FrontB",
-            "pos": [
-                5365.26416015625,
-                36.12508773803711,
-                3716.162109375
-            ],
-            "ypr": [
-                -0.0000033907567740243396,
-                -0.45159777998924258,
-                2.7541556590904294e-8
-            ],
-            "scale": 0.9996976852416992,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "Land_Ship_Big_FrontA",
-            "pos": [
-                5385.14892578125,
-                37.609291076660159,
-                3718.49072265625
-            ],
-            "ypr": [
-                -0.0000034229988159495407,
-                -0.469308465719223,
-                2.779630747795636e-8
-            ],
-            "scale": 0.999789297580719,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "Land_Ship_Big_BackA",
-            "pos": [
-                5329.76611328125,
-                37.58853530883789,
-                3714.9599609375
-            ],
-            "ypr": [
-                -0.000003415726951061515,
-                -0.4653136134147644,
-                2.7739574193219597e-8
-            ],
-            "scale": 0.9996975064277649,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "StaticObj_Wreck_Ship_Big_Castle",
-            "pos": [
-                5321.38232421875,
-                46.23670196533203,
-                3715.296142578125
-            ],
-            "ypr": [
-                -0.000003420881967031164,
-                -0.46815070509910586,
-                2.7773763733307534e-8
-            ],
-            "scale": 0.9997602701187134,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "StaticObj_Wreck_Ship_Big_BackB",
-            "pos": [
-                5310.08935546875,
-                36.059810638427737,
-                3715.4912109375
-            ],
-            "ypr": [
-                -0.000003415725814193138,
-                -0.4653118848800659,
-                2.7739572416862758e-8
-            ],
-            "scale": 0.9996947646141052,
-            "enableCEPersistency": 0,
-            "customString": ""
-        }
-    ]
-}
+[
+  {
+    "Type": "Land_Ship_Big_FrontB",
+    "DisplayName": "Land_Ship_Big_FrontB",
+    "Position": [
+      5365.26416015625,
+      36.12508773803711,
+      3716.162109375
+    ],
+    "Orientation": [
+      -3.3907567740243394e-06,
+      -0.45159777998924255,
+      2.7541556590904293e-08
+    ],
+    "Scale": 0.9996976852416992,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "Land_Ship_Big_FrontA",
+    "DisplayName": "Land_Ship_Big_FrontA",
+    "Position": [
+      5385.14892578125,
+      37.609291076660156,
+      3718.49072265625
+    ],
+    "Orientation": [
+      -3.4229988159495406e-06,
+      -0.469308465719223,
+      2.779630747795636e-08
+    ],
+    "Scale": 0.999789297580719,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "Land_Ship_Big_BackA",
+    "DisplayName": "Land_Ship_Big_BackA",
+    "Position": [
+      5329.76611328125,
+      37.58853530883789,
+      3714.9599609375
+    ],
+    "Orientation": [
+      -3.415726951061515e-06,
+      -0.4653136134147644,
+      2.7739574193219596e-08
+    ],
+    "Scale": 0.9996975064277649,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "StaticObj_Wreck_Ship_Big_Castle",
+    "DisplayName": "StaticObj_Wreck_Ship_Big_Castle",
+    "Position": [
+      5321.38232421875,
+      46.23670196533203,
+      3715.296142578125
+    ],
+    "Orientation": [
+      -3.420881967031164e-06,
+      -0.46815070509910583,
+      2.7773763733307533e-08
+    ],
+    "Scale": 0.9997602701187134,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "StaticObj_Wreck_Ship_Big_BackB",
+    "DisplayName": "StaticObj_Wreck_Ship_Big_BackB",
+    "Position": [
+      5310.08935546875,
+      36.059810638427734,
+      3715.4912109375
+    ],
+    "Orientation": [
+      -3.415725814193138e-06,
+      -0.4653118848800659,
+      2.7739572416862757e-08
+    ],
+    "Scale": 0.9996947646141052,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  }
+]

@@ -1,180 +1,222 @@
-{
-    "Objects": [
-        {
-            "name": "StaticObj_Pier_Concrete2_End",
-            "pos": [
-                -5781.59765625,
-                185.9548797607422,
-                3031.566650390625
-            ],
-            "ypr": [
-                -90.00006866455078,
-                0.0,
-                -0.0
-            ],
-            "scale": 0.9999998211860657,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "StaticObj_Pier_Tube_Small",
-            "pos": [
-                -5991.63330078125,
-                152.1009979248047,
-                2931.106689453125
-            ],
-            "ypr": [
-                0.0,
-                0.0,
-                -0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "StaticObj_Pier_Wooden1_End",
-            "pos": [
-                -6023.83203125,
-                138.4621124267578,
-                2951.285400390625
-            ],
-            "ypr": [
-                -135.0,
-                0.0,
-                -0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "StaticObj_Pier_Wooden1_Pillars",
-            "pos": [
-                -6030.96240234375,
-                143.60452270507813,
-                2968.708251953125
-            ],
-            "ypr": [
-                44.99999237060547,
-                0.0,
-                -0.0
-            ],
-            "scale": 0.9999995231628418,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "StaticObj_Ice_Sea_Triangle_1",
-            "pos": [
-                -347.27752685546877,
-                1.8464258909225464,
-                -442.0172119140625
-            ],
-            "ypr": [
-                80.99992370605469,
-                -0.0,
-                -0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "StaticObj_Ice_Sea_Triangle_2",
-            "pos": [
-                -317.1026916503906,
-                1.9127634763717652,
-                -425.187744140625
-            ],
-            "ypr": [
-                -53.99995803833008,
-                0.0,
-                0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "DZ\\rocks_sakhal\\rock_wallh7_tall.p3d",
-            "pos": [
-                -1630.768310546875,
-                15.798635482788086,
-                -36.5286750793457
-            ],
-            "ypr": [
-                -0.4712388813495636,
-                0.0,
-                0.0
-            ],
-            "scale": 0.9999996423721314,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "DZ\\rocks_sakhal\\rock_monolith5_int.p3d",
-            "pos": [
-                -9615.076171875,
-                28.24597930908203,
-                -6300.96142578125
-            ],
-            "ypr": [
-                -0.3141592741012573,
-                0.0,
-                0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "Land_Underground_Stairs_Exit",
-            "pos": [
-                8648.955078125,
-                37.588134765625,
-                1593.9532470703126
-            ],
-            "ypr": [
-                63.0,
-                0.0,
-                -0.0
-            ],
-            "scale": 0.9999999403953552,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "Land_Underground_Panel_Lever",
-            "pos": [
-                8653.7275390625,
-                39.91802978515625,
-                1591.5421142578126
-            ],
-            "ypr": [
-                152.98289489746095,
-                0.0,
-                -0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "Land_Underground_Panel_Lever",
-            "pos": [
-                8652.767578125,
-                39.91802978515625,
-                1593.4249267578126
-            ],
-            "ypr": [
-                152.98287963867188,
-                0.0,
-                -0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        }
-    ]
-}
+[
+  {
+    "Type": "StaticObj_Pier_Concrete2_End",
+    "DisplayName": "StaticObj_Pier_Concrete2_End",
+    "Position": [
+      -5781.59765625,
+      185.9548797607422,
+      3031.566650390625
+    ],
+    "Orientation": [
+      -90.00006866455078,
+      0.0,
+      -0.0
+    ],
+    "Scale": 0.9999998211860657,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "StaticObj_Pier_Tube_Small",
+    "DisplayName": "StaticObj_Pier_Tube_Small",
+    "Position": [
+      -5991.63330078125,
+      152.1009979248047,
+      2931.106689453125
+    ],
+    "Orientation": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "StaticObj_Pier_Wooden1_End",
+    "DisplayName": "StaticObj_Pier_Wooden1_End",
+    "Position": [
+      -6023.83203125,
+      138.4621124267578,
+      2951.285400390625
+    ],
+    "Orientation": [
+      -135.0,
+      0.0,
+      -0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "StaticObj_Pier_Wooden1_Pillars",
+    "DisplayName": "StaticObj_Pier_Wooden1_Pillars",
+    "Position": [
+      -6030.96240234375,
+      143.60452270507812,
+      2968.708251953125
+    ],
+    "Orientation": [
+      44.99999237060547,
+      0.0,
+      -0.0
+    ],
+    "Scale": 0.9999995231628418,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "StaticObj_Ice_Sea_Triangle_1",
+    "DisplayName": "StaticObj_Ice_Sea_Triangle_1",
+    "Position": [
+      -347.27752685546875,
+      1.8464258909225464,
+      -442.0172119140625
+    ],
+    "Orientation": [
+      80.99992370605469,
+      -0.0,
+      -0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "StaticObj_Ice_Sea_Triangle_2",
+    "DisplayName": "StaticObj_Ice_Sea_Triangle_2",
+    "Position": [
+      -317.1026916503906,
+      1.9127634763717651,
+      -425.187744140625
+    ],
+    "Orientation": [
+      -53.99995803833008,
+      0.0,
+      0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "DZ\\rocks_sakhal\\rock_wallh7_tall.p3d",
+    "DisplayName": "DZ\\rocks_sakhal\\rock_wallh7_tall.p3d",
+    "Position": [
+      -1630.768310546875,
+      15.798635482788086,
+      -36.5286750793457
+    ],
+    "Orientation": [
+      -0.4712388813495636,
+      0.0,
+      0.0
+    ],
+    "Scale": 0.9999996423721313,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "DZ\\rocks_sakhal\\rock_monolith5_int.p3d",
+    "DisplayName": "DZ\\rocks_sakhal\\rock_monolith5_int.p3d",
+    "Position": [
+      -9615.076171875,
+      28.24597930908203,
+      -6300.96142578125
+    ],
+    "Orientation": [
+      -0.3141592741012573,
+      0.0,
+      0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "Land_Underground_Stairs_Exit",
+    "DisplayName": "Land_Underground_Stairs_Exit",
+    "Position": [
+      8648.955078125,
+      37.588134765625,
+      1593.9532470703125
+    ],
+    "Orientation": [
+      63.0,
+      0.0,
+      -0.0
+    ],
+    "Scale": 0.9999999403953552,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "Land_Underground_Panel_Lever",
+    "DisplayName": "Land_Underground_Panel_Lever",
+    "Position": [
+      8653.7275390625,
+      39.91802978515625,
+      1591.5421142578125
+    ],
+    "Orientation": [
+      152.98289489746094,
+      0.0,
+      -0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "Land_Underground_Panel_Lever",
+    "DisplayName": "Land_Underground_Panel_Lever",
+    "Position": [
+      8652.767578125,
+      39.91802978515625,
+      1593.4249267578125
+    ],
+    "Orientation": [
+      152.98287963867188,
+      0.0,
+      -0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  }
+]

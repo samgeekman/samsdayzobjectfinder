@@ -354,13 +354,38 @@ def to_editor_json_from_objects_payload(payload: dict) -> List[dict]:
     return out
 
 
+def is_editor_json_entry(item: object) -> bool:
+    return isinstance(item, dict) and isinstance(item.get("Type"), str) and isinstance(item.get("Position"), list)
+
+
+def to_editor_json_entries(payload: object) -> List[dict]:
+    if isinstance(payload, dict) and isinstance(payload.get("Objects"), list):
+        return to_editor_json_from_objects_payload(payload)
+    if isinstance(payload, list):
+        entries = [dict(item) for item in payload if is_editor_json_entry(item)]
+        if entries:
+            return entries
+    return []
+
+
 def to_rel_base_path(path: Path) -> str:
     return str(path.relative_to(BASE_DIR)).replace("\\", "/")
 
 
+def write_preset_editor_json(folder: Path, object_name: str, editor_json: List[dict]) -> str:
+    if not editor_json:
+        return ""
+    out_dir = STATIC_DIR / "presets"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_name = f"{slugify_token(object_name or folder.name, default='build')}.json"
+    out_path = out_dir / out_name
+    out_path.write_text(json.dumps(editor_json, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return (Path("presets") / out_name).as_posix()
+
+
 def discover_preset_artifacts(folder: Path) -> Dict[str, object]:
     import_json_path = ""
-    import_payload = None
+    editor_json: List[dict] = []
     copyable_path = ""
     dze_path = ""
 
@@ -379,12 +404,9 @@ def discover_preset_artifacts(folder: Path) -> Dict[str, object]:
                 parsed = json.loads(file_path.read_text(encoding="utf-8"))
             except json.JSONDecodeError:
                 parsed = None
-            if (
-                import_payload is None
-                and isinstance(parsed, dict)
-                and isinstance(parsed.get("Objects"), list)
-            ):
-                import_payload = parsed
+            parsed_editor_json = to_editor_json_entries(parsed)
+            if not editor_json and parsed_editor_json:
+                editor_json = parsed_editor_json
                 import_json_path = to_rel_base_path(file_path)
             if is_copyable_name and not copyable_path:
                 copyable_path = to_rel_base_path(file_path)
@@ -394,7 +416,7 @@ def discover_preset_artifacts(folder: Path) -> Dict[str, object]:
             copyable_path = to_rel_base_path(file_path)
 
     return {
-        "import_payload": import_payload,
+        "editor_json": editor_json,
         "import_json_path": import_json_path,
         "copyable_path": copyable_path,
         "dze_path": dze_path,
@@ -478,9 +500,8 @@ def load_preset_rows_from_folders(presets_dir: Path) -> Tuple[List[dict], int]:
         if parse_bool(preset_row.get("template"), default=False):
             continue
         artifacts = discover_preset_artifacts(folder)
-        payload = artifacts.get("import_payload")
-        import_json_path = str(artifacts.get("import_json_path") or "").strip()
-        copyable_path = str(artifacts.get("copyable_path") or "").strip()
+        source_import_json_path = str(artifacts.get("import_json_path") or "").strip()
+        source_copyable_path = str(artifacts.get("copyable_path") or "").strip()
         dze_path = str(artifacts.get("dze_path") or "").strip()
         object_id = str(preset_row.get("id", "")).strip()
         object_name = str(preset_row.get("objectName") or folder.name).strip()
@@ -497,7 +518,10 @@ def load_preset_rows_from_folders(presets_dir: Path) -> Tuple[List[dict], int]:
         category = str(preset_row.get("category") or "Preset").strip()
         model_type = str(preset_row.get("modelType") or "Preset").strip()
         usable_on_console = parse_bool(preset_row.get("usableOnConsole"), default=True)
-        editor_json = to_editor_json_from_objects_payload(payload) if isinstance(payload, dict) else []
+        editor_json = list(artifacts.get("editor_json") or [])
+        static_editor_json_path = write_preset_editor_json(folder, object_name, editor_json)
+        import_json_path = static_editor_json_path or source_import_json_path
+        copyable_path = static_editor_json_path or source_copyable_path
         row = {
             "id": object_id,
             "objectName": object_name,
@@ -694,12 +718,31 @@ def build_image_url(image_path: object) -> str:
     return f"{API_IMAGE_BASE_URL.rstrip('/')}/{cleaned.lstrip('/')}"
 
 
+def is_editor_build_row(obj: dict) -> bool:
+    category = str(obj.get("category") or "").strip().lower()
+    model_type = str(obj.get("modelType") or "").strip().lower()
+    path = str(obj.get("path") or "").strip().lower()
+    image = str(obj.get("image") or "").strip().lower()
+    if "preset" in category or "build" in category:
+        return True
+    if "preset" in model_type or "build" in model_type:
+        return True
+    if path.startswith("dz/builds/"):
+        return True
+    if image.startswith("presets/"):
+        return True
+    return False
+
+
 def generate_static_api(objects: List[dict]) -> Dict[str, int]:
     if API_ROOT.exists():
         shutil.rmtree(API_ROOT)
     API_ROOT.mkdir(parents=True, exist_ok=True)
 
-    sorted_objects = sorted(objects, key=lambda obj: str(obj.get("id", "")))
+    sorted_objects = sorted(
+        [obj for obj in objects if not is_editor_build_row(obj)],
+        key=lambda obj: str(obj.get("id", "")),
+    )
     generated_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
     api_objects: List[dict] = []

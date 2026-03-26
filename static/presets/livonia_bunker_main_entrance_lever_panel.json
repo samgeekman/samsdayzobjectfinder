@@ -1,36 +1,42 @@
-{
-    "Objects": [
-        {
-            "name": "Land_Underground_Entrance",
-            "pos": [
-                5350.0751953125,
-                11.526744842529297,
-                3598.962158203125
-            ],
-            "ypr": [
-                9.0,
-                0.0,
-                -0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "Land_Underground_Panel_Lever",
-            "pos": [
-                5346.26171875,
-                13.008708953857422,
-                3592.300537109375
-            ],
-            "ypr": [
-                9.0,
-                0.0,
-                0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        }
-    ]
-}
+[
+  {
+    "Type": "Land_Underground_Entrance",
+    "DisplayName": "Land_Underground_Entrance",
+    "Position": [
+      5350.0751953125,
+      11.526744842529297,
+      3598.962158203125
+    ],
+    "Orientation": [
+      9.0,
+      0.0,
+      -0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "Land_Underground_Panel_Lever",
+    "DisplayName": "Land_Underground_Panel_Lever",
+    "Position": [
+      5346.26171875,
+      13.008708953857422,
+      3592.300537109375
+    ],
+    "Orientation": [
+      9.0,
+      0.0,
+      0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  }
+]

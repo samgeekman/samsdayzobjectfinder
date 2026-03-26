@@ -5,7 +5,9 @@ url: "/api/"
 draft: false
 ---
 
-This basic API allows you to pull the latest database for your own use. Each object has been given a unique immutable `id` (e.g. `dzobj_00fyisazn2`). While most objects names will not change, the id will ensure a stable reference.
+This basic API allows you to pull the latest database for your own use. Each object has been given a unique immutable `id` (e.g. `dzobj_00fyisazn2`). While most object names will not change, the id will ensure a stable reference.
+
+Editor Builds / presets are excluded from all API endpoints.
 
 - [`GET /api/v1/meta.json`](/api/v1/meta.json)
 - [`GET /api/v1/objects.full.json`](/api/v1/objects.full.json)
@@ -14,8 +16,8 @@ This basic API allows you to pull the latest database for your own use. Each obj
 
 `meta.json` shows latest update metadata.  
 
-`objects.full.json` is a single file with all object data.
+`objects.full.json` is a single file with all object data, excluding Editor Builds / presets.
 
-`object-names.json` is a unique sorted list of all object class names and ids
+`object-names.json` is a unique sorted list of all object class names and ids, excluding Editor Builds / presets.
 
 `objects.ingame.json` contains player loot only, with id, object name and in-game.

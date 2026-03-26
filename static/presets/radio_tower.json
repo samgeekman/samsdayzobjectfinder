@@ -1,52 +1,62 @@
-{
-    "Objects": [
-        {
-            "name": "Land_Tower_TC4_Base",
-            "pos": [
-                5344.47705078125,
-                41.3253173828125,
-                3601.492431640625
-            ],
-            "ypr": [
-                0.0,
-                0.0,
-                -0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "Land_Tower_TC4_Mid",
-            "pos": [
-                5344.59033203125,
-                84.97771453857422,
-                3601.418212890625
-            ],
-            "ypr": [
-                0.0,
-                0.0,
-                -0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "Land_Tower_TC4_Top",
-            "pos": [
-                5344.44482421875,
-                125.4769287109375,
-                3601.51904296875
-            ],
-            "ypr": [
-                0.0,
-                0.0,
-                -0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        }
-    ]
-}
+[
+  {
+    "Type": "Land_Tower_TC4_Base",
+    "DisplayName": "Land_Tower_TC4_Base",
+    "Position": [
+      5344.47705078125,
+      41.3253173828125,
+      3601.492431640625
+    ],
+    "Orientation": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "Land_Tower_TC4_Mid",
+    "DisplayName": "Land_Tower_TC4_Mid",
+    "Position": [
+      5344.59033203125,
+      84.97771453857422,
+      3601.418212890625
+    ],
+    "Orientation": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "Land_Tower_TC4_Top",
+    "DisplayName": "Land_Tower_TC4_Top",
+    "Position": [
+      5344.44482421875,
+      125.4769287109375,
+      3601.51904296875
+    ],
+    "Orientation": [
+      0.0,
+      0.0,
+      -0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  }
+]

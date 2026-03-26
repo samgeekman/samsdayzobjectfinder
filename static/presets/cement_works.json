@@ -1,116 +1,142 @@
-{
-    "Objects": [
-        {
-            "name": "StaticObj_Misc_ConcretePanels",
-            "pos": [
-                5334.78515625,
-                13.126411437988282,
-                3563.009033203125
-            ],
-            "ypr": [
-                74.49027252197266,
-                0.0,
-                -0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "Land_CementWorks_SiloBig1B",
-            "pos": [
-                5429.3115234375,
-                31.511775970458986,
-                3576.274658203125
-            ],
-            "ypr": [
-                -15.251005172729493,
-                0.0,
-                0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "Land_CementWorks_SiloBig1A",
-            "pos": [
-                5393.00244140625,
-                37.08177947998047,
-                3565.959716796875
-            ],
-            "ypr": [
-                -15.251005172729493,
-                0.0,
-                0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "StaticObj_CementWorks_SiloBig1Bridge",
-            "pos": [
-                5402.70263671875,
-                47.680660247802737,
-                3569.455078125
-            ],
-            "ypr": [
-                -15.251005172729493,
-                0.0,
-                0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "Land_CementWorks_SiloBig1B",
-            "pos": [
-                5348.06298828125,
-                31.55276107788086,
-                3555.533935546875
-            ],
-            "ypr": [
-                164.4405975341797,
-                0.0,
-                -0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "StaticObj_CementWorks_SiloBig1Bridge",
-            "pos": [
-                5374.77783203125,
-                47.680660247802737,
-                3562.194091796875
-            ],
-            "ypr": [
-                166.74578857421876,
-                0.0,
-                -0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        },
-        {
-            "name": "StaticObj_Misc_ConcretePanels",
-            "pos": [
-                5442.693359375,
-                13.076274871826172,
-                3568.458740234375
-            ],
-            "ypr": [
-                74.49027252197266,
-                0.0,
-                -0.0
-            ],
-            "scale": 1.0,
-            "enableCEPersistency": 0,
-            "customString": ""
-        }
-    ]
-}
+[
+  {
+    "Type": "StaticObj_Misc_ConcretePanels",
+    "DisplayName": "StaticObj_Misc_ConcretePanels",
+    "Position": [
+      5334.78515625,
+      13.126411437988281,
+      3563.009033203125
+    ],
+    "Orientation": [
+      74.49027252197266,
+      0.0,
+      -0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "Land_CementWorks_SiloBig1B",
+    "DisplayName": "Land_CementWorks_SiloBig1B",
+    "Position": [
+      5429.3115234375,
+      31.511775970458984,
+      3576.274658203125
+    ],
+    "Orientation": [
+      -15.251005172729492,
+      0.0,
+      0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "Land_CementWorks_SiloBig1A",
+    "DisplayName": "Land_CementWorks_SiloBig1A",
+    "Position": [
+      5393.00244140625,
+      37.08177947998047,
+      3565.959716796875
+    ],
+    "Orientation": [
+      -15.251005172729492,
+      0.0,
+      0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "StaticObj_CementWorks_SiloBig1Bridge",
+    "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
+    "Position": [
+      5402.70263671875,
+      47.680660247802734,
+      3569.455078125
+    ],
+    "Orientation": [
+      -15.251005172729492,
+      0.0,
+      0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "Land_CementWorks_SiloBig1B",
+    "DisplayName": "Land_CementWorks_SiloBig1B",
+    "Position": [
+      5348.06298828125,
+      31.55276107788086,
+      3555.533935546875
+    ],
+    "Orientation": [
+      164.4405975341797,
+      0.0,
+      -0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "StaticObj_CementWorks_SiloBig1Bridge",
+    "DisplayName": "StaticObj_CementWorks_SiloBig1Bridge",
+    "Position": [
+      5374.77783203125,
+      47.680660247802734,
+      3562.194091796875
+    ],
+    "Orientation": [
+      166.74578857421875,
+      0.0,
+      -0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  },
+  {
+    "Type": "StaticObj_Misc_ConcretePanels",
+    "DisplayName": "StaticObj_Misc_ConcretePanels",
+    "Position": [
+      5442.693359375,
+      13.076274871826172,
+      3568.458740234375
+    ],
+    "Orientation": [
+      74.49027252197266,
+      0.0,
+      -0.0
+    ],
+    "Scale": 1.0,
+    "AttachmentMap": {},
+    "Model": "",
+    "Flags": 30,
+    "m_LowBits": 0,
+    "m_HighBits": 0
+  }
+]
