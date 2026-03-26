@@ -6175,6 +6175,8 @@
       }
       updateFiltersAppTitle();
       if (visible) {
+        updateObjectMapToggleButtons();
+        updateFolderSidebarTitle();
         ensureObjectMapV2FrameLoaded(objectMapV2FrameWorldKey !== normalizeObjectMapKey(objectMapActiveMapKey));
         dispatchObjectMapV2SearchState();
         setTimeout(function() {
@@ -6294,6 +6296,14 @@
           pathFilter: activePathFilter,
           mode: searchMode,
           rows: rows
+        }, window.location.origin);
+      } catch (error) {}
+    };
+    var clearObjectMapV2SelectionState = function() {
+      if (!objectMapV2FrameEl || !objectMapV2FrameLoaded || !objectMapV2FrameEl.contentWindow) return;
+      try {
+        objectMapV2FrameEl.contentWindow.postMessage({
+          type: 'object-map-clear-selection'
         }, window.location.origin);
       } catch (error) {}
     };
@@ -6692,6 +6702,10 @@
         clearObjectMapAreaSelection();
       }
       updateObjectMapToggleButtons();
+      updateFolderSidebarTitle();
+      if (activeCollectionFilter === 'object_map') {
+        syncTypesExplorerPath();
+      }
       if (useObjectMapV2) {
         ensureObjectMapV2FrameLoaded(objectMapV2FrameWorldKey !== normalized);
         dispatchObjectMapV2SearchState();
@@ -7309,6 +7323,7 @@
       var nextUrl = new URL(window.location);
       nextUrl.searchParams.delete('id');
       nextUrl.searchParams.delete('object');
+      nextUrl.searchParams.delete('world');
       nextUrl.searchParams.delete('types_map');
       nextUrl.searchParams.delete('types_kind');
       nextUrl.searchParams.delete('types_tag');
@@ -7321,6 +7336,7 @@
     var buildIdFilterUrl = function(ids) {
       var nextUrl = new URL(window.location);
       nextUrl.searchParams.delete('version');
+      nextUrl.searchParams.delete('world');
       nextUrl.searchParams.delete('types_map');
       nextUrl.searchParams.delete('types_kind');
       nextUrl.searchParams.delete('types_tag');
@@ -7336,6 +7352,7 @@
       nextUrl.searchParams.delete('id');
       nextUrl.searchParams.delete('object');
       nextUrl.searchParams.delete('version');
+      nextUrl.searchParams.delete('world');
       nextUrl.searchParams.delete('types_map');
       nextUrl.searchParams.delete('types_kind');
       nextUrl.searchParams.delete('types_tag');
@@ -7362,15 +7379,13 @@
     };
     var buildTypesExplorerUrl = function() {
       var nextUrl = new URL(window.location.toString());
-      var focusedObjectId = normalizeObjectId(
-        (currentObjectData && currentObjectData.id) ? currentObjectData.id : (objectIdParams.length === 1 ? objectIdParams[0] : '')
-      );
       nextUrl.pathname = '/';
       nextUrl.searchParams.delete('id');
       nextUrl.searchParams.delete('object');
       nextUrl.searchParams.delete('version');
       nextUrl.searchParams.delete('path');
       nextUrl.searchParams.delete('maps');
+      nextUrl.searchParams.delete('world');
       nextUrl.searchParams.delete('presets');
       nextUrl.searchParams.delete('types_map');
       nextUrl.searchParams.delete('types_kind');
@@ -7380,9 +7395,11 @@
       nextUrl.searchParams.delete('types_usage');
       nextUrl.searchParams.delete('types_value');
       if (activeCollectionFilter === 'object_map') {
+        var currentMapObjectParam = String(new URL(window.location.toString()).searchParams.get('object') || '').trim();
         nextUrl.searchParams.set('maps', '1');
-        if (focusedObjectId) {
-          nextUrl.searchParams.set('id', focusedObjectId);
+        nextUrl.searchParams.set('world', normalizeObjectMapKey(objectMapActiveMapKey));
+        if (currentMapObjectParam && objectMapSearchMode === 'exact_object' && objectMapExactSearchQuery) {
+          nextUrl.searchParams.set('object', objectMapExactSearchQuery);
         }
         return nextUrl.toString();
       }
@@ -7438,6 +7455,7 @@
       nextUrl.searchParams.delete('object');
       nextUrl.searchParams.delete('version');
       nextUrl.searchParams.delete('maps');
+      nextUrl.searchParams.delete('world');
       nextUrl.searchParams.delete('presets');
       nextUrl.searchParams.delete('types');
       nextUrl.searchParams.delete('types_maps');
@@ -8867,6 +8885,7 @@
       var normalizedId = normalizeObjectId(objectId);
       nextUrl.searchParams.delete('path');
       nextUrl.searchParams.delete('maps');
+      nextUrl.searchParams.delete('world');
       nextUrl.searchParams.delete('presets');
       nextUrl.searchParams.delete('types');
       nextUrl.searchParams.delete('types_maps');
@@ -8884,6 +8903,30 @@
         nextUrl.searchParams.set('object', legacyObjectName);
       } else {
         nextUrl.searchParams.delete('object');
+      }
+      return nextUrl.toString();
+    };
+    var buildObjectMapObjectUrl = function(objectName, mapKey) {
+      var nextUrl = new URL(window.location);
+      var normalizedName = String(objectName || '').trim();
+      nextUrl.pathname = '/';
+      nextUrl.searchParams.delete('id');
+      nextUrl.searchParams.delete('object');
+      nextUrl.searchParams.delete('version');
+      nextUrl.searchParams.delete('path');
+      nextUrl.searchParams.delete('presets');
+      nextUrl.searchParams.delete('types');
+      nextUrl.searchParams.delete('types_maps');
+      nextUrl.searchParams.delete('types_usage');
+      nextUrl.searchParams.delete('types_value');
+      nextUrl.searchParams.delete('types_map');
+      nextUrl.searchParams.delete('types_kind');
+      nextUrl.searchParams.delete('types_tag');
+      nextUrl.searchParams.delete('q');
+      nextUrl.searchParams.set('maps', '1');
+      nextUrl.searchParams.set('world', normalizeObjectMapKey(mapKey));
+      if (normalizedName) {
+        nextUrl.searchParams.set('object', normalizedName);
       }
       return nextUrl.toString();
     };
@@ -9974,17 +10017,15 @@
         normalizedName = String(resolveObjectNameById(normalizedId) || '').trim();
       }
       var preferredMap = String(preferredMapKey || '').trim().toLowerCase();
-      if (preferredMap === 'chernarus' || preferredMap === 'livonia' || preferredMap === 'sakhal') {
-        objectMapActiveMapKey = preferredMap;
-      }
+      objectMapExactSearchQuery = normalizedName;
+      objectMapSearchMode = normalizedName ? 'exact_object' : '';
       activeCollectionFilter = 'object_map';
+      setObjectMapActiveMap(preferredMap || objectMapActiveMapKey);
       setActiveFolderFilter('', false);
       updateTypesExplorerPanelVisibility();
       updateObjectMapPanelVisibility();
       updatePresetsGuideNotice();
       renderFolderTree();
-      objectMapExactSearchQuery = normalizedName;
-      objectMapSearchMode = normalizedName ? 'exact_object' : '';
       table.columns().search('');
       if (normalizedName) {
         table.search(normalizedName).draw();
@@ -10011,9 +10052,9 @@
 
     if (objectFocusClearEl) {
       objectFocusClearEl.addEventListener('click', function() {
-        table.column(2).search('').draw();
-        hideFocusDetails();
-        history.replaceState({}, '', buildObjectUrl('', ''));
+        if (typeof runResetView === 'function') {
+          runResetView();
+        }
       });
     }
 
@@ -10607,7 +10648,7 @@
           : null;
         if (!actionRow || !actionName) return;
         if (actionName === 'link') {
-          navigator.clipboard.writeText(buildObjectUrl(getObjectId(actionRow), getObjectName(actionRow)));
+          navigator.clipboard.writeText(buildObjectMapObjectUrl(getObjectName(actionRow), objectMapActiveMapKey));
           return;
         }
         if (actionName === 'name') {
@@ -10697,6 +10738,10 @@
       var key = String(value || '').trim().toLowerCase();
       return (key === 'usage' || key === 'value') ? key : '';
     };
+    var normalizeObjectMapParam = function(value) {
+      var key = String(value || '').trim().toLowerCase();
+      return (key === 'chernarus' || key === 'livonia' || key === 'sakhal') ? key : '';
+    };
     var objectIdParams = searchParams.getAll('id').map(function(value) {
       return normalizeObjectId(value);
     }).filter(Boolean);
@@ -10706,6 +10751,7 @@
     var objectParam = searchParams.get('object');
     var searchQueryParam = String(searchParams.get('q') || '').trim();
     var versionParam = normalizeVersionParam(searchParams.get('version'));
+    var objectMapWorldParam = normalizeObjectMapParam(searchParams.get('world'));
     var typesMapParam = normalizeTypesMapParam(searchParams.get('types_map'));
     var typesKindParam = normalizeTypesKindParam(searchParams.get('types_kind'));
     var typesTagParam = String(searchParams.get('types_tag') || '').trim();
@@ -10898,7 +10944,7 @@
           openObjectInObjectMapView(
             objectIdParams[0],
             getObjectName(singleMatch) || '',
-            'chernarus'
+            objectMapWorldParam || 'chernarus'
           );
         }
       } else if (objectIdParams.length > 1) {
@@ -10911,17 +10957,22 @@
       } else if (objectParam) {
         treatIdListAsSearchFolders = false;
         highlightedFolderPath = '';
-        var legacyAsId = normalizeObjectId(objectParam);
-        if (legacyAsId) {
-          focusById(legacyAsId);
+        if (mapsAppParam) {
+          openObjectInObjectMapView('', objectParam, objectMapWorldParam || 'chernarus');
         } else {
-          focusByName(objectParam);
+          var legacyAsId = normalizeObjectId(objectParam);
+          if (legacyAsId) {
+            focusById(legacyAsId);
+          } else {
+            focusByName(objectParam);
+          }
         }
       } else {
         treatIdListAsSearchFolders = false;
         highlightedFolderPath = '';
         if (mapsAppParam) {
           activeCollectionFilter = 'object_map';
+          setObjectMapActiveMap(objectMapWorldParam || 'chernarus');
           setActiveFolderFilter('', false);
           updateObjectMapPanelVisibility();
         } else if (presetsAppParam) {
@@ -11226,7 +11277,12 @@
           objectMapExactSearchQuery = '';
           objectMapSearchMode = '';
           var query = String(folderSidebarSearchEl.value || '');
-          if (!query.trim() && (activeFolderFilter || activeCollectionFilter)) {
+          var queryTrimmed = query.trim();
+          if (!queryTrimmed && typeof runResetView === 'function') {
+            runResetView();
+            return;
+          }
+          if (!queryTrimmed && (activeFolderFilter || activeCollectionFilter)) {
             var keepAppCollection = activeCollectionFilter === 'presets' || activeCollectionFilter === 'types_explorer' || activeCollectionFilter === 'object_map';
             if (!keepAppCollection) {
               activeCollectionFilter = '';
@@ -11271,8 +11327,12 @@
       folderSidebarSearchClearEl.addEventListener('click', function(e) {
         e.preventDefault();
         folderSidebarSearchEl.value = '';
-        if (table) {
-          table.search('').draw();
+        if (typeof runResetView === 'function') {
+          runResetView();
+        } else if (table) {
+          table.search('');
+          table.columns().search('');
+          table.draw();
         }
         updateSearchShareLinkVisibility();
         folderSidebarSearchEl.focus();
@@ -12191,10 +12251,7 @@
       var $action = $(this);
       var action = $action.data('action');
       var $detail = $action.closest('.row-detail');
-      var objName = $detail.data('object');
       var $row = $detail.closest('tr').prev();
-      var $cell = $row.find('.object-name-cell');
-      if (!$cell.length || !objName) return;
 
       if (action === 'close') {
         if (table) {
@@ -12204,8 +12261,14 @@
             $row.removeClass('parent');
           }
         }
+        if (typeof runResetView === 'function') {
+          runResetView();
+        }
         return;
       }
+      var objName = $detail.data('object');
+      var $cell = $row.find('.object-name-cell');
+      if (!$cell.length || !objName) return;
 
       if (action === 'pin') {
         var item = buildPinnedItemFromCell($cell);

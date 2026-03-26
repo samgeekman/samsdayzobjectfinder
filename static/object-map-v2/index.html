@@ -1112,6 +1112,27 @@
           }
         }
       });
+      if (searchMode === "exact_object" && searchQuery) {
+        let nextPinnedPlacement = null;
+        for (const placement of startupLandPlacements) {
+          if (searchLandModelIds.has(placement[P.modelId])) {
+            nextPinnedPlacement = placement;
+            break;
+          }
+        }
+        if (!nextPinnedPlacement) {
+          for (const placement of loadedPlacements) {
+            if (searchModelIds.has(placement[P.modelId])) {
+              nextPinnedPlacement = placement;
+              break;
+            }
+          }
+        }
+        if (nextPinnedPlacement) {
+          pinnedPlacement = nextPinnedPlacement;
+          hoverPlacement = nextPinnedPlacement;
+        }
+      }
       fitViewToSearchMatches();
       scheduleRender();
     }
@@ -1132,6 +1153,31 @@
 
     function activePlacement() {
       return pinnedPlacement || hoverPlacement;
+    }
+
+    function activeCardModelInfo() {
+      const placement = activePlacement();
+      if (placement) {
+        return {
+          placement,
+          model: getPlacementModel(placement)
+        };
+      }
+      if (searchMode === "exact_object" && searchQuery) {
+        for (const modelId of searchModelIds) {
+          const model = getModel(modelId);
+          if (model) {
+            return { placement: null, model };
+          }
+        }
+        for (const modelId of searchLandModelIds) {
+          const model = getLandModel(modelId);
+          if (model) {
+            return { placement: null, model };
+          }
+        }
+      }
+      return { placement: null, model: null };
     }
 
     function setHoverThumb(src) {
@@ -1157,11 +1203,13 @@
     }
 
     function updateHoverCard() {
-      const placement = activePlacement();
-      hoverCardEl.classList.toggle("is-clickable", !!placement);
-      hoverNameEl.disabled = !placement;
-      hoverMetaEl.disabled = !placement;
-      if (!placement) {
+      const info = activeCardModelInfo();
+      const placement = info.placement;
+      const model = info.model;
+      hoverCardEl.classList.toggle("is-clickable", !!model);
+      hoverNameEl.disabled = !model;
+      hoverMetaEl.disabled = !model;
+      if (!model) {
         hoverNameEl.textContent = "Hover an object";
         hoverNameEl.classList.remove("is-active");
         hoverMetaEl.textContent = "Search 0 on map";
@@ -1169,7 +1217,6 @@
         setHoverThumb("");
         return;
       }
-      const model = getPlacementModel(placement);
       const name = model?.[M.label] || model?.[M.type] || model?.[M.shapePath] || "unknown";
       const count = model?.[M.count];
       const countLabel = typeof count === "number" ? count.toLocaleString() : "0";
@@ -1247,9 +1294,9 @@
     }
 
     function focusHoveredObjectInParent() {
-      const placement = activePlacement();
-      if (!placement) return;
-      const model = getPlacementModel(placement);
+      const info = activeCardModelInfo();
+      const model = info.model;
+      if (!model) return;
       const objectName = model?.[M.type] || model?.[M.label] || model?.[M.shapePath] || "";
       const shapePath = model?.[M.shapePath] || "";
       if (!objectName) return;
@@ -1263,9 +1310,9 @@
     }
 
     function postActiveObjectAction(action) {
-      const placement = activePlacement();
-      if (!placement) return;
-      const model = getPlacementModel(placement);
+      const info = activeCardModelInfo();
+      const model = info.model;
+      if (!model) return;
       const objectName = model?.[M.type] || model?.[M.label] || model?.[M.shapePath] || "";
       const shapePath = model?.[M.shapePath] || "";
       if (!objectName) return;
@@ -1291,11 +1338,15 @@
     }
 
     function filterHoveredObjectInParent() {
-      const placement = activePlacement();
-      if (!placement) return;
-      const model = getPlacementModel(placement);
+      const info = activeCardModelInfo();
+      const placement = info.placement;
+      const model = info.model;
+      if (!model) return;
       const objectName = model?.[M.type] || model?.[M.label] || model?.[M.shapePath] || "";
       if (objectName) {
+        if (placement) {
+          pinnedPlacement = placement;
+        }
         refreshSearchMatches([], objectName, "", "exact_object");
       }
       if (window.parent && window.parent !== window) {
@@ -1307,9 +1358,9 @@
     }
 
     function isActivePlacementFiltered() {
-      const placement = activePlacement();
-      if (!placement || !searchQuery) return false;
-      const model = getPlacementModel(placement);
+      const info = activeCardModelInfo();
+      const model = info.model;
+      if (!model || !searchQuery) return false;
       const objectName = normalizeSearchKey(model?.[M.type] || model?.[M.label] || model?.[M.shapePath] || "");
       return !!objectName && objectName === normalizeSearchKey(searchQuery);
     }
@@ -2234,7 +2285,16 @@
     });
 
     window.addEventListener("message", (event) => {
-      if (event.origin !== window.location.origin || !event.data || event.data.type !== "object-map-search-state") return;
+      if (event.origin !== window.location.origin || !event.data || !event.data.type) return;
+      if (event.data.type === "object-map-clear-selection") {
+        pinnedPlacement = null;
+        hoverPlacement = null;
+        hoverReadout.textContent = "none";
+        statusReadout.textContent = "";
+        refreshSearchMatches([], "", "", "");
+        return;
+      }
+      if (event.data.type !== "object-map-search-state") return;
       refreshSearchMatches(event.data.rows || [], event.data.query || "", event.data.pathFilter || "", event.data.mode || "");
     });
 
