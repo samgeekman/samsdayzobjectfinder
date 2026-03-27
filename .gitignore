@@ -7,6 +7,9 @@
 .DS_Store
 Thumbs.db
 *.log
+node_modules/
+test-results/
+playwright-report/
 static/**/*.icon
 static/**/Icon
 static/images/Icon\?
