@@ -65,7 +65,7 @@
     .viewer {
       position: relative;
       overflow: hidden;
-      background: #596050;
+      background: #353533;
       cursor: grab;
     }
     .viewer.dragging { cursor: grabbing; }
@@ -221,7 +221,7 @@
       pointer-events: auto;
     }
     .map-panel {
-      border: 1px solid var(--site-panel-border);
+      
       border-radius: 3px;
       background: var(--site-panel-bg);
       color: var(--site-panel-text);
@@ -244,10 +244,10 @@
       min-height: 28px;
       height: 28px;
       padding: 4px 8px;
-      border: 1px solid transparent !important;
+      border: 1px solid var(--icon-outline) !important;
       border-radius: var(--site-button-radius, 3px) !important;
       background: var(--site-button-bg, var(--site-card, #ffffff)) !important;
-      color: var(--site-button-text) !important;
+      color: var(--icon-fg) !important;
       font: inherit;
       font-weight: 600;
       font-size: 0.7rem;
@@ -258,14 +258,86 @@
       white-space: nowrap;
       transition: transform 0.12s ease, box-shadow 0.18s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
     }
+    :root {
+      --icon-outline: #BBC0C8;
+      --icon-fg: #10121A;
+      --icon-hover-outline: #EDB125;
+      --icon-hover-fg: #0033ff;
+    }
+    :root.dark-mode {
+      --icon-outline: #E4EDF7;
+      --icon-fg: #E4EDF7;
+      --icon-hover-outline: #EDB125;
+      --icon-hover-fg: #10121A;
+    }
+    .ui-icon {
+      width: 1.15em;
+      height: 1.15em;
+      display: inline-block;
+      vertical-align: middle;
+      background-color: currentColor;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      flex: 0 0 auto;
+    }
+    .ui-icon--link {
+      -webkit-mask-image: url('/icons/copy-link.svg');
+      mask-image: url('/icons/copy-link.svg');
+    }
+    .ui-icon--pin {
+      -webkit-mask-image: url('/icons/pin.svg');
+      mask-image: url('/icons/pin.svg');
+    }
+    .ui-icon--copy-name {
+      -webkit-mask-image: url('/icons/copy-name.svg');
+      mask-image: url('/icons/copy-name.svg');
+    }
+    .ui-icon--editor {
+      -webkit-mask-image: url('/icons/copy-editor.svg');
+      mask-image: url('/icons/copy-editor.svg');
+    }
+    .icon-action {
+      color: var(--icon-fg) !important;
+      border-color: var(--icon-outline) !important;
+    }
+    .icon-action:not(.icon-action-label) {
+      padding: 0 !important;
+      min-width: 28px;
+      width: 28px;
+      height: 28px;
+    }
+    .icon-action:hover:not(:disabled),
+    .icon-action:focus-visible:not(:disabled),
+    .hover-card__thumb-action.icon-action:hover,
+    .hover-card__thumb-action.icon-action:focus-visible,
+    .hover-card__thumb-action.icon-action.is-active {
+      background-color: var(--icon-hover-outline) !important;
+      border-color: var(--icon-hover-outline) !important;
+      color: var(--icon-hover-fg) !important;
+    }
+    .icon-action-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
     .map-btn:hover:not(:disabled),
     .map-btn:focus-visible:not(:disabled) {
       transform: translateY(-1px);
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06) !important;
-      background-color: var(--site-button-hover-bg) !important;
-      border-color: var(--site-button-hover-border) !important;
-      color: var(--site-button-hover-text) !important;
+      background-color: var(--icon-hover-outline) !important;
+      border-color: var(--icon-hover-outline) !important;
+      color: var(--icon-hover-fg) !important;
       outline: none;
+    }
+    .map-btn.icon-action:hover:not(:disabled),
+    .map-btn.icon-action:focus-visible:not(:disabled) {
+      background-color: var(--icon-hover-outline) !important;
+      border-color: var(--icon-hover-outline) !important;
+      color: var(--icon-hover-fg) !important;
     }
     .map-btn:disabled {
       opacity: 0.45;
@@ -273,9 +345,9 @@
     }
     .map-btn.is-active,
     .map-btn.is-active:hover {
-      background-color: var(--site-button-hover-bg) !important;
-      border-color: var(--site-button-hover-border) !important;
-      color: var(--site-button-hover-text) !important;
+      background-color: var(--icon-hover-outline) !important;
+      border-color: var(--icon-hover-outline) !important;
+      color: var(--icon-hover-fg) !important;
     }
     .map-btn.is-hidden {
       display: none;
@@ -349,10 +421,10 @@
       min-height: 28px;
       height: 28px;
       padding: 4px 8px;
-      border: 1px solid transparent !important;
+      border: 1px solid var(--icon-outline) !important;
       border-radius: var(--site-button-radius, 3px) !important;
       background: var(--site-button-bg, var(--site-card, #ffffff)) !important;
-      color: var(--site-button-text) !important;
+      color: var(--icon-fg) !important;
       font: inherit;
       font-size: 0.7rem;
       font-weight: 600;
@@ -370,9 +442,9 @@
     .hover-card__meta-btn:focus-visible {
       transform: translateY(-1px);
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06) !important;
-      background-color: var(--site-button-hover-bg) !important;
-      border-color: var(--site-button-hover-border) !important;
-      color: var(--site-button-hover-text) !important;
+      background-color: var(--icon-hover-outline) !important;
+      border-color: var(--icon-hover-outline) !important;
+      color: var(--icon-hover-fg) !important;
       outline: none;
     }
     .hover-card__name-btn.is-active {
@@ -418,10 +490,10 @@
       min-width: 30px;
       min-height: 24px;
       padding: 3px 6px;
-      border: 1px solid var(--site-divider, rgba(0, 0, 0, 0.12)) !important;
+      border: 1px solid var(--icon-outline) !important;
       border-radius: 3px !important;
-      background: var(--site-card, #ffffff) !important;
-      color: var(--site-text, #132028) !important;
+      background: var(--site-button-bg, var(--site-card, #ffffff)) !important;
+      color: var(--icon-fg) !important;
       font: inherit;
       font-size: 0.7rem;
       font-weight: 600;
@@ -434,15 +506,15 @@
     .hover-card__thumb-action:focus-visible {
       transform: translateY(-1px);
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06) !important;
-      background-color: var(--site-accent, #ffd54f) !important;
-      border-color: var(--site-accent, #ffd54f) !important;
-      color: #1f1f1f !important;
+      background-color: var(--icon-hover-outline) !important;
+      border-color: var(--icon-hover-outline) !important;
+      color: var(--icon-hover-fg) !important;
       outline: none;
     }
     .hover-card__thumb-action.is-active {
-      background-color: var(--site-accent, #ffd54f) !important;
-      border-color: var(--site-accent, #ffd54f) !important;
-      color: #1f1f1f !important;
+      background-color: var(--icon-hover-outline) !important;
+      border-color: var(--icon-hover-outline) !important;
+      color: var(--icon-hover-fg) !important;
     }
     .hover-card__thumb.is-empty::before {
       content: "";
@@ -469,12 +541,16 @@
     }
     @media (max-width: 900px) {
       .map-topbar {
-        flex-direction: column;
-        align-items: stretch;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
       }
       .hover-card {
-        min-width: 0;
-        max-width: none;
+        min-width: 260px;
+        max-width: min(342px, calc(100vw - 28px));
+        width: auto;
+        margin-left: auto;
+        flex: 0 1 auto;
       }
     }
   </style>
@@ -484,7 +560,7 @@
   <div class="shell">
     <aside class="sidebar">
       <h1>Object Map V2</h1>
-      <p>Object Map V2 is area-select first. Land_ objects preload for context, mixed Land_ + p3d objects load on demand for the selected area, and export uses the Editor-safe placement format.</p>
+      <p></p>
       <div class="stat"><strong>Core tiles:</strong> <span id="tile-count">loading</span></div>
       <div class="stat"><strong>Pack rows:</strong> <span id="pack-count">loading</span></div>
       <div class="stat"><strong>Unique models:</strong> <span id="model-count">loading</span></div>
@@ -520,7 +596,7 @@
       <div class="map-topbar">
         <div class="map-panel map-actions">
           <button class="map-btn" id="area-mode-btn" type="button">Select area</button>
-          <button class="map-btn is-hidden" id="copy-area-btn" type="button">🏗️ Copy to Editor</button>
+          <button class="map-btn is-hidden icon-action icon-action-label" id="copy-area-btn" type="button"><span class="ui-icon ui-icon--editor" aria-hidden="true"></span><span>Copy to Editor</span></button>
           <button class="map-btn is-hidden" id="download-area-btn" type="button">Download JSON</button>
           <button class="map-btn is-hidden" id="export-locations-btn" type="button">Export locations</button>
         </div>
@@ -528,15 +604,15 @@
           <div class="hover-card__top">
             <div>
               <div class="hover-card__eyebrow">Hovered Object</div>
-              <div class="hover-card__name"><button class="hover-card__name-btn" id="hover-name" type="button" disabled>Hover an object</button></div>
+              <div class="hover-card__name"><button class="hover-card__name-btn" id="hover-name" type="button" disabled>Hover over an object</button></div>
               <div class="hover-card__status" id="status-readout"></div>
             </div>
             <div class="hover-card__thumb is-empty" id="hover-thumb">
               <div class="hover-card__thumb-actions is-hidden" id="hover-thumb-actions">
-                <button class="hover-card__thumb-action" id="hover-thumb-link" type="button" title="Copy link" aria-label="Copy link">🔗</button>
-                <button class="hover-card__thumb-action" id="hover-thumb-pin" type="button" title="Pin object" aria-label="Pin object">📌</button>
-                <button class="hover-card__thumb-action" id="hover-thumb-name" type="button" title="Copy name" aria-label="Copy name">📋</button>
-                <button class="hover-card__thumb-action" id="hover-thumb-editor" type="button" title="Copy to Editor" aria-label="Copy to Editor">🏗️</button>
+                <button class="hover-card__thumb-action icon-action" id="hover-thumb-link" type="button" title="Copy link" aria-label="Copy link"><span class="ui-icon ui-icon--link" aria-hidden="true"></span></button>
+                <button class="hover-card__thumb-action icon-action" id="hover-thumb-pin" type="button" title="Pin object" aria-label="Pin object"><span class="ui-icon ui-icon--pin" aria-hidden="true"></span></button>
+                <button class="hover-card__thumb-action icon-action" id="hover-thumb-name" type="button" title="Copy name" aria-label="Copy name"><span class="ui-icon ui-icon--copy-name" aria-hidden="true"></span></button>
+                <button class="hover-card__thumb-action icon-action" id="hover-thumb-editor" type="button" title="Copy to Editor" aria-label="Copy to Editor"><span class="ui-icon ui-icon--editor" aria-hidden="true"></span></button>
               </div>
               <img id="hover-thumb-img" alt="" hidden>
             </div>
@@ -752,6 +828,8 @@
     const LOADED_FOOTPRINT_SCALE = 0.12;
     const AREA_LOADED_FOOTPRINT_SCALE = 0.82;
     const LOADED_TRANSITION_WIDTH = 0.08;
+    const LOADED_P3D_FADE_DELAY = 0.03;
+    const LOADED_P3D_FADE_WIDTH = 0.20;
     const MIN_SCALE = STARTUP_POINT_SCALE;
     const MAX_SCALE = 8;
     const WHEEL_ZOOM_SENSITIVITY = 0.0012;
@@ -1106,6 +1184,27 @@
           }
         }
       });
+      if (searchMode === "exact_object" && searchQuery) {
+        let nextPinnedPlacement = null;
+        for (const placement of startupLandPlacements) {
+          if (searchLandModelIds.has(placement[P.modelId])) {
+            nextPinnedPlacement = placement;
+            break;
+          }
+        }
+        if (!nextPinnedPlacement) {
+          for (const placement of loadedPlacements) {
+            if (searchModelIds.has(placement[P.modelId])) {
+              nextPinnedPlacement = placement;
+              break;
+            }
+          }
+        }
+        if (nextPinnedPlacement) {
+          pinnedPlacement = nextPinnedPlacement;
+          hoverPlacement = nextPinnedPlacement;
+        }
+      }
       fitViewToSearchMatches();
       scheduleRender();
     }
@@ -1359,6 +1458,31 @@
       return true;
     }
 
+    function activeCardModelInfo() {
+      const placement = activePlacement();
+      if (placement) {
+        return {
+          placement,
+          model: getPlacementModel(placement)
+        };
+      }
+      if (searchMode === "exact_object" && searchQuery) {
+        for (const modelId of searchModelIds) {
+          const model = getModel(modelId);
+          if (model) {
+            return { placement: null, model };
+          }
+        }
+        for (const modelId of searchLandModelIds) {
+          const model = getLandModel(modelId);
+          if (model) {
+            return { placement: null, model };
+          }
+        }
+      }
+      return { placement: null, model: null };
+    }
+
     function setHoverThumb(src) {
       if (!src) {
         hoverThumbEl.classList.add("is-empty");
@@ -1382,19 +1506,20 @@
     }
 
     function updateHoverCard() {
-      const placement = activePlacement();
-      hoverCardEl.classList.toggle("is-clickable", !!placement);
-      hoverNameEl.disabled = !placement;
-      hoverMetaEl.disabled = !placement;
-      if (!placement) {
-        hoverNameEl.textContent = "Hover an object";
+      const info = activeCardModelInfo();
+      const placement = info.placement;
+      const model = info.model;
+      hoverCardEl.classList.toggle("is-clickable", !!model);
+      hoverNameEl.disabled = !model;
+      hoverMetaEl.disabled = !model;
+      if (!model) {
+        hoverNameEl.textContent = "Hover over an object";
         hoverNameEl.classList.remove("is-active");
         hoverMetaEl.textContent = "Search 0 on map";
         hoverCardEl.classList.remove("is-clickable");
         setHoverThumb("");
         return;
       }
-      const model = getPlacementModel(placement);
       const name = model?.[M.label] || model?.[M.type] || model?.[M.shapePath] || "unknown";
       const count = model?.[M.count];
       const countLabel = typeof count === "number" ? count.toLocaleString() : "0";
@@ -1472,9 +1597,9 @@
     }
 
     function focusHoveredObjectInParent() {
-      const placement = activePlacement();
-      if (!placement) return;
-      const model = getPlacementModel(placement);
+      const info = activeCardModelInfo();
+      const model = info.model;
+      if (!model) return;
       const objectName = model?.[M.type] || model?.[M.label] || model?.[M.shapePath] || "";
       const shapePath = model?.[M.shapePath] || "";
       if (!objectName) return;
@@ -1488,9 +1613,9 @@
     }
 
     function postActiveObjectAction(action) {
-      const placement = activePlacement();
-      if (!placement) return;
-      const model = getPlacementModel(placement);
+      const info = activeCardModelInfo();
+      const model = info.model;
+      if (!model) return;
       const objectName = model?.[M.type] || model?.[M.label] || model?.[M.shapePath] || "";
       const shapePath = model?.[M.shapePath] || "";
       if (!objectName) return;
@@ -1506,21 +1631,25 @@
 
     function flashThumbAction(button) {
       if (!button) return;
-      const originalText = button.textContent;
+      const originalHtml = button.innerHTML;
       button.textContent = "✔";
       button.classList.add("is-active");
       window.setTimeout(() => {
-        button.textContent = originalText;
+        button.innerHTML = originalHtml;
         button.classList.remove("is-active");
       }, 900);
     }
 
     function filterHoveredObjectInParent() {
-      const placement = activePlacement();
-      if (!placement) return;
-      const model = getPlacementModel(placement);
+      const info = activeCardModelInfo();
+      const placement = info.placement;
+      const model = info.model;
+      if (!model) return;
       const objectName = model?.[M.type] || model?.[M.label] || model?.[M.shapePath] || "";
       if (objectName) {
+        if (placement) {
+          pinnedPlacement = placement;
+        }
         refreshSearchMatches([], objectName, "", "exact_object");
       }
       if (window.parent && window.parent !== window) {
@@ -1532,9 +1661,9 @@
     }
 
     function isActivePlacementFiltered() {
-      const placement = activePlacement();
-      if (!placement || !searchQuery) return false;
-      const model = getPlacementModel(placement);
+      const info = activeCardModelInfo();
+      const model = info.model;
+      if (!model || !searchQuery) return false;
       const objectName = normalizeSearchKey(model?.[M.type] || model?.[M.label] || model?.[M.shapePath] || "");
       return !!objectName && objectName === normalizeSearchKey(searchQuery);
     }
@@ -1836,16 +1965,23 @@
       if (isLandType(model)) return null;
       if (worldKey !== "sakhal") {
         return {
-          fill: `rgba(255,255,255,${Math.max(0.52, fillAlpha * 4.8).toFixed(3)})`,
-          stroke: `rgba(255,255,255,${Math.max(0.92, strokeAlpha).toFixed(3)})`,
-          point: "rgba(255,255,255,0.98)"
+          fill: `rgba(255,255,255,${Math.min(0.96, fillAlpha * 4.8).toFixed(3)})`,
+          stroke: `rgba(255,255,255,${Math.min(0.98, strokeAlpha).toFixed(3)})`,
+          point: `rgba(255,255,255,${Math.min(0.98, Math.max(0.02, strokeAlpha)).toFixed(3)})`
         };
       }
       return {
-        fill: `rgba(214,58,58,${Math.max(0.24, fillAlpha * 2.8).toFixed(3)})`,
-        stroke: `rgba(232,88,88,${Math.max(0.82, strokeAlpha).toFixed(3)})`,
-        point: `rgba(232,88,88,0.96)`
+        fill: `rgba(214,58,58,${Math.min(0.88, fillAlpha * 2.8).toFixed(3)})`,
+        stroke: `rgba(232,88,88,${Math.min(0.96, strokeAlpha).toFixed(3)})`,
+        point: `rgba(232,88,88,${Math.min(0.96, Math.max(0.02, strokeAlpha)).toFixed(3)})`
       };
+    }
+
+    function p3dPointFill(alpha) {
+      if (worldKey === "sakhal") {
+        return `rgba(232,88,88,${alpha.toFixed(3)})`;
+      }
+      return `rgba(255,255,255,${alpha.toFixed(3)})`;
     }
 
     function zoomedOutPointFill(alpha) {
@@ -2038,15 +2174,29 @@
       if (showFootprints.checked && scale >= loadedFootprintScale) {
         const loadedFillAlpha = zoomFade(scale, loadedFootprintScale, 0.35, 0.008, 0.1);
         const loadedStrokeAlpha = zoomFade(scale, loadedFootprintScale, 0.35, 0.12, 0.94);
+        const p3dFadeLow = loadedFootprintScale + LOADED_P3D_FADE_DELAY;
+        const p3dFadeHigh = p3dFadeLow + LOADED_P3D_FADE_WIDTH;
+        const showP3dBounds = scale >= p3dFadeLow;
+        const p3dFillAlpha = showP3dBounds
+          ? zoomFade(scale, p3dFadeLow, p3dFadeHigh, 0.008, 0.1)
+          : 0;
+        const p3dStrokeAlpha = showP3dBounds
+          ? zoomFade(scale, p3dFadeLow, p3dFadeHigh, 0.12, 0.94)
+          : 0;
+        const p3dPointAlpha = scale < p3dFadeLow
+          ? 0.9
+          : zoomFade(scale, p3dFadeLow, p3dFadeHigh, 0.9, 0);
         for (const placement of visibleLoaded) {
           const model = models[placement[P.modelId]] || null;
           const points = objectFootprint(placement, models);
-          const p3dStyle = loadedP3dStyle(model, loadedFillAlpha, loadedStrokeAlpha);
+          const p3dStyle = showP3dBounds
+            ? loadedP3dStyle(model, p3dFillAlpha, p3dStrokeAlpha)
+            : null;
           if (!points) {
-            if (p3dStyle) {
+            if (p3dPointAlpha > 0.01) {
               overlayCtx.beginPath();
               overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(2.6, Math.min(4.8, scale * 5.6)), 0, Math.PI * 2);
-              overlayCtx.fillStyle = p3dStyle.point;
+              overlayCtx.fillStyle = p3dPointFill(p3dPointAlpha);
               overlayCtx.fill();
             }
             continue;
@@ -2070,10 +2220,10 @@
           overlayCtx.lineWidth = scale > 0.35 ? 1.2 : 1;
           overlayCtx.fill();
           overlayCtx.stroke();
-          if (p3dStyle) {
+          if (p3dPointAlpha > 0.01) {
             overlayCtx.beginPath();
             overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(1.8, Math.min(3.2, scale * 4.2)), 0, Math.PI * 2);
-            overlayCtx.fillStyle = p3dStyle.point;
+            overlayCtx.fillStyle = p3dPointFill(p3dPointAlpha);
             overlayCtx.fill();
           }
         }
@@ -2751,7 +2901,16 @@
     });
 
     window.addEventListener("message", (event) => {
-      if (event.origin !== window.location.origin || !event.data || event.data.type !== "object-map-search-state") return;
+      if (event.origin !== window.location.origin || !event.data || !event.data.type) return;
+      if (event.data.type === "object-map-clear-selection") {
+        pinnedPlacement = null;
+        hoverPlacement = null;
+        hoverReadout.textContent = "none";
+        statusReadout.textContent = "";
+        refreshSearchMatches([], "", "", "");
+        return;
+      }
+      if (event.data.type !== "object-map-search-state") return;
       refreshSearchMatches(event.data.rows || [], event.data.query || "", event.data.pathFilter || "", event.data.mode || "");
     });
 

@@ -4,26 +4,33 @@ type: "page"
 draft: false
 ---
 
-## How to use
+**Sam’s DayZ Object Finder is a searchable, exportable database of every object in the game for map makers and modders.**
 
-Every DayZ object searchable by class name, in-game name and tags. Useful for DayZ Editor, Terrain Builder, and those who want to explore DayZ’s 12,000+ objects for thier modding projects.
+The site is lightweight and fast with more than 11,000 objects listed - (most) complete with images and search tags - e.g. `large industrial` or `green bag`.
 
-- Press 🏗️ to copy the object to DayZ Editor - just switch to the Editor and press Ctrl + V to paste on your cursor
-- Press 📋 to copy the object name to your clipboard
-- Press 📌 to save pin an object to the sidebar. From there you can copy a link to it or download its data and images. You can pin entire paths and copy them as a grid into Editor.
+As well as the database, you can copy and paste objects directly to DayZ Editor. Click the Copy to Editor button to copy the object to your clipboard and ctrl+v into Editor instantly.
 
-Developed by samgeekman.
+The site also includes:
+
+- [Object Maps](https://samsobjectfinder.com/?maps=1) shows the location of every object on Chernarus, Livonia, or Sakhal - and with `Select Area` you can copy objects exactly as they are on the map to use in Editor or export.
+- [Types Explorer](https://samsobjectfinder.com/?types=1) lets you check the vanilla types.xml to see what loots spawn where.
+- [Editor Builds](https://samsobjectfinder.com/?presets=1) has many quick presets and free-to-use designs from attributed builders. 
+
+This tool is entirely free and always will be. Developed by samgeekman.
 
 ## Using the data
 
-All the data is available for anyone to use for their own project.
+The data, images and anything else on this site are available for you to use in your own projects.
 
-- There is a light static API - [see here](/api). Will be developed further.
-- You can export the current table view as .csv, .xlsx, or .json using the Export data menu.
-- By pinning 📌 an object, you can export its data and images as a zip file. You can also hover over entire paths [e.g. dz/characters/backpacks]([e.g.dz/characters/headgear](https://samsobjectfinder.com/?id=dzobj_j9fwf07b01&id=dzobj_2mjqjd3kz3&id=dzobj_j3y46uv28i&id=dzobj_qu8ylxwvgy&id=dzobj_lxi8jehrkr&id=dzobj_8iv4d9fcyc&id=dzobj_i0l7ebg9ez&id=dzobj_028r735qqp&id=dzobj_4bmoljg8vo&id=dzobj_iaftbedhzs&id=dzobj_sj64tw9w0p&id=dzobj_ke5ysx5c4u&id=dzobj_i8arr5g29p&id=dzobj_c50vijr1cp&id=dzobj_2zm6oxxyra&id=dzobj_0qa22jft6k&id=dzobj_a667vrcvy3&id=dzobj_al7263h0aw) to pin and export the entire path’s data.
+- There is a light static API - [see here](/api).
+- All of the images are available [here](https://drive.google.com/drive/folders/1FuV6C72ttaoeP-BrIykkYYIczisFyVkL?usp=share_link).
+- You can export the current table view as .csv, .xlsx, .json using the Export data menu.
+- Download the vanilla types.xml and mapgroupproto.xml entries for each object.
+- By pinning an object, you can export its data and images as a zip file. You can also pin entire paths [e.g. dz/characters/backpacks](https://samsobjectfinder.com/?path=dz%2Fcharacters%2Fbackpacks) 
 - The repo is available on [github](https://github.com/samgeekman/samsdayzobjectfinder)
 - The latest objects.json export structure is available [here](/dayz_objects_latest.zip).
-- The images database (not yet complete) is available [here](https://drive.google.com/drive/folders/1Hg82OAu-Br5VPSF4NxGvifG_IeF6Iw-u?usp=share_link).
+
+Sam's DayZ Object Finder is not affiliated or authorized by Bohemia Interactive. The DayZ trademark and all associated images and other content are the property of Bohemia Interactive, a.s.
 
 If you need anything else, or notice an error, contact me on [Discord](https://discord.com/channels/1414751279548203008/1414754388064604220)
 

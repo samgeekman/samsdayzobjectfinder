@@ -1,27 +1,5 @@
 [
   {
-    "objectName": "Buoyancy",
-    "inGameName": "Rubber Boat",
-    "category": "vehicles",
-    "modelType": "Config",
-    "path": "dz/vehicles/water/boat_01",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/vehicles/water/boat_01/buoyancy.jpg",
-    "id": "dzobj_eu4217j8as"
-  },
-  {
-    "objectName": "Boat_01_Black",
-    "inGameName": "Rubber Boat",
-    "category": "vehicles",
-    "modelType": "Config",
-    "path": "dz/vehicles/water/boat_01",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/vehicles/water/boat_01/boat_01_black/boat_01_black.jpg",
-    "id": "dzobj_mrx0dbemc8"
-  },
-  {
     "objectName": "Boat_01_Blue",
     "inGameName": "Rubber Boat",
     "category": "vehicles",
@@ -55,6 +33,17 @@
     "id": "dzobj_lak9bsehfr"
   },
   {
+    "objectName": "Boat_01_Black",
+    "inGameName": "Rubber Boat",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "images/vehicles/water/boat_01/boat_01_black/boat_01_black.jpg",
+    "usableOnConsole": true,
+    "searchTags": "",
+    "image": "images/placeholder.jpeg",
+    "id": "dzobj_11042kenxb"
+  },
+  {
     "objectName": "boat_01.p3d",
     "inGameName": "Rubber Boat",
     "category": "vehicles",
@@ -62,7 +51,7 @@
     "path": "dz/vehicles/water/boat_01",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/vehicles/water/boat_01/boat_01.p3d.jpg",
+    "image": "images/vehicles/water/boat_01/boat_01/boat_01.jpg",
     "id": "dzobj_vuy9f576gi"
   }
 ]

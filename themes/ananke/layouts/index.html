@@ -4,7 +4,6 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
   <style>
     
-    #dayzObjects,
     #dayzObjects_wrapper {
       visibility: hidden;
     }
@@ -31,13 +30,51 @@
     --ui-button-radius: 3px;
     --page-edge-gutter: 0.75%;
     --page-content-width: 98.5%;
+    --sidebar-app-row-vpad: 1px;
+    /* hover action grid */
+    --hover-action-size: 20px;
+    --hover-action-gap: 2px;
+    --hover-action-grid-width: calc((var(--hover-action-size) * 2) + var(--hover-action-gap));
+    --hover-action-space: calc(var(--hover-action-grid-width) + 10px);
+    /* hover button colours */
+    --icon-outline: #BBC0C8;
+    --icon-fg: #10121A;
+    --icon-hover-outline: #EDB125;
+    --icon-hover-fg: #10121A;
+    /* added colour tokens */
+    --color-title-light: #10121a;
+    --color-chip-text: #f7f9fb;
+    --color-accent-hover: #EDA700;
+    --color-accent-hover-text: #1f1f1f;
+    --color-thumb-border: #374151;
+    --color-thumb-bg: #111827;
+    --color-chip-cfg: #0ea5a8;
+    --color-chip-p3d: #7a431b;
+    --color-chip-preset: #f23827;
+    --color-chip-types: #2F7DF6;
+    --color-chip-proto: #7c3aed;
+    --color-chip-console-yes: #3d8f49;
+    --color-chip-console-no: #b33b3b;
+    --color-version-notice-border: #e8cf6b;
+    --color-version-notice-bg: #fff8cc;
+    --color-version-notice-text: #5f4b00;
+    --color-version-notice-link: #7a5a00;
+    --color-version-notice-link-hover: #5a4300;
+    --color-nav-active-text: #111;
+  }
+  :root.dark-mode {
+    --icon-outline: #767878;
+    --icon-fg: #E4EDF7;
+    --icon-hover-outline: #EDB125;
+    --icon-hover-fg: #10121A;
+    --color-title-light: #ffffff;
   }
   html,
   body {
     max-width: 100%;
     overflow-x: hidden;
   }
-  .annoucenment-bar {
+  .announcement-bar {
     background-color: var(--card);
     color: var(--text);
     padding: 6px 8px;
@@ -45,7 +82,7 @@
     border: 1px solid var(--border);
     box-shadow: var(--shadow-soft);
   }
-  header nav.pv3.ph3.ph4-ns {
+  header nav.site-nav.ph3.ph4-ns {
     padding-left: var(--page-edge-gutter) !important;
     padding-right: var(--page-edge-gutter) !important;
   }
@@ -161,10 +198,10 @@
     max-width: 95%;
     margin: 8px auto;
     padding: 3px 7px;
-    border: 1px solid #e8cf6b;
+    border: 1px solid var(--color-version-notice-border);
     border-radius: 4px;
-    background: #fff8cc;
-    color: #5f4b00;
+    background: var(--color-version-notice-bg);
+    color: var(--color-version-notice-text);
     font-weight: 500;
     font-size: 0.78rem;
     line-height: 1.2;
@@ -174,13 +211,13 @@
     display: block;
   }
   .version-filter-notice a {
-    color: #7a5a00;
+    color: var(--color-version-notice-link);
     text-decoration: underline;
     margin-left: 4px;
     font-weight: 600;
   }
   .version-filter-notice a:hover {
-    color: #5a4300;
+    color: var(--color-version-notice-link-hover);
   }
   .version-filter-notice--guide {
     align-items: center;
@@ -236,6 +273,64 @@
   #filters label {
     font-weight: 600;
     color: var(--text);
+  }
+  .filters-app-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: var(--top-control-height);
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--color-title-light);
+    white-space: nowrap;
+    margin-right: 2px;
+  }
+  .filters-app-title[hidden] {
+    display: none !important;
+  }
+  .filters-app-title__icon {
+    width: 19px;
+    height: 19px;
+    flex: 0 0 19px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .filters-app-title__icon.is-logo {
+    width: 20px;
+    height: 20px;
+    flex-basis: 20px;
+    border-radius: 3px;
+    object-fit: cover;
+  }
+  .filters-app-title__text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .object-map-v2__app-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: var(--top-control-height);
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--color-title-light);
+    white-space: nowrap;
+    margin-right: 8px;
+  }
+  :root.dark-mode .filters-app-title,
+  :root.dark-mode .object-map-v2__app-title {
+    color: var(--color-title-light);
+  }
+  .object-map-v2__app-title-icon {
+    width: 19px;
+    height: 19px;
+    flex: 0 0 19px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
   }
   .filter-actions {
     margin-left: auto;
@@ -340,7 +435,8 @@
   }
   #folderSidebarClear,
   #objectFocusClear,
-  #exportToggle {
+  #exportToggle,
+  #updateToggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -417,13 +513,6 @@
     }
   }
 
-  
-  :root {
-    --hover-action-size: 20px;
-    --hover-action-gap: 2px;
-    --hover-action-grid-width: calc((var(--hover-action-size) * 2) + var(--hover-action-gap));
-    --hover-action-space: calc(var(--hover-action-grid-width) + 10px);
-  }
   #dayzObjects tbody .object-name-cell {
     position: relative;
     cursor: pointer;
@@ -503,8 +592,8 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 4px;
-    border: 1px solid #374151;
-    background: #111827;
+    border: 1px solid var(--color-thumb-border);
+    background: var(--color-thumb-bg);
     display: block;
     margin: 0 auto;
   }
@@ -517,7 +606,7 @@
     margin-right: 0;
     vertical-align: middle;
   }
-  #dayzObjects tbody .info-chip {
+  .info-chip {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -529,35 +618,18 @@
     font-weight: 600;
     line-height: 1.05;
     letter-spacing: 0.02em;
-    color: #f7f9fb;
+    color: var(--color-chip-text);
     border: 1px solid rgba(255, 255, 255, 0.22);
     text-transform: none;
     vertical-align: middle;
     white-space: nowrap;
-    cursor: pointer;
     user-select: none;
+  }
+  #dayzObjects tbody .info-chip {
+    cursor: pointer;
     opacity: 0.68;
     filter: saturate(0.78) brightness(0.9);
     transition: opacity 0.14s ease, filter 0.14s ease;
-  }
-  .chip-info-tooltip .info-chip {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 0;
-    height: clamp(11px, 0.95vw, 13px);
-    padding: 0 clamp(2px, 0.28vw, 4px);
-    border-radius: 3px;
-    font-size: clamp(6.6px, 0.33vw, 7.5px);
-    font-weight: 600;
-    line-height: 1.05;
-    letter-spacing: 0.02em;
-    color: #f7f9fb;
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    text-transform: none;
-    vertical-align: middle;
-    white-space: nowrap;
-    user-select: none;
   }
   #dayzObjects tbody tr:hover .info-chip,
   #dayzObjects tbody tr:focus-within .info-chip,
@@ -614,53 +686,37 @@
     font-weight: 600;
     line-height: 1.3;
   }
-  #dayzObjects tbody .info-chip--cfg {
-    background: #136fcb;
-  }
+  #dayzObjects tbody .info-chip--cfg,
   .chip-info-tooltip .info-chip--cfg {
-    background: #136fcb;
+    background: var(--color-chip-cfg);
   }
-  #dayzObjects tbody .info-chip--p3d {
-    background: #7a431b;
-  }
+  #dayzObjects tbody .info-chip--p3d,
   .chip-info-tooltip .info-chip--p3d {
-    background: #7a431b;
+    background: var(--color-chip-p3d);
   }
-  #dayzObjects tbody .info-chip--preset {
-    background: #EDA700;
-    color: #f7f9fb;
-    border-color: rgba(31, 41, 55, 0.35);
-  }
+  #dayzObjects tbody .info-chip--preset,
   .chip-info-tooltip .info-chip--preset {
-    background: #EDA700;
-    color: #f7f9fb;
+    background: var(--color-chip-preset);
+    color: var(--color-chip-text);
     border-color: rgba(31, 41, 55, 0.35);
   }
-  #dayzObjects tbody .info-chip--types {
-    background: #0ea5a8;
-  }
+  #dayzObjects tbody .info-chip--types,
   .chip-info-tooltip .info-chip--types {
-    background: #0ea5a8;
+    background: var(--color-chip-types);
   }
-  #dayzObjects tbody .info-chip--proto {
-    background: #7c3aed;
-  }
+  #dayzObjects tbody .info-chip--proto,
   .chip-info-tooltip .info-chip--proto {
-    background: #7c3aed;
+    background: var(--color-chip-proto);
   }
   #dayzObjects tbody .info-chip--console-yes,
-  #dayzObjects tbody .info-chip--console-all {
-    background: #3d8f49;
-  }
+  #dayzObjects tbody .info-chip--console-all,
   .chip-info-tooltip .info-chip--console-yes,
   .chip-info-tooltip .info-chip--console-all {
-    background: #3d8f49;
+    background: var(--color-chip-console-yes);
   }
-  #dayzObjects tbody .info-chip--console-no {
-    background: #b33b3b;
-  }
+  #dayzObjects tbody .info-chip--console-no,
   .chip-info-tooltip .info-chip--console-no {
-    background: #b33b3b;
+    background: var(--color-chip-console-no);
   }
   .path-hover-tooltip {
     display: none !important;
@@ -737,9 +793,9 @@
   .path-hover-tooltip__btn:hover,
   .path-hover-tooltip__btn:focus-visible {
     outline: none;
-    background-color: #EDA700 !important;
-    border-color: #EDA700 !important;
-    color: #1f1f1f !important;
+    background-color: var(--color-accent-hover) !important;
+    border-color: var(--color-accent-hover) !important;
+    color: var(--color-accent-hover-text) !important;
   }
   #dayzObjects tbody tr {
     height: 47px;
@@ -776,9 +832,9 @@
     width: 22px;
     height: 22px;
     cursor: pointer;
-    border: 1.5px solid color-mix(in srgb, var(--ui-button-border) 80%, var(--text) 20%);
+    border: 1.5px solid var(--icon-outline);
     background-color: transparent;
-    color: var(--ui-button-text);
+    color: var(--icon-fg);
     font-size: 1.02rem;
     font-weight: 600;
     line-height: 1;
@@ -821,92 +877,168 @@
     gap: 4px;
     flex-wrap: nowrap;
   }
-  #dayzObjects tbody .preset-action-btn {
+  .ui-action-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 20px;
-    padding: 0 6px;
-    border: 1px solid var(--ui-button-border);
+    min-height: 20px;
+    padding: 0 7px;
+    border: 1px solid var(--icon-outline);
     border-radius: 3px;
     background: transparent;
-    color: var(--ui-button-text);
-    font-size: 0.68rem;
+    color: var(--icon-fg);
+    font-size: 0.7rem;
     font-weight: 600;
     line-height: 1;
     cursor: pointer;
     white-space: nowrap;
+    text-decoration: none;
+    gap: 6px;
   }
-  #dayzObjects tbody .preset-action-btn:hover {
-    background: #EDA700 !important;
-    color: #1f1f1f !important;
+  #dayzObjects tbody .preset-actions .ui-action-btn {
+    min-height: 20px;
+    padding: 0 6px;
+    font-size: 0.68rem;
   }
-  #dayzObjects tbody .preset-action-btn.is-soon {
+  .ui-action-btn:hover,
+  .ui-action-btn:focus-visible {
+    background: var(--icon-hover-outline);
+    border-color: var(--icon-hover-outline);
+    color: var(--icon-hover-fg);
+    outline: none;
+  }
+  .ui-action-btn.is-soon {
     opacity: 0.45;
     border-style: dashed;
   }
-  #dayzObjects tbody .preset-action-btn.is-soon:hover {
-    background: transparent !important;
-    color: var(--ui-button-text) !important;
+  .ui-action-btn.is-soon:hover,
+  .ui-action-btn.is-soon:focus-visible {
+    background: transparent;
+    color: var(--icon-fg);
+    border-color: var(--icon-outline);
   }
-  #dayzObjects tbody .preset-action-btn.is-disabled,
-  #dayzObjects tbody .preset-action-btn:disabled {
+  .ui-action-btn.is-disabled,
+  .ui-action-btn:disabled {
     opacity: 0.4;
     border-style: dashed;
     cursor: not-allowed;
     pointer-events: none;
   }
-  #dayzObjects tbody .preset-action-btn.is-disabled:hover,
-  #dayzObjects tbody .preset-action-btn:disabled:hover {
-    background: transparent !important;
-    color: var(--ui-button-text) !important;
+  .ui-action-btn.is-disabled:hover,
+  .ui-action-btn:disabled:hover,
+  .ui-action-btn.is-disabled:focus-visible,
+  .ui-action-btn:disabled:focus-visible {
+    background: transparent;
+    color: var(--icon-fg);
+    border-color: var(--icon-outline);
   }
   #dayzObjects tbody .preset-description {
     color: var(--text);
   }
 
   .copy-btn:hover {
-    background-color: #EDA700 !important;
-    color: #1f1f1f !important;
+    background-color: var(--icon-hover-outline) !important;
+    border-color: var(--icon-hover-outline) !important;
+    color: var(--icon-hover-fg) !important;
     box-shadow: none;
     transform: none;
   }
   .copy-btn:focus-visible {
     outline: none;
-    background-color: #EDA700 !important;
-    color: #1f1f1f !important;
-    box-shadow: 0 0 0 1px color-mix(in srgb, #EDA700 45%, transparent);
+    background-color: var(--icon-hover-outline) !important;
+    border-color: var(--icon-hover-outline) !important;
+    color: var(--icon-hover-fg) !important;
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--icon-hover-outline) 45%, transparent);
   }
   .folder-tree__pin-link,
   .folder-tree__copy-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     padding: 0;
     font-size: 0.78rem;
-    border: 1px solid var(--ui-button-border) !important;
+    border: 1px solid var(--icon-outline) !important;
     border-radius: 2px !important;
     background: transparent !important;
-    color: var(--ui-button-text) !important;
+    color: var(--icon-fg) !important;
     box-sizing: border-box;
   }
   .folder-tree__pin-link:hover,
   .folder-tree__copy-link:hover {
-    background-color: #EDA700 !important;
-    border-color: #EDA700 !important;
-    color: #1f1f1f !important;
+    background-color: var(--icon-hover-outline) !important;
+    border-color: var(--icon-hover-outline) !important;
+    color: var(--icon-hover-fg) !important;
     transform: none !important;
     box-shadow: none !important;
   }
   .folder-tree__pin-link:focus-visible,
   .folder-tree__copy-link:focus-visible {
     outline: none;
-    background-color: #EDA700 !important;
-    border-color: #EDA700 !important;
-    color: #1f1f1f !important;
-    box-shadow: 0 0 0 1px color-mix(in srgb, #EDA700 45%, transparent);
+    background-color: var(--icon-hover-outline) !important;
+    border-color: var(--icon-hover-outline) !important;
+    color: var(--icon-hover-fg) !important;
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--icon-hover-outline) 45%, transparent);
+  }
+  .ui-icon {
+    width: 1.15em;
+    height: 1.15em;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: currentColor;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    flex: 0 0 auto;
+  }
+  .ui-icon--link {
+    -webkit-mask-image: url('/icons/copy-link.svg');
+    mask-image: url('/icons/copy-link.svg');
+  }
+  .ui-icon--pin {
+    -webkit-mask-image: url('/icons/pin.svg');
+    mask-image: url('/icons/pin.svg');
+  }
+  .ui-icon--copy-name {
+    -webkit-mask-image: url('/icons/copy-name.svg');
+    mask-image: url('/icons/copy-name.svg');
+  }
+  .ui-icon--editor {
+    -webkit-mask-image: url('/icons/copy-editor.svg');
+    mask-image: url('/icons/copy-editor.svg');
+  }
+  .ui-icon--map {
+    -webkit-mask-image: url('/icons/object-map.svg');
+    mask-image: url('/icons/object-map.svg');
+  }
+  .ui-icon--types {
+    -webkit-mask-image: url('/icons/types-explorer.svg');
+    mask-image: url('/icons/types-explorer.svg');
+  }
+  .icon-action {
+    color: var(--icon-fg) !important;
+    border-color: var(--icon-outline) !important;
+  }
+  .icon-action:hover,
+  .icon-action:focus-visible {
+    background-color: var(--icon-hover-outline) !important;
+    border-color: var(--icon-hover-outline) !important;
+    color: var(--icon-hover-fg) !important;
+  }
+  .icon-action:not(.copy-btn):not(.folder-tree__pin-link):not(.folder-tree__copy-link):not(.folder-sidebar__search-link) {
+    padding: 0 !important;
+    min-width: 28px;
+    width: 28px;
+    height: 28px;
+  }
+  .object-focus__pane-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
   }
   #filters .pill-button:hover,
   #dayzObjects_wrapper .pill-button:hover,
@@ -914,6 +1046,21 @@
     background-color: var(--ui-button-bg) !important;
     border-color: var(--ui-button-border) !important;
     color: var(--ui-button-text) !important;
+  }
+  #filters .pill-button.icon-action:hover,
+  #filters .pill-button.icon-action:focus-visible,
+  #dayzObjects_wrapper .pill-button.icon-action:hover,
+  #dayzObjects_wrapper .pill-button.icon-action:focus-visible,
+  #dayzObjects_wrapper .row-detail__action.icon-action:hover,
+  #dayzObjects_wrapper .row-detail__action.icon-action:focus-visible {
+    background-color: var(--icon-hover-outline) !important;
+    border-color: var(--icon-hover-outline) !important;
+    color: var(--icon-hover-fg) !important;
+  }
+  #dayzObjects_wrapper .pill-button.icon-action,
+  #dayzObjects_wrapper .object-focus .pill-button.icon-action {
+    border-color: var(--icon-outline) !important;
+    color: var(--icon-fg) !important;
   }
 
   table.dataTable.dtr-inline > tbody > tr > td.dtr-control:before,
@@ -1134,8 +1281,8 @@
   .folder-sidebar__search-link:focus-visible,
   .folder-sidebar__search-clear:hover,
   .folder-sidebar__search-clear:focus-visible {
-    background-color: #EDA700 !important;
-    color: #1f1f1f !important;
+    background-color: var(--color-accent-hover) !important;
+    color: var(--color-accent-hover-text) !important;
     outline: none;
   }
   .folder-sidebar__title {
@@ -1162,7 +1309,7 @@
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     background-color: var(--accent);
     border-color: var(--accent);
-    color: #1f1f1f;
+    color: var(--color-accent-hover-text);
   }
   .folder-tree {
     position: relative;
@@ -1188,6 +1335,23 @@
   .folder-tree__row--object-map {
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: var(--sidebar-app-row-vpad);
+    padding-bottom: var(--sidebar-app-row-vpad);
+  }
+  .folder-tree__row--database .folder-tree__folder,
+  .folder-tree__row--types-explorer .folder-tree__folder,
+  .folder-tree__row--presets .folder-tree__folder,
+  .folder-tree__row--object-map .folder-tree__folder {
+    display: inline-flex;
+    align-items: center;
+    min-height: 22px;
+    line-height: 1.2;
+  }
+  .folder-tree__row--database .folder-tree__app-logo,
+  .folder-tree__row--types-explorer .folder-tree__app-icon,
+  .folder-tree__row--presets .folder-tree__app-icon,
+  .folder-tree__row--object-map .folder-tree__app-icon {
+    align-self: center;
   }
   .folder-tree__toggle {
     width: 18px;
@@ -1256,6 +1420,21 @@
     border-color: var(--accent);
     color: #111;
     font-weight: 700;
+  }
+  .folder-tree__row--object-map .folder-tree__folder.is-active {
+    background: #069841;
+    border-color: transparent;
+    color: #ffffff;
+  }
+  .folder-tree__row--types-explorer .folder-tree__folder.is-active {
+    background: var(--color-chip-types);
+    border-color: transparent;
+    color: #ffffff;
+  }
+  .folder-tree__row--presets .folder-tree__folder.is-active {
+    background: var(--color-chip-preset);
+    border-color: transparent;
+    color: #ffffff;
   }
   .folder-tree__folder.is-dim {
     opacity: 0.42;
@@ -1349,7 +1528,8 @@
     position: relative;
     width: 100%;
     min-height: 28px;
-    padding-bottom: 6px;
+    padding-top: 4px;
+    padding-bottom: 5.1px;
   }
   .object-focus__topbar .object-focus__pane-title {
     position: absolute;
@@ -1397,18 +1577,6 @@
   .object-focus.collapsed .object-focus__pane-title {
     display: none;
   }
-  .object-focus__pin-hint {
-    display: none;
-    margin-top: 6px;
-    font-size: 1rem;
-    color: var(--muted);
-  }
-  .object-focus.collapsed .object-focus__pin-hint {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
   .object-focus__header {
     display: flex;
     justify-content: flex-start;
@@ -1439,13 +1607,45 @@
     background: var(--card);
     color: var(--text);
     border-radius: 6px;
-    padding: 6px 8px;
+    padding: 0;
+    min-width: 28px;
+    width: 28px;
+    height: 28px;
     cursor: pointer;
-    font-weight: 700;
-    line-height: 1;
+    line-height: 0;
   }
   .object-focus__collapse:hover {
     background: var(--bg-soft);
+  }
+  .object-focus__collapse-icon-stack {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .object-focus__collapse-icon-outline,
+  .object-focus__collapse-icon-main {
+    position: absolute;
+    inset: 0;
+  }
+  .object-focus__collapse-icon-outline {
+    color: var(--icon-outline);
+    transform: scale(1.16);
+    opacity: 0.9;
+  }
+  .object-focus__collapse:hover .object-focus__collapse-icon-outline,
+  .object-focus__collapse:focus-visible .object-focus__collapse-icon-outline {
+    color: var(--icon-hover-fg);
+  }
+  #objectFocusCollapse.is-active,
+  #objectFocusCollapse.is-active:hover,
+  #objectFocusCollapse.is-active:focus-visible {
+    background-color: var(--icon-hover-outline) !important;
+    border-color: var(--icon-hover-outline) !important;
+    color: var(--icon-hover-fg) !important;
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--icon-hover-outline) 45%, transparent);
   }
 
   .object-focus__image {
@@ -1790,7 +1990,7 @@
   .object-map-v2__toolbar {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 6px;
     margin: 0 0 8px;
   }
@@ -1798,6 +1998,7 @@
     display: inline-flex;
     gap: 6px;
     flex-wrap: wrap;
+    margin-left: auto;
   }
   .object-map-v2__frame {
     position: relative;
@@ -1815,6 +2016,11 @@
     min-height: min(80vh, 980px);
     border: 0;
     background: #596050;
+    opacity: 1;
+    transition: opacity 120ms ease;
+  }
+  .object-map-v2__iframe.is-loading {
+    opacity: 0;
   }
   .object-focus__details {
     flex: 1;
@@ -2437,7 +2643,7 @@
   }
   .pinned-path-btn.active {
     background: var(--accent) !important;
-    color: #1f1f1f !important;
+    color: var(--color-accent-hover-text) !important;
     border-color: var(--accent) !important;
     box-shadow: inset 0 0 0 1px color-mix(in srgb, #ffffff 22%, transparent);
     transform: none;
@@ -2837,7 +3043,7 @@
     flex-wrap: wrap;
     gap: 6px;
   }
-  .types-explorer__scope-btn {
+  .types-explorer__scope-btn:not(.ui-action-btn) {
     border: 1px solid var(--border);
     border-radius: 4px;
     background: var(--card);
@@ -2848,10 +3054,10 @@
     padding: 3px 7px;
     cursor: pointer;
   }
-  .types-explorer__scope-btn:hover {
+  .types-explorer__scope-btn:not(.ui-action-btn):hover {
     background: var(--bg-soft);
   }
-  .types-explorer__scope-btn.is-active {
+  .types-explorer__scope-btn:not(.ui-action-btn).is-active {
     background: var(--accent);
     border-color: var(--accent);
     color: #111;
@@ -2868,13 +3074,7 @@
   .types-explorer__title-icon {
     width: 18px;
     height: 18px;
-    border-radius: 999px;
-    background: #2f7df6;
-    color: #fff;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 0.56rem;
-    font-weight: 700;
-    line-height: 1;
+    color: var(--color-chip-types);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -2883,18 +3083,24 @@
   .object-focus__types-title-icon {
     width: 18px;
     height: 18px;
-    border-radius: 999px;
-    background: #2f7df6;
-    color: #fff !important;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 0.56rem;
-    font-weight: 700;
-    line-height: 1;
+    color: var(--color-chip-types) !important;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     vertical-align: middle;
     margin-right: 6px;
+  }
+  .object-focus__section-title-icon {
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+  .object-focus__section-title-icon--map {
+    color: #069841;
   }
   .types-explorer__section-title {
     display: block;
@@ -2911,7 +3117,7 @@
     flex-wrap: wrap;
     gap: 6px;
   }
-  .types-explorer__tag {
+  .types-explorer__tag:not(.ui-action-btn) {
     border: 1px solid var(--border);
     border-radius: 4px;
     background: var(--card);
@@ -2922,13 +3128,25 @@
     padding: 3px 8px;
     cursor: pointer;
   }
-  .types-explorer__tag:hover {
+  .types-explorer__tag:not(.ui-action-btn):hover {
     background: var(--bg-soft);
   }
-  .types-explorer__tag.is-active {
+  .types-explorer__tag:not(.ui-action-btn).is-active {
     background: var(--accent);
     border-color: var(--accent);
     color: #111;
+  }
+  .types-explorer__scope-btn.ui-action-btn,
+  .types-explorer__tag.ui-action-btn {
+    min-height: 24px;
+    padding: 0 8px;
+    font-size: 0.7rem;
+  }
+  .types-explorer__scope-btn.ui-action-btn.is-active,
+  .types-explorer__tag.ui-action-btn.is-active {
+    background: var(--icon-hover-outline);
+    border-color: var(--icon-hover-outline);
+    color: var(--icon-hover-fg);
   }
   .types-explorer__divider {
     margin: 10px 0;
@@ -2981,7 +3199,7 @@
     height: auto;
     border-radius: 0;
     background: transparent;
-    color: var(--text);
+    color: #069841;
     font-size: 0.8rem;
     font-weight: 700;
     display: inline-flex;
@@ -3227,7 +3445,7 @@
     transform: translateY(-1px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     background-color: var(--accent) !important;
-    color: #1f1f1f !important;
+    color: var(--color-accent-hover-text) !important;
     border-color: var(--accent) !important;
     opacity: 1 !important;
   }
@@ -3235,7 +3453,7 @@
     transform: translateY(-1px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     background-color: var(--accent) !important;
-    color: #1f1f1f !important;
+    color: var(--color-accent-hover-text) !important;
     border-color: var(--accent) !important;
     opacity: 1 !important;
   }
@@ -3252,10 +3470,9 @@
   .folder-tree__copy-link,
   .folder-tree__bulk-btn,
   .object-focus__collapse,
+  .object-focus__image-download,
   .object-focus__meta-path-copy,
   .object-focus__link-pill,
-  .types-explorer__scope-btn,
-  .types-explorer__tag,
   .object-map__control,
   .object-map__toggle,
   .object-map__copy-coords,
@@ -3283,10 +3500,9 @@
   .folder-tree__copy-link:hover,
   .folder-tree__bulk-btn:hover,
   .object-focus__collapse:hover,
+  .object-focus__image-download:hover,
   .object-focus__meta-path-copy:hover,
   .object-focus__link-pill:hover,
-  .types-explorer__scope-btn:hover,
-  .types-explorer__tag:hover,
   .object-map__control:hover,
   .object-map__toggle:hover,
   .object-map__copy-coords:hover,
@@ -3301,15 +3517,15 @@
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     background-color: var(--accent) !important;
     border-color: var(--accent) !important;
-    color: #1f1f1f !important;
+    color: var(--color-accent-hover-text) !important;
   }
-  .types-explorer__scope-btn.is-active,
-  .types-explorer__scope-btn.is-active:hover,
-  .types-explorer__tag.is-active,
-  .types-explorer__tag.is-active:hover {
+  .types-explorer__scope-btn:not(.ui-action-btn).is-active,
+  .types-explorer__scope-btn:not(.ui-action-btn).is-active:hover,
+  .types-explorer__tag:not(.ui-action-btn).is-active,
+  .types-explorer__tag:not(.ui-action-btn).is-active:hover {
     background-color: var(--accent) !important;
     border-color: var(--accent) !important;
-    color: #111 !important;
+    color: var(--color-nav-active-text) !important;
   }
   .pill-button:focus-visible,
   .folder-sidebar__clear:focus-visible,
@@ -3318,10 +3534,9 @@
   .folder-tree__copy-link:focus-visible,
   .folder-tree__bulk-btn:focus-visible,
   .object-focus__collapse:focus-visible,
+  .object-focus__image-download:focus-visible,
   .object-focus__meta-path-copy:focus-visible,
   .object-focus__link-pill:focus-visible,
-  .types-explorer__scope-btn:focus-visible,
-  .types-explorer__tag:focus-visible,
   .object-map__control:focus-visible,
   .object-map__toggle:focus-visible,
   .object-map__copy-coords:focus-visible,
@@ -3335,6 +3550,222 @@
     outline: none;
     border-color: var(--accent) !important;
     box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 45%, transparent);
+  }
+  #folderSidebarClear,
+  #objectFocusCollapse,
+  #objectFocusClear,
+  #objectFocusLink,
+  #objectFocusTypesLink,
+  #objectFocusMapGroupProtoLink,
+  .object-focus__link-pill,
+  #pinnedDownloadAll,
+  #pinnedDownloadTypesAll,
+  #exportToggle,
+  #updateToggle,
+  #exportCsv,
+  #exportXlsx,
+  #exportJson,
+  #exportTypes,
+  #exportMapGroupPos,
+  .pinned-path-btn {
+    border-color: var(--icon-outline) !important;
+    color: var(--icon-fg) !important;
+  }
+  #folderSidebarClear:hover,
+  #folderSidebarClear:focus-visible,
+  #objectFocusCollapse:hover,
+  #objectFocusCollapse:focus-visible,
+  #objectFocusClear:hover,
+  #objectFocusClear:focus-visible,
+  #objectFocusLink:hover,
+  #objectFocusLink:focus-visible,
+  #objectFocusTypesLink:hover,
+  #objectFocusTypesLink:focus-visible,
+  #objectFocusMapGroupProtoLink:hover,
+  #objectFocusMapGroupProtoLink:focus-visible,
+  .object-focus__link-pill:hover,
+  .object-focus__link-pill:focus-visible,
+  #pinnedDownloadAll:hover,
+  #pinnedDownloadAll:focus-visible,
+  #pinnedDownloadTypesAll:hover,
+  #pinnedDownloadTypesAll:focus-visible,
+  #exportToggle:hover,
+  #exportToggle:focus-visible,
+  #updateToggle:hover,
+  #updateToggle:focus-visible,
+  #exportCsv:hover,
+  #exportCsv:focus-visible,
+  #exportXlsx:hover,
+  #exportXlsx:focus-visible,
+  #exportJson:hover,
+  #exportJson:focus-visible,
+  #exportTypes:hover,
+  #exportTypes:focus-visible,
+  #exportMapGroupPos:hover,
+  #exportMapGroupPos:focus-visible,
+  .pinned-path-btn:hover,
+  .pinned-path-btn:focus-visible,
+  .pinned-path-btn.active {
+    background-color: var(--icon-hover-outline) !important;
+    border-color: var(--icon-hover-outline) !important;
+    color: var(--icon-hover-fg) !important;
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--icon-hover-outline) 45%, transparent);
+  }
+  #pinnedCopyAll,
+  #pinnedCopyNames,
+  #pinnedCopyLink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--hover-action-size);
+    height: var(--hover-action-size);
+    min-width: var(--hover-action-size);
+    min-height: var(--hover-action-size);
+    padding: 0 !important;
+    border: 1px solid var(--icon-outline) !important;
+    border-radius: 3px !important;
+    background: transparent !important;
+    color: var(--icon-fg) !important;
+    font-size: 0.9rem;
+    line-height: 1;
+    box-shadow: none !important;
+  }
+  #pinnedCopyAll .ui-icon,
+  #pinnedCopyNames .ui-icon,
+  #pinnedCopyLink .ui-icon {
+    width: 1.15em;
+    height: 1.15em;
+  }
+  #pinnedCopyAll:hover,
+  #pinnedCopyAll:focus-visible,
+  #pinnedCopyNames:hover,
+  #pinnedCopyNames:focus-visible,
+  #pinnedCopyLink:hover,
+  #pinnedCopyLink:focus-visible {
+    background-color: var(--icon-hover-outline) !important;
+    border-color: var(--icon-hover-outline) !important;
+    color: var(--icon-hover-fg) !important;
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--icon-hover-outline) 45%, transparent);
+    transform: none !important;
+  }
+  .folder-tree__pin-link,
+  .folder-tree__copy-link,
+  #folderSidebarSearchLink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--hover-action-size);
+    height: var(--hover-action-size);
+    min-width: var(--hover-action-size);
+    min-height: var(--hover-action-size);
+    padding: 0 !important;
+    border: 1.5px solid var(--icon-outline) !important;
+    border-radius: 3px !important;
+    background: transparent !important;
+    color: var(--icon-fg) !important;
+    font-size: 0.9rem;
+    line-height: 1;
+    box-shadow: none !important;
+    box-sizing: border-box;
+  }
+  .folder-tree__pin-link .ui-icon,
+  .folder-tree__copy-link .ui-icon,
+  #folderSidebarSearchLink .ui-icon {
+    width: 1.15em;
+    height: 1.15em;
+  }
+  .folder-tree__pin-link:hover,
+  .folder-tree__pin-link:focus-visible,
+  .folder-tree__copy-link:hover,
+  .folder-tree__copy-link:focus-visible,
+  #folderSidebarSearchLink:hover,
+  #folderSidebarSearchLink:focus-visible {
+    background-color: var(--icon-hover-outline) !important;
+    border-color: var(--icon-hover-outline) !important;
+    color: var(--icon-hover-fg) !important;
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--icon-hover-outline) 45%, transparent);
+    transform: none !important;
+  }
+  #dayzObjects_wrapper .dataTables_paginate .paginate_button,
+  #dayzObjects_wrapper .dataTables_paginate a.paginate_button,
+  #dayzObjects_wrapper .dataTables_paginate span .paginate_button {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--top-control-height) !important;
+    height: var(--top-control-height) !important;
+    padding: 4px 8px !important;
+    margin: 0 2px !important;
+    border: 1px solid var(--icon-outline) !important;
+    border-radius: var(--ui-button-radius) !important;
+    background: transparent !important;
+    color: var(--icon-fg) !important;
+    font-size: 0.7rem !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+    vertical-align: middle;
+    box-shadow: none !important;
+  }
+  #dayzObjects_wrapper .dataTables_paginate .paginate_button:hover,
+  #dayzObjects_wrapper .dataTables_paginate .paginate_button:focus-visible,
+  #dayzObjects_wrapper .dataTables_paginate a.paginate_button:hover,
+  #dayzObjects_wrapper .dataTables_paginate a.paginate_button:focus-visible,
+  #dayzObjects_wrapper .dataTables_paginate .paginate_button.current,
+  #dayzObjects_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: var(--icon-hover-outline) !important;
+    border-color: var(--icon-hover-outline) !important;
+    color: var(--icon-hover-fg) !important;
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--icon-hover-outline) 45%, transparent);
+  }
+  #dayzObjects_wrapper .dataTables_paginate .paginate_button.disabled,
+  #dayzObjects_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+  #dayzObjects_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    border-color: var(--icon-outline) !important;
+    color: color-mix(in srgb, var(--icon-fg) 55%, transparent) !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  #filterConsole,
+  #filters .dataTables_length select,
+  #dayzObjects_wrapper .dataTables_length select,
+  select[name="dayzObjects_length"] {
+    border-color: var(--icon-outline) !important;
+    color: var(--icon-fg) !important;
+  }
+  #filterConsole:hover,
+  #filterConsole:focus,
+  #filters .dataTables_length select:hover,
+  #filters .dataTables_length select:focus,
+  #dayzObjects_wrapper .dataTables_length select:hover,
+  #dayzObjects_wrapper .dataTables_length select:focus,
+  select[name="dayzObjects_length"]:hover,
+  select[name="dayzObjects_length"]:focus {
+    background-color: var(--icon-hover-outline) !important;
+    border-color: var(--icon-hover-outline) !important;
+    color: var(--icon-hover-fg) !important;
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--icon-hover-outline) 45%, transparent) !important;
+  }
+  :root.dark-mode #filterConsole:hover,
+  :root.dark-mode #filterConsole:focus,
+  :root.dark-mode #filters .dataTables_length select:hover,
+  :root.dark-mode #filters .dataTables_length select:focus,
+  :root.dark-mode #dayzObjects_wrapper .dataTables_length select:hover,
+  :root.dark-mode #dayzObjects_wrapper .dataTables_length select:focus,
+  :root.dark-mode select[name="dayzObjects_length"]:hover,
+  :root.dark-mode select[name="dayzObjects_length"]:focus {
+    background-color: var(--icon-hover-outline) !important;
+    color: #ffffff !important;
+  }
+  #filters #exportToggle:hover,
+  #filters #exportToggle:focus-visible,
+  #filters #updateToggle:hover,
+  #filters #updateToggle:focus-visible {
+    background-color: var(--icon-hover-outline) !important;
+    border-color: var(--icon-hover-outline) !important;
+    color: var(--icon-hover-fg) !important;
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--icon-hover-outline) 45%, transparent) !important;
   }
   #pinnedClearAll {
     color: #f87171 !important;
@@ -3350,21 +3781,6 @@
       grid-template-columns: 1fr;
     }
   }
-  .folder-tree__types-icon {
-    width: 18px;
-    height: 18px;
-    flex: 0 0 18px;
-    border-radius: 999px;
-    background: #2f7df6;
-    color: #fff;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 0.56rem;
-    font-weight: 700;
-    line-height: 1;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
   .folder-tree__app-logo {
     width: 22px;
     height: 22px;
@@ -3372,11 +3788,13 @@
     object-fit: cover;
     display: inline-block;
   }
-  .folder-tree__row--presets .folder-tree__leaf-icon,
-  .folder-tree__row--object-map .folder-tree__leaf-icon {
+  .folder-tree__app-icon {
     width: 20px;
+    height: 20px;
     flex: 0 0 20px;
-    font-size: 0.9rem;
+    display: inline-block;
+    object-fit: contain;
+    vertical-align: middle;
   }
   .folder-tree__row--database .folder-tree__folder,
   .folder-tree__row--types-explorer .folder-tree__folder,
@@ -3398,6 +3816,10 @@
 </style>
 
 <div id="filters">
+  <div id="filtersAppTitle" class="filters-app-title" hidden>
+    <img id="filtersAppTitleIcon" class="filters-app-title__icon is-logo" src="/favicon.png" alt="" aria-hidden="true">
+    <span id="filtersAppTitleText" class="filters-app-title__text">Object Finder</span>
+  </div>
   <div class="top-console">
     <span class="top-console__label">Usable on console:</span>
     <select id="filterConsole" class="top-console__select">
@@ -3406,9 +3828,12 @@
       <option value="no">No</option>
     </select>
   </div>
+  
   <div class="filter-actions">
+    <button id="updateToggle" class="pill-button" type="button">1.29 objects</button>
     <button id="exportToggle" class="pill-button" type="button" aria-expanded="false" aria-controls="exportPanel">Export data</button>
   </div>
+   
   <div id="exportPanel" class="export-panel" aria-hidden="true">
     <div class="export-panel__intro">Export the current filtered view (images excluded).</div>
     <div class="export-panel__actions">
@@ -3419,14 +3844,15 @@
       <button id="exportMapGroupPos" class="pill-button" type="button">Download mapgrouppos</button>
     </div>
     <div class="export-panel__images">
-      Want all the images? <a href="https://drive.google.com/drive/folders/1Hg82OAu-Br5VPSF4NxGvifG_IeF6Iw-u?usp=share_link" target="_blank" rel="noopener">Download here.</a>
+      Want all the images? <a href="https://drive.google.com/drive/folders/1FuV6C72ttaoeP-BrIykkYYIczisFyVkL?usp=share_link" target="_blank" rel="noopener">Download here.</a>
     </div>
   </div>
-</div>
 
+  </div>
+</div>
 <div id="typesExplorerPanel" class="types-explorer" aria-live="polite">
   <div class="types-explorer__header">
-    <span class="types-explorer__title"><span class="types-explorer__title-icon" aria-hidden="true">&lt;/&gt;</span>Types Explorer</span>
+    <span class="types-explorer__title"><span class="types-explorer__title-icon ui-icon ui-icon--types" aria-hidden="true"></span>Types Explorer</span>
     <div class="types-explorer__header-actions">
       <button id="typesExplorerReset" class="folder-sidebar__clear" type="button">Reset</button>
     </div>
@@ -3445,28 +3871,32 @@
     <aside class="types-explorer__side" aria-label="Types map scope">
       <span class="types-explorer__scope-title">Show Types for:</span>
       <div id="typesExplorerScope" class="types-explorer__scope-options">
-        <button class="types-explorer__scope-btn is-active" type="button" data-types-scope="chernarus">Chernarus</button>
-        <button class="types-explorer__scope-btn is-active" type="button" data-types-scope="livonia">Livonia</button>
-        <button class="types-explorer__scope-btn is-active" type="button" data-types-scope="sakhal">Sakhal</button>
+        <button class="types-explorer__scope-btn ui-action-btn is-active" type="button" data-types-scope="chernarus">Chernarus</button>
+        <button class="types-explorer__scope-btn ui-action-btn is-active" type="button" data-types-scope="livonia">Livonia</button>
+        <button class="types-explorer__scope-btn ui-action-btn is-active" type="button" data-types-scope="sakhal">Sakhal</button>
       </div>
       <div class="types-explorer__note">Based on v1.28 Types.xml</div>
     </aside>
   </div>
   <div class="types-explorer__footer">
-    <button id="typesExplorerCopyLink" class="folder-sidebar__clear" type="button">Copy link</button>
-    <button id="typesExplorerDownloadCurrent" class="folder-sidebar__clear" type="button">↓ Download Types current view</button>
+    <button id="typesExplorerCopyLink" class="ui-action-btn" type="button">Copy link</button>
+    <button id="typesExplorerDownloadCurrent" class="ui-action-btn" type="button">↓ Download Types current view</button>
   </div>
 </div>
 
 <div id="objectMapPanel" class="object-map object-map--v2" aria-live="polite">
   <div class="object-map__header">
-    <span class="object-map__title"><span class="object-map__title-icon" aria-hidden="true">📍</span>Object Maps</span>
+    <span class="object-map__title"><span class="object-map__title-icon ui-icon ui-icon--map" aria-hidden="true"></span>Object Maps</span>
   </div>
   <div class="object-map-v2__toolbar">
+    <div class="object-map-v2__app-title">
+      <img class="object-map-v2__app-title-icon" src="/icons/object-map.svg" alt="" aria-hidden="true">
+      <span>Object Maps</span>
+    </div>
     <div class="object-map-v2__scope" aria-label="Object Map world selector">
-      <button id="objectMapToggleChernarus" class="types-explorer__scope-btn is-active" type="button" data-object-map="chernarus">Chernarus</button>
-      <button id="objectMapToggleLivonia" class="types-explorer__scope-btn" type="button" data-object-map="livonia">Livonia</button>
-      <button id="objectMapToggleSakhal" class="types-explorer__scope-btn" type="button" data-object-map="sakhal">Sakhal</button>
+      <button id="objectMapToggleChernarus" class="types-explorer__scope-btn ui-action-btn is-active" type="button" data-object-map="chernarus">Chernarus</button>
+      <button id="objectMapToggleLivonia" class="types-explorer__scope-btn ui-action-btn" type="button" data-object-map="livonia">Livonia</button>
+      <button id="objectMapToggleSakhal" class="types-explorer__scope-btn ui-action-btn" type="button" data-object-map="sakhal">Sakhal</button>
     </div>
   </div>
   <div class="object-map-v2__frame">
@@ -3503,7 +3933,7 @@
 <div id="chipInfoTooltip" class="chip-info-tooltip" role="status" aria-live="polite"></div>
 <div id="pathHoverTooltip" class="path-hover-tooltip" role="status" aria-live="polite"></div>
 <div id="presetsGuideNotice" class="version-filter-notice" role="status" aria-live="polite">
-  <span>Free to use and attributed builds for DayZ Editor. Press the 🏗️ icon on a build to copy it to your clipboard and Ctrl+V in Editor, or download the JSON / DZE files.</span>
+  <span>Free to use and attributed builds for DayZ Editor. Press the Copy to Editor button on a build to copy it to your clipboard and Ctrl+V in Editor, or download the JSON file.</span>
   <button id="presetsGuideClose" class="version-filter-notice__close" type="button" aria-label="Dismiss Editor Builds help">✕</button>
 </div>
 <div id="objectFinderGuideNotice" class="version-filter-notice version-filter-notice--guide" role="status" aria-live="polite">
@@ -3529,7 +3959,7 @@
       <div class="folder-sidebar__search">
         <input id="folderSidebarSearch" type="search" placeholder="Search objects...">
         <div class="folder-sidebar__search-actions">
-          <button id="folderSidebarSearchLink" class="folder-sidebar__search-link" type="button" title="Copy search link">🔗</button>
+          <button id="folderSidebarSearchLink" class="folder-sidebar__search-link icon-action" type="button" title="Copy search link"><span class="ui-icon ui-icon--link" aria-hidden="true"></span></button>
           <button id="folderSidebarSearchClear" class="folder-sidebar__search-clear" type="button" title="Clear search">✕</button>
         </div>
       </div>
@@ -3555,19 +3985,23 @@
 
   <div id="objectFocus" class="object-focus" aria-live="polite">
     <div class="object-focus__topbar">
-      <div class="object-focus__pane-title">Object viewer</div>
+      <div class="object-focus__pane-title"><span class="object-focus__pane-label"><span>Object viewer</span></span></div>
       <div class="object-focus__header">
-        <button id="objectFocusCollapse" class="object-focus__collapse" type="button" aria-label="Collapse sidebar">&gt;&gt;</button>
-        <button id="objectFocusClear" class="object-focus__clear folder-sidebar__clear" type="button" aria-label="Deselect" title="Deselect">Deselect</button>
+        <button id="objectFocusCollapse" class="object-focus__collapse ui-action-btn icon-action" type="button" aria-label="Collapse sidebar" title="Collapse sidebar">
+          <span class="object-focus__collapse-icon-stack" aria-hidden="true">
+            <span class="ui-icon ui-icon--pin object-focus__collapse-icon-outline"></span>
+            <span class="ui-icon ui-icon--pin object-focus__collapse-icon-main"></span>
+          </span>
+        </button>
+        <button id="objectFocusClear" class="object-focus__clear folder-sidebar__clear ui-action-btn" type="button" aria-label="Deselect" title="Deselect">Deselect</button>
       </div>
     </div>
-    <div class="object-focus__pin-hint" aria-hidden="true">📌</div>
     <div class="object-focus__image" id="objectFocusImage">
       <button id="objectFocusImagePrev" class="object-focus__gallery-nav object-focus__gallery-nav--prev" type="button" aria-label="Previous image">‹</button>
       <img id="objectFocusPreviewImg" class="object-focus__preview" src="" alt="" hidden>
       <button id="objectFocusImageNext" class="object-focus__gallery-nav object-focus__gallery-nav--next" type="button" aria-label="Next image">›</button>
       <span id="objectFocusImageMissing" class="object-focus__missing">Select an object to preview its image.</span>
-      <a id="objectFocusLink" class="pill-button object-focus__image-download" href="#" download>↓ Download image</a>
+      <a id="objectFocusLink" class="ui-action-btn object-focus__image-download" href="#" download>↓ Download image</a>
     </div>
     <div class="object-focus__details">
       <div class="object-focus__name-row">
@@ -3576,13 +4010,13 @@
       <div id="objectFocusEmpty" class="object-focus__empty">You can select or pin objects in this menu.</div>
       <div class="object-focus__actions">
         <div class="object-focus__secondary object-focus__secondary--top">
-          <button id="objectFocusPin" class="pill-button" type="button">📌 Pin</button>
-          <button id="objectFocusCopy" class="pill-button" type="button">🔗 Copy link</button>
-          <button id="objectFocusEditor" class="pill-button" type="button">🏗️ Copy to Editor</button>
+          <button id="objectFocusPin" class="ui-action-btn" type="button"><span class="ui-icon ui-icon--pin" aria-hidden="true"></span><span>Pin</span></button>
+          <button id="objectFocusCopy" class="ui-action-btn" type="button"><span class="ui-icon ui-icon--link" aria-hidden="true"></span><span>Copy link</span></button>
+          <button id="objectFocusEditor" class="ui-action-btn" type="button"><span class="ui-icon ui-icon--editor" aria-hidden="true"></span><span>Copy to Editor</span></button>
         </div>
         <div class="object-focus__secondary object-focus__secondary--bottom">
-          <button id="objectFocusNameCopy" class="pill-button" type="button">📋 Copy name</button>
-          <button id="objectFocusMarkdownCopy" class="pill-button" type="button">🔗 M↓</button>
+          <button id="objectFocusNameCopy" class="ui-action-btn" type="button"><span class="ui-icon ui-icon--copy-name" aria-hidden="true"></span><span>Copy name</span></button>
+          <button id="objectFocusMarkdownCopy" class="ui-action-btn" type="button"><span class="ui-icon ui-icon--link" aria-hidden="true"></span><span>M↓</span></button>
         </div>
       </div>
       <div id="objectFocusPath" class="object-focus__path"></div>
@@ -3590,8 +4024,8 @@
       <div id="objectFocusLocation" class="object-focus__location object-focus__section object-focus__section-accordion"></div>
       <div id="objectFocusLinks" class="object-focus__links object-focus__section object-focus__section-accordion"></div>
       <div hidden aria-hidden="true">
-        <a id="objectFocusTypesLink" class="pill-button" href="#" download>↓ Download types entry</a>
-        <a id="objectFocusMapGroupProtoLink" class="pill-button" href="#" download>↓ Download MapGroupProto</a>
+        <a id="objectFocusTypesLink" class="ui-action-btn" href="#" download>↓ Types.xml entry</a>
+        <a id="objectFocusMapGroupProtoLink" class="ui-action-btn" href="#" download>↓ MapGroupProto</a>
       </div>
     </div>
     <div class="object-focus__pane-title object-focus__pane-title--pinned">Pinned objects</div>
@@ -3601,15 +4035,15 @@
           <div id="pinnedCopyAllLayoutRow" class="pinned-copy__row pinned-copy__row--between">
             <div class="pinned-copy__row">
               <span>Copy all:</span>
-              <button id="pinnedCopyAll" class="pill-button" type="button" title="Copy all to Editor">🏗️</button>
-              <button id="pinnedCopyNames" class="pill-button" type="button" title="Copy all names">📋</button>
-              <button id="pinnedCopyLink" class="pill-button" type="button" title="Copy link to pinned collection">🔗</button>
+            <button id="pinnedCopyAll" class="icon-action" type="button" title="Copy all to Editor"><span class="ui-icon ui-icon--editor" aria-hidden="true"></span></button>
+            <button id="pinnedCopyNames" class="icon-action" type="button" title="Copy all names"><span class="ui-icon ui-icon--copy-name" aria-hidden="true"></span></button>
+            <button id="pinnedCopyLink" class="icon-action" type="button" title="Copy link to pinned collection"><span class="ui-icon ui-icon--link" aria-hidden="true"></span></button>
             </div>
           </div>
           <div class="pinned-copy__row pinned-copy__row--actions">
-            <button id="pinnedCopyAllLayout" class="pill-button" type="button" title="Copy pinned objects with layout">🏗️ Copy as...</button>
-            <button id="pinnedDownloadAll" class="pill-button" type="button" title="Download all">↓ All data</button>
-            <button id="pinnedDownloadTypesAll" class="pill-button" type="button" title="Download all types.xml">↓ Types</button>
+            <button id="pinnedCopyAllLayout" class="ui-action-btn" type="button" title="Copy pinned objects with layout"><span class="ui-icon ui-icon--editor" aria-hidden="true"></span><span>Copy as...</span></button>
+            <button id="pinnedDownloadAll" class="ui-action-btn" type="button" title="Download all">↓ All data</button>
+            <button id="pinnedDownloadTypesAll" class="ui-action-btn" type="button" title="Download all types.xml">↓ Types</button>
             <button id="pinnedClearAll" class="pill-button" type="button" title="Unpin all">Unpin all</button>
           </div>
           <div id="pinnedBulkPanel" class="pinned-path-panel pinned-bulk-panel">
@@ -3618,6 +4052,7 @@
               <button class="pinned-path-btn pinned-bulk-layout" type="button" data-layout="grid">As grid</button>
               <button class="pinned-path-btn pinned-bulk-layout" type="button" data-layout="line">In line</button>
               <button class="pinned-path-btn pinned-bulk-layout" type="button" data-layout="stacked">Stacked</button>
+              <button class="pinned-path-btn pinned-bulk-layout" type="button" data-layout="random">Random</button>
             </div>
             <div class="pinned-path-row">
               <span class="pinned-path-label">Spacing:</span>
@@ -3641,20 +4076,20 @@
       <div id="pinnedList" class="pinned-list"></div>
     </div>
   </div>
-<div id="imageOverlay" class="image-overlay" aria-hidden="true">
+<div id="imageOverlay" class="image-overlay" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
   <div class="image-overlay__content">
       <button id="imageOverlayPrev" class="image-overlay__nav image-overlay__nav--prev" type="button" aria-label="Previous image">‹</button>
-      <button id="imageOverlayClose" class="image-overlay__close" type="button" aria-label="Close image">🆇</button>
+      <button id="imageOverlayClose" class="image-overlay__close" type="button" aria-label="Close image"><span aria-hidden="true">✕</span></button>
       <img id="imageOverlayImg" class="image-overlay__img" src="" alt="">
       <button id="imageOverlayNext" class="image-overlay__nav image-overlay__nav--next" type="button" aria-label="Next image">›</button>
       <a id="imageOverlayDownload" class="image-overlay__download" href="#" download aria-label="Download image">Download image</a>
   </div>
 </div>
-  <div id="chernarusMapLightbox" class="map-lightbox" aria-hidden="true">
+  <div id="chernarusMapLightbox" class="map-lightbox" role="dialog" aria-modal="true" aria-label="Map viewer" aria-hidden="true">
     <div class="map-lightbox__content">
       <button id="chernarusMapOpenObjectMap" class="map-lightbox__reset map-lightbox__open-object-map" type="button">Open in Object Map</button>
       <button id="chernarusMapReset" class="map-lightbox__reset" type="button">Reset view</button>
-      <button id="chernarusMapClose" class="map-lightbox__close" type="button" aria-label="Close map">🆇</button>
+      <button id="chernarusMapClose" class="map-lightbox__close" type="button" aria-label="Close map"><span aria-hidden="true">✕</span></button>
       <div class="map-lightbox__frame">
         <svg id="chernarusMapOverlay" class="map-lightbox__overlay" preserveAspectRatio="none" aria-hidden="true">
           <g transform="scale(1,-1)">
@@ -3686,7 +4121,7 @@
 	'There are more than 190 hats in DayZ - Sam’s favourite is the Zimikova',
 	'The only P3Ds you can use on console are rocks and plants',
 	'Working on console? Filter by console and look for the ✅ mark',
-	'You can copy and paste directly into DayZ Editor using the 🏗️ button',
+	'You can copy and paste directly into DayZ Editor using the Copy to Editor button',
 	'DayZ uses the scientific names for plants and animals - but you can just search for "birch" or "wolf"',
 	'There are more than 60 different types of birch tree in DayZ',
 	'There are more than 40 different types of armbands in DayZ',
@@ -3967,6 +4402,38 @@
       folderSidebarBulkEl.style.marginTop = '0';
       folderBulkMode = 'search';
     };
+    var updateFiltersAppTitle = function() {
+      if (!filtersAppTitleEl || !filtersAppTitleIconEl || !filtersAppTitleTextEl) return;
+      if (activeCollectionFilter === 'types_explorer' || activeCollectionFilter === 'object_map') {
+        filtersAppTitleEl.hidden = true;
+        return;
+      }
+      var config = {
+        label: 'Object Finder',
+        src: '/favicon.png',
+        colorClass: '',
+        iconClass: 'is-logo'
+      };
+      if (activeCollectionFilter === 'presets') {
+        config = {
+          label: 'Editor Builds',
+          src: '/icons/copy-editor.svg',
+          colorClass: '',
+          iconClass: ''
+        };
+      }
+      filtersAppTitleTextEl.textContent = config.label;
+      filtersAppTitleIconEl.setAttribute('src', config.src);
+      filtersAppTitleIconEl.className = 'filters-app-title__icon' + (config.iconClass ? (' ' + config.iconClass) : '');
+      filtersAppTitleEl.className = 'filters-app-title';
+      filtersAppTitleEl.hidden = false;
+      if (filtersEl) {
+        var lengthWrap = filtersEl.querySelector('.dataTables_length');
+        if (lengthWrap && filtersAppTitleEl.parentNode === filtersEl && filtersAppTitleEl.nextSibling !== lengthWrap) {
+          filtersEl.insertBefore(filtersAppTitleEl, lengthWrap);
+        }
+      }
+    };
     var updateFolderSidebarTitle = function() {
       if (!folderSidebarTitleEl) return;
       if (
@@ -4017,8 +4484,8 @@
           }
           html += '<button class="folder-tree__folder' + (isActive ? ' is-active' : '') + (isDimmedForMap ? ' is-dim' : '') + '" type="button" data-folder-path="' + escapeHtml(pathKey) + '" title="' + escapeHtml(child.path) + '">' + escapeHtml(child.name) + '</button>';
           if (pathKey && pathKey !== 'dz') {
-            html += '<button class="folder-tree__pin-link" type="button" data-folder-pin-link="' + escapeHtml(pathKey) + '" title="Pin folder objects">📌</button>';
-            html += '<button class="folder-tree__copy-link" type="button" data-folder-copy-link="' + escapeHtml(pathKey) + '" title="Copy folder link">🔗</button>';
+            html += '<button class="folder-tree__pin-link icon-action" type="button" data-folder-pin-link="' + escapeHtml(pathKey) + '" title="Pin folder objects"><span class="ui-icon ui-icon--pin" aria-hidden="true"></span></button>';
+            html += '<button class="folder-tree__copy-link icon-action" type="button" data-folder-copy-link="' + escapeHtml(pathKey) + '" title="Copy folder link"><span class="ui-icon ui-icon--link" aria-hidden="true"></span></button>';
           }
           html += '</div>';
           if (hasChildren) {
@@ -4039,17 +4506,17 @@
         + (databaseActive ? renderGuideHelpBtn('database', 'Show Object Finder help') : '')
         + '</div>'
         + '<div class="folder-tree__row folder-tree__row--object-map">'
-        + '<span class="folder-tree__leaf-icon" aria-hidden="true">📍</span>'
+        + '<img class="folder-tree__app-icon" src="/icons/object-map.svg" alt="" aria-hidden="true">'
         + '<button class="folder-tree__folder' + (activeCollectionFilter === 'object_map' ? ' is-active' : '') + '" type="button" data-folder-path="__object_map__" title="Object Maps">Object Maps</button>'
         + (activeCollectionFilter === 'object_map' ? renderGuideHelpBtn('object_map', 'Show Object Maps help') : '')
         + '</div>'
         + '<div class="folder-tree__row folder-tree__row--types-explorer">'
-        + '<span class="folder-tree__types-icon" aria-hidden="true">&lt;/&gt;</span>'
+        + '<img class="folder-tree__app-icon" src="/icons/types-explorer.svg" alt="" aria-hidden="true">'
         + '<button class="folder-tree__folder' + (activeCollectionFilter === 'types_explorer' ? ' is-active' : '') + '" type="button" data-folder-path="__types_explorer__" title="Types Explorer">Types Explorer</button>'
         + (activeCollectionFilter === 'types_explorer' ? renderGuideHelpBtn('types_explorer', 'Show Types Explorer help') : '')
         + '</div>'
         + '<div class="folder-tree__row folder-tree__row--presets">'
-        + '<span class="folder-tree__leaf-icon" aria-hidden="true">🏗️</span>'
+        + '<img class="folder-tree__app-icon" src="/icons/copy-editor.svg" alt="" aria-hidden="true">'
         + '<button class="folder-tree__folder' + (presetsActive ? ' is-active' : '') + '" type="button" data-folder-path="__presets__" title="Editor Builds">Editor Builds</button>'
         + (presetsActive ? renderGuideHelpBtn('presets', 'Show Editor Builds help') : '')
         + '</div>'
@@ -4071,6 +4538,7 @@
       }
       folderTreeEl.innerHTML = presetsRow + renderChildren(treeRoot);
       updateFolderSidebarTitle();
+      updateFiltersAppTitle();
       updateTypesExplorerPanelVisibility();
       updateObjectMapPanelVisibility();
       updatePresetsGuideNotice();
@@ -4180,10 +4648,83 @@
     var getPresetCopyablePath = function(row) {
       return row ? String(row.presetCopyablePath || '').trim() : '';
     };
-    var getPresetDzePath = function(row) {
-      return row ? String(row.presetDzePath || '').trim() : '';
+    var buildPresetStaticJsonPath = function(rawName) {
+      var slug = String(rawName || '')
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '_')
+        .replace(/^_+|_+$/g, '');
+      return slug ? ('presets/' + slug + '.json') : '';
     };
-
+    var presetPayloadCache = {};
+    var presetPayloadPending = {};
+    var getPresetCandidatePaths = function(copyablePath, importPath, objectName) {
+      var objectNamePath = buildPresetStaticJsonPath(objectName);
+      var legacyFolderPath = '';
+      var legacySourcePath = copyablePath || importPath;
+      var legacyMatch = String(legacySourcePath || '').match(/^database\/presets\/([^/]+)\//i);
+      if (legacyMatch && legacyMatch[1]) {
+        legacyFolderPath = buildPresetStaticJsonPath(legacyMatch[1]);
+      }
+      return [copyablePath, importPath]
+        .concat([objectNamePath, legacyFolderPath])
+        .map(function(path) { return String(path || '').trim(); })
+        .filter(Boolean)
+        .filter(function(path, idx, list) { return list.indexOf(path) === idx; });
+    };
+    var loadPresetPayloadPath = async function(path) {
+      var normalizedPath = String(path || '').replace(/^\/+/, '').trim();
+      if (!normalizedPath) return '';
+      if (presetPayloadCache.hasOwnProperty(normalizedPath)) {
+        return presetPayloadCache[normalizedPath];
+      }
+      if (presetPayloadPending[normalizedPath]) {
+        return presetPayloadPending[normalizedPath];
+      }
+      presetPayloadPending[normalizedPath] = (async function() {
+        try {
+          var response = await fetch('/' + encodeURI(normalizedPath), { cache: 'force-cache' });
+          if (!response.ok) return '';
+          var fetchedText = await response.text();
+          if (!fetchedText || !fetchedText.trim()) return '';
+          var parsedPreset = JSON.parse(fetchedText);
+          return JSON.stringify(normalizePresetClipboardEntries(parsedPreset), null, 4);
+        } catch (err) {
+          return '';
+        }
+      })();
+      var payload = await presetPayloadPending[normalizedPath];
+      presetPayloadCache[normalizedPath] = payload || '';
+      delete presetPayloadPending[normalizedPath];
+      return presetPayloadCache[normalizedPath];
+    };
+    var fetchPresetCopyPayloadFromValues = async function(copyablePath, importPath, objectName) {
+      var candidatePaths = getPresetCandidatePaths(copyablePath, importPath, objectName);
+      for (var p = 0; p < candidatePaths.length; p += 1) {
+        var payload = await loadPresetPayloadPath(candidatePaths[p]);
+        if (payload) return payload;
+      }
+      return '';
+    };
+    var fetchPresetCopyPayload = async function(rowData) {
+      return fetchPresetCopyPayloadFromValues(
+        getPresetCopyablePath(rowData),
+        getPresetImportJsonPath(rowData),
+        getObjectName(rowData)
+      );
+    };
+    var warmPresetPayloads = function(rows) {
+      (Array.isArray(rows) ? rows : []).forEach(function(row) {
+        if (!isPresetRow(row)) return;
+        var paths = getPresetCandidatePaths(
+          getPresetCopyablePath(row),
+          getPresetImportJsonPath(row),
+          getObjectName(row)
+        );
+        if (!paths.length) return;
+        paths.forEach(function(p) { loadPresetPayloadPath(p); });
+      });
+    };
     var showContent = function() {
       $('#dayzObjects, #dayzObjects_wrapper').css('visibility', 'visible');
       $('#loadingIndicator').hide();
@@ -4289,10 +4830,10 @@
                 '<span class="object-name-cell__text">' + escapeHtml(objName) + '</span>' +
               '</span>' +
               '<span class="cell-action-grid cell-action-grid--classname">' +
-                '<button class="copy-btn copy-link-btn" type="button" title="Copy object link">🔗</button>' +
-                '<button class="copy-btn pin-btn" type="button" title="Pin object">📌</button>' +
-                '<button class="copy-btn copy-name-btn" type="button" title="Copy object name">📋</button>' +
-                '<button class="copy-btn editor-copy-btn" type="button" title="Copy DayZ Editor JSON">🏗️</button>' +
+                '<button class="copy-btn copy-link-btn icon-action" type="button" title="Copy object link"><span class="ui-icon ui-icon--link" aria-hidden="true"></span></button>' +
+                '<button class="copy-btn pin-btn icon-action" type="button" title="Pin object"><span class="ui-icon ui-icon--pin" aria-hidden="true"></span></button>' +
+                '<button class="copy-btn copy-name-btn icon-action" type="button" title="Copy object name"><span class="ui-icon ui-icon--copy-name" aria-hidden="true"></span></button>' +
+                '<button class="copy-btn editor-copy-btn icon-action" type="button" title="Copy DayZ Editor JSON"><span class="ui-icon ui-icon--editor" aria-hidden="true"></span></button>' +
               '</span>'
             );
           }
@@ -4315,17 +4856,14 @@
             if (preset) {
               var importJsonPath = getPresetImportJsonPath(row);
               var copyablePath = getPresetCopyablePath(row);
-              var dzePath = getPresetDzePath(row);
               var hasEditorJson = hasPresetEditorJson(row);
-              var hasCopy = !!copyablePath || hasEditorJson;
+              var hasCopy = !!copyablePath || !!importJsonPath || hasEditorJson;
               var hasJson = !!importJsonPath || hasEditorJson;
-              var hasDze = !!dzePath;
-              if (type !== 'display') return 'preset ' + (hasCopy ? 'copy ' : '') + (hasJson ? 'json ' : '') + (hasDze ? 'dze' : '');
+              if (type !== 'display') return 'preset ' + (hasCopy ? 'copy ' : '') + (hasJson ? 'json ' : '');
               return (
                 '<div class="preset-actions">' +
-                  '<button class="preset-action-btn preset-copy-btn' + (hasCopy ? '' : ' is-disabled') + '" type="button" ' + (hasCopy ? '' : 'disabled ') + 'title="' + (hasCopy ? 'Copy to Editor' : 'Copy source not available') + '">🏗️ Copy</button>' +
-                  '<button class="preset-action-btn preset-export-btn' + (hasJson ? '' : ' is-disabled') + '" type="button" ' + (hasJson ? '' : 'disabled ') + 'title="' + (hasJson ? 'Download JSON' : 'Import JSON not available') + '">↓ JSON</button>' +
-                  '<button class="preset-action-btn preset-dze-btn' + (hasDze ? '' : ' is-disabled') + '" type="button" ' + (hasDze ? '' : 'disabled ') + 'title="' + (hasDze ? 'Download DZE' : 'DZE not available') + '">↓ DZE</button>' +
+                  '<button class="preset-action-btn preset-copy-btn ui-action-btn' + (hasCopy ? '' : ' is-disabled') + '" type="button" data-preset-copy-path="' + escapeHtml(copyablePath) + '" data-preset-import-path="' + escapeHtml(importJsonPath) + '" data-preset-object="' + escapeHtml(getObjectName(row)) + '" ' + (hasCopy ? '' : 'disabled ') + 'title="' + (hasCopy ? 'Copy to Editor' : 'Copy source not available') + '"><span class="ui-icon ui-icon--editor" aria-hidden="true"></span><span>Copy to Editor</span></button>' +
+                  '<button class="preset-action-btn preset-export-btn ui-action-btn' + (hasJson ? '' : ' is-disabled') + '" type="button" data-preset-import-path="' + escapeHtml(importJsonPath) + '" data-preset-object="' + escapeHtml(getObjectName(row)) + '" ' + (hasJson ? '' : 'disabled ') + 'title="' + (hasJson ? 'Download JSON' : 'Import JSON not available') + '">↓ JSON</button>' +
                 '</div>'
               );
             }
@@ -4350,9 +4888,9 @@
               + (isPathTruncated ? ('<span class="path-cell__text path-cell__text--full">' + safePath + '</span>') : '')
               + '</span>';
             var pathActionsHtml = '<span class="cell-action-grid cell-action-grid--path">'
-              + '<button class="copy-btn path-action-btn path-copy-link-btn" type="button" title="Copy path link">🔗</button>'
-              + '<button class="copy-btn path-action-btn path-pin-btn" type="button" title="Pin path">📌</button>'
-              + '<button class="copy-btn path-action-btn path-copy-name-btn" type="button" title="Copy path">📋</button>'
+              + '<button class="copy-btn path-action-btn path-copy-link-btn icon-action" type="button" title="Copy path link"><span class="ui-icon ui-icon--link" aria-hidden="true"></span></button>'
+              + '<button class="copy-btn path-action-btn path-pin-btn icon-action" type="button" title="Pin path"><span class="ui-icon ui-icon--pin" aria-hidden="true"></span></button>'
+              + '<button class="copy-btn path-action-btn path-copy-name-btn icon-action" type="button" title="Copy path"><span class="ui-icon ui-icon--copy-name" aria-hidden="true"></span></button>'
               + '<button class="copy-btn path-action-btn path-filter-btn" type="button" title="Filter to this path">' + PATH_FILTER_ICON_ENTITY + '</button>'
               + '</span>';
             return pathTextHtml + pathActionsHtml;
@@ -4451,6 +4989,8 @@
             td.setAttribute('data-images', JSON.stringify(imageList));
             td.setAttribute('data-objectid', getObjectId(rowData));
             td.setAttribute('data-editorjson', editorJson);
+            td.setAttribute('data-preset-import-path', getPresetImportJsonPath(rowData));
+            td.setAttribute('data-preset-copy-path', getPresetCopyablePath(rowData));
             td.setAttribute('data-linked-p3d', rowData['linked-p3d'] || '');
             td.setAttribute('data-linked-config', JSON.stringify(parseLinkedIds(rowData['linked-config'])));
             td.setAttribute('data-linked-variant', JSON.stringify(parseLinkedIds(rowData['linked-variant'])));
@@ -4505,10 +5045,21 @@
     };
     var pathHoverHideTimer = null;
     var pathHoverTooltipRowData = null;
-    var flashIconButton = function($btn, resetText) {
+    var flashIconButton = function($btn) {
       if (!$btn || !$btn.length) return;
+      var resetHtml = $btn.html();
       $btn.text('✔');
-      setTimeout(function() { $btn.text(resetText); }, 900);
+      setTimeout(function() { $btn.html(resetHtml); }, 900);
+    };
+    var iconHtml = function(name) {
+      return '<span class="ui-icon ui-icon--' + name + '" aria-hidden="true"></span>';
+    };
+    var iconLabelHtml = function(name, label) {
+      return iconHtml(name) + '<span>' + escapeHtml(label) + '</span>';
+    };
+    var setObjectFocusPinButton = function(isPinnedState) {
+      if (!objectFocusPinEl) return;
+      objectFocusPinEl.innerHTML = iconLabelHtml('pin', isPinnedState ? 'Unpin' : 'Pin');
     };
     var copyEditorJsonForRow = function(rowData) {
       if (!rowData) return false;
@@ -4522,6 +5073,32 @@
       if (!jsonText) return false;
       navigator.clipboard.writeText(jsonText);
       return true;
+    };
+    var copyTextToClipboard = async function(text) {
+      var value = String(text || '');
+      if (!value) return false;
+      try {
+        if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+          await navigator.clipboard.writeText(value);
+          return true;
+        }
+      } catch (err) {}
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = value;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.left = '-9999px';
+        ta.style.top = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        ta.setSelectionRange(0, ta.value.length);
+        var ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        return !!ok;
+      } catch (err) {
+        return false;
+      }
     };
     var togglePinnedForRow = function(rowData) {
       if (!rowData) return false;
@@ -4779,6 +5356,9 @@
     var folderSidebarSearchLinkEl = document.getElementById('folderSidebarSearchLink');
     var folderSidebarSearchClearEl = document.getElementById('folderSidebarSearchClear');
     var filtersEl = document.getElementById('filters');
+    var filtersAppTitleEl = document.getElementById('filtersAppTitle');
+    var filtersAppTitleIconEl = document.getElementById('filtersAppTitleIcon');
+    var filtersAppTitleTextEl = document.getElementById('filtersAppTitleText');
     var filterConsoleEl = document.getElementById('filterConsole');
     var typesExplorerPanelEl = document.getElementById('typesExplorerPanel');
     var typesExplorerUsageTagsEl = document.getElementById('typesExplorerUsageTags');
@@ -5020,8 +5600,12 @@
     var updateCollapseButtonLabel = function() {
       if (!objectFocusCollapseEl || !objectFocusEl) return;
       var isCollapsed = objectFocusEl.classList.contains('collapsed');
-      objectFocusCollapseEl.textContent = isCollapsed ? '<<' : '>>';
-      objectFocusCollapseEl.setAttribute('aria-label', isCollapsed ? 'Expand sidebar' : 'Collapse sidebar');
+      var isViewerActive = !isCollapsed;
+      var actionLabel = isCollapsed ? 'Expand sidebar' : 'Collapse sidebar';
+      objectFocusCollapseEl.setAttribute('aria-label', actionLabel);
+      objectFocusCollapseEl.setAttribute('title', actionLabel);
+      objectFocusCollapseEl.setAttribute('aria-pressed', (!isCollapsed).toString());
+      objectFocusCollapseEl.classList.toggle('is-active', isViewerActive);
     };
     var updateEmptyState = function() {
       if (!objectFocusEl || !objectFocusEmptyEl) return;
@@ -5032,6 +5616,7 @@
       if (objectFocusClearEl) {
         objectFocusClearEl.style.display = (hasSelection && !isCollapsed) ? 'inline-flex' : 'none';
       }
+      updateCollapseButtonLabel();
     };
     var updateLayoutForSidebar = function() {
       if (!objectsLayoutEl || !objectFocusEl) return;
@@ -5239,7 +5824,7 @@
       if (!hasTypesEntry || !objectFocusTypesLinkEl || !objectFocusTypesLinkEl.getAttribute('href')) return '';
       var typesExpanded = objectFocusSectionExpanded.types !== false;
       var typesActionHtml =
-        '<a class="object-focus__link-pill object-focus__section-action" href="' + escapeHtml(objectFocusTypesLinkEl.getAttribute('href') || '#') + '" download="' + escapeHtml(objectFocusTypesLinkEl.getAttribute('download') || '') + '">↓ Download types entry</a>';
+        '<a class="object-focus__link-pill object-focus__section-action" href="' + escapeHtml(objectFocusTypesLinkEl.getAttribute('href') || '#') + '" download="' + escapeHtml(objectFocusTypesLinkEl.getAttribute('download') || '') + '">↓ Types.xml entry</a>';
       var rows = [
         { map: 'chernarus', label: 'Chernarus' },
         { map: 'livonia', label: 'Livonia' },
@@ -5277,7 +5862,7 @@
       return '' +
         '<div class="object-focus__section object-focus__section-accordion object-focus__types-section' + (typesExpanded ? ' is-open' : '') + '">' +
           '<div class="object-focus__section-header">' +
-            '<button class="object-focus__section-title object-focus__section-toggle" type="button" data-section-toggle="types" data-section-title="Types Explorer" aria-expanded="' + (typesExpanded ? 'true' : 'false') + '">' + (typesExpanded ? '▴ ' : '▾ ') + '<span class="object-focus__types-title-icon" aria-hidden="true">&lt;/&gt;</span>Types Explorer</button>' +
+            '<button class="object-focus__section-title object-focus__section-toggle" type="button" data-section-toggle="types" data-section-title="Types Explorer" aria-expanded="' + (typesExpanded ? 'true' : 'false') + '">' + (typesExpanded ? '▴ ' : '▾ ') + '<span class="object-focus__types-title-icon ui-icon ui-icon--types" aria-hidden="true"></span>Types Explorer</button>' +
             typesActionHtml +
           '</div>' +
           '<div class="object-focus__section-body object-focus__types">' + rows.join('') + '</div>' +
@@ -5287,7 +5872,10 @@
       var arrow = isExpanded ? '▴ ' : '▾ ';
       var safeTitle = escapeHtml(sectionTitle || '');
       if (sectionKey === 'types') {
-        return arrow + '<span class="object-focus__types-title-icon" aria-hidden="true">&lt;/&gt;</span>' + safeTitle;
+        return arrow + '<span class="object-focus__types-title-icon ui-icon ui-icon--types" aria-hidden="true"></span>' + safeTitle;
+      }
+      if (sectionKey === 'location') {
+        return arrow + '<span class="object-focus__section-title-icon object-focus__section-title-icon--map ui-icon ui-icon--map" aria-hidden="true"></span>' + safeTitle;
       }
       return arrow + safeTitle;
     };
@@ -5601,6 +6189,7 @@
       if (!typesExplorerPanelEl) return;
       var visible = activeCollectionFilter === 'types_explorer';
       typesExplorerPanelEl.classList.toggle('visible', !!visible);
+      updateFiltersAppTitle();
     };
     var updateObjectMapPanelVisibility = function() {
       if (!objectMapPanelEl) return;
@@ -5612,7 +6201,10 @@
       if (filtersEl) {
         filtersEl.classList.toggle('object-map-mode', !!visible);
       }
+      updateFiltersAppTitle();
       if (visible) {
+        updateObjectMapToggleButtons();
+        updateFolderSidebarTitle();
         ensureObjectMapV2FrameLoaded(objectMapV2FrameWorldKey !== normalizeObjectMapKey(objectMapActiveMapKey));
         dispatchObjectMapV2SearchState();
         setTimeout(function() {
@@ -5667,6 +6259,7 @@
       var src = buildObjectMapV2FrameSrc();
       if (!src) return;
       if (forceReload || objectMapV2FrameEl.getAttribute('src') !== src) {
+        objectMapV2FrameEl.classList.add('is-loading');
         objectMapV2FrameEl.setAttribute('src', src);
         objectMapV2FrameWorldKey = normalizeObjectMapKey(objectMapActiveMapKey);
       }
@@ -5735,8 +6328,17 @@
         }, window.location.origin);
       } catch (error) {}
     };
+    var clearObjectMapV2SelectionState = function() {
+      if (!objectMapV2FrameEl || !objectMapV2FrameLoaded || !objectMapV2FrameEl.contentWindow) return;
+      try {
+        objectMapV2FrameEl.contentWindow.postMessage({
+          type: 'object-map-clear-selection'
+        }, window.location.origin);
+      } catch (error) {}
+    };
     if (objectMapV2FrameEl) {
       objectMapV2FrameEl.addEventListener('load', function() {
+        objectMapV2FrameEl.classList.remove('is-loading');
         dispatchObjectMapV2SearchState();
       });
     }
@@ -6130,6 +6732,10 @@
         clearObjectMapAreaSelection();
       }
       updateObjectMapToggleButtons();
+      updateFolderSidebarTitle();
+      if (activeCollectionFilter === 'object_map') {
+        syncTypesExplorerPath();
+      }
       if (useObjectMapV2) {
         ensureObjectMapV2FrameLoaded(objectMapV2FrameWorldKey !== normalized);
         dispatchObjectMapV2SearchState();
@@ -6681,11 +7287,11 @@
       (typesExplorerState.value || []).forEach(function(tag) { valueSelected[tag] = true; });
       typesExplorerUsageTagsEl.innerHTML = typesExplorerTags.usage.map(function(tag) {
         var active = usageSelected[tag] ? ' is-active' : '';
-        return '<button class="types-explorer__tag' + active + '" type="button" data-types-explorer-kind="usage" data-types-explorer-tag="' + escapeHtml(tag) + '">' + escapeHtml(tag) + '</button>';
+        return '<button class="types-explorer__tag ui-action-btn' + active + '" type="button" data-types-explorer-kind="usage" data-types-explorer-tag="' + escapeHtml(tag) + '">' + escapeHtml(tag) + '</button>';
       }).join('');
       typesExplorerValueTagsEl.innerHTML = typesExplorerTags.value.map(function(tag) {
         var active = valueSelected[tag] ? ' is-active' : '';
-        return '<button class="types-explorer__tag' + active + '" type="button" data-types-explorer-kind="value" data-types-explorer-tag="' + escapeHtml(tag) + '">' + escapeHtml(tag) + '</button>';
+        return '<button class="types-explorer__tag ui-action-btn' + active + '" type="button" data-types-explorer-kind="value" data-types-explorer-tag="' + escapeHtml(tag) + '">' + escapeHtml(tag) + '</button>';
       }).join('');
       updateTypesExplorerScopeButtons();
       updateTypesExplorerPanelVisibility();
@@ -6747,6 +7353,7 @@
       var nextUrl = new URL(window.location);
       nextUrl.searchParams.delete('id');
       nextUrl.searchParams.delete('object');
+      nextUrl.searchParams.delete('world');
       nextUrl.searchParams.delete('types_map');
       nextUrl.searchParams.delete('types_kind');
       nextUrl.searchParams.delete('types_tag');
@@ -6759,6 +7366,7 @@
     var buildIdFilterUrl = function(ids) {
       var nextUrl = new URL(window.location);
       nextUrl.searchParams.delete('version');
+      nextUrl.searchParams.delete('world');
       nextUrl.searchParams.delete('types_map');
       nextUrl.searchParams.delete('types_kind');
       nextUrl.searchParams.delete('types_tag');
@@ -6774,6 +7382,7 @@
       nextUrl.searchParams.delete('id');
       nextUrl.searchParams.delete('object');
       nextUrl.searchParams.delete('version');
+      nextUrl.searchParams.delete('world');
       nextUrl.searchParams.delete('types_map');
       nextUrl.searchParams.delete('types_kind');
       nextUrl.searchParams.delete('types_tag');
@@ -6800,15 +7409,13 @@
     };
     var buildTypesExplorerUrl = function() {
       var nextUrl = new URL(window.location.toString());
-      var focusedObjectId = normalizeObjectId(
-        (currentObjectData && currentObjectData.id) ? currentObjectData.id : (objectIdParams.length === 1 ? objectIdParams[0] : '')
-      );
       nextUrl.pathname = '/';
       nextUrl.searchParams.delete('id');
       nextUrl.searchParams.delete('object');
       nextUrl.searchParams.delete('version');
       nextUrl.searchParams.delete('path');
       nextUrl.searchParams.delete('maps');
+      nextUrl.searchParams.delete('world');
       nextUrl.searchParams.delete('presets');
       nextUrl.searchParams.delete('types_map');
       nextUrl.searchParams.delete('types_kind');
@@ -6818,9 +7425,11 @@
       nextUrl.searchParams.delete('types_usage');
       nextUrl.searchParams.delete('types_value');
       if (activeCollectionFilter === 'object_map') {
+        var currentMapObjectParam = String(new URL(window.location.toString()).searchParams.get('object') || '').trim();
         nextUrl.searchParams.set('maps', '1');
-        if (focusedObjectId) {
-          nextUrl.searchParams.set('id', focusedObjectId);
+        nextUrl.searchParams.set('world', normalizeObjectMapKey(objectMapActiveMapKey));
+        if (currentMapObjectParam && objectMapSearchMode === 'exact_object' && objectMapExactSearchQuery) {
+          nextUrl.searchParams.set('object', objectMapExactSearchQuery);
         }
         return nextUrl.toString();
       }
@@ -6876,6 +7485,7 @@
       nextUrl.searchParams.delete('object');
       nextUrl.searchParams.delete('version');
       nextUrl.searchParams.delete('maps');
+      nextUrl.searchParams.delete('world');
       nextUrl.searchParams.delete('presets');
       nextUrl.searchParams.delete('types');
       nextUrl.searchParams.delete('types_maps');
@@ -7171,7 +7781,7 @@
           saveObjectFocusSectionPrefs();
           objectFocusLocationEl.classList.toggle('is-open', objectFocusSectionExpanded.location);
           sectionToggle.setAttribute('aria-expanded', objectFocusSectionExpanded.location ? 'true' : 'false');
-          sectionToggle.textContent = (objectFocusSectionExpanded.location ? '▴ ' : '▾ ') + '📍 Object Maps';
+          sectionToggle.innerHTML = buildObjectFocusSectionToggleHtml('location', 'Object Maps', objectFocusSectionExpanded.location);
           return;
         }
         var unavailableTrigger = e.target.closest('[data-action="view-location-map-unavailable"]');
@@ -7327,10 +7937,10 @@
         '<div class="row-detail" data-object="' + escapeHtml(objName) + '">' +
           '<div class="row-detail__title">' + escapeHtml(objName) + '</div>' +
           '<div class="row-detail__actions">' +
-            '<button class="row-detail__action" data-action="pin">📌 Pin</button>' +
-            '<button class="row-detail__action" data-action="link">🔗 Copy link</button>' +
-            '<button class="row-detail__action" data-action="editor">🏗️ Copy to Editor</button>' +
-            '<button class="row-detail__action" data-action="name">📋 Copy name</button>' +
+            '<button class="row-detail__action ui-action-btn" data-action="pin"><span class="ui-icon ui-icon--pin" aria-hidden="true"></span><span>Pin</span></button>' +
+            '<button class="row-detail__action ui-action-btn" data-action="link"><span class="ui-icon ui-icon--link" aria-hidden="true"></span><span>Copy link</span></button>' +
+            '<button class="row-detail__action ui-action-btn" data-action="editor"><span class="ui-icon ui-icon--editor" aria-hidden="true"></span><span>Copy to Editor</span></button>' +
+            '<button class="row-detail__action ui-action-btn" data-action="name"><span class="ui-icon ui-icon--copy-name" aria-hidden="true"></span><span>Copy name</span></button>' +
           '</div>' +
           (imgHtml ? imgHtml : '') +
           '<div class="row-detail__meta">' +
@@ -7544,7 +8154,7 @@
       objectFocusLocationEl.classList.add('visible');
       objectFocusLocationEl.innerHTML =
         '<div class="object-focus__section-header">' +
-          '<button class="object-focus__section-title object-focus__section-toggle object-focus__location-heading" type="button" data-section-toggle="location" data-section-title="Object Maps" aria-expanded="' + (locationExpanded ? 'true' : 'false') + '">' + (locationExpanded ? '▴ ' : '▾ ') + '📍 Object Maps</button>' +
+          '<button class="object-focus__section-title object-focus__section-toggle object-focus__location-heading" type="button" data-section-toggle="location" data-section-title="Object Maps" aria-expanded="' + (locationExpanded ? 'true' : 'false') + '">' + buildObjectFocusSectionToggleHtml('location', 'Object Maps', locationExpanded) + '</button>' +
         '</div>' +
         '<div class="object-focus__section-body">' +
           '<div class="object-focus__location-row">' +
@@ -7581,7 +8191,7 @@
           var mapGroupActionHtml = '';
           if (objectFocusMapGroupProtoLinkEl && objectFocusMapGroupProtoLinkEl.getAttribute('href')) {
             mapGroupActionHtml =
-              '<a class="object-focus__link-pill object-focus__section-action" href="' + escapeHtml(objectFocusMapGroupProtoLinkEl.getAttribute('href') || '#') + '" download="' + escapeHtml(objectFocusMapGroupProtoLinkEl.getAttribute('download') || '') + '">↓ Download MapGroupProto</a>';
+              '<a class="object-focus__link-pill object-focus__section-action" href="' + escapeHtml(objectFocusMapGroupProtoLinkEl.getAttribute('href') || '#') + '" download="' + escapeHtml(objectFocusMapGroupProtoLinkEl.getAttribute('download') || '') + '">↓ MapGroupProto</a>';
           }
           var orderedMapKeys = Object.keys(locationMapConfigs).filter(function(mapKey) {
             return !!currentObjectLocationData[mapKey];
@@ -7610,7 +8220,7 @@
           }).join('');
           objectFocusLocationEl.innerHTML =
             '<div class="object-focus__section-header">' +
-              '<button class="object-focus__section-title object-focus__section-toggle object-focus__location-heading" type="button" data-section-toggle="location" data-section-title="Object Maps" aria-expanded="' + (locationExpanded ? 'true' : 'false') + '">' + (locationExpanded ? '▴ ' : '▾ ') + '📍 Object Maps</button>' +
+              '<button class="object-focus__section-title object-focus__section-toggle object-focus__location-heading" type="button" data-section-toggle="location" data-section-title="Object Maps" aria-expanded="' + (locationExpanded ? 'true' : 'false') + '">' + buildObjectFocusSectionToggleHtml('location', 'Object Maps', locationExpanded) + '</button>' +
               mapGroupActionHtml +
             '</div>' +
             '<div class="object-focus__section-body"><div class="object-focus__location-actions">' + locationRowsHtml + '</div></div>';
@@ -8305,6 +8915,7 @@
       var normalizedId = normalizeObjectId(objectId);
       nextUrl.searchParams.delete('path');
       nextUrl.searchParams.delete('maps');
+      nextUrl.searchParams.delete('world');
       nextUrl.searchParams.delete('presets');
       nextUrl.searchParams.delete('types');
       nextUrl.searchParams.delete('types_maps');
@@ -8322,6 +8933,30 @@
         nextUrl.searchParams.set('object', legacyObjectName);
       } else {
         nextUrl.searchParams.delete('object');
+      }
+      return nextUrl.toString();
+    };
+    var buildObjectMapObjectUrl = function(objectName, mapKey) {
+      var nextUrl = new URL(window.location);
+      var normalizedName = String(objectName || '').trim();
+      nextUrl.pathname = '/';
+      nextUrl.searchParams.delete('id');
+      nextUrl.searchParams.delete('object');
+      nextUrl.searchParams.delete('version');
+      nextUrl.searchParams.delete('path');
+      nextUrl.searchParams.delete('presets');
+      nextUrl.searchParams.delete('types');
+      nextUrl.searchParams.delete('types_maps');
+      nextUrl.searchParams.delete('types_usage');
+      nextUrl.searchParams.delete('types_value');
+      nextUrl.searchParams.delete('types_map');
+      nextUrl.searchParams.delete('types_kind');
+      nextUrl.searchParams.delete('types_tag');
+      nextUrl.searchParams.delete('q');
+      nextUrl.searchParams.set('maps', '1');
+      nextUrl.searchParams.set('world', normalizeObjectMapKey(mapKey));
+      if (normalizedName) {
+        nextUrl.searchParams.set('object', normalizedName);
       }
       return nextUrl.toString();
     };
@@ -8367,6 +9002,39 @@
         var isConfigEntry = !!typeValue && !modelValue && typeValue.indexOf('\\') === -1;
         if (isConfigEntry && !displayName) {
           next.DisplayName = typeValue;
+        }
+        return next;
+      });
+    };
+    var normalizePresetClipboardEntries = function(entries) {
+      var list = normalizeEditorJsonEntries(entries);
+      return list.map(function(entry) {
+        if (!entry || typeof entry !== 'object' || Array.isArray(entry)) {
+          return entry;
+        }
+        var next = Object.assign({}, entry);
+        if (!Array.isArray(next.Position) || next.Position.length < 3) {
+          next.Position = [0, 0, 0];
+        }
+        if (!Array.isArray(next.Orientation) || next.Orientation.length < 3) {
+          next.Orientation = [0, 0, 0];
+        }
+        if (typeof next.Scale !== 'number' || !isFinite(next.Scale) || next.Scale <= 0) {
+          next.Scale = 1;
+        }
+        if (!next.AttachmentMap || typeof next.AttachmentMap !== 'object' || Array.isArray(next.AttachmentMap)) {
+          next.AttachmentMap = {};
+        }
+        next.DisplayName = '';
+        next.Model = '';
+        if (!isFinite(Number(next.Flags))) {
+          next.Flags = 30;
+        }
+        if (!isFinite(Number(next.m_LowBits))) {
+          next.m_LowBits = 0;
+        }
+        if (!isFinite(Number(next.m_HighBits))) {
+          next.m_HighBits = 0;
         }
         return next;
       });
@@ -8516,6 +9184,17 @@
       var tags = objData.tags;
       var dimensionsVisual = parseDimensionsVisual(objData.dimensionsVisual);
       var editorJsonRaw = objData.editorJsonRaw;
+      var presetImportJsonPath = String(objData.presetImportJsonPath || '').trim();
+      var presetCopyablePath = String(objData.presetCopyablePath || '').trim();
+      var isPresetObject = isPresetRow({ category: category, modelType: modelType });
+      if (isPresetObject) {
+        if (!presetImportJsonPath) {
+          presetImportJsonPath = buildPresetStaticJsonPath(objName);
+        }
+        if (!presetCopyablePath) {
+          presetCopyablePath = presetImportJsonPath;
+        }
+      }
       var imageList = resolveRowImageList(objData, imgPath);
       var linkedP3D = normalizeObjectId(objData.linkedP3D);
       var linkedConfig = parseLinkedIds(objData.linkedConfig).map(normalizeObjectId).filter(Boolean);
@@ -8534,6 +9213,8 @@
         consoleFlag: consoleFlag,
         tags: tags,
         dimensionsVisual: dimensionsVisual,
+        presetImportJsonPath: presetImportJsonPath,
+        presetCopyablePath: presetCopyablePath,
         images: imageList,
         linkedP3D: linkedP3D,
         linkedConfig: linkedConfig,
@@ -8628,9 +9309,7 @@
       }
 
       objectFocusEl.classList.add('visible');
-      if (objectFocusPinEl) {
-        objectFocusPinEl.textContent = isPinned(objName) ? '📌 Unpin' : '📌 Pin';
-      }
+      setObjectFocusPinButton(isPinned(objName));
       updateEmptyState();
 
       if (updateUrl) {
@@ -8922,7 +9601,7 @@
           linkBadge.className = 'pinned-remove-link';
           linkBadge.type = 'button';
           linkBadge.title = 'Copy link to this path';
-          linkBadge.textContent = '🔗';
+          linkBadge.innerHTML = iconHtml('link');
           linkBadge.addEventListener('click', function(e) {
             e.stopPropagation();
             if (!Array.isArray(item.items) || !item.items.length) return;
@@ -8934,9 +9613,9 @@
             }).filter(function(entry) { return entry.objName; });
             if (!entries.length) return;
             navigator.clipboard.writeText(buildPinnedUrl(entries));
-            var original = linkBadge.textContent;
+            var original = linkBadge.innerHTML;
             linkBadge.textContent = '✔';
-            setTimeout(function() { linkBadge.textContent = original; }, 900);
+            setTimeout(function() { linkBadge.innerHTML = original; }, 900);
           });
           actions.appendChild(linkBadge);
         }
@@ -8946,7 +9625,7 @@
           editorBtn.className = 'pinned-action-btn';
           editorBtn.type = 'button';
           editorBtn.title = 'Copy to Editor';
-          editorBtn.textContent = '🏗️';
+          editorBtn.innerHTML = iconHtml('editor');
           editorBtn.addEventListener('click', function(e) {
             e.stopPropagation();
             var jsonText = buildEditorJson(
@@ -8956,23 +9635,23 @@
               item.p3dPath
             );
             navigator.clipboard.writeText(jsonText);
-            var original = editorBtn.textContent;
+            var original = editorBtn.innerHTML;
             editorBtn.textContent = '✔';
-            setTimeout(function() { editorBtn.textContent = original; }, 900);
+            setTimeout(function() { editorBtn.innerHTML = original; }, 900);
           });
 
           var nameBtn = document.createElement('button');
           nameBtn.className = 'pinned-action-btn';
           nameBtn.type = 'button';
           nameBtn.title = 'Copy name';
-          nameBtn.textContent = '📋';
+          nameBtn.innerHTML = iconHtml('copy-name');
           nameBtn.addEventListener('click', function(e) {
             e.stopPropagation();
             if (!item.objName) return;
             navigator.clipboard.writeText(item.objName);
-            var original = nameBtn.textContent;
+            var original = nameBtn.innerHTML;
             nameBtn.textContent = '✔';
-            setTimeout(function() { nameBtn.textContent = original; }, 900);
+            setTimeout(function() { nameBtn.innerHTML = original; }, 900);
           });
 
           actions.appendChild(editorBtn);
@@ -8985,6 +9664,7 @@
             objectFocusEl.classList.remove('collapsed');
             updateCollapseButtonLabel();
             updateEmptyState();
+            updateLayoutForSidebar();
           }
           if (item.type === 'path') {
             item.expanded = !item.expanded;
@@ -9028,13 +9708,13 @@
           rowActions.className = 'pinned-path-row pinned-path-row--actions';
           var copyBtn = document.createElement('button');
           copyBtn.className = 'pinned-path-btn pinned-path-cta';
-          copyBtn.textContent = '🏗️ Copy as...';
+          copyBtn.innerHTML = iconLabelHtml('editor', 'Copy as...');
           copyBtn.addEventListener('click', function(e) {
             e.stopPropagation();
             copyPinnedPath(item);
-            var originalText = copyBtn.textContent;
+            var originalText = copyBtn.innerHTML;
             copyBtn.textContent = '✔';
-            setTimeout(function() { copyBtn.textContent = originalText; }, 900);
+            setTimeout(function() { copyBtn.innerHTML = originalText; }, 900);
           });
           var downloadBtn = document.createElement('button');
           downloadBtn.className = 'pinned-path-btn pinned-path-cta pinned-path-btn--push-right';
@@ -9067,10 +9747,16 @@
           layoutLabel.className = 'pinned-path-label';
           layoutLabel.textContent = 'Layout:';
           rowLayout.appendChild(layoutLabel);
-          ['grid', 'line', 'stacked'].forEach(function(mode) {
+          ['grid', 'line', 'stacked', 'random'].forEach(function(mode) {
             var btn = document.createElement('button');
             btn.className = 'pinned-path-btn' + (item.layout === mode ? ' active' : '');
-            btn.textContent = mode === 'grid' ? 'As grid' : mode === 'line' ? 'In line' : 'Stacked';
+            btn.textContent = mode === 'grid'
+              ? 'As grid'
+              : mode === 'line'
+                ? 'In line'
+                : mode === 'stacked'
+                  ? 'Stacked'
+                  : 'Random';
             btn.addEventListener('click', function(e) {
               e.stopPropagation();
               item.layout = mode;
@@ -9362,17 +10048,15 @@
         normalizedName = String(resolveObjectNameById(normalizedId) || '').trim();
       }
       var preferredMap = String(preferredMapKey || '').trim().toLowerCase();
-      if (preferredMap === 'chernarus' || preferredMap === 'livonia' || preferredMap === 'sakhal') {
-        objectMapActiveMapKey = preferredMap;
-      }
+      objectMapExactSearchQuery = normalizedName;
+      objectMapSearchMode = normalizedName ? 'exact_object' : '';
       activeCollectionFilter = 'object_map';
+      setObjectMapActiveMap(preferredMap || objectMapActiveMapKey);
       setActiveFolderFilter('', false);
       updateTypesExplorerPanelVisibility();
       updateObjectMapPanelVisibility();
       updatePresetsGuideNotice();
       renderFolderTree();
-      objectMapExactSearchQuery = normalizedName;
-      objectMapSearchMode = normalizedName ? 'exact_object' : '';
       table.columns().search('');
       if (normalizedName) {
         table.search(normalizedName).draw();
@@ -9399,9 +10083,9 @@
 
     if (objectFocusClearEl) {
       objectFocusClearEl.addEventListener('click', function() {
-        table.column(2).search('').draw();
-        hideFocusDetails();
-        history.replaceState({}, '', buildObjectUrl('', ''));
+        if (typeof runResetView === 'function') {
+          runResetView();
+        }
       });
     }
 
@@ -9412,25 +10096,31 @@
           currentObjectName || objectFocusNameEl.textContent || ''
         );
         navigator.clipboard.writeText(link);
-        var original = objectFocusCopyEl.textContent;
+        var original = objectFocusCopyEl.innerHTML;
         objectFocusCopyEl.textContent = 'Copied';
-        setTimeout(function() { objectFocusCopyEl.textContent = original; }, 1200);
+        setTimeout(function() { objectFocusCopyEl.innerHTML = original; }, 1200);
       });
     }
 
     if (objectFocusEditorEl) {
-      objectFocusEditorEl.addEventListener('click', function() {
+      objectFocusEditorEl.addEventListener('click', async function() {
         if (!currentObjectData) return;
-        var jsonText = buildEditorJson(
-          currentObjectData.editorJsonRaw,
-          currentObjectData.objName,
-          currentObjectData.modelType,
-          currentObjectData.p3dPath
-        );
+        var jsonText = '';
+        if (isPresetRow(currentObjectData)) {
+          jsonText = await fetchPresetCopyPayload(currentObjectData);
+          if (!jsonText) return;
+        } else {
+          jsonText = buildEditorJson(
+            currentObjectData.editorJsonRaw,
+            currentObjectData.objName,
+            currentObjectData.modelType,
+            currentObjectData.p3dPath
+          );
+        }
         navigator.clipboard.writeText(jsonText);
-        var original = objectFocusEditorEl.textContent;
+        var original = objectFocusEditorEl.innerHTML;
         objectFocusEditorEl.textContent = 'Copied';
-        setTimeout(function() { objectFocusEditorEl.textContent = original; }, 1200);
+        setTimeout(function() { objectFocusEditorEl.innerHTML = original; }, 1200);
       });
     }
 
@@ -9439,9 +10129,9 @@
         var nameText = currentObjectName || objectFocusNameEl.textContent || '';
         if (!nameText) return;
         navigator.clipboard.writeText(nameText);
-        var original = objectFocusNameCopyEl.textContent;
+        var original = objectFocusNameCopyEl.innerHTML;
         objectFocusNameCopyEl.textContent = 'Copied';
-        setTimeout(function() { objectFocusNameCopyEl.textContent = original; }, 1200);
+        setTimeout(function() { objectFocusNameCopyEl.innerHTML = original; }, 1200);
       });
     }
 
@@ -9453,9 +10143,9 @@
         );
         if (!markdownLink) return;
         navigator.clipboard.writeText(markdownLink);
-        var original = objectFocusMarkdownCopyEl.textContent;
+        var original = objectFocusMarkdownCopyEl.innerHTML;
         objectFocusMarkdownCopyEl.textContent = '✔';
-        setTimeout(function() { objectFocusMarkdownCopyEl.textContent = original; }, 1200);
+        setTimeout(function() { objectFocusMarkdownCopyEl.innerHTML = original; }, 1200);
       });
     }
 
@@ -9468,9 +10158,7 @@
             return item.objName !== currentObjectData.objName;
           });
           updatePinnedUI();
-          if (objectFocusPinEl) {
-            objectFocusPinEl.textContent = '📌 Pin';
-          }
+          setObjectFocusPinButton(false);
           return;
         }
         pinnedItems.push({
@@ -9490,9 +10178,7 @@
           linkedVariant: currentObjectData.linkedVariant
         });
         updatePinnedUI();
-        if (objectFocusPinEl) {
-          objectFocusPinEl.textContent = '📌 Unpin';
-        }
+        setObjectFocusPinButton(true);
       });
     }
 
@@ -9503,8 +10189,9 @@
         var names = entries.map(function(item) { return item.objName; }).filter(Boolean);
         if (!names.length) return;
         navigator.clipboard.writeText(names.join('\n'));
+        var restorePinnedNamesHtml = pinnedCopyNamesEl.innerHTML;
         pinnedCopyNamesEl.textContent = '✔';
-        setTimeout(function() { pinnedCopyNamesEl.textContent = '📋'; }, 900);
+        setTimeout(function() { pinnedCopyNamesEl.innerHTML = restorePinnedNamesHtml; }, 900);
       });
     }
 
@@ -9514,9 +10201,9 @@
         if (!entries.length) return;
         var link = buildPinnedUrl(entries);
         navigator.clipboard.writeText(link);
-        var original = pinnedCopyLinkEl.textContent;
+        var original = pinnedCopyLinkEl.innerHTML;
         pinnedCopyLinkEl.textContent = 'Copied';
-        setTimeout(function() { pinnedCopyLinkEl.textContent = original; }, 1200);
+        setTimeout(function() { pinnedCopyLinkEl.innerHTML = original; }, 1200);
       });
     }
 
@@ -9562,8 +10249,9 @@
         });
         if (!combined.length) return;
         navigator.clipboard.writeText(JSON.stringify(combined, null, 4));
+        var restorePinnedAllHtml = pinnedCopyAllEl.innerHTML;
         pinnedCopyAllEl.textContent = '✔';
-        setTimeout(function() { pinnedCopyAllEl.textContent = '🏗️'; }, 900);
+        setTimeout(function() { pinnedCopyAllEl.innerHTML = restorePinnedAllHtml; }, 900);
       });
     }
 
@@ -9581,10 +10269,11 @@
         var entries = getPinnedObjectEntries(includePaths);
         if (!entries.length) return;
         var spacing = resolveSpacingValue(entries, pinnedBulkLayout, pinnedBulkSpacing);
+        var layoutContext = buildLayoutContext(entries.length, pinnedBulkLayout);
         var combined = [];
         entries.forEach(function(item, index) {
           var objects = buildEditorJsonArray(item);
-          applyLayoutOffsets(objects, index, entries.length, pinnedBulkLayout, spacing);
+          applyLayoutOffsets(objects, index, entries.length, pinnedBulkLayout, spacing, layoutContext);
           combined = combined.concat(objects);
         });
         if (!combined.length) return;
@@ -9600,8 +10289,8 @@
         if (!pinnedItems.length) return;
         pinnedItems = [];
         updatePinnedUI();
-        if (objectFocusPinEl && currentObjectName) {
-          objectFocusPinEl.textContent = '📌 Pin';
+        if (currentObjectName) {
+          setObjectFocusPinButton(false);
         }
       });
     }
@@ -9646,7 +10335,47 @@
       }
       return buildEditorJsonArray(item);
     };
-    var applyLayoutOffsets = function(objects, index, count, layout, spacing) {
+    var buildLayoutContext = function(count, layout) {
+      if (layout !== 'random') return null;
+      var total = Math.max(0, Number(count) || 0);
+      var randomPositions = [];
+      if (!total) return { randomPositions: randomPositions };
+      var minDistance = 1;
+      var radiusStep = 1;
+      // Use rejection sampling in an expanding square so items are genuinely random
+      // while still respecting spacing as a minimum distance.
+      for (var i = 0; i < total; i += 1) {
+        var placed = false;
+        var radius = Math.max(1, Math.ceil(Math.sqrt(total)) * radiusStep);
+        for (var pass = 0; pass < 8 && !placed; pass += 1) {
+          var attempts = Math.max(30, total * 8);
+          for (var attempt = 0; attempt < attempts; attempt += 1) {
+            var px = (Math.random() * 2 - 1) * radius;
+            var pz = (Math.random() * 2 - 1) * radius;
+            var ok = true;
+            for (var k = 0; k < randomPositions.length; k += 1) {
+              var dx = px - randomPositions[k].x;
+              var dz = pz - randomPositions[k].z;
+              if (Math.hypot(dx, dz) < minDistance) {
+                ok = false;
+                break;
+              }
+            }
+            if (!ok) continue;
+            randomPositions.push({ x: px, z: pz });
+            placed = true;
+            break;
+          }
+          radius += Math.max(1, Math.ceil(Math.sqrt(total)) * radiusStep);
+        }
+        if (!placed) {
+          // Guaranteed fallback if rejection sampling gets crowded.
+          randomPositions.push({ x: i * minDistance, z: 0 });
+        }
+      }
+      return { randomPositions: randomPositions };
+    };
+    var applyLayoutOffsets = function(objects, index, count, layout, spacing, context) {
       if (!objects || !objects.length) return;
       var offsetX = 0;
       var offsetZ = 0;
@@ -9661,6 +10390,11 @@
         offsetZ = row * spacing;
       } else if (layout === 'stacked') {
         offsetY = index * spacing;
+      } else if (layout === 'random') {
+        var randomPositions = context && Array.isArray(context.randomPositions) ? context.randomPositions : null;
+        var position = randomPositions && randomPositions.length > index ? randomPositions[index] : { x: index, z: 0 };
+        offsetX = position.x * spacing;
+        offsetZ = position.z * spacing;
       }
       objects.forEach(function(obj) {
         if (!obj.Position || obj.Position.length < 3) {
@@ -9819,9 +10553,10 @@
       var layout = pathItem.layout || 'line';
       var mode = pathItem.mode || 'P3D';
       var spacing = resolveSpacingValue(entries, layout, pathItem.spacing);
+      var layoutContext = buildLayoutContext(entries.length, layout);
       entries.forEach(function(item, index) {
         var objects = buildEditorJsonArrayWithMode(item, mode);
-        applyLayoutOffsets(objects, index, entries.length, layout, spacing);
+        applyLayoutOffsets(objects, index, entries.length, layout, spacing, layoutContext);
         combined = combined.concat(objects);
       });
       if (!combined.length) return;
@@ -9944,7 +10679,7 @@
           : null;
         if (!actionRow || !actionName) return;
         if (actionName === 'link') {
-          navigator.clipboard.writeText(buildObjectUrl(getObjectId(actionRow), getObjectName(actionRow)));
+          navigator.clipboard.writeText(buildObjectMapObjectUrl(getObjectName(actionRow), objectMapActiveMapKey));
           return;
         }
         if (actionName === 'name') {
@@ -10034,6 +10769,10 @@
       var key = String(value || '').trim().toLowerCase();
       return (key === 'usage' || key === 'value') ? key : '';
     };
+    var normalizeObjectMapParam = function(value) {
+      var key = String(value || '').trim().toLowerCase();
+      return (key === 'chernarus' || key === 'livonia' || key === 'sakhal') ? key : '';
+    };
     var objectIdParams = searchParams.getAll('id').map(function(value) {
       return normalizeObjectId(value);
     }).filter(Boolean);
@@ -10043,6 +10782,7 @@
     var objectParam = searchParams.get('object');
     var searchQueryParam = String(searchParams.get('q') || '').trim();
     var versionParam = normalizeVersionParam(searchParams.get('version'));
+    var objectMapWorldParam = normalizeObjectMapParam(searchParams.get('world'));
     var typesMapParam = normalizeTypesMapParam(searchParams.get('types_map'));
     var typesKindParam = normalizeTypesKindParam(searchParams.get('types_kind'));
     var typesTagParam = String(searchParams.get('types_tag') || '').trim();
@@ -10073,6 +10813,16 @@
     var pathHoverTooltipEl = document.getElementById('pathHoverTooltip');
     var presetsGuideNoticeEl = document.getElementById('presetsGuideNotice');
     var appGuideCookiePrefix = 'samsobjectfinder_guide_';
+    var scheduleGuideLayoutSync = function() {
+      if (typeof scheduleSidebarTopOffsetSync !== 'function') return;
+      scheduleSidebarTopOffsetSync();
+      setTimeout(function() {
+        scheduleSidebarTopOffsetSync();
+      }, 40);
+      setTimeout(function() {
+        scheduleSidebarTopOffsetSync();
+      }, 220);
+    };
 
     var readCookie = function(name) {
       var escaped = String(name).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -10111,6 +10861,7 @@
       if (objectMapGuideNoticeEl) {
         objectMapGuideNoticeEl.classList.toggle('visible', activeCollectionFilter === 'object_map' && !isGuideDismissed('object_map'));
       }
+      scheduleGuideLayoutSync();
     };
     var appliedUrlState = false;
 
@@ -10235,7 +10986,7 @@
           openObjectInObjectMapView(
             objectIdParams[0],
             getObjectName(singleMatch) || '',
-            'chernarus'
+            objectMapWorldParam || 'chernarus'
           );
         }
       } else if (objectIdParams.length > 1) {
@@ -10248,17 +10999,22 @@
       } else if (objectParam) {
         treatIdListAsSearchFolders = false;
         highlightedFolderPath = '';
-        var legacyAsId = normalizeObjectId(objectParam);
-        if (legacyAsId) {
-          focusById(legacyAsId);
+        if (mapsAppParam) {
+          openObjectInObjectMapView('', objectParam, objectMapWorldParam || 'chernarus');
         } else {
-          focusByName(objectParam);
+          var legacyAsId = normalizeObjectId(objectParam);
+          if (legacyAsId) {
+            focusById(legacyAsId);
+          } else {
+            focusByName(objectParam);
+          }
         }
       } else {
         treatIdListAsSearchFolders = false;
         highlightedFolderPath = '';
         if (mapsAppParam) {
           activeCollectionFilter = 'object_map';
+          setObjectMapActiveMap(objectMapWorldParam || 'chernarus');
           setActiveFolderFilter('', false);
           updateObjectMapPanelVisibility();
         } else if (presetsAppParam) {
@@ -10301,6 +11057,7 @@
 
     var bootstrapDataAndUrlState = function(sourceData) {
       if (!Array.isArray(sourceData) || !sourceData.length) return;
+      warmPresetPayloads(sourceData);
       updateObjectNameLookup(sourceData);
       populateFolderFilter(sourceData);
       applyUrlState(sourceData);
@@ -10548,6 +11305,35 @@
       updateSearchShareLinkVisibility();
       scheduleSidebarTopOffsetSync();
     };
+    var updateToggleEl = document.getElementById('updateToggle');
+    var applyVersionFilterByTag = function(versionKey) {
+      var normalizedVersion = normalizeVersionParam(versionKey);
+      if (!normalizedVersion || !table) return;
+      runResetView();
+      var allRows = getDataArray(table.rows().data());
+      var versionMatches = allRows.filter(function(row) {
+        return rowHasVersionTag(row, normalizedVersion);
+      });
+      var versionIds = versionMatches.map(function(row) {
+        return normalizeObjectId(getObjectId(row));
+      }).filter(Boolean);
+      applyIdListFilter(versionIds);
+      if (versionFilterNoticeEl) {
+        if (versionFilterNoticeTextEl) {
+          versionFilterNoticeTextEl.textContent = 'Filtering ' + normalizedVersion + ' objects.';
+        }
+        versionFilterNoticeEl.classList.add('visible');
+      }
+      versionParam = normalizedVersion;
+      history.replaceState({}, '', buildVersionFilterUrl(normalizedVersion));
+      updateSearchShareLinkVisibility();
+    };
+    if (updateToggleEl) {
+      updateToggleEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        applyVersionFilterByTag('v1.29');
+      });
+    }
     if (folderSidebarClearEl) {
       folderSidebarClearEl.addEventListener('click', function() {
         runResetView();
@@ -10562,7 +11348,12 @@
           objectMapExactSearchQuery = '';
           objectMapSearchMode = '';
           var query = String(folderSidebarSearchEl.value || '');
-          if (!query.trim() && (activeFolderFilter || activeCollectionFilter)) {
+          var queryTrimmed = query.trim();
+          if (!queryTrimmed && typeof runResetView === 'function') {
+            runResetView();
+            return;
+          }
+          if (!queryTrimmed && (activeFolderFilter || activeCollectionFilter)) {
             var keepAppCollection = activeCollectionFilter === 'presets' || activeCollectionFilter === 'types_explorer' || activeCollectionFilter === 'object_map';
             if (!keepAppCollection) {
               activeCollectionFilter = '';
@@ -10598,17 +11389,21 @@
         var query = folderSidebarSearchEl ? String(folderSidebarSearchEl.value || '').trim() : '';
         if (!query) return;
         navigator.clipboard.writeText(buildSearchShareUrl(query));
-        var original = folderSidebarSearchLinkEl.textContent;
+        var originalSearchLinkHtml = folderSidebarSearchLinkEl.innerHTML;
         folderSidebarSearchLinkEl.textContent = '✔';
-        setTimeout(function() { folderSidebarSearchLinkEl.textContent = original; }, 1000);
+        setTimeout(function() { folderSidebarSearchLinkEl.innerHTML = originalSearchLinkHtml; }, 1000);
       });
     }
     if (folderSidebarSearchClearEl && folderSidebarSearchEl) {
       folderSidebarSearchClearEl.addEventListener('click', function(e) {
         e.preventDefault();
         folderSidebarSearchEl.value = '';
-        if (table) {
-          table.search('').draw();
+        if (typeof runResetView === 'function') {
+          runResetView();
+        } else if (table) {
+          table.search('');
+          table.columns().search('');
+          table.draw();
         }
         updateSearchShareLinkVisibility();
         folderSidebarSearchEl.focus();
@@ -11382,14 +12177,14 @@
       e.stopPropagation();
       var text = $(this).closest('td').data('object');
       navigator.clipboard.writeText(text);
-      flashIconButton($(this), '📋');
+      flashIconButton($(this));
     });
 
     $('#dayzObjects tbody').on('click', '.copy-link-btn', function(e) {
       e.stopPropagation();
       var $td = $(this).closest('td');
       navigator.clipboard.writeText(buildObjectUrl($td.data('objectid'), $td.data('object')));
-      flashIconButton($(this), '🔗');
+      flashIconButton($(this));
     });
 
     $('#dayzObjects tbody').on('click', '.path-pin-btn', function(e) {
@@ -11401,7 +12196,7 @@
       var rowData = table.row($row).data();
       if (!rowData) return;
       if (!pinPathForRow(rowData)) return;
-      flashIconButton($(this), '📌');
+      flashIconButton($(this));
     });
 
     $('#dayzObjects tbody').on('click', '.path-copy-link-btn', function(e) {
@@ -11415,7 +12210,7 @@
       var target = resolvePathActionTarget(rowData);
       if (!target) return;
       navigator.clipboard.writeText(buildFolderPathUrl(target.targetPath));
-      flashIconButton($(this), '🔗');
+      flashIconButton($(this));
     });
 
     $('#dayzObjects tbody').on('click', '.path-copy-name-btn', function(e) {
@@ -11429,7 +12224,7 @@
       var target = resolvePathActionTarget(rowData);
       if (!target) return;
       navigator.clipboard.writeText(target.rawPath);
-      flashIconButton($(this), '📋');
+      flashIconButton($(this));
     });
 
     $('#dayzObjects tbody').on('click', '.path-filter-btn', function(e) {
@@ -11442,7 +12237,7 @@
       if (!rowData) return;
       if (!applyPathFilterForRow(rowData)) return;
       hidePathHoverTooltip();
-      flashIconButton($(this), PATH_FILTER_ICON_TEXT);
+      flashIconButton($(this));
     });
 
     $('#dayzObjects tbody').on('click', '.pin-btn', function(e) {
@@ -11450,13 +12245,12 @@
       var $td = $(this).closest('td');
       var item = buildPinnedItemFromCell($td);
       var $btn = $(this);
-      var original = $btn.text();
       if (isPinned(item.objName)) {
         removePinnedItemByName(item.objName);
       } else {
         addPinnedItem(item);
       }
-      flashIconButton($btn, original);
+      flashIconButton($btn);
     });
 
     $('#dayzObjects tbody').on('click', '.preset-copy-btn', async function(e) {
@@ -11466,30 +12260,25 @@
       var $row = $(this).closest('tr');
       var rowData = table.row($row).data();
       if (!rowData) return;
-      var copyablePath = getPresetCopyablePath(rowData);
       var textToCopy = '';
-      if (copyablePath) {
-        try {
-          var normalizedCopyPath = copyablePath.replace(/^\/+/, '');
-          var copyResp = await fetch('/' + encodeURI(normalizedCopyPath), { cache: 'no-store' });
-          if (copyResp.ok) {
-            textToCopy = await copyResp.text();
-          }
-        } catch (err) {}
-      }
-      if (!textToCopy && hasPresetEditorJson(rowData)) {
-        textToCopy = buildEditorJson(
-          rowData.editorJson ? JSON.stringify(rowData.editorJson) : '',
-          getObjectName(rowData),
-          rowData.modelType || '',
-          rowData.path || ''
+      if (hasPresetEditorJson(rowData)) {
+        textToCopy = JSON.stringify(normalizePresetClipboardEntries(rowData.editorJson), null, 4);
+      } else {
+        var copyablePath = String($btn.attr('data-preset-copy-path') || '').trim();
+        var importPath = String($btn.attr('data-preset-import-path') || '').trim();
+        var presetObjectName = String($btn.attr('data-preset-object') || '').trim();
+        textToCopy = await fetchPresetCopyPayloadFromValues(
+          copyablePath || getPresetCopyablePath(rowData),
+          importPath || getPresetImportJsonPath(rowData),
+          presetObjectName || getObjectName(rowData)
         );
       }
       if (!textToCopy) return;
-      await navigator.clipboard.writeText(textToCopy);
-      var original = $btn.text();
-      $btn.text('✔');
-      setTimeout(function() { $btn.text(original); }, 900);
+      var copied = await copyTextToClipboard(textToCopy);
+      if (!copied) return;
+      var original = $btn.html();
+      $btn.text('Copied');
+      setTimeout(function() { $btn.html(original); }, 1000);
     });
 
     $('#dayzObjects tbody').on('click', '.preset-export-btn', function(e) {
@@ -11498,11 +12287,11 @@
       if ($btn.prop('disabled')) return;
       var $row = $(this).closest('tr');
       var rowData = table.row($row).data();
-      if (!rowData) return;
-      var importPath = getPresetImportJsonPath(rowData);
+      var importPath = String($btn.attr('data-preset-import-path') || '').trim() || (rowData ? getPresetImportJsonPath(rowData) : '');
+      var presetObjectName = String($btn.attr('data-preset-object') || '').trim() || (rowData ? getObjectName(rowData) : '');
       if (importPath) {
         var normalizedImportPath = importPath.replace(/^\/+/, '');
-        var importFileName = normalizedImportPath.split('/').pop() || (sanitizePathFolder(getObjectName(rowData) || 'preset') + '.json');
+        var importFileName = normalizedImportPath.split('/').pop() || (sanitizePathFolder(presetObjectName || 'preset') + '.json');
         var importLink = document.createElement('a');
         importLink.href = '/' + encodeURI(normalizedImportPath);
         importLink.setAttribute('download', importFileName);
@@ -11510,56 +12299,29 @@
         document.body.appendChild(importLink);
         importLink.click();
         document.body.removeChild(importLink);
-      } else if (hasPresetEditorJson(rowData)) {
+      } else if (rowData && hasPresetEditorJson(rowData)) {
         var jsonText = buildPresetObjectPackage(
           rowData.editorJson ? JSON.stringify(rowData.editorJson) : '',
           getObjectName(rowData),
           rowData.modelType || '',
           rowData.path || ''
         );
-        var fileName = sanitizePathFolder(getObjectName(rowData) || 'preset') + '_preset.json';
+        var fileName = sanitizePathFolder(presetObjectName || 'preset') + '_preset.json';
         downloadTextFile(jsonText, fileName, 'application/json;charset=utf-8');
       } else {
         return;
       }
-      var original = $btn.text();
+      var original = $btn.html();
       $btn.text('✔');
-      setTimeout(function() { $btn.text(original); }, 900);
+      setTimeout(function() { $btn.html(original); }, 900);
     });
 
-    $('#dayzObjects tbody').on('click', '.preset-dze-btn', function(e) {
-      e.stopPropagation();
-      var $btn = $(this);
-      if ($btn.prop('disabled')) return;
-      var $row = $(this).closest('tr');
-      var rowData = table.row($row).data();
-      var dzePath = getPresetDzePath(rowData);
-      if (dzePath) {
-        var normalizedPath = dzePath.replace(/^\/+/, '');
-        var fileName = normalizedPath.split('/').pop() || (sanitizePathFolder(getObjectName(rowData) || 'preset') + '.dze');
-        var link = document.createElement('a');
-        link.href = '/' + encodeURI(normalizedPath);
-        link.setAttribute('download', fileName);
-        link.rel = 'noopener';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        var okText = $btn.text();
-        $btn.text('✔');
-        setTimeout(function() { $btn.text(okText); }, 900);
-        return;
-      }
-    });
-
-    $('#dayzObjects tbody').on('click', '.row-detail__action', function(e) {
+    $('#dayzObjects tbody').on('click', '.row-detail__action', async function(e) {
       e.stopPropagation();
       var $action = $(this);
       var action = $action.data('action');
       var $detail = $action.closest('.row-detail');
-      var objName = $detail.data('object');
       var $row = $detail.closest('tr').prev();
-      var $cell = $row.find('.object-name-cell');
-      if (!$cell.length || !objName) return;
 
       if (action === 'close') {
         if (table) {
@@ -11569,8 +12331,14 @@
             $row.removeClass('parent');
           }
         }
+        if (typeof runResetView === 'function') {
+          runResetView();
+        }
         return;
       }
+      var objName = $detail.data('object');
+      var $cell = $row.find('.object-name-cell');
+      if (!$cell.length || !objName) return;
 
       if (action === 'pin') {
         var item = buildPinnedItemFromCell($cell);
@@ -11580,42 +12348,91 @@
         } else {
           addPinnedItem(item);
         }
+        var pinHtml = $action.html();
         $action.text('✔');
-        setTimeout(function() { $action.text('📌 Pin'); }, 900);
+        setTimeout(function() { $action.html(pinHtml); }, 900);
         return;
       }
 
       if (action === 'name') {
-        navigator.clipboard.writeText(objName);
+        copyTextToClipboard(objName);
+        var nameHtml = $action.html();
         $action.text('✔');
-        setTimeout(function() { $action.text('📋 Copy name'); }, 900);
+        setTimeout(function() { $action.html(nameHtml); }, 900);
         return;
       }
 
       if (action === 'link') {
-        navigator.clipboard.writeText(buildObjectUrl($cell.data('objectid'), objName));
+        copyTextToClipboard(buildObjectUrl($cell.data('objectid'), objName));
+        var linkHtml = $action.html();
         $action.text('✔');
-        setTimeout(function() { $action.text('🔗 Copy link'); }, 900);
+        setTimeout(function() { $action.html(linkHtml); }, 900);
         return;
       }
 
       if (action === 'editor') {
-        var jsonText = buildEditorJson(
-          $cell.attr('data-editorjson'),
-          $cell.data('object'),
-          $cell.data('modeltype'),
-          $cell.data('p3d')
-        );
-        navigator.clipboard.writeText(jsonText);
+        var rowDataForEditor = table.row($row).data();
+        var jsonText = '';
+        var isPresetContext = isPresetRow({
+          category: $cell.data('category'),
+          modelType: $cell.data('modeltype')
+        }) || (rowDataForEditor && isPresetRow(rowDataForEditor));
+        if (isPresetContext) {
+          jsonText = await fetchPresetCopyPayloadFromValues(
+            String($cell.attr('data-preset-copy-path') || '').trim() || (rowDataForEditor ? getPresetCopyablePath(rowDataForEditor) : ''),
+            String($cell.attr('data-preset-import-path') || '').trim() || (rowDataForEditor ? getPresetImportJsonPath(rowDataForEditor) : ''),
+            String($cell.data('object') || '').trim() || (rowDataForEditor ? getObjectName(rowDataForEditor) : '')
+          );
+          if (!jsonText) {
+            return;
+          }
+        }
+        if (!jsonText) {
+          jsonText = buildEditorJson(
+            $cell.attr('data-editorjson'),
+            $cell.data('object'),
+            $cell.data('modeltype'),
+            $cell.data('p3d')
+          );
+        }
+        copyTextToClipboard(jsonText);
+        var editorHtml = $action.html();
         $action.text('✔');
-        setTimeout(function() { $action.text('🏗️ Copy to Editor'); }, 900);
+        setTimeout(function() { $action.html(editorHtml); }, 900);
         return;
       }
     });
 
-    $('#dayzObjects tbody').on('click', '.editor-copy-btn', function(e) {
+    $('#dayzObjects tbody').on('click', '.editor-copy-btn', async function(e) {
       e.stopPropagation();
       var $td = $(this).closest('td');
+      var $row = $(this).closest('tr');
+      if ($row.hasClass('child')) {
+        $row = $row.prev();
+      }
+      var rowData = table.row($row).data();
+      var isPresetContext = isPresetRow({
+        category: $td.data('category'),
+        modelType: $td.data('modeltype')
+      }) || (rowData && isPresetRow(rowData));
+      if (isPresetContext) {
+        var presetText = '';
+        if (rowData && hasPresetEditorJson(rowData)) {
+          presetText = JSON.stringify(normalizePresetClipboardEntries(rowData.editorJson), null, 4);
+        } else {
+          presetText = await fetchPresetCopyPayloadFromValues(
+            String($td.attr('data-preset-copy-path') || '').trim() || (rowData ? getPresetCopyablePath(rowData) : ''),
+            String($td.attr('data-preset-import-path') || '').trim() || (rowData ? getPresetImportJsonPath(rowData) : ''),
+            String($td.data('object') || '').trim() || (rowData ? getObjectName(rowData) : '')
+          );
+        }
+        if (presetText) {
+          var copiedPreset = await copyTextToClipboard(presetText);
+          if (!copiedPreset) return;
+          flashIconButton($(this));
+        }
+        return;
+      }
 
       var predefined = $td.attr('data-editorjson');
       var jsonText = null;
@@ -11654,35 +12471,35 @@
         jsonText = JSON.stringify(json, null, 4);
       }
 
-      navigator.clipboard.writeText(jsonText);
+      copyTextToClipboard(jsonText);
 
-      flashIconButton($(this), '🏗️');
+      flashIconButton($(this));
     });
 
     $(document).on('click', '.path-tooltip-pin-btn', function(e) {
       e.stopPropagation();
       if (!pinPathForRow(pathHoverTooltipRowData)) return;
-      flashIconButton($(this), '📌');
+      flashIconButton($(this));
     });
     $(document).on('click', '.path-tooltip-copy-link-btn', function(e) {
       e.stopPropagation();
       var target = resolvePathActionTarget(pathHoverTooltipRowData);
       if (!target) return;
-      navigator.clipboard.writeText(buildFolderPathUrl(target.targetPath));
-      flashIconButton($(this), '🔗');
+      copyTextToClipboard(buildFolderPathUrl(target.targetPath));
+      flashIconButton($(this));
     });
     $(document).on('click', '.path-tooltip-copy-name-btn', function(e) {
       e.stopPropagation();
       var target = resolvePathActionTarget(pathHoverTooltipRowData);
       if (!target) return;
-      navigator.clipboard.writeText(target.rawPath);
-      flashIconButton($(this), '📋');
+      copyTextToClipboard(target.rawPath);
+      flashIconButton($(this));
     });
     $(document).on('click', '.path-tooltip-filter-btn', function(e) {
       e.stopPropagation();
       if (!applyPathFilterForRow(pathHoverTooltipRowData)) return;
       hidePathHoverTooltip();
-      flashIconButton($(this), PATH_FILTER_ICON_TEXT);
+      flashIconButton($(this));
     });
   });
 </script>

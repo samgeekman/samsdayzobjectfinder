@@ -125,7 +125,6 @@ header .pb1-m.pb1-l.bg-black {
   padding: 4px 8px;
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.35);
-  border-bottom-color: transparent;
   color: #fff !important;
   background: transparent;
   font-size: 0.7rem;
@@ -140,7 +139,6 @@ header .pb1-m.pb1-l.bg-black {
   right: 0;
   bottom: -1px;
   height: 4px;
-  background: #EEB224;
   border-radius: 0 0 3px 3px;
 }
 
@@ -148,6 +146,55 @@ header .pb1-m.pb1-l.bg-black {
   background-color: #EEB224;
   border-color: #cf9718;
   color: #1f1f1f !important;
+}
+
+.site-nav {
+  min-height: 80px;
+  height: 80px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.site-nav__brand {
+  height: 65px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.site-nav__logo {
+  height: 55px;
+  max-height: 65px;
+  width: auto;
+  display: block;
+}
+
+.site-nav__actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.site-nav__menu {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.site-nav__menu > li {
+  display: inline-flex;
+  align-items: center;
 }
 
 .theme-toggle {

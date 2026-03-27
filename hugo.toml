@@ -5,6 +5,7 @@ theme = 'ananke'
 
 relativeURLs = false
 canonifyURLs = true
+cleanDestinationDir = true
 
 [caches]
   [caches.images]

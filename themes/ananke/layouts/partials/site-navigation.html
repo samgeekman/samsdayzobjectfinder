@@ -1,16 +1,16 @@
-<nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l center items-center justify-between">
-    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white white-90 dib no-underline">
+<nav class="site-nav ph3 ph4-ns" role="navigation">
+  <div class="site-nav__inner center">
+    <a href="{{ .Site.Home.RelPermalink }}" class="site-nav__brand f3 fw2 hover-white white-90 dib no-underline">
       {{ with .Site.Params.site_logo }}
-        <img src="{{ urls.RelURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
+        <img src="{{ urls.RelURL . }}" class="site-nav__logo" alt="{{ $.Site.Title }}" />
       {{ else }}
         {{ .Site.Title }}
       {{ end }}
     </a>
-    <div class="flex-l items-center">
+    <div class="site-nav__actions">
       {{ partials.Include "i18nlist.html" . }}
       {{ if .Site.Menus.main }}
-        <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
+        <ul class="site-nav__menu {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
           {{ range .Site.Menus.main }}
           <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
             <a class="nav-menu-button no-underline" href="{{ .URL }}" title="{{ lang.Translate "pageTitle" . }}">
@@ -24,26 +24,16 @@
             </a>
           </li>
           <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
-            <a class="nav-menu-button nav-menu-button--highlight no-underline" href="{{ "/?version=v1.29" | urls.RelURL }}" title="New 1.29 Objects">
-              New 1.29 Objects
-            </a>
-          </li>
-          <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
             <button id="themeToggle" class="nav-menu-button nav-menu-button--theme no-underline" type="button" aria-live="polite" aria-pressed="false" title="Toggle dark or light mode" aria-label="Toggle dark or light mode">
               ◐
             </button>
           </li>
         </ul>
       {{ else }}
-        <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
+        <ul class="site-nav__menu {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
           <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
             <a class="nav-menu-button no-underline" href="{{ "/api/" | urls.RelURL }}" title="API">
               API
-            </a>
-          </li>
-          <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
-            <a class="nav-menu-button nav-menu-button--highlight no-underline" href="{{ "/?version=v1.29" | urls.RelURL }}" title="New 1.29 Objects">
-              New 1.29 Objects
             </a>
           </li>
           <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
