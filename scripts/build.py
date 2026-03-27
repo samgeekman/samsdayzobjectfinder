@@ -33,7 +33,8 @@ OVERRIDES_JSON = DATA_DIR / "object_overrides.json"
 TOMBSTONES_JSON = DATA_DIR / "id_tombstones.json"
 API_ROOT = STATIC_DIR / "api" / "v1"
 API_IMAGE_BASE_URL = "https://samsobjectfinder.com"
-MODELS_CSV_CANDIDATES = [
+MODEL_LINKS_CSV_CANDIDATES = [
+    BASE_DIR / "scripts" / "p3d-config matching.csv",
     BASE_DIR / "Task docs" / "models.csv",
     BASE_DIR / "Task Docs" / "models.csv",
 ]
@@ -1154,7 +1155,7 @@ def normalize_model_path(value: object) -> str:
 
 
 def resolve_models_csv_path() -> Optional[Path]:
-    for candidate in MODELS_CSV_CANDIDATES:
+    for candidate in MODEL_LINKS_CSV_CANDIDATES:
         if candidate.exists():
             return candidate
     return None
@@ -1445,7 +1446,7 @@ def main() -> None:
         f"{link_stats['config_rows_with_linked_p3d']} config rows with linked-p3d, "
         f"{link_stats['raw_rows_with_linked_config']} raw rows with linked-config, "
         f"{link_stats['config_rows_with_linked_variant']} config rows with linked-variant "
-        f"from models.csv ({link_stats['models_csv_rows_loaded']} mapped rows, "
+        f"from model-links CSV ({link_stats['models_csv_rows_loaded']} mapped rows, "
         f"{link_stats['models_csv_blank_resolved_rows']} blank resolved_model rows ignored, "
         f"{link_stats['models_csv_unmatched_classname_rows']} unmatched classnames, "
         f"{link_stats['models_csv_missing_raw_rows']} missing raw-model matches, "
