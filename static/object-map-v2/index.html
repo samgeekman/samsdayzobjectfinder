@@ -65,7 +65,7 @@
     .viewer {
       position: relative;
       overflow: hidden;
-      background: #596050;
+      background: #353533;
       cursor: grab;
     }
     .viewer.dragging { cursor: grabbing; }
@@ -231,7 +231,7 @@
       --icon-outline: #BBC0C8;
       --icon-fg: #10121A;
       --icon-hover-outline: #EDB125;
-      --icon-hover-fg: #10121A;
+      --icon-hover-fg: #0033ff;
     }
     :root.dark-mode {
       --icon-outline: #E4EDF7;
@@ -778,6 +778,8 @@
     const LOADED_FOOTPRINT_SCALE = 0.12;
     const AREA_LOADED_FOOTPRINT_SCALE = 0.82;
     const LOADED_TRANSITION_WIDTH = 0.08;
+    const LOADED_P3D_FADE_DELAY = 0.03;
+    const LOADED_P3D_FADE_WIDTH = 0.20;
     const MIN_SCALE = STARTUP_POINT_SCALE;
     const MAX_SCALE = 8;
     const WHEEL_ZOOM_SENSITIVITY = 0.0012;
@@ -1472,16 +1474,23 @@
       if (isLandType(model)) return null;
       if (worldKey !== "sakhal") {
         return {
-          fill: `rgba(255,255,255,${Math.max(0.52, fillAlpha * 4.8).toFixed(3)})`,
-          stroke: `rgba(255,255,255,${Math.max(0.92, strokeAlpha).toFixed(3)})`,
-          point: "rgba(255,255,255,0.98)"
+          fill: `rgba(255,255,255,${Math.min(0.96, fillAlpha * 4.8).toFixed(3)})`,
+          stroke: `rgba(255,255,255,${Math.min(0.98, strokeAlpha).toFixed(3)})`,
+          point: `rgba(255,255,255,${Math.min(0.98, Math.max(0.02, strokeAlpha)).toFixed(3)})`
         };
       }
       return {
-        fill: `rgba(214,58,58,${Math.max(0.24, fillAlpha * 2.8).toFixed(3)})`,
-        stroke: `rgba(232,88,88,${Math.max(0.82, strokeAlpha).toFixed(3)})`,
-        point: `rgba(232,88,88,0.96)`
+        fill: `rgba(214,58,58,${Math.min(0.88, fillAlpha * 2.8).toFixed(3)})`,
+        stroke: `rgba(232,88,88,${Math.min(0.96, strokeAlpha).toFixed(3)})`,
+        point: `rgba(232,88,88,${Math.min(0.96, Math.max(0.02, strokeAlpha)).toFixed(3)})`
       };
+    }
+
+    function p3dPointFill(alpha) {
+      if (worldKey === "sakhal") {
+        return `rgba(232,88,88,${alpha.toFixed(3)})`;
+      }
+      return `rgba(255,255,255,${alpha.toFixed(3)})`;
     }
 
     function zoomedOutPointFill(alpha) {
@@ -1672,15 +1681,29 @@
       if (showFootprints.checked && scale >= loadedFootprintScale) {
         const loadedFillAlpha = zoomFade(scale, loadedFootprintScale, 0.35, 0.008, 0.1);
         const loadedStrokeAlpha = zoomFade(scale, loadedFootprintScale, 0.35, 0.12, 0.94);
+        const p3dFadeLow = loadedFootprintScale + LOADED_P3D_FADE_DELAY;
+        const p3dFadeHigh = p3dFadeLow + LOADED_P3D_FADE_WIDTH;
+        const showP3dBounds = scale >= p3dFadeLow;
+        const p3dFillAlpha = showP3dBounds
+          ? zoomFade(scale, p3dFadeLow, p3dFadeHigh, 0.008, 0.1)
+          : 0;
+        const p3dStrokeAlpha = showP3dBounds
+          ? zoomFade(scale, p3dFadeLow, p3dFadeHigh, 0.12, 0.94)
+          : 0;
+        const p3dPointAlpha = scale < p3dFadeLow
+          ? 0.9
+          : zoomFade(scale, p3dFadeLow, p3dFadeHigh, 0.9, 0);
         for (const placement of visibleLoaded) {
           const model = models[placement[P.modelId]] || null;
           const points = objectFootprint(placement, models);
-          const p3dStyle = loadedP3dStyle(model, loadedFillAlpha, loadedStrokeAlpha);
+          const p3dStyle = showP3dBounds
+            ? loadedP3dStyle(model, p3dFillAlpha, p3dStrokeAlpha)
+            : null;
           if (!points) {
-            if (p3dStyle) {
+            if (p3dPointAlpha > 0.01) {
               overlayCtx.beginPath();
               overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(2.6, Math.min(4.8, scale * 5.6)), 0, Math.PI * 2);
-              overlayCtx.fillStyle = p3dStyle.point;
+              overlayCtx.fillStyle = p3dPointFill(p3dPointAlpha);
               overlayCtx.fill();
             }
             continue;
@@ -1704,10 +1727,10 @@
           overlayCtx.lineWidth = scale > 0.35 ? 1.2 : 1;
           overlayCtx.fill();
           overlayCtx.stroke();
-          if (p3dStyle) {
+          if (p3dPointAlpha > 0.01) {
             overlayCtx.beginPath();
             overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(1.8, Math.min(3.2, scale * 4.2)), 0, Math.PI * 2);
-            overlayCtx.fillStyle = p3dStyle.point;
+            overlayCtx.fillStyle = p3dPointFill(p3dPointAlpha);
             overlayCtx.fill();
           }
         }
