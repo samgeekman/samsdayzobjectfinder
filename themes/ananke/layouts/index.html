@@ -4,7 +4,6 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
   <style>
     
-    #dayzObjects,
     #dayzObjects_wrapper {
       visibility: hidden;
     }
@@ -32,13 +31,50 @@
     --page-edge-gutter: 0.75%;
     --page-content-width: 98.5%;
     --sidebar-app-row-vpad: 1px;
+    /* hover action grid */
+    --hover-action-size: 20px;
+    --hover-action-gap: 2px;
+    --hover-action-grid-width: calc((var(--hover-action-size) * 2) + var(--hover-action-gap));
+    --hover-action-space: calc(var(--hover-action-grid-width) + 10px);
+    /* hover button colours */
+    --icon-outline: #BBC0C8;
+    --icon-fg: #10121A;
+    --icon-hover-outline: #EDB125;
+    --icon-hover-fg: #10121A;
+    /* added colour tokens */
+    --color-title-light: #10121a;
+    --color-chip-text: #f7f9fb;
+    --color-accent-hover: #EDA700;
+    --color-accent-hover-text: #1f1f1f;
+    --color-thumb-border: #374151;
+    --color-thumb-bg: #111827;
+    --color-chip-cfg: #0ea5a8;
+    --color-chip-p3d: #7a431b;
+    --color-chip-preset: #f23827;
+    --color-chip-types: #2F7DF6;
+    --color-chip-proto: #7c3aed;
+    --color-chip-console-yes: #3d8f49;
+    --color-chip-console-no: #b33b3b;
+    --color-version-notice-border: #e8cf6b;
+    --color-version-notice-bg: #fff8cc;
+    --color-version-notice-text: #5f4b00;
+    --color-version-notice-link: #7a5a00;
+    --color-version-notice-link-hover: #5a4300;
+    --color-nav-active-text: #111;
+  }
+  :root.dark-mode {
+    --icon-outline: #767878;
+    --icon-fg: #E4EDF7;
+    --icon-hover-outline: #EDB125;
+    --icon-hover-fg: #10121A;
+    --color-title-light: #ffffff;
   }
   html,
   body {
     max-width: 100%;
     overflow-x: hidden;
   }
-  .annoucenment-bar {
+  .announcement-bar {
     background-color: var(--card);
     color: var(--text);
     padding: 6px 8px;
@@ -162,10 +198,10 @@
     max-width: 95%;
     margin: 8px auto;
     padding: 3px 7px;
-    border: 1px solid #e8cf6b;
+    border: 1px solid var(--color-version-notice-border);
     border-radius: 4px;
-    background: #fff8cc;
-    color: #5f4b00;
+    background: var(--color-version-notice-bg);
+    color: var(--color-version-notice-text);
     font-weight: 500;
     font-size: 0.78rem;
     line-height: 1.2;
@@ -175,13 +211,13 @@
     display: block;
   }
   .version-filter-notice a {
-    color: #7a5a00;
+    color: var(--color-version-notice-link);
     text-decoration: underline;
     margin-left: 4px;
     font-weight: 600;
   }
   .version-filter-notice a:hover {
-    color: #5a4300;
+    color: var(--color-version-notice-link-hover);
   }
   .version-filter-notice--guide {
     align-items: center;
@@ -246,7 +282,7 @@
     font-size: 0.8rem;
     font-weight: 700;
     line-height: 1.1;
-    color: #10121a;
+    color: var(--color-title-light);
     white-space: nowrap;
     margin-right: 2px;
   }
@@ -280,13 +316,13 @@
     font-size: 0.8rem;
     font-weight: 700;
     line-height: 1.1;
-    color: #10121a;
+    color: var(--color-title-light);
     white-space: nowrap;
     margin-right: 8px;
   }
   :root.dark-mode .filters-app-title,
   :root.dark-mode .object-map-v2__app-title {
-    color: #ffffff;
+    color: var(--color-title-light);
   }
   .object-map-v2__app-title-icon {
     width: 19px;
@@ -477,13 +513,6 @@
     }
   }
 
-  
-  :root {
-    --hover-action-size: 20px;
-    --hover-action-gap: 2px;
-    --hover-action-grid-width: calc((var(--hover-action-size) * 2) + var(--hover-action-gap));
-    --hover-action-space: calc(var(--hover-action-grid-width) + 10px);
-  }
   #dayzObjects tbody .object-name-cell {
     position: relative;
     cursor: pointer;
@@ -563,8 +592,8 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 4px;
-    border: 1px solid #374151;
-    background: #111827;
+    border: 1px solid var(--color-thumb-border);
+    background: var(--color-thumb-bg);
     display: block;
     margin: 0 auto;
   }
@@ -577,7 +606,7 @@
     margin-right: 0;
     vertical-align: middle;
   }
-  #dayzObjects tbody .info-chip {
+  .info-chip {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -589,35 +618,18 @@
     font-weight: 600;
     line-height: 1.05;
     letter-spacing: 0.02em;
-    color: #f7f9fb;
+    color: var(--color-chip-text);
     border: 1px solid rgba(255, 255, 255, 0.22);
     text-transform: none;
     vertical-align: middle;
     white-space: nowrap;
-    cursor: pointer;
     user-select: none;
+  }
+  #dayzObjects tbody .info-chip {
+    cursor: pointer;
     opacity: 0.68;
     filter: saturate(0.78) brightness(0.9);
     transition: opacity 0.14s ease, filter 0.14s ease;
-  }
-  .chip-info-tooltip .info-chip {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 0;
-    height: clamp(11px, 0.95vw, 13px);
-    padding: 0 clamp(2px, 0.28vw, 4px);
-    border-radius: 3px;
-    font-size: clamp(6.6px, 0.33vw, 7.5px);
-    font-weight: 600;
-    line-height: 1.05;
-    letter-spacing: 0.02em;
-    color: #f7f9fb;
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    text-transform: none;
-    vertical-align: middle;
-    white-space: nowrap;
-    user-select: none;
   }
   #dayzObjects tbody tr:hover .info-chip,
   #dayzObjects tbody tr:focus-within .info-chip,
@@ -674,53 +686,37 @@
     font-weight: 600;
     line-height: 1.3;
   }
-  #dayzObjects tbody .info-chip--cfg {
-    background: #0ea5a8;
-  }
+  #dayzObjects tbody .info-chip--cfg,
   .chip-info-tooltip .info-chip--cfg {
-    background: #0ea5a8;
+    background: var(--color-chip-cfg);
   }
-  #dayzObjects tbody .info-chip--p3d {
-    background: #7a431b;
-  }
+  #dayzObjects tbody .info-chip--p3d,
   .chip-info-tooltip .info-chip--p3d {
-    background: #7a431b;
+    background: var(--color-chip-p3d);
   }
-  #dayzObjects tbody .info-chip--preset {
-    background: #f23827;
-    color: #f7f9fb;
-    border-color: rgba(31, 41, 55, 0.35);
-  }
+  #dayzObjects tbody .info-chip--preset,
   .chip-info-tooltip .info-chip--preset {
-    background: #f23827;
-    color: #f7f9fb;
+    background: var(--color-chip-preset);
+    color: var(--color-chip-text);
     border-color: rgba(31, 41, 55, 0.35);
   }
-  #dayzObjects tbody .info-chip--types {
-    background: #2F7DF6;
-  }
+  #dayzObjects tbody .info-chip--types,
   .chip-info-tooltip .info-chip--types {
-    background: #2F7DF6;
+    background: var(--color-chip-types);
   }
-  #dayzObjects tbody .info-chip--proto {
-    background: #7c3aed;
-  }
+  #dayzObjects tbody .info-chip--proto,
   .chip-info-tooltip .info-chip--proto {
-    background: #7c3aed;
+    background: var(--color-chip-proto);
   }
   #dayzObjects tbody .info-chip--console-yes,
-  #dayzObjects tbody .info-chip--console-all {
-    background: #3d8f49;
-  }
+  #dayzObjects tbody .info-chip--console-all,
   .chip-info-tooltip .info-chip--console-yes,
   .chip-info-tooltip .info-chip--console-all {
-    background: #3d8f49;
+    background: var(--color-chip-console-yes);
   }
-  #dayzObjects tbody .info-chip--console-no {
-    background: #b33b3b;
-  }
+  #dayzObjects tbody .info-chip--console-no,
   .chip-info-tooltip .info-chip--console-no {
-    background: #b33b3b;
+    background: var(--color-chip-console-no);
   }
   .path-hover-tooltip {
     display: none !important;
@@ -797,9 +793,9 @@
   .path-hover-tooltip__btn:hover,
   .path-hover-tooltip__btn:focus-visible {
     outline: none;
-    background-color: #EDA700 !important;
-    border-color: #EDA700 !important;
-    color: #1f1f1f !important;
+    background-color: var(--color-accent-hover) !important;
+    border-color: var(--color-accent-hover) !important;
+    color: var(--color-accent-hover-text) !important;
   }
   #dayzObjects tbody tr {
     height: 47px;
@@ -984,18 +980,6 @@
     border-color: var(--icon-hover-outline) !important;
     color: var(--icon-hover-fg) !important;
     box-shadow: 0 0 0 1px color-mix(in srgb, var(--icon-hover-outline) 45%, transparent);
-  }
-  :root {
-    --icon-outline: #BBC0C8;
-    --icon-fg: #10121A;
-    --icon-hover-outline: #EDB125;
-    --icon-hover-fg: #10121A;
-  }
-  :root.dark-mode {
-    --icon-outline: #767878;
-    --icon-fg: #E4EDF7;
-    --icon-hover-outline: #EDB125;
-    --icon-hover-fg: #10121A;
   }
   .ui-icon {
     width: 1.15em;
@@ -1297,8 +1281,8 @@
   .folder-sidebar__search-link:focus-visible,
   .folder-sidebar__search-clear:hover,
   .folder-sidebar__search-clear:focus-visible {
-    background-color: #EDA700 !important;
-    color: #1f1f1f !important;
+    background-color: var(--color-accent-hover) !important;
+    color: var(--color-accent-hover-text) !important;
     outline: none;
   }
   .folder-sidebar__title {
@@ -1325,7 +1309,7 @@
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     background-color: var(--accent);
     border-color: var(--accent);
-    color: #1f1f1f;
+    color: var(--color-accent-hover-text);
   }
   .folder-tree {
     position: relative;
@@ -1443,12 +1427,12 @@
     color: #ffffff;
   }
   .folder-tree__row--types-explorer .folder-tree__folder.is-active {
-    background: #2F7DF6;
+    background: var(--color-chip-types);
     border-color: transparent;
     color: #ffffff;
   }
   .folder-tree__row--presets .folder-tree__folder.is-active {
-    background: #f23827;
+    background: var(--color-chip-preset);
     border-color: transparent;
     color: #ffffff;
   }
@@ -2032,6 +2016,11 @@
     min-height: min(80vh, 980px);
     border: 0;
     background: #596050;
+    opacity: 1;
+    transition: opacity 120ms ease;
+  }
+  .object-map-v2__iframe.is-loading {
+    opacity: 0;
   }
   .object-focus__details {
     flex: 1;
@@ -2654,7 +2643,7 @@
   }
   .pinned-path-btn.active {
     background: var(--accent) !important;
-    color: #1f1f1f !important;
+    color: var(--color-accent-hover-text) !important;
     border-color: var(--accent) !important;
     box-shadow: inset 0 0 0 1px color-mix(in srgb, #ffffff 22%, transparent);
     transform: none;
@@ -3085,7 +3074,7 @@
   .types-explorer__title-icon {
     width: 18px;
     height: 18px;
-    color: #2F7DF6;
+    color: var(--color-chip-types);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -3094,7 +3083,7 @@
   .object-focus__types-title-icon {
     width: 18px;
     height: 18px;
-    color: #2F7DF6 !important;
+    color: var(--color-chip-types) !important;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -3456,7 +3445,7 @@
     transform: translateY(-1px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     background-color: var(--accent) !important;
-    color: #1f1f1f !important;
+    color: var(--color-accent-hover-text) !important;
     border-color: var(--accent) !important;
     opacity: 1 !important;
   }
@@ -3464,7 +3453,7 @@
     transform: translateY(-1px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     background-color: var(--accent) !important;
-    color: #1f1f1f !important;
+    color: var(--color-accent-hover-text) !important;
     border-color: var(--accent) !important;
     opacity: 1 !important;
   }
@@ -3528,7 +3517,7 @@
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     background-color: var(--accent) !important;
     border-color: var(--accent) !important;
-    color: #1f1f1f !important;
+    color: var(--color-accent-hover-text) !important;
   }
   .types-explorer__scope-btn:not(.ui-action-btn).is-active,
   .types-explorer__scope-btn:not(.ui-action-btn).is-active:hover,
@@ -3536,7 +3525,7 @@
   .types-explorer__tag:not(.ui-action-btn).is-active:hover {
     background-color: var(--accent) !important;
     border-color: var(--accent) !important;
-    color: #111 !important;
+    color: var(--color-nav-active-text) !important;
   }
   .pill-button:focus-visible,
   .folder-sidebar__clear:focus-visible,
@@ -4087,20 +4076,20 @@
       <div id="pinnedList" class="pinned-list"></div>
     </div>
   </div>
-<div id="imageOverlay" class="image-overlay" aria-hidden="true">
+<div id="imageOverlay" class="image-overlay" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
   <div class="image-overlay__content">
       <button id="imageOverlayPrev" class="image-overlay__nav image-overlay__nav--prev" type="button" aria-label="Previous image">‹</button>
-      <button id="imageOverlayClose" class="image-overlay__close" type="button" aria-label="Close image">🆇</button>
+      <button id="imageOverlayClose" class="image-overlay__close" type="button" aria-label="Close image"><span aria-hidden="true">✕</span></button>
       <img id="imageOverlayImg" class="image-overlay__img" src="" alt="">
       <button id="imageOverlayNext" class="image-overlay__nav image-overlay__nav--next" type="button" aria-label="Next image">›</button>
       <a id="imageOverlayDownload" class="image-overlay__download" href="#" download aria-label="Download image">Download image</a>
   </div>
 </div>
-  <div id="chernarusMapLightbox" class="map-lightbox" aria-hidden="true">
+  <div id="chernarusMapLightbox" class="map-lightbox" role="dialog" aria-modal="true" aria-label="Map viewer" aria-hidden="true">
     <div class="map-lightbox__content">
       <button id="chernarusMapOpenObjectMap" class="map-lightbox__reset map-lightbox__open-object-map" type="button">Open in Object Map</button>
       <button id="chernarusMapReset" class="map-lightbox__reset" type="button">Reset view</button>
-      <button id="chernarusMapClose" class="map-lightbox__close" type="button" aria-label="Close map">🆇</button>
+      <button id="chernarusMapClose" class="map-lightbox__close" type="button" aria-label="Close map"><span aria-hidden="true">✕</span></button>
       <div class="map-lightbox__frame">
         <svg id="chernarusMapOverlay" class="map-lightbox__overlay" preserveAspectRatio="none" aria-hidden="true">
           <g transform="scale(1,-1)">
@@ -4733,7 +4722,7 @@
           getObjectName(row)
         );
         if (!paths.length) return;
-        loadPresetPayloadPath(paths[0]);
+        paths.forEach(function(p) { loadPresetPayloadPath(p); });
       });
     };
     var showContent = function() {
@@ -6270,6 +6259,7 @@
       var src = buildObjectMapV2FrameSrc();
       if (!src) return;
       if (forceReload || objectMapV2FrameEl.getAttribute('src') !== src) {
+        objectMapV2FrameEl.classList.add('is-loading');
         objectMapV2FrameEl.setAttribute('src', src);
         objectMapV2FrameWorldKey = normalizeObjectMapKey(objectMapActiveMapKey);
       }
@@ -6348,6 +6338,7 @@
     };
     if (objectMapV2FrameEl) {
       objectMapV2FrameEl.addEventListener('load', function() {
+        objectMapV2FrameEl.classList.remove('is-loading');
         dispatchObjectMapV2SearchState();
       });
     }
@@ -9673,6 +9664,7 @@
             objectFocusEl.classList.remove('collapsed');
             updateCollapseButtonLabel();
             updateEmptyState();
+            updateLayoutForSidebar();
           }
           if (item.type === 'path') {
             item.expanded = !item.expanded;
@@ -12253,7 +12245,6 @@
       var $td = $(this).closest('td');
       var item = buildPinnedItemFromCell($td);
       var $btn = $(this);
-      var original = $btn.text();
       if (isPinned(item.objName)) {
         removePinnedItemByName(item.objName);
       } else {
@@ -12364,7 +12355,7 @@
       }
 
       if (action === 'name') {
-        navigator.clipboard.writeText(objName);
+        copyTextToClipboard(objName);
         var nameHtml = $action.html();
         $action.text('✔');
         setTimeout(function() { $action.html(nameHtml); }, 900);
@@ -12372,7 +12363,7 @@
       }
 
       if (action === 'link') {
-        navigator.clipboard.writeText(buildObjectUrl($cell.data('objectid'), objName));
+        copyTextToClipboard(buildObjectUrl($cell.data('objectid'), objName));
         var linkHtml = $action.html();
         $action.text('✔');
         setTimeout(function() { $action.html(linkHtml); }, 900);
@@ -12404,7 +12395,7 @@
             $cell.data('p3d')
           );
         }
-        navigator.clipboard.writeText(jsonText);
+        copyTextToClipboard(jsonText);
         var editorHtml = $action.html();
         $action.text('✔');
         setTimeout(function() { $action.html(editorHtml); }, 900);
@@ -12480,7 +12471,7 @@
         jsonText = JSON.stringify(json, null, 4);
       }
 
-      navigator.clipboard.writeText(jsonText);
+      copyTextToClipboard(jsonText);
 
       flashIconButton($(this));
     });
@@ -12494,14 +12485,14 @@
       e.stopPropagation();
       var target = resolvePathActionTarget(pathHoverTooltipRowData);
       if (!target) return;
-      navigator.clipboard.writeText(buildFolderPathUrl(target.targetPath));
+      copyTextToClipboard(buildFolderPathUrl(target.targetPath));
       flashIconButton($(this));
     });
     $(document).on('click', '.path-tooltip-copy-name-btn', function(e) {
       e.stopPropagation();
       var target = resolvePathActionTarget(pathHoverTooltipRowData);
       if (!target) return;
-      navigator.clipboard.writeText(target.rawPath);
+      copyTextToClipboard(target.rawPath);
       flashIconButton($(this));
     });
     $(document).on('click', '.path-tooltip-filter-btn', function(e) {
