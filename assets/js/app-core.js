@@ -13,6 +13,12 @@ import {
 } from './core/pinned.js';
 import { createMapBridge } from './core/map-bridge.js';
 import { createTableRenderers } from './core/table-init.js';
+import {
+  createObjectMapContract,
+  OBJECT_MAP_MESSAGE_TYPES,
+  OBJECT_MAP_DOM_EVENTS
+} from './core/object-map-contract.js';
+import { createObjectMapPerformance } from './core/object-map-performance.js';
 
 window.DayzCoreModules = {
   AppMode,
@@ -25,5 +31,9 @@ window.DayzCoreModules = {
   addUniquePinnedItem,
   removePinnedItemByName,
   createMapBridge,
-  createTableRenderers
+  createTableRenderers,
+  createObjectMapContract,
+  createObjectMapPerformance,
+  OBJECT_MAP_MESSAGE_TYPES,
+  OBJECT_MAP_DOM_EVENTS
 };

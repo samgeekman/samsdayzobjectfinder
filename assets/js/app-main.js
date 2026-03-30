@@ -38,6 +38,13 @@
       }
       return CoreModules[name];
     };
+    var objectMapContract = requireCoreModule('createObjectMapContract')({
+      origin: window.location.origin,
+      eventTarget: window
+    });
+    var objectMapPerformance = requireCoreModule('createObjectMapPerformance')();
+    var OBJECT_MAP_MESSAGE_TYPES = requireCoreModule('OBJECT_MAP_MESSAGE_TYPES');
+    var OBJECT_MAP_DOM_EVENTS = requireCoreModule('OBJECT_MAP_DOM_EVENTS');
 
     // --- APPLICATION STATE CONTRACT ---
     // NOTE: Do not rename/remove these state variables lightly.
@@ -2057,6 +2064,10 @@
       if (!objectMapPanelEl) return;
       var visible = activeCollectionFilter === AppMode.OBJECT_MAP;
       objectMapPanelEl.classList.toggle('visible', !!visible);
+      objectMapContract.dispatchDomEvent(OBJECT_MAP_DOM_EVENTS.PANEL_VISIBILITY, {
+        visible: !!visible,
+        world: normalizeObjectMapKey(objectMapActiveMapKey)
+      });
       if ($('#dayzObjects_wrapper').length) {
         $('#dayzObjects_wrapper').toggleClass('object-map-mode', !!visible);
       }
@@ -2071,7 +2082,7 @@
         dispatchObjectMapV2SearchState();
         setTimeout(function() {
           dispatchObjectMapV2SearchState();
-        }, 120);
+        }, objectMapPerformance.profile.interactionRefreshDelayMs + 20);
       }
       if (!visible) {
         if (objectMapInteractionRefreshTimer) {
@@ -2158,16 +2169,20 @@
         activePathFilter = String(activeFolderFilter || '').trim();
       }
       if (!searchQuery && !activePathFilter) {
-        try {
-          objectMapV2FrameEl.contentWindow.postMessage({
-            type: 'object-map-search-state',
-            world: normalizeObjectMapKey(objectMapActiveMapKey),
-            query: '',
-            pathFilter: '',
-            mode: '',
-            rows: []
-          }, window.location.origin);
-        } catch (error) {}
+        objectMapContract.postToFrame(objectMapV2FrameEl, {
+          type: OBJECT_MAP_MESSAGE_TYPES.SEARCH_STATE,
+          world: normalizeObjectMapKey(objectMapActiveMapKey),
+          query: '',
+          pathFilter: '',
+          mode: '',
+          rows: [],
+          perf: objectMapPerformance.profile.v2Hints
+        });
+        objectMapContract.dispatchDomEvent(OBJECT_MAP_DOM_EVENTS.SEARCH_STATE_DISPATCHED, {
+          world: normalizeObjectMapKey(objectMapActiveMapKey),
+          query: '',
+          pathFilter: ''
+        });
         return;
       }
       var rowsApi = table.rows({ filter: 'applied' });
@@ -2179,24 +2194,27 @@
             };
           })
         : [];
-      try {
-        objectMapV2FrameEl.contentWindow.postMessage({
-          type: 'object-map-search-state',
-          world: normalizeObjectMapKey(objectMapActiveMapKey),
-          query: searchQuery,
-          pathFilter: activePathFilter,
-          mode: searchMode,
-          rows: rows
-        }, window.location.origin);
-      } catch (error) {}
+      objectMapContract.postToFrame(objectMapV2FrameEl, {
+        type: OBJECT_MAP_MESSAGE_TYPES.SEARCH_STATE,
+        world: normalizeObjectMapKey(objectMapActiveMapKey),
+        query: searchQuery,
+        pathFilter: activePathFilter,
+        mode: searchMode,
+        rows: rows,
+        perf: objectMapPerformance.profile.v2Hints
+      });
+      objectMapContract.dispatchDomEvent(OBJECT_MAP_DOM_EVENTS.SEARCH_STATE_DISPATCHED, {
+        world: normalizeObjectMapKey(objectMapActiveMapKey),
+        query: searchQuery,
+        pathFilter: activePathFilter,
+        rows: rows.length
+      });
     };
     var clearObjectMapV2SelectionState = function() {
       if (!objectMapV2FrameEl || !objectMapV2FrameLoaded || !objectMapV2FrameEl.contentWindow) return;
-      try {
-        objectMapV2FrameEl.contentWindow.postMessage({
-          type: 'object-map-clear-selection'
-        }, window.location.origin);
-      } catch (error) {}
+      objectMapContract.postToFrame(objectMapV2FrameEl, {
+        type: OBJECT_MAP_MESSAGE_TYPES.CLEAR_SELECTION
+      });
     };
     if (objectMapV2FrameEl) {
       objectMapV2FrameEl.addEventListener('load', function() {
@@ -2765,12 +2783,15 @@
     };
     var gatherObjectMapPlacementsAsync = function(rows, viewerData, mapKey, token) {
       return new Promise(function(resolve) {
+        var gatherStartTime = (window.performance && typeof window.performance.now === 'function')
+          ? window.performance.now()
+          : Date.now();
         var placements = [];
         var nextPathIndex = {};
         var pointSeen = {};
         var representedPlacements = 0;
         var rowIndex = 0;
-        var chunkSize = 24;
+        var chunkSize = Math.max(8, Number(objectMapPerformance.profile.gatherRowChunkSize) || 24);
         var hasToken = token !== null && token !== undefined;
         var processChunk = function() {
           if (hasToken && token !== objectMapRenderToken) {
@@ -2816,6 +2837,10 @@
             }
           }
           if (rowIndex >= rows.length) {
+            var gatherEndTime = (window.performance && typeof window.performance.now === 'function')
+              ? window.performance.now()
+              : Date.now();
+            objectMapPerformance.markGather(gatherEndTime - gatherStartTime);
             resolve({
               placements: placements,
               representedPlacements: representedPlacements,
@@ -2942,10 +2967,13 @@
     };
     var renderObjectMapMarkersRawAsync = function(placements, viewerData, token) {
       return new Promise(function(resolve) {
+        var renderStartTime = (window.performance && typeof window.performance.now === 'function')
+          ? window.performance.now()
+          : Date.now();
         var radiusPx = objectMapScaledMarkerPixels(4.8, viewerData);
         var rendered = 0;
         var index = 0;
-        var chunkSize = 300;
+        var chunkSize = Math.max(50, Number(objectMapPerformance.profile.renderMarkerChunkSize) || 220);
         var processChunk = function() {
           if (token !== objectMapRenderToken) {
             resolve(null);
@@ -2966,6 +2994,10 @@
             rendered += 1;
           }
           if (rendered >= OBJECT_MAP_MAX_MARKERS || index >= placements.length) {
+            var renderEndTime = (window.performance && typeof window.performance.now === 'function')
+              ? window.performance.now()
+              : Date.now();
+            objectMapPerformance.markRender(renderEndTime - renderStartTime, placements.length);
             resolve({
               rendered: rendered,
               clustered: false,
@@ -3139,7 +3171,7 @@
       objectMapInteractionRefreshTimer = setTimeout(function() {
         objectMapInteractionRefreshTimer = null;
         renderObjectMapFromTable(true);
-      }, Math.max(0, Number(delayMs) || 120));
+      }, Math.max(0, Number(delayMs) || objectMapPerformance.profile.interactionRefreshDelayMs));
     };
     var renderTypesExplorerTags = function() {
       if (!typesExplorerUsageTagsEl || !typesExplorerValueTagsEl) return;
@@ -4553,6 +4585,9 @@
       if (!chernarusMapLightboxEl) return;
       chernarusMapLightboxEl.classList.remove('is-open');
       chernarusMapLightboxEl.setAttribute('aria-hidden', 'true');
+      objectMapContract.dispatchDomEvent(OBJECT_MAP_DOM_EVENTS.LIGHTBOX_CLOSED, {
+        world: chernarusMapState.activeMapKey || ''
+      });
       chernarusMapState.dragStart = null;
       hideLocationMapToast();
       updateLocationMapStatusText('');
@@ -4582,6 +4617,10 @@
         chernarusMapState.backdropTileNodes.clear();
         chernarusMapLightboxEl.classList.add('is-open');
         chernarusMapLightboxEl.setAttribute('aria-hidden', 'false');
+        objectMapContract.dispatchDomEvent(OBJECT_MAP_DOM_EVENTS.LIGHTBOX_OPENED, {
+          world: mapKey,
+          count: resolved.count || 0
+        });
         scheduleLocationMapLayout(true);
       }).catch(function(error) {
         chernarusMapState.selection = null;
@@ -6517,14 +6556,9 @@
     requireCoreModule('createMapBridge')({
       origin: window.location.origin,
       onFocusObject: handleObjectMapFocusMessage,
-      onObjectAction: handleObjectMapActionMessage
+      onObjectAction: handleObjectMapActionMessage,
+      onFilterObject: handleObjectMapFilterMessage
     }).attach();
-    window.addEventListener('message', function(event) {
-      if (!event || !event.data || event.origin !== window.location.origin) return;
-      if (event.data.type === 'object-map-filter-object') {
-        handleObjectMapFilterMessage(event.data);
-      }
-    });
     var applyIdListFilter = function(ids) {
       if (!table) return;
       var normalized = (Array.isArray(ids) ? ids : []).map(function(value) {
@@ -6606,6 +6640,7 @@
     var typesMapParam = normalizeTypesMapParam(initialUrl.get('types_map'));
     var typesKindParam = normalizeTypesKindParam(initialUrl.get('types_kind'));
     var typesTagParam = String(initialUrl.get('types_tag') || '').trim();
+    var updateToggleEl = document.getElementById('updateToggle');
     var versionFilterNoticeEl = document.getElementById('versionFilterNotice');
     var versionFilterNoticeTextEl = document.getElementById('versionFilterNoticeText');
     var versionFilterResetLinkEl = document.getElementById('versionFilterResetLink');
@@ -6650,9 +6685,19 @@
       }
       noticeEl.classList.toggle('visible', !!visible);
     };
+    var isUpdateToggleActive = function() {
+      return versionParam === 'v1.29';
+    };
+    var updateVersionToggleState = function() {
+      if (!updateToggleEl) return;
+      var isActive = isUpdateToggleActive();
+      updateToggleEl.classList.toggle('is-active', isActive);
+      updateToggleEl.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    };
     var updateNotices = function() {
       var urlState = AppUrl.read();
       var urlVersion = normalizeVersionParam(urlState.get('version'));
+      versionParam = urlVersion;
       var urlPath = normalizeFilterText(urlState.get('path') || '');
       var urlSearch = String(urlState.get('q') || '').trim();
       var urlIds = urlState.getAll('id').map(function(value) {
@@ -6698,6 +6743,7 @@
         !!urlSearch,
         urlSearch ? ("Linked to search term '" + urlSearch + "'.") : null
       );
+      updateVersionToggleState();
     };
 
     var readCookie = function(name) {
@@ -7156,7 +7202,6 @@
       updateSearchShareLinkVisibility();
       scheduleSidebarTopOffsetSync();
     };
-    var updateToggleEl = document.getElementById('updateToggle');
     var applyVersionFilterByTag = function(versionKey) {
       var normalizedVersion = normalizeVersionParam(versionKey);
       if (!normalizedVersion || !table) return;
@@ -7177,8 +7222,13 @@
     if (updateToggleEl) {
       updateToggleEl.addEventListener('click', function(e) {
         e.preventDefault();
+        if (isUpdateToggleActive()) {
+          runResetView();
+          return;
+        }
         applyVersionFilterByTag('v1.29');
       });
+      updateVersionToggleState();
     }
     if (folderSidebarClearEl) {
       folderSidebarClearEl.addEventListener('click', function() {

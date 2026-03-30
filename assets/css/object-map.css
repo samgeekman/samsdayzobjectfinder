@@ -1,0 +1,276 @@
+.map-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 17, 27, 0.66);
+  backdrop-filter: blur(5px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1150;
+  padding: 22px;
+}
+:root.dark-mode .map-lightbox {
+  background: rgba(5, 9, 15, 0.8);
+}
+.map-lightbox.is-open {
+  display: flex;
+}
+.map-lightbox__content {
+  position: relative;
+  width: min(1200px, 96vw);
+  height: min(88vh, 900px);
+  min-height: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 22px 56px rgba(16, 18, 26, 0.18);
+  background: var(--card);
+}
+:root.dark-mode .map-lightbox__content {
+  box-shadow: 0 26px 64px rgba(0, 0, 0, 0.55);
+}
+.map-lightbox__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 3;
+  min-width: 38px;
+  height: 38px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.12s ease;
+}
+.map-lightbox__reset {
+  position: absolute;
+  top: 14px;
+  right: 62px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.12s ease;
+}
+.map-lightbox__open-object-map {
+  right: 162px;
+}
+.map-lightbox__close:hover,
+.map-lightbox__reset:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #111;
+  transform: translateY(-1px);
+}
+.map-lightbox__frame {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)),
+    linear-gradient(180deg, var(--input-bg), var(--bg));
+}
+:root.dark-mode .map-lightbox__frame {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0)),
+    linear-gradient(180deg, #101827, #0c111b);
+}
+.map-lightbox__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: grab;
+  touch-action: none;
+}
+.map-lightbox__overlay.dragging {
+  cursor: grabbing;
+}
+.map-lightbox__overlay path {
+  vector-effect: non-scaling-stroke;
+  shape-rendering: geometricPrecision;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.map-lightbox__overlay image {
+  image-rendering: auto;
+  pointer-events: none;
+}
+.map-lightbox__marker-hit {
+  cursor: pointer;
+  pointer-events: all;
+}
+.map-lightbox__marker-hit:focus-visible {
+  outline: none;
+}
+.map-lightbox__meta {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  z-index: 2;
+  display: grid;
+  gap: 4px;
+  max-width: min(420px, calc(100% - 120px));
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+}
+.map-lightbox__label {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.map-lightbox__subtle {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.map-lightbox__status {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.map-lightbox__toast {
+  position: absolute;
+  left: 50%;
+  bottom: 22px;
+  z-index: 3;
+  transform: translate(-50%, 12px);
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #111;
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 140ms ease, transform 140ms ease;
+}
+:root.dark-mode .map-lightbox__toast {
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.38);
+}
+.map-lightbox__toast.visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.object-map--v2 {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  margin: 0 0 10px;
+}
+.object-map--v2 .object-map__header,
+.object-map--v2 .object-map__note {
+  display: none;
+}
+.object-map-v2__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  margin: 0 0 8px;
+}
+.object-map-v2__scope {
+  display: inline-flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+.object-map-v2__frame {
+  position: relative;
+  width: 100%;
+  min-height: min(80vh, 980px);
+  border: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #596050;
+  box-shadow: none;
+}
+.object-map-v2__iframe {
+  display: block;
+  width: 100%;
+  min-height: min(80vh, 980px);
+  border: 0;
+  background: #596050;
+  opacity: 1;
+  transition: opacity 120ms ease;
+}
+.object-map-v2__iframe.is-loading {
+  opacity: 0;
+}
+.object-map {
+  display: none;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card);
+  box-shadow: var(--shadow-soft);
+}
+.object-map.visible {
+  display: block;
+}
+#dayzObjects_wrapper.object-map-mode #dayzObjects,
+#dayzObjects_wrapper.object-map-mode .dataTables_info,
+#dayzObjects_wrapper.object-map-mode .dataTables_paginate,
+#dayzObjects_wrapper.object-map-mode .dataTables_length,
+#dayzObjects_wrapper.object-map-mode .dataTables_filter,
+#dayzObjects_wrapper.object-map-mode .top-bar {
+  display: none !important;
+}
+#filters.object-map-mode .top-console,
+#filters.object-map-mode .filter-actions,
+#filters.object-map-mode #exportPanel {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .map-lightbox {
+    padding: 10px;
+  }
+  .map-lightbox__content {
+    width: 100vw;
+    height: 88vh;
+    min-height: 420px;
+    border-radius: 18px;
+  }
+  .map-lightbox__meta {
+    max-width: calc(100% - 24px);
+    left: 12px;
+    top: 12px;
+    padding: 12px 14px;
+  }
+  .map-lightbox__close {
+    top: 10px;
+    right: 10px;
+  }
+  .map-lightbox__reset {
+    top: 10px;
+    right: 54px;
+    padding: 7px 10px;
+  }
+  .map-lightbox__open-object-map {
+    right: 148px;
+  }
+}
