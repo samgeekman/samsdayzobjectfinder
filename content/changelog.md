@@ -4,7 +4,7 @@ type: "page"
 draft: false
 ---
 
-## 0.9.1 - 28 March 2026
+## 0.9.1 - 30 March 2026
 
 **Added**
 
@@ -33,6 +33,7 @@ draft: false
 - When closing or opening the help message, the object viewer and sidebar did not change position until scrolled
 - When opening the object viewer by clicking 'path' on a pinned path, the menu
   would overlap the main table
+- Long path menu was bad, simpler solutiona added.
 - Other small things I've forgotten
 
 

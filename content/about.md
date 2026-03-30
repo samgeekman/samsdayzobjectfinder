@@ -16,7 +16,7 @@ The site also includes:
 - [Types Explorer](https://samsobjectfinder.com/?types=1) lets you check the vanilla types.xml to see what loots spawn where.
 - [Editor Builds](https://samsobjectfinder.com/?presets=1) has many quick presets and free-to-use designs from attributed builders. 
 
-This tool is entirely free and always will be. Developed by samgeekman.
+This tool is entirely free and always will be. Developed by samgeekman - feel free to message me on Discord.
 
 ## Using the data
 
@@ -31,8 +31,6 @@ The data, images and anything else on this site are available for you to use in 
 - The latest objects.json export structure is available [here](/dayz_objects_latest.zip).
 
 Sam's DayZ Object Finder is not affiliated or authorized by Bohemia Interactive. The DayZ trademark and all associated images and other content are the property of Bohemia Interactive, a.s.
-
-If you need anything else, or notice an error, contact me on [Discord](https://discord.com/channels/1414751279548203008/1414754388064604220)
 
 ## Thanks
 
