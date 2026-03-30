@@ -113,7 +113,6 @@
     // UI timers/tooltip state:
     // - sidebarTopOffsetRaf: RAF id for sidebar top offset syncing
     // - chipInfoHideTimer / chipInfoHoverTimer / chipInfoLockUntil
-    // - pathHoverHideTimer / pathHoverTooltipRowData
     // ----------------------------------
     /**
      * @typedef {''
@@ -902,8 +901,6 @@
       if (!chipInfoTooltipEl) return;
       chipInfoTooltipEl.classList.remove('visible');
     };
-    var pathHoverHideTimer = null;
-    var pathHoverTooltipRowData = null;
     var flashIconButton = function($btn) {
       if (!$btn || !$btn.length) return;
       var resetHtml = $btn.html();
@@ -995,15 +992,6 @@
       if (!targetPath) return null;
       return { rawPath: rawPath, targetPath: targetPath };
     };
-    var positionExpandedPathText = function(pathValueEl) {
-      if (!pathValueEl || !pathValueEl.querySelector) return;
-      var fullTextEl = pathValueEl.querySelector('.path-cell__text--full');
-      if (!fullTextEl) return;
-      var valueRect = pathValueEl.getBoundingClientRect();
-      var rowCenterY = valueRect.top + (valueRect.height / 2);
-      fullTextEl.style.left = '68vw';
-      fullTextEl.style.top = rowCenterY + 'px';
-    };
     var pinPathForRow = function(rowData) {
       var target = resolvePathActionTarget(rowData);
       if (!target) return false;
@@ -1016,16 +1004,6 @@
       if (!rows.length) return false;
       addPinnedPathItem(target.targetPath, rows);
       return true;
-    };
-    var showPathHoverTooltip = function(targetEl, rowData, options) {
-      return;
-    };
-    var hidePathHoverTooltip = function() {
-      if (!pathHoverTooltipEl) return;
-      pathHoverTooltipEl.classList.remove('visible');
-      pathHoverTooltipEl.classList.remove('is-rich');
-      pathHoverTooltipEl.textContent = '';
-      pathHoverTooltipRowData = null;
     };
     var buildChipSummaryItems = function(rowData) {
       if (!rowData) return [];
@@ -1100,64 +1078,9 @@
       var delay = chipInfoLockUntil > now ? (chipInfoLockUntil - now) : 0;
       scheduleHideChipInfoTooltip(delay);
     });
-    $tableEl.on('mouseenter', 'td.path-cell .path-cell__value', function() {
-      positionExpandedPathText(this);
-      if (pathHoverHideTimer) {
-        clearTimeout(pathHoverHideTimer);
-        pathHoverHideTimer = null;
-      }
-      var $tr = $(this).closest('tr');
-      if ($tr.hasClass('child')) {
-        $tr = $tr.prev();
-      }
-      var rowData = table.row($tr).data();
-      if (!rowData) return;
-      var isTruncated = this.classList.contains('is-truncated');
-      var fullPath = String(this.getAttribute('data-full-path') || rowData.path || '').trim();
-      if (isTruncated && fullPath) {
-        showPathHoverTooltip(this, rowData, {
-          isTruncated: isTruncated,
-          fullPath: fullPath
-        });
-      } else {
-        hidePathHoverTooltip();
-      }
-    });
-    $tableEl.on('mouseleave', 'td.path-cell .path-cell__value', function() {
-      pathHoverHideTimer = setTimeout(function() {
-        hidePathHoverTooltip();
-        pathHoverHideTimer = null;
-      }, 100);
-    });
-    $tableEl.on('mousemove', 'td.path-cell .path-cell__value', function() {
-      positionExpandedPathText(this);
-    });
-    $tableEl.on('mouseenter', 'td.path-cell .cell-action-grid', function() {
-      if (pathHoverHideTimer) {
-        clearTimeout(pathHoverHideTimer);
-        pathHoverHideTimer = null;
-      }
-    });
-    if (pathHoverTooltipEl) {
-      pathHoverTooltipEl.addEventListener('mouseenter', function() {
-        if (pathHoverHideTimer) {
-          clearTimeout(pathHoverHideTimer);
-          pathHoverHideTimer = null;
-        }
-      });
-      pathHoverTooltipEl.addEventListener('mouseleave', function() {
-        if (pathHoverHideTimer) {
-          clearTimeout(pathHoverHideTimer);
-        }
-        pathHoverHideTimer = setTimeout(function() {
-          hidePathHoverTooltip();
-          pathHoverHideTimer = null;
-        }, 80);
-      });
-    }
+    // Main table path hover uses inline shortened text + CSS tooltip.
     window.addEventListener('scroll', function() {
       hideChipInfoTooltip();
-      hidePathHoverTooltip();
     }, { passive: true });
     
     if (table.settings()[0]._bInitComplete) {
@@ -6665,7 +6588,6 @@
     var searchFilterResetLinkEl = document.getElementById('searchFilterResetLink');
     var searchFilterCopyLinkEl = document.getElementById('searchFilterCopyLink');
     var chipInfoTooltipEl = document.getElementById('chipInfoTooltip');
-    var pathHoverTooltipEl = document.getElementById('pathHoverTooltip');
     var presetsGuideNoticeEl = document.getElementById('presetsGuideNotice');
     var appGuideCookiePrefix = 'samsobjectfinder_guide_';
     var scheduleGuideLayoutSync = function() {
@@ -6983,7 +6905,6 @@
     });
     table.on('draw.dt', function() {
       updateTableColumnLabels();
-      hidePathHoverTooltip();
       var keepBroadSearchFolders = isFolderTreeInBroadFilterMode() && !!activeFolderFilter && filteredFolderPrefixes.length > 0;
       if (!keepBroadSearchFolders) {
         updateFilteredFolderPrefixes();
@@ -8132,7 +8053,6 @@
       var rowData = table.row($row).data();
       if (!rowData) return;
       if (!applyPathFilterForRow(rowData)) return;
-      hidePathHoverTooltip();
       flashIconButton($(this));
     });
 
@@ -8372,29 +8292,4 @@
       flashIconButton($(this));
     });
 
-    $(document).on('click', '.path-tooltip-pin-btn', function(e) {
-      e.stopPropagation();
-      if (!pinPathForRow(pathHoverTooltipRowData)) return;
-      flashIconButton($(this));
-    });
-    $(document).on('click', '.path-tooltip-copy-link-btn', function(e) {
-      e.stopPropagation();
-      var target = resolvePathActionTarget(pathHoverTooltipRowData);
-      if (!target) return;
-      copyTextToClipboard(buildFolderPathUrl(target.targetPath));
-      flashIconButton($(this));
-    });
-    $(document).on('click', '.path-tooltip-copy-name-btn', function(e) {
-      e.stopPropagation();
-      var target = resolvePathActionTarget(pathHoverTooltipRowData);
-      if (!target) return;
-      copyTextToClipboard(target.rawPath);
-      flashIconButton($(this));
-    });
-    $(document).on('click', '.path-tooltip-filter-btn', function(e) {
-      e.stopPropagation();
-      if (!applyPathFilterForRow(pathHoverTooltipRowData)) return;
-      hidePathHoverTooltip();
-      flashIconButton($(this));
-    });
   });

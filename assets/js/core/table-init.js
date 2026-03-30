@@ -95,10 +95,10 @@ export const createTableRenderers = (deps = {}) => {
     }
     const safeShortPath = escapeHtml(shortPath);
     const pathTextHtml = '<span class="path-cell__value' + (isPathTruncated ? ' is-truncated' : '') + '"'
+      + (pathValue ? (' title="' + safePath + '"') : '')
       + (isPathTruncated ? (' data-full-path="' + safePath + '"') : '')
       + '>'
       + '<span class="path-cell__text path-cell__text--short">' + safeShortPath + '</span>'
-      + (isPathTruncated ? ('<span class="path-cell__text path-cell__text--full">' + safePath + '</span>') : '')
       + '</span>';
     const pathActionsHtml = '<span class="cell-action-grid cell-action-grid--path">'
       + '<button class="copy-btn path-action-btn path-copy-link-btn icon-action" type="button" title="Copy path link"><span class="ui-icon ui-icon--link" aria-hidden="true"></span></button>'

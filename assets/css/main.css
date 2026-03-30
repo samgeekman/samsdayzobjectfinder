@@ -530,39 +530,34 @@
     font-size: 0.68rem;
     transition: opacity 0.12s ease;
   }
-  #dayzObjects tbody .path-cell__text--full {
-    position: fixed;
-    left: 68vw;
-    right: auto;
-    top: -9999px;
-    transform: translate(-50%, -50%) scale(0.985);
-    opacity: 0;
-    pointer-events: none;
-    z-index: 34;
-    white-space: nowrap;
-    color: inherit;
-    font: inherit;
-    line-height: inherit;
-    padding: 0 5px;
-    border: 1.25px solid color-mix(in srgb, var(--ui-button-border) 80%, var(--text) 20%);
-    border-radius: 3px;
-    background: var(--card);
-    box-sizing: border-box;
-    max-width: none;
-    overflow: visible;
-    text-overflow: clip;
-    font-size: 0.66rem;
-    line-height: 1.1;
-    transition: opacity 0.14s ease, transform 0.16s ease;
-  }
   #dayzObjects tbody .path-cell:hover .path-cell__value.is-truncated .path-cell__text--short,
   #dayzObjects tbody .path-cell:focus-within .path-cell__value.is-truncated .path-cell__text--short {
-    opacity: 0;
-  }
-  #dayzObjects tbody .path-cell:hover .path-cell__value.is-truncated .path-cell__text--full,
-  #dayzObjects tbody .path-cell:focus-within .path-cell__value.is-truncated .path-cell__text--full {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+  }
+  #dayzObjects tbody .path-cell__value.is-truncated[data-full-path]::after {
+    content: attr(data-full-path);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 35;
+    white-space: nowrap;
+    color: var(--text);
+    font-size: 0.66rem;
+    line-height: 1.1;
+    padding: 3px 6px;
+    border: 1px solid color-mix(in srgb, var(--ui-button-border) 80%, var(--text) 20%);
+    border-radius: 3px;
+    background: var(--card);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.28);
+    transform: translateY(2px);
+    transition: opacity 0.12s ease, transform 0.12s ease;
+  }
+  #dayzObjects tbody .path-cell__value.is-truncated[data-full-path]:hover::after,
+  #dayzObjects tbody .path-cell__value.is-truncated[data-full-path]:focus-visible::after {
+    opacity: 1;
+    transform: translateY(0);
   }
   #dayzObjects tbody .thumb-cell {
     width: 49px;
@@ -701,85 +696,6 @@
   #dayzObjects tbody .info-chip--console-no,
   .chip-info-tooltip .info-chip--console-no {
     background: var(--color-chip-console-no);
-  }
-  .path-hover-tooltip {
-    display: none !important;
-    position: fixed;
-    z-index: 2210;
-    max-width: min(720px, calc(100vw - 24px));
-    padding: 5px 7px 1px;
-    border: 1px solid var(--border);
-    border-radius: 5px;
-    background: var(--card);
-    color: var(--text);
-    box-shadow: var(--shadow-soft);
-    font-size: 0.64rem;
-    line-height: 1.18;
-    white-space: normal;
-    word-break: break-word;
-    overflow-wrap: anywhere;
-    pointer-events: none;
-    opacity: 0;
-    transform: translate(-50%, -8px);
-    transition: opacity 0.14s ease, transform 0.14s ease;
-  }
-  .path-hover-tooltip.is-rich {
-    max-width: min(860px, calc(100vw - 20px));
-    padding: 7px 9px 2px;
-    font-size: 0.68rem;
-    line-height: 1.2;
-  }
-  .path-hover-tooltip__path {
-    display: block;
-    margin-bottom: 0;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 0.76rem;
-    color: var(--text);
-    white-space: normal;
-    word-break: break-word;
-    overflow-wrap: anywhere;
-  }
-  .path-hover-tooltip.visible {
-    opacity: 1;
-    transform: translate(-50%, -4px);
-    pointer-events: auto;
-  }
-  .path-hover-tooltip__layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: start;
-    gap: 10px;
-  }
-  .path-hover-tooltip__actions {
-    display: grid;
-    grid-template-columns: repeat(2, var(--hover-action-size));
-    grid-template-rows: repeat(2, var(--hover-action-size));
-    gap: var(--hover-action-gap);
-    align-content: start;
-  }
-  .path-hover-tooltip__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: var(--hover-action-size);
-    height: var(--hover-action-size);
-    cursor: pointer;
-    border: 1.5px solid color-mix(in srgb, var(--ui-button-border) 80%, var(--text) 20%);
-    background: transparent;
-    color: var(--ui-button-text);
-    font-size: 0.9rem;
-    font-weight: 600;
-    line-height: 1;
-    padding: 0;
-    border-radius: 3px;
-    box-sizing: border-box;
-  }
-  .path-hover-tooltip__btn:hover,
-  .path-hover-tooltip__btn:focus-visible {
-    outline: none;
-    background-color: var(--color-accent-hover) !important;
-    border-color: var(--color-accent-hover) !important;
-    color: var(--color-accent-hover-text) !important;
   }
   #dayzObjects tbody tr {
     height: 47px;
