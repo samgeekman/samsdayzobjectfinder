@@ -1307,6 +1307,7 @@
     var pinnedBulkLayoutButtons = document.querySelectorAll('.pinned-bulk-layout');
     var pinnedBulkSpacingButtons = document.querySelectorAll('.pinned-bulk-spacing');
     var isMobileView = window.matchMedia('(max-width: 768px)').matches;
+    var objectFocusHomeParent = objectFocusEl ? objectFocusEl.parentNode : null;
     var objectFocusPinEl = document.getElementById('objectFocusPin');
     var objectFocusMarkdownCopyEl = document.getElementById('objectFocusMarkdownCopy');
     var objectFocusCollapseEl = document.getElementById('objectFocusCollapse');
@@ -1554,10 +1555,35 @@
       if (imageOverlayPrevEl) imageOverlayPrevEl.classList.remove('is-visible');
       if (imageOverlayNextEl) imageOverlayNextEl.classList.remove('is-visible');
     };
+    var closeResponsiveRowDetails = function($keepRow) {
+      if (!table) return;
+      $(table.rows().nodes()).each(function() {
+        var $row = $(this);
+        if ($keepRow && $row.is($keepRow)) return;
+        var row = table.row($row);
+        if (row && row.child && row.child.isShown()) {
+          row.child.hide();
+          $row.removeClass('parent');
+        }
+      });
+    };
+    var dockObjectFocusPane = function() {
+      if (!objectFocusEl) return;
+      if (objectFocusHomeParent && objectFocusEl.parentNode !== objectFocusHomeParent) {
+        objectFocusHomeParent.appendChild(objectFocusEl);
+      }
+      objectFocusEl.classList.remove('object-focus--inline');
+    };
     var updateMobileView = function() {
+      var wasMobileView = isMobileView;
       isMobileView = window.matchMedia('(max-width: 768px)').matches;
       if (isMobileView) {
         $('#imgPreview').remove();
+        return;
+      }
+      if (wasMobileView) {
+        closeResponsiveRowDetails(null);
+        dockObjectFocusPane();
       }
     };
 
@@ -7084,6 +7110,8 @@
       });
     }
     var runResetView = function() {
+      closeResponsiveRowDetails(null);
+      dockObjectFocusPane();
       var currentAppCollection = activeCollectionFilter;
       var keepAppCollection = currentAppCollection === AppMode.PRESETS || currentAppCollection === AppMode.TYPES_EXPLORER || currentAppCollection === AppMode.OBJECT_MAP;
       setActiveCollectionFilter(keepAppCollection ? currentAppCollection : AppMode.DATABASE);
@@ -7945,35 +7973,38 @@
     });
 
     var closeOtherRowDetails = function($keepRow) {
-      if (!table) return;
-      $(table.rows().nodes()).each(function() {
-        var $row = $(this);
-        if ($keepRow && $row.is($keepRow)) return;
-        var row = table.row($row);
-        if (row && row.child && row.child.isShown()) {
-          row.child.hide();
-          $row.removeClass('parent');
-        }
-      });
+      closeResponsiveRowDetails($keepRow);
     };
 
     $('#dayzObjects tbody').on('click', '.object-name-cell', function(e) {
       if ($(e.target).hasClass('copy-btn')) return;
       e.stopPropagation();
+      var $cell = $(this);
+      var objName = $cell.data('object');
       if (table) {
-        var $row = $(this).closest('tr');
+        var $row = $cell.closest('tr');
         var row = table.row($row);
         if (row && row.child) {
           if (isMobileView) {
             var isOpen = row.child.isShown();
-            closeOtherRowDetails($row);
-            if (isOpen) {
+            var isSameSelected = objectFocusEl && objectFocusEl.classList.contains('visible') && currentObjectName === objName;
+            if (isOpen && isSameSelected) {
               row.child.hide();
               $row.removeClass('parent');
+              FocusPane.clear();
+              dockObjectFocusPane();
               return;
             }
-            row.child(buildRowDetailsHtml($(this)), 'child').show();
+            closeOtherRowDetails($row);
+            showObjectFocus($cell, false);
+            row.child(objectFocusEl, 'child').show();
             $row.addClass('parent');
+            if (objectFocusEl) {
+              objectFocusEl.classList.add('object-focus--inline');
+              if (typeof objectFocusEl.scrollIntoView === 'function') {
+                objectFocusEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+              }
+            }
             return;
           }
           if (row.child.isShown()) {
@@ -7982,12 +8013,11 @@
           }
         }
       }
-      var objName = $(this).data('object');
       if (objectFocusEl && objectFocusEl.classList.contains('visible') && currentObjectName === objName) {
         FocusPane.clear();
         return;
       }
-      showObjectFocus($(this), false);
+      showObjectFocus($cell, false);
     });
 
     $('#dayzObjects tbody').on('click', '.copy-name-btn', function(e) {

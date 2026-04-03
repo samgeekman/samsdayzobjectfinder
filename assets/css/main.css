@@ -2528,6 +2528,19 @@
     }
   }
   @media (max-width: 768px) {
+    .objects-layout > .object-focus {
+      display: none !important;
+    }
+    table.dataTable tbody tr.child td .object-focus {
+      display: flex !important;
+      width: 100%;
+      position: static;
+      top: auto;
+      right: auto;
+      max-height: none;
+      overflow-y: visible;
+      margin-top: 8px;
+    }
     .object-focus__image {
       width: 100%;
       height: 220px;
