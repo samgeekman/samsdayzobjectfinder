@@ -130,6 +130,7 @@ header .pb1-m.pb1-l.bg-black {
   font-size: 0.7rem;
   font-weight: 600;
   line-height: 1.2;
+  white-space: nowrap;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 .nav-menu-button::after {
@@ -195,6 +196,44 @@ header .pb1-m.pb1-l.bg-black {
 .site-nav__menu > li {
   display: inline-flex;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .site-nav {
+    min-height: auto;
+    height: auto;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    align-items: flex-start;
+  }
+
+  .site-nav__inner {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .site-nav__brand {
+    height: auto;
+  }
+
+  .site-nav__logo {
+    height: auto;
+    width: auto;
+    max-height: 42px;
+    max-width: 220px;
+  }
+
+  .site-nav__actions {
+    width: 100%;
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+
+  .site-nav__menu {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 6px;
+  }
 }
 
 .theme-toggle {
