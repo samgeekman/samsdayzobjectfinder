@@ -1,10 +1,6 @@
 {
   "name": "samsdayzobjectfinder",
   "private": true,
-  "scripts": {
-    "test:contracts": "playwright test tests/*.spec.js"
-  },
-  "devDependencies": {
-    "@playwright/test": "^1.54.0"
-  }
+  "scripts": {},
+  "devDependencies": {}
 }
