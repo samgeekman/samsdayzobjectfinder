@@ -796,7 +796,7 @@
       if (pinnedPlacement === placement) pinnedPlacement = null;
       if (hoverPlacement === placement) hoverPlacement = null;
       centerViewOnWorld(runtimePlacement[P.x], runtimePlacement[P.z]);
-      statusReadout.textContent = "Plane mode. WASD to fly. Shift to boost. Space for missiles on cursor. Esc to exit.";
+      statusReadout.textContent = "Plane mode. W/A/D to fly. Shift to boost. Space for missiles on cursor. Esc to exit.";
       scheduleRender();
     }
 
@@ -868,7 +868,6 @@
       controlledPlane.bank = (controlledPlane.bank || 0) + bankDelta;
       const thrustMultiplier = boosting ? PLANE_BOOST_THRUST_MULTIPLIER : 1;
       let thrust = 0;
-      if (controlledShipKeys.KeyS) thrust += PLANE_THRUST * thrustMultiplier;
       if (controlledShipKeys.KeyW) thrust -= PLANE_THRUST * 0.55;
       if (controlledShipKeys.KeyA) controlledPlane.angularVelocity -= PLANE_TURN_ACCEL * dt;
       if (controlledShipKeys.KeyD) controlledPlane.angularVelocity += PLANE_TURN_ACCEL * dt;
@@ -933,7 +932,7 @@
       while (placement[P.z] < bounds.minZ) placement[P.z] += worldHeight;
       while (placement[P.z] > bounds.maxZ) placement[P.z] -= worldHeight;
       centerViewOnWorld(placement[P.x], placement[P.z]);
-      statusReadout.textContent = "Plane mode. WASD to fly. Shift to boost. Space for missiles on cursor. Esc to exit.";
+      statusReadout.textContent = "Plane mode. W/A/D to fly. Shift to boost. Space for missiles on cursor. Esc to exit.";
       return true;
     }
 
@@ -1440,7 +1439,7 @@
         travelled: 0,
         phase: "flight",
       });
-      statusReadout.textContent = "Plane mode. WASD to fly. Shift to boost. Space for missiles on cursor. Esc to exit.";
+      statusReadout.textContent = "Plane mode. W/A/D to fly. Shift to boost. Space for missiles on cursor. Esc to exit.";
       scheduleRender();
     }
 
@@ -2309,7 +2308,11 @@
       scheduleHoverCheck(point);
     });
 
-    viewer.addEventListener("pointerup", (event) => {
+    const endPointerInteraction = (event, options = {}) => {
+      const canceled = !!options.canceled;
+      if (typeof event.pointerId === "number" && viewer.hasPointerCapture && viewer.hasPointerCapture(event.pointerId)) {
+        viewer.releasePointerCapture(event.pointerId);
+      }
       if (pointerDownOnUi || (event.target && event.target.closest(".map-topbar"))) {
         pointerDownOnUi = false;
         panStart = null;
@@ -2318,7 +2321,7 @@
         viewer.classList.remove("dragging");
         return;
       }
-      const hadAreaSelection = !!areaStart && !!areaWorld;
+      const hadAreaSelection = !canceled && !!areaStart && !!areaWorld;
       const point = eventPoint(event);
       const clickDistance = pointerDownPoint ? Math.hypot(point.x - pointerDownPoint.x, point.y - pointerDownPoint.y) : Infinity;
       panStart = null;
@@ -2326,6 +2329,10 @@
       pointerDownOnUi = false;
       areaStart = null;
       viewer.classList.remove("dragging");
+      if (canceled) {
+        scheduleRender();
+        return;
+      }
       if (hadAreaSelection) {
         isAreaMode = false;
         loadAreaObjects();
@@ -2334,6 +2341,12 @@
         hoverPlacement = pinnedPlacement;
       }
       scheduleRender();
+    };
+    viewer.addEventListener("pointerup", (event) => {
+      endPointerInteraction(event);
+    });
+    viewer.addEventListener("pointercancel", (event) => {
+      endPointerInteraction(event, { canceled: true });
     });
 
     viewer.addEventListener("dblclick", (event) => {

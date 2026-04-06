@@ -60,6 +60,7 @@
       overflow: hidden;
       background: #353533;
       cursor: grab;
+      touch-action: none;
     }
     .viewer.dragging { cursor: grabbing; }
     .viewer.area-mode { cursor: crosshair; }
@@ -169,6 +170,7 @@
       height: 14px;
       display: block;
       object-fit: contain;
+      transition: filter 0.2s ease;
     }
     .plane-launcher.is-hidden {
       display: none;
@@ -336,6 +338,16 @@
       --icon-fg: #E4EDF7;
       --icon-hover-outline: #EDB125;
       --icon-hover-fg: #10121A;
+    }
+    :root.dark-mode .plane-launcher img,
+    .dark-mode .plane-launcher img {
+      filter: brightness(0) invert(1) !important;
+    }
+    :root.dark-mode .plane-launcher:hover img,
+    :root.dark-mode .plane-launcher:focus-visible img,
+    .dark-mode .plane-launcher:hover img,
+    .dark-mode .plane-launcher:focus-visible img {
+      filter: none !important;
     }
     .ui-icon {
       width: 1.15em;
