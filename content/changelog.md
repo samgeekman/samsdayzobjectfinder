@@ -4,6 +4,27 @@ type: "page"
 draft: false
 ---
 
+## 0.9.2 - 6 April 2026
+
+**Added**
+
+- Nav link to a new tool - quickly diagnose your DayZ illnesses: [www.whyareyousick.com](https://www.whyareyousick.com)
+
+**Changed**
+
+- Improved the neglected mobile UI:
+  - Full object viewer on object press.
+  - Show / hide folder menu.
+  - In-game name column added.
+  - Show filters menu.
+
+**Fixed**
+
+- Mobile: Fixed nav menu / logo display in mobile view.
+- Map: touch controls now work on mobile view (probably).
+- Map: You can no longer fly the the plane backwards.
+- Various UI issues.
+
 ## 0.9.1 - 30 March 2026
 
 **Added**
