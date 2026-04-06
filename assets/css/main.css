@@ -114,6 +114,21 @@
     background-color: var(--pane-controls-bg);
     box-shadow: none;
   }
+  .filters-header {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  #filtersToggle {
+    display: none;
+  }
+  .filters-controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+  }
   .collections-nav {
     display: flex;
     flex-wrap: wrap;
@@ -418,6 +433,8 @@
     box-sizing: border-box;
   }
   #folderSidebarClear,
+  #folderSidebarTreeToggle,
+  #filtersToggle,
   #objectFocusClear,
   #exportToggle,
   #updateToggle {
@@ -440,6 +457,9 @@
   #dayzObjects_wrapper .dataTables_filter {
     display: none !important;
   }
+  #filters.object-map-mode #filtersToggle {
+    display: none !important;
+  }
   #dayzObjects_wrapper .dataTables_length {
     float: none !important;
     text-align: left;
@@ -455,6 +475,53 @@
     #filters {
       flex-direction: column;
       align-items: stretch;
+    }
+    #filters.mobile-filters-mode .filters-header {
+      width: 100%;
+      justify-content: space-between;
+    }
+    #filters.mobile-filters-mode #filtersToggle {
+      display: inline-flex;
+    }
+    #filters.mobile-filters-mode .filters-controls {
+      width: 100%;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      align-items: end;
+      gap: 8px;
+    }
+    #filters.mobile-filters-mode.mobile-filters-collapsed .filters-controls {
+      display: none;
+    }
+    #filters.mobile-filters-mode .filters-controls .dataTables_length {
+      grid-column: 1;
+      width: auto;
+      margin: 0;
+    }
+    #filters.mobile-filters-mode .filters-controls .top-console {
+      grid-column: 2;
+      width: auto;
+      margin: 0;
+      justify-content: flex-end;
+    }
+    #filters.mobile-filters-mode .filters-controls .filter-actions,
+    #filters.mobile-filters-mode .filters-controls #exportPanel {
+      grid-column: 1 / -1;
+      width: 100%;
+      margin: 0;
+    }
+    #filters.mobile-filters-mode .filters-controls .dataTables_length label,
+    #filters.mobile-filters-mode .filters-controls .top-console__label {
+      width: auto;
+      white-space: nowrap;
+    }
+    #filters.mobile-filters-mode .filters-controls .dataTables_length select,
+    #filters.mobile-filters-mode .filters-controls #filterConsole {
+      width: auto;
+      max-width: 100%;
+    }
+    #filters.mobile-filters-mode .filters-controls .filter-actions {
+      justify-content: flex-start;
     }
     .collections-nav {
       align-items: stretch;
@@ -1097,6 +1164,14 @@
     padding: 10px 10px 6px;
     border-bottom: none;
     background: var(--card);
+  }
+  .folder-sidebar__header-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  #folderSidebarTreeToggle {
+    display: none;
   }
   .folder-sidebar__search {
     position: relative;
@@ -2528,6 +2603,13 @@
     }
   }
   @media (max-width: 768px) {
+    #folderSidebarTreeToggle {
+      display: inline-flex;
+    }
+    .folder-sidebar.tree-hidden #folderTree,
+    .folder-sidebar.tree-hidden .folder-sidebar__bulk-sticky {
+      display: none !important;
+    }
     .objects-layout > .object-focus {
       display: none !important;
     }
@@ -2547,6 +2629,41 @@
     }
     .object-focus__details {
       width: 100%;
+    }
+    table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control::before,
+    table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control::before,
+    table.dataTable.dtr-inline > tbody > tr > td.dtr-control::before,
+    table.dataTable.dtr-inline > tbody > tr > td.details-control::before {
+      display: none !important;
+      content: '' !important;
+    }
+    table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control,
+    table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control,
+    table.dataTable.dtr-inline > tbody > tr > td.dtr-control,
+    table.dataTable.dtr-inline > tbody > tr > td.details-control {
+      padding-left: 6px !important;
+    }
+    table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child,
+    table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child {
+      padding-left: 6px !important;
+    }
+    #dayzObjects tbody td.object-name-cell,
+    #dayzObjects thead th.object-name-cell {
+      padding-right: 0 !important;
+    }
+    #dayzObjects tbody td.in-game-cell,
+    #dayzObjects thead th.in-game-cell {
+      padding-left: 0 !important;
+    }
+    #dayzObjects tbody .object-name-cell__value {
+      padding-right: 0;
+    }
+    #dayzObjects tbody .row-detail__actions {
+      justify-content: flex-start;
+    }
+    #dayzObjects tbody .row-detail__action.ui-action-btn {
+      justify-content: flex-start;
+      text-align: left;
     }
   }
 
@@ -2892,6 +3009,8 @@
     box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 45%, transparent);
   }
   #folderSidebarClear,
+  #folderSidebarTreeToggle,
+  #filtersToggle,
   #objectFocusCollapse,
   #objectFocusClear,
   #objectFocusLink,
@@ -2913,6 +3032,10 @@
   }
   #folderSidebarClear:hover,
   #folderSidebarClear:focus-visible,
+  #folderSidebarTreeToggle:hover,
+  #folderSidebarTreeToggle:focus-visible,
+  #filtersToggle:hover,
+  #filtersToggle:focus-visible,
   #objectFocusCollapse:hover,
   #objectFocusCollapse:focus-visible,
   #objectFocusClear:hover,

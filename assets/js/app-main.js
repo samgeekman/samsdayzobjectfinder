@@ -396,8 +396,9 @@
     };
     var updateFiltersAppTitle = function() {
       if (!filtersAppTitleEl || !filtersAppTitleIconEl || !filtersAppTitleTextEl) return;
-      if (activeCollectionFilter === AppMode.TYPES_EXPLORER || activeCollectionFilter === AppMode.OBJECT_MAP) {
+      if (activeCollectionFilter === AppMode.OBJECT_MAP) {
         filtersAppTitleEl.hidden = true;
+        syncMobileFiltersToggleState();
         return;
       }
       var config = {
@@ -413,18 +414,20 @@
           colorClass: '',
           iconClass: ''
         };
+      } else if (activeCollectionFilter === AppMode.TYPES_EXPLORER) {
+        config = {
+          label: 'Types Explorer',
+          src: '/icons/types-explorer.svg',
+          colorClass: '',
+          iconClass: ''
+        };
       }
       filtersAppTitleTextEl.textContent = config.label;
       filtersAppTitleIconEl.setAttribute('src', config.src);
       filtersAppTitleIconEl.className = 'filters-app-title__icon' + (config.iconClass ? (' ' + config.iconClass) : '');
       filtersAppTitleEl.className = 'filters-app-title';
       filtersAppTitleEl.hidden = false;
-      if (filtersEl) {
-        var lengthWrap = filtersEl.querySelector('.dataTables_length');
-        if (lengthWrap && filtersAppTitleEl.parentNode === filtersEl && filtersAppTitleEl.nextSibling !== lengthWrap) {
-          filtersEl.insertBefore(filtersAppTitleEl, lengthWrap);
-        }
-      }
+      syncMobileFiltersToggleState();
     };
     var updateFolderSidebarTitle = function() {
       if (!folderSidebarTitleEl) return;
@@ -771,14 +774,7 @@
           { name: 'tablet', width: 744 },
           { name: 'mobile', width: 0 }
         ],
-        details: {
-          type: 'column',
-          target: 0,
-          renderer: function(api, rowIdx) {
-            var $cell = $(api.row(rowIdx).node()).find('.object-name-cell');
-            return buildRowDetailsHtml($cell);
-          }
-        }
+        details: false
       },
       pageLength: 50,
       lengthMenu: [[50,100,200,500],[50,100,200,500]],
@@ -811,7 +807,7 @@
         { data: 'id', defaultContent: '' }
       ],
       columnDefs: [
-        { targets: 0, orderable: false, className: 'dtr-control min-desktop' },
+        { targets: 0, orderable: false, visible: false, searchable: false },
         { targets: 1, orderable: false, className: 'all thumb-cell' },
         {
           targets: 2,
@@ -855,7 +851,7 @@
             td.setAttribute('data-dimensions', JSON.stringify(parseDimensionsVisual(rowData.dimensionsVisual)));
           }
         },
-        { targets: 3, className: 'min-desktop' },
+        { targets: 3, className: 'all in-game-cell' },
         { targets: 4, className: 'min-desktop path-cell' },
         { targets: 5, className: 'min-wide info-cell' },
         { targets: 6, visible: false, searchable: true },
@@ -866,6 +862,7 @@
         lengthMenu: "Show _MENU_ objects",
         search: "Search: ",
         searchPlaceholder: "'large snow rock', '308 rifles'",
+        infoFiltered: "",
         zeroRecords: "No matching objects found."
       }
     });
@@ -1088,7 +1085,7 @@
     }
    
     $("#filters").insertBefore("#dayzObjects_wrapper .top-bar");
-    $("#dayzObjects_wrapper .dataTables_length").prependTo("#filters");
+    $("#dayzObjects_wrapper .dataTables_length").prependTo("#filtersControls");
     $("#objectMapPanel").prependTo("#dayzObjects_wrapper");
     $("#typesExplorerPanel").prependTo("#dayzObjects_wrapper");
     syncSidebarTopOffset();
@@ -1133,6 +1130,7 @@
     var folderTreeEl = document.getElementById('folderTree');
     var folderSidebarTitleEl = document.getElementById('folderSidebarTitle');
     var folderSidebarClearEl = document.getElementById('folderSidebarClear');
+    var folderSidebarTreeToggleEl = document.getElementById('folderSidebarTreeToggle');
     var folderSidebarBulkEl = document.getElementById('folderSidebarBulk');
     var folderSidebarSearchEl = document.getElementById('folderSidebarSearch');
     var folderSidebarSearchLinkEl = document.getElementById('folderSidebarSearchLink');
@@ -1141,6 +1139,7 @@
     var filtersAppTitleEl = document.getElementById('filtersAppTitle');
     var filtersAppTitleIconEl = document.getElementById('filtersAppTitleIcon');
     var filtersAppTitleTextEl = document.getElementById('filtersAppTitleText');
+    var filtersToggleEl = document.getElementById('filtersToggle');
     var filterConsoleEl = document.getElementById('filterConsole');
     var typesExplorerPanelEl = document.getElementById('typesExplorerPanel');
     var typesExplorerUsageTagsEl = document.getElementById('typesExplorerUsageTags');
@@ -1307,6 +1306,8 @@
     var pinnedBulkLayoutButtons = document.querySelectorAll('.pinned-bulk-layout');
     var pinnedBulkSpacingButtons = document.querySelectorAll('.pinned-bulk-spacing');
     var isMobileView = window.matchMedia('(max-width: 768px)').matches;
+    var mobileFiltersModeActive = false;
+    var mobileFolderTreeModeActive = false;
     var objectFocusHomeParent = objectFocusEl ? objectFocusEl.parentNode : null;
     var objectFocusPinEl = document.getElementById('objectFocusPin');
     var objectFocusMarkdownCopyEl = document.getElementById('objectFocusMarkdownCopy');
@@ -1373,6 +1374,53 @@
     var setActiveCollectionFilter = function(value) {
       activeCollectionFilter = value;
     };
+    function isMobileFiltersToggleMode() {
+      if (!isMobileView) return false;
+      if (activeCollectionFilter === AppMode.OBJECT_MAP) return false;
+      if (filtersEl && filtersEl.classList.contains('object-map-mode')) return false;
+      return true;
+    }
+    function setMobileFiltersCollapsed(collapsed) {
+      if (!filtersEl) return;
+      var shouldCollapse = !!collapsed && isMobileFiltersToggleMode();
+      filtersEl.classList.toggle('mobile-filters-collapsed', shouldCollapse);
+      if (shouldCollapse) {
+        if (typeof setExportPanelState === 'function') {
+          setExportPanelState(false);
+        } else {
+          if (exportPanelEl) {
+            exportPanelEl.classList.remove('is-open');
+            exportPanelEl.setAttribute('aria-hidden', 'true');
+          }
+          if (exportToggleEl) {
+            exportToggleEl.setAttribute('aria-expanded', 'false');
+          }
+        }
+      }
+    }
+    function syncMobileFiltersToggleState() {
+      if (!filtersEl || !filtersToggleEl) return;
+      var applicable = isMobileFiltersToggleMode();
+      if (applicable && !mobileFiltersModeActive) {
+        setMobileFiltersCollapsed(true);
+      }
+      if (!applicable && mobileFiltersModeActive) {
+        filtersEl.classList.remove('mobile-filters-collapsed');
+      }
+      mobileFiltersModeActive = applicable;
+      filtersEl.classList.toggle('mobile-filters-mode', applicable);
+      filtersToggleEl.hidden = !applicable;
+      if (!applicable) {
+        filtersToggleEl.textContent = 'Show filters';
+        filtersToggleEl.setAttribute('aria-expanded', 'false');
+        filtersToggleEl.setAttribute('aria-label', 'Show filters');
+        return;
+      }
+      var collapsed = filtersEl.classList.contains('mobile-filters-collapsed');
+      filtersToggleEl.textContent = collapsed ? 'Show filters' : 'Hide filters';
+      filtersToggleEl.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+      filtersToggleEl.setAttribute('aria-label', collapsed ? 'Show filters' : 'Hide filters');
+    }
     var setActiveTypesTagFilter = function(value) {
       activeTypesTagFilter = value;
     };
@@ -1574,12 +1622,36 @@
       }
       objectFocusEl.classList.remove('object-focus--inline');
     };
+    var syncFolderSidebarTreeToggleState = function() {
+      if (!folderSidebarTreeToggleEl) return;
+      var treeHidden = !!(folderSidebarEl && folderSidebarEl.classList.contains('tree-hidden') && isMobileView);
+      folderSidebarTreeToggleEl.textContent = treeHidden ? 'Show folders' : 'Hide folders';
+      folderSidebarTreeToggleEl.setAttribute('aria-expanded', treeHidden ? 'false' : 'true');
+      folderSidebarTreeToggleEl.setAttribute('aria-label', treeHidden ? 'Show folders' : 'Hide folders');
+    };
+    var setFolderSidebarTreeHidden = function(hidden) {
+      if (!folderSidebarEl) return;
+      var shouldHide = !!hidden && isMobileView;
+      folderSidebarEl.classList.toggle('tree-hidden', shouldHide);
+      syncFolderSidebarTreeToggleState();
+    };
     var updateMobileView = function() {
       var wasMobileView = isMobileView;
       isMobileView = window.matchMedia('(max-width: 768px)').matches;
+      syncMobileFiltersToggleState();
       if (isMobileView) {
         $('#imgPreview').remove();
+        if (!mobileFolderTreeModeActive) {
+          setFolderSidebarTreeHidden(true);
+          mobileFolderTreeModeActive = true;
+        } else {
+          syncFolderSidebarTreeToggleState();
+        }
         return;
+      }
+      if (mobileFolderTreeModeActive) {
+        setFolderSidebarTreeHidden(false);
+        mobileFolderTreeModeActive = false;
       }
       if (wasMobileView) {
         closeResponsiveRowDetails(null);
@@ -7182,6 +7254,21 @@
     if (folderSidebarClearEl) {
       folderSidebarClearEl.addEventListener('click', function() {
         runResetView();
+      });
+    }
+    if (folderSidebarTreeToggleEl) {
+      folderSidebarTreeToggleEl.addEventListener('click', function() {
+        if (!isMobileView || !folderSidebarEl) return;
+        var isHidden = folderSidebarEl.classList.contains('tree-hidden');
+        setFolderSidebarTreeHidden(!isHidden);
+      });
+    }
+    if (filtersToggleEl) {
+      filtersToggleEl.addEventListener('click', function() {
+        if (!isMobileFiltersToggleMode() || !filtersEl) return;
+        var isCollapsed = filtersEl.classList.contains('mobile-filters-collapsed');
+        setMobileFiltersCollapsed(!isCollapsed);
+        syncMobileFiltersToggleState();
       });
     }
     if (folderSidebarSearchEl) {

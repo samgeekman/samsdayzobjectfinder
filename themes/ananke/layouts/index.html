@@ -18,38 +18,41 @@
 {{ $objectCount := len .Site.Data.dayz_objects }}
 
 <div id="filters">
-  <div id="filtersAppTitle" class="filters-app-title" hidden>
-    <img id="filtersAppTitleIcon" class="filters-app-title__icon is-logo" src="/favicon.png" alt="" aria-hidden="true">
-    <span id="filtersAppTitleText" class="filters-app-title__text">Object Finder</span>
-  </div>
-  <div class="top-console">
-    <span class="top-console__label">Usable on console:</span>
-    <select id="filterConsole" class="top-console__select">
-      <option value="all">All</option>
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
-    </select>
-  </div>
-  
-  <div class="filter-actions">
-    <button id="updateToggle" class="pill-button" type="button">1.29 objects</button>
-    <button id="exportToggle" class="pill-button" type="button" aria-expanded="false" aria-controls="exportPanel">Export data</button>
-  </div>
-   
-  <div id="exportPanel" class="export-panel" aria-hidden="true">
-    <div class="export-panel__intro">Export the current filtered view (images excluded).</div>
-    <div class="export-panel__actions">
-      <button id="exportCsv" class="pill-button" type="button">Download CSV</button>
-      <button id="exportXlsx" class="pill-button" type="button">Download XLSX</button>
-      <button id="exportJson" class="pill-button" type="button">Download JSON</button>
-      <button id="exportTypes" class="pill-button" type="button">Download types</button>
-      <button id="exportMapGroupPos" class="pill-button" type="button">Download mapgrouppos</button>
+  <div class="filters-header">
+    <div id="filtersAppTitle" class="filters-app-title" hidden>
+      <img id="filtersAppTitleIcon" class="filters-app-title__icon is-logo" src="/favicon.png" alt="" aria-hidden="true">
+      <span id="filtersAppTitleText" class="filters-app-title__text">Object Finder</span>
     </div>
-    <div class="export-panel__images">
-      Want all the images? <a href="https://drive.google.com/drive/folders/1FuV6C72ttaoeP-BrIykkYYIczisFyVkL?usp=share_link" target="_blank" rel="noopener">Download here.</a>
-    </div>
+    <button id="filtersToggle" class="folder-sidebar__clear" type="button" aria-controls="filtersControls" aria-expanded="false" hidden>Show filters</button>
   </div>
+  <div id="filtersControls" class="filters-controls">
+    <div class="top-console">
+      <span class="top-console__label">Usable on console:</span>
+      <select id="filterConsole" class="top-console__select">
+        <option value="all">All</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
 
+    <div class="filter-actions">
+      <button id="updateToggle" class="pill-button" type="button">1.29 objects</button>
+      <button id="exportToggle" class="pill-button" type="button" aria-expanded="false" aria-controls="exportPanel">Export data</button>
+    </div>
+
+    <div id="exportPanel" class="export-panel" aria-hidden="true">
+      <div class="export-panel__intro">Export the current filtered view (images excluded).</div>
+      <div class="export-panel__actions">
+        <button id="exportCsv" class="pill-button" type="button">Download CSV</button>
+        <button id="exportXlsx" class="pill-button" type="button">Download XLSX</button>
+        <button id="exportJson" class="pill-button" type="button">Download JSON</button>
+        <button id="exportTypes" class="pill-button" type="button">Download types</button>
+        <button id="exportMapGroupPos" class="pill-button" type="button">Download mapgrouppos</button>
+      </div>
+      <div class="export-panel__images">
+        Want all the images? <a href="https://drive.google.com/drive/folders/1FuV6C72ttaoeP-BrIykkYYIczisFyVkL?usp=share_link" target="_blank" rel="noopener">Download here.</a>
+      </div>
+    </div>
   </div>
 </div>
 <div id="typesExplorerPanel" class="types-explorer" aria-live="polite">
@@ -136,7 +139,10 @@
     <div class="folder-sidebar__controls">
       <div class="folder-sidebar__header">
         <span id="folderSidebarTitle" class="folder-sidebar__title">0 objects</span>
-        <button id="folderSidebarClear" class="folder-sidebar__clear" type="button">Reset view</button>
+        <div class="folder-sidebar__header-actions">
+          <button id="folderSidebarTreeToggle" class="folder-sidebar__clear" type="button" aria-controls="folderTree" aria-expanded="false">Show folders</button>
+          <button id="folderSidebarClear" class="folder-sidebar__clear" type="button">Reset view</button>
+        </div>
       </div>
       <div class="folder-sidebar__search">
         <input id="folderSidebarSearch" type="search" placeholder="Search objects...">
