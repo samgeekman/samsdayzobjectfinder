@@ -23,10 +23,17 @@
               API
             </a>
           </li>
-          <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
+          <li class="list f5 f4-ns fw4 dib site-nav__menu-item--utility {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
             <button id="themeToggle" class="nav-menu-button nav-menu-button--theme no-underline" type="button" aria-live="polite" aria-pressed="false" title="Toggle dark or light mode" aria-label="Toggle dark or light mode">
               ◐
             </button>
+          </li>
+          <li class="site-nav__divider" aria-hidden="true"></li>
+          <li class="list f5 f4-ns fw4 dib site-nav__menu-item--utility {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
+            <a class="nav-menu-button nav-menu-button--with-icon no-underline" href="https://www.whyareyousick.com" target="_blank" rel="noopener noreferrer" title="Illness Checker">
+              <span>Illness Checker</span><img class="nav-menu-button__icon" src="{{ "/new-tab.svg" | urls.RelURL }}" alt="" aria-hidden="true">
+              
+            </a>
           </li>
         </ul>
       {{ else }}
@@ -36,10 +43,17 @@
               API
             </a>
           </li>
-          <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
+          <li class="list f5 f4-ns fw4 dib site-nav__menu-item--utility {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
             <button id="themeToggle" class="nav-menu-button nav-menu-button--theme no-underline" type="button" aria-live="polite" aria-pressed="false" title="Toggle dark or light mode" aria-label="Toggle dark or light mode">
               ◐
             </button>
+          </li>
+          <li class="site-nav__divider" aria-hidden="true"></li>
+          <li class="list f5 f4-ns fw4 dib site-nav__menu-item--utility {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
+            <a class="nav-menu-button nav-menu-button--with-icon no-underline" href="https://www.whyareyousick.com" target="_blank" rel="noopener noreferrer" title="Illness Checker">
+              <img class="nav-menu-button__icon" src="{{ "/new-tab.svg" | urls.RelURL }}" alt="" aria-hidden="true">
+              <span>Illness Checker</span>
+            </a>
           </li>
         </ul>
       {{ end }}
@@ -53,7 +67,8 @@
 .nav-menu-button--theme {
   appearance: none;
   -webkit-appearance: none;
-  min-width: 1.2em;
+  min-width: 26px;
+  padding: 4px 6px !important;
 }
 
 .bg-black {

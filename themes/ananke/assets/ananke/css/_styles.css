@@ -142,11 +142,36 @@ header .pb1-m.pb1-l.bg-black {
   height: 4px;
   border-radius: 0 0 3px 3px;
 }
+.nav-menu-button--with-icon {
+  gap: 5px;
+}
+.nav-menu-button__icon {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+.nav-menu-button:hover .nav-menu-button__icon {
+  filter: none;
+}
 
 .nav-menu-button:hover {
   background-color: #EEB224;
   border-color: #cf9718;
   color: #1f1f1f !important;
+}
+
+.site-nav__divider {
+  width: 1px;
+  height: 20px;
+  margin: 0 6px;
+  background: rgba(180, 180, 180, 0.75);
+  list-style: none;
+}
+.site-nav__menu-item--utility {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .site-nav {
@@ -233,6 +258,9 @@ header .pb1-m.pb1-l.bg-black {
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 6px;
+  }
+  .site-nav__divider {
+    margin: 0 4px;
   }
 }
 
