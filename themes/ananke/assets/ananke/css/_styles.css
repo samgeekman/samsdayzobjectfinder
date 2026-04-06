@@ -23,6 +23,7 @@
   --text: #10121a;
   --muted: #4b5563;
   --border: #d7dce5;
+  --page-edge-gutter: 0.75%;
   --accent: #eea700;
   --accent-strong: #f6c344;
   --table-stripe: #f1f3f9;
@@ -76,9 +77,14 @@ a:hover {
   background-color: var(--accent) !important;
 }
 
-header .pb1-m.pb1-l.bg-black {
+.site-header__nav-wrap {
   padding-bottom: 0 !important;
   border-bottom: 5px solid #EEB224;
+}
+
+header nav.site-nav.ph3.ph4-ns {
+  padding-left: var(--page-edge-gutter, 0.75%) !important;
+  padding-right: var(--page-edge-gutter, 0.75%) !important;
 }
 
 :root.dark-mode .white,

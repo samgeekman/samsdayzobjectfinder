@@ -1,16 +1,19 @@
 {{ $featured_image := partials.Include "func/GetFeaturedImage.html" . }}
+{{ $nav_bg_class := .Site.Params.background_color_class | compare.Default "bg-black" }}
 {{ if $featured_image }}
   {{ $featured_image_class := site.Params.featured_image_class | compare.Default "cover bg-top" }}
   <header class="{{ $featured_image_class }}" style="background-image: url('{{ $featured_image }}');">
     {{ $cover_dimming_class := site.Params.cover_dimming_class | compare.Default "bg-red-60" }}
     <div class="{{ $cover_dimming_class }}">
-      {{ partials.Include "site-navigation.html" .}}
+      <div class="site-header__nav-wrap pb1-m pb1-l {{ $nav_bg_class }}">
+        {{ partials.Include "site-navigation.html" .}}
+      </div>
       <!-- Removed large page title and description -->
     </div>
   </header>
 {{ else }}
   <header>
-    <div class="pb1-m pb1-l {{ .Site.Params.background_color_class | compare.Default "bg-black" }}">
+    <div class="site-header__nav-wrap pb1-m pb1-l {{ $nav_bg_class }}">
       {{ partials.Include "site-navigation.html" . }}
       <!-- Removed large page title and description -->
     </div>
