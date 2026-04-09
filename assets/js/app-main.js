@@ -1148,6 +1148,10 @@
     var typesExplorerResetEl = document.getElementById('typesExplorerReset');
     var typesExplorerCopyLinkEl = document.getElementById('typesExplorerCopyLink');
     var typesExplorerDownloadCurrentEl = document.getElementById('typesExplorerDownloadCurrent');
+    var typesExplorerChangelogLinkEl = document.getElementById('typesExplorerChangelogLink');
+    var typesChangelogOverlayEl = document.getElementById('typesChangelogOverlay');
+    var typesChangelogCloseEl = document.getElementById('typesChangelogClose');
+    var typesChangelogBodyEl = document.getElementById('typesChangelogBody');
     var objectMapPanelEl = document.getElementById('objectMapPanel');
     var objectMapOverlayEl = document.getElementById('objectMapOverlay');
     var objectMapBackdropGroupEl = document.getElementById('objectMapBackdropGroup');
@@ -1431,6 +1435,9 @@
     var currentObjectImageIndex = 0;
     var imageOverlayImages = [];
     var imageOverlayIndex = 0;
+    var typesChangelogLoaded = false;
+    var typesChangelogLoading = false;
+    var typesChangelogSourcePath = '/types-changelog-1.29.md';
     var hoverPreviewTimer = null;
     var hoverPreviewImages = [];
     var hoverPreviewIndex = 0;
@@ -1603,6 +1610,146 @@
       if (imageOverlayPrevEl) imageOverlayPrevEl.classList.remove('is-visible');
       if (imageOverlayNextEl) imageOverlayNextEl.classList.remove('is-visible');
     };
+    var closeTypesChangelogOverlay = function() {
+      if (!typesChangelogOverlayEl) return;
+      typesChangelogOverlayEl.classList.remove('is-open');
+      typesChangelogOverlayEl.setAttribute('aria-hidden', 'true');
+    };
+    var sanitizeMarkdownHref = function(value) {
+      var href = String(value || '').trim();
+      if (!href) return '';
+      if (/^(https?:\/\/|\/|#|mailto:)/i.test(href)) return href;
+      return '';
+    };
+    var parseMarkdownInline = function(text) {
+      var html = escapeHtml(text || '');
+      html = html.replace(/`([^`]+)`/g, function(_, code) {
+        return '<code>' + code + '</code>';
+      });
+      html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, function(_, label, href) {
+        var safeHref = sanitizeMarkdownHref(href);
+        if (!safeHref) return label;
+        var external = /^https?:\/\//i.test(safeHref);
+        return '<a href="' + escapeHtml(safeHref) + '"' + (external ? ' target="_blank" rel="noopener noreferrer"' : '') + '>' + label + '</a>';
+      });
+      html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+      html = html.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+      return html;
+    };
+    var splitMarkdownTableRow = function(line) {
+      var normalized = String(line || '').trim();
+      if (!normalized) return [];
+      if (normalized.charAt(0) === '|') normalized = normalized.slice(1);
+      if (normalized.charAt(normalized.length - 1) === '|') normalized = normalized.slice(0, -1);
+      return normalized.split('|').map(function(cell) {
+        return cell.trim();
+      });
+    };
+    var isMarkdownTableSeparator = function(line) {
+      var cells = splitMarkdownTableRow(line);
+      if (!cells.length) return false;
+      return cells.every(function(cell) {
+        var compact = String(cell || '').replace(/\s+/g, '');
+        return /^:?-{3,}:?$/.test(compact);
+      });
+    };
+    var renderSimpleMarkdown = function(text) {
+      var lines = String(text || '').replace(/\r\n?/g, '\n').split('\n');
+      var html = [];
+      var inList = false;
+      var closeList = function() {
+        if (!inList) return;
+        html.push('</ul>');
+        inList = false;
+      };
+      for (var i = 0; i < lines.length; i++) {
+        var line = lines[i];
+        var trimmed = String(line || '').trim();
+        if (!trimmed) {
+          closeList();
+          continue;
+        }
+        var headingMatch = trimmed.match(/^(#{1,6})\s+(.+)$/);
+        if (headingMatch) {
+          closeList();
+          var level = Math.min(3, headingMatch[1].length);
+          html.push('<h' + level + '>' + parseMarkdownInline(headingMatch[2]) + '</h' + level + '>');
+          continue;
+        }
+        var nextTrimmed = i + 1 < lines.length ? String(lines[i + 1] || '').trim() : '';
+        if (trimmed.indexOf('|') !== -1 && nextTrimmed.indexOf('|') !== -1 && isMarkdownTableSeparator(nextTrimmed)) {
+          closeList();
+          var headers = splitMarkdownTableRow(trimmed);
+          i += 1;
+          var rows = [];
+          while (i + 1 < lines.length) {
+            var rowCandidate = String(lines[i + 1] || '').trim();
+            if (!rowCandidate) break;
+            if (rowCandidate.indexOf('|') === -1) break;
+            if (/^#{1,6}\s+/.test(rowCandidate)) break;
+            rows.push(splitMarkdownTableRow(rowCandidate));
+            i += 1;
+          }
+          var tableHtml = '<table><thead><tr>' + headers.map(function(header) {
+            return '<th>' + parseMarkdownInline(header) + '</th>';
+          }).join('') + '</tr></thead><tbody>';
+          if (!rows.length) {
+            tableHtml += '<tr><td colspan="' + Math.max(1, headers.length) + '">No entries.</td></tr>';
+          } else {
+            tableHtml += rows.map(function(row) {
+              return '<tr>' + headers.map(function(_, idx) {
+                return '<td>' + parseMarkdownInline(row[idx] || '') + '</td>';
+              }).join('') + '</tr>';
+            }).join('');
+          }
+          tableHtml += '</tbody></table>';
+          html.push(tableHtml);
+          continue;
+        }
+        var listMatch = trimmed.match(/^-\s+(.+)$/);
+        if (listMatch) {
+          if (!inList) {
+            html.push('<ul>');
+            inList = true;
+          }
+          html.push('<li>' + parseMarkdownInline(listMatch[1]) + '</li>');
+          continue;
+        }
+        closeList();
+        html.push('<p>' + parseMarkdownInline(trimmed) + '</p>');
+      }
+      closeList();
+      return html.join('');
+    };
+    var loadTypesChangelogContent = function() {
+      if (!typesChangelogBodyEl || typesChangelogLoaded || typesChangelogLoading) return;
+      typesChangelogLoading = true;
+      typesChangelogBodyEl.textContent = 'Loading changelog...';
+      fetch(typesChangelogSourcePath)
+        .then(function(resp) { return resp.ok ? resp.text() : ''; })
+        .then(function(text) {
+          if (!typesChangelogBodyEl) return;
+          if (!text) {
+            typesChangelogBodyEl.textContent = 'Unable to load changelog from ' + typesChangelogSourcePath;
+            return;
+          }
+          typesChangelogBodyEl.innerHTML = renderSimpleMarkdown(text);
+          typesChangelogLoaded = true;
+        })
+        .catch(function() {
+          if (!typesChangelogBodyEl) return;
+          typesChangelogBodyEl.textContent = 'Unable to load changelog from ' + typesChangelogSourcePath;
+        })
+        .finally(function() {
+          typesChangelogLoading = false;
+        });
+    };
+    var openTypesChangelogOverlay = function() {
+      if (!typesChangelogOverlayEl) return;
+      typesChangelogOverlayEl.classList.add('is-open');
+      typesChangelogOverlayEl.setAttribute('aria-hidden', 'false');
+      loadTypesChangelogContent();
+    };
     var closeResponsiveRowDetails = function($keepRow) {
       if (!table) return;
       $(table.rows().nodes()).each(function() {
@@ -1692,12 +1839,15 @@
       }
       if (!objName) {
         objectFocusMapGroupProtoLinkEl.style.display = 'none';
+        objectFocusMapGroupProtoLinkEl.removeAttribute('href');
         objectFocusMapGroupProtoLinkEl.removeAttribute('download');
         return;
       }
-      var entry = mapGroupProtoEntryByName[objName];
+      var objKey = String(objName || '').trim();
+      var entry = mapGroupProtoEntryByName[objKey] || mapGroupProtoEntryByNameLower[objKey.toLowerCase()];
       if (!entry) {
         objectFocusMapGroupProtoLinkEl.style.display = 'none';
+        objectFocusMapGroupProtoLinkEl.removeAttribute('href');
         objectFocusMapGroupProtoLinkEl.removeAttribute('download');
         return;
       }
@@ -3537,6 +3687,25 @@
         }
       });
     }
+    if (typesExplorerChangelogLinkEl) {
+      typesExplorerChangelogLinkEl.addEventListener('click', function(e) {
+        e.preventDefault();
+        openTypesChangelogOverlay();
+      });
+    }
+    if (typesChangelogCloseEl) {
+      typesChangelogCloseEl.addEventListener('click', function(e) {
+        e.stopPropagation();
+        closeTypesChangelogOverlay();
+      });
+    }
+    if (typesChangelogOverlayEl) {
+      typesChangelogOverlayEl.addEventListener('click', function(e) {
+        if (e.target === typesChangelogOverlayEl) {
+          closeTypesChangelogOverlay();
+        }
+      });
+    }
     if (objectFocusImageEl) {
       objectFocusImageEl.addEventListener('click', function(e) {
         var imgEl = e.target.closest('img');
@@ -3773,6 +3942,12 @@
       chernarusMapOverlayEl.addEventListener('pointercancel', endLocationMapDrag);
     }
     window.addEventListener('keydown', function(event) {
+      if (typesChangelogOverlayEl && typesChangelogOverlayEl.classList.contains('is-open')) {
+        if (event.key === 'Escape') {
+          closeTypesChangelogOverlay();
+        }
+        return;
+      }
       if (imageOverlayEl && imageOverlayEl.classList.contains('is-open')) {
         if (event.key === 'Escape') {
           closeImageOverlay();
@@ -4068,9 +4243,10 @@
             return;
           }
           var mapGroupActionHtml = '';
-          if (objectFocusMapGroupProtoLinkEl && objectFocusMapGroupProtoLinkEl.getAttribute('href')) {
+          var mapGroupHref = objectFocusMapGroupProtoLinkEl ? String(objectFocusMapGroupProtoLinkEl.getAttribute('href') || '') : '';
+          if (objectFocusMapGroupProtoLinkEl && mapGroupHref && mapGroupHref !== '#') {
             mapGroupActionHtml =
-              '<a class="object-focus__link-pill object-focus__section-action" href="' + escapeHtml(objectFocusMapGroupProtoLinkEl.getAttribute('href') || '#') + '" download="' + escapeHtml(objectFocusMapGroupProtoLinkEl.getAttribute('download') || '') + '">↓ MapGroupProto</a>';
+              '<a class="object-focus__link-pill object-focus__section-action" href="' + escapeHtml(mapGroupHref) + '" download="' + escapeHtml(objectFocusMapGroupProtoLinkEl.getAttribute('download') || '') + '">↓ MapGroupProto</a>';
           }
           var orderedMapKeys = Object.keys(locationMapConfigs).filter(function(mapKey) {
             return !!currentObjectLocationData[mapKey];
@@ -5033,6 +5209,7 @@
       }
       if (objectFocusMapGroupProtoLinkEl) {
         objectFocusMapGroupProtoLinkEl.style.display = 'none';
+        objectFocusMapGroupProtoLinkEl.removeAttribute('href');
         objectFocusMapGroupProtoLinkEl.removeAttribute('download');
       }
       currentObjectName = null;
@@ -5255,6 +5432,10 @@
           if (!key || mapGroupProtoEntryByName[key]) continue;
           mapGroupProtoEntryByName[key] = node.outerHTML;
           mapGroupProtoEntryByNameLower[key.toLowerCase()] = node.outerHTML;
+        }
+        if (currentObjectData && currentObjectData.objName) {
+          setMapGroupProtoEntry(currentObjectData.objName);
+          updateObjectFocusLocation(currentObjectData);
         }
         if (table) {
           table.draw(false);

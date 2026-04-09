@@ -80,7 +80,10 @@
         <button class="types-explorer__scope-btn ui-action-btn is-active" type="button" data-types-scope="livonia">Livonia</button>
         <button class="types-explorer__scope-btn ui-action-btn is-active" type="button" data-types-scope="sakhal">Sakhal</button>
       </div>
-      <div class="types-explorer__note">Based on v1.28 Types.xml</div>
+      <div class="types-explorer__note">
+        Based on v1.29 Types.xml
+        <a id="typesExplorerChangelogLink" class="types-explorer__note-link" href="/types-changelog-1.29.md">Changelog</a>
+      </div>
     </aside>
   </div>
   <div class="types-explorer__footer">
@@ -271,6 +274,13 @@
       <img id="imageOverlayImg" class="image-overlay__img" src="" alt="">
       <button id="imageOverlayNext" class="image-overlay__nav image-overlay__nav--next" type="button" aria-label="Next image">›</button>
       <a id="imageOverlayDownload" class="image-overlay__download" href="#" download aria-label="Download image">Download image</a>
+  </div>
+</div>
+<div id="typesChangelogOverlay" class="types-changelog-overlay" role="dialog" aria-modal="true" aria-label="Types changelog" aria-hidden="true">
+  <div class="types-changelog-overlay__content">
+    <button id="typesChangelogClose" class="types-changelog-overlay__close" type="button" aria-label="Close changelog"><span aria-hidden="true">✕</span></button>
+    <div class="types-changelog-overlay__header">Types Changelog (v1.29)</div>
+    <div id="typesChangelogBody" class="types-changelog-overlay__body"></div>
   </div>
 </div>
 </div>

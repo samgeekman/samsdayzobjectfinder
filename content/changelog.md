@@ -4,6 +4,12 @@ type: "page"
 draft: false
 ---
 
+## 0.9.3 - 9 April 2026
+
+**Added**
+
+- New 1.29 types.xml entries + changelog.
+
 ## 0.9.2 - 6 April 2026
 
 **Added**
