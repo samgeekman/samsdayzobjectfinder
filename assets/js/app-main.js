@@ -561,11 +561,26 @@
       updateAppGuideNotices();
     };
     var updateTableColumnLabels = function() {
-      var headerCells = document.querySelectorAll('#dayzObjects thead th');
-      if (!headerCells || headerCells.length < 5) return;
       var isPresetsMode = activeCollectionFilter === AppMode.PRESETS;
-      headerCells[3].textContent = isPresetsMode ? 'Builder' : 'In-game name';
-      headerCells[4].textContent = isPresetsMode ? 'Export' : 'Path';
+      var inGameOrBuilderLabel = isPresetsMode ? 'Builder' : 'In-game name';
+      var pathOrExportLabel = isPresetsMode ? 'Export' : 'Path';
+      var settings = (table && typeof table.settings === 'function') ? table.settings() : null;
+      if (settings && settings[0] && settings[0].aoColumns) {
+        var columns = settings[0].aoColumns;
+        var inGameHeaderEl = columns[3] && columns[3].nTh ? columns[3].nTh : null;
+        var pathHeaderEl = columns[4] && columns[4].nTh ? columns[4].nTh : null;
+        if (inGameHeaderEl) inGameHeaderEl.textContent = inGameOrBuilderLabel;
+        if (pathHeaderEl) pathHeaderEl.textContent = pathOrExportLabel;
+        if (inGameHeaderEl || pathHeaderEl) return;
+      }
+
+      var headerCells = document.querySelectorAll('#dayzObjects thead th');
+      if (!headerCells || !headerCells.length) return;
+      var hasHiddenControlColumn = headerCells.length >= 6;
+      var inGameIndex = hasHiddenControlColumn ? 3 : 2;
+      var pathIndex = hasHiddenControlColumn ? 4 : 3;
+      if (headerCells[inGameIndex]) headerCells[inGameIndex].textContent = inGameOrBuilderLabel;
+      if (headerCells[pathIndex]) headerCells[pathIndex].textContent = pathOrExportLabel;
     };
     var populateFolderFilter = function(sourceData) {
       var seen = {};
@@ -7166,6 +7181,7 @@
       applyUrlState(sourceData);
     };
     table.on('xhr.dt', function(e, settings, json) {
+      if (!settings || !settings._bInitComplete) return;
       bootstrapDataAndUrlState(json);
     });
     table.on('init.dt', function() {
@@ -7183,6 +7199,12 @@
       }
     });
     table.on('draw.dt', function() {
+      if (!appliedUrlState) {
+        var drawnRows = getDataArray();
+        if (Array.isArray(drawnRows) && drawnRows.length) {
+          bootstrapDataAndUrlState(drawnRows);
+        }
+      }
       updateTableColumnLabels();
       var keepBroadSearchFolders = isFolderTreeInBroadFilterMode() && !!activeFolderFilter && filteredFolderPrefixes.length > 0;
       if (!keepBroadSearchFolders) {
