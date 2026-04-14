@@ -4,6 +4,18 @@ type: "page"
 draft: false
 ---
 
+## 0.9.4 - 14 April 2026
+
+**Added**
+
+- Additional dimension data to API output, replacing many 2.5 x 2.5 placeholders.
+
+**Fixed**
+
+- Link handling error meant sometimes linking to an object would load the full table.
+- Table column headings were wrong. 
+
+
 ## 0.9.3 - 9 April 2026
 
 **Added**
