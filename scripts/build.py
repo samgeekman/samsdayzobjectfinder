@@ -38,12 +38,20 @@ MODEL_LINKS_CSV_CANDIDATES = [
     BASE_DIR / "Task docs" / "models.csv",
     BASE_DIR / "Task Docs" / "models.csv",
 ]
+MODEL_BBOX_SIZE_INDEX_CANDIDATES = [
+    BASE_DIR / "model_bbox_size_index.json",
+    DATA_DIR / "model_bbox_size_index.json",
+    STATIC_DATA_DIR / "model_bbox_size_index.json",
+    STATIC_DIR / "data" / "model_bbox_size_index.json",
+]
 BBOX_BY_ID_CANDIDATES = [
     DATA_DIR / "object_bbox_by_id.json",
     STATIC_DATA_DIR / "object_bbox_by_id.json",
     STATIC_DIR / "data" / "object_bbox_by_id.json",
     BASE_DIR / "public" / "data" / "object_bbox_by_id.json",
 ]
+GENERATED_BBOX_BY_ID_PATH = DATA_DIR / "object_bbox_by_id.json"
+GENERATED_BBOX_BY_ID_STATIC_PATH = STATIC_DATA_DIR / "object_bbox_by_id.json"
 ID_RE = re.compile(r"^dzobj_[a-z0-9]{10}$")
 ID_PREFIX = "dzobj_"
 ID_CHARS = "abcdefghijklmnopqrstuvwxyz0123456789"
@@ -926,6 +934,163 @@ def path_family(value: object) -> str:
     return "/".join(parts[:3])
 
 
+def normalize_model_stem(value: object) -> str:
+    text = str(value or "").strip().lower().replace("\\", "/")
+    if not text:
+        return ""
+    text = text.split("/")[-1].strip()
+    text = text.replace(" .p3d", ".p3d").strip()
+    if text.endswith(".p3d"):
+        text = text[:-4]
+    return text.strip()
+
+
+def resolve_model_bbox_size_path() -> Optional[Path]:
+    for candidate in MODEL_BBOX_SIZE_INDEX_CANDIDATES:
+        if candidate.exists():
+            return candidate
+    return None
+
+
+def load_model_bbox_size_index() -> Tuple[Dict[str, dict], str, int]:
+    path = resolve_model_bbox_size_path()
+    if not path:
+        return {}, "", 0
+    raw = load_json_file(path)
+    if not isinstance(raw, list):
+        return {}, str(path), 0
+
+    index: Dict[str, dict] = {}
+    conflict_count = 0
+    for row in raw:
+        if not isinstance(row, dict):
+            continue
+        key = normalize_model_stem(row.get("object_name"))
+        if not key:
+            continue
+
+        bbox = row.get("bbox")
+        bbmin = _as_float3(bbox.get("min")) if isinstance(bbox, dict) else None
+        bbmax = _as_float3(bbox.get("max")) if isinstance(bbox, dict) else None
+        if bbmin is None or bbmax is None:
+            size = _as_float3(row.get("size"))
+            if size is None:
+                continue
+            half = (size[0] / 2.0, size[1] / 2.0, size[2] / 2.0)
+            bbmin = (-half[0], -half[1], -half[2])
+            bbmax = (half[0], half[1], half[2])
+
+        candidate = {
+            "bboxMinVisual": [bbmin[0], bbmin[1], bbmin[2]],
+            "bboxMaxVisual": [bbmax[0], bbmax[1], bbmax[2]],
+            "bboxStatus": "model_bbox_index",
+        }
+
+        existing = index.get(key)
+        if existing:
+            existing_min = _as_float3(existing.get("bboxMinVisual"))
+            existing_max = _as_float3(existing.get("bboxMaxVisual"))
+            candidate_min = _as_float3(candidate.get("bboxMinVisual"))
+            candidate_max = _as_float3(candidate.get("bboxMaxVisual"))
+            if existing_min != candidate_min or existing_max != candidate_max:
+                conflict_count += 1
+            continue
+        index[key] = candidate
+
+    return index, str(path), conflict_count
+
+
+def _dedupe_keys(values: List[str]) -> List[str]:
+    seen: Set[str] = set()
+    out: List[str] = []
+    for value in values:
+        if not value or value in seen:
+            continue
+        seen.add(value)
+        out.append(value)
+    return out
+
+
+def model_bbox_keys_for_object(obj: dict) -> List[str]:
+    keys: List[str] = []
+    object_name = str(obj.get("objectName") or "").strip()
+    path = str(obj.get("path") or "").strip()
+    if object_name:
+        keys.append(normalize_model_stem(object_name))
+    if path and object_name:
+        keys.append(normalize_model_stem(f"{path}/{object_name}"))
+    model_path = raw_object_model_path(obj)
+    if model_path:
+        keys.append(normalize_model_stem(model_path))
+    return _dedupe_keys(keys)
+
+
+def build_bbox_by_id_from_model_index(
+    objects: List[dict], model_bbox_index: Dict[str, dict]
+) -> Tuple[Dict[str, dict], int, int, int]:
+    bbox_by_id: Dict[str, dict] = {}
+    matched_rows = 0
+    unmatched_rows = 0
+
+    for obj in objects:
+        model_type = str(obj.get("modelType", "")).strip().lower()
+        if model_type not in {"raw p3d", "p3d"}:
+            continue
+        object_id = str(obj.get("id", "")).strip()
+        if not object_id:
+            continue
+        donor: Optional[dict] = None
+        for key in model_bbox_keys_for_object(obj):
+            donor = model_bbox_index.get(key)
+            if isinstance(donor, dict):
+                break
+        if not isinstance(donor, dict):
+            unmatched_rows += 1
+            continue
+
+        bbmin = _as_float3(donor.get("bboxMinVisual"))
+        bbmax = _as_float3(donor.get("bboxMaxVisual"))
+        if bbmin is None or bbmax is None:
+            unmatched_rows += 1
+            continue
+
+        bbox_by_id[object_id] = {
+            "bboxMinVisual": [bbmin[0], bbmin[1], bbmin[2]],
+            "bboxMaxVisual": [bbmax[0], bbmax[1], bbmax[2]],
+            "bboxStatus": str(donor.get("bboxStatus") or "model_bbox_index"),
+        }
+        matched_rows += 1
+
+    linked_config_rows = 0
+    for obj in objects:
+        model_type = str(obj.get("modelType", "")).strip().lower()
+        if model_type != "config":
+            continue
+        object_id = str(obj.get("id", "")).strip()
+        if not object_id or object_id in bbox_by_id:
+            continue
+        linked_p3d_id = str(obj.get("linked-p3d", "")).strip()
+        if not linked_p3d_id:
+            continue
+        donor = bbox_by_id.get(linked_p3d_id)
+        if not isinstance(donor, dict):
+            continue
+
+        bbmin = _as_float3(donor.get("bboxMinVisual"))
+        bbmax = _as_float3(donor.get("bboxMaxVisual"))
+        if bbmin is None or bbmax is None:
+            continue
+
+        bbox_by_id[object_id] = {
+            "bboxMinVisual": [bbmin[0], bbmin[1], bbmin[2]],
+            "bboxMaxVisual": [bbmax[0], bbmax[1], bbmax[2]],
+            "bboxStatus": "linked_from_model_bbox_raw_p3d",
+        }
+        linked_config_rows += 1
+
+    return bbox_by_id, matched_rows, unmatched_rows, linked_config_rows
+
+
 def _has_bbox_vectors(obj: dict) -> bool:
     return (
         isinstance(obj.get("bboxMinVisual"), list)
@@ -945,11 +1110,22 @@ def link_config_bbox_from_raw_p3d(objects: List[dict]) -> Dict[str, int]:
     donors = [
         obj
         for obj in objects
-        if str(obj.get("modelType", "")).strip() == "Raw P3D" and _has_bbox_vectors(obj)
+        if str(obj.get("modelType", "")).strip().lower() in {"raw p3d", "p3d"} and _has_bbox_vectors(obj)
     ]
     if not donors:
-        return {"linked_configs": 0, "by_exact_image": 0, "by_object_token": 0, "by_image_token": 0}
+        return {
+            "linked_configs": 0,
+            "by_linked_p3d": 0,
+            "by_exact_image": 0,
+            "by_object_token": 0,
+            "by_image_token": 0,
+        }
 
+    donors_by_id: Dict[str, dict] = {
+        str(obj.get("id", "")).strip(): obj
+        for obj in donors
+        if isinstance(obj.get("id"), str) and str(obj.get("id")).strip()
+    }
     by_exact_image: Dict[str, List[dict]] = {}
     by_object_token: Dict[str, List[dict]] = {}
     by_image_token: Dict[str, List[dict]] = {}
@@ -959,24 +1135,33 @@ def link_config_bbox_from_raw_p3d(objects: List[dict]) -> Dict[str, int]:
         _append_index(by_image_token, image_token(donor.get("image")), donor)
 
     linked_configs = 0
+    by_linked_p3d = 0
     by_exact = 0
     by_obj_token = 0
     by_img_token = 0
 
     for obj in objects:
-        if str(obj.get("modelType", "")).strip() != "Config":
+        if str(obj.get("modelType", "")).strip().lower() != "config":
             continue
         if _has_bbox_vectors(obj):
             continue
+
+        donor: Optional[dict] = None
+        link_method = ""
+
+        linked_p3d_id = str(obj.get("linked-p3d", "")).strip()
+        if linked_p3d_id:
+            linked_donor = donors_by_id.get(linked_p3d_id)
+            if isinstance(linked_donor, dict):
+                donor = linked_donor
+                link_method = "linked_p3d"
 
         obj_path_family = path_family(obj.get("path"))
         exact_candidates = by_exact_image.get(str(obj.get("image", "")).strip().lower(), [])
         object_token_candidates = by_object_token.get(normalize_model_token(obj.get("objectName")), [])
         image_token_candidates = by_image_token.get(image_token(obj.get("image")), [])
 
-        donor: Optional[dict] = None
-        link_method = ""
-        if len(exact_candidates) == 1:
+        if donor is None and len(exact_candidates) == 1:
             donor = exact_candidates[0]
             link_method = "exact_image"
         if donor is None:
@@ -1012,7 +1197,9 @@ def link_config_bbox_from_raw_p3d(objects: List[dict]) -> Dict[str, int]:
         obj["bboxLinkedFromObject"] = str(donor.get("objectName", "")).strip()
         obj["bboxLinkMethod"] = link_method
         linked_configs += 1
-        if link_method == "exact_image":
+        if link_method == "linked_p3d":
+            by_linked_p3d += 1
+        elif link_method == "exact_image":
             by_exact += 1
         elif link_method in {"object_token_path_family", "object_token"}:
             by_obj_token += 1
@@ -1021,13 +1208,32 @@ def link_config_bbox_from_raw_p3d(objects: List[dict]) -> Dict[str, int]:
 
     return {
         "linked_configs": linked_configs,
+        "by_linked_p3d": by_linked_p3d,
         "by_exact_image": by_exact,
         "by_object_token": by_obj_token,
         "by_image_token": by_img_token,
     }
 
 
-def load_bbox_by_id() -> Dict[str, dict]:
+def load_bbox_by_id(objects: List[dict]) -> Dict[str, dict]:
+    model_index, model_path, conflict_count = load_model_bbox_size_index()
+    if model_index:
+        mapped_by_id, matched_raw, unmatched_raw, linked_configs = build_bbox_by_id_from_model_index(objects, model_index)
+        if mapped_by_id:
+            write_json(GENERATED_BBOX_BY_ID_PATH, mapped_by_id)
+            write_json(GENERATED_BBOX_BY_ID_STATIC_PATH, mapped_by_id)
+            print(
+                "Loaded model bbox index "
+                f"({len(model_index)} model keys, {conflict_count} conflicting duplicates ignored) "
+                f"from {model_path}; built ID mapping for {len(mapped_by_id)} rows "
+                f"({matched_raw} raw matched, {unmatched_raw} raw unmatched, {linked_configs} linked configs)."
+            )
+            return mapped_by_id
+        print(
+            "Warning: model bbox index loaded but no row IDs could be mapped; "
+            "falling back to legacy object_bbox_by_id mapping."
+        )
+
     path_used: Optional[Path] = None
     raw: Optional[object] = None
     for candidate in BBOX_BY_ID_CANDIDATES:
@@ -1049,12 +1255,12 @@ def load_bbox_by_id() -> Dict[str, dict]:
             continue
         index[key.strip()] = value
 
-    print(f"Loaded bbox mapping for {len(index)} IDs from {path_used}.")
+    print(f"Loaded legacy bbox mapping for {len(index)} IDs from {path_used}.")
     return index
 
 
 def apply_bbox_dimensions(objects: List[dict]) -> Dict[str, int]:
-    bbox_by_id = load_bbox_by_id()
+    bbox_by_id = load_bbox_by_id(objects)
     if not bbox_by_id:
         estimated_rows = 0
         for obj in objects:
@@ -1136,6 +1342,7 @@ def apply_bbox_dimensions(objects: List[dict]) -> Dict[str, int]:
         "rows_missing_map": rows_missing_map,
         "rows_estimated": rows_estimated,
         "rows_linked_from_p3d": linked_stats["linked_configs"],
+        "rows_linked_linked_p3d": linked_stats.get("by_linked_p3d", 0),
         "rows_linked_exact_image": linked_stats["by_exact_image"],
         "rows_linked_object_token": linked_stats["by_object_token"],
         "rows_linked_image_token": linked_stats["by_image_token"],
@@ -1205,7 +1412,22 @@ def raw_object_model_path(row: dict) -> str:
     return normalize_model_path(f"{path}/{object_name}")
 
 
-def apply_compact_link_fields(objects: List[dict]) -> Dict[str, int]:
+def trim_bbox_provenance_fields(objects: List[dict]) -> None:
+    for obj in objects:
+        for key in (
+            "dimensionsSource",
+            "bboxMinVisual",
+            "bboxMaxVisual",
+            "bboxStatus",
+            "bboxLinkedFromId",
+            "bboxLinkedFromObject",
+            "bboxLinkMethod",
+        ):
+            if key in obj:
+                del obj[key]
+
+
+def apply_compact_link_fields(objects: List[dict], *, trim_bbox_payload: bool = True) -> Dict[str, int]:
     by_id: Dict[str, dict] = {}
     for obj in objects:
         object_id = str(obj.get("id", "")).strip()
@@ -1295,19 +1517,9 @@ def apply_compact_link_fields(objects: List[dict]) -> Dict[str, int]:
         raw["linked-config"] = unique
         linked_config_count += 1
 
-    # Trim heavy bbox payload/provenance to keep output size low.
-    for obj in objects:
-        for key in (
-            "dimensionsSource",
-            "bboxMinVisual",
-            "bboxMaxVisual",
-            "bboxStatus",
-            "bboxLinkedFromId",
-            "bboxLinkedFromObject",
-            "bboxLinkMethod",
-        ):
-            if key in obj:
-                del obj[key]
+    if trim_bbox_payload:
+        # Trim heavy bbox payload/provenance to keep output size low.
+        trim_bbox_provenance_fields(objects)
 
     return {
         "config_rows_with_linked_p3d": linked_p3d_count,
@@ -1382,9 +1594,10 @@ def main() -> None:
 
     all_objects, dedupe_stats = collapse_case_duplicates(all_objects)
     override_stats = apply_sidecar_overrides(all_objects)
-    bbox_stats = apply_bbox_dimensions(all_objects)
-    link_stats = apply_compact_link_fields(all_objects)
     unique_ids = ensure_explicit_ids(all_objects)
+    link_stats = apply_compact_link_fields(all_objects, trim_bbox_payload=False)
+    bbox_stats = apply_bbox_dimensions(all_objects)
+    trim_bbox_provenance_fields(all_objects)
     tombstone_stats = update_id_tombstones(previous_index, all_objects)
     api_stats = generate_static_api(all_objects)
 
@@ -1435,7 +1648,8 @@ def main() -> None:
         f"{bbox_stats['rows_with_bbox']} with bbox, "
         f"{bbox_stats['rows_with_dimensions']} with dimensions, "
         f"{bbox_stats['rows_linked_from_p3d']} linked from raw p3d "
-        f"(exact image {bbox_stats['rows_linked_exact_image']}, "
+        f"(linked-p3d {bbox_stats['rows_linked_linked_p3d']}, "
+        f"exact image {bbox_stats['rows_linked_exact_image']}, "
         f"object token {bbox_stats['rows_linked_object_token']}, "
         f"image token {bbox_stats['rows_linked_image_token']}), "
         f"{bbox_stats['rows_estimated']} estimated, "
