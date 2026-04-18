@@ -4,6 +4,11 @@ type: "page"
 draft: false
 ---
 
+## 0.9.5 - 18 April 2026
+
+- dz/rocks/snow_rocks were wrongly marked as not console friendly.
+
+
 ## 0.9.4 - 14 April 2026
 
 **Added**
