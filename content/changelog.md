@@ -8,7 +8,7 @@ draft: false
 
 **Added**
 
-- Additional undocumenred 1.29 objects. See here: [here](https://samsobjectfinder.com/?version=v1.29%20h).
+- Additional undocumented 1.29 objects. See here: [here](https://samsobjectfinder.com/?version=v1.29).
 
 
 ## 0.9.5 - 18 April 2026
