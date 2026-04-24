@@ -20,5 +20,27 @@
     "searchTags": "decoration, furniture",
     "image": "images/structures/furniture/decoration/bucket/bucket.jpg",
     "id": "dzobj_ukfch5mik7"
+  },
+  {
+    "objectName": "plasticbucket.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/furniture/decoration/bucket",
+    "usableOnConsole": false,
+    "searchTags": "structures, furniture, decoration, bucket, plasticbucket",
+    "image": "images/structures/furniture/decoration/bucket/plasticbucket.jpg",
+    "id": "dzobj_da5hq02vpr"
+  },
+  {
+    "objectName": "StaticObj_Furniture_PlasticBucket",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/furniture/decoration/bucket",
+    "usableOnConsole": true,
+    "searchTags": "structures, furniture, decoration, bucket, staticobj, plasticbucket",
+    "image": "images/structures/furniture/decoration/bucket/staticobj_furniture_plasticbucket.jpg",
+    "id": "dzobj_d62w7ntjns"
   }
 ]

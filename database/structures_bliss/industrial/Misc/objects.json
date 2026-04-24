@@ -207,5 +207,27 @@
     "searchTags": "livonia, industrial, power",
     "image": "images/structures_bliss/industrial/misc/misc_transformer.jpg",
     "id": "dzobj_6fvnt3qdl4"
+  },
+  {
+    "objectName": "misc_cinderblock.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, industrial, misc, cinderblock",
+    "image": "images/structures_bliss/industrial/misc/misc_cinderblock.jpg",
+    "id": "dzobj_dzb7f8wsib"
+  },
+  {
+    "objectName": "StaticObj_Misc_CinderBlock",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Config",
+    "path": "dz/structures_bliss/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "structures, bliss, industrial, misc, staticobj, cinderblock",
+    "image": "images/structures_bliss/industrial/misc/staticobj_misc_cinderblock.jpg",
+    "id": "dzobj_fnumdj0w6n"
   }
 ]

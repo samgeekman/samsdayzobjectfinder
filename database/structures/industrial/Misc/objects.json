@@ -812,5 +812,93 @@
     "searchTags": "industrial",
     "image": "images/structures/industrial/misc/misc_woodpile_forest3.p3d.jpg",
     "id": "dzobj_wui5q8mhuh"
+  },
+  {
+    "objectName": "misc_barrelempty.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "structures, industrial, misc, barrelempty",
+    "image": "images/structures/industrial/misc/misc_barrelempty.jpg",
+    "id": "dzobj_bsvp3pelx4"
+  },
+  {
+    "objectName": "misc_gastank_01_blue.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "structures, industrial, misc, gastank, 01, blue",
+    "image": "images/structures/industrial/misc/misc_gastank_01_blue.jpg",
+    "id": "dzobj_w699bzm5m7"
+  },
+  {
+    "objectName": "misc_gastank_01_khaki.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "structures, industrial, misc, gastank, 01, khaki",
+    "image": "images/structures/industrial/misc/misc_gastank_01_khaki.jpg",
+    "id": "dzobj_eqy61bwpm9"
+  },
+  {
+    "objectName": "misc_gastank_01_yellow.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "structures, industrial, misc, gastank, 01, yellow",
+    "image": "images/structures/industrial/misc/misc_gastank_01_yellow.jpg",
+    "id": "dzobj_8hkk52bxm7"
+  },
+  {
+    "objectName": "misc_gastank_02.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "structures, industrial, misc, gastank, 02",
+    "image": "images/structures/industrial/misc/misc_gastank_02.jpg",
+    "id": "dzobj_eamng0zvqs"
+  },
+  {
+    "objectName": "misc_tire_big.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "structures, industrial, misc, tire, big",
+    "image": "images/structures/industrial/misc/misc_tire_big.jpg",
+    "id": "dzobj_n6ls3vzb2e"
+  },
+  {
+    "objectName": "StaticObj_Misc_Tire_Big",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "structures, industrial, misc, staticobj, tire, big",
+    "image": "images/structures/industrial/misc/staticobj_misc_tire_big.jpg",
+    "id": "dzobj_goequvft9u"
+  },
+  {
+    "objectName": "misc_weldingtrolley_01.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": false,
+    "searchTags": "structures, industrial, misc, weldingtrolley, 01",
+    "image": "images/structures/industrial/misc/misc_weldingtrolley_01.jpg",
+    "id": "dzobj_fngalv5lh4"
   }
 ]

@@ -1,0 +1,24 @@
+[
+  {
+    "objectName": "medicalgarbage_bandage.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/furniture/medical/medical_garbage",
+    "usableOnConsole": false,
+    "searchTags": "structures, furniture, medical, garbage, medicalgarbage, bandage",
+    "image": "images/structures/furniture/medical/medical_garbage/medicalgarbage_bandage.jpg",
+    "id": "dzobj_e2m2bsynqc"
+  },
+  {
+    "objectName": "StaticObj_Furniture_MedicalGarbage_Bandage",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/furniture/medical/medical_garbage",
+    "usableOnConsole": true,
+    "searchTags": "structures, furniture, medical, garbage, staticobj, medicalgarbage, bandage",
+    "image": "images/structures/furniture/medical/medical_garbage/staticobj_furniture_medicalgarbage_bandage.jpg",
+    "id": "dzobj_zrafflxv4z"
+  }
+]
