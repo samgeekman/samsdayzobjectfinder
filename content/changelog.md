@@ -4,6 +4,13 @@ type: "page"
 draft: false
 ---
 
+## 0.9.6 - 24 April 2026
+
+**Added**
+
+- Additional undocumenred 1.29 objects. See here: [here](https://samsobjectfinder.com/?version=v1.29%20h).
+
+
 ## 0.9.5 - 18 April 2026
 
 - dz/rocks/snow_rocks were wrongly marked as not console friendly.
