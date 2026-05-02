@@ -122,6 +122,9 @@
   #filtersToggle {
     display: none;
   }
+  #filtersToggle[hidden] {
+    display: none !important;
+  }
   .filters-controls {
     display: inline-flex;
     align-items: center;

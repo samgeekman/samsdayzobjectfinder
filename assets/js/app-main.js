@@ -1429,6 +1429,7 @@
       mobileFiltersModeActive = applicable;
       filtersEl.classList.toggle('mobile-filters-mode', applicable);
       filtersToggleEl.hidden = !applicable;
+      filtersToggleEl.style.display = applicable ? '' : 'none';
       if (!applicable) {
         filtersToggleEl.textContent = 'Show filters';
         filtersToggleEl.setAttribute('aria-expanded', 'false');
