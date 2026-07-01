@@ -1991,5 +1991,170 @@
     "searchTags": "transport, vehicle, vehicles, wrecks, m3s, truck_01",
     "image": "images/structures/wrecks/vehicles/land_wreck_truck01_aban1_orange/land_wreck_truck01_aban1_orange.jpg",
     "id": "dzobj_e4px2hn4en"
+  },
+  {
+    "objectName": "StaticObj_Wreck_MTVR_Cargo",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, military, truck, cargo, mtvr, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/staticobj_wreck_mtvr_cargo/staticobj_wreck_mtvr_cargo.jpg",
+    "id": "dzobj_7dgdqsl0my"
+  },
+  {
+    "objectName": "StaticObj_Wreck_MTVR_Cargo_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, military, truck, cargo, desert, mtvr, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/staticobj_wreck_mtvr_cargo/staticobj_wreck_mtvr_cargo.jpg",
+    "id": "dzobj_2jbklet7qy"
+  },
+  {
+    "objectName": "Land_Wreck_Offroad02_Aban1_TK",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, military, offroad, humvee, abandoned, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_offroad02_aban1_tk/land_wreck_offroad02_aban1_tk.jpg",
+    "id": "dzobj_2wyeld8122"
+  },
+  {
+    "objectName": "Land_Wreck_Offroad02_Aban1_TK_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, military, offroad, humvee, abandoned, desert, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_offroad02_aban1_tk/land_wreck_offroad02_aban1_tk.jpg",
+    "id": "dzobj_wqtu4dlxpe"
+  },
+  {
+    "objectName": "Land_Wreck_Offroad02_Aban2_TK",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, military, offroad, humvee, abandoned, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_offroad02_aban2_tk/land_wreck_offroad02_aban2_tk.jpg",
+    "id": "dzobj_eel9kjc9aq"
+  },
+  {
+    "objectName": "Land_Wreck_Offroad02_Aban2_TK_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, military, offroad, humvee, abandoned, desert, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_offroad02_aban2_tk/land_wreck_offroad02_aban2_tk.jpg",
+    "id": "dzobj_yqktmbajla"
+  },
+  {
+    "objectName": "Land_Wreck_Offroad02_Medic_TK",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, military, offroad, medical, humvee, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_offroad02_medic_tk/land_wreck_offroad02_medic_tk.jpg",
+    "id": "dzobj_t2lzm1jt8k"
+  },
+  {
+    "objectName": "Land_Wreck_Offroad02_Medic_TK_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, military, offroad, medical, humvee, desert, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_offroad02_medic_tk/land_wreck_offroad02_medic_tk.jpg",
+    "id": "dzobj_p0u52dxp6x"
+  },
+  {
+    "objectName": "StaticObj_Wreck_Stryker",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, military, apc, stryker, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/staticobj_wreck_stryker/staticobj_wreck_stryker.jpg",
+    "id": "dzobj_cd75ilcr50"
+  },
+  {
+    "objectName": "StaticObj_Wreck_Stryker_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, military, apc, stryker, desert, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/staticobj_wreck_stryker/staticobj_wreck_stryker.jpg",
+    "id": "dzobj_ah297flwy1"
+  },
+  {
+    "objectName": "wreck_mtvr_cargo.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, wrecks, military, truck, cargo, mtvr, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/staticobj_wreck_mtvr_cargo/staticobj_wreck_mtvr_cargo.jpg",
+    "id": "dzobj_ftyx7y50w5"
+  },
+  {
+    "objectName": "wreck_offroad02_aban1_tk.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, wrecks, military, offroad, humvee, abandoned, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_offroad02_aban1_tk/land_wreck_offroad02_aban1_tk.jpg",
+    "id": "dzobj_ps3u61acm7"
+  },
+  {
+    "objectName": "wreck_offroad02_aban2_tk.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, wrecks, military, offroad, humvee, abandoned, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_offroad02_aban2_tk/land_wreck_offroad02_aban2_tk.jpg",
+    "id": "dzobj_vuibk9jsg1"
+  },
+  {
+    "objectName": "wreck_offroad02_medic_tk.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, wrecks, military, offroad, medical, humvee, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_offroad02_medic_tk/land_wreck_offroad02_medic_tk.jpg",
+    "id": "dzobj_zin09z31ux"
+  },
+  {
+    "objectName": "wreck_stryker.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, wrecks, military, apc, stryker, v1.29-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/staticobj_wreck_stryker/staticobj_wreck_stryker.jpg",
+    "id": "dzobj_s3ec7qcar3"
   }
 ]

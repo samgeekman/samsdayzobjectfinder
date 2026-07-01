@@ -1153,5 +1153,104 @@
     "searchTags": "m4",
     "image": "images/weapons/attachments/support/M4_RISHndgrd_Green/M4_RISHndgrd_Green.jpg",
     "id": "dzobj_yf2y4ul19g"
+  },
+  {
+    "objectName": "ProxyButtstock_SCAR_Precision",
+    "inGameName": "SCAR Precision Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "attachments, support, stock, scar, weapon, weapons, v1.29-exp-badlands",
+    "image": "images/weapons/attachments/support/scar_precisionbttstck/scar_precisionbttstck.jpg",
+    "id": "dzobj_20tajzoawl"
+  },
+  {
+    "objectName": "ProxyButtstock_SCAR_Precision_Black",
+    "inGameName": "SCAR Precision Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "attachments, support, stock, scar, black, weapon, weapons, v1.29-exp-badlands",
+    "image": "images/weapons/attachments/support/scar_precisionbttstck_black/scar_precisionbttstck_black.jpg",
+    "id": "dzobj_59jg8jjt0j"
+  },
+  {
+    "objectName": "SCAR_PrecisionBttstck",
+    "inGameName": "SCAR Precision Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "attachments, support, stock, scar, precision, weapon, weapons, v1.29-exp-badlands",
+    "image": "images/weapons/attachments/support/scar_precisionbttstck/scar_precisionbttstck.jpg",
+    "id": "dzobj_9maeis9tsm"
+  },
+  {
+    "objectName": "SCAR_PrecisionBttstck_Black",
+    "inGameName": "SCAR Precision Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "attachments, support, stock, scar, precision, black, weapon, weapons, v1.29-exp-badlands",
+    "image": "images/weapons/attachments/support/scar_precisionbttstck_black/scar_precisionbttstck_black.jpg",
+    "id": "dzobj_pnpvc9dsa8"
+  },
+  {
+    "objectName": "ProxyButtstock_SCAR_Stock",
+    "inGameName": "SCAR Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "attachments, support, stock, scar, weapon, weapons, v1.29-exp-badlands",
+    "image": "images/weapons/attachments/support/scar_stockbttstck/scar_stockbttstck.jpg",
+    "id": "dzobj_3offvdk5kv"
+  },
+  {
+    "objectName": "SCAR_StockBttstck",
+    "inGameName": "SCAR Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "attachments, support, stock, scar, weapon, weapons, v1.29-exp-badlands",
+    "image": "images/weapons/attachments/support/scar_stockbttstck/scar_stockbttstck.jpg",
+    "id": "dzobj_chzfaql0lr"
+  },
+  {
+    "objectName": "SCAR_StockBttstck_Black",
+    "inGameName": "SCAR Buttstock",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": true,
+    "searchTags": "attachments, support, stock, scar, black, weapon, weapons, v1.29-exp-badlands",
+    "image": "images/weapons/attachments/support/scar_stockbttstck_black/scar_stockbttstck_black.jpg",
+    "id": "dzobj_75mwanvqyk"
+  },
+  {
+    "objectName": "buttstock_scar_precision.p3d",
+    "inGameName": "SCAR Precision Buttstock",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "attachments, support, stock, scar, precision, weapon, weapons, v1.29-exp-badlands",
+    "image": "images/weapons/attachments/support/scar_precisionbttstck/scar_precisionbttstck.jpg",
+    "id": "dzobj_dzmriq81wd"
+  },
+  {
+    "objectName": "buttstock_scar_stock.p3d",
+    "inGameName": "SCAR Buttstock",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/support",
+    "usableOnConsole": false,
+    "searchTags": "attachments, support, stock, scar, weapon, weapons, v1.29-exp-badlands",
+    "image": "images/weapons/attachments/support/scar_stockbttstck/scar_stockbttstck.jpg",
+    "id": "dzobj_dsqsfcc7d4"
   }
 ]

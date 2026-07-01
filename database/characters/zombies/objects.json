@@ -2572,5 +2572,27 @@
     "searchTags": "zombies",
     "image": "images/characters/zombies/zmbm_ussoldier_normal_woodland/zmbm_ussoldier_normal_woodland.jpg",
     "id": "dzobj_1513qiyc5v"
+  },
+  {
+    "objectName": "ZmbF_usSoldier_Heavy_Desert",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "zombies, soldier, military, heavy, desert, v1.29-exp-badlands",
+    "image": "images/characters/zombies/zmbf_ussoldier_heavy_desert/zmbf_ussoldier_heavy_desert.jpg",
+    "id": "dzobj_fvn844758x"
+  },
+  {
+    "objectName": "ZmbF_usSoldier_Heavy_Woodland",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "zombies, soldier, military, heavy, woodland, v1.29-exp-badlands",
+    "image": "images/characters/zombies/zmbf_ussoldier_heavy_woodland/zmbf_ussoldier_heavy_woodland.jpg",
+    "id": "dzobj_dinyr9g5rx"
   }
 ]

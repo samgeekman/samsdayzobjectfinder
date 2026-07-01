@@ -1956,5 +1956,49 @@
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
     "image": "images/weapons/attachments/magazine/snaploader_empty.p3d.jpg",
     "id": "dzobj_n2sjo65f46"
+  },
+  {
+    "objectName": "Mag_SCARH_20Rnd",
+    "inGameName": "20rd SCAR-H Mag",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "scar, battle_rifle, automatic, 7.62x51, magazine, v1.29-exp-badlands",
+    "image": "images/weapons/attachments/magazine/mag_scarh_20rnd/mag_scarh_20rnd.jpg",
+    "id": "dzobj_pcooirrsvx"
+  },
+  {
+    "objectName": "Mag_SCARH_20Rnd_Black",
+    "inGameName": "20rd SCAR-H Mag",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "scar, battle_rifle, automatic, 7.62x51, black, magazine, v1.29-exp-badlands",
+    "image": "images/weapons/attachments/magazine/mag_scarh_20rnd_black/mag_scarh_20rnd_black.jpg",
+    "id": "dzobj_bxaagimiaa"
+  },
+  {
+    "objectName": "Proxymagazine_SCARH_20rnd",
+    "inGameName": "20rd SCAR-H Mag",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "ammo, attachments, clip, magazine, scar, weapon, weapons, v1.29-exp-badlands",
+    "image": "images/weapons/attachments/magazine/mag_scarh_20rnd/mag_scarh_20rnd.jpg",
+    "id": "dzobj_fl8f7jjmwh"
+  },
+  {
+    "objectName": "magazine_scarh_20rnd.p3d",
+    "inGameName": "20rd SCAR-H Mag",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "scar, battle_rifle, automatic, 7.62x51, magazine, v1.29-exp-badlands",
+    "image": "images/weapons/attachments/magazine/mag_scarh_20rnd/mag_scarh_20rnd.jpg",
+    "id": "dzobj_uwha879x9w"
   }
 ]

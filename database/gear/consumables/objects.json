@@ -1252,5 +1252,49 @@
     "searchTags": "gear, hunting",
     "image": "images/gear/consumables/tannedleather/tannedleather.jpg",
     "id": "dzobj_qabvda1apb"
+  },
+  {
+    "objectName": "MorsecodeLeaflet_blood",
+    "inGameName": "Morse Code Leaflet",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/consumables",
+    "usableOnConsole": true,
+    "searchTags": "paper, note, leaflet, morse, blood, v1.29-exp-badlands",
+    "image": "images/gear/consumables/morsecodeleaflet_blood/morsecodeleaflet_blood.jpg",
+    "id": "dzobj_bs4gbc3kj6"
+  },
+  {
+    "objectName": "MorsecodeLeaflet_coffee",
+    "inGameName": "Morse Code Leaflet",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/consumables",
+    "usableOnConsole": true,
+    "searchTags": "paper, note, leaflet, morse, coffee, v1.29-exp-badlands",
+    "image": "images/gear/consumables/morsecodeleaflet_coffee/morsecodeleaflet_coffee.jpg",
+    "id": "dzobj_eyvmm9u98h"
+  },
+  {
+    "objectName": "MorsecodeLeaflet_fire",
+    "inGameName": "Morse Code Leaflet",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/consumables",
+    "usableOnConsole": true,
+    "searchTags": "paper, note, leaflet, morse, fire, v1.29-exp-badlands",
+    "image": "images/gear/consumables/morsecodeleaflet_fire/morsecodeleaflet_fire.jpg",
+    "id": "dzobj_ya220m1k0s"
+  },
+  {
+    "objectName": "morsecodeleaflet.p3d",
+    "inGameName": "Morse Code Leaflet",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/consumables",
+    "usableOnConsole": false,
+    "searchTags": "paper, note, leaflet, morse, v1.29-exp-badlands",
+    "image": "images/gear/consumables/morsecodeleaflet_blood/morsecodeleaflet_blood.jpg",
+    "id": "dzobj_pt0qn34pwv"
   }
 ]

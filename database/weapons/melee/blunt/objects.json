@@ -240,5 +240,27 @@
     "searchTags": "blunt, melee, weapon, weapons",
     "image": "images/weapons/melee/blunt/telescopingbaton_retracted.p3d.jpg",
     "id": "dzobj_xqj9nb9ib0"
+  },
+  {
+    "objectName": "BrassKnuckles_MenAtArms",
+    "inGameName": "Brass Knuckles",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/melee/blunt",
+    "usableOnConsole": true,
+    "searchTags": "blunt, brass, knuckles, melee, ornate, weapon, weapons, v1.29-exp-badlands",
+    "image": "images/weapons/melee/blunt/brassknuckles_menatarms/brassknuckles_menatarms.jpg",
+    "id": "dzobj_vc0290u6dp"
+  },
+  {
+    "objectName": "brassknuckles_manatarms.p3d",
+    "inGameName": "Brass Knuckles",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/melee/blunt",
+    "usableOnConsole": false,
+    "searchTags": "blunt, brass, knuckles, melee, ornate, weapon, weapons, v1.29-exp-badlands",
+    "image": "images/weapons/melee/blunt/brassknuckles_menatarms/brassknuckles_menatarms.jpg",
+    "id": "dzobj_0a1da83eks"
   }
 ]

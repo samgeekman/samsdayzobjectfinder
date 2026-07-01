@@ -1,0 +1,35 @@
+[
+  {
+    "objectName": "SCARH",
+    "inGameName": "SCAR-H",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/scarh",
+    "usableOnConsole": true,
+    "searchTags": "scar, battle_rifle, automatic, 7.62x51, v1.29-exp-badlands",
+    "image": "images/weapons/firearms/scarh/scarh.jpg",
+    "id": "dzobj_h9pnirv1sl"
+  },
+  {
+    "objectName": "SCARH_Black",
+    "inGameName": "SCAR-H",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/scarh",
+    "usableOnConsole": true,
+    "searchTags": "scar, battle_rifle, automatic, 7.62x51, black, v1.29-exp-badlands",
+    "image": "images/weapons/firearms/scarh/scarh_black/scarh_black.jpg",
+    "id": "dzobj_0ajlmz315p"
+  },
+  {
+    "objectName": "scarh.p3d",
+    "inGameName": "SCAR-H",
+    "category": "weapons",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons/firearms/scarh",
+    "usableOnConsole": false,
+    "searchTags": "scar, battle_rifle, automatic, 7.62x51, v1.29-exp-badlands",
+    "image": "images/weapons/firearms/scarh/scarh.jpg",
+    "id": "dzobj_lvdryt2y1w"
+  }
+]

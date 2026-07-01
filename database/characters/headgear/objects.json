@@ -2935,5 +2935,82 @@
     "searchTags": "animal, fur hat, trapper hat, v1.29",
     "image": "images/characters/headgear/headdress_fox/headdress_fox.jpg",
     "id": "dzobj_vjmns1d8xl"
+  },
+  {
+    "objectName": "T56TankerHelmet_Olive",
+    "inGameName": "Tanker Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "helmet, tanker, military, armored, olive, v1.29-exp-badlands",
+    "image": "images/characters/headgear/t56tankerhelmet_olive/t56tankerhelmet_olive.jpg",
+    "id": "dzobj_i6z7z7cpxc"
+  },
+  {
+    "objectName": "T56TankerHelmet_Tan",
+    "inGameName": "Tanker Helmet",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "helmet, tanker, military, armored, tan, v1.29-exp-badlands",
+    "image": "images/characters/headgear/t56tankerhelmet_tan/t56tankerhelmet_tan.jpg",
+    "id": "dzobj_waw7f1g4bj"
+  },
+  {
+    "objectName": "t56tankerhelmet_g.p3d",
+    "inGameName": "Tanker Helmet",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": false,
+    "searchTags": "helmet, tanker, military, armored, v1.29-exp-badlands",
+    "image": "images/characters/headgear/t56tankerhelmet_olive/t56tankerhelmet_olive.jpg",
+    "id": "dzobj_3hvjj27qvb"
+  },
+  {
+    "objectName": "MilitaryCap_BDU",
+    "inGameName": "Military Cap",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "cap, military, camo, bdu, field, v1.29-exp-badlands",
+    "image": "images/characters/headgear/militarycap_bdu/militarycap_bdu.jpg",
+    "id": "dzobj_gwalw4wnsh"
+  },
+  {
+    "objectName": "MilitaryCap_Desert",
+    "inGameName": "Military Cap",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "cap, military, camo, desert, field, v1.29-exp-badlands",
+    "image": "images/characters/headgear/militarycap_desert/militarycap_desert.jpg",
+    "id": "dzobj_qsxped6pmq"
+  },
+  {
+    "objectName": "MilitaryCap_Woodland",
+    "inGameName": "Military Cap",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "cap, military, camo, woodland, field, v1.29-exp-badlands",
+    "image": "images/characters/headgear/militarycap_woodland/militarycap_woodland.jpg",
+    "id": "dzobj_op9tcp76of"
+  },
+  {
+    "objectName": "militarycap_ground.p3d",
+    "inGameName": "Military Cap",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": false,
+    "searchTags": "cap, military, camo, field, v1.29-exp-badlands",
+    "image": "images/characters/headgear/militarycap_bdu/militarycap_bdu.jpg",
+    "id": "dzobj_cxe0ixj2wa"
   }
 ]
