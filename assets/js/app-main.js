@@ -6805,10 +6805,13 @@
       if (value === null || value === undefined) return '';
       var normalized = String(value).trim().toLowerCase();
       if (!normalized) return '';
-      if (/^v1\.\d+$/.test(normalized)) return normalized;
-      if (/^1\.\d+$/.test(normalized)) return 'v' + normalized;
-      if (/^1\d{2}$/.test(normalized)) {
-        return 'v1.' + normalized.slice(1);
+      if (/^v1\.\d+(?:-[a-z0-9-]+)?$/.test(normalized)) return normalized;
+      if (/^1\.\d+(?:-[a-z0-9-]+)?$/.test(normalized)) return 'v' + normalized;
+      if (/^1\d{2}(?:-[a-z0-9-]+)?$/.test(normalized)) {
+        var suffixIndex = normalized.indexOf('-');
+        var versionDigits = suffixIndex === -1 ? normalized : normalized.slice(0, suffixIndex);
+        var suffix = suffixIndex === -1 ? '' : normalized.slice(suffixIndex);
+        return 'v1.' + versionDigits.slice(1) + suffix;
       }
       return '';
     };
@@ -6880,6 +6883,10 @@
     var typesExplorerGuideCloseEl = document.getElementById('typesExplorerGuideClose');
     var objectMapGuideNoticeEl = document.getElementById('objectMapGuideNotice');
     var objectMapGuideCloseEl = document.getElementById('objectMapGuideClose');
+    var badlandsBottomBarEl = document.getElementById('badlandsBottomBar');
+    var badlandsBottomBarLinkEl = document.getElementById('badlandsBottomBarLink');
+    var badlandsBottomBarCtaEl = document.getElementById('badlandsBottomBarCta');
+    var badlandsBottomBarCloseEl = document.getElementById('badlandsBottomBarClose');
     var searchFilterResetLinkEl = document.getElementById('searchFilterResetLink');
     var searchFilterCopyLinkEl = document.getElementById('searchFilterCopyLink');
     var chipInfoTooltipEl = document.getElementById('chipInfoTooltip');
@@ -6903,7 +6910,7 @@
       noticeEl.classList.toggle('visible', !!visible);
     };
     var isUpdateToggleActive = function() {
-      return versionParam === 'v1.29';
+      return versionParam === 'v1.29-exp-badlands';
     };
     var updateVersionToggleState = function() {
       if (!updateToggleEl) return;
@@ -6978,6 +6985,14 @@
     var setGuideDismissed = function(appKey, dismissed) {
       writeCookie(appGuideCookiePrefix + appKey, dismissed ? '1' : '0', 365);
     };
+    var updateBadlandsBottomBar = function() {
+      if (!badlandsBottomBarEl) return;
+      var enabledAttr = String(badlandsBottomBarEl.getAttribute('data-enabled') || '').toLowerCase();
+      var isEnabled = enabledAttr === 'true' || enabledAttr === '1' || enabledAttr === 'yes';
+      var guideKey = String(badlandsBottomBarEl.getAttribute('data-guide-key') || 'database').trim() || 'database';
+      var shouldShow = isEnabled && activeCollectionFilter === AppMode.DATABASE && !isGuideDismissed(guideKey);
+      badlandsBottomBarEl.classList.toggle('visible', shouldShow);
+    };
     var showGuideNotice = function(appKey) {
       setGuideDismissed(appKey, false);
       updateAppGuideNotices();
@@ -7000,6 +7015,7 @@
       if (objectMapGuideNoticeEl) {
         objectMapGuideNoticeEl.classList.toggle('visible', activeCollectionFilter === AppMode.OBJECT_MAP && !isGuideDismissed('object_map'));
       }
+      updateBadlandsBottomBar();
       scheduleGuideLayoutSync();
     };
     var appliedUrlState = false;
@@ -7385,6 +7401,12 @@
         updateAppGuideNotices();
       });
     }
+    if (badlandsBottomBarCloseEl) {
+      badlandsBottomBarCloseEl.addEventListener('click', function() {
+        setGuideDismissed('database', true);
+        updateAppGuideNotices();
+      });
+    }
     var runResetView = function() {
       closeResponsiveRowDetails(null);
       dockObjectFocusPane();
@@ -7451,7 +7473,7 @@
           runResetView();
           return;
         }
-        applyVersionFilterByTag('v1.29');
+        applyVersionFilterByTag('v1.29-exp-badlands');
       });
       updateVersionToggleState();
     }
@@ -7895,20 +7917,70 @@
 
     var exportPanelEl = document.getElementById('exportPanel');
     var exportToggleEl = document.getElementById('exportToggle');
+    var versionHistoryPanelEl = document.getElementById('versionHistoryPanel');
+    var versionHistoryToggleEl = document.getElementById('versionHistoryToggle');
 
     var setExportPanelState = function(isOpen) {
       if (!exportPanelEl || !exportToggleEl) return;
       exportPanelEl.classList.toggle('is-open', isOpen);
       exportPanelEl.setAttribute('aria-hidden', String(!isOpen));
       exportToggleEl.setAttribute('aria-expanded', String(isOpen));
+      exportToggleEl.classList.toggle('is-active', !!isOpen);
+    };
+    var setVersionHistoryPanelState = function(isOpen) {
+      if (!versionHistoryPanelEl || !versionHistoryToggleEl) return;
+      versionHistoryPanelEl.classList.toggle('is-open', isOpen);
+      versionHistoryPanelEl.setAttribute('aria-hidden', String(!isOpen));
+      versionHistoryToggleEl.setAttribute('aria-expanded', String(isOpen));
+      versionHistoryToggleEl.classList.toggle('is-active', !!isOpen);
     };
 
     if (exportToggleEl) {
       exportToggleEl.addEventListener('click', function() {
         var isOpen = exportPanelEl && exportPanelEl.classList.contains('is-open');
+        setVersionHistoryPanelState(false);
         setExportPanelState(!isOpen);
       });
     }
+    if (versionHistoryToggleEl) {
+      versionHistoryToggleEl.addEventListener('click', function() {
+        var isOpen = versionHistoryPanelEl && versionHistoryPanelEl.classList.contains('is-open');
+        setExportPanelState(false);
+        setVersionHistoryPanelState(!isOpen);
+      });
+    }
+    if (versionHistoryPanelEl) {
+      versionHistoryPanelEl.addEventListener('click', function(event) {
+        var versionBtn = event.target.closest('[data-version-key]');
+        if (!versionBtn) return;
+        var targetVersion = String(versionBtn.getAttribute('data-version-key') || '').trim();
+        if (!targetVersion) return;
+        setVersionHistoryPanelState(false);
+        applyVersionFilterByTag(targetVersion);
+      });
+    }
+    var handleBadlandsSoftFilterClick = function(event) {
+      if (event) event.preventDefault();
+      applyVersionFilterByTag('v1.29-exp-badlands');
+    };
+    if (badlandsBottomBarLinkEl) {
+      badlandsBottomBarLinkEl.addEventListener('click', handleBadlandsSoftFilterClick);
+    }
+    if (badlandsBottomBarCtaEl) {
+      badlandsBottomBarCtaEl.addEventListener('click', handleBadlandsSoftFilterClick);
+    }
+    document.addEventListener('click', function(event) {
+      var historyClickInside = versionHistoryToggleEl && versionHistoryToggleEl.contains(event.target);
+      var historyPanelInside = versionHistoryPanelEl && versionHistoryPanelEl.contains(event.target);
+      if (!historyClickInside && !historyPanelInside) {
+        setVersionHistoryPanelState(false);
+      }
+      var exportClickInside = exportToggleEl && exportToggleEl.contains(event.target);
+      var exportPanelInside = exportPanelEl && exportPanelEl.contains(event.target);
+      if (!exportClickInside && !exportPanelInside) {
+        setExportPanelState(false);
+      }
+    });
 
     var getCurrentViewRows = function() {
       if (!table) return [];

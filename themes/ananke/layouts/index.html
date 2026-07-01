@@ -16,6 +16,15 @@
 
 {{ define "main" }}
 {{ $objectCount := len .Site.Data.dayz_objects }}
+{{ $badlandsBarEnabled := true }}
+{{ $badlandsVersionKey := "v1.29-exp-badlands" }}
+{{ $badlandsBarHref := printf "/?version=%s" $badlandsVersionKey }}
+{{ $badlandsObjectCount := 0 }}
+{{ range .Site.Data.dayz_objects }}
+  {{ if in (lower (printf "%v" .searchTags)) $badlandsVersionKey }}
+    {{ $badlandsObjectCount = add $badlandsObjectCount 1 }}
+  {{ end }}
+{{ end }}
 
 <div id="filters">
   <div class="filters-header">
@@ -36,8 +45,25 @@
     </div>
 
     <div class="filter-actions">
-      <button id="updateToggle" class="pill-button" type="button">1.29 objects</button>
+      <button id="updateToggle" class="pill-button" type="button">Badlands objects</button>
+      <button id="versionHistoryToggle" class="pill-button version-history-toggle" type="button" aria-expanded="false" aria-controls="versionHistoryPanel" aria-label="Open version history">
+        <img class="version-history-toggle__icon version-history-toggle__icon--dark" src="/icons/history-dark.svg" alt="" aria-hidden="true">
+        <img class="version-history-toggle__icon version-history-toggle__icon--light" src="/icons/history-light.svg" alt="" aria-hidden="true">
+      </button>
       <button id="exportToggle" class="pill-button" type="button" aria-expanded="false" aria-controls="exportPanel">Export data</button>
+    </div>
+
+    <div id="versionHistoryPanel" class="export-panel version-history-panel" aria-hidden="true">
+      <div class="version-history-panel__actions">
+        <div class="version-history-panel__row">
+          <span class="version-history-panel__date">July 1 2026</span>
+          <button class="pill-button version-history-panel__link" type="button" data-version-key="v1.29-exp-badlands">1.29 Exp Road to Badlands</button>
+        </div>
+        <div class="version-history-panel__row">
+          <span class="version-history-panel__date">Apr 7 2026</span>
+          <button class="pill-button version-history-panel__link" type="button" data-version-key="v1.29">1.29 Stable</button>
+        </div>
+      </div>
     </div>
 
     <div id="exportPanel" class="export-panel" aria-hidden="true">
@@ -136,6 +162,36 @@
   <span>View the location of Land_ objects - Use <strong>Select area</strong> to export full location data or Copy all objects directly to Editor.</span>
   <button id="objectMapGuideClose" class="version-filter-notice__close" type="button" aria-label="Dismiss Object Maps help">✕</button>
 </div>
+{{ if $badlandsBarEnabled }}
+<div
+  id="badlandsBottomBar"
+  class="bottom-promo-bar"
+  data-enabled="true"
+  data-guide-key="database"
+  role="complementary"
+  aria-label="Road to Badlands"
+>
+  <a id="badlandsBottomBarLink" class="bottom-promo-bar__link" href="{{ $badlandsBarHref }}" data-version-key="{{ $badlandsVersionKey }}" aria-label="View Badlands objects">
+    <span class="bottom-promo-bar__media" aria-hidden="true">
+      <img src="/images/promos/badlands.png" alt="">
+    </span>
+    <span class="bottom-promo-bar__copy">
+      <span class="bottom-promo-bar__title">Road to Badlands</span>
+      <span class="bottom-promo-bar__text">
+        {{ if gt $badlandsObjectCount 0 }}
+          {{ $badlandsObjectCount }} new Badlands objects added
+        {{ else }}
+          View all the new Badlands objects
+        {{ end }}
+      </span>
+    </span>
+  </a>
+  <div class="bottom-promo-bar__actions">
+    <a id="badlandsBottomBarCta" class="bottom-promo-bar__cta" href="{{ $badlandsBarHref }}" data-version-key="{{ $badlandsVersionKey }}">View the Objects</a>
+    <button id="badlandsBottomBarClose" class="bottom-promo-bar__close" type="button" aria-label="Dismiss Badlands bar">✕</button>
+  </div>
+</div>
+{{ end }}
 
 <div class="objects-layout">
   <aside id="folderSidebar" class="folder-sidebar" aria-label="Folder navigation">

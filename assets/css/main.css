@@ -241,6 +241,176 @@
   .version-filter-notice__close:hover {
     opacity: 0.75;
   }
+  .bottom-promo-bar {
+    position: fixed;
+    left: max(10px, env(safe-area-inset-left));
+    right: auto;
+    bottom: max(10px, env(safe-area-inset-bottom));
+    z-index: 140;
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    width: fit-content;
+    max-width: min(calc(90vw - 20px), 500px);
+    min-height: 64px;
+    padding-right: 6px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--card);
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.18);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+  }
+  .bottom-promo-bar.visible {
+    display: flex;
+  }
+  .bottom-promo-bar__link {
+    min-width: 0;
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 62px;
+    color: inherit;
+    text-decoration: none;
+  }
+  .bottom-promo-bar__link:hover .bottom-promo-bar__title,
+  .bottom-promo-bar__link:focus-visible .bottom-promo-bar__title {
+    color: var(--accent);
+  }
+  .bottom-promo-bar__link:focus-visible {
+    outline: none;
+  }
+  .bottom-promo-bar__media {
+    flex: 0 0 72px;
+    align-self: stretch;
+
+    padding: 10px;
+    display: block;
+    background: #1a1a1a;
+  }
+  .bottom-promo-bar__media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .bottom-promo-bar__copy {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px;
+    padding-right: 4px;
+  }
+  .bottom-promo-bar__title,
+  .bottom-promo-bar__text {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .bottom-promo-bar__title {
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.05;
+  }
+  .bottom-promo-bar__text {
+    color: var(--muted);
+    font-size: 0.90rem;
+    font-weight: 600;
+    line-height: 1.05;
+  }
+  .bottom-promo-bar__actions {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 100%;
+    padding-right: 2px;
+  }
+  .bottom-promo-bar__cta,
+  .bottom-promo-bar__close {
+    border: 1px solid var(--ui-button-border);
+    border-radius: 4px;
+    background: var(--ui-button-bg);
+    color: var(--ui-button-text);
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.12s ease, box-shadow 0.18s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  }
+  .bottom-promo-bar__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 122px;
+    height: 28px;
+    padding: 0 12px;
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--color-accent-hover-text);
+  }
+  .bottom-promo-bar__close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+  }
+  .bottom-promo-bar__cta:hover,
+  .bottom-promo-bar__cta:focus-visible,
+  .bottom-promo-bar__close:hover,
+  .bottom-promo-bar__close:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--color-accent-hover-text);
+    outline: none;
+  }
+  @media (max-width: 900px) {
+    .bottom-promo-bar__media {
+      flex-basis: 58px;
+    }
+    .bottom-promo-bar__cta {
+      min-width: 104px;
+      padding: 0 10px;
+    }
+  }
+  @media (max-width: 720px) {
+    .bottom-promo-bar {
+      gap: 6px;
+    }
+    .bottom-promo-bar__text {
+      display: none;
+    }
+    .bottom-promo-bar__media {
+      flex-basis: 50px;
+    }
+    .bottom-promo-bar__title {
+      font-size: 0.74rem;
+    }
+    .bottom-promo-bar__cta {
+      min-width: 88px;
+      font-size: 0.65rem;
+      padding: 0 8px;
+    }
+  }
+  @media (max-width: 560px) {
+    .bottom-promo-bar {
+      max-width: calc(100vw - 20px);
+    }
+    .bottom-promo-bar__cta {
+      min-width: 72px;
+      padding: 0 7px;
+    }
+  }
   .folder-tree__folder-wrap {
     position: relative;
     display: flex;
@@ -2725,6 +2895,59 @@
     padding: 4px 8px;
     border-radius: 3px;
   }
+  .version-history-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    min-width: 32px;
+    padding: 0 !important;
+  }
+  .version-history-toggle__icon {
+    display: block;
+    width: 15px;
+    height: 15px;
+  }
+  .version-history-toggle__icon--light {
+    display: none;
+  }
+  :root.dark-mode .version-history-toggle__icon--dark {
+    display: none;
+  }
+  :root.dark-mode .version-history-toggle__icon--light {
+    display: block;
+  }
+  .version-history-panel__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .version-history-panel__row {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .version-history-panel__date {
+    color: var(--text);
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .version-history-panel__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    font-size: 0.7rem;
+    line-height: 1.2;
+    padding: 4px 8px;
+    border-radius: 3px;
+  }
+  @media (max-width: 700px) {
+    .version-history-panel__row {
+      flex-wrap: wrap;
+    }
+  }
   @keyframes export-empty-flash {
     0%, 100% {
       background: var(--card);
@@ -3169,6 +3392,7 @@
   #pinnedDownloadAll,
   #pinnedDownloadTypesAll,
   #exportToggle,
+  #versionHistoryToggle,
   #updateToggle,
   #exportCsv,
   #exportXlsx,
@@ -3203,6 +3427,10 @@
   #pinnedDownloadTypesAll:focus-visible,
   #exportToggle:hover,
   #exportToggle:focus-visible,
+  #exportToggle.is-active,
+  #versionHistoryToggle:hover,
+  #versionHistoryToggle:focus-visible,
+  #versionHistoryToggle.is-active,
   #updateToggle:hover,
   #updateToggle:focus-visible,
   #exportCsv:hover,

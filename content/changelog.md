@@ -4,6 +4,15 @@ type: "page"
 draft: false
 ---
 
+
+## 0.9.7 - 1 July 2026
+
+**Added**
+
+- 1.29 Experimental Road to Badlands objects See [here](https://samsobjectfinder.com/?version=v1.29-exp-badlands).
+- Version history for objects added in which update.
+- Badlands objects added footer bar.
+
 ## 0.9.6 - 24 April 2026
 
 **Added**
