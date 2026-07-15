@@ -8124,6 +8124,31 @@
       downloadTextFile(entries.join('\n\n') + '\n', 'dayz_objects_view_types.txt', 'text/plain;charset=utf-8');
       return true;
     };
+    var exportMapTypesFile = function(mapKey) {
+      var key = String(mapKey || '').trim().toLowerCase();
+      var config = {
+        chernarus: {
+          url: '/data/types/types_chernarus.xml',
+          filename: 'types-Chernarus July 2026.xml'
+        },
+        livonia: {
+          url: '/data/types/types_livonia.xml',
+          filename: 'types-Livonia July 2026.xml'
+        },
+        sakhal: {
+          url: '/data/types/types_sakhal.xml',
+          filename: 'types-Sakhal July 2026.xml'
+        }
+      }[key];
+      if (!config) return;
+      fetch(config.url)
+        .then(function(resp) { return resp.ok ? resp.text() : ''; })
+        .then(function(text) {
+          if (!text) return;
+          downloadTextFile(text, config.filename, 'application/xml;charset=utf-8');
+        })
+        .catch(function() {});
+    };
     var exportCurrentViewMapGroupPos = function() {
       var names = getCurrentViewClassNames();
       if (!names.length) return false;
@@ -8221,6 +8246,24 @@
       if (!ok) {
         flashNoEntriesButton(this);
       }
+    });
+    $(document).on('click', '#exportTypesChernarus', function() {
+      exportMapTypesFile('chernarus');
+    });
+    $(document).on('click', '#exportTypesLivonia', function() {
+      exportMapTypesFile('livonia');
+    });
+    $(document).on('click', '#exportTypesSakhal', function() {
+      exportMapTypesFile('sakhal');
+    });
+    $(document).on('click', '#typesExplorerTypesChernarus', function() {
+      exportMapTypesFile('chernarus');
+    });
+    $(document).on('click', '#typesExplorerTypesLivonia', function() {
+      exportMapTypesFile('livonia');
+    });
+    $(document).on('click', '#typesExplorerTypesSakhal', function() {
+      exportMapTypesFile('sakhal');
     });
     $(document).on('click', '#exportMapGroupPos', function() {
       var ok = exportCurrentViewMapGroupPos();

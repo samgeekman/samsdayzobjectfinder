@@ -2895,6 +2895,24 @@
     padding: 4px 8px;
     border-radius: 3px;
   }
+  .export-panel__map-downloads {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .export-panel__map-downloads-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+  .export-panel__map-downloads .pill-button {
+    font-size: 0.7rem;
+    line-height: 1.2;
+    padding: 4px 8px;
+    border-radius: 3px;
+  }
   .version-history-toggle {
     display: inline-flex;
     align-items: center;
@@ -3024,8 +3042,23 @@
     border-top: 1px solid var(--pane-divider);
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .types-explorer__footer-group {
+    display: flex;
+    align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
+  }
+  .types-explorer__footer-group--right {
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+  .types-explorer__footer-label {
+    font-size: 0.72rem;
+    color: var(--muted);
   }
   .types-explorer__note {
     margin-top: 6px;
@@ -3398,6 +3431,9 @@
   #exportXlsx,
   #exportJson,
   #exportTypes,
+  #exportTypesChernarus,
+  #exportTypesLivonia,
+  #exportTypesSakhal,
   #exportMapGroupPos,
   .pinned-path-btn {
     border-color: var(--icon-outline) !important;
@@ -3441,6 +3477,12 @@
   #exportJson:focus-visible,
   #exportTypes:hover,
   #exportTypes:focus-visible,
+  #exportTypesChernarus:hover,
+  #exportTypesChernarus:focus-visible,
+  #exportTypesLivonia:hover,
+  #exportTypesLivonia:focus-visible,
+  #exportTypesSakhal:hover,
+  #exportTypesSakhal:focus-visible,
   #exportMapGroupPos:hover,
   #exportMapGroupPos:focus-visible,
   .pinned-path-btn:hover,
