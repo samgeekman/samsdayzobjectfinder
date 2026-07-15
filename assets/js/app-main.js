@@ -5428,7 +5428,7 @@
           typesEntryByNameLower[key.toLowerCase()] = node.outerHTML;
         }
         if (table) {
-          table.draw(false);
+          table.rows().invalidate().draw(false);
         }
       })
         .catch(function() {});
@@ -5454,7 +5454,7 @@
           updateObjectFocusLocation(currentObjectData);
         }
         if (table) {
-          table.draw(false);
+          table.rows().invalidate().draw(false);
         }
       })
       .catch(function() {});

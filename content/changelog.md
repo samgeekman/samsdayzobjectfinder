@@ -4,6 +4,10 @@ type: "page"
 draft: false
 ---
 
+## 0.9.8 - 15 July 2026
+
+- Added 1.29 Road to Badlands types.xml entries to the [Types Explorer](https://samsobjectfinder.com/?types=1) for new objects and updated the types changelog.
+
 
 ## 0.9.7 - 1 July 2026
 
