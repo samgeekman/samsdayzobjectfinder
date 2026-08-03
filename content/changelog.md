@@ -4,6 +4,13 @@ type: "page"
 draft: false
 ---
 
+## 1.0 - 3 August 2026
+
+- 99% of objects now have images - close enough for a 1.0 release to me!
+- Added a 'Last updated' display
+
+Note: Badlands looks as if it will have many new objects (and many variants of the same object, considering all the rebuilding). I'll be updating this site as soon as I can with all the new additions once released. You can see what's been added so far [here](https://samsobjectfinder.com/?version=v1.29-exp-badlands).
+
 ## 0.9.8 - 15 July 2026
 
 - Added 1.29 Road to Badlands types.xml entries to the [Types Explorer](https://samsobjectfinder.com/?types=1) for new objects and updated the types changelog.

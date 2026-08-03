@@ -1304,8 +1304,15 @@
     width: auto !important;
     margin: 0;
   }
-  .folder-sidebar {
+  .folder-sidebar-column {
+    position: fixed;
+    top: var(--sidebars-top-offset);
+    left: var(--page-edge-gutter);
+    z-index: 5;
     width: var(--tree-pane-width);
+  }
+  .folder-sidebar {
+    width: 100%;
     max-height: calc(100vh - var(--sidebars-top-offset) - var(--sidebars-bottom-gap));
     overflow-y: auto;
     overflow-x: hidden;
@@ -1313,11 +1320,19 @@
     border-radius: 6px;
     background: var(--card);
     box-shadow: var(--shadow-soft);
-    position: fixed;
-    top: var(--sidebars-top-offset);
-    left: var(--page-edge-gutter);
+    position: static;
     flex: 0 0 var(--tree-pane-width);
-    z-index: 5;
+  }
+  .last-update {
+    width: 100%;
+    margin-top: 5px;
+    color: var(--muted);
+    font-size: 0.72rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+  .last-update a {
+    color: inherit;
   }
   .folder-sidebar__controls {
     position: sticky;
@@ -2743,6 +2758,11 @@
       padding-right: 0;
       padding-left: 0;
     }
+    .folder-sidebar-column {
+      position: static;
+      width: 100%;
+      order: 0;
+    }
     .folder-sidebar {
       width: 100%;
       min-height: 0;
@@ -2752,6 +2772,10 @@
       order: 0;
       max-height: 340px;
       overflow: auto;
+    }
+    .last-update {
+      padding-bottom: 8px;
+      text-align: left;
     }
     .folder-sidebar__controls {
       position: sticky;

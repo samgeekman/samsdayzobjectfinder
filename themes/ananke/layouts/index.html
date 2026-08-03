@@ -16,6 +16,8 @@
 
 {{ define "main" }}
 {{ $objectCount := len .Site.Data.dayz_objects }}
+{{ $changelogPage := .Site.GetPage "changelog" }}
+{{ $latestChangelogDate := index (findRE `[0-9]{1,2} [A-Za-z]+ [0-9]{4}` $changelogPage.RawContent 1) 0 }}
 {{ $badlandsBarEnabled := true }}
 {{ $badlandsVersionKey := "v1.29-exp-badlands" }}
 {{ $badlandsBarHref := printf "/?version=%s" $badlandsVersionKey }}
@@ -208,7 +210,8 @@
 {{ end }}
 
 <div class="objects-layout">
-  <aside id="folderSidebar" class="folder-sidebar" aria-label="Folder navigation">
+  <div class="folder-sidebar-column">
+    <aside id="folderSidebar" class="folder-sidebar" aria-label="Folder navigation">
     <div class="folder-sidebar__controls">
       <div class="folder-sidebar__header">
         <span id="folderSidebarTitle" class="folder-sidebar__title">0 objects</span>
@@ -227,7 +230,9 @@
       <div id="folderSidebarBulk" class="folder-sidebar__bulk-sticky" aria-hidden="true"></div>
     </div>
     <div id="folderTree" class="folder-tree"></div>
-  </aside>
+    </aside>
+    <div class="last-update">Last update: <a href="/changelog/">{{ $latestChangelogDate }}</a></div>
+  </div>
 
   <table id="dayzObjects" class="display nowrap" style="width:100%">
     <thead>
