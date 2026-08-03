@@ -218,7 +218,8 @@
     "searchTags": "build, location",
     "image": "presets/aniva_industrial_aniva_industrial_1.jpg",
     "images": [
-      "presets/aniva_industrial_aniva_industrial_1.jpg"
+      "presets/aniva_industrial_aniva_industrial_1.jpg",
+      "presets/aniva_industrial_aniva_industrial_2.jpg"
     ],
     "editorJson": [
       {
@@ -22601,7 +22602,8 @@
     "searchTags": "build, location",
     "image": "presets/geothermal_geothermal_1.jpg",
     "images": [
-      "presets/geothermal_geothermal_1.jpg"
+      "presets/geothermal_geothermal_1.jpg",
+      "presets/geothermal_geothermal_2.jpg"
     ],
     "editorJson": [
       {
@@ -55281,7 +55283,8 @@
     "searchTags": "build, location",
     "image": "presets/ice_sheet_large_ice_sheet_large_1.jpg",
     "images": [
-      "presets/ice_sheet_large_ice_sheet_large_1.jpg"
+      "presets/ice_sheet_large_ice_sheet_large_1.jpg",
+      "presets/ice_sheet_large_ice_sheet_large_2.jpg"
     ],
     "editorJson": [
       {
@@ -84375,7 +84378,8 @@
     "searchTags": "build, location",
     "image": "presets/ice_sheet_small_ice_sheet_small_1.jpg",
     "images": [
-      "presets/ice_sheet_small_ice_sheet_small_1.jpg"
+      "presets/ice_sheet_small_ice_sheet_small_1.jpg",
+      "presets/ice_sheet_small_ice_sheet_small_2.jpg"
     ],
     "editorJson": [
       {
@@ -89691,7 +89695,8 @@
     "searchTags": "build, location",
     "image": "presets/kopa_prison_livonia_kopa_prison_livonia_1.jpg",
     "images": [
-      "presets/kopa_prison_livonia_kopa_prison_livonia_1.jpg"
+      "presets/kopa_prison_livonia_kopa_prison_livonia_1.jpg",
+      "presets/kopa_prison_livonia_kopa_prison_livonia_2.jpg"
     ],
     "editorJson": [
       {
@@ -96213,7 +96218,8 @@
     "searchTags": "build, location",
     "image": "presets/lembork_military_livonia_lembork_military_livonia_1.jpg",
     "images": [
-      "presets/lembork_military_livonia_lembork_military_livonia_1.jpg"
+      "presets/lembork_military_livonia_lembork_military_livonia_1.jpg",
+      "presets/lembork_military_livonia_lembork_military_livonia_2.jpg"
     ],
     "editorJson": [
       {
@@ -103873,7 +103879,8 @@
     "searchTags": "build, location",
     "image": "presets/military_dock_sakhal_military_dock_sakhal_1.jpg",
     "images": [
-      "presets/military_dock_sakhal_military_dock_sakhal_1.jpg"
+      "presets/military_dock_sakhal_military_dock_sakhal_1.jpg",
+      "presets/military_dock_sakhal_military_dock_sakhal_2.jpg"
     ],
     "editorJson": [
       {
@@ -174513,12 +174520,12 @@
     "path": "dz/gear/books",
     "usableOnConsole": true,
     "searchTags": "books, gear",
-    "image": "images/gear/books/proxybook_kniga.jpg",
+    "image": "images/gear/books/book_kniga.p3d.jpg",
     "id": "dzobj_erekfa38mz",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.22095200419425964,
+      0.2800000011920929,
+      0.05458681471645832
     ]
   },
   {
@@ -181658,22 +181665,6 @@
       0.01066033635288477,
       0.08290066570043564,
       0.023750614374876022
-    ]
-  },
-  {
-    "objectName": "LighterZippo",
-    "inGameName": "Campfire Tripod",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/cooking",
-    "usableOnConsole": true,
-    "searchTags": "campfire, cooking, gear, fire",
-    "image": "images/gear/cooking/lighterzippo.jpg",
-    "id": "dzobj_r51cu9zmna",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
     ]
   },
   {
@@ -188892,22 +188883,6 @@
       0.35821545124053955,
       0.16590037057176232,
       0.058592788875103
-    ]
-  },
-  {
-    "objectName": "Absolute90s",
-    "inGameName": "-",
-    "category": "gear",
-    "modelType": "Config",
-    "path": "dz/gear/radio",
-    "usableOnConsole": true,
-    "searchTags": "audio, communication, gear, radio",
-    "image": "images/gear/radio/absolute90s.jpg",
-    "id": "dzobj_2ovsiqy8q9",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
     ]
   },
   {
@@ -291012,21 +290987,6 @@
     ]
   },
   {
-    "objectName": "EntranceDoor",
-    "category": "structures_bliss",
-    "modelType": "Config",
-    "path": "dz/structures_bliss/underground/stairs",
-    "usableOnConsole": true,
-    "searchTags": "access, livoniaa, entry, stairs, underground",
-    "image": "images/structures_bliss/underground/stairs/entrancedoor.jpg",
-    "id": "dzobj_yw5ou2i5xc",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
     "objectName": "Land_Underground_Stairs_Block_Corridor",
     "category": "structures_bliss",
     "modelType": "Config",
@@ -292071,10 +292031,11 @@
     "searchTags": "livoniaa, bunker, grass, terrain",
     "image": "images/structures_bliss/underground/terrain/staticobj_terrain_livoniaa_forestpatch.jpg",
     "id": "dzobj_6c8naccifn",
+    "linked-p3d": "dzobj_bu3o9uf52l",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      4.832411885261536,
+      1.248438037931919,
+      4.362991213798523
     ]
   },
   {
@@ -292087,10 +292048,11 @@
     "searchTags": "livoniaa, bunker, grass, terrain",
     "image": "images/structures_bliss/underground/terrain/staticobj_terrain_livoniaa_grasspatch.jpg",
     "id": "dzobj_vi1oc8g0n7",
+    "linked-p3d": "dzobj_phocrqqpp7",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      4.633617639541626,
+      0.8800728656351566,
+      4.9448020458221436
     ]
   },
   {
@@ -292334,35 +292296,41 @@
     ]
   },
   {
-    "objectName": "terrain_livoniaa_forestpatch.p3d",
+    "objectName": "terrain_livonia_forestpatch.p3d",
     "inGameName": "-",
     "category": "structures_bliss",
     "modelType": "Raw P3D",
     "path": "dz/structures_bliss/underground/terrain",
     "usableOnConsole": false,
     "searchTags": "livoniaa, underground, terrain, bunker",
-    "image": "images/structures_bliss/underground/terrain/terrain_livoniaa_forestpatch.jpg",
+    "image": "images/structures_bliss/underground/terrain/staticobj_terrain_livoniaa_forestpatch.jpg",
     "id": "dzobj_bu3o9uf52l",
+    "linked-config": [
+      "dzobj_6c8naccifn"
+    ],
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      4.832411885261536,
+      1.248438037931919,
+      4.362991213798523
     ]
   },
   {
-    "objectName": "terrain_livoniaa_grasspatch.p3d",
+    "objectName": "terrain_livonia_grasspatch.p3d",
     "inGameName": "-",
     "category": "structures_bliss",
     "modelType": "Raw P3D",
     "path": "dz/structures_bliss/underground/terrain",
     "usableOnConsole": false,
     "searchTags": "livoniaa, underground, terrain, bunker",
-    "image": "images/structures_bliss/underground/terrain/terrain_livoniaa_grasspatch.jpg",
+    "image": "images/structures_bliss/underground/terrain/staticobj_terrain_livoniaa_grasspatch.jpg",
     "id": "dzobj_phocrqqpp7",
+    "linked-config": [
+      "dzobj_vi1oc8g0n7"
+    ],
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      4.633617639541626,
+      0.8800728656351566,
+      4.9448020458221436
     ]
   },
   {
@@ -292487,22 +292455,6 @@
       11.704892635345459,
       6.967451989650726,
       11.7123995496504
-    ]
-  },
-  {
-    "objectName": "ValveGauge2",
-    "inGameName": "-",
-    "category": "structures_bliss",
-    "modelType": "Config",
-    "path": "dz/structures_bliss/underground/water",
-    "usableOnConsole": true,
-    "searchTags": "livonia, bunker",
-    "image": "images/structures_bliss/underground/water/valvegauge2.jpg",
-    "id": "dzobj_v2nd1prhpc",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
     ]
   },
   {
@@ -300938,22 +300890,6 @@
     ]
   },
   {
-    "objectName": "ThermoGauge",
-    "inGameName": "-",
-    "category": "structures_sakhal",
-    "modelType": "Config",
-    "path": "dz/structures_sakhal/residential/misc",
-    "usableOnConsole": true,
-    "searchTags": "",
-    "image": "images/structures_sakhal/residential/misc/thermogauge.jpg",
-    "id": "dzobj_e4h9ooinqa",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
     "objectName": "Land_OutsideThermometer_1",
     "inGameName": "-",
     "category": "structures_sakhal",
@@ -309256,22 +309192,6 @@
     ]
   },
   {
-    "objectName": "ProxyPart",
-    "inGameName": "-",
-    "category": "vehicles",
-    "modelType": "Config",
-    "path": "dz/vehicles/parts",
-    "usableOnConsole": true,
-    "searchTags": "parts, transport, vehicle, vehicles",
-    "image": "images/placeholder.jpeg",
-    "id": "dzobj_6fsfv94wax",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
     "objectName": "ProxyBattery_truck",
     "inGameName": "-",
     "category": "vehicles",
@@ -309279,12 +309199,12 @@
     "path": "dz/vehicles/parts",
     "usableOnConsole": true,
     "searchTags": "energy, parts, power, transport, vehicle, vehicles",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/parts/battery_truck/battery_truck.jpg",
     "id": "dzobj_lyboo36gbm",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.5202680230140686,
+      0.24003301560878754,
+      0.23103299736976624
     ]
   },
   {
@@ -309295,12 +309215,12 @@
     "path": "dz/vehicles/parts",
     "usableOnConsole": true,
     "searchTags": "energy, parts, power, transport, vehicle, vehicles",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/parts/battery_car/battery_car.jpg",
     "id": "dzobj_81o8lorj4i",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.16436751186847687,
+      0.240000073220493,
+      0.25809086859226227
     ]
   },
   {
@@ -309311,12 +309231,12 @@
     "path": "dz/vehicles/parts",
     "usableOnConsole": true,
     "searchTags": "parts, transport, vehicle, vehicles",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/parts/sparkplug/sparkplug.jpg",
     "id": "dzobj_yv8y15vfxy",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.017954520881175995,
+      0.08111101388931274,
+      0.017954515293240547
     ]
   },
   {
@@ -309327,12 +309247,12 @@
     "path": "dz/vehicles/parts",
     "usableOnConsole": true,
     "searchTags": "parts, transport, vehicle, vehicles",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/parts/glowplug/glowplug.jpg",
     "id": "dzobj_88i89msvj2",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.010844515636563301,
+      0.14802590012550354,
+      0.009486135095357895
     ]
   },
   {
@@ -309343,12 +309263,12 @@
     "path": "dz/vehicles/parts",
     "usableOnConsole": true,
     "searchTags": "parts, transport, vehicle, vehicles",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/parts/replacement_headlight/replacement_headlight.jpg",
     "id": "dzobj_yueybvwqs2",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.054737113416194916,
+      0.0942936700557766,
+      0.054737113416194916
     ]
   },
   {
@@ -309359,12 +309279,12 @@
     "path": "dz/vehicles/parts",
     "usableOnConsole": true,
     "searchTags": "parts, transport, vehicle, vehicles",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/parts/radiator_car/radiator_car.jpg",
     "id": "dzobj_hr4b0nf4m7",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.7322100400924683,
+      0.5147675349144265,
+      0.12383830919861794
     ]
   },
   {
@@ -309904,7 +309824,7 @@
     "path": "images/vehicles/water/boat_01/boat_01_black/boat_01_black.jpg",
     "usableOnConsole": true,
     "searchTags": "",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/water/boat_01/boat_01_black/boat_01_black.jpg",
     "id": "dzobj_11042kenxb",
     "dimensionsVisual": [
       2.5,
@@ -310114,12 +310034,12 @@
     "path": "dz/vehicles/wheeled/hatchback_02/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_wheel/hatchback_02_wheel.jpg",
     "id": "dzobj_4biiisauxk",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.22807028889656067,
+      0.6079457998275757,
+      0.6079457998275757
     ]
   },
   {
@@ -310130,12 +310050,12 @@
     "path": "dz/vehicles/wheeled/hatchback_02/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_hood/hatchback_02_hood.jpg",
     "id": "dzobj_4sptnyjf01",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      1.4423766136169434,
+      0.19191743433475494,
+      1.2869168585166335
     ]
   },
   {
@@ -310146,12 +310066,12 @@
     "path": "dz/vehicles/wheeled/hatchback_02/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_trunk/hatchback_02_trunk.jpg",
     "id": "dzobj_q7bsoubhtb",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      1.4480003118515015,
+      0.682567129842937,
+      0.6111849527806044
     ]
   },
   {
@@ -310162,12 +310082,12 @@
     "path": "dz/vehicles/wheeled/hatchback_02/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_1_1/hatchback_02_door_1_1.jpg",
     "id": "dzobj_nlqn7azhy4",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.4404813051223755,
+      1.0928777754306793,
+      1.0583544969558716
     ]
   },
   {
@@ -310178,12 +310098,12 @@
     "path": "dz/vehicles/wheeled/hatchback_02/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_2_1/hatchback_02_door_2_1.jpg",
     "id": "dzobj_afqzth6jzg",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.4404813200235367,
+      1.0928777754306793,
+      1.0583544969558716
     ]
   },
   {
@@ -310194,12 +310114,12 @@
     "path": "dz/vehicles/wheeled/hatchback_02/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_1_2/hatchback_02_door_1_2.jpg",
     "id": "dzobj_ka7v2s9g30",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.32139671593904495,
+      1.092877835035324,
+      1.0854629278182983
     ]
   },
   {
@@ -310210,12 +310130,12 @@
     "path": "dz/vehicles/wheeled/hatchback_02/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_door_2_2/hatchback_02_door_2_2.jpg",
     "id": "dzobj_v9h8brwxmz",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.3213975802063942,
+      1.0928777158260345,
+      1.0854629278182983
     ]
   },
   {
@@ -311224,7 +311144,7 @@
     "path": "dz/vehicles/wheeled/hatchback_02",
     "usableOnConsole": true,
     "searchTags": "car, gunter, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/hatchback_02/hatchback_02_black/hatchback_02_black.jpg",
     "id": "dzobj_kw3zdx42am",
     "dimensionsVisual": [
       2.5,
@@ -311240,7 +311160,7 @@
     "path": "dz/vehicles/wheeled/hatchback_02",
     "usableOnConsole": true,
     "searchTags": "car, gunter, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/hatchback_02/hatchback_02_blue/hatchback_02_blue.jpg",
     "id": "dzobj_hoxa8ztjl1",
     "dimensionsVisual": [
       2.5,
@@ -311288,7 +311208,7 @@
     "path": "dz/vehicles/wheeled/offroadhatchback",
     "usableOnConsole": true,
     "searchTags": "4x4, ada, car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroadhatchback/offroadhatchback_blue/offroadhatchback_blue.jpg",
     "id": "dzobj_t59gbrreic",
     "dimensionsVisual": [
       2.5,
@@ -311304,24 +311224,8 @@
     "path": "dz/vehicles/wheeled/offroadhatchback",
     "usableOnConsole": true,
     "searchTags": "4x4, ada, car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroadhatchback/offroadhatchback_white/offroadhatchback_white.jpg",
     "id": "dzobj_dcd7emjw14",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Suspension",
-    "inGameName": "Ada 4x4 Wheel",
-    "category": "vehicles",
-    "modelType": "Config",
-    "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
-    "usableOnConsole": true,
-    "searchTags": "4x4, ada, car, offroadhatchback, transport, vehicle, vehicles, wheel, wheeled",
-    "image": "images/placeholder.jpeg",
-    "id": "dzobj_6ju3megkag",
     "dimensionsVisual": [
       2.5,
       2.5,
@@ -311466,12 +311370,12 @@
     "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
     "usableOnConsole": true,
     "searchTags": "car, offroadhatchback, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/nivawheel/nivawheel.jpg",
     "id": "dzobj_m786k16w7f",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.20701105892658234,
+      0.753622829914093,
+      0.753622829914093
     ]
   },
   {
@@ -311482,12 +311386,12 @@
     "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
     "usableOnConsole": true,
     "searchTags": "car, offroadhatchback, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/nivawheel_destroyed/nivawheel_destroyed.jpg",
     "id": "dzobj_ov5i4bx59g",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.32212579250335693,
+      0.6286472678184509,
+      0.6692265272140503
     ]
   },
   {
@@ -311498,12 +311402,12 @@
     "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
     "usableOnConsole": true,
     "searchTags": "car, offroadhatchback, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/nivadoors_hood/nivadoors_hood.jpg",
     "id": "dzobj_429morr859",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      1.7231152057647705,
+      0.27141109108924866,
+      1.0893306732177734
     ]
   },
   {
@@ -311514,12 +311418,12 @@
     "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
     "usableOnConsole": true,
     "searchTags": "car, offroadhatchback, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/nivadoors_trunk/nivadoors_trunk.jpg",
     "id": "dzobj_mfetrlzr9k",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      1.3607265949249268,
+      0.7190441489219666,
+      0.5072372555732727
     ]
   },
   {
@@ -311530,12 +311434,12 @@
     "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
     "usableOnConsole": true,
     "searchTags": "car, offroadhatchback, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/nivadoors_driver/nivadoors_driver.jpg",
     "id": "dzobj_m8e4sizyxg",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.3575408011674881,
+      1.1789338290691376,
+      1.0643722414970398
     ]
   },
   {
@@ -311546,12 +311450,12 @@
     "path": "dz/vehicles/wheeled/offroadhatchback/proxy",
     "usableOnConsole": true,
     "searchTags": "car, offroadhatchback, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroadhatchback/proxy/nivadoors_codriver/nivadoors_codriver.jpg",
     "id": "dzobj_wl5h0yo675",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.35754068940877914,
+      1.1789337992668152,
+      1.0643721520900726
     ]
   },
   {
@@ -312471,12 +312375,12 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled, hummer, humvee, m1025",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_wheel/offroad_02_wheel.jpg",
     "id": "dzobj_99r3ntkvn0",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.3159412145614624,
+      0.9174942374229431,
+      0.9173967838287354
     ]
   },
   {
@@ -312487,12 +312391,12 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled, hummer, humvee, m1025",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1/offroad_02_door_1_1.jpg",
     "id": "dzobj_ct36v4kgbu",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.12471212074160576,
+      1.0881245136260986,
+      0.9004415273666382
     ]
   },
   {
@@ -312503,12 +312407,12 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled, hummer, humvee",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1/offroad_02_door_2_1.jpg",
     "id": "dzobj_bgdsy99fq0",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.12471210956573486,
+      1.088124394416809,
+      0.9004415273666382
     ]
   },
   {
@@ -312519,12 +312423,12 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled, hummer, humvee, m1025",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2/offroad_02_door_1_2.jpg",
     "id": "dzobj_n5q82ou5io",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.12471401318907738,
+      1.0881244540214539,
+      0.975653886795044
     ]
   },
   {
@@ -312535,12 +312439,12 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled, hummer, humvee, m1025",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2/offroad_02_door_2_2.jpg",
     "id": "dzobj_pkdpweokiy",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.12471401318907738,
+      1.0881244540214539,
+      0.9756539463996887
     ]
   },
   {
@@ -312551,12 +312455,12 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled, hummer, humvee, m1025",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood/offroad_02_hood.jpg",
     "id": "dzobj_d6n4hp3jhj",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.40961556136608124,
+      1.3917789459228516,
+      2.1934964656829834
     ]
   },
   {
@@ -312567,12 +312471,12 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled, hummer, humvee, m1025",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk/offroad_02_trunk.jpg",
     "id": "dzobj_pg73g3f8d4",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.18666880577802658,
+      1.4023829102516174,
+      1.3595421314239502
     ]
   },
   {
@@ -312920,7 +312824,7 @@
     "path": "dz/vehicles/wheeled/sedan_02",
     "usableOnConsole": true,
     "searchTags": "car, sarka, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/sedan_02/sedan_02_grey/sedan_02_grey.jpg",
     "id": "dzobj_lu3s3a9h21",
     "dimensionsVisual": [
       2.5,
@@ -312936,7 +312840,7 @@
     "path": "dz/vehicles/wheeled/sedan_02",
     "usableOnConsole": true,
     "searchTags": "car, sarka, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/sedan_02/sedan_02_red/sedan_02_red.jpg",
     "id": "dzobj_vcml6xr6ce",
     "dimensionsVisual": [
       2.5,
@@ -313130,12 +313034,12 @@
     "path": "dz/vehicles/wheeled/sedan_02/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_wheel/sedan_02_wheel.jpg",
     "id": "dzobj_spo7mbert9",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.21045924723148346,
+      0.6686341762542725,
+      0.6686340868473053
     ]
   },
   {
@@ -313146,12 +313050,12 @@
     "path": "dz/vehicles/wheeled/sedan_02/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_wheel_ruined/sedan_02_wheel_ruined.jpg",
     "id": "dzobj_nmide21x7p",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.25801920890808105,
+      0.638129711151123,
+      0.6419694721698761
     ]
   },
   {
@@ -313162,12 +313066,12 @@
     "path": "dz/vehicles/wheeled/sedan_02/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_1_1/sedan_02_door_1_1.jpg",
     "id": "dzobj_2b2fjvz7yf",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.3565639853477478,
+      1.0310455858707428,
+      0.9987906813621521
     ]
   },
   {
@@ -313178,12 +313082,12 @@
     "path": "dz/vehicles/wheeled/sedan_02/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_2_1/sedan_02_door_2_1.jpg",
     "id": "dzobj_7s36xnbsv2",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.2653715666383505,
+      1.0310455858707428,
+      0.9987906813621521
     ]
   },
   {
@@ -313194,12 +313098,12 @@
     "path": "dz/vehicles/wheeled/sedan_02/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_1_2/sedan_02_door_1_2.jpg",
     "id": "dzobj_fdr64ywnzs",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.27502297703176737,
+      1.0309504568576813,
+      0.9949331283569336
     ]
   },
   {
@@ -313210,12 +313114,12 @@
     "path": "dz/vehicles/wheeled/sedan_02/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_door_2_2/sedan_02_door_2_2.jpg",
     "id": "dzobj_tze1a3khqi",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.27502297703176737,
+      1.0309504568576813,
+      0.9949331283569336
     ]
   },
   {
@@ -313226,12 +313130,12 @@
     "path": "dz/vehicles/wheeled/sedan_02/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_hood/sedan_02_hood.jpg",
     "id": "dzobj_2bzc2oevga",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.24450711533427238,
+      1.3973415195941925,
+      1.1240460872650146
     ]
   },
   {
@@ -313242,12 +313146,12 @@
     "path": "dz/vehicles/wheeled/sedan_02/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/sedan_02/proxy/sedan_02_trunk/sedan_02_trunk.jpg",
     "id": "dzobj_99nc5mk8v1",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.157333143055439,
+      1.293372482061386,
+      0.5946677029132843
     ]
   },
   {
@@ -314304,12 +314208,12 @@
     "path": "dz/vehicles/wheeled/transitbus/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transitbus, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/transitbus/proxy_big/ikaruswheel/ikaruswheel.jpg",
     "id": "dzobj_nqtyjlugag",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.36729202792048454,
+      1.0144120454788208,
+      1.0200001001358032
     ]
   },
   {
@@ -314320,12 +314224,12 @@
     "path": "dz/vehicles/wheeled/transitbus/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transitbus, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/transitbus/proxy_big/ikaruswheel_destroyed/ikaruswheel_destroyed.jpg",
     "id": "dzobj_nsh5peu6gn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.37187272869050503,
+      0.7504360377788544,
+      0.7473930418491364
     ]
   },
   {
@@ -314336,12 +314240,12 @@
     "path": "dz/vehicles/wheeled/transitbus/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transitbus, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/transitbus/proxy_big/ikaruswheel_rear/ikaruswheel_rear.jpg",
     "id": "dzobj_oynv4wxcwd",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.6672950088977814,
+      1.014413058757782,
+      1.0200001001358032
     ]
   },
   {
@@ -314352,12 +314256,12 @@
     "path": "dz/vehicles/wheeled/transitbus/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transitbus, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/transitbus/proxy_big/ikaruswheel_rear_destroyed/ikaruswheel_rear_destroyed.jpg",
     "id": "dzobj_5wt444v3wc",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.6764550507068634,
+      0.7504360377788544,
+      0.7559900283813477
     ]
   },
   {
@@ -314368,12 +314272,12 @@
     "path": "dz/vehicles/wheeled/transitbus/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transitbus, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/transitbus/proxy_big/ikarushood/ikarushood.jpg",
     "id": "dzobj_xdc92xbawn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.16629640758037567,
+      0.9274590313434601,
+      2.1014262437820435
     ]
   },
   {
@@ -314384,12 +314288,12 @@
     "path": "dz/vehicles/wheeled/transitbus/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transitbus, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/transitbus/proxy_big/ikarusdoors_left/ikarusdoors_left.jpg",
     "id": "dzobj_ogwfm4x5q7",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.11559610441327095,
+      2.1745080947875977,
+      0.6295100450515747
     ]
   },
   {
@@ -314400,12 +314304,12 @@
     "path": "dz/vehicles/wheeled/transitbus/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transitbus, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/transitbus/proxy_big/ikarusdoors_right/ikarusdoors_right.jpg",
     "id": "dzobj_m32n61837d",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.11559610813856125,
+      2.1745080947875977,
+      0.6295100450515747
     ]
   },
   {
@@ -315112,12 +315016,12 @@
     "path": "dz/vehicles/wheeled/truck_01/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_wheel/truck_01_wheel.jpg",
     "id": "dzobj_w3f6c2dm9y",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.2760061025619507,
+      0.9350985884666443,
+      0.9350985884666443
     ]
   },
   {
@@ -315128,12 +315032,12 @@
     "path": "dz/vehicles/wheeled/truck_01/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_wheel_ruined/truck_01_wheel_ruined.jpg",
     "id": "dzobj_akldql9fsl",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.2963331341743469,
+      0.7150593400001526,
+      0.7004059553146362
     ]
   },
   {
@@ -315144,12 +315048,12 @@
     "path": "dz/vehicles/wheeled/truck_01/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_wheeldouble/truck_01_wheeldouble.jpg",
     "id": "dzobj_y33f3we04s",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.49957655370235443,
+      0.9350985884666443,
+      0.9350985884666443
     ]
   },
   {
@@ -315160,12 +315064,12 @@
     "path": "dz/vehicles/wheeled/truck_01/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_wheeldouble_ruined/truck_01_wheeldouble_ruined.jpg",
     "id": "dzobj_znuwp8wbd0",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.7979342639446259,
+      0.7202402949333191,
+      0.7219184935092926
     ]
   },
   {
@@ -315176,12 +315080,12 @@
     "path": "dz/vehicles/wheeled/truck_01/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_door_1_1/truck_01_door_1_1.jpg",
     "id": "dzobj_ckrg3dnhif",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.47682006657123566,
+      1.2133315850805957,
+      0.9684383869171143
     ]
   },
   {
@@ -315192,12 +315096,12 @@
     "path": "dz/vehicles/wheeled/truck_01/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_door_2_1/truck_01_door_2_1.jpg",
     "id": "dzobj_4p0qaa8uxh",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.47682006657123566,
+      1.2133315850805957,
+      0.9684383869171143
     ]
   },
   {
@@ -315208,12 +315112,12 @@
     "path": "dz/vehicles/wheeled/truck_01/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/truck_01/proxy/truck_01_hood/truck_01_hood.jpg",
     "id": "dzobj_ro48obdb6j",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      1.457261085510254,
+      0.6024245023727417,
+      0.5325872898101807
     ]
   },
   {
@@ -316020,12 +315924,12 @@
     "path": "dz/vehicles/wheeled/truck_02/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/truck_02/proxy/truck_02_wheel/truck_02_wheel.jpg",
     "id": "dzobj_b1vd05rhcj",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.21637900918722153,
+      0.6403480768203735,
+      0.6403480768203735
     ]
   },
   {
@@ -316036,12 +315940,12 @@
     "path": "dz/vehicles/wheeled/truck_02/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/truck_02/proxy/truck_02_wheel_ruined/truck_02_wheel_ruined.jpg",
     "id": "dzobj_cj4j5ljuzw",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.28098101913928986,
+      0.4759150296449661,
+      0.5066350102424622
     ]
   },
   {
@@ -316052,12 +315956,12 @@
     "path": "dz/vehicles/wheeled/truck_02/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/truck_02/proxy/truck_02_door_1_1/truck_02_door_1_1.jpg",
     "id": "dzobj_4cktun4ol1",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.27450501918792725,
+      1.3000220656394958,
+      0.8999264715239406
     ]
   },
   {
@@ -316068,12 +315972,12 @@
     "path": "dz/vehicles/wheeled/truck_02/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/truck_02/proxy/truck_02_door_2_1/truck_02_door_2_1.jpg",
     "id": "dzobj_16tjt66n4t",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.27450402081012726,
+      1.3000240325927734,
+      0.8999264715239406
     ]
   },
   {
@@ -316260,12 +316164,12 @@
     "path": "dz/vehicles/wheeled/van_01/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/van_01/proxy/van_01_wheel/van_01_wheel.jpg",
     "id": "dzobj_nbuj7fs0y2",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.21267811954021454,
+      0.6993470788002014,
+      0.7031996250152588
     ]
   },
   {
@@ -316276,12 +316180,12 @@
     "path": "dz/vehicles/wheeled/van_01/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/van_01/proxy/van_01_wheel_ruined/van_01_wheel_ruined.jpg",
     "id": "dzobj_mhbazjqmi9",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.21400350332260132,
+      0.5511972308158875,
+      0.5551770329475403
     ]
   },
   {
@@ -316292,12 +316196,12 @@
     "path": "dz/vehicles/wheeled/van_01/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/van_01/proxy/van_01_door_1_1/van_01_door_1_1.jpg",
     "id": "dzobj_3o57d2r4pg",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.2875732481479645,
+      1.2183158695697784,
+      1.1639043092727661
     ]
   },
   {
@@ -316308,12 +316212,12 @@
     "path": "dz/vehicles/wheeled/van_01/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/van_01/proxy/van_01_door_2_1/van_01_door_2_1.jpg",
     "id": "dzobj_huom4gjkr5",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.2875722646713257,
+      1.2183155715465546,
+      1.1639043092727661
     ]
   },
   {
@@ -316324,12 +316228,12 @@
     "path": "dz/vehicles/wheeled/van_01/proxy",
     "usableOnConsole": true,
     "searchTags": "access, car, entry, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/van_01/proxy/van_01_door_2_2/van_01_door_2_2.jpg",
     "id": "dzobj_r4qg7tb659",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.23318233340978622,
+      1.2476420998573303,
+      1.0681289434432983
     ]
   },
   {
@@ -316340,12 +316244,12 @@
     "path": "dz/vehicles/wheeled/van_01/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/van_01/proxy/van_01_trunk_1/van_01_trunk_1.jpg",
     "id": "dzobj_eueq36l5wi",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.08951704949140549,
+      0.795281320810318,
+      1.2327594757080078
     ]
   },
   {
@@ -316356,12 +316260,12 @@
     "path": "dz/vehicles/wheeled/van_01/proxy",
     "usableOnConsole": true,
     "searchTags": "car, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/van_01/proxy/van_01_trunk_2/van_01_trunk_2.jpg",
     "id": "dzobj_hzh45olm7o",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.14369933307170868,
+      0.5309223532676697,
+      1.2327595353126526
     ]
   },
   {
@@ -316532,7 +316436,7 @@
     "path": "dz/vehicles/wheeled/civiliansedan",
     "usableOnConsole": true,
     "searchTags": "car, olga, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/civiliansedan/civiliansedan_black/civiliansedan_black.jpg",
     "id": "dzobj_665pxgc3nd",
     "dimensionsVisual": [
       2.5,
@@ -316548,7 +316452,7 @@
     "path": "dz/vehicles/wheeled/civiliansedan",
     "usableOnConsole": true,
     "searchTags": "car, olga, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/civiliansedan/civiliansedan_wine/civiliansedan_wine.jpg",
     "id": "dzobj_990btgz32m",
     "dimensionsVisual": [
       2.5,
@@ -316742,12 +316646,12 @@
     "path": "dz/vehicles/wheeled/civiliansedan/proxy",
     "usableOnConsole": true,
     "searchTags": "car, civiliansedan, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/sedanwheel/sedanwheel.jpg",
     "id": "dzobj_rdfqdz1gwl",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.1759897992014885,
+      0.7176482379436493,
+      0.7173097729682922
     ]
   },
   {
@@ -316758,12 +316662,12 @@
     "path": "dz/vehicles/wheeled/civiliansedan/proxy",
     "usableOnConsole": true,
     "searchTags": "car, civiliansedan, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/sedanwheel_destroyed/sedanwheel_destroyed.jpg",
     "id": "dzobj_ehi0ljqph2",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.3483358770608902,
+      0.6191588938236237,
+      0.609366774559021
     ]
   },
   {
@@ -316774,12 +316678,12 @@
     "path": "dz/vehicles/wheeled/civiliansedan/proxy",
     "usableOnConsole": true,
     "searchTags": "car, civiliansedan, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/sedanhood/sedanhood.jpg",
     "id": "dzobj_0p9e51c9le",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.14269860833883286,
+      1.1961043179035187,
+      1.463826060295105
     ]
   },
   {
@@ -316790,12 +316694,12 @@
     "path": "dz/vehicles/wheeled/civiliansedan/proxy",
     "usableOnConsole": true,
     "searchTags": "car, civiliansedan, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/sedantrunk/sedantrunk.jpg",
     "id": "dzobj_1dxk1859b9",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.22996320575475693,
+      0.9933770596981049,
+      1.4656785726547241
     ]
   },
   {
@@ -316806,12 +316710,12 @@
     "path": "dz/vehicles/wheeled/civiliansedan/proxy",
     "usableOnConsole": true,
     "searchTags": "car, civiliansedan, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/sedandoors_driver/sedandoors_driver.jpg",
     "id": "dzobj_ybntjpd7q4",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.30942462384700775,
+      1.092157632112503,
+      0.9728125929832458
     ]
   },
   {
@@ -316822,12 +316726,12 @@
     "path": "dz/vehicles/wheeled/civiliansedan/proxy",
     "usableOnConsole": true,
     "searchTags": "car, civiliansedan, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/sedandoors_codriver/sedandoors_codriver.jpg",
     "id": "dzobj_ln8fdy6vso",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.30942462384700775,
+      1.092157632112503,
+      0.9728125929832458
     ]
   },
   {
@@ -316838,12 +316742,12 @@
     "path": "dz/vehicles/wheeled/civiliansedan/proxy",
     "usableOnConsole": true,
     "searchTags": "car, civiliansedan, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/sedandoors_cargo1/sedandoors_cargo1.jpg",
     "id": "dzobj_yqkmz7wk5x",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.2725905478000641,
+      1.0915482342243195,
+      0.9067347347736359
     ]
   },
   {
@@ -316854,12 +316758,12 @@
     "path": "dz/vehicles/wheeled/civiliansedan/proxy",
     "usableOnConsole": true,
     "searchTags": "car, civiliansedan, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/civiliansedan/proxy/sedandoors_cargo2/sedandoors_cargo2.jpg",
     "id": "dzobj_fz2fbfi70w",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.2725905478000641,
+      1.0915482640266418,
+      0.9067347347736359
     ]
   },
   {
@@ -318108,12 +318012,12 @@
     "path": "dz/vehicles/wheeled/proxies",
     "usableOnConsole": true,
     "searchTags": "car, proxies, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/proxies/crew_driver/crew_driver.jpg",
     "id": "dzobj_epcmi3gbnl",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.6828087568283081,
+      1.005838394165039,
+      1.2177343964576721
     ]
   },
   {
@@ -318124,12 +318028,12 @@
     "path": "dz/vehicles/wheeled/proxies",
     "usableOnConsole": true,
     "searchTags": "car, proxies, transport, vehicle, vehicles, wheeled",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/wheeled/proxies/crew_cargo/crew_cargo.jpg",
     "id": "dzobj_0xvt7o0u4e",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.6828087568283081,
+      1.0058384239673615,
+      1.2177344262599945
     ]
   },
   {
@@ -340626,22 +340530,6 @@
     ]
   },
   {
-    "objectName": "GrenadeM4",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/ammunition",
-    "usableOnConsole": true,
-    "searchTags": "ammunition, weapon, weapons",
-    "image": "images/weapons/ammunition/grenadem4/grenadem4.jpg",
-    "id": "dzobj_vkhfzyx8eg",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
     "objectName": "Rocket_RPG7_Base",
     "inGameName": "-",
     "category": "weapons",
@@ -340683,38 +340571,6 @@
     "searchTags": "ammunition, weapon, weapons",
     "image": "images/weapons/ammunition/rocket_rpg7_ap/rocket_rpg7_ap.jpg",
     "id": "dzobj_vczkpykpcp",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Rocket_LAW_Base",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/ammunition",
-    "usableOnConsole": true,
-    "searchTags": "ammunition, weapon, weapons",
-    "image": "images/weapons/ammunition/rocket_law_base/rocket_law_base.jpg",
-    "id": "dzobj_48u3gylteh",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Rocket_LAW_HE",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/ammunition",
-    "usableOnConsole": true,
-    "searchTags": "ammunition, weapon, weapons",
-    "image": "images/weapons/ammunition/rocket_law_he/rocket_law_he.jpg",
-    "id": "dzobj_3b2yrgzdhu",
     "dimensionsVisual": [
       2.5,
       2.5,
@@ -341366,7 +341222,7 @@
     "path": "dz/weapons/ammunition",
     "usableOnConsole": false,
     "searchTags": "ammunition, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/ammunition/flare_singleround_blue/flare_singleround_blue.jpg",
     "id": "dzobj_q9wuaaao21",
     "dimensionsVisual": [
       0.07302550226449966,
@@ -341382,7 +341238,7 @@
     "path": "dz/weapons/ammunition",
     "usableOnConsole": false,
     "searchTags": "ammunition, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/ammunition/flare_singleround_green/flare_singleround_green.jpg",
     "id": "dzobj_kegq1qfbn7",
     "dimensionsVisual": [
       0.07302550226449966,
@@ -341398,7 +341254,7 @@
     "path": "dz/weapons/ammunition",
     "usableOnConsole": false,
     "searchTags": "ammunition, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/ammunition/flare_singleround_red/flare_singleround_red.jpg",
     "id": "dzobj_6m9lil322j",
     "dimensionsVisual": [
       0.07302550226449966,
@@ -341656,12 +341512,12 @@
     "path": "dz/weapons/attachments/light",
     "usableOnConsole": true,
     "searchTags": "attachments, lamp, light, lighting, weapon, weapons",
-    "image": "images/weapons/attachments/light/proxyweaponlight_universal/proxyweaponlight_universal.jpg",
+    "image": "images/weapons/attachments/light/weaponlight_universal.p3d.jpg",
     "id": "dzobj_d5iqamplqz",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.1408822238445282,
+      0.04749099910259247,
+      0.05355605110526085
     ]
   },
   {
@@ -341672,12 +341528,12 @@
     "path": "dz/weapons/attachments/light",
     "usableOnConsole": true,
     "searchTags": "attachments, lamp, light, lighting, weapon, weapons",
-    "image": "images/weapons/attachments/light/proxyweaponlight_tlr/proxyweaponlight_tlr.jpg",
+    "image": "images/weapons/attachments/light/weaponlight_tlr.p3d.jpg",
     "id": "dzobj_6rvb1dj45j",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.0719902440905571,
+      0.04040646366775036,
+      0.03079216368496418
     ]
   },
   {
@@ -342782,12 +342638,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_stanag30/proxymagazine_stanag30.jpg",
+    "image": "images/weapons/attachments/magazine/mag_stanag_30rnd/mag_stanag_30rnd.jpg",
     "id": "dzobj_29nud18z52",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.08544867858290672,
+      0.18974848091602325,
+      0.028008675202727318
     ]
   },
   {
@@ -342798,7 +342654,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_pmag_10/proxymagazine_pmag_10.jpg",
+    "image": "images/weapons/attachments/magazine/mag_cmag_10rnd/mag_cmag_10rnd.jpg",
     "id": "dzobj_qugvrt4dpq",
     "dimensionsVisual": [
       2.5,
@@ -342814,7 +342670,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_pmag_20/proxymagazine_pmag_20.jpg",
+    "image": "images/weapons/attachments/magazine/mag_cmag_20rnd/mag_cmag_20rnd.jpg",
     "id": "dzobj_7as01o929h",
     "dimensionsVisual": [
       2.5,
@@ -342830,12 +342686,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_pmag_30/proxymagazine_pmag_30.jpg",
+    "image": "images/weapons/attachments/magazine/mag_cmag_30rnd/mag_cmag_30rnd.jpg",
     "id": "dzobj_ye3frt6yt2",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.08926193416118622,
+      0.18736355006694794,
+      0.027494938112795353
     ]
   },
   {
@@ -342846,12 +342702,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_pmag_40/proxymagazine_pmag_40.jpg",
+    "image": "images/weapons/attachments/magazine/mag_cmag_40rnd/mag_cmag_40rnd.jpg",
     "id": "dzobj_ye4jewkpj5",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.10239289328455925,
+      0.23721849918365479,
+      0.027494926005601883
     ]
   },
   {
@@ -342862,7 +342718,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_fnp45/proxymagazine_fnp45.jpg",
+    "image": "images/weapons/attachments/magazine/mag_fnx45_15rnd/mag_fnx45_15rnd.jpg",
     "id": "dzobj_su862f00hs",
     "dimensionsVisual": [
       2.5,
@@ -342878,12 +342734,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ruger1022_10/proxymagazine_ruger1022_10.jpg",
+    "image": "images/weapons/attachments/magazine/mag_ruger1022_10rnd/mag_ruger1022_10rnd.jpg",
     "id": "dzobj_13vrmjup5v",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.0381796732544899,
+      0.0385984443128109,
+      0.02959559205919504
     ]
   },
   {
@@ -342894,12 +342750,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ruger1022_15/proxymagazine_ruger1022_15.jpg",
+    "image": "images/weapons/attachments/magazine/mag_ruger1022_15rnd/mag_ruger1022_15rnd.jpg",
     "id": "dzobj_474q2q09pt",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.08637984842061996,
+      0.15196175873279572,
+      0.029383761808276176
     ]
   },
   {
@@ -342910,12 +342766,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ruger1022_30/proxymagazine_ruger1022_30.jpg",
+    "image": "images/weapons/attachments/magazine/mag_ruger1022_30rnd/mag_ruger1022_30rnd.jpg",
     "id": "dzobj_gbcpijrk4y",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.12895246595144272,
+      0.18553893268108368,
+      0.02886737696826458
     ]
   },
   {
@@ -342926,12 +342782,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_mk2/proxymagazine_mk2.jpg",
+    "image": "images/weapons/attachments/magazine/mag_mkii_10rnd/mag_mkii_10rnd.jpg",
     "id": "dzobj_iteif8uu95",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.026701011694967747,
+      0.13498632982373238,
+      0.018451817333698273
     ]
   },
   {
@@ -342942,12 +342798,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_1911/proxymagazine_1911.jpg",
+    "image": "images/weapons/attachments/magazine/mag_1911_7rnd/mag_1911_7rnd.jpg",
     "id": "dzobj_53lfgbbh7e",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.06865030154585838,
+      0.1188414879143238,
+      0.014072752557694912
     ]
   },
   {
@@ -342958,12 +342814,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_cz75/proxymagazine_cz75.jpg",
+    "image": "images/weapons/attachments/magazine/mag_cz75_15rnd/mag_cz75_15rnd.jpg",
     "id": "dzobj_kmy49pk1wc",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.06161922216415405,
+      0.12399414926767349,
+      0.022680952213704586
     ]
   },
   {
@@ -342974,12 +342830,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_p1/proxymagazine_p1.jpg",
+    "image": "images/weapons/attachments/magazine/mag_p1_8rnd/mag_p1_8rnd.jpg",
     "id": "dzobj_uy8kveqzz1",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.05949201062321663,
+      0.11572073958814144,
+      0.016916291788220406
     ]
   },
   {
@@ -342990,12 +342846,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_akm_30rnd/proxymagazine_akm_30rnd.jpg",
+    "image": "images/weapons/attachments/magazine/mag_akm_30rnd/mag_akm_30rnd.jpg",
     "id": "dzobj_udxxbve1f5",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.10581161081790924,
+      0.22067812085151672,
+      0.027495622634887695
     ]
   },
   {
@@ -343006,7 +342862,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_akm_drum/proxymagazine_akm_drum.jpg",
+    "image": "images/weapons/attachments/magazine/mag_akm_drum75rnd/mag_akm_drum75rnd.jpg",
     "id": "dzobj_qehzp2l8sg",
     "dimensionsVisual": [
       2.5,
@@ -343022,7 +342878,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_akm_palm30/proxymagazine_akm_palm30.jpg",
+    "image": "images/weapons/attachments/magazine/mag_akm_palm30rnd/mag_akm_palm30rnd.jpg",
     "id": "dzobj_q8ehll90b4",
     "dimensionsVisual": [
       2.5,
@@ -343038,12 +342894,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxyarrow_composite/proxyarrow_composite.jpg",
+    "image": "images/weapons/projectiles/arrow_composite.p3d.jpg",
     "id": "dzobj_5f4c8w6ho2",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.029615726321935654,
+      0.030387980863451958,
+      0.803548276424408
     ]
   },
   {
@@ -343054,12 +342910,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_mp5_15rnd/proxymagazine_mp5_15rnd.jpg",
+    "image": "images/weapons/attachments/magazine/mag_mp5_15rnd/mag_mp5_15rnd.jpg",
     "id": "dzobj_r1kfjvdk8t",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.07072233222424984,
+      0.13272126764059067,
+      0.02670955192297697
     ]
   },
   {
@@ -343070,12 +342926,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_mp5_30rnd/proxymagazine_mp5_30rnd.jpg",
+    "image": "images/weapons/attachments/magazine/mag_mp5_30rnd/mag_mp5_30rnd.jpg",
     "id": "dzobj_vw01qj18xa",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.10444355942308903,
+      0.19767370074987411,
+      0.026709547266364098
     ]
   },
   {
@@ -343086,12 +342942,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_pm73_15rnd/proxymagazine_pm73_15rnd.jpg",
+    "image": "images/weapons/attachments/magazine/mag_pm73_15rnd/mag_pm73_15rnd.jpg",
     "id": "dzobj_dk2n26emdk",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.04329696111381054,
+      0.115993307903409,
+      0.021243201568722725
     ]
   },
   {
@@ -343102,12 +342958,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_pm73_25rnd/proxymagazine_pm73_25rnd.jpg",
+    "image": "images/weapons/attachments/magazine/mag_pm73_25rnd/mag_pm73_25rnd.jpg",
     "id": "dzobj_kvq7vop4uo",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.08279115706682205,
+      0.18528181314468384,
+      0.021243201568722725
     ]
   },
   {
@@ -343118,12 +342974,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_cz527/proxymagazine_cz527.jpg",
+    "image": "images/weapons/attachments/magazine/mag_cz527_5rnd/mag_cz527_5rnd.jpg",
     "id": "dzobj_tqlfhab40t",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.06439989432692528,
+      0.06550690531730652,
+      0.014999769628047943
     ]
   },
   {
@@ -343134,12 +342990,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_cz550_10rnd/proxymagazine_cz550_10rnd.jpg",
+    "image": "images/weapons/attachments/magazine/mag_cz550_10rnd/mag_cz550_10rnd.jpg",
     "id": "dzobj_0vfg5tyumo",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.10209059715270996,
+      0.10638600960373878,
+      0.026743682101368904
     ]
   },
   {
@@ -343150,12 +343006,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_cz550_4rnd/proxymagazine_cz550_4rnd.jpg",
+    "image": "images/weapons/attachments/magazine/mag_cz550_4rnd/mag_cz550_4rnd.jpg",
     "id": "dzobj_2u6qdtpq2y",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.10209060087800026,
+      0.05963670928031206,
+      0.029715202748775482
     ]
   },
   {
@@ -343166,12 +343022,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ij70/proxymagazine_ij70.jpg",
+    "image": "images/weapons/attachments/magazine/mag_ij70_8rnd/mag_ij70_8rnd.jpg",
     "id": "dzobj_wcjtm578pb",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.03676729556173086,
+      0.10943653807044029,
+      0.02241797000169754
     ]
   },
   {
@@ -343182,12 +343038,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ak101_30rnd/proxymagazine_ak101_30rnd.jpg",
+    "image": "images/weapons/attachments/magazine/mag_ak101_30rnd/mag_ak101_30rnd.jpg",
     "id": "dzobj_wsvlthq0uh",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.10432902351021767,
+      0.21286239475011826,
+      0.02865958120673895
     ]
   },
   {
@@ -343198,12 +343054,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ak74_30rnd/proxymagazine_ak74_30rnd.jpg",
+    "image": "images/weapons/attachments/magazine/mag_ak74_30rnd/mag_ak74_30rnd.jpg",
     "id": "dzobj_5k5adzpto4",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.10432901978492737,
+      0.21286239475011826,
+      0.02865958120673895
     ]
   },
   {
@@ -343214,12 +343070,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_aug30/proxymagazine_aug30.jpg",
+    "image": "images/weapons/attachments/magazine/mag_aug_30rnd/mag_aug_30rnd.jpg",
     "id": "dzobj_x6mpe8opbl",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.09001125022768974,
+      0.1818210557103157,
+      0.035092974081635475
     ]
   },
   {
@@ -343230,12 +343086,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_svd/proxymagazine_svd.jpg",
+    "image": "images/weapons/attachments/magazine/mag_svd_10rnd/mag_svd_10rnd.jpg",
     "id": "dzobj_j3wunov1hd",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.0992724783718586,
+      0.11990480870008469,
+      0.024283790960907936
     ]
   },
   {
@@ -343246,12 +343102,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_vss/proxymagazine_vss.jpg",
+    "image": "images/weapons/attachments/magazine/mag_vss_10rnd/mag_vss_10rnd.jpg",
     "id": "dzobj_7ranq92drj",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.07373377308249474,
+      0.11328032985329628,
+      0.03325166553258896
     ]
   },
   {
@@ -343262,12 +343118,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_de/proxymagazine_de.jpg",
+    "image": "images/weapons/attachments/magazine/mag_deagle_9rnd/mag_deagle_9rnd.jpg",
     "id": "dzobj_945ya2lsxm",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.06421260349452496,
+      0.12347519770264626,
+      0.021457001566886902
     ]
   },
   {
@@ -343278,12 +343134,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ump45_25rnd/proxymagazine_ump45_25rnd.jpg",
+    "image": "images/weapons/attachments/magazine/mag_ump_25rnd/mag_ump_25rnd.jpg",
     "id": "dzobj_zb97xjmlhz",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.05068029277026653,
+      0.24783017486333847,
+      0.030535131692886353
     ]
   },
   {
@@ -343294,12 +343150,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_glock19/proxymagazine_glock19.jpg",
+    "image": "images/weapons/attachments/magazine/mag_glock_15rnd/mag_glock_15rnd.jpg",
     "id": "dzobj_qq615ssq2e",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.07080959528684616,
+      0.12606921792030334,
+      0.025004602037370205
     ]
   },
   {
@@ -343310,7 +343166,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_fal/proxymagazine_fal.jpg",
+    "image": "images/weapons/attachments/magazine/mag_fal_20rnd/mag_fal_20rnd.jpg",
     "id": "dzobj_yfogowf0fq",
     "dimensionsVisual": [
       2.5,
@@ -343326,12 +343182,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxyshockpistol_cartridge/proxyshockpistol_cartridge.jpg",
+    "image": "images/weapons/attachments/magazine/mag_shockcartridge/mag_shockcartridge.jpg",
     "id": "dzobj_iluqxpapme",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.06524310447275639,
+      0.07248761504888535,
+      0.0134861059486866
     ]
   },
   {
@@ -343342,12 +343198,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, firearm, gun, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxyshotgunshell_slug/proxyshotgunshell_slug.jpg",
+    "image": "images/weapons/projectiles/shotgunshell_slug/shotgunshell_slug.jpg",
     "id": "dzobj_5vf5rthir4",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.022375285625457764,
+      0.022375214844942093,
+      0.06094425916671753
     ]
   },
   {
@@ -343358,7 +343214,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_saiga_mag5/proxymagazine_saiga_mag5.jpg",
+    "image": "images/weapons/attachments/magazine/mag_saiga_5rnd/mag_saiga_5rnd.jpg",
     "id": "dzobj_5ut1i3xc7i",
     "dimensionsVisual": [
       2.5,
@@ -343374,12 +343230,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_saiga_mag8/proxymagazine_saiga_mag8.jpg",
+    "image": "images/weapons/attachments/magazine/mag_saiga_8rnd/mag_saiga_8rnd.jpg",
     "id": "dzobj_03pe1i2fee",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.08600200712680817,
+      0.19638222083449364,
+      0.17431873083114624
     ]
   },
   {
@@ -343390,7 +343246,7 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_saiga_drum/proxymagazine_saiga_drum.jpg",
+    "image": "images/weapons/attachments/magazine/mag_saiga_drum20rnd/mag_saiga_drum20rnd.jpg",
     "id": "dzobj_0iylegxmag",
     "dimensionsVisual": [
       2.5,
@@ -343406,12 +343262,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_m249_ammobox/proxymagazine_m249_ammobox.jpg",
+    "image": "images/weapons/attachments/magazine/mag_m249_box200rnd/mag_m249_box200rnd.jpg",
     "id": "dzobj_vmabynqpoe",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.07081711990758777,
+      0.16023582872003317,
+      0.20789765566587448
     ]
   },
   {
@@ -343422,12 +343278,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_scout/proxymagazine_scout.jpg",
+    "image": "images/weapons/attachments/magazine/mag_scout_5rnd/mag_scout_5rnd.jpg",
     "id": "dzobj_ss016smoxp",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.08535673469305038,
+      0.16531658172607422,
+      0.024634361267089844
     ]
   },
   {
@@ -343438,12 +343294,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_ots14/proxymagazine_ots14.jpg",
+    "image": "images/weapons/attachments/magazine/mag_dartgun_co2/mag_dartgun_co2.jpg",
     "id": "dzobj_q2shb0yp0h",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.025211787782609463,
+      0.092744130641222,
+      0.025550049729645252
     ]
   },
   {
@@ -343454,12 +343310,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_cz61/proxymagazine_cz61.jpg",
+    "image": "images/weapons/attachments/magazine/mag_cz61_20rnd/mag_cz61_20rnd.jpg",
     "id": "dzobj_g63bln4z8t",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.062067458406090736,
+      0.12774617597460747,
+      0.026760505512356758
     ]
   },
   {
@@ -343470,12 +343326,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_famas/proxymagazine_famas.jpg",
+    "image": "images/weapons/attachments/magazine/mag_famas_25rnd/mag_famas_25rnd.jpg",
     "id": "dzobj_ylctz2f4m5",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.06312398612499237,
+      0.17048927396535873,
+      0.02222473081201315
     ]
   },
   {
@@ -343486,12 +343342,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_pp19/proxymagazine_pp19.jpg",
+    "image": "images/weapons/attachments/magazine/mag_pp19_64rnd/mag_pp19_64rnd.jpg",
     "id": "dzobj_85xieuv3ad",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.07025631703436375,
+      0.23604533076286316,
+      0.057621173560619354
     ]
   },
   {
@@ -343502,12 +343358,12 @@
     "path": "dz/weapons/attachments/magazine",
     "usableOnConsole": true,
     "searchTags": "ammo, attachments, clip, magazine, weapon, weapons",
-    "image": "images/weapons/attachments/magazine/proxymagazine_sv98_10rnd/proxymagazine_sv98_10rnd.jpg",
+    "image": "images/weapons/attachments/magazine/mag_sv98_10rnd/mag_sv98_10rnd.jpg",
     "id": "dzobj_qdpdk1tacw",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.10671204701066017,
+      0.10703998059034348,
+      0.02812979929149151
     ]
   },
   {
@@ -344880,12 +344736,12 @@
     "path": "dz/weapons/attachments/muzzle",
     "usableOnConsole": true,
     "searchTags": "attachments, muzzle, weapon, weapons",
-    "image": "images/weapons/attachments/muzzle/proxybayonet_ak/proxybayonet_ak.jpg",
+    "image": "images/weapons/attachments/muzzle/bayonet_ak.p3d.jpg",
     "id": "dzobj_a4qndvqo4k",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.08133775740861893,
+      0.3428720012307167,
+      0.03323853015899658
     ]
   },
   {
@@ -344896,12 +344752,12 @@
     "path": "dz/weapons/attachments/muzzle",
     "usableOnConsole": true,
     "searchTags": "attachments, muzzle, weapon, weapons",
-    "image": "images/weapons/attachments/muzzle/proxybayonet_m9a1/proxybayonet_m9a1.jpg",
+    "image": "images/weapons/attachments/muzzle/bayonet_m9a1.p3d.jpg",
     "id": "dzobj_vkab91m1m9",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.0769120641052723,
+      0.2939552292227745,
+      0.03083204384893179
     ]
   },
   {
@@ -344912,12 +344768,12 @@
     "path": "dz/weapons/attachments/muzzle",
     "usableOnConsole": true,
     "searchTags": "attachments, muzzle, weapon, weapons",
-    "image": "images/weapons/attachments/muzzle/proxybayonet_mosin/proxybayonet_mosin.jpg",
+    "image": "images/weapons/attachments/muzzle/bayonet_mosin.p3d.jpg",
     "id": "dzobj_h43rslszsc",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.02177620120346546,
+      0.4757670145481825,
+      0.038406102918088436
     ]
   },
   {
@@ -344928,12 +344784,12 @@
     "path": "dz/weapons/attachments/muzzle",
     "usableOnConsole": true,
     "searchTags": "attachments, muzzle, weapon, weapons",
-    "image": "images/weapons/attachments/muzzle/proxybayonet_sks/proxybayonet_sks.jpg",
+    "image": "images/weapons/attachments/muzzle/bayonet_sks.p3d.jpg",
     "id": "dzobj_aksykpn5dz",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.046069176867604256,
+      0.36927873454988003,
+      0.01962048001587391
     ]
   },
   {
@@ -344944,12 +344800,12 @@
     "path": "dz/weapons/attachments/muzzle",
     "usableOnConsole": true,
     "searchTags": "attachments, muzzle, weapon, weapons",
-    "image": "images/weapons/attachments/muzzle/proxymosin_compensator/proxymosin_compensator.jpg",
+    "image": "images/weapons/attachments/muzzle/mosin_compensator/mosin_compensator.jpg",
     "id": "dzobj_fn85hda8e6",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.025540710426867008,
+      0.0877540111541748,
+      0.025540701113641262
     ]
   },
   {
@@ -344960,12 +344816,12 @@
     "path": "dz/weapons/attachments/muzzle",
     "usableOnConsole": true,
     "searchTags": "attachments, muzzle, weapon, weapons",
-    "image": "images/weapons/attachments/muzzle/proxymp5k_compensator/proxymp5k_compensator.jpg",
+    "image": "images/weapons/attachments/muzzle/mp5k_compensator.p3d.jpg",
     "id": "dzobj_5zncnq8qiq",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.02107371762394905,
+      0.06270646676421165,
+      0.021111154928803444
     ]
   },
   {
@@ -344976,12 +344832,12 @@
     "path": "dz/weapons/attachments/muzzle",
     "usableOnConsole": true,
     "searchTags": "attachments, muzzle, weapon, weapons",
-    "image": "images/weapons/attachments/muzzle/proxybottle_suppressor/proxybottle_suppressor.jpg",
+    "image": "images/weapons/attachments/muzzle/bottle_suppressor.p3d.jpg",
     "id": "dzobj_4te9vc4h4n",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.1139511987566948,
+      0.2621116191148758,
+      0.11489440873265266
     ]
   },
   {
@@ -344992,12 +344848,12 @@
     "path": "dz/weapons/attachments/muzzle",
     "usableOnConsole": true,
     "searchTags": "attachments, muzzle, weapon, weapons",
-    "image": "images/weapons/attachments/muzzle/proxysuppressor_556/proxysuppressor_556.jpg",
+    "image": "images/weapons/attachments/muzzle/suppressor_556.p3d.jpg",
     "id": "dzobj_xo45unw6d5",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.03990896791219711,
+      0.14894545078277588,
+      0.03803820163011551
     ]
   },
   {
@@ -345008,12 +344864,12 @@
     "path": "dz/weapons/attachments/muzzle",
     "usableOnConsole": true,
     "searchTags": "attachments, muzzle, weapon, weapons",
-    "image": "images/weapons/attachments/muzzle/proxysuppressor_545/proxysuppressor_545.jpg",
+    "image": "images/weapons/attachments/muzzle/suppressor_545.p3d.jpg",
     "id": "dzobj_em5hh6uswn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.047623999416828156,
+      0.22901824116706848,
+      0.04736311919987202
     ]
   },
   {
@@ -345024,12 +344880,12 @@
     "path": "dz/weapons/attachments/muzzle",
     "usableOnConsole": true,
     "searchTags": "attachments, muzzle, weapon, weapons",
-    "image": "images/weapons/attachments/muzzle/proxysuppressor_45acp/proxysuppressor_45acp.jpg",
+    "image": "images/weapons/attachments/muzzle/suppressor_45acp.p3d.jpg",
     "id": "dzobj_4o4xnuwpkn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.03109998255968094,
+      0.18204329162836075,
+      0.03110003098845482
     ]
   },
   {
@@ -345447,22 +345303,6 @@
     ]
   },
   {
-    "objectName": "rings_winchester_pilot",
-    "inGameName": "Handgun Scope",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, handgun, optic, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/rings_winchester_pilot/rings_winchester_pilot.jpg",
-    "id": "dzobj_bfrxywjute",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
     "objectName": "PistolOptic",
     "inGameName": "Handgun Scope",
     "category": "weapons",
@@ -345571,22 +345411,6 @@
     ]
   },
   {
-    "objectName": "hide",
-    "inGameName": "Kobra Sights",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, kobra, optics, sights, weapon, weapons",
-    "image": "images/weapons/attachments/optics/hide/hide.jpg",
-    "id": "dzobj_809z79siab",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
     "objectName": "KobraOptic",
     "inGameName": "Kobra Sights",
     "category": "weapons",
@@ -345635,230 +345459,6 @@
       0.13036810047924519,
       0.3277636766433716,
       0.1216307170689106
-    ]
-  },
-  {
-    "objectName": "ProxyOptic_M4_carryhandle",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/proxyoptic_m4_carryhandle/proxyoptic_m4_carryhandle.jpg",
-    "id": "dzobj_1ifaddvc2p",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "ProxyOptic_BUIS",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/proxyoptic_buis/proxyoptic_buis.jpg",
-    "id": "dzobj_u4n9req6fh",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "ProxyOptic_FNP45_MRDS",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/proxyoptic_fnp45_mrds/proxyoptic_fnp45_mrds.jpg",
-    "id": "dzobj_leq8dcsd2s",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "ProxyOptic_ACOG",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/proxyoptic_acog/proxyoptic_acog.jpg",
-    "id": "dzobj_eqe68qytyu",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "ProxyOptic_T3N_RDS",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/proxyoptic_t3n_rds/proxyoptic_t3n_rds.jpg",
-    "id": "dzobj_13l4uvz1vn",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Proxyoptic_red_point",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, weapon, weapons",
-    "image": "images/weapons/attachments/optics/proxyoptic_red_point/proxyoptic_red_point.jpg",
-    "id": "dzobj_e6upv7f9ce",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "ProxyOptic_PUScope",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/proxyoptic_puscope/proxyoptic_puscope.jpg",
-    "id": "dzobj_6it980f2r2",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "ProxyOptic_LongRange",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/proxyoptic_longrange/proxyoptic_longrange.jpg",
-    "id": "dzobj_s2xjb6a2k4",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "ProxyOptic_PSO1",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/proxyoptic_pso1/proxyoptic_pso1.jpg",
-    "id": "dzobj_s05fr7xfnb",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "ProxyOptic_Hunting",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/proxyoptic_hunting/proxyoptic_hunting.jpg",
-    "id": "dzobj_9u8n8v6o14",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "ProxyOptic_MK4Optic",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/proxyoptic_mk4optic/proxyoptic_mk4optic.jpg",
-    "id": "dzobj_p3zin4h2ys",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "ProxyOptic_Pistol",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, gun, handgun, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/proxyoptic_pistol/proxyoptic_pistol.jpg",
-    "id": "dzobj_c7knqunxxe",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "ProxyOptic_Reflex",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/proxyoptic_reflex/proxyoptic_reflex.jpg",
-    "id": "dzobj_o1l7azolth",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Proxyoptic_1PN51",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, weapon, weapons",
-    "image": "images/weapons/attachments/optics/proxyoptic_1pn51/proxyoptic_1pn51.jpg",
-    "id": "dzobj_g4rpjyy7ua",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
     ]
   },
   {
@@ -347157,12 +346757,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxybuttstock_m4_oe/proxybuttstock_m4_oe.jpg",
+    "image": "images/weapons/attachments/support/buttstock_m4_oe.p3d.jpg",
     "id": "dzobj_ty8tgiiavb",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.13023260980844498,
+      0.17300693690776825,
+      0.044560715556144714
     ]
   },
   {
@@ -347173,12 +346773,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxybuttstock_m4_mp/proxybuttstock_m4_mp.jpg",
+    "image": "images/weapons/attachments/support/buttstock_m4_mp.p3d.jpg",
     "id": "dzobj_rdw8tzadd0",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.12614788487553596,
+      0.16933566331863403,
+      0.038028284907341
     ]
   },
   {
@@ -347189,12 +346789,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxybuttstock_m4_cqb/proxybuttstock_m4_cqb.jpg",
+    "image": "images/weapons/attachments/support/buttstock_m4_cqb.p3d.jpg",
     "id": "dzobj_g57hb1nfcd",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.13711389154195786,
+      0.16757360100746155,
+      0.050661975517868996
     ]
   },
   {
@@ -347205,12 +346805,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxybuttstock_ak_wood/proxybuttstock_ak_wood.jpg",
+    "image": "images/weapons/attachments/support/buttstock_ak_wood.p3d.jpg",
     "id": "dzobj_y7fjrxc213",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.10889680683612823,
+      0.2526790052652359,
+      0.03571540303528309
     ]
   },
   {
@@ -347237,12 +346837,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxybuttstock_ak_plastic/proxybuttstock_ak_plastic.jpg",
+    "image": "images/weapons/attachments/support/buttstock_ak_plastic.p3d.jpg",
     "id": "dzobj_yqbmrc1p5m",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.09485083073377609,
+      0.24897902458906174,
+      0.0405770018696785
     ]
   },
   {
@@ -347253,12 +346853,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxybuttstock_aks/proxybuttstock_aks.jpg",
+    "image": "images/weapons/attachments/support/buttstock_aks.p3d.jpg",
     "id": "dzobj_t2expats94",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.09594060108065605,
+      0.235636368393898,
+      0.037363141775131226
     ]
   },
   {
@@ -347269,12 +346869,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxybuttstock_mp5k_stock/proxybuttstock_mp5k_stock.jpg",
+    "image": "images/weapons/attachments/support/buttstock_mp5k_stock.p3d.jpg",
     "id": "dzobj_vi7e39hxe0",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.13242094218730927,
+      0.2744732052087784,
+      0.04650024324655533
     ]
   },
   {
@@ -347285,12 +346885,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxybuttstock_red9/proxybuttstock_red9.jpg",
+    "image": "images/weapons/attachments/support/buttstock_red9.p3d.jpg",
     "id": "dzobj_nsdwhjqtzs",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.1340608447790146,
+      0.3793752193450928,
+      0.04254794120788574
     ]
   },
   {
@@ -347301,12 +346901,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxybuttstock_fal_oe/proxybuttstock_fal_oe.jpg",
+    "image": "images/weapons/attachments/support/buttstock_fal_oe.p3d.jpg",
     "id": "dzobj_qkjywkij9u",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.13912202417850494,
+      0.2939724624156952,
+      0.03118074219673872
     ]
   },
   {
@@ -347317,12 +346917,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxybuttstock_fal_folding/proxybuttstock_fal_folding.jpg",
+    "image": "images/weapons/attachments/support/buttstock_fal_folding.p3d.jpg",
     "id": "dzobj_i6udt2apx9",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.15350010991096497,
+      0.2722039520740509,
+      0.04453333094716072
     ]
   },
   {
@@ -347333,12 +346933,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxybuttstock_saiga_folding/proxybuttstock_saiga_folding.jpg",
+    "image": "images/weapons/attachments/support/buttstock_saiga_folding.p3d.jpg",
     "id": "dzobj_0tdtqstzq4",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.11839145421981812,
+      0.2838166505098343,
+      0.04332832805812359
     ]
   },
   {
@@ -347349,12 +346949,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxybuttstock_pp19/proxybuttstock_pp19.jpg",
+    "image": "images/weapons/attachments/support/buttstock_pp19.p3d.jpg",
     "id": "dzobj_lwuc87vht9",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.09605654701590538,
+      0.23381049931049347,
+      0.034593602642416954
     ]
   },
   {
@@ -347365,12 +346965,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxyhandguard_m4_plastic/proxyhandguard_m4_plastic.jpg",
+    "image": "images/weapons/attachments/support/handguard_m4_plastic.p3d.jpg",
     "id": "dzobj_e3yg2iypxj",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.06890909001231194,
+      0.17505501210689545,
+      0.06409348919987679
     ]
   },
   {
@@ -347381,12 +346981,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxyhandguard_m4_ris/proxyhandguard_m4_ris.jpg",
+    "image": "images/weapons/attachments/support/handguard_m4_ris.p3d.jpg",
     "id": "dzobj_ubeu3u76kb",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.06265860609710217,
+      0.1703193336725235,
+      0.0622923094779253
     ]
   },
   {
@@ -347397,12 +346997,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxyhandguard_m4_mp/proxyhandguard_m4_mp.jpg",
+    "image": "images/weapons/attachments/support/handguard_m4_mp.p3d.jpg",
     "id": "dzobj_imf4mc9j5c",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.06555033102631569,
+      0.1816132664680481,
+      0.05099201202392578
     ]
   },
   {
@@ -347413,12 +347013,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxyhandguard_ak_wood/proxyhandguard_ak_wood.jpg",
+    "image": "images/weapons/attachments/support/handguard_ak_wood.p3d.jpg",
     "id": "dzobj_5msjra6bls",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.07487431541085243,
+      0.1695060282945633,
+      0.04250200092792511
     ]
   },
   {
@@ -347445,12 +347045,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxyhandguard_ak_plastic/proxyhandguard_ak_plastic.jpg",
+    "image": "images/weapons/attachments/support/handguard_ak_plastic.p3d.jpg",
     "id": "dzobj_lxwj5ksv9p",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.07627749815583229,
+      0.16802503168582916,
+      0.044736504554748535
     ]
   },
   {
@@ -347461,12 +347061,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxyhandguard_mp5k_plastic/proxyhandguard_mp5k_plastic.jpg",
+    "image": "images/weapons/attachments/support/handguard_mp5k_plastic.p3d.jpg",
     "id": "dzobj_7qiv2hk62b",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.08115652203559875,
+      0.11681097745895386,
+      0.036786170676350594
     ]
   },
   {
@@ -347477,12 +347077,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxyhandguard_mp5k_rail/proxyhandguard_mp5k_rail.jpg",
+    "image": "images/weapons/attachments/support/handguard_mp5k_rail.p3d.jpg",
     "id": "dzobj_zvls3cijws",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.08607416227459908,
+      0.13700610399246216,
+      0.04978594183921814
     ]
   },
   {
@@ -347493,12 +347093,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxyhandguard_m249/proxyhandguard_m249.jpg",
+    "image": "images/weapons/attachments/support/handguard_m249.p3d.jpg",
     "id": "dzobj_jbla1cjecf",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.07776486501097679,
+      0.1948489546775818,
+      0.0734776146709919
     ]
   },
   {
@@ -347509,12 +347109,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxyhandguard_m249_ris/proxyhandguard_m249_ris.jpg",
+    "image": "images/weapons/attachments/support/handguard_m249_ris.p3d.jpg",
     "id": "dzobj_oye29n1quo",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.061777472496032715,
+      0.1465625837445259,
+      0.06716902554035187
     ]
   },
   {
@@ -347525,12 +347125,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxybipod_atlas/proxybipod_atlas.jpg",
+    "image": "images/weapons/attachments/support/bipod_atlas.p3d.jpg",
     "id": "dzobj_lcr3hw3qg5",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.044769268948584795,
+      0.18604198284447193,
+      0.07211359962821007
     ]
   },
   {
@@ -347541,12 +347141,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxybipod_m249/proxybipod_m249.jpg",
+    "image": "images/weapons/attachments/support/bipod_m249.p3d.jpg",
     "id": "dzobj_ojwr9ep7yo",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.07602141052484512,
+      0.25450608134269714,
+      0.05335886403918266
     ]
   },
   {
@@ -347557,12 +347157,12 @@
     "path": "dz/weapons/attachments/support",
     "usableOnConsole": true,
     "searchTags": "attachments, support, weapon, weapons",
-    "image": "images/weapons/attachments/support/proxyghillie_wrap/proxyghillie_wrap.jpg",
+    "image": "images/weapons/attachments/support/ghillie_wrap.p3d.jpg",
     "id": "dzobj_4ohd172x5v",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.5454689562320709,
+      0.35267702490091324,
+      0.29009997844696045
     ]
   },
   {
@@ -348692,7 +348292,7 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "ammunition, explosives, m4, rounds, weapon, weapons",
-    "image": "images/weapons/explosives/ammo_grenadem4/ammo_grenadem4.jpg",
+    "image": "images/weapons/explosives/m67grenade/m67grenade.jpg",
     "id": "dzobj_w2cmjgc8in",
     "dimensionsVisual": [
       2.5,
@@ -348975,22 +348575,6 @@
     ]
   },
   {
-    "objectName": "Mine",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/explosives",
-    "usableOnConsole": true,
-    "searchTags": "explosives, industrial, resource, weapon, weapons",
-    "image": "images/weapons/explosives/mine/mine.jpg",
-    "id": "dzobj_wbsrf2l67n",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
     "objectName": "ClaymoreMinePlacing",
     "inGameName": "-",
     "category": "weapons",
@@ -349049,12 +348633,12 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "explosives, weapon, weapons",
-    "image": "images/weapons/explosives/proxyfrag_rgd5/proxyfrag_rgd5.jpg",
+    "image": "images/weapons/explosives/frag_rgd5.p3d.jpg",
     "id": "dzobj_3awxud3mrv",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.05829399824142456,
+      0.11191100254654884,
+      0.06309699825942516
     ]
   },
   {
@@ -349065,12 +348649,12 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "explosives, weapon, weapons",
-    "image": "images/weapons/explosives/proxygrenade/proxygrenade.jpg",
+    "image": "images/weapons/explosives/grenade.p3d.jpg",
     "id": "dzobj_ooh0cmkdt2",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.06975662708282471,
+      0.08994686976075172,
+      0.06233527325093746
     ]
   },
   {
@@ -349081,12 +348665,12 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "explosives, weapon, weapons",
-    "image": "images/weapons/explosives/proxysmokegrenade/proxysmokegrenade.jpg",
+    "image": "images/weapons/explosives/smokegrenade.p3d.jpg",
     "id": "dzobj_judjbvtbks",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.06013363040983677,
+      0.14287488907575607,
+      0.0569955762475729
     ]
   },
   {
@@ -349097,12 +348681,12 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "explosives, weapon, weapons",
-    "image": "images/weapons/explosives/proxysmokegrenade_rdg2/proxysmokegrenade_rdg2.jpg",
+    "image": "images/weapons/explosives/smokegrenade_rdg2.p3d.jpg",
     "id": "dzobj_uedkp4mfpe",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.05394400283694267,
+      0.16706588864326477,
+      0.0462441835552454
     ]
   },
   {
@@ -349113,12 +348697,12 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "explosives, weapon, weapons",
-    "image": "images/weapons/explosives/proxyflashbang/proxyflashbang.jpg",
+    "image": "images/weapons/explosives/flashbang.p3d.jpg",
     "id": "dzobj_hxa3pmg4in",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.07094109803438187,
+      0.15266761183738708,
+      0.06071860529482365
     ]
   },
   {
@@ -350198,7 +349782,7 @@
     "path": "dz/weapons/firearms/aug/proxy",
     "usableOnConsole": true,
     "searchTags": "aug, firearms, weapon, weapons",
-    "image": "images/weapons/firearms/aug/proxy/proxyscope/proxyscope.jpg",
+    "image": "images/weapons/firearms/aug/proxy/scope.p3d.jpg",
     "id": "dzobj_tr6rboav36",
     "dimensionsVisual": [
       2.5,
@@ -350793,12 +350377,12 @@
     "path": "dz/weapons/firearms/ots14",
     "usableOnConsole": true,
     "searchTags": "container, drum, firearms, ots14, weapon, weapons",
-    "image": "images/weapons/firearms/ots14/proxyots14_barrel/proxyots14_barrel.jpg",
+    "image": "images/weapons/firearms/ots14/ots14_barrel.p3d.jpg",
     "id": "dzobj_jk22zp6xji",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.41754357889294624,
+      0.07710747420787811,
+      0.2175422217696905
     ]
   },
   {
@@ -350809,12 +350393,12 @@
     "path": "dz/weapons/firearms/ots14",
     "usableOnConsole": true,
     "searchTags": "container, drum, firearms, ots14, weapon, weapons",
-    "image": "images/weapons/firearms/ots14/proxyots14_barrel_grip/proxyots14_barrel_grip.jpg",
+    "image": "images/weapons/firearms/ots14/ots14_barrel_grip.p3d.jpg",
     "id": "dzobj_ilif4gzyld",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.4147083703428507,
+      0.1423210296779871,
+      0.21727696247398853
     ]
   },
   {
@@ -350825,12 +350409,12 @@
     "path": "dz/weapons/firearms/ots14",
     "usableOnConsole": true,
     "searchTags": "firearms, ots14, weapon, weapons",
-    "image": "images/weapons/firearms/ots14/proxyots14_silencer/proxyots14_silencer.jpg",
+    "image": "images/weapons/firearms/ots14/ots14_silencer.p3d.jpg",
     "id": "dzobj_b9i0pxug73",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.4257652722299099,
+      0.2897229790687561,
+      0.22560369409620762
     ]
   },
   {
@@ -350875,12 +350459,12 @@
     "path": "dz/weapons/firearms/ots14",
     "usableOnConsole": true,
     "searchTags": "firearms, ots14, weapon, weapons",
-    "image": "images/weapons/firearms/ots14/proxyots14_grip/proxyots14_grip.jpg",
+    "image": "images/weapons/firearms/ots14/ots14_grip.p3d.jpg",
     "id": "dzobj_n68wldaotj",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.15930240228772163,
+      0.12656579539179802,
+      0.0327393002808094
     ]
   },
   {
@@ -350891,12 +350475,12 @@
     "path": "dz/weapons/firearms/ots14",
     "usableOnConsole": true,
     "searchTags": "firearms, ots14, weapon, weapons",
-    "image": "images/weapons/firearms/ots14/proxyots14_launcher/proxyots14_launcher.jpg",
+    "image": "images/weapons/firearms/ots14/ots14_launcher.p3d.jpg",
     "id": "dzobj_dyf8rcjdi2",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.3541819117963314,
+      0.5365664064884186,
+      0.23458556830883026
     ]
   },
   {
@@ -351323,7 +350907,7 @@
     "path": "dz/weapons/firearms/ssg82/proxy",
     "usableOnConsole": true,
     "searchTags": "firearms, ssg82, weapon, weapons",
-    "image": "images/weapons/firearms/ssg82/proxy/proxyscope/proxyscope.jpg",
+    "image": "images/weapons/firearms/aug/proxy/scope.p3d.jpg",
     "id": "dzobj_y2fssrroro",
     "dimensionsVisual": [
       2.5,
@@ -352000,12 +351584,12 @@
     "path": "dz/weapons/melee/blade",
     "usableOnConsole": true,
     "searchTags": "blade, melee, weapon, weapons",
-    "image": "images/weapons/melee/blade/proxycombatknife/proxycombatknife.jpg",
+    "image": "images/weapons/melee/blade/combatknife/combatknife.jpg",
     "id": "dzobj_xma8k730xg",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.0503965076059103,
+      0.2887957841157913,
+      0.02710629813373089
     ]
   },
   {
@@ -352882,12 +352466,12 @@
     "path": "dz/weapons/nonlethal/shockpistol",
     "usableOnConsole": true,
     "searchTags": "nonlethal, weapon, weapons",
-    "image": "images/weapons/nonlethal/shockpistol/proxyshockpistol/proxyshockpistol.jpg",
+    "image": "images/weapons/nonlethal/shockpistol/shockpistol/shockpistol.jpg",
     "id": "dzobj_cjjb3uxhh9",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.42828109860420227,
+      0.3836243227124214,
+      0.23010831885039806
     ]
   },
   {
@@ -352946,12 +352530,12 @@
     "path": "dz/weapons/pistols/1911",
     "usableOnConsole": true,
     "searchTags": "pistols, weapon, weapons",
-    "image": "images/weapons/pistols/1911/proxy1911/proxy1911.jpg",
+    "image": "images/weapons/pistols/1911/1911.p3d.jpg",
     "id": "dzobj_ubn3n17fh6",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      2.0000007152557373,
+      2.0925098173320293,
+      1.0178434737026691
     ]
   },
   {
@@ -352994,12 +352578,12 @@
     "path": "dz/weapons/pistols/cz75",
     "usableOnConsole": true,
     "searchTags": "cz75, pistols, weapon, weapons",
-    "image": "images/weapons/pistols/cz75/proxycz75/proxycz75.jpg",
+    "image": "images/weapons/pistols/cz75/cz75/cz75.jpg",
     "id": "dzobj_jfyuh16kh0",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      2.2420372366905212,
+      2.0909430272877216,
+      2.0000909566879272
     ]
   },
   {
@@ -353042,12 +352626,12 @@
     "path": "dz/weapons/pistols/de",
     "usableOnConsole": true,
     "searchTags": "pistols, weapon, weapons",
-    "image": "images/weapons/pistols/de/proxyde/proxyde.jpg",
+    "image": "images/weapons/pistols/de/de.p3d.jpg",
     "id": "dzobj_jidgx1vyfg",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      2.180117607116699,
+      0.16281002387404442,
+      1.0501652918756008
     ]
   },
   {
@@ -353122,12 +352706,12 @@
     "path": "dz/weapons/pistols/fnx45",
     "usableOnConsole": true,
     "searchTags": "fnx45, pistols, weapon, weapons",
-    "image": "images/weapons/pistols/fnx45/proxyfnp45/proxyfnp45.jpg",
+    "image": "images/weapons/pistols/fnx45/fnp45.p3d.jpg",
     "id": "dzobj_qt0d76jxsz",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      2.0000007450580597,
+      2.0635554678738117,
+      1.1999769061803818
     ]
   },
   {
@@ -353170,12 +352754,12 @@
     "path": "dz/weapons/pistols/longhorn",
     "usableOnConsole": true,
     "searchTags": "longhorn, pistols, weapon, weapons",
-    "image": "images/weapons/pistols/longhorn/proxylonghorn/proxylonghorn.jpg",
+    "image": "images/weapons/pistols/longhorn/longhorn/longhorn.jpg",
     "id": "dzobj_zmb869tdl8",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      2.0,
+      0.14388620108366013,
+      1.0183190666139126
     ]
   },
   {
@@ -353202,12 +352786,12 @@
     "path": "dz/weapons/pistols/red9",
     "usableOnConsole": true,
     "searchTags": "pistols, red9, weapon, weapons",
-    "image": "images/weapons/pistols/red9/proxyred9/proxyred9.jpg",
+    "image": "images/weapons/pistols/red9/red9.p3d.jpg",
     "id": "dzobj_r1hx0xz7ay",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.8586893379688263,
+      0.25820333510637283,
+      0.4004807472229004
     ]
   },
   {
@@ -353314,12 +352898,12 @@
     "path": "dz/weapons/pistols/flaregun",
     "usableOnConsole": true,
     "searchTags": "pistols, weapon, weapons",
-    "image": "images/weapons/pistols/flaregun/proxyflaregun/proxyflaregun.jpg",
+    "image": "images/weapons/pistols/flaregun/flaregun/flaregun.jpg",
     "id": "dzobj_9swb7d6ylm",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.18256115913391113,
+      2.101002797484398,
+      1.0129174897447228
     ]
   },
   {
@@ -353352,22 +352936,6 @@
       0.6276293694972992,
       2.0613387897610664,
       1.200390949845314
-    ]
-  },
-  {
-    "objectName": "ProxyGlock",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/pistols/glock",
-    "usableOnConsole": true,
-    "searchTags": "pistols, weapon, weapons",
-    "image": "images/weapons/pistols/glock/proxyglock/proxyglock.jpg",
-    "id": "dzobj_igvlsizc3k",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
     ]
   },
   {
@@ -353468,22 +353036,6 @@
     ]
   },
   {
-    "objectName": "bullet_nose_6",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/pistols/magnum/proxy",
-    "usableOnConsole": true,
-    "searchTags": "magnum, pistols, weapon, weapons",
-    "image": "images/weapons/pistols/magnum/proxy/bullet_nose_6/bullet_nose_6.jpg",
-    "id": "dzobj_h1u869ya81",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
     "objectName": "Magnum_Ejector",
     "inGameName": "-",
     "category": "weapons",
@@ -353501,22 +353053,6 @@
     ]
   },
   {
-    "objectName": "Rotate_Ejector",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/pistols/magnum/proxy",
-    "usableOnConsole": true,
-    "searchTags": "magnum, pistols, weapon, weapons",
-    "image": "images/weapons/pistols/magnum/proxy/rotate_ejector/rotate_ejector.jpg",
-    "id": "dzobj_i2m5lwzsge",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
     "objectName": "Proxymagnum_cylinder",
     "inGameName": "-",
     "category": "weapons",
@@ -353524,12 +353060,12 @@
     "path": "dz/weapons/pistols/magnum/proxy",
     "usableOnConsole": true,
     "searchTags": "magnum, pistols, weapon, weapons",
-    "image": "images/weapons/pistols/magnum/proxy/proxymagnum_cylinder/proxymagnum_cylinder.jpg",
+    "image": "images/weapons/pistols/magnum/proxy/magnum_cylinder/magnum_cylinder.jpg",
     "id": "dzobj_2u028frm07",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.0408420292660594,
+      0.0407475009560585,
+      0.04057987779378891
     ]
   },
   {
@@ -353540,12 +353076,12 @@
     "path": "dz/weapons/pistols/magnum/proxy",
     "usableOnConsole": true,
     "searchTags": "magnum, pistols, weapon, weapons",
-    "image": "images/weapons/pistols/magnum/proxy/proxymagnum_ejector/proxymagnum_ejector.jpg",
+    "image": "images/weapons/pistols/magnum/proxy/magnum_ejector/magnum_ejector.jpg",
     "id": "dzobj_4mgfb0snnn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.09422602504491806,
+      0.02012600749731064,
+      0.02231437712907791
     ]
   },
   {
@@ -353642,12 +353178,12 @@
     "path": "dz/weapons/pistols/p1",
     "usableOnConsole": true,
     "searchTags": "p1, pistols, weapon, weapons",
-    "image": "images/weapons/pistols/p1/proxyp1/proxyp1.jpg",
+    "image": "images/weapons/pistols/p1/p1/p1.jpg",
     "id": "dzobj_z8f10rrd14",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.3335312344133854,
+      0.3940461501479149,
+      0.3006608337163925
     ]
   },
   {
@@ -353690,12 +353226,12 @@
     "path": "dz/weapons/pistols/pb6p9",
     "usableOnConsole": true,
     "searchTags": "pb6p9, pistols, weapon, weapons",
-    "image": "images/weapons/pistols/pb6p9/proxypb6p9/proxypb6p9.jpg",
+    "image": "images/weapons/pistols/pb6p9/pb6p9.p3d.jpg",
     "id": "dzobj_yri9gkb53p",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      2.000000908970833,
+      2.1086369939148426,
+      1.0165133979171515
     ]
   },
   {
@@ -353738,12 +353274,12 @@
     "path": "dz/weapons/pistols/pmm",
     "usableOnConsole": true,
     "searchTags": "pistols, pmm, weapon, weapons",
-    "image": "images/weapons/pistols/pmm/proxyij70/proxyij70.jpg",
+    "image": "images/weapons/pistols/pmm/ij70.p3d.jpg",
     "id": "dzobj_at0bzxx2qe",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      2.000000774860382,
+      0.46510015428066254,
+      1.0131442872807384
     ]
   },
   {
@@ -353827,182 +353363,6 @@
     ]
   },
   {
-    "objectName": "Bullet_12GaugeRubberSlug",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/bullet_12gaugerubberslug/bullet_12gaugerubberslug.jpg",
-    "id": "dzobj_67nlnucya3",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_12GaugeBeanbag",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/bullet_12gaugebeanbag/bullet_12gaugebeanbag.jpg",
-    "id": "dzobj_n4ioydyvt5",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_556x45Tracer",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "projectiles, weapon, weapons, m4, nato",
-    "image": "images/weapons/projectiles/bullet_556x45tracer/bullet_556x45tracer.jpg",
-    "id": "dzobj_cwnqhjh41n",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_545x39Tracer",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "projectiles, weapon, weapons, AK",
-    "image": "images/weapons/projectiles/bullet_545x39tracer/bullet_545x39tracer.jpg",
-    "id": "dzobj_ewwullcjm8",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_762x54Tracer",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "projectiles, weapon, weapons, mosin, rounds",
-    "image": "images/weapons/projectiles/bullet_762x54tracer/bullet_762x54tracer.jpg",
-    "id": "dzobj_jspo1yhkam",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_308WinTracer",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/bullet_308wintracer/bullet_308wintracer.jpg",
-    "id": "dzobj_k5dwmbbu6t",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_762x39Tracer",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "projectiles, weapon, weapons, sks, akm",
-    "image": "images/weapons/projectiles/bullet_762x39tracer/bullet_762x39tracer.jpg",
-    "id": "dzobj_nhktq34r1g",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_HuntingBolt",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/bullet_huntingbolt/bullet_huntingbolt.jpg",
-    "id": "dzobj_68fa812oj8",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_ImprovisedBolt_1",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/bullet_improvisedbolt_1/bullet_improvisedbolt_1.jpg",
-    "id": "dzobj_dvjwakcc0t",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_ImprovisedBolt_2",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/bullet_improvisedbolt_2/bullet_improvisedbolt_2.jpg",
-    "id": "dzobj_6qnqgd1c7b",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_CupidsBolt",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/bullet_cupidsbolt/bullet_cupidsbolt.jpg",
-    "id": "dzobj_h0vy6g7nkz",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
     "objectName": "Dart_Syringe",
     "inGameName": "-",
     "category": "weapons",
@@ -354016,118 +353376,6 @@
       0.014579140581190586,
       0.014792420901358128,
       0.12122100591659546
-    ]
-  },
-  {
-    "objectName": "Bullet_Flare",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/bullet_flare/bullet_flare.jpg",
-    "id": "dzobj_5u3wuiq9zl",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_40mm_Base",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/bullet_40mm_base/bullet_40mm_base.jpg",
-    "id": "dzobj_hfb2jiuj9j",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_40mm_ChemGas",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "fuel, projectiles, station, weapon, weapons",
-    "image": "images/weapons/projectiles/bullet_40mm_chemgas/bullet_40mm_chemgas.jpg",
-    "id": "dzobj_e9k1usw7j6",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_40mm_Smoke_Red",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "effect, particle, projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/bullet_40mm_smoke_red/bullet_40mm_smoke_red.jpg",
-    "id": "dzobj_okkuemcsdf",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_40mm_Smoke_Green",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "effect, particle, projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/bullet_40mm_smoke_green/bullet_40mm_smoke_green.jpg",
-    "id": "dzobj_ee78hmjh9j",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_40mm_Smoke_White",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "effect, particle, projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/bullet_40mm_smoke_white/bullet_40mm_smoke_white.jpg",
-    "id": "dzobj_f1x4ocysto",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
-    ]
-  },
-  {
-    "objectName": "Bullet_40mm_Smoke_Black",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/projectiles",
-    "usableOnConsole": true,
-    "searchTags": "effect, particle, projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/bullet_40mm_smoke_black/bullet_40mm_smoke_black.jpg",
-    "id": "dzobj_4kh5b6immy",
-    "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
     ]
   },
   {
@@ -354906,12 +354154,12 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": true,
     "searchTags": "firearm, gun, projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/proxyshotgunshell_pellets/proxyshotgunshell_pellets.jpg",
+    "image": "images/weapons/projectiles/shotgunshell_pellets/shotgunshell_pellets.jpg",
     "id": "dzobj_ch3prdxyj4",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.022084588184952736,
+      0.022084567695856094,
+      0.06094425916671753
     ]
   },
   {
@@ -354922,12 +354170,12 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": true,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/weapons/projectiles/proxy357_singleround/proxy357_singleround.jpg",
+    "image": "images/weapons/projectiles/357_singleround/357_singleround.jpg",
     "id": "dzobj_hwgr59utct",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.04013523009371056,
+      0.010719862766563892,
+      0.010324323549866676
     ]
   },
   {
@@ -354938,7 +354186,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/22_singleround/22_singleround.jpg",
     "id": "dzobj_kygctjde68",
     "linked-config": [
       "dzobj_mnuvu1ldna"
@@ -354957,7 +354205,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/308win_singleround/308win_singleround.jpg",
     "id": "dzobj_l687qlw6rr",
     "linked-config": [
       "dzobj_3vtugbtmo9"
@@ -354976,7 +354224,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/357_singleround/357_singleround.jpg",
     "id": "dzobj_w0fxczdlk5",
     "linked-config": [
       "dzobj_29ph8wgseh"
@@ -355011,7 +354259,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/40mm_grenade_chemgas_singleround/40mm_grenade_chemgas_singleround.jpg",
     "id": "dzobj_app97fedce",
     "linked-config": [
       "dzobj_r9x389e3h3"
@@ -355030,7 +354278,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/40mm_grenade_shell/40mm_grenade_shell.jpg",
     "id": "dzobj_ki2kdl25i5",
     "linked-config": [
       "dzobj_n8aeshr7k1"
@@ -355049,7 +354297,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/40mm_grenade_singleround/40mm_grenade_singleround.jpg",
     "id": "dzobj_w01kctbg8m",
     "linked-config": [
       "dzobj_ra3m2fgx02"
@@ -355068,7 +354316,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "effect, particle, projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/40mm_grenade_smoke_b_singleround/40mm_grenade_smoke_b_singleround.jpg",
     "id": "dzobj_b7f5y3e0nr",
     "linked-config": [
       "dzobj_hubqr9tsru"
@@ -355087,7 +354335,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "effect, particle, projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/40mm_grenade_smoke_g_singleround/40mm_grenade_smoke_g_singleround.jpg",
     "id": "dzobj_m7wlurdgyb",
     "linked-config": [
       "dzobj_17poumqgej"
@@ -355106,7 +354354,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "effect, particle, projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/40mm_grenade_smoke_r_singleround/40mm_grenade_smoke_r_singleround.jpg",
     "id": "dzobj_8ffr2gnrwh",
     "linked-config": [
       "dzobj_0qwdv0wcq8"
@@ -355141,7 +354389,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "effect, particle, projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/40mm_grenade_smoke_w_singleround/40mm_grenade_smoke_w_singleround.jpg",
     "id": "dzobj_j40wlddysq",
     "linked-config": [
       "dzobj_i2y5er91mn"
@@ -355160,7 +354408,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/45acp_singleround/45acp_singleround.jpg",
     "id": "dzobj_yxcdp4bdfi",
     "linked-config": [
       "dzobj_ysglcx3yyv"
@@ -355195,7 +354443,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/556_singleround/556_singleround.jpg",
     "id": "dzobj_z9xdi1wd77",
     "linked-config": [
       "dzobj_7ljv1qr71z",
@@ -355215,7 +354463,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/762x39_singleround/762x39_singleround.jpg",
     "id": "dzobj_qlsz2vwjwd",
     "linked-config": [
       "dzobj_q3dwlrs92z"
@@ -355234,7 +354482,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/762_singleround/762_singleround.jpg",
     "id": "dzobj_cyueos4hka",
     "linked-config": [
       "dzobj_hc0nxtf5xp"
@@ -355508,7 +354756,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/flare_singleround/flare_singleround.jpg",
     "id": "dzobj_3khpilazn5",
     "linked-config": [
       "dzobj_4elqri68a5",
@@ -355528,7 +354776,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/flare_singleround_blue/flare_singleround_blue.jpg",
     "id": "dzobj_xi6v0td8wt",
     "linked-config": [
       "dzobj_yw72naji7m",
@@ -355548,7 +354796,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/flare_singleround_green/flare_singleround_green.jpg",
     "id": "dzobj_29um8rrh0a",
     "linked-config": [
       "dzobj_2az0t9n7vl",
@@ -355568,7 +354816,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/flare_singleround_red/flare_singleround_red.jpg",
     "id": "dzobj_zyfegrb7cv",
     "linked-config": [
       "dzobj_3ysvkfg6mg",
@@ -355604,7 +354852,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/nabojnice_22/nabojnice_22.jpg",
     "id": "dzobj_bshrqaof7v",
     "linked-config": [
       "dzobj_cb0klfiv98"
@@ -355623,7 +354871,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/nabojnice_357/nabojnice_357.jpg",
     "id": "dzobj_hequw6g4eu",
     "linked-config": [
       "dzobj_93f8ghq9k3"
@@ -355642,7 +354890,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/nabojnice_556/nabojnice_556.jpg",
     "id": "dzobj_j38fqcpwfr",
     "linked-config": [
       "dzobj_u8vq3vdr64"
@@ -355661,7 +354909,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/nabojnice_762/nabojnice_762.jpg",
     "id": "dzobj_z9mnfns1lt",
     "linked-config": [
       "dzobj_gkyo5iljai"
@@ -355680,7 +354928,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/nabojnice_762x39/nabojnice_762x39.jpg",
     "id": "dzobj_1wx0dwm50z",
     "linked-config": [
       "dzobj_4v7fbf68t2"
@@ -355699,7 +354947,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/nabojnice_small/nabojnice_small.jpg",
     "id": "dzobj_zjul4czi3u",
     "linked-config": [
       "dzobj_py7r4imnss"
@@ -355718,7 +354966,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/shotgunshell_beanbag/shotgunshell_beanbag.jpg",
     "id": "dzobj_hzhl0cts8z",
     "linked-config": [
       "dzobj_p8h7ex5q4l",
@@ -355738,7 +354986,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/shotgunshell_pellets/shotgunshell_pellets.jpg",
     "id": "dzobj_thszogzvj9",
     "linked-config": [
       "dzobj_gzs2rx0q00",
@@ -355758,7 +355006,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/shotgunshell_rubber/shotgunshell_rubber.jpg",
     "id": "dzobj_en5zka4uka",
     "linked-config": [
       "dzobj_mquikoyanh",
@@ -355778,7 +355026,7 @@
     "path": "dz/weapons/projectiles",
     "usableOnConsole": false,
     "searchTags": "projectiles, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/projectiles/shotgunshell_slug/shotgunshell_slug.jpg",
     "id": "dzobj_kpa9c1ugm8",
     "linked-config": [
       "dzobj_70jxnl6c9d",
