@@ -132,17 +132,6 @@
     "id": "dzobj_9mdqygm6i4"
   },
   {
-    "objectName": "rings_winchester_pilot",
-    "inGameName": "Handgun Scope",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, handgun, optic, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/rings_winchester_pilot/rings_winchester_pilot.jpg",
-    "id": "dzobj_bfrxywjute"
-  },
-  {
     "objectName": "PistolOptic",
     "inGameName": "Handgun Scope",
     "category": "weapons",
@@ -209,17 +198,6 @@
     "id": "dzobj_wf9jj1b6v6"
   },
   {
-    "objectName": "hide",
-    "inGameName": "Kobra Sights",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, kobra, optics, sights, weapon, weapons",
-    "image": "images/weapons/attachments/optics/hide/hide.jpg",
-    "id": "dzobj_809z79siab"
-  },
-  {
     "objectName": "KobraOptic",
     "inGameName": "Kobra Sights",
     "category": "weapons",
@@ -251,160 +229,6 @@
     "searchTags": "m4, pioneer, sg5, usg, lar, sval, dmr, vs-89",
     "image": "images/weapons/attachments/optics/StarlightOptic/StarlightOptic.jpg",
     "id": "dzobj_f6x6cjslpk"
-  },
-  {
-    "objectName": "ProxyOptic_M4_carryhandle",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/ProxyOptic_M4_carryhandle/ProxyOptic_M4_carryhandle.jpg",
-    "id": "dzobj_1ifaddvc2p"
-  },
-  {
-    "objectName": "ProxyOptic_BUIS",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/ProxyOptic_BUIS/ProxyOptic_BUIS.jpg",
-    "id": "dzobj_u4n9req6fh"
-  },
-  {
-    "objectName": "ProxyOptic_FNP45_MRDS",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/ProxyOptic_FNP45_MRDS/ProxyOptic_FNP45_MRDS.jpg",
-    "id": "dzobj_leq8dcsd2s"
-  },
-  {
-    "objectName": "ProxyOptic_ACOG",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/ProxyOptic_ACOG/ProxyOptic_ACOG.jpg",
-    "id": "dzobj_eqe68qytyu"
-  },
-  {
-    "objectName": "ProxyOptic_T3N_RDS",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/ProxyOptic_T3N_RDS/ProxyOptic_T3N_RDS.jpg",
-    "id": "dzobj_13l4uvz1vn"
-  },
-  {
-    "objectName": "Proxyoptic_red_point",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, weapon, weapons",
-    "image": "images/weapons/attachments/optics/Proxyoptic_red_point/Proxyoptic_red_point.jpg",
-    "id": "dzobj_e6upv7f9ce"
-  },
-  {
-    "objectName": "ProxyOptic_PUScope",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/ProxyOptic_PUScope/ProxyOptic_PUScope.jpg",
-    "id": "dzobj_6it980f2r2"
-  },
-  {
-    "objectName": "ProxyOptic_LongRange",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/ProxyOptic_LongRange/ProxyOptic_LongRange.jpg",
-    "id": "dzobj_s2xjb6a2k4"
-  },
-  {
-    "objectName": "ProxyOptic_PSO1",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/ProxyOptic_PSO1/ProxyOptic_PSO1.jpg",
-    "id": "dzobj_s05fr7xfnb"
-  },
-  {
-    "objectName": "ProxyOptic_Hunting",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/ProxyOptic_Hunting/ProxyOptic_Hunting.jpg",
-    "id": "dzobj_9u8n8v6o14"
-  },
-  {
-    "objectName": "ProxyOptic_MK4Optic",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/ProxyOptic_MK4Optic/ProxyOptic_MK4Optic.jpg",
-    "id": "dzobj_p3zin4h2ys"
-  },
-  {
-    "objectName": "ProxyOptic_Pistol",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, gun, handgun, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/ProxyOptic_Pistol/ProxyOptic_Pistol.jpg",
-    "id": "dzobj_c7knqunxxe"
-  },
-  {
-    "objectName": "ProxyOptic_Reflex",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, scope, sight, weapon, weapons",
-    "image": "images/weapons/attachments/optics/ProxyOptic_Reflex/ProxyOptic_Reflex.jpg",
-    "id": "dzobj_o1l7azolth"
-  },
-  {
-    "objectName": "Proxyoptic_1PN51",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/attachments/optics",
-    "usableOnConsole": true,
-    "searchTags": "attachments, optics, weapon, weapons",
-    "image": "images/weapons/attachments/optics/Proxyoptic_1PN51/Proxyoptic_1PN51.jpg",
-    "id": "dzobj_g4rpjyy7ua"
   },
   {
     "objectName": "1pn51_cover_opticview.p3d",

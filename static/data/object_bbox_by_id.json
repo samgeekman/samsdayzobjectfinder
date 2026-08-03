@@ -58603,6 +58603,32 @@
     ],
     "bboxStatus": "model_bbox_index"
   },
+  "dzobj_bu3o9uf52l": {
+    "bboxMinVisual": [
+      -1.30512273311615,
+      -0.06699899584054947,
+      -1.7714344263076782
+    ],
+    "bboxMaxVisual": [
+      3.5272891521453857,
+      1.1814390420913696,
+      2.5915567874908447
+    ],
+    "bboxStatus": "model_bbox_index"
+  },
+  "dzobj_phocrqqpp7": {
+    "bboxMinVisual": [
+      -2.1447410583496094,
+      -0.04730818048119545,
+      -2.814385414123535
+    ],
+    "bboxMaxVisual": [
+      2.4888765811920166,
+      0.8327646851539612,
+      2.1304166316986084
+    ],
+    "bboxStatus": "model_bbox_index"
+  },
   "dzobj_dcdqfy9aeu": {
     "bboxMinVisual": [
       -20.0,
@@ -130919,6 +130945,32 @@
       0.7879999876022339,
       1.9518895149230957,
       0.7004538774490356
+    ],
+    "bboxStatus": "linked_from_model_bbox_raw_p3d"
+  },
+  "dzobj_6c8naccifn": {
+    "bboxMinVisual": [
+      -1.30512273311615,
+      -0.06699899584054947,
+      -1.7714344263076782
+    ],
+    "bboxMaxVisual": [
+      3.5272891521453857,
+      1.1814390420913696,
+      2.5915567874908447
+    ],
+    "bboxStatus": "linked_from_model_bbox_raw_p3d"
+  },
+  "dzobj_vi1oc8g0n7": {
+    "bboxMinVisual": [
+      -2.1447410583496094,
+      -0.04730818048119545,
+      -2.814385414123535
+    ],
+    "bboxMaxVisual": [
+      2.4888765811920166,
+      0.8327646851539612,
+      2.1304166316986084
     ],
     "bboxStatus": "linked_from_model_bbox_raw_p3d"
   },

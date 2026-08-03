@@ -7,7 +7,7 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "ammunition, explosives, m4, rounds, weapon, weapons",
-    "image": "images/weapons/explosives/Ammo_GrenadeM4/Ammo_GrenadeM4.jpg",
+    "image": "images/weapons/explosives/M67Grenade/M67Grenade.jpg",
     "id": "dzobj_w2cmjgc8in"
   },
   {
@@ -165,17 +165,6 @@
     "id": "dzobj_e9izx99th3"
   },
   {
-    "objectName": "Mine",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/explosives",
-    "usableOnConsole": true,
-    "searchTags": "explosives, industrial, resource, weapon, weapons",
-    "image": "images/weapons/explosives/Mine/Mine.jpg",
-    "id": "dzobj_wbsrf2l67n"
-  },
-  {
     "objectName": "ClaymoreMinePlacing",
     "inGameName": "-",
     "category": "weapons",
@@ -216,7 +205,7 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "explosives, weapon, weapons",
-    "image": "images/weapons/explosives/Proxyfrag_RGD5/Proxyfrag_RGD5.jpg",
+    "image": "images/weapons/explosives/frag_rgd5.p3d.jpg",
     "id": "dzobj_3awxud3mrv"
   },
   {
@@ -227,7 +216,7 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "explosives, weapon, weapons",
-    "image": "images/weapons/explosives/Proxygrenade/Proxygrenade.jpg",
+    "image": "images/weapons/explosives/grenade.p3d.jpg",
     "id": "dzobj_ooh0cmkdt2"
   },
   {
@@ -238,7 +227,7 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "explosives, weapon, weapons",
-    "image": "images/weapons/explosives/Proxysmokegrenade/Proxysmokegrenade.jpg",
+    "image": "images/weapons/explosives/smokegrenade.p3d.jpg",
     "id": "dzobj_judjbvtbks"
   },
   {
@@ -249,7 +238,7 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "explosives, weapon, weapons",
-    "image": "images/weapons/explosives/Proxysmokegrenade_rdg2/Proxysmokegrenade_rdg2.jpg",
+    "image": "images/weapons/explosives/smokegrenade_rdg2.p3d.jpg",
     "id": "dzobj_uedkp4mfpe"
   },
   {
@@ -260,7 +249,7 @@
     "path": "dz/weapons/explosives",
     "usableOnConsole": true,
     "searchTags": "explosives, weapon, weapons",
-    "image": "images/weapons/explosives/Proxyflashbang/Proxyflashbang.jpg",
+    "image": "images/weapons/explosives/flashbang.p3d.jpg",
     "id": "dzobj_hxa3pmg4in"
   },
   {

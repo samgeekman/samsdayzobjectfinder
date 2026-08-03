@@ -594,17 +594,6 @@
     "id": "dzobj_pgfi2gh59p"
   },
   {
-    "objectName": "GrenadeM4",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/ammunition",
-    "usableOnConsole": true,
-    "searchTags": "ammunition, weapon, weapons",
-    "image": "images/weapons/ammunition/GrenadeM4/GrenadeM4.jpg",
-    "id": "dzobj_vkhfzyx8eg"
-  },
-  {
     "objectName": "Rocket_RPG7_Base",
     "inGameName": "-",
     "category": "weapons",
@@ -636,28 +625,6 @@
     "searchTags": "ammunition, weapon, weapons",
     "image": "images/weapons/ammunition/Rocket_RPG7_AP/Rocket_RPG7_AP.jpg",
     "id": "dzobj_vczkpykpcp"
-  },
-  {
-    "objectName": "Rocket_LAW_Base",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/ammunition",
-    "usableOnConsole": true,
-    "searchTags": "ammunition, weapon, weapons",
-    "image": "images/weapons/ammunition/Rocket_LAW_Base/Rocket_LAW_Base.jpg",
-    "id": "dzobj_48u3gylteh"
-  },
-  {
-    "objectName": "Rocket_LAW_HE",
-    "inGameName": "-",
-    "category": "weapons",
-    "modelType": "Config",
-    "path": "dz/weapons/ammunition",
-    "usableOnConsole": true,
-    "searchTags": "ammunition, weapon, weapons",
-    "image": "images/weapons/ammunition/Rocket_LAW_HE/Rocket_LAW_HE.jpg",
-    "id": "dzobj_3b2yrgzdhu"
   },
   {
     "objectName": "00buck_10roundbox.p3d",
@@ -1074,7 +1041,7 @@
     "path": "dz/weapons/ammunition",
     "usableOnConsole": false,
     "searchTags": "ammunition, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/ammunition/flare_singleround_blue/flare_singleround_blue.jpg",
     "id": "dzobj_q9wuaaao21"
   },
   {
@@ -1085,7 +1052,7 @@
     "path": "dz/weapons/ammunition",
     "usableOnConsole": false,
     "searchTags": "ammunition, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/ammunition/flare_singleround_green/flare_singleround_green.jpg",
     "id": "dzobj_kegq1qfbn7"
   },
   {
@@ -1096,7 +1063,7 @@
     "path": "dz/weapons/ammunition",
     "usableOnConsole": false,
     "searchTags": "ammunition, weapon, weapons",
-    "image": "images/placeholder.jpeg",
+    "image": "images/weapons/ammunition/flare_singleround_red/flare_singleround_red.jpg",
     "id": "dzobj_6m9lil322j"
   },
   {

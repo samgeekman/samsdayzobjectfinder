@@ -121,17 +121,6 @@
     "id": "dzobj_71gkgjzquq"
   },
   {
-    "objectName": "ProxyPart",
-    "inGameName": "-",
-    "category": "vehicles",
-    "modelType": "Config",
-    "path": "dz/vehicles/parts",
-    "usableOnConsole": true,
-    "searchTags": "parts, transport, vehicle, vehicles",
-    "image": "images/placeholder.jpeg",
-    "id": "dzobj_6fsfv94wax"
-  },
-  {
     "objectName": "ProxyBattery_truck",
     "inGameName": "-",
     "category": "vehicles",
@@ -139,7 +128,7 @@
     "path": "dz/vehicles/parts",
     "usableOnConsole": true,
     "searchTags": "energy, parts, power, transport, vehicle, vehicles",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/parts/battery_truck/battery_truck.jpg",
     "id": "dzobj_lyboo36gbm"
   },
   {
@@ -150,7 +139,7 @@
     "path": "dz/vehicles/parts",
     "usableOnConsole": true,
     "searchTags": "energy, parts, power, transport, vehicle, vehicles",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/parts/battery_car/battery_car.jpg",
     "id": "dzobj_81o8lorj4i"
   },
   {
@@ -161,7 +150,7 @@
     "path": "dz/vehicles/parts",
     "usableOnConsole": true,
     "searchTags": "parts, transport, vehicle, vehicles",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/parts/sparkplug/sparkplug.jpg",
     "id": "dzobj_yv8y15vfxy"
   },
   {
@@ -172,7 +161,7 @@
     "path": "dz/vehicles/parts",
     "usableOnConsole": true,
     "searchTags": "parts, transport, vehicle, vehicles",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/parts/glowplug/glowplug.jpg",
     "id": "dzobj_88i89msvj2"
   },
   {
@@ -183,7 +172,7 @@
     "path": "dz/vehicles/parts",
     "usableOnConsole": true,
     "searchTags": "parts, transport, vehicle, vehicles",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/parts/replacement_headlight/replacement_headlight.jpg",
     "id": "dzobj_yueybvwqs2"
   },
   {
@@ -194,7 +183,7 @@
     "path": "dz/vehicles/parts",
     "usableOnConsole": true,
     "searchTags": "parts, transport, vehicle, vehicles",
-    "image": "images/placeholder.jpeg",
+    "image": "images/vehicles/parts/radiator_car/radiator_car.jpg",
     "id": "dzobj_hr4b0nf4m7"
   },
   {
