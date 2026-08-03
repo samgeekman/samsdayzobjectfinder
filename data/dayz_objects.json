@@ -180871,7 +180871,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/gear/containers/55galdrum.p3d.jpg",
+    "image": "images/gear/containers/barrel_blue/barrel_blue.jpg",
     "id": "dzobj_7dsprn6z5x",
     "linked-config": [
       "dzobj_ehuva1gll9",
@@ -180915,7 +180915,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/gear/containers/christmasbox2.p3d.jpg",
+    "image": "images/gear/containers/giftbox_medium_1/giftbox_medium_1.jpg",
     "id": "dzobj_k800b9l9a0",
     "linked-config": [
       "dzobj_00ajewwp34",
@@ -180938,7 +180938,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/gear/containers/christmasbox3.p3d.jpg",
+    "image": "images/gear/containers/giftbox_large_1/giftbox_large_1.jpg",
     "id": "dzobj_jlb7y8b7hk",
     "linked-config": [
       "dzobj_dij7y0gt8b",
@@ -181038,7 +181038,7 @@
     "path": "dz/gear/containers",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/gear/containers/teddybear.p3d.jpg",
+    "image": "images/gear/containers/bear_beige/bear_beige.jpg",
     "id": "dzobj_w31iodm72n",
     "linked-config": [
       "dzobj_1mmwtun450",
@@ -182056,7 +182056,7 @@
     "path": "dz/gear/cooking",
     "usableOnConsole": false,
     "searchTags": "cooking, fireplace, gear",
-    "image": "images/gear/cooking/ovenindoor/ovenindoor.jpg",
+    "image": "images/gear/cooking/fireplaceindoor/fireplaceindoor.jpg",
     "id": "dzobj_ufsnywcl2l",
     "dimensionsVisual": [
       1.1730911284685135,
@@ -184458,9 +184458,9 @@
     "image": "images/gear/food/tunacan_opened/tunacan_opened.jpg",
     "id": "dzobj_sxxdq4mtmd",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.08240080624818802,
+      0.03604303579777479,
+      0.1185700073838234
     ]
   },
   {
@@ -184634,9 +184634,9 @@
     "image": "images/gear/food/unknownfoodcan/unknownfoodcan.jpg",
     "id": "dzobj_xhu7bldj8o",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.07653780281543732,
+      0.10789072886109352,
+      0.0765378549695015
     ]
   },
   {
@@ -184650,9 +184650,9 @@
     "image": "images/gear/food/unknownfoodcan_opened/unknownfoodcan_opened.jpg",
     "id": "dzobj_eg1fp1st7f",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.08742893487215042,
+      0.1204872615635395,
+      0.07653769105672836
     ]
   },
   {
@@ -185466,9 +185466,9 @@
     "image": "images/gear/food/deadchicken_white/deadchicken_white.jpg",
     "id": "dzobj_30ah44d62u",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.35780763626098633,
+      0.16953769326210022,
+      0.4418148547410965
     ]
   },
   {
@@ -186151,7 +186151,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/gear/food/food_can.p3d.jpg",
+    "image": "images/gear/food/unknownfoodcan/unknownfoodcan.jpg",
     "id": "dzobj_7dcoeag4hx",
     "dimensionsVisual": [
       0.07653780281543732,
@@ -186167,7 +186167,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/gear/food/food_can_open.p3d.jpg",
+    "image": "images/gear/food/unknownfoodcan_opened/unknownfoodcan_opened.jpg",
     "id": "dzobj_2m9bvgjb3n",
     "dimensionsVisual": [
       0.08742893487215042,
@@ -186199,7 +186199,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/gear/food/gallus_gallus_female_dead.p3d.jpg",
+    "image": "images/gear/food/deadchicken_white/deadchicken_white.jpg",
     "id": "dzobj_cu04gukzzz",
     "dimensionsVisual": [
       0.35780763626098633,
@@ -187162,7 +187162,7 @@
     "path": "dz/gear/food",
     "usableOnConsole": false,
     "searchTags": "canned, food, gear",
-    "image": "images/gear/food/tuna_open.p3d.jpg",
+    "image": "images/gear/food/tunacan_opened/tunacan_opened.jpg",
     "id": "dzobj_3d8zy0i8y7",
     "dimensionsVisual": [
       0.08240080624818802,
@@ -346178,7 +346178,7 @@
     "path": "dz/weapons/attachments/optics",
     "usableOnConsole": false,
     "searchTags": "kam, ka-74, ka-101, vaiga, vsd, vss, bizon",
-    "image": "images/weapons/attachments/optics/kobraoptic.jpg",
+    "image": "images/weapons/attachments/optics/kobraoptic/kobraoptic.jpg",
     "id": "dzobj_t8to0vs8k3",
     "linked-config": [
       "dzobj_2vn8hrsxy7"
@@ -351438,7 +351438,7 @@
     "path": "dz/weapons/firearms/svd",
     "usableOnConsole": false,
     "searchTags": "rifles, 7.62x54mmr, dragunov",
-    "image": "images/weapons/firearms/dzweaponsfirearmssvdsvd_old.p3d.jpg",
+    "image": "images/weapons/firearms/svd/svd/svd.jpg",
     "id": "dzobj_eqk6l3i1kw",
     "dimensionsVisual": [
       1.2422633171081543,
@@ -352601,7 +352601,7 @@
     "path": "dz/weapons/melee/blunt",
     "usableOnConsole": false,
     "searchTags": "blunt, brass, knuckles, melee, weapon, weapons",
-    "image": "images/weapons/melee/blunt/brassknuckles.p3d.jpg",
+    "image": "images/weapons/melee/blunt/brassknuckles_dull/brassknuckles_dull.jpg",
     "id": "dzobj_fdmv26al1g",
     "linked-config": [
       "dzobj_oezexc4cou",
