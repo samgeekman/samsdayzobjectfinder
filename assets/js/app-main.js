@@ -169,6 +169,18 @@
       var savedLength = Number(readCookie(resultsPageLengthCookieName));
       return resultsPageLengthOptions.indexOf(savedLength) !== -1 ? savedLength : 50;
     };
+    var consoleFilterCookieName = 'samsobjectfinder_console_filter';
+    var consoleFilterOptions = ['all', 'yes', 'no'];
+    var getSavedConsoleFilter = function() {
+      var savedFilter = String(readCookie(consoleFilterCookieName) || '').toLowerCase();
+      return consoleFilterOptions.indexOf(savedFilter) !== -1 ? savedFilter : 'all';
+    };
+    var saveConsoleFilter = function(value) {
+      var normalizedValue = String(value || '').toLowerCase();
+      if (consoleFilterOptions.indexOf(normalizedValue) !== -1) {
+        writeCookie(consoleFilterCookieName, normalizedValue, 365);
+      }
+    };
     var formatNumber = function(value) {
       var parsed = Number(value);
       if (!isFinite(parsed)) return '0';
@@ -1140,7 +1152,9 @@
     if (logoLink) {
       logoLink.addEventListener('click', function() {
         if (table) {
-          table.search('').columns().search('').draw();
+          var selectedConsoleFilter = filterConsoleEl ? filterConsoleEl.value : getSavedConsoleFilter();
+          table.search('').columns().search('');
+          table.column(5).search(mapConsoleFilterValue(selectedConsoleFilter)).draw();
         }
         FocusPane.clear();
       });
@@ -3641,8 +3655,6 @@
         if (table) {
           table.search('').columns().search('');
         }
-        $('#filterConsole').val('all');
-        syncConsoleFilterState();
         AppUrl.push({}, { sourceUrl: buildTypesTagFilterUrl(activeTypesTagFilter) });
       }
       if (shouldSnapToTop) {
@@ -7263,11 +7275,16 @@
       if (key === 'no') return 'console no';
       return '';
     };
+    if (filterConsoleEl) {
+      filterConsoleEl.value = getSavedConsoleFilter();
+    }
     $('#filterConsole').on('change', function() {
+      saveConsoleFilter(this.value);
       syncConsoleFilterState();
       table.column(5).search(mapConsoleFilterValue(this.value)).draw();
     });
     syncConsoleFilterState();
+    table.column(5).search(mapConsoleFilterValue(filterConsoleEl ? filterConsoleEl.value : 'all')).draw();
     if (folderTreeEl) {
       folderTreeEl.addEventListener('click', function(e) {
         var guideBtn = e.target.closest('[data-guide-app]');
@@ -7447,6 +7464,7 @@
       }
       if (filterConsoleEl) {
         filterConsoleEl.value = 'all';
+        saveConsoleFilter('all');
         syncConsoleFilterState();
       }
       if (table) {
