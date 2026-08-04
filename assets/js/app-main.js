@@ -1176,6 +1176,10 @@
     var filtersAppTitleTextEl = document.getElementById('filtersAppTitleText');
     var filtersToggleEl = document.getElementById('filtersToggle');
     var filterConsoleEl = document.getElementById('filterConsole');
+    var syncConsoleFilterState = function() {
+      if (!filterConsoleEl) return;
+      filterConsoleEl.classList.toggle('is-filtered', filterConsoleEl.value !== 'all');
+    };
     var typesExplorerPanelEl = document.getElementById('typesExplorerPanel');
     var typesExplorerUsageTagsEl = document.getElementById('typesExplorerUsageTags');
     var typesExplorerValueTagsEl = document.getElementById('typesExplorerValueTags');
@@ -3638,6 +3642,7 @@
           table.search('').columns().search('');
         }
         $('#filterConsole').val('all');
+        syncConsoleFilterState();
         AppUrl.push({}, { sourceUrl: buildTypesTagFilterUrl(activeTypesTagFilter) });
       }
       if (shouldSnapToTop) {
@@ -7259,8 +7264,10 @@
       return '';
     };
     $('#filterConsole').on('change', function() {
+      syncConsoleFilterState();
       table.column(5).search(mapConsoleFilterValue(this.value)).draw();
     });
+    syncConsoleFilterState();
     if (folderTreeEl) {
       folderTreeEl.addEventListener('click', function(e) {
         var guideBtn = e.target.closest('[data-guide-app]');
@@ -7440,6 +7447,7 @@
       }
       if (filterConsoleEl) {
         filterConsoleEl.value = 'all';
+        syncConsoleFilterState();
       }
       if (table) {
         objectMapExactSearchQuery = '';
