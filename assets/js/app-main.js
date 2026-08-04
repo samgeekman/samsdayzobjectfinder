@@ -154,6 +154,21 @@
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&#39;');
     };
+    var readCookie = function(name) {
+      var escaped = String(name).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      var match = document.cookie.match(new RegExp('(?:^|; )' + escaped + '=([^;]*)'));
+      return match ? decodeURIComponent(match[1]) : '';
+    };
+    var writeCookie = function(name, value, days) {
+      var maxAge = Math.max(1, Number(days) || 365) * 24 * 60 * 60;
+      document.cookie = name + '=' + encodeURIComponent(String(value)) + '; path=/; max-age=' + maxAge + '; SameSite=Lax';
+    };
+    var resultsPageLengthCookieName = 'samsobjectfinder_results_page_length';
+    var resultsPageLengthOptions = [50, 100, 200, 500];
+    var getSavedResultsPageLength = function() {
+      var savedLength = Number(readCookie(resultsPageLengthCookieName));
+      return resultsPageLengthOptions.indexOf(savedLength) !== -1 ? savedLength : 50;
+    };
     var formatNumber = function(value) {
       var parsed = Number(value);
       if (!isFinite(parsed)) return '0';
@@ -791,8 +806,8 @@
         ],
         details: false
       },
-      pageLength: 50,
-      lengthMenu: [[50,100,200,500],[50,100,200,500]],
+      pageLength: getSavedResultsPageLength(),
+      lengthMenu: [resultsPageLengthOptions, resultsPageLengthOptions],
       columns: [
         { data: null, defaultContent: '' },
         {
@@ -879,6 +894,11 @@
         searchPlaceholder: "'large snow rock', '308 rifles'",
         infoFiltered: "",
         zeroRecords: "No matching objects found."
+      }
+    });
+    table.on('length.dt', function(e, settings, length) {
+      if (resultsPageLengthOptions.indexOf(Number(length)) !== -1) {
+        writeCookie(resultsPageLengthCookieName, length, 365);
       }
     });
 
@@ -6970,15 +6990,6 @@
       updateVersionToggleState();
     };
 
-    var readCookie = function(name) {
-      var escaped = String(name).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      var match = document.cookie.match(new RegExp('(?:^|; )' + escaped + '=([^;]*)'));
-      return match ? decodeURIComponent(match[1]) : '';
-    };
-    var writeCookie = function(name, value, days) {
-      var maxAge = Math.max(1, Number(days) || 365) * 24 * 60 * 60;
-      document.cookie = name + '=' + encodeURIComponent(String(value)) + '; path=/; max-age=' + maxAge + '; SameSite=Lax';
-    };
     var isGuideDismissed = function(appKey) {
       return readCookie(appGuideCookiePrefix + appKey) === '1';
     };
