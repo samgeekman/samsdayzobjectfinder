@@ -4,6 +4,11 @@ type: "page"
 draft: false
 ---
 
+## - 1.0.1 - 5 August 2026
+
+- Rows per page is now persistent.
+- Console sorting will also survive reload - pressing 'Reset view' will revert it to 'All'
+
 ## 1.0 - 3 August 2026
 
 - 99% of objects now have images - close enough for a 1.0 release to me!
