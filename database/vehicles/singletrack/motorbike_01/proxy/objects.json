@@ -1,0 +1,154 @@
+[
+  {
+    "objectName": "motorbike_01_exhaust.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, exhaust, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_exhaust/motorbike_01_exhaust.jpg",
+    "id": "dzobj_deacc5b3c8"
+  },
+  {
+    "objectName": "motorbike_01_fender.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, fender, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_fender/motorbike_01_fender.jpg",
+    "id": "dzobj_bffc10aafc"
+  },
+  {
+    "objectName": "motorbike_01_wheel_1.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 1, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1/motorbike_01_wheel_1.jpg",
+    "id": "dzobj_7be5a6db00",
+    "linked-config": [
+      "dzobj_38eb7f1bf0",
+      "dzobj_525d0e5a41"
+    ]
+  },
+  {
+    "objectName": "Motorbike_01_Wheel_1",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 1, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1/motorbike_01_wheel_1.jpg",
+    "id": "dzobj_38eb7f1bf0",
+    "linked-p3d": "dzobj_7be5a6db00"
+  },
+  {
+    "objectName": "ProxyMotorbike_01_wheel_1",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 1, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1/motorbike_01_wheel_1.jpg",
+    "id": "dzobj_525d0e5a41",
+    "linked-p3d": "dzobj_7be5a6db00"
+  },
+  {
+    "objectName": "motorbike_01_wheel_1_ruined.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 1, ruined, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1_ruined/motorbike_01_wheel_1_ruined.jpg",
+    "id": "dzobj_3350dad3cb",
+    "linked-config": [
+      "dzobj_92130285b1"
+    ]
+  },
+  {
+    "objectName": "Motorbike_01_Wheel_1_Ruined",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 1, ruined, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1_ruined/motorbike_01_wheel_1_ruined.jpg",
+    "id": "dzobj_92130285b1",
+    "linked-p3d": "dzobj_3350dad3cb"
+  },
+  {
+    "objectName": "motorbike_01_wheel_2.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 2, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2/motorbike_01_wheel_2.jpg",
+    "id": "dzobj_7a0ad187f4",
+    "linked-config": [
+      "dzobj_792a743374",
+      "dzobj_7de33919f2"
+    ]
+  },
+  {
+    "objectName": "Motorbike_01_Wheel_2",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 2, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2/motorbike_01_wheel_2.jpg",
+    "id": "dzobj_792a743374",
+    "linked-p3d": "dzobj_7a0ad187f4"
+  },
+  {
+    "objectName": "ProxyMotorbike_01_wheel_2",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 2, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2/motorbike_01_wheel_2.jpg",
+    "id": "dzobj_7de33919f2",
+    "linked-p3d": "dzobj_7a0ad187f4"
+  },
+  {
+    "objectName": "motorbike_01_wheel_2_ruined.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 2, ruined, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2_ruined/motorbike_01_wheel_2_ruined.jpg",
+    "id": "dzobj_637348c09d",
+    "linked-config": [
+      "dzobj_90b0e4262a"
+    ]
+  },
+  {
+    "objectName": "Motorbike_01_Wheel_2_Ruined",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 2, ruined, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2_ruined/motorbike_01_wheel_2_ruined.jpg",
+    "id": "dzobj_90b0e4262a",
+    "linked-p3d": "dzobj_637348c09d"
+  }
+]

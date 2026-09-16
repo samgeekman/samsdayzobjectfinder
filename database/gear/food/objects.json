@@ -2297,5 +2297,134 @@
     "searchTags": "food, gear, fruit, vegetable",
     "image": "images/gear/food/zucchini/zucchini.jpg",
     "id": "dzobj_vyepujyew6"
+  },
+  {
+    "objectName": "catfish_fillet.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, meat, v1.30-exp-badlands",
+    "image": "images/gear/food/catfishfilletmeat/catfishfilletmeat.jpg",
+    "id": "dzobj_8efbb726bc",
+    "linked-config": [
+      "dzobj_3967ffe5f6"
+    ]
+  },
+  {
+    "objectName": "CatfishFilletMeat",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/food",
+    "usableOnConsole": true,
+    "searchTags": "gear, food, catfish, fillet, meat, v1.30-exp-badlands",
+    "image": "images/gear/food/catfishfilletmeat/catfishfilletmeat.jpg",
+    "id": "dzobj_3967ffe5f6",
+    "linked-p3d": "dzobj_8efbb726bc"
+  },
+  {
+    "objectName": "catfish_fillet_baked.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, baked, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish_fillet_baked/catfish_fillet_baked.jpg",
+    "id": "dzobj_4cad502f07"
+  },
+  {
+    "objectName": "catfish_fillet_boiled.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, boiled, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish_fillet_boiled/catfish_fillet_boiled.jpg",
+    "id": "dzobj_653730097e"
+  },
+  {
+    "objectName": "catfish_fillet_burnt.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, burnt, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish_fillet_burnt/catfish_fillet_burnt.jpg",
+    "id": "dzobj_6a0923c003"
+  },
+  {
+    "objectName": "catfish_fillet_cooked.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, cooked, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish_fillet_cooked/catfish_fillet_cooked.jpg",
+    "id": "dzobj_4c9c5ec5ad"
+  },
+  {
+    "objectName": "catfish_fillet_dried.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, dried, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish_fillet_dried/catfish_fillet_dried.jpg",
+    "id": "dzobj_13bb839670"
+  },
+  {
+    "objectName": "catfish_fillet_raw.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, raw, v1.30-exp-badlands",
+    "image": "images/gear/food/catfishfilletmeat/catfishfilletmeat.jpg",
+    "id": "dzobj_f9cc69fe5e"
+  },
+  {
+    "objectName": "catfish_fillet_rotten.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, rotten, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish_fillet_rotten/catfish_fillet_rotten.jpg",
+    "id": "dzobj_e814307aa3"
+  },
+  {
+    "objectName": "catfish_live.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, live, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish/catfish.jpg",
+    "id": "dzobj_57cb6c7c0c",
+    "linked-config": [
+      "dzobj_f24552a4a8"
+    ]
+  },
+  {
+    "objectName": "Catfish",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/food",
+    "usableOnConsole": true,
+    "searchTags": "gear, food, catfish, live, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish/catfish.jpg",
+    "id": "dzobj_f24552a4a8",
+    "linked-p3d": "dzobj_57cb6c7c0c"
   }
 ]

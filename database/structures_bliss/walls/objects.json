@@ -1909,5 +1909,39 @@
     "searchTags": "metal, concrete, security, sliding, gate, large, industrial",
     "image": "images/structures_bliss/walls/land_wall_gate_indcnc4_low.jpg",
     "id": "dzobj_dg3g0i2w85"
+  },
+  {
+    "objectName": "wall_fen5_10_d_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/walls",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, walls, wall, fen5, 10, d, nolc, v1.30-exp-badlands",
+    "image": "images/structures_bliss/walls/wall_fen5_10_d.jpg",
+    "id": "dzobj_71bfd4fdcf"
+  },
+  {
+    "objectName": "wall_fen5_10_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/walls",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, walls, wall, fen5, 10, nolc, v1.30-exp-badlands",
+    "image": "images/structures_bliss/walls/wall_fen5_10.jpg",
+    "id": "dzobj_61d074826c"
+  },
+  {
+    "objectName": "StaticObj_Wall_FenVineyard_DE",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Config",
+    "path": "dz/structures_bliss/walls",
+    "usableOnConsole": true,
+    "searchTags": "barrier, livoniaa, walls, fence, v1.30-exp-badlands",
+    "image": "images/structures_bliss/walls/staticobj_wall_fenvineyard.jpg",
+    "id": "dzobj_0738b6af9e",
+    "linked-p3d": "dzobj_0gi79hl7cd"
   }
 ]

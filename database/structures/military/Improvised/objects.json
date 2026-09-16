@@ -933,5 +933,53 @@
     "searchTags": "camping, improvised, military, shelter",
     "image": "images/structures/military/improvised/land_mil_tent_big4.jpg",
     "id": "dzobj_vf6t2rzip7"
+  },
+  {
+    "objectName": "Land_Roadblock_Table_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, table, checkpoint, furniture, plastic, v1.30-exp-badlands",
+    "image": "images/structures/military/improvised/land_roadblock_table.jpg",
+    "id": "dzobj_d3935035d2",
+    "linked-p3d": "dzobj_svag50apgh"
+  },
+  {
+    "objectName": "Land_Roadblock_WoodenCrate_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, crate, wooden, checkpoint, storage, v1.30-exp-badlands",
+    "image": "images/structures/military/improvised/land_roadblock_woodencrate.jpg",
+    "id": "dzobj_ee7ea7d328",
+    "linked-p3d": "dzobj_ntu4o48n0v"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_CncBlock_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, concrete, block, barrier, defense, security, single, one, 1, v1.30-exp-badlands",
+    "image": "images/structures/military/improvised/staticobj_roadblock_cncblock.jpg",
+    "id": "dzobj_39642f81e0",
+    "linked-p3d": "dzobj_1a2qkzafhm"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_CncBlocks_Long_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, concrete, blocks, long, barrier, defense, security, overlapping, v1.30-exp-badlands",
+    "image": "images/structures/military/improvised/staticobj_roadblock_cncblocks_long.jpg",
+    "id": "dzobj_32dd615ead",
+    "linked-p3d": "dzobj_07w5gzi7p5"
   }
 ]

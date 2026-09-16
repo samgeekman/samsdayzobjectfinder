@@ -218,5 +218,29 @@
     "searchTags": "industrial, sakhal",
     "image": "images/structures_sakhal/industrial/misc/misc_woodencrate_spawn/misc_woodencrate_spawn.jpg",
     "id": "dzobj_aghldzhb1l"
+  },
+  {
+    "objectName": "Land_Misc_Pallet_Spawn_DE",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "industrial, sakhal, v1.30-exp-badlands",
+    "image": "images/structures_sakhal/industrial/misc/misc_pallet_spawn/misc_pallet_spawn.jpg",
+    "id": "dzobj_41ea8dfeb1",
+    "linked-p3d": "dzobj_7agt7jzvfz"
+  },
+  {
+    "objectName": "Land_Misc_WoodenCrate_Spawn_DE",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "industrial, sakhal, v1.30-exp-badlands",
+    "image": "images/structures_sakhal/industrial/misc/misc_woodencrate_spawn/misc_woodencrate_spawn.jpg",
+    "id": "dzobj_502bda08ed",
+    "linked-p3d": "dzobj_aghldzhb1l"
   }
 ]

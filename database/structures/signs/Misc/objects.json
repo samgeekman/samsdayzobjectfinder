@@ -1219,5 +1219,53 @@
     "searchTags": "cover, marker, misc, notice, signs",
     "image": "images/structures/signs/misc/sign_roof_univermag/sign_roof_univermag.jpg",
     "id": "dzobj_ic0kabj2xa"
+  },
+  {
+    "objectName": "StaticObj_Sign_Roadblock_Arrow",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/signs/misc",
+    "usableOnConsole": true,
+    "searchTags": "marker, misc, notice, signs, v1.30-exp-badlands",
+    "image": "images/structures/signs/misc/sign_roadblock_arrow/sign_roadblock_arrow.jpg",
+    "id": "dzobj_476995986b",
+    "linked-p3d": "dzobj_gxbklfl3pc"
+  },
+  {
+    "objectName": "StaticObj_Sign_Roadblock_Arrow_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/signs/misc",
+    "usableOnConsole": true,
+    "searchTags": "marker, misc, notice, signs, v1.30-exp-badlands",
+    "image": "images/structures/signs/misc/sign_roadblock_arrow/sign_roadblock_arrow.jpg",
+    "id": "dzobj_cc9ca229b6",
+    "linked-p3d": "dzobj_gxbklfl3pc"
+  },
+  {
+    "objectName": "StaticObj_Sign_Roadblock_Stop",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/signs/misc",
+    "usableOnConsole": true,
+    "searchTags": "marker, misc, notice, signs, v1.30-exp-badlands",
+    "image": "images/structures/signs/misc/sign_roadblock_stop/sign_roadblock_stop.jpg",
+    "id": "dzobj_99433f161f",
+    "linked-p3d": "dzobj_6ao8ym07l8"
+  },
+  {
+    "objectName": "StaticObj_Sign_Roadblock_Stop_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/signs/misc",
+    "usableOnConsole": true,
+    "searchTags": "marker, misc, notice, signs, v1.30-exp-badlands",
+    "image": "images/structures/signs/misc/sign_roadblock_stop/sign_roadblock_stop.jpg",
+    "id": "dzobj_c1f08b4b40",
+    "linked-p3d": "dzobj_6ao8ym07l8"
   }
 ]

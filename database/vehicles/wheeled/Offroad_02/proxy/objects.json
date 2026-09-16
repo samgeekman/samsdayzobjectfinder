@@ -183,7 +183,7 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": false,
     "searchTags": "[match config]",
-    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1/offroad_02_door_1_1.jpg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1_beige/offroad_02_door_1_1_beige.jpg",
     "id": "dzobj_ngvqepa7jm"
   },
   {
@@ -194,7 +194,7 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": false,
     "searchTags": "[match config]",
-    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2/offroad_02_door_1_2.jpg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2_beige/offroad_02_door_1_2_beige.jpg",
     "id": "dzobj_hvie94671f"
   },
   {
@@ -205,7 +205,7 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": false,
     "searchTags": "[match config]",
-    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1/offroad_02_door_2_1.jpg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1_beige/offroad_02_door_2_1_beige.jpg",
     "id": "dzobj_msinp5bfon"
   },
   {
@@ -216,7 +216,7 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": false,
     "searchTags": "[match config]",
-    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2/offroad_02_door_2_2.jpg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2_beige/offroad_02_door_2_2_beige.jpg",
     "id": "dzobj_nbphwqcyl6"
   },
   {
@@ -238,7 +238,7 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": false,
     "searchTags": "[match config]",
-    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood/offroad_02_hood.jpg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood_beige/offroad_02_hood_beige.jpg",
     "id": "dzobj_hx20h32tqn"
   },
   {
@@ -260,7 +260,7 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": false,
     "searchTags": "[match config]",
-    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk/offroad_02_trunk.jpg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk_beige/offroad_02_trunk_beige.jpg",
     "id": "dzobj_491ar9wq34"
   },
   {
@@ -339,5 +339,149 @@
     "searchTags": "access, car, door, entry, m1025, transport, vehicle, vehicles, wheeled",
     "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk/offroad_02_trunk.jpg",
     "id": "dzobj_4zo961utr1"
+  },
+  {
+    "objectName": "Offroad_02_Door_1_1_Beige",
+    "inGameName": "M1025 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1_beige/offroad_02_door_1_1_beige.jpg",
+    "id": "dzobj_607707457e",
+    "linked-p3d": "dzobj_ngvqepa7jm"
+  },
+  {
+    "objectName": "Offroad_02_Door_1_1_BeigeRust",
+    "inGameName": "M1025 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1_beigerust/offroad_02_door_1_1_beigerust.jpg",
+    "id": "dzobj_afda455bfe",
+    "linked-p3d": "dzobj_ngvqepa7jm"
+  },
+  {
+    "objectName": "Offroad_02_Door_1_2_Beige",
+    "inGameName": "M1025 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2_beige/offroad_02_door_1_2_beige.jpg",
+    "id": "dzobj_9a2731514b",
+    "linked-p3d": "dzobj_hvie94671f"
+  },
+  {
+    "objectName": "Offroad_02_Door_1_2_BeigeRust",
+    "inGameName": "M1025 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2_beigerust/offroad_02_door_1_2_beigerust.jpg",
+    "id": "dzobj_15cea2713a",
+    "linked-p3d": "dzobj_hvie94671f"
+  },
+  {
+    "objectName": "Offroad_02_Door_2_1_Beige",
+    "inGameName": "M1025 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1_beige/offroad_02_door_2_1_beige.jpg",
+    "id": "dzobj_a52624ded3",
+    "linked-p3d": "dzobj_msinp5bfon"
+  },
+  {
+    "objectName": "Offroad_02_Door_2_1_BeigeRust",
+    "inGameName": "M1025 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1_beigerust/offroad_02_door_2_1_beigerust.jpg",
+    "id": "dzobj_4a41670aac",
+    "linked-p3d": "dzobj_msinp5bfon"
+  },
+  {
+    "objectName": "Offroad_02_Door_2_2_Beige",
+    "inGameName": "M1025 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2_beige/offroad_02_door_2_2_beige.jpg",
+    "id": "dzobj_4bc31014b8",
+    "linked-p3d": "dzobj_nbphwqcyl6"
+  },
+  {
+    "objectName": "Offroad_02_Door_2_2_BeigeRust",
+    "inGameName": "M1025 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2_beigerust/offroad_02_door_2_2_beigerust.jpg",
+    "id": "dzobj_0bae260d67",
+    "linked-p3d": "dzobj_nbphwqcyl6"
+  },
+  {
+    "objectName": "Offroad_02_Hood_Beige",
+    "inGameName": "M1025 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood_beige/offroad_02_hood_beige.jpg",
+    "id": "dzobj_b93311d2e0",
+    "linked-p3d": "dzobj_hx20h32tqn"
+  },
+  {
+    "objectName": "Offroad_02_Hood_BeigeRust",
+    "inGameName": "M1025 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood_beigerust/offroad_02_hood_beigerust.jpg",
+    "id": "dzobj_250568c938",
+    "linked-p3d": "dzobj_hx20h32tqn"
+  },
+  {
+    "objectName": "Offroad_02_Trunk_Beige",
+    "inGameName": "M1025 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk_beige/offroad_02_trunk_beige.jpg",
+    "id": "dzobj_70df5397bb",
+    "linked-p3d": "dzobj_491ar9wq34"
+  },
+  {
+    "objectName": "Offroad_02_Trunk_BeigeRust",
+    "inGameName": "M1025 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk_beigerust/offroad_02_trunk_beigerust.jpg",
+    "id": "dzobj_43894f8854",
+    "linked-p3d": "dzobj_491ar9wq34"
   }
 ]

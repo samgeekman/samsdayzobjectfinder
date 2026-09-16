@@ -1,0 +1,54 @@
+[
+  {
+    "objectName": "motorbike_01.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_01",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 01, blue, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/motorbike_01_blue/motorbike_01_blue.jpg",
+    "id": "dzobj_139920d169",
+    "linked-config": [
+      "dzobj_669fc99d03",
+      "dzobj_60f123a6dd",
+      "dzobj_a80ad3a9de"
+    ]
+  },
+  {
+    "objectName": "Motorbike_01_Blue",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, blue, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/motorbike_01_blue/motorbike_01_blue.jpg",
+    "id": "dzobj_669fc99d03",
+    "linked-p3d": "dzobj_139920d169"
+  },
+  {
+    "objectName": "Motorbike_01_Red",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, blue, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/motorbike_01_blue/motorbike_01_blue.jpg",
+    "id": "dzobj_60f123a6dd",
+    "linked-p3d": "dzobj_139920d169"
+  },
+  {
+    "objectName": "Motorbike_01_Yellow",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, blue, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/motorbike_01_yellow/motorbike_01_yellow.jpg",
+    "id": "dzobj_a80ad3a9de",
+    "linked-p3d": "dzobj_139920d169"
+  }
+]

@@ -240,5 +240,17 @@
     "searchTags": "beds, furniture",
     "image": "images/structures/furniture/beds/stretcher_red_folded.jpg",
     "id": "dzobj_gz41kstjop"
+  },
+  {
+    "objectName": "StaticObj_Stretcher_Green_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/furniture/beds",
+    "usableOnConsole": true,
+    "searchTags": "beds, furniture, v1.30-exp-badlands",
+    "image": "images/structures/furniture/beds/stretcher_green.jpg",
+    "id": "dzobj_74d6e0da33",
+    "linked-p3d": "dzobj_jag6b3toa5"
   }
 ]

@@ -900,5 +900,17 @@
     "searchTags": "structures, industrial, misc, weldingtrolley, 01, v1.29",
     "image": "images/structures/industrial/misc/misc_weldingtrolley_01.jpg",
     "id": "dzobj_fngalv5lh4"
+  },
+  {
+    "objectName": "StaticObj_Misc_ConcretePipe_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "grate, pipe, metal, sewers, water, underground, construction, v1.30-exp-badlands",
+    "image": "images/structures/industrial/misc/staticobj_misc_concretepipe.jpg",
+    "id": "dzobj_a3722570eb",
+    "linked-p3d": "dzobj_26nl3fx31e"
   }
 ]

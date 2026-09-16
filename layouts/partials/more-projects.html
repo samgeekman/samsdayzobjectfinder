@@ -1,0 +1,36 @@
+<li id="moreProjectsItem" class="list f5 f4-ns fw4 dib site-nav__menu-item--utility site-nav__menu-item--projects {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
+  <button id="moreProjectsToggle" class="nav-menu-button nav-menu-button--projects no-underline" type="button" aria-controls="moreProjectsPopover" aria-expanded="false" title="More projects">
+    <span>More projects</span><span class="nav-menu-button__chevron" aria-hidden="true">▼</span>
+  </button>
+  <div id="moreProjectsPopover" class="more-projects-popover" role="dialog" aria-label="More projects" aria-hidden="true" hidden>
+    <div class="more-projects-popover__header">
+      <div>
+        <h2>Other things I've made</h2>
+      </div>
+      <button id="moreProjectsClose" class="more-projects-popover__close" type="button" aria-label="Close more projects">×</button>
+    </div>
+    <div class="more-projects-popover__grid">
+      <article class="more-project-card">
+        <img class="more-project-card__image more-project-card__image--map" src="/images/projects/ascii-chernarus-map.png" alt="ASCII Chernarus map shown in a terminal">
+        <div class="more-project-card__body">
+          <h3>Ascii Chernarus map</h3>
+          <p>Explore Chernarus in your terminal.</p>
+          <div class="more-project-card__command" aria-label="SSH command">
+            <code>ssh ascii.samsobjectfinder.com</code>
+            <button type="button" data-copy-project="ssh ascii.samsobjectfinder.com">Copy</button>
+          </div>
+        </div>
+      </article>
+      <article class="more-project-card">
+        <img class="more-project-card__image" src="/images/projects/dayz-illness-checker.png" alt="DayZ Illness Checker symptom selection screen">
+        <div class="more-project-card__body">
+          <h3>DayZ Illness Checker</h3>
+          <p>Quickly diagnose any DayZ illness.</p>
+          <a class="more-project-card__link" href="https://www.whyareyousick.com" target="_blank" rel="noopener noreferrer">
+            <span>whyareyousick.com</span><span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</li>

@@ -438,5 +438,31 @@
     "searchTags": "crafting, gear, rock, sharpened, stick, terrain",
     "image": "images/gear/crafting/sharpwoodenstick/sharpwoodenstick.jpg",
     "id": "dzobj_cw48p8s6rz"
+  },
+  {
+    "objectName": "hand_drill_kit_birch.p3d",
+    "inGameName": "Hand Drill Kit",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/crafting",
+    "usableOnConsole": false,
+    "searchTags": "gear, crafting, hand, drill, kit, birch, v1.30-exp-badlands",
+    "image": "images/gear/crafting/handdrillkitbirch/handdrillkitbirch.jpg",
+    "id": "dzobj_fdd327ac56",
+    "linked-config": [
+      "dzobj_eab8766b30"
+    ]
+  },
+  {
+    "objectName": "HandDrillKitBirch",
+    "inGameName": "Hand Drill Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/crafting",
+    "usableOnConsole": true,
+    "searchTags": "gear, crafting, hand, drill, kit, birch, v1.30-exp-badlands",
+    "image": "images/gear/crafting/handdrillkitbirch/handdrillkitbirch.jpg",
+    "id": "dzobj_eab8766b30",
+    "linked-p3d": "dzobj_fdd327ac56"
   }
 ]

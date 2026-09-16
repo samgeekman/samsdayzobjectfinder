@@ -18,7 +18,43 @@
     "path": "dz/weapons/firearms/cz527",
     "usableOnConsole": false,
     "searchTags": "rifles, 7.62x39",
-    "image": "images/weapons/firearms/cz527/cz527/cz527.jpg",
+    "image": "images/weapons/firearms/cz527/cz527_desert/cz527_desert.jpg",
     "id": "dzobj_nunueqony4"
+  },
+  {
+    "objectName": "CZ527_desert",
+    "inGameName": "CR-527",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/cz527",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x39, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/cz527/cz527_desert/cz527_desert.jpg",
+    "id": "dzobj_108ce010d5",
+    "linked-p3d": "dzobj_nunueqony4"
+  },
+  {
+    "objectName": "CZ527_winter",
+    "inGameName": "CR-527",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/cz527",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x39, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/cz527/cz527_winter/cz527_winter.jpg",
+    "id": "dzobj_48c979d480",
+    "linked-p3d": "dzobj_nunueqony4"
+  },
+  {
+    "objectName": "CZ527_Woodland",
+    "inGameName": "CR-527",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/cz527",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x39, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/cz527/cz527_woodland/cz527_woodland.jpg",
+    "id": "dzobj_10ed07a9ef",
+    "linked-p3d": "dzobj_nunueqony4"
   }
 ]

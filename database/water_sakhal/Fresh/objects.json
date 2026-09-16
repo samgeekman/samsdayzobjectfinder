@@ -425,7 +425,19 @@
     "path": "dz/water_sakhal/fresh",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/water_sakhal/fresh/waterspring_sakhal_water.p3d.jpg",
+    "image": "images/water_sakhal/fresh/land_waterspring_water/land_waterspring_water.jpg",
     "id": "dzobj_jos4ycp53u"
+  },
+  {
+    "objectName": "Land_WaterSpring_Water",
+    "inGameName": "-",
+    "category": "water_sakhal",
+    "modelType": "Config",
+    "path": "dz/water_sakhal/fresh",
+    "usableOnConsole": true,
+    "searchTags": "v1.30-exp-badlands",
+    "image": "images/water_sakhal/fresh/land_waterspring_water/land_waterspring_water.jpg",
+    "id": "dzobj_1d7c79176b",
+    "linked-p3d": "dzobj_jos4ycp53u"
   }
 ]

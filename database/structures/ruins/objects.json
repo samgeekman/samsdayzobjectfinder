@@ -669,5 +669,41 @@
     "searchTags": "ruin, wall, destroyed, building, collapsed, broken, masonry, facade",
     "image": "images/structures/ruins/staticobj_ruin_wall.jpg",
     "id": "dzobj_6m07pkknse"
+  },
+  {
+    "objectName": "StaticObj_Rubble_DirtPile_Large_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, dirt, mound, large, soil, earth, pile, v1.30-exp-badlands",
+    "image": "images/structures/ruins/staticobj_rubble_dirtpile_large.jpg",
+    "id": "dzobj_e1a513b10c",
+    "linked-p3d": "dzobj_wi5vs902rk"
+  },
+  {
+    "objectName": "StaticObj_Rubble_DirtPile_Medium1_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, dirt, mound, medium, soil, earth, pile, v1.30-exp-badlands",
+    "image": "images/structures/ruins/staticobj_rubble_dirtpile_medium1.jpg",
+    "id": "dzobj_1242c7eaa5",
+    "linked-p3d": "dzobj_qm01tfwvu8"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Glass_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, glass, shards, broken, window, debris, v1.30-exp-badlands",
+    "image": "images/structures/ruins/staticobj_rubble_glass.jpg",
+    "id": "dzobj_0c11d87fd8",
+    "linked-p3d": "dzobj_3yalaqzyoy"
   }
 ]

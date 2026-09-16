@@ -2594,5 +2594,96 @@
     "searchTags": "zombies, soldier, military, heavy, woodland, v1.29-exp-badlands",
     "image": "images/characters/zombies/zmbf_ussoldier_heavy_woodland/zmbf_ussoldier_heavy_woodland.jpg",
     "id": "dzobj_dinyr9g5rx"
+  },
+  {
+    "objectName": "armyofficer_fat_f.p3d",
+    "inGameName": "Infected",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "characters, zombies, armyofficer, fat, f, zmb, army, officer, infected, v1.30-exp-badlands",
+    "image": "images/characters/zombies/armyofficer_fat_f/armyofficer_fat_f.jpg",
+    "id": "dzobj_3c04b7a886",
+    "linked-config": [
+      "dzobj_4844c74125"
+    ]
+  },
+  {
+    "objectName": "ZmbF_ArmyOfficer",
+    "inGameName": "Infected",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "characters, zombies, armyofficer, fat, f, zmb, army, officer, infected, v1.30-exp-badlands",
+    "image": "images/characters/zombies/armyofficer_fat_f/armyofficer_fat_f.jpg",
+    "id": "dzobj_4844c74125",
+    "linked-p3d": "dzobj_3c04b7a886"
+  },
+  {
+    "objectName": "eastsoldier_normal_navy_f.p3d",
+    "inGameName": "Infected",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "characters, zombies, eastsoldier, normal, navy, f, zmb, east, soldier, heavy, infected, v1.30-exp-badlands",
+    "image": "images/characters/zombies/eastsoldier_normal_navy_f/eastsoldier_normal_navy_f.jpg",
+    "id": "dzobj_383eedadd4",
+    "linked-config": [
+      "dzobj_c4024cc6b5",
+      "dzobj_c2d5161cad"
+    ]
+  },
+  {
+    "objectName": "ZmbF_eastSoldier_Heavy_Navy",
+    "inGameName": "Infected",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "characters, zombies, eastsoldier, normal, navy, f, zmb, east, soldier, heavy, infected, v1.30-exp-badlands",
+    "image": "images/characters/zombies/eastsoldier_normal_navy_f/eastsoldier_normal_navy_f.jpg",
+    "id": "dzobj_c4024cc6b5",
+    "linked-p3d": "dzobj_383eedadd4"
+  },
+  {
+    "objectName": "ZmbF_eastSoldier_Normal_Navy",
+    "inGameName": "Infected",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "characters, zombies, eastsoldier, normal, navy, f, zmb, east, soldier, heavy, infected, v1.30-exp-badlands",
+    "image": "images/characters/zombies/eastsoldier_normal_navy_f/eastsoldier_normal_navy_f.jpg",
+    "id": "dzobj_c2d5161cad",
+    "linked-p3d": "dzobj_383eedadd4"
+  },
+  {
+    "objectName": "zmbf_soldiernormal.p3d",
+    "inGameName": "Infected",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "characters, zombies, zmbf, soldiernormal, zmb, f, soldier, normal, infected, v1.30-exp-badlands",
+    "image": "images/characters/zombies/zmbf_soldiernormal/zmbf_soldiernormal.jpg",
+    "id": "dzobj_f54cf4cefa",
+    "linked-config": [
+      "dzobj_055204d4c1"
+    ]
+  },
+  {
+    "objectName": "ZmbF_SoldierNormal",
+    "inGameName": "Infected",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "characters, zombies, zmbf, soldiernormal, zmb, f, soldier, normal, infected, v1.30-exp-badlands",
+    "image": "images/characters/zombies/zmbf_soldiernormal/zmbf_soldiernormal.jpg",
+    "id": "dzobj_055204d4c1",
+    "linked-p3d": "dzobj_f54cf4cefa"
   }
 ]

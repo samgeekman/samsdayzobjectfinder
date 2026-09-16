@@ -339,5 +339,31 @@
     "searchTags": "ships, transport, vehicle, watercraft, wrecks, dynamic event",
     "image": "images/structures/wrecks/ships/land_boat_small9_de.jpg",
     "id": "dzobj_54faxyr1lb"
+  },
+  {
+    "objectName": "ship_big_fronta2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/wrecks/ships",
+    "usableOnConsole": false,
+    "searchTags": "structures, wrecks, ships, ship, big, fronta2, land, front, a2, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/ships/land_ship_big_fronta2/land_ship_big_fronta2.jpg",
+    "id": "dzobj_b6101bed3b",
+    "linked-config": [
+      "dzobj_ca979c2b47"
+    ]
+  },
+  {
+    "objectName": "Land_Ship_Big_FrontA2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/ships",
+    "usableOnConsole": true,
+    "searchTags": "structures, wrecks, ships, ship, big, fronta2, land, front, a2, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/ships/land_ship_big_fronta2/land_ship_big_fronta2.jpg",
+    "id": "dzobj_ca979c2b47",
+    "linked-p3d": "dzobj_b6101bed3b"
   }
 ]

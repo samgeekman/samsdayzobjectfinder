@@ -1928,5 +1928,51 @@
     "searchTags": "toilet, portable, porta-loo, latrine",
     "image": "images/structures/residential/misc/land_misc_toilet_mobile.jpg",
     "id": "dzobj_mqgpig3xam"
+  },
+  {
+    "objectName": "garbage_pile2_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "structures, residential, misc, garbage, pile2, nolc, v1.30-exp-badlands",
+    "image": "images/structures/residential/misc/staticobj_garbage_pile2.jpg",
+    "id": "dzobj_905da162ee"
+  },
+  {
+    "objectName": "misc_fountain_dry.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "structures, residential, misc, fountain, dry, v1.30-exp-badlands",
+    "image": "images/structures/residential/misc/misc_fountain_dry/misc_fountain_dry.jpg",
+    "id": "dzobj_9d567ff6ed"
+  },
+  {
+    "objectName": "StaticObj_Garbage_GroundSq_5m_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, ground, surface, clutter, city, street, v1.30-exp-badlands",
+    "image": "images/structures/residential/misc/staticobj_garbage_groundsq_5m.jpg",
+    "id": "dzobj_82f837e576",
+    "linked-p3d": "dzobj_427t1raajw"
+  },
+  {
+    "objectName": "StaticObj_Misc_WoodTable_Indoor",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "table, picnic bench, wooden, park, a-frame table, lassen table, v1.30-exp-badlands",
+    "image": "images/structures/residential/misc/staticobj_misc_woodtable_indoor.jpg",
+    "id": "dzobj_0f4cf411a0",
+    "linked-p3d": "dzobj_u9xfs15cih"
   }
 ]

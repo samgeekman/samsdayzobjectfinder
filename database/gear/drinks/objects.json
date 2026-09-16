@@ -218,5 +218,31 @@
     "searchTags": "drinks, gear, water, drinking, bottle, leather",
     "image": "images/gear/drinks/waterpouch_natural/waterpouch_natural.jpg",
     "id": "dzobj_4mlxjoihxi"
+  },
+  {
+    "objectName": "waterskin.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/drinks",
+    "usableOnConsole": false,
+    "searchTags": "gear, drinks, waterskin, natural, v1.30-exp-badlands",
+    "image": "images/gear/drinks/waterskin_natural/waterskin_natural.jpg",
+    "id": "dzobj_e76b8feb7f",
+    "linked-config": [
+      "dzobj_7500cdebf6"
+    ]
+  },
+  {
+    "objectName": "Waterskin_Natural",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/drinks",
+    "usableOnConsole": true,
+    "searchTags": "gear, drinks, waterskin, natural, v1.30-exp-badlands",
+    "image": "images/gear/drinks/waterskin_natural/waterskin_natural.jpg",
+    "id": "dzobj_7500cdebf6",
+    "linked-p3d": "dzobj_e76b8feb7f"
   }
 ]

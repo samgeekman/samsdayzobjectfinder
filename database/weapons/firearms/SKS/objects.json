@@ -18,7 +18,43 @@
     "path": "dz/weapons/firearms/sks",
     "usableOnConsole": false,
     "searchTags": "rifles, 7.62x39",
-    "image": "images/weapons/firearms/sks/sks/sks.jpg",
+    "image": "images/weapons/firearms/sks/sks_desert/sks_desert.jpg",
     "id": "dzobj_a4uy7ekukb"
+  },
+  {
+    "objectName": "SKS_Desert",
+    "inGameName": "SK 59/66",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/sks",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x39, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/sks/sks_desert/sks_desert.jpg",
+    "id": "dzobj_d83936c011",
+    "linked-p3d": "dzobj_a4uy7ekukb"
+  },
+  {
+    "objectName": "SKS_Winter",
+    "inGameName": "SK 59/66",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/sks",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x39, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/sks/sks_winter/sks_winter.jpg",
+    "id": "dzobj_a7a8700cc8",
+    "linked-p3d": "dzobj_a4uy7ekukb"
+  },
+  {
+    "objectName": "SKS_Woodland",
+    "inGameName": "SK 59/66",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/sks",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x39, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/sks/sks_woodland/sks_woodland.jpg",
+    "id": "dzobj_d90348f176",
+    "linked-p3d": "dzobj_a4uy7ekukb"
   }
 ]

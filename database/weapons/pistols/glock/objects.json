@@ -18,7 +18,19 @@
     "path": "dz/weapons/pistols/glock",
     "usableOnConsole": false,
     "searchTags": "mlock, pistols, weapon, weapons",
-    "image": "images/weapons/pistols/glock/glock19/glock19.jpg",
+    "image": "images/weapons/pistols/glock/glock19_tan/glock19_tan.jpg",
     "id": "dzobj_yqho1u6kl6"
+  },
+  {
+    "objectName": "Glock19_Tan",
+    "inGameName": "Mlock-91",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/glock",
+    "usableOnConsole": true,
+    "searchTags": "mlock, pistols, weapon, weapons, v1.30-exp-badlands",
+    "image": "images/weapons/pistols/glock/glock19_tan/glock19_tan.jpg",
+    "id": "dzobj_f900958e3e",
+    "linked-p3d": "dzobj_yqho1u6kl6"
   }
 ]

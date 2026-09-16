@@ -29,12 +29,7 @@
             </button>
           </li>
           <li class="site-nav__divider" aria-hidden="true"></li>
-          <li class="list f5 f4-ns fw4 dib site-nav__menu-item--utility {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
-            <a class="nav-menu-button nav-menu-button--with-icon no-underline" href="https://www.whyareyousick.com" target="_blank" rel="noopener noreferrer" title="Illness Checker">
-              <span>Illness Checker</span><img class="nav-menu-button__icon" src="{{ "/new-tab.svg" | urls.RelURL }}" alt="" aria-hidden="true">
-              
-            </a>
-          </li>
+          {{ partials.Include "more-projects.html" . }}
         </ul>
       {{ else }}
         <ul class="site-nav__menu {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
@@ -49,12 +44,7 @@
             </button>
           </li>
           <li class="site-nav__divider" aria-hidden="true"></li>
-          <li class="list f5 f4-ns fw4 dib site-nav__menu-item--utility {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
-            <a class="nav-menu-button nav-menu-button--with-icon no-underline" href="https://www.whyareyousick.com" target="_blank" rel="noopener noreferrer" title="Illness Checker">
-              <img class="nav-menu-button__icon" src="{{ "/new-tab.svg" | urls.RelURL }}" alt="" aria-hidden="true">
-              <span>Illness Checker</span>
-            </a>
-          </li>
+          {{ partials.Include "more-projects.html" . }}
         </ul>
       {{ end }}
       {{ partials.IncludeCached "social/follow.html" . }}
@@ -75,3 +65,123 @@
   background-color: #EEA700 !important; 
 }
 </style>
+
+<script>
+  (function () {
+    var initMoreProjects = function () {
+      var toggle = document.getElementById('moreProjectsToggle');
+      var item = document.getElementById('moreProjectsItem');
+      var popover = document.getElementById('moreProjectsPopover');
+      var closeButton = document.getElementById('moreProjectsClose');
+      var themeToggle = document.getElementById('themeToggle');
+      if (!toggle || !item || !popover) return;
+
+      var resetPopoverPosition = function () {
+        popover.style.position = '';
+        popover.style.left = '';
+        popover.style.top = '';
+        popover.style.right = '';
+        popover.style.removeProperty('--more-projects-caret-right');
+      };
+      var repositionPopover = function () {
+        if (popover.hidden) return;
+        if (window.innerWidth <= 768) {
+          resetPopoverPosition();
+          return;
+        }
+
+        var triggerRect = toggle.getBoundingClientRect();
+        popover.style.position = 'fixed';
+        popover.style.left = '0px';
+        popover.style.top = Math.round(triggerRect.bottom + 15) + 'px';
+        popover.style.right = 'auto';
+
+        var popoverWidth = popover.getBoundingClientRect().width;
+        var left = Math.max(12, Math.min(
+          triggerRect.right - popoverWidth,
+          window.innerWidth - popoverWidth - 12
+        ));
+        var caretCenter = triggerRect.left + (triggerRect.width / 2) - left;
+        var caretRight = Math.max(12, Math.min(popoverWidth - 26, popoverWidth - caretCenter - 7));
+        popover.style.left = Math.round(left) + 'px';
+        popover.style.setProperty('--more-projects-caret-right', Math.round(caretRight) + 'px');
+      };
+      var setOpen = function (open) {
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.classList.toggle('is-active', open);
+        item.classList.toggle('is-open', open);
+        popover.hidden = !open;
+        popover.setAttribute('aria-hidden', String(!open));
+        if (open) repositionPopover();
+        else resetPopoverPosition();
+      };
+
+      toggle.addEventListener('click', function () {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+
+      if (closeButton) {
+        closeButton.addEventListener('click', function () {
+          setOpen(false);
+          toggle.focus();
+        });
+      }
+
+      document.addEventListener('click', function (event) {
+        if (themeToggle && themeToggle.contains(event.target)) return;
+        if (!item.contains(event.target)) setOpen(false);
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          setOpen(false);
+          toggle.focus();
+        }
+      });
+
+      window.addEventListener('resize', repositionPopover);
+      window.addEventListener('scroll', repositionPopover, true);
+
+      Array.prototype.forEach.call(popover.querySelectorAll('[data-copy-project]'), function (button) {
+        button.addEventListener('click', function () {
+          var text = button.getAttribute('data-copy-project') || '';
+          var originalLabel = button.textContent;
+          var restoreLabel = function () {
+            window.setTimeout(function () { button.textContent = originalLabel; }, 1600);
+          };
+          var copyFallback = function () {
+            var input = document.createElement('textarea');
+            input.value = text;
+            input.setAttribute('readonly', '');
+            input.style.position = 'fixed';
+            input.style.opacity = '0';
+            document.body.appendChild(input);
+            input.select();
+            var copied = false;
+            try { copied = document.execCommand('copy'); } catch (error) {}
+            document.body.removeChild(input);
+            return copied;
+          };
+          var copyPromise = navigator.clipboard && navigator.clipboard.writeText
+            ? navigator.clipboard.writeText(text)
+            : Promise.resolve(copyFallback());
+
+          copyPromise.then(function (result) {
+            if (result === false) throw new Error('Copy failed');
+            button.textContent = 'Copied!';
+            restoreLabel();
+          }).catch(function () {
+            button.textContent = 'Copy failed';
+            restoreLabel();
+          });
+        });
+      });
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initMoreProjects);
+    } else {
+      initMoreProjects();
+    }
+  }());
+</script>

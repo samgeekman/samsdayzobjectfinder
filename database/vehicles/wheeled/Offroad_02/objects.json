@@ -18,7 +18,19 @@
     "path": "dz/vehicles/wheeled/offroad_02",
     "usableOnConsole": false,
     "searchTags": "car, m1025, transport, vehicle, vehicles, wheeled, hummer, humvee, military",
-    "image": "images/vehicles/wheeled/offroad_02/offroad_02/offroad_02.jpg",
+    "image": "images/vehicles/wheeled/offroad_02/offroad_02_beige/offroad_02_beige.jpg",
     "id": "dzobj_jwfmz7daim"
+  },
+  {
+    "objectName": "Offroad_02_Beige",
+    "inGameName": "M1025",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02",
+    "usableOnConsole": true,
+    "searchTags": "car, m1025, transport, vehicle, vehicles, wheeled, hummer, humvee, military, v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/offroad_02_beige/offroad_02_beige.jpg",
+    "id": "dzobj_d033977a45",
+    "linked-p3d": "dzobj_jwfmz7daim"
   }
 ]

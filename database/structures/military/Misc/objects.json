@@ -724,5 +724,29 @@
     "searchTags": "military, supplybox, crate, storage, box, loot, drop, supply, package, dynamic_event, orange, medical",
     "image": "images/structures/military/misc/staticobj_misc_supplybox3_de.jpg",
     "id": "dzobj_091yj59bg8"
+  },
+  {
+    "objectName": "StaticObj_Misc_Barbedwire_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/misc",
+    "usableOnConsole": true,
+    "searchTags": "military, barbedwire, wire, fence, defense, barrier, wire, metal, security, v1.30-exp-badlands",
+    "image": "images/structures/military/misc/staticobj_misc_barbedwire.jpg",
+    "id": "dzobj_6b399d2418",
+    "linked-p3d": "dzobj_ose74yc14n"
+  },
+  {
+    "objectName": "StaticObj_Misc_Hedgehog_Concrete_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/misc",
+    "usableOnConsole": true,
+    "searchTags": "military, hedgehog, obstacle, concrete, tanktrap, metal, v1.30-exp-badlands",
+    "image": "images/structures/military/misc/staticobj_misc_hedgehog_concrete.jpg",
+    "id": "dzobj_87b3cd62a9",
+    "linked-p3d": "dzobj_85layam7kv"
   }
 ]

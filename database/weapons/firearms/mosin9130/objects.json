@@ -29,7 +29,7 @@
     "path": "dz/weapons/firearms/mosin9130",
     "usableOnConsole": false,
     "searchTags": "rifles, 7.62x54mmr",
-    "image": "images/weapons/firearms/mosin9130/mosin9130/mosin9130.jpg",
+    "image": "images/weapons/firearms/mosin9130/mosin9130_desert/mosin9130_desert.jpg",
     "id": "dzobj_kiovzxynxe"
   },
   {
@@ -40,7 +40,7 @@
     "path": "dz/weapons/firearms/mosin9130",
     "usableOnConsole": false,
     "searchTags": "rifles, 7.62x54mmr",
-    "image": "images/weapons/firearms/dzweaponsfirearmsmosin9130mosin_sawn.p3d.jpg",
+    "image": "images/weapons/firearms/mosin9130/sawedoffmosin9130_desert/sawedoffmosin9130_desert.jpg",
     "id": "dzobj_uz2dko1f7r"
   },
   {
@@ -108,5 +108,77 @@
     "searchTags": "firearms, mosin9130, weapon, weapons",
     "image": "images/weapons/firearms/mosin9130/sawedoffmosin9130_green/sawedoffmosin9130_green.jpg",
     "id": "dzobj_0r8yxwll8v"
+  },
+  {
+    "objectName": "Mosin9130_Desert",
+    "inGameName": "Mosin 91/30",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/mosin9130/mosin9130_desert/mosin9130_desert.jpg",
+    "id": "dzobj_dab0050d42",
+    "linked-p3d": "dzobj_kiovzxynxe"
+  },
+  {
+    "objectName": "Mosin9130_Winter",
+    "inGameName": "Mosin 91/30",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/mosin9130/mosin9130_winter/mosin9130_winter.jpg",
+    "id": "dzobj_d02e820cf1",
+    "linked-p3d": "dzobj_kiovzxynxe"
+  },
+  {
+    "objectName": "Mosin9130_Woodland",
+    "inGameName": "Mosin 91/30",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/mosin9130/mosin9130_woodland/mosin9130_woodland.jpg",
+    "id": "dzobj_334b252822",
+    "linked-p3d": "dzobj_kiovzxynxe"
+  },
+  {
+    "objectName": "SawedoffMosin9130_Desert",
+    "inGameName": "Sawed-off Mosin 91/30",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/mosin9130/sawedoffmosin9130_desert/sawedoffmosin9130_desert.jpg",
+    "id": "dzobj_2c880b8213",
+    "linked-p3d": "dzobj_uz2dko1f7r"
+  },
+  {
+    "objectName": "SawedoffMosin9130_Winter",
+    "inGameName": "Sawed-off Mosin 91/30",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/mosin9130/sawedoffmosin9130_winter/sawedoffmosin9130_winter.jpg",
+    "id": "dzobj_dae7d7d3df",
+    "linked-p3d": "dzobj_uz2dko1f7r"
+  },
+  {
+    "objectName": "SawedoffMosin9130_Woodland",
+    "inGameName": "Sawed-off Mosin 91/30",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/mosin9130/sawedoffmosin9130_woodland/sawedoffmosin9130_woodland.jpg",
+    "id": "dzobj_1cc0d6cf28",
+    "linked-p3d": "dzobj_uz2dko1f7r"
   }
 ]

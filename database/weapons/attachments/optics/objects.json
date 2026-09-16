@@ -403,8 +403,36 @@
     "path": "dz/weapons/attachments/optics",
     "usableOnConsole": false,
     "searchTags": "attachments, optics, scope, weapon, weapons",
-    "image": "images/weapons/attachments/optics/optic_holo_sight.p3d.jpg",
-    "id": "dzobj_kpcawq5aj7"
+    "image": "images/weapons/attachments/optics/holooptic/holooptic.jpg",
+    "id": "dzobj_kpcawq5aj7",
+    "linked-config": [
+      "dzobj_706lov0yq9",
+      "dzobj_k1r8lgspc8"
+    ]
+  },
+  {
+    "objectName": "HoloOptic",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "attachments, optics, scope, weapon, weapons, v1.30-exp-badlands",
+    "image": "images/weapons/attachments/optics/holooptic/holooptic.jpg",
+    "id": "dzobj_706lov0yq9",
+    "linked-p3d": "dzobj_kpcawq5aj7"
+  },
+  {
+    "objectName": "HoloOptic_Black",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "attachments, optics, scope, weapon, weapons, v1.30-exp-badlands",
+    "image": "images/weapons/attachments/optics/holooptic_black/holooptic_black.jpg",
+    "id": "dzobj_k1r8lgspc8",
+    "linked-p3d": "dzobj_kpcawq5aj7"
   },
   {
     "objectName": "optic_hunting.p3d",

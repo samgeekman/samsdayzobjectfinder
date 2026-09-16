@@ -214,5 +214,29 @@
     "searchTags": "airfield, hangar, small, aircraft, storage, building, airstrip, airport",
     "image": "images/structures/specific/airfields/land_airfield_small_hangar.jpg",
     "id": "dzobj_voy2r9wuop"
+  },
+  {
+    "objectName": "StaticObj_Airfield_Small_Control",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": true,
+    "searchTags": "airfield, control tower, ATC, small, building, airstrip, airport, v1.30-exp-badlands",
+    "image": "images/structures/specific/airfields/land_airfield_small_control.jpg",
+    "id": "dzobj_8c8b73cbbf",
+    "linked-p3d": "dzobj_wc315r9zxm"
+  },
+  {
+    "objectName": "StaticObj_Airfield_Small_Hangar",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": true,
+    "searchTags": "airfield, hangar, small, aircraft, storage, building, airstrip, airport, v1.30-exp-badlands",
+    "image": "images/structures/specific/airfields/land_airfield_small_hangar.jpg",
+    "id": "dzobj_6c3d852583",
+    "linked-p3d": "dzobj_hkuntlo789"
   }
 ]

@@ -4,6 +4,11 @@ type: "page"
 draft: false
 ---
 
+## 1.0.2 - 16 September 2026
+
+- Added new 1.30 experimental objects (some images still to do) - only available in DayZ Experimental. See [here](http://127.0.0.1:1313/?version=v1.29-exp-badlands&version=v1.30-exp-badlands)
+- Added 'Other projects' button, with a new ascii Chernarus map: `ssh ascii.samsobjectfinder.com` from your terminal.
+
 ## - 1.0.1 - 5 August 2026
 
 - Rows per page is now persistent.

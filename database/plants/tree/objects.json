@@ -1560,5 +1560,101 @@
     "searchTags": "medium, brown",
     "image": "images/plants/tree/t_town_1sb.p3d.jpg",
     "id": "dzobj_ovs9ilkzl7"
+  },
+  {
+    "objectName": "StaticObj_d_FagusSylvatica_fallen",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, dead, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_fallen.p3d.jpg",
+    "id": "dzobj_0fe0c78ae9",
+    "linked-p3d": "dzobj_cjbg4m6srz"
+  },
+  {
+    "objectName": "StaticObj_d_FagusSylvatica_fallen_DE",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, dead, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_fallen.p3d.jpg",
+    "id": "dzobj_fd2d827717",
+    "linked-p3d": "dzobj_cjbg4m6srz"
+  },
+  {
+    "objectName": "StaticObj_d_FagusSylvatica_fallenb",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, dead, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_fallenb.p3d.jpg",
+    "id": "dzobj_b4800628d7",
+    "linked-p3d": "dzobj_nkp0k2zrir"
+  },
+  {
+    "objectName": "StaticObj_d_FagusSylvatica_fallenb_DE",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, dead, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_fallenb.p3d.jpg",
+    "id": "dzobj_2ee3570e40",
+    "linked-p3d": "dzobj_nkp0k2zrir"
+  },
+  {
+    "objectName": "StaticObj_d_FagusSylvatica_fallenc",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "dead, oak, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_fallenc.p3d.jpg",
+    "id": "dzobj_161ea9753f",
+    "linked-p3d": "dzobj_34o3mabdvc"
+  },
+  {
+    "objectName": "StaticObj_d_FagusSylvatica_fallenc_DE",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "dead, oak, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_fallenc.p3d.jpg",
+    "id": "dzobj_6cceb0a0bf",
+    "linked-p3d": "dzobj_34o3mabdvc"
+  },
+  {
+    "objectName": "StaticObj_d_FagusSylvatica_stump",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, dead, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_stump.p3d.jpg",
+    "id": "dzobj_725e79a9e7",
+    "linked-p3d": "dzobj_mbam7q6x7z"
+  },
+  {
+    "objectName": "StaticObj_d_FagusSylvatica_stump_DE",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, dead, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_stump.p3d.jpg",
+    "id": "dzobj_4608da407b",
+    "linked-p3d": "dzobj_mbam7q6x7z"
   }
 ]

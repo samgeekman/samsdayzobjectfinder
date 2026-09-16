@@ -894,6 +894,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/ruins/proxy/staticobj_classroom_case_a_broken/staticobj_classroom_case_a_broken.jpg"
   },
   {
+    "objectName": "ZmbF_SoldierNormal",
+    "inGameName": "Infected",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "characters, zombies, zmbf, soldiernormal, zmb, f, soldier, normal, infected, v1.30-exp-badlands",
+    "image": "images/characters/zombies/zmbf_soldiernormal/zmbf_soldiernormal.jpg",
+    "id": "dzobj_055204d4c1",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/characters/zombies/zmbf_soldiernormal/zmbf_soldiernormal.jpg"
+  },
+  {
     "objectName": "scope.p3d",
     "inGameName": "-",
     "category": "weapons",
@@ -1051,6 +1068,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/weapons/attachments/support/ak_woodhndgrd/ak_woodhndgrd.jpg"
   },
   {
+    "objectName": "beams_front_a2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/wrecks/ships/proxy",
+    "usableOnConsole": false,
+    "searchTags": "structures, wrecks, ships, proxy, beams, front, a2, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/ships/proxy/beams_front_a2/beams_front_a2.jpg",
+    "id": "dzobj_06b88a0f99",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/ships/proxy/beams_front_a2/beams_front_a2.jpg"
+  },
+  {
     "objectName": "signenoch_15_2.p3d",
     "inGameName": "-",
     "category": "structures_bliss",
@@ -1121,6 +1155,23 @@
       0.60322105884552
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/walls/staticobj_wall_cbrk_5.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wall_FenVineyard_DE",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Config",
+    "path": "dz/structures_bliss/walls",
+    "usableOnConsole": true,
+    "searchTags": "barrier, livoniaa, walls, fence, v1.30-exp-badlands",
+    "image": "images/structures_bliss/walls/staticobj_wall_fenvineyard.jpg",
+    "id": "dzobj_0738b6af9e",
+    "dimensionsVisual": [
+      8.318581581115723,
+      2.062262535095215,
+      0.3049377202987671
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/walls/staticobj_wall_fenvineyard.jpg"
   },
   {
     "objectName": "StaticObj_Furniture_table_DZ",
@@ -1430,6 +1481,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/plants_bliss/clutter/c_grasslow_summer.p3d.jpg"
   },
   {
+    "objectName": "motorbike_02_wheel_2_ruined.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, wheel, 2, ruined, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_2_ruined/motorbike_02_wheel_2_ruined.jpg",
+    "id": "dzobj_09418843ae",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_2_ruined/motorbike_02_wheel_2_ruined.jpg"
+  },
+  {
     "objectName": "enoch_grabinskie_3.p3d",
     "inGameName": "-",
     "category": "water_bliss",
@@ -1498,6 +1566,23 @@
       4.351590156555176
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/specific/deadbodies/staticobj_dead_massgrave_15m.jpg"
+  },
+  {
+    "objectName": "ship_mast_1.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/wrecks/ships/proxy",
+    "usableOnConsole": false,
+    "searchTags": "structures, wrecks, ships, proxy, ship, mast, 1, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/ships/proxy/ship_mast_1/ship_mast_1.jpg",
+    "id": "dzobj_09f01b2a1e",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/ships/proxy/ship_mast_1/ship_mast_1.jpg"
   },
   {
     "objectName": "AK101_Green",
@@ -1641,6 +1726,23 @@
       0.11212553456425667
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/settlements/sign_rogovo_end/sign_rogovo_end.jpg"
+  },
+  {
+    "objectName": "decal_tireprints_02.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "structures, roads, decals, decal, tireprints, 02, v1.30-exp-badlands",
+    "image": "images/structures/roads/decals/decal_tireprints_02/decal_tireprints_02.jpg",
+    "id": "dzobj_0aca3a783b",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/roads/decals/decal_tireprints_02/decal_tireprints_02.jpg"
   },
   {
     "objectName": "StaticObj_Furniture_picture_c",
@@ -1829,6 +1931,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/characters/headgear/beaniehat_blue/beaniehat_blue.jpg"
   },
   {
+    "objectName": "Offroad_02_Door_2_2_BeigeRust",
+    "inGameName": "M1025 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2_beigerust/offroad_02_door_2_2_beigerust.jpg",
+    "id": "dzobj_0bae260d67",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2_beigerust/offroad_02_door_2_2_beigerust.jpg"
+  },
+  {
     "objectName": "power_hv2_wire.p3d",
     "inGameName": "-",
     "category": "structures_sakhal",
@@ -1942,6 +2061,23 @@
       6.005136966705322
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/roads/panels/staticobj_panel_concrete_dam_legacy.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_Glass_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, glass, shards, broken, window, debris, v1.30-exp-badlands",
+    "image": "images/structures/ruins/staticobj_rubble_glass.jpg",
+    "id": "dzobj_0c11d87fd8",
+    "dimensionsVisual": [
+      7.601871490478516,
+      0.06172565184533596,
+      7.161953449249268
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/ruins/staticobj_rubble_glass.jpg"
   },
   {
     "objectName": "t_piceaabies_2s_frozen.p3d",
@@ -2195,6 +2331,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/roads/bridges/staticobj_bridge_concrete3.jpg"
   },
   {
+    "objectName": "Motorbike_02_Wheel_2",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, wheel, 2, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_2/motorbike_02_wheel_2.jpg",
+    "id": "dzobj_0d4e2e9dd8",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_2/motorbike_02_wheel_2.jpg"
+  },
+  {
     "objectName": "MaleFeet_Base",
     "inGameName": "Bare feet new",
     "category": "characters",
@@ -2281,6 +2434,40 @@
       0.5021331310272217
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/industrial/power/staticobj_power_pole_wood1_trail_b.jpg"
+  },
+  {
+    "objectName": "Motorbike_02_Wheel_1",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, wheel, 1, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_1/motorbike_02_wheel_1.jpg",
+    "id": "dzobj_0dde145508",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_1/motorbike_02_wheel_1.jpg"
+  },
+  {
+    "objectName": "Motorbike_02_Yellow",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/motorbike_02_yellow/motorbike_02_yellow.jpg",
+    "id": "dzobj_0dde779783",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/motorbike_02_yellow/motorbike_02_yellow.jpg"
   },
   {
     "objectName": "shed_m4.p3d",
@@ -2605,6 +2792,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/characters/tops/armband_napa/armband_napa.jpg"
   },
   {
+    "objectName": "Land_Wreck_sed02_aban1_yellow",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, sedan_02, sarka, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_sed02_aban1_yellow/land_wreck_sed02_aban1_yellow.jpg",
+    "id": "dzobj_0efb3f1ecc",
+    "dimensionsVisual": [
+      1.7970203757286072,
+      1.5467336773872375,
+      4.36911153793335
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_sed02_aban1_yellow/land_wreck_sed02_aban1_yellow.jpg"
+  },
+  {
     "objectName": "sign_4a.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -2726,6 +2930,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/underground/storage/proxy/staticobj_ammoboxes_single.jpg"
   },
   {
+    "objectName": "wall_fen1_5_2_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/walls",
+    "usableOnConsole": false,
+    "searchTags": "structures, walls, wall, fen1, 5, 2, nolc, v1.30-exp-badlands",
+    "image": "images/structures/walls/staticobj_wall_fen1_5_2.jpg",
+    "id": "dzobj_0f1dfea513",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/walls/staticobj_wall_fen1_5_2.jpg"
+  },
+  {
     "objectName": "ruin_slum_house4.p3d",
     "inGameName": "-",
     "category": "structures_bliss",
@@ -2761,6 +2982,23 @@
       39.5625
     ],
     "imageUrl": "https://samsobjectfinder.com/images/water_bliss/ponds/enoch_grabinskie_38.p3d.jpg"
+  },
+  {
+    "objectName": "StaticObj_Misc_WoodTable_Indoor",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "table, picnic bench, wooden, park, a-frame table, lassen table, v1.30-exp-badlands",
+    "image": "images/structures/residential/misc/staticobj_misc_woodtable_indoor.jpg",
+    "id": "dzobj_0f4cf411a0",
+    "dimensionsVisual": [
+      1.5271472930908203,
+      0.756513774394989,
+      2.0112218856811523
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/residential/misc/staticobj_misc_woodtable_indoor.jpg"
   },
   {
     "objectName": "pond_big_42_07.p3d",
@@ -2812,6 +3050,23 @@
       0.11172712594270706
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/directional/sign_41c/sign_41c.jpg"
+  },
+  {
+    "objectName": "StaticObj_d_FagusSylvatica_fallen",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, dead, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_fallen.p3d.jpg",
+    "id": "dzobj_0fe0c78ae9",
+    "dimensionsVisual": [
+      19.198209762573242,
+      6.542610168457031,
+      7.111220598220825
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/plants/tree/d_fagussylvatica_fallen.p3d.jpg"
   },
   {
     "objectName": "log02burned.p3d",
@@ -7177,6 +7432,40 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/specific/castles/land_castle_walls_10/land_castle_walls_10.jpg"
   },
   {
+    "objectName": "CZ527_desert",
+    "inGameName": "CR-527",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/cz527",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x39, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/cz527/cz527_desert/cz527_desert.jpg",
+    "id": "dzobj_108ce010d5",
+    "dimensionsVisual": [
+      1.9999998807907104,
+      0.5977967195212841,
+      1.2005699425935745
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/cz527/cz527_desert/cz527_desert.jpg"
+  },
+  {
+    "objectName": "CZ527_Woodland",
+    "inGameName": "CR-527",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/cz527",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x39, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/cz527/cz527_woodland/cz527_woodland.jpg",
+    "id": "dzobj_10ed07a9ef",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/cz527/cz527_woodland/cz527_woodland.jpg"
+  },
+  {
     "objectName": "sign_25c.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -7723,6 +8012,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/ships/land_ship_big_castle.jpg"
   },
   {
+    "objectName": "StaticObj_Rubble_DirtPile_Medium1_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, dirt, mound, medium, soil, earth, pile, v1.30-exp-badlands",
+    "image": "images/structures/ruins/staticobj_rubble_dirtpile_medium1.jpg",
+    "id": "dzobj_1242c7eaa5",
+    "dimensionsVisual": [
+      4.097620010375977,
+      0.5632980465888977,
+      2.8970000743865967
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/ruins/staticobj_rubble_dirtpile_medium1.jpg"
+  },
+  {
     "objectName": "containerlocked.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -7744,6 +8050,23 @@
       6.306045055389404
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/industrial/containers/land_containerlocked_blue_de.jpg"
+  },
+  {
+    "objectName": "Motorbike_02_ShieldLeft_Blue",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, shieldleft, shield, left, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldleft_blue/motorbike_02_shieldleft_blue.jpg",
+    "id": "dzobj_129308ec59",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldleft_blue/motorbike_02_shieldleft_blue.jpg"
   },
   {
     "objectName": "StaticObj_Geoplant_PowerHall_Wire",
@@ -7923,6 +8246,57 @@
       2.5
     ],
     "imageUrl": "https://samsobjectfinder.com/images/weapons/ammunition/ammo_rpg7_he/ammo_rpg7_he.jpg"
+  },
+  {
+    "objectName": "StaticObj_Furniture_PlasticBucket_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/furniture/decoration/bucket",
+    "usableOnConsole": true,
+    "searchTags": "decoration, furniture, v1.30-exp-badlands",
+    "image": "images/structures/furniture/decoration/bucket/staticobj_furniture_plasticbucket.jpg",
+    "id": "dzobj_1371339dac",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/furniture/decoration/bucket/staticobj_furniture_plasticbucket.jpg"
+  },
+  {
+    "objectName": "motorbike_01.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_01",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 01, blue, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/motorbike_01_blue/motorbike_01_blue.jpg",
+    "id": "dzobj_139920d169",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/motorbike_01_blue/motorbike_01_blue.jpg"
+  },
+  {
+    "objectName": "catfish_fillet_dried.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, dried, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish_fillet_dried/catfish_fillet_dried.jpg",
+    "id": "dzobj_13bb839670",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/food/catfish_fillet_dried/catfish_fillet_dried.jpg"
   },
   {
     "objectName": "StaticObj_Misc_WoodenCrate_5x",
@@ -8369,6 +8743,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/characters/headgear/dirtbikehelmet_black/dirtbikehelmet_black.jpg"
   },
   {
+    "objectName": "Offroad_02_Door_1_2_BeigeRust",
+    "inGameName": "M1025 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2_beigerust/offroad_02_door_1_2_beigerust.jpg",
+    "id": "dzobj_15cea2713a",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2_beigerust/offroad_02_door_1_2_beigerust.jpg"
+  },
+  {
     "objectName": "ZmbM_FarmerFat_Blue",
     "inGameName": "-",
     "category": "characters",
@@ -8543,6 +8934,40 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/roads/bridges/bridge_wood2.p3d.jpg"
   },
   {
+    "objectName": "Motorbike_02_Red",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/motorbike_02_red/motorbike_02_red.jpg",
+    "id": "dzobj_160b75f5e8",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/motorbike_02_red/motorbike_02_red.jpg"
+  },
+  {
+    "objectName": "StaticObj_d_FagusSylvatica_fallenc",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "dead, oak, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_fallenc.p3d.jpg",
+    "id": "dzobj_161ea9753f",
+    "dimensionsVisual": [
+      2.4749302864074707,
+      0.4620260000228882,
+      1.2597110867500305
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/plants/tree/d_fagussylvatica_fallenc.p3d.jpg"
+  },
+  {
     "objectName": "StaticObj_Furniture_tac_board_posters_level2",
     "inGameName": "-",
     "category": "structures",
@@ -8596,6 +9021,23 @@
       0.6622649431228638
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/tourist/trailsign_74_pusta/trailsign_74_pusta.jpg"
+  },
+  {
+    "objectName": "ProxyMotorbike_02_windshield",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, windshield, shield, front, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldfront_blue/motorbike_02_shieldfront_blue.jpg",
+    "id": "dzobj_16714055d6",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldfront_blue/motorbike_02_shieldfront_blue.jpg"
   },
   {
     "objectName": "conveyor_short2.p3d",
@@ -8794,6 +9236,23 @@
       0.5440862476825714
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/furniture/cases/locker/locker_closed_blue_v1.jpg"
+  },
+  {
+    "objectName": "pipe_small2_4m.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/industrial/pipes",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, industrial, pipes, pipe, small2, 4m, v1.30-exp-badlands",
+    "image": "images/structures_bliss/industrial/pipes/pipe_small2_4m/pipe_small2_4m.jpg",
+    "id": "dzobj_176a02db7e",
+    "dimensionsVisual": [
+      1.2,
+      1.2,
+      1.2
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/industrial/pipes/pipe_small2_4m/pipe_small2_4m.jpg"
   },
   {
     "objectName": "StaticObj_Wall_VilVar2_4_2",
@@ -9201,6 +9660,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/civiliansedan/proxy/sedandoors_codriver/sedandoors_codriver.jpg"
   },
   {
+    "objectName": "Land_Wreck_sed01_aban2_white",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, civiliansedan, olga, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_sed01_aban2_white/land_wreck_sed01_aban2_white.jpg",
+    "id": "dzobj_191f3d27e6",
+    "dimensionsVisual": [
+      1.959416151046753,
+      1.6018118262290955,
+      4.974738121032715
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_sed01_aban2_white/land_wreck_sed01_aban2_white.jpg"
+  },
+  {
     "objectName": "Plant_Potato",
     "inGameName": "Potato Plant",
     "category": "gear",
@@ -9516,6 +9992,40 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/industrial/houses/land_water_station.jpg"
   },
   {
+    "objectName": "Motorbike_02_ShieldLeft_Red",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, shieldleft, shield, left, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldleft_red/motorbike_02_shieldleft_red.jpg",
+    "id": "dzobj_1c82321cc7",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldleft_red/motorbike_02_shieldleft_red.jpg"
+  },
+  {
+    "objectName": "SawedoffMosin9130_Woodland",
+    "inGameName": "Sawed-off Mosin 91/30",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/mosin9130/sawedoffmosin9130_woodland/sawedoffmosin9130_woodland.jpg",
+    "id": "dzobj_1cc0d6cf28",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/mosin9130/sawedoffmosin9130_woodland/sawedoffmosin9130_woodland.jpg"
+  },
+  {
     "objectName": "Sedan_02_Door_1_2",
     "inGameName": "Sarka 120 Rear Left Door",
     "category": "vehicles",
@@ -9677,6 +10187,23 @@
       13.738455295562744
     ],
     "imageUrl": "https://samsobjectfinder.com/images/rocks/rock_apart1.p3d.jpg"
+  },
+  {
+    "objectName": "Land_WaterSpring_Water",
+    "inGameName": "-",
+    "category": "water_sakhal",
+    "modelType": "Config",
+    "path": "dz/water_sakhal/fresh",
+    "usableOnConsole": true,
+    "searchTags": "v1.30-exp-badlands",
+    "image": "images/water_sakhal/fresh/land_waterspring_water/land_waterspring_water.jpg",
+    "id": "dzobj_1d7c79176b",
+    "dimensionsVisual": [
+      1.3963121175765991,
+      1.9371509552001953e-07,
+      1.1616942286491394
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/water_sakhal/fresh/land_waterspring_water/land_waterspring_water.jpg"
   },
   {
     "objectName": "StaticObj_Statue_General",
@@ -9849,6 +10376,23 @@
       5.17317008972168
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/specific/towers/land_tower_tc1.jpg"
+  },
+  {
+    "objectName": "Land_Wreck_sed02_aban2_yellow",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, sedan_02, sarka, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_sed02_aban2_yellow/land_wreck_sed02_aban2_yellow.jpg",
+    "id": "dzobj_1e3db364bf",
+    "dimensionsVisual": [
+      1.7107670307159424,
+      1.5279282927513123,
+      4.371562957763672
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_sed02_aban2_yellow/land_wreck_sed02_aban2_yellow.jpg"
   },
   {
     "objectName": "enoch_river_426.p3d",
@@ -10030,6 +10574,40 @@
       40.000009536743164
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/rail/tracks/staticobj_rail_track_down_40_lc.jpg"
+  },
+  {
+    "objectName": "Motorbike_02_Wheel_1_Ruined",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, wheel, 1, ruined, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_1_ruined/motorbike_02_wheel_1_ruined.jpg",
+    "id": "dzobj_1f4b670c81",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_1_ruined/motorbike_02_wheel_1_ruined.jpg"
+  },
+  {
+    "objectName": "Land_Wreck_hb02_aban2_red",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, hatchback_02, gunter, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_hb02_aban2_red/land_wreck_hb02_aban2_red.jpg",
+    "id": "dzobj_1f7d10178a",
+    "dimensionsVisual": [
+      1.7707871198654175,
+      1.5351582765579224,
+      4.088875889778137
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_hb02_aban2_red/land_wreck_hb02_aban2_red.jpg"
   },
   {
     "objectName": "KazuarOptic",
@@ -13703,6 +14281,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/signs/settlements/signenoch_lembork_start/signenoch_lembork_start.jpg"
   },
   {
+    "objectName": "wall_hanger_4wide.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/furniture/school_equipment",
+    "usableOnConsole": false,
+    "searchTags": "structures, furniture, school, equipment, wall, hanger, 4wide, v1.30-exp-badlands",
+    "image": "images/structures/furniture/school_equipment/wall_hanger_4wide/wall_hanger_4wide.jpg",
+    "id": "dzobj_20798eca22",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/furniture/school_equipment/wall_hanger_4wide/wall_hanger_4wide.jpg"
+  },
+  {
     "objectName": "BeanieHat_Green",
     "inGameName": "Beanie",
     "category": "characters",
@@ -14467,6 +15062,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/weapons/attachments/muzzle/m9a1_bayonet/m9a1_bayonet.jpg"
   },
   {
+    "objectName": "decal_tireprints_01_faded.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "structures, roads, decals, decal, tireprints, 01, faded, v1.30-exp-badlands",
+    "image": "images/structures/roads/decals/decal_tireprints_01_faded/decal_tireprints_01_faded.jpg",
+    "id": "dzobj_2408e13e31",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/roads/decals/decal_tireprints_01_faded/decal_tireprints_01_faded.jpg"
+  },
+  {
     "objectName": "ZmbF_HikerSkinny_Blue",
     "inGameName": "-",
     "category": "characters",
@@ -14542,6 +15154,23 @@
       0.9451822638511658
     ],
     "imageUrl": "https://samsobjectfinder.com/images/weapons/archery/crossbow/crossbow.p3d.jpg"
+  },
+  {
+    "objectName": "Offroad_02_Hood_BeigeRust",
+    "inGameName": "M1025 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood_beigerust/offroad_02_hood_beigerust.jpg",
+    "id": "dzobj_250568c938",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood_beigerust/offroad_02_hood_beigerust.jpg"
   },
   {
     "objectName": "underground_storage_pox.p3d",
@@ -14626,6 +15255,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/roads/parts/staticobj_roads_partpath_rock_curve.jpg"
   },
   {
+    "objectName": "Land_Wreck_sed02_aban2_red",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, sedan_02, sarka, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_sed02_aban2_red/land_wreck_sed02_aban2_red.jpg",
+    "id": "dzobj_262f047a28",
+    "dimensionsVisual": [
+      1.7107670307159424,
+      1.5279282927513123,
+      4.371562957763672
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_sed02_aban2_red/land_wreck_sed02_aban2_red.jpg"
+  },
+  {
     "objectName": "stones_moss_group_1.p3d",
     "inGameName": "-",
     "category": "water",
@@ -14641,6 +15287,23 @@
       4.374318599700928
     ],
     "imageUrl": "https://samsobjectfinder.com/images/water/streambed/misc/stones_moss_group_1.p3d.jpg"
+  },
+  {
+    "objectName": "StaticObj_Wreck_Bulldozer_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, construction, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/staticobj_wreck_bulldozer/staticobj_wreck_bulldozer.jpg",
+    "id": "dzobj_263087cca0",
+    "dimensionsVisual": [
+      3.7057032585144043,
+      2.938643217086792,
+      5.542962551116943
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/staticobj_wreck_bulldozer/staticobj_wreck_bulldozer.jpg"
   },
   {
     "objectName": "StaticObj_Wall_Fen4_Pole",
@@ -14679,6 +15342,23 @@
       4.976132869720459
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_sed01_aban1_wine/land_wreck_sed01_aban1_wine.jpg"
+  },
+  {
+    "objectName": "motorbike_02.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_02",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 02, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/motorbike_02_green/motorbike_02_green.jpg",
+    "id": "dzobj_26f14550fb",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/motorbike_02_green/motorbike_02_green.jpg"
   },
   {
     "objectName": "m_adam.p3d",
@@ -15817,6 +16497,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/sedan_02/proxy/sedan_02_hood/sedan_02_hood.jpg"
   },
   {
+    "objectName": "SawedoffMosin9130_Desert",
+    "inGameName": "Sawed-off Mosin 91/30",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/mosin9130/sawedoffmosin9130_desert/sawedoffmosin9130_desert.jpg",
+    "id": "dzobj_2c880b8213",
+    "dimensionsVisual": [
+      0.7394246757030487,
+      0.11605562269687653,
+      0.24506736174225807
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/mosin9130/sawedoffmosin9130_desert/sawedoffmosin9130_desert.jpg"
+  },
+  {
     "objectName": "houseblock_5f.p3d",
     "category": "structures",
     "modelType": "Raw P3D",
@@ -15944,6 +16641,23 @@
       13.63138198852539
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/roads/parts/staticobj_roads_partasf3_10_75.jpg"
+  },
+  {
+    "objectName": "Motorbike_02_ShieldFront_Red",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, windshield, shield, front, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldfront_red/motorbike_02_shieldfront_red.jpg",
+    "id": "dzobj_2d65b250cd",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldfront_red/motorbike_02_shieldfront_red.jpg"
   },
   {
     "objectName": "ArmyPouch_Green",
@@ -16152,6 +16866,23 @@
       0.37611833214759827
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/specific/fuelstation/fuelstation_feed_enoch.jpg"
+  },
+  {
+    "objectName": "StaticObj_d_FagusSylvatica_fallenb_DE",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, dead, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_fallenb.p3d.jpg",
+    "id": "dzobj_2ee3570e40",
+    "dimensionsVisual": [
+      4.329130172729492,
+      1.7087369561195374,
+      2.6393301486968994
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/plants/tree/d_fagussylvatica_fallenb.p3d.jpg"
   },
   {
     "objectName": "Land_WarheadStorage_PowerStation",
@@ -20164,6 +20895,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/water/ponds/moss/pond_big_40_01_moss.p3d.jpg"
   },
   {
+    "objectName": "StaticObj_Roadblock_CncBlocks_Long_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, concrete, blocks, long, barrier, defense, security, overlapping, v1.30-exp-badlands",
+    "image": "images/structures/military/improvised/staticobj_roadblock_cncblocks_long.jpg",
+    "id": "dzobj_32dd615ead",
+    "dimensionsVisual": [
+      0.8935030400753021,
+      1.363427996635437,
+      6.045480251312256
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/military/improvised/staticobj_roadblock_cncblocks_long.jpg"
+  },
+  {
     "objectName": "NVGHeadstrap",
     "inGameName": "NVG Headstrap",
     "category": "characters",
@@ -20271,6 +21019,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/plants_sakhal/winter/dzplants_sakhalwintert_betulapendula_3fb_winter.p3d.jpg"
   },
   {
+    "objectName": "Mosin9130_Woodland",
+    "inGameName": "Mosin 91/30",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/mosin9130/mosin9130_woodland/mosin9130_woodland.jpg",
+    "id": "dzobj_334b252822",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/mosin9130/mosin9130_woodland/mosin9130_woodland.jpg"
+  },
+  {
     "objectName": "StaticObj_Wreck_Train_Wagon_Tanker",
     "inGameName": "-",
     "category": "structures",
@@ -20293,6 +21058,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/trains/staticobj_wreck_train_wagon_tanker_de.jpg"
   },
   {
+    "objectName": "motorbike_01_wheel_1_ruined.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 1, ruined, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1_ruined/motorbike_01_wheel_1_ruined.jpg",
+    "id": "dzobj_3350dad3cb",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1_ruined/motorbike_01_wheel_1_ruined.jpg"
+  },
+  {
     "objectName": "c_grassplant1_summer.p3d",
     "inGameName": "-",
     "category": "plants_bliss",
@@ -20308,6 +21090,23 @@
       1.7644548416137695
     ],
     "imageUrl": "https://samsobjectfinder.com/images/plants_bliss/clutter/c_grassplant1_summer.p3d.jpg"
+  },
+  {
+    "objectName": "power_vhv_tower_corner_noproxy.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, industrial, power, vhv, tower, corner, noproxy, v1.30-exp-badlands",
+    "image": "images/structures_bliss/industrial/power/power_vhv_tower_corner_noproxy/power_vhv_tower_corner_noproxy.jpg",
+    "id": "dzobj_3369ccefe3",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/industrial/power/power_vhv_tower_corner_noproxy/power_vhv_tower_corner_noproxy.jpg"
   },
   {
     "objectName": "c_browngrass_flat.p3d",
@@ -21102,6 +21901,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/industrial/quarry/staticobj_quarry_conveyer.jpg"
   },
   {
+    "objectName": "eastsoldier_normal_navy_f.p3d",
+    "inGameName": "Infected",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "characters, zombies, eastsoldier, normal, navy, f, zmb, east, soldier, heavy, infected, v1.30-exp-badlands",
+    "image": "images/characters/zombies/eastsoldier_normal_navy_f/eastsoldier_normal_navy_f.jpg",
+    "id": "dzobj_383eedadd4",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/characters/zombies/eastsoldier_normal_navy_f/eastsoldier_normal_navy_f.jpg"
+  },
+  {
     "objectName": "trail_woodenpole_b.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -21139,6 +21955,23 @@
       0.5494759976863861
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/pants/nbcpantsyellow/nbcpantsyellow.jpg"
+  },
+  {
+    "objectName": "Motorbike_01_Wheel_1",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 1, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1/motorbike_01_wheel_1.jpg",
+    "id": "dzobj_38eb7f1bf0",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1/motorbike_01_wheel_1.jpg"
   },
   {
     "objectName": "enoch_river_157.p3d",
@@ -21217,6 +22050,40 @@
       3.3336102962493896
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/residential/misc/land_misc_chickencoop.jpg"
+  },
+  {
+    "objectName": "StaticObj_Roadblock_CncBlock_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, concrete, block, barrier, defense, security, single, one, 1, v1.30-exp-badlands",
+    "image": "images/structures/military/improvised/staticobj_roadblock_cncblock.jpg",
+    "id": "dzobj_39642f81e0",
+    "dimensionsVisual": [
+      0.8466200530529022,
+      0.6962202787399292,
+      2.600650191307068
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/military/improvised/staticobj_roadblock_cncblock.jpg"
+  },
+  {
+    "objectName": "CatfishFilletMeat",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/food",
+    "usableOnConsole": true,
+    "searchTags": "gear, food, catfish, fillet, meat, v1.30-exp-badlands",
+    "image": "images/gear/food/catfishfilletmeat/catfishfilletmeat.jpg",
+    "id": "dzobj_3967ffe5f6",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/food/catfishfilletmeat/catfishfilletmeat.jpg"
   },
   {
     "objectName": "case_wall_unit_part_d.p3d",
@@ -21627,6 +22494,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/industrial/garages/land_garage_office.jpg"
   },
   {
+    "objectName": "armyofficer_fat_f.p3d",
+    "inGameName": "Infected",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "characters, zombies, armyofficer, fat, f, zmb, army, officer, infected, v1.30-exp-badlands",
+    "image": "images/characters/zombies/armyofficer_fat_f/armyofficer_fat_f.jpg",
+    "id": "dzobj_3c04b7a886",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/characters/zombies/armyofficer_fat_f/armyofficer_fat_f.jpg"
+  },
+  {
     "objectName": "aircond_small.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -21680,6 +22564,23 @@
       0.11212553456425667
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/settlements/sign_moglievka_end/sign_moglievka_end.jpg"
+  },
+  {
+    "objectName": "motorbike_02_fenderrear.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, fenderrear, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_fenderrear/motorbike_02_fenderrear.jpg",
+    "id": "dzobj_3c7025ba8e",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_fenderrear/motorbike_02_fenderrear.jpg"
   },
   {
     "objectName": "hunter_old_m.p3d",
@@ -25750,6 +26651,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/roads/sidewalks/staticobj_sidewalk1_end.jpg"
   },
   {
+    "objectName": "locker_closed_16row.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/furniture/cases/locker",
+    "usableOnConsole": false,
+    "searchTags": "structures, furniture, cases, locker, closed, 16row, v1.30-exp-badlands",
+    "image": "images/structures/furniture/cases/locker/locker_closed_16row/locker_closed_16row.jpg",
+    "id": "dzobj_406bf2159f",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/furniture/cases/locker/locker_closed_16row/locker_closed_16row.jpg"
+  },
+  {
     "objectName": "decal_asphalt_patch11.p3d",
     "inGameName": "-",
     "category": "structures_bliss",
@@ -25975,6 +26893,23 @@
       8.590028762817383
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/military/houses/land_mil_barracks2.jpg"
+  },
+  {
+    "objectName": "Land_Misc_Pallet_Spawn_DE",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "industrial, sakhal, v1.30-exp-badlands",
+    "image": "images/structures_sakhal/industrial/misc/misc_pallet_spawn/misc_pallet_spawn.jpg",
+    "id": "dzobj_41ea8dfeb1",
+    "dimensionsVisual": [
+      1.5283371210098267,
+      0.1911843940615654,
+      1.4711909592151642
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/industrial/misc/misc_pallet_spawn/misc_pallet_spawn.jpg"
   },
   {
     "objectName": "Land_Tenement_Medium_Ghost2",
@@ -26206,6 +27141,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroadhatchback/proxy/nivadoors_hood/nivadoors_hood.jpg"
   },
   {
+    "objectName": "Motorbike_02_ShieldFront_Yellow",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, windshield, shield, front, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldfront_yellow/motorbike_02_shieldfront_yellow.jpg",
+    "id": "dzobj_42a94e51f2",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldfront_yellow/motorbike_02_shieldfront_yellow.jpg"
+  },
+  {
     "objectName": "enoch_sitnicke_24.p3d",
     "inGameName": "-",
     "category": "water_bliss",
@@ -26347,6 +27299,23 @@
       0.7556602358818054
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/specific/cultural/staticobj_statue_enoch1.jpg"
+  },
+  {
+    "objectName": "Offroad_02_Trunk_BeigeRust",
+    "inGameName": "M1025 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk_beigerust/offroad_02_trunk_beigerust.jpg",
+    "id": "dzobj_43894f8854",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk_beigerust/offroad_02_trunk_beigerust.jpg"
   },
   {
     "objectName": "enoch_river_207.p3d",
@@ -26806,6 +27775,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/water/streambed/land_streambed_moss_long_snake/land_streambed_moss_long_snake.jpg"
   },
   {
+    "objectName": "StaticObj_d_FagusSylvatica_stump_DE",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, dead, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_stump.p3d.jpg",
+    "id": "dzobj_4608da407b",
+    "dimensionsVisual": [
+      1.5121434926986694,
+      3.4136794805526733,
+      1.2688922882080078
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/plants/tree/d_fagussylvatica_stump.p3d.jpg"
+  },
+  {
     "objectName": "classroom_case_a.p3d",
     "inGameName": "-",
     "category": "structures_bliss",
@@ -26824,6 +27810,23 @@
       0.5205001831054688
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/ruins/proxy/staticobj_classroom_case_a/staticobj_classroom_case_a.jpg"
+  },
+  {
+    "objectName": "Land_Wreck_sed02_aban2_grey",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, sedan_02, sarka, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_sed02_aban2_grey/land_wreck_sed02_aban2_grey.jpg",
+    "id": "dzobj_46ae568f90",
+    "dimensionsVisual": [
+      1.7107670307159424,
+      1.5279282927513123,
+      4.371562957763672
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_sed02_aban2_grey/land_wreck_sed02_aban2_grey.jpg"
   },
   {
     "objectName": "sledge_hammer.p3d",
@@ -27024,6 +28027,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/vehicles/parts/air_oil_bottle/air_oil_bottle.jpg"
   },
   {
+    "objectName": "StaticObj_Sign_Roadblock_Arrow",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/signs/misc",
+    "usableOnConsole": true,
+    "searchTags": "marker, misc, notice, signs, v1.30-exp-badlands",
+    "image": "images/structures/signs/misc/sign_roadblock_arrow/sign_roadblock_arrow.jpg",
+    "id": "dzobj_476995986b",
+    "dimensionsVisual": [
+      0.0490877702832222,
+      0.8502700626850128,
+      0.8498290181159973
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/signs/misc/sign_roadblock_arrow/sign_roadblock_arrow.jpg"
+  },
+  {
     "objectName": "enoch_river_675.p3d",
     "inGameName": "-",
     "category": "water_bliss",
@@ -27093,6 +28113,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/rocks_sakhal/stone11_snow_lc.p3d.jpeg"
   },
   {
+    "objectName": "ZmbF_ArmyOfficer",
+    "inGameName": "Infected",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "characters, zombies, armyofficer, fat, f, zmb, army, officer, infected, v1.30-exp-badlands",
+    "image": "images/characters/zombies/armyofficer_fat_f/armyofficer_fat_f.jpg",
+    "id": "dzobj_4844c74125",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/characters/zombies/armyofficer_fat_f/armyofficer_fat_f.jpg"
+  },
+  {
     "objectName": "Blowtorch",
     "inGameName": "Blowtorch",
     "category": "gear",
@@ -27144,6 +28181,23 @@
       37.49853515625
     ],
     "imageUrl": "https://samsobjectfinder.com/images/water_bliss/river/enoch_river_598.p3d.jpg"
+  },
+  {
+    "objectName": "CZ527_winter",
+    "inGameName": "CR-527",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/cz527",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x39, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/cz527/cz527_winter/cz527_winter.jpg",
+    "id": "dzobj_48c979d480",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/cz527/cz527_winter/cz527_winter.jpg"
   },
   {
     "objectName": "StaticObj_Ruin_House_1W02_Proxy",
@@ -27269,7 +28323,7 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": false,
     "searchTags": "[match config]",
-    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk/offroad_02_trunk.jpg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk_beige/offroad_02_trunk_beige.jpg",
     "id": "dzobj_491ar9wq34",
     "linked-config": [
       "dzobj_4zo961utr1",
@@ -27280,7 +28334,7 @@
       1.4023829102516174,
       1.3595421314239502
     ],
-    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk/offroad_02_trunk.jpg"
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk_beige/offroad_02_trunk_beige.jpg"
   },
   {
     "objectName": "StaticObj_Wreck_UH1Y",
@@ -27377,6 +28431,23 @@
       21.048197746276855
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/roads/parts/asf1sakhal_fullline_15 75.p3d.jpg"
+  },
+  {
+    "objectName": "Offroad_02_Door_2_1_BeigeRust",
+    "inGameName": "M1025 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1_beigerust/offroad_02_door_2_1_beigerust.jpg",
+    "id": "dzobj_4a41670aac",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1_beigerust/offroad_02_door_2_1_beigerust.jpg"
   },
   {
     "objectName": "Land_Farm_Hopper2",
@@ -27648,6 +28719,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/furniture/radar_equipment/radar_panel.jpg"
   },
   {
+    "objectName": "Offroad_02_Door_2_2_Beige",
+    "inGameName": "M1025 Rear Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2_beige/offroad_02_door_2_2_beige.jpg",
+    "id": "dzobj_4bc31014b8",
+    "dimensionsVisual": [
+      0.12471401318907738,
+      1.0881244540214539,
+      0.9756539463996887
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2_beige/offroad_02_door_2_2_beige.jpg"
+  },
+  {
     "objectName": "power_pole_wood4_a_j.p3d",
     "inGameName": "-",
     "category": "structures_bliss",
@@ -27832,6 +28920,40 @@
       10.773221015930176
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/residential/houses/land_house_2w02.jpg"
+  },
+  {
+    "objectName": "catfish_fillet_cooked.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, cooked, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish_fillet_cooked/catfish_fillet_cooked.jpg",
+    "id": "dzobj_4c9c5ec5ad",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/food/catfish_fillet_cooked/catfish_fillet_cooked.jpg"
+  },
+  {
+    "objectName": "catfish_fillet_baked.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, baked, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish_fillet_baked/catfish_fillet_baked.jpg",
+    "id": "dzobj_4cad502f07",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/food/catfish_fillet_baked/catfish_fillet_baked.jpg"
   },
   {
     "objectName": "StaticObj_Furniture_tools_racking",
@@ -28020,6 +29142,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/roads/parts/staticobj_quarrysakhal_6konec1.jpg"
   },
   {
+    "objectName": "garbage_pile8_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, residential, misc, garbage, pile8, nolc, v1.30-exp-badlands",
+    "image": "images/structures_bliss/residential/misc/staticobj_garbage_pile8.jpg",
+    "id": "dzobj_4d42143286",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/residential/misc/staticobj_garbage_pile8.jpg"
+  },
+  {
     "objectName": "pond_big_31_04.p3d",
     "inGameName": "-",
     "category": "water",
@@ -28199,6 +29338,23 @@
       0.11172712594270706
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/directional/sign_85a/sign_85a.jpg"
+  },
+  {
+    "objectName": "ProxyMotorbike_02_shieldright",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, shieldright, shield, right, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldright_blue/motorbike_02_shieldright_blue.jpg",
+    "id": "dzobj_4eb4a3d780",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldright_blue/motorbike_02_shieldright_blue.jpg"
   },
   {
     "objectName": "HockeyHelmet_Black",
@@ -32113,6 +33269,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/gear/cooking/portablegasstove/portablegasstove.jpg"
   },
   {
+    "objectName": "Land_Misc_WoodenCrate_Spawn_DE",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Config",
+    "path": "dz/structures_sakhal/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "industrial, sakhal, v1.30-exp-badlands",
+    "image": "images/structures_sakhal/industrial/misc/misc_woodencrate_spawn/misc_woodencrate_spawn.jpg",
+    "id": "dzobj_502bda08ed",
+    "dimensionsVisual": [
+      0.8067423701286316,
+      0.6487778723239899,
+      1.4304442405700684
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/industrial/misc/misc_woodencrate_spawn/misc_woodencrate_spawn.jpg"
+  },
+  {
     "objectName": "Land_Mil_Barracks6",
     "category": "structures",
     "modelType": "Config",
@@ -32398,6 +33571,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/industrial/smokestacks/land_smokestack_medium.jpg"
   },
   {
+    "objectName": "ProxyMotorbike_01_wheel_1",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 1, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1/motorbike_01_wheel_1.jpg",
+    "id": "dzobj_525d0e5a41",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1/motorbike_01_wheel_1.jpg"
+  },
+  {
     "objectName": "StaticObj_Misc_Football_Gate",
     "inGameName": "-",
     "category": "structures",
@@ -32610,6 +33800,23 @@
       0.11172712594270706
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/signs/directional/signenoch_30_1/signenoch_30_1.jpg"
+  },
+  {
+    "objectName": "Land_Wreck_sed02_aban1_red",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, sedan_02, sarka, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_sed02_aban1_red/land_wreck_sed02_aban1_red.jpg",
+    "id": "dzobj_53054e0c9e",
+    "dimensionsVisual": [
+      1.7970203757286072,
+      1.5467336773872375,
+      4.36911153793335
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_sed02_aban1_red/land_wreck_sed02_aban1_red.jpg"
   },
   {
     "objectName": "fusebox.p3d",
@@ -33330,6 +34537,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/b95/sawedoffb95/sawedoffb95.jpg"
   },
   {
+    "objectName": "catfish_live.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, live, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish/catfish.jpg",
+    "id": "dzobj_57cb6c7c0c",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/food/catfish/catfish.jpg"
+  },
+  {
     "objectName": "MaleKaitoHead",
     "inGameName": "-",
     "category": "characters",
@@ -33977,6 +35201,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/characters/tops/tracksuitjacket_black/tracksuitjacket_black.jpg"
   },
   {
+    "objectName": "decal_tireprints_01.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "structures, roads, decals, decal, tireprints, 01, v1.30-exp-badlands",
+    "image": "images/structures/roads/decals/decal_tireprints_01/decal_tireprints_01.jpg",
+    "id": "dzobj_5cd1f56fe0",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/roads/decals/decal_tireprints_01/decal_tireprints_01.jpg"
+  },
+  {
     "objectName": "Land_Underground_Storage_Big",
     "inGameName": "-",
     "category": "structures_bliss",
@@ -34355,6 +35596,23 @@
       1.4275479316711426
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/residential/misc/staticobj_garbage_container_paper.jpg"
+  },
+  {
+    "objectName": "Motorbike_02_ShieldLeft_Yellow",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, shieldleft, shield, left, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldleft_yellow/motorbike_02_shieldleft_yellow.jpg",
+    "id": "dzobj_5ef0d8d851",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldleft_yellow/motorbike_02_shieldleft_yellow.jpg"
   },
   {
     "objectName": "enoch_river_572.p3d",
@@ -38128,6 +39386,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/industrial/cementworks/staticobj_cementworks_conveyormilla.jpg"
   },
   {
+    "objectName": "Offroad_02_Door_1_1_Beige",
+    "inGameName": "M1025 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1_beige/offroad_02_door_1_1_beige.jpg",
+    "id": "dzobj_607707457e",
+    "dimensionsVisual": [
+      0.12471212074160576,
+      1.0881245136260986,
+      0.9004415273666382
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1_beige/offroad_02_door_1_1_beige.jpg"
+  },
+  {
     "objectName": "sign_topolniki_end.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -38180,6 +39455,23 @@
       10.814595699310303
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/residential/houses/land_house_1w15_dam.jpg"
+  },
+  {
+    "objectName": "Motorbike_01_Red",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, blue, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/motorbike_01_blue/motorbike_01_blue.jpg",
+    "id": "dzobj_60f123a6dd",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/motorbike_01_blue/motorbike_01_blue.jpg"
   },
   {
     "objectName": "mil_camonet_big_nato.p3d",
@@ -38272,6 +39564,23 @@
       7.2398505210876465
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/military/improvised/staticobj_mil_artilery_rampart.jpg"
+  },
+  {
+    "objectName": "wall_fen5_10_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/walls",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, walls, wall, fen5, 10, nolc, v1.30-exp-badlands",
+    "image": "images/structures_bliss/walls/wall_fen5_10.jpg",
+    "id": "dzobj_61d074826c",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/walls/wall_fen5_10.jpg"
   },
   {
     "objectName": "container_1moh.p3d",
@@ -38507,6 +39816,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/transitbus/proxy/ikaruswheel_rear_destroyed/ikaruswheel_rear_destroyed.jpg"
   },
   {
+    "objectName": "handle.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/tools",
+    "usableOnConsole": false,
+    "searchTags": "gear, tools, handle, underground, breadcrumb, trigger, v1.30-exp-badlands",
+    "image": "images/gear/tools/undergroundbreadcrumbhandle/undergroundbreadcrumbhandle.jpg",
+    "id": "dzobj_62cc46b648",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/tools/undergroundbreadcrumbhandle/undergroundbreadcrumbhandle.jpg"
+  },
+  {
     "objectName": "StaticObj_Shed_Open_SideRoof",
     "inGameName": "-",
     "category": "structures",
@@ -38607,6 +39933,23 @@
       0.42491038143634796
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/tops/sweater_green/sweater_green.jpg"
+  },
+  {
+    "objectName": "motorbike_01_wheel_2_ruined.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 2, ruined, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2_ruined/motorbike_01_wheel_2_ruined.jpg",
+    "id": "dzobj_637348c09d",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2_ruined/motorbike_01_wheel_2_ruined.jpg"
   },
   {
     "objectName": "skilift_rope_end.p3d",
@@ -38976,6 +40319,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/settlements/sign_krasnoe_end/sign_krasnoe_end.jpg"
   },
   {
+    "objectName": "catfish_fillet_boiled.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, boiled, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish_fillet_boiled/catfish_fillet_boiled.jpg",
+    "id": "dzobj_653730097e",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/food/catfish_fillet_boiled/catfish_fillet_boiled.jpg"
+  },
+  {
     "objectName": "sign_myshkino_start.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -39125,6 +40485,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/gear/consumables/netting/netting.jpg"
   },
   {
+    "objectName": "Motorbike_01_Blue",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, blue, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/motorbike_01_blue/motorbike_01_blue.jpg",
+    "id": "dzobj_669fc99d03",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/motorbike_01_blue/motorbike_01_blue.jpg"
+  },
+  {
     "objectName": "StaticObj_Furniture_pultskasou",
     "inGameName": "-",
     "category": "structures",
@@ -39176,6 +40553,23 @@
       0.03212993033230305
     ],
     "imageUrl": "https://samsobjectfinder.com/images/weapons/attachments/magazine/mag_val_20rnd/mag_val_20rnd.jpg"
+  },
+  {
+    "objectName": "UndergroundTriggerHandle",
+    "inGameName": "Underground Trigger Handle",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/tools",
+    "usableOnConsole": true,
+    "searchTags": "gear, tools, handle, underground, breadcrumb, trigger, v1.30-exp-badlands",
+    "image": "images/gear/tools/undergroundtriggerhandle/undergroundtriggerhandle.jpg",
+    "id": "dzobj_66d17495d2",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/tools/undergroundtriggerhandle/undergroundtriggerhandle.jpg"
   },
   {
     "objectName": "ruin_housebig1_half_proxy_overgrowth.p3d",
@@ -39778,6 +41172,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/water_bliss/river/enoch_river_657.p3d.jpg"
   },
   {
+    "objectName": "catfish_fillet_burnt.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, burnt, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish_fillet_burnt/catfish_fillet_burnt.jpg",
+    "id": "dzobj_6a0923c003",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/food/catfish_fillet_burnt/catfish_fillet_burnt.jpg"
+  },
+  {
     "objectName": "enoch_river_560.p3d",
     "inGameName": "-",
     "category": "water_bliss",
@@ -40023,6 +41434,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/plants/clutter/c_elytrigia.p3d.jpg"
   },
   {
+    "objectName": "StaticObj_Misc_Barbedwire_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/misc",
+    "usableOnConsole": true,
+    "searchTags": "military, barbedwire, wire, fence, defense, barrier, wire, metal, security, v1.30-exp-badlands",
+    "image": "images/structures/military/misc/staticobj_misc_barbedwire.jpg",
+    "id": "dzobj_6b399d2418",
+    "dimensionsVisual": [
+      6.49540376663208,
+      2.0826337337493896,
+      2.0233030915260315
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/military/misc/staticobj_misc_barbedwire.jpg"
+  },
+  {
     "objectName": "StaticObj_Furniture_lobby_chair",
     "inGameName": "-",
     "category": "structures",
@@ -40149,6 +41577,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/ruins/land_ruin_housesmall1_half/land_ruin_housesmall1_half.jpg"
   },
   {
+    "objectName": "StaticObj_Airfield_Small_Hangar",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": true,
+    "searchTags": "airfield, hangar, small, aircraft, storage, building, airstrip, airport, v1.30-exp-badlands",
+    "image": "images/structures/specific/airfields/land_airfield_small_hangar.jpg",
+    "id": "dzobj_6c3d852583",
+    "dimensionsVisual": [
+      32.23362350463867,
+      8.391480207443237,
+      30.06547451019287
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/specific/airfields/land_airfield_small_hangar.jpg"
+  },
+  {
     "objectName": "case_bedroom_b.p3d",
     "inGameName": "-",
     "category": "structures_bliss",
@@ -40219,6 +41664,23 @@
       4.362991213798523
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/underground/terrain/staticobj_terrain_livoniaa_forestpatch.jpg"
+  },
+  {
+    "objectName": "StaticObj_d_FagusSylvatica_fallenc_DE",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "dead, oak, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_fallenc.p3d.jpg",
+    "id": "dzobj_6cceb0a0bf",
+    "dimensionsVisual": [
+      2.4749302864074707,
+      0.4620260000228882,
+      1.2597110867500305
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/plants/tree/d_fagussylvatica_fallenc.p3d.jpg"
   },
   {
     "objectName": "Sedan_02_Hood_RedRust",
@@ -44164,6 +45626,27 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/residential/houses/land_house_1w08_blue.jpg"
   },
   {
+    "objectName": "HoloOptic",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "attachments, optics, scope, weapon, weapons, v1.30-exp-badlands",
+    "image": "images/weapons/attachments/optics/holooptic/holooptic.jpg",
+    "id": "dzobj_706lov0yq9",
+    "linked-variant": [
+      "dzobj_k1r8lgspc8"
+    ],
+    "linked-p3d": "dzobj_kpcawq5aj7",
+    "dimensionsVisual": [
+      0.09009822830557823,
+      0.06844887835904956,
+      0.054552800953388214
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/attachments/optics/holooptic/holooptic.jpg"
+  },
+  {
     "objectName": "empty.p3d",
     "inGameName": "-",
     "category": "weapons",
@@ -44196,6 +45679,23 @@
       2.5226547718048096
     ],
     "imageUrl": "https://samsobjectfinder.com/images/plants_sakhal/clutter/dzplants_sakhalclutterc_browngrass.p3d.jpeg"
+  },
+  {
+    "objectName": "Offroad_02_Trunk_Beige",
+    "inGameName": "M1025 Trunk Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk_beige/offroad_02_trunk_beige.jpg",
+    "id": "dzobj_70df5397bb",
+    "dimensionsVisual": [
+      0.18666880577802658,
+      1.4023829102516174,
+      1.3595421314239502
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk_beige/offroad_02_trunk_beige.jpg"
   },
   {
     "objectName": "scout.p3d",
@@ -44375,6 +45875,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/animals/rangifer_tarandus/animal_rangifertarandus/animal_rangifertarandus.jpg"
   },
   {
+    "objectName": "Motorbike_02_Green",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/motorbike_02_green/motorbike_02_green.jpg",
+    "id": "dzobj_7130dcfdbe",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/motorbike_02_green/motorbike_02_green.jpg"
+  },
+  {
     "objectName": "StaticObj_Power_TransformerStation_Cables",
     "inGameName": "-",
     "category": "structures",
@@ -44391,6 +45908,23 @@
       75.0768051147461
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/industrial/power/staticobj_power_transformerstation_cables.jpg"
+  },
+  {
+    "objectName": "wall_fen5_10_d_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/walls",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, walls, wall, fen5, 10, d, nolc, v1.30-exp-badlands",
+    "image": "images/structures_bliss/walls/wall_fen5_10_d.jpg",
+    "id": "dzobj_71bfd4fdcf",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/walls/wall_fen5_10_d.jpg"
   },
   {
     "objectName": "AK_Suppressor",
@@ -44500,6 +46034,23 @@
       19.04466199874878
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/specific/castles/land_castle_bastion/land_castle_bastion.jpg"
+  },
+  {
+    "objectName": "StaticObj_d_FagusSylvatica_stump",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, dead, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_stump.p3d.jpg",
+    "id": "dzobj_725e79a9e7",
+    "dimensionsVisual": [
+      1.5121434926986694,
+      3.4136794805526733,
+      1.2688922882080078
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/plants/tree/d_fagussylvatica_stump.p3d.jpg"
   },
   {
     "objectName": "Mag_SSG82_5rnd",
@@ -44926,6 +46477,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_s1023_medic_beige/land_wreck_s1023_medic_beige.jpg"
   },
   {
+    "objectName": "StaticObj_Stretcher_Green_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/furniture/beds",
+    "usableOnConsole": true,
+    "searchTags": "beds, furniture, v1.30-exp-badlands",
+    "image": "images/structures/furniture/beds/stretcher_green.jpg",
+    "id": "dzobj_74d6e0da33",
+    "dimensionsVisual": [
+      0.658488005399704,
+      0.49948006868362427,
+      2.4948534965515137
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/furniture/beds/stretcher_green.jpg"
+  },
+  {
     "objectName": "decal_runway_skidmarks_end2.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -45103,6 +46671,23 @@
       0.11212553456425667
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/signs/settlements/signenoch_radacz_start/signenoch_radacz_start.jpg"
+  },
+  {
+    "objectName": "Waterskin_Natural",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/drinks",
+    "usableOnConsole": true,
+    "searchTags": "gear, drinks, waterskin, natural, v1.30-exp-badlands",
+    "image": "images/gear/drinks/waterskin_natural/waterskin_natural.jpg",
+    "id": "dzobj_7500cdebf6",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/drinks/waterskin_natural/waterskin_natural.jpg"
   },
   {
     "objectName": "StaticObj_Roads_Partgrav_6konec",
@@ -45691,6 +47276,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/military/houses/land_mil_barracks6_ghost2.jpg"
   },
   {
+    "objectName": "covers_single.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/wrecks/ships/proxy",
+    "usableOnConsole": false,
+    "searchTags": "structures, wrecks, ships, proxy, covers, single, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/ships/proxy/covers_single/covers_single.jpg",
+    "id": "dzobj_78822f62e5",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/ships/proxy/covers_single/covers_single.jpg"
+  },
+  {
     "objectName": "sign_69b.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -45887,6 +47489,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/traffic/sign_snowchains_end/sign_snowchains_end.jpg"
   },
   {
+    "objectName": "Motorbike_01_Wheel_2",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 2, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2/motorbike_01_wheel_2.jpg",
+    "id": "dzobj_792a743374",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2/motorbike_01_wheel_2.jpg"
+  },
+  {
     "objectName": "StaticObj_Stretcher_Green",
     "inGameName": "-",
     "category": "structures",
@@ -45994,6 +47613,40 @@
       14.953750610351562
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/military/improvised/staticobj_mil_camonet_tent2.jpg"
+  },
+  {
+    "objectName": "motorbike_01_wheel_2.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 2, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2/motorbike_01_wheel_2.jpg",
+    "id": "dzobj_7a0ad187f4",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2/motorbike_01_wheel_2.jpg"
+  },
+  {
+    "objectName": "Land_Wreck_hb02_aban1_red",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, hatchback_02, gunter, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_hb02_aban1_red/land_wreck_hb02_aban1_red.jpg",
+    "id": "dzobj_7a587091d4",
+    "dimensionsVisual": [
+      1.792725920677185,
+      1.5474488735198975,
+      4.084307789802551
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_hb02_aban1_red/land_wreck_hb02_aban1_red.jpg"
   },
   {
     "objectName": "d_fagussylvatica_stumpc.p3d",
@@ -46287,6 +47940,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/wrecks/boat_small8_red.p3d.jpg"
   },
   {
+    "objectName": "motorbike_01_wheel_1.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 1, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1/motorbike_01_wheel_1.jpg",
+    "id": "dzobj_7be5a6db00",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1/motorbike_01_wheel_1.jpg"
+  },
+  {
     "objectName": "airfield_light_papi3.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -46401,6 +48071,23 @@
       0.11172712594270706
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/directional/sign_30a/sign_30a.jpg"
+  },
+  {
+    "objectName": "Motorbike_02_ShieldRight_Green",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, shieldright, shield, right, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldright_green/motorbike_02_shieldright_green.jpg",
+    "id": "dzobj_7cabd00310",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldright_green/motorbike_02_shieldright_green.jpg"
   },
   {
     "objectName": "civ_belt_g.p3d",
@@ -46641,6 +48328,23 @@
       0.0765378549695015
     ],
     "imageUrl": "https://samsobjectfinder.com/images/gear/food/unknownfoodcan/unknownfoodcan.jpg"
+  },
+  {
+    "objectName": "ProxyMotorbike_01_wheel_2",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 2, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2/motorbike_01_wheel_2.jpg",
+    "id": "dzobj_7de33919f2",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2/motorbike_01_wheel_2.jpg"
   },
   {
     "objectName": "StaticObj_Wreck_MTVR_Cargo",
@@ -50747,6 +52451,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/roads/decals/staticobj_decal_runway_skidmarks_end_light.jpg"
   },
   {
+    "objectName": "ProxyMotorbike_02_wheel_2",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, wheel, 2, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_2/motorbike_02_wheel_2.jpg",
+    "id": "dzobj_803f7b6593",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_2/motorbike_02_wheel_2.jpg"
+  },
+  {
     "objectName": "smallstone.p3d",
     "inGameName": "Small Stone",
     "category": "gear",
@@ -51183,6 +52904,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/roads/parts/mudsakhal_12.p3d.jpg"
   },
   {
+    "objectName": "StaticObj_Garbage_GroundSq_5m_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": true,
+    "searchTags": "garbage, trash, waste, ground, surface, clutter, city, street, v1.30-exp-badlands",
+    "image": "images/structures/residential/misc/staticobj_garbage_groundsq_5m.jpg",
+    "id": "dzobj_82f837e576",
+    "dimensionsVisual": [
+      4.008330345153809,
+      0.13971780613064766,
+      4.621960163116455
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/residential/misc/staticobj_garbage_groundsq_5m.jpg"
+  },
+  {
     "objectName": "can_sardines.p3d",
     "inGameName": "Canned Sardines",
     "category": "gear",
@@ -51593,6 +53331,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/industrial/farms/farm_manurepile.jpg"
   },
   {
+    "objectName": "riothelmet_glass_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": false,
+    "searchTags": "characters, headgear, riothelmet, glass, g, v1.30-exp-badlands",
+    "image": "images/characters/headgear/riothelmet_glass_g/riothelmet_glass_g.jpg",
+    "id": "dzobj_85ef62ed60",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/characters/headgear/riothelmet_glass_g/riothelmet_glass_g.jpg"
+  },
+  {
     "objectName": "misc_hedgehog_concrete.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -51755,6 +53510,23 @@
       0.07440791092813015
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/walls/staticobj_wall_tin_5.jpg"
+  },
+  {
+    "objectName": "Land_Wreck_sed01_aban1_wine",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, civiliansedan, olga, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_sed01_aban1_wine/land_wreck_sed01_aban1_wine.jpg",
+    "id": "dzobj_8633e8a5b5",
+    "dimensionsVisual": [
+      1.9595376253128052,
+      1.6077585816383362,
+      4.976132869720459
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_sed01_aban1_wine/land_wreck_sed01_aban1_wine.jpg"
   },
   {
     "objectName": "chainmail_leggings_g.p3d",
@@ -52022,6 +53794,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/industrial/harbour/staticobj_pier_concrete3_2.jpg"
   },
   {
+    "objectName": "StaticObj_Misc_Hedgehog_Concrete_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/misc",
+    "usableOnConsole": true,
+    "searchTags": "military, hedgehog, obstacle, concrete, tanktrap, metal, v1.30-exp-badlands",
+    "image": "images/structures/military/misc/staticobj_misc_hedgehog_concrete.jpg",
+    "id": "dzobj_87b3cd62a9",
+    "dimensionsVisual": [
+      1.735033392906189,
+      1.3646211624145508,
+      1.697265863418579
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/military/misc/staticobj_misc_hedgehog_concrete.jpg"
+  },
+  {
     "objectName": "SlacksPants_White",
     "inGameName": "Suit Pants",
     "category": "characters",
@@ -52106,6 +53895,23 @@
       0.6622649431228638
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/tourist/trailsign_46_kurgan/trailsign_46_kurgan.jpg"
+  },
+  {
+    "objectName": "Motorbike_02_ShieldFront_Blue",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, windshield, shield, front, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldfront_blue/motorbike_02_shieldfront_blue.jpg",
+    "id": "dzobj_8877fe7ecf",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldfront_blue/motorbike_02_shieldfront_blue.jpg"
   },
   {
     "objectName": "wall_stoned.p3d",
@@ -52754,6 +54560,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/traffic/sign_uphill/sign_uphill.jpg"
   },
   {
+    "objectName": "StaticObj_Airfield_Small_Control",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/specific/airfields",
+    "usableOnConsole": true,
+    "searchTags": "airfield, control tower, ATC, small, building, airstrip, airport, v1.30-exp-badlands",
+    "image": "images/structures/specific/airfields/land_airfield_small_control.jpg",
+    "id": "dzobj_8c8b73cbbf",
+    "dimensionsVisual": [
+      37.18600273132324,
+      21.333988189697266,
+      29.19069194793701
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/specific/airfields/land_airfield_small_control.jpg"
+  },
+  {
     "objectName": "sakhal_50x50_water_volcanic.p3d",
     "inGameName": "-",
     "category": "water_sakhal",
@@ -53010,6 +54833,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/walls/staticobj_wall_polewall_5_1.jpg"
   },
   {
+    "objectName": "riothelmet_complete.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": false,
+    "searchTags": "characters, headgear, riothelmet, complete, v1.30-exp-badlands",
+    "image": "images/characters/headgear/riothelmet_complete/riothelmet_complete.jpg",
+    "id": "dzobj_8e0488b7a0",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/characters/headgear/riothelmet_complete/riothelmet_complete.jpg"
+  },
+  {
     "objectName": "enoch_river_320.p3d",
     "inGameName": "-",
     "category": "water_bliss",
@@ -53043,6 +54883,23 @@
       15.939600944519043
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/residential/houses/land_house_1w12_brown.jpg"
+  },
+  {
+    "objectName": "catfish_fillet.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, meat, v1.30-exp-badlands",
+    "image": "images/gear/food/catfishfilletmeat/catfishfilletmeat.jpg",
+    "id": "dzobj_8efbb726bc",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/food/catfishfilletmeat/catfishfilletmeat.jpg"
   },
   {
     "objectName": "Truck_01_Hood_Blue",
@@ -53302,6 +55159,23 @@
       0.23541516810655594
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/gloves/working_gloves_yellow.jpg"
+  },
+  {
+    "objectName": "Land_Wreck_hb02_aban1_black",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, hatchback_02, gunter, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_hb02_aban1_black/land_wreck_hb02_aban1_black.jpg",
+    "id": "dzobj_8fcfb32fb1",
+    "dimensionsVisual": [
+      1.792725920677185,
+      1.5474488735198975,
+      4.084307789802551
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_hb02_aban1_black/land_wreck_hb02_aban1_black.jpg"
   },
   {
     "objectName": "Mosin9130_Black",
@@ -56861,6 +58735,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/roads/parts/staticobj_gravsakhal_0_2000.jpg"
   },
   {
+    "objectName": "garbage_pile2_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "structures, residential, misc, garbage, pile2, nolc, v1.30-exp-badlands",
+    "image": "images/structures/residential/misc/staticobj_garbage_pile2.jpg",
+    "id": "dzobj_905da162ee",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/residential/misc/staticobj_garbage_pile2.jpg"
+  },
+  {
     "objectName": "sign_46c.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -56912,6 +58803,40 @@
       40.0
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/industrial/harbour/staticobj_pier_concrete1_tsmall.jpg"
+  },
+  {
+    "objectName": "blackbox.p3d",
+    "inGameName": "-",
+    "category": "structures_sakhal",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_sakhal/industrial/powerplant/proxy",
+    "usableOnConsole": false,
+    "searchTags": "structures, sakhal, industrial, powerplant, proxy, blackbox, v1.30-exp-badlands",
+    "image": "images/structures_sakhal/industrial/powerplant/proxy/blackbox/blackbox.jpg",
+    "id": "dzobj_90afecf86e",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/industrial/powerplant/proxy/blackbox/blackbox.jpg"
+  },
+  {
+    "objectName": "Motorbike_01_Wheel_2_Ruined",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 2, ruined, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2_ruined/motorbike_01_wheel_2_ruined.jpg",
+    "id": "dzobj_90b0e4262a",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_2_ruined/motorbike_01_wheel_2_ruined.jpg"
   },
   {
     "objectName": "shortskirt_above0.p3d",
@@ -57035,6 +58960,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/industrial/power/staticobj_power_hv_line_80m_damaged.jpg"
   },
   {
+    "objectName": "Land_Wreck_hb02_aban1_blue",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, hatchback_02, gunter, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_hb02_aban1_blue/land_wreck_hb02_aban1_blue.jpg",
+    "id": "dzobj_914d57a7b0",
+    "dimensionsVisual": [
+      1.792725920677185,
+      1.5474488735198975,
+      4.084307789802551
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_hb02_aban1_blue/land_wreck_hb02_aban1_blue.jpg"
+  },
+  {
     "objectName": "Truck_01_Door_1_1_GreenRust",
     "inGameName": "M3S Left Door",
     "category": "vehicles",
@@ -57135,6 +59077,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/gear/camping/refridgerator/refridgerator.jpg"
   },
   {
+    "objectName": "Motorbike_01_Wheel_1_Ruined",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, wheel, 1, ruined, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1_ruined/motorbike_01_wheel_1_ruined.jpg",
+    "id": "dzobj_92130285b1",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_wheel_1_ruined/motorbike_01_wheel_1_ruined.jpg"
+  },
+  {
     "objectName": "rail_tracksmall_turnoutr.p3d",
     "inGameName": "-",
     "category": "structures_bliss",
@@ -57167,6 +59126,23 @@
       19.801851272583008
     ],
     "imageUrl": "https://samsobjectfinder.com/images/rocks_sakhal/rock_spike4_snow.p3d.jpeg"
+  },
+  {
+    "objectName": "UndergroundBreadcrumbHandle",
+    "inGameName": "Underground Breadcrumb Handle",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/tools",
+    "usableOnConsole": true,
+    "searchTags": "gear, tools, handle, underground, breadcrumb, trigger, v1.30-exp-badlands",
+    "image": "images/gear/tools/undergroundbreadcrumbhandle/undergroundbreadcrumbhandle.jpg",
+    "id": "dzobj_925ad113e3",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/tools/undergroundbreadcrumbhandle/undergroundbreadcrumbhandle.jpg"
   },
   {
     "objectName": "sign_49a.p3d",
@@ -57491,6 +59467,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/plants_sakhal/winter/dzplants_sakhalwinterb_betulanana_1s_winter.p3d.jpg"
   },
   {
+    "objectName": "motorbike_02_shieldright.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, shieldright, shield, right, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldright_blue/motorbike_02_shieldright_blue.jpg",
+    "id": "dzobj_952c155118",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldright_blue/motorbike_02_shieldright_blue.jpg"
+  },
+  {
     "objectName": "c_undergrowth.p3d",
     "inGameName": "-",
     "category": "plants",
@@ -57613,6 +59606,23 @@
       3.034072756767273
     ],
     "imageUrl": "https://samsobjectfinder.com/images/gear/camping/watchtower/watchtower.jpg"
+  },
+  {
+    "objectName": "Motorbike_02_ShieldRight_Red",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, shieldright, shield, right, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldright_red/motorbike_02_shieldright_red.jpg",
+    "id": "dzobj_960d8f17a5",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldright_red/motorbike_02_shieldright_red.jpg"
   },
   {
     "objectName": "PoliceCap",
@@ -58380,6 +60390,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/characters/shoes/workingboots_green/workingboots_green.jpg"
   },
   {
+    "objectName": "StaticObj_Sign_Roadblock_Stop",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/signs/misc",
+    "usableOnConsole": true,
+    "searchTags": "marker, misc, notice, signs, v1.30-exp-badlands",
+    "image": "images/structures/signs/misc/sign_roadblock_stop/sign_roadblock_stop.jpg",
+    "id": "dzobj_99433f161f",
+    "dimensionsVisual": [
+      0.06835997477173805,
+      1.095940113067627,
+      1.0999599695205688
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/signs/misc/sign_roadblock_stop/sign_roadblock_stop.jpg"
+  },
+  {
     "objectName": "Head_Default",
     "inGameName": "survivor, faces, heads, player, character, pc",
     "category": "characters",
@@ -58510,6 +60537,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_wheel/offroad_02_wheel.jpg"
   },
   {
+    "objectName": "Offroad_02_Door_1_2_Beige",
+    "inGameName": "M1025 Rear Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2_beige/offroad_02_door_1_2_beige.jpg",
+    "id": "dzobj_9a2731514b",
+    "dimensionsVisual": [
+      0.12471401318907738,
+      1.0881244540214539,
+      0.975653886795044
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2_beige/offroad_02_door_1_2_beige.jpg"
+  },
+  {
     "objectName": "MountainBag_Orange",
     "inGameName": "Mountain Backpack",
     "category": "characters",
@@ -58531,6 +60575,23 @@
       0.2987181693315506
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/backpacks/mountain_bag_orange.jpg"
+  },
+  {
+    "objectName": "foldingbed_frame.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/furniture/folding_beds",
+    "usableOnConsole": false,
+    "searchTags": "structures, furniture, folding, beds, foldingbed, frame, v1.30-exp-badlands",
+    "image": "images/structures/furniture/folding_beds/foldingbed_frame/foldingbed_frame.jpg",
+    "id": "dzobj_9a6b81ec55",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/furniture/folding_beds/foldingbed_frame/foldingbed_frame.jpg"
   },
   {
     "objectName": "enoch_river_581.p3d",
@@ -58957,6 +61018,23 @@
       50.08638381958008
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/wrecks/land_submarine_front.jpg"
+  },
+  {
+    "objectName": "misc_fountain_dry.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "structures, residential, misc, fountain, dry, v1.30-exp-badlands",
+    "image": "images/structures/residential/misc/misc_fountain_dry/misc_fountain_dry.jpg",
+    "id": "dzobj_9d567ff6ed",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/residential/misc/misc_fountain_dry/misc_fountain_dry.jpg"
   },
   {
     "objectName": "enoch_river_38.p3d",
@@ -63041,6 +65119,40 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/signs/settlements/sign_shumnoye_end/sign_shumnoye_end.jpg"
   },
   {
+    "objectName": "StaticObj_Misc_ConcretePipe_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/industrial/misc",
+    "usableOnConsole": true,
+    "searchTags": "grate, pipe, metal, sewers, water, underground, construction, v1.30-exp-badlands",
+    "image": "images/structures/industrial/misc/staticobj_misc_concretepipe.jpg",
+    "id": "dzobj_a3722570eb",
+    "dimensionsVisual": [
+      2.4585601091384888,
+      2.4585630893707275,
+      3.038560152053833
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/industrial/misc/staticobj_misc_concretepipe.jpg"
+  },
+  {
+    "objectName": "nbcbag.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/backpacks/proxy",
+    "usableOnConsole": false,
+    "searchTags": "characters, backpacks, proxy, nbcbag, v1.30-exp-badlands",
+    "image": "images/characters/backpacks/proxy/nbcbag/nbcbag.jpg",
+    "id": "dzobj_a39e75142f",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/characters/backpacks/proxy/nbcbag/nbcbag.jpg"
+  },
+  {
     "objectName": "enoch_river_680.p3d",
     "inGameName": "-",
     "category": "water_bliss",
@@ -63144,6 +65256,23 @@
       2.9401400089263916
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/residential/slums/staticobj_slum_roof2.jpg"
+  },
+  {
+    "objectName": "ProxyMotorbike_02_shieldleft",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, shieldleft, shield, left, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldleft_blue/motorbike_02_shieldleft_blue.jpg",
+    "id": "dzobj_a418b595e5",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldleft_blue/motorbike_02_shieldleft_blue.jpg"
   },
   {
     "objectName": "grav_60 10.p3d",
@@ -63279,14 +65408,14 @@
     "path": "dz/weapons/firearms/sks",
     "usableOnConsole": false,
     "searchTags": "rifles, 7.62x39",
-    "image": "images/weapons/firearms/sks/sks/sks.jpg",
+    "image": "images/weapons/firearms/sks/sks_desert/sks_desert.jpg",
     "id": "dzobj_a4uy7ekukb",
     "dimensionsVisual": [
       1.1890323460102081,
       0.27794507145881653,
       0.20056992024183273
     ],
-    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/sks/sks/sks.jpg"
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/sks/sks_desert/sks_desert.jpg"
   },
   {
     "objectName": "rail_track_l25_10.p3d",
@@ -63307,6 +65436,23 @@
       25.324302673339844
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/rail/tracks/staticobj_rail_track_l25_10.jpg"
+  },
+  {
+    "objectName": "Offroad_02_Door_2_1_Beige",
+    "inGameName": "M1025 Front Right Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1_beige/offroad_02_door_2_1_beige.jpg",
+    "id": "dzobj_a52624ded3",
+    "dimensionsVisual": [
+      0.12471210956573486,
+      1.088124394416809,
+      0.9004415273666382
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1_beige/offroad_02_door_2_1_beige.jpg"
   },
   {
     "objectName": "taxiway_15 75.p3d",
@@ -63852,6 +65998,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/walls/staticobj_wall_woodvil_4_2.jpg"
   },
   {
+    "objectName": "SKS_Winter",
+    "inGameName": "SK 59/66",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/sks",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x39, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/sks/sks_winter/sks_winter.jpg",
+    "id": "dzobj_a7a8700cc8",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/sks/sks_winter/sks_winter.jpg"
+  },
+  {
     "objectName": "SmershBag",
     "inGameName": "Utility Buttpack",
     "category": "characters",
@@ -63934,6 +66097,23 @@
       21.231901168823242
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/industrial/harbour/land_boathouse.jpg"
+  },
+  {
+    "objectName": "Motorbike_01_Yellow",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_01",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 01, blue, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/motorbike_01_yellow/motorbike_01_yellow.jpg",
+    "id": "dzobj_a80ad3a9de",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/motorbike_01_yellow/motorbike_01_yellow.jpg"
   },
   {
     "objectName": "dambog_terrain_03.p3d",
@@ -64374,6 +66554,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/gear/food/potato_rotten.p3d.jpg"
   },
   {
+    "objectName": "Land_Wreck_sed01_aban1_black",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, civiliansedan, olga, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_sed01_aban1_black/land_wreck_sed01_aban1_black.jpg",
+    "id": "dzobj_ac13df0ed5",
+    "dimensionsVisual": [
+      1.9595376253128052,
+      1.6077585816383362,
+      4.976132869720459
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_sed01_aban1_black/land_wreck_sed01_aban1_black.jpg"
+  },
+  {
     "objectName": "StaticObj_gravsakhal_10_75",
     "inGameName": "-",
     "category": "structures_sakhal",
@@ -64491,6 +66688,23 @@
       0.4059518575668335
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/industrial/power/staticobj_power_pole_wood4_a.jpg"
+  },
+  {
+    "objectName": "motorbike_02_windshield.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, windshield, shield, front, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldfront_blue/motorbike_02_shieldfront_blue.jpg",
+    "id": "dzobj_ad21f74fa9",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldfront_blue/motorbike_02_shieldfront_blue.jpg"
   },
   {
     "objectName": "sign_rail_petrovka.p3d",
@@ -64667,6 +66881,23 @@
       14.010653495788574
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/residential/houses/land_house_1w13_dam.jpg"
+  },
+  {
+    "objectName": "decal_asphalt_patch_modular_01_turn.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, roads, decals, decal, asphalt, patch, modular, 01, turn, v1.30-exp-badlands",
+    "image": "images/structures_bliss/roads/decals/decal_asphalt_patch_modular_01_turn/decal_asphalt_patch_modular_01_turn.jpg",
+    "id": "dzobj_ae6dffaf98",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/roads/decals/decal_asphalt_patch_modular_01_turn/decal_asphalt_patch_modular_01_turn.jpg"
   },
   {
     "objectName": "snaretrap.p3d",
@@ -64909,6 +67140,23 @@
       0.03234596364200115
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/ruins/proxy/staticobj_picture_a/staticobj_picture_a.jpg"
+  },
+  {
+    "objectName": "Offroad_02_Door_1_1_BeigeRust",
+    "inGameName": "M1025 Front Left Door",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1_beigerust/offroad_02_door_1_1_beigerust.jpg",
+    "id": "dzobj_afda455bfe",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1_beigerust/offroad_02_door_1_1_beigerust.jpg"
   },
   {
     "objectName": "CivSedanTrunk",
@@ -68269,6 +70517,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/billboards/land_bilboard_strana_noveho_radu/land_bilboard_strana_noveho_radu.jpg"
   },
   {
+    "objectName": "motorbike_02_fenderfront.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, fenderfront, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_fenderfront/motorbike_02_fenderfront.jpg",
+    "id": "dzobj_b0c060175d",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_fenderfront/motorbike_02_fenderfront.jpg"
+  },
+  {
     "objectName": "StaticObj_Decal_asphalt_fix4",
     "inGameName": "-",
     "category": "structures_bliss",
@@ -68414,6 +70679,23 @@
       11.690670013427734
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/ruins/land_ruin_chapel2_yellow/land_ruin_chapel2_yellow.jpg"
+  },
+  {
+    "objectName": "decal_asphalt_patch_modular_01_end2.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, roads, decals, decal, asphalt, patch, modular, 01, end2, v1.30-exp-badlands",
+    "image": "images/structures_bliss/roads/decals/decal_asphalt_patch_modular_01_end2/decal_asphalt_patch_modular_01_end2.jpg",
+    "id": "dzobj_b1ece8d6f6",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/roads/decals/decal_asphalt_patch_modular_01_end2/decal_asphalt_patch_modular_01_end2.jpg"
   },
   {
     "objectName": "StaticObj_Wall_CGry_Corner",
@@ -68874,6 +71156,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/residential/misc/staticobj_lamp_halogen.jpg"
   },
   {
+    "objectName": "StaticObj_d_FagusSylvatica_fallenb",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "oak, dead, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_fallenb.p3d.jpg",
+    "id": "dzobj_b4800628d7",
+    "dimensionsVisual": [
+      4.329130172729492,
+      1.7087369561195374,
+      2.6393301486968994
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/plants/tree/d_fagussylvatica_fallenb.p3d.jpg"
+  },
+  {
     "objectName": "busstation_wall_bench.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -69135,6 +71434,23 @@
       26.885234832763672
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/specific/hotel/land_hotel_damaged.jpg"
+  },
+  {
+    "objectName": "ship_big_fronta2.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/wrecks/ships",
+    "usableOnConsole": false,
+    "searchTags": "structures, wrecks, ships, ship, big, fronta2, land, front, a2, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/ships/land_ship_big_fronta2/land_ship_big_fronta2.jpg",
+    "id": "dzobj_b6101bed3b",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/ships/land_ship_big_fronta2/land_ship_big_fronta2.jpg"
   },
   {
     "objectName": "Animal_GallusGallusDomesticus",
@@ -69407,6 +71723,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/weapons/melee/blunt/pipewrench/pipewrench.jpg"
   },
   {
+    "objectName": "Land_Wreck_hb02_aban2_blue",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, hatchback_02, gunter, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_hb02_aban2_blue/land_wreck_hb02_aban2_blue.jpg",
+    "id": "dzobj_b772fc948d",
+    "dimensionsVisual": [
+      1.7707871198654175,
+      1.5351582765579224,
+      4.088875889778137
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_hb02_aban2_blue/land_wreck_hb02_aban2_blue.jpg"
+  },
+  {
     "objectName": "Land_Wreck_hb01_aban2_police_DE",
     "inGameName": "-",
     "category": "structures",
@@ -69444,6 +71777,23 @@
       14.005260944366455
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/specific/hotel/staticobj_hotel_damaged_airplane_back.jpg"
+  },
+  {
+    "objectName": "Motorbike_02_ShieldRight_Yellow",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, shieldright, shield, right, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldright_yellow/motorbike_02_shieldright_yellow.jpg",
+    "id": "dzobj_b79312ff4f",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldright_yellow/motorbike_02_shieldright_yellow.jpg"
   },
   {
     "objectName": "decal_damage_long7.p3d",
@@ -69689,6 +72039,23 @@
       10.319580078125
     ],
     "imageUrl": "https://samsobjectfinder.com/images/water_bliss/river/enoch_river_34.p3d.jpg"
+  },
+  {
+    "objectName": "Offroad_02_Hood_Beige",
+    "inGameName": "M1025 Hood",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "[match config], v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood_beige/offroad_02_hood_beige.jpg",
+    "id": "dzobj_b93311d2e0",
+    "dimensionsVisual": [
+      0.40961556136608124,
+      1.3917789459228516,
+      2.1934964656829834
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood_beige/offroad_02_hood_beige.jpg"
   },
   {
     "objectName": "ProxyOTs14_Silencer",
@@ -70713,6 +73080,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/civiliansedan/proxy/sedan_engine_aban/sedan_engine_aban.jpg"
   },
   {
+    "objectName": "motorbike_01_fender.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, fender, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_fender/motorbike_01_fender.jpg",
+    "id": "dzobj_bffc10aafc",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_fender/motorbike_01_fender.jpg"
+  },
+  {
     "objectName": "Land_Wreck_hb01_aban1_blue_DE",
     "inGameName": "-",
     "category": "structures",
@@ -70854,9 +73238,9 @@
     "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1/offroad_02_door_2_1.jpg",
     "id": "dzobj_bgdsy99fq0",
     "dimensionsVisual": [
-      0.12471210956573486,
-      1.088124394416809,
-      0.9004415273666382
+      2.5,
+      2.5,
+      2.5
     ],
     "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1/offroad_02_door_2_1.jpg"
   },
@@ -74384,6 +76768,40 @@
     "imageUrl": "https://samsobjectfinder.com/images/characters/bodies/survivorm_guo.jpeg"
   },
   {
+    "objectName": "motorbike_02_wheel_1.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, wheel, 1, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_1/motorbike_02_wheel_1.jpg",
+    "id": "dzobj_c0e8f5d9ea",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_1/motorbike_02_wheel_1.jpg"
+  },
+  {
+    "objectName": "wall_fen1_5_hole_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/walls",
+    "usableOnConsole": false,
+    "searchTags": "structures, walls, wall, fen1, 5, hole, nolc, v1.30-exp-badlands",
+    "image": "images/structures/walls/staticobj_wall_fen1_5_hole.jpg",
+    "id": "dzobj_c0f68f4b1c",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/walls/staticobj_wall_fen1_5_hole.jpg"
+  },
+  {
     "objectName": "ZmbM_HandymanNormal_Beige",
     "inGameName": "-",
     "category": "characters",
@@ -74559,6 +76977,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/characters/pants/cargopants_beige/cargopants_beige.jpg"
   },
   {
+    "objectName": "StaticObj_Sign_Roadblock_Stop_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/signs/misc",
+    "usableOnConsole": true,
+    "searchTags": "marker, misc, notice, signs, v1.30-exp-badlands",
+    "image": "images/structures/signs/misc/sign_roadblock_stop/sign_roadblock_stop.jpg",
+    "id": "dzobj_c1f08b4b40",
+    "dimensionsVisual": [
+      0.06835997477173805,
+      1.095940113067627,
+      1.0999599695205688
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/signs/misc/sign_roadblock_stop/sign_roadblock_stop.jpg"
+  },
+  {
     "objectName": "sign_81b.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -74626,6 +77061,23 @@
       50.0
     ],
     "imageUrl": "https://samsobjectfinder.com/images/water_bliss/river/enoch_river_775.p3d.jpg"
+  },
+  {
+    "objectName": "ZmbF_eastSoldier_Normal_Navy",
+    "inGameName": "Infected",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "characters, zombies, eastsoldier, normal, navy, f, zmb, east, soldier, heavy, infected, v1.30-exp-badlands",
+    "image": "images/characters/zombies/eastsoldier_normal_navy_f/eastsoldier_normal_navy_f.jpg",
+    "id": "dzobj_c2d5161cad",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/characters/zombies/eastsoldier_normal_navy_f/eastsoldier_normal_navy_f.jpg"
   },
   {
     "objectName": "StaticObj_Furniture_piano",
@@ -74939,6 +77391,23 @@
       3.0850727558135986
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/zombies/zmbm_offshoreworker_orange/zmbm_offshoreworker_orange.jpg"
+  },
+  {
+    "objectName": "ZmbF_eastSoldier_Heavy_Navy",
+    "inGameName": "Infected",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": true,
+    "searchTags": "characters, zombies, eastsoldier, normal, navy, f, zmb, east, soldier, heavy, infected, v1.30-exp-badlands",
+    "image": "images/characters/zombies/eastsoldier_normal_navy_f/eastsoldier_normal_navy_f.jpg",
+    "id": "dzobj_c4024cc6b5",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/characters/zombies/eastsoldier_normal_navy_f/eastsoldier_normal_navy_f.jpg"
   },
   {
     "objectName": "LeatherStorageVest_Black",
@@ -75473,6 +77942,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/industrial/houses/land_factory_small.jpg"
   },
   {
+    "objectName": "Land_Wreck_hb02_aban2_black",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, hatchback_02, gunter, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_hb02_aban2_black/land_wreck_hb02_aban2_black.jpg",
+    "id": "dzobj_c789465deb",
+    "dimensionsVisual": [
+      1.7707871198654175,
+      1.5351582765579224,
+      4.088875889778137
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_hb02_aban2_black/land_wreck_hb02_aban2_black.jpg"
+  },
+  {
     "objectName": "Petushokhat_Yellow",
     "inGameName": "Petushok",
     "category": "characters",
@@ -75613,6 +78099,23 @@
       10.583032608032227
     ],
     "imageUrl": "https://samsobjectfinder.com/images/rocks/snow_rocks/snow_rock_monolith4.p3d.jpg"
+  },
+  {
+    "objectName": "motorbike_02_shieldleft.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, shieldleft, shield, left, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldleft_blue/motorbike_02_shieldleft_blue.jpg",
+    "id": "dzobj_c8efc15329",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldleft_blue/motorbike_02_shieldleft_blue.jpg"
   },
   {
     "objectName": "sidewalk4_narrow_4m.p3d",
@@ -75807,6 +78310,40 @@
     "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/ots14/ots14_barrel_grip.p3d.jpg"
   },
   {
+    "objectName": "Land_Wreck_sed01_aban2_wine",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, civiliansedan, olga, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_sed01_aban2_wine/land_wreck_sed01_aban2_wine.jpg",
+    "id": "dzobj_c9d106928c",
+    "dimensionsVisual": [
+      1.959416151046753,
+      1.6018118262290955,
+      4.974738121032715
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_sed01_aban2_wine/land_wreck_sed01_aban2_wine.jpg"
+  },
+  {
+    "objectName": "wall_fen1_5_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/walls",
+    "usableOnConsole": false,
+    "searchTags": "structures, walls, wall, fen1, 5, nolc, v1.30-exp-badlands",
+    "image": "images/structures/walls/staticobj_wall_fen1_5.jpg",
+    "id": "dzobj_c9ef589c48",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/walls/staticobj_wall_fen1_5.jpg"
+  },
+  {
     "objectName": "signenoch_10_1.p3d",
     "inGameName": "-",
     "category": "structures_bliss",
@@ -75939,6 +78476,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/walls/wall_gate_tin6_2.jpg"
   },
   {
+    "objectName": "Motorbike_02_ShieldFront_Green",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, windshield, shield, front, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldfront_green/motorbike_02_shieldfront_green.jpg",
+    "id": "dzobj_ca0d3bad8e",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldfront_green/motorbike_02_shieldfront_green.jpg"
+  },
+  {
     "objectName": "MiniDress_BrownChecker",
     "inGameName": "Collar Dress",
     "category": "characters",
@@ -75981,6 +78535,23 @@
       0.11212553456425667
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/settlements/sign_kalinivka_start/sign_kalinivka_start.jpg"
+  },
+  {
+    "objectName": "Land_Ship_Big_FrontA2",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/ships",
+    "usableOnConsole": true,
+    "searchTags": "structures, wrecks, ships, ship, big, fronta2, land, front, a2, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/ships/land_ship_big_fronta2/land_ship_big_fronta2.jpg",
+    "id": "dzobj_ca979c2b47",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/ships/land_ship_big_fronta2/land_ship_big_fronta2.jpg"
   },
   {
     "objectName": "LeatherHat_Beige",
@@ -76290,6 +78861,23 @@
       0.44374503195285797
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/furniture/bathroom/sink/sink.jpg"
+  },
+  {
+    "objectName": "StaticObj_Sign_Roadblock_Arrow_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/signs/misc",
+    "usableOnConsole": true,
+    "searchTags": "marker, misc, notice, signs, v1.30-exp-badlands",
+    "image": "images/structures/signs/misc/sign_roadblock_arrow/sign_roadblock_arrow.jpg",
+    "id": "dzobj_cc9ca229b6",
+    "dimensionsVisual": [
+      0.0490877702832222,
+      0.8502700626850128,
+      0.8498290181159973
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/signs/misc/sign_roadblock_arrow/sign_roadblock_arrow.jpg"
   },
   {
     "objectName": "Armband_Chedaki",
@@ -76751,6 +79339,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/hatchback_02/proxy/hatchback_02_hood/hatchback_02_hood.jpg"
   },
   {
+    "objectName": "ProxyMotorbike_02_wheel_1",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, wheel, 1, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_1/motorbike_02_wheel_1.jpg",
+    "id": "dzobj_cf93884a59",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_1/motorbike_02_wheel_1.jpg"
+  },
+  {
     "objectName": "cableway_base.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -76808,6 +79413,23 @@
       0.2257591732777655
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/tops/firefighterjacket_beige/firefighterjacket_beige.jpg"
+  },
+  {
+    "objectName": "Land_Wreck_sed01_aban1_white",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, civiliansedan, olga, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_sed01_aban1_white/land_wreck_sed01_aban1_white.jpg",
+    "id": "dzobj_cff48da6e9",
+    "dimensionsVisual": [
+      1.9595376253128052,
+      1.6077585816383362,
+      4.976132869720459
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_sed01_aban1_white/land_wreck_sed01_aban1_white.jpg"
   },
   {
     "objectName": "stone10_moss_lc.p3d",
@@ -79206,9 +81828,9 @@
     "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1/offroad_02_door_1_1.jpg",
     "id": "dzobj_ct36v4kgbu",
     "dimensionsVisual": [
-      0.12471212074160576,
-      1.0881245136260986,
-      0.9004415273666382
+      2.5,
+      2.5,
+      2.5
     ],
     "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1/offroad_02_door_1_1.jpg"
   },
@@ -80409,6 +83031,40 @@
     "imageUrl": "https://samsobjectfinder.com/images/water/ponds/moss/pond_big_29_03_moss.p3d.jpg"
   },
   {
+    "objectName": "Mosin9130_Winter",
+    "inGameName": "Mosin 91/30",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/mosin9130/mosin9130_winter/mosin9130_winter.jpg",
+    "id": "dzobj_d02e820cf1",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/mosin9130/mosin9130_winter/mosin9130_winter.jpg"
+  },
+  {
+    "objectName": "Offroad_02_Beige",
+    "inGameName": "M1025",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/wheeled/offroad_02",
+    "usableOnConsole": true,
+    "searchTags": "car, m1025, transport, vehicle, vehicles, wheeled, hummer, humvee, military, v1.30-exp-badlands",
+    "image": "images/vehicles/wheeled/offroad_02/offroad_02_beige/offroad_02_beige.jpg",
+    "id": "dzobj_d033977a45",
+    "dimensionsVisual": [
+      2.649967908859253,
+      2.0,
+      4.855996131896973
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/offroad_02_beige/offroad_02_beige.jpg"
+  },
+  {
     "objectName": "enoch_river_131.p3d",
     "inGameName": "-",
     "category": "water_bliss",
@@ -80933,6 +83589,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/animals/bos_taurus_fem/animal_bostaurusf_white/animal_bostaurusf_white.jpg"
   },
   {
+    "objectName": "Land_Roadblock_Table_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, table, checkpoint, furniture, plastic, v1.30-exp-badlands",
+    "image": "images/structures/military/improvised/land_roadblock_table.jpg",
+    "id": "dzobj_d3935035d2",
+    "dimensionsVisual": [
+      2.021980047225952,
+      0.813039630651474,
+      0.822382003068924
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/military/improvised/land_roadblock_table.jpg"
+  },
+  {
     "objectName": "enoch_grabinskie_45.p3d",
     "inGameName": "-",
     "category": "water_bliss",
@@ -80965,6 +83638,23 @@
       48.47119140625
     ],
     "imageUrl": "https://samsobjectfinder.com/images/water_bliss/river/enoch_river_365.p3d.jpg"
+  },
+  {
+    "objectName": "Motorbike_02_Blue",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/motorbike_02_green/motorbike_02_green.jpg",
+    "id": "dzobj_d3cb0dca35",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/motorbike_02_green/motorbike_02_green.jpg"
   },
   {
     "objectName": "airport_small_hangar.p3d",
@@ -81553,6 +84243,40 @@
     "imageUrl": "https://samsobjectfinder.com/images/characters/headgear/booniehat_blue/booniehat_blue.jpg"
   },
   {
+    "objectName": "riothelmet_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": false,
+    "searchTags": "characters, headgear, riothelmet, g, v1.30-exp-badlands",
+    "image": "images/characters/headgear/riothelmet_g/riothelmet_g.jpg",
+    "id": "dzobj_d69be783c9",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/characters/headgear/riothelmet_g/riothelmet_g.jpg"
+  },
+  {
+    "objectName": "garbage_pile7_nolc.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/residential/misc",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, residential, misc, garbage, pile7, nolc, v1.30-exp-badlands",
+    "image": "images/structures_bliss/residential/misc/staticobj_garbage_pile7.jpg",
+    "id": "dzobj_d69e4a549c",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/residential/misc/staticobj_garbage_pile7.jpg"
+  },
+  {
     "objectName": "Land_Container_1Mo_DE",
     "inGameName": "-",
     "category": "structures",
@@ -81635,9 +84359,9 @@
     "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood/offroad_02_hood.jpg",
     "id": "dzobj_d6n4hp3jhj",
     "dimensionsVisual": [
-      0.40961556136608124,
-      1.3917789459228516,
-      2.1934964656829834
+      2.5,
+      2.5,
+      2.5
     ],
     "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood/offroad_02_hood.jpg"
   },
@@ -81853,6 +84577,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/water_bliss/river/enoch_river_19.p3d.jpg"
   },
   {
+    "objectName": "SKS_Desert",
+    "inGameName": "SK 59/66",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/sks",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x39, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/sks/sks_desert/sks_desert.jpg",
+    "id": "dzobj_d83936c011",
+    "dimensionsVisual": [
+      1.1890323460102081,
+      0.27794507145881653,
+      0.20056992024183273
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/sks/sks_desert/sks_desert.jpg"
+  },
+  {
     "objectName": "ShortJeans_Blue",
     "inGameName": "Denim Shorts",
     "category": "characters",
@@ -82010,6 +84751,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/water/streambed/land_streambed_leaf_long_curve_left/land_streambed_leaf_long_curve_left.jpg"
   },
   {
+    "objectName": "SKS_Woodland",
+    "inGameName": "SK 59/66",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/sks",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x39, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/sks/sks_woodland/sks_woodland.jpg",
+    "id": "dzobj_d90348f176",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/sks/sks_woodland/sks_woodland.jpg"
+  },
+  {
     "objectName": "tisy_garages2_smallpicea_vaccinumtall.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -82079,6 +84837,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/water/ponds/pond_big_ly_11.p3d.jpg"
   },
   {
+    "objectName": "riothelmet.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": false,
+    "searchTags": "characters, headgear, riothelmet, v1.30-exp-badlands",
+    "image": "images/characters/headgear/riothelmet/riothelmet.jpg",
+    "id": "dzobj_da56d306c0",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/characters/headgear/riothelmet/riothelmet.jpg"
+  },
+  {
     "objectName": "plasticbucket.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -82114,6 +84889,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/ruins/land_ruin_highway_pillar1/land_ruin_highway_pillar1.jpg"
   },
   {
+    "objectName": "Mosin9130_Desert",
+    "inGameName": "Mosin 91/30",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/mosin9130/mosin9130_desert/mosin9130_desert.jpg",
+    "id": "dzobj_dab0050d42",
+    "dimensionsVisual": [
+      2.2963438034057617,
+      0.5806884989142418,
+      1.2005788534879684
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/mosin9130/mosin9130_desert/mosin9130_desert.jpg"
+  },
+  {
     "objectName": "pond_big_30_04.p3d",
     "inGameName": "-",
     "category": "water",
@@ -82129,6 +84921,23 @@
       26.285051345825195
     ],
     "imageUrl": "https://samsobjectfinder.com/images/water/ponds/pond_big_30_04.p3d.jpg"
+  },
+  {
+    "objectName": "SawedoffMosin9130_Winter",
+    "inGameName": "Sawed-off Mosin 91/30",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/firearms/mosin9130",
+    "usableOnConsole": true,
+    "searchTags": "rifles, 7.62x54mmr, v1.30-exp-badlands",
+    "image": "images/weapons/firearms/mosin9130/sawedoffmosin9130_winter/sawedoffmosin9130_winter.jpg",
+    "id": "dzobj_dae7d7d3df",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/mosin9130/sawedoffmosin9130_winter/sawedoffmosin9130_winter.jpg"
   },
   {
     "objectName": "MaleLegs_Base",
@@ -82491,6 +85300,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/misc/sign_decal_afs_03/sign_decal_afs_03.jpg"
   },
   {
+    "objectName": "Land_Wreck_sed02_aban1_grey",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, sedan_02, sarka, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_sed02_aban1_grey/land_wreck_sed02_aban1_grey.jpg",
+    "id": "dzobj_dc64958a51",
+    "dimensionsVisual": [
+      1.7970203757286072,
+      1.5467336773872375,
+      4.36911153793335
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_sed02_aban1_grey/land_wreck_sed02_aban1_grey.jpg"
+  },
+  {
     "objectName": "sign_main_end.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -82506,6 +85332,23 @@
       0.10931350663304329
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/traffic/sign_main_end/sign_main_end.jpg"
+  },
+  {
+    "objectName": "decal_asphalt_patch_modular_01_end1.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, roads, decals, decal, asphalt, patch, modular, 01, end1, v1.30-exp-badlands",
+    "image": "images/structures_bliss/roads/decals/decal_asphalt_patch_modular_01_end1/decal_asphalt_patch_modular_01_end1.jpg",
+    "id": "dzobj_dc99fd9374",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/roads/decals/decal_asphalt_patch_modular_01_end1/decal_asphalt_patch_modular_01_end1.jpg"
   },
   {
     "objectName": "decal_runway_skidmarks_end.p3d",
@@ -82883,6 +85726,23 @@
       0.042476961389184
     ],
     "imageUrl": "https://samsobjectfinder.com/images/weapons/melee/blunt/telescopicbaton/telescopicbaton.jpg"
+  },
+  {
+    "objectName": "motorbike_01_exhaust.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_01/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 01, proxy, exhaust, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_exhaust/motorbike_01_exhaust.jpg",
+    "id": "dzobj_deacc5b3c8",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_01/proxy/motorbike_01_exhaust/motorbike_01_exhaust.jpg"
   },
   {
     "objectName": "enoch_sitnicke_14.p3d",
@@ -86402,6 +89262,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/plants_bliss/tree/t_acer_2s_summer.p3d.jpg"
   },
   {
+    "objectName": "pipe_small2_high_support.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/industrial/pipes",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, industrial, pipes, pipe, small2, high, support, v1.30-exp-badlands",
+    "image": "images/structures_bliss/industrial/pipes/pipe_small2_high_support/pipe_small2_high_support.jpg",
+    "id": "dzobj_e0fafefda6",
+    "dimensionsVisual": [
+      1.2,
+      1.2,
+      1.2
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/industrial/pipes/pipe_small2_high_support/pipe_small2_high_support.jpg"
+  },
+  {
     "objectName": "decal_runway_holdshort.p3d",
     "inGameName": "-",
     "category": "structures",
@@ -86491,6 +89368,23 @@
       0.11212553456425667
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/settlements/sign_troitskoe_end/sign_troitskoe_end.jpg"
+  },
+  {
+    "objectName": "StaticObj_Rubble_DirtPile_Large_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/ruins",
+    "usableOnConsole": true,
+    "searchTags": "rubble, dirt, mound, large, soil, earth, pile, v1.30-exp-badlands",
+    "image": "images/structures/ruins/staticobj_rubble_dirtpile_large.jpg",
+    "id": "dzobj_e1a513b10c",
+    "dimensionsVisual": [
+      8.805150508880615,
+      1.4979777932167053,
+      8.199030637741089
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/ruins/staticobj_rubble_dirtpile_large.jpg"
   },
   {
     "objectName": "tire_repair_kit.p3d",
@@ -86794,6 +89688,23 @@
       0.2138879895210266
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/glasses/skigoggles_whitedark/skigoggles_whitedark.jpg"
+  },
+  {
+    "objectName": "Motorbike_02_ShieldLeft_Green",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, shieldleft, shield, left, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldleft_green/motorbike_02_shieldleft_green.jpg",
+    "id": "dzobj_e376b37892",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldleft_green/motorbike_02_shieldleft_green.jpg"
   },
   {
     "objectName": "PumpkinHelmet",
@@ -87652,6 +90563,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/signs/misc/sign_enochmil_entry_enpl/sign_enochmil_entry_enpl.jpg"
   },
   {
+    "objectName": "waterskin.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/drinks",
+    "usableOnConsole": false,
+    "searchTags": "gear, drinks, waterskin, natural, v1.30-exp-badlands",
+    "image": "images/gear/drinks/waterskin_natural/waterskin_natural.jpg",
+    "id": "dzobj_e76b8feb7f",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/drinks/waterskin_natural/waterskin_natural.jpg"
+  },
+  {
     "objectName": "SkiGloves_Red",
     "inGameName": "Ski Gloves",
     "category": "characters",
@@ -87763,6 +90691,23 @@
       24.091796875
     ],
     "imageUrl": "https://samsobjectfinder.com/images/water_bliss/river/enoch_river_302.p3d.jpg"
+  },
+  {
+    "objectName": "catfish_fillet_rotten.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, rotten, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish_fillet_rotten/catfish_fillet_rotten.jpg",
+    "id": "dzobj_e814307aa3",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/food/catfish_fillet_rotten/catfish_fillet_rotten.jpg"
   },
   {
     "objectName": "StaticObj_Furniture_picture_a_02",
@@ -88184,6 +91129,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/ruins/land_ruin_housebig3/land_ruin_housebig3.jpg"
   },
   {
+    "objectName": "decal_tireprints_02_faded.p3d",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Raw P3D",
+    "path": "dz/structures/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "structures, roads, decals, decal, tireprints, 02, faded, v1.30-exp-badlands",
+    "image": "images/structures/roads/decals/decal_tireprints_02_faded/decal_tireprints_02_faded.jpg",
+    "id": "dzobj_ea5ff8f087",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/roads/decals/decal_tireprints_02_faded/decal_tireprints_02_faded.jpg"
+  },
+  {
     "objectName": "enoch_river_67.p3d",
     "inGameName": "-",
     "category": "water_bliss",
@@ -88217,6 +91179,23 @@
       1.1839008331298828
     ],
     "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/signs/billboards/staticobj_billboard_crabcan.jpg"
+  },
+  {
+    "objectName": "HandDrillKitBirch",
+    "inGameName": "Hand Drill Kit",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/crafting",
+    "usableOnConsole": true,
+    "searchTags": "gear, crafting, hand, drill, kit, birch, v1.30-exp-badlands",
+    "image": "images/gear/crafting/handdrillkitbirch/handdrillkitbirch.jpg",
+    "id": "dzobj_eab8766b30",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/crafting/handdrillkitbirch/handdrillkitbirch.jpg"
   },
   {
     "objectName": "construction_house1.p3d",
@@ -89022,6 +92001,40 @@
     "imageUrl": "https://samsobjectfinder.com/images/gear/food/zagorky/zagorky.jpg"
   },
   {
+    "objectName": "riothelmet_complete_g.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": false,
+    "searchTags": "characters, headgear, riothelmet, complete, g, v1.30-exp-badlands",
+    "image": "images/characters/headgear/riothelmet_complete_g/riothelmet_complete_g.jpg",
+    "id": "dzobj_ee7b735b47",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/characters/headgear/riothelmet_complete_g/riothelmet_complete_g.jpg"
+  },
+  {
+    "objectName": "Land_Roadblock_WoodenCrate_DE",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/military/improvised",
+    "usableOnConsole": true,
+    "searchTags": "military, roadblock, crate, wooden, checkpoint, storage, v1.30-exp-badlands",
+    "image": "images/structures/military/improvised/land_roadblock_woodencrate.jpg",
+    "id": "dzobj_ee7ea7d328",
+    "dimensionsVisual": [
+      0.8067423701286316,
+      0.6487778723239899,
+      1.4304442405700684
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/military/improvised/land_roadblock_woodencrate.jpg"
+  },
+  {
     "objectName": "enoch_jantar_14.p3d",
     "inGameName": "-",
     "category": "water_bliss",
@@ -89279,6 +92292,23 @@
       0.40000019967556
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/headgear/dirtbikehelmet_black/dirtbikehelmet_black.jpg"
+  },
+  {
+    "objectName": "power_vhv_tower_noproxy.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/industrial/power",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, industrial, power, vhv, tower, noproxy, v1.30-exp-badlands",
+    "image": "images/structures_bliss/industrial/power/power_vhv_tower_noproxy/power_vhv_tower_noproxy.jpg",
+    "id": "dzobj_efa4b78bfc",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/industrial/power/power_vhv_tower_noproxy/power_vhv_tower_noproxy.jpg"
   },
   {
     "objectName": "bunker1_left.p3d",
@@ -93249,6 +96279,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/walls/staticobj_wall_woodf_5_end.jpg"
   },
   {
+    "objectName": "Catfish",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/food",
+    "usableOnConsole": true,
+    "searchTags": "gear, food, catfish, live, v1.30-exp-badlands",
+    "image": "images/gear/food/catfish/catfish.jpg",
+    "id": "dzobj_f24552a4a8",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/food/catfish/catfish.jpg"
+  },
+  {
     "objectName": "bitterlings.p3d",
     "inGameName": "Bitterlings",
     "category": "gear",
@@ -93510,6 +96557,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures_sakhal/wrecks/land_wreck_mi8_civilian.jpg"
   },
   {
+    "objectName": "Land_Wreck_sed01_aban2_black",
+    "inGameName": "-",
+    "category": "structures",
+    "modelType": "Config",
+    "path": "dz/structures/wrecks/vehicles",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, wrecks, dynamic event, car, civiliansedan, olga, v1.30-exp-badlands",
+    "image": "images/structures/wrecks/vehicles/land_wreck_sed01_aban2_black/land_wreck_sed01_aban2_black.jpg",
+    "id": "dzobj_f3fd6c05c8",
+    "dimensionsVisual": [
+      1.959416151046753,
+      1.6018118262290955,
+      4.974738121032715
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures/wrecks/vehicles/land_wreck_sed01_aban2_black/land_wreck_sed01_aban2_black.jpg"
+  },
+  {
     "objectName": "Hatchback_02",
     "inGameName": "Gunter 2",
     "category": "vehicles",
@@ -93704,6 +96768,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/characters/bodies/survivorf_baty.jpeg"
   },
   {
+    "objectName": "zmbf_soldiernormal.p3d",
+    "inGameName": "Infected",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/zombies",
+    "usableOnConsole": false,
+    "searchTags": "characters, zombies, zmbf, soldiernormal, zmb, f, soldier, normal, infected, v1.30-exp-badlands",
+    "image": "images/characters/zombies/zmbf_soldiernormal/zmbf_soldiernormal.jpg",
+    "id": "dzobj_f54cf4cefa",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/characters/zombies/zmbf_soldiernormal/zmbf_soldiernormal.jpg"
+  },
+  {
     "objectName": "enoch_sitnicke_18.p3d",
     "inGameName": "-",
     "category": "water_bliss",
@@ -93719,6 +96800,40 @@
       50.0
     ],
     "imageUrl": "https://samsobjectfinder.com/images/water_bliss/ponds/enoch_sitnicke_18.p3d.jpg"
+  },
+  {
+    "objectName": "motorbike_02_exhaust.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, exhaust, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_exhaust/motorbike_02_exhaust.jpg",
+    "id": "dzobj_f59181042b",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_exhaust/motorbike_02_exhaust.jpg"
+  },
+  {
+    "objectName": "decal_asphalt_patch_modular_01_straight.p3d",
+    "inGameName": "-",
+    "category": "structures_bliss",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_bliss/roads/decals",
+    "usableOnConsole": false,
+    "searchTags": "structures, bliss, roads, decals, decal, asphalt, patch, modular, 01, straight, v1.30-exp-badlands",
+    "image": "images/structures_bliss/roads/decals/decal_asphalt_patch_modular_01_straight/decal_asphalt_patch_modular_01_straight.jpg",
+    "id": "dzobj_f5ada764e8",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/structures_bliss/roads/decals/decal_asphalt_patch_modular_01_straight/decal_asphalt_patch_modular_01_straight.jpg"
   },
   {
     "objectName": "hbox_base.p3d",
@@ -94416,6 +97531,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/water/ponds/pond_small_03.p3d.jpg"
   },
   {
+    "objectName": "Glock19_Tan",
+    "inGameName": "Mlock-91",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/glock",
+    "usableOnConsole": true,
+    "searchTags": "mlock, pistols, weapon, weapons, v1.30-exp-badlands",
+    "image": "images/weapons/pistols/glock/glock19_tan/glock19_tan.jpg",
+    "id": "dzobj_f900958e3e",
+    "dimensionsVisual": [
+      0.6276293694972992,
+      2.0613387897610664,
+      1.200390949845314
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/pistols/glock/glock19_tan/glock19_tan.jpg"
+  },
+  {
     "objectName": "ruin_house_1w11_proxy.p3d",
     "inGameName": "-",
     "category": "structures_bliss",
@@ -94539,6 +97671,40 @@
       0.09446786344051361
     ],
     "imageUrl": "https://samsobjectfinder.com/images/gear/crafting/burlapsack/burlapsack.jpg"
+  },
+  {
+    "objectName": "motorbike_02_wheel_1_ruined.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, wheel, 1, ruined, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_1_ruined/motorbike_02_wheel_1_ruined.jpg",
+    "id": "dzobj_f9a4a1f92b",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_1_ruined/motorbike_02_wheel_1_ruined.jpg"
+  },
+  {
+    "objectName": "catfish_fillet_raw.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/food",
+    "usableOnConsole": false,
+    "searchTags": "gear, food, catfish, fillet, raw, v1.30-exp-badlands",
+    "image": "images/gear/food/catfishfilletmeat/catfishfilletmeat.jpg",
+    "id": "dzobj_f9cc69fe5e",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/food/catfishfilletmeat/catfishfilletmeat.jpg"
   },
   {
     "objectName": "WoolCoat_Blue",
@@ -94790,6 +97956,23 @@
       0.7863045930862427
     ],
     "imageUrl": "https://samsobjectfinder.com/images/plants_bliss/clutter/c_cones_summer.p3d.jpg"
+  },
+  {
+    "objectName": "motorbike_02_wheel_2.p3d",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Raw P3D",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": false,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, wheel, 2, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_2/motorbike_02_wheel_2.jpg",
+    "id": "dzobj_fb028271c0",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_2/motorbike_02_wheel_2.jpg"
   },
   {
     "objectName": "Zucchini",
@@ -95060,6 +98243,23 @@
     "imageUrl": "https://samsobjectfinder.com/images/gear/food/shrimp/shrimp.jpg"
   },
   {
+    "objectName": "StaticObj_d_FagusSylvatica_fallen_DE",
+    "inGameName": "-",
+    "category": "plants",
+    "modelType": "Config",
+    "path": "dz/plants/tree",
+    "usableOnConsole": true,
+    "searchTags": "beech, dead, v1.30-exp-badlands",
+    "image": "images/plants/tree/d_fagussylvatica_fallen.p3d.jpg",
+    "id": "dzobj_fd2d827717",
+    "dimensionsVisual": [
+      19.198209762573242,
+      6.542610168457031,
+      7.111220598220825
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/plants/tree/d_fagussylvatica_fallen.p3d.jpg"
+  },
+  {
     "objectName": "streambed_sand_long_snake.p3d",
     "inGameName": "-",
     "category": "water",
@@ -95114,6 +98314,57 @@
       4.48321795463562
     ],
     "imageUrl": "https://samsobjectfinder.com/images/gear/cultivation/gardenplot.jpg"
+  },
+  {
+    "objectName": "Motorbike_02_Wheel_2_Ruined",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, wheel, 2, ruined, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_2_ruined/motorbike_02_wheel_2_ruined.jpg",
+    "id": "dzobj_fdb97e7a8a",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_wheel_2_ruined/motorbike_02_wheel_2_ruined.jpg"
+  },
+  {
+    "objectName": "Motorbike_02_ShieldRight_Blue",
+    "inGameName": "-",
+    "category": "vehicles",
+    "modelType": "Config",
+    "path": "dz/vehicles/singletrack/motorbike_02/proxy",
+    "usableOnConsole": true,
+    "searchTags": "vehicles, singletrack, motorbike, 02, proxy, shieldright, shield, right, blue, green, red, yellow, v1.30-exp-badlands",
+    "image": "images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldright_blue/motorbike_02_shieldright_blue.jpg",
+    "id": "dzobj_fdc12f2a57",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/singletrack/motorbike_02/proxy/motorbike_02_shieldright_blue/motorbike_02_shieldright_blue.jpg"
+  },
+  {
+    "objectName": "hand_drill_kit_birch.p3d",
+    "inGameName": "Hand Drill Kit",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/crafting",
+    "usableOnConsole": false,
+    "searchTags": "gear, crafting, hand, drill, kit, birch, v1.30-exp-badlands",
+    "image": "images/gear/crafting/handdrillkitbirch/handdrillkitbirch.jpg",
+    "id": "dzobj_fdd327ac56",
+    "dimensionsVisual": [
+      2.5,
+      2.5,
+      2.5
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/gear/crafting/handdrillkitbirch/handdrillkitbirch.jpg"
   },
   {
     "objectName": "StaticObj_Cemetery_Fence1",
@@ -111551,7 +114802,7 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": false,
     "searchTags": "[match config]",
-    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2/offroad_02_door_1_2.jpg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2_beige/offroad_02_door_1_2_beige.jpg",
     "id": "dzobj_hvie94671f",
     "linked-config": [
       "dzobj_noeeb67ugr",
@@ -111562,7 +114813,7 @@
       1.0881244540214539,
       0.975653886795044
     ],
-    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2/offroad_02_door_1_2.jpg"
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2_beige/offroad_02_door_1_2_beige.jpg"
   },
   {
     "objectName": "StaticObj_Wall_VilVar2_4",
@@ -111909,7 +115160,7 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": false,
     "searchTags": "[match config]",
-    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood/offroad_02_hood.jpg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood_beige/offroad_02_hood_beige.jpg",
     "id": "dzobj_hx20h32tqn",
     "linked-config": [
       "dzobj_w916sgcvyk"
@@ -111919,7 +115170,7 @@
       1.3917789459228516,
       2.1934964656829834
     ],
-    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood/offroad_02_hood.jpg"
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_hood_beige/offroad_02_hood_beige.jpg"
   },
   {
     "objectName": "fishing_rod_closed.p3d",
@@ -122935,14 +126186,14 @@
     "path": "dz/water_sakhal/fresh",
     "usableOnConsole": false,
     "searchTags": "",
-    "image": "images/water_sakhal/fresh/waterspring_sakhal_water.p3d.jpg",
+    "image": "images/water_sakhal/fresh/land_waterspring_water/land_waterspring_water.jpg",
     "id": "dzobj_jos4ycp53u",
     "dimensionsVisual": [
       1.3963121175765991,
       1.9371509552001953e-07,
       1.1616942286491394
     ],
-    "imageUrl": "https://samsobjectfinder.com/images/water_sakhal/fresh/waterspring_sakhal_water.p3d.jpg"
+    "imageUrl": "https://samsobjectfinder.com/images/water_sakhal/fresh/land_waterspring_water/land_waterspring_water.jpg"
   },
   {
     "objectName": "stones_lava_cluster2.p3d",
@@ -124229,14 +127480,14 @@
     "path": "dz/vehicles/wheeled/offroad_02",
     "usableOnConsole": false,
     "searchTags": "car, m1025, transport, vehicle, vehicles, wheeled, hummer, humvee, military",
-    "image": "images/vehicles/wheeled/offroad_02/offroad_02/offroad_02.jpg",
+    "image": "images/vehicles/wheeled/offroad_02/offroad_02_beige/offroad_02_beige.jpg",
     "id": "dzobj_jwfmz7daim",
     "dimensionsVisual": [
       2.649967908859253,
       2.0,
       4.855996131896973
     ],
-    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/offroad_02/offroad_02.jpg"
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/offroad_02_beige/offroad_02_beige.jpg"
   },
   {
     "objectName": "sedandoors_codriver_police.p3d",
@@ -125040,6 +128291,27 @@
       45.10527038574219
     ],
     "imageUrl": "https://samsobjectfinder.com/images/water/ponds/pond_big_42_09.p3d.jpg"
+  },
+  {
+    "objectName": "HoloOptic_Black",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/optics",
+    "usableOnConsole": true,
+    "searchTags": "attachments, optics, scope, weapon, weapons, v1.30-exp-badlands",
+    "image": "images/weapons/attachments/optics/holooptic_black/holooptic_black.jpg",
+    "id": "dzobj_k1r8lgspc8",
+    "linked-variant": [
+      "dzobj_706lov0yq9"
+    ],
+    "linked-p3d": "dzobj_kpcawq5aj7",
+    "dimensionsVisual": [
+      0.09009822830557823,
+      0.06844887835904956,
+      0.054552800953388214
+    ],
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/attachments/optics/holooptic_black/holooptic_black.jpg"
   },
   {
     "objectName": "sign_rail_balota.p3d",
@@ -128145,14 +131417,14 @@
     "path": "dz/weapons/firearms/mosin9130",
     "usableOnConsole": false,
     "searchTags": "rifles, 7.62x54mmr",
-    "image": "images/weapons/firearms/mosin9130/mosin9130/mosin9130.jpg",
+    "image": "images/weapons/firearms/mosin9130/mosin9130_desert/mosin9130_desert.jpg",
     "id": "dzobj_kiovzxynxe",
     "dimensionsVisual": [
       2.2963438034057617,
       0.5806884989142418,
       1.2005788534879684
     ],
-    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/mosin9130/mosin9130/mosin9130.jpg"
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/mosin9130/mosin9130_desert/mosin9130_desert.jpg"
   },
   {
     "objectName": "StaticObj_Rail_Track_LB1_RE",
@@ -129588,14 +132860,18 @@
     "path": "dz/weapons/attachments/optics",
     "usableOnConsole": false,
     "searchTags": "attachments, optics, scope, weapon, weapons",
-    "image": "images/weapons/attachments/optics/optic_holo_sight.p3d.jpg",
+    "image": "images/weapons/attachments/optics/holooptic/holooptic.jpg",
     "id": "dzobj_kpcawq5aj7",
+    "linked-config": [
+      "dzobj_706lov0yq9",
+      "dzobj_k1r8lgspc8"
+    ],
     "dimensionsVisual": [
       0.09009822830557823,
       0.06844887835904956,
       0.054552800953388214
     ],
-    "imageUrl": "https://samsobjectfinder.com/images/weapons/attachments/optics/optic_holo_sight.p3d.jpg"
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/attachments/optics/holooptic/holooptic.jpg"
   },
   {
     "objectName": "StaticObj_Rail_Track_L25_10",
@@ -142624,7 +145900,7 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": false,
     "searchTags": "[match config]",
-    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1/offroad_02_door_2_1.jpg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1_beige/offroad_02_door_2_1_beige.jpg",
     "id": "dzobj_msinp5bfon",
     "linked-config": [
       "dzobj_1rtie9wfmq",
@@ -142635,7 +145911,7 @@
       1.088124394416809,
       0.9004415273666382
     ],
-    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1/offroad_02_door_2_1.jpg"
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_1_beige/offroad_02_door_2_1_beige.jpg"
   },
   {
     "objectName": "ivy_special_e.p3d",
@@ -145025,9 +148301,9 @@
     "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2/offroad_02_door_1_2.jpg",
     "id": "dzobj_n5q82ou5io",
     "dimensionsVisual": [
-      0.12471401318907738,
-      1.0881244540214539,
-      0.975653886795044
+      2.5,
+      2.5,
+      2.5
     ],
     "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_2/offroad_02_door_1_2.jpg"
   },
@@ -146016,7 +149292,7 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": false,
     "searchTags": "[match config]",
-    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2/offroad_02_door_2_2.jpg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2_beige/offroad_02_door_2_2_beige.jpg",
     "id": "dzobj_nbphwqcyl6",
     "linked-config": [
       "dzobj_7nzvv3x04e",
@@ -146027,7 +149303,7 @@
       1.0881244540214539,
       0.9756539463996887
     ],
-    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2/offroad_02_door_2_2.jpg"
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2_beige/offroad_02_door_2_2_beige.jpg"
   },
   {
     "objectName": "ProxyVan_01_Wheel",
@@ -146740,7 +150016,7 @@
     "path": "dz/vehicles/wheeled/offroad_02/proxy",
     "usableOnConsole": false,
     "searchTags": "[match config]",
-    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1/offroad_02_door_1_1.jpg",
+    "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1_beige/offroad_02_door_1_1_beige.jpg",
     "id": "dzobj_ngvqepa7jm",
     "linked-config": [
       "dzobj_t1wkomdfjx",
@@ -146751,7 +150027,7 @@
       1.0881245136260986,
       0.9004415273666382
     ],
-    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1/offroad_02_door_1_1.jpg"
+    "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_1_1_beige/offroad_02_door_1_1_beige.jpg"
   },
   {
     "objectName": "table_broken.p3d",
@@ -149285,14 +152561,14 @@
     "path": "dz/weapons/firearms/cz527",
     "usableOnConsole": false,
     "searchTags": "rifles, 7.62x39",
-    "image": "images/weapons/firearms/cz527/cz527/cz527.jpg",
+    "image": "images/weapons/firearms/cz527/cz527_desert/cz527_desert.jpg",
     "id": "dzobj_nunueqony4",
     "dimensionsVisual": [
       1.9999998807907104,
       0.5977967195212841,
       1.2005699425935745
     ],
-    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/cz527/cz527/cz527.jpg"
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/cz527/cz527_desert/cz527_desert.jpg"
   },
   {
     "objectName": "ZmbF_BlueCollarFat_White",
@@ -159460,9 +162736,9 @@
     "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk/offroad_02_trunk.jpg",
     "id": "dzobj_pg73g3f8d4",
     "dimensionsVisual": [
-      0.18666880577802658,
-      1.4023829102516174,
-      1.3595421314239502
+      2.5,
+      2.5,
+      2.5
     ],
     "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_trunk/offroad_02_trunk.jpg"
   },
@@ -160087,9 +163363,9 @@
     "image": "images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2/offroad_02_door_2_2.jpg",
     "id": "dzobj_pkdpweokiy",
     "dimensionsVisual": [
-      0.12471401318907738,
-      1.0881244540214539,
-      0.9756539463996887
+      2.5,
+      2.5,
+      2.5
     ],
     "imageUrl": "https://samsobjectfinder.com/images/vehicles/wheeled/offroad_02/proxy/offroad_02_door_2_2/offroad_02_door_2_2.jpg"
   },
@@ -193522,14 +196798,14 @@
     "path": "dz/weapons/firearms/mosin9130",
     "usableOnConsole": false,
     "searchTags": "rifles, 7.62x54mmr",
-    "image": "images/weapons/firearms/dzweaponsfirearmsmosin9130mosin_sawn.p3d.jpg",
+    "image": "images/weapons/firearms/mosin9130/sawedoffmosin9130_desert/sawedoffmosin9130_desert.jpg",
     "id": "dzobj_uz2dko1f7r",
     "dimensionsVisual": [
       0.7394246757030487,
       0.11605562269687653,
       0.24506736174225807
     ],
-    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/dzweaponsfirearmsmosin9130mosin_sawn.p3d.jpg"
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/firearms/mosin9130/sawedoffmosin9130_desert/sawedoffmosin9130_desert.jpg"
   },
   {
     "objectName": "racks_broken.p3d",
@@ -217946,14 +221222,14 @@
     "path": "dz/weapons/pistols/glock",
     "usableOnConsole": false,
     "searchTags": "mlock, pistols, weapon, weapons",
-    "image": "images/weapons/pistols/glock/glock19/glock19.jpg",
+    "image": "images/weapons/pistols/glock/glock19_tan/glock19_tan.jpg",
     "id": "dzobj_yqho1u6kl6",
     "dimensionsVisual": [
       0.6276293694972992,
       2.0613387897610664,
       1.200390949845314
     ],
-    "imageUrl": "https://samsobjectfinder.com/images/weapons/pistols/glock/glock19/glock19.jpg"
+    "imageUrl": "https://samsobjectfinder.com/images/weapons/pistols/glock/glock19_tan/glock19_tan.jpg"
   },
   {
     "objectName": "ZmbM_VillagerOld_Green",

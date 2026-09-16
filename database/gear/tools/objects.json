@@ -1351,5 +1351,44 @@
     "searchTags": "sakhal, quest, locked",
     "image": "images/gear/tools/shovel/shovel.jpg",
     "id": "dzobj_jwzviqzqli"
+  },
+  {
+    "objectName": "handle.p3d",
+    "inGameName": "-",
+    "category": "gear",
+    "modelType": "Raw P3D",
+    "path": "dz/gear/tools",
+    "usableOnConsole": false,
+    "searchTags": "gear, tools, handle, underground, breadcrumb, trigger, v1.30-exp-badlands",
+    "image": "images/gear/tools/undergroundbreadcrumbhandle/undergroundbreadcrumbhandle.jpg",
+    "id": "dzobj_62cc46b648",
+    "linked-config": [
+      "dzobj_925ad113e3",
+      "dzobj_66d17495d2"
+    ]
+  },
+  {
+    "objectName": "UndergroundBreadcrumbHandle",
+    "inGameName": "Underground Breadcrumb Handle",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/tools",
+    "usableOnConsole": true,
+    "searchTags": "gear, tools, handle, underground, breadcrumb, trigger, v1.30-exp-badlands",
+    "image": "images/gear/tools/undergroundbreadcrumbhandle/undergroundbreadcrumbhandle.jpg",
+    "id": "dzobj_925ad113e3",
+    "linked-p3d": "dzobj_62cc46b648"
+  },
+  {
+    "objectName": "UndergroundTriggerHandle",
+    "inGameName": "Underground Trigger Handle",
+    "category": "gear",
+    "modelType": "Config",
+    "path": "dz/gear/tools",
+    "usableOnConsole": true,
+    "searchTags": "gear, tools, handle, underground, breadcrumb, trigger, v1.30-exp-badlands",
+    "image": "images/gear/tools/undergroundtriggerhandle/undergroundtriggerhandle.jpg",
+    "id": "dzobj_66d17495d2",
+    "linked-p3d": "dzobj_62cc46b648"
   }
 ]

@@ -19,11 +19,12 @@
 {{ $changelogPage := .Site.GetPage "changelog" }}
 {{ $latestChangelogDate := index (findRE `[0-9]{1,2} [A-Za-z]+ [0-9]{4}` $changelogPage.RawContent 1) 0 }}
 {{ $badlandsBarEnabled := true }}
-{{ $badlandsVersionKey := "v1.29-exp-badlands" }}
-{{ $badlandsBarHref := printf "/?version=%s" $badlandsVersionKey }}
+{{ $badlandsVersionKeys := slice "v1.29-exp-badlands" "v1.30-exp-badlands" }}
+{{ $badlandsBarHref := "/?version=v1.29-exp-badlands&version=v1.30-exp-badlands" }}
 {{ $badlandsObjectCount := 0 }}
 {{ range .Site.Data.dayz_objects }}
-  {{ if in (lower (printf "%v" .searchTags)) $badlandsVersionKey }}
+  {{ $searchTags := lower (printf "%v" .searchTags) }}
+  {{ if or (in $searchTags (index $badlandsVersionKeys 0)) (in $searchTags (index $badlandsVersionKeys 1)) }}
     {{ $badlandsObjectCount = add $badlandsObjectCount 1 }}
   {{ end }}
 {{ end }}
@@ -187,7 +188,7 @@
   role="complementary"
   aria-label="Road to Badlands"
 >
-  <a id="badlandsBottomBarLink" class="bottom-promo-bar__link" href="{{ $badlandsBarHref }}" data-version-key="{{ $badlandsVersionKey }}" aria-label="View Badlands objects">
+  <a id="badlandsBottomBarLink" class="bottom-promo-bar__link" href="{{ $badlandsBarHref }}" data-version-keys="{{ delimit $badlandsVersionKeys "," }}" aria-label="View Badlands objects">
     <span class="bottom-promo-bar__media" aria-hidden="true">
       <img src="/images/promos/badlands.png" alt="">
     </span>
@@ -195,7 +196,7 @@
       <span class="bottom-promo-bar__title">Road to Badlands</span>
       <span class="bottom-promo-bar__text">
         {{ if gt $badlandsObjectCount 0 }}
-          {{ $badlandsObjectCount }} new Badlands objects added
+          {{ $badlandsObjectCount }} objects added
         {{ else }}
           View all the new Badlands objects
         {{ end }}
@@ -203,7 +204,7 @@
     </span>
   </a>
   <div class="bottom-promo-bar__actions">
-    <a id="badlandsBottomBarCta" class="bottom-promo-bar__cta" href="{{ $badlandsBarHref }}" data-version-key="{{ $badlandsVersionKey }}">View the Objects</a>
+    <a id="badlandsBottomBarCta" class="bottom-promo-bar__cta" href="{{ $badlandsBarHref }}" data-version-keys="{{ delimit $badlandsVersionKeys "," }}">View the Objects</a>
     <button id="badlandsBottomBarClose" class="bottom-promo-bar__close" type="button" aria-label="Dismiss Badlands bar">✕</button>
   </div>
 </div>

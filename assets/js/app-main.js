@@ -63,7 +63,7 @@
     // - folderBulkMode: 'animals' | 'search' sticky mode for bulk controls
     //
     // URL-driven filters:
-    // - versionParam: active version tag from URL (e.g. 'v1.29')
+    // - versionParams: active version tags from URL (e.g. ['v1.29'])
     // - activeTypesTagFilter: {map, kind, name} | null
     // - activeTypesTagMatchByName: object-name lookup map for activeTypesTagFilter
     // - activeTypesExplorerMatchByName: object-name lookup map for Types Explorer selections
@@ -3481,7 +3481,9 @@
         }
       }
     });
-    var buildVersionFilterUrl = function(version) {
+    var buildVersionFilterUrl = function(versions) {
+      var versionValues = Array.isArray(versions) ? versions : [versions];
+      versionValues = versionValues.filter(Boolean);
       return AppUrl.build({
         id: null,
         object: null,
@@ -3489,7 +3491,7 @@
         types_map: null,
         types_kind: null,
         types_tag: null,
-        version: version ? version : null
+        version: versionValues.length ? versionValues : null
       });
     };
     var buildIdFilterUrl = function(ids) {
@@ -6852,6 +6854,15 @@
       }
       return '';
     };
+    var normalizeVersionParams = function(values) {
+      var source = Array.isArray(values) ? values : [values];
+      var seen = {};
+      return source.map(normalizeVersionParam).filter(function(version) {
+        if (!version || seen[version]) return false;
+        seen[version] = true;
+        return true;
+      });
+    };
     var rowHasVersionTag = function(row, versionKey) {
       if (!versionKey) return false;
       var rawTags = String((row && row.searchTags) || '');
@@ -6862,6 +6873,11 @@
         if (token && token === versionKey) return true;
       }
       return false;
+    };
+    var rowHasAnyVersionTag = function(row, versionKeys) {
+      return versionKeys.some(function(versionKey) {
+        return rowHasVersionTag(row, versionKey);
+      });
     };
 
     var initialUrl = AppUrl.read();
@@ -6893,7 +6909,8 @@
     var presetsAppParam = ['1', 'true', 'yes'].indexOf(String(initialUrl.get('presets') || '').trim().toLowerCase()) !== -1;
     var objectParam = initialUrl.get('object');
     var searchQueryParam = String(initialUrl.get('q') || '').trim();
-    var versionParam = normalizeVersionParam(initialUrl.get('version'));
+    var versionParams = normalizeVersionParams(initialUrl.getAll('version'));
+    var BADLANDS_VERSION_KEYS = ['v1.29-exp-badlands', 'v1.30-exp-badlands'];
     var objectMapWorldParam = normalizeObjectMapParam(initialUrl.get('world'));
     var typesMapParam = normalizeTypesMapParam(initialUrl.get('types_map'));
     var typesKindParam = normalizeTypesKindParam(initialUrl.get('types_kind'));
@@ -6947,7 +6964,9 @@
       noticeEl.classList.toggle('visible', !!visible);
     };
     var isUpdateToggleActive = function() {
-      return versionParam === 'v1.29-exp-badlands';
+      return versionParams.length === BADLANDS_VERSION_KEYS.length && BADLANDS_VERSION_KEYS.every(function(versionKey) {
+        return versionParams.indexOf(versionKey) !== -1;
+      });
     };
     var updateVersionToggleState = function() {
       if (!updateToggleEl) return;
@@ -6957,8 +6976,8 @@
     };
     var updateNotices = function() {
       var urlState = AppUrl.read();
-      var urlVersion = normalizeVersionParam(urlState.get('version'));
-      versionParam = urlVersion;
+      var urlVersions = normalizeVersionParams(urlState.getAll('version'));
+      versionParams = urlVersions;
       var urlPath = normalizeFilterText(urlState.get('path') || '');
       var urlSearch = String(urlState.get('q') || '').trim();
       var urlIds = urlState.getAll('id').map(function(value) {
@@ -6969,8 +6988,8 @@
       setNoticeVisibility(
         versionFilterNoticeEl,
         versionFilterNoticeTextEl,
-        !!urlVersion,
-        urlVersion ? ('Filtering ' + urlVersion + ' objects.') : null
+        urlVersions.length > 0,
+        urlVersions.length ? ('Filtering ' + urlVersions.join(' and ') + ' objects.') : null
       );
 
       if (activeTypesTagFilter && activeTypesTagFilter.name && activeTypesTagFilter.kind && activeTypesTagFilter.map) {
@@ -7061,10 +7080,10 @@
       if (appliedUrlState) return;
       appliedUrlState = true;
 
-      if (!objectIdParams.length && !objectParam && versionParam) {
+      if (!objectIdParams.length && !objectParam && versionParams.length) {
         var dataForVersion = getDataArray(sourceData);
         var versionMatches = dataForVersion.filter(function(row) {
-          return rowHasVersionTag(row, versionParam);
+          return rowHasAnyVersionTag(row, versionParams);
         });
         if (versionMatches.length) {
           var versionIds = versionMatches.map(function(row) {
@@ -7486,22 +7505,25 @@
       updateSearchShareLinkVisibility();
       scheduleSidebarTopOffsetSync();
     };
-    var applyVersionFilterByTag = function(versionKey) {
-      var normalizedVersion = normalizeVersionParam(versionKey);
-      if (!normalizedVersion || !table) return;
+    var applyVersionFilterByTags = function(versionKeys) {
+      var normalizedVersions = normalizeVersionParams(versionKeys);
+      if (!normalizedVersions.length || !table) return;
       runResetView();
       var allRows = getDataArray(table.rows().data());
       var versionMatches = allRows.filter(function(row) {
-        return rowHasVersionTag(row, normalizedVersion);
+        return rowHasAnyVersionTag(row, normalizedVersions);
       });
       var versionIds = versionMatches.map(function(row) {
         return normalizeObjectId(getObjectId(row));
       }).filter(Boolean);
       applyIdListFilter(versionIds);
-      versionParam = normalizedVersion;
-      AppUrl.push({}, { sourceUrl: buildVersionFilterUrl(normalizedVersion) });
+      versionParams = normalizedVersions;
+      AppUrl.push({}, { sourceUrl: buildVersionFilterUrl(normalizedVersions) });
       updateNotices();
       updateSearchShareLinkVisibility();
+    };
+    var applyVersionFilterByTag = function(versionKey) {
+      applyVersionFilterByTags([versionKey]);
     };
     if (updateToggleEl) {
       updateToggleEl.addEventListener('click', function(e) {
@@ -7510,7 +7532,7 @@
           runResetView();
           return;
         }
-        applyVersionFilterByTag('v1.29-exp-badlands');
+        applyVersionFilterByTags(BADLANDS_VERSION_KEYS);
       });
       updateVersionToggleState();
     }
@@ -7887,7 +7909,7 @@
     if (versionFilterCopyLinkEl) {
       versionFilterCopyLinkEl.addEventListener('click', function(e) {
         e.preventDefault();
-        var link = buildVersionFilterUrl(versionParam);
+        var link = buildVersionFilterUrl(versionParams);
         navigator.clipboard.writeText(link);
         var original = versionFilterCopyLinkEl.textContent;
         versionFilterCopyLinkEl.textContent = 'Copied';
@@ -7998,7 +8020,7 @@
     }
     var handleBadlandsSoftFilterClick = function(event) {
       if (event) event.preventDefault();
-      applyVersionFilterByTag('v1.29-exp-badlands');
+      applyVersionFilterByTags(BADLANDS_VERSION_KEYS);
     };
     if (badlandsBottomBarLinkEl) {
       badlandsBottomBarLinkEl.addEventListener('click', handleBadlandsSoftFilterClick);
