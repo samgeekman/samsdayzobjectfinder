@@ -146789,8 +146789,8 @@
     ]
   },
   {
-    "objectName": "SurgivalGloves_Blue",
-    "inGameName": "Surgival Gloves",
+    "objectName": "SurgicalGloves_Blue",
+    "inGameName": "Surgical Gloves",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/gloves",
@@ -146798,6 +146798,12 @@
     "searchTags": "gloves, surgical, medical, sterile, disposable",
     "image": "images/characters/gloves/surgical_gloves_blue.jpg",
     "id": "dzobj_ry0aih83sy",
+    "linked-variant": [
+      "dzobj_28w10pbjug",
+      "dzobj_ikpuiyumef",
+      "dzobj_wrlhxz38tm"
+    ],
+    "linked-p3d": "dzobj_5qmor6cbgx",
     "dimensionsVisual": [
       0.20659400522708893,
       0.02549021248705685,
@@ -146805,8 +146811,8 @@
     ]
   },
   {
-    "objectName": "SurgivalGloves_White",
-    "inGameName": "Surgival Gloves",
+    "objectName": "SurgicalGloves_White",
+    "inGameName": "Surgical Gloves",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/gloves",
@@ -146814,6 +146820,12 @@
     "searchTags": "gloves, surgical, medical, sterile, disposable",
     "image": "images/characters/gloves/surgical_gloves_blue.jpg",
     "id": "dzobj_wrlhxz38tm",
+    "linked-variant": [
+      "dzobj_28w10pbjug",
+      "dzobj_ikpuiyumef",
+      "dzobj_ry0aih83sy"
+    ],
+    "linked-p3d": "dzobj_5qmor6cbgx",
     "dimensionsVisual": [
       0.20659400522708893,
       0.02549021248705685,
@@ -146821,8 +146833,8 @@
     ]
   },
   {
-    "objectName": "SurgivalGloves_LightBlue",
-    "inGameName": "Surgival Gloves",
+    "objectName": "SurgicalGloves_LightBlue",
+    "inGameName": "Surgical Gloves",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/gloves",
@@ -146830,15 +146842,21 @@
     "searchTags": "gloves, surgical, medical, sterile, disposable",
     "image": "images/characters/gloves/surgical_gloves_light_blue.jpg",
     "id": "dzobj_ikpuiyumef",
+    "linked-variant": [
+      "dzobj_28w10pbjug",
+      "dzobj_ry0aih83sy",
+      "dzobj_wrlhxz38tm"
+    ],
+    "linked-p3d": "dzobj_5qmor6cbgx",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.20659400522708893,
+      0.02549021248705685,
+      0.20536940544843674
     ]
   },
   {
-    "objectName": "SurgivalGloves_Green",
-    "inGameName": "Surgival Gloves",
+    "objectName": "SurgicalGloves_Green",
+    "inGameName": "Surgical Gloves",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/gloves",
@@ -146846,10 +146864,16 @@
     "searchTags": "gloves, surgical, medical, sterile, disposable",
     "image": "images/characters/gloves/surgical_gloves_green.jpg",
     "id": "dzobj_28w10pbjug",
+    "linked-variant": [
+      "dzobj_ikpuiyumef",
+      "dzobj_ry0aih83sy",
+      "dzobj_wrlhxz38tm"
+    ],
+    "linked-p3d": "dzobj_5qmor6cbgx",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.20659400522708893,
+      0.02549021248705685,
+      0.20536940544843674
     ]
   },
   {
@@ -147125,7 +147149,7 @@
     ]
   },
   {
-    "objectName": "WoolGloves_Fingerless_Green",
+    "objectName": "WoolGlovesFingerless_Green",
     "inGameName": "Wool Gloves",
     "category": "characters",
     "modelType": "Config",
@@ -147134,6 +147158,14 @@
     "searchTags": "gloves, fingerless, wool, winter, dexterity",
     "image": "images/characters/gloves/wool_gloves_fingerless_green.jpg",
     "id": "dzobj_twemgzyvkn",
+    "linked-variant": [
+      "dzobj_51zmkx3ubz",
+      "dzobj_b72cbrdzs1",
+      "dzobj_g9d4iyphya",
+      "dzobj_lzagmlp5qs",
+      "dzobj_rb3qzln4v4"
+    ],
+    "linked-p3d": "dzobj_9875uigxmn",
     "dimensionsVisual": [
       0.16077227145433426,
       0.04168710426893085,
@@ -147141,7 +147173,7 @@
     ]
   },
   {
-    "objectName": "WoolGloves_Fingerless_Tan",
+    "objectName": "WoolGlovesFingerless_Tan",
     "inGameName": "Wool Gloves",
     "category": "characters",
     "modelType": "Config",
@@ -147150,14 +147182,22 @@
     "searchTags": "gloves, fingerless, wool, winter, dexterity",
     "image": "images/characters/gloves/wool_gloves_fingerless_tan.jpg",
     "id": "dzobj_lzagmlp5qs",
+    "linked-variant": [
+      "dzobj_51zmkx3ubz",
+      "dzobj_b72cbrdzs1",
+      "dzobj_g9d4iyphya",
+      "dzobj_rb3qzln4v4",
+      "dzobj_twemgzyvkn"
+    ],
+    "linked-p3d": "dzobj_9875uigxmn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.16077227145433426,
+      0.04168710426893085,
+      0.19077760726213455
     ]
   },
   {
-    "objectName": "WoolGloves_Fingerless_Black",
+    "objectName": "WoolGlovesFingerless_Black",
     "inGameName": "Wool Gloves",
     "category": "characters",
     "modelType": "Config",
@@ -147166,14 +147206,22 @@
     "searchTags": "gloves, fingerless, wool, winter, dexterity",
     "image": "images/characters/gloves/wool_gloves_fingerless_black.jpg",
     "id": "dzobj_51zmkx3ubz",
+    "linked-variant": [
+      "dzobj_b72cbrdzs1",
+      "dzobj_g9d4iyphya",
+      "dzobj_lzagmlp5qs",
+      "dzobj_rb3qzln4v4",
+      "dzobj_twemgzyvkn"
+    ],
+    "linked-p3d": "dzobj_9875uigxmn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.16077227145433426,
+      0.04168710426893085,
+      0.19077760726213455
     ]
   },
   {
-    "objectName": "WoolGloves_Fingerless_White",
+    "objectName": "WoolGlovesFingerless_White",
     "inGameName": "Wool Gloves",
     "category": "characters",
     "modelType": "Config",
@@ -147182,14 +147230,22 @@
     "searchTags": "gloves, fingerless, wool, winter, dexterity",
     "image": "images/characters/gloves/wool_gloves_fingerless_white.jpg",
     "id": "dzobj_b72cbrdzs1",
+    "linked-variant": [
+      "dzobj_51zmkx3ubz",
+      "dzobj_g9d4iyphya",
+      "dzobj_lzagmlp5qs",
+      "dzobj_rb3qzln4v4",
+      "dzobj_twemgzyvkn"
+    ],
+    "linked-p3d": "dzobj_9875uigxmn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.16077227145433426,
+      0.04168710426893085,
+      0.19077760726213455
     ]
   },
   {
-    "objectName": "WoolGloves_Fingerless_ChristmasBlue",
+    "objectName": "WoolGlovesFingerless_ChristmasBlue",
     "inGameName": "Wool Gloves",
     "category": "characters",
     "modelType": "Config",
@@ -147198,14 +147254,22 @@
     "searchTags": "gloves, fingerless, wool, winter, dexterity, festive, santa, seasonal",
     "image": "images/characters/gloves/wool_gloves_fingerless_christmas_blue.jpg",
     "id": "dzobj_rb3qzln4v4",
+    "linked-variant": [
+      "dzobj_51zmkx3ubz",
+      "dzobj_b72cbrdzs1",
+      "dzobj_g9d4iyphya",
+      "dzobj_lzagmlp5qs",
+      "dzobj_twemgzyvkn"
+    ],
+    "linked-p3d": "dzobj_9875uigxmn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.16077227145433426,
+      0.04168710426893085,
+      0.19077760726213455
     ]
   },
   {
-    "objectName": "WoolGloves_Fingerless_ChristmasRed",
+    "objectName": "WoolGlovesFingerless_ChristmasRed",
     "inGameName": "Wool Gloves",
     "category": "characters",
     "modelType": "Config",
@@ -147214,10 +147278,18 @@
     "searchTags": "gloves, fingerless, wool, winter, dexterity, festive, santa, seasonal",
     "image": "images/characters/gloves/wool_gloves_fingerless_christmas_red.jpg",
     "id": "dzobj_g9d4iyphya",
+    "linked-variant": [
+      "dzobj_51zmkx3ubz",
+      "dzobj_b72cbrdzs1",
+      "dzobj_lzagmlp5qs",
+      "dzobj_rb3qzln4v4",
+      "dzobj_twemgzyvkn"
+    ],
+    "linked-p3d": "dzobj_9875uigxmn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.16077227145433426,
+      0.04168710426893085,
+      0.19077760726213455
     ]
   },
   {
@@ -147517,6 +147589,12 @@
     "searchTags": "gloves, surgical, medical, sterile, disposable",
     "image": "images/characters/gloves/surgical_gloves_blue.jpg",
     "id": "dzobj_5qmor6cbgx",
+    "linked-config": [
+      "dzobj_28w10pbjug",
+      "dzobj_ikpuiyumef",
+      "dzobj_ry0aih83sy",
+      "dzobj_wrlhxz38tm"
+    ],
     "dimensionsVisual": [
       0.20659400522708893,
       0.02549021248705685,
@@ -147554,6 +147632,14 @@
     "searchTags": "gloves, fingerless, wool, winter, dexterity",
     "image": "images/characters/gloves/wool_gloves_fingerless_green.jpg",
     "id": "dzobj_9875uigxmn",
+    "linked-config": [
+      "dzobj_51zmkx3ubz",
+      "dzobj_b72cbrdzs1",
+      "dzobj_g9d4iyphya",
+      "dzobj_lzagmlp5qs",
+      "dzobj_rb3qzln4v4",
+      "dzobj_twemgzyvkn"
+    ],
     "dimensionsVisual": [
       0.16077227145433426,
       0.04168710426893085,

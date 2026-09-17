@@ -33540,7 +33540,7 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/walls/land_wall_gate_fen2_r.jpg"
   },
   {
-    "objectName": "WoolGloves_Fingerless_Black",
+    "objectName": "WoolGlovesFingerless_Black",
     "inGameName": "Wool Gloves",
     "category": "characters",
     "modelType": "Config",
@@ -33549,10 +33549,18 @@
     "searchTags": "gloves, fingerless, wool, winter, dexterity",
     "image": "images/characters/gloves/wool_gloves_fingerless_black.jpg",
     "id": "dzobj_51zmkx3ubz",
+    "linked-variant": [
+      "dzobj_b72cbrdzs1",
+      "dzobj_g9d4iyphya",
+      "dzobj_lzagmlp5qs",
+      "dzobj_rb3qzln4v4",
+      "dzobj_twemgzyvkn"
+    ],
+    "linked-p3d": "dzobj_9875uigxmn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.16077227145433426,
+      0.04168710426893085,
+      0.19077760726213455
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/gloves/wool_gloves_fingerless_black.jpg"
   },
@@ -60116,6 +60124,14 @@
     "searchTags": "gloves, fingerless, wool, winter, dexterity",
     "image": "images/characters/gloves/wool_gloves_fingerless_green.jpg",
     "id": "dzobj_9875uigxmn",
+    "linked-config": [
+      "dzobj_51zmkx3ubz",
+      "dzobj_b72cbrdzs1",
+      "dzobj_g9d4iyphya",
+      "dzobj_lzagmlp5qs",
+      "dzobj_rb3qzln4v4",
+      "dzobj_twemgzyvkn"
+    ],
     "dimensionsVisual": [
       0.16077227145433426,
       0.04168710426893085,
@@ -71665,7 +71681,7 @@
     "imageUrl": "https://samsobjectfinder.com/images/characters/shoes/medievalboots/medievalboots.jpg"
   },
   {
-    "objectName": "WoolGloves_Fingerless_White",
+    "objectName": "WoolGlovesFingerless_White",
     "inGameName": "Wool Gloves",
     "category": "characters",
     "modelType": "Config",
@@ -71674,10 +71690,18 @@
     "searchTags": "gloves, fingerless, wool, winter, dexterity",
     "image": "images/characters/gloves/wool_gloves_fingerless_white.jpg",
     "id": "dzobj_b72cbrdzs1",
+    "linked-variant": [
+      "dzobj_51zmkx3ubz",
+      "dzobj_g9d4iyphya",
+      "dzobj_lzagmlp5qs",
+      "dzobj_rb3qzln4v4",
+      "dzobj_twemgzyvkn"
+    ],
+    "linked-p3d": "dzobj_9875uigxmn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.16077227145433426,
+      0.04168710426893085,
+      0.19077760726213455
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/gloves/wool_gloves_fingerless_white.jpg"
   },
@@ -103838,7 +103862,7 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/specific/castles/land_castle_wall1_end1/land_castle_wall1_end1.jpg"
   },
   {
-    "objectName": "WoolGloves_Fingerless_ChristmasRed",
+    "objectName": "WoolGlovesFingerless_ChristmasRed",
     "inGameName": "Wool Gloves",
     "category": "characters",
     "modelType": "Config",
@@ -103847,10 +103871,18 @@
     "searchTags": "gloves, fingerless, wool, winter, dexterity, festive, santa, seasonal",
     "image": "images/characters/gloves/wool_gloves_fingerless_christmas_red.jpg",
     "id": "dzobj_g9d4iyphya",
+    "linked-variant": [
+      "dzobj_51zmkx3ubz",
+      "dzobj_b72cbrdzs1",
+      "dzobj_lzagmlp5qs",
+      "dzobj_rb3qzln4v4",
+      "dzobj_twemgzyvkn"
+    ],
+    "linked-p3d": "dzobj_9875uigxmn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.16077227145433426,
+      0.04168710426893085,
+      0.19077760726213455
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/gloves/wool_gloves_fingerless_christmas_red.jpg"
   },
@@ -140593,7 +140625,7 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/specific/cemeteries/staticobj_cemetery_tombstone11/staticobj_cemetery_tombstone11.jpg"
   },
   {
-    "objectName": "WoolGloves_Fingerless_Tan",
+    "objectName": "WoolGlovesFingerless_Tan",
     "inGameName": "Wool Gloves",
     "category": "characters",
     "modelType": "Config",
@@ -140602,10 +140634,18 @@
     "searchTags": "gloves, fingerless, wool, winter, dexterity",
     "image": "images/characters/gloves/wool_gloves_fingerless_tan.jpg",
     "id": "dzobj_lzagmlp5qs",
+    "linked-variant": [
+      "dzobj_51zmkx3ubz",
+      "dzobj_b72cbrdzs1",
+      "dzobj_g9d4iyphya",
+      "dzobj_rb3qzln4v4",
+      "dzobj_twemgzyvkn"
+    ],
+    "linked-p3d": "dzobj_9875uigxmn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.16077227145433426,
+      0.04168710426893085,
+      0.19077760726213455
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/gloves/wool_gloves_fingerless_tan.jpg"
   },
@@ -174604,7 +174644,7 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/residential/medical/land_medical_tent_shower.jpg"
   },
   {
-    "objectName": "WoolGloves_Fingerless_ChristmasBlue",
+    "objectName": "WoolGlovesFingerless_ChristmasBlue",
     "inGameName": "Wool Gloves",
     "category": "characters",
     "modelType": "Config",
@@ -174613,10 +174653,18 @@
     "searchTags": "gloves, fingerless, wool, winter, dexterity, festive, santa, seasonal",
     "image": "images/characters/gloves/wool_gloves_fingerless_christmas_blue.jpg",
     "id": "dzobj_rb3qzln4v4",
+    "linked-variant": [
+      "dzobj_51zmkx3ubz",
+      "dzobj_b72cbrdzs1",
+      "dzobj_g9d4iyphya",
+      "dzobj_lzagmlp5qs",
+      "dzobj_twemgzyvkn"
+    ],
+    "linked-p3d": "dzobj_9875uigxmn",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.16077227145433426,
+      0.04168710426893085,
+      0.19077760726213455
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/gloves/wool_gloves_fingerless_christmas_blue.jpg"
   },
@@ -189992,7 +190040,7 @@
     "imageUrl": "https://samsobjectfinder.com/images/characters/backpacks/alice_bag_green.jpg"
   },
   {
-    "objectName": "WoolGloves_Fingerless_Green",
+    "objectName": "WoolGlovesFingerless_Green",
     "inGameName": "Wool Gloves",
     "category": "characters",
     "modelType": "Config",
@@ -190001,6 +190049,14 @@
     "searchTags": "gloves, fingerless, wool, winter, dexterity",
     "image": "images/characters/gloves/wool_gloves_fingerless_green.jpg",
     "id": "dzobj_twemgzyvkn",
+    "linked-variant": [
+      "dzobj_51zmkx3ubz",
+      "dzobj_b72cbrdzs1",
+      "dzobj_g9d4iyphya",
+      "dzobj_lzagmlp5qs",
+      "dzobj_rb3qzln4v4"
+    ],
+    "linked-p3d": "dzobj_9875uigxmn",
     "dimensionsVisual": [
       0.16077227145433426,
       0.04168710426893085,
