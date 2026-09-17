@@ -15870,8 +15870,8 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/directional/sign_78c/sign_78c.jpg"
   },
   {
-    "objectName": "SurgivalGloves_Green",
-    "inGameName": "Surgival Gloves",
+    "objectName": "SurgicalGloves_Green",
+    "inGameName": "Surgical Gloves",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/gloves",
@@ -15879,10 +15879,16 @@
     "searchTags": "gloves, surgical, medical, sterile, disposable",
     "image": "images/characters/gloves/surgical_gloves_green.jpg",
     "id": "dzobj_28w10pbjug",
+    "linked-variant": [
+      "dzobj_ikpuiyumef",
+      "dzobj_ry0aih83sy",
+      "dzobj_wrlhxz38tm"
+    ],
+    "linked-p3d": "dzobj_5qmor6cbgx",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.20659400522708893,
+      0.02549021248705685,
+      0.20536940544843674
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/gloves/surgical_gloves_green.jpg"
   },
@@ -37732,6 +37738,12 @@
     "searchTags": "gloves, surgical, medical, sterile, disposable",
     "image": "images/characters/gloves/surgical_gloves_blue.jpg",
     "id": "dzobj_5qmor6cbgx",
+    "linked-config": [
+      "dzobj_28w10pbjug",
+      "dzobj_ikpuiyumef",
+      "dzobj_ry0aih83sy",
+      "dzobj_wrlhxz38tm"
+    ],
     "dimensionsVisual": [
       0.20659400522708893,
       0.02549021248705685,
@@ -119402,8 +119414,8 @@
     "imageUrl": "https://samsobjectfinder.com/images/water_bliss/river/enoch_river_524.p3d.jpg"
   },
   {
-    "objectName": "SurgivalGloves_LightBlue",
-    "inGameName": "Surgival Gloves",
+    "objectName": "SurgicalGloves_LightBlue",
+    "inGameName": "Surgical Gloves",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/gloves",
@@ -119411,10 +119423,16 @@
     "searchTags": "gloves, surgical, medical, sterile, disposable",
     "image": "images/characters/gloves/surgical_gloves_light_blue.jpg",
     "id": "dzobj_ikpuiyumef",
+    "linked-variant": [
+      "dzobj_28w10pbjug",
+      "dzobj_ry0aih83sy",
+      "dzobj_wrlhxz38tm"
+    ],
+    "linked-p3d": "dzobj_5qmor6cbgx",
     "dimensionsVisual": [
-      2.5,
-      2.5,
-      2.5
+      0.20659400522708893,
+      0.02549021248705685,
+      0.20536940544843674
     ],
     "imageUrl": "https://samsobjectfinder.com/images/characters/gloves/surgical_gloves_light_blue.jpg"
   },
@@ -178103,8 +178121,8 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/signs/traffic/sign_downhill/sign_downhill.jpg"
   },
   {
-    "objectName": "SurgivalGloves_Blue",
-    "inGameName": "Surgival Gloves",
+    "objectName": "SurgicalGloves_Blue",
+    "inGameName": "Surgical Gloves",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/gloves",
@@ -178112,6 +178130,12 @@
     "searchTags": "gloves, surgical, medical, sterile, disposable",
     "image": "images/characters/gloves/surgical_gloves_blue.jpg",
     "id": "dzobj_ry0aih83sy",
+    "linked-variant": [
+      "dzobj_28w10pbjug",
+      "dzobj_ikpuiyumef",
+      "dzobj_wrlhxz38tm"
+    ],
+    "linked-p3d": "dzobj_5qmor6cbgx",
     "dimensionsVisual": [
       0.20659400522708893,
       0.02549021248705685,
@@ -208623,8 +208647,8 @@
     "imageUrl": "https://samsobjectfinder.com/images/structures/roads/parts/staticobj_roads_partasf2_30_25.jpg"
   },
   {
-    "objectName": "SurgivalGloves_White",
-    "inGameName": "Surgival Gloves",
+    "objectName": "SurgicalGloves_White",
+    "inGameName": "Surgical Gloves",
     "category": "characters",
     "modelType": "Config",
     "path": "dz/characters/gloves",
@@ -208632,6 +208656,12 @@
     "searchTags": "gloves, surgical, medical, sterile, disposable",
     "image": "images/characters/gloves/surgical_gloves_blue.jpg",
     "id": "dzobj_wrlhxz38tm",
+    "linked-variant": [
+      "dzobj_28w10pbjug",
+      "dzobj_ikpuiyumef",
+      "dzobj_ry0aih83sy"
+    ],
+    "linked-p3d": "dzobj_5qmor6cbgx",
     "dimensionsVisual": [
       0.20659400522708893,
       0.02549021248705685,
