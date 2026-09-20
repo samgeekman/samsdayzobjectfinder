@@ -159,7 +159,7 @@ header nav.site-nav.ph3.ph4-ns {
   filter: brightness(0) invert(1);
 }
 .nav-menu-button:hover .nav-menu-button__icon {
-  filter: none;
+  filter: brightness(0);
 }
 
 .nav-menu-button:hover {
@@ -335,6 +335,181 @@ header nav.site-nav.ph3.ph4-ns {
   overflow-wrap: anywhere;
 }
 
+.copy-to-editor-open {
+  overflow: hidden;
+}
+.copy-to-editor-overlay {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: auto;
+  padding: clamp(16px, 4vw, 56px);
+  background: rgba(5, 10, 15, 0.7);
+  backdrop-filter: blur(2px);
+}
+.copy-to-editor-overlay[hidden] {
+  display: none;
+}
+.copy-to-editor-overlay__panel {
+  position: relative;
+  width: 100%;
+  max-width: 896px;
+  max-height: calc(100vh - 32px);
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card);
+  color: var(--text);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+}
+.copy-to-editor-overlay__content {
+  padding: clamp(24px, 4vw, 48px);
+}
+.copy-to-editor-overlay__close {
+  position: absolute;
+  z-index: 1;
+  top: 14px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+.copy-to-editor-overlay__close:hover,
+.copy-to-editor-overlay__close:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #111;
+  outline: none;
+}
+.copy-to-editor-overlay__eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.copy-to-editor-overlay h2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0;
+  padding-right: 40px;
+  font-size: clamp(1.55rem, 3vw, 2.55rem);
+  line-height: 1.08;
+}
+.copy-to-editor-overlay__title-icon {
+  display: inline-block;
+  flex: 0 0 1em;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.04em;
+  background-color: currentColor;
+  -webkit-mask: url('/icons/copy-editor.svg') center / contain no-repeat;
+  mask: url('/icons/copy-editor.svg') center / contain no-repeat;
+}
+.copy-to-editor-overlay__intro {
+  margin: 12px 0 24px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.copy-to-editor-overlay__gif {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #111820;
+}
+.copy-to-editor-overlay__steps {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 26px;
+}
+.copy-to-editor-overlay__steps::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: 16.5%;
+  left: 16.5%;
+  height: 1px;
+  background: var(--border);
+}
+.copy-to-editor-overlay__step {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+.copy-to-editor-overlay__step-number {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  flex: 0 0 38px;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 800;
+}
+.copy-to-editor-overlay__step p {
+  display: grid;
+  gap: 3px;
+  margin: 2px 0 0;
+  font-size: 0.88rem;
+  line-height: 1.3;
+}
+.copy-to-editor-overlay__step p span {
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+.copy-to-editor-overlay__inline-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin: 0 2px;
+  vertical-align: -0.16em;
+  background-color: currentColor;
+  -webkit-mask: url('/icons/copy-editor.svg') center / contain no-repeat;
+  mask: url('/icons/copy-editor.svg') center / contain no-repeat;
+}
+@media (max-width: 560px) {
+  .copy-to-editor-overlay {
+    padding: 10px;
+  }
+  .copy-to-editor-overlay__content {
+    padding: 22px 18px;
+  }
+  .copy-to-editor-overlay__steps {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .copy-to-editor-overlay__steps::before {
+    display: none;
+  }
+}
+
 .site-nav__divider {
   width: 1px;
   height: 20px;
@@ -345,6 +520,9 @@ header nav.site-nav.ph3.ph4-ns {
 .site-nav__menu-item--utility {
   padding-right: 0 !important;
   padding-left: 0 !important;
+}
+.site-nav__menu-item--copy-editor {
+  margin-inline-end: 8px;
 }
 
 .site-nav {

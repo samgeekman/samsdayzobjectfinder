@@ -23,7 +23,13 @@
               API
             </a>
           </li>
-          <li class="list f5 f4-ns fw4 dib site-nav__menu-item--utility {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
+          <li class="list f5 f4-ns fw4 dib site-nav__menu-item--utility site-nav__menu-item--copy-editor {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
+            <a id="copyToEditorTrigger" class="nav-menu-button nav-menu-button--with-icon no-underline" href="{{ "/?copy-to-editor" | urls.RelURL }}" title="Copy objects from this site directly into Editor">
+              <img class="nav-menu-button__icon" src="/icons/copy-editor.svg" alt="" aria-hidden="true">
+              <span>Copy to Editor</span>
+            </a>
+          </li>
+          <li class="list f5 f4-ns fw4 dib site-nav__menu-item--utility site-nav__menu-item--copy-editor {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
             <button id="themeToggle" class="nav-menu-button nav-menu-button--theme no-underline" type="button" aria-live="polite" aria-pressed="false" title="Toggle dark or light mode" aria-label="Toggle dark or light mode">
               ◐
             </button>
@@ -39,6 +45,12 @@
             </a>
           </li>
           <li class="list f5 f4-ns fw4 dib site-nav__menu-item--utility {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
+            <a id="copyToEditorTrigger" class="nav-menu-button nav-menu-button--with-icon no-underline" href="{{ "/?copy-to-editor" | urls.RelURL }}" title="Copy objects from this site directly into Editor">
+              <img class="nav-menu-button__icon" src="/icons/copy-editor.svg" alt="" aria-hidden="true">
+              <span>Copy to Editor</span>
+            </a>
+          </li>
+          <li class="list f5 f4-ns fw4 dib site-nav__menu-item--utility {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl2" "pr2" }}">
             <button id="themeToggle" class="nav-menu-button nav-menu-button--theme no-underline" type="button" aria-live="polite" aria-pressed="false" title="Toggle dark or light mode" aria-label="Toggle dark or light mode">
               ◐
             </button>
@@ -51,6 +63,31 @@
     </div>
   </div>
 </nav>
+
+<div id="copyToEditorOverlay" class="copy-to-editor-overlay" role="dialog" aria-modal="true" aria-labelledby="copyToEditorTitle" aria-describedby="copyToEditorDescription" aria-hidden="true" hidden>
+  <div class="copy-to-editor-overlay__panel">
+    <button id="copyToEditorClose" class="copy-to-editor-overlay__close" type="button" aria-label="Close Copy to Editor instructions">×</button>
+    <div class="copy-to-editor-overlay__content">
+      <h2 id="copyToEditorTitle"><span class="copy-to-editor-overlay__title-icon" aria-hidden="true"></span><span>Copy objects into DayZ Editor</span></h2>
+      <p id="copyToEditorDescription" class="copy-to-editor-overlay__intro">Paste one or more objects using pinned menu, including many hidden pc-only p3ds.</p>
+      <img class="copy-to-editor-overlay__gif" src="/images/projects/copy-to-editor.gif" alt="Demonstration of copying an object from Sam's DayZ Object Finder into DayZ Editor">
+      <div class="copy-to-editor-overlay__steps" aria-label="Copy to Editor steps">
+        <div class="copy-to-editor-overlay__step">
+          <span class="copy-to-editor-overlay__step-number">1</span>
+          <p><strong>Click the Editor icon <span class="copy-to-editor-overlay__inline-icon" aria-hidden="true"></span></strong><span>or <span class="copy-to-editor-overlay__inline-icon" aria-hidden="true"></span> <strong>Copy to Editor</strong> from object viewer.</span></p>
+        </div>
+        <div class="copy-to-editor-overlay__step">
+          <span class="copy-to-editor-overlay__step-number">2</span>
+          <p><strong>Alt + Tab to Editor</strong><span>Switch to your open Editor window.</span></p>
+        </div>
+        <div class="copy-to-editor-overlay__step">
+          <span class="copy-to-editor-overlay__step-number">3</span>
+          <p><strong>Ctrl + V</strong><span>Paste the object at your cursor.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <style>
 
@@ -183,5 +220,60 @@
     } else {
       initMoreProjects();
     }
+  }());
+</script>
+
+<script>
+  (function () {
+    var trigger = document.getElementById('copyToEditorTrigger');
+    var overlay = document.getElementById('copyToEditorOverlay');
+    var closeButton = document.getElementById('copyToEditorClose');
+    if (!trigger || !overlay) return;
+
+    var getRouteUrl = function () {
+      return new URL(window.location.href);
+    };
+    var setRoute = function (includeOverlay) {
+      var url = getRouteUrl();
+      if (includeOverlay) {
+        url.pathname = '/';
+        url.search = '?copy-to-editor';
+      } else {
+        url.searchParams.delete('copy-to-editor');
+      }
+      window.history.replaceState({}, '', url.pathname + (url.search ? url.search : '') + url.hash);
+    };
+    var setOpen = function (open, updateRoute) {
+      overlay.hidden = !open;
+      overlay.setAttribute('aria-hidden', String(!open));
+      document.body.classList.toggle('copy-to-editor-open', open);
+      if (updateRoute) setRoute(open);
+      if (open && closeButton) closeButton.focus();
+    };
+
+    trigger.addEventListener('click', function (event) {
+      event.preventDefault();
+      setOpen(true, true);
+    });
+
+    if (closeButton) {
+      closeButton.addEventListener('click', function () {
+        setOpen(false, true);
+      });
+    }
+
+    overlay.addEventListener('click', function () {
+      setOpen(false, true);
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && !overlay.hidden) setOpen(false, true);
+    });
+
+    window.addEventListener('popstate', function () {
+      setOpen(getRouteUrl().searchParams.has('copy-to-editor'), false);
+    });
+
+    if (getRouteUrl().searchParams.has('copy-to-editor')) setOpen(true, false);
   }());
 </script>
