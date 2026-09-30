@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="{{ $objectMapCss.RelPermalink }}">
   <style>
     
+    #dayzObjects,
     #dayzObjects_wrapper {
       visibility: hidden;
     }
@@ -137,11 +138,6 @@
 
 {{ partial "object-map.html" . }}
 
-<div id="loadingIndicator">
-  Loading {{ $objectCount }} objects...
-</div>
-
-<div id="statusMessage"></div>
 <div id="versionFilterNotice" class="version-filter-notice" role="status" aria-live="polite">
   <span id="versionFilterNoticeText">Filtering version objects.</span>
   <a id="versionFilterResetLink" href="#">Reset filter</a>
@@ -230,25 +226,36 @@
       </div>
       <div id="folderSidebarBulk" class="folder-sidebar__bulk-sticky" aria-hidden="true"></div>
     </div>
-    <div id="folderTree" class="folder-tree"></div>
+    <div id="folderTree" class="folder-tree">
+      <div id="folderTreeApps" class="folder-tree__apps"></div>
+      <div id="folderTreeBranches" class="folder-tree__branches"></div>
+    </div>
     </aside>
     <div class="last-update">Last update: <a href="/changelog/">{{ $latestChangelogDate }}</a></div>
   </div>
 
-  <table id="dayzObjects" class="display nowrap" style="width:100%">
-    <thead>
-      <tr>
-        <th></th>
-        <th aria-label="Thumbnail"></th>
-        <th>Class name</th>
-        <th>In-game name</th>
-        <th>Path</th>
-        <th>Info</th>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
+  <div class="object-table-area">
+    <div id="objectTableLoading" class="object-table-loading" role="status" aria-live="polite">
+      <div id="loadingIndicator">
+        Loading {{ $objectCount }} objects...
+      </div>
+      <div id="statusMessage"></div>
+    </div>
+    <table id="dayzObjects" class="display nowrap" style="width:100%">
+      <thead>
+        <tr>
+          <th></th>
+          <th aria-label="Thumbnail"></th>
+          <th>Class name</th>
+          <th>In-game name</th>
+          <th>Path</th>
+          <th>Info</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
 
   <div id="objectFocus" class="object-focus" aria-live="polite">
     <div class="object-focus__topbar">

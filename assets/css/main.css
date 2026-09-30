@@ -1,5 +1,5 @@
   :root {
-    --sidebars-top-offset: 135px;
+    --sidebars-top-offset: 99px;
     --sidebars-bottom-gap: 24px;
     --tree-pane-width: 220px;
     --focus-pane-width: 330px;
@@ -1266,7 +1266,7 @@
   }
 
   #loadingIndicator {
-    margin: 40px 0 8px;
+    margin: 0 0 8px;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -1278,7 +1278,7 @@
 
   
   #statusMessage {
-    margin: 18px 0 0;
+    margin: 8px 0 0;
     text-align: center;
     font-weight: 500;
     font-style: italic;
@@ -1303,6 +1303,24 @@
     flex: 1;
     width: auto !important;
     margin: 0;
+  }
+  .object-table-area {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+  }
+  .object-table-loading {
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: 2;
+    height: 160px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    pointer-events: none;
   }
   .folder-sidebar-column {
     position: fixed;
@@ -1483,7 +1501,7 @@
     margin: 0;
     padding: 0 0 0 12px;
   }
-  .folder-tree > ul {
+  .folder-tree__branches > ul {
     padding-left: 0;
   }
   .folder-tree__row {
@@ -2788,8 +2806,12 @@
       order: 3;
     }
     .objects-layout #dayzObjects_wrapper {
-      order: 2;
       width: 100% !important;
+    }
+    .objects-layout .object-table-area {
+      order: 2;
+      width: 100%;
+      flex: 0 0 auto;
     }
     .objects-layout.sidebar-collapsed {
       padding-right: 0;

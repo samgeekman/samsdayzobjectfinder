@@ -542,8 +542,7 @@
         + '<button class="folder-tree__folder' + (presetsActive ? ' is-active' : '') + '" type="button" data-folder-path="__presets__" title="Editor Builds">Editor Builds</button>'
         + (presetsActive ? renderGuideHelpBtn('presets', 'Show Editor Builds help') : '')
         + '</div>'
-        + '<div class="folder-tree__apps-divider" aria-hidden="true"></div>'
-        + (!hasVisibleFolders && forceExpandForSearch ? '<div class="folder-tree__empty">No matching folders found.</div>' : '');
+        + '<div class="folder-tree__apps-divider" aria-hidden="true"></div>';
       var branchKeys = getVisibleFolderBranchKeys();
       var openCount = branchKeys.filter(function(key) { return !!folderTreeExpanded[key]; }).length;
       if (folderSidebarBulkEl) {
@@ -558,7 +557,16 @@
           folderSidebarBulkEl.setAttribute('aria-hidden', 'true');
         }
       }
-      folderTreeEl.innerHTML = presetsRow + renderChildren(treeRoot);
+      var folderBranches = (!hasVisibleFolders && forceExpandForSearch ? '<div class="folder-tree__empty">No matching folders found.</div>' : '')
+        + renderChildren(treeRoot);
+      if (folderTreeAppsEl && renderedFolderTreeAppsHtml !== presetsRow) {
+        folderTreeAppsEl.innerHTML = presetsRow;
+        renderedFolderTreeAppsHtml = presetsRow;
+      }
+      if (folderTreeBranchesEl && renderedFolderTreeBranchesHtml !== folderBranches) {
+        folderTreeBranchesEl.innerHTML = folderBranches;
+        renderedFolderTreeBranchesHtml = folderBranches;
+      }
       updateFolderSidebarTitle();
       updateFiltersAppTitle();
       updateTypesExplorerPanelVisibility();
@@ -737,7 +745,7 @@
     };
     var showContent = function() {
       $('#dayzObjects, #dayzObjects_wrapper').css('visibility', 'visible');
-      $('#loadingIndicator').hide();
+      $('#objectTableLoading').hide();
       $('#filters').css('display', 'flex');
       if (statusMessageEl) {
         statusMessageEl.style.display = 'none';
@@ -1177,6 +1185,10 @@
     var folderSidebarEl = document.getElementById('folderSidebar');
     var folderSidebarControlsEl = folderSidebarEl ? folderSidebarEl.querySelector('.folder-sidebar__controls') : null;
     var folderTreeEl = document.getElementById('folderTree');
+    var folderTreeAppsEl = document.getElementById('folderTreeApps');
+    var folderTreeBranchesEl = document.getElementById('folderTreeBranches');
+    var renderedFolderTreeAppsHtml = null;
+    var renderedFolderTreeBranchesHtml = null;
     var folderSidebarTitleEl = document.getElementById('folderSidebarTitle');
     var folderSidebarClearEl = document.getElementById('folderSidebarClear');
     var folderSidebarTreeToggleEl = document.getElementById('folderSidebarTreeToggle');
