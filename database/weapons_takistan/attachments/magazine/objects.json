@@ -1,0 +1,101 @@
+[
+  {
+    "objectName": "Mag_Luger_8Rnd",
+    "inGameName": "8rd Luger Mag",
+    "category": "weapons_takistan",
+    "modelType": "Config",
+    "path": "dz/weapons_takistan/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag, luger, 8rnd, dz, weapons, takistan, attachments, magazine, v1.30-badlands",
+    "image": "images/weapons_takistan/attachments/magazine/mag_luger_8rnd/mag_luger_8rnd.jpg",
+    "id": "dzobj_fq15ueg6kw"
+  },
+  {
+    "objectName": "Mag_MP18_Drum32Rnd",
+    "inGameName": "32 Rnd MP18 Drum Mag",
+    "category": "weapons_takistan",
+    "modelType": "Config",
+    "path": "dz/weapons_takistan/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag, mp18, drum32rnd, dz, weapons, takistan, attachments, magazine, v1.30-badlands",
+    "image": "images/weapons_takistan/attachments/magazine/mag_mp18_drum32rnd/mag_mp18_drum32rnd.jpg",
+    "id": "dzobj_pu2vmwss8k"
+  },
+  {
+    "objectName": "Mag_LeeEnfield_10Rnd",
+    "inGameName": "10 Rnd Lee-Enfield Mag",
+    "category": "weapons_takistan",
+    "modelType": "Config",
+    "path": "dz/weapons_takistan/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag, leeenfield, 10rnd, dz, weapons, takistan, attachments, magazine, v1.30-badlands",
+    "image": "images/weapons_takistan/attachments/magazine/mag_leeenfield_10rnd/mag_leeenfield_10rnd.jpg",
+    "id": "dzobj_yxrxcauuot"
+  },
+  {
+    "objectName": "ProxyMagazine_MP18_Drum32Rnd",
+    "inGameName": "-",
+    "category": "weapons_takistan",
+    "modelType": "Config",
+    "path": "dz/weapons_takistan/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "proxymagazine, mp18, drum32rnd, dz, weapons, takistan, attachments, magazine, v1.30-badlands",
+    "image": "",
+    "id": "dzobj_ef52x1hz6i"
+  },
+  {
+    "objectName": "ProxyMagazine_Luger_8Rnd",
+    "inGameName": "-",
+    "category": "weapons_takistan",
+    "modelType": "Config",
+    "path": "dz/weapons_takistan/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "proxymagazine, luger, 8rnd, dz, weapons, takistan, attachments, magazine, v1.30-badlands",
+    "image": "",
+    "id": "dzobj_43id4m7bh6"
+  },
+  {
+    "objectName": "ProxyMagazine_LeeEnfield_10Rnd",
+    "inGameName": "-",
+    "category": "weapons_takistan",
+    "modelType": "Config",
+    "path": "dz/weapons_takistan/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "proxymagazine, leeenfield, 10rnd, dz, weapons, takistan, attachments, magazine, v1.30-badlands",
+    "image": "",
+    "id": "dzobj_pqp3qvhpjt"
+  },
+  {
+    "objectName": "magazine_leeenfield_10rnd.p3d",
+    "inGameName": "-",
+    "category": "weapons_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons_takistan/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "magazine, leeenfield, 10rnd, p3d, dz, weapons, takistan, attachments, v1.30-badlands",
+    "image": "images/weapons_takistan/attachments/magazine/mag_leeenfield_10rnd/mag_leeenfield_10rnd.jpg",
+    "id": "dzobj_h9vtmedurr"
+  },
+  {
+    "objectName": "magazine_luger_8rnd.p3d",
+    "inGameName": "-",
+    "category": "weapons_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons_takistan/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "magazine, luger, 8rnd, p3d, dz, weapons, takistan, attachments, v1.30-badlands",
+    "image": "images/weapons_takistan/attachments/magazine/mag_luger_8rnd/mag_luger_8rnd.jpg",
+    "id": "dzobj_az8iz80o8j"
+  },
+  {
+    "objectName": "magazine_mp18_drum.p3d",
+    "inGameName": "-",
+    "category": "weapons_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons_takistan/attachments/magazine",
+    "usableOnConsole": false,
+    "searchTags": "magazine, mp18, drum, p3d, dz, weapons, takistan, attachments, v1.30-badlands",
+    "image": "images/weapons_takistan/attachments/magazine/mag_mp18_drum32rnd/mag_mp18_drum32rnd.jpg",
+    "id": "dzobj_ovw1abds05"
+  }
+]

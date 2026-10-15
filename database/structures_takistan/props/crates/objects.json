@@ -1,0 +1,101 @@
+[
+  {
+    "objectName": "StorageBox_Wooden",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/props/crates",
+    "usableOnConsole": true,
+    "searchTags": "storagebox, wooden, dz, structures, takistan, props, crates, v1.30-badlands",
+    "image": "images/structures_takistan/props/crates/storagebox_wooden/storagebox_wooden.jpg",
+    "id": "dzobj_nrp051upht"
+  },
+  {
+    "objectName": "StaticObj_StorageBox_Wooden",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/props/crates",
+    "usableOnConsole": true,
+    "searchTags": "staticobj, storagebox, wooden, dz, structures, takistan, props, crates, v1.30-badlands",
+    "image": "images/structures_takistan/props/crates/staticobj_storagebox_wooden/staticobj_storagebox_wooden.jpg",
+    "id": "dzobj_3rqb8gisnk"
+  },
+  {
+    "objectName": "StaticObj_Crates_Large",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/props/crates",
+    "usableOnConsole": true,
+    "searchTags": "staticobj, crates, large, dz, structures, takistan, props, v1.30-badlands",
+    "image": "images/structures_takistan/props/crates/staticobj_crates_large/staticobj_crates_large.jpg",
+    "id": "dzobj_np7lyf9b6q"
+  },
+  {
+    "objectName": "StaticObj_Crates_Small_Stack",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/props/crates",
+    "usableOnConsole": true,
+    "searchTags": "staticobj, crates, small, stack, dz, structures, takistan, props, v1.30-badlands",
+    "image": "images/structures_takistan/props/crates/staticobj_crates_small_stack/staticobj_crates_small_stack.jpg",
+    "id": "dzobj_lxizcrlg5v"
+  },
+  {
+    "objectName": "StaticObj_Crates_Small",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/props/crates",
+    "usableOnConsole": true,
+    "searchTags": "staticobj, crates, small, dz, structures, takistan, props, v1.30-badlands",
+    "image": "images/structures_takistan/props/crates/staticobj_crates_small/staticobj_crates_small.jpg",
+    "id": "dzobj_ijixbodx71"
+  },
+  {
+    "objectName": "crates_large.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/props/crates",
+    "usableOnConsole": false,
+    "searchTags": "crates, large, p3d, dz, structures, takistan, props, v1.30-badlands",
+    "image": "images/structures_takistan/props/crates/staticobj_crates_large/staticobj_crates_large.jpg",
+    "id": "dzobj_6ipwz65y73"
+  },
+  {
+    "objectName": "crates_small.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/props/crates",
+    "usableOnConsole": false,
+    "searchTags": "crates, small, p3d, dz, structures, takistan, props, v1.30-badlands",
+    "image": "images/structures_takistan/props/crates/staticobj_crates_small/staticobj_crates_small.jpg",
+    "id": "dzobj_52ksdj595j"
+  },
+  {
+    "objectName": "crates_small_stack.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/props/crates",
+    "usableOnConsole": false,
+    "searchTags": "crates, small, stack, p3d, dz, structures, takistan, props, v1.30-badlands",
+    "image": "images/structures_takistan/props/crates/staticobj_crates_small_stack/staticobj_crates_small_stack.jpg",
+    "id": "dzobj_7kzjlb2h7y"
+  },
+  {
+    "objectName": "storagebox_wooden.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/props/crates",
+    "usableOnConsole": false,
+    "searchTags": "storagebox, wooden, p3d, dz, structures, takistan, props, crates, v1.30-badlands",
+    "image": "images/structures_takistan/props/crates/storagebox_wooden/storagebox_wooden.jpg",
+    "id": "dzobj_w4l9sa6vqo"
+  }
+]

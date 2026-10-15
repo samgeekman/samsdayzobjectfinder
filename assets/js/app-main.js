@@ -6922,7 +6922,7 @@
     var objectParam = initialUrl.get('object');
     var searchQueryParam = String(initialUrl.get('q') || '').trim();
     var versionParams = normalizeVersionParams(initialUrl.getAll('version'));
-    var BADLANDS_VERSION_KEYS = ['v1.29-exp-badlands', 'v1.30-exp-badlands'];
+    var BADLANDS_VERSION_KEYS = ['v1.29-exp-badlands', 'v1.30-exp-badlands', 'v1.30-badlands'];
     var objectMapWorldParam = normalizeObjectMapParam(initialUrl.get('world'));
     var typesMapParam = normalizeTypesMapParam(initialUrl.get('types_map'));
     var typesKindParam = normalizeTypesKindParam(initialUrl.get('types_kind'));
@@ -6958,6 +6958,10 @@
     var chipInfoTooltipEl = document.getElementById('chipInfoTooltip');
     var presetsGuideNoticeEl = document.getElementById('presetsGuideNotice');
     var appGuideCookiePrefix = 'samsobjectfinder_guide_';
+    var getBadlandsBottomBarGuideKey = function() {
+      var guideKey = badlandsBottomBarEl && badlandsBottomBarEl.getAttribute('data-guide-key');
+      return String(guideKey || 'badlands_v1_30').trim() || 'badlands_v1_30';
+    };
     var scheduleGuideLayoutSync = function() {
       if (typeof scheduleSidebarTopOffsetSync !== 'function') return;
       scheduleSidebarTopOffsetSync();
@@ -7048,7 +7052,7 @@
       if (!badlandsBottomBarEl) return;
       var enabledAttr = String(badlandsBottomBarEl.getAttribute('data-enabled') || '').toLowerCase();
       var isEnabled = enabledAttr === 'true' || enabledAttr === '1' || enabledAttr === 'yes';
-      var guideKey = String(badlandsBottomBarEl.getAttribute('data-guide-key') || 'database').trim() || 'database';
+      var guideKey = getBadlandsBottomBarGuideKey();
       var shouldShow = isEnabled && activeCollectionFilter === AppMode.DATABASE && !isGuideDismissed(guideKey);
       badlandsBottomBarEl.classList.toggle('visible', shouldShow);
     };
@@ -7469,6 +7473,7 @@
     }
     if (badlandsBottomBarCloseEl) {
       badlandsBottomBarCloseEl.addEventListener('click', function() {
+        setGuideDismissed(getBadlandsBottomBarGuideKey(), true);
         setGuideDismissed('database', true);
         updateAppGuideNotices();
       });

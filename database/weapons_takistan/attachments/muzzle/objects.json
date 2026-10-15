@@ -1,0 +1,35 @@
+[
+  {
+    "objectName": "P1907_Bayonet",
+    "inGameName": "P1907 Bayonet",
+    "category": "weapons_takistan",
+    "modelType": "Config",
+    "path": "dz/weapons_takistan/attachments/muzzle",
+    "usableOnConsole": true,
+    "searchTags": "p1907, bayonet, dz, weapons, takistan, attachments, muzzle, v1.30-badlands",
+    "image": "images/weapons_takistan/attachments/muzzle/p1907_bayonet/p1907_bayonet.jpg",
+    "id": "dzobj_1now5dydru"
+  },
+  {
+    "objectName": "ProxyBayonet_P1907",
+    "inGameName": "-",
+    "category": "weapons_takistan",
+    "modelType": "Config",
+    "path": "dz/weapons_takistan/attachments/muzzle",
+    "usableOnConsole": true,
+    "searchTags": "proxybayonet, p1907, dz, weapons, takistan, attachments, muzzle, v1.30-badlands",
+    "image": "",
+    "id": "dzobj_zoybhdkk4n"
+  },
+  {
+    "objectName": "bayonet_p1907.p3d",
+    "inGameName": "-",
+    "category": "weapons_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/weapons_takistan/attachments/muzzle",
+    "usableOnConsole": false,
+    "searchTags": "bayonet, p1907, p3d, dz, weapons, takistan, attachments, muzzle, v1.30-badlands",
+    "image": "images/weapons_takistan/attachments/muzzle/p1907_bayonet/p1907_bayonet.jpg",
+    "id": "dzobj_ritl6yqb5v"
+  }
+]

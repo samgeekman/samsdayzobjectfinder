@@ -1,0 +1,46 @@
+[
+  {
+    "objectName": "Land_Mil_ATC_Small_Desert",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "land, mil, atc, small, desert, dz, structures, takistan, military, airfield, v1.30-badlands",
+    "image": "images/structures_takistan/military/airfield/land_mil_atc_small_desert/land_mil_atc_small_desert.jpg",
+    "id": "dzobj_bg30ltg409"
+  },
+  {
+    "objectName": "Land_Airfield_Hangar_Desert",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/military/airfield",
+    "usableOnConsole": true,
+    "searchTags": "land, airfield, hangar, desert, dz, structures, takistan, military, v1.30-badlands",
+    "image": "images/structures_takistan/military/airfield/land_airfield_hangar_desert/land_airfield_hangar_desert.jpg",
+    "id": "dzobj_1fmlz7skei"
+  },
+  {
+    "objectName": "airfield_hangar_desert.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "airfield, hangar, desert, p3d, dz, structures, takistan, military, v1.30-badlands",
+    "image": "images/structures_takistan/military/airfield/land_airfield_hangar_desert/land_airfield_hangar_desert.jpg",
+    "id": "dzobj_7wifi3j2z0"
+  },
+  {
+    "objectName": "mil_atc_small_desert.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/military/airfield",
+    "usableOnConsole": false,
+    "searchTags": "mil, atc, small, desert, p3d, dz, structures, takistan, military, airfield, v1.30-badlands",
+    "image": "images/structures_takistan/military/airfield/land_mil_atc_small_desert/land_mil_atc_small_desert.jpg",
+    "id": "dzobj_qa476v6p28"
+  }
+]

@@ -6,7 +6,7 @@ draft: false
 
 **Sam’s DayZ Object Finder is a searchable, exportable database of every object in the game for map makers and modders.**
 
-The site is lightweight and fast with more than 11,000 objects listed - (most) complete with images and search tags - e.g. `large industrial` or `green bag`.
+The site is lightweight and fast with more than 15,000+ objects listed - (most) complete with images and search tags - e.g. `large industrial` or `green bag`.
 
 As well as the database, you can copy and paste objects directly to DayZ Editor. Click the Copy to Editor button to copy the object to your clipboard and ctrl+v into Editor instantly.
 

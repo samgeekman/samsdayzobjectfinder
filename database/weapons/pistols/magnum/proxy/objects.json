@@ -64,5 +64,27 @@
     "searchTags": "pistols, weapon, weapons",
     "image": "images/weapons/pistols/magnum/proxy/magnum_ejector/magnum_ejector.jpg",
     "id": "dzobj_rjgwhewb31"
+  },
+  {
+    "objectName": "Magnum_Cylinder_Gold",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/magnum/proxy",
+    "usableOnConsole": true,
+    "searchTags": "magnum, cylinder, gold, dz, weapons, pistols, proxy, v1.30-badlands",
+    "image": "images/weapons/pistols/magnum/proxy/magnum_cylinder_gold/magnum_cylinder_gold.jpg",
+    "id": "dzobj_uv7o0t64y7"
+  },
+  {
+    "objectName": "Magnum_Ejector_Gold",
+    "inGameName": "-",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/magnum/proxy",
+    "usableOnConsole": true,
+    "searchTags": "magnum, ejector, gold, dz, weapons, pistols, proxy, v1.30-badlands",
+    "image": "images/weapons/pistols/magnum/proxy/magnum_ejector_gold/magnum_ejector_gold.jpg",
+    "id": "dzobj_dfx2cc5fwp"
   }
 ]

@@ -1,0 +1,57 @@
+[
+  {
+    "objectName": "Land_Caravanserai_Front",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/specific/caravanserai",
+    "usableOnConsole": true,
+    "searchTags": "land, caravanserai, front, dz, structures, takistan, specific, v1.30-badlands",
+    "image": "images/structures_takistan/specific/caravanserai/land_caravanserai_front/land_caravanserai_front.jpg",
+    "id": "dzobj_yz3um9ps43"
+  },
+  {
+    "objectName": "Land_Caravanserai_Back",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/specific/caravanserai",
+    "usableOnConsole": true,
+    "searchTags": "land, caravanserai, back, dz, structures, takistan, specific, v1.30-badlands",
+    "image": "images/structures_takistan/specific/caravanserai/land_caravanserai_back/land_caravanserai_back.jpg",
+    "id": "dzobj_2szx7gynsh"
+  },
+  {
+    "objectName": "caravanserai_back.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/specific/caravanserai",
+    "usableOnConsole": false,
+    "searchTags": "caravanserai, back, p3d, dz, structures, takistan, specific, v1.30-badlands",
+    "image": "images/structures_takistan/specific/caravanserai/land_caravanserai_back/land_caravanserai_back.jpg",
+    "id": "dzobj_514srtkvmk"
+  },
+  {
+    "objectName": "caravanserai_front.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/specific/caravanserai",
+    "usableOnConsole": false,
+    "searchTags": "caravanserai, front, p3d, dz, structures, takistan, specific, v1.30-badlands",
+    "image": "images/structures_takistan/specific/caravanserai/land_caravanserai_front/land_caravanserai_front.jpg",
+    "id": "dzobj_xhmmebixcb"
+  },
+  {
+    "objectName": "caravanserai_water.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/specific/caravanserai",
+    "usableOnConsole": false,
+    "searchTags": "caravanserai, water, p3d, dz, structures, takistan, specific, v1.30-badlands",
+    "image": "images/structures_takistan/specific/caravanserai/caravanserai_water/caravanserai_water.jpg",
+    "id": "dzobj_wt89yel84a"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "objectName": "Land_Oil_DrillTower",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/industrial/oilmine",
+    "usableOnConsole": true,
+    "searchTags": "land, oil, drilltower, dz, structures, takistan, industrial, oilmine, v1.30-badlands",
+    "image": "images/structures_takistan/industrial/oilmine/land_oil_drilltower/land_oil_drilltower.jpg",
+    "id": "dzobj_njpssr9z39"
+  },
+  {
+    "objectName": "Land_Oil_Pump",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/industrial/oilmine",
+    "usableOnConsole": true,
+    "searchTags": "land, oil, pump, dz, structures, takistan, industrial, oilmine, v1.30-badlands",
+    "image": "images/structures_takistan/industrial/oilmine/land_oil_pump/land_oil_pump.jpg",
+    "id": "dzobj_m72cis36yj"
+  },
+  {
+    "objectName": "oil_drilltower.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/industrial/oilmine",
+    "usableOnConsole": false,
+    "searchTags": "oil, drilltower, p3d, dz, structures, takistan, industrial, oilmine, v1.30-badlands",
+    "image": "images/structures_takistan/industrial/oilmine/land_oil_drilltower/land_oil_drilltower.jpg",
+    "id": "dzobj_r436yvpnlu"
+  },
+  {
+    "objectName": "oil_pump.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/industrial/oilmine",
+    "usableOnConsole": false,
+    "searchTags": "oil, pump, p3d, dz, structures, takistan, industrial, oilmine, v1.30-badlands",
+    "image": "images/structures_takistan/industrial/oilmine/land_oil_pump/land_oil_pump.jpg",
+    "id": "dzobj_35p6jw4jpr"
+  }
+]

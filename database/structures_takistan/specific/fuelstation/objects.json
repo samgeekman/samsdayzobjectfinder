@@ -1,0 +1,90 @@
+[
+  {
+    "objectName": "Land_FuelStation_Build_Takistan",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/specific/fuelstation",
+    "usableOnConsole": true,
+    "searchTags": "land, fuelstation, build, takistan, dz, structures, specific, v1.30-badlands",
+    "image": "images/structures_takistan/specific/fuelstation/land_fuelstation_build_takistan/land_fuelstation_build_takistan.jpg",
+    "id": "dzobj_tmh0rzkiqh"
+  },
+  {
+    "objectName": "Land_FuelStation_Feed_Takistan",
+    "inGameName": "Gas Pump",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/specific/fuelstation",
+    "usableOnConsole": true,
+    "searchTags": "land, fuelstation, feed, takistan, dz, structures, specific, v1.30-badlands",
+    "image": "images/structures_takistan/specific/fuelstation/land_fuelstation_feed_takistan/land_fuelstation_feed_takistan.jpg",
+    "id": "dzobj_uac93oi5ux"
+  },
+  {
+    "objectName": "StaticObj_FuelStation_Shed_Takistan",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/specific/fuelstation",
+    "usableOnConsole": true,
+    "searchTags": "staticobj, fuelstation, shed, takistan, dz, structures, specific, v1.30-badlands",
+    "image": "images/structures_takistan/specific/fuelstation/staticobj_fuelstation_shed_takistan/staticobj_fuelstation_shed_takistan.jpg",
+    "id": "dzobj_hwkyi70yap"
+  },
+  {
+    "objectName": "StaticObj_FuelStation_Sign_Takistan",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/specific/fuelstation",
+    "usableOnConsole": true,
+    "searchTags": "staticobj, fuelstation, sign, takistan, dz, structures, specific, v1.30-badlands",
+    "image": "images/structures_takistan/specific/fuelstation/staticobj_fuelstation_sign_takistan/staticobj_fuelstation_sign_takistan.jpg",
+    "id": "dzobj_jfqtgr6ugc"
+  },
+  {
+    "objectName": "fuelstation_build_takistan.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/specific/fuelstation",
+    "usableOnConsole": false,
+    "searchTags": "fuelstation, build, takistan, p3d, dz, structures, specific, v1.30-badlands",
+    "image": "images/structures_takistan/specific/fuelstation/land_fuelstation_build_takistan/land_fuelstation_build_takistan.jpg",
+    "id": "dzobj_mohlvt1z8j"
+  },
+  {
+    "objectName": "fuelstation_feed_takistan.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/specific/fuelstation",
+    "usableOnConsole": false,
+    "searchTags": "fuelstation, feed, takistan, p3d, dz, structures, specific, v1.30-badlands",
+    "image": "images/structures_takistan/specific/fuelstation/land_fuelstation_feed_takistan/land_fuelstation_feed_takistan.jpg",
+    "id": "dzobj_g4i2wgfce0"
+  },
+  {
+    "objectName": "fuelstation_shed_takistan.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/specific/fuelstation",
+    "usableOnConsole": false,
+    "searchTags": "fuelstation, shed, takistan, p3d, dz, structures, specific, v1.30-badlands",
+    "image": "images/structures_takistan/specific/fuelstation/staticobj_fuelstation_shed_takistan/staticobj_fuelstation_shed_takistan.jpg",
+    "id": "dzobj_ie9cebmz8a"
+  },
+  {
+    "objectName": "fuelstation_sign_takistan.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/specific/fuelstation",
+    "usableOnConsole": false,
+    "searchTags": "fuelstation, sign, takistan, p3d, dz, structures, specific, v1.30-badlands",
+    "image": "images/structures_takistan/specific/fuelstation/staticobj_fuelstation_sign_takistan/staticobj_fuelstation_sign_takistan.jpg",
+    "id": "dzobj_pjsgx6ztdh"
+  }
+]

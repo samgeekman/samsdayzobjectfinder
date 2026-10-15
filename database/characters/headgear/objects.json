@@ -3020,7 +3020,7 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
-    "searchTags": "characters, headgear, riothelmet, complete, g, v1.30-exp-badlands",
+    "searchTags": "characters, headgear, riothelmet, complete, g, v1.30-exp-badlands, p3d, dz, v1.30-badlands",
     "image": "images/characters/headgear/riothelmet_complete_g/riothelmet_complete_g.jpg",
     "id": "dzobj_ee7b735b47"
   },
@@ -3031,7 +3031,7 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
-    "searchTags": "characters, headgear, riothelmet, g, v1.30-exp-badlands",
+    "searchTags": "characters, headgear, riothelmet, g, v1.30-exp-badlands, p3d, dz, v1.30-badlands",
     "image": "images/characters/headgear/riothelmet_g/riothelmet_g.jpg",
     "id": "dzobj_d69be783c9"
   },
@@ -3042,8 +3042,52 @@
     "modelType": "Raw P3D",
     "path": "dz/characters/headgear",
     "usableOnConsole": false,
-    "searchTags": "characters, headgear, riothelmet, glass, g, v1.30-exp-badlands",
+    "searchTags": "characters, headgear, riothelmet, glass, g, v1.30-exp-badlands, p3d, dz, v1.30-badlands",
     "image": "images/characters/headgear/riothelmet_glass_g/riothelmet_glass_g.jpg",
     "id": "dzobj_85ef62ed60"
+  },
+  {
+    "objectName": "BoonieHat_Desert",
+    "inGameName": "Boonie Hat",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "booniehat, desert, dz, characters, headgear, v1.30-badlands",
+    "image": "images/characters/headgear/booniehat_desert/booniehat_desert.jpg",
+    "id": "dzobj_ezhxs9byns"
+  },
+  {
+    "objectName": "GhillieHood_Desert",
+    "inGameName": "Ghillie Hood",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": true,
+    "searchTags": "ghilliehood, desert, dz, characters, headgear, v1.30-badlands",
+    "image": "images/characters/headgear/ghilliehood_desert/ghilliehood_desert.jpg",
+    "id": "dzobj_uf51schf5b"
+  },
+  {
+    "objectName": "riothelmet.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": false,
+    "searchTags": "riothelmet, p3d, dz, characters, headgear, v1.30-badlands",
+    "image": "images/characters/headgear/riothelmet/riothelmet.jpg",
+    "id": "dzobj_vj8orll549"
+  },
+  {
+    "objectName": "riothelmet_complete.p3d",
+    "inGameName": "-",
+    "category": "characters",
+    "modelType": "Raw P3D",
+    "path": "dz/characters/headgear",
+    "usableOnConsole": false,
+    "searchTags": "riothelmet, complete, p3d, dz, characters, headgear, v1.30-badlands",
+    "image": "images/characters/headgear/riothelmet_complete/riothelmet_complete.jpg",
+    "id": "dzobj_i7bxwubh79"
   }
 ]

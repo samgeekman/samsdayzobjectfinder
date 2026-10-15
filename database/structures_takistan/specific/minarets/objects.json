@@ -1,0 +1,90 @@
+[
+  {
+    "objectName": "Land_Minaret1",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/specific/minarets",
+    "usableOnConsole": true,
+    "searchTags": "land, minaret1, dz, structures, takistan, specific, minarets, v1.30-badlands",
+    "image": "images/structures_takistan/specific/minarets/land_minaret1/land_minaret1.jpg",
+    "id": "dzobj_2grpctuk52"
+  },
+  {
+    "objectName": "Land_Minaret2",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/specific/minarets",
+    "usableOnConsole": true,
+    "searchTags": "land, minaret2, dz, structures, takistan, specific, minarets, v1.30-badlands",
+    "image": "images/structures_takistan/specific/minarets/land_minaret2/land_minaret2.jpg",
+    "id": "dzobj_bpfdjm9bai"
+  },
+  {
+    "objectName": "StaticObj_Minaret1_Dam",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/specific/minarets",
+    "usableOnConsole": true,
+    "searchTags": "staticobj, minaret1, dam, dz, structures, takistan, specific, minarets, v1.30-badlands",
+    "image": "images/structures_takistan/specific/minarets/staticobj_minaret1_dam/staticobj_minaret1_dam.jpg",
+    "id": "dzobj_9658m2d8fd"
+  },
+  {
+    "objectName": "StaticObj_Minaret2_Dam",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/specific/minarets",
+    "usableOnConsole": true,
+    "searchTags": "staticobj, minaret2, dam, dz, structures, takistan, specific, minarets, v1.30-badlands",
+    "image": "images/structures_takistan/specific/minarets/staticobj_minaret2_dam/staticobj_minaret2_dam.jpg",
+    "id": "dzobj_qei7mi32xm"
+  },
+  {
+    "objectName": "minaret1.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/specific/minarets",
+    "usableOnConsole": false,
+    "searchTags": "minaret1, p3d, dz, structures, takistan, specific, minarets, v1.30-badlands",
+    "image": "images/structures_takistan/specific/minarets/land_minaret1/land_minaret1.jpg",
+    "id": "dzobj_yphnghji7l"
+  },
+  {
+    "objectName": "minaret1_dam.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/specific/minarets",
+    "usableOnConsole": false,
+    "searchTags": "minaret1, dam, p3d, dz, structures, takistan, specific, minarets, v1.30-badlands",
+    "image": "images/structures_takistan/specific/minarets/staticobj_minaret1_dam/staticobj_minaret1_dam.jpg",
+    "id": "dzobj_1p064rqzmp"
+  },
+  {
+    "objectName": "minaret2.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/specific/minarets",
+    "usableOnConsole": false,
+    "searchTags": "minaret2, p3d, dz, structures, takistan, specific, minarets, v1.30-badlands",
+    "image": "images/structures_takistan/specific/minarets/land_minaret2/land_minaret2.jpg",
+    "id": "dzobj_ywcl8v3i4d"
+  },
+  {
+    "objectName": "minaret2_dam.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/specific/minarets",
+    "usableOnConsole": false,
+    "searchTags": "minaret2, dam, p3d, dz, structures, takistan, specific, minarets, v1.30-badlands",
+    "image": "images/structures_takistan/specific/minarets/staticobj_minaret2_dam/staticobj_minaret2_dam.jpg",
+    "id": "dzobj_eqdbd8v68i"
+  }
+]

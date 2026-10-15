@@ -1,0 +1,46 @@
+[
+  {
+    "objectName": "Land_Mine_Building_Yellow",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/industrial/mines",
+    "usableOnConsole": true,
+    "searchTags": "land, mine, building, yellow, dz, structures, takistan, industrial, mines, v1.30-badlands",
+    "image": "images/structures_takistan/industrial/mines/land_mine_building_yellow/land_mine_building_yellow.jpg",
+    "id": "dzobj_qtiazd2bc6"
+  },
+  {
+    "objectName": "StaticObj_Mine_Heap_Desert",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/industrial/mines",
+    "usableOnConsole": true,
+    "searchTags": "staticobj, mine, heap, desert, dz, structures, takistan, industrial, mines, v1.30-badlands",
+    "image": "images/structures_takistan/industrial/mines/staticobj_mine_heap_desert/staticobj_mine_heap_desert.jpg",
+    "id": "dzobj_ueohzsbkz1"
+  },
+  {
+    "objectName": "mine_building_yellow.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/industrial/mines",
+    "usableOnConsole": false,
+    "searchTags": "mine, building, yellow, p3d, dz, structures, takistan, industrial, mines, v1.30-badlands",
+    "image": "images/structures_takistan/industrial/mines/land_mine_building_yellow/land_mine_building_yellow.jpg",
+    "id": "dzobj_zanmxbcs23"
+  },
+  {
+    "objectName": "mine_heap_desert.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/industrial/mines",
+    "usableOnConsole": false,
+    "searchTags": "mine, heap, desert, p3d, dz, structures, takistan, industrial, mines, v1.30-badlands",
+    "image": "images/structures_takistan/industrial/mines/staticobj_mine_heap_desert/staticobj_mine_heap_desert.jpg",
+    "id": "dzobj_ieh8qj7wvi"
+  }
+]

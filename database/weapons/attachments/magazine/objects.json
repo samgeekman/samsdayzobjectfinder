@@ -2000,5 +2000,27 @@
     "searchTags": "scar, battle_rifle, automatic, 7.62x51, magazine, v1.29-exp-badlands",
     "image": "images/weapons/attachments/magazine/mag_scarh_20rnd/mag_scarh_20rnd.jpg",
     "id": "dzobj_uwha879x9w"
+  },
+  {
+    "objectName": "Mag_AKM_30Rnd_Gold",
+    "inGameName": "30rd KA-M Mag",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag, akm, 30rnd, gold, dz, weapons, attachments, magazine, v1.30-badlands",
+    "image": "images/weapons/attachments/magazine/mag_akm_30rnd_gold/mag_akm_30rnd_gold.jpg",
+    "id": "dzobj_55lon9d6kb"
+  },
+  {
+    "objectName": "Mag_AKM_Drum75Rnd_Gold",
+    "inGameName": "75rd KA-M Drum Mag",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/attachments/magazine",
+    "usableOnConsole": true,
+    "searchTags": "mag, akm, drum75rnd, gold, dz, weapons, attachments, magazine, v1.30-badlands",
+    "image": "images/weapons/attachments/magazine/mag_akm_drum75rnd_gold/mag_akm_drum75rnd_gold.jpg",
+    "id": "dzobj_mudzc50an3"
   }
 ]

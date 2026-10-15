@@ -559,5 +559,27 @@
     "searchTags": "vests, military, combat, protection, loot",
     "image": "images/characters/vests/platecarriervest_winter/platecarriervest_winter.jpg",
     "id": "dzobj_lz4j6cz6bq"
+  },
+  {
+    "objectName": "HuntingVest_Desert",
+    "inGameName": "Hunter Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "huntingvest, desert, dz, characters, vests, v1.30-badlands",
+    "image": "images/characters/vests/huntingvest_desert/huntingvest_desert.jpg",
+    "id": "dzobj_1sc28qxsrl"
+  },
+  {
+    "objectName": "UKAssVest_Desert",
+    "inGameName": "Field Vest",
+    "category": "characters",
+    "modelType": "Config",
+    "path": "dz/characters/vests",
+    "usableOnConsole": true,
+    "searchTags": "ukassvest, desert, dz, characters, vests, v1.30-badlands",
+    "image": "images/characters/vests/ukassvest_desert/ukassvest_desert.jpg",
+    "id": "dzobj_74binyucli"
   }
 ]

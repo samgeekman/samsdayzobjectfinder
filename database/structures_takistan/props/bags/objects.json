@@ -1,0 +1,90 @@
+[
+  {
+    "objectName": "StaticObj_Bags_Open",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/props/bags",
+    "usableOnConsole": true,
+    "searchTags": "staticobj, bags, open, dz, structures, takistan, props, v1.30-badlands",
+    "image": "images/structures_takistan/props/bags/staticobj_bags_open/staticobj_bags_open.jpg",
+    "id": "dzobj_qvfpsxeinz"
+  },
+  {
+    "objectName": "StaticObj_Bags_Small_Stack",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/props/bags",
+    "usableOnConsole": true,
+    "searchTags": "staticobj, bags, small, stack, dz, structures, takistan, props, v1.30-badlands",
+    "image": "images/structures_takistan/props/bags/staticobj_bags_small_stack/staticobj_bags_small_stack.jpg",
+    "id": "dzobj_3rbyc6pqvk"
+  },
+  {
+    "objectName": "StaticObj_Sack",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/props/bags",
+    "usableOnConsole": true,
+    "searchTags": "staticobj, sack, dz, structures, takistan, props, bags, v1.30-badlands",
+    "image": "images/structures_takistan/props/bags/staticobj_sack/staticobj_sack.jpg",
+    "id": "dzobj_dzvrbc3p4a"
+  },
+  {
+    "objectName": "StaticObj_Bag_Closed",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/props/bags",
+    "usableOnConsole": true,
+    "searchTags": "staticobj, bag, closed, dz, structures, takistan, props, bags, v1.30-badlands",
+    "image": "images/structures_takistan/props/bags/staticobj_bag_closed/staticobj_bag_closed.jpg",
+    "id": "dzobj_f4a061sumt"
+  },
+  {
+    "objectName": "bag_closed.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/props/bags",
+    "usableOnConsole": false,
+    "searchTags": "bag, closed, p3d, dz, structures, takistan, props, bags, v1.30-badlands",
+    "image": "images/structures_takistan/props/bags/staticobj_bag_closed/staticobj_bag_closed.jpg",
+    "id": "dzobj_8c8xqbzor9"
+  },
+  {
+    "objectName": "bags_open.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/props/bags",
+    "usableOnConsole": false,
+    "searchTags": "bags, open, p3d, dz, structures, takistan, props, v1.30-badlands",
+    "image": "images/structures_takistan/props/bags/staticobj_bags_open/staticobj_bags_open.jpg",
+    "id": "dzobj_5exnilg5t5"
+  },
+  {
+    "objectName": "bags_small_stack.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/props/bags",
+    "usableOnConsole": false,
+    "searchTags": "bags, small, stack, p3d, dz, structures, takistan, props, v1.30-badlands",
+    "image": "images/structures_takistan/props/bags/staticobj_bags_small_stack/staticobj_bags_small_stack.jpg",
+    "id": "dzobj_76r913fhfb"
+  },
+  {
+    "objectName": "sack.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/props/bags",
+    "usableOnConsole": false,
+    "searchTags": "sack, p3d, dz, structures, takistan, props, bags, v1.30-badlands",
+    "image": "images/structures_takistan/props/bags/staticobj_sack/staticobj_sack.jpg",
+    "id": "dzobj_p8z76axcth"
+  }
+]

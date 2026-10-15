@@ -42,5 +42,27 @@
     "searchTags": "off, pistols, revolver, sawed, weapon, weapons",
     "image": "images/weapons/pistols/magnum/sawedoffmagnum/sawedoffmagnum.jpg",
     "id": "dzobj_nd7gxzjqyb"
+  },
+  {
+    "objectName": "Magnum_Gold",
+    "inGameName": "Revolver",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/magnum",
+    "usableOnConsole": true,
+    "searchTags": "magnum, gold, dz, weapons, pistols, v1.30-badlands",
+    "image": "images/weapons/pistols/magnum/magnum_gold/magnum_gold.jpg",
+    "id": "dzobj_3589bqqd35"
+  },
+  {
+    "objectName": "SawedoffMagnum_Gold",
+    "inGameName": "Sawed-off Revolver",
+    "category": "weapons",
+    "modelType": "Config",
+    "path": "dz/weapons/pistols/magnum",
+    "usableOnConsole": true,
+    "searchTags": "sawedoffmagnum, gold, dz, weapons, pistols, magnum, v1.30-badlands",
+    "image": "images/weapons/pistols/magnum/sawedoffmagnum_gold/sawedoffmagnum_gold.jpg",
+    "id": "dzobj_onmr6nvci5"
   }
 ]

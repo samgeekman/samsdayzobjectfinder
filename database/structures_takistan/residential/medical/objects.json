@@ -1,0 +1,46 @@
+[
+  {
+    "objectName": "Land_HealthCare_Takistan",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/residential/medical",
+    "usableOnConsole": true,
+    "searchTags": "land, healthcare, takistan, dz, structures, residential, medical, v1.30-badlands",
+    "image": "images/structures_takistan/residential/medical/land_healthcare_takistan/land_healthcare_takistan.jpg",
+    "id": "dzobj_r3rjcgryrb"
+  },
+  {
+    "objectName": "Land_Hospital_Takistan",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Config",
+    "path": "dz/structures_takistan/residential/medical",
+    "usableOnConsole": true,
+    "searchTags": "land, hospital, takistan, dz, structures, residential, medical, v1.30-badlands",
+    "image": "images/structures_takistan/residential/medical/land_hospital_takistan/land_hospital_takistan.jpg",
+    "id": "dzobj_v68mksrq36"
+  },
+  {
+    "objectName": "healthcare_takistan.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/residential/medical",
+    "usableOnConsole": false,
+    "searchTags": "healthcare, takistan, p3d, dz, structures, residential, medical, v1.30-badlands",
+    "image": "images/structures_takistan/residential/medical/land_healthcare_takistan/land_healthcare_takistan.jpg",
+    "id": "dzobj_8hju6h0psg"
+  },
+  {
+    "objectName": "hospital_takistan.p3d",
+    "inGameName": "-",
+    "category": "structures_takistan",
+    "modelType": "Raw P3D",
+    "path": "dz/structures_takistan/residential/medical",
+    "usableOnConsole": false,
+    "searchTags": "hospital, takistan, p3d, dz, structures, residential, medical, v1.30-badlands",
+    "image": "images/structures_takistan/residential/medical/land_hospital_takistan/land_hospital_takistan.jpg",
+    "id": "dzobj_zcyn20wuuj"
+  }
+]
