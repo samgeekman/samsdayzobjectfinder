@@ -1,3 +1,8 @@
+## v1.30 Badlands and Nasdara -15 October 2026
+
+- Added Nasdara's types.xml.
+- Added types downloads to the new 457 entries.
+
 ## v1.29 Road to Badlands 15 July 2026
 
 Based on v.129 Road to Badlands July '26

@@ -84,10 +84,11 @@
         <button id="exportMapGroupPos" class="pill-button" type="button">Download mapgrouppos</button>
       </div>
       <div class="export-panel__map-downloads">
-        <span class="export-panel__map-downloads-label">Download July 2026 Types.xml:</span>
+        <span class="export-panel__map-downloads-label">Download map Types.xml:</span>
         <button id="exportTypesChernarus" class="pill-button" type="button">↓ Chernarus</button>
         <button id="exportTypesLivonia" class="pill-button" type="button">↓ Livonia</button>
         <button id="exportTypesSakhal" class="pill-button" type="button">↓ Sakhal</button>
+        <button id="exportTypesNasdara" class="pill-button" type="button">↓ Nasdara</button>
       </div>
       <div class="export-panel__images">
         Want all the images? <a href="https://drive.google.com/drive/folders/1FuV6C72ttaoeP-BrIykkYYIczisFyVkL?usp=share_link" target="_blank" rel="noopener">Download here.</a>
@@ -119,19 +120,20 @@
         <button class="types-explorer__scope-btn ui-action-btn is-active" type="button" data-types-scope="chernarus">Chernarus</button>
         <button class="types-explorer__scope-btn ui-action-btn is-active" type="button" data-types-scope="livonia">Livonia</button>
         <button class="types-explorer__scope-btn ui-action-btn is-active" type="button" data-types-scope="sakhal">Sakhal</button>
+        <button class="types-explorer__scope-btn ui-action-btn is-active" type="button" data-types-scope="nasdara">Nasdara</button>
       </div>
       <div class="types-explorer__note">
-        Based on v.129 Road to Badlands July '26
         <a id="typesExplorerChangelogLink" class="types-explorer__note-link" href="/types-changelog-1.29.md">Changelog</a>
       </div>
     </aside>
   </div>
   <div class="types-explorer__footer">
     <div class="types-explorer__footer-group types-explorer__footer-group--left">
-      <span class="types-explorer__footer-label">Download Latest Types.xml (July 2026)</span>
+      <span class="types-explorer__footer-label">Download map Types.xml</span>
       <button id="typesExplorerTypesChernarus" class="ui-action-btn" type="button">↓ Chernarus</button>
       <button id="typesExplorerTypesLivonia" class="ui-action-btn" type="button">↓ Livonia</button>
       <button id="typesExplorerTypesSakhal" class="ui-action-btn" type="button">↓ Sakhal</button>
+      <button id="typesExplorerTypesNasdara" class="ui-action-btn" type="button">↓ Nasdara</button>
     </div>
     <div class="types-explorer__footer-group types-explorer__footer-group--right">
       <button id="typesExplorerCopyLink" class="ui-action-btn" type="button">Copy link to current view</button>
@@ -362,7 +364,7 @@
 <div id="typesChangelogOverlay" class="types-changelog-overlay" role="dialog" aria-modal="true" aria-label="Types changelog" aria-hidden="true">
   <div class="types-changelog-overlay__content">
     <button id="typesChangelogClose" class="types-changelog-overlay__close" type="button" aria-label="Close changelog"><span aria-hidden="true">✕</span></button>
-    <div class="types-changelog-overlay__header">Types.xml changelog (last updated July 2026)</div>
+    <div class="types-changelog-overlay__header">Types.xml changelog (last updated October 2026)</div>
     <div id="typesChangelogBody" class="types-changelog-overlay__body"></div>
   </div>
 </div>

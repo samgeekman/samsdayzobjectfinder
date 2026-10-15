@@ -71,7 +71,7 @@
     // Types data:
     // - typesEntryUrl: selected/sourced types entry URL
     // - typesEntryByName / typesEntryByNameLower: types.xml lookups
-    // - mapTypesByMap: per-map types index (chernarus/livonia/sakhal)
+    // - mapTypesByMap: per-map types index (chernarus/livonia/sakhal/nasdara)
     // - typesExplorerState: {usage: string[], value: string[]}
     // - typesExplorerMaps: enabled maps in Types Explorer
     // - typesExplorerTags: computed available usage/value tags
@@ -1251,7 +1251,8 @@
     var mapTypesByMap = {
       chernarus: {},
       livonia: {},
-      sakhal: {}
+      sakhal: {},
+      nasdara: {}
     };
     var activeTypesTagFilter = null;
     var activeTypesTagMatchByName = null;
@@ -1262,7 +1263,8 @@
     var typesExplorerMaps = {
       chernarus: true,
       livonia: true,
-      sakhal: true
+      sakhal: true,
+      nasdara: true
     };
     var typesExplorerTags = {
       usage: [],
@@ -1934,7 +1936,8 @@
       var rows = [
         { map: 'chernarus', label: 'Chernarus' },
         { map: 'livonia', label: 'Livonia' },
-        { map: 'sakhal', label: 'Sakhal' }
+        { map: 'sakhal', label: 'Sakhal' },
+        { map: 'nasdara', label: 'Nasdara' }
       ].map(function(def) {
         var info = mapTypesByMap[def.map] && mapTypesByMap[def.map][key];
         var usage = info && Array.isArray(info.usage) ? info.usage : [];
@@ -2174,7 +2177,7 @@
       var usageSeen = {};
       var valueSeen = {};
       var byObject = {};
-      ['chernarus', 'livonia', 'sakhal'].forEach(function(mapKey) {
+      Object.keys(typesExplorerMaps).forEach(function(mapKey) {
         if (!typesExplorerMaps[mapKey]) return;
         var mapData = mapTypesByMap[mapKey] || {};
         Object.keys(mapData).forEach(function(objKey) {
@@ -3584,7 +3587,7 @@
       }
       overrides.types = '1';
       var activeMaps = Object.keys(typesExplorerMaps).filter(function(key) { return !!typesExplorerMaps[key]; });
-      if (activeMaps.length && activeMaps.length < 3) {
+      if (activeMaps.length && activeMaps.length < Object.keys(typesExplorerMaps).length) {
         overrides.types_maps = activeMaps.join(',');
       }
       if (typesExplorerState.usage && typesExplorerState.usage.length) {
@@ -5512,6 +5515,7 @@
     loadMapTypes('chernarus', '/data/types/types_chernarus.xml');
     loadMapTypes('livonia', '/data/types/types_livonia.xml');
     loadMapTypes('sakhal', '/data/types/types_sakhal.xml');
+    loadMapTypes('nasdara', '/data/types/types_nasdara.xml');
     renderTypesExplorerTags();
     updateObjectMapToggleButtons();
 
@@ -6903,7 +6907,7 @@
       || normalizePathname(initialUrl.pathname) === '/types-explorer';
     var normalizeTypesMapParam = function(value) {
       var key = String(value || '').trim().toLowerCase();
-      return (key === 'chernarus' || key === 'livonia' || key === 'sakhal') ? key : '';
+      return (key === 'chernarus' || key === 'livonia' || key === 'sakhal' || key === 'nasdara') ? key : '';
     };
     var normalizeTypesKindParam = function(value) {
       var key = String(value || '').trim().toLowerCase();
@@ -7230,6 +7234,7 @@
               typesExplorerMaps.chernarus = true;
               typesExplorerMaps.livonia = true;
               typesExplorerMaps.sakhal = true;
+              typesExplorerMaps.nasdara = true;
             }
           }
           if (typesExplorerUsageParam.length || typesExplorerValueParam.length) {
@@ -8214,6 +8219,10 @@
         sakhal: {
           url: '/data/types/types_sakhal.xml',
           filename: 'types-Sakhal July 2026.xml'
+        },
+        nasdara: {
+          url: '/data/types/types_nasdara.xml',
+          filename: 'types-Nasdara.xml'
         }
       }[key];
       if (!config) return;
@@ -8332,6 +8341,9 @@
     $(document).on('click', '#exportTypesSakhal', function() {
       exportMapTypesFile('sakhal');
     });
+    $(document).on('click', '#exportTypesNasdara', function() {
+      exportMapTypesFile('nasdara');
+    });
     $(document).on('click', '#typesExplorerTypesChernarus', function() {
       exportMapTypesFile('chernarus');
     });
@@ -8340,6 +8352,9 @@
     });
     $(document).on('click', '#typesExplorerTypesSakhal', function() {
       exportMapTypesFile('sakhal');
+    });
+    $(document).on('click', '#typesExplorerTypesNasdara', function() {
+      exportMapTypesFile('nasdara');
     });
     $(document).on('click', '#exportMapGroupPos', function() {
       var ok = exportCurrentViewMapGroupPos();

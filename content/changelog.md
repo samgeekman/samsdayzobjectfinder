@@ -7,6 +7,7 @@ draft: false
 ## 1.1.0 - 15 October 2026
 
 - Added all the new DayZ Badlands objects. There’s lots!
+- Added Nasdara to the Types Explorer with its map loot data and entries for newly listed objects.
 - Improved loading layout
 
 ## 1.0.2 - 16 September 2026

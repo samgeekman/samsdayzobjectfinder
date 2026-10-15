@@ -3480,6 +3480,7 @@
   #exportTypesChernarus,
   #exportTypesLivonia,
   #exportTypesSakhal,
+  #exportTypesNasdara,
   #exportMapGroupPos,
   .pinned-path-btn {
     border-color: var(--icon-outline) !important;
@@ -3529,6 +3530,8 @@
   #exportTypesLivonia:focus-visible,
   #exportTypesSakhal:hover,
   #exportTypesSakhal:focus-visible,
+  #exportTypesNasdara:hover,
+  #exportTypesNasdara:focus-visible,
   #exportMapGroupPos:hover,
   #exportMapGroupPos:focus-visible,
   .pinned-path-btn:hover,
