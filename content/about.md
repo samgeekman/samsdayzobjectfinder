@@ -12,7 +12,7 @@ As well as the database, you can copy and paste objects directly to DayZ Editor.
 
 The site also includes:
 
-- [Object Maps](https://samsobjectfinder.com/?maps=1) shows the location of every object on Chernarus, Livonia, or Sakhal - and with `Select Area` you can copy objects exactly as they are on the map to use in Editor or export.
+- [Object Maps](https://samsobjectfinder.com/?maps=1) shows the location of every object on Chernarus, Livonia, Sakhal, or Nasdara - use `Copy to Editor` to copy objects exactly as they are on the map into Editor, or export them.
 - [Types Explorer](https://samsobjectfinder.com/?types=1) lets you check the vanilla types.xml to see what loots spawn where.
 - [Editor Builds](https://samsobjectfinder.com/?presets=1) has many quick presets and free-to-use designs from attributed builders. 
 

@@ -1,0 +1,61 @@
+{
+  "world": "nasdara",
+  "label": "Nasdara",
+  "worldBounds": {
+    "minX": 0.0,
+    "maxX": 16512.0,
+    "minZ": -128.0,
+    "maxZ": 16384.0
+  },
+  "sat": {
+    "manifestPath": "./tile-pyramid/manifest.json",
+    "bounds": {
+      "minX": 0.0,
+      "maxX": 16512.0,
+      "minZ": -128.0,
+      "maxZ": 16384.0
+    },
+    "maxZoom": 6,
+    "gridSize": 43
+  },
+  "packs": {
+    "landOnly": {
+      "manifestPath": "./land_only_pack/manifest.json",
+      "counts": {
+        "rows": 22441,
+        "land": 22441,
+        "p3d": 0,
+        "models": 506,
+        "chunks": 464
+      },
+      "bounds": {
+        "minX": 122.71,
+        "maxX": 15529.2,
+        "minZ": 1009.14,
+        "maxZ": 15867.6
+      }
+    },
+    "object": {
+      "manifestPath": "./object_pack/manifest.json",
+      "counts": {
+        "rows": 392049,
+        "land": 19143,
+        "p3d": 372906,
+        "models": 1932,
+        "chunks": 527
+      },
+      "bounds": {
+        "minX": 11.94,
+        "maxX": 16101.3,
+        "minZ": 313.02,
+        "maxZ": 16265.9
+      }
+    }
+  },
+  "locationsPath": "./locations.json",
+  "locationCount": 0,
+  "locationSource": null,
+  "notes": [
+    "Prepared in the same sat pyramid + compact pack shape as the Chernarus Object Map."
+  ]
+}

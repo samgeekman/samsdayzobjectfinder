@@ -87,7 +87,7 @@
     // - objectFocusSectionExpanded: expanded/collapsed section prefs in focus pane
     //
     // Object map state:
-    // - objectMapActiveMapKey: 'chernarus' | 'livonia' | 'sakhal'
+    // - objectMapActiveMapKey: 'chernarus' | 'livonia' | 'sakhal' | 'nasdara'
     // - objectMapPlacementPathIndex: cache for placement lookup by path
     // - objectMapSummaryText / objectMapSelectedCoordsText: status strings
     // - objectMapRenderToken: render invalidation token
@@ -1230,6 +1230,7 @@
     var objectMapToggleChernarusEl = document.getElementById('objectMapToggleChernarus');
     var objectMapToggleLivoniaEl = document.getElementById('objectMapToggleLivonia');
     var objectMapToggleSakhalEl = document.getElementById('objectMapToggleSakhal');
+    var objectMapToggleNasdaraEl = document.getElementById('objectMapToggleNasdara');
     var objectMapExportAccordionEl = document.getElementById('objectMapExportAccordion');
     var objectMapAreaSelectToggleEl = document.getElementById('objectMapAreaSelectToggle');
     var objectMapCopyAreaEl = document.getElementById('objectMapCopyArea');
@@ -2353,7 +2354,7 @@
     };
     var normalizeObjectMapKey = function(value) {
       var normalized = String(value || '').trim().toLowerCase();
-      return (normalized === 'chernarus' || normalized === 'livonia' || normalized === 'sakhal') ? normalized : 'chernarus';
+      return (normalized === 'chernarus' || normalized === 'livonia' || normalized === 'sakhal' || normalized === 'nasdara') ? normalized : 'chernarus';
     };
     var buildObjectMapV2FrameSrc = function() {
       if (!objectMapV2FrameEl) return '';
@@ -2471,6 +2472,9 @@
       }
       if (objectMapToggleSakhalEl) {
         objectMapToggleSakhalEl.classList.toggle('is-active', objectMapActiveMapKey === 'sakhal');
+      }
+      if (objectMapToggleNasdaraEl) {
+        objectMapToggleNasdaraEl.classList.toggle('is-active', objectMapActiveMapKey === 'nasdara');
       }
     };
     var setObjectMapStatus = function(text) {
@@ -6915,7 +6919,7 @@
     };
     var normalizeObjectMapParam = function(value) {
       var key = String(value || '').trim().toLowerCase();
-      return (key === 'chernarus' || key === 'livonia' || key === 'sakhal') ? key : '';
+      return (key === 'chernarus' || key === 'livonia' || key === 'sakhal' || key === 'nasdara') ? key : '';
     };
     var objectIdParams = initialUrl.getAll('id').map(function(value) {
       return normalizeObjectId(value);

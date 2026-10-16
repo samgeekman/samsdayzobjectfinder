@@ -1,6 +1,6 @@
     const normalizeWorldKey = (value) => {
       const normalized = String(value || "").trim().toLowerCase();
-      return normalized === "livonia" || normalized === "sakhal" ? normalized : "chernarus";
+      return normalized === "livonia" || normalized === "sakhal" || normalized === "nasdara" ? normalized : "chernarus";
     };
     const worldKey = normalizeWorldKey(new URLSearchParams(window.location.search).get("world"));
     const worldConfigs = {
@@ -21,6 +21,12 @@
         label: "Sakhal",
         exportStem: "sakhal",
         dataRoot: "../data/object-map-v2/worlds/sakhal"
+      },
+      nasdara: {
+        key: "nasdara",
+        label: "Nasdara",
+        exportStem: "nasdara",
+        dataRoot: "../data/object-map-v2/worlds/nasdara"
       }
     };
     const activeWorld = worldConfigs[worldKey] || worldConfigs.chernarus;
@@ -43,6 +49,12 @@
         return {
           fill: `rgba(190,36,36,${Math.max(0.20, fillAlpha * 0.72).toFixed(3)})`,
           stroke: `rgba(214,48,48,${Math.max(0.58, strokeAlpha).toFixed(3)})`,
+        };
+      }
+      if (worldKey === "nasdara") {
+        return {
+          fill: "rgba(255,255,255,0.62)",
+          stroke: `rgba(255,255,255,${Math.min(0.98, strokeAlpha).toFixed(3)})`,
         };
       }
       return {
@@ -116,6 +128,7 @@
     const showFootprints = document.getElementById("show-footprints");
     const showLabels = document.getElementById("show-labels");
     const areaModeBtn = document.getElementById("area-mode-btn");
+    const areaModeLabel = document.getElementById("area-mode-label");
     const copyAreaBtn = document.getElementById("copy-area-btn");
     const downloadAreaBtn = document.getElementById("download-area-btn");
     const exportLocationsBtn = document.getElementById("export-locations-btn");
@@ -1524,6 +1537,13 @@
     }
 
     function loadedP3dStyle(model, fillAlpha, strokeAlpha) {
+      if (worldKey === "nasdara") {
+        return {
+          fill: "rgba(255,255,255,0.62)",
+          stroke: `rgba(255,255,255,${Math.min(0.98, strokeAlpha).toFixed(3)})`,
+          point: `rgba(255,255,255,${Math.min(0.98, Math.max(0.02, strokeAlpha)).toFixed(3)})`
+        };
+      }
       if (isLandType(model)) return null;
       if (worldKey !== "sakhal") {
         return {
@@ -1715,7 +1735,7 @@
           const model = landModels[placement[P.modelId]] || null;
           const points = objectFootprint(placement, landModels);
           if (!points) continue;
-          const roofColor = placementRoofFill(model);
+          const roofColor = worldKey === "nasdara" ? null : placementRoofFill(model);
           overlayCtx.beginPath();
           overlayCtx.moveTo(points[0][0], points[0][1]);
           for (let i = 1; i < points.length; i += 1) overlayCtx.lineTo(points[i][0], points[i][1]);
@@ -1918,7 +1938,7 @@
     function syncAreaModeUi() {
       areaMode.checked = isAreaMode;
       areaModeBtn.classList.toggle("is-active", isAreaMode);
-      areaModeBtn.textContent = areaWorld && !isAreaMode ? "Deselect area" : "Select area";
+      areaModeLabel.textContent = areaWorld && !isAreaMode ? "Deselect area" : "Copy to Editor";
       viewer.classList.toggle("area-mode", isAreaMode);
     }
 

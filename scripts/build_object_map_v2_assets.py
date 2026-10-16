@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import shutil
 from pathlib import Path
@@ -28,9 +29,11 @@ OUT_LAND_PACK = OUT_DATA_DIR / "land_only_pack"
 OUT_OBJECT_PACK = OUT_DATA_DIR / "object_pack"
 OUT_LOCATIONS = OUT_DATA_DIR / "locations.json"
 OUT_HTML = OUT_PAGE_DIR / "index.html"
+OBJECT_EXPORTS_ROOT = Path(r"C:\Users\Samjo\OneDrive\Documents\DayZ Projects\!Object Finder Tools\DayZ Object Exports")
 SOURCE_WORLD_BUNDLES = {
-    "livonia": Path(r"P:\DayZ Object Exports\worlds\enoch\site_bundle\data\object-map-v2\worlds\enoch"),
-    "sakhal": Path(r"P:\DayZ Object Exports\worlds\sakhal\site_bundle\data\object-map-v2\worlds\sakhal"),
+    "livonia": OBJECT_EXPORTS_ROOT / "worlds" / "enoch" / "site_bundle" / "data" / "object-map-v2" / "worlds" / "enoch",
+    "sakhal": OBJECT_EXPORTS_ROOT / "worlds" / "sakhal" / "site_bundle" / "data" / "object-map-v2" / "worlds" / "sakhal",
+    "nasdara": OBJECT_EXPORTS_ROOT / "worlds" / "nasdara" / "site_bundle" / "data" / "object-map-v2" / "worlds" / "nasdara",
 }
 
 
@@ -411,27 +414,35 @@ def build_html() -> str:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Build the Object Map V2 static data bundle.")
+    parser.add_argument("--world", action="append", choices=sorted(SOURCE_WORLD_BUNDLES))
+    args = parser.parse_args()
+    selected_worlds = args.world or list(SOURCE_WORLD_BUNDLES)
+
     OUT_PAGE_DIR.mkdir(parents=True, exist_ok=True)
     OUT_DATA_DIR.mkdir(parents=True, exist_ok=True)
     OUT_WORLDS_DIR.mkdir(parents=True, exist_ok=True)
 
-    copy_tree(SOURCE_TILE_PYRAMID, OUT_TILE_PYRAMID)
-    copy_tree(SOURCE_LAND_PACK, OUT_LAND_PACK)
-    copy_tree(SOURCE_OBJECT_PACK, OUT_OBJECT_PACK)
-    shutil.copy2(SOURCE_LOCATIONS, OUT_LOCATIONS)
-    for world_key, source_dir in SOURCE_WORLD_BUNDLES.items():
-        if source_dir.exists():
-            copy_tree(source_dir, OUT_WORLDS_DIR / world_key)
+    if not args.world:
+        copy_tree(SOURCE_TILE_PYRAMID, OUT_TILE_PYRAMID)
+        copy_tree(SOURCE_LAND_PACK, OUT_LAND_PACK)
+        copy_tree(SOURCE_OBJECT_PACK, OUT_OBJECT_PACK)
+        shutil.copy2(SOURCE_LOCATIONS, OUT_LOCATIONS)
+
+    for world_key in selected_worlds:
+        source_dir = SOURCE_WORLD_BUNDLES[world_key]
+        if not source_dir.exists():
+            raise FileNotFoundError(source_dir)
+        copy_tree(source_dir, OUT_WORLDS_DIR / world_key)
 
     catalog_index = build_object_catalog_index()
     footprint_cache = load_footprint_cache()
     roof_average_cache = load_roof_average_cache()
 
-    packs_to_process = [
-        OUT_LAND_PACK,
-        OUT_OBJECT_PACK,
-    ]
-    for world_key in SOURCE_WORLD_BUNDLES.keys():
+    packs_to_process = []
+    if not args.world:
+        packs_to_process.extend([OUT_LAND_PACK, OUT_OBJECT_PACK])
+    for world_key in selected_worlds:
         world_root = OUT_WORLDS_DIR / world_key
         packs_to_process.extend([
             world_root / "land_only_pack",
@@ -445,13 +456,17 @@ def main() -> None:
         sanitize_manifest(pack_dir)
         enrich_models(pack_dir, catalog_index, footprint_cache, roof_average_cache)
 
-    OUT_HTML.write_text(build_html(), encoding="utf-8")
+    if not args.world:
+        OUT_HTML.write_text(build_html(), encoding="utf-8")
 
-    print(f"Wrote {OUT_HTML}")
-    print(f"Copied {OUT_TILE_PYRAMID}")
-    print(f"Copied {OUT_LAND_PACK}")
-    print(f"Copied {OUT_OBJECT_PACK}")
-    print(f"Copied {OUT_LOCATIONS}")
+        print(f"Wrote {OUT_HTML}")
+        print(f"Copied {OUT_TILE_PYRAMID}")
+        print(f"Copied {OUT_LAND_PACK}")
+        print(f"Copied {OUT_OBJECT_PACK}")
+        print(f"Copied {OUT_LOCATIONS}")
+    else:
+        for world_key in selected_worlds:
+            print(f"Copied {OUT_WORLDS_DIR / world_key}")
 
 
 if __name__ == "__main__":
