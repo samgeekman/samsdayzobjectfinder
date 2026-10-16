@@ -1505,6 +1505,7 @@
     padding-left: 0;
   }
   .folder-tree__row {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -1556,6 +1557,7 @@
     padding: 2px 4px;
     border-radius: 4px;
     cursor: pointer;
+    flex: 1 1 0;
     min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1578,12 +1580,19 @@
     pointer-events: none;
     transition: opacity 120ms ease, background-color 120ms ease, border-color 120ms ease;
     flex: 0 0 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: var(--card) !important;
   }
   .folder-tree__pin-link {
-    margin-left: auto;
+    right: 26px;
   }
   .folder-tree__copy-link {
-    margin-left: 0;
+    right: 0;
   }
   .folder-tree__row:hover .folder-tree__pin-link,
   .folder-tree__row:hover .folder-tree__copy-link,
