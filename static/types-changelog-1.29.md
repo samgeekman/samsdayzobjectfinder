@@ -2,8 +2,521 @@
 
 - Added Nasdara's types.xml.
 - Added types downloads to the new 457 entries.
+- Added: badlands loot type entries to existing maps (412 Chernarus, 428 Livonia, 419 Sakhal).
+- Changed: 60 existing type entries changed.
+- Removed: 6 type entries from Livonia (MK4Optics and morsecodeleaflet).
 
-## v1.29 Road to Badlands 15 July 2026
+### Added
+| Object | Chernarus | Livonia | Sakhal |
+| --- | ---: | ---: | ---: |
+| `AKM_Gold` | 0 | 0 | 0 |
+| `AK_WoodBttstck_Gold` | 0 | 0 | 0 |
+| `AK_WoodHndgrd_Gold` | 0 | 0 | 0 |
+| `Achar` | 20 | 0 | 0 |
+| `Akinaka` | 0 | 0 | 0 |
+| `Animal_CanisFamiliaris_Dobermann_Bald` | 0 | 0 | 0 |
+| `Animal_CanisFamiliaris_Dobermann_Bloody` | 0 | 0 | 0 |
+| `Animal_CanisFamiliaris_Dobermann_Brown` | 0 | 0 | 0 |
+| `Animal_CanisFamiliaris_Dobermann_Skinny` | 0 | 0 | 0 |
+| `Animal_CanisFamiliaris_Dobermann_Vest` | 0 | 0 | 0 |
+| `Animal_CanisFamiliaris_GermanShepherd_Balding` | 0 | 0 | 0 |
+| `Animal_CanisFamiliaris_GermanShepherd_Bloody` | 0 | 0 | 0 |
+| `Animal_CanisFamiliaris_GermanShepherd_Harness` | 0 | 0 | 0 |
+| `Animal_CanisFamiliaris_GermanShepherd_Skinny` | 0 | 0 | 0 |
+| `Animal_OvisGmelini` | 0 | 0 | 0 |
+| `Animal_VaranusGriseus` | 0 | 0 | 0 |
+| `AssaultBag_Desert` | 0 | 0 | 0 |
+| `Ayran` | 0 | 0 | 0 |
+| `AyranBottle` | 0 | 0 | 0 |
+| `BoonieHat_Desert` | 0 | 0 | 0 |
+| `BrickTrowel` | 0 | 0 | 0 |
+| `CZ527_Black` | 0 | 30 | 0 |
+| `CZ527_Desert` | 0 | 0 | 0 |
+| `CZ527_Winter` | 0 | 0 | 30 |
+| `CZ527_Woodland` | 25 | 0 | 0 |
+| `CeramicPot_Black` | 0 | 0 | 0 |
+| `CeramicPot_Gray` | 0 | 0 | 0 |
+| `CeramicPot_Natural` | 0 | 0 | 0 |
+| `CeramicPot_White` | 0 | 0 | 0 |
+| `ChestRigVest_Khaki` | 12 | 0 | 0 |
+| `ChestRigVest_Olive` | 12 | 0 | 0 |
+| `ChestRigVest_Tan` | 0 | 0 | 0 |
+| `ChristmasTree` | 0 | 0 | 0 |
+| `CommonBrick` | 0 | 0 | 0 |
+| `CoyoteBag_Desert` | 0 | 0 | 0 |
+| `DeadLizard` | 0 | 0 | 0 |
+| `DigitalCodeLock` | 30 | 35 | 0 |
+| `DonerKnife` | 0 | 0 | 0 |
+| `DustGoggles_Black` | 0 | 0 | 0 |
+| `DustGoggles_Transparent` | 0 | 0 | 0 |
+| `FNOJacket` | 0 | 0 | 0 |
+| `FNOPants` | 0 | 0 | 0 |
+| `Figs` | 0 | 0 | 0 |
+| `GhillieAtt_Desert` | 0 | 0 | 0 |
+| `GhillieBushrag_Desert` | 0 | 0 | 0 |
+| `GhillieHood_Desert` | 0 | 0 | 0 |
+| `GhillieSuit_Desert` | 0 | 0 | 0 |
+| `GhillieTop_Desert` | 0 | 0 | 0 |
+| `Glock_Tan` | 0 | 0 | 0 |
+| `GunCaseKeys_Blue` | 0 | 0 | 0 |
+| `GunCaseKeys_Orange` | 0 | 0 | 0 |
+| `GunCaseKeys_Red` | 0 | 0 | 0 |
+| `GunCase_Black` | 0 | 0 | 0 |
+| `GunCase_Orange` | 0 | 0 | 0 |
+| `GunCase_White` | 0 | 0 | 0 |
+| `HalvaCan` | 0 | 0 | 0 |
+| `HalvaCan_Opened` | 0 | 0 | 0 |
+| `HighCapacityVest_ION` | 0 | 0 | 0 |
+| `HunterPants_Desert` | 0 | 0 | 0 |
+| `HuntingJacket_Desert` | 0 | 0 | 0 |
+| `HuntingVest_Desert` | 0 | 0 | 0 |
+| `Jambiya` | 0 | 0 | 0 |
+| `KameezShirt_Beige` | 0 | 0 | 0 |
+| `KameezShirt_Black` | 0 | 0 | 0 |
+| `KameezShirt_BlueFlowers` | 0 | 0 | 0 |
+| `KameezShirt_Brown` | 0 | 0 | 0 |
+| `KameezShirt_Grey` | 0 | 0 | 0 |
+| `KameezShirt_NavyBlue` | 0 | 0 | 0 |
+| `KameezShirt_Olive` | 0 | 0 | 0 |
+| `KameezShirt_Orange` | 0 | 0 | 0 |
+| `KameezShirt_Pink` | 0 | 0 | 0 |
+| `KameezShirt_Purple` | 0 | 0 | 0 |
+| `KameezShirt_Red` | 0 | 0 | 0 |
+| `KameezShirt_SkyBlue` | 0 | 0 | 0 |
+| `KameezShirt_White` | 0 | 0 | 0 |
+| `KameezShirt_Yellow` | 0 | 0 | 0 |
+| `Keffiyeh_Black` | 0 | 0 | 0 |
+| `Keffiyeh_Blue` | 0 | 0 | 0 |
+| `Keffiyeh_Brown` | 0 | 0 | 0 |
+| `Keffiyeh_Gray` | 0 | 0 | 0 |
+| `Keffiyeh_LightBlue` | 0 | 0 | 0 |
+| `Keffiyeh_LightBrown` | 0 | 0 | 0 |
+| `Keffiyeh_LightRed` | 0 | 0 | 0 |
+| `Keffiyeh_Red` | 0 | 0 | 0 |
+| `Land_Container_1Moh_ION_DE` | 0 | 0 | 0 |
+| `Land_Mil_ContainerHabitat_Armory_Locked_Green_DE` | 0 | 0 | 0 |
+| `Land_Misc_Pallet_Spawn_DE` | 0 | 0 | 0 |
+| `Land_Misc_WoodenCrate_Spawn_DE` | 0 | 0 | 0 |
+| `Land_Roadblock_Table_DE` | 0 | 0 | 0 |
+| `Land_Roadblock_WoodenCrate_DE` | 0 | 0 | 0 |
+| `Land_Wreck_ArmedURAL_TK_DE` | 0 | 0 | 0 |
+| `Land_Wreck_BTR70_TK_DE` | 0 | 0 | 0 |
+| `Land_Wreck_Bradley_DE` | 0 | 0 | 0 |
+| `Land_Wreck_LR_Armed_TK_DE` | 0 | 0 | 0 |
+| `Land_Wreck_SCUDLauncher_Loaded_DE` | 0 | 0 | 0 |
+| `Land_Wreck_Trailer_Double_Tarp_Yellow_DE` | 0 | 0 | 0 |
+| `Land_Wreck_Truck01_Aban1_Cistern_DE` | 0 | 0 | 0 |
+| `Land_Wreck_Truck01_Aban2_Cistern_DE` | 0 | 0 | 0 |
+| `Land_Wreck_Truck02_Blue_DE` | 0 | 0 | 0 |
+| `Land_Wreck_UAZ_Aban1_Police` | 0 | 0 | 0 |
+| `Land_Wreck_UAZ_Aban2_Police` | 0 | 0 | 0 |
+| `Land_Wreck_UAZ_TK_DE` | 0 | 0 | 0 |
+| `Land_Wreck_URAL_Chassis_TK_DE` | 0 | 0 | 0 |
+| `Land_Wreck_hb01_aban1_blue_DE` | 0 | 0 | 0 |
+| `Land_Wreck_hb01_aban1_white_DE` | 0 | 0 | 0 |
+| `Land_Wreck_pickup01_aban_yellow_DE` | 0 | 0 | 0 |
+| `Land_Wreck_sed01_aban1_police_DE` | 0 | 0 | 0 |
+| `Land_Wreck_sed01_aban2_police_DE` | 0 | 0 | 0 |
+| `Land_Wreck_sed02_aban1_grey_DE` | 0 | 0 | 0 |
+| `Land_Wreck_sed02_aban2_yellow_DE` | 0 | 0 | 0 |
+| `Land_wreck_hb01_aban1_green_DE` | 0 | - | - |
+| `Land_wreck_sed02_aban1_police_DE` | 0 | - | - |
+| `Land_wreck_sed02_aban2_police_DE` | 0 | - | - |
+| `Land_wreck_truck01_aban2_orange_DE` | 0 | 0 | 0 |
+| `Lassi_Mango` | 0 | 0 | 0 |
+| `Lassi_Masala` | 0 | 0 | 0 |
+| `Lassi_Mint` | 0 | 0 | 0 |
+| `LeatherBelt_Lizard` | 0 | 0 | 0 |
+| `LeatherHipPack_Lizard` | 0 | 0 | 0 |
+| `LeeEnfield` | 0 | 0 | 0 |
+| `LinenVest_Black` | 10 | 9 | 8 |
+| `LinenVest_Brown` | 10 | 9 | 8 |
+| `LinenVest_DarkGrey` | 10 | 9 | 8 |
+| `LinenVest_Green` | 10 | 9 | 8 |
+| `LinenVest_Grey` | 10 | 9 | 8 |
+| `LinenVest_NavyBlue` | 10 | 9 | 8 |
+| `LizardKnifeSheath` | 0 | 0 | 0 |
+| `Luger` | 0 | 0 | 0 |
+| `MK4Optic_Black` | 2 | 2 | - |
+| `MK4Optic_Green` | 2 | 2 | - |
+| `MK4Optic_Tan` | 2 | 2 | - |
+| `MP18` | 0 | 0 | 0 |
+| `Mag_AKM_30Rnd_Gold` | 0 | 0 | 0 |
+| `Mag_AKM_Drum75Rnd_Gold` | 0 | 0 | 0 |
+| `Mag_LeeEnfield_10Rnd` | 0 | 0 | 0 |
+| `Mag_Luger_8Rnd` | 0 | 0 | 0 |
+| `Mag_MP18_Drum32Rnd` | 0 | 0 | 0 |
+| `Magnum_Gold` | 1 | 4 | 0 |
+| `MensShalwarPants_Beige` | 0 | 0 | 0 |
+| `MensShalwarPants_Black` | 0 | 0 | 0 |
+| `MensShalwarPants_Brown` | 0 | 0 | 0 |
+| `MensShalwarPants_Grey` | 0 | 0 | 0 |
+| `MensShalwarPants_NavyBlue` | 0 | 0 | 0 |
+| `MensShalwarPants_SkyBlue` | 0 | 0 | 0 |
+| `MensShalwarPants_White` | 0 | 0 | 0 |
+| `MilitaryBeret_TK` | 0 | 0 | 0 |
+| `MorsecodeLeaflet_blood` | 0 | 0 | - |
+| `MorsecodeLeaflet_coffee` | 0 | 0 | - |
+| `MorsecodeLeaflet_fire` | 0 | 0 | - |
+| `MortarMix` | 0 | 0 | 0 |
+| `MortarMix_Opened` | 0 | 0 | 0 |
+| `Mosin9130_Desert` | 0 | 0 | 0 |
+| `Mosin9130_Winter` | 0 | 0 | 25 |
+| `Mosin9130_Woodland` | 20 | 0 | 0 |
+| `Motorbike_01_Blue` | 0 | 0 | 0 |
+| `Motorbike_01_Red` | 0 | 0 | 0 |
+| `Motorbike_01_Wheel_1` | 0 | 0 | 0 |
+| `Motorbike_01_Wheel_1_Ruined` | 0 | 0 | 0 |
+| `Motorbike_01_Wheel_2` | 0 | 0 | 0 |
+| `Motorbike_01_Wheel_2_Ruined` | 0 | 0 | 0 |
+| `Motorbike_01_Yellow` | 0 | 0 | 0 |
+| `Motorbike_02_Blue` | 0 | 0 | 0 |
+| `Motorbike_02_Green` | 0 | 0 | 0 |
+| `Motorbike_02_Red` | 0 | 0 | 0 |
+| `Motorbike_02_ShieldFront_Blue` | 0 | 0 | 0 |
+| `Motorbike_02_ShieldFront_Green` | 0 | 0 | 0 |
+| `Motorbike_02_ShieldFront_Red` | 0 | 0 | 0 |
+| `Motorbike_02_ShieldFront_Yellow` | 0 | 0 | 0 |
+| `Motorbike_02_ShieldLeft_Blue` | 0 | 0 | 0 |
+| `Motorbike_02_ShieldLeft_Green` | 0 | 0 | 0 |
+| `Motorbike_02_ShieldLeft_Red` | 0 | 0 | 0 |
+| `Motorbike_02_ShieldLeft_Yellow` | 0 | 0 | 0 |
+| `Motorbike_02_ShieldRight_Blue` | 0 | 0 | 0 |
+| `Motorbike_02_ShieldRight_Green` | 0 | 0 | 0 |
+| `Motorbike_02_ShieldRight_Red` | 0 | 0 | 0 |
+| `Motorbike_02_ShieldRight_Yellow` | 0 | 0 | 0 |
+| `Motorbike_02_Wheel_1` | 0 | 0 | 0 |
+| `Motorbike_02_Wheel_1_Ruined` | 0 | 0 | 0 |
+| `Motorbike_02_Wheel_2` | 0 | 0 | 0 |
+| `Motorbike_02_Wheel_2_Ruined` | 0 | 0 | 0 |
+| `Motorbike_02_Yellow` | 0 | 0 | 0 |
+| `NBCPack_Grey` | 10 | 0 | 0 |
+| `NBCPack_White` | 0 | 0 | 0 |
+| `NBCPack_Yellow` | 15 | 0 | 0 |
+| `OBRCap_Beige` | 0 | 0 | 0 |
+| `OBRCap_Olive` | 0 | 14 | 0 |
+| `OBRJacket_Beige` | 0 | 0 | 0 |
+| `OBRJacket_Officer` | 0 | 0 | 0 |
+| `OBRJacket_Olive` | 0 | 14 | 0 |
+| `OBRPants_Beige` | 0 | 0 | 0 |
+| `OBRPants_Olive` | 0 | 0 | 0 |
+| `Offroad_02_Beige` | 0 | 0 | 0 |
+| `Offroad_02_Door_1_1_Beige` | 0 | 0 | 0 |
+| `Offroad_02_Door_1_1_BeigeRust` | 0 | 0 | 0 |
+| `Offroad_02_Door_1_2_Beige` | 0 | 0 | 0 |
+| `Offroad_02_Door_1_2_BeigeRust` | 0 | 0 | 0 |
+| `Offroad_02_Door_2_1_Beige` | 0 | 0 | 0 |
+| `Offroad_02_Door_2_1_BeigeRust` | 0 | 0 | 0 |
+| `Offroad_02_Door_2_2_Beige` | 0 | 0 | 0 |
+| `Offroad_02_Door_2_2_BeigeRust` | 0 | 0 | 0 |
+| `Offroad_02_Hood_Beige` | 0 | 0 | 0 |
+| `Offroad_02_Trunk_Beige` | 0 | 0 | 0 |
+| `Offroad_02_Trunk_BeigeRust` | 0 | 0 | 0 |
+| `P1907_Bayonet` | 0 | 0 | 0 |
+| `PakolHat_Beige` | 0 | 0 | 0 |
+| `PakolHat_Black` | 0 | 0 | 0 |
+| `PakolHat_Brown` | 0 | 0 | 0 |
+| `PakolHat_Grey` | 0 | 0 | 0 |
+| `PakolHat_White` | 0 | 0 | 0 |
+| `PileOfBricks` | 0 | 0 | 0 |
+| `PoliceBaton` | 20 | 20 | 0 |
+| `PoliceShortSleeveShirt` | 0 | 0 | 0 |
+| `RobeVest_Beige` | 0 | 0 | 0 |
+| `RobeVest_Brown` | 0 | 0 | 0 |
+| `RobeVest_Green` | 0 | 0 | 0 |
+| `RobeVest_Grey` | 0 | 0 | 0 |
+| `RobeVest_Navy` | 0 | 0 | 0 |
+| `SCARL` | 0 | 0 | 0 |
+| `SCARL_Black` | 0 | 4 | 0 |
+| `SKS_Black` | 0 | 6 | 0 |
+| `SKS_Desert` | 0 | 0 | 0 |
+| `SKS_Green` | 0 | 0 | 0 |
+| `SKS_Winter` | 0 | 0 | 6 |
+| `SKS_Woodland` | 6 | 0 | 0 |
+| `SaltyMix` | 0 | 0 | 0 |
+| `SandalsShoes_Black` | 15 | 16 | 0 |
+| `SandalsShoes_BlueNavy` | 15 | 16 | 0 |
+| `SandalsShoes_Brown` | 15 | 16 | 0 |
+| `SandalsShoes_Grey` | 15 | 16 | 0 |
+| `SarmaCan` | 0 | 0 | 0 |
+| `SarmaCan_Opened` | 0 | 0 | 0 |
+| `SawedoffMagnum_Gold` | 0 | 0 | 0 |
+| `SawedoffMosin9130_Desert` | 0 | 0 | 0 |
+| `SawedoffMosin9130_Winter` | 0 | 0 | 0 |
+| `SawedoffMosin9130_Woodland` | 0 | 0 | 0 |
+| `Scimitar` | 0 | 0 | 0 |
+| `ShippingContainerKeys_Green` | 0 | 0 | 0 |
+| `ShortSleeveShirt_Black` | 16 | 10 | 0 |
+| `ShortSleeveShirt_BlueRectangles` | 16 | 10 | 0 |
+| `ShortSleeveShirt_CreamSquares` | 16 | 10 | 0 |
+| `ShortSleeveShirt_Green` | 16 | 10 | 0 |
+| `ShortSleeveShirt_Hawaiian_Black` | 0 | 0 | 0 |
+| `ShortSleeveShirt_Hawaiian_Blue` | 0 | 0 | 0 |
+| `ShortSleeveShirt_Hawaiian_White` | 0 | 0 | 0 |
+| `ShortSleeveShirt_Waves` | 0 | 10 | 0 |
+| `ShortSleeveShirt_White` | 16 | 10 | 0 |
+| `SmallGlassBottle_Afza` | 0 | 0 | 0 |
+| `SmallGlassBottle_Jallab` | 0 | 0 | 0 |
+| `SodaCan_Takola` | 0 | 0 | 0 |
+| `SodaCan_ZumZam` | 0 | 0 | 0 |
+| `SpicyCrackers` | 0 | 0 | 0 |
+| `StaticObj_Bucket_Red_DE` | 0 | 0 | 0 |
+| `StaticObj_Decal_dirt_damage_long1_TK_DE` | 0 | 0 | 0 |
+| `StaticObj_Decal_dirt_damage_long3_TK_DE` | 0 | 0 | 0 |
+| `StaticObj_Furniture_PlasticBucket_DE` | 0 | 0 | 0 |
+| `StaticObj_Garbage_GroundSq_5m_DE` | 0 | 0 | 0 |
+| `StaticObj_Mil_CamoNet_Side_Desert_DE` | 0 | 0 | 0 |
+| `StaticObj_Misc_BarbedWire_DE` | 0 | 0 | 0 |
+| `StaticObj_Misc_ConcretePipe_DE` | 0 | 0 | 0 |
+| `StaticObj_Misc_Hedgehog_Concrete_DE` | 0 | 0 | 0 |
+| `StaticObj_Misc_SupplyBox1_DE` | 0 | 0 | 0 |
+| `StaticObj_Misc_SupplyBox2_DE` | 0 | 0 | 0 |
+| `StaticObj_Misc_SupplyBox3_DE` | 0 | 0 | 0 |
+| `StaticObj_RoadCone_DE` | 0 | 0 | 0 |
+| `StaticObj_Roadblock_Bags_Curve_Desert_DE` | 0 | 0 | 0 |
+| `StaticObj_Roadblock_Bags_EndL_Desert_DE` | 0 | 0 | 0 |
+| `StaticObj_Roadblock_Bags_EndR_Desert_DE` | 0 | 0 | 0 |
+| `StaticObj_Roadblock_Bags_Long_Desert_DE` | 0 | 0 | 0 |
+| `StaticObj_Roadblock_CncBlock_DE` | 0 | 0 | 0 |
+| `StaticObj_Roadblock_CncBlocks_Long_DE` | 0 | 0 | 0 |
+| `StaticObj_Rubble_DirtPile_Large_DE` | 0 | 0 | 0 |
+| `StaticObj_Rubble_DirtPile_Medium1_DE` | 0 | 0 | 0 |
+| `StaticObj_Rubble_Glass_DE` | 0 | 0 | 0 |
+| `StaticObj_SCUDMissile_Broken2_DE` | 0 | 0 | 0 |
+| `StaticObj_ShellCrater1_Desert_DE` | 0 | 0 | 0 |
+| `StaticObj_ShellCrater1_Desert_Decal_DE` | 0 | 0 | 0 |
+| `StaticObj_ShellCrater2_Desert_Debris_lc_DE` | 0 | 0 | 0 |
+| `StaticObj_Sign_Roadblock_Arrow_DE` | 0 | 0 | 0 |
+| `StaticObj_Sign_Roadblock_Stop_DE` | 0 | 0 | 0 |
+| `StaticObj_Stretcher_Green_DE` | 0 | 0 | 0 |
+| `StaticObj_Wall_FenVineyard_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_BMP1_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_BMP1_TK_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_BRDM_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_Bulldozer_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_Chinook_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_Decal_Big_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_DollyConverter_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_M113_TK_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_M1A2_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_MTVR_Fuel_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_MTVR_Water_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_Mi24_TK_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_SCUDLauncher_Empty_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_T62_Hull_TK_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_T62_Turret_TK_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_Trailer_Flat_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_Train_742_Red_DE` | 0 | 0 | 0 |
+| `StaticObj_Wreck_UAZ_Aban1_Police` | 0 | 0 | 0 |
+| `StaticObj_Wreck_UAZ_Aban2_Police` | 0 | 0 | 0 |
+| `StaticObj_d_FagusSylvatica_fallen_DE` | 0 | 0 | 0 |
+| `StaticObj_d_FagusSylvatica_fallenb_DE` | 0 | 0 | 0 |
+| `StaticObj_d_FagusSylvatica_fallenc_DE` | 0 | 0 | 0 |
+| `StaticObj_d_FagusSylvatica_stump_DE` | 0 | 0 | 0 |
+| `StaticObj_decal_bulletholes_big_01_DE` | 0 | 0 | 0 |
+| `StaticObj_decal_bulletholes_big_01_nolc_DE` | 0 | 0 | 0 |
+| `StaticObj_decal_bulletholes_big_02_DE` | 0 | 0 | 0 |
+| `StaticObj_decal_bulletholes_small_01_DE` | 0 | 0 | 0 |
+| `StaticObj_decal_bulletholes_small_01_nolc_DE` | 0 | 0 | 0 |
+| `StaticObj_decal_bulletholes_small_02_DE` | 0 | 0 | 0 |
+| `StaticObj_decal_scorchmark_01_large_f_DE` | 0 | 0 | 0 |
+| `StaticObj_decal_scorchmark_01_large_f_nolc_DE` | 0 | 0 | 0 |
+| `StaticObj_decal_scorchmark_01_small_f_DE` | 0 | 0 | 0 |
+| `StaticObj_decal_scorchmark_01_small_f_nolc_DE` | 0 | 0 | 0 |
+| `StaticObj_stone1_sand_DE` | 0 | 0 | 0 |
+| `StaticObj_stone2_sand_DE` | 0 | 0 | 0 |
+| `StaticObj_stone3_sand_DE` | 0 | 0 | 0 |
+| `StaticObj_stone4_sand_DE` | 0 | 0 | 0 |
+| `StaticObj_stones_sand_erosion_DE` | 0 | 0 | 0 |
+| `Static_FrozenScientist_DE` | 0 | 0 | 0 |
+| `TacticalShirt_ION_Olive` | 0 | 0 | 0 |
+| `TacticalShirt_ION_Tan` | 0 | 0 | 0 |
+| `TraditionalSandalShoes_Black` | 0 | 0 | 0 |
+| `TraditionalSandalShoes_Brown` | 0 | 0 | 0 |
+| `TraditionalSandalShoes_LightBrown` | 0 | 0 | 0 |
+| `TraditionalSandalShoes_NavyBlue` | 0 | 0 | 0 |
+| `TurbanHat_Beige` | 0 | 0 | 0 |
+| `TurbanHat_Black` | 0 | 0 | 0 |
+| `TurbanHat_Brown` | 0 | 0 | 0 |
+| `TurbanHat_Green` | 0 | 0 | 0 |
+| `TurbanHat_Grey` | 0 | 0 | 0 |
+| `TurbanHat_NavyBlue` | 0 | 0 | 0 |
+| `TurbanHat_Pink` | 0 | 0 | 0 |
+| `TurbanHat_Purple` | 0 | 0 | 0 |
+| `TurbanHat_Red` | 0 | 0 | 0 |
+| `TurbanHat_Skyblue` | 0 | 0 | 0 |
+| `TurbanHat_White` | 0 | 0 | 0 |
+| `TurbanHat_Yellow` | 0 | 0 | 0 |
+| `UKAssVest_Desert` | 0 | 0 | 0 |
+| `Waterskin_Natural` | 0 | 0 | 0 |
+| `WineBottle` | 30 | 45 | 0 |
+| `WinterMilitaryCoat_Grey` | 0 | 0 | 8 |
+| `WomensShalwarPants_NavyBlue` | 0 | 0 | 0 |
+| `WomensShalwarPants_Olive` | 0 | 0 | 0 |
+| `WomensShalwarPants_Orange` | 0 | 0 | 0 |
+| `WomensShalwarPants_Pink` | 0 | 0 | 0 |
+| `WomensShalwarPants_Purple` | 0 | 0 | 0 |
+| `WomensShalwarPants_Red` | 0 | 0 | 0 |
+| `ZmbF_SoldierNormal` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenRural_Black` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenRural_Flowers` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenRural_Olive` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenRural_Orange` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenRural_Pink` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenRural_Purple` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenRural_Red` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenRural_Yellow` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanA_Beige` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanA_Blue` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanA_Brown` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanA_Grey` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanB_Black` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanB_Flowers` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanB_Olive` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanB_Orange` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanB_Pink` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanB_Purple` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanB_Red` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanB_Yellow` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanC_NavyBlue` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanC_Olive` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanC_Orange` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanC_Pink` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanC_Purple` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanC_Red` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanD_Beige` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanD_Brown` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanD_Purple` | 0 | 0 | 0 |
+| `ZmbF_takiCitizenUrbanD_Red` | 0 | 0 | 0 |
+| `ZmbF_takiOilRigWorker_Blue` | 0 | 0 | 0 |
+| `ZmbF_takiOilRigWorker_Red` | 0 | 0 | 0 |
+| `ZmbF_takiOilRigWorker_Yellow` | 0 | 0 | 0 |
+| `ZmbF_takiPoliceWoman` | 0 | 0 | 0 |
+| `ZmbF_takiPoliceWoman_Heavy` | 0 | 0 | 0 |
+| `ZmbM_IonSoldier_Normal_1_Green` | 0 | 0 | 0 |
+| `ZmbM_IonSoldier_Normal_1_Grey` | 0 | 0 | 0 |
+| `ZmbM_IonSoldier_Normal_1_Tan` | 0 | 0 | 0 |
+| `ZmbM_IonSoldier_Normal_2_Black` | 0 | 0 | 0 |
+| `ZmbM_IonSoldier_Normal_2_Blue` | 0 | 0 | 0 |
+| `ZmbM_IonSoldier_Normal_2_White` | 0 | 0 | 0 |
+| `ZmbM_IonSoldier_Normal_3` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenRural_Beige` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenRural_Black` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenRural_Brown` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenRural_Grey` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenRural_NavyBlue` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenRural_SkyBlue` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenRural_White` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanA_Black` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanA_Blue` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanA_Cream` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanA_Green` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanB_Beige` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanB_Black` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanB_BlueBright` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanB_Brown` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanB_Grey` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanB_NavyBlue` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanB_SkyBlue` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanB_White` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanC_Black` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanC_Blue` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanC_Green` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanC_Red` | 0 | 0 | 0 |
+| `ZmbM_takiCitizenUrbanC_White` | 0 | 0 | 0 |
+| `ZmbM_takiHermitA_Black` | 0 | 0 | 0 |
+| `ZmbM_takiHermitA_NavyBlue` | 0 | 0 | 0 |
+| `ZmbM_takiHermitB_Beige` | 0 | 0 | 0 |
+| `ZmbM_takiHermitB_Brown` | 0 | 0 | 0 |
+| `ZmbM_takiHiker_Beige` | 0 | 0 | 0 |
+| `ZmbM_takiHiker_Grey` | 0 | 0 | 0 |
+| `ZmbM_takiHiker_NavyBlue` | 0 | 0 | 0 |
+| `ZmbM_takiHiker_White` | 0 | 0 | 0 |
+| `ZmbM_takiImam` | 0 | 0 | 0 |
+| `ZmbM_takiImam_Green` | 0 | 0 | 0 |
+| `ZmbM_takiOilRigWorker_Blue` | 0 | 0 | 0 |
+| `ZmbM_takiOilRigWorker_Red` | 0 | 0 | 0 |
+| `ZmbM_takiOilRigWorker_Yellow` | 0 | 0 | 0 |
+| `ZmbM_takiPoliceman` | 0 | 0 | 0 |
+| `ZmbM_takiPoliceman_Heavy` | 0 | 0 | 0 |
+| `ZmbM_takiSoldier_Normal_Olive` | 0 | 0 | 0 |
+| `ZmbM_takiSoldier_Normal_Tan` | 0 | 0 | 0 |
+| `ZmbM_takiSoldier_Officer` | 0 | 0 | 0 |
+| `Zmbf_IonSoldier_Normal_1` | 0 | 0 | 0 |
+
+### Changed
+| Object | Chernarus | Livonia | Sakhal |
+| --- | --- | --- | --- |
+| `AK74` | nominal 4->6; min 2->4 | - | - |
+| `ASVAL` | nominal 2->3; min 1->2 | - | - |
+| `BallisticHelmet_Desert` | nominal 3->0; min 1->0 | nominal 4->0; min 2->0 | - |
+| `CZ550` | nominal 5->14; min 4->12 | - | - |
+| `FAMAS` | nominal 4->8; min 3->6 | - | - |
+| `GhillieAtt_Mossy` | nominal 0->2; min 0->1; count_in_player 1->0; deloot 0->1 | - | - |
+| `GhillieBushrag_Mossy` | nominal 0->2; min 0->1; count_in_player 1->0; deloot 0->1 | - | - |
+| `GhillieSuit_Mossy` | nominal 0->2; min 0->1; count_in_player 1->0; deloot 0->1 | - | - |
+| `GhillieTop_Mossy` | nominal 0->2; min 0->1; count_in_player 1->0; deloot 0->1 | - | - |
+| `HuntingOptic` | nominal 7->11; min 4->9 | - | - |
+| `Longhorn` | nominal 15->25; min 10->20 | - | - |
+| `M14` | deloot 0->1; Removed from Tier4 | - | - |
+| `MP5K` | nominal 8->16; min 6->13 | - | - |
+| `MP5_Compensator` | nominal 6->10; min 3->8 | - | - |
+| `MP5_PlasticHndgrd` | nominal 4->7; min 2->5 | - | - |
+| `MP5_RailHndgrd` | nominal 4->7; min 2->5 | - | - |
+| `Mag_AK101_30Rnd` | Added to Military | - | - |
+| `Mag_FAMAS_25Rnd` | nominal 10->12; min 8->10 | - | - |
+| `Mag_M14_10Rnd` | deloot 0->1; Removed from Tier4 | nominal 16->6; min 13->4; Removed from Tier2, Tier3 | - |
+| `Mag_M14_20Rnd` | deloot 0->1; Removed from Tier4 | nominal 10->3; min 7->1; Removed from Tier2, Tier3 | - |
+| `Mag_MP5_15Rnd` | nominal 10->14; min 7->12; Changed from Tier4 to Tier2 | - | - |
+| `Mag_MP5_30Rnd` | nominal 5->10; min 3->8 | - | - |
+| `Mag_PP19_64Rnd` | nominal 10->12; min 8->10 | - | - |
+| `Mag_SCARH_20Rnd` | nominal 8->0; min 6->0; restock 0->3600; deloot 1->0; Changed from Military to ContaminatedArea | nominal 8->3; min 6->1; deloot 1->0; Changed from Military to Underground; Added to Tier3 | - |
+| `Mag_UMP_25Rnd` | nominal 14->18; min 11->15; Added to Tier2 | - | - |
+| `MilitaryCap_Desert` | nominal 12->0; min 9->0 | - | - |
+| `MorsecodeLeaflet_blood` | nominal 5->0; min 3->0 | - | - |
+| `MorsecodeLeaflet_coffee` | nominal 5->0; min 3->0 | - | - |
+| `MorsecodeLeaflet_fire` | nominal 5->0; min 3->0 | - | - |
+| `Mosin9130` | nominal 17->45; min 15->35; Added to Tier2 | - | - |
+| `Mosin9130_Black` | crafted 1->0 | nominal 0->20; min 0->17; crafted 1->0 | quantmin -1->30; quantmax -1->80; crafted 1->0 |
+| `Mosin9130_Camo` | crafted 1->0 | crafted 1->0 | quantmin -1->30; quantmax -1->80; crafted 1->0 |
+| `Mosin9130_Green` | crafted 1->0 | crafted 1->0 | quantmin -1->30; quantmax -1->80; crafted 1->0 |
+| `NBCPantsYellow` | - | nominal 4->14; min 2->12 | - |
+| `NVGoggles` | - | nominal 5->0; min 3->0 | - |
+| `PP19` | nominal 10->14; min 8->11 | - | - |
+| `PUScopeOptic` | nominal 20->35; min 10->25 | - | - |
+| `PlateCarrierHolster` | nominal 10->15; min 5->12 | - | - |
+| `PlateCarrierHolster_Desert` | nominal 4->0; min 2->0 | nominal 8->0; min 6->0 | - |
+| `PlateCarrierPouches_Desert` | nominal 4->0; min 2->0 | nominal 7->0; min 5->0 | - |
+| `PlateCarrierVest` | nominal 1->2; min 0->1 | nominal 0->3; min 0->1; deloot 0->1 | - |
+| `PlateCarrierVest_Camo` | nominal 1->2; min 0->1 | - | - |
+| `PlateCarrierVest_Desert` | nominal 2->0; min 1->0 | nominal 3->0; min 1->0 | - |
+| `PoliceVest` | Added to Tier2 | - | - |
+| `SCARH` | nominal 3->0; min 1->0; restock 0->3600; deloot 1->0; Changed from Military to ContaminatedArea | nominal 3->1; deloot 1->0; Changed from Military to Underground; Added to Tier3 | - |
+| `SCAR_PrecisionBttstck` | Added to ContaminatedArea | - | - |
+| `SCAR_PrecisionBttstck_Black` | - | nominal 0->3; min 0->1; deloot 0->1; Added to Military | - |
+| `SCAR_StockBttstck` | Added to ContaminatedArea | - | - |
+| `SCAR_StockBttstck_Black` | - | nominal 0->3; min 0->1; Changed from Special to Military | - |
+| `SKS` | nominal 8->14; min 6->10; deloot 1->0; Added to Tier3, Tier4 | nominal 5->6; min 3->4; deloot 0->1; Removed from Tier3 | - |
+| `SV98` | - | nominal 2->4; min 1->2 | - |
+| `SVD` | - | nominal 2->4; min 1->2 | - |
+| `TortillaBag` | - | nominal 8->12; min 6->10 | - |
+| `TortillaBag_Desert` | nominal 8->0; min 6->0 | nominal 5->0; min 3->0 | - |
+| `UMP45` | nominal 8->12; min 6->10 | - | - |
+| `USMCJacket_Desert` | nominal 5->0; min 2->0 | nominal 5->0; min 2->0 | - |
+| `USMCJacket_Woodland` | nominal 5->10; min 2->8 | nominal 5->14; min 2->11 | - |
+| `USMCPants_Desert` | nominal 5->0; min 2->0 | nominal 5->0; min 2->0 | - |
+| `USMCPants_Woodland` | nominal 5->10; min 2->8 | nominal 5->14; min 2->11 | - |
+| `Winchester70` | nominal 4->7; min 2->5 | - | - |
+
+### Removed
+| Object | Chernarus | Livonia | Sakhal |
+| --- | ---: | ---: | ---: |
+| `MK4Optic_black` | - | Removed | - |
+| `MK4Optic_green` | - | Removed | - |
+| `MK4Optic_tan` | - | Removed | - |
+| `MorseCodeLeaflet_Blood` | - | Removed | - |
+| `MorseCodeLeaflet_Coffee` | - | Removed | - |
+| `MorseCodeLeaflet_Fire` | - | Removed | - |## v1.29 Road to Badlands 15 July 2026
 
 Based on v.129 Road to Badlands July '26
 
