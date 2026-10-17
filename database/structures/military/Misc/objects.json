@@ -391,7 +391,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/military/misc",
     "usableOnConsole": false,
-    "searchTags": "military, bagfence, sandbag, wall, defense, corner, square, 90, turn",
+    "searchTags": "military, bagfence, sandbag, wall, defense, corner, square, turn",
     "image": "images/structures/military/misc/staticobj_misc_bagfence_corner.jpg",
     "id": "dzobj_gz3sis10it"
   },
@@ -413,7 +413,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/military/misc",
     "usableOnConsole": false,
-    "searchTags": "military, barbedwire, wire, fence, defense, barrier, wire, metal, security",
+    "searchTags": "military, barbedwire, wire, fence, defense, barrier, metal, security",
     "image": "images/structures/military/misc/staticobj_misc_barbedwire.jpg",
     "id": "dzobj_ose74yc14n"
   },
@@ -479,7 +479,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/military/misc",
     "usableOnConsole": false,
-    "searchTags": "military, cover, big, defensive, protection, terrain, grass, cover, ground, dirt",
+    "searchTags": "military, cover, big, defensive, protection, terrain, grass, ground, dirt",
     "image": "images/structures/military/misc/staticobj_misc_cover_big.jpg",
     "id": "dzobj_69l2kki82i"
   },
@@ -490,7 +490,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/military/misc",
     "usableOnConsole": false,
-    "searchTags": "military, cover, small, defensive, protection, terrain, grass, cover, ground, dirt",
+    "searchTags": "military, cover, small, defensive, protection, terrain, grass, ground, dirt",
     "image": "images/structures/military/misc/staticobj_misc_cover_small.jpg",
     "id": "dzobj_5csmo3de0g"
   },
@@ -710,7 +710,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/military/misc",
     "usableOnConsole": false,
-    "searchTags": "military, supplybox, crate, storage, box, loot, drop, supply, package, dynamic_event, military, green",
+    "searchTags": "military, supplybox, crate, storage, box, loot, drop, supply, package, dynamic_event, green",
     "image": "images/structures/military/misc/staticobj_misc_supplybox2_de.jpg",
     "id": "dzobj_4f8l61q0ka"
   },
@@ -732,7 +732,7 @@
     "modelType": "Config",
     "path": "dz/structures/military/misc",
     "usableOnConsole": true,
-    "searchTags": "military, barbedwire, wire, fence, defense, barrier, metal, security, v1.30-exp-badlands, staticobj, misc, de, dz, structures, v1.30-badlands",
+    "searchTags": "military, barbedwire, wire, fence, defense, barrier, metal, security, v1.30-exp-badlands, staticobj, misc, de, structures, v1.30-badlands",
     "image": "images/structures/military/misc/staticobj_misc_barbedwire.jpg",
     "id": "dzobj_6b399d2418",
     "linked-p3d": "dzobj_ose74yc14n"
@@ -744,7 +744,7 @@
     "modelType": "Config",
     "path": "dz/structures/military/misc",
     "usableOnConsole": true,
-    "searchTags": "military, hedgehog, obstacle, concrete, tanktrap, metal, v1.30-exp-badlands, staticobj, misc, de, dz, structures, v1.30-badlands",
+    "searchTags": "military, hedgehog, obstacle, concrete, tanktrap, metal, v1.30-exp-badlands, staticobj, misc, de, structures, v1.30-badlands",
     "image": "images/structures/military/misc/staticobj_misc_hedgehog_concrete.jpg",
     "id": "dzobj_87b3cd62a9",
     "linked-p3d": "dzobj_85layam7kv"

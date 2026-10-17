@@ -226,7 +226,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/harbour",
     "usableOnConsole": true,
-    "searchTags": "pier, concrete, fuel, dock, dock, coast, industrial, infrastructure, platform, stilts, gangway, gangplank, ramp",
+    "searchTags": "pier, concrete, fuel, dock, coast, industrial, infrastructure, platform, stilts, gangway, gangplank, ramp",
     "image": "images/structures/industrial/harbour/staticobj_pier_concrete3_fuel.jpg",
     "id": "dzobj_k5axin03dt"
   },
@@ -259,7 +259,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/harbour",
     "usableOnConsole": true,
-    "searchTags": "pier, dock, pipe, chimeny, cylinder, large, industrial",
+    "searchTags": "pier, dock, pipe, cylinder, large, industrial, tube, chimney",
     "image": "images/structures/industrial/harbour/staticobj_pier_tube_big.jpg",
     "id": "dzobj_vrluvah5h8"
   },
@@ -270,7 +270,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/harbour",
     "usableOnConsole": true,
-    "searchTags": "pier, tube, small, dock,  pipe, chimeny, cylinder, small, industrial",
+    "searchTags": "pier, tube, small, dock, pipe, cylinder, industrial, chimney",
     "image": "images/structures/industrial/harbour/staticobj_pier_tube_small.jpg",
     "id": "dzobj_o18gn4zsfs"
   },
@@ -402,7 +402,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/harbour",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "structure, pier, concrete, pier concrete, structures, industrial, harbour",
     "image": "images/structures/industrial/harbour/pier_concrete1_l.p3d.jpg",
     "id": "dzobj_xkkknj28dr"
   },
@@ -413,7 +413,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/harbour",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "structure, pier, concrete, pier concrete, structures, industrial, harbour",
     "image": "images/structures/industrial/harbour/pier_concrete1_l10.p3d.jpg",
     "id": "dzobj_brttkvslg4"
   },
@@ -424,7 +424,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/harbour",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "structure, pier, concrete, pier concrete, structures, industrial, harbour",
     "image": "images/structures/industrial/harbour/pier_concrete1_l30.p3d.jpg",
     "id": "dzobj_pkk2wiqtqm"
   },
@@ -545,7 +545,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/harbour",
     "usableOnConsole": false,
-    "searchTags": "pier, concrete, fuel, dock, dock, coast, industrial, infrastructure, platform, stilts, gangway, gangplank, ramp",
+    "searchTags": "pier, concrete, fuel, dock, coast, industrial, infrastructure, platform, stilts, gangway, gangplank, ramp",
     "image": "images/structures/industrial/harbour/staticobj_pier_concrete3_fuel.jpg",
     "id": "dzobj_5azzr3gcdx"
   },
@@ -600,7 +600,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/harbour",
     "usableOnConsole": false,
-    "searchTags": "pier, dock, pipe, chimeny, cylinder, large, industrial",
+    "searchTags": "pier, dock, pipe, cylinder, large, industrial, tube, chimney",
     "image": "images/structures/industrial/harbour/staticobj_pier_tube_big.jpg",
     "id": "dzobj_vvnlniy0vp"
   },
@@ -611,7 +611,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/harbour",
     "usableOnConsole": false,
-    "searchTags": "pier, tube, small, dock,  pipe, chimeny, cylinder, small, industrial",
+    "searchTags": "pier, tube, small, dock, pipe, cylinder, industrial, chimney",
     "image": "images/structures/industrial/harbour/staticobj_pier_tube_small.jpg",
     "id": "dzobj_6jrzhctrhi"
   },
@@ -644,7 +644,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/harbour",
     "usableOnConsole": false,
-    "searchTags": "",
+    "searchTags": "structure, pier, wooden, pillars, pier wooden pillars, structures, industrial, harbour",
     "image": "images/structures/industrial/harbour/pier_wooden1_pillars.p3d.jpg",
     "id": "dzobj_xsh8xa0oyf"
   },

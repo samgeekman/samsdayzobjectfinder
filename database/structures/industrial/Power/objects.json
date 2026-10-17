@@ -6,7 +6,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": true,
-    "searchTags": "pole, metal, PA, pa_system, speaker, infrastructure, electricity, utility",
+    "searchTags": "pole, metal, pa, pa_system, speaker, infrastructure, electricity, utility",
     "image": "images/structures/industrial/power/land_power_pole_conc1_amp.jpg",
     "id": "dzobj_40bu63hgps"
   },
@@ -17,7 +17,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": true,
-    "searchTags": "pole, metal, PA, pa_system, speaker, infrastructure, street_light, street_lamp",
+    "searchTags": "pole, metal, pa, pa_system, speaker, infrastructure, street_light, street_lamp",
     "image": "images/structures/industrial/power/land_power_pole_conc4_lamp_amp.jpg",
     "id": "dzobj_0eidmm5ira"
   },
@@ -28,7 +28,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": true,
-    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility, PA, pa_system, speaker",
+    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility, pa, pa_system, speaker, power line, power lines",
     "image": "images/structures/industrial/power/land_power_pole_wood1_amp.jpg",
     "id": "dzobj_biv9plax23"
   },
@@ -39,7 +39,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": true,
-    "searchTags": "electricity, pole, wood, lamp, light, streetlight, utility, PA, pa_system, speaker",
+    "searchTags": "electricity, pole, wood, lamp, light, streetlight, utility, pa, pa_system, speaker, street light, street lamp",
     "image": "images/structures/industrial/power/land_power_pole_wood1_lamp_amp.jpg",
     "id": "dzobj_k5wbdsg5pw"
   },
@@ -61,7 +61,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": true,
-    "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage",
+    "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_hv_line_80m_damaged.jpg",
     "id": "dzobj_t1mzs2b91a"
   },
@@ -72,7 +72,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": true,
-    "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage",
+    "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_hv_line_damaged.jpg",
     "id": "dzobj_i4zptrda38"
   },
@@ -83,7 +83,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": true,
-    "searchTags": "electricity, powerline, infrastructure, high_voltage, corner",
+    "searchTags": "electricity, powerline, infrastructure, high_voltage, corner, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_hv_line_turn.jpg",
     "id": "dzobj_odim32j5ro"
   },
@@ -94,7 +94,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": true,
-    "searchTags": "electricity, powerline, infrastructure, high_voltage, left_turn",
+    "searchTags": "electricity, powerline, infrastructure, high_voltage, left_turn, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_hv_line_turnl.jpg",
     "id": "dzobj_ftiweu5x8q"
   },
@@ -105,7 +105,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": true,
-    "searchTags": "electricity, powerline, infrastructure, high_voltage, right_turn",
+    "searchTags": "electricity, powerline, infrastructure, high_voltage, right_turn, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_hv_line_turnr.jpg",
     "id": "dzobj_3zil4ezhgj"
   },
@@ -116,7 +116,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": true,
-    "searchTags": "electricity, powerline, pylon, metal, tower, high_voltage, infrastructure",
+    "searchTags": "electricity, powerline, pylon, metal, tower, high_voltage, infrastructure, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_hv_tower.jpg",
     "id": "dzobj_w4q9xtamhn"
   },
@@ -127,7 +127,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": true,
-    "searchTags": "electricity, pole, concrete, utility, powerline",
+    "searchTags": "electricity, pole, concrete, utility, powerline, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_pole_conct.jpg",
     "id": "dzobj_emwe6zchap"
   },
@@ -182,7 +182,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": true,
-    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility",
+    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_pole_wood2.jpg",
     "id": "dzobj_o6uj46li0r"
   },
@@ -193,7 +193,7 @@
     "modelType": "Config",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": true,
-    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility",
+    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_pole_wood3.jpg",
     "id": "dzobj_46p6800bhk"
   },
@@ -237,7 +237,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
-    "searchTags": "electricity, powerline, infrastructure, high_voltage",
+    "searchTags": "electricity, powerline, infrastructure, high_voltage, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_hv_line_turn.jpg",
     "id": "dzobj_9xqm9cs6yv"
   },
@@ -248,7 +248,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
-    "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage",
+    "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_hv_line_80m_damaged.jpg",
     "id": "dzobj_912u7j11e5"
   },
@@ -259,7 +259,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
-    "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage",
+    "searchTags": "electricity, powerline, damaged, infrastructure, high_voltage, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_hv_line_damaged.jpg",
     "id": "dzobj_vdz7k67fsy"
   },
@@ -281,7 +281,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
-    "searchTags": "electricity, powerline, infrastructure, high_voltage, left_turn",
+    "searchTags": "electricity, powerline, infrastructure, high_voltage, left_turn, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_hv_line_turnl.jpg",
     "id": "dzobj_cgfyjhpjj9"
   },
@@ -292,7 +292,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
-    "searchTags": "electricity, powerline, infrastructure, high_voltage, right_turn",
+    "searchTags": "electricity, powerline, infrastructure, high_voltage, right_turn, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_hv_line_turnr.jpg",
     "id": "dzobj_a3309b54rf"
   },
@@ -303,7 +303,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
-    "searchTags": "electricity, powerline, pylon, metal, tower, high_voltage, infrastructure",
+    "searchTags": "electricity, powerline, pylon, metal, tower, high_voltage, infrastructure, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_hv_tower.jpg",
     "id": "dzobj_myxd0fjow5"
   },
@@ -325,7 +325,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
-    "searchTags": "pole, metal, PA, pa_system, speaker, infrastructure, electricity, utility",
+    "searchTags": "pole, metal, pa, pa_system, speaker, infrastructure, electricity, utility",
     "image": "images/structures/industrial/power/land_power_pole_conc1_amp.jpg",
     "id": "dzobj_fy8xypl3z4"
   },
@@ -369,7 +369,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
-    "searchTags": "pole, metal, PA, pa_system, speaker, infrastructure, street_light, street_lamp",
+    "searchTags": "pole, metal, pa, pa_system, speaker, infrastructure, street_light, street_lamp",
     "image": "images/structures/industrial/power/land_power_pole_conc4_lamp_amp.jpg",
     "id": "dzobj_e2yqqjxdxr"
   },
@@ -424,7 +424,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
-    "searchTags": "electricity, pole, concrete, utility, powerline",
+    "searchTags": "electricity, pole, concrete, utility, powerline, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_pole_conct.jpg",
     "id": "dzobj_hdd9m8l3mh"
   },
@@ -446,7 +446,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
-    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility, PA, pa_system, speaker",
+    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility, pa, pa_system, speaker, power line, power lines",
     "image": "images/structures/industrial/power/land_power_pole_wood1_amp.jpg",
     "id": "dzobj_s6mqvus26x"
   },
@@ -468,7 +468,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
-    "searchTags": "electricity, pole, wood, lamp, light, streetlight, utility, PA, pa_system, speaker",
+    "searchTags": "electricity, pole, wood, lamp, light, streetlight, utility, pa, pa_system, speaker, street light, street lamp",
     "image": "images/structures/industrial/power/land_power_pole_wood1_lamp_amp.jpg",
     "id": "dzobj_pyzhbk6wfo"
   },
@@ -534,7 +534,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
-    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility",
+    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_pole_wood2.jpg",
     "id": "dzobj_voxpb8ande"
   },
@@ -545,7 +545,7 @@
     "modelType": "Raw P3D",
     "path": "dz/structures/industrial/power",
     "usableOnConsole": false,
-    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility",
+    "searchTags": "electricity, pole, wood, powerline, infrastructure, utility, power line, power lines",
     "image": "images/structures/industrial/power/staticobj_power_pole_wood3.jpg",
     "id": "dzobj_bdasoa3qzr"
   },
