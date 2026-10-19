@@ -2189,8 +2189,21 @@
       });
     }
 
+    function buildPresetSelectionPayload() {
+      return {
+        Objects: buildEditorSelectionPayload().map((item) => ({
+          name: item.Type,
+          pos: item.Position,
+          ypr: item.Orientation,
+          scale: item.Scale,
+          enableCEPersistency: 0,
+          customString: "",
+        })),
+      };
+    }
+
     function downloadSelection() {
-      const payload = buildEditorSelectionPayload();
+      const payload = buildPresetSelectionPayload();
       const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
       const url = URL.createObjectURL(blob);
       const anchor = document.createElement("a");
