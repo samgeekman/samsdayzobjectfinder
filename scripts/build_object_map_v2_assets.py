@@ -124,6 +124,7 @@ def sanitize_pack(pack_dir: Path) -> None:
     total_rows = 0
     total_land = 0
     total_p3d = 0
+    model_chunks: dict[str, list[int]] = {}
 
     all_placements_path = manifest.get("allPlacementsPath")
     if all_placements_path:
@@ -165,10 +166,15 @@ def sanitize_pack(pack_dir: Path) -> None:
           chunk_payload["placements"] = sanitized
           write_json(chunk_path, chunk_payload)
           if sanitized:
+              chunk_index = len(updated_chunks)
+              for model_id in {int(placement[1]) for placement in sanitized}:
+                  model_chunks.setdefault(str(model_id), []).append(chunk_index)
               chunk_meta = dict(chunk)
               chunk_meta.update(recalc_chunk_bounds(sanitized))
               updated_chunks.append(chunk_meta)
       manifest["chunks"] = updated_chunks
+      manifest["searchIndexPath"] = "./search-index.json"
+      write_json(pack_dir / "search-index.json", {"modelChunks": model_chunks})
 
     if isinstance(manifest.get("counts"), dict):
         manifest["counts"]["rows"] = total_rows

@@ -47,8 +47,8 @@
     function fallbackFootprintStyle(fillAlpha, strokeAlpha) {
       if (worldKey === "sakhal") {
         return {
-          fill: `rgba(190,36,36,${Math.max(0.20, fillAlpha * 0.72).toFixed(3)})`,
-          stroke: `rgba(214,48,48,${Math.max(0.58, strokeAlpha).toFixed(3)})`,
+          fill: `rgba(255,145,0,${Math.max(0.20, fillAlpha * 0.72).toFixed(3)})`,
+          stroke: `rgba(255,166,35,${Math.max(0.58, strokeAlpha).toFixed(3)})`,
         };
       }
       if (worldKey === "nasdara") {
@@ -171,6 +171,10 @@
     let searchMode = "";
     let searchModelIds = new Set();
     let searchLandModelIds = new Set();
+    let searchPlacements = [];
+    let searchPlacementGrid = new Map();
+    let searchRequestToken = 0;
+    let objectSearchIndexPromise = null;
     let loadedPlacements = [];
     let loadedPlacementGrid = new Map();
     let startupLandPlacements = [];
@@ -374,6 +378,11 @@
       return placementsInBounds(loadedPlacementGrid, visibleWorldBounds(paddingPx));
     }
 
+    function visibleSearchPlacements(paddingPx = 0) {
+      if (!searchPlacements.length) return [];
+      return placementsInBounds(searchPlacementGrid, visibleWorldBounds(paddingPx));
+    }
+
     function visibleWorldBounds(paddingPx = 0) {
       const viewW = overlayCanvas.width / devicePixelRatio;
       const viewH = overlayCanvas.height / devicePixelRatio;
@@ -441,7 +450,7 @@
     }
 
     function fitViewToSearchMatches() {
-      if (searchMode !== "exact_object") return;
+      if (!searchQuery && !searchPathFilter) return;
       let minX = Infinity;
       let minZ = Infinity;
       let maxX = -Infinity;
@@ -457,6 +466,13 @@
       }
       for (const placement of loadedPlacements) {
         if (!searchModelIds.has(placement[P.modelId])) continue;
+        minX = Math.min(minX, placement[P.x]);
+        minZ = Math.min(minZ, placement[P.z]);
+        maxX = Math.max(maxX, placement[P.x]);
+        maxZ = Math.max(maxZ, placement[P.z]);
+        count += 1;
+      }
+      for (const placement of searchPlacements) {
         minX = Math.min(minX, placement[P.x]);
         minZ = Math.min(minZ, placement[P.z]);
         maxX = Math.max(maxX, placement[P.x]);
@@ -532,14 +548,109 @@
       return keys;
     }
 
+    function searchMatchCount() {
+      let objectCount = 0;
+      for (const modelId of searchModelIds) {
+        objectCount += Number(models[modelId]?.[M.count]) || 0;
+      }
+      let landCount = 0;
+      for (const modelId of searchLandModelIds) {
+        landCount += Number(landModels[modelId]?.[M.count]) || 0;
+      }
+      return Math.max(objectCount, landCount);
+    }
+
+    function updateSearchStatus(isLoading = false) {
+      if (!searchQuery && !searchPathFilter) {
+        statusReadout.textContent = loadedPlacements.length
+          ? `Loaded ${loadedPlacements.length.toLocaleString()} objects`
+          : "";
+        return;
+      }
+      const count = searchMatchCount();
+      statusReadout.textContent = !count
+        ? "No matching objects on this map"
+        : isLoading
+        ? `Finding ${count.toLocaleString()} matching placements…`
+        : `${count.toLocaleString()} matching placements on map`;
+    }
+
+    async function refreshSearchPlacements(requestToken) {
+      if (!objectManifest || !models.length) return;
+      const modelIds = Array.from(searchModelIds).filter((modelId) => !isLandType(models[modelId]));
+      if (!modelIds.length || !objectManifest.searchIndexPath) {
+        updateSearchStatus(false);
+        fitViewToSearchMatches();
+        scheduleRender();
+        return;
+      }
+
+      updateSearchStatus(true);
+      try {
+        if (!objectSearchIndexPromise) {
+          const indexUrl = new URL(objectManifest.searchIndexPath, objectManifestBaseUrl).toString();
+          objectSearchIndexPromise = loadJson(indexUrl).catch((error) => {
+            objectSearchIndexPromise = null;
+            throw error;
+          });
+        }
+        const searchIndex = await objectSearchIndexPromise;
+        if (requestToken !== searchRequestToken) return;
+        const chunkIndexes = new Set();
+        for (const modelId of modelIds) {
+          (searchIndex.modelChunks?.[modelId] || []).forEach((chunkIndex) => chunkIndexes.add(Number(chunkIndex)));
+        }
+        const chunks = Array.from(chunkIndexes)
+          .map((chunkIndex) => objectManifest.chunks[chunkIndex])
+          .filter(Boolean);
+        const matchingModelIds = new Set(modelIds);
+        const placements = [];
+        let nextChunkIndex = 0;
+        async function loadNextChunk() {
+          while (requestToken === searchRequestToken && nextChunkIndex < chunks.length) {
+            const chunk = chunks[nextChunkIndex++];
+            const chunkUrl = new URL(chunk.path, objectManifestBaseUrl).toString();
+            let payload = chunkCache.get(chunkUrl);
+            if (!payload) {
+              payload = await loadJson(chunkUrl);
+              chunkCache.set(chunkUrl, payload);
+            }
+            if (requestToken !== searchRequestToken) return;
+            for (const placement of payload.placements || []) {
+              if (!matchingModelIds.has(placement[P.modelId])) continue;
+              placement._modelTable = "main";
+              placements.push(placement);
+            }
+          }
+        }
+        await Promise.all(Array.from({ length: Math.min(8, chunks.length) }, loadNextChunk));
+        if (requestToken !== searchRequestToken) return;
+        searchPlacements = placements;
+        searchPlacementGrid = buildPlacementGrid(searchPlacements);
+        fitViewToSearchMatches();
+        updateSearchStatus(false);
+        scheduleRender();
+      } catch (error) {
+        if (requestToken !== searchRequestToken) return;
+        searchPlacements = [];
+        searchPlacementGrid = new Map();
+        statusReadout.textContent = "Unable to load matching map locations";
+        scheduleRender();
+      }
+    }
+
     function refreshSearchMatches(rows, query, pathFilter, mode) {
+      const requestToken = ++searchRequestToken;
       searchRows = Array.isArray(rows) ? rows : [];
       searchQuery = String(query || "").trim();
       searchPathFilter = String(pathFilter || "").trim();
       searchMode = String(mode || "").trim();
       searchModelIds = new Set();
       searchLandModelIds = new Set();
+      searchPlacements = [];
+      searchPlacementGrid = new Map();
       if (!searchQuery && !searchPathFilter) {
+        updateSearchStatus(false);
         scheduleRender();
         return;
       }
@@ -612,6 +723,7 @@
         }
       }
       fitViewToSearchMatches();
+      refreshSearchPlacements(requestToken);
       scheduleRender();
     }
 
@@ -1553,22 +1665,22 @@
         };
       }
       return {
-        fill: `rgba(214,58,58,${Math.min(0.88, fillAlpha * 2.8).toFixed(3)})`,
-        stroke: `rgba(232,88,88,${Math.min(0.96, strokeAlpha).toFixed(3)})`,
-        point: `rgba(232,88,88,${Math.min(0.96, Math.max(0.02, strokeAlpha)).toFixed(3)})`
+        fill: `rgba(255,145,0,${Math.min(0.88, fillAlpha * 2.8).toFixed(3)})`,
+        stroke: `rgba(255,166,35,${Math.min(0.96, strokeAlpha).toFixed(3)})`,
+        point: `rgba(255,166,35,${Math.min(0.96, Math.max(0.02, strokeAlpha)).toFixed(3)})`
       };
     }
 
     function p3dPointFill(alpha) {
       if (worldKey === "sakhal") {
-        return `rgba(232,88,88,${alpha.toFixed(3)})`;
+        return `rgba(255,166,35,${alpha.toFixed(3)})`;
       }
       return `rgba(255,255,255,${alpha.toFixed(3)})`;
     }
 
     function zoomedOutPointFill(alpha) {
       if (worldKey === "sakhal") {
-        return `rgba(220,38,38,${alpha.toFixed(3)})`;
+        return `rgba(255,145,0,${alpha.toFixed(3)})`;
       }
       return `rgba(255,255,255,${alpha.toFixed(3)})`;
     }
@@ -1724,6 +1836,8 @@
       const viewBounds = visibleWorldBounds(40);
       const visiblePlacements = placementsWithControlled(placementsInBounds(startupLandGrid, viewBounds), viewBounds);
       const visibleLoaded = placementsWithControlled(visibleLoadedPlacements(40), viewBounds);
+      const visibleSearch = placementsWithControlled(visibleSearchPlacements(40), viewBounds);
+      const visibleObjectPlacements = visibleLoaded.concat(visibleSearch);
       const loadedFootprintScale = loadedFootprintScaleThreshold();
       const loadedPointFadeOutScale = loadedPointFadeOutScaleThreshold();
 
@@ -1768,7 +1882,7 @@
         const p3dPointAlpha = scale < p3dFadeLow
           ? 0.9
           : zoomFade(scale, p3dFadeLow, p3dFadeHigh, 0.9, 0);
-        for (const placement of visibleLoaded) {
+        for (const placement of visibleObjectPlacements) {
           if (isSuppressedControlledPlanePlacement(placement)) continue;
           const model = models[placement[P.modelId]] || null;
           const points = objectFootprint(placement, models);
@@ -1826,7 +1940,7 @@
 
       if (showCenters.checked || scale < loadedPointFadeOutScale) {
         const loadedPointAlpha = zoomFade(scale, STARTUP_POINT_SCALE, loadedPointFadeOutScale, 0.38, 0.98);
-        for (const placement of visibleLoaded) {
+        for (const placement of visibleObjectPlacements) {
           if (isSuppressedControlledPlanePlacement(placement)) continue;
           const model = models[placement[P.modelId]] || null;
           const p3dStyle = loadedP3dStyle(model, loadedPointAlpha, loadedPointAlpha);
@@ -1869,10 +1983,11 @@
 
       if (searchQuery || searchPathFilter) {
         const searchRingAlpha = scale >= STARTUP_FOOTPRINT_SCALE ? 0.9 : 0.72;
-        overlayCtx.strokeStyle = `rgba(0,122,255,${searchRingAlpha.toFixed(2)})`;
-        overlayCtx.lineWidth = scale >= STARTUP_FOOTPRINT_SCALE ? 2 : 1.6;
+        overlayCtx.strokeStyle = `rgba(255,48,48,${searchRingAlpha.toFixed(2)})`;
+        overlayCtx.lineWidth = scale >= STARTUP_FOOTPRINT_SCALE ? 2.5 : 2;
         for (const placement of visiblePlacements) {
           if (isSuppressedControlledPlanePlacement(placement)) continue;
+          if (placement === pinnedPlacement) continue;
           if (!searchLandModelIds.has(placement[P.modelId])) continue;
           overlayCtx.beginPath();
           overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(4.5, Math.min(8, scale * 12)), 0, Math.PI * 2);
@@ -1880,7 +1995,15 @@
         }
         for (const placement of visibleLoaded) {
           if (isSuppressedControlledPlanePlacement(placement)) continue;
+          if (placement === pinnedPlacement) continue;
           if (!searchModelIds.has(placement[P.modelId])) continue;
+          overlayCtx.beginPath();
+          overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(4.5, Math.min(8, scale * 12)), 0, Math.PI * 2);
+          overlayCtx.stroke();
+        }
+        for (const placement of visibleSearch) {
+          if (isSuppressedControlledPlanePlacement(placement)) continue;
+          if (placement === pinnedPlacement) continue;
           overlayCtx.beginPath();
           overlayCtx.arc(worldToScreenX(placement[P.x]), worldToScreenY(placement[P.z]), Math.max(4.5, Math.min(8, scale * 12)), 0, Math.PI * 2);
           overlayCtx.stroke();
@@ -1900,8 +2023,8 @@
       if (pinnedDrawPlacement && !suppressPlaneSelectionRing) {
         overlayCtx.beginPath();
         overlayCtx.arc(worldToScreenX(pinnedDrawPlacement[P.x]), worldToScreenY(pinnedDrawPlacement[P.z]), 7, 0, Math.PI * 2);
-        overlayCtx.strokeStyle = "rgba(220,38,38,0.95)";
-        overlayCtx.lineWidth = 2;
+        overlayCtx.strokeStyle = "rgba(0,145,255,0.98)";
+        overlayCtx.lineWidth = 2.8;
         overlayCtx.stroke();
       }
       const hoverDrawPlacement = effectivePlacement(hoverPlacement);
@@ -1910,7 +2033,7 @@
         hoverPlacement &&
         hoverPlacement === controlledPlane.sourcePlacement
       );
-      if (hoverDrawPlacement && !suppressPlaneHoverRing) {
+      if (hoverDrawPlacement && !suppressPlaneHoverRing && hoverPlacement !== pinnedPlacement) {
         overlayCtx.beginPath();
         overlayCtx.arc(worldToScreenX(hoverDrawPlacement[P.x]), worldToScreenY(hoverDrawPlacement[P.z]), 7, 0, Math.PI * 2);
         overlayCtx.strokeStyle = "rgba(255,244,127,0.98)";
@@ -2030,6 +2153,20 @@
         }
       }
       for (const placement of placementsInBounds(loadedPlacementGrid, hoverBounds)) {
+        const candidatePlacement = effectivePlacement(placement);
+        const polygon = objectFootprint(candidatePlacement, models);
+        if (polygon && pointInPolygon(point, polygon)) {
+          polygonCandidates.push(placement);
+        }
+        const dx = candidatePlacement[P.x] - wx;
+        const dz = candidatePlacement[P.z] - wz;
+        const dist = Math.hypot(dx, dz);
+        if (dist < radius && dist < bestDist) {
+          best = placement;
+          bestDist = dist;
+        }
+      }
+      for (const placement of placementsInBounds(searchPlacementGrid, hoverBounds)) {
         const candidatePlacement = effectivePlacement(placement);
         const polygon = objectFootprint(candidatePlacement, models);
         if (polygon && pointInPolygon(point, polygon)) {
