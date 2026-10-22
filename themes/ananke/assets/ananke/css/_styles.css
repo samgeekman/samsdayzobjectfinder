@@ -187,7 +187,7 @@ header nav.site-nav.ph3.ph4-ns {
   z-index: 20;
   top: calc(100% + 15px);
   right: 0;
-  width: 480px;
+  width: 360px;
   max-width: calc(100vw - 24px);
   padding: 16px;
   border: 1px solid var(--border);
@@ -324,10 +324,6 @@ header nav.site-nav.ph3.ph4-ns {
   border-color: var(--accent);
   color: var(--accent-strong);
   outline: none;
-}
-.more-project-card__link span:last-child {
-  color: var(--accent);
-  font-size: 0.9rem;
 }
 .more-project-card__link span:first-child {
   color: var(--accent);

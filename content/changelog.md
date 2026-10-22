@@ -4,6 +4,19 @@ type: "page"
 draft: false
 ---
 
+## 1.2.1 - 22 October 2026
+
+- You can now search for .p3ds on the Object Map, instead of just Land_ and StaticObj_ - see how many walls their are in Nasdara (without too much lag...)
+- Large tag revision and clean up to make it easier to find objects you don't know the name of.
+- Added ’nasdara’ tag to all 1.30 additions for easier searching e.g. nasdara trees
+- Added MapGroupProto entries for Nasdara objects - view and download in the object viewer sidebar
+- Added 1.30 Badlands to an improved Updates log so you can when which object was added when.
+- Fixed: Hidden Info chips show e.g. Console combat, Types and MapGroupProto entries
+- Fixed: Sidebar doesn't truncate folder names so eagerly.
+- Fixed: The map's Editor json download was incorrectly formatted.
+- Removed: _m _f _Base objects from  the 1.30 additions.
+- Various design improvement and fixes.
+
 ## 1.1.0 - 15 October 2026
 
 - Added all the new DayZ Badlands objects. There’s lots!

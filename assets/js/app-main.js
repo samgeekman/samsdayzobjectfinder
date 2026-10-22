@@ -787,6 +787,12 @@
 
     $tableEl.one('init.dt', showContent);
 
+    // Renderers capture these objects; the XML fetches populate them in place.
+    var typesEntryByName = {};
+    var typesEntryByNameLower = {};
+    var mapGroupProtoEntryByName = {};
+    var mapGroupProtoEntryByNameLower = {};
+
     var tableRenderers = requireCoreModule('createTableRenderers')({
       escapeHtml: escapeHtml,
       getObjectName: getObjectName,
@@ -1247,8 +1253,6 @@
     var currentObjectLocationData = {};
     var currentObjectRowEl = null;
     var typesEntryUrl = null;
-    var typesEntryByName = {};
-    var typesEntryByNameLower = {};
     var mapTypesByMap = {
       chernarus: {},
       livonia: {},
@@ -1274,8 +1278,6 @@
     var typesExplorerByObject = {};
     var activeTypesExplorerMatchByName = null;
     var mapGroupProtoEntryUrl = null;
-    var mapGroupProtoEntryByName = {};
-    var mapGroupProtoEntryByNameLower = {};
     var AppMode = requireCoreModule('AppMode');
     var activeCollectionFilter = AppMode.DATABASE;
     var typesExplorerFolderPrefixIndex = {};
@@ -7114,23 +7116,6 @@
             return normalizeObjectId(getObjectId(row));
           }).filter(Boolean);
           applyIdListFilter(versionIds);
-          setPinnedItems([]);
-          var versionSeen = {};
-          versionMatches.forEach(function(versionRow) {
-            var normalizedVersionId = normalizeObjectId(getObjectId(versionRow));
-            if (normalizedVersionId && versionSeen[normalizedVersionId]) return;
-            if (normalizedVersionId) {
-              versionSeen[normalizedVersionId] = true;
-            }
-            var versionItem = buildPinnedItemFromData(versionRow);
-            if (versionItem && versionItem.objName && !isPinned(versionItem.objName)) {
-              setPinnedItems(pinnedItems.concat([versionItem]));
-            }
-          });
-
-          if (pinnedItems.length) {
-            updatePinnedUI();
-          }
         }
       }
 
@@ -8004,6 +7989,7 @@
     var exportToggleEl = document.getElementById('exportToggle');
     var versionHistoryPanelEl = document.getElementById('versionHistoryPanel');
     var versionHistoryToggleEl = document.getElementById('versionHistoryToggle');
+    var versionHistoryCloseEl = document.getElementById('versionHistoryClose');
 
     var setExportPanelState = function(isOpen) {
       if (!exportPanelEl || !exportToggleEl) return;
@@ -8014,10 +8000,36 @@
     };
     var setVersionHistoryPanelState = function(isOpen) {
       if (!versionHistoryPanelEl || !versionHistoryToggleEl) return;
-      versionHistoryPanelEl.classList.toggle('is-open', isOpen);
+      versionHistoryPanelEl.hidden = !isOpen;
       versionHistoryPanelEl.setAttribute('aria-hidden', String(!isOpen));
       versionHistoryToggleEl.setAttribute('aria-expanded', String(isOpen));
       versionHistoryToggleEl.classList.toggle('is-active', !!isOpen);
+      if (isOpen) {
+        repositionVersionHistoryPanel();
+      } else {
+        versionHistoryPanelEl.style.position = '';
+        versionHistoryPanelEl.style.left = '';
+        versionHistoryPanelEl.style.top = '';
+        versionHistoryPanelEl.style.right = '';
+        versionHistoryPanelEl.style.removeProperty('--version-history-caret-right');
+      }
+    };
+    var repositionVersionHistoryPanel = function() {
+      if (!versionHistoryPanelEl || versionHistoryPanelEl.hidden || !versionHistoryToggleEl) return;
+      var triggerRect = versionHistoryToggleEl.getBoundingClientRect();
+      versionHistoryPanelEl.style.position = 'fixed';
+      versionHistoryPanelEl.style.left = '0px';
+      versionHistoryPanelEl.style.top = Math.round(triggerRect.bottom + 15) + 'px';
+      versionHistoryPanelEl.style.right = 'auto';
+      var panelWidth = versionHistoryPanelEl.getBoundingClientRect().width;
+      var left = Math.max(12, Math.min(
+        triggerRect.right - panelWidth,
+        window.innerWidth - panelWidth - 12
+      ));
+      var caretCenter = triggerRect.left + (triggerRect.width / 2) - left;
+      var caretRight = Math.max(12, Math.min(panelWidth - 26, panelWidth - caretCenter - 7));
+      versionHistoryPanelEl.style.left = Math.round(left) + 'px';
+      versionHistoryPanelEl.style.setProperty('--version-history-caret-right', Math.round(caretRight) + 'px');
     };
 
     if (exportToggleEl) {
@@ -8036,14 +8048,28 @@
     }
     if (versionHistoryPanelEl) {
       versionHistoryPanelEl.addEventListener('click', function(event) {
-        var versionBtn = event.target.closest('[data-version-key]');
-        if (!versionBtn) return;
-        var targetVersion = String(versionBtn.getAttribute('data-version-key') || '').trim();
+        var versionButton = event.target.closest('[data-version-key]');
+        if (!versionButton) return;
+        var targetVersion = String(versionButton.getAttribute('data-version-key') || '').trim();
         if (!targetVersion) return;
         setVersionHistoryPanelState(false);
         applyVersionFilterByTag(targetVersion);
       });
     }
+    if (versionHistoryCloseEl) {
+      versionHistoryCloseEl.addEventListener('click', function() {
+        setVersionHistoryPanelState(false);
+        versionHistoryToggleEl.focus();
+      });
+    }
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape' && versionHistoryToggleEl && versionHistoryToggleEl.getAttribute('aria-expanded') === 'true') {
+        setVersionHistoryPanelState(false);
+        versionHistoryToggleEl.focus();
+      }
+    });
+    window.addEventListener('resize', repositionVersionHistoryPanel);
+    window.addEventListener('scroll', repositionVersionHistoryPanel, true);
     var handleBadlandsSoftFilterClick = function(event) {
       if (event) event.preventDefault();
       applyVersionFilterByTags(BADLANDS_VERSION_KEYS);

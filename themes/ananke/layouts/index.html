@@ -50,28 +50,27 @@
 
     <div class="filter-actions">
       <button id="updateToggle" class="pill-button" type="button">Badlands objects</button>
-      <button id="versionHistoryToggle" class="pill-button version-history-toggle" type="button" aria-expanded="false" aria-controls="versionHistoryPanel" aria-label="Open version history">
-        <img class="version-history-toggle__icon version-history-toggle__icon--dark" src="/icons/history-dark.svg" alt="" aria-hidden="true">
-        <img class="version-history-toggle__icon version-history-toggle__icon--light" src="/icons/history-light.svg" alt="" aria-hidden="true">
-      </button>
-      <button id="exportToggle" class="pill-button" type="button" aria-expanded="false" aria-controls="exportPanel">Export data</button>
-    </div>
-
-    <div id="versionHistoryPanel" class="export-panel version-history-panel" aria-hidden="true">
-      <div class="version-history-panel__actions">
-        <div class="version-history-panel__row">
-          <span class="version-history-panel__date">Coming soon</span>
-          <button class="pill-button version-history-panel__link" type="button" data-version-key="v1.30-badlands">1.30 Road to Badlands</button>
-        </div>
-        <div class="version-history-panel__row">
-          <span class="version-history-panel__date">July 1 2026</span>
-          <button class="pill-button version-history-panel__link" type="button" data-version-key="v1.29-exp-badlands">1.29 Exp Road to Badlands</button>
-        </div>
-        <div class="version-history-panel__row">
-          <span class="version-history-panel__date">Apr 7 2026</span>
-          <button class="pill-button version-history-panel__link" type="button" data-version-key="v1.29">1.29 Stable</button>
+      <div class="version-history-anchor">
+        <button id="versionHistoryToggle" class="pill-button version-history-toggle" type="button" aria-expanded="false" aria-controls="versionHistoryPanel" aria-label="Open Objects by DayZ Update">
+          <img class="version-history-toggle__icon version-history-toggle__icon--dark" src="/icons/history-dark.svg" alt="" aria-hidden="true">
+          <img class="version-history-toggle__icon version-history-toggle__icon--light" src="/icons/history-light.svg" alt="" aria-hidden="true">
+        </button>
+        <div id="versionHistoryPanel" class="version-history-panel" role="dialog" aria-label="Objects by DayZ Update" aria-hidden="true" hidden>
+          <div class="version-history-panel__header">
+            <h2>Objects by DayZ Update</h2>
+            <button id="versionHistoryClose" class="version-history-panel__close" type="button" aria-label="Close version history">×</button>
+          </div>
+          <div class="version-history-panel__list">
+            <span class="version-history-panel__date">15 Oct 2026</span>
+            <button class="version-history-panel__version" type="button" data-version-key="v1.30-badlands">1.30 DayZ Badlands</button>
+            <span class="version-history-panel__date">July 1 2026</span>
+            <button class="version-history-panel__version" type="button" data-version-key="v1.29-exp-badlands">1.29 Exp Road to Badlands</button>
+            <span class="version-history-panel__date">Apr 7 2026</span>
+            <button class="version-history-panel__version" type="button" data-version-key="v1.29">1.29 Stable</button>
+          </div>
         </div>
       </div>
+      <button id="exportToggle" class="pill-button" type="button" aria-expanded="false" aria-controls="exportPanel">Export data</button>
     </div>
 
     <div id="exportPanel" class="export-panel" aria-hidden="true">

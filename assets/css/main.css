@@ -747,6 +747,13 @@
     overflow: visible !important;
     z-index: 1;
   }
+  @media (max-width: 1360px) {
+    #dayzObjects tbody td.info-cell {
+      position: relative;
+      overflow: visible !important;
+      z-index: 2;
+    }
+  }
   #dayzObjects tbody .path-cell:hover,
   #dayzObjects tbody .path-cell:focus-within {
     z-index: 30;
@@ -821,14 +828,25 @@
     grid-template-rows: repeat(2, min-content);
     grid-auto-flow: column;
     align-items: start;
-    gap: 3px;
+    gap: 3px 4px;
     margin-right: 0;
     vertical-align: middle;
+  }
+  @media (min-width: 1360px) {
+    #dayzObjects thead th:nth-child(6),
+    #dayzObjects tbody td.info-cell {
+      box-sizing: border-box;
+      width: 82px;
+      min-width: 82px;
+      padding-right: 4px;
+      padding-left: 4px;
+    }
   }
   .info-chip {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
     min-width: 0;
     height: clamp(11px, 0.95vw, 13px);
     padding: 0 clamp(2px, 0.28vw, 4px);
@@ -1010,6 +1028,20 @@
   #dayzObjects tbody .path-cell:focus-within .cell-action-grid {
     opacity: 1;
     pointer-events: auto;
+  }
+  @media (max-width: 1360px) {
+    #dayzObjects tbody .object-name-cell__value,
+    #dayzObjects tbody .path-cell__value {
+      padding-right: 0;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1360px) {
+    #dayzObjects tbody .cell-action-grid {
+      background-color: var(--card);
+      padding: 2px 3px;
+      box-sizing: content-box;
+      border-radius: 3px;
+    }
   }
   #dayzObjects tbody .preset-actions {
     display: inline-flex;
@@ -2990,36 +3022,110 @@
   :root.dark-mode .version-history-toggle__icon--light {
     display: block;
   }
-  .version-history-panel__actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .version-history-panel__row {
+  .version-history-anchor {
     display: inline-flex;
+    position: relative;
     align-items: center;
+  }
+  .version-history-panel {
+    position: fixed;
+    z-index: 1000;
+    top: calc(100% + 15px);
+    right: 0;
+    width: max-content;
+    max-width: calc(100vw - 24px);
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--card);
+    color: var(--text);
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.28);
+  }
+  .version-history-panel[hidden] {
+    display: none !important;
+  }
+  .version-history-panel::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: var(--version-history-caret-right, 16px);
+    width: 14px;
+    height: 14px;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    background: var(--card);
+    transform: rotate(45deg);
+  }
+  .version-history-panel__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 8px;
+    margin-bottom: 6px;
+  }
+  .version-history-panel__header h2 {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .version-history-panel__close {
+    flex: 0 0 auto;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 1.15rem;
+    line-height: 1;
+  }
+  .version-history-panel__close:hover,
+  .version-history-panel__close:focus-visible {
+    border-color: var(--accent);
+    outline: none;
+  }
+  .version-history-panel__list {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 4px;
   }
   .version-history-panel__date {
-    color: var(--text);
-    font-size: 0.75rem;
+    color: var(--muted);
+    font-size: 0.72rem;
     font-weight: 600;
     white-space: nowrap;
   }
-  .version-history-panel__link {
-    display: inline-flex;
+  .version-history-panel__version {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    white-space: nowrap;
+    width: auto;
+    justify-self: start;
+    min-width: 0;
+    min-height: 0;
+    padding: 4px 8px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: var(--card);
+    color: var(--text);
+    cursor: pointer;
     font-size: 0.7rem;
     line-height: 1.2;
-    padding: 4px 8px;
-    border-radius: 3px;
+    text-align: left;
+    overflow-wrap: anywhere;
+    transition: transform 0.12s ease, box-shadow 0.18s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   }
-  @media (max-width: 700px) {
-    .version-history-panel__row {
-      flex-wrap: wrap;
-    }
+  .version-history-panel__version:hover,
+  .version-history-panel__version:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--color-accent-hover-text);
+    outline: none;
   }
   @keyframes export-empty-flash {
     0%, 100% {
