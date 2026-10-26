@@ -377,24 +377,57 @@ def to_editor_json_entries(payload: object) -> List[dict]:
     return []
 
 
+def to_dayz_export_from_editor_json(editor_json: List[dict]) -> dict:
+    objects: List[dict] = []
+    for item in editor_json:
+        if not isinstance(item, dict):
+            continue
+        name = str(item.get("Type", "")).strip()
+        if not name:
+            continue
+        pos = item.get("Position")
+        ypr = item.get("Orientation")
+        if not isinstance(pos, list) or len(pos) < 3:
+            pos = [0, 0, 0]
+        if not isinstance(ypr, list) or len(ypr) < 3:
+            ypr = [0, 0, 0]
+        scale = item.get("Scale", 1.0)
+        try:
+            scale = float(scale)
+        except (TypeError, ValueError):
+            scale = 1.0
+        objects.append(
+            {
+                "name": name,
+                "pos": pos[:3],
+                "ypr": ypr[:3],
+                "scale": scale,
+                "enableCEPersistency": item.get("enableCEPersistency", 0),
+                "customString": item.get("customString", ""),
+            }
+        )
+    return {"Objects": objects}
+
+
 def to_rel_base_path(path: Path) -> str:
     return str(path.relative_to(BASE_DIR)).replace("\\", "/")
 
 
-def write_preset_editor_json(folder: Path, object_name: str, editor_json: List[dict]) -> str:
-    if not editor_json:
+def write_preset_download_json(folder: Path, object_name: str, dayz_export: Optional[dict]) -> str:
+    if not dayz_export or not dayz_export.get("Objects"):
         return ""
     out_dir = STATIC_DIR / "presets"
     out_dir.mkdir(parents=True, exist_ok=True)
     out_name = f"{slugify_token(object_name or folder.name, default='build')}.json"
     out_path = out_dir / out_name
-    out_path.write_text(json.dumps(editor_json, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    out_path.write_text(json.dumps(dayz_export, indent=4, ensure_ascii=False) + "\n", encoding="utf-8")
     return (Path("presets") / out_name).as_posix()
 
 
 def discover_preset_artifacts(folder: Path) -> Dict[str, object]:
     import_json_path = ""
     editor_json: List[dict] = []
+    dayz_export: Optional[dict] = None
     copyable_path = ""
     dze_path = ""
 
@@ -417,6 +450,10 @@ def discover_preset_artifacts(folder: Path) -> Dict[str, object]:
             if not editor_json and parsed_editor_json:
                 editor_json = parsed_editor_json
                 import_json_path = to_rel_base_path(file_path)
+                if isinstance(parsed, dict) and isinstance(parsed.get("Objects"), list):
+                    dayz_export = {"Objects": parsed["Objects"]}
+                else:
+                    dayz_export = to_dayz_export_from_editor_json(parsed_editor_json)
             if is_copyable_name and not copyable_path:
                 copyable_path = to_rel_base_path(file_path)
             continue
@@ -426,6 +463,7 @@ def discover_preset_artifacts(folder: Path) -> Dict[str, object]:
 
     return {
         "editor_json": editor_json,
+        "dayz_export": dayz_export,
         "import_json_path": import_json_path,
         "copyable_path": copyable_path,
         "dze_path": dze_path,
@@ -528,9 +566,10 @@ def load_preset_rows_from_folders(presets_dir: Path) -> Tuple[List[dict], int]:
         model_type = str(preset_row.get("modelType") or "Preset").strip()
         usable_on_console = parse_bool(preset_row.get("usableOnConsole"), default=True)
         editor_json = list(artifacts.get("editor_json") or [])
-        static_editor_json_path = write_preset_editor_json(folder, object_name, editor_json)
-        import_json_path = static_editor_json_path or source_import_json_path
-        copyable_path = static_editor_json_path or source_copyable_path
+        dayz_export = artifacts.get("dayz_export")
+        static_download_json_path = write_preset_download_json(folder, object_name, dayz_export)
+        import_json_path = static_download_json_path or source_import_json_path
+        copyable_path = static_download_json_path or source_copyable_path
         row = {
             "id": object_id,
             "objectName": object_name,

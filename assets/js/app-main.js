@@ -5234,9 +5234,8 @@
         return !!item.name;
       });
       return JSON.stringify({
-        createLocation: '',
         Objects: objects
-      }, null, 2);
+      }, null, 4);
     };
 
     var hideFocusDetails = function() {
